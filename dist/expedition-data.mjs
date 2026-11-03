@@ -1,0 +1,207 @@
+import {HARBOR_ROOMS,harborPlan,harborRooms} from './expedition-harbor.mjs';
+import {GEAR,equipmentKit,gearSupports,gearRequirementName} from './expedition-equipment.mjs';
+export {GEAR,gearSupports,gearRequirementName} from './expedition-equipment.mjs';
+export const VERSION='0.40.0';
+export const clone=x=>structuredClone(x);
+export const POS={front:'前排',left:'左翼',right:'右翼',center:'中央',rear:'后排'};
+export const ROLE_TARGETS={healer:'治疗者',summoner:'召唤者'};
+export const roleTargetAllowed=s=>s.kind==='attack'&&s.mode==='single'&&['ranged','magic'].includes(s.type);
+export const targetOptions=s=>s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS}:POS;
+export const ATTR={str:'力量',con:'体质',int:'智力',dex:'灵巧',cha:'魅力',agi:'敏捷',per:'感知',wil:'意志'};
+export const TYPES={melee:'近战',ranged:'远程',magic:'法术'};
+export const DEFENSES={natural:{name:'自然防御',cost:0,types:['melee','ranged','magic']},parry:{name:'盾牌格挡',primary:'dex',secondary:'str',cost:1,types:['melee'],gear:'plate'},sidestep:{name:'闪身卸力',primary:'dex',secondary:'agi',cost:1,types:['melee']},dodge:{name:'躲避箭矢',primary:'agi',secondary:'per',cost:1,types:['ranged']},resist:{name:'心智抵抗',primary:'wil',secondary:'int',cost:2,types:['magic']}};
+export const naturalDefenses=()=>({melee:'natural',ranged:'natural',magic:'natural'});
+export const ROOM_IDS=['harbor_gate','harbor_pass','harbor_cache','harbor_beacon','gallery','cistern','altar','infirmary','garden','heart'];
+// All content and tuning below are original. Formula policies are documented in docs/V3_RULES.md.
+export const SKILLS={
+ strike:{name:'剑术',kind:'attack',type:'melee',primary:'dex',secondary:'str',power:1.3,cost:0,mode:'single',max:1,desc:'近战单体；按近战路线寻找目标。'},
+ shot:{name:'穿石箭',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.2,cost:0,mode:'single',max:1,desc:'远程单体；优先指定位置。'},
+ volley:{name:'齐射',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.1,cost:5,item:'arrow',mode:'position',max:3,desc:'同位置最多 3 人，分别检定；不跨位置补齐。'},
+ wave:{name:'潮汐冲击',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1.5,cost:6,item:'rune',mode:'position',max:3,desc:'同位置最多 3 人；造成法术伤害。'},
+ spark:{name:'微光',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1,cost:1,mode:'single',max:1,desc:'低消耗法术单体。'},
+ guard:{name:'守势',kind:'buff',primary:'con',secondary:'wil',cost:3,mode:'self',max:1,scope:'rounds',duration:1,stat:'defense',scale:0.15,base:3,desc:'自身所有防御检定提高，持续当前与下一回合。'},
+ insight:{name:'灵感启蒙',kind:'buff',primary:'cha',secondary:'wil',cost:4,mode:'position',max:3,scope:'battle',stat:'int',scale:0.3,base:2,desc:'目标位置智力提高；后施放的法术辅助受益，持续本房间。'},
+ ward:{name:'潮纹屏障',kind:'buff',primary:'int',secondary:'wil',cost:5,item:'rune',mode:'position',max:3,scope:'rounds',duration:2,stat:'defense',scale:0.18,base:3,desc:'目标位置所有防御检定提高；施放时按智力和技能等级取值，持续当前与之后 2 回合。'},
+ mastery:{name:'战技传授',kind:'buff',primary:'cha',secondary:'per',cost:5,mode:'position',max:3,scope:'battle',stat:'skill',scale:0.18,base:1,desc:'目标位置攻击技能等级提高；同时影响命中与伤害，持续本房间。'},
+ rhythm:{name:'急行节拍',kind:'buff',primary:'cha',secondary:'wil',cost:8,mode:'position',max:3,scope:'rounds',duration:1,stat:'actions',scale:0,base:1,desc:'目标位置行动次数 +1，持续当前与下一回合。'},
+ provisions:{name:'远征药膳',kind:'buff',primary:'int',secondary:'wil',cost:3,item:'herb',mode:'all',max:6,scope:'expedition',stat:'armor',scale:0,base:2,desc:'全队护甲 +2，跨房间保留；同名效果仍在时跳过。'},
+ heal:{name:'草药救护',kind:'heal',primary:'int',secondary:'wil',cost:5,item:'herb',mode:'single',max:1,desc:'在自身行动点检查治疗阈值；触发后占用行动，不推进普通指令。'},
+ cadence:{name:'蓄势合奏',kind:'buff',primary:'cha',secondary:'wil',cost:7,mode:'position',max:3,components:[{label:'抢拍',stat:'actions',base:1,scale:0,scope:'rounds',duration:0,delay:0},{label:'余韵',stat:'skill',base:3,scale:0.08,scope:'rounds',duration:1,delay:1}],desc:'同一次施放：本回合行动 +1；下一回合开始攻击技能等级提高，持续生效回合及再下一回合。所有组件结束前同名互斥。'},
+ bulwark:{name:'延时护印',kind:'buff',primary:'int',secondary:'wil',cost:5,item:'rune',mode:'position',max:3,components:[{label:'符壳',stat:'armor',base:3,scale:0,scope:'rounds',duration:0,delay:0},{label:'护印展开',stat:'defenseSkill',base:4,scale:0.05,scope:'rounds',duration:1,delay:1}],desc:'当回合护甲 +3；下一回合起防御技能等级提高，持续两回合。延迟期间不占持续时间。'},
+ sentinel:{name:'唤潮卫',kind:'summon',primary:'int',secondary:'wil',cost:10,item:'rune',mode:'position',max:1,desc:'召唤一名潮卫至指定位置，存续本房间。每位施法者最多一名存活召唤物；召唤物独立行动、可受击，主人倒下时消散。'},
+ shieldbash:{name:'盾缘重击',kind:'attack',type:'melee',primary:'str',secondary:'con',power:1.4,cost:3,mode:'single',max:1,requiresGear:'plate',ignoreArmor:3,desc:'需要携盾武器；力量/体质检定，单体近战，忽略最多3护甲。'},
+ pierce:{name:'破甲重箭',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.45,cost:4,item:'arrow',mode:'single',max:1,requiresGear:'bow',ignoreArmor:4,desc:'需要弓具类装备；单体远程，优先指定位置，忽略最多4护甲。消耗1箭矢。'},
+ lance:{name:'凝潮长枪',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:2,cost:9,item:'rune',mode:'single',max:1,requiresGear:'focus',desc:'需要法器类装备；高消耗单体法术，可优先后排。对单目标集中火力，失去群体覆盖。'},
+ wait:{name:'等待',kind:'wait',cost:0,desc:'主动消耗一个行动点，不消耗资源。'}
+};
+Object.assign(SKILLS,{
+ rallyguard:{name:'集阵守护',kind:'buff',primary:'con',secondary:'wil',cost:6,mode:'position',max:3,scope:'rounds',duration:1,stat:'armor',scale:0.05,base:1,desc:'目标位置最多3人护甲提高，按施放检定取值，持续当前与下一回合；替代只保护自身的守势，但耗蓝更高。'},
+ sweep:{name:'双矢连射',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:0.95,cost:3,item:'arrow',mode:'position',max:2,requiresGear:'bow',desc:'目标位置最多2人，分别检定；消耗3法力和1箭矢，比齐射省蓝但覆盖与威力更低。'},
+ tidebolt:{name:'凝水矢',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1.3,cost:4,mode:'single',max:1,requiresGear:'focus',desc:'法术单体，可按敌方职责选人；消耗4法力、不消耗符纸，威力介于微光与凝潮长枪之间。'},
+ foresight:{name:'先觉阵',kind:'buff',primary:'int',secondary:'per',cost:4,mode:'position',max:3,scope:'battle',stat:'agi',scale:0.15,base:2,desc:'目标位置最多3人敏捷提高，影响先攻与相应防御检定；持续本房间，不消耗符纸。'},
+ resolvechant:{name:'定心吟',kind:'buff',primary:'cha',secondary:'wil',cost:4,mode:'position',max:3,scope:'battle',stat:'wil',scale:0.15,base:2,desc:'目标位置最多3人意志提高，影响心智抵抗与以意志为副属性的技能；持续本房间。'},
+ poultice:{name:'防护药敷',kind:'buff',primary:'int',secondary:'wil',cost:4,item:'herb',mode:'position',max:3,scope:'rounds',duration:1,stat:'defense',scale:0.12,base:3,desc:'目标位置最多3人防御检定提高，持续当前与下一回合；占用预备行动并消耗药草，与救护争用资源。'}
+});
+const attrs=(str,con,int,dex,cha,agi,per,wil)=>({str,con,int,dex,cha,agi,per,wil});
+const FOUNDERS=[
+ {id:'a',name:'阿瑟',role:'守卫',mark:'盾',pos:'front',gear:'plate',attrs:attrs(12,16,5,11,6,8,9,12),skills:['strike','guard','shieldbash','rallyguard'],base:6},
+ {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep'],base:6},
+ {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt'],base:6},
+ {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight'],base:6},
+ {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant'],base:6},
+ {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','shot','poultice'],base:6}
+];
+export const CLASS_IDS={a:'guardian',b:'ranger',c:'tidecaller',d:'scholar',e:'bard',f:'herbalist'};
+export const CLASSES=Object.fromEntries(FOUNDERS.map(({id,name,...template})=>[CLASS_IDS[id],{...template,id:CLASS_IDS[id],starterId:id}]));
+export const CHARACTERS=[...FOUNDERS.map(h=>({id:h.id,name:h.name,classId:CLASS_IDS[h.id],portrait:{a:'knight',b:'ranger',c:'mage',d:'scholar',e:'bard',f:'herbalist'}[h.id]})),{id:'mira',name:'米菈',classId:'scholar',portrait:'scholar',recruit:{cost:60,completed:1},story:'修复沉没档案的抄录员。可与维斯分担不同阵位的屏障与护印。'},{id:'orin',name:'奥林',classId:'herbalist',portrait:'herbalist',recruit:{cost:60,completed:2},story:'随救援船队到来的药师。可与露弥分区照护，药草仍由全队共享。'}];
+export const HEROES=CHARACTERS.map(h=>({...CLASSES[h.classId],...h}));
+export const STARTER_IDS=FOUNDERS.map(h=>h.id);
+export function defaultHero(id){const t=HEROES.find(h=>h.id===id);if(!t)throw Error('未知角色');const h=clone(defaults().heroes.find(h=>h.id===CLASSES[t.classId].starterId));h.id=id;if(id==='mira'){h.trained='bulwark';h.prep=[row('bulwark','center')];}if(id==='orin'){h.trained='heal';h.healing.threshold=.8;}return h;}
+export const row=(skill,target='front',mode='repeat')=>({skill,target,mode});
+export function defaults(){return {version:VERSION,expedition:'classic',harbor:harborPlan(),bellApproach:'bypass',rescueApproach:'pass',seed:731,roomOrders:{},prepOrder:['e','d','f','a','b','c'],supplies:{herb:16,rune:22,arrow:16},heroes:FOUNDERS.map(h=>({id:h.id,training:{},item:'none',itemPolicy:{enabled:true,threshold:.3},pos:h.pos,gear:equipmentKit(h.gear),overrides:{},defenseFocus:h.id==='a'?'parry':h.id==='b'?'dodge':'resist',defenses:{...naturalDefenses(),...(h.id==='a'?{melee:'parry'}:h.id==='b'?{ranged:'dodge'}:{magic:'resist'})},trained:h.skills[0],attribute:'con',prep:h.id==='a'?[row('guard','self')]:h.id==='d'?[row('ward','front')]:h.id==='e'?[row('insight','center','once'),row('mastery','rear')]:h.id==='f'?[row('provisions','all')]:[],main:[row(h.id==='a'?'strike':h.id==='b'?'volley':h.id==='c'?'wave':h.id==='d'?'spark':'shot',h.id==='b'?'rear':'front'),...(h.id==='b'?[row('shot','rear')]:h.id==='c'?[row('spark')]:[])],healing:h.id==='f'?{enabled:true,threshold:.65,target:'all',priority:'lowest'}:{enabled:false,threshold:.65,target:'all'}}))};}
+function enemy(id,name,pos,skill,health,level=7){return {id,name,role:'守誓者',mark:SKILLS[skill].type==='magic'?'咒':'刃',side:'enemy',pos,defenseFocus:'resist',defenses:naturalDefenses(),gear:'field',attrs:attrs(13,12,15,15,8,12,12,12),skills:{[skill]:level},hp:health,maxHp:health,mp:80,maxMp:80,prep:[],main:[row(skill,skill==='wave'?'center':skill==='shot'?'rear':'front')],healing:{enabled:false}};}
+export const ROOMS=[
+ {id:'gallery',name:'01 · 回声侧廊',note:'前排守卫掩护后排弩手。齐射只覆盖一个位置；远程可以优先消灭弩手。',enemies:[enemy('g1','石壁守卫','front','strike',150),enemy('g2','伏击弩手','rear','shot',100),enemy('g3','伏击弩手','rear','shot',100)]},
+ {id:'cistern',name:'02 · 浸潮蓄水厅',note:'两名祭司攻击中央，战斗之间不回复生命和法力。治疗会占用药师的行动。',enemies:[enemy('c1','溺水守卫','front','strike',180),enemy('c2','蚀潮祭司','rear','wave',130),enemy('c3','蚀潮祭司','rear','wave',130)]},
+ {id:'altar',name:'03 · 守誓圣坛',note:'守誓者先施放守势；敌我使用相同技能规则。保留资源、准备备用指令，避免空过行动。',enemies:[{...enemy('s1','守誓者','front','strike',300,10),skills:{strike:8,guard:6},prep:[row('guard','self')]},enemy('s2','誓约残影','rear','wave',160,9)]}
+];
+
+export const PLAN_FIELDS=['pos','prep','main','healing','defenses','itemPolicy'];
+export function resolveHeroPlan(h,roomId){const plan=clone(h);for(const k of PLAN_FIELDS)if(Object.hasOwn(h.overrides?.[roomId]||{},k))plan[k]=clone(h.overrides[roomId][k]);return plan;}
+export function migrateConfig(raw){const c=clone(raw);if(c?.version==='0.3.0'){c.version='0.4.0';c.roomOrders={};for(const h of c.heroes){h.overrides={};h.defenses=naturalDefenses();h.defenseFocus=h.id==='a'?'parry':h.id==='b'?'dodge':'resist';}}if(c?.version==='0.4.0'){c.version='0.5.0';c.expedition='classic';for(const h of c.heroes){h.item='none';h.itemPolicy={enabled:true,threshold:.3};}}if(c?.version==='0.5.0')c.version='0.6.0';if(c?.version==='0.6.0'){c.version='0.7.0';for(const h of c.heroes)h.training={};}if(c?.version==='0.7.0')c.version='0.8.0';if(c?.version==='0.8.0'){c.version='0.11.0';c.bellApproach='bypass';}if(c?.version==='0.10.0')c.version='0.11.0';if(c?.version==='0.11.0'){c.version=VERSION;c.rescueApproach??='pass';}if(['0.12.0','0.14.0','0.20.0','0.23.0'].includes(c?.version))c.version=VERSION;return c;}
+
+export const ITEMS={none:{name:'不携带',charges:0},tonic:{name:'凝潮药瓶',charges:2,resource:'mp',amount:24,desc:'法力低于阈值时自用，恢复24法力；整次远征2次。'},salve:{name:'救急药匣',charges:2,resource:'hp',amount:40,desc:'生命低于阈值时自用，恢复40生命；整次远征2次。'}};
+export const EXPEDITIONS={harbor:{name:"第二章 · 盐风港的无光灯塔"},seasoned:{name:'熟练试炼 · 裂潮哨站'},veteran:{name:'资深试炼 · 沉钟议庭'},tutorial:{name:'初次出征 · 回声侧廊'},chapter:{name:'第一章 · 沉钟之下'},classic:{name:'修道院 · 基线远征'},vigil:{name:'潮汐异变 · 战术挑战'},archive:{name:'封库试炼 · 敌情与克制'},scarcity:{name:'断潮封库 · 限时补给挑战'},survival:{name:'守灯归途 · 生存试炼'},hospice:{name:'溺潮疗所 · 切断支援'}};
+const vigil=clone(ROOMS);
+vigil[0].note='前排两名护卫掩护后排召潮者。召潮者每次存活潮卫被击倒后可再次召唤；远程集中后排可以切断召唤来源。';
+vigil[0].enemies=[enemy('vg1','潮壳护卫','front','strike',160),enemy('vg2','潮壳护卫','front','strike',160),{...enemy('vg3','召潮者','rear','spark',150),skills:{spark:7,sentinel:7},prep:[row('sentinel','front')]}];
+vigil[1].note='两名祭司用群体法术压制中央。分散站位可减少覆盖，但也会失去集中辅助；进入此房间后可独立调整屏障和防御。';
+vigil[1].enemies=[enemy('vc1','潮闸巨卫','front','strike',230),enemy('vc2','深潮祭司','rear','wave',160,10),enemy('vc3','深潮祭司','rear','wave',160,10)];
+vigil[2].note='守誓者生命不高于一半且仍存活时碎印：召来两名潮卫，后续普通行动改为压制后排的法术。击倒主人会同时驱散其召唤物。请为此房间保留法力与药瓶。';
+vigil[2].enemies=[{...enemy('vs1','碎印守誓者','front','strike',480,10),skills:{strike:10,wave:10,guard:6},prep:[row('guard','self')],awakens:true},enemy('vs2','誓约祭司','rear','spark',140,8)];
+export function roomsFor(c){return (c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
+export function challengeConfig(){const c=defaults();c.expedition='vigil';for(const h of c.heroes){h.item=['c','d','e','f'].includes(h.id)?'tonic':'salve';h.itemPolicy.threshold=h.item==='tonic'?.3:.5;}c.heroes.find(h=>h.id==='c').prep=[row('sentinel','front')];c.heroes.find(h=>h.id==='d').overrides.cistern={prep:[row('ward','center')]};for(const id of ['b','e']){const h=c.heroes.find(h=>h.id===id);h.overrides.altar={defenses:{...h.defenses,magic:'resist'}};}return c;}
+
+export const TRAINING_BUDGET=6;
+export const rankCost=n=>n*(n+1)/2;
+export const trainingCost=training=>Object.values(training).reduce((n,v)=>n+rankCost(v),0);
+export function trainingOptions(heroId){const h=HEROES.find(h=>h.id===heroId);return Object.fromEntries([...h.skills.map(id=>['skill:'+id,{name:SKILLS[id].name,kind:'skill',id}]),...Object.keys(DEFENSES).filter(id=>id!=='natural').map(id=>['defense:'+id,{name:DEFENSES[id].name,kind:'defense',id}])]);}
+export function trainingBuild(kind='balanced'){const c=challengeConfig();for(const h of c.heroes){if(kind==='defense')h.training={['defense:'+h.defenseFocus]:3};else if(kind==='support')h.training={['skill:'+({a:'guard',b:'volley',c:'sentinel',d:'ward',e:'insight',f:'heal'}[h.id])]:3};else h.training={['skill:'+h.trained]:2,['defense:'+h.defenseFocus]:2};}return c;}
+
+// Three fixed encounters, using the same stage IDs for shared room-plan slots.
+const archive=[
+ {id:'gallery',name:'01 · 铁壳门廊',note:'两名重甲卫士集中前排，近战与远程抗性35%，法术弱点25%。群体法术可覆盖两人；破甲只忽略固定护甲，不绕过抗性。后排弩手持续射击后排。',enemies:[
+  ...['ag1','ag2'].map(id=>({...enemy(id,'铁壳卫士','front','strike',175,8),attrs:{...enemy(id,'','front','strike',1).attrs,armor:10},resistances:{melee:35,ranged:35,magic:-25}})),
+  enemy('ag3','封库弩手','rear','shot',110,8)]},
+ {id:'cistern',name:'02 · 镜潮回廊',note:'三名咏唱者集中中央，法术抗性60%，远程弱点20%。屏障由镜潮司仪维持；远程可优先射击中央或后排。继续大量施法会消耗后续房间所需法力与符纸。',enemies:[
+  ...['ac1','ac2','ac3'].map(id=>({...enemy(id,'镜潮咏唱者','center','spark',110,7),resistances:{magic:60,ranged:-20}})),
+  {...enemy('ac4','镜潮司仪','rear','spark',130,7),skills:{spark:7,ward:6},prep:[row('ward','center')],resistances:{magic:60,ranged:-20}}]},
+ {id:'altar',name:'03 · 分誓封印',note:'三名守印者分居前排、左翼、右翼。同位置群攻最多命中一人；单体重箭与凝潮长枪可集中火力。后排护印师为前排展开延时防护，补给与生命仍从前两房继承。',enemies:[
+  ...[['aa1','front'],['aa2','left'],['aa3','right']].map(([id,pos])=>enemy(id,'分誓守印者',pos,'strike',160,8)),
+  {...enemy('aa4','封库护印师','rear','wave',130,8),skills:{wave:8,bulwark:6},prep:[row('bulwark','front')]}]}
+];
+export function archiveConfig(adapted=false){
+ const c=trainingBuild();c.expedition='archive';c.roomOrders={};
+ for(const h of c.heroes)h.overrides={};
+ c.heroes.find(h=>h.id==='c').prep=[];
+ c.heroes.find(h=>h.id==='d').prep=[row('ward','front')];
+ if(adapted){
+  c.heroes.find(h=>h.id==='b').overrides={cistern:{main:[row('volley','center'),row('shot','center')]},altar:{main:[row('pierce','front'),row('shot','front')]}};
+  c.heroes.find(h=>h.id==='c').overrides={cistern:{main:[row('spark','rear')]},altar:{main:[row('lance','front'),row('spark','front')]}};
+ }
+ return c;
+}
+
+export const hasArchiveEvents=c=>['archive','scarcity','chapter'].includes(c.expedition);
+export const supplyBudget=c=>c.expedition==='veteran'?30:c.expedition==='scarcity'?24:['survival','hospice','seasoned','harbor'].includes(c.expedition)?36:60;
+export function roomTimeBudget(c,roomId){return c.expedition==='scarcity'?5-(roomId==='cistern'&&c.rescueApproach==='gather'?1:0):24;}
+export function scarcityConfig(adapted=false){const c=archiveConfig(adapted);c.expedition='scarcity';c.supplies={herb:8,rune:8,arrow:8};return c;}
+
+// Original survival encounters. All pressure comes from visible enemy commands/stats.
+const survival=[
+ {id:'gallery',name:'01 · 狙灯栈桥',note:'两名猎灯弩手优先射击后排，前排护卫掩护。后排不是安全区；屏障、远程防御和集火弩手都可改变承伤。',enemies:[enemy('lg1','栈桥护卫','front','strike',190,9),...['lg2','lg3'].map(id=>({...enemy(id,'猎灯弩手','rear','shot',170,15),attrs:attrs(13,12,15,22,8,16,19,12)}))]},
+ {id:'cistern',name:'02 · 碎灯礼堂',note:'两名熄灯祭司用潮汐冲击覆盖中央，最多各命中3人。分散能减少群攻覆盖，但会分散启蒙和屏障收益；移空中央不会阻止敌人按规则寻找下一个非空阵位。',enemies:[enemy('lc1','礼堂护卫','front','strike',210,10),...['lc2','lc3'].map(id=>({...enemy(id,'熄灯祭司','rear','wave',190,15),attrs:attrs(13,12,23,15,8,14,12,19)}))]},
+ {id:'altar',name:'03 · 最后一盏灯',note:'弩手压制后排，祭司压制中央，前排灯狱守卫拖住近战。生命与法力跨房间保留，药师在自己的行动点才能治疗；倒下者不会随换房复活。',enemies:[enemy('la1','灯狱守卫','front','strike',280,12),{...enemy('la2','猎灯队长','rear','shot',190,16),attrs:attrs(13,12,15,23,8,16,20,12)},{...enemy('la3','熄灯主祭','center','wave',200,16),attrs:attrs(13,12,24,15,8,14,12,20)}]}
+];
+export function survivalConfig(kind='baseline'){
+ if(!['baseline','formation','medic','combined'].includes(kind))throw Error('未知守灯方案');
+ const c=archiveConfig();c.expedition='survival';c.supplies={herb:12,rune:12,arrow:12};c.seed=1;
+ if(['formation','combined'].includes(kind)){
+  c.heroes.find(h=>h.id==='d').overrides.gallery={prep:[row('ward','rear')]};
+  c.heroes.find(h=>h.id==='e').overrides.gallery={defenses:{...c.heroes.find(h=>h.id==='e').defenses,ranged:'dodge'}};
+  for(const room of ['cistern','altar']){
+   c.heroes.find(h=>h.id==='c').overrides[room]={pos:'left'};
+   c.heroes.find(h=>h.id==='f').overrides[room]={pos:'right'};
+   c.heroes.find(h=>h.id==='d').overrides[room]={prep:[row('ward','center')]};
+  }
+ }
+ if(['medic','combined'].includes(kind)){
+  const h=c.heroes.find(h=>h.id==='f');h.trained='heal';h.training={'skill:heal':3};h.healing.threshold=.8;
+ }
+ return c;
+}
+
+// Enemy support uses the same action, mana, healing and summon rules as the party.
+const caller=id=>({...enemy(id,'引潮司祭','rear','spark',180,9),skills:{spark:9,sentinel:9},prep:[row('sentinel','front')]});
+const nurse=id=>({...enemy(id,'护潮药师','rear','spark',170,8),skills:{spark:8,heal:11},healing:{enabled:true,threshold:.8,target:'all',priority:'lowest'}});
+const hospice=[
+ {id:'gallery',name:'01 · 引潮病廊',note:'引潮司祭在后排，每次存活潮卫倒下后可再次召唤；每次消耗10法力与1符纸。击倒司祭会驱散其存活潮卫。只打前排会让支援者继续行动。',enemies:[enemy('hg1','病廊重卫','front','strike',230,10),caller('hg2')]},
+ {id:'cistern',name:'02 · 不息药庭',note:'后排护潮药师在自身行动点治疗生命比例最低且不高于80%的伤员；每次消耗5法力与1药草，替代普通攻击。两名重卫集中前排，群攻可一起压低生命，也可能让药师持续救护。',enemies:[enemy('hc1','药庭重卫','front','strike',220,11),enemy('hc2','药庭重卫','front','strike',220,11),nurse('hc3')]},
+ {id:'altar',name:'03 · 双灯心室',note:'司祭在中央、药师在后排，重卫挡住前排。集中中央可切断召唤，集中后排可阻止治疗，但无法用一次同位置群攻同时覆盖两位支援者。生命、法力与补给继承。',enemies:[enemy('ha1','心室重卫','front','strike',310,12),{...caller('ha2'),pos:'center'},nurse('ha3')]}
+];
+export function hospiceConfig(kind='front'){
+ if(!['front','source','sustain'].includes(kind))throw Error('未知疗所方案');
+ const c=archiveConfig();c.expedition='hospice';c.seed=1;c.supplies={herb:12,rune:12,arrow:12};
+ for(const id of ['b','c']){const h=c.heroes.find(h=>h.id===id);h.main=[row(id==='b'?'pierce':'lance','front'),row(id==='b'?'shot':'spark','front')];
+  if(kind!=='front')for(const room of ['gallery','cistern','altar']){const target=room==='altar'?'center':'rear';h.overrides[room]={main:h.main.map(r=>({...r,target}))};}
+ }
+ if(kind==='sustain'){const h=c.heroes.find(h=>h.id==='f');h.trained='heal';h.training={'skill:heal':3};h.healing.threshold=.8;}
+ return c;
+}
+
+export function roleHuntConfig(first='healer'){
+ if(!Object.hasOwn(ROLE_TARGETS,first))throw Error('未知优先职责');
+ const c=hospiceConfig('source');
+ for(const id of ['b','c']){const h=c.heroes.find(h=>h.id===id);h.overrides={};h.main=[row(id==='b'?'pierce':'lance',first),row(id==='b'?'pierce':'lance',first==='healer'?'summoner':'healer'),row(id==='b'?'shot':'spark','front')];}
+ return c;
+}
+
+const chapter=[...clone(archive),...clone(hospice).map((r,i)=>({...r,id:['infirmary','garden','heart'][i],name:['04 · 引潮病廊','05 · 不息药庭','06 · 双灯心室'][i]}))];
+export function tutorialConfig(){const c=defaults();c.expedition='tutorial';c.seed=1;return c;}
+export function chapterConfig(){
+ const c=archiveConfig(true);c.expedition='chapter';c.seed=1;c.supplies={herb:16,rune:24,arrow:20};c.rescueApproach='aid';c.bellApproach='study';
+ for(const id of ['b','c'])for(const room of ['infirmary','garden','heart']){const h=c.heroes.find(h=>h.id===id);h.overrides[room]={main:[row(id==='b'?'pierce':'lance','healer'),row(id==='b'?'pierce':'lance','summoner'),row(id==='b'?'shot':'spark','front')]};}
+ return c;
+}
+
+// Stage challenges use distinct enemy formations instead of multiplying every stat.
+const watchArcher=(id,pos)=>({...enemy(id,'猎灯弩手',pos,'shot',175,11),main:[row('shot','rear')],attrs:attrs(9,10,5,18,6,15,17,10)});
+const wardCaptain=id=>({...enemy(id,'铁潮旗卫','front','strike',330,11),gear:'plate',skills:{strike:11,guard:8},prep:[row('guard','self')],attrs:attrs(16,18,6,14,7,9,12,14)});
+const trials={
+ seasoned:[
+ {id:'gallery',name:'01 · 猎灯射廊',note:'后排弩手优先射击我方后排。只保护前排无法覆盖射手和吟游者；检查后排防御与救护，远程单体可以先处理弩手。',enemies:[wardCaptain('sg1'),watchArcher('sg2','rear')]},
+ {id:'cistern',name:'02 · 分灯救所',note:'药师在后排且法术抗性70%，召唤者在中央且远程抗性60%。射手处理药师，法师处理召唤者；给两人相同职责目标未必有效。',enemies:[enemy('sc1','救所守卫','front','strike',230,11),{...nurse('sc2'),hp:210,maxHp:210,resistances:{magic:70}},{...caller('sc3'),pos:'center',hp:210,maxHp:210,resistances:{ranged:60}}]},
+ {id:'altar',name:'03 · 破甲门庭',note:'重甲旗卫挡在前排，药师在后排、弩手在左翼。群攻无法同时覆盖三个位置；先切断治疗，再以破甲攻击处理旗卫。',enemies:[{...wardCaptain('sa1'),hp:390,maxHp:390},{...nurse('sa2'),hp:195,maxHp:195},watchArcher('sa3','left')]}
+ ],
+ veteran:[
+ {id:'gallery',name:'01 · 双翼伏弩',note:'两名弩手分列左右翼并射击后排；一次同位置群攻无法兼顾。治疗与防御的消耗会延续到后两场，避免在开场耗尽法力。',enemies:[wardCaptain('vg29a'),watchArcher('vg29b','left'),watchArcher('vg29c','right')]},
+ {id:'cistern',name:'02 · 镜潮议席',note:'中央群攻施法者与后排高法抗药师协作；我方中央堆叠会让群攻覆盖更多人。可调整站位，并由射手切断治疗。',enemies:[enemy('vc29a','议席重卫','front','strike',270,12),{...enemy('vc29b','镜潮审议者','center','wave',230,12),main:[row('wave','center'),row('spark','rear')],skills:{wave:12,spark:10}},{...nurse('vc29c'),hp:240,maxHp:240,resistances:{magic:75}}]},
+ {id:'altar',name:'03 · 三席合议',note:'旗卫、召唤者、药师分别处于前排、中央和后排。药师抗法、召唤者抗远程；长期续航与分工集火同时受考验，保留低消耗备用指令。',enemies:[{...wardCaptain('va29a'),hp:450,maxHp:450},{...caller('va29b'),pos:'center',hp:250,maxHp:250,resistances:{ranged:65}},{...nurse('va29c'),hp:250,maxHp:250,resistances:{magic:75}}]}
+ ]
+};
+export function trialConfig(route='seasoned',plan='roles'){
+ if(!['seasoned','veteran'].includes(route)||!['front','roles','adapted'].includes(plan))throw Error('未知阶段试炼方案');
+ const c=roleHuntConfig('healer');c.expedition=route;c.seed=1;c.supplies=route==='seasoned'?{herb:12,rune:12,arrow:12}:{herb:10,rune:10,arrow:10};
+ for(const h of c.heroes)h.overrides={};
+ if(plan==='front')for(const id of ['b','c']){const h=c.heroes.find(h=>h.id===id);h.main=h.main.map(r=>({...r,target:'front'}));}
+ if(plan==='adapted'){
+ const b=c.heroes.find(h=>h.id==='b'),m=c.heroes.find(h=>h.id==='c'),d=c.heroes.find(h=>h.id==='d'),f=c.heroes.find(h=>h.id==='f');
+ b.main=[row('pierce','healer'),row('shot','rear')];m.main=[row('lance','summoner'),row('spark','front')];
+ b.overrides.gallery={main:[row('pierce',route==='veteran'?'left':'rear'),row('shot',route==='veteran'?'right':'rear')]};m.overrides.gallery={main:[row('lance',route==='veteran'?'right':'rear'),row('spark',route==='veteran'?'left':'rear')]};
+ d.prep=[row('ward','rear')];f.healing.threshold=.8;
+ if(route==='veteran'){d.pos='left';f.pos='right';}
+ }
+ return c;
+}
+
+export function harborConfig(){const c=defaults();c.expedition='harbor';c.supplies={herb:12,rune:14,arrow:10};for(const h of c.heroes){h.item=['c','d','e','f'].includes(h.id)?'tonic':'salve';h.itemPolicy.threshold=h.item==='tonic'?.3:.5;}c.heroes[1].main=[row('pierce','healer'),row('shot','rear')];c.heroes[2].main=[row('wave','rear'),row('spark','rear')];c.heroes[3].overrides.harbor_pass={prep:[row('ward','rear')]};return c;}

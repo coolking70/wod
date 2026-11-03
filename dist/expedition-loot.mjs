@@ -1,0 +1,28 @@
+import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
+import {GEAR,ATTR} from './expedition-data.mjs';
+export const ROUTE_REWARDS={
+ harbor:{bonus:85,xp:30,firstGold:80,firstXp:30,pool:["beaconrod","quaycoat","tidecompass"]},
+ seasoned:{bonus:65,xp:25,firstGold:65,firstXp:25,pool:["tidebow","saltcloak","remedybag"]},
+ veteran:{bonus:90,xp:40,firstGold:90,firstXp:40,pool:["reliquaryshield","bellfocus","votivelute"]},
+ tutorial:{bonus:20,xp:0,firstGold:0,firstXp:0,pool:[]},
+ classic:{bonus:30,xp:5,firstGold:30,firstXp:10,pool:['reliquaryshield','tidebow']},
+ archive:{bonus:40,xp:10,firstGold:40,firstXp:15,pool:['bellfocus','saltcloak']},
+ hospice:{bonus:40,xp:10,firstGold:40,firstXp:15,pool:['remedybag','votivelute']},
+ survival:{bonus:50,xp:15,firstGold:50,firstXp:20,pool:['saltcloak','reliquaryshield']},
+ vigil:{bonus:50,xp:15,firstGold:50,firstXp:20,pool:['votivelute','bellfocus']},
+ scarcity:{bonus:60,xp:20,firstGold:60,firstXp:25,pool:['tidebow','remedybag']},
+ chapter:{bonus:80,xp:30,firstGold:80,firstXp:30,pool:['bellfocus','remedybag','reliquaryshield','tidebow','saltcloak','votivelute']}
+};
+for(const [route,id] of Object.entries({classic:'anchorseal',survival:'anchorseal',archive:'echocharm',vigil:'echocharm',hospice:'wardpendant',scarcity:'wardpendant'}))ROUTE_REWARDS[route].pool.push(id);
+ROUTE_REWARDS.chapter.pool.push('anchorseal','echocharm','wardpendant');
+export const isRelic=id=>!!GEAR[id]?.dungeonOnly;
+export function rewardPreview(route){const r=ROUTE_REWARDS[route];return `${route==='harbor'?'普通与风暴共用路线首通记录；风暴另有一次性委托（见港口委托）。每次通关另得1张海图；首次六人归航再得1张，2张可兑换指定装备。':''}每场20金币/每位出战者10经验；通关另加${r.bonus}金币/每位出战者${r.xp}经验。${r.pool.length?`通关必得1件：${r.pool.map(k=>GEAR[k].name).join('、')}；首次通关固定获得${GEAR[r.pool[0]].name}，额外${r.firstGold}金币/每位出战者${r.firstXp}经验。`:'引导路线无装备掉落和首次通关加成。'}`;}
+export function expeditionReward(report,{version=2,first=false,id=1}={}){const cleared=report.rooms.filter(r=>r.won).length;
+ if(version===1)return {cleared,gold:cleared*20+(report.won?20:0),xp:cleared*10};
+ const r=ROUTE_REWARDS[report.config.expedition],won=report.won,firstClear=won&&first;
+ // Loot uses its own deterministic stream; it never consumes combat randomness.
+ let x=(report.config.seed^Math.imul(id,0x45d9f3b))>>>0;for(const ch of report.config.expedition)x=Math.imul(x^ch.charCodeAt(0),16777619)>>>0;
+ const gear=won&&r.pool.length?r.pool[firstClear?0:x%r.pool.length]:null;
+ return {cleared,gold:cleared*20+(won?r.bonus:0)+(firstClear?r.firstGold:0),xp:cleared*10+(won?r.xp:0)+(firstClear?r.firstXp:0),firstClear,loot:gear?[gear]:[]};
+}
+export function gearDifference(current,next){const a=equipmentTotals(current),b=equipmentTotals(typeof current==='string'?next:replaceEquipment(current,next));return [['护甲',b.armor-a.armor],['生命上限',4*((b.bonus.con||0)-(a.bonus.con||0))],['法力上限',2*((b.bonus.int||0)-(a.bonus.int||0))+(b.bonus.wil||0)-(a.bonus.wil||0)],...Object.entries(ATTR).map(([k,name])=>[name,(b.bonus[k]||0)-(a.bonus[k]||0)]),...Object.entries({melee:'近战抗性(百分点)',ranged:'远程抗性(百分点)',magic:'法术抗性(百分点)'}).map(([k,name])=>[name,(b.resistances[k]||0)-(a.resistances[k]||0)])].filter(([,v])=>v!==0).map(([name,v])=>`${name} ${v>0?'+':''}${v}`).join(' / ')||'数值相同';}

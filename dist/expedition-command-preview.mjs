@@ -1,0 +1,24 @@
+import {clone,SKILLS,HEROES,roomsFor,resolveHeroPlan,gearSupports,gearRequirementName,POS} from './expedition-data.mjs';
+import {commandConfig,validateCommand} from './expedition-command.mjs';
+import {buildParty,chooseTargets} from './expedition-engine.mjs';
+export function companionPreview(g,tactics,id,mode,roomId=''){
+ if(!g.command||id===g.command.heroId||!HEROES.some(h=>h.id===id))throw Error('请选择伙伴');
+ const candidate=clone(g);candidate.command.companions[id]=mode;validateCommand(candidate.command);
+ const config=commandConfig(candidate,tactics),room=roomsFor(config).find(r=>r.id===roomId)||roomsFor(config)[0];
+ if(roomId&&room.id!==roomId)throw Error('未知房间');
+ for(const h of config.heroes){const m=g.members.find(m=>m.id===h.id);h.gear=clone(m.gear);h.training=clone(m.training);}
+ const party=buildParty(config).map(u=>({...u,...resolveHeroPlan(config.heroes.find(h=>h.id===u.id),room.id)})),actor=party.find(h=>h.id===id),enemies=room.enemies.map(u=>({...u,side:'enemy'}));
+ const rows=['prep','main'].flatMap(phase=>actor[phase].map(r=>{
+  const s=SKILLS[r.skill],warnings=[];let candidates=[];
+  if(s.requiresGear&&!gearSupports(actor.gear,s.requiresGear))warnings.push('缺少'+gearRequirementName(s.requiresGear));
+  if(s.item&&config.supplies[s.item]===0)warnings.push('出发补给中此耗材为0');
+  if(s.kind==='buff')candidates=chooseTargets(actor,party,s,r.target).map(u=>u.name);
+  if(s.kind==='attack'){
+   if(['healer','summoner'].includes(r.target))candidates=enemies.filter(u=>u.skills?.[r.target==='healer'?'heal':'sentinel']!==undefined&&u.hp>0).map(u=>u.name);
+   else {const chosen=chooseTargets(actor,[...party,...enemies],s,r.target);candidates=(s.mode==='all'?chosen:enemies.filter(u=>u.pos===chosen[0]?.pos&&u.hp>0)).map(u=>u.name);}
+   if(!candidates.length)warnings.push('本房初始敌人无此目标，将检查下一条指令');
+  }
+  return {phase,skill:r.skill,name:s.name,mode:r.mode,target:POS[r.target]||{self:'自身',all:'全队',healer:'治疗者',summoner:'召唤者'}[r.target],kind:s.kind,candidates,max:s.max,cost:s.cost||0,item:s.item||null,warnings};
+ }));
+ return {roomId:room.id,roomName:room.name,rows,healing:clone(actor.healing),heroId:g.command.heroId};
+}

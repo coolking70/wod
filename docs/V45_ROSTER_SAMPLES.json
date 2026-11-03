@@ -1,0 +1,1651 @@
+{
+  "sampleCount": 96,
+  "seeds": 8,
+  "note": "Laboratory configurations, not granted guild assets. Same starting equipment and supplies. Training uses 6 points per hero: specialization +2 and defense focus +2. Roster changes also change default tactics and specialization; not an isolated class-effect estimate.",
+  "rows": [
+    {
+      "lineup": "founders",
+      "trained": false,
+      "pass": "upper",
+      "summary": {
+        "wins": 8,
+        "full": 8,
+        "tempo": 4,
+        "seals": 4,
+        "rounds": 28.75,
+        "hp": 547,
+        "failed": 0,
+        "shortages": 21.25
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "hp": 531,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": false,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 529,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": false,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 31,
+          "hp": 529,
+          "failed": 0,
+          "shortages": 23,
+          "sealed": true,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 27,
+          "hp": 533,
+          "failed": 0,
+          "shortages": 19,
+          "sealed": false,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 580,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": true,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 537,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": false,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 30,
+          "hp": 548,
+          "failed": 0,
+          "shortages": 23,
+          "sealed": true,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "hp": 589,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": true,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "founders",
+      "trained": false,
+      "pass": "lower",
+      "summary": {
+        "wins": 8,
+        "full": 8,
+        "tempo": 6,
+        "seals": 4,
+        "rounds": 27.125,
+        "hp": 550.5,
+        "failed": 0,
+        "shortages": 19.25
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "hp": 487,
+          "failed": 0,
+          "shortages": 18,
+          "sealed": false,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 548,
+          "failed": 0,
+          "shortages": 20,
+          "sealed": false,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 27,
+          "hp": 541,
+          "failed": 0,
+          "shortages": 19,
+          "sealed": true,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "hp": 540,
+          "failed": 0,
+          "shortages": 17,
+          "sealed": false,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "hp": 532,
+          "failed": 0,
+          "shortages": 19,
+          "sealed": true,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "alive": 6,
+          "rounds": 24,
+          "hp": 592,
+          "failed": 0,
+          "shortages": 17,
+          "sealed": false,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "hp": 554,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": true,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 31,
+          "hp": 610,
+          "failed": 0,
+          "shortages": 23,
+          "sealed": true,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "founders",
+      "trained": true,
+      "pass": "upper",
+      "summary": {
+        "wins": 8,
+        "full": 8,
+        "tempo": 7,
+        "seals": 6,
+        "rounds": 27,
+        "hp": 577.375,
+        "failed": 0,
+        "shortages": 20.375
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 577,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": false,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 25,
+          "hp": 561,
+          "failed": 0,
+          "shortages": 19,
+          "sealed": true,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "hp": 589,
+          "failed": 0,
+          "shortages": 20,
+          "sealed": true,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 538,
+          "failed": 0,
+          "shortages": 21,
+          "sealed": false,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "hp": 622,
+          "failed": 0,
+          "shortages": 23,
+          "sealed": true,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "alive": 6,
+          "rounds": 27,
+          "hp": 581,
+          "failed": 0,
+          "shortages": 20,
+          "sealed": true,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "hp": 611,
+          "failed": 0,
+          "shortages": 19,
+          "sealed": true,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 27,
+          "hp": 540,
+          "failed": 0,
+          "shortages": 20,
+          "sealed": true,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "founders",
+      "trained": true,
+      "pass": "lower",
+      "summary": {
+        "wins": 8,
+        "full": 8,
+        "tempo": 8,
+        "seals": 6,
+        "rounds": 26.25,
+        "hp": 576,
+        "failed": 0,
+        "shortages": 18.125
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "alive": 6,
+          "rounds": 25,
+          "hp": 617,
+          "failed": 0,
+          "shortages": 15,
+          "sealed": false,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 24,
+          "hp": 534,
+          "failed": 0,
+          "shortages": 16,
+          "sealed": true,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 603,
+          "failed": 0,
+          "shortages": 20,
+          "sealed": true,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 27,
+          "hp": 570,
+          "failed": 0,
+          "shortages": 20,
+          "sealed": false,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "alive": 6,
+          "rounds": 25,
+          "hp": 578,
+          "failed": 0,
+          "shortages": 17,
+          "sealed": true,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "alive": 6,
+          "rounds": 27,
+          "hp": 523,
+          "failed": 0,
+          "shortages": 19,
+          "sealed": true,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "hp": 607,
+          "failed": 0,
+          "shortages": 18,
+          "sealed": true,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "hp": 576,
+          "failed": 0,
+          "shortages": 20,
+          "sealed": true,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleScholar",
+      "trained": false,
+      "pass": "upper",
+      "summary": {
+        "wins": 6,
+        "full": 6,
+        "tempo": 0,
+        "seals": 4,
+        "rounds": 41.5,
+        "hp": 477.75,
+        "failed": 0,
+        "shortages": 60
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "alive": 4,
+          "rounds": 43,
+          "hp": 412,
+          "failed": 0,
+          "shortages": 63,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 37,
+          "hp": 444,
+          "failed": 0,
+          "shortages": 56,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 39,
+          "hp": 547,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": true,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 42,
+          "hp": 465,
+          "failed": 0,
+          "shortages": 54,
+          "sealed": false,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "alive": 6,
+          "rounds": 42,
+          "hp": 559,
+          "failed": 0,
+          "shortages": 52,
+          "sealed": true,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "alive": 5,
+          "rounds": 43,
+          "hp": 435,
+          "failed": 0,
+          "shortages": 71,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 43,
+          "hp": 445,
+          "failed": 0,
+          "shortages": 74,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 43,
+          "hp": 515,
+          "failed": 0,
+          "shortages": 62,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleScholar",
+      "trained": false,
+      "pass": "lower",
+      "summary": {
+        "wins": 8,
+        "full": 8,
+        "tempo": 0,
+        "seals": 4,
+        "rounds": 36,
+        "hp": 547,
+        "failed": 0,
+        "shortages": 50
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "alive": 6,
+          "rounds": 36,
+          "hp": 539,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": false,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 38,
+          "hp": 561,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": false,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 35,
+          "hp": 562,
+          "failed": 0,
+          "shortages": 50,
+          "sealed": true,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 34,
+          "hp": 536,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": false,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "alive": 6,
+          "rounds": 38,
+          "hp": 513,
+          "failed": 0,
+          "shortages": 60,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "alive": 6,
+          "rounds": 37,
+          "hp": 520,
+          "failed": 0,
+          "shortages": 54,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 38,
+          "hp": 592,
+          "failed": 0,
+          "shortages": 50,
+          "sealed": true,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 32,
+          "hp": 553,
+          "failed": 0,
+          "shortages": 42,
+          "sealed": true,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 10
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleScholar",
+      "trained": true,
+      "pass": "upper",
+      "summary": {
+        "wins": 7,
+        "full": 7,
+        "tempo": 0,
+        "seals": 6,
+        "rounds": 37.875,
+        "hp": 529.75,
+        "failed": 0,
+        "shortages": 48
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "alive": 6,
+          "rounds": 36,
+          "hp": 502,
+          "failed": 0,
+          "shortages": 44,
+          "sealed": false,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 35,
+          "hp": 588,
+          "failed": 0,
+          "shortages": 44,
+          "sealed": true,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 38,
+          "hp": 560,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": true,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 36,
+          "hp": 485,
+          "failed": 0,
+          "shortages": 44,
+          "sealed": false,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "alive": 4,
+          "rounds": 45,
+          "hp": 397,
+          "failed": 0,
+          "shortages": 66,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "alive": 6,
+          "rounds": 39,
+          "hp": 584,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": true,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 38,
+          "hp": 552,
+          "failed": 0,
+          "shortages": 46,
+          "sealed": true,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 36,
+          "hp": 570,
+          "failed": 0,
+          "shortages": 44,
+          "sealed": true,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 10
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleScholar",
+      "trained": true,
+      "pass": "lower",
+      "summary": {
+        "wins": 8,
+        "full": 8,
+        "tempo": 0,
+        "seals": 6,
+        "rounds": 33.5,
+        "hp": 527.875,
+        "failed": 0,
+        "shortages": 45.75
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "alive": 6,
+          "rounds": 36,
+          "hp": 545,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": false,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "alive": 6,
+          "rounds": 35,
+          "hp": 596,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": true,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "alive": 6,
+          "rounds": 32,
+          "hp": 524,
+          "failed": 0,
+          "shortages": 46,
+          "sealed": true,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "alive": 6,
+          "rounds": 30,
+          "hp": 494,
+          "failed": 0,
+          "shortages": 40,
+          "sealed": false,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "alive": 6,
+          "rounds": 34,
+          "hp": 535,
+          "failed": 0,
+          "shortages": 46,
+          "sealed": true,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "alive": 6,
+          "rounds": 35,
+          "hp": 490,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": true,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "rounds": 35,
+          "hp": 501,
+          "failed": 0,
+          "shortages": 48,
+          "sealed": true,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 10
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "alive": 6,
+          "rounds": 31,
+          "hp": 538,
+          "failed": 0,
+          "shortages": 42,
+          "sealed": true,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 10
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleHealer",
+      "trained": false,
+      "pass": "upper",
+      "summary": {
+        "wins": 0,
+        "full": 0,
+        "tempo": 0,
+        "seals": 1,
+        "rounds": 37,
+        "hp": 163.375,
+        "failed": 0,
+        "shortages": 67.5
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "alive": 4,
+          "rounds": 39,
+          "hp": 298,
+          "failed": 0,
+          "shortages": 66,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 2,
+          "won": false,
+          "alive": 0,
+          "rounds": 33,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 42,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 3,
+          "won": false,
+          "alive": 0,
+          "rounds": 53,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 145,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "alive": 5,
+          "rounds": 33,
+          "hp": 453,
+          "failed": 0,
+          "shortages": 55,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "alive": 0,
+          "rounds": 35,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 58,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "alive": 1,
+          "rounds": 34,
+          "hp": 110,
+          "failed": 0,
+          "shortages": 57,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 7,
+          "won": false,
+          "alive": 4,
+          "rounds": 34,
+          "hp": 362,
+          "failed": 0,
+          "shortages": 55,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "alive": 2,
+          "rounds": 35,
+          "hp": 84,
+          "failed": 0,
+          "shortages": 62,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleHealer",
+      "trained": false,
+      "pass": "lower",
+      "summary": {
+        "wins": 0,
+        "full": 0,
+        "tempo": 0,
+        "seals": 4,
+        "rounds": 45.25,
+        "hp": 0,
+        "failed": 0,
+        "shortages": 116.625
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "alive": 0,
+          "rounds": 45,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 85,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": false,
+          "alive": 0,
+          "rounds": 47,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 129,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": false,
+          "alive": 0,
+          "rounds": 46,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 114,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "alive": 0,
+          "rounds": 44,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 128,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "alive": 0,
+          "rounds": 49,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 137,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "alive": 0,
+          "rounds": 42,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 118,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": false,
+          "alive": 0,
+          "rounds": 46,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 135,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "alive": 0,
+          "rounds": 43,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 87,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleHealer",
+      "trained": true,
+      "pass": "upper",
+      "summary": {
+        "wins": 0,
+        "full": 0,
+        "tempo": 0,
+        "seals": 5,
+        "rounds": 53.125,
+        "hp": 27,
+        "failed": 0,
+        "shortages": 138.25
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "alive": 0,
+          "rounds": 53,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 126,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 2,
+          "won": false,
+          "alive": 0,
+          "rounds": 62,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 189,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": false,
+          "alive": 0,
+          "rounds": 55,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 150,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "alive": 0,
+          "rounds": 48,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 123,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "alive": 0,
+          "rounds": 59,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 163,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "alive": 4,
+          "rounds": 34,
+          "hp": 216,
+          "failed": 0,
+          "shortages": 61,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 7,
+          "won": false,
+          "alive": 0,
+          "rounds": 56,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 141,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "alive": 0,
+          "rounds": 58,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 153,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "lineup": "doubleHealer",
+      "trained": true,
+      "pass": "lower",
+      "summary": {
+        "wins": 0,
+        "full": 0,
+        "tempo": 0,
+        "seals": 6,
+        "rounds": 48,
+        "hp": 0,
+        "failed": 0,
+        "shortages": 112.875
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "alive": 0,
+          "rounds": 51,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 115,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": false,
+          "alive": 0,
+          "rounds": 47,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 115,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": false,
+          "alive": 0,
+          "rounds": 50,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 106,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "alive": 0,
+          "rounds": 42,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 103,
+          "sealed": false,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "alive": 0,
+          "rounds": 44,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 109,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "alive": 0,
+          "rounds": 50,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 131,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": false,
+          "alive": 0,
+          "rounds": 48,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 107,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "alive": 0,
+          "rounds": 52,
+          "hp": 0,
+          "failed": 0,
+          "shortages": 117,
+          "sealed": true,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    }
+  ]
+}

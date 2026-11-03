@@ -1,0 +1,1411 @@
+{
+  "sampleCount": 64,
+  "seeds": 16,
+  "note": "Same starting roster, equipment, training, supplies and roles tactics. Only reserve differs within each route. Fixed seal policy; diagnostic sample, not a guarantee.",
+  "rows": [
+    {
+      "pass": "upper",
+      "reserve": "none",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "attempts": 0,
+        "seals": 0,
+        "tempo": 8,
+        "meanRounds": 28.4375,
+        "meanHp": 560.25
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 583,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 594,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 1,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 564,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 546,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 589,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 1,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 544,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 618,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 538,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 556,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 588,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 546,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 558,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 536,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 512,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 1,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 595,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 497,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 0,
+          "attempted": false,
+          "success": false,
+          "released": false
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "reserve": "seal",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "attempts": 16,
+        "seals": 10,
+        "tempo": 8,
+        "meanRounds": 28.75,
+        "meanHp": 557.375
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 531,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 5,
+          "firstSkip": 403,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 529,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 405,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 529,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 4,
+          "firstSkip": 424,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 533,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 5,
+          "firstSkip": 401,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 580,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 398,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 537,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 397,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 548,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 4,
+          "firstSkip": 399,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 589,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 4,
+          "firstSkip": 422,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 572,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 389,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 592,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 402,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 584,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 4,
+          "firstSkip": 392,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 546,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 5,
+          "firstSkip": 403,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 552,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 395,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 570,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 403,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 553,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 3,
+          "firstSkip": 410,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 573,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 4,
+          "firstSkip": 400,
+          "replaced": 1,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": true,
+          "released": true
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "reserve": "none",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "attempts": 16,
+        "seals": 10,
+        "tempo": 12,
+        "meanRounds": 27.3125,
+        "meanHp": 557.75
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 487,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 548,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 541,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 540,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 532,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 24,
+          "hp": 592,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 554,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 610,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 576,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 602,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 586,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 558,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rounds": 25,
+          "hp": 571,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 569,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": false
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 541,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": false
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 517,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "none",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": false
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "reserve": "seal",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "attempts": 16,
+        "seals": 10,
+        "tempo": 12,
+        "meanRounds": 27.3125,
+        "meanHp": 557.75
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 487,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 548,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 541,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 540,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 532,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 24,
+          "hp": 592,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 2,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 554,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 610,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 576,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 602,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 586,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 558,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rounds": 25,
+          "hp": 571,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 569,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 4,
+          "attempted": true,
+          "success": false,
+          "released": true
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 541,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": true
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 517,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "policy": "seal",
+          "skips": 0,
+          "firstSkip": null,
+          "replaced": 0,
+          "failedActions": 0,
+          "arrivalRunes": 3,
+          "attempted": true,
+          "success": true,
+          "released": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3871 @@
+{
+  "sampleCount": 192,
+  "seeds": 8,
+  "note": "Deterministic diagnostic samples; resistant profile is an experimental equipment comparison, not fresh guild inventory. Not a statistical balance guarantee.",
+  "rows": [
+    {
+      "pass": "adaptive",
+      "task": "adaptive",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 600,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 487,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 553,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 574,
+          "rounds": 11,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 620,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ]
+    },
+    {
+      "pass": "adaptive",
+      "task": "adaptive",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 615,
+          "rounds": 14,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 605,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 586,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 596,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 578,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 612,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "adaptive",
+      "task": "seal",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 600,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 487,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 553,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 574,
+          "rounds": 11,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 620,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ]
+    },
+    {
+      "pass": "adaptive",
+      "task": "seal",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 615,
+          "rounds": 14,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 605,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 586,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 596,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 578,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 612,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "adaptive",
+      "task": "salvage",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 621,
+          "rounds": 13,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 568,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 580,
+          "rounds": 14,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 583,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 595,
+          "rounds": 12,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 620,
+          "rounds": 12,
+          "supplies": {
+            "herb": 12,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 588,
+          "rounds": 12,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        }
+      ]
+    },
+    {
+      "pass": "adaptive",
+      "task": "salvage",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 612,
+          "rounds": 14,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 552,
+          "rounds": 13,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 591,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 570,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 525,
+          "rounds": 12,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 600,
+          "rounds": 12,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 554,
+          "rounds": 13,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 548,
+          "rounds": 13,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "adaptive",
+      "task": "conserve",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 599,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 618,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 602,
+          "rounds": 11,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 614,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 12,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 573,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 640,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "adaptive",
+      "task": "conserve",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 585,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 594,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 5
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 593,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 554,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 541,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 617,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 570,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 578,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "adaptive",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 600,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 487,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 553,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 574,
+          "rounds": 11,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 620,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "adaptive",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 503,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 588,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 557,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 590,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 619,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 620,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "seal",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 600,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 487,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 553,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 574,
+          "rounds": 11,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 620,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "seal",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 503,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 588,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 557,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 590,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 619,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 620,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 598,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "salvage",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 621,
+          "rounds": 13,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 568,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 580,
+          "rounds": 14,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 583,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 595,
+          "rounds": 12,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 620,
+          "rounds": 12,
+          "supplies": {
+            "herb": 12,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 588,
+          "rounds": 12,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "salvage",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 625,
+          "rounds": 14,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 568,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 572,
+          "rounds": 13,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 588,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 600,
+          "rounds": 12,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 620,
+          "rounds": 12,
+          "supplies": {
+            "herb": 12,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 561,
+          "rounds": 13,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 627,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "conserve",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 599,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 618,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 602,
+          "rounds": 11,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 614,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 12,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 573,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 640,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "task": "conserve",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 599,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 610,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 606,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 607,
+          "rounds": 11,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 614,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 608,
+          "rounds": 13,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 578,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 640,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "adaptive",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 615,
+          "rounds": 14,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 574,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 592,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 570,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 571,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 612,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "adaptive",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 615,
+          "rounds": 14,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 605,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 586,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 596,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 578,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 612,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "seal",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 615,
+          "rounds": 14,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 574,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 592,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 570,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 605,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 571,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 612,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "seal",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 615,
+          "rounds": 14,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 605,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 623,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 586,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 596,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 603,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 578,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "sealed": true,
+          "hp": 612,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "salvage",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 614,
+          "rounds": 13,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 555,
+          "rounds": 12,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 585,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 536,
+          "rounds": 14,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 557,
+          "rounds": 12,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 575,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 550,
+          "rounds": 13,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 537,
+          "rounds": 12,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "salvage",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 612,
+          "rounds": 14,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 552,
+          "rounds": 13,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 591,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 570,
+          "rounds": 12,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 525,
+          "rounds": 12,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 600,
+          "rounds": 12,
+          "supplies": {
+            "herb": 13,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 554,
+          "rounds": 13,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "salvage",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 548,
+          "rounds": 13,
+          "supplies": {
+            "herb": 15,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "conserve",
+      "profile": "starter",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 585,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 605,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 587,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 572,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 519,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 611,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 566,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 578,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "task": "conserve",
+      "profile": "resistant",
+      "wins": 8,
+      "full": 8,
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 585,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 594,
+          "rounds": 13,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 5
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 593,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 554,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 541,
+          "rounds": 12,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 617,
+          "rounds": 12,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 8
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 570,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "sealed": false,
+          "hp": 578,
+          "rounds": 11,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 8
+          }
+        }
+      ]
+    }
+  ]
+}

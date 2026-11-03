@@ -1,0 +1,10 @@
+import {equipmentKit} from '../dist/expedition-equipment.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';
+import {readiness} from '../dist/expedition-readiness.mjs';
+import {newGuild,depart,guildConfig,learnAdvanced} from '../dist/expedition-guild.mjs';
+import {defaults,clone} from '../dist/expedition-data.mjs';
+import {installAdvanced} from '../dist/expedition-growth.mjs';
+test('核对显示实际公会资产，准确标示模板差异且不修改来源',()=>{const g=newGuild(),c=defaults();c.heroes[0].gear=equipmentKit('field');c.heroes[0].training={'skill:strike':1};const before=clone({g,c}),r=readiness(g,c);assert.equal(r.heroes[0].gear.armor,'plate');assert.equal(r.heroes[0].gearChanged,true);assert.equal(r.heroes[0].trainingChanged,true);assert.equal(r.heroes[0].trainingSpent,0);assert.deepEqual(r.heroes[0].gear,guildConfig(g,c).heroes[0].gear);assert.deepEqual({g,c},before);});
+test('房间覆盖显示实际站位指令，并检查全路线装备与资源',()=>{const g=newGuild(),c=defaults();g.members[0].owned.push('field','starterblade');g.members[0].gear=equipmentKit('field');c.heroes[0].overrides.gallery={pos:'rear',main:[{skill:'shieldbash',target:'front',mode:'repeat'}]};const all=readiness(g,c),room=readiness(g,c,'gallery');assert.equal(room.heroes[0].plan.pos,'rear');assert.ok(all.heroes[0].warnings.some(t=>t.includes('盾缘重击')&&t.includes('携盾')));assert.equal(room.heroes[0].plan.main[0].skill,'shieldbash');c.supplies.herb=0;assert.ok(readiness(g,c).heroes[5].warnings.some(t=>t.includes('药草')));assert.throws(()=>readiness(g,c,'unknown'));});
+test('未学习进阶技能显示阻断原因，学习后可出征',()=>{let g=newGuild();const c=installAdvanced(defaults(),'c','tidebolt');let r=readiness(g,c);assert.equal(r.canDepart,false);assert.equal(r.errors[0].id,'c');assert.match(r.errors[0].text,/凝水矢/);g.members[2].xp=60;g=learnAdvanced(g,'c');assert.equal(readiness(g,c).canDepart,true);});
+test('未结算阻止再次出征，装备警告仅提示不替玩家改战术',()=>{const c=defaults(),g=newGuild();g.members[0].owned.push('field','starterblade');g.members[0].gear=equipmentKit('field');const r=readiness(g,c);assert.equal(r.canDepart,true);assert.ok(r.heroes[0].warnings.length);assert.equal(readiness(depart(g,c),c).canDepart,false);});

@@ -1,0 +1,16 @@
+import {harborConfig,trialConfig,tutorialConfig,chapterConfig,defaults,challengeConfig,archiveConfig,scarcityConfig,survivalConfig,hospiceConfig,roomsFor} from './expedition-data.mjs';
+export const ADVENTURES=[
+ {id:"harbor",title:"盐风港",tag:"第二章 · 自动分支远征",image:"saltwind-harbor-v41.png",desc:"跨越栈桥或潮渠，在补给与封印之间取舍，重燃无光灯塔。",focus:"36份补给、四场连续遭遇。分支按战前策略和真实队伍状态自动执行。"},
+ {id:'seasoned',title:'裂潮哨站',tag:'熟练试炼 · 分工与保护',image:'last-lantern-v17.png',desc:'后排狙击、分离的治疗与召唤支援，检验队员分工。',focus:'建议熟练阶段；36份补给，三场连续遭遇。'},
+ {id:'veteran',title:'沉钟议庭',tag:'资深试炼 · 站位与续航',image:'sunken-bell-v10.png',desc:'双翼伏弩、中央群攻与三席合议，保存资源应对末场。',focus:'建议资深阶段；30份补给，三场连续遭遇。'},
+ {id:'tutorial',title:'回声侧廊',tag:'首次出征 · 单场',image:'abbey.png',desc:'用一场真实战斗认识前后排、辅助与战报。',focus:'建议先体验，随时可跳过。'},
+ {id:'chapter',title:'沉钟之下',tag:'第一章 · 六场连续远征',image:'sunken-bell-v10.png',desc:'穿过封库与疗所，救援、解读沉钟，再切断深处的支援。',focus:'60份补给；生命、法力和道具次数连续继承。'},
+ {id:'classic',title:'沉没修道院',tag:'短线 · 基础协作',image:'abbey.png',desc:'守卫、弩手和祭司，练习站位与辅助顺序。',focus:'三场基础遭遇。'},
+ {id:'hospice',title:'溺潮疗所',tag:'短线 · 职责集火',image:'drowned-infirmary-v21.png',desc:'重卫背后的司祭与药师，谁应先倒下？',focus:'可挑战封存物资与准时交接。'},
+ {id:'archive',title:'封库试炼',tag:'事件 · 抗性与分支',image:'mirror-gallery-v9.png',desc:'根据抗性切换输出，决定如何应对信使和沉钟。',focus:'事件成功改变第三场遭遇。'},
+ {id:'survival',title:'守灯归途',tag:'挑战 · 生存保护',image:'last-lantern-v17.png',desc:'后排弩手与中央群攻考验全队保护。',focus:'36份补给，连续承伤。'},
+ {id:'vigil',title:'潮汐异变',tag:'挑战 · 召唤与碎印',image:'oathbreaker-v5.png',desc:'守誓者半血碎印，提前保留终场资源。',focus:'召唤物随主人倒下消散。'},
+ {id:'scarcity',title:'断潮封库',tag:'挑战 · 限时与物资',image:'flood-gate-v15.png',desc:'每场五回合，24份补给，效率与续航同时受限。',focus:'建议熟悉基础规则后挑战。'}
+];
+export function adventureConfig(id){const factories={harbor:harborConfig,seasoned:()=>trialConfig("seasoned"),veteran:()=>trialConfig("veteran"),tutorial:tutorialConfig,chapter:chapterConfig,classic:defaults,vigil:challengeConfig,archive:()=>archiveConfig(true),scarcity:()=>scarcityConfig(true),survival:()=>survivalConfig('formation'),hospice:()=>hospiceConfig('source')};if(!factories[id])throw Error('未知冒险');return factories[id]();}
+export function chapterEnding(report){if(!['chapter','harbor'].includes(report.config.expedition))return null;if(report.config.expedition==='harbor')return {title:report.won?'无光灯塔重新照亮盐风港。':'灯塔尚未点亮，远征队撤回海岸。',image:report.won?'harbor-seal-v41.png':'saltwind-harbor-v41.png',text:`通过 ${report.rooms.filter(r=>r.won).length}/4 场；${report.party.filter(u=>u.hp>0).length} 人存活。路线：${report.rooms.map(r=>r.name).join(' → ')}。`,won:report.won};const alive=report.party.filter(u=>u.hp>0).length,cleared=report.rooms.filter(r=>r.won).length;return {title:report.won?(alive===6?'沉钟归于寂静，六人归航。':'沉钟归于寂静，有人未能归航。'):'远征止步，灯火仍在等待。',image:report.won?'last-lantern-v17.png':'abbey.png',text:`肃清 ${cleared}/${roomsFor(report.config).length} 场；${alive} 人存活。药草 ${report.supplies.herb}、符纸 ${report.supplies.rune}、箭矢 ${report.supplies.arrow}。`,won:report.won};}

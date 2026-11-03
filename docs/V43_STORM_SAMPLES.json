@@ -1,0 +1,1453 @@
+{
+  "sampleCount": 72,
+  "seeds": 12,
+  "note": "Same starting equipment, training and supplies. Compare tactics only. Diagnostic samples, not a guarantee.",
+  "rows": [
+    {
+      "pass": "upper",
+      "plan": "baseline",
+      "summary": {
+        "wins": 12,
+        "full": 12,
+        "meanRounds": 30.833333333333332,
+        "meanHp": 555.75,
+        "meanEnemyHealing": 904.9166666666666
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 585,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 935
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 32,
+          "hp": 550,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1032
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 556,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 786
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 520,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 862
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 607,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 627
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 543,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1001
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 568,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 785
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 581,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 739
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 493,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 913
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 32,
+          "hp": 540,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1006
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 576,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1046
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 550,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1127
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "plan": "roles",
+      "summary": {
+        "wins": 12,
+        "full": 12,
+        "meanRounds": 28.25,
+        "meanHp": 568.6666666666666,
+        "meanEnemyHealing": 925.0833333333334
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 583,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1006
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 594,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 742
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 564,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 950
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 546,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1046
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 589,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 827
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 544,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 818
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 618,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 743
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 538,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1046
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 556,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1046
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 588,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 871
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 546,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1046
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 558,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 960
+        }
+      ]
+    },
+    {
+      "pass": "upper",
+      "plan": "spread",
+      "summary": {
+        "wins": 12,
+        "full": 7,
+        "meanRounds": 34,
+        "meanHp": 503,
+        "meanEnemyHealing": 1048.5
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 5,
+          "rounds": 34,
+          "hp": 472,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1082
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 37,
+          "hp": 503,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1354
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 530,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1091
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 32,
+          "hp": 584,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 962
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 5,
+          "rounds": 32,
+          "hp": 469,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "salvage",
+            "beacon"
+          ],
+          "enemyHealing": 674
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 531,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1129
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 32,
+          "hp": 550,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 874
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 5,
+          "rounds": 32,
+          "hp": 414,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 875
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 549,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1008
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 38,
+          "hp": 545,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1351
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 4,
+          "rounds": 39,
+          "hp": 399,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 1397
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 5,
+          "rounds": 33,
+          "hp": 490,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "upper",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 785
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "plan": "baseline",
+      "summary": {
+        "wins": 12,
+        "full": 12,
+        "meanRounds": 28.333333333333332,
+        "meanHp": 527.6666666666666,
+        "meanEnemyHealing": 688.25
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 484,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 610
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 518,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 681
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 534,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 691
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 549,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 695
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 508,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 826
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 536,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 650
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 572,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 680
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 498,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 564
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 546,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 782
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 509,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 681
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 557,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 714
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 521,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 685
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "plan": "roles",
+      "summary": {
+        "wins": 12,
+        "full": 12,
+        "meanRounds": 27.416666666666668,
+        "meanHp": 560.5,
+        "meanEnemyHealing": 721.25
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 487,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 782
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 548,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 781
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 541,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 695
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 540,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 556
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 26,
+          "hp": 532,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 609
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 24,
+          "hp": 592,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 500
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 554,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 781
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 610,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 969
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 576,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 739
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 28,
+          "hp": 602,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 767
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 27,
+          "hp": 586,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 652
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 558,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 824
+        }
+      ]
+    },
+    {
+      "pass": "lower",
+      "plan": "spread",
+      "summary": {
+        "wins": 12,
+        "full": 12,
+        "meanRounds": 31.666666666666668,
+        "meanHp": 570.5833333333334,
+        "meanEnemyHealing": 754.75
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 506,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 784
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rounds": 29,
+          "hp": 604,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 596
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 596,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 651
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rounds": 32,
+          "hp": 570,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 863
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 579,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 696
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 544,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "bypass",
+            "beacon"
+          ],
+          "enemyHealing": 903
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 574,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 611
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rounds": 30,
+          "hp": 546,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 692
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rounds": 34,
+          "hp": 622,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 908
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rounds": 33,
+          "hp": 597,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 773
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rounds": 32,
+          "hp": 543,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 912
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rounds": 31,
+          "hp": 566,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "nodes": [
+            "gate",
+            "lower",
+            "seal",
+            "beacon"
+          ],
+          "enemyHealing": 668
+        }
+      ]
+    }
+  ]
+}

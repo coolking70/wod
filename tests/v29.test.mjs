@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {trialConfig,roomsFor,supplyBudget,clone} from '../dist/expedition-data.mjs';
+import {validate,simulate,resistanceOf} from '../dist/expedition-engine.mjs';
+import {sceneFor} from '../dist/expedition-stage.mjs';
+import {newGuild,depart,pendingReward,claim} from '../dist/expedition-guild.mjs';
+import {ADVENTURES,adventureConfig} from '../dist/expedition-adventure.mjs';
+test('阶段试炼入口、预算和三个对照方案有效且独立',()=>{for(const route of ['seasoned','veteran']){assert.ok(ADVENTURES.some(r=>r.id===route));validate(adventureConfig(route));for(const plan of ['front','roles','adapted']){const c=trialConfig(route,plan);validate(c);assert.equal(roomsFor(c).length,3);assert.equal(Object.values(c.supplies).reduce((a,b)=>a+b,0),supplyBudget(c));}const a=trialConfig(route),b=trialConfig(route);a.heroes[0].prep=[];assert.notDeepEqual(a,b);}assert.throws(()=>trialConfig('invalid'));});
+test('敌方职责与抗性要求分工，资深首房双翼无法被同位置群攻同时覆盖',()=>{const rooms=roomsFor(trialConfig('seasoned'));assert.ok(resistanceOf(rooms[1].enemies.find(x=>x.skills.heal),'magic')>=70);assert.ok(resistanceOf(rooms[1].enemies.find(x=>x.skills.sentinel),'ranged')>=60);const shooters=roomsFor(trialConfig('veteran'))[0].enemies.filter(x=>x.name==='猎灯弩手');assert.deepEqual(shooters.map(x=>x.pos),['left','right']);assert.ok(shooters.every(x=>x.main[0].target==='rear'));});
+test('新增路线实际发生敌方治疗召唤与后排狙击，房间间不恢复补给',()=>{const c=trialConfig('seasoned','front'),before=clone(c),r=simulate(c);assert.deepEqual(c,before);assert.ok(r.events.some(e=>e.type==='heal'&&e.actor==='sc2'));assert.ok(r.events.some(e=>e.type==='summon'&&e.actor==='sc3'));assert.ok(r.events.some(e=>e.type==='attack'&&e.actor==='sg2'&&e.targets.some(id=>['b','e'].includes(id))));const end=r.events.find(e=>e.type==='victory'&&e.roomIndex===0),start=r.events.find(e=>e.roomIndex===1);assert.deepEqual(start.supplies,end.supplies);});
+test('阶段建议不阻断新公会出征，新路线奖励与首通记录可结算',()=>{for(const route of ['seasoned','veteran']){const g=depart(newGuild(),trialConfig(route,'adapted'));const reward=pendingReward(g);const done=claim(g);assert.equal(done.history[0].route,route);assert.equal(done.gold,reward.gold);if(reward.loot.length)assert.equal(done.warehouse[reward.loot[0]],1);}});
+test('新场景使用真实房间名，其他路线标签不受影响',()=>{for(const route of ['seasoned','veteran']){const c=trialConfig(route);for(let i=0;i<3;i++)assert.equal(sceneFor(c,i).label,roomsFor(c)[i].name);}});

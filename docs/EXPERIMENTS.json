@@ -1,0 +1,260 @@
+{
+  "seeds": {
+    "start": 731,
+    "count": 20
+  },
+  "variants": {
+    "defense": {
+      "wins": 20,
+      "meanSurvivors": 11.9,
+      "meanHP": 1048,
+      "meanRounds": 10.5,
+      "seed731": [
+        {
+          "name": "弩手侧廊",
+          "won": true,
+          "hp": 1492,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "腐蚀大厅",
+          "won": true,
+          "hp": 1289,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "分翼守卫",
+          "won": true,
+          "hp": 1107,
+          "survivors": 12,
+          "rounds": 4
+        },
+        {
+          "name": "封印圣坛",
+          "won": true,
+          "hp": 1030,
+          "survivors": 12,
+          "rounds": 3
+        }
+      ]
+    },
+    "assault": {
+      "wins": 20,
+      "meanSurvivors": 11.2,
+      "meanHP": 838,
+      "meanRounds": 8.5,
+      "seed731": [
+        {
+          "name": "弩手侧廊",
+          "won": true,
+          "hp": 1366,
+          "survivors": 12,
+          "rounds": 1
+        },
+        {
+          "name": "腐蚀大厅",
+          "won": true,
+          "hp": 1235,
+          "survivors": 12,
+          "rounds": 1
+        },
+        {
+          "name": "分翼守卫",
+          "won": true,
+          "hp": 972,
+          "survivors": 11,
+          "rounds": 3
+        },
+        {
+          "name": "封印圣坛",
+          "won": true,
+          "hp": 741,
+          "survivors": 10,
+          "rounds": 4
+        }
+      ]
+    },
+    "basic": {
+      "wins": 20,
+      "meanSurvivors": 7.8,
+      "meanHP": 369,
+      "meanRounds": 13.15,
+      "seed731": [
+        {
+          "name": "弩手侧廊",
+          "won": true,
+          "hp": 1377,
+          "survivors": 11,
+          "rounds": 3
+        },
+        {
+          "name": "腐蚀大厅",
+          "won": true,
+          "hp": 1032,
+          "survivors": 11,
+          "rounds": 2
+        },
+        {
+          "name": "分翼守卫",
+          "won": true,
+          "hp": 744,
+          "survivors": 8,
+          "rounds": 3
+        },
+        {
+          "name": "封印圣坛",
+          "won": true,
+          "hp": 369,
+          "survivors": 7,
+          "rounds": 6
+        }
+      ]
+    },
+    "coverage_back": {
+      "wins": 20,
+      "meanSurvivors": 11.85,
+      "meanHP": 1024,
+      "meanRounds": 10.65,
+      "seed731": [
+        {
+          "name": "弩手侧廊",
+          "won": true,
+          "hp": 1492,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "腐蚀大厅",
+          "won": true,
+          "hp": 1289,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "分翼守卫",
+          "won": true,
+          "hp": 1107,
+          "survivors": 12,
+          "rounds": 4
+        },
+        {
+          "name": "封印圣坛",
+          "won": true,
+          "hp": 1030,
+          "survivors": 12,
+          "rounds": 3
+        }
+      ]
+    },
+    "direct_ward": {
+      "wins": 20,
+      "meanSurvivors": 11.9,
+      "meanHP": 1064,
+      "meanRounds": 10.5,
+      "seed731": [
+        {
+          "name": "弩手侧廊",
+          "won": true,
+          "hp": 1523,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "腐蚀大厅",
+          "won": true,
+          "hp": 1320,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "分翼守卫",
+          "won": true,
+          "hp": 1138,
+          "survivors": 12,
+          "rounds": 4
+        },
+        {
+          "name": "封印圣坛",
+          "won": true,
+          "hp": 1061,
+          "survivors": 12,
+          "rounds": 3
+        }
+      ]
+    },
+    "center_melee": {
+      "wins": 20,
+      "meanSurvivors": 10.8,
+      "meanHP": 1053,
+      "meanRounds": 11.35,
+      "seed731": [
+        {
+          "name": "弩手侧廊",
+          "won": true,
+          "hp": 1492,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "腐蚀大厅",
+          "won": true,
+          "hp": 1265,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "分翼守卫",
+          "won": true,
+          "hp": 1140,
+          "survivors": 11,
+          "rounds": 4
+        },
+        {
+          "name": "封印圣坛",
+          "won": true,
+          "hp": 1072,
+          "survivors": 11,
+          "rounds": 3
+        }
+      ]
+    },
+    "force_seal": {
+      "wins": 20,
+      "meanSurvivors": 11.9,
+      "meanHP": 951,
+      "meanRounds": 11.45,
+      "seed731": [
+        {
+          "name": "弩手侧廊",
+          "won": true,
+          "hp": 1492,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "腐蚀大厅",
+          "won": true,
+          "hp": 1289,
+          "survivors": 12,
+          "rounds": 2
+        },
+        {
+          "name": "分翼守卫",
+          "won": true,
+          "hp": 1107,
+          "survivors": 12,
+          "rounds": 4
+        },
+        {
+          "name": "封印圣坛",
+          "won": true,
+          "hp": 885,
+          "survivors": 12,
+          "rounds": 4
+        }
+      ]
+    }
+  }
+}

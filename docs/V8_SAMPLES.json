@@ -1,0 +1,862 @@
+{
+  "ruleset": "original-wod-inspired-0.8.0",
+  "note": "8 fixed seeds, identical budgets, four room-command changes; not causal isolation or win-rate estimate.",
+  "samples": [
+    {
+      "seed": 9,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 604,
+              "mp": 285,
+              "supplies": {
+                "herb": 15,
+                "rune": 18,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 588,
+              "mp": 244,
+              "supplies": {
+                "herb": 15,
+                "rune": 13,
+                "arrow": 10
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 5,
+              "survivors": 6,
+              "hp": 588,
+              "mp": 192,
+              "supplies": {
+                "herb": 15,
+                "rune": 7,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 604,
+              "mp": 285,
+              "supplies": {
+                "herb": 15,
+                "rune": 18,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 570,
+              "mp": 253,
+              "supplies": {
+                "herb": 15,
+                "rune": 16,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 562,
+              "mp": 173,
+              "supplies": {
+                "herb": 15,
+                "rune": 10,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 10,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 2,
+              "survivors": 6,
+              "hp": 615,
+              "mp": 297,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 14
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 606,
+              "mp": 257,
+              "supplies": {
+                "herb": 15,
+                "rune": 15,
+                "arrow": 11
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 606,
+              "mp": 206,
+              "supplies": {
+                "herb": 15,
+                "rune": 10,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 10,
+            "arrow": 7
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 2,
+              "survivors": 6,
+              "hp": 615,
+              "mp": 297,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 14
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 606,
+              "mp": 266,
+              "supplies": {
+                "herb": 15,
+                "rune": 17,
+                "arrow": 10
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 585,
+              "mp": 195,
+              "supplies": {
+                "herb": 15,
+                "rune": 12,
+                "arrow": 6
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 12,
+            "arrow": 6
+          }
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 620,
+              "mp": 285,
+              "supplies": {
+                "herb": 15,
+                "rune": 18,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 595,
+              "mp": 232,
+              "supplies": {
+                "herb": 15,
+                "rune": 12,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 567,
+              "mp": 195,
+              "supplies": {
+                "herb": 15,
+                "rune": 7,
+                "arrow": 8
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 7,
+            "arrow": 8
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 620,
+              "mp": 285,
+              "supplies": {
+                "herb": 15,
+                "rune": 18,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 604,
+              "mp": 252,
+              "supplies": {
+                "herb": 15,
+                "rune": 16,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 604,
+              "mp": 174,
+              "supplies": {
+                "herb": 15,
+                "rune": 10,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 10,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "seed": 317,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 622,
+              "mp": 293,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 575,
+              "mp": 247,
+              "supplies": {
+                "herb": 15,
+                "rune": 14,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 5,
+              "survivors": 6,
+              "hp": 590,
+              "mp": 193,
+              "supplies": {
+                "herb": 14,
+                "rune": 8,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 14,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 622,
+              "mp": 293,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 586,
+              "mp": 260,
+              "supplies": {
+                "herb": 15,
+                "rune": 17,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 603,
+              "mp": 185,
+              "supplies": {
+                "herb": 14,
+                "rune": 12,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "seed": 731,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 619,
+              "mp": 291,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 623,
+              "mp": 240,
+              "supplies": {
+                "herb": 14,
+                "rune": 13,
+                "arrow": 10
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 606,
+              "mp": 193,
+              "supplies": {
+                "herb": 14,
+                "rune": 8,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 14,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 619,
+              "mp": 291,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 610,
+              "mp": 260,
+              "supplies": {
+                "herb": 15,
+                "rune": 17,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 553,
+              "mp": 181,
+              "supplies": {
+                "herb": 15,
+                "rune": 11,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 11,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 624,
+              "mp": 283,
+              "supplies": {
+                "herb": 15,
+                "rune": 18,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 624,
+              "mp": 236,
+              "supplies": {
+                "herb": 15,
+                "rune": 13,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 5,
+              "survivors": 6,
+              "hp": 555,
+              "mp": 197,
+              "supplies": {
+                "herb": 15,
+                "rune": 7,
+                "arrow": 8
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 7,
+            "arrow": 8
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 624,
+              "mp": 283,
+              "supplies": {
+                "herb": 15,
+                "rune": 18,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 599,
+              "mp": 251,
+              "supplies": {
+                "herb": 15,
+                "rune": 16,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 5,
+              "survivors": 6,
+              "hp": 552,
+              "mp": 189,
+              "supplies": {
+                "herb": 15,
+                "rune": 10,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 10,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8080,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 615,
+              "mp": 292,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 603,
+              "mp": 245,
+              "supplies": {
+                "herb": 15,
+                "rune": 14,
+                "arrow": 9
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 586,
+              "mp": 185,
+              "supplies": {
+                "herb": 15,
+                "rune": 9,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 9,
+            "arrow": 7
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 615,
+              "mp": 292,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 13
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 5,
+              "survivors": 6,
+              "hp": 598,
+              "mp": 256,
+              "supplies": {
+                "herb": 15,
+                "rune": 17,
+                "arrow": 8
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 582,
+              "mp": 187,
+              "supplies": {
+                "herb": 15,
+                "rune": 11,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 11,
+            "arrow": 7
+          }
+        }
+      ]
+    },
+    {
+      "seed": 99173,
+      "plans": [
+        {
+          "adapted": false,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 612,
+              "mp": 297,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 14
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 610,
+              "mp": 251,
+              "supplies": {
+                "herb": 15,
+                "rune": 14,
+                "arrow": 10
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 610,
+              "mp": 180,
+              "supplies": {
+                "herb": 15,
+                "rune": 8,
+                "arrow": 7
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 15,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "adapted": true,
+          "won": true,
+          "survivors": 6,
+          "rooms": [
+            {
+              "name": "01 · 铁壳门廊",
+              "won": true,
+              "rounds": 3,
+              "survivors": 6,
+              "hp": 612,
+              "mp": 297,
+              "supplies": {
+                "herb": 15,
+                "rune": 19,
+                "arrow": 14
+              }
+            },
+            {
+              "name": "02 · 镜潮回廊",
+              "won": true,
+              "rounds": 4,
+              "survivors": 6,
+              "hp": 593,
+              "mp": 265,
+              "supplies": {
+                "herb": 15,
+                "rune": 17,
+                "arrow": 10
+              }
+            },
+            {
+              "name": "03 · 分誓封印",
+              "won": true,
+              "rounds": 5,
+              "survivors": 6,
+              "hp": 606,
+              "mp": 173,
+              "supplies": {
+                "herb": 14,
+                "rune": 11,
+                "arrow": 6
+              }
+            }
+          ],
+          "supplies": {
+            "herb": 14,
+            "rune": 11,
+            "arrow": 6
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+import {HEROES,SKILLS,roomsFor} from './expedition-data.mjs';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const resources=['herb','rune','arrow'];
+// A read-only full-report projection. Count actual casts, not skipped instructions or targets hit.
+export function resourceLedger(report){
+ const configured=new Set(report.config.heroes.map(h=>h.id));
+ return report.rooms.map((room,roomIndex)=>{
+  const events=report.events.filter(e=>e.roomIndex===roomIndex),actors=report.config.heroes.map(h=>{
+   const own=events.filter(e=>e.actor===h.id),casts=own.filter(e=>e.type==='cast'),shortages=own.filter(e=>e.type==='skip'&&['法力不足','耗材耗尽'].includes(e.detail.reason)),skills=[];
+   for(const skill of new Set(casts.map(e=>e.detail.skill))){const used=casts.filter(e=>e.detail.skill===skill);skills.push({skill,name:SKILLS[skill]?.name||skill,count:used.length,mana:used.reduce((n,e)=>n+e.detail.mpBefore-e.detail.mpAfter,0),resource:used[0].detail.item,firstEvent:used[0].id});}
+   return {id:h.id,name:HEROES.find(x=>x.id===h.id)?.name||h.id,casts:casts.length,mana:skills.reduce((n,s)=>n+s.mana,0),defenseMana:own.filter(e=>e.type==='defend').reduce((n,e)=>n+e.detail.cost,0),spent:Object.fromEntries(resources.map(k=>[k,casts.filter(e=>e.detail.item===k).length])),shortages:shortages.length,firstShortage:shortages[0]?.id??null,failed:own.filter(e=>e.type==='failed').length,reserved:own.filter(e=>e.type==='skip'&&e.detail.reservation).length,skills};
+  });
+  // Event costs/rewards belong to the expedition, not to the checking hero's skill budget.
+  const branches=events.filter(e=>e.type==='branch').map(e=>({eventId:e.id,text:e.text,delta:Object.fromEntries(resources.map(k=>[k,e.detail.suppliesAfter[k]-e.detail.suppliesBefore[k]]))}));
+  return {roomIndex,roomId:roomsFor(report.config)[roomIndex].id,name:room.name,actors,branches,spent:Object.fromEntries(resources.map(k=>[k,actors.reduce((n,a)=>n+a.spent[k],0)])),otherCasts:events.filter(e=>e.type==='cast'&&!configured.has(e.actor)&&e.units.find(u=>u.id===e.actor)?.side==='party').length};
+ });
+}
+export function resourceLedgerView(report){
+ if(report.config.expedition!=='harbor')return '';
+ return `<h3>队员用料账本</h3><p>按房间查看实际施法、法力去向与共享补给。换人或训练后，可从原始战报定位到该队员的本房指令。</p>${resourceLedger(report).map(room=>`<details class="review-room"><summary>${esc(room.name)} · 技能用料：药草 ${room.spent.herb} / 符纸 ${room.spent.rune} / 箭矢 ${room.spent.arrow}</summary><div class="table-scroll"><table><thead><tr><th>队员</th><th>施法 / 防御耗蓝</th><th>药草 / 符纸 / 箭矢</th><th>缺料或缺蓝跳过 / 预留跳过</th><th>普通空过</th><th>核对与调整</th></tr></thead><tbody>${room.actors.map(a=>`<tr><th>${esc(a.name)}</th><td>${a.mana} / ${a.defenseMana}</td><td>${a.spent.herb} / ${a.spent.rune} / ${a.spent.arrow}</td><td>${a.shortages} / ${a.reserved}</td><td>${a.failed}</td><td>${a.firstShortage?`<button data-ledger-source="${a.firstShortage}">首次资源不足</button>`:''}<button data-review-edit="${room.roomId}:${a.id}">从战报调整${esc(a.name)}</button></td></tr>`).join('')}</tbody></table></div><details><summary>展开技能支出与原始记录</summary>${room.actors.map(a=>`<p><b>${esc(a.name)}</b>：${a.skills.map(s=>`<button data-ledger-source="${s.firstEvent}">${esc(s.name)} ×${s.count} · ${s.mana}法力${s.resource?' · '+s.count+({herb:'药草',rune:'符纸',arrow:'箭矢'}[s.resource]||esc(s.resource)):''}</button>`).join(' ')||'没有成功施法'}</p>`).join('')}</details>${room.branches.map(b=>`<p>事件净变化：药草 ${signed(b.delta.herb)} / 符纸 ${signed(b.delta.rune)} / 箭矢 ${signed(b.delta.arrow)} <button data-ledger-source="${b.eventId}">查看事件依据</button></p>`).join('')}<small>补给按成功施法计费，群体命中不重复计费；事件费用与收益单列。缺资源跳过次数不等于普通行动空过。召唤物不计入队员个人施法支出。</small></details>`).join('')}<p class="muted">完整远征账本，不随播放进度变化。耗蓝不等于净法力损失，回复与道具另见原始记录。这里只展示事实，不把消耗高直接判定为浪费。</p>`;
+}
+function signed(n){return n>0?'+'+n:String(n);}

@@ -1,0 +1,1897 @@
+{
+  "feature": "0.22",
+  "ruleset": "original-wod-inspired-0.21.0",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "rows": [
+    {
+      "profile": "sustained",
+      "summary": {
+        "wins": 32,
+        "cargo": 0,
+        "handoff": 0,
+        "meanRounds": 13.0625
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 205,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 202,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 11,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 204,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 196,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 639,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 196,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 200,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 204,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 203,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 202,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 200,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 202,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 204,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 205,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 203,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 199,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": false,
+          "handoff": false
+        }
+      ]
+    },
+    {
+      "profile": "opening",
+      "summary": {
+        "wins": 32,
+        "cargo": 32,
+        "handoff": 29,
+        "meanRounds": 14.25
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 255,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 254,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 253,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 259,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 246,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 262,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 255,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 252,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 260,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 255,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 252,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 261,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 253,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 258,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 257,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 248,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 255,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 257,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 252,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 254,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 255,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 256,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 256,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 250,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 260,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 252,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 9
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        }
+      ]
+    },
+    {
+      "profile": "frugal",
+      "summary": {
+        "wins": 32,
+        "cargo": 32,
+        "handoff": 13,
+        "meanRounds": 15.84375
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 277,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 279,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 275,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 279,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 277,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 280,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 272,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 272,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 276,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 277,
+          "supplies": {
+            "herb": 9,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 279,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 280,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 272,
+          "supplies": {
+            "herb": 9,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 267,
+          "supplies": {
+            "herb": 9,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 281,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 275,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 271,
+          "supplies": {
+            "herb": 9,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 277,
+          "supplies": {
+            "herb": 9,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 277,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 275,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 275,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 276,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 275,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 16,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 270,
+          "supplies": {
+            "herb": 8,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 18,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "alive": 6,
+          "cargo": true,
+          "handoff": true
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 280,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "alive": 6,
+          "cargo": true,
+          "handoff": false
+        }
+      ]
+    }
+  ]
+}
