@@ -4,6 +4,7 @@ import {clone,HEROES,GEAR,SKILLS,DEFENSES,roomsFor,resolveHeroPlan,gearSupports,
 import {validate,buildParty} from './expedition-engine.mjs';
 import {validateGuild} from './expedition-guild.mjs';
 import {lockedSkills} from './expedition-growth.mjs';
+import {cooperationCheck} from './expedition-cooperation.mjs';
 export function readiness(g,tactics,scope=''){
  validateGuild(g);validate(tactics);if(scope&&!roomsFor(tactics).some(r=>r.id===scope))throw Error('房间不属于当前路线');
  const actual=commandConfig(g,tactics);for(const h of actual.heroes){const m=g.members.find(m=>m.id===h.id);h.gear=clone(m.gear);h.training=clone(m.training);}
@@ -17,5 +18,5 @@ export function readiness(g,tactics,scope=''){
  if(entry.plan.healing.enabled&&actual.supplies.herb===0)warnings.push(`${where}：救护已启用但药草为0`);
  }
  return {id:h.id,name:HEROES.find(t=>t.id===h.id).name,role:HEROES.find(t=>t.id===h.id).role,gear:h.gear,gearName:equipmentName(h.gear),training:h.training,trainingSpent:trainingCost(h.training),gearChanged:!sameEquipment(draft.gear,h.gear),trainingChanged:JSON.stringify(draft.training)!==JSON.stringify(h.training),draftGearName:equipmentName(draft.gear),hp:unit.maxHp,mp:unit.maxMp,trained:h.trained,defenseFocus:h.defenseFocus,attribute:h.attribute,item:h.item,plan,warnings:[...new Set(warnings)]};});
- return {config:actual,heroes,errors,canDepart:!g.pending&&!errors.length,pending:!!g.pending,scope};
+ return {config:actual,heroes,errors,canDepart:!g.pending&&!errors.length,pending:!!g.pending,scope,cooperation:cooperationCheck(actual,scope)};
 }
