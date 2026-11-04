@@ -1,0 +1,50 @@
+const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),{pathToFileURL}=require('node:url');
+const evidence=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v48';fs.mkdirSync(evidence,{recursive:true});
+const output=name=>path.join(evidence,name),baseUrl=process.env.WOD_BASE_URL||'http://127.0.0.1:8000';
+(async()=>{
+const browser=await chromium.launch({executablePath:process.env.WOD_CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();
+const errors=[],failedResponses=[],steps=[];const watch=p=>{p.on('pageerror',e=>errors.push(String(e)));p.on('response',r=>{if(r.status()>=400)failedResponses.push({url:r.url(),status:r.status()});});};watch(page);
+const note=s=>{steps.push(s);console.log(s);};
+const guild=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('abbey-guild-v6')));
+const review=async()=>{await page.locator('.replay-tabs [data-replay-pane="review"]').click();await page.locator('#support-evidence').waitFor({state:'visible'});};
+const selectCast=async(actor,skill)=>{
+ await page.locator('#support-evidence-actor').selectOption(actor);
+ const room=page.locator('#support-evidence [data-support-room="0"]');await room.locator(':scope > summary').click();
+ const cast=room.locator(`[data-support-skill="${skill}"]`).first();await cast.locator(':scope > summary').click();return cast;
+};
+try{
+await page.goto(baseUrl);await page.locator('[data-own-hero="c"]').click();await page.locator('.guild-tabs [data-guild-tab="departure"]').click();await page.locator('[data-guild="depart"]').click();await page.locator('#result').waitFor({state:'visible'});
+const before=JSON.stringify(await guild());await review();let cast=await selectCast('e','insight');
+assert.match(await cast.innerText(),/伊芙、维斯、露弥/);
+const option=cast.locator('[data-support-evidence-record] option').filter({hasText:'维斯 / 潮纹屏障'}).first();assert.match(await option.innerText(),/施放均值/);const value=await option.getAttribute('value');
+await cast.locator('[data-support-evidence-record]').selectOption(value);assert.equal(await page.locator('#report').getAttribute('data-workspace'),'evidence');assert.match(await page.locator('#detail').innerText(),/维斯.*潮纹屏障/);assert.match(await page.locator('#source-trace').innerText(),/灵感启蒙/);
+await page.locator('#source-trace [data-trace-origin]').first().click();assert.match(await page.locator('#detail').innerText(),/灵感启蒙/);
+await page.locator('[data-support-evidence-return]').click();assert.equal(await page.locator('#support-evidence-actor').inputValue(),'e');
+note('正常公会出征：启蒙的后续屏障均值可定位到检定，再追原始启蒙并返回原筛选');
+cast=await selectCast('d','ward');const defense=cast.locator('[data-support-evidence-record] option').filter({hasText:'防御均值'}).first();await cast.locator('[data-support-evidence-record]').selectOption(await defense.getAttribute('value'));
+assert.match(await page.locator('#source-trace').innerText(),/防御者.*阿瑟.*维斯/);assert.match(await page.locator('#source-trace').innerText(),/潮纹屏障/);
+await page.screenshot({path:output('v48-defense-proof.png')});await page.locator('[data-support-evidence-return]').click();assert.equal(JSON.stringify(await guild()),before);
+await page.locator('#support-evidence').scrollIntoViewIfNeeded();await page.screenshot({path:output('v48-support-review.png')});
+note('屏障关联到实际防御字段；查看证据和返回复盘不改变公会或已结算记录');
+await cast.locator('[data-support-evidence-edit]').click();assert.equal(await page.locator('#plan-scope').inputValue(),'gallery');assert.match(await page.locator('#a-state').innerText(),/已保存/);
+await page.locator('#editor [data-field="target"][data-phase="prep"][data-row="0"]').selectOption('rear');await page.locator('header [data-view="compare"]').click();await page.locator('#compare-run').click();await page.locator('#comparison [data-open-pair="1"]').click();
+await review();assert.equal(await page.locator('#support-evidence-actor').inputValue(),'all');cast=await selectCast('d','ward');
+let recipients=await cast.locator('p').filter({hasText:'正式队员受益者：'}).innerText();assert.match(recipients,/莱恩、塞恩/);assert.doesNotMatch(recipients,/阿瑟/);assert.equal(JSON.stringify(await guild()),before);
+note('从辅助原房间改配并冻结A，B战报刷新为后排受益者，没有复用A的旧索引');
+await page.locator('header [data-view="guild"]').click();await page.locator('[data-guild="report"]').click();await review();cast=await selectCast('d','ward');recipients=await cast.locator('p').filter({hasText:'正式队员受益者：'}).innerText();assert.match(recipients,/阿瑟/);assert.doesNotMatch(recipients,/莱恩/);assert.equal(JSON.stringify(await guild()),before);
+note('重开公会待结算战报后恢复原始前排屏障，历史快照与资产不受实验修改影响');
+const {scholarCase}=await import(pathToFileURL(path.join(__dirname,'scholar-cases.mjs')).href);const config=scholarCase('baseline');
+await page.locator('header [data-view="planning"]').click();await page.locator('#file').setInputFiles({name:'v48-scholar-lab.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(config))});await page.getByText('配置已导入，可撤销本次载入。',{exact:true}).waitFor({state:'visible'});await page.locator('#run').click();await review();
+const actors=await page.locator('#support-evidence-actor option').evaluateAll(options=>options.map(o=>o.value));assert.ok(actors.includes('mira')&&actors.includes('d'));assert.ok(!actors.includes('b'));cast=await selectCast('mira','bulwark');assert.match(await cast.innerText(),/米菈/);assert.match(await cast.innerText(),/等待生效/);assert.equal(JSON.stringify(await guild()),before);
+note('经正常配置导入验证候补实验身份：米菈与维斯独立列出，莱恩不出战；未发放公会资产');
+const storage=await context.storageState();const mobile=await browser.newContext({viewport:{width:390,height:844},storageState:storage,isMobile:true});const mp=await mobile.newPage();watch(mp);
+await mp.goto(baseUrl);await mp.locator('header [data-view="planning"]').click();await mp.locator('#run').click();await mp.locator('.replay-tabs [data-replay-pane="review"]').click();await mp.locator('#support-evidence-actor').selectOption('mira');
+const room=mp.locator('#support-evidence [data-support-room="0"]');await room.locator(':scope > summary').click();await room.locator('[data-support-skill="bulwark"]').first().locator(':scope > summary').click();
+const geometry=await mp.locator('#support-evidence').evaluate(el=>({width:el.getBoundingClientRect().width,scroll:el.scrollWidth}));assert.ok(geometry.scroll<=geometry.width+2,JSON.stringify(geometry));await mp.locator('#support-evidence').scrollIntoViewIfNeeded();await mp.screenshot({path:output('v48-mobile-evidence.png')});await mobile.close();
+note('390px移动视口可筛选并展开延迟护印证据，长检定列表未造成面板横向溢出');
+assert.deepEqual(errors,[]);assert.ok(failedResponses.every(r=>r.url().endsWith('/favicon.ico')),JSON.stringify(failedResponses));
+fs.writeFileSync(output('browser-v48.json'),JSON.stringify({passed:true,steps,errors,failedResponses,browser:await browser.version()},null,2));
+}catch(error){await page.screenshot({path:output('browser-failure.png')}).catch(()=>{});fs.writeFileSync(output('browser-v48.json'),JSON.stringify({passed:false,steps,errors,failedResponses,error:String(error)},null,2));throw error;}finally{await browser.close();}
+})().catch(error=>{console.error(error);process.exit(1)});

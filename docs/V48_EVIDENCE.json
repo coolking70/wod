@@ -1,0 +1,344 @@
+{
+  "note": "Read-only recorded support evidence checks. These counts describe records, never damage prevented, win contribution or class strength. Configurations are fixed in scripts/check-v48.mjs; all simulations and snapshots remain unchanged.",
+  "rows": [
+    {
+      "name": "founders",
+      "seed": 731,
+      "won": true,
+      "rooms": 3,
+      "totals": {
+        "casts": 16,
+        "applications": 30,
+        "components": 30,
+        "links": 98,
+        "skips": 23
+      },
+      "byActor": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "casts": 6,
+          "links": 4
+        },
+        {
+          "id": "b",
+          "name": "莱恩",
+          "casts": 0,
+          "links": 0
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "casts": 0,
+          "links": 0
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "casts": 3,
+          "links": 4
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "casts": 6,
+          "links": 58
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "casts": 1,
+          "links": 32
+        }
+      ],
+      "examples": [
+        {
+          "source": "塞恩",
+          "skill": "insight",
+          "sourceCast": 3,
+          "recipient": "维斯",
+          "kind": "cast",
+          "check": "潮纹屏障",
+          "originEvent": 5,
+          "eventId": 7,
+          "stat": "int",
+          "value": 23,
+          "coefficient": 2,
+          "term": 46,
+          "recorded": 116
+        },
+        {
+          "source": "塞恩",
+          "skill": "insight",
+          "sourceCast": 3,
+          "recipient": "伊芙",
+          "kind": "attack",
+          "check": "潮汐冲击",
+          "originEvent": 4,
+          "eventId": 40,
+          "stat": "int",
+          "value": 23,
+          "coefficient": 2,
+          "term": 46,
+          "recorded": 118
+        },
+        {
+          "source": "维斯",
+          "skill": "ward",
+          "sourceCast": 7,
+          "recipient": "阿瑟",
+          "kind": "defense",
+          "check": "盾牌格挡",
+          "originEvent": 8,
+          "eventId": 28,
+          "stat": "defense",
+          "value": 23,
+          "coefficient": 1,
+          "term": 23,
+          "recorded": 87
+        },
+        {
+          "source": "露弥",
+          "skill": "provisions",
+          "sourceCast": 9,
+          "recipient": "阿瑟",
+          "kind": "armor",
+          "check": "承受剑术",
+          "originEvent": 10,
+          "eventId": 28,
+          "stat": "armor",
+          "value": 2,
+          "coefficient": 1,
+          "term": 2,
+          "recorded": 8
+        }
+      ]
+    },
+    {
+      "name": "doubleScholar",
+      "seed": 1,
+      "won": false,
+      "rooms": 3,
+      "totals": {
+        "casts": 30,
+        "applications": 45,
+        "components": 54,
+        "links": 193,
+        "skips": 155
+      },
+      "byActor": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "casts": 19,
+          "links": 51
+        },
+        {
+          "id": "mira",
+          "name": "米菈",
+          "casts": 3,
+          "links": 0
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "casts": 0,
+          "links": 0
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "casts": 3,
+          "links": 2
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "casts": 4,
+          "links": 69
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "casts": 1,
+          "links": 71
+        }
+      ],
+      "examples": [
+        {
+          "source": "塞恩",
+          "skill": "insight",
+          "sourceCast": 3,
+          "recipient": "维斯",
+          "kind": "cast",
+          "check": "潮纹屏障",
+          "originEvent": 6,
+          "eventId": 7,
+          "stat": "int",
+          "value": 23,
+          "coefficient": 2,
+          "term": 46,
+          "recorded": 116
+        },
+        {
+          "source": "塞恩",
+          "skill": "insight",
+          "sourceCast": 3,
+          "recipient": "米菈",
+          "kind": "attack",
+          "check": "微光",
+          "originEvent": 4,
+          "eventId": 37,
+          "stat": "int",
+          "value": 23,
+          "coefficient": 2,
+          "term": 46,
+          "recorded": 110
+        },
+        {
+          "source": "维斯",
+          "skill": "ward",
+          "sourceCast": 7,
+          "recipient": "阿瑟",
+          "kind": "defense",
+          "check": "盾牌格挡",
+          "originEvent": 8,
+          "eventId": 51,
+          "stat": "defense",
+          "value": 23,
+          "coefficient": 1,
+          "term": 23,
+          "recorded": 87
+        },
+        {
+          "source": "露弥",
+          "skill": "provisions",
+          "sourceCast": 9,
+          "recipient": "阿瑟",
+          "kind": "armor",
+          "check": "承受剑术",
+          "originEvent": 10,
+          "eventId": 51,
+          "stat": "armor",
+          "value": 2,
+          "coefficient": 1,
+          "term": 2,
+          "recorded": 8
+        }
+      ]
+    },
+    {
+      "name": "delayed",
+      "seed": 731,
+      "won": true,
+      "rooms": 3,
+      "totals": {
+        "casts": 16,
+        "applications": 36,
+        "components": 45,
+        "links": 118,
+        "skips": 23
+      },
+      "byActor": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "casts": 6,
+          "links": 4
+        },
+        {
+          "id": "b",
+          "name": "莱恩",
+          "casts": 0,
+          "links": 0
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "casts": 0,
+          "links": 0
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "casts": 3,
+          "links": 24
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "casts": 6,
+          "links": 58
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "casts": 1,
+          "links": 32
+        }
+      ],
+      "examples": [
+        {
+          "source": "塞恩",
+          "skill": "insight",
+          "sourceCast": 3,
+          "recipient": "维斯",
+          "kind": "cast",
+          "check": "延时护印",
+          "originEvent": 5,
+          "eventId": 7,
+          "stat": "int",
+          "value": 23,
+          "coefficient": 2,
+          "term": 46,
+          "recorded": 110
+        },
+        {
+          "source": "塞恩",
+          "skill": "insight",
+          "sourceCast": 3,
+          "recipient": "伊芙",
+          "kind": "attack",
+          "check": "潮汐冲击",
+          "originEvent": 4,
+          "eventId": 45,
+          "stat": "int",
+          "value": 23,
+          "coefficient": 2,
+          "term": 46,
+          "recorded": 118
+        },
+        {
+          "source": "阿瑟",
+          "skill": "guard",
+          "sourceCast": 21,
+          "recipient": "阿瑟",
+          "kind": "defense",
+          "check": "盾牌格挡",
+          "originEvent": 22,
+          "eventId": 33,
+          "stat": "defense",
+          "value": 12,
+          "coefficient": 1,
+          "term": 12,
+          "recorded": 64
+        },
+        {
+          "source": "露弥",
+          "skill": "provisions",
+          "sourceCast": 14,
+          "recipient": "阿瑟",
+          "kind": "armor",
+          "check": "承受剑术",
+          "originEvent": 15,
+          "eventId": 33,
+          "stat": "armor",
+          "value": 2,
+          "coefficient": 1,
+          "term": 2,
+          "recorded": 8
+        }
+      ]
+    }
+  ]
+}

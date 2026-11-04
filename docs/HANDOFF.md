@@ -2,7 +2,7 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
 
 ## 运行与验证
 
@@ -12,6 +12,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V47_SCHOLARS �
 python3 -m http.server 8000 --directory dist
 node --test tests/*.test.mjs
 node --check dist/expedition-ui.mjs
+node scripts/check-v48.mjs
 node scripts/sample-v47.mjs
 node scripts/sample-v46.mjs
 node scripts/sample-v45.mjs
@@ -19,7 +20,7 @@ git diff -- docs/V45_ROSTER_SAMPLES.json
 git diff --check
 ```
 
-本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；279项测试通过。无构建步骤。浏览器脚本browser-v47.cjs及外部工具路径参数见V47_SCHOLARS.md与V46_COOPERATION.md。浏览器访问localhost:8000，不建议直接file://打开ES模块。采样脚本需在仓库根目录运行，会重写对应样本文件。已有样本不应因无关文档改动而变化。
+本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；291项测试通过。无构建步骤。浏览器脚本browser-v48.cjs及外部工具路径参数见V48_SUPPORT_EVIDENCE.md与V46_COOPERATION.md。浏览器访问localhost:8000，不建议直接file://打开ES模块。采样脚本需在仓库根目录运行，会重写对应样本文件。已有样本不应因无关文档改动而变化。
 
 ## 代码地图
 
@@ -31,6 +32,7 @@ git diff --check
 | dist/expedition-guild*.mjs、personal*.mjs、roster*.mjs | 公会、主角、名册与角色状态 |
 | dist/expedition-equipment*.mjs、growth.mjs、loot.mjs | 装备、成长与掉落（后两项同样有expedition-前缀） |
 | dist/expedition-harbor*.mjs | 盐风港分支、职责、挑战与预留 |
+| dist/expedition-support-evidence.mjs | 正式队员辅助的实际受益者、后续字段、来源与复盘索引；不推断额外伤害或胜负贡献 |
 | dist/expedition-cooperation.mjs | 准备草稿/公会实际配置的只读协作、全部辅助单次费用与逐条编辑定位 |
 | dist/expedition-resource-ledger.mjs | 逐人逐房用料账本 |
 | dist/expedition-report.mjs、review.mjs、stage.mjs | 战报、复盘和战场投影（后两项同样有expedition-前缀） |
