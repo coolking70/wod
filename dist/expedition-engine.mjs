@@ -1,10 +1,11 @@
 import {reserveBlock} from './expedition-harbor-reserve.mjs';
+import {HEALING_BLOCK_REASON,HEALING_BLOCK_STAT,healingBlockTrace,canApplyHealingBlock} from './expedition-disruption.mjs';
 import {validHarborPlan,resolveHarborStep} from './expedition-harbor.mjs';
 import {validEquipment,equipmentTotals} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
 import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,trainingCost,TRAINING_BUDGET} from './expedition-data.mjs';
-export const RULESET='original-wod-inspired-0.40.0';
+export const RULESET='original-wod-inspired-0.49.0';
 const routes={front:['front','left','right','center','rear'],left:['right','front','center','rear','left'],right:['left','front','center','rear','right'],center:['front','left','right','center','rear'],rear:['front','left','right','center','rear']};
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
@@ -121,9 +122,10 @@ export function simulate(c,options={}){
    emit('encounter','沉钟机关 · '+choice.name+' · '+({success:'成功',failure:'失败',bypassed:'绕过',unavailable:'未执行'}[outcome.status]),actor?.id||null,affected,detail);bellRecord=events.at(-1);
   }
   function attempt(u,r,key,interrupt=false){
-   const s=SKILLS[r.skill],stock=u.side==='party'?supplies:enemySupplies;let reason='',reservation=null;
+   const s=SKILLS[r.skill],stock=u.side==='party'?supplies:enemySupplies;let reason='',reservation=null,healingBlock=null;
    if(used.has(key)&&r.mode==='once')reason='本房间一次指令已执行';
    else if(s.requiresGear&&!gearSupports(u.gear,s.requiresGear))reason='装备条件不满足';
+   else if(s.kind==='heal'&&(healingBlock=healingBlockTrace(u)))reason=HEALING_BLOCK_REASON;
    else if(s.kind==='summon'&&summons.some(t=>t.owner===u.id&&t.hp>0))reason='已有存活召唤物';
    else if(u.mp<s.cost)reason='法力不足';
    else if(s.item&&stock[s.item]<=0)reason='耗材耗尽';
@@ -134,7 +136,7 @@ export function simulate(c,options={}){
     if(s.kind==='buff')targets=targets.filter(t=>!t.effects.some(e=>e.skill===r.skill));
     if(!targets.length)reason=Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
    }
-   if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {})});return false;}
+   if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {}),...(healingBlock?{healingBlock}: {})});return false;}
    if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);return true;}
    const before=u.mp;u.mp-=s.cost;if(s.item)stock[s.item]--;used.add(key);
    const lv=skillLevel(u,r.skill),m=mean(u,r.skill),cast=++serial;actionId=roomIndex+':'+cast;
@@ -158,6 +160,10 @@ export function simulate(c,options={}){
     if(stats[u.id]){stats[u.id].damage+=damage;stats[u.id].actual+=actual;stats[u.id].overkill+=damage-actual;}
     emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+' 伤害'+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-damage,damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});
     if(t.hp===0){emit('down',t.name+' 倒下。',u.id,[t.id],{cast});removeSummons(t.id,'主人倒下');}
+    else if(canApplyHealingBlock(s,grade,t)){
+     const effect={id:`${roomIndex}:${cast}:${t.id}:healingBlock`,skill:r.skill,name:s.name,component:'禁疗',source:u.id,sourceName:u.name,stat:HEALING_BLOCK_STAT,value:1,scope:'rounds',active:true,harmful:true,activateTick:clock,activateRound:round,expires:round,expiresTick:clock};
+     t.effects.push(effect);emit('effect',t.name+' 受到「禁疗」：本回合余下的自动草药救护受限，仍可执行普通指令',u.id,[t.id],{effectId:effect.id,cast,skill:r.skill,component:effect.component,stat:effect.stat,value:1,scope:'rounds',active:true,harmful:true,activateRound:round,expires:round,rule:'命中后仅限制本回合余下的自动草药救护；已完成治疗不撤销，不阻止普通指令，同回合不叠加或延长。',sources:effectTrace(u)});
+    }
    }actionId=null;for(const enemy of enemies)awaken(enemy);return true;
   }
   function act(u,p){

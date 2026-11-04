@@ -2,7 +2,7 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
 
 ## 运行与验证
 
@@ -12,6 +12,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V48_SUPPORT_EVI
 python3 -m http.server 8000 --directory dist
 node --test tests/*.test.mjs
 node --check dist/expedition-ui.mjs
+node scripts/check-v49.mjs
 node scripts/check-v48.mjs
 node scripts/sample-v47.mjs
 node scripts/sample-v46.mjs
@@ -20,7 +21,9 @@ git diff -- docs/V45_ROSTER_SAMPLES.json
 git diff --check
 ```
 
-本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；291项测试通过。无构建步骤。浏览器脚本browser-v48.cjs及外部工具路径参数见V48_SUPPORT_EVIDENCE.md与V46_COOPERATION.md。浏览器访问localhost:8000，不建议直接file://打开ES模块。采样脚本需在仓库根目录运行，会重写对应样本文件。已有样本不应因无关文档改动而变化。
+本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；307项测试通过，120个ES模块及4个浏览器脚本语法检查通过。无构建步骤。浏览器脚本browser-v49.cjs及参数见V49_DISRUPTION.md。浏览器访问本地HTTP服务，不建议直接file://打开ES模块。采样脚本需在仓库根目录运行，会重写对应样本文件。已有样本不应因无关文档改动而变化。
+
+v0.49将引擎RULESET升至 `original-wod-inspired-0.49.0`；配置schema仍为0.40.0，不引入新存档结构。页面正在展示的v13/v14/v16三组共1,824条样本已按新引擎全部重放，除规则标签外数据逐项相同。旧阶段历史研究数据保持原样，不能当成新截疗符的平衡验证。`check-v49.mjs`无参数只写当前边界/功能结果；要重现9份旧配置逐条比较并保留对应结果，请按V49报告提供v0.48参考工作树路径。
 
 ## 代码地图
 
@@ -29,6 +32,7 @@ git diff --check
 | dist/index.html、expedition-ui.mjs、expedition.css | 当前主入口、交互与界面 |
 | dist/expedition-data.mjs、content.mjs | 规则配置与内容 |
 | dist/expedition-engine.mjs | 不依赖DOM的确定性模拟 |
+| dist/expedition-disruption.mjs、healing.mjs | 当回合禁疗能力/来源与自动救护决策（后者同样有expedition-前缀） |
 | dist/expedition-guild*.mjs、personal*.mjs、roster*.mjs | 公会、主角、名册与角色状态 |
 | dist/expedition-equipment*.mjs、growth.mjs、loot.mjs | 装备、成长与掉落（后两项同样有expedition-前缀） |
 | dist/expedition-harbor*.mjs | 盐风港分支、职责、挑战与预留 |
@@ -49,3 +53,5 @@ git diff --check
 GitHub仓库作为后续接续入口，建议每个可验证阶段及时提交并推送，避免只有聊天记录。原45个提交的信息保存在docs/SOURCE_HISTORY.txt；GitHub导入为源码快照，不保持原提交对象链。迁移不会自动配置GitHub Pages，也不会改变现有Site访问权限；GitHub源码与Sites部署是两个独立动作。后续发布仍要同步准确源码、验证并记录对应版本。不要把凭据、浏览器个人存档或临时运行配置提交。
 
 新的接手者应在完成一轮后更新PROJECT_STATUS/ROADMAP，记录真实测试结果与尚未完成项。旧会话未恢复的v0.46不得直接标为已交付。
+
+本次已获批准且已完成的是v0.48分支推送，远端完整SHA为990fca06b669b5b23e569bc821fa54b225840c12。v0.49在本地feature/v049-healing-disruption，未推送/合并/部署；不要把两阶段的授权混同。

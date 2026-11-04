@@ -18,6 +18,7 @@ export const SKILLS={
  shot:{name:'穿石箭',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.2,cost:0,mode:'single',max:1,desc:'远程单体；优先指定位置。'},
  volley:{name:'齐射',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.1,cost:5,item:'arrow',mode:'position',max:3,desc:'同位置最多 3 人，分别检定；不跨位置补齐。'},
  wave:{name:'潮汐冲击',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1.5,cost:6,item:'rune',mode:'position',max:3,desc:'同位置最多 3 人；造成法术伤害。'},
+ suppress:{name:'截疗符',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:.65,cost:6,item:'rune',mode:'single',max:1,requiresGear:'focus',healingBlock:true,desc:'学者单体法术；需法器，消耗6法力和1符纸。命中仍存活且拥有救护技能的目标后，封锁其本回合余下的自动草药救护；目标仍可普通行动，已完成治疗不撤销。闪避不附着；命中但伤害被吸收仍可附着；同回合不叠加或延长。伤害低于微光，晚于目标行动时可能没有救护可阻。'},
  spark:{name:'微光',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1,cost:1,mode:'single',max:1,desc:'低消耗法术单体。'},
  guard:{name:'守势',kind:'buff',primary:'con',secondary:'wil',cost:3,mode:'self',max:1,scope:'rounds',duration:1,stat:'defense',scale:0.15,base:3,desc:'自身所有防御检定提高，持续当前与下一回合。'},
  insight:{name:'灵感启蒙',kind:'buff',primary:'cha',secondary:'wil',cost:4,mode:'position',max:3,scope:'battle',stat:'int',scale:0.3,base:2,desc:'目标位置智力提高；后施放的法术辅助受益，持续本房间。'},
@@ -47,7 +48,7 @@ const FOUNDERS=[
  {id:'a',name:'阿瑟',role:'守卫',mark:'盾',pos:'front',gear:'plate',attrs:attrs(12,16,5,11,6,8,9,12),skills:['strike','guard','shieldbash','rallyguard'],base:6},
  {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep'],base:6},
  {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt'],base:6},
- {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight'],base:6},
+ {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress'],base:6},
  {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant'],base:6},
  {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','shot','poultice'],base:6}
 ];

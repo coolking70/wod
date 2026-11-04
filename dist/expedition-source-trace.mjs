@@ -1,6 +1,6 @@
 // Match recorded effect identity, not name/amount guesses. No combat re-evaluation.
 import {ATTR,SKILLS} from './expedition-data.mjs';
-const stats={...ATTR,defense:'全防御检定',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'};
+const stats={...ATTR,defense:'全防御检定',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数',healingBlock:'自动救护禁疗'};
 export function effectOrigins(events){const origins=new Map();events.forEach((e,index)=>{if(e.type==='effect'&&e.detail.effectId)origins.set(e.detail.effectId,{index,source:e.actor,targets:e.targets});});return origins;}
 export function sourceTrace(group,origins){
  const attacks=group.events.filter(e=>e.type==='attack'),events=attacks.length?attacks:group.events.filter(e=>e.type==='cast');

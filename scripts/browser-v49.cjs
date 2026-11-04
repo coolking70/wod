@@ -1,0 +1,44 @@
+const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const evidence=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v49';fs.mkdirSync(evidence,{recursive:true});
+const output=name=>path.join(evidence,name),baseUrl=process.env.WOD_BASE_URL||'http://127.0.0.1:8000';
+(async()=>{
+const browser=await chromium.launch({executablePath:process.env.WOD_CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();
+const errors=[],failedResponses=[],steps=[];const watch=p=>{p.on('pageerror',e=>errors.push(String(e)));p.on('response',r=>{if(r.status()>=400)failedResponses.push({url:r.url(),status:r.status()});});};watch(page);
+const note=s=>{steps.push(s);console.log(s);};
+const guild=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('abbey-guild-v6')));
+const assets=g=>JSON.stringify({gold:g.gold,members:g.members.map(m=>({id:m.id,xp:m.xp,gear:m.gear,owned:m.owned,training:m.training})),warehouse:g.warehouse});
+const exported=async()=>{const event=page.waitForEvent('download');await page.locator('#download').click();const download=await event;return JSON.parse(fs.readFileSync(await download.path(),'utf8'));};
+const showEvent=async(p,event,index)=>{await p.locator('.replay-tabs [data-replay-pane="evidence"]').click();await p.locator('#diagnostic').check();await p.locator('#room').selectOption(String(event.roomIndex));await p.locator(`#journal [data-event="${index}"]`).click();};
+try{
+await page.goto(baseUrl);await page.locator('[data-own-hero="c"]').click();const initialAssets=assets(await guild());
+await page.locator('header [data-view="compare"]').click();for(const id of ['sample-table','pressure-table','reserve-table'])await page.locator('#'+id+' table').waitFor({state:'attached'});await page.locator('#lab-presets > summary').click();await page.locator('#hospice-start').click();assert.equal(await page.locator('#expedition').inputValue(),'hospice');
+await page.locator('header [data-view="guild"]').click();await page.locator('#companion-room').selectOption('cistern');const beforePreview=JSON.stringify(await guild());await page.locator('[data-companion="d"]').selectOption('suppress');assert.equal(JSON.stringify(await guild()),beforePreview);
+const card=page.locator('[data-guild-pane="hero"] .companion-grid article').filter({has:page.locator('[data-companion="d"]')});assert.match(await card.innerText(),/先攻、命中和共享符纸/);await card.locator('.companion-preview > summary').click();assert.match(await card.innerText(),/截疗符/);assert.match(await card.innerText(),/护潮药师/);
+await page.locator('[data-apply-companion="d"]').click();assert.equal((await guild()).command.companions.d,'suppress');assert.equal(assets(await guild()),initialAssets);
+note('从既有疗所正面方案进入公会，预览并应用截疗学者，未赠送训练或购买装备');
+await page.locator('.guild-tabs [data-guild-tab="departure"]').click();await page.locator('#check-scope').selectOption('cistern');
+const ready=page.locator('.ready-hero').filter({has:page.locator('[data-ready-edit="d"]')});assert.match(await ready.innerText(),/专修 截疗符/);assert.match(await ready.innerText(),/永久训练 0\/6/);assert.match(await ready.innerText(),/微光/);
+await page.locator('[data-guild="depart"]').click();await page.locator('#result').waitFor({state:'visible'});const report=await exported();
+assert.equal(report.ruleset,'original-wod-inspired-0.49.0');const effects=report.events.filter(e=>e.type==='effect'&&e.detail.harmful),skips=report.events.filter(e=>e.type==='skip'&&e.detail.healingBlock);assert.ok(effects.length>0&&skips.length>0);
+const skip=skips[0],effect=effects.find(e=>e.detail.effectId===skip.detail.healingBlock.effectId),fallback=report.events.find(e=>e.actor===skip.actor&&e.id>skip.id&&e.roomIndex===skip.roomIndex&&e.round===skip.round&&e.detail.healingDecision?.status==='blocked');assert.ok(effect&&fallback);assert.equal(fallback.detail.skill,'spark');
+assert.equal(report.config.heroes.find(h=>h.id==='d').training['skill:suppress'],undefined);const pending=JSON.stringify((await guild()).pending);
+note('真实公会出征产生截疗命中和救护受阻；被阻药师继续执行微光，实际资产与训练正确');
+const fallbackIndex=report.events.findIndex(e=>e.id===fallback.id),effectIndex=report.events.findIndex(e=>e.id===effect.id);await showEvent(page,fallback,fallbackIndex);
+assert.match(await page.locator('#detail .healing-decision').innerText(),/本回合禁疗，继续普通指令/);await page.locator('#detail .healing-decision').scrollIntoViewIfNeeded();await page.screenshot({path:output('v49-healing-fallback.png')});
+await page.locator('#detail [data-healing-origin]').click();assert.match(await page.locator('#detail').innerText(),/受到「禁疗」/);assert.match(await page.locator('#support-changes').innerText(),/禁疗已附着/);
+await page.locator('.replay-tabs [data-replay-pane="battle"]').click();const target=page.locator(`#board [data-unit="${effect.targets[0]}"]`);assert.match(await target.innerText(),/禁疗/);assert.match(await target.innerText(),/受影响者/);await page.locator('.stage').scrollIntoViewIfNeeded();await page.screenshot({path:output('v49-control-state.png')});
+await page.locator('.replay-tabs [data-replay-pane="evidence"]').click();await page.locator('#source-trace [data-trace-return]').click();assert.match(await page.locator('#detail .healing-decision').innerText(),/本回合禁疗/);assert.equal(JSON.stringify((await guild()).pending),pending);assert.equal(assets(await guild()),initialAssets);
+note('救护决策准确追溯禁疗命中，战场标示有害状态，返回后仍为原普通行动；回放不重算战果');
+await page.locator('.replay-tabs [data-replay-pane="review"]').click();await page.locator('#personal-hero').selectOption('d');assert.match(await page.locator('#personal-report').innerText(),new RegExp('施加禁疗 '+effects.filter(e=>e.actor==='d').length+' 次'));assert.match(await page.locator('#personal-report').innerText(),new RegExp('受阻尝试 '+skips.filter(e=>e.detail.healingBlock.source==='d').length+' 次'));
+await showEvent(page,skip,report.events.findIndex(e=>e.id===skip.id));assert.ok(await page.locator('#detail [data-healing-origin]').isVisible());await page.locator('#detail [data-healing-edit]').click();assert.equal(await page.locator('#plan-scope').inputValue(),['gallery','cistern','altar'][effect.roomIndex]);assert.match(await page.locator('#a-state').innerText(),/已保存/);
+await page.locator('#editor [data-field="skill"][data-phase="main"][data-row="0"]').selectOption('spark');await page.locator('header [data-view="compare"]').click();await page.locator('#compare-run').click();await page.locator('#comparison [data-open-pair="1"]').click();const comparison=await exported();assert.ok(!comparison.events.some(e=>e.actor==='d'&&e.roomIndex===effect.roomIndex&&e.type==='cast'&&e.detail.skill==='suppress'));assert.equal(JSON.stringify((await guild()).pending),pending);assert.equal(assets(await guild()),initialAssets);
+note('附着与实际阻断分开计数；从受阻记录定位原房间改成微光并比较，公会快照与资产不变');
+await page.locator('header [data-view="guild"]').click();await page.locator('[data-guild="report"]').click();assert.deepEqual(await exported(),report);
+const storage=await context.storageState(),mobile=await browser.newContext({viewport:{width:390,height:844},storageState:storage,isMobile:true}),mp=await mobile.newPage();watch(mp);await mp.goto(baseUrl);await mp.locator('[data-guild="report"]').click();await showEvent(mp,fallback,fallbackIndex);
+const geometry=await mp.locator('#detail').evaluate(el=>({width:el.getBoundingClientRect().width,scroll:el.scrollWidth}));assert.ok(geometry.scroll<=geometry.width+2,JSON.stringify(geometry));await mp.locator('#detail .healing-decision').scrollIntoViewIfNeeded();await mp.screenshot({path:output('v49-mobile-decision.png')});await mobile.close();note('390px视口可查看受阻决策与来源；恢复的公会战报与原导出完全一致');
+assert.deepEqual(errors,[]);assert.ok(failedResponses.every(r=>r.url().endsWith('/favicon.ico')),JSON.stringify(failedResponses));
+fs.writeFileSync(output('browser-v49.json'),JSON.stringify({passed:true,steps,errors,failedResponses,browser:await browser.version(),run:{won:report.won,rooms:report.rooms.length,alive:report.party.filter(u=>u.hp>0).length,applied:effects.length,blocked:skips.length},example:{castSource:effect.actor,effectEvent:effect.id,blockedEvent:skip.id,fallbackEvent:fallback.id,fallbackSkill:fallback.detail.skill}},null,2));
+}catch(error){await page.screenshot({path:output('browser-failure.png')}).catch(()=>{});fs.writeFileSync(output('browser-v49.json'),JSON.stringify({passed:false,steps,errors,failedResponses,error:String(error)},null,2));throw error;}finally{await browser.close();}
+})().catch(error=>{console.error(error);process.exit(1)});

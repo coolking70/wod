@@ -2,9 +2,9 @@
 import {HEROES} from './expedition-data.mjs';
 export function personalReport(report,heroId){
  if(!HEROES.some(h=>h.id===heroId))throw Error('未知观察角色');
- const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0});
+ const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0,controlApplications:0,healingBlocks:0});
  const total=blank(),rooms=report.rooms.map((r,i)=>({index:i,name:r.name,...blank()})),given=new Map(),received=new Map(),issues=new Map(),evidence=[],supplies={herb:0,rune:0,arrow:0};
- let stock={...report.config.supplies};const buffKeys=new Set(),inKeys=new Set(),proofKeys=new Set();
+ let stock={...report.config.supplies};const buffKeys=new Set(),inKeys=new Set(),controlKeys=new Set(),proofKeys=new Set();
  const add=(room,key,n=1)=>{total[key]+=n;if(rooms[room])rooms[room][key]+=n;};
  const proof=(e,index,kind)=>{if(!proofKeys.has(kind)){proofKeys.add(kind);evidence.push({index,kind,text:e.text,roomIndex:e.roomIndex});}};
  const link=(map,id,key,amount,index)=>{if(!map.has(id))map.set(id,{id,healing:0,buffs:0,index});map.get(id)[key]+=amount;if(!Object.hasOwn(map.get(id),key+'Index'))map.get(id)[key+'Index']=index;};
@@ -22,9 +22,11 @@ export function personalReport(report,heroId){
    if(own){add(e.roomIndex,'healing',d.actual);proof(e,index,'本人治疗');if(e.targets[0]!==heroId)link(given,e.targets[0],'healing',d.actual,index);}
    if(target){add(e.roomIndex,'received',d.actual);if(!own)link(received,e.actor,'healing',d.actual,index);proof(e,index,'得到治疗');}
   }
+  if(e.type==='skip'&&d.healingBlock){if(d.healingBlock.source===heroId){add(e.roomIndex,'healingBlocks');proof(e,index,'救护受阻');}if(own)proof(e,index,'本人救护受阻');}
   if(e.type==='effect')for(const id of e.targets){
    // A multi-component buff on one recipient is one application, not several contributions.
    const key=[e.roomIndex,e.actionId||d.cast||e.id,e.actor,id,d.skill].join(':');
+   if(d.harmful){if(own&&!controlKeys.has(key)){controlKeys.add(key);add(e.roomIndex,'controlApplications');proof(e,index,'施加禁疗');}continue;}
    if(own&&!buffKeys.has(key)){buffKeys.add(key);add(e.roomIndex,'buffApplications');if(id!==heroId)link(given,id,'buffs',1,index);proof(e,index,'施加增益');}
    if(id===heroId&&!own&&!inKeys.has(key)){inKeys.add(key);link(received,e.actor,'buffs',1,index);proof(e,index,'得到增益');}
   }

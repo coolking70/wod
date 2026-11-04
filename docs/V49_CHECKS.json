@@ -1,0 +1,173 @@
+{
+  "ruleset": "original-wod-inspired-0.49.0",
+  "note": "Boundary fixtures use explicit test-only attributes and are not progression, rewards or balance samples. Playable case is a single normal hospice run, not a win-rate estimate.",
+  "rows": [
+    {
+      "kind": "early",
+      "applied": 1,
+      "blocked": 1,
+      "heals": 0,
+      "remainingRunes": 9,
+      "sourceEvents": [
+        7
+      ],
+      "blockedEvents": [
+        12
+      ]
+    },
+    {
+      "kind": "late",
+      "applied": 1,
+      "blocked": 0,
+      "heals": 1,
+      "remainingRunes": 9,
+      "sourceEvents": [
+        11
+      ],
+      "blockedEvents": []
+    },
+    {
+      "kind": "miss",
+      "applied": 0,
+      "blocked": 0,
+      "heals": 1,
+      "remainingRunes": 9,
+      "sourceEvents": [],
+      "blockedEvents": []
+    },
+    {
+      "kind": "absorbed",
+      "applied": 1,
+      "blocked": 1,
+      "heals": 0,
+      "remainingRunes": 9,
+      "sourceEvents": [
+        7
+      ],
+      "blockedEvents": [
+        12
+      ]
+    },
+    {
+      "kind": "expiry",
+      "applied": 1,
+      "blocked": 1,
+      "heals": 1,
+      "remainingRunes": 9,
+      "sourceEvents": [
+        7
+      ],
+      "blockedEvents": [
+        12
+      ]
+    },
+    {
+      "kind": "double",
+      "applied": 1,
+      "blocked": 1,
+      "heals": 0,
+      "remainingRunes": 8,
+      "sourceEvents": [
+        7
+      ],
+      "blockedEvents": [
+        14
+      ]
+    },
+    {
+      "kind": "enemy",
+      "applied": 1,
+      "blocked": 1,
+      "heals": 0,
+      "remainingRunes": 10,
+      "sourceEvents": [
+        7
+      ],
+      "blockedEvents": [
+        12
+      ]
+    },
+    {
+      "kind": "item",
+      "applied": 1,
+      "blocked": 0,
+      "heals": 0,
+      "remainingRunes": 10,
+      "sourceEvents": [
+        8
+      ],
+      "blockedEvents": []
+    }
+  ],
+  "playable": {
+    "route": "hospice",
+    "seed": 1,
+    "training": {},
+    "won": true,
+    "rooms": 3,
+    "alive": 6,
+    "applied": 3,
+    "blocked": 1
+  },
+  "unchanged": {
+    "referenceCommit": "990fca06b669b5b23e569bc821fa54b225840c12",
+    "count": 9,
+    "cases": [
+      {
+        "route": "classic",
+        "seed": 1,
+        "events": 396,
+        "won": true
+      },
+      {
+        "route": "classic",
+        "seed": 3,
+        "events": 416,
+        "won": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "events": 420,
+        "won": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "events": 540,
+        "won": true
+      },
+      {
+        "route": "harbor",
+        "seed": 3,
+        "events": 467,
+        "won": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "events": 468,
+        "won": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "events": 1359,
+        "won": true
+      },
+      {
+        "route": "veteran",
+        "seed": 3,
+        "events": 1481,
+        "won": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "events": 1288,
+        "won": true
+      }
+    ],
+    "note": "All event streams, snapshots, outcomes, configs, resources and statistics match. RULESET changes to 0.49; the party skill inventory adds suppress capability for scholars only."
+  }
+}

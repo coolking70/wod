@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "steps": [
+    "从既有疗所正面方案进入公会，预览并应用截疗学者，未赠送训练或购买装备",
+    "真实公会出征产生截疗命中和救护受阻；被阻药师继续执行微光，实际资产与训练正确",
+    "救护决策准确追溯禁疗命中，战场标示有害状态，返回后仍为原普通行动；回放不重算战果",
+    "附着与实际阻断分开计数；从受阻记录定位原房间改成微光并比较，公会快照与资产不变",
+    "390px视口可查看受阻决策与来源；恢复的公会战报与原导出完全一致"
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "browser": "154.0.8037.57",
+  "run": {
+    "won": true,
+    "rooms": 3,
+    "alive": 6,
+    "applied": 3,
+    "blocked": 1
+  },
+  "example": {
+    "castSource": "d",
+    "effectEvent": 291,
+    "blockedEvent": 295,
+    "fallbackEvent": 296,
+    "fallbackSkill": "spark"
+  }
+}

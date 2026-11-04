@@ -1,7 +1,7 @@
 import {roomsFor} from './expedition-data.mjs';
 // Read-only presentation. All outcomes and unit states come from the recorded event stream.
 import {groupActions} from './expedition-report.mjs';
-export function replaySteps(events,diagnostic=false){return diagnostic?events.map((e,i)=>({start:i,end:i,roomIndex:e.roomIndex,round:e.round,phase:e.phase,type:e.type,events:[e]})):groupActions(events).filter(g=>!['skip','regen','round'].includes(g.type)||g.events.some(e=>e.detail.reservation));}
+export function replaySteps(events,diagnostic=false){return diagnostic?events.map((e,i)=>({start:i,end:i,roomIndex:e.roomIndex,round:e.round,phase:e.phase,type:e.type,events:[e]})):groupActions(events).filter(g=>!['skip','regen','round'].includes(g.type)||g.events.some(e=>e.detail.reservation||e.detail.healingBlock));}
 export function adjacentStep(steps,index,delta){const at=steps.findIndex(s=>index>=s.start&&index<=s.end);return at<0?null:steps[at+delta]||null;}
 export function sceneFor(config,roomIndex,actualRoom){if(config.expedition==='harbor')return {theme:"harbor",image:actualRoom?.node==='seal'||roomIndex===3?"assets/harbor-seal-v41.png":"assets/saltwind-harbor-v41.png",label:actualRoom?.name||roomsFor(config)[roomIndex].name};if(['seasoned','veteran'].includes(config.expedition))return {theme:'trial',image:config.expedition==='seasoned'?'assets/last-lantern-v17.png':'assets/sunken-bell-v10.png',label:roomsFor(config)[roomIndex].name};if(config.expedition==='chapter'&&roomIndex>=3)return {theme:'hospice',image:'assets/drowned-infirmary-v21.png',label:roomsFor(config)[roomIndex].name};if(config.expedition==='hospice')return {theme:'hospice',image:'assets/drowned-infirmary-v21.png',label:['引潮病廊','不息药庭','双灯心室'][roomIndex]};if(config.expedition==='survival')return {theme:'lantern',image:'assets/last-lantern-v17.png',label:['狙灯栈桥','碎灯礼堂','最后一盏灯'][roomIndex]};const mirror=roomIndex===1;return {theme:mirror?'mirror':roomIndex===2?'seal':'iron',image:mirror?'assets/mirror-gallery-v9.png':'assets/abbey.png',label:mirror?'水镜与残响':roomIndex===2?'誓约的尽头':'沉没的门廊'};}
 export function stageFrame(group){
@@ -11,10 +11,11 @@ export function stageFrame(group){
   else if(e.type==='heal')cues.push({unit:e.targets[0],kind:'heal',text:'+'+e.detail.actual,note:'救护',eventId:e.id});
   else if(e.type==='item')cues.push({unit:e.actor,kind:e.detail.resource==='hp'?'heal':'mana',text:'+'+e.detail.actual,note:e.detail.resource==='hp'?'药匣恢复':'药瓶回蓝',eventId:e.id});
   else if(['effect','activate','summon','down','dismiss','defend'].includes(e.type)){
-   const unit=e.type==='defend'?e.actor:e.targets[0],kind=e.type==='effect'?(e.detail.active===false?'pending':'buff'):e.type;
-   cues.push({unit,kind,text:e.type==='defend'?e.detail.name:e.type==='summon'?'召唤':e.type==='down'?'倒下':e.type==='dismiss'?'消散':e.type==='activate'?'生效':e.detail.active===false?'待生效':'增益',note:e.detail.component||'',eventId:e.id});
+   const unit=e.type==='defend'?e.actor:e.targets[0],kind=e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'buff'):e.type;
+   cues.push({unit,kind,text:e.type==='defend'?e.detail.name:e.type==='summon'?'召唤':e.type==='down'?'倒下':e.type==='dismiss'?'消散':e.type==='activate'?'生效':e.detail.harmful?'禁疗':e.detail.active===false?'待生效':'增益',note:e.detail.component||'',eventId:e.id});
   }
-  if(['attack','heal','effect','summon','activate','expire'].includes(e.type))for(const target of e.targets)links.push({from:e.actor,to:target,kind:e.type==='attack'?e.detail.attackType:e.type==='effect'?(e.detail.active===false?'pending':'support'):e.type,eventId:e.id});
+  if(e.detail.healingBlock||e.detail.healingDecision?.status==='blocked')cues.push({unit:e.actor,kind:'control',text:'救护受阻',note:'按普通指令继续',eventId:e.id});
+  if(['attack','heal','effect','summon','activate','expire'].includes(e.type))for(const target of e.targets)links.push({from:e.actor,to:target,kind:e.type==='attack'?e.detail.attackType:e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'support'):e.type,eventId:e.id});
  }
  return {units:structuredClone(last.units),actor:lead.actor,targets:[...new Set(cues.map(c=>c.unit).filter(Boolean))],cues,links,phase:lead.phase,round:lead.round,supplies:structuredClone(last.supplies),transition:['room','victory','defeat','scene','encounter','route','rescue','branch'].includes(lead.type)?lead.type:null};
 }
