@@ -2,7 +2,7 @@
 import {HEROES} from './expedition-data.mjs';
 export function personalReport(report,heroId){
  if(!HEROES.some(h=>h.id===heroId))throw Error('未知观察角色');
- const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0,controlApplications:0,healingBlocks:0});
+ const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0,controlApplications:0,healingBlocks:0,passiveHealing:0,passiveRecords:0,passiveOverheal:0});
  const total=blank(),rooms=report.rooms.map((r,i)=>({index:i,name:r.name,...blank()})),given=new Map(),received=new Map(),issues=new Map(),evidence=[],supplies={herb:0,rune:0,arrow:0};
  let stock={...report.config.supplies};const buffKeys=new Set(),inKeys=new Set(),controlKeys=new Set(),proofKeys=new Set();
  const add=(room,key,n=1)=>{total[key]+=n;if(rooms[room])rooms[room][key]+=n;};
@@ -19,6 +19,7 @@ export function personalReport(report,heroId){
    if(e.units.find(u=>u.id===e.actor)?.owner===heroId){add(e.roomIndex,'summonDamage',d.actual);proof(e,index,'召唤物攻击');}
   }
   if(e.type==='heal'){
+   if(own&&d.passive){add(e.roomIndex,'passiveRecords');add(e.roomIndex,'passiveHealing',d.actual);add(e.roomIndex,'passiveOverheal',d.overheal);}
    if(own){add(e.roomIndex,'healing',d.actual);proof(e,index,'本人治疗');if(e.targets[0]!==heroId)link(given,e.targets[0],'healing',d.actual,index);}
    if(target){add(e.roomIndex,'received',d.actual);if(!own)link(received,e.actor,'healing',d.actual,index);proof(e,index,'得到治疗');}
   }

@@ -1,7 +1,7 @@
 // Read-only support cues; recipients are recorded results, never predicted coverage.
 import {groupActions} from './expedition-report.mjs';
 const kinds=new Set(['effect','activate','expire','heal']);
-const stats={defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数',str:'力量',dex:'灵巧',agi:'敏捷',wil:'意志',cha:'魅力'};
+const stats={regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数',str:'力量',dex:'灵巧',agi:'敏捷',wil:'意志',cha:'魅力'};
 export function supportFrame(group){
  const last=group.events.at(-1),name=id=>last.units.find(u=>u.id===id)?.name||id;
  const changes=group.events.filter(e=>kinds.has(e.type)).flatMap(e=>e.targets.map(target=>{

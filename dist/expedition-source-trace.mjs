@@ -1,8 +1,10 @@
 // Match recorded effect identity, not name/amount guesses. No combat re-evaluation.
 import {ATTR,SKILLS} from './expedition-data.mjs';
-const stats={...ATTR,defense:'全防御检定',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数',healingBlock:'自动救护禁疗'};
+const stats={regeneration:'每回合缓释恢复',...ATTR,defense:'全防御检定',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数',healingBlock:'自动救护禁疗'};
 export function effectOrigins(events){const origins=new Map();events.forEach((e,index)=>{if(e.type==='effect'&&e.detail.effectId)origins.set(e.detail.effectId,{index,source:e.actor,targets:e.targets});});return origins;}
 export function sourceTrace(group,origins){
+ const passive=group.events.filter(e=>e.type==='heal'&&e.detail.passive);
+ if(passive.length)return passive.map(e=>({eventId:e.id,title:`${e.units.find(u=>u.id===e.targets[0])?.name||e.targets[0]} · 缓释恢复`,check:`恢复 ${e.detail.actual} / 未生效 ${e.detail.overheal}；不占普通行动，不再次扣材料`,effects:(e.detail.sources||[]).map(s=>{const origin=origins.get(s.effectId),matched=origin&&origin.source===s.source&&origin.targets.includes(e.targets[0])&&origin.index<group.start;return {side:'恢复者',recipient:e.units.find(u=>u.id===e.targets[0])?.name||e.targets[0],source:e.units.find(u=>u.id===s.source)?.name||s.source,name:s.component||s.name,stat:stats[s.stat]||s.stat,value:s.value,origin:matched?origin.index:null};})}));
  const queue=group.events.find(e=>e.type==='initiative');
  if(queue)return queue.detail.order.map(o=>({eventId:queue.id,title:`${o.actor} · 第${o.ordinal}/${o.total}次行动`,check:o.mean===undefined?`排序值 ${o.value}`:`敏捷 ${o.agi} ×2 + 感知 ${o.per} = 均值 ${o.mean}；基础实掷 ${o.base} ÷ ${1+.6*(o.ordinal-1)} = ${o.value.toFixed(2)}`,effects:(o.sources||[]).filter(s=>['agi','per','actions'].includes(s.stat)).map(s=>{const origin=origins.get(s.effectId),matched=origin&&origin.source===s.source&&origin.targets.includes(o.actorId)&&origin.index<group.start;return {side:'行动者',recipient:o.actor,source:queue.units.find(u=>u.id===s.source)?.name||s.source,name:s.component||s.name,stat:stats[s.stat]||s.stat,value:s.value,origin:matched?origin.index:null};})}));
  const attacks=group.events.filter(e=>e.type==='attack'),events=attacks.length?attacks:group.events.filter(e=>e.type==='cast');

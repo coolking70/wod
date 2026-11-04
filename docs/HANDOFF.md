@@ -2,7 +2,7 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V53_SUSTAINED_CARE → DECISION_SPECIALIZATION → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
 
 ## 运行与验证
 
@@ -12,18 +12,17 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V52_CADENCE →
 python3 -m http.server 8000 --directory dist
 node --test tests/*.test.mjs
 node --check dist/expedition-ui.mjs
-node scripts/check-v49.mjs
-node scripts/check-v48.mjs
-node scripts/sample-v47.mjs
-node scripts/sample-v46.mjs
-node scripts/sample-v45.mjs
-git diff -- docs/V45_ROSTER_SAMPLES.json
+git worktree add --detach /tmp/wod-v052-check 52adecb
+node scripts/check-v53.mjs /tmp/wod-v052-check
+git worktree remove /tmp/wod-v052-check
 git diff --check
 ```
 
-本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；307项测试通过，120个ES模块及4个浏览器脚本语法检查通过。无构建步骤。浏览器脚本browser-v49.cjs及参数见V49_DISRUPTION.md。浏览器访问本地HTTP服务，不建议直接file://打开ES模块。采样脚本需在仓库根目录运行，会重写对应样本文件。已有样本不应因无关文档改动而变化。
+本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；最终346项测试通过，131个ES模块及8个浏览器脚本语法检查通过。无构建步骤。browser-v50/v51/v52/v53.cjs分别保存各阶段验收，当前浏览器参数见V53_SUSTAINED_CARE.md及V49报告。需要本地HTTP服务，不建议file://打开ES模块。
 
-v0.49将引擎RULESET升至 `original-wod-inspired-0.49.0`；配置schema仍为0.40.0，不引入新存档结构。页面正在展示的v13/v14/v16三组共1,824条样本已按新引擎全部重放，除规则标签外数据逐项相同。旧阶段历史研究数据保持原样，不能当成新截疗符的平衡验证。`check-v49.mjs`无参数只写当前边界/功能结果；要重现9份旧配置逐条比较并保留对应结果，请按V49报告提供v0.48参考工作树路径。
+当前引擎RULESET为original-wod-inspired-0.53.0，配置schema仍0.40.0。三组页面活动样本v13/v14/v16共1,824条已用新引擎重放，除规则标签外数据逐项相同。历史研究数据保持原口径，不冒充新技能的平衡结果。历史check脚本需要完整复现时检出对应提交；当前旧版等价入口是check-v53和v0.52参考工作树。无参考目录运行会将V53_CHECKS的旧版比较写为null，不能声称复验旧版。
+
+v0.50–v0.53的独立分支/本地提交均可恢复，v0.49已推送d6f77b8，之后没有推送或部署。当前下一步等待DECISION_SPECIALIZATION的核心养成方向选择，职业专精提案尚未实施。
 
 ## 代码地图
 
@@ -32,6 +31,7 @@ v0.49将引擎RULESET升至 `original-wod-inspired-0.49.0`；配置schema仍为0
 | dist/index.html、expedition-ui.mjs、expedition.css | 当前主入口、交互与界面 |
 | dist/expedition-data.mjs、content.mjs | 规则配置与内容 |
 | dist/expedition-engine.mjs | 不依赖DOM的确定性模拟 |
+| dist/expedition-regeneration.mjs | 可选药敷的存活/激活触发筛选，恢复由引擎在回合开始记录 |
 | dist/expedition-disruption.mjs、healing.mjs | 当回合禁疗能力/来源与自动救护决策（后者同样有expedition-前缀） |
 | dist/expedition-guild*.mjs、personal*.mjs、roster*.mjs | 公会、主角、名册与角色状态 |
 | dist/expedition-equipment*.mjs、growth.mjs、loot.mjs | 装备、成长与掉落（后两项同样有expedition-前缀） |
@@ -54,10 +54,10 @@ GitHub仓库作为后续接续入口，建议每个可验证阶段及时提交�
 
 新的接手者应在完成一轮后更新PROJECT_STATUS/ROADMAP，记录真实测试结果与尚未完成项。旧会话未恢复的v0.46不得直接标为已交付。
 
-本次已获批准且已完成的是v0.48分支推送，远端完整SHA为990fca06b669b5b23e569bc821fa54b225840c12。v0.49在本地feature/v049-healing-disruption，未推送/合并/部署；不要把两阶段的授权混同。
+当前批准的推送为v0.49，远端完整SHA d6f77b8adb0ea7b696015d62c24172d5526b1a89；v0.50–v0.53四个阶段仅本地提交。不要因一般“建议推送”越过本轮范围，main不合并，Site不部署。
 
-当前连续阶段见V50_SEER.md。v0.49已按新授权推送并核验d6f77b8，之后提交只本地。运行 `node scripts/check-v50.mjs /path/to/v049-reference` 可复现固定确认组与旧版等价；browser-v50.cjs验证真实出征结算、学习及先攻来源。引擎仍为0.49，新先攻字段只作观察，没有改变随机调用。
+职责编辑统一经readiness.customizeForEditing物化实际配置，再切自定义。不要直接先setCompanion(custom)再从旧草稿读取指令；锁定技能必须仍可进入编辑移除，出征校验保持独立。安装指令先准备成功再保存职责。
 
-v0.51当前319项测试通过，职责编辑统一经readiness.customizeForEditing物化实际配置，再切自定义。不要直接先setCompanion(custom)再从旧草稿读取指令；锁定技能必须仍可进入编辑移除，出征校验保持独立。browser-v51.cjs验证真实逐房覆盖。
+round只允许普通阶段；有该条目时该角色本回合首次普通检查从首条开始，按条目计成功，闪避也计次，不越过前置持续指令。道具/救护优先且不消耗普通指令次数。
 
-v0.52当前333项测试通过。规则标签0.52，schema仍0.40.0。当前旧版本等价入口为check-v52.mjs /path/to/v051-reference；旧check-v49/v50的完整历史比较需检出当时提交。browser-v52.cjs验证节拍与后备实战。新模式只允许普通阶段；有round条目时该角色本回合首次普通检查从首条开始，按条目计成功，不越过前置持续指令。
+缓释只由已激活、正值且目标存活的药敷触发；回合开始先激活后恢复，不新增随机调用。每次恢复不扣费，不占普通行动，不复活，固定8点不随训练提高。统计已包含在总治疗，不与普通救护占行动混淆。

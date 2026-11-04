@@ -1,0 +1,550 @@
+{
+  "ruleset": "original-wod-inspired-0.53.0",
+  "note": "Boundary fixture has explicit test-only state. Playable samples use normal earned guild prerequisites and actual untrained assets; seeds9-16. Within dual roster only Orin prep changes; comparing single to dual also changes roster and cannot isolate skill benefit. No numbers tuned to these results.",
+  "prerequisites": {
+    "history": 2,
+    "goldAfterRecruit": 180,
+    "orin": {
+      "id": "orin",
+      "classId": "herbalist",
+      "unlocked": [],
+      "xp": 0,
+      "gear": {
+        "weapon": "starterblade",
+        "armor": "field",
+        "accessory": "token"
+      },
+      "owned": [
+        "starterblade",
+        "field",
+        "token"
+      ],
+      "training": {},
+      "tactics": {
+        "id": "orin",
+        "training": {},
+        "item": "none",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.3
+        },
+        "pos": "center",
+        "gear": {
+          "weapon": "starterblade",
+          "armor": "field",
+          "accessory": "token"
+        },
+        "overrides": {},
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "heal",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "provisions",
+            "target": "all",
+            "mode": "repeat"
+          }
+        ],
+        "main": [
+          {
+            "skill": "shot",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": true,
+          "threshold": 0.8,
+          "target": "all",
+          "priority": "lowest"
+        }
+      }
+    }
+  },
+  "boundary": {
+    "ticks": 6,
+    "healing": 21,
+    "herb": 9,
+    "ordinaryHealingActions": 0
+  },
+  "rows": [
+    {
+      "route": "hospice",
+      "kind": "single",
+      "samples": [
+        {
+          "seed": 9,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "herb": 9,
+          "passiveHealing": 0,
+          "ordinaryHeals": 2
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "alive": 6,
+          "rounds": 22,
+          "herb": 8,
+          "passiveHealing": 0,
+          "ordinaryHeals": 3
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "alive": 6,
+          "rounds": 17,
+          "herb": 9,
+          "passiveHealing": 0,
+          "ordinaryHeals": 2
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "herb": 9,
+          "passiveHealing": 0,
+          "ordinaryHeals": 2
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "herb": 9,
+          "passiveHealing": 0,
+          "ordinaryHeals": 2
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "alive": 6,
+          "rounds": 22,
+          "herb": 7,
+          "passiveHealing": 0,
+          "ordinaryHeals": 4
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "alive": 6,
+          "rounds": 22,
+          "herb": 8,
+          "passiveHealing": 0,
+          "ordinaryHeals": 3
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "herb": 9,
+          "passiveHealing": 0,
+          "ordinaryHeals": 2
+        }
+      ]
+    },
+    {
+      "route": "hospice",
+      "kind": "dual-urgent",
+      "samples": [
+        {
+          "seed": 9,
+          "won": true,
+          "alive": 6,
+          "rounds": 32,
+          "herb": 5,
+          "passiveHealing": 0,
+          "ordinaryHeals": 6
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "alive": 6,
+          "rounds": 27,
+          "herb": 7,
+          "passiveHealing": 0,
+          "ordinaryHeals": 4
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "herb": 4,
+          "passiveHealing": 0,
+          "ordinaryHeals": 7
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "alive": 6,
+          "rounds": 34,
+          "herb": 2,
+          "passiveHealing": 0,
+          "ordinaryHeals": 9
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "herb": 7,
+          "passiveHealing": 0,
+          "ordinaryHeals": 4
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "alive": 6,
+          "rounds": 30,
+          "herb": 2,
+          "passiveHealing": 0,
+          "ordinaryHeals": 9
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "herb": 4,
+          "passiveHealing": 0,
+          "ordinaryHeals": 7
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "alive": 6,
+          "rounds": 30,
+          "herb": 3,
+          "passiveHealing": 0,
+          "ordinaryHeals": 8
+        }
+      ]
+    },
+    {
+      "route": "hospice",
+      "kind": "dual-slowcare",
+      "samples": [
+        {
+          "seed": 9,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "herb": 0,
+          "passiveHealing": 104,
+          "ordinaryHeals": 2
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "herb": 0,
+          "passiveHealing": 111,
+          "ordinaryHeals": 1
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "herb": 0,
+          "passiveHealing": 66,
+          "ordinaryHeals": 3
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "alive": 6,
+          "rounds": 32,
+          "herb": 0,
+          "passiveHealing": 81,
+          "ordinaryHeals": 3
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "herb": 0,
+          "passiveHealing": 93,
+          "ordinaryHeals": 2
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "herb": 0,
+          "passiveHealing": 101,
+          "ordinaryHeals": 3
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "alive": 6,
+          "rounds": 28,
+          "herb": 0,
+          "passiveHealing": 110,
+          "ordinaryHeals": 2
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "alive": 6,
+          "rounds": 29,
+          "herb": 0,
+          "passiveHealing": 104,
+          "ordinaryHeals": 2
+        }
+      ]
+    },
+    {
+      "route": "storm",
+      "kind": "single",
+      "samples": [
+        {
+          "seed": 9,
+          "won": true,
+          "alive": 6,
+          "rounds": 34,
+          "herb": 2,
+          "passiveHealing": 0,
+          "ordinaryHeals": 9
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "alive": 6,
+          "rounds": 33,
+          "herb": 2,
+          "passiveHealing": 0,
+          "ordinaryHeals": 9
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "alive": 6,
+          "rounds": 34,
+          "herb": 5,
+          "passiveHealing": 0,
+          "ordinaryHeals": 6
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "alive": 6,
+          "rounds": 31,
+          "herb": 5,
+          "passiveHealing": 0,
+          "ordinaryHeals": 6
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "alive": 6,
+          "rounds": 31,
+          "herb": 7,
+          "passiveHealing": 0,
+          "ordinaryHeals": 4
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "alive": 6,
+          "rounds": 33,
+          "herb": 1,
+          "passiveHealing": 0,
+          "ordinaryHeals": 10
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "alive": 6,
+          "rounds": 34,
+          "herb": 3,
+          "passiveHealing": 0,
+          "ordinaryHeals": 8
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "alive": 6,
+          "rounds": 32,
+          "herb": 5,
+          "passiveHealing": 0,
+          "ordinaryHeals": 6
+        }
+      ]
+    },
+    {
+      "route": "storm",
+      "kind": "dual-urgent",
+      "samples": [
+        {
+          "seed": 9,
+          "won": true,
+          "alive": 5,
+          "rounds": 53,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "alive": 4,
+          "rounds": 55,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "alive": 4,
+          "rounds": 52,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "alive": 4,
+          "rounds": 58,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "alive": 5,
+          "rounds": 55,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "alive": 6,
+          "rounds": 48,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "alive": 4,
+          "rounds": 56,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        },
+        {
+          "seed": 16,
+          "won": false,
+          "alive": 4,
+          "rounds": 46,
+          "herb": 0,
+          "passiveHealing": 0,
+          "ordinaryHeals": 11
+        }
+      ]
+    },
+    {
+      "route": "storm",
+      "kind": "dual-slowcare",
+      "samples": [
+        {
+          "seed": 9,
+          "won": false,
+          "alive": 0,
+          "rounds": 41,
+          "herb": 0,
+          "passiveHealing": 34,
+          "ordinaryHeals": 5
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "alive": 0,
+          "rounds": 38,
+          "herb": 0,
+          "passiveHealing": 48,
+          "ordinaryHeals": 5
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "alive": 0,
+          "rounds": 47,
+          "herb": 0,
+          "passiveHealing": 32,
+          "ordinaryHeals": 6
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "alive": 0,
+          "rounds": 45,
+          "herb": 0,
+          "passiveHealing": 46,
+          "ordinaryHeals": 5
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "alive": 0,
+          "rounds": 38,
+          "herb": 0,
+          "passiveHealing": 24,
+          "ordinaryHeals": 6
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "alive": 4,
+          "rounds": 45,
+          "herb": 0,
+          "passiveHealing": 16,
+          "ordinaryHeals": 6
+        },
+        {
+          "seed": 15,
+          "won": false,
+          "alive": 0,
+          "rounds": 35,
+          "herb": 0,
+          "passiveHealing": 48,
+          "ordinaryHeals": 5
+        },
+        {
+          "seed": 16,
+          "won": false,
+          "alive": 0,
+          "rounds": 45,
+          "herb": 0,
+          "passiveHealing": 23,
+          "ordinaryHeals": 5
+        }
+      ]
+    }
+  ],
+  "unchanged": {
+    "reference": "52adecb",
+    "count": 9,
+    "excluded": "Ruleset and new optional herbalist skill inventory only; all actions, snapshots, outcomes and resources match."
+  }
+}

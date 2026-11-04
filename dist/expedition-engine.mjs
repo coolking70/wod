@@ -1,11 +1,12 @@
 import {reserveBlock} from './expedition-harbor-reserve.mjs';
+import {regenerationTicks} from './expedition-regeneration.mjs';
 import {HEALING_BLOCK_REASON,HEALING_BLOCK_STAT,healingBlockTrace,canApplyHealingBlock} from './expedition-disruption.mjs';
 import {validHarborPlan,resolveHarborStep} from './expedition-harbor.mjs';
 import {validEquipment,equipmentTotals} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
 import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,trainingCost,TRAINING_BUDGET} from './expedition-data.mjs';
-export const RULESET='original-wod-inspired-0.52.0';
+export const RULESET='original-wod-inspired-0.53.0';
 const routes={front:['front','left','right','center','rear'],left:['right','front','center','rear','left'],right:['left','front','center','rear','right'],center:['front','left','right','center','rear'],rear:['front','left','right','center','rear']};
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
@@ -147,7 +148,7 @@ export function simulate(c,options={}){
     const components=s.components||[{stat:s.stat,base:s.base,scale:s.scale,scope:s.scope,duration:s.duration,delay:0}];
     for(const [componentIndex,part] of components.entries()){
      const v=Math.floor(part.base+m*part.scale),delay=part.delay||0,e={id:`${roomIndex}:${cast}:${t.id}:${componentIndex}`,skill:r.skill,name:s.name,component:part.label||s.name,source:u.id,sourceName:u.name,stat:part.stat,value:v,scope:part.scope,active:delay===0,activateTick:clock+delay,activateRound:round+delay,expires:part.scope==='rounds'?round+delay+part.duration:null,expiresTick:part.scope==='rounds'?clock+delay+part.duration:null};
-     t.effects.push(e);emit('effect',t.name+' '+(e.active?'获得':'等待')+'「'+s.name+(e.component!==s.name?' · '+e.component:'')+'」：'+({defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'}[part.stat]||part.stat)+' +'+v,u.id,[t.id],{effectId:e.id,cast,skill:r.skill,component:e.component,stat:e.stat,value:v,mean:m,formula:`floor(${part.base} + ${m} × ${part.scale})`,scope:e.scope,expires:e.expires,active:e.active,activateRound:e.activateRound,sources:effectTrace(u)});
+     t.effects.push(e);emit('effect',t.name+' '+(e.active?'获得':'等待')+'「'+s.name+(e.component!==s.name?' · '+e.component:'')+'」：'+({regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'}[part.stat]||part.stat)+' +'+v,u.id,[t.id],{effectId:e.id,cast,skill:r.skill,component:e.component,stat:e.stat,value:v,mean:m,formula:`floor(${part.base} + ${m} × ${part.scale})`,scope:e.scope,expires:e.expires,active:e.active,activateRound:e.activateRound,sources:effectTrace(u)});
     }
    }
    if(s.kind==='heal'){const t=targets[0],amount=Math.floor(m*.7),actual=Math.min(t.maxHp-t.hp,amount);t.hp+=actual;if(stats[u.id]){stats[u.id].healing+=actual;stats[u.id].interrupts++;}emit('heal',u.name+' 为 '+t.name+' 恢复 '+actual+' 生命',u.id,[t.id],{cast,skill:r.skill,amount,actual,overheal:amount-actual,formula:`floor(${m} × 0.7)`,ordinaryCursorUnchanged:true});}
@@ -181,6 +182,11 @@ export function simulate(c,options={}){
   for(round=1;round<=maxRounds&&heroesAlive()&&live('enemy').length;round++){
    clock++;phase='回合开始';emit('round','第 '+round+' 回合');
    for(const u of all())for(const e of u.effects)if(e.active===false&&e.activateTick<=clock){e.active=true;emit('activate',u.name+' 的「'+e.name+(e.component!==e.name?' · '+e.component:'')+'」开始生效',e.source,[u.id],{component:e.component,stat:e.stat,value:e.value,expires:e.expires});}
+   for(const u of all())for(const effect of regenerationTicks(u)){
+    const before=u.hp,actual=Math.min(u.maxHp-before,effect.value);u.hp+=actual;
+    if(stats[effect.source])stats[effect.source].healing+=actual;
+    emit('heal',u.name+' 的「'+effect.name+'」缓释恢复 '+actual+' 生命'+(effect.value>actual?'（未生效 '+(effect.value-actual)+'）':''),effect.source,[u.id],{skill:effect.skill,effectId:effect.id,passive:true,before,after:u.hp,actual,overheal:effect.value-actual,consumedAction:false,cost:0,sources:[{effectId:effect.id,source:effect.source,name:effect.name,component:effect.component,stat:effect.stat,value:effect.value}],rule:'回合开始缓释，不消耗普通行动或再次扣材料；不复活倒下者，不受仅限制自动草药救护的禁疗影响。'});
+   }
    phase='回合前';const ordered=[...(c.roomOrders[room.id]||c.prepOrder).map(id=>party.find(u=>u.id===id)).filter(Boolean),...enemies];for(const u of ordered)if(u.hp>0)act(u,'prep');
    phase='自然回复';for(const u of all().filter(u=>u.hp>0)){const before=u.mp;u.mp=Math.min(u.maxMp,u.mp+1);if(u.mp!==before)emit('regen',u.name+' 自然回复 1 法力',u.id,[],{before,after:u.mp});}
    phase='先攻';const order=[];for(const u of all().filter(u=>u.hp>0)){const agi=current(u,'agi'),per=current(u,'per'),actions=current(u,'actions'),mean=2*agi+per,base=roll(mean),count=Math.max(0,Math.floor(1+actions));for(let i=0;i<count;i++)order.push({u,value:base/(1+i*.6),ordinal:i+1,total:count,agi,per,actions,mean,base});}

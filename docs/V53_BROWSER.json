@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "steps": [
+    "通过两次正常出征结算满足招募，用60金币招募奥林并替换莱恩，原角色资产留在候补",
+    "缓释职责使用真实初始装备与空训练，实际出征产生延迟恢复，不再次扣材料或占普通行动",
+    "逐条恢复追溯原始药敷并返回，个人面板区分实际/未生效缓释，统计含入总治疗且原战报只读",
+    "390px视口恢复同一待结算战报并正常查看缓释说明和来源"
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57",
+  "run": {
+    "seed": 3,
+    "won": true,
+    "rooms": 3,
+    "alive": 6,
+    "passiveRecords": 15,
+    "passiveActual": 92,
+    "passiveOverheal": 28
+  },
+  "example": {
+    "event": 107,
+    "source": "orin",
+    "target": "a",
+    "round": 3,
+    "effectId": "0:5:a:0"
+  }
+}
