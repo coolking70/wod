@@ -1,5 +1,5 @@
 import {equipmentName,sameEquipment} from './expedition-equipment.mjs';
-import {commandConfig} from './expedition-command.mjs';
+import {commandConfig,setCompanion} from './expedition-command.mjs';
 import {clone,HEROES,GEAR,SKILLS,DEFENSES,roomsFor,resolveHeroPlan,gearSupports,gearRequirementName,trainingCost} from './expedition-data.mjs';
 import {validate,buildParty} from './expedition-engine.mjs';
 import {validateGuild} from './expedition-guild.mjs';
@@ -19,4 +19,12 @@ export function readiness(g,tactics,scope=''){
  }
  return {id:h.id,name:HEROES.find(t=>t.id===h.id).name,role:HEROES.find(t=>t.id===h.id).role,gear:h.gear,gearName:equipmentName(h.gear),training:h.training,trainingSpent:trainingCost(h.training),gearChanged:!sameEquipment(draft.gear,h.gear),trainingChanged:JSON.stringify(draft.training)!==JSON.stringify(h.training),draftGearName:equipmentName(draft.gear),hp:unit.maxHp,mp:unit.maxMp,trained:h.trained,defenseFocus:h.defenseFocus,attribute:h.attribute,item:h.item,plan,warnings:[...new Set(warnings)]};});
  return {config:actual,heroes,errors,canDepart:!g.pending&&!errors.length,pending:!!g.pending,scope,cooperation:cooperationCheck(actual,scope)};
+}
+// Materialize the current applied role before handing control to the editor.
+// Locked skills remain visible so they can be removed; this does not authorize departure.
+export function customizeForEditing(g,tactics,id,scope=''){
+ if(g.pending)throw Error('请先领取远征结算，再调整伙伴职责');
+ if(!g.lineup.includes(id))throw Error('只能编辑实际出战队员');
+ const actual=readiness(g,tactics,scope).config,changed=Boolean(g.command&&id!==g.command.heroId&&g.command.companions[id]!=='custom');
+ return {guild:changed?setCompanion(g,id,'custom'):clone(g),config:actual,changed};
 }

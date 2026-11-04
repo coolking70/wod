@@ -10,7 +10,7 @@ import {rosterHome} from './expedition-roster-view.mjs';
 import {commandHome} from './expedition-command-view.mjs';
 import {selectHero,setCompanion,commandLabel} from './expedition-command.mjs';
 import {historyComparison} from './expedition-history-diff.mjs';
-import {readiness} from './expedition-readiness.mjs';
+import {readiness,customizeForEditing} from './expedition-readiness.mjs';
 import {ADVANCED,UNLOCK_COST,growth,isAdvanced,installAdvanced} from './expedition-growth.mjs';
 import {rewardPreview,gearDifference,isRelic} from './expedition-loot.mjs';
 import {redeemHarbor,GUILD_KEY,GEAR_PRICE,historyConfig,historyReport,newGuild,validateGuild,migrateGuild,pendingReward,assignLoot,sellLoot,guildConfig,depart,pendingReport,rewardFor,claim,train,equip,retrain,learnAdvanced} from './expedition-guild.mjs';
@@ -63,11 +63,11 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  else if(b.dataset.historyLoad){loadConfig(historyConfig(g,Number(b.dataset.historyLoad)));inform('历史出征方案已载入，可撤销。再次公会出征使用当前装备与训练，并采用新的出征种子。');return;}
  else if(b.dataset.guildTab){switchPanel(b.dataset.guildTab);return;}
  else if(b.dataset.member)selected=b.dataset.member;
- else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,actual=readiness(g,getConfig(),room).config;delete previews[id];if(g.command&&id!==g.command.heroId)save(setCompanion(g,id,'custom'));updateConfig(actual);editHero(id,room,b.dataset.cooperationRow);return;}
- else if(b.dataset.readyEdit){delete previews[b.dataset.readyEdit];if(g.command&&b.dataset.readyEdit!==g.command.heroId){save(setCompanion(g,b.dataset.readyEdit,'custom'));inform('该伙伴已切换为自定义指令。');}updateConfig(rosterConfig(g,getConfig()));editHero(b.dataset.readyEdit,checkScope);return;}
+ else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,edit=customizeForEditing(g,getConfig(),id,room);delete previews[id];if(edit.changed)save(edit.guild);updateConfig(edit.config);editHero(id,room,b.dataset.cooperationRow);inform('已保留当前实际职责指令并切到自定义，可从本房继续修改。');return;}
+ else if(b.dataset.readyEdit){const id=b.dataset.readyEdit,edit=customizeForEditing(g,getConfig(),id,checkScope);delete previews[id];if(edit.changed)save(edit.guild);updateConfig(edit.config);editHero(id,checkScope);inform('已保留当前实际职责指令；该队员现使用自定义，可逐房调整。');return;}
  else if(b.dataset.readyMember){selected=b.dataset.readyMember;switchPanel("team");return;}
  else if(b.dataset.unlock)save(learnAdvanced(g,b.dataset.unlock));
- else if(b.dataset.install){if(!g.lineup.includes(selected))throw Error('请先将该伙伴编入出战队伍再安装战术');updateConfig(rosterConfig(g,getConfig()));if(g.command&&selected!==g.command.heroId)save(setCompanion(g,selected,'custom'));loadConfig(installAdvanced(getConfig(),selected,b.dataset.install));inform("进阶技能已加入当前战术首条；伙伴已使用自定义指令，对应阶段的房间覆盖已清除。请核对目标、资源与行动顺序；可撤销方案载入。");return;}
+ else if(b.dataset.install){const edit=customizeForEditing(g,getConfig(),selected),installed=installAdvanced(edit.config,selected,b.dataset.install);if(edit.changed)save(edit.guild);delete previews[selected];loadConfig(installed);inform("已保留实际职责并加入进阶技能；伙伴现为自定义，该阶段逐房指令覆盖已清除。请核对目标、资源与行动顺序；可撤销方案载入。");return;}
  else if(b.dataset.assign){save(assignLoot(g,selected,b.dataset.assign));inform("战利品已分配并装备，可在已持有装备中查看。");}
  else if(b.dataset.sell)save(sellLoot(g,b.dataset.sell));
  else if(b.dataset.learn)save(train(g,selected,b.dataset.learn));
