@@ -1,4 +1,5 @@
 import {clone,SKILLS,HEROES,roomsFor,resolveHeroPlan,gearSupports,gearRequirementName,POS} from './expedition-data.mjs';
+import {isAdvanced} from './expedition-growth.mjs';
 import {commandConfig,validateCommand} from './expedition-command.mjs';
 import {buildParty,chooseTargets} from './expedition-engine.mjs';
 export function companionPreview(g,tactics,id,mode,roomId=''){
@@ -10,6 +11,7 @@ export function companionPreview(g,tactics,id,mode,roomId=''){
  const party=buildParty(config).map(u=>({...u,...resolveHeroPlan(config.heroes.find(h=>h.id===u.id),room.id)})),actor=party.find(h=>h.id===id),enemies=room.enemies.map(u=>({...u,side:'enemy'}));
  const rows=['prep','main'].flatMap(phase=>actor[phase].map(r=>{
   const s=SKILLS[r.skill],warnings=[];let candidates=[];
+  if(isAdvanced(r.skill)&&!g.members.find(m=>m.id===id).unlocked.includes(r.skill))warnings.push('尚未永久学习'+s.name+'，请先在公会学习；当前不可按此职责出征');
   if(s.requiresGear&&!gearSupports(actor.gear,s.requiresGear))warnings.push('缺少'+gearRequirementName(s.requiresGear));
   if(s.item&&config.supplies[s.item]===0)warnings.push('出发补给中此耗材为0');
   if(s.kind==='buff')candidates=chooseTargets(actor,party,s,r.target).map(u=>u.name);

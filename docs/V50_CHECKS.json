@@ -1,0 +1,209 @@
+{
+  "note": "Two fixed situational roles; confirmation seeds 9-16 are separate from exploratory 1-8. Same learned guild assets, no training or gear grants. Counts are not prevented-healing estimates or general recommendations.",
+  "prerequisites": {
+    "completed": 2,
+    "xp": 55,
+    "unlocked": [
+      "foresight"
+    ]
+  },
+  "rows": [
+    {
+      "mode": "suppress",
+      "samples": [
+        {
+          "seed": 9,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 0
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 1
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "alive": 6,
+          "rounds": 18,
+          "remainingRune": 0,
+          "applied": 3,
+          "blocked": 2
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "alive": 6,
+          "rounds": 22,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 0
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 0
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "alive": 6,
+          "rounds": 18,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 1
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 1
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "alive": 6,
+          "rounds": 16,
+          "remainingRune": 0,
+          "applied": 3,
+          "blocked": 0
+        }
+      ]
+    },
+    {
+      "mode": "seer",
+      "samples": [
+        {
+          "seed": 9,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "remainingRune": 0,
+          "applied": 3,
+          "blocked": 3
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 2
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "alive": 6,
+          "rounds": 22,
+          "remainingRune": 0,
+          "applied": 3,
+          "blocked": 2
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 2
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 1
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 2
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 2
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "remainingRune": 0,
+          "applied": 2,
+          "blocked": 2
+        }
+      ]
+    }
+  ],
+  "equivalence": {
+    "reference": "d6f77b8adb0ea7b696015d62c24172d5526b1a89",
+    "count": 9,
+    "cases": [
+      {
+        "route": "classic",
+        "seed": 1
+      },
+      {
+        "route": "classic",
+        "seed": 3
+      },
+      {
+        "route": "classic",
+        "seed": 731
+      },
+      {
+        "route": "harbor",
+        "seed": 1
+      },
+      {
+        "route": "harbor",
+        "seed": 3
+      },
+      {
+        "route": "harbor",
+        "seed": 731
+      },
+      {
+        "route": "veteran",
+        "seed": 1
+      },
+      {
+        "route": "veteran",
+        "seed": 3
+      },
+      {
+        "route": "veteran",
+        "seed": 731
+      }
+    ],
+    "excluded": "Only newly recorded initiative identity, formula inputs and source trace; no draws, actions or outcomes change."
+  }
+}
