@@ -10,6 +10,7 @@ export const BUILDS={
 };
 BUILDS.d.push({id:'suppress',name:'截疗学者',desc:'以低伤害符术干扰敌方药师本回合后续救护；先攻、命中和共享符纸决定是否来得及，保留微光备用。',gear:'focus',trained:'suppress',training:{'skill:suppress':3},prep:[row('ward','front')],main:[row('suppress','healer'),row('spark','healer'),row('spark','front')]});
 BUILDS.d.push({id:'seer',name:'先觉截疗',desc:'需永久学习先觉阵。首回合先提高中央敏捷以争取早于药师截疗，次回合再补前排屏障；牺牲首回合屏障，耗蓝和符纸仍需规划，不保证抢先。',gear:'focus',trained:'suppress',training:{'skill:suppress':3},prep:[row('foresight','center','once'),row('ward','front')],main:[row('suppress','healer'),row('spark','healer'),row('spark','front')]});
+BUILDS.d.push({id:'measured',name:'节制截疗',desc:'同一条截疗指令每回合最多施放一次，额外行动改用微光；下回合重新从首条检查。首发闪避也计次数，不重试，与持续截疗各有取舍。',gear:'focus',trained:'suppress',training:{'skill:suppress':3},prep:[row('ward','front')],main:[row('suppress','healer','round'),row('spark','healer'),row('spark','front')]});
 for(const builds of Object.values(BUILDS))for(const b of builds)b.gear=equipmentKit(b.gear);
 for(const h of HEROES)if(!BUILDS[h.id])BUILDS[h.id]=BUILDS[CLASSES[h.classId].starterId];
 export function applyBuild(config,heroId,buildId){const b=BUILDS[heroId]?.find(x=>x.id===buildId);if(!b)throw Error('未知构筑');const next=clone(config),h=next.heroes.find(h=>h.id===heroId);if(!h)throw Error('角色未编入当前方案');for(const key of ['gear','trained','training','prep','main','healing'])if(Object.hasOwn(b,key))h[key]=clone(b[key]);for(const patch of Object.values(h.overrides))for(const key of ['prep','main','healing'])delete patch[key];return next;}

@@ -45,7 +45,7 @@ export function reviewReport(report){
  });
 }
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
-const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队'}[r.target])}（${{repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
+const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
  if(value===undefined)return '继承默认';
  if(key==='harborReserve')return HARBOR_RESERVE[value];if(key==='harborDifficulty')return HARBOR_DIFFICULTY[value];if(key==='harborPass')return HARBOR_PASS[value];if(key==='harborTask')return HARBOR_TASK[value];

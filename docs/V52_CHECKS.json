@@ -1,0 +1,341 @@
+{
+  "ruleset": "original-wod-inspired-0.52.0",
+  "note": "Controlled fixture uses explicit test-only attributes. Playable cases use new-guild actual assets with only tactics changed: central rhythm plus continuous or once-per-round suppression, with sustained caster or keeper role. Fixed seeds 17-24; this is not a broad balance or reserve upgrade claim.",
+  "boundary": [
+    {
+      "mode": "repeat",
+      "casts": 6,
+      "sparks": 0,
+      "applied": 3,
+      "blocked": 3,
+      "remainingRunes": 4
+    },
+    {
+      "mode": "round",
+      "casts": 3,
+      "sparks": 3,
+      "applied": 3,
+      "blocked": 3,
+      "remainingRunes": 7
+    }
+  ],
+  "playable": [
+    {
+      "plan": "front",
+      "mode": "suppress",
+      "samples": [
+        {
+          "seed": 17,
+          "won": true,
+          "alive": 6,
+          "rounds": 22,
+          "suppressionCasts": 1,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "alive": 6,
+          "rounds": 23,
+          "suppressionCasts": 2,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "suppressionCasts": 1,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "suppressionCasts": 0,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "suppressionCasts": 0,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "alive": 6,
+          "rounds": 23,
+          "suppressionCasts": 0,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "suppressionCasts": 1,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "suppressionCasts": 1,
+          "blocked": 0,
+          "rune": 0
+        }
+      ]
+    },
+    {
+      "plan": "front",
+      "mode": "measured",
+      "samples": [
+        {
+          "seed": 17,
+          "won": true,
+          "alive": 6,
+          "rounds": 22,
+          "suppressionCasts": 1,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "alive": 6,
+          "rounds": 23,
+          "suppressionCasts": 2,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "suppressionCasts": 1,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "suppressionCasts": 0,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "suppressionCasts": 0,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "alive": 6,
+          "rounds": 23,
+          "suppressionCasts": 0,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "suppressionCasts": 1,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "alive": 6,
+          "rounds": 26,
+          "suppressionCasts": 1,
+          "blocked": 0,
+          "rune": 0
+        }
+      ]
+    },
+    {
+      "plan": "keeper",
+      "mode": "suppress",
+      "samples": [
+        {
+          "seed": 17,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "suppressionCasts": 4,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "suppressionCasts": 5,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "suppressionCasts": 5,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "suppressionCasts": 4,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "suppressionCasts": 5,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "suppressionCasts": 4,
+          "blocked": 2,
+          "rune": 0
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "suppressionCasts": 4,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "alive": 6,
+          "rounds": 24,
+          "suppressionCasts": 4,
+          "blocked": 0,
+          "rune": 0
+        }
+      ]
+    },
+    {
+      "plan": "keeper",
+      "mode": "measured",
+      "samples": [
+        {
+          "seed": 17,
+          "won": true,
+          "alive": 6,
+          "rounds": 23,
+          "suppressionCasts": 3,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "suppressionCasts": 4,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "alive": 6,
+          "rounds": 18,
+          "suppressionCasts": 4,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "alive": 6,
+          "rounds": 20,
+          "suppressionCasts": 3,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "alive": 6,
+          "rounds": 19,
+          "suppressionCasts": 4,
+          "blocked": 0,
+          "rune": 0
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "alive": 6,
+          "rounds": 17,
+          "suppressionCasts": 2,
+          "blocked": 2,
+          "rune": 0
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "alive": 6,
+          "rounds": 21,
+          "suppressionCasts": 2,
+          "blocked": 1,
+          "rune": 0
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "alive": 6,
+          "rounds": 23,
+          "suppressionCasts": 3,
+          "blocked": 0,
+          "rune": 0
+        }
+      ]
+    }
+  ],
+  "unchanged": {
+    "reference": "e4af90f",
+    "count": 9,
+    "excluded": "Only changed ruleset label; every recorded action, snapshot, resource and random result matches."
+  }
+}

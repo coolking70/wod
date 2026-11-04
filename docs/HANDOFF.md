@@ -2,7 +2,7 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
 
 ## 运行与验证
 
@@ -59,3 +59,5 @@ GitHub仓库作为后续接续入口，建议每个可验证阶段及时提交�
 当前连续阶段见V50_SEER.md。v0.49已按新授权推送并核验d6f77b8，之后提交只本地。运行 `node scripts/check-v50.mjs /path/to/v049-reference` 可复现固定确认组与旧版等价；browser-v50.cjs验证真实出征结算、学习及先攻来源。引擎仍为0.49，新先攻字段只作观察，没有改变随机调用。
 
 v0.51当前319项测试通过，职责编辑统一经readiness.customizeForEditing物化实际配置，再切自定义。不要直接先setCompanion(custom)再从旧草稿读取指令；锁定技能必须仍可进入编辑移除，出征校验保持独立。browser-v51.cjs验证真实逐房覆盖。
+
+v0.52当前333项测试通过。规则标签0.52，schema仍0.40.0。当前旧版本等价入口为check-v52.mjs /path/to/v051-reference；旧check-v49/v50的完整历史比较需检出当时提交。browser-v52.cjs验证节拍与后备实战。新模式只允许普通阶段；有round条目时该角色本回合首次普通检查从首条开始，按条目计成功，不越过前置持续指令。

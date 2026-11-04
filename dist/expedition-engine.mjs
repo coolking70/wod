@@ -5,12 +5,12 @@ import {validEquipment,equipmentTotals} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
 import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,trainingCost,TRAINING_BUDGET} from './expedition-data.mjs';
-export const RULESET='original-wod-inspired-0.49.0';
+export const RULESET='original-wod-inspired-0.52.0';
 const routes={front:['front','left','right','center','rear'],left:['right','front','center','rear','left'],right:['left','front','center','rear','right'],center:['front','left','right','center','rear'],rear:['front','left','right','center','rear']};
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
  if(!Object.hasOwn(POS,h.pos))throw Error('站位无效');
- for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait'].includes(s.kind))||!['repeat','cycle','once'].includes(r.mode)||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');}}
+ for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait'].includes(s.kind))||!['repeat','cycle','once','round'].includes(r.mode)||(r.mode==='round'&&phase!=='main')||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');}}
  if(!h.healing||!['lowest','self_first'].includes(h.healing.priority??'lowest')||typeof h.healing.enabled!=='boolean'||![.5,.65,.8].includes(h.healing.threshold)||![...Object.keys(POS),'all','self'].includes(h.healing.target)||(h.healing.enabled&&!t.skills.includes('heal')))throw Error('治疗设置不合法');
  if(!h.itemPolicy||typeof h.itemPolicy.enabled!=='boolean'||![.3,.5,.7].includes(h.itemPolicy.threshold))throw Error('道具使用策略无效');
  if(!h.defenses||Object.keys(h.defenses).length!==3)throw Error('防御配置无效');
@@ -96,7 +96,7 @@ export function simulate(c,options={}){
   let harborDecision=null,harborDelta={};
   if(c.expedition==='harbor'&&!options.rooms){const selected=resolveHarborStep(roomIndex,c,party,supplies,mean,resistanceOf,random(c.seed^0x48A01^roomIndex),harborFlags);rooms[roomIndex]=selected.room;harborFlags=selected.flags;harborDecision=selected.decision;harborDelta=selected.delta;}
   const room=rooms[roomIndex];round=0;phase='进场';for(const u of party){const h=c.heroes.find(h=>h.id===u.id);if(h){const plan=resolveHeroPlan(h,room.id);for(const key of PLAN_FIELDS)u[key]=clone(plan[key]);}}enemies=room.enemies.map(u=>({...u,effects:[],side:'enemy'}));enemySupplies={herb:60,rune:60,arrow:60};
-  const cursors=new Map(),used=new Set();let serial=0;
+  const cursors=new Map(),used=new Set(),roundUsed=new Map(),roundCursors=new Map();let serial=0;
   emit('room',room.name+'：生命、法力、补给与远征效果继承。',null,[],{rule:'房间效果结束；远征效果保留；行动游标重置。'});
   if(harborDecision){for(const [key,delta] of Object.entries(harborDelta))supplies[key]+=delta;emit('branch',room.name+' · '+harborDecision.reason,harborDecision.actor,[],{...harborDecision,sourceEventId:roomIndex===3?harborSource:null});if(roomIndex===2)harborSource=events.at(-1).id;}
   if(c.expedition==='scarcity')emit('deadline','潮水封路：本房须在 '+roomTimeBudget(c,room.id)+' 回合内清场。',null,[],{limit:roomTimeBudget(c,room.id),gatherDelay:room.id==='cistern'&&c.rescueApproach==='gather'?1:0,rule:room.id==='cistern'&&c.rescueApproach==='gather'?'拾取药草占用1回合，原5回合缩短为4回合；不额外跳过战斗行动。':'本房第5回合结束仍有敌人则远征停止。'});
@@ -124,6 +124,7 @@ export function simulate(c,options={}){
   function attempt(u,r,key,interrupt=false){
    const s=SKILLS[r.skill],stock=u.side==='party'?supplies:enemySupplies;let reason='',reservation=null,healingBlock=null;
    if(used.has(key)&&r.mode==='once')reason='本房间一次指令已执行';
+   else if(roundUsed.get(key)===round&&r.mode==='round')reason='本回合一次指令已执行，继续后备';
    else if(s.requiresGear&&!gearSupports(u.gear,s.requiresGear))reason='装备条件不满足';
    else if(s.kind==='heal'&&(healingBlock=healingBlockTrace(u)))reason=HEALING_BLOCK_REASON;
    else if(s.kind==='summon'&&summons.some(t=>t.owner===u.id&&t.hp>0))reason='已有存活召唤物';
@@ -137,8 +138,8 @@ export function simulate(c,options={}){
     if(!targets.length)reason=Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
    }
    if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {}),...(healingBlock?{healingBlock}: {})});return false;}
-   if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);return true;}
-   const before=u.mp;u.mp-=s.cost;if(s.item)stock[s.item]--;used.add(key);
+   if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);roundUsed.set(key,round);return true;}
+   const before=u.mp;u.mp-=s.cost;if(s.item)stock[s.item]--;used.add(key);roundUsed.set(key,round);
    const lv=skillLevel(u,r.skill),m=mean(u,r.skill),cast=++serial;actionId=roomIndex+':'+cast;
    emit('cast',u.name+' '+(interrupt?'中断普通指令，使用':'使用')+'「'+s.name+'」',u.id,targets.map(t=>t.id),{cast,skill:r.skill,skillLevel:lv,levelSources:skillBreakdown(u,r.skill),primary:current(u,s.primary),secondary:current(u,s.secondary),mean:m,formula:'主属性 ×2 + 副属性 + 实时技能等级 ×2',mpBefore:before,mpAfter:u.mp,item:s.item||null,interrupt,...(Object.hasOwn(ROLE_TARGETS,r.target)?{targetPolicy:{requested:r.target,rule:'仅选择存活且拥有'+(r.target==='healer'?'治疗':'召唤')+'技能的敌人；多人符合时随机选一人，不要求当前资源充足。',selected:targets.map(t=>({id:t.id,name:t.name,pos:t.pos}))}}:{}),sources:effectTrace(u)});
    if(s.kind==='summon')spawn(u,r.target);
@@ -171,7 +172,7 @@ export function simulate(c,options={}){
    try {
    if(p==='main'&&useItem(u)){if(trace)trace.status='item_priority';return;}
    if(p==='main'&&u.healing?.enabled){const h=u.healing,t=chooseTargets(u,all(),SKILLS.heal,h.target,rng)[0];if(t&&t.hp/t.maxHp<=h.threshold){if(attempt(u,{skill:'heal',target:h.target,mode:'repeat'},u.id+':heal',true))return;}}
-   const rows=u[p]||[],key=u.id+':'+p;let at=cursors.get(key)||0;
+   const rows=u[p]||[],key=u.id+':'+p;if(rows.some(r=>r.mode==='round')&&roundCursors.get(key)!==round){cursors.set(key,0);roundCursors.set(key,round);}let at=cursors.get(key)||0;
    for(let i=0;i<rows.length;i++){const r=rows[at],ok=attempt(u,r,key+':'+at);const next=ok&&r.mode==='repeat'?at:(at+1)%rows.length;cursors.set(key,next);at=next;if(ok)return;}
    if(p==='main'){if(stats[u.id])stats[u.id].failed++;emit('failed',u.name+' 无法执行任何行动。',u.id,[],{consumedAction:true,automaticAttack:false});}
    } finally {const emittedAction=events.slice(start),reserved=emittedAction.filter(e=>e.type==='skip'&&e.detail.reservation);if(reserved.length){const outcome=emittedAction.find(e=>['cast','item','wait','failed'].includes(e.type));for(const e of reserved)e.detail.reserveOutcome=outcome?{eventId:outcome.id,type:outcome.type,skill:outcome.detail.skill||null}:{eventId:null,type:'no-preparation',skill:null};}if(trace){const emitted=events.slice(start),entry=emitted.find(e=>['cast','item','failed','wait'].includes(e.type))||emitted[0];if(emitted.some(e=>e.type==='heal'&&e.actor===u.id))trace.status='healed';if(entry)entry.detail.healingDecision=clone(trace);}}
