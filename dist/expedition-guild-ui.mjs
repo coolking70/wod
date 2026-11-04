@@ -63,7 +63,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  else if(b.dataset.historyLoad){loadConfig(historyConfig(g,Number(b.dataset.historyLoad)));inform('历史出征方案已载入，可撤销。再次公会出征使用当前装备与训练，并采用新的出征种子。');return;}
  else if(b.dataset.guildTab){switchPanel(b.dataset.guildTab);return;}
  else if(b.dataset.member)selected=b.dataset.member;
- else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,actual=readiness(g,getConfig(),room).config;delete previews[id];if(g.command&&id!==g.command.heroId)save(setCompanion(g,id,'custom'));updateConfig(actual);editHero(id,room);return;}
+ else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,actual=readiness(g,getConfig(),room).config;delete previews[id];if(g.command&&id!==g.command.heroId)save(setCompanion(g,id,'custom'));updateConfig(actual);editHero(id,room,b.dataset.cooperationRow);return;}
  else if(b.dataset.readyEdit){delete previews[b.dataset.readyEdit];if(g.command&&b.dataset.readyEdit!==g.command.heroId){save(setCompanion(g,b.dataset.readyEdit,'custom'));inform('该伙伴已切换为自定义指令。');}updateConfig(rosterConfig(g,getConfig()));editHero(b.dataset.readyEdit,checkScope);return;}
  else if(b.dataset.readyMember){selected=b.dataset.readyMember;switchPanel("team");return;}
  else if(b.dataset.unlock)save(learnAdvanced(g,b.dataset.unlock));
