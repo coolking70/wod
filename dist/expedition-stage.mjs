@@ -8,7 +8,7 @@ export function stageFrame(group){
  const events=group.events,last=events.at(-1),cast=events.find(e=>e.type==='cast'),lead=cast||events[0],cues=[],links=[];
  for(const e of events){
   if(e.type==='attack'){const d=e.detail,kind=d.grade==='闪避'?'miss':d.actual>0?'damage':'blocked';cues.push({unit:e.targets[0],kind,text:kind==='miss'?'闪避':kind==='blocked'?'吸收':`−${d.actual}`,note:d.grade+(d.resistance>0?' · 抗性减伤':d.resistance<0?' · 弱点':''),eventId:e.id});}
-  else if(e.type==='heal')cues.push({unit:e.targets[0],kind:'heal',text:'+'+e.detail.actual,note:'救护',eventId:e.id});
+  else if(e.type==='heal')cues.push({unit:e.targets[0],kind:'heal',text:'+'+e.detail.actual,note:e.detail.passive?'缓释':'救护',eventId:e.id});
   else if(e.type==='item')cues.push({unit:e.actor,kind:e.detail.resource==='hp'?'heal':'mana',text:'+'+e.detail.actual,note:e.detail.resource==='hp'?'药匣恢复':'药瓶回蓝',eventId:e.id});
   else if(['effect','activate','summon','down','dismiss','defend'].includes(e.type)){
    const unit=e.type==='defend'?e.actor:e.targets[0],kind=e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'buff'):e.type;

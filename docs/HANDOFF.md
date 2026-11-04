@@ -18,7 +18,7 @@ git worktree remove /tmp/wod-v052-check
 git diff --check
 ```
 
-本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；最终346项测试通过，131个ES模块及8个浏览器脚本语法检查通过。无构建步骤。browser-v50/v51/v52/v53.cjs分别保存各阶段验收，当前浏览器参数见V53_SUSTAINED_CARE.md及V49报告。需要本地HTTP服务，不建议file://打开ES模块。
+本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；最终349项测试通过，131个ES模块及8个浏览器脚本语法检查通过。无构建步骤。browser-v50/v51/v52/v53.cjs分别保存各阶段验收，当前浏览器参数见V53_SUSTAINED_CARE.md及V49报告。需要本地HTTP服务，不建议file://打开ES模块。
 
 当前引擎RULESET为original-wod-inspired-0.53.0，配置schema仍0.40.0。三组页面活动样本v13/v14/v16共1,824条已用新引擎重放，除规则标签外数据逐项相同。历史研究数据保持原口径，不冒充新技能的平衡结果。历史check脚本需要完整复现时检出对应提交；当前旧版等价入口是check-v53和v0.52参考工作树。无参考目录运行会将V53_CHECKS的旧版比较写为null，不能声称复验旧版。
 

@@ -23,7 +23,7 @@ import {deploymentPreview,placeHero} from './expedition-deployment.mjs';
 import {ROLE_TARGETS,targetOptions,roleHuntConfig} from './expedition-data.mjs';
 import {HOSPICE_GOALS,contractPlan,contractResult,contractFrame} from './expedition-contract.mjs';
 import {healingReason,HEAL_PRIORITIES} from './expedition-healing.mjs';
-import {careTimeline,enemyBadge} from './expedition-care.mjs';
+import {careTimeline,enemyBadge,healingActivity} from './expedition-care.mjs';
 import {hospiceMoment} from './expedition-hospice.mjs';
 import {survivalConfig,hospiceConfig} from './expedition-data.mjs';
 import {LOADOUTS,POLICIES,reserveConfig} from './expedition-reserve.mjs';
@@ -325,8 +325,8 @@ function loadSurvival(kind){replaceConfig(survivalConfig(kind));savedA=survivalC
 $('#survival-start').onclick=()=>loadSurvival('baseline');$('#survival-brief').onclick=e=>{const b=e.target.closest('[data-survival]');if(b)loadSurvival(b.dataset.survival);};
 function renderSurvivalOutcome(){
  $('#survival-outcome').hidden=report.config.expedition!=='survival';if(report.config.expedition!=='survival')return;
- const downs=report.events.filter(e=>e.type==='down'&&HEROES.some(h=>e.targets.includes(h.id))),heals=report.events.filter(e=>e.type==='heal'&&report.config.heroes.some(h=>h.id===e.actor));
- $('#survival-outcome').innerHTML='<p class="eyebrow">守灯结算 / 完整结果</p><h2>'+ (report.won?(downs.length?'灯火守住了，但有人未能归队。':'灯火与六名队员，一同归来。'):'归途尚未走完。')+'</h2><p>药师实际治疗 '+heals.reduce((n,e)=>n+e.detail.actual,0)+' 生命 / '+heals.length+' 次行动。以下倒下记录可回到当次受击；治疗总量不能单独证明方案更好。</p>'+downs.map(e=>`<button data-down-event="${e.id}">${esc(HEROES.find(h=>h.id===e.targets[0])?.name||e.text)} · ${e.roomIndex+1}房 / 第${e.round}回合倒下 →</button>`).join('')+'<p class="muted">先比较攻击覆盖、防御与救护时机。此处为完整结算，不随播放进度变化。</p>';
+ const downs=report.events.filter(e=>e.type==='down'&&HEROES.some(h=>e.targets.includes(h.id))),healing=healingActivity(report);
+ $('#survival-outcome').innerHTML='<p class="eyebrow">守灯结算 / 完整结果</p><h2>'+ (report.won?(downs.length?'灯火守住了，但有人未能归队。':'灯火与六名队员，一同归来。'):'归途尚未走完。')+'</h2><p>药师实际治疗 '+healing.actual+' 生命 / 普通救护 '+healing.ordinaryActions+' 次行动 / 缓释 '+healing.passiveRecords+' 条目标恢复记录。以下倒下记录可回到当次受击；治疗总量不能单独证明方案更好。</p>'+downs.map(e=>`<button data-down-event="${e.id}">${esc(HEROES.find(h=>h.id===e.targets[0])?.name||e.text)} · ${e.roomIndex+1}房 / 第${e.round}回合倒下 →</button>`).join('')+'<p class="muted">先比较攻击覆盖、防御与救护时机。此处为完整结算，不随播放进度变化。</p>';
 }
 $('#survival-outcome').onclick=e=>{const b=e.target.closest('[data-down-event]');if(b){stop();const at=report.events.findIndex(x=>x.id===Number(b.dataset.downEvent));selectedUnit=report.events[at].targets[0];move(at);$('#care-panel').open=true;$('#care-panel').scrollIntoView({block:'start'});}};
 
