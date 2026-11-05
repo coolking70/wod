@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.114「迟拍弦」**，分支`feature/v114-offbeat-control`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.115「错拍回廊」**，分支`feature/v115-counterpoint-corridor`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[错拍回廊](docs/V115_COUNTERPOINT_CORRIDOR.md)：两场24补给短线，敌方按同规则迟拍，急拍推进/付费净化/少用急拍拆来源互有代价；无新装备或技能。沿用两次邮路失败后真实存档，正常375/450/525金币与完整报告/公会同API，保留净化耗尽符纸仍受限、援护未及反例。见[V115验证](docs/V115_CHECKS.json)。
 
 新增[迟拍弦与延迟额外行动反制](docs/V114_OFFBEAT_CONTROL.md)：吟游者自由普通技能，命中后仅下一回合少排至多一次额外普通行动，保留基础行动/当前队列，可净化且不叠加。默认回放可查免费后备、实际2→1或1→1和来源；正常钟楼通关后两次邮路失败均保留，不能视作通用升级。验证见[V114_CHECKS](docs/V114_CHECKS.json)。
 

@@ -1,0 +1,1187 @@
+{
+  "normal": [
+    {
+      "plan": "tempo",
+      "seed": 4,
+      "reward": {
+        "cleared": 2,
+        "gold": 110,
+        "xp": 50,
+        "firstClear": true,
+        "loot": []
+      },
+      "gold": 375,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 6
+      },
+      "enemyOffbeat": 3,
+      "limits": [
+        {
+          "room": 0,
+          "round": 2,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:9:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:16:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [],
+      "intercepts": []
+    },
+    {
+      "plan": "cleanse",
+      "seed": 5,
+      "reward": {
+        "cleared": 2,
+        "gold": 75,
+        "xp": 35,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 450,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 6
+      },
+      "enemyOffbeat": 6,
+      "limits": [
+        {
+          "room": 1,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:28:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [
+        {
+          "room": 0,
+          "round": 2,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:8:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:22:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:32:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "1:18:a:offbeat",
+              "source": "cplead"
+            }
+          ]
+        }
+      ],
+      "intercepts": []
+    },
+    {
+      "plan": "source",
+      "seed": 6,
+      "reward": {
+        "cleared": 2,
+        "gold": 75,
+        "xp": 35,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 525,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 5
+      },
+      "enemyOffbeat": 0,
+      "limits": [],
+      "cleanses": [],
+      "intercepts": [
+        {
+          "round": 1,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 2,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 3,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        }
+      ]
+    }
+  ],
+  "start": {
+    "gold": 265,
+    "priorCourierFailures": [
+      {
+        "id": 3,
+        "won": false,
+        "gold": 40
+      },
+      {
+        "id": 2,
+        "won": false,
+        "gold": 40
+      }
+    ]
+  },
+  "matrix": [
+    {
+      "plan": "tempo",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 6
+      },
+      "enemyOffbeat": 3,
+      "limits": [
+        {
+          "room": 0,
+          "round": 2,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:11:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:30:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:15:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [],
+      "intercepts": []
+    },
+    {
+      "plan": "tempo",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "enemyOffbeat": 3,
+      "limits": [
+        {
+          "room": 0,
+          "round": 2,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:9:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:27:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:18:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [],
+      "intercepts": []
+    },
+    {
+      "plan": "tempo",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "enemyOffbeat": 3,
+      "limits": [
+        {
+          "room": 0,
+          "round": 2,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:8:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:27:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:20:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [],
+      "intercepts": []
+    },
+    {
+      "plan": "tempo",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 6
+      },
+      "enemyOffbeat": 4,
+      "limits": [
+        {
+          "room": 0,
+          "round": 3,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:15:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:16:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [],
+      "intercepts": []
+    },
+    {
+      "plan": "tempo",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "enemyOffbeat": 3,
+      "limits": [
+        {
+          "room": 0,
+          "round": 2,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:11:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:31:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:19:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [],
+      "intercepts": []
+    },
+    {
+      "plan": "tempo",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "enemyOffbeat": 4,
+      "limits": [
+        {
+          "room": 0,
+          "round": 2,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:8:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cpvoice",
+          "effectId": "0:27:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:32:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [],
+      "intercepts": []
+    },
+    {
+      "plan": "cleanse",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 6
+      },
+      "enemyOffbeat": 5,
+      "limits": [
+        {
+          "room": 1,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:33:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [
+        {
+          "room": 0,
+          "round": 2,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:11:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:21:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "1:17:a:offbeat",
+              "source": "cplead"
+            }
+          ]
+        }
+      ],
+      "intercepts": []
+    },
+    {
+      "plan": "cleanse",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 6
+      },
+      "enemyOffbeat": 6,
+      "limits": [
+        {
+          "room": 1,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:29:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [
+        {
+          "room": 0,
+          "round": 2,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:9:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        }
+      ],
+      "intercepts": []
+    },
+    {
+      "plan": "cleanse",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 6
+      },
+      "enemyOffbeat": 5,
+      "limits": [
+        {
+          "room": 1,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:31:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [
+        {
+          "room": 0,
+          "round": 2,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:8:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:19:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:31:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "1:20:a:offbeat",
+              "source": "cplead"
+            }
+          ]
+        }
+      ],
+      "intercepts": []
+    },
+    {
+      "plan": "cleanse",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 6
+      },
+      "enemyOffbeat": 6,
+      "limits": [],
+      "cleanses": [
+        {
+          "room": 0,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:15:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:31:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "1:18:a:offbeat",
+              "source": "cplead"
+            }
+          ]
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "1:29:a:offbeat",
+              "source": "cplead"
+            }
+          ]
+        }
+      ],
+      "intercepts": []
+    },
+    {
+      "plan": "cleanse",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 6
+      },
+      "enemyOffbeat": 6,
+      "limits": [
+        {
+          "room": 1,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:30:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [
+        {
+          "room": 0,
+          "round": 2,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:11:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:19:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:31:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "1:21:a:offbeat",
+              "source": "cplead"
+            }
+          ]
+        }
+      ],
+      "intercepts": []
+    },
+    {
+      "plan": "cleanse",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 6
+      },
+      "enemyOffbeat": 7,
+      "limits": [
+        {
+          "room": 1,
+          "round": 4,
+          "target": "a",
+          "name": "阿瑟",
+          "source": "cplead",
+          "effectId": "1:31:a:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "cleanses": [
+        {
+          "room": 0,
+          "round": 2,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:8:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 3,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:21:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:33:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        },
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "d",
+          "removed": [
+            {
+              "skill": "offbeat",
+              "effectId": "0:38:a:offbeat",
+              "source": "cpvoice"
+            }
+          ]
+        }
+      ],
+      "intercepts": []
+    },
+    {
+      "plan": "source",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 4,
+        "arrow": 5
+      },
+      "enemyOffbeat": 0,
+      "limits": [],
+      "cleanses": [],
+      "intercepts": [
+        {
+          "round": 1,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 2,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 3,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        }
+      ]
+    },
+    {
+      "plan": "source",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 5
+      },
+      "enemyOffbeat": 0,
+      "limits": [],
+      "cleanses": [],
+      "intercepts": [
+        {
+          "round": 1,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 2,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 3,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        }
+      ]
+    },
+    {
+      "plan": "source",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 5
+      },
+      "enemyOffbeat": 0,
+      "limits": [],
+      "cleanses": [],
+      "intercepts": [
+        {
+          "round": 1,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 2,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 3,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        }
+      ]
+    },
+    {
+      "plan": "source",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 5
+      },
+      "enemyOffbeat": 0,
+      "limits": [],
+      "cleanses": [],
+      "intercepts": [
+        {
+          "round": 1,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 2,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 3,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        }
+      ]
+    },
+    {
+      "plan": "source",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 4,
+        "arrow": 5
+      },
+      "enemyOffbeat": 0,
+      "limits": [],
+      "cleanses": [],
+      "intercepts": [
+        {
+          "round": 1,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 2,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 3,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        }
+      ]
+    },
+    {
+      "plan": "source",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 5
+      },
+      "enemyOffbeat": 0,
+      "limits": [],
+      "cleanses": [],
+      "intercepts": [
+        {
+          "round": 1,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 2,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        },
+        {
+          "round": 3,
+          "success": false,
+          "protected": "cplead",
+          "attackType": "ranged"
+        }
+      ]
+    }
+  ],
+  "design": "Project-original two-room practice route, enemy stats, plans and currency rewards; v114 offbeat/cleanse/interception and all combat costs reused without changes. No new gear, formula, permanent supply economy or global courier nerf.",
+  "limit": "18 predeclared finite fresh inputs and normal earned departures 4/5/6 after the two preserved courier failures. Full presets change several decisions; equal seed is not attack-RNG pairing or single-skill causal evidence. No prevented-damage/win attribution."
+}

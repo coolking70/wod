@@ -25,7 +25,7 @@ export function personalReport(report,heroId){
    if(own){add(e.roomIndex,'healing',d.actual);proof(e,index,'本人治疗');if(e.targets[0]!==heroId)link(given,e.targets[0],'healing',d.actual,index);}
    if(target){add(e.roomIndex,'received',d.actual);if(!own)link(received,e.actor,'healing',d.actual,index);proof(e,index,'得到治疗');}
   }
-  if(e.type==='initiative'&&d.actionLimits)for(const l of d.actionLimits){if(l.source===heroId){add(e.roomIndex,'extraActionsLimited',l.removed);proof(e,index,'迟拍实际队列');}if(l.target===heroId)add(e.roomIndex,'ownExtraActionsLimited',l.removed);}
+  if(e.type==='initiative'&&d.actionLimits)for(const l of d.actionLimits){if(l.source===heroId){add(e.roomIndex,'extraActionsLimited',l.removed);proof(e,index,'迟拍实际队列');}if(l.target===heroId){add(e.roomIndex,'ownExtraActionsLimited',l.removed);proof(e,index,'本人迟拍队列');}}
   if(e.type==='skip'&&d.healingBlock){if(d.healingBlock.source===heroId){add(e.roomIndex,'healingBlocks');proof(e,index,'救护受阻');}if(own)proof(e,index,'本人救护受阻');}
   if(e.type==='effect')for(const id of e.targets){
    // A multi-component buff on one recipient is one application, not several contributions.
@@ -49,5 +49,5 @@ export function personalReport(report,heroId){
 
 // Keep complete action groups, plus room/story boundaries, for a personal replay.
 export function personalSteps(steps,heroId){
- return steps.filter(g=>g.events.some(e=>['room','victory','defeat','scene','encounter','route','rescue','branch','deadline'].includes(e.type)||e.actor===heroId||e.targets.includes(heroId)||e.units.some(u=>u.owner===heroId&&(u.id===e.actor||e.targets.includes(u.id)))));
+ return steps.filter(g=>g.events.some(e=>['room','victory','defeat','scene','encounter','route','rescue','branch','deadline'].includes(e.type)||e.detail?.actionLimits?.some(l=>l.source===heroId||l.target===heroId)||e.actor===heroId||e.targets.includes(heroId)||e.units.some(u=>u.owner===heroId&&(u.id===e.actor||e.targets.includes(u.id)))));
 }

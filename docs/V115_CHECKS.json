@@ -1,0 +1,414 @@
+{
+  "version": "0.115",
+  "branch": "feature/v115-counterpoint-corridor",
+  "baseline": "8967d734b7a4842adb42fe9b32fbce2f12d6e783",
+  "fullTests": {
+    "passed": 864,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-tests.tap"
+  },
+  "newTests": {
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "unit-final.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 23,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "pageErrors": 0,
+    "log": "acceptance/browser-acceptance.json",
+    "finalNewWorkflow": "acceptance/browser-v115/browser-v115.json",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 437,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 120,
+    "checkedReferences": 137,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "8967d734b7a4842adb42fe9b32fbce2f12d6e783",
+    "priorRoutes": 22,
+    "currentRoutes": 23,
+    "newRoute": "counterpoint",
+    "count": 44,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "legacyChecker": "scripts/check-v115-legacy.mjs",
+  "legacyFullHashLog": "legacy.json",
+  "normalProgression": {
+    "reports": [
+      {
+        "plan": "tempo",
+        "seed": 4,
+        "reward": {
+          "cleared": 2,
+          "gold": 110,
+          "xp": 50,
+          "firstClear": true,
+          "loot": []
+        },
+        "gold": 375,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4
+        ],
+        "supplies": {
+          "herb": 8,
+          "rune": 2,
+          "arrow": 6
+        },
+        "enemyOffbeat": 3,
+        "limits": [
+          {
+            "room": 0,
+            "round": 2,
+            "target": "a",
+            "name": "阿瑟",
+            "source": "cpvoice",
+            "effectId": "0:9:a:offbeat",
+            "before": 2,
+            "removed": 1,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "target": "a",
+            "name": "阿瑟",
+            "source": "cplead",
+            "effectId": "1:16:a:offbeat",
+            "before": 2,
+            "removed": 1,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          }
+        ],
+        "cleanses": [],
+        "intercepts": []
+      },
+      {
+        "plan": "cleanse",
+        "seed": 5,
+        "reward": {
+          "cleared": 2,
+          "gold": 75,
+          "xp": 35,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 450,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 0,
+          "arrow": 6
+        },
+        "enemyOffbeat": 6,
+        "limits": [
+          {
+            "room": 1,
+            "round": 4,
+            "target": "a",
+            "name": "阿瑟",
+            "source": "cplead",
+            "effectId": "1:28:a:offbeat",
+            "before": 2,
+            "removed": 1,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          }
+        ],
+        "cleanses": [
+          {
+            "room": 0,
+            "round": 2,
+            "actor": "d",
+            "removed": [
+              {
+                "skill": "offbeat",
+                "effectId": "0:8:a:offbeat",
+                "source": "cpvoice"
+              }
+            ]
+          },
+          {
+            "room": 0,
+            "round": 3,
+            "actor": "d",
+            "removed": [
+              {
+                "skill": "offbeat",
+                "effectId": "0:22:a:offbeat",
+                "source": "cpvoice"
+              }
+            ]
+          },
+          {
+            "room": 0,
+            "round": 4,
+            "actor": "d",
+            "removed": [
+              {
+                "skill": "offbeat",
+                "effectId": "0:32:a:offbeat",
+                "source": "cpvoice"
+              }
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "actor": "d",
+            "removed": [
+              {
+                "skill": "offbeat",
+                "effectId": "1:18:a:offbeat",
+                "source": "cplead"
+              }
+            ]
+          }
+        ],
+        "intercepts": []
+      },
+      {
+        "plan": "source",
+        "seed": 6,
+        "reward": {
+          "cleared": 2,
+          "gold": 75,
+          "xp": 35,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 525,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 5
+        },
+        "enemyOffbeat": 0,
+        "limits": [],
+        "cleanses": [],
+        "intercepts": [
+          {
+            "round": 1,
+            "success": false,
+            "protected": "cplead",
+            "attackType": "ranged"
+          },
+          {
+            "round": 2,
+            "success": false,
+            "protected": "cplead",
+            "attackType": "ranged"
+          },
+          {
+            "round": 3,
+            "success": false,
+            "protected": "cplead",
+            "attackType": "ranged"
+          }
+        ]
+      }
+    ],
+    "start": {
+      "gold": 265,
+      "priorCourierFailures": [
+        {
+          "id": 3,
+          "won": false,
+          "gold": 40
+        },
+        {
+          "id": 2,
+          "won": false,
+          "gold": 40
+        }
+      ]
+    },
+    "fullReportsAndGuildEqualToAPI": true,
+    "earnedGoldBalances": [
+      375,
+      450,
+      525
+    ],
+    "paidTraining": {
+      "hero": "d",
+      "key": "skill:ward",
+      "xp": 20
+    },
+    "retainedEarnedGear": {
+      "hero": "e",
+      "item": "clockpin"
+    },
+    "retainedEarnedTraining": {
+      "hero": "e",
+      "key": "skill:offbeat",
+      "rank": 1
+    },
+    "goalProofIds": [
+      4,
+      5,
+      6
+    ],
+    "campaignPlanAndBindingRestore": true,
+    "historyImmutableNoDuplicateClaim": true,
+    "priorCourierFailuresPreserved": true
+  },
+  "finiteCases": {
+    "count": 18,
+    "plans": [
+      "tempo",
+      "cleanse",
+      "source"
+    ],
+    "seeds": [
+      1,
+      2,
+      7,
+      19,
+      73,
+      731
+    ],
+    "won": 18,
+    "allSixStanding": true,
+    "cleanseZeroRunes": 5,
+    "sourceInterceptionAttempts": 18,
+    "sourceInterceptionSuccesses": 0,
+    "limits": "18 predeclared finite fresh inputs and normal earned departures 4/5/6 after the two preserved courier failures. Full presets change several decisions; equal seed is not attack-RNG pairing or single-skill causal evidence. No prevented-damage/win attribution.",
+    "enemyStatsTunedAfterDiscovery": false,
+    "initialDiscoveryOutcomesRetained": true
+  },
+  "content": {
+    "rooms": 2,
+    "supplyBudget": 24,
+    "firstClear": {
+      "gold": 110,
+      "xp": 50,
+      "loot": []
+    },
+    "repeatClear": {
+      "gold": 75,
+      "xp": 35,
+      "loot": []
+    },
+    "onFailure": "20 gold/10 XP per cleared room only",
+    "enemyOffbeat": "same seven mana/ordinary action/next-round-extra-action-only/cleanseable rule as v114",
+    "newEngineRules": false
+  },
+  "initialFindings": {
+    "unitExpectedCounts": "Two incorrect test expectations: printed first two of three interception attempts; representative evidence intentionally keeps only the first per kind. Corrected exact three attempts and first index, while verifying total two reductions and per-room [1,1]. No combat changes.",
+    "fullTestFailure": "v38 simplified events omit detail; personalSteps action-limit branch needed optional detail access. Fixed source, retained old fixture and reran complete suite.",
+    "browserFailureAndFix": "Public enemy dossier had no ordinary/preparation payment text. Added real own mana/material payment from commandCostText, kept seven-mana assertion. Later diagnostic/grouped-event navigation and exact newline/result wording corrected without altering config/report/guild/payment/outcome comparisons.",
+    "logs": [
+      "unit-initial.tap",
+      "full-initial.tap",
+      "browser-initial.json",
+      "browser-initial.stderr",
+      "browser-navigation.json",
+      "browser-navigation.stderr",
+      "browser-wording.json",
+      "browser-wording.stderr"
+    ],
+    "combatAssertionsWeakened": false,
+    "seedsChangedToPass": false
+  },
+  "referenceBoundary": {
+    "readFullText": "https://world-of-dungeons.net/",
+    "verified": "Public homepage player accounts emphasize studying opponents, choosing weapons/positions/priority targets and coordinating protection/buffs. Tactical direction only, not a mechanics specification.",
+    "carriedReference": {
+      "document": "docs/V114_OFFBEAT_CONTROL.md",
+      "url": "https://world-of-dungeons.de/skill/Lied%2Bder%2Bunertr%C3%A4glichen%2BPein&is_popup=1&world=WD",
+      "supports": "v114 successfully read public action-count reduction and delayed components; v115 reuses existing project mechanics without numerical changes. Not authenticated current-server verification."
+    },
+    "failedRead": {
+      "url": "https://world-of-dungeons.net/ency/First_Steps",
+      "result": "502 Bad Gateway",
+      "retried": false,
+      "reliance": "Not treated as successfully read full text; no numerical rules imported."
+    },
+    "currentServerRulesVerified": false,
+    "authored": "Two-room solo route, enemy stats/formation/commands, provisional three presets and currency-only rewards. No new skill, gear, formula, permanent supply rule or training cost."
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 23,
+    "gear": 40,
+    "goalCount": 69,
+    "combatEngineChanged": false,
+    "newSkillsOrFormulas": false,
+    "newTrainingCosts": false,
+    "configSchemaChanged": false,
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "limitations": [
+      "Official homepage supports tactical direction only; current authenticated server numbers are unverified. New route, enemy stats, presets and currency-only rewards are project-original provisional content.",
+      "Finite samples do not establish global balance. Two normal courier failures remain; the practice route is not evidence that courier is now reliably completable.",
+      "Five of six fresh cleanse cases exhaust runes; normal cleanse case also exhausts runes and suffers one later reduction.",
+      "Firefox, Safari and physical devices not tested. Permanent supply economy remains deferred; independent solo development can continue."
+    ]
+  }
+}
