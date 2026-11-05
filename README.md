@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.86「折潮哨垒与敌方援护」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.86仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.87「破印与敌方增益反制」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.87仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -27,6 +27,8 @@
 新增[守卫援护与实际接招](docs/V85_GUARDIAN_INTERCEPTION.md)：为其他队员建立援护，付个人法力并检定代接物理攻击，成功后仍正常防御承伤；保留失败、法术/心理绕过和独立反应记账。588测试、36有限输入（11次有伤员）及桌面/390px完整公会API对照通过。
 
 新增[折潮哨垒与敌方援护](docs/V86_PALISADE_GARRISON.md)：三场阵位不同的盾卫/救护协作，拆来源或以法术/心理绕过，固定哨誓披甲须正常领取分配。596测试、36有限输入、34份旧原始完整报告零排除相同、桌面/390px实际成长闭环通过。
+
+新增[破印与敌方增益反制](docs/V87_UNRAVELING.md)：学者低伤法术命中后破除一组真实技能增益，保留本次防御、既定队列与来源重施；含待生效组件和精确来源。610测试、72有限输入（12失败）、36旧报告除精确新增技能字段外等价、桌面/390px正常失败部分结算与完整公会API对照通过。
 
 ## 开发交接入口
 

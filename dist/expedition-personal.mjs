@@ -32,6 +32,7 @@ export function personalReport(report,heroId){
    if(own&&!buffKeys.has(key)){buffKeys.add(key);add(e.roomIndex,'buffApplications');if(id!==heroId)link(given,id,'buffs',1,index);proof(e,index,'施加增益');}
    if(id===heroId&&!own&&!inKeys.has(key)){inKeys.add(key);link(received,e.actor,'buffs',1,index);proof(e,index,'得到增益');}
   }
+  if(e.type==='dispel'){if(own){add(e.roomIndex,'dispelledGroups');add(e.roomIndex,'dispelledEffects',d.removed.length);proof(e,index,'本人破印');}if(target&&!own)proof(e,index,'本人增益被破除');}
   if(e.type==='cleanse'){if(own){add(e.roomIndex,'cleansedEffects',d.removed.length);proof(e,index,'本人净化');}if(target&&!own)proof(e,index,'得到净化');}
   if(own&&e.type==='item'){add(e.roomIndex,'items');proof(e,index,'使用道具');}
   if(own&&e.type==='failed'){add(e.roomIndex,'failed');proof(e,index,'行动空过');}

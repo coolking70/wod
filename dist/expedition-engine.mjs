@@ -1,3 +1,4 @@
+import {removableBuffs,removedBuffRecord} from './expedition-unravel.mjs';
 import {INTERCEPTION,interceptionCandidate} from './expedition-interception.mjs';
 import {SUMMON_FORMS,hasSummoningSkill} from './expedition-summons.mjs';
 import {mediumId,CASTING_MEDIA} from './expedition-media-data.mjs';
@@ -65,6 +66,7 @@ export function defenseProfile(u,type){
 }
 export function chooseTargets(actor,units,s,target,rng=()=>0){
  const aid=s.kind==='buff'||s.kind==='heal';let pool=units.filter(u=>u.hp>0&&(aid?u.side===actor.side:u.side!==actor.side));
+ if(s.dispel)pool=pool.filter(u=>removableBuffs(u).length);
  if(s.mode==='self')return [actor];
  if(s.kind==='heal'){const selected=selectHealingTarget(actor,pool,target);return selected?[selected]:[];}
  if(s.mode==='all')return pool.slice(0,s.max);
@@ -159,7 +161,7 @@ export function simulate(c,options={}){
    if(!reason&&!['wait','summon'].includes(s.kind)){
     targets=chooseTargets(u,s.cleanse?all().filter(t=>cleansableEffects(t).length):s.cover?all().filter(t=>t.id!==u.id):all(),s,r.target,rng);
     if(s.kind==='buff'&&!s.cleanse)targets=targets.filter(t=>!t.effects.some(e=>e.skill===r.skill));
-    if(!targets.length)reason=Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.cleanse?'没有可净化的负面效果':s.cover?'没有可援护的其他队员':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
+    if(!targets.length)reason=s.dispel?'没有带可破除技能增益的合法敌人':Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.cleanse?'没有可净化的负面效果':s.cover?'没有可援护的其他队员':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
    }
    if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,...(payment.medium!=='standard'?{medium:payment.medium,requiredMana:payment.mana,requiredResource:payment.resource,requiredAmount:payment.amount}:{}),requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {}),...(healingBlock?{healingBlock}: {})});return false;}
    if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);roundUsed.set(key,round);return true;}
@@ -196,6 +198,7 @@ export function simulate(c,options={}){
     const base=current(u,s.primary)/2+current(u,s.secondary)/3+lv/2,rolled=grade==='闪避'?0:roll(base*s.power),armorBefore=current(t,'armor'),armorIgnored=s.type==='mental'?Math.max(0,armorBefore):Math.min(Math.max(0,armorBefore),s.ignoreArmor||0),armor=s.type==='mental'?0:armorBefore-armorIgnored,resistance=resistanceOf(t,s.type),mitigation=damageResult(rolled,multiplier,armor,resistance),damage=grade==='闪避'?0:mitigation.damage,actual=Math.min(t.hp,damage),beforeHp=t.hp;t.hp-=actual;
     if(stats[u.id]){stats[u.id].damage+=damage;stats[u.id].actual+=actual;stats[u.id].overkill+=damage-actual;}
     emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+' 伤害'+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,...(interception?{interception}:{}),defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,...(s.type==='mental'?{mentalRule:'心理攻击沿用法术栏防御；物理护甲不参与，只采用心理抗性。'}:{}),resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-damage,damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});
+    if(s.dispel){const removed=t.hp>0&&grade!=='闪避'?removableBuffs(t):[];if(removed.length){const attackEventId=events.at(-1).id;t.effects=t.effects.filter(e=>!removed.includes(e));emit('dispel',u.name+' 破除 '+t.name+' 的「'+removed[0].name+'」',u.id,[t.id],{cast,skill:r.skill,attackEventId,removed:removed.map(removedBuffRecord),rule:'命中后只移除本记录列出的同技能/同来源一组正面组件（含待生效）；本次攻防与已排定行动不回滚，不退款，不阻止之后重新施放。'});}else emit('dispel-skip',u.name+' 本次未破除增益',u.id,[t.id],{cast,skill:r.skill,attackEventId:events.at(-1).id,reason:t.hp<=0?'目标已倒下':grade==='闪避'?'本次法术被闪避':'没有可破除的技能增益',costAlreadyPaid:true,consumedAction:true});}
     if(t.hp===0){emit('down',t.name+' 倒下。',u.id,[t.id],{cast});removeSummons(t.id,'主人倒下');}
     else if(canApplyHealingBlock(s,grade,t)){
      const effect={id:`${roomIndex}:${cast}:${t.id}:healingBlock`,skill:r.skill,name:s.name,component:'禁疗',source:u.id,sourceName:u.name,stat:HEALING_BLOCK_STAT,value:1,scope:'rounds',active:true,harmful:true,activateTick:clock,activateRound:round,expires:round,expiresTick:clock};

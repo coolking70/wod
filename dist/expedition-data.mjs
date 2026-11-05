@@ -28,6 +28,7 @@ export const SKILLS={
  shot:{name:'穿石箭',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.2,cost:0,mode:'single',max:1,desc:'远程单体；优先指定位置。'},
  volley:{name:'齐射',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.1,cost:5,item:'arrow',mode:'position',max:3,desc:'同位置最多 3 人，分别检定；不跨位置补齐。'},
  wave:{name:'潮汐冲击',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1.5,cost:6,item:'rune',mode:'position',max:3,desc:'同位置最多 3 人；造成法术伤害。'},
+ unravel:{name:'破印符',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:.55,cost:6,item:'rune',mode:'single',max:1,requiresGear:'focus',dispel:true,desc:'学者自由普通技能；法器、6法力/1符纸，低伤害法术。先从带可破除技能增益的存活敌人中按阵位/职责选一名；没有候选免费跳过。按原攻防命中且目标仍存活时，移除最早一组同技能/同来源正面效果，含尚未生效组件；闪避不移除，伤害被吸收仍可破除。不移除负面、装备、固有属性或机关余护，不回滚本次防御、此前检定或已排定行动，不退款、不阻止来源再施放。培养影响原攻击检定/伤害，不增加移除组数。'},
  suppress:{name:'截疗符',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:.65,cost:6,item:'rune',mode:'single',max:1,requiresGear:'focus',healingBlock:true,desc:'学者单体法术；需法器，消耗6法力和1符纸。命中仍存活且拥有救护技能的目标后，封锁其本回合余下的自动草药救护；目标仍可普通行动，已完成治疗不撤销。闪避不附着；命中但伤害被吸收仍可附着；同回合不叠加或延长。伤害低于微光，晚于目标行动时可能没有救护可阻。'},
  mindcall:{name:'诘心回声',kind:'attack',type:'mental',primary:'cha',secondary:'wil',power:.85,cost:6,mode:'single',max:1,requiresGear:'lute',desc:'吟游者普通心理攻击，需乐器；6法力、无共享材料，魅力/意志单体检定。可指定阵位或敌方职责；与法术共用心智抵抗选择和对应培养，命中按心理抗性减伤、物理护甲不参与。不附挫志，不偷取法力；先手击倒来源、定心吟/屏障和心理抗性都可应对，法术抗性不替代心理抗性。'},
  dissonance:{name:'挫志弦',kind:'attack',type:'magic',primary:'cha',secondary:'wil',power:.65,cost:5,mode:'single',max:1,requiresGear:'lute',weakening:true,desc:'吟游者普通技能，需乐器；5法力、无共享耗材，低伤害魅力/意志单体法术。命中未倒下者附挫志：攻击技能等级-3，持续当前与下一回合；固定削弱与期限不随训练提高，不叠加、不刷新，击倒来源不解除。影响之后的攻击命中与伤害，不影响辅助、救护、防御技能或已完成检定；闪避不附着，吸收伤害仍可附着。'},
@@ -65,7 +66,7 @@ const FOUNDERS=[
  {id:'a',name:'阿瑟',role:'守卫',mark:'盾',pos:'front',gear:'plate',attrs:attrs(12,16,5,11,6,8,9,12),skills:['strike','guard','shieldbash','rallyguard','interpose'],base:6},
  {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep'],base:6},
  {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt','tidearcher','recall'],base:6},
- {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse'],base:6},
+ {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse','unravel'],base:6},
  {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance','mindcall'],base:6},
  {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','shot','poultice','slowcare'],base:6}
 ];

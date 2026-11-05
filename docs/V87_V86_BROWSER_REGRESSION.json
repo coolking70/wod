@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "steps": [
+    "新公会30补给三场实际出征，敌人援护成功/失败都付自己的2法力；真正受击者改变、援护来源可跳转返回，心理攻击免费绕过，敌方支援徽记和完整敌情可读",
+    "pending换准备方案/刷新仍保留原战报；正常170金币/70经验/披甲后明确分给守卫，射手付20经验训练重箭；真实复战115/50、三场账本、历史和完整备份通过",
+    "390px恢复完整历史/披甲/训练，改先拆来源并实际seed3三场出征；准备和敌方援护证据无横向溢出，正常115/50后总400金币/射手150经验/两件未分配披甲"
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "plan": "bypass",
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 263,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 206,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 198,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 1
+      },
+      "enemyAttempts": 10,
+      "enemyRedirected": 6
+    },
+    {
+      "seed": 2,
+      "plan": "bypass, actual mantle and pierce1",
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 231,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 172,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 3,
+      "plan": "break",
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 282,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 257,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 213,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 3,
+        "arrow": 0
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

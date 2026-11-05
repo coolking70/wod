@@ -1,0 +1,6358 @@
+{
+  "pairedConfigDifference": [
+    "d.main"
+  ],
+  "note": "72 unique finite inputs: 2 actual asset profiles ×3 routes ×6 predeclared seeds ×2 ordinary-command plans. Within pair only scholar main instructions differ; same free specialization/ward/gear/training/supplies. Earned is real seed1 palisade reward170/70, mantle assignedA and20XP unravel1 paidD. Same seed does not preserve RNG alignment after different actions. No universal recommendation or prevented-damage/cancelled-action attribution. Failed normal courier seed2 is retained and only2-room partial reward claimed.",
+  "summary": {
+    "runs": 72,
+    "uniqueBattleInputs": 72,
+    "failures": 12,
+    "injured": 18,
+    "byRoute": [
+      {
+        "route": "palisade",
+        "active": false,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "removedGroups": 0
+      },
+      {
+        "route": "palisade",
+        "active": true,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "removedGroups": 36
+      },
+      {
+        "route": "courier",
+        "active": false,
+        "runs": 12,
+        "won": 4,
+        "allSix": 4,
+        "removedGroups": 0
+      },
+      {
+        "route": "courier",
+        "active": true,
+        "runs": 12,
+        "won": 8,
+        "allSix": 2,
+        "removedGroups": 48
+      },
+      {
+        "route": "theater",
+        "active": false,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "removedGroups": 0
+      },
+      {
+        "route": "theater",
+        "active": true,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "removedGroups": 34
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 101,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 7,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 102,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 201,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 12,
+        "supplies": {
+          "herb": 7,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 15,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 3
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 202,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 12,
+        "supplies": {
+          "herb": 6,
+          "rune": 3,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 14,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 2
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 203,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 12,
+        "supplies": {
+          "herb": 9,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 204,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 12,
+        "supplies": {
+          "herb": 5,
+          "rune": 2,
+          "arrow": 1
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 101,
+      "without": {
+        "won": false,
+        "alive": 1,
+        "rounds": 34,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 5,
+        "rounds": 19,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": -15
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 102,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 18,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "with": {
+        "won": false,
+        "alive": 0,
+        "rounds": 21,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": 3
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 201,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 16,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 18,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": 2
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 202,
+      "without": {
+        "won": false,
+        "alive": 0,
+        "rounds": 26,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "with": {
+        "won": false,
+        "alive": 0,
+        "rounds": 16,
+        "supplies": {
+          "herb": 4,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": -10
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 203,
+      "without": {
+        "won": false,
+        "alive": 0,
+        "rounds": 25,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 5,
+        "rounds": 20,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": -5
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 204,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 15,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 16,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 101,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 5,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 102,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 5,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 201,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 202,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 4,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 203,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 4,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 6,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 204,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 4,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 101,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 15,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 2
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 102,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 12,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 201,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 6,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 202,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 12,
+        "supplies": {
+          "herb": 6,
+          "rune": 3,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 203,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 9,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 204,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 13,
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 101,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 16,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 5,
+        "rounds": 18,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": 2
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 102,
+      "without": {
+        "won": false,
+        "alive": 0,
+        "rounds": 18,
+        "supplies": {
+          "herb": 1,
+          "rune": 2,
+          "arrow": 2
+        }
+      },
+      "with": {
+        "won": false,
+        "alive": 0,
+        "rounds": 20,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": 2
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 201,
+      "without": {
+        "won": false,
+        "alive": 0,
+        "rounds": 16,
+        "supplies": {
+          "herb": 1,
+          "rune": 3,
+          "arrow": 2
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 5,
+        "rounds": 18,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": 2
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 202,
+      "without": {
+        "won": false,
+        "alive": 0,
+        "rounds": 21,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 3
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 4,
+        "rounds": 21,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 3
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 203,
+      "without": {
+        "won": false,
+        "alive": 0,
+        "rounds": 22,
+        "supplies": {
+          "herb": 0,
+          "rune": 1,
+          "arrow": 3
+        }
+      },
+      "with": {
+        "won": false,
+        "alive": 0,
+        "rounds": 26,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      "roundDelta": 4
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 204,
+      "without": {
+        "won": false,
+        "alive": 0,
+        "rounds": 21,
+        "supplies": {
+          "herb": 0,
+          "rune": 1,
+          "arrow": 2
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 3,
+        "rounds": 20,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      },
+      "roundDelta": -1
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 101,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 3,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 10,
+        "supplies": {
+          "herb": 3,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 102,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 5,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 201,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 4,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 6,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 202,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 4,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 1
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 203,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 6,
+          "rune": 1,
+          "arrow": 0
+        }
+      },
+      "roundDelta": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 204,
+      "without": {
+        "won": true,
+        "alive": 6,
+        "rounds": 9,
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      "with": {
+        "won": true,
+        "alive": 6,
+        "rounds": 8,
+        "supplies": {
+          "herb": 5,
+          "rune": 2,
+          "arrow": 0
+        }
+      },
+      "roundDelta": -1
+    }
+  ],
+  "cases": [
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "85789f90cb833e1820d0a2d60a39f3ae496544d5a88d0e7753b20ad89a5ca15f",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 267,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 203,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 192,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "f6823c441d77448b0cb2cd7703946dce7ca4daf3b3dbb8f357a66cdcdd727d04",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 273,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 210,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 188,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "841bd37d31599bfea25ba6164d60d15d83188f5b9de55e9851c7e0208869f835",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 565,
+          "mp": 225,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 199,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "4cf1ac2e04e271151d6fb82ad4a7a831ac30407cf9ee15e639a6aed06f9cafa8",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 277,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 211,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 197,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "c800d345413a09e3c5d195171f6eb3c2d8529df86810213a79cb82f87753192f",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 280,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 218,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 197,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "75ee973c278316f97d9ce7e6ea5dfed48f84083eb2887845d0d4205bc84b9655",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 208,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 182,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下"
+        ],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "45e9de9c1aeb5a71ce3b2097993491ebf998dd3c5ecf799c9bffc4c74de52443",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 291,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 211,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 194,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "062abb4e1fd22635a455bfa7eadb5671d7ac3402f14a1cc0623e3fec18c58874",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 288,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 212,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 183,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "4f734dd1e834c8feec04287e4a12e7499bac44e70c2a5afc5765c556bef610d4",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 273,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 238,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 197,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "23157d098ad1a291a107d699fb6ffd9749e11947bdf0342cc5ba6b986424c8d6",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 282,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 199,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 184,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 2,
+        "removedComponents": 2,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下",
+          "目标已倒下"
+        ],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "7a0f113e1a6787edaf4c3bdfca6e357568649e18bc3a8988f0ddc4a4e75e2636",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 208,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "palisade",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "6f2ef6ba01610037d3d324d2dde0275a47eebf3351f194f7fb90f28c1147afb9",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 195,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "70bb41c93936bdf4606d45b1f130609161c2eb731e854853da2a615470e8d113",
+      "won": false,
+      "alive": 1,
+      "rounds": 34,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 571,
+          "mp": 297,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 6,
+          "survivors": 5,
+          "hp": 475,
+          "mp": 222,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 24,
+          "survivors": 1,
+          "hp": 23,
+          "mp": 187,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "4a030b0fb688a8e4a09f924f1ca14384cb519c6732601c5cc42a7d20024c96e5",
+      "won": true,
+      "alive": 5,
+      "rounds": 19,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 269,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 197,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 10,
+          "survivors": 5,
+          "hp": 377,
+          "mp": 182,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "4266962476ca0818a6d1df16da26a1a98df9f6f6ed9a8b4ae170ba5f3e0ecc05",
+      "won": true,
+      "alive": 6,
+      "rounds": 18,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 289,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 222,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 186,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "891733106615800889d8ade1e63fabd6c63bfc84ffea71383d632642d8845da6",
+      "won": false,
+      "alive": 0,
+      "rounds": 21,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 260,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 6,
+          "survivors": 5,
+          "hp": 397,
+          "mp": 197,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 10,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 172,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 6,
+        "removedGroups": 5,
+        "removedComponents": 5,
+        "pendingComponents": 0,
+        "failed": [
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "fd7a29349bc5ac973b6cdd0a8407350df4485484e92fff1981f70764ac636638",
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 293,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 471,
+          "mp": 217,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 538,
+          "mp": 177,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "75d1ea4480febfba85d906784a3d282a88c8202843ee53ab6f41a0666e26a4c6",
+      "won": true,
+      "alive": 6,
+      "rounds": 18,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 273,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 207,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 10,
+          "survivors": 6,
+          "hp": 535,
+          "mp": 187,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingComponents": 0,
+        "failed": [
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "b6ba9f087049807f609a640da7e3aec0d881629c89d377f9726e6a5026f92b08",
+      "won": false,
+      "alive": 0,
+      "rounds": 26,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 492,
+          "mp": 237,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 18,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 171,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "c41850cab68565aa4f87ee99bef43eb62cb2e8a64ba04aedbb1ae29a96c2e01b",
+      "won": false,
+      "alive": 0,
+      "rounds": 16,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 286,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 306,
+          "mp": 212,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 7,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 186,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "本次法术被闪避",
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "37ecf1e3c654e945cb8ccf388ab639b1c6c55ebf63bf921c96b6452095a50c3f",
+      "won": false,
+      "alive": 0,
+      "rounds": 25,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 305,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 491,
+          "mp": 221,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 16,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 164,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "c2875dd07a4bfd9e1c66ac0dd26d78f5772ac0f17c24677fc4defbef471b8b30",
+      "won": true,
+      "alive": 5,
+      "rounds": 20,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 290,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 559,
+          "mp": 209,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 11,
+          "survivors": 5,
+          "hp": 443,
+          "mp": 176,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下",
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "5f0de7c8c435b1c936ab505ebfc6dc3f84b1aaf460f7adec73024d9add21638a",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 299,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 516,
+          "mp": 226,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 176,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "courier",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "d23eea4c18d27354f17ec7bacff93694132c9cfd0d49f5e0774ede7385a0436b",
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 284,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 525,
+          "mp": 207,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 505,
+          "mp": 180,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 5,
+        "removedComponents": 6,
+        "pendingComponents": 1,
+        "failed": [],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "df51dd81333af0d102442e5ed83bd0512eb95b2daffe132ebdf3dfb0a759059c",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 246,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "b100621054c67f29e56c1f21a88e0f8744e0e26e16f55dd61c2580f2549a92a1",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 226,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "160ed384ecea2115d6b82617f5b51b53a6fedd7961d15849fc5fbd04a2521600",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 244,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "13b4efed5174391783eccaaafaeed60274519eb5bed684b04ac9ba3469bea8f5",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 224,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "655c032656355721a27389d3ede58e53005c66ea116928177931c718f054ac7a",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 312,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 245,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "7fe8a545b45e7b094923d2de76d6945da7395ed47cdfbe6b0e248c61ab0f06f1",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 312,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 225,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "83552908b6fcbbbffc35952925109141b4002acc411b4ce7017e0c277050f511",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 244,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "b0d37d26e5d92347a512551068da9a8a5b4b931a5d9418086f6d38659de01c5d",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 224,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "1a34eb754e3606877b2e5ce83761b6c269ac54bb4eba759bdef8d74e288be570",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 239,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "fce1487115250cd7298ba3d08f7e9e417e7590f66451bbb8c95b8fcdc86b7b32",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 231,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "d2b3e2fb582e4f18b89a73f1de4c80dde37362b9700b46f383762fff1f71d26b",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 236,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "5212725656a1d56777dc593d1560bb764b19c63b300f7674c21e7ba93b18013b",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 239,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 2,
+        "removedGroups": 2,
+        "removedComponents": 2,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "f459a4f7bb62b8c945c4d91d455d0652c8a9e1dabb2a07cb813f16553137c3a3",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 267,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 201,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 186,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "c3c8892c13a3b5e382b14324c225929eacd2701c9ab651b6fc320aa6a5045ffa",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 266,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 203,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 181,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下"
+        ],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "ff3dc439df5b69cae7bb2af196d7f1f7b88a7448cdda0c0b6d6feec4abd6e95c",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 210,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 185,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "c7b68bec5feff032df6d298742ae569b84ee4d68611e8a27bccc52432f01d487",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 207,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 196,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "606593c9b912f7199335dd024fee1b17a5c9c72f1b509849eb95675301e86409",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 276,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 219,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 198,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "353bc41ce28c6ca5f3b5d9973a48cf76da4d0c56ec14ba98683e886516d3613a",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 277,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 205,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 191,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下"
+        ],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "69a0b7965e4a5503c88b966b3f875cba8eba74e2ba4ee48c75c1b94eafddd15a",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 287,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 218,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 187,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "bfc27cb67be0d25c7ef2554a51451e8398bd4cd5690fa2ec2edb987fa7cc0480",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 284,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 194,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 186,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下"
+        ],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "3625451e53fecfdb6f23acd48e7bd9bd2049c7e4f4d9431190d1fae2eeb81622",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 269,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 219,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 202,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "ec80f4cef46d0ef49424fc79c5b9fc7c1a55dd0d58449c0aa22e477c494c6f17",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 199,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 188,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "361a1e60a7ed464a96fbccd652e65ca9db4a03cd54ac8a181a106e409cd15583",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 210,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 194,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "palisade",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "5a123e4d569e274c821084d9aefa94c4580d0d8ad83b487c5074caa381acc7b4",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 271,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 217,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 198,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "fc254144288a3c6d03408979c84cfbb171ec5c75d3c9f69ba4112277da41cbb1",
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 289,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 531,
+          "mp": 215,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 507,
+          "mp": 169,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "866b7691a71dde227e59cfa583bb317a9522aa871c004267937c525b13e1af19",
+      "won": true,
+      "alive": 5,
+      "rounds": 18,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 269,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 180,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 430,
+          "mp": 168,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingComponents": 0,
+        "failed": [
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "ad08e711b39e1dec38181b997753cc1cac01445bd1d49bf24469b94e69d88bb0",
+      "won": false,
+      "alive": 0,
+      "rounds": 18,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 287,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 349,
+          "mp": 221,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 10,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 192,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "f3e2ae05bc3a39aec57e97eaf5b72b3148c7fbf9cbaf65e3fbd0eef18f47bd72",
+      "won": false,
+      "alive": 0,
+      "rounds": 20,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 256,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 454,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 11,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 158,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "e94543a4638453ba6a26ada5f504c2e18f106fde6709a939472ca9a7da5422f1",
+      "won": false,
+      "alive": 0,
+      "rounds": 16,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 290,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 4,
+          "hp": 411,
+          "mp": 225,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 8,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 185,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "1a3391a5725f0b9b1ca9efc37e575f964e2f300ef46c3e0f595028c9b215bc2c",
+      "won": true,
+      "alive": 5,
+      "rounds": 18,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 274,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 208,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 10,
+          "survivors": 5,
+          "hp": 460,
+          "mp": 172,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 4,
+        "removedComponents": 5,
+        "pendingComponents": 1,
+        "failed": [
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "d40128df4be005d91229353d69ac82be07f2569df935e7ec4dda732ea414225e",
+      "won": false,
+      "alive": 0,
+      "rounds": 21,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 280,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 525,
+          "mp": 214,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 13,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 193,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 3
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "537fdebead12a56ed00d1aa3b3e0a37eeac0a5c5ff6bf2decc4a4d56dc0e3bde",
+      "won": true,
+      "alive": 4,
+      "rounds": 21,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 284,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 202,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 12,
+          "survivors": 4,
+          "hp": 388,
+          "mp": 184,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 3
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下",
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "9ba31a764eed26b03e3ae551ed81e59b03c56f148d6f108e8b42c06f23a19d9f",
+      "won": false,
+      "alive": 0,
+      "rounds": 22,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 291,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 3,
+          "survivors": 5,
+          "hp": 499,
+          "mp": 232,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 15,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 178,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 1,
+        "arrow": 3
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "1b8d04ae66e39394838ca5ae270b7247ddc7ffec209a5453d4bb508eaa19809d",
+      "won": false,
+      "alive": 0,
+      "rounds": 26,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 261,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 187,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 17,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 176,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 1
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 5,
+        "removedComponents": 6,
+        "pendingComponents": 1,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "7cec52c6dfcced2261e3074b5687e303446e323d51319236e939e4e777abf8d1",
+      "won": false,
+      "alive": 0,
+      "rounds": 21,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 298,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 449,
+          "mp": 230,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 14,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 200,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 1,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "courier",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "0f6a9326dae1c4607b042010a17ff187a9ea9e10aaf91c5301a3a74ef4f47f14",
+      "won": true,
+      "alive": 3,
+      "rounds": 20,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 501,
+          "mp": 198,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 11,
+          "survivors": 3,
+          "hp": 195,
+          "mp": 177,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "unravel": {
+        "casts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingComponents": 0,
+        "failed": [
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "a862b3ef3789af7272e31a6206af123367d9d0bea8172575f35b107d0e53c81c",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 227,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "f1cb07293b484334aba64c9c0d808733d0a5ec4b138399ca5801f96beedd75f3",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 208,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 4,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [
+          "本次法术被闪避"
+        ],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "耗材耗尽",
+          "耗材耗尽"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "a09999710b37df06f29358522e3911655173766b09d4ac67a40dd3f4a968fa10",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 301,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 240,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "a1ec1e4471539be9dafd821e3dfeaf91fad9a35b330a421bbe7d209fc1b1c981",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 301,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 217,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 2,
+        "removedComponents": 2,
+        "pendingComponents": 0,
+        "failed": [
+          "目标已倒下"
+        ],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "76275f3ce32b5baffafb71487020c42ad75b5934365dd8d8c0804f7f331d019e",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 643,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 232,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "0844e48db500b59caa7dab06d58cb7f289bcfa89bc2dcf258681d76bb4f4871a",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 643,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 226,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "51f10af1fb22e355271d9ea76803205b73669bd896a979918a7c151002758897",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 639,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "99c3332afd129e8625d2f67f86eaa57205e48151519fe17972890b5367d8d06d",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 221,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "47efaca1d7db09446d3977a8c49dcc6acd44bf06ff3e70495b79a737950495fa",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 302,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 240,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "57891842d4cba94e6e8f7894581ff824d6825044cd16a1fd404e8718eeab1737",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 302,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 228,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 3,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "529da8d4ed6124b8defa740583fd308d90d93fff1aa85ca09e8e58a12ee46c67",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 538,
+          "mp": 245,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 0,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": []
+      }
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "32ade1b5ca20dfee1b4e251196839903ada78d8ac963cd98165a9a9f9580d018",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 227,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "unravel": {
+        "casts": 2,
+        "removedGroups": 2,
+        "removedComponents": 2,
+        "pendingComponents": 0,
+        "failed": [],
+        "skips": [
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人",
+          "没有带可破除技能增益的合法敌人"
+        ]
+      }
+    }
+  ],
+  "normal": {
+    "route": "palisade",
+    "seed": 1,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 护讯栈桥",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 593,
+        "mp": 257,
+        "supplies": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 6
+        }
+      },
+      {
+        "name": "02 · 交错弩台",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 634,
+        "mp": 203,
+        "supplies": {
+          "herb": 6,
+          "rune": 1,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "03 · 双盾指挥席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 601,
+        "mp": 176,
+        "supplies": {
+          "herb": 5,
+          "rune": 0,
+          "arrow": 1
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 5,
+      "rune": 0,
+      "arrow": 1
+    },
+    "removedGroups": 3,
+    "removedComponents": 3,
+    "reward": {
+      "cleared": 3,
+      "gold": 170,
+      "xp": 70,
+      "firstClear": true,
+      "loot": [
+        "watchmantle"
+      ]
+    }
+  },
+  "desktop": {
+    "route": "courier",
+    "seed": 2,
+    "won": false,
+    "rooms": [
+      {
+        "name": "01 · 外港断桥",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 618,
+        "mp": 278,
+        "supplies": {
+          "herb": 11,
+          "rune": 3,
+          "arrow": 7
+        }
+      },
+      {
+        "name": "02 · 折帆分舱",
+        "won": true,
+        "rounds": 4,
+        "survivors": 5,
+        "hp": 499,
+        "mp": 205,
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "03 · 封蜡回邮台",
+        "won": false,
+        "rounds": 13,
+        "survivors": 0,
+        "hp": 0,
+        "mp": 189,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 0,
+      "rune": 0,
+      "arrow": 2
+    },
+    "removedGroups": 2,
+    "removedComponents": 2,
+    "reward": {
+      "cleared": 2,
+      "gold": 40,
+      "xp": 20,
+      "firstClear": false,
+      "loot": []
+    }
+  },
+  "mobile": {
+    "route": "theater",
+    "seed": 3,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 噤声前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 640,
+        "mp": 304,
+        "supplies": {
+          "herb": 8,
+          "rune": 7,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "02 · 无声合唱席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 625,
+        "mp": 238,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 6,
+      "rune": 2,
+      "arrow": 0
+    },
+    "removedGroups": 2,
+    "removedComponents": 2,
+    "reward": {
+      "cleared": 2,
+      "gold": 130,
+      "xp": 55,
+      "firstClear": true,
+      "loot": [
+        "votivelute"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "bca9062265d59229430de377797d5cfd9f24cb82",
+    "count": 36,
+    "rawFullEqual": false,
+    "excluded": [
+      "only exactly asserted new scholar available skill party[].skills.unravel=base"
+    ],
+    "eventsAndResultsEqual": true,
+    "rows": [
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "d",
+            "skill": "unravel",
+            "level": 6
+          }
+        ]
+      }
+    ]
+  }
+}

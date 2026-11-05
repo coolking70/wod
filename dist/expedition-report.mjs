@@ -14,7 +14,7 @@ export function summaryOf(group){
  const summons=group.events.filter(e=>e.type==='summon');if(summons.length)return cast.text+' · 召唤 '+summons.length+' 名单位';
  const hits=group.events.filter(e=>e.type==='attack');
  const heals=group.events.filter(e=>e.type==='heal');
- if(hits.length)return cast.text+' · '+hits.length+' 个目标 / '+hits.reduce((n,e)=>n+e.detail.actual,0)+' 实伤';
+ if(hits.length)return cast.text+' · '+hits.length+' 个目标 / '+hits.reduce((n,e)=>n+e.detail.actual,0)+' 实伤'+(group.events.some(e=>e.type==='dispel')?' / 破除技能增益':group.events.some(e=>e.type==='dispel-skip')?' / 未破除增益':'');
  if(heals.length)return cast.text+' · 恢复 '+heals.reduce((n,e)=>n+e.detail.actual,0);
  return cast.text+' · '+cast.targets.length+' 个目标';
 }
