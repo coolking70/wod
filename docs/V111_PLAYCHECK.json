@@ -1,0 +1,818 @@
+{
+  "design": "Read-only project mapping of public initial commands to configured allies; official home-page design direction, no original rule replication.",
+  "normal": [
+    {
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "supplies": {
+        "herb": 14,
+        "rune": 10,
+        "arrow": 8
+      },
+      "rounds": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "rounds": [
+        3,
+        5,
+        7
+      ]
+    }
+  ],
+  "gold": [
+    120,
+    260
+  ],
+  "before": [
+    {
+      "roomId": "cistern",
+      "name": "02 · 浸潮蓄水厅",
+      "note": "两名祭司攻击中央，战斗之间不回复生命和法力。治疗会占用药师的行动。",
+      "conditional": false,
+      "attacks": [
+        {
+          "id": "c1:0",
+          "source": "c1",
+          "name": "溺水守卫",
+          "sourcePosition": "front",
+          "row": 0,
+          "skill": "strike",
+          "type": "melee",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        },
+        {
+          "id": "c2:0",
+          "source": "c2",
+          "name": "蚀潮祭司",
+          "sourcePosition": "rear",
+          "row": 0,
+          "skill": "wave",
+          "type": "magic",
+          "target": "center",
+          "mode": "repeat",
+          "limit": 3,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "c",
+            "d",
+            "f"
+          ]
+        },
+        {
+          "id": "c3:0",
+          "source": "c3",
+          "name": "蚀潮祭司",
+          "sourcePosition": "rear",
+          "row": 0,
+          "skill": "wave",
+          "type": "magic",
+          "target": "center",
+          "mode": "repeat",
+          "limit": 3,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "c",
+            "d",
+            "f"
+          ]
+        }
+      ],
+      "heroes": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "pos": "front",
+          "attacks": [
+            {
+              "attack": "c1:0",
+              "type": "melee",
+              "defense": "盾牌格挡",
+              "defenseCost": 1,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": 6
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "name": "莱恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "pos": "center",
+          "attacks": [
+            {
+              "attack": "c2:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            },
+            {
+              "attack": "c3:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "pos": "center",
+          "attacks": [
+            {
+              "attack": "c2:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            },
+            {
+              "attack": "c3:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "pos": "center",
+          "attacks": [
+            {
+              "attack": "c2:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            },
+            {
+              "attack": "c3:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "roomId": "cistern",
+      "name": "02 · 浸潮蓄水厅",
+      "note": "两名祭司攻击中央，战斗之间不回复生命和法力。治疗会占用药师的行动。",
+      "conditional": false,
+      "attacks": [
+        {
+          "id": "c1:0",
+          "source": "c1",
+          "name": "溺水守卫",
+          "sourcePosition": "front",
+          "row": 0,
+          "skill": "strike",
+          "type": "melee",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        },
+        {
+          "id": "c2:0",
+          "source": "c2",
+          "name": "蚀潮祭司",
+          "sourcePosition": "rear",
+          "row": 0,
+          "skill": "wave",
+          "type": "magic",
+          "target": "center",
+          "mode": "repeat",
+          "limit": 3,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "c",
+            "f"
+          ]
+        },
+        {
+          "id": "c3:0",
+          "source": "c3",
+          "name": "蚀潮祭司",
+          "sourcePosition": "rear",
+          "row": 0,
+          "skill": "wave",
+          "type": "magic",
+          "target": "center",
+          "mode": "repeat",
+          "limit": 3,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "c",
+            "f"
+          ]
+        }
+      ],
+      "heroes": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "pos": "front",
+          "attacks": [
+            {
+              "attack": "c1:0",
+              "type": "melee",
+              "defense": "盾牌格挡",
+              "defenseCost": 1,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": 6
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "name": "莱恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "pos": "center",
+          "attacks": [
+            {
+              "attack": "c2:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            },
+            {
+              "attack": "c3:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "pos": "left",
+          "attacks": []
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "pos": "center",
+          "attacks": [
+            {
+              "attack": "c2:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            },
+            {
+              "attack": "c3:0",
+              "type": "magic",
+              "defense": "心智抵抗",
+              "defenseCost": 2,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secondMap": [
+    {
+      "roomId": "gallery",
+      "name": "01 · 引潮病廊",
+      "note": "引潮司祭在后排，每次存活潮卫倒下后可再次召唤；每次消耗10法力与1符纸。击倒司祭会驱散其存活潮卫。只打前排会让支援者继续行动。",
+      "conditional": false,
+      "attacks": [
+        {
+          "id": "hg1:0",
+          "source": "hg1",
+          "name": "病廊重卫",
+          "sourcePosition": "front",
+          "row": 0,
+          "skill": "strike",
+          "type": "melee",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        },
+        {
+          "id": "hg2:0",
+          "source": "hg2",
+          "name": "引潮司祭",
+          "sourcePosition": "rear",
+          "row": 0,
+          "skill": "spark",
+          "type": "magic",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        }
+      ],
+      "heroes": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "pos": "front",
+          "attacks": [
+            {
+              "attack": "hg1:0",
+              "type": "melee",
+              "defense": "盾牌格挡",
+              "defenseCost": 1,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": 8
+            },
+            {
+              "attack": "hg2:0",
+              "type": "magic",
+              "defense": "自然防御",
+              "defenseCost": 0,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "name": "莱恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "pos": "center",
+          "attacks": []
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "pos": "center",
+          "attacks": []
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "pos": "center",
+          "attacks": []
+        }
+      ]
+    },
+    {
+      "roomId": "cistern",
+      "name": "02 · 不息药庭",
+      "note": "后排护潮药师在自身行动点治疗生命比例最低且不高于80%的伤员；每次消耗5法力与1药草，替代普通攻击。两名重卫集中前排，群攻可一起压低生命，也可能让药师持续救护。",
+      "conditional": false,
+      "attacks": [
+        {
+          "id": "hc1:0",
+          "source": "hc1",
+          "name": "药庭重卫",
+          "sourcePosition": "front",
+          "row": 0,
+          "skill": "strike",
+          "type": "melee",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        },
+        {
+          "id": "hc2:0",
+          "source": "hc2",
+          "name": "药庭重卫",
+          "sourcePosition": "front",
+          "row": 0,
+          "skill": "strike",
+          "type": "melee",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        },
+        {
+          "id": "hc3:0",
+          "source": "hc3",
+          "name": "护潮药师",
+          "sourcePosition": "rear",
+          "row": 0,
+          "skill": "spark",
+          "type": "magic",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        }
+      ],
+      "heroes": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "pos": "front",
+          "attacks": [
+            {
+              "attack": "hc1:0",
+              "type": "melee",
+              "defense": "盾牌格挡",
+              "defenseCost": 1,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": 8
+            },
+            {
+              "attack": "hc2:0",
+              "type": "melee",
+              "defense": "盾牌格挡",
+              "defenseCost": 1,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": 8
+            },
+            {
+              "attack": "hc3:0",
+              "type": "magic",
+              "defense": "自然防御",
+              "defenseCost": 0,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "name": "莱恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "pos": "center",
+          "attacks": []
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "pos": "left",
+          "attacks": []
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "pos": "center",
+          "attacks": []
+        }
+      ]
+    },
+    {
+      "roomId": "altar",
+      "name": "03 · 双灯心室",
+      "note": "司祭在中央、药师在后排，重卫挡住前排。集中中央可切断召唤，集中后排可阻止治疗，但无法用一次同位置群攻同时覆盖两位支援者。生命、法力与补给继承。",
+      "conditional": false,
+      "attacks": [
+        {
+          "id": "ha1:0",
+          "source": "ha1",
+          "name": "心室重卫",
+          "sourcePosition": "front",
+          "row": 0,
+          "skill": "strike",
+          "type": "melee",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        },
+        {
+          "id": "ha2:0",
+          "source": "ha2",
+          "name": "引潮司祭",
+          "sourcePosition": "center",
+          "row": 0,
+          "skill": "spark",
+          "type": "magic",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        },
+        {
+          "id": "ha3:0",
+          "source": "ha3",
+          "name": "护潮药师",
+          "sourcePosition": "rear",
+          "row": 0,
+          "skill": "spark",
+          "type": "magic",
+          "target": "front",
+          "mode": "repeat",
+          "limit": 1,
+          "window": null,
+          "dispel": false,
+          "targetCount": null,
+          "candidates": [
+            "a"
+          ]
+        }
+      ],
+      "heroes": [
+        {
+          "id": "a",
+          "name": "阿瑟",
+          "pos": "front",
+          "attacks": [
+            {
+              "attack": "ha1:0",
+              "type": "melee",
+              "defense": "盾牌格挡",
+              "defenseCost": 1,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": 8
+            },
+            {
+              "attack": "ha2:0",
+              "type": "magic",
+              "defense": "自然防御",
+              "defenseCost": 0,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            },
+            {
+              "attack": "ha3:0",
+              "type": "magic",
+              "defense": "自然防御",
+              "defenseCost": 0,
+              "defenseReason": "",
+              "resistance": 0,
+              "armor": null
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "name": "莱恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "c",
+          "name": "伊芙",
+          "pos": "center",
+          "attacks": []
+        },
+        {
+          "id": "d",
+          "name": "维斯",
+          "pos": "center",
+          "attacks": []
+        },
+        {
+          "id": "e",
+          "name": "塞恩",
+          "pos": "rear",
+          "attacks": []
+        },
+        {
+          "id": "f",
+          "name": "露弥",
+          "pos": "center",
+          "attacks": []
+        }
+      ]
+    }
+  ],
+  "actualCisternAttacks": [
+    {
+      "id": 124,
+      "round": 1,
+      "actor": "c2",
+      "targets": [
+        "c"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 126,
+      "round": 1,
+      "actor": "c2",
+      "targets": [
+        "f"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 143,
+      "round": 1,
+      "actor": "c3",
+      "targets": [
+        "c"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 145,
+      "round": 1,
+      "actor": "c3",
+      "targets": [
+        "f"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 172,
+      "round": 2,
+      "actor": "c2",
+      "targets": [
+        "f"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 174,
+      "round": 2,
+      "actor": "c2",
+      "targets": [
+        "c"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 177,
+      "round": 2,
+      "actor": "c3",
+      "targets": [
+        "f"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 179,
+      "round": 2,
+      "actor": "c3",
+      "targets": [
+        "c"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 223,
+      "round": 3,
+      "actor": "c3",
+      "targets": [
+        "f"
+      ],
+      "actual": 0
+    },
+    {
+      "id": 225,
+      "round": 3,
+      "actor": "c3",
+      "targets": [
+        "c"
+      ],
+      "actual": 23
+    }
+  ],
+  "limit": "Initial command scopes only. Not an estimate of damage, action count, future coverage or safety; normal seeds 1/2 were fixed, not selected by success."
+}

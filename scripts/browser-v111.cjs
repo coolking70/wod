@@ -1,0 +1,44 @@
+const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v111',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8002';fs.mkdirSync(out,{recursive:true});
+const fixture=k=>JSON.parse(fs.readFileSync(path.join(out,'threat-'+k+'.json'),'utf8'));
+(async()=>{
+ const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']}),errors=[],steps=[];let active;
+ const state=p=>p.evaluate(()=>JSON.parse(localStorage.getItem('abbey-guild-v6'))),cfg=p=>p.evaluate(()=>JSON.parse(localStorage.getItem('abbey-expedition-v40')));
+ const guild=async(p,pane)=>{await p.locator('header [data-view=guild]').click();await p.locator(`.guild-tabs [data-guild-tab=${pane}]`).click();};
+ const download=async(p,selector='#download')=>{const event=p.waitForEvent('download');await p.locator(selector).click();return JSON.parse(fs.readFileSync(await(await event).path(),'utf8'));};
+ const watch=p=>{active=p;p.on('pageerror',e=>errors.push(e.stack));};
+ try{
+  const desktop=await browser.newContext({viewport:{width:1440,height:1000}}),p=await desktop.newPage();watch(p);await p.goto(url);
+  await p.locator('[data-own-hero=a]').click();await guild(p,'hero');await p.locator('[data-companion=d]').selectOption('ward');await p.locator('[data-apply-companion=d]').click();
+  assert.deepEqual(await state(p),fixture('initialGuild'));assert.deepEqual(await cfg(p),fixture('draft'));
+  await guild(p,'departure');await p.locator('#check-scope').selectOption('cistern');
+  const original=await state(p),draft=await cfg(p),room=p.locator('#departure-check [data-threat-room=cistern]');
+  assert.match(await room.locator('[data-threat-attack="c2:0"] .threat-candidates').innerText(),/伊芙、维斯、露弥/);
+  assert.match(await p.locator('#departure-check .enemy-threat-map h3').innerText(),/公会实际配置/);
+  assert.deepEqual(await state(p),original);assert.deepEqual(await cfg(p),draft);
+  await room.locator('[data-threat-edit=d]').click();assert.equal(await p.locator('#plan-scope').inputValue(),'cistern');assert.match(await p.locator('#editor h2').innerText(),/维斯/);
+  assert.deepEqual(await state(p),fixture('prepared'));
+  await p.locator('#editor [data-field=pos]').selectOption('left');await p.locator('#editor [data-field=defense-magic]').selectOption('resist');assert.deepEqual(await cfg(p),fixture('firstConfig'));
+  await p.locator('#guild-run').click();await p.locator('#check-scope').selectOption('cistern');
+  const changed=p.locator('#departure-check [data-threat-room=cistern]');assert.match(await changed.locator('[data-threat-attack="c2:0"] .threat-candidates').innerText(),/伊芙、露弥/);assert.doesNotMatch(await changed.locator('[data-threat-attack="c2:0"] .threat-candidates').innerText(),/维斯/);
+  assert.match(await changed.locator('[data-threat-hero=d]').innerText(),/左翼/);await changed.screenshot({path:path.join(out,'threat-desktop.png')});
+  await p.locator('[data-guild=depart]').click();const first=await download(p);assert.deepEqual(first,fixture('firstReport'));
+  const pending=await state(p);await guild(p,'departure');assert.equal(await p.locator('#departure-check [data-threat-edit=d]').isDisabled(),true);assert.deepEqual(await state(p),pending);
+  await p.locator('[data-guild=report]').click();await p.locator('#report-handoff [data-report-cycle=claim]').click();await p.locator('#gear-member').selectOption('a');await p.locator('[data-assign=reliquaryshield]').click();
+  await guild(p,'team');await p.locator('[data-member=d]').click();await p.locator('[data-learn="defense:resist"]').click();assert.deepEqual(await state(p),fixture('desktop'));
+  await guild(p,'history');const backup=await download(p,'[data-campaign-export]'),backupFile=path.join(out,'threat-campaign.json');fs.writeFileSync(backupFile,JSON.stringify(backup,null,2));
+  steps.push('桌面从实际敌方压中央的范围定位托管学者本房，保留屏障职责转自定义，移到左翼后候选排除维斯。真实seed1完整战报同API，待领禁编辑/查看不改档，领取120、分盾、付20XP培养后完整公会同API。');await desktop.close();
+  const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true}),m=await mobile.newPage();watch(m);await m.goto(url);await m.locator('[data-own-hero=a]').click();await guild(m,'history');
+  await m.locator('#campaign-import').setInputFiles(backupFile);await m.locator('.campaign-preview').waitFor();await m.locator('[data-campaign-restore]').click();await m.waitForFunction(()=>JSON.parse(localStorage.getItem('abbey-guild-v6'))?.gold===120);assert.deepEqual(await state(m),fixture('desktop'));
+  await m.locator('header [data-view=planning]').click();await m.locator('#file').setInputFiles(path.join(out,'threat-secondConfig.json'));await m.locator('[data-prep=overview]').click();
+  const intel=m.locator('#intel [data-threat-room=cistern]');await intel.locator('summary').click();assert.match(await m.locator('#intel .enemy-threat-map h3').innerText(),/准备页草稿/);
+  const stable=await state(m),configBefore=await cfg(m);await intel.locator('[data-threat-edit=d]').click();assert.equal(await m.locator('#plan-scope').inputValue(),'cistern');assert.deepEqual(await state(m),stable);assert.deepEqual(await cfg(m),configBefore);
+  await m.locator('#guild-run').click();await m.locator('#check-scope').selectOption('cistern');const secondRoom=m.locator('#departure-check [data-threat-room=cistern]');assert.match(await secondRoom.locator('[data-threat-hero=d]').innerText(),/左翼/);
+  assert.equal(await m.locator('.guild-tabs').evaluate(el=>getComputedStyle(el).position),'static');assert.ok(await m.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));assert.deepEqual(await state(m),stable);await secondRoom.screenshot({path:path.join(out,'threat-mobile.png')});
+  await m.locator('[data-guild=depart]').click();const second=await download(m);assert.deepEqual(second,fixture('secondReport'));await m.locator('#report-handoff [data-report-cycle=claim]').click();assert.deepEqual(await state(m),fixture('final'));
+  await guild(m,'history');await m.locator('[data-history-report="1"]').click();assert.deepEqual(await download(m),first);assert.equal(await m.locator('#report-handoff [data-report-cycle=claim]').count(),0);assert.deepEqual(await state(m),fixture('final'));
+  steps.push('390px整档恢复120金币、职责与逐房站位；草稿范围可只读定位且不改档，实际公会范围保留左翼配置。真实疗所seed2完整战报和260金币公会同API；旧战报不重复领奖，无横向溢出。');await mobile.close();
+  assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'browser-v111.json'),JSON.stringify({passed:true,steps,errors},null,2));console.log(steps.join('\n'));
+ }catch(e){fs.writeFileSync(path.join(out,'browser-v111.json'),JSON.stringify({passed:false,steps,errors,error:e.stack},null,2));if(active)await active.screenshot({path:path.join(out,'failure.png')}).catch(()=>{});throw e;}finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

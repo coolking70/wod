@@ -122,3 +122,7 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .book-goals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.book-goals article,.objective-result{border:1px solid #516574;padding:12px;border-radius:8px}.book-route{margin:16px 0}.book-proof{color:#a6d6b1}.objective-result small{display:block}@media(max-width:900px){.book-goals{grid-template-columns:1fr}}
 
 .equipment-sets article{border:1px solid #516574;padding:12px;margin:12px 0;border-radius:8px}.equipment-sets input{max-width:100%}
+
+.enemy-threat-map{margin:1.2rem 0}.threat-room{border:1px solid var(--line,#44515c);border-radius:12px;padding:1rem;margin:.7rem 0}.threat-room>summary{cursor:pointer;font-weight:700}.threat-attacks,.threat-heroes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:.7rem;margin:1rem 0}.threat-attacks article,.threat-heroes article{min-width:0;border:1px solid var(--line,#44515c);border-radius:8px;padding:.8rem;overflow-wrap:anywhere}.threat-attacks h4,.threat-heroes h4{margin:0 0 .5rem}.threat-attacks p,.threat-heroes p{margin:.5rem 0}.threat-heroes ul{padding-left:1.2rem}.threat-heroes li{margin:.5rem 0}.threat-candidates{color:var(--ink,#dfeced)}
+
+@media(max-width:640px){.guild-tabs{position:static}}

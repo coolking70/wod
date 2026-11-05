@@ -1,0 +1,161 @@
+{
+  "version": "0.111",
+  "branch": "feature/v111-enemy-threat-map",
+  "baseline": "1bdc2394f011d3a54d9a65b5a726963ae5009678",
+  "fullTests": {
+    "passed": 814,
+    "failed": 0,
+    "skipped": 0,
+    "log": "full-tests.tap",
+    "note": "No combat or targeting rules changed. Final mobile navigation CSS additionally verified in all 19 browser suites."
+  },
+  "targetedTests": {
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "log": "unit-final.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 19,
+    "engine": "Chromium /usr/bin/chromium; desktop and 390px viewport emulation",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ],
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111
+    ],
+    "log": "acceptance-release/browser-acceptance.json",
+    "priorFullRun": "acceptance/browser-acceptance.json",
+    "finalNavigation": "390px guild tabs no longer sticky; screenshot visually checked after fixing the obstructing multi-row bar. No horizontal overflow, page errors zero."
+  },
+  "legacyReports": {
+    "reference": "1bdc2394f011d3a54d9a65b5a726963ae5009678",
+    "count": 42,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "syntax": {
+    "passed": true,
+    "count": 413
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 116,
+    "checkedReferences": 133,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "normalProgression": {
+    "fullReportAndGuildEqualToAPI": true,
+    "routes": [
+      {
+        "route": "classic",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "supplies": {
+          "herb": 14,
+          "rune": 10,
+          "arrow": 8
+        },
+        "rounds": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 2,
+        "won": true,
+        "alive": 6,
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 0
+        },
+        "rounds": [
+          3,
+          5,
+          7
+        ]
+      }
+    ],
+    "claimedGoldBalances": [
+      120,
+      260
+    ],
+    "realPaidTraining": {
+      "hero": "d",
+      "key": "defense:resist",
+      "xp": 20
+    },
+    "actualCisternAttackEvents": 10,
+    "dWasTarget": false,
+    "evidence": "docs/V111_PLAYCHECK.json",
+    "limits": "Two fixed normal seeds 1/2; not a strength/survival/resource-efficiency guarantee. Hospice exhausted rune/arrow. No seed search or assets granted for viewing."
+  },
+  "readOnlyAndScope": "21 routes mapped in tests. Draft locating changes no config/guild. Actual explicit edit preserves managed instructions, switches to custom and remains undoable. Pending actual edit disabled. Initial attack groups only; alternative rows cannot be added into expected attack counts. No simulation, battle RNG sampling, damage or safety forecast.",
+  "initialFindings": {
+    "sourceFix": "A missing quote in the armor caveat template caused a syntax error; corrected, original log retained.",
+    "fixtureCorrection": "Changing only the route retained 54 classic supply against hospice 36 limit; validator correctly rejected it. Replaced with legitimate hospice preparation, no budget/assertion reduction.",
+    "logs": [
+      "unit-initial.tap",
+      "unit-second.tap"
+    ],
+    "assertionsWeakened": false
+  },
+  "referenceBoundary": {
+    "readFullText": "https://world-of-dungeons.net/",
+    "evidence": "Official home-page player testimonials describe studying opponents, defense, buffs, weapon and position choices; this is design direction, not a mechanics specification.",
+    "newUnavailablePage": {
+      "url": "https://world-of-dungeons.de/ency/Kampfsystem_-_Heilung",
+      "status": 502,
+      "retried": false
+    },
+    "adaptation": "Read-only mapping of already-public project enemy commands to initial configured allies; no original formulas, numbers or current-server mechanics imported."
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 21,
+    "gear": 39,
+    "combatEngineChanged": false,
+    "newSkillsOrRewards": false,
+    "sourceOnlyRuntime": "dist shipped directly; no bundler/build required"
+  },
+  "remaining": {
+    "blocking": [],
+    "limitations": [
+      "Initial public enemy templates cannot predict mid-expedition branches, summons, deaths or temporary effects.",
+      "Actual resource/mana availability and interception may change execution.",
+      "Official home-page testimonials support design direction only; no current-server rule replication claimed.",
+      "Permanent material economy still deferred, independent work possible."
+    ]
+  }
+}

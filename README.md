@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.110「辅助阵位轮转」**，分支`feature/v110-support-priority`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.111「敌方攻击范围核对」**，分支`feature/v111-enemy-threat-map`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -212,3 +212,5 @@ node --test tests/*.test.mjs
 新增[个人阵位优先](docs/V109_POSITION_PRIORITY.md)：远程/法术/心理攻击可显式使用五阵位顺序，逐房覆盖、动态空位回退、真实候选证据、命名方案和历史复用贯通。未选用时旧42份完整战报全同；793测试及正常两次真实成长通过。原版资料仅检索历史索引，正文受限，明确为项目改编。
 
 新增[辅助阵位轮转](docs/V110_SUPPORT_PRIORITY.md)：正面阵位辅助显式选用后，会先照顾尚无同名效果的队友，再转下一组，效果结束后重新检查；逐房覆盖、候选证据、真实付款、方案/备份贯通。804测试通过，所有旧42份完整战报全同；多覆盖会增加用料，不保证整场维持。
+
+新增[敌方攻击范围核对](docs/V111_ENEMY_THREAT_MAP.md)：公开敌方普通指令逐房映射到草稿/公会实际队员，区分候选与单次人数上限，显示本人的防御/抗性并直接进入本房调整。只读检查不预演战斗，也不把空候选当作安全保证。
