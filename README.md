@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.99「潮刻钟楼」**。v0.94已备份到 [feature/v094-official-expedition-loop](https://github.com/coolking70/wod/tree/feature/v094-official-expedition-loop)，远端核验 `1f9df35d49d29d99b087d79b81382214a2f682e3`。后续阶段本地提交；用户已授权v0.100验证后尝试合并main，不部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前集成版本：**v0.100「单人远征集成」**。包含21路线、39件固定装备、远征目标与首次攻略、个人配装册、指令时序和整档备份。v0.94已备份至 [feature/v094-official-expedition-loop](https://github.com/coolking70/wod/tree/feature/v094-official-expedition-loop)。按用户授权将通过验证的v0.100快进接回main，执行记录见[集成报告](docs/V100_INTEGRATION.md)。不部署；后续开发仍本地提交。
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
