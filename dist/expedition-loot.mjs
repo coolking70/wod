@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ shoals:{bonus:55,xp:20,firstGold:55,firstXp:20,pool:['saltcloak','echocharm']},
  theater:{bonus:45,xp:20,firstGold:45,firstXp:15,pool:['votivelute','echocharm']},
  courier:{bonus:75,xp:25,firstGold:65,firstXp:25,pool:['postbell']},
  foundrywatch:{bonus:80,xp:30,firstGold:70,firstXp:30,pool:['watchseal']},
@@ -26,6 +27,9 @@ export function expeditionReward(report,{version=2,first=false,id=1}={}){const c
  const r=ROUTE_REWARDS[report.config.expedition],won=report.won,firstClear=won&&first;
  // Loot uses its own deterministic stream; it never consumes combat randomness.
  let x=(report.config.seed^Math.imul(id,0x45d9f3b))>>>0;for(const ch of report.config.expedition)x=Math.imul(x^ch.charCodeAt(0),16777619)>>>0;
+ // Avalanche high bits into low bits: normal departure id and seed coincide,
+ // so using the old low bit alone pinned every two-item pool to one item.
+ x=Math.imul(x^(x>>>16),0x85ebca6b);x=Math.imul(x^(x>>>13),0xc2b2ae35);x=(x^(x>>>16))>>>0;
  const gear=won&&r.pool.length?r.pool[firstClear?0:x%r.pool.length]:null;
  return {cleared,gold:cleared*20+(won?r.bonus:0)+(firstClear?r.firstGold:0),xp:cleared*10+(won?r.xp:0)+(firstClear?r.firstXp:0),firstClear,loot:gear?[gear]:[]};
 }

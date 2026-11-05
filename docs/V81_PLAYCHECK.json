@@ -1,0 +1,7305 @@
+{
+  "note": "96 bounded checks of all12 generated charts, fresh/grown x plain/roles x fixed discovery101/confirmation201. No optimal-build or global-balance claim. Separate normal two-map progression and all12 collection start from independent copies of the same legally earned guild. No injected assets or per-chart reward grants.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "chart": 1,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 633,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 315,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 267,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 213,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 1,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 519,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 260,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 519,
+          "mp": 229,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 1,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 580,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 260,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 209,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 1,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 608,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 262,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 200,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 2,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 576,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 315,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 267,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 2,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 552,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 260,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 552,
+          "mp": 212,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 2,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 605,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 260,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 202,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 2,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 619,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 262,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 185,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 3,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 315,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 525,
+          "mp": 256,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 201,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 3,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 592,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 490,
+          "mp": 264,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 213,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 3,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 621,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 257,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 193,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 4
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 3,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 573,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 534,
+          "mp": 259,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 184,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 3
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 4,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 315,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 525,
+          "mp": 256,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 175,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 4,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 572,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 490,
+          "mp": 264,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 197,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 4,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 591,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 257,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 165,
+          "supplies": {
+            "herb": 1,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 4,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 600,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 534,
+          "mp": 259,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 169,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 5,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 569,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 226,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 5,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 571,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 268,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 571,
+          "mp": 225,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 5,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 627,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 254,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 5,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 568,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 568,
+          "mp": 212,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 6,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 547,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 10,
+          "survivors": 6,
+          "hp": 547,
+          "mp": 213,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 6,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 544,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 268,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 206,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 6,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 601,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 254,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 6,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 618,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 202,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 7,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 523,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 500,
+          "mp": 240,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 523,
+          "mp": 202,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 5
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 5
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 7,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 509,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 519,
+          "mp": 247,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 10,
+          "survivors": 5,
+          "hp": 509,
+          "mp": 208,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 6
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 7,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 418,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 514,
+          "mp": 247,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 11,
+          "survivors": 5,
+          "hp": 418,
+          "mp": 185,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 7,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 441,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 533,
+          "mp": 243,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 12,
+          "survivors": 5,
+          "hp": 441,
+          "mp": 178,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 8,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 416,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 500,
+          "mp": 240,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 14,
+          "survivors": 5,
+          "hp": 416,
+          "mp": 124,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 5
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 5
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 8,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 399,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 310,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 519,
+          "mp": 247,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 15,
+          "survivors": 5,
+          "hp": 399,
+          "mp": 115,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 6
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 8,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 457,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 310,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 514,
+          "mp": 247,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 11,
+          "survivors": 5,
+          "hp": 457,
+          "mp": 160,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 8,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 525,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 533,
+          "mp": 243,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 525,
+          "mp": 176,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 1,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 9,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 550,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 261,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 550,
+          "mp": 217,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 9,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 561,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 299,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 263,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 215,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 9,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 614,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 257,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 189,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 9,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 615,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 260,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 193,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 10,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 577,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 261,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 10,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 186,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 10,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 299,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 263,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 190,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 10,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 626,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 257,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 192,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 10,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 260,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 190,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 11,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 552,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 232,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 1
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 552,
+          "mp": 209,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 11,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 299,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 245,
+          "supplies": {
+            "herb": 9,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 213,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 11,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 590,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 249,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 202,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 11,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 265,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 196,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 12,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 556,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 232,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 1
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 11,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 198,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 12,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 589,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 299,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 245,
+          "supplies": {
+            "herb": 9,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 190,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 12,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 249,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "fresh",
+      "chart": 12,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 640,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 265,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 189,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 1,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 602,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 257,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 231,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 1,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 580,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 264,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 229,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 1,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 605,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 263,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 207,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 1,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 261,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 205,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 2,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 541,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 257,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 541,
+          "mp": 212,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 2,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 576,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 264,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 217,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 2,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 632,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 263,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 190,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 2,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 616,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 261,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 191,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 3,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 484,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 511,
+          "mp": 241,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 484,
+          "mp": 213,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 3,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 568,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 243,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 568,
+          "mp": 204,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 3,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 449,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 528,
+          "mp": 245,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 11,
+          "survivors": 5,
+          "hp": 449,
+          "mp": 184,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 3,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 532,
+          "mp": 258,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 190,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 4,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 437,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 511,
+          "mp": 241,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 15,
+          "survivors": 5,
+          "hp": 437,
+          "mp": 113,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 4,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 594,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 243,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 180,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 4,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 516,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 528,
+          "mp": 245,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 516,
+          "mp": 183,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 1,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 4,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 588,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 532,
+          "mp": 258,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 5,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 632,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 266,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 226,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 5,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 551,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 272,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 551,
+          "mp": 236,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 5,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 595,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 268,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 207,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 5,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 622,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 204,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 6,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 567,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 266,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 218,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 6,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 613,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 272,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 223,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 6,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 573,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 268,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 184,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 6,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 604,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 199,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 7,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 510,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 5,
+          "hp": 526,
+          "mp": 247,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 8,
+          "survivors": 5,
+          "hp": 510,
+          "mp": 212,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 4
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 7,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 484,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 5,
+          "hp": 534,
+          "mp": 242,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 8,
+          "survivors": 5,
+          "hp": 484,
+          "mp": 212,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 4
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 7,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 632,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 252,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 173,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 3
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 7,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 494,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 525,
+          "mp": 251,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 13,
+          "survivors": 5,
+          "hp": 494,
+          "mp": 184,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 8,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 497,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 5,
+          "hp": 526,
+          "mp": 247,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 11,
+          "survivors": 5,
+          "hp": 497,
+          "mp": 143,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 4
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 8,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 511,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 3,
+          "survivors": 5,
+          "hp": 534,
+          "mp": 242,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 11,
+          "survivors": 5,
+          "hp": 511,
+          "mp": 145,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 4
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 8,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 597,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 309,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 252,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 177,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 8,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 534,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "ropebridge",
+          "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+          "name": "01 · 裂礁索桥",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "echo",
+          "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+          "name": "02 · 双鸣回声礁",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 525,
+          "mp": 251,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 534,
+          "mp": 173,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 1,
+        "arrow": 7
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 9,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 492,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 294,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 253,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 492,
+          "mp": 217,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 9,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 580,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 297,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 215,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 9,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 600,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 260,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 203,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 9,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 593,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 264,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 207,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 10,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 586,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 294,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 253,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 10,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 203,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 10,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 595,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 297,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 198,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 10,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 619,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 260,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 198,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 10,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 629,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "anchor",
+          "note": "两名前排锚卫抗近战30%、弱法15%；左翼挫志咏者抗法60%、弱远程15%，挫志降低后续攻击技能。可远程拆左翼，也可净化前排，保留低耗指令。",
+          "name": "02 · 断锚坪",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 264,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 195,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 11,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 576,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 294,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 243,
+          "supplies": {
+            "herb": 10,
+            "rune": 1,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 223,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 11,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 297,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 242,
+          "supplies": {
+            "herb": 9,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 222,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 11,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 586,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 255,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 200,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 11,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 607,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 264,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "lanternbone",
+          "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+          "name": "03 · 灯骨礁",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 12,
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 545,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 294,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 243,
+          "supplies": {
+            "herb": 10,
+            "rune": 1,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 545,
+          "mp": 213,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 2
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 12,
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 565,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 297,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 242,
+          "supplies": {
+            "herb": 9,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 10,
+          "survivors": 6,
+          "hp": 565,
+          "mp": 207,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 1
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 12,
+      "plan": "roles",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 630,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 255,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "profile": "grown",
+      "chart": 12,
+      "plan": "roles",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 621,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "tideglass",
+          "note": "前排卫挡住近战，后排咏者以群体法术压中央，抗法60%、远程弱点15%。射手可先压后排，法师处理前排；中央屏障占用学者预备和符纸。",
+          "name": "01 · 潮镜登陆台",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 264,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 188,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      }
+    }
+  ],
+  "summary": {
+    "fresh": {
+      "plain": {
+        "runs": 12,
+        "clears": 12,
+        "allSix": 10,
+        "rounds": [
+          {
+            "chart": 1,
+            "rounds": [
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "chart": 2,
+            "rounds": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "chart": 3,
+            "rounds": [
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "chart": 4,
+            "rounds": [
+              2,
+              3,
+              8
+            ]
+          },
+          {
+            "chart": 5,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 6,
+            "rounds": [
+              2,
+              3,
+              9
+            ]
+          },
+          {
+            "chart": 7,
+            "rounds": [
+              2,
+              4,
+              10
+            ]
+          },
+          {
+            "chart": 8,
+            "rounds": [
+              2,
+              4,
+              15
+            ]
+          },
+          {
+            "chart": 9,
+            "rounds": [
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "chart": 10,
+            "rounds": [
+              2,
+              3,
+              8
+            ]
+          },
+          {
+            "chart": 11,
+            "rounds": [
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "chart": 12,
+            "rounds": [
+              2,
+              4,
+              9
+            ]
+          }
+        ]
+      },
+      "roles": {
+        "runs": 12,
+        "clears": 12,
+        "allSix": 10,
+        "rounds": [
+          {
+            "chart": 1,
+            "rounds": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "chart": 2,
+            "rounds": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "chart": 3,
+            "rounds": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "chart": 4,
+            "rounds": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "chart": 5,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 6,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 7,
+            "rounds": [
+              2,
+              5,
+              12
+            ]
+          },
+          {
+            "chart": 8,
+            "rounds": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "chart": 9,
+            "rounds": [
+              3,
+              3,
+              5
+            ]
+          },
+          {
+            "chart": 10,
+            "rounds": [
+              3,
+              3,
+              5
+            ]
+          },
+          {
+            "chart": 11,
+            "rounds": [
+              3,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 12,
+            "rounds": [
+              3,
+              3,
+              6
+            ]
+          }
+        ]
+      }
+    },
+    "grown": {
+      "plain": {
+        "runs": 12,
+        "clears": 12,
+        "allSix": 10,
+        "rounds": [
+          {
+            "chart": 1,
+            "rounds": [
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "chart": 2,
+            "rounds": [
+              2,
+              3,
+              9
+            ]
+          },
+          {
+            "chart": 3,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 4,
+            "rounds": [
+              2,
+              3,
+              9
+            ]
+          },
+          {
+            "chart": 5,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 6,
+            "rounds": [
+              2,
+              3,
+              9
+            ]
+          },
+          {
+            "chart": 7,
+            "rounds": [
+              2,
+              3,
+              8
+            ]
+          },
+          {
+            "chart": 8,
+            "rounds": [
+              2,
+              3,
+              11
+            ]
+          },
+          {
+            "chart": 9,
+            "rounds": [
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "chart": 10,
+            "rounds": [
+              2,
+              3,
+              9
+            ]
+          },
+          {
+            "chart": 11,
+            "rounds": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "chart": 12,
+            "rounds": [
+              2,
+              4,
+              10
+            ]
+          }
+        ]
+      },
+      "roles": {
+        "runs": 12,
+        "clears": 12,
+        "allSix": 10,
+        "rounds": [
+          {
+            "chart": 1,
+            "rounds": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "chart": 2,
+            "rounds": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "chart": 3,
+            "rounds": [
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "chart": 4,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 5,
+            "rounds": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "chart": 6,
+            "rounds": [
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "chart": 7,
+            "rounds": [
+              2,
+              4,
+              13
+            ]
+          },
+          {
+            "chart": 8,
+            "rounds": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "chart": 9,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 10,
+            "rounds": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "chart": 11,
+            "rounds": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "chart": 12,
+            "rounds": [
+              2,
+              4,
+              6
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "normal": {
+    "chart": 1,
+    "seed": 6,
+    "rooms": [
+      {
+        "id": "shoals_landing",
+        "node": "shingle",
+        "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+        "name": "01 · 砾风浅滩",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 632,
+        "mp": 314,
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 8
+        }
+      },
+      {
+        "id": "shoals_crossing",
+        "node": "sailnet",
+        "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+        "name": "02 · 悬帆救护网",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 632,
+        "mp": 249,
+        "supplies": {
+          "herb": 7,
+          "rune": 5,
+          "arrow": 3
+        }
+      },
+      {
+        "id": "shoals_depth",
+        "node": "lanternbone",
+        "note": "前排携盾卫受右翼节拍支持，左翼救护师救护，后排弩手压后。救护师抗法60%、弱远程15%；鼓手抗远程55%、弱法15%。拆不同支援会留下不同压力，已附着节拍不随来源倒下消失。",
+        "name": "03 · 灯骨礁",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 595,
+        "mp": 207,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 0
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 3,
+      "gold": 170,
+      "xp": 70,
+      "firstClear": true,
+      "loot": [
+        "saltcloak"
+      ]
+    }
+  },
+  "repeat": {
+    "chart": 8,
+    "seed": 7,
+    "rooms": [
+      {
+        "id": "shoals_landing",
+        "node": "ropebridge",
+        "note": "左右弩手分别射击后排，同位置群攻无法同时打中两翼。分阵与后排屏障仍会改变辅助覆盖。",
+        "name": "01 · 裂礁索桥",
+        "won": true,
+        "rounds": 2,
+        "survivors": 6,
+        "hp": 619,
+        "mp": 314,
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 8
+        }
+      },
+      {
+        "id": "shoals_crossing",
+        "node": "echo",
+        "note": "两名中央咏者抗法55%、弱远程15%，以群体法术压后排；前排守军护住通路。射手可集中群射中央，法师破前；后排抗性和屏障保护需要与前排争用。",
+        "name": "02 · 双鸣回声礁",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 494,
+        "mp": 257,
+        "supplies": {
+          "herb": 7,
+          "rune": 5,
+          "arrow": 7
+        }
+      },
+      {
+        "id": "shoals_depth",
+        "node": "sealstake",
+        "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+        "name": "03 · 封潮桩",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 581,
+        "mp": 177,
+        "supplies": {
+          "herb": 3,
+          "rune": 2,
+          "arrow": 1
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 3,
+      "gold": 115,
+      "xp": 50,
+      "firstClear": false,
+      "loot": [
+        "saltcloak"
+      ]
+    }
+  },
+  "atlas": {
+    "collection": [
+      {
+        "chart": 1,
+        "seed": 6,
+        "alive": 6,
+        "rounds": [
+          3,
+          5,
+          5
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 170,
+          "xp": 70,
+          "firstClear": true,
+          "loot": [
+            "saltcloak"
+          ]
+        }
+      },
+      {
+        "chart": 2,
+        "seed": 7,
+        "alive": 6,
+        "rounds": [
+          2,
+          5,
+          6
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "saltcloak"
+          ]
+        }
+      },
+      {
+        "chart": 3,
+        "seed": 8,
+        "alive": 5,
+        "rounds": [
+          2,
+          5,
+          13
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 4,
+        "seed": 9,
+        "alive": 6,
+        "rounds": [
+          2,
+          4,
+          6
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 5,
+        "seed": 10,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          6
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 6,
+        "seed": 11,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          6
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 7,
+        "seed": 12,
+        "alive": 5,
+        "rounds": [
+          3,
+          5,
+          10
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "saltcloak"
+          ]
+        }
+      },
+      {
+        "chart": 8,
+        "seed": 13,
+        "alive": 5,
+        "rounds": [
+          2,
+          4,
+          9
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 9,
+        "seed": 14,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          5
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 10,
+        "seed": 15,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          7
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 11,
+        "seed": 16,
+        "alive": 6,
+        "rounds": [
+          2,
+          4,
+          5
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      },
+      {
+        "chart": 12,
+        "seed": 17,
+        "alive": 6,
+        "rounds": [
+          3,
+          4,
+          6
+        ],
+        "reward": {
+          "cleared": 3,
+          "gold": 115,
+          "xp": 50,
+          "firstClear": false,
+          "loot": [
+            "echocharm"
+          ]
+        }
+      }
+    ],
+    "charted": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "drops": {
+    "note": "Pure selector checks,128 equal-id/seed pairs per multi-item pool; not player victories or item grants, no uniformity claim.",
+    "rows": [
+      {
+        "route": "shoals",
+        "counts": {
+          "saltcloak": 58,
+          "echocharm": 70
+        }
+      },
+      {
+        "route": "theater",
+        "counts": {
+          "votivelute": 56,
+          "echocharm": 72
+        }
+      },
+      {
+        "route": "foundry",
+        "counts": {
+          "bellowscoat": 65,
+          "kilngauge": 63
+        }
+      },
+      {
+        "route": "harbor",
+        "counts": {
+          "quaycoat": 50,
+          "beaconrod": 35,
+          "tidecompass": 43
+        }
+      },
+      {
+        "route": "seasoned",
+        "counts": {
+          "saltcloak": 41,
+          "tidebow": 45,
+          "remedybag": 42
+        }
+      },
+      {
+        "route": "veteran",
+        "counts": {
+          "bellfocus": 43,
+          "votivelute": 44,
+          "reliquaryshield": 41
+        }
+      },
+      {
+        "route": "classic",
+        "counts": {
+          "anchorseal": 35,
+          "tidebow": 43,
+          "reliquaryshield": 50
+        }
+      },
+      {
+        "route": "archive",
+        "counts": {
+          "echocharm": 47,
+          "saltcloak": 40,
+          "bellfocus": 41
+        }
+      },
+      {
+        "route": "hospice",
+        "counts": {
+          "remedybag": 50,
+          "votivelute": 40,
+          "wardpendant": 38
+        }
+      },
+      {
+        "route": "survival",
+        "counts": {
+          "anchorseal": 46,
+          "reliquaryshield": 45,
+          "saltcloak": 37
+        }
+      },
+      {
+        "route": "vigil",
+        "counts": {
+          "bellfocus": 44,
+          "echocharm": 38,
+          "votivelute": 46
+        }
+      },
+      {
+        "route": "scarcity",
+        "counts": {
+          "wardpendant": 42,
+          "remedybag": 35,
+          "tidebow": 51
+        }
+      },
+      {
+        "route": "chapter",
+        "counts": {
+          "saltcloak": 15,
+          "reliquaryshield": 18,
+          "wardpendant": 14,
+          "bellfocus": 13,
+          "remedybag": 9,
+          "votivelute": 14,
+          "tidebow": 19,
+          "anchorseal": 12,
+          "echocharm": 14
+        }
+      }
+    ]
+  },
+  "unchanged": {
+    "reference": "de70e4e0a72595d941ce25ec8b9113199167a605",
+    "count": 30,
+    "rows": [
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ],
+    "excluded": [],
+    "note": "Complete combat reports equal, including all party fields. Repeat loot selection deliberately changed to fix correlated-id/seed bias; reward amount and first guaranteed item unchanged."
+  }
+}

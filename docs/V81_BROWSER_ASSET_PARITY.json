@@ -1,0 +1,23 @@
+{
+  "desktop": {
+    "equal": true,
+    "gold": 1290,
+    "next": 8,
+    "charted": [
+      1,
+      8
+    ]
+  },
+  "mobile": {
+    "equal": true,
+    "gold": 1405,
+    "next": 9,
+    "charted": [
+      1,
+      8,
+      12
+    ]
+  },
+  "excluded": [],
+  "note": "Entire normally earned guilds match, not selected counters. Desktop maps1/8 and equipped earned saltcloak; mobile actual map12 continuation."
+}

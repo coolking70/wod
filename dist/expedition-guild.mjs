@@ -1,3 +1,4 @@
+import {validateShoalsState,recordShoals} from './expedition-shoals.mjs';
 import {validateHarborStory,harborStoryProgress,HARBOR_STORY_ENDINGS,HARBOR_STORY_GOLD} from './expedition-harbor-story.mjs';
 import {quoteTrainingPlan} from './expedition-training-plan.mjs';
 import {PROGRESSION_RULES,COURSE_REQUIRED_XP} from './expedition-progression-rules.mjs';
@@ -31,6 +32,7 @@ export function validateGuild(g){
  for(const r of g.history){validateCommand(r.command);if(r.config!==undefined){validate(r.config);if(r.config.expedition!==r.route)throw Error("历史远征路线与快照不一致");}}
  if(g.pending!==null){validateCommand(g.pending?.command);if(!g.pending||g.pending.id!==g.next-1||g.history.some(r=>r.id===g.pending.id))throw Error('待结算远征无效');validate(g.pending.config);for(const h of g.pending.config.heroes){const m=g.members.find(m=>m.id===h.id);if(!sameEquipment(h.gear,m.gear)||JSON.stringify(h.training)!==JSON.stringify(m.training)||(h.advancement||null)!==(m.advancement?.path||null))throw Error('远征资产快照不一致');assertGuildSkills(m,h);}}
  if(!g.warehouse||typeof g.warehouse!=="object"||Array.isArray(g.warehouse)||Object.entries(g.warehouse).some(([k,n])=>!isRelic(k)||!integer(n))||!g.clears||typeof g.clears!=="object"||Array.isArray(g.clears)||Object.entries(g.clears).some(([k,n])=>!Object.hasOwn(ROUTE_REWARDS,k)||!integer(n)))throw Error("战利品或通关记录无效");
+ validateShoalsState(g.shoals,g.clears.shoals||0);
  if(g.pending&&![1,2].includes(g.pending.rewardVersion))throw Error("结算版本无效");
  if(g.harborStory&&!harborStoryProgress(g).ready)throw Error('灯塔来信记录缺少正常远征条件');
  if(g.foundryStory&&!foundryStoryProgress(g).ready)throw Error('铸库归航记录缺少正常远征条件');
@@ -47,6 +49,7 @@ export function claim(g){validateGuild(g);if(!g.pending)throw Error('没有待�
  if(reward.foundry)n.foundry={claimed:[...(n.foundry?.claimed||[]),...reward.foundry.earned]};
  for(const gear of reward.loot||[])n.warehouse[gear]=(n.warehouse[gear]||0)+1;
  if(g.pending.rewardVersion===2&&report.won)n.clears[report.config.expedition]=(n.clears[report.config.expedition]||0)+1;
+ if(g.pending.rewardVersion===2)recordShoals(n,report);
  n.history.unshift({id:g.pending.id,route:report.config.expedition,won:report.won,...reward,config:clone(g.pending.config),...(g.pending.command?{command:clone(g.pending.command)}:{})});n.history=n.history.slice(0,20);n.pending=null;return n;}
 export function assignLoot(g,id,gear){const n=editable(g),h=n.members.find(h=>h.id===id);if(!h||!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('没有可分配的战利品');if(h.owned.includes(gear))throw Error('该队员已拥有此装备，可分给其他队员或出售');n.warehouse[gear]--;h.owned.push(gear);h.gear=replaceEquipment(h.gear,gear);return n;}
 export function claimFoundryStory(g,ending){
