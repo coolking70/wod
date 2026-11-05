@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ greenhouse:{bonus:75,xp:30,firstGold:55,firstXp:20,pool:['filterveil']},
  scriptorium:{bonus:65,xp:25,firstGold:55,firstXp:20,pool:['counterlens']},
  palisade:{bonus:55,xp:20,firstGold:55,firstXp:20,pool:['watchmantle']},
  inquest:{bonus:50,xp:20,firstGold:50,firstXp:20,pool:['calmribbon']},

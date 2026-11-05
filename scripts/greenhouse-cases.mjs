@@ -1,0 +1,3 @@
+import {greenhouseConfig} from '../dist/expedition-data.mjs';import {newGuild,depart,pendingReport,pendingReward,claim,assignLoot,train} from '../dist/expedition-guild.mjs';import {selectHero} from '../dist/expedition-command.mjs';
+export const GREENHOUSE_PLANS=['source','cleanse','corrode'];
+export function greenhouseProgression(){const start=selectHero(newGuild(),'d'),pending=depart(start,greenhouseConfig()),first=pendingReport(pending),reward=pendingReward(pending),claimed=claim(pending),equipped=assignLoot(claimed,'a','filterveil'),trained=train(equipped,'d','defense:resist');return {start,pending,first,reward,claimed,equipped,trained};}

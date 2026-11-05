@@ -1,0 +1,2649 @@
+{
+  "note": "36 distinct bounded inputs, 2 normal profiles ×3 multi-variable plans ×6 predeclared seeds, same30 supplies and actual assets within profile. Earned: first real cleanse seed1 claim190/80, veil assignedA,20XP resist1 paidD; no injection. Training active defense helps initial checks only, not fixed cleanse amount or passive ticks. Plans/RNG change multiple actions; no universal recommendation/prevented-damage attribution. Explicit front-counter probe is separate legal autoheal-off case, not default advice.",
+  "summary": {
+    "runs": 36,
+    "uniqueBattleInputs": 36,
+    "failures": 0,
+    "injured": 0,
+    "byPlan": [
+      {
+        "plan": "source",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      },
+      {
+        "plan": "cleanse",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      },
+      {
+        "plan": "corrode",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      }
+    ]
+  },
+  "equipment": {
+    "hp": 0,
+    "mp": -2,
+    "magicDefenseMean": 2
+  },
+  "cases": [
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "24ddb78152434968305a199f0e4e2283cf2a9fe167ec87c38d1cc504a93a3080",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 296,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 221,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 190,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 0,
+      "enemyPeriodDamage": 0,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "b39a742d64aabf0171aac415f8576ff6af94faef0bde3c421a83cae0274f4579",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 294,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 216,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 191,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "e6f30d1937dda45185fa0d031de57d6c5eaddf4906ec9f5ebadf3046f2d1d240",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 300,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 221,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 176,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "459f591816c0f757f9c48bd1446355d6c853ac8e4d84e50d1df1363e355fe2cb",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 295,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 231,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 177,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 5,
+      "enemyPeriodDamage": 30,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "14356b17bbddf1da59b73294fa8a103ee76188d6a024d86b9a83690ab656f1a9",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 303,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 222,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 205,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "9fee23172ad6ad46942d1c21c74beb00e7a22ffc143d062049f03e1c98b23a89",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 302,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 211,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 181,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 2,
+      "enemyPeriodDamage": 12,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "1bd4e70fd646c9d429ba4fe6bf3013bbc7e8d62dc2cf419e688d674d03fba78f",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 230,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 192,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 24,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 4,
+      "cleanseComponents": 4,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "919ea32cf898aedf1b0235b53385158a113be92c9e43c4bdcda17ce3e6905f46",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 303,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 236,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 206,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 3,
+      "cleanseComponents": 3,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "d0c2f66441e5766dea10cff7695623b759652b3c202cbbe017f0e053b46696e4",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 290,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 242,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 176,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 3,
+      "cleanseComponents": 3,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "2d2220f745a0a81cc2591d753719ae9d3b42f216cb43ba0ed459f5e8be246ed8",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 294,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 219,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 170,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 24,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 4,
+      "cleanseComponents": 4,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "ea52bcadff26d8018bdff08c01794c9347f70328a3fb1b36f189ae69918b422b",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 306,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 231,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 174,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 3,
+      "cleanseComponents": 3,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "02154bd7da1e6958c5e724633a4666fb1346a457c7174bf321a99001a721265f",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 296,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 226,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 165,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 24,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 4,
+      "cleanseComponents": 4,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "corrode",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "35e04e8d1a17ffaa9b7e26447a714177f3bde18ee5c2a3535c8de4af5f21cd9b",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 301,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 220,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 547,
+          "mp": 197,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 0,
+      "enemyPeriodDamage": 0,
+      "playerPeriodDamage": 24,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "corrode",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "d86a9d9a03ede8e890310abce4782272cda912a7825ba3dbc35112ec9750ca6c",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 302,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 216,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 548,
+          "mp": 161,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 24,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "corrode",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "750ad194855b842f446e967b7087147f35b6b8aaa881b983a3362e57605019a8",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 211,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 152,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 5,
+      "enemyPeriodDamage": 30,
+      "playerPeriodDamage": 24,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "corrode",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "7aa774ab4e5f48587cbf1e109a7f91abbf06b086a21d0776249c0acee994cc4d",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 290,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 200,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 574,
+          "mp": 186,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 1,
+      "enemyPeriodDamage": 6,
+      "playerPeriodDamage": 30,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "corrode",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "dd109bd5e85a3e226fabeb957d663c6c8e529fa0d8cb492d176cd7af9f49b778",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 299,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 204,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 160,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 0,
+      "enemyPeriodDamage": 0,
+      "playerPeriodDamage": 18,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "corrode",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "1b4a602c351000eca88cc93fcc94d65149ee024ef34e95fb8ff0eed7e16e6892",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 213,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 155,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 24,
+      "playerPeriodDamage": 30,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "2ce734f2f5c977448f77ce6effe3c288dc29d0dab6d216de323111be09792054",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 294,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 219,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 191,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 0,
+      "enemyPeriodDamage": 0,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "fefe7a260059f6f9a52357b7581d1c9cd813eb28711f74d7f895b4c5170870d2",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 292,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 231,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 185,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 16,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "0b6a5ad314d91692d342e2baa16333cec536806cc12974bf1c4e85b3888ba3cd",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 298,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 219,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 177,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 16,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "0a15b242938abc115e539633eaa67503f8fb448ae75421c8d04be2ccfb802bf0",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 293,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 212,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 161,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 16,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "2a6eda277228f0ba40cf6a0083284b46964c9f2536f05cb02fb7ce35081b0b4e",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 301,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 220,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 203,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "7bc55c5ee176db8ac21d6b24a325abe3e261ed67fb1adc9be3c4776c83b8f1cf",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 300,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 209,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 182,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 2,
+      "enemyPeriodDamage": 12,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "cleanse",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "b9882fede56708e428b13eeefd98d994b91d223901f236c44cf5f2e6109ca2c0",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 228,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 195,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 22,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 4,
+      "cleanseComponents": 4,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "cleanse",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "0573059ed17dfe5951b76a08e9eecf0a5e0c38b68f2d31b6d230db1836c77793",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 301,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 234,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 207,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 16,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 3,
+      "cleanseComponents": 3,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "cleanse",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "bc71bb924e7847d409b3f0a7ca0fb20016f6756d6d84277d745bc06de4202433",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 288,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 240,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 174,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 16,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 3,
+      "cleanseComponents": 3,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "cleanse",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "5d7193e108b8e0783ad6749c62ab15eb8925a99cbc2f46a3a85720193d27dad3",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 292,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 221,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 188,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 6,
+      "enemyPeriodDamage": 34,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 4,
+      "cleanseComponents": 4,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "cleanse",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "cee5b7c7edc6ef48f4f7a5571fdc1488eaf909d7b2d22505ff5b6a52f06efa04",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 304,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 229,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 175,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemyTicks": 3,
+      "enemyPeriodDamage": 18,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 3,
+      "cleanseComponents": 3,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "cleanse",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "e3632eb39a39b42594c8448bdda8239c9c818eeddfcf08716a034b83b9003acb",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 294,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 224,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 566,
+          "mp": 170,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 22,
+      "playerPeriodDamage": 0,
+      "cleanseCasts": 4,
+      "cleanseComponents": 4,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "corrode",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "2cbc4dedfe99a07715f44eabc94fb926868af2bf85f10ea0aed7c213531600e4",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 299,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 218,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 547,
+          "mp": 198,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 0,
+      "enemyPeriodDamage": 0,
+      "playerPeriodDamage": 24,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "corrode",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "1ce27aa0e1f19234e6c901e0987f2e8da0ca8c0e2a128ab89dd0cedf15c0a5c7",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 300,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 214,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 169,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 5,
+      "enemyPeriodDamage": 28,
+      "playerPeriodDamage": 22,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "corrode",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "866028d7f0fd7ad4466e80bc2f623f61d14cd4f4529b435913a92a0079806c23",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 294,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 209,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 150,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 5,
+      "enemyPeriodDamage": 28,
+      "playerPeriodDamage": 24,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "corrode",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "52801d5c23b4353fe1a6d1193a604a3074bf3d406a26267ba8fa27244a4b6f87",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 288,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 198,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 574,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 1,
+      "enemyPeriodDamage": 4,
+      "playerPeriodDamage": 30,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "corrode",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "8464c968259c17a81dc9984522fbd4fa5b7fa2b0e83ed8c1a685aa0da2549926",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 297,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 208,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 174,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 24,
+      "playerPeriodDamage": 30,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "corrode",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "299b9168d46f94f76ffa85914768ccd06ff01c3c2c0e8a4f85ef8005a1e1e464",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 294,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 211,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 156,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyTicks": 4,
+      "enemyPeriodDamage": 24,
+      "playerPeriodDamage": 30,
+      "cleanseCasts": 0,
+      "cleanseComponents": 0,
+      "enemyCleansedComponents": 0
+    }
+  ],
+  "normal": {
+    "seed": 1,
+    "plan": "cleanse",
+    "rooms": [
+      {
+        "name": "01 · 浊芽苗圃",
+        "won": true,
+        "rounds": 2,
+        "survivors": 6,
+        "hp": 602,
+        "mp": 292,
+        "supplies": {
+          "herb": 11,
+          "rune": 7,
+          "arrow": 6
+        }
+      },
+      {
+        "name": "02 · 湿膜苗床",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 603,
+        "mp": 245,
+        "supplies": {
+          "herb": 9,
+          "rune": 5,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "03 · 根脉孵庭",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 542,
+        "mp": 189,
+        "supplies": {
+          "herb": 6,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 6,
+      "rune": 0,
+      "arrow": 0
+    },
+    "enemyPeriodDamage": 24,
+    "cleansed": 4,
+    "reward": {
+      "cleared": 3,
+      "gold": 190,
+      "xp": 80,
+      "firstClear": true,
+      "loot": [
+        "filterveil"
+      ]
+    }
+  },
+  "desktop": {
+    "seed": 2,
+    "plan": "source with actual veilA/resist1D",
+    "rooms": [
+      {
+        "name": "01 · 浊芽苗圃",
+        "won": true,
+        "rounds": 2,
+        "survivors": 6,
+        "hp": 640,
+        "mp": 302,
+        "supplies": {
+          "herb": 11,
+          "rune": 8,
+          "arrow": 6
+        }
+      },
+      {
+        "name": "02 · 湿膜苗床",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 602,
+        "mp": 244,
+        "supplies": {
+          "herb": 10,
+          "rune": 4,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "03 · 根脉孵庭",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 614,
+        "mp": 191,
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 7,
+      "rune": 0,
+      "arrow": 0
+    },
+    "enemyPeriodDamage": 0,
+    "cleansed": 0,
+    "reward": {
+      "cleared": 3,
+      "gold": 135,
+      "xp": 60,
+      "firstClear": false,
+      "loot": [
+        "filterveil"
+      ]
+    }
+  },
+  "mobile": {
+    "seed": 3,
+    "plan": "corrode",
+    "rooms": [
+      {
+        "name": "01 · 浊芽苗圃",
+        "won": true,
+        "rounds": 2,
+        "survivors": 6,
+        "hp": 629,
+        "mp": 288,
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 6
+        }
+      },
+      {
+        "name": "02 · 湿膜苗床",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 598,
+        "mp": 217,
+        "supplies": {
+          "herb": 9,
+          "rune": 4,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "03 · 根脉孵庭",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 555,
+        "mp": 190,
+        "supplies": {
+          "herb": 6,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 6,
+      "rune": 0,
+      "arrow": 0
+    },
+    "enemyPeriodDamage": 12,
+    "cleansed": 0,
+    "reward": {
+      "cleared": 3,
+      "gold": 135,
+      "xp": 60,
+      "firstClear": false,
+      "loot": [
+        "filterveil"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "3c73ee226562a10b5bbdcd57b8397adbc0b3225e",
+    "count": 38,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  }
+}

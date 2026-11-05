@@ -16,6 +16,7 @@ Object.assign(GEAR,{
 
 export const SLOTS={weapon:'武器',armor:'防具',accessory:'饰品'};
 Object.assign(GEAR,{
+ filterveil:{name:'滤露面纱',slot:'accessory',armor:0,bonus:{wil:2,int:-2,agi:-1},resistances:{magic:20},dungeonOnly:true},
  counterlens:{name:'辨印晶镜',slot:'accessory',armor:0,bonus:{int:2,per:1,con:-2,wil:-1},resistances:{magic:10,mental:-10},dungeonOnly:true},
  watchmantle:{name:'哨誓披甲',slot:'armor',armor:4,bonus:{con:2,per:1,agi:-2,int:-2},resistances:{ranged:10,magic:-10},dungeonOnly:true},
  calmribbon:{name:'定心缎带',slot:'accessory',armor:0,bonus:{wil:2,agi:-2},resistances:{mental:20,magic:-10},dungeonOnly:true},
