@@ -18,3 +18,7 @@
 官方历史百科的检索索引展示了远程/魔法/社会攻击可配置阵位先后、近战按固定顺序选敌的大结构：[Konfiguration - Allgemein](https://www.world-of-dungeons.de/ency/Konfiguration_-_Allgemein)。索引标示2012-08-07修订、oldid7161。但直接打开该页502；专家无JS版及近战页403，高阶提示页502，均未重试或绕过。因此没有把这些标为本轮成功核阅的正文或已验证现服规则。
 
 v109据此选择方向并明确做项目改编：保留现有五阵位，只有显式目标priority才使用个人完整顺序，可按房间覆盖；近战、职责目标和普通显式阵位维持既有规则。没有移植原版六阵位、攻击修正表、数值或界面格式，不把检索内容当作已完整复刻的依据。详见V109_POSITION_PRIORITY.md和云端original-reference-attempts.json。
+
+## v0.110辅助顺序边界
+
+沿用官方历史通用配置的检索索引作为“辅助位置先后、上方已覆盖再移向下一位置”的方向参考；没有重新请求v109受限的正文。新尝试官方Wirkdauer和Kampf正文均返回502，未重复请求，因而不移植原版持续时间、回合时序或数值。五阵位、显式supportPriority、逐房supportOrder与当前项目同技能效果判定全部标为暂定改编，既有技能期限和费用保持。见V110_SUPPORT_PRIORITY.md及云端original-reference-attempts.json。

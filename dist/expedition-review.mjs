@@ -57,9 +57,9 @@ export function reviewReport(report){
  });
 }
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
-const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}${scheduleLabel(r)}${targetCountLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队',priority:'按个人阵位优先'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
+const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}${scheduleLabel(r)}${targetCountLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队',priority:'按个人阵位优先',supportPriority:'按辅助阵位优先'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
- if(key==='attackOrder')return value===undefined?'默认阵位顺序':value.map(pos=>POS[pos]).join(' → ');
+ if(['attackOrder','supportOrder'].includes(key))return value===undefined?'默认阵位顺序':value.map(pos=>POS[pos]).join(' → ');
  if(key==='objective')return GOALS.find(g=>g.id===value)?.name||'自由探索';
  if(key==='courierPass')return COURIER_PASSES[value];
  if(key==='foundryFlow')return value==='cooling-1'?'启用潮渠引流':'保留原出口';
@@ -82,7 +82,7 @@ export const describeConfigValue=(key,value)=>format(key,value);
 export function configurationChanges(a,b){
  const roomLabels=a.expedition===b.expedition?roomsFor(a).map(r=>({id:r.id,name:r.name})):[...new Set([...roomsFor(a),...roomsFor(b)].map(r=>r.id))].map(id=>({id,name:'房间槽 '+id}));
  const knownRooms=new Set(roomLabels.map(r=>r.id));for(const id of [...Object.keys(a.roomOrders),...Object.keys(b.roomOrders),...[...a.heroes,...b.heroes].flatMap(h=>Object.keys(h.overrides))])if(!knownRooms.has(id)){knownRooms.add(id);roomLabels.push({id,name:'其他房间槽 '+id});}
- const changes=[],labels={attackOrder:'远攻阵位优先',advancement:'后期职业进阶',pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
+ const changes=[],labels={supportOrder:'辅助阵位优先',attackOrder:'远攻阵位优先',advancement:'后期职业进阶',pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
  const compare=(label,key,x,y)=>{if(canonical(x??null)!==canonical(y??null))changes.push({label,before:format(key,x),after:format(key,y)});};
  if(a.expedition==='harbor'||b.expedition==='harbor'){compare('港口符纸预留','harborReserve',harborReserve(a),harborReserve(b));compare('港口难度','harborDifficulty',harborDifficulty(a),harborDifficulty(b));compare('港口通路策略','harborPass',a.harbor?.pass,b.harbor?.pass);compare('港口事件策略','harborTask',a.harbor?.task,b.harbor?.task);}
  if(a.expedition==='shoals'||b.expedition==='shoals')compare('漂礁海图编号','shoalsChart',shoalsChartId(a),shoalsChartId(b));
@@ -94,7 +94,7 @@ export function configurationChanges(a,b){
  compare('远征路线','expedition',a.expedition,b.expedition);compare('种子','seed',a.seed,b.seed);compare('默认协作顺序','prepOrder',a.prepOrder,b.prepOrder);
  for(const key of ['herb','rune','arrow'])compare({herb:'药草',rune:'符纸',arrow:'箭矢'}[key],key,a.supplies[key],b.supplies[key]);
  for(const room of roomLabels)compare(room.name+' / 协作顺序','roomOrder',a.roomOrders[room.id],b.roomOrders[room.id]);
- for(const h of HEROES){const x=a.heroes.find(u=>u.id===h.id),y=b.heroes.find(u=>u.id===h.id);if(!x||!y){if(x||y)changes.push({label:h.name+' / 出战',before:x?'出战':'未出战',after:y?'出战':'未出战'});continue;}for(const slot of Object.keys(SLOTS))compare(h.name+' / '+SLOTS[slot],'gear',x.gear[slot],y.gear[slot]);for(const key of Object.keys(labels).filter(k=>k!=='gear'))compare(h.name+' / 默认'+labels[key],key,x[key],y[key]);for(const [key,option] of Object.entries(trainingOptions(h.id)))compare(h.name+' / 训练 / '+option.name,'rank',x.training[key]||0,y.training[key]||0);for(const room of roomLabels)for(const key of ['attackOrder','pos','prep','main','healing','defenses','itemPolicy'])compare(h.name+' / '+room.name+' / '+labels[key],key,x.overrides[room.id]?.[key],y.overrides[room.id]?.[key]);}
+ for(const h of HEROES){const x=a.heroes.find(u=>u.id===h.id),y=b.heroes.find(u=>u.id===h.id);if(!x||!y){if(x||y)changes.push({label:h.name+' / 出战',before:x?'出战':'未出战',after:y?'出战':'未出战'});continue;}for(const slot of Object.keys(SLOTS))compare(h.name+' / '+SLOTS[slot],'gear',x.gear[slot],y.gear[slot]);for(const key of Object.keys(labels).filter(k=>k!=='gear'))compare(h.name+' / 默认'+labels[key],key,x[key],y[key]);for(const [key,option] of Object.entries(trainingOptions(h.id)))compare(h.name+' / 训练 / '+option.name,'rank',x.training[key]||0,y.training[key]||0);for(const room of roomLabels)for(const key of ['supportOrder','attackOrder','pos','prep','main','healing','defenses','itemPolicy'])compare(h.name+' / '+room.name+' / '+labels[key],key,x.overrides[room.id]?.[key],y.overrides[room.id]?.[key]);}
  return changes;
 }
 export function readPlans(raw){

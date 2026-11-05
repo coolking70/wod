@@ -1,0 +1,857 @@
+{
+  "designStatus": "project support rotation adaptation; indexed historical direction only, full original text unavailable",
+  "normal": [
+    {
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "supplies": {
+        "herb": 15,
+        "rune": 6,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 45,
+        "firstClear": true,
+        "loot": [
+          "reliquaryshield"
+        ]
+      },
+      "byRoom": [
+        {
+          "room": 0,
+          "casts": [
+            {
+              "round": 1,
+              "position": "rear",
+              "targets": [
+                "b",
+                "e"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 2,
+              "position": "front",
+              "targets": [
+                "a"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 3,
+              "position": "center",
+              "targets": [
+                "c",
+                "d",
+                "f"
+              ],
+              "mana": 5
+            }
+          ],
+          "skips": []
+        },
+        {
+          "room": 1,
+          "casts": [
+            {
+              "round": 1,
+              "position": "rear",
+              "targets": [
+                "b",
+                "e"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 2,
+              "position": "front",
+              "targets": [
+                "a"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 3,
+              "position": "center",
+              "targets": [
+                "c",
+                "d",
+                "f"
+              ],
+              "mana": 5
+            }
+          ],
+          "skips": []
+        },
+        {
+          "room": 2,
+          "casts": [
+            {
+              "round": 1,
+              "position": "rear",
+              "targets": [
+                "b",
+                "e"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 2,
+              "position": "front",
+              "targets": [
+                "a"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 3,
+              "position": "center",
+              "targets": [
+                "c",
+                "d",
+                "f"
+              ],
+              "mana": 5
+            }
+          ],
+          "skips": []
+        }
+      ]
+    },
+    {
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "remedybag"
+        ]
+      },
+      "byRoom": [
+        {
+          "room": 0,
+          "casts": [
+            {
+              "round": 1,
+              "position": "center",
+              "targets": [
+                "c",
+                "d",
+                "f"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 2,
+              "position": "rear",
+              "targets": [
+                "b",
+                "e"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 3,
+              "position": "front",
+              "targets": [
+                "a"
+              ],
+              "mana": 5
+            }
+          ],
+          "skips": []
+        },
+        {
+          "room": 1,
+          "casts": [
+            {
+              "round": 1,
+              "position": "rear",
+              "targets": [
+                "b",
+                "e"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 2,
+              "position": "front",
+              "targets": [
+                "a"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 3,
+              "position": "center",
+              "targets": [
+                "c",
+                "d",
+                "f"
+              ],
+              "mana": 5
+            },
+            {
+              "round": 4,
+              "position": "rear",
+              "targets": [
+                "b",
+                "e"
+              ],
+              "mana": 5
+            }
+          ],
+          "skips": [
+            {
+              "reason": "耗材耗尽",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "room": 2,
+          "casts": [],
+          "skips": [
+            {
+              "reason": "耗材耗尽",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gold": [
+    120,
+    260
+  ],
+  "matrix": [
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        3
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 6,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        3
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 4,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        2,
+        3
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 8,
+        "arrow": 9
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 6,
+        "arrow": 9
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 6,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 2,
+        "arrow": 7
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 7,
+      "won": true,
+      "alive": 3,
+      "rounds": [
+        6,
+        6,
+        12
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 19,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        3
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 6,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        3
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 4,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        2,
+        3
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 8,
+        "arrow": 9
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 6,
+        "arrow": 9
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 6,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 2,
+        "arrow": 7
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 7,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        5,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 19,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        6,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 731,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        4,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      }
+    }
+  ],
+  "limit": "36 predeclared finite inputs; no automatic optimization or universal coverage/survival guarantee. Hypothetical matrix grants no assets."
+}

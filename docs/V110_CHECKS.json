@@ -1,0 +1,159 @@
+{
+  "version": "0.110",
+  "branch": "feature/v110-support-priority",
+  "baseline": "084d653f9295fa7e77fd5c7f1e9cb8048616b70f",
+  "fullTests": {
+    "passed": 804,
+    "failed": 0,
+    "skipped": 0,
+    "log": "full-tests.tap",
+    "note": "Final targeted run includes additional historical-tactic assertions; production behavior unchanged after full run."
+  },
+  "finalTargetedTests": {
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0,
+    "log": "unit-release.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 18,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "log": "acceptance/browser-acceptance.json",
+    "newWorkflow": "Actual desktop/390px configuration, room inheritance, named plan/route binding, unchanged pending state under report inspection, full API report equality, earned gear and paid training, whole-campaign restore, no duplicate claim or horizontal overflow, page errors zero."
+  },
+  "legacyReports": {
+    "reference": "084d653f9295fa7e77fd5c7f1e9cb8048616b70f",
+    "count": 42,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "syntax": {
+    "passed": true,
+    "count": 408
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 115,
+    "checkedReferences": 132,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "normalProgression": {
+    "routeSeeds": [
+      [
+        "classic",
+        1
+      ],
+      [
+        "hospice",
+        2
+      ]
+    ],
+    "fullReportAndGuildEqualToAPI": true,
+    "claimedGoldBalances": [
+      120,
+      260
+    ],
+    "lastHospiceRoom": {
+      "supportCastsByD": 0,
+      "skips": [
+        {
+          "reason": "耗材耗尽",
+          "count": 6
+        }
+      ]
+    },
+    "evidence": "docs/V110_PLAYCHECK.json"
+  },
+  "finiteMatrix": {
+    "inputs": 36,
+    "wins": 36,
+    "casesWithDownMembers": 5,
+    "routes": [
+      "classic",
+      "hospice",
+      "clocktower"
+    ],
+    "seeds": [
+      1,
+      2,
+      7,
+      19,
+      73,
+      731
+    ],
+    "assets": [
+      "fresh",
+      "actually earned after first normal expedition"
+    ],
+    "limitations": "Finite deterministic cases only; no universal coverage, survival, efficiency or balance guarantee. No seed search or asset injection into normal flow."
+  },
+  "initialFindings": {
+    "realBugFixed": "Interpose cover target dropdown omitted the newly accepted supportPriority option; explicit regression now covers it.",
+    "fixtureCorrections": [
+      "Explicit D-before-Mira preparation order for second-caster causality.",
+      "A truly clearable first room and won assertion for per-room reset.",
+      "Activation checks the actual component event schema."
+    ],
+    "log": "unit-initial.tap",
+    "assertionsWeakened": false
+  },
+  "originalRules": {
+    "date": "2026-11-05",
+    "directionSource": {
+      "url": "https://www.world-of-dungeons.de/ency/Konfiguration_-_Allgemein",
+      "evidence": "official historical search index describes support order moving to the next unserved position; direct text was unavailable in v109 and was not retried"
+    },
+    "newDirectAttempts": [
+      {
+        "url": "https://world-of-dungeons.de/ency/Wirkdauer",
+        "status": 502
+      },
+      {
+        "url": "https://world-of-dungeons.de/ency/Kampf",
+        "status": 502
+      }
+    ],
+    "verifiedCurrentServerRule": false,
+    "boundary": "Five-position order, explicit opt-in, candidate selection and existing project effect lifecycle are provisional project adaptations; no new original numeric claims."
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 21,
+    "gear": 39,
+    "sourceOnlyRuntime": "dist shipped directly; no separate build required"
+  },
+  "remaining": {
+    "blocking": [],
+    "knownLimits": [
+      "Permanent material economy decision remains deferred, independent work possible.",
+      "Original full-text/current-server support-order mechanics unavailable; specific behavior explicitly provisional.",
+      "Static deployment and cooperation candidates do not simulate later rotation or total spending."
+    ]
+  }
+}
