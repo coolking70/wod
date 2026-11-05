@@ -1,0 +1,138 @@
+{
+  "designStatus": "original project solo narrative; existing carrying budget and rewards unchanged except explicit once-only story delivery",
+  "normal": [
+    {
+      "route": "clocktower",
+      "seed": 1,
+      "goal": "clear",
+      "won": true,
+      "stock": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 185,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "clockpin"
+        ]
+      },
+      "storyCompleted": 1
+    },
+    {
+      "route": "clocktower",
+      "seed": 2,
+      "goal": "survive",
+      "won": true,
+      "stock": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 130,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "clockpin"
+        ]
+      },
+      "storyCompleted": 1
+    },
+    {
+      "route": "clocktower",
+      "seed": 3,
+      "goal": "reserve",
+      "won": true,
+      "stock": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 130,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "clockpin"
+        ]
+      },
+      "storyCompleted": 2
+    }
+  ],
+  "choices": [
+    {
+      "route": "scriptorium",
+      "seed": 4,
+      "goal": "survive",
+      "won": true,
+      "survivors": 6,
+      "reward": {
+        "cleared": 3,
+        "gold": 180,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "counterlens"
+        ]
+      },
+      "storyBeforeClaim": 2,
+      "storyAfterClaim": 3
+    },
+    {
+      "route": "greenhouse",
+      "seed": 4,
+      "goal": "survive",
+      "won": true,
+      "survivors": 6,
+      "reward": {
+        "cleared": 3,
+        "gold": 190,
+        "xp": 80,
+        "firstClear": true,
+        "loot": [
+          "filterveil"
+        ]
+      },
+      "storyBeforeClaim": 2,
+      "storyAfterClaim": 3
+    },
+    {
+      "route": "palisade",
+      "seed": 4,
+      "goal": "survive",
+      "won": true,
+      "survivors": 6,
+      "reward": {
+        "cleared": 3,
+        "gold": 170,
+        "xp": 70,
+        "firstClear": true,
+        "loot": [
+          "watchmantle"
+        ]
+      },
+      "storyBeforeClaim": 2,
+      "storyAfterClaim": 3
+    }
+  ],
+  "delivery": {
+    "ending": "archive",
+    "goldBefore": 625,
+    "goldAfter": 665,
+    "extraGear": "counterlens",
+    "xpChanged": false
+  },
+  "next": {
+    "route": "clocktower",
+    "seed": 5,
+    "won": true,
+    "gold": 795
+  },
+  "limit": "Three alternate seed4 paths are independent copies of the same legitimately earned guild, not three rewards in one guild; finite inputs do not prove universal goal achievability."
+}

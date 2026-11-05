@@ -23,7 +23,8 @@ export function campObjective(g){
  if(!g.clears.harbor)return make('harbor','接上灯塔的来信','盐风港有四场与自动分支，战前选择、实际队伍状态和物资共同决定通路。','prepare','harbor','准备盐风港');
  if(!g.harborStory?.ending)return make('letter','把实际归航写成回信','灯塔来信复用已领取的章节、港口和委托成果，完成后再亲自选择结局；不会自动代领。','journey','harbor','继续灯塔来信');
  if(!g.foundryStory?.ending)return make('foundry','给最后一班守望交接','铸库归航串联现有地城、目标与守望。查看尚缺的一段，选择自己的归航结局。','journey','foundry','继续铸库归航');
- return make('explore','选择下一项探索目标','两段故事已完成。按主题浏览未通关路线、职责挑战或有限海图；没有新门槛或额外奖励。','map','','浏览全部探索');
+ if(!g.clocktowerStory?.ending)return make('clocktower-story','给错过的钟声一个去处','潮刻余响连接钟楼留存与书库、温室或哨垒的全员攻略；任选一处带回自己的回答，不额外消耗永久材料。','journey','clocktower','继续潮刻余响');
+ return make('explore','选择下一项探索目标','三段故事已完成。按主题浏览未通关路线、职责挑战或有限海图；没有新门槛或额外奖励。','map','','浏览全部探索');
 }
 export function pendingOrigin(g){validateGuild(g);if(!g.pending)throw Error('没有待结算远征');return {source:'pending',id:g.pending.id,signature:JSON.stringify(g.pending)};}
 const matches=(record,report)=>record&&JSON.stringify(record.config)===JSON.stringify(report.config)&&JSON.stringify(record.command||null)===JSON.stringify(report.perspective||null);

@@ -1,3 +1,4 @@
+import {validateClocktowerStory,clocktowerStoryProgress,CLOCKTOWER_STORY_ENDINGS,CLOCKTOWER_STORY_GOLD} from './expedition-clocktower-story.mjs';
 import {validateEquipmentSets,equipmentSet,EQUIPMENT_SET_SLOTS} from './expedition-equipment-sets.mjs';
 import {validateExpeditionBook,validateObjectiveRecord,objectiveAssessment,recordExpeditionObjective} from './expedition-book.mjs';
 import {validateShoalsState,recordShoals} from './expedition-shoals.mjs';
@@ -24,7 +25,7 @@ const integer=n=>Number.isSafeInteger(n)&&n>=0;
 export function validateGuild(g){
  validateCommand(g?.command);
  validateFoundryState(g?.foundry);
- validateFoundryStory(g?.foundryStory);validateHarborStory(g?.harborStory);
+ validateClocktowerStory(g?.clocktowerStory);validateFoundryStory(g?.foundryStory);validateHarborStory(g?.harborStory);
  if(!g||g.version!==6||!integer(g.gold)||!integer(g.next)||g.next<1||!Array.isArray(g.members)||g.members.length<6||g.members.length>HEROES.length||new Set(g.members.map(h=>h.id)).size!==g.members.length)throw Error('公会存档格式无效');
  if(!g.harbor||!integer(g.harbor.charts)||!Array.isArray(g.harbor.claimed)||new Set(g.harbor.claimed).size!==g.harbor.claimed.length||g.harbor.claimed.some(id=>!Object.hasOwn(HARBOR_OBJECTIVES,id)))throw Error('港口委托存档无效');
  validateRoster(g);
@@ -37,6 +38,7 @@ export function validateGuild(g){
  validateExpeditionBook(g.expeditionBook,g.next);
  validateShoalsState(g.shoals,g.clears.shoals||0);
  if(g.pending&&![1,2].includes(g.pending.rewardVersion))throw Error("结算版本无效");
+ if(g.clocktowerStory&&!clocktowerStoryProgress(g).ready)throw Error('潮刻余响记录缺少正常远征条件');
  if(g.harborStory&&!harborStoryProgress(g).ready)throw Error('灯塔来信记录缺少正常远征条件');
  if(g.foundryStory&&!foundryStoryProgress(g).ready)throw Error('铸库归航记录缺少正常远征条件');
  return g;
@@ -64,6 +66,7 @@ export function claimFoundryStory(g,ending){
  if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');
  n.gold=gold;n.warehouse[gear]=count;n.foundryStory={ending};return validateGuild(n);
 }
+export function claimClocktowerStory(g,ending){const n=editable(g),p=clocktowerStoryProgress(n);if(typeof ending!=='string'||!Object.hasOwn(CLOCKTOWER_STORY_ENDINGS,ending))throw Error('请选择有效的余响结局');if(!p.canClaim)throw Error(p.reason);const gear=CLOCKTOWER_STORY_ENDINGS[ending].gear,gold=n.gold+CLOCKTOWER_STORY_GOLD,count=(n.warehouse[gear]||0)+1;if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');n.gold=gold;n.warehouse[gear]=count;n.clocktowerStory={ending};return validateGuild(n);}
 export function sellLoot(g,gear){const n=editable(g);if(!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('仓库中没有该装备');n.warehouse[gear]--;n.gold+=20;return n;}
 function editable(g){validateGuild(g);if(g.pending)throw Error('领取远征结算后才能更改公会资产');return clone(g);}
 export function train(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key);if(!q.allowed)throw Error(q.reasons.join('；'));h.xp-=q.cost;h.training={...h.training,[key]:q.nextRank};return n;}
