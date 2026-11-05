@@ -32,6 +32,6 @@
 
 回执[V56_BROWSER.json](V56_BROWSER.json)，[实际进阶检定](screenshots/v56-advancement-proof.png)、[移动资格与锁定](screenshots/v56-mobile-advancement.png)。完整证据/workspace/wod-evidence/v56/。
 
-复现：`node --test tests/*.test.mjs`；`node scripts/check-v56.mjs /path/to/v055-reference`生成正常赚取备份和功能记录；browser-v56.cjs使用四个WOD_*参数并可通过WOD_EARNED_GUILD指定该备份。默认备份路径在云端证据目录，其他环境先运行check脚本并传入实际路径。
+复现：`node --test tests/*.test.mjs`；`node scripts/check-v56.mjs /path/to/v055-reference`生成正常赚取备份和功能记录；browser-v56.cjs使用四个WOD_*参数并可通过WOD_EARNED_GUILD指定该备份。当前可复用脚本默认备份路径为/tmp/wod-v56-earned-guild.json，可用WOD_EARNED_GUILD覆盖；本轮历史回执仍保留在云端证据目录。
 
 本轮是后期结构与有限能力验证，不是原版数值复刻或长期平衡结论。完整英雄等级、技能类别差异成本、金币费用、精通锁定和重置点仍未移植。继续完善其他职业的独立后期方向；不为例行阶段停下，不自动推送、合并或部署。真机、其他浏览器、全面性能及长期平衡未做。

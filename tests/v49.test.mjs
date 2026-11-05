@@ -21,7 +21,7 @@ const effects=r=>r.events.filter(e=>e.type==='effect'&&e.detail.stat===HEALING_B
 const blocked=r=>r.events.filter(e=>e.type==='skip'&&e.detail.healingBlock);
 
 test('截疗符为两名学者的可选基础攻击，默认配置不启用，规则标记升级',()=>{
- assert.equal(RULESET,'original-wod-inspired-0.56.0');assert.equal(SKILLS.suppress.cost,6);assert.equal(SKILLS.suppress.item,'rune');
+ assert.equal(RULESET,'original-wod-inspired-0.57.0');assert.equal(SKILLS.suppress.cost,6);assert.equal(SKILLS.suppress.item,'rune');
  assert.ok(HEROES.filter(h=>h.classId==='scholar').every(h=>h.skills.includes('suppress')));
  assert.ok(defaults().heroes.every(h=>!h.main.some(r=>r.skill==='suppress')));
  for(const id of ['d','mira'])assert.ok(BUILDS[id].some(b=>b.id==='suppress'));

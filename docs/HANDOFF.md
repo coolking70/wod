@@ -2,68 +2,60 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V56_INDEPENDENT_ADVANCEMENT → V55_EXPERIENCE_TRAINING → V54_FREE_TRAINING → V53_SUSTAINED_CARE → DECISION_SPECIALIZATION → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V57_ALL_CLASS_ADVANCEMENT → V56_INDEPENDENT_ADVANCEMENT → V55_EXPERIENCE_TRAINING → V54_FREE_TRAINING。
 
-## 运行与验证
+用户已确认普通技能自由培养、独立后期职业进阶；DECISION_SPECIALIZATION只是已撤回的历史提案，不得据它重新询问或实现普通技能互斥。当前待补的是原版数值标定的参考服/版本及资料，见RULE_CALIBRATION_BOUNDARY。
 
-无需npm安装或构建。`dist/`含手写HTML/CSS/ES模块，必须纳入Git。
+## 运行与当前验证
+
+无需npm安装或构建，dist是可编辑源码，不是缓存。Node24.19.0、Python3.12.14、Chromium154.0.8037.57；392项测试通过，142个ES模块及12个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --directory dist
 node --test tests/*.test.mjs
 node --check dist/expedition-ui.mjs
-git worktree add --detach /tmp/wod-v052-check 52adecb
-node scripts/check-v53.mjs /tmp/wod-v052-check
-git worktree remove /tmp/wod-v052-check
+git worktree add --detach /tmp/wod-v056-check 988ddcd
+node scripts/check-v57.mjs /tmp/wod-v056-check
+git worktree remove /tmp/wod-v056-check
 git diff --check
 ```
 
-本轮云端验证环境：Node v24.19.0、Python 3.12.14、Chromium 154.0.8037.57；最终349项测试通过，131个ES模块及8个浏览器脚本语法检查通过。无构建步骤。browser-v50/v51/v52/v53.cjs分别保存各阶段验收，当前浏览器参数见V53_SUSTAINED_CARE.md及V49报告。需要本地HTTP服务，不建议file://打开ES模块。
+check-v57生成/tmp/wod-v57-earned-guild.json，来自正常8次疗所结算、课程/训练及资深试炼通关，不注入经验或通关标志。可用WOD_EARNED_GUILD指定备份路径。浏览器脚本browser-v57.cjs需外部Playwright/Chromium与HTTP服务，四个WOD_*参数沿用V49报告；当前默认备份路径与check脚本一致。服务端口可自由选择，本轮仅绑定127.0.0.1:8002，没有公开部署。
 
-当前引擎RULESET为original-wod-inspired-0.53.0，配置schema仍0.40.0。三组页面活动样本v13/v14/v16共1,824条已用新引擎重放，除规则标签外数据逐项相同。历史研究数据保持原口径，不冒充新技能的平衡结果。历史check脚本需要完整复现时检出对应提交；当前旧版等价入口是check-v53和v0.52参考工作树。无参考目录运行会将V53_CHECKS的旧版比较写为null，不能声称复验旧版。
-
-v0.50–v0.53的独立分支/本地提交均可恢复，v0.49已推送d6f77b8，之后没有推送或部署。当前下一步等待DECISION_SPECIALIZATION的核心养成方向选择，职业专精提案尚未实施。
+规则标签original-wod-inspired-0.57.0，配置schema仍0.40.0。页面v13/v14/v16的1,824条活动样本已按当前引擎重放，除规则标签外数值相同。历史研究数据保持当时口径，不冒充新进阶的平衡验证。历史全报告比较应检出对应提交；当前入口为check-v57和v0.56参考工作树。无参考目录执行会把旧版比较写为null，不得称为复验通过。
 
 ## 代码地图
 
 | 路径 | 职责 |
 |---|---|
-| dist/index.html、expedition-ui.mjs、expedition.css | 当前主入口、交互与界面 |
-| dist/expedition-data.mjs、content.mjs | 规则配置与内容 |
-| dist/expedition-engine.mjs | 不依赖DOM的确定性模拟 |
-| dist/expedition-regeneration.mjs | 可选药敷的存活/激活触发筛选，恢复由引擎在回合开始记录 |
-| dist/expedition-disruption.mjs、healing.mjs | 当回合禁疗能力/来源与自动救护决策（后者同样有expedition-前缀） |
-| dist/expedition-guild*.mjs、personal*.mjs、roster*.mjs | 公会、主角、名册与角色状态 |
-| dist/expedition-equipment*.mjs、growth.mjs、loot.mjs | 装备、成长与掉落（后两项同样有expedition-前缀） |
-| dist/expedition-harbor*.mjs | 盐风港分支、职责、挑战与预留 |
-| dist/expedition-support-evidence.mjs | 正式队员辅助的实际受益者、后续字段、来源与复盘索引；不推断额外伤害或胜负贡献 |
-| dist/expedition-cooperation.mjs | 准备草稿/公会实际配置的只读协作、全部辅助单次费用与逐条编辑定位 |
-| dist/expedition-resource-ledger.mjs | 逐人逐房用料账本 |
-| dist/expedition-report.mjs、review.mjs、stage.mjs | 战报、复盘和战场投影（后两项同样有expedition-前缀） |
-| scripts/、tests/ | 确定性实验与Node测试 |
-| dist/assets/、docs/ | 场景素材、版本报告、历史验证及截图 |
-| .openai/hosting.json | 原Site身份和静态目录配置；不是GitHub Pages配置 |
+| dist/index.html、expedition-ui.mjs、expedition.css | 当前入口、准备/实验、回放与证据 |
+| dist/expedition-data.mjs、content.mjs | 原创内容、技能、配置与每项训练上限 |
+| dist/expedition-engine.mjs | 无DOM确定性模拟，规则/呈现分离 |
+| dist/expedition-training.mjs | 逐级费用、累计投入与精确退款报价 |
+| dist/expedition-growth.mjs | 当前3阶段与高阶普通课程；不是原版完整英雄等级 |
+| dist/expedition-advancement-data.mjs、advancement.mjs | 项目后期路径、统一法力/效果加成及资格（后者同样有expedition-前缀） |
+| dist/expedition-guild*.mjs、roster*.mjs、personal*.mjs | 个人资产、公会、名册和逐人报告 |
+| dist/expedition-readiness.mjs | 真实资产核对，customizeForEditing保留实际职责再切自定义 |
+| dist/expedition-equipment*.mjs、loot.mjs | 固定属性装备、来源和奖励（后者有expedition-前缀） |
+| dist/expedition-disruption.mjs、healing.mjs、regeneration.mjs | 禁疗、救护决策和缓释触发（后两项同样有前缀） |
+| dist/expedition-cooperation.mjs、support*.mjs、source-trace.mjs | 协作候选、原始支援字段及来源（后两项同样有前缀） |
+| dist/expedition-harbor*.mjs、resource-ledger.mjs | 港口分支/预留与用料账本（后者有前缀） |
+| dist/expedition-report.mjs、review.mjs、stage.mjs、history*.mjs | 分组、复盘、战场和历史（后几项同样有前缀） |
+| scripts/、tests/、docs/、dist/assets/ | 复验脚本、测试、报告/截图和素材 |
+| .openai/hosting.json | 原Site身份/目录配置；不是GitHub Pages配置 |
 
-## 开发边界
+## 实现边界
 
-规则结算与显示分离，复盘不能修改战果；实验不能发放公会资产。身份和职业分开，避免重新引入固定a–f索引假设。统计须说明因果边界、样本范围和失败口径。素材来源及提示词见ASSETS及对应版本文档；没有凭空补加第三方授权或全仓库开源许可证。
+trainingCost返回递增费用单位，经验金额用trainingInvestment；没有总6点预算，MAX_TRAINING_RANK只约束每项。公会必须实际付经验，实验不能发放资产；降低一级只返该级成本，退到零不能重复退款。
+
+个人advancement={path,paidXp:80}是独立资产，配置仅存路径。guildConfig、readiness、companionPreview和historyComparison都须经applyAdvancementAsset读取个人选择，实验草稿不能授予真实进阶。skillManaCost同时用于施法、治疗决策及预览；effectBonus进入真实效果值与来源，不能额外算一次贡献。
+
+已付进阶成本计入careerXp，退回守恒；普通unlocked课程与训练不被删除。历史保留当时路径，当前退回不改历史；待结算必须匹配现有资产且不允许中途改配。普通技能互斥和后期路径选择是两种不同约束，不能混为一谈。
+
+当前300经验/资深试炼/80费用、3阶段、每项+3均是项目参数。原版1–40英雄等级、差异费用/金币、精通冻结与重置点尚未核实为某个现行服规则，不能把历史百科当作已验证数值。规则证据和HTTP403缺口见WOD_DESIGN_REFERENCE_2026-11-05与RULE_CALIBRATION_BOUNDARY。
 
 ## Git与发布
 
-GitHub仓库作为后续接续入口，建议每个可验证阶段及时提交并推送，避免只有聊天记录。原45个提交的信息保存在docs/SOURCE_HISTORY.txt；GitHub导入为源码快照，不保持原提交对象链。迁移不会自动配置GitHub Pages，也不会改变现有Site访问权限；GitHub源码与Sites部署是两个独立动作。后续发布仍要同步准确源码、验证并记录对应版本。不要把凭据、浏览器个人存档或临时运行配置提交。
+本轮从v0.53 1970394继续，v0.54 8a63322、v0.55 7b033c1、v0.56 988ddcd及v0.57均仅本地。最后已批准推送的仍为v0.49 d6f77b8；本轮只读核验main为16986e0，未推送新阶段、合并或部署。源码、验证与报告一起提交；后续推送或Site发布遵循实际用户授权，不因一般建议自动执行。
 
-新的接手者应在完成一轮后更新PROJECT_STATUS/ROADMAP，记录真实测试结果与尚未完成项。旧会话未恢复的v0.46不得直接标为已交付。
-
-当前批准的推送为v0.49，远端完整SHA d6f77b8adb0ea7b696015d62c24172d5526b1a89；v0.50–v0.53四个阶段仅本地提交。不要因一般“建议推送”越过本轮范围，main不合并，Site不部署。
-
-职责编辑统一经readiness.customizeForEditing物化实际配置，再切自定义。不要直接先setCompanion(custom)再从旧草稿读取指令；锁定技能必须仍可进入编辑移除，出征校验保持独立。安装指令先准备成功再保存职责。
-
-round只允许普通阶段；有该条目时该角色本回合首次普通检查从首条开始，按条目计成功，闪避也计次，不越过前置持续指令。道具/救护优先且不消耗普通指令次数。
-
-缓释只由已激活、正值且目标存活的药敷触发；回合开始先激活后恢复，不新增随机调用。每次恢复不扣费，不占普通行动，不复活，固定8点不随训练提高。统计已包含在总治疗，不与普通救护占行动混淆。
-
-2026-11-05当前方向已确认，不再停在DECISION_SPECIALIZATION。普通技能保持自由，后期职业进阶独立。v0.54当前360项测试通过；trainingQuote统一显示成本/退款，lowerTraining只退最后一级，守恒careerXp并保留已学技能。browser-v54.cjs验证实际赚取经验和出征快照。
-
-v0.55移除TRAINING_BUDGET，改用MAX_TRAINING_RANK约束每项。trainingCost仍返回递增费用单位，真实经验金额使用trainingInvestment，不能再当总点数预算。当前368项测试通过，旧版等价入口check-v55及v0.54参考工作树。
-
-v0.56个人advancement={path,paidXp:80}是独立资产，配置只存路径，实际配置必须经applyAdvancementAsset从个人读取。费用统一skillManaCost，诊断/预览/施法一致；普通课程unlocked不作为后期职业进阶。历史可保留已退回路径，待结算必须匹配当前资产。当前384项测试，旧版等价入口check-v56及v0.55参考工作树。
+本机存档不等于源码备份。不要提交凭据、个人浏览器数据或临时运行文件；测试备份由正常游戏事务生成、只在独立测试上下文恢复。素材来源见ASSETS与历史报告，没有补造第三方许可或全仓库开源许可证。

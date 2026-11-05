@@ -1,0 +1,159 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "note": "All prerequisites earned through normal transactions. Each path retains ordinary skills and exact refunds. These are functional cases, not a profession ranking or balance sample.",
+  "prerequisites": {
+    "completed": 9,
+    "veteran": 1
+  },
+  "rows": [
+    {
+      "id": "a",
+      "path": "shieldcraft",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 6
+    },
+    {
+      "id": "a",
+      "path": "breachcraft",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 0
+    },
+    {
+      "id": "b",
+      "path": "huntercraft",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 0
+    },
+    {
+      "id": "b",
+      "path": "volleycraft",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 9
+    },
+    {
+      "id": "c",
+      "path": "evoker",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 0
+    },
+    {
+      "id": "c",
+      "path": "summoner",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 0
+    },
+    {
+      "id": "d",
+      "path": "wardcraft",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 3
+    },
+    {
+      "id": "d",
+      "path": "sigilcraft",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 0
+    },
+    {
+      "id": "e",
+      "path": "mentor",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 3
+    },
+    {
+      "id": "e",
+      "path": "tempo",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 0
+    },
+    {
+      "id": "f",
+      "path": "emergency",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 1
+    },
+    {
+      "id": "f",
+      "path": "apothecary",
+      "paid": 80,
+      "earned": 445,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "appliedCasts": 0
+    }
+  ],
+  "unchanged": {
+    "reference": "988ddcd",
+    "count": 9,
+    "excluded": "Ruleset only; existing configs receive no automatic advancement or stat changes."
+  }
+}

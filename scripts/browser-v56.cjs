@@ -1,6 +1,6 @@
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v56',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8000',backup=process.env.WOD_EARNED_GUILD||'/workspace/wod-evidence/v56/earned-guild.json';fs.mkdirSync(out,{recursive:true});
+const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v56',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8000',backup=process.env.WOD_EARNED_GUILD||'/tmp/wod-v56-earned-guild.json';fs.mkdirSync(out,{recursive:true});
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.WOD_CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
  const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage(),errors=[],steps=[];
