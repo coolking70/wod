@@ -1,3 +1,4 @@
+import {scheduleLabel} from './expedition-schedule.mjs';
 import {GOALS} from './expedition-goal-data.mjs';
 import {stockFloorLabel} from './expedition-stock-floor.mjs';
 import {mediumLabel} from './expedition-media-data.mjs';
@@ -27,6 +28,7 @@ export function reviewReport(report){
    if(failed.length)add('failed',h.name+' 空过行动',`${failed.length} 个普通行动未执行任何技能。`,'检查附近的跳过记录，以及是否配置低消耗备用指令。',failed[0],h.id);
    const skips=events.filter(e=>e.type==='skip'&&e.actor===h.id&&['法力不足','耗材耗尽'].includes(e.detail.reason));
    if(skips.length)add('resource',h.name+' 资源不足',`${skips.length} 次指令检查因资源不足被跳过；这不等于空过行动次数。`,'检查法力、共享补给与备用指令；药瓶也会占用行动。',skips[0],h.id);
+   const schedules=events.filter(e=>e.type==='skip'&&e.actor===h.id&&e.detail.schedule);if(schedules.length)add('schedule',h.name+' 回合窗口后备',`${schedules.length}次检查在配置窗口之外免费跳过；不等于普通行动空过。`,'核对实际后备行动和窗口；本房一次不会每回合重置，其他技能和自动救护仍照原规则。',schedules[0],h.id);
    const floorSkips=events.filter(e=>e.type==='skip'&&e.actor===h.id&&e.detail.stockFloor?.blocked);if(floorSkips.length)add('stock-floor',h.name+' 用料底线后备',`${floorSkips.length} 次检查因本条用后留存不足改查后备；当时仍有材料，这不等于缺料或普通行动空过。`,'查看原始余量、底线与实际后备；底线只限本条，其他指令和自动救护仍可用料，不代表物资已划归某人。',floorSkips[0],h.id);
    const gearSkips=events.filter(e=>e.type==='skip'&&e.actor===h.id&&e.detail.reason==='装备条件不满足');
    if(gearSkips.length)add('equipment',h.name+' 技能缺少装备',`${gearSkips.length} 次指令检查不满足装备条件；首次技能：${SKILLS[gearSkips[0].detail.skill].name}。`,'检查该技能要求的装备，或配置可用的备用指令。',gearSkips[0],h.id);
@@ -53,7 +55,7 @@ export function reviewReport(report){
  });
 }
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
-const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
+const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}${scheduleLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
  if(key==='objective')return GOALS.find(g=>g.id===value)?.name||'自由探索';
  if(key==='courierPass')return COURIER_PASSES[value];

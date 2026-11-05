@@ -1,0 +1,316 @@
+{
+  "normal": [
+    {
+      "seed": 1,
+      "won": true,
+      "rounds": [
+        3,
+        3,
+        4
+      ],
+      "skips": 4,
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 45,
+        "firstClear": true,
+        "loot": [
+          "reliquaryshield"
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "won": true,
+      "rounds": [
+        3,
+        5,
+        7
+      ],
+      "skips": 8,
+      "reward": {
+        "cleared": 3,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "remedybag"
+        ]
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "route": "classic",
+      "from": 1,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "skips": 1,
+      "supplies": {
+        "herb": 14,
+        "rune": 11,
+        "arrow": 8
+      }
+    },
+    {
+      "route": "classic",
+      "from": 1,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "skips": 0,
+      "supplies": {
+        "herb": 14,
+        "rune": 11,
+        "arrow": 8
+      }
+    },
+    {
+      "route": "classic",
+      "from": 2,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "skips": 4,
+      "supplies": {
+        "herb": 13,
+        "rune": 13,
+        "arrow": 8
+      }
+    },
+    {
+      "route": "classic",
+      "from": 2,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "skips": 4,
+      "supplies": {
+        "herb": 14,
+        "rune": 13,
+        "arrow": 8
+      }
+    },
+    {
+      "route": "classic",
+      "from": 3,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "skips": 6,
+      "supplies": {
+        "herb": 14,
+        "rune": 15,
+        "arrow": 7
+      }
+    },
+    {
+      "route": "classic",
+      "from": 3,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "skips": 6,
+      "supplies": {
+        "herb": 14,
+        "rune": 16,
+        "arrow": 8
+      }
+    },
+    {
+      "route": "hospice",
+      "from": 1,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "skips": 5,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "route": "hospice",
+      "from": 1,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "skips": 5,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "route": "hospice",
+      "from": 2,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "skips": 7,
+      "supplies": {
+        "herb": 11,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "route": "hospice",
+      "from": 2,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "skips": 8,
+      "supplies": {
+        "herb": 11,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "route": "hospice",
+      "from": 3,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "skips": 9,
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      }
+    },
+    {
+      "route": "hospice",
+      "from": 3,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "skips": 12,
+      "supplies": {
+        "herb": 9,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "route": "chapter",
+      "from": 1,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 25,
+      "skips": 6,
+      "supplies": {
+        "herb": 11,
+        "rune": 1,
+        "arrow": 12
+      }
+    },
+    {
+      "route": "chapter",
+      "from": 1,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 30,
+      "skips": 9,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 8
+      }
+    },
+    {
+      "route": "chapter",
+      "from": 2,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 27,
+      "skips": 12,
+      "supplies": {
+        "herb": 10,
+        "rune": 3,
+        "arrow": 12
+      }
+    },
+    {
+      "route": "chapter",
+      "from": 2,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 28,
+      "skips": 15,
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 8
+      }
+    },
+    {
+      "route": "chapter",
+      "from": 3,
+      "to": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 28,
+      "skips": 22,
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 12
+      }
+    },
+    {
+      "route": "chapter",
+      "from": 3,
+      "to": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 29,
+      "skips": 19,
+      "supplies": {
+        "herb": 9,
+        "rune": 1,
+        "arrow": 7
+      }
+    }
+  ],
+  "oldRawReports": 40,
+  "excluded": []
+}
