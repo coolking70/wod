@@ -78,7 +78,7 @@ const plansKey=PLAN_BOOK_KEY;let planBook=readPlanBook(null),plans=[],planBookRa
 function refreshPlanBook(){try{const raw=localStorage.getItem(plansKey);if(raw===planBookRaw&&!planBookError)return true;const book=readPlanBook(raw);planBookRaw=raw;planBook=book;plans=book.plans;planBookError='';}catch(e){planBookError=e.message;}return !planBookError;}
 refreshPlanBook();
 function tell(t){$('#notice').textContent=t;}
-function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.106';}
+function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.107';}
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));savedState();}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
 function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value="${esc(k)}" ${k===value?'selected':''}>${esc(typeof v==='object'?v.name:v)}</option>`).join('');}
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}
@@ -520,7 +520,7 @@ $('#greenhouse-brief').onclick=e=>{const b=e.target.closest('[data-greenhouse-pl
 
 function campMapView(){try{return campCycleView(campObjective(readCycleGuild(localStorage)));}catch{return '<section class="panel"><p>公会暂不可读，原存档未覆盖；请回营导出或恢复有效备份。</p><button data-cycle-action=hero>回营检查</button></section>';}}
 function refreshReportHandoff(){const box=$('#report-handoff');if(!box)return;box.hidden=!report;if(!report)return;try{const state=reportHandoff(readCycleGuild(localStorage),reportOrigin,report);box.dataset.status=state.status;box.innerHTML=reportHandoffView(state,objectiveResultView(report));}catch{box.dataset.status='unavailable';box.innerHTML='<h2>公会暂不可读取</h2><p>原存档未覆盖，不能从这里领取；请回营检查或恢复备份。</p><button data-report-cycle=camp>回营检查</button>';}}
-$('#report-handoff').onclick=e=>{const b=e.target.closest('[data-report-cycle]');if(!b)return;try{if(b.dataset.reportCycle==='claim')guildUI.settleReport(reportOrigin,report);else guildUI.cycle(b.dataset.reportCycle);}catch(error){tell(error.message);}refreshReportHandoff();};
+$('#report-handoff').onclick=e=>{const proof=e.target.closest('[data-objective-event]');if(proof){stop();$('#personal-playback').checked=false;$('#highlights-only').checked=false;$('#diagnostic').checked=true;replayWorkspace.open('evidence');renderJournal();move(Number(proof.dataset.objectiveEvent));$('#detail').scrollIntoView({block:'start'});return;}if(e.target.closest('[data-objective-edit]')){try{replaceConfig(report.config);savedA=clone(report.config);try{localStorage.setItem(storageKey+'-a',JSON.stringify(savedA));}catch{}scope='';persist();planner();view('planning');setPrep('overview');tell('本次目标与方案已载入，并冻结为A供对照。请按当前公会资产与伙伴职责调整；待领远征不变，正式重试仍须先正常领取。');}catch(error){tell('未能载入目标方案：'+error.message);}return;}const b=e.target.closest('[data-report-cycle]');if(!b)return;try{if(b.dataset.reportCycle==='claim')guildUI.settleReport(reportOrigin,report);else guildUI.cycle(b.dataset.reportCycle);}catch(error){tell(error.message);}refreshReportHandoff();};
 window.addEventListener('storage',e=>{if(!e.key||e.key==='abbey-guild-v6')refreshReportHandoff();});
 window.addEventListener('focus',()=>refreshReportHandoff());
 

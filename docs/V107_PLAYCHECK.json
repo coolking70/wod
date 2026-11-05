@@ -1,0 +1,211 @@
+{
+  "designStatus": "read-only explanation of existing selected goal; no changed battle/reward/supply rules",
+  "first": {
+    "seed": 1,
+    "won": true,
+    "reward": {
+      "cleared": 3,
+      "gold": 140,
+      "xp": 55,
+      "firstClear": true,
+      "loot": [
+        "remedybag"
+      ]
+    },
+    "review": {
+      "id": "reserve",
+      "met": false,
+      "metrics": {
+        "won": true,
+        "cleared": 3,
+        "rooms": 3,
+        "rounds": 14,
+        "alive": 6,
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      },
+      "requirements": [
+        {
+          "key": "clear",
+          "met": true,
+          "text": "肃清全部房间：3/3",
+          "shortfall": 0
+        },
+        {
+          "key": "rune",
+          "met": false,
+          "text": "带回至少2符纸：实际0",
+          "shortfall": 2
+        },
+        {
+          "key": "arrow",
+          "met": false,
+          "text": "带回至少2箭矢：实际0",
+          "shortfall": 2
+        }
+      ],
+      "down": [],
+      "stopIndex": null,
+      "resources": [
+        {
+          "key": "rune",
+          "name": "符纸",
+          "start": 12,
+          "gained": 0,
+          "spent": 12,
+          "end": 0,
+          "recent": [
+            {
+              "eventIndex": 284,
+              "roomIndex": 1,
+              "round": 4,
+              "spent": 1
+            },
+            {
+              "eventIndex": 302,
+              "roomIndex": 2,
+              "round": 1,
+              "spent": 1
+            },
+            {
+              "eventIndex": 374,
+              "roomIndex": 2,
+              "round": 2,
+              "spent": 1
+            }
+          ]
+        },
+        {
+          "key": "arrow",
+          "name": "箭矢",
+          "start": 12,
+          "gained": 0,
+          "spent": 12,
+          "end": 0,
+          "recent": [
+            {
+              "eventIndex": 420,
+              "roomIndex": 2,
+              "round": 3,
+              "spent": 1
+            },
+            {
+              "eventIndex": 451,
+              "roomIndex": 2,
+              "round": 4,
+              "spent": 1
+            },
+            {
+              "eventIndex": 498,
+              "roomIndex": 2,
+              "round": 5,
+              "spent": 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "second": {
+    "seed": 2,
+    "won": true,
+    "review": {
+      "id": "reserve",
+      "met": true,
+      "metrics": {
+        "won": true,
+        "cleared": 3,
+        "rooms": 3,
+        "rounds": 13,
+        "alive": 6,
+        "herb": 10,
+        "rune": 6,
+        "arrow": 9
+      },
+      "requirements": [
+        {
+          "key": "clear",
+          "met": true,
+          "text": "肃清全部房间：3/3",
+          "shortfall": 0
+        },
+        {
+          "key": "rune",
+          "met": true,
+          "text": "带回至少2符纸：实际6",
+          "shortfall": 0
+        },
+        {
+          "key": "arrow",
+          "met": true,
+          "text": "带回至少2箭矢：实际9",
+          "shortfall": 0
+        }
+      ],
+      "down": [],
+      "stopIndex": null,
+      "resources": [
+        {
+          "key": "rune",
+          "name": "符纸",
+          "start": 12,
+          "gained": 0,
+          "spent": 6,
+          "end": 6,
+          "recent": [
+            {
+              "eventIndex": 166,
+              "roomIndex": 1,
+              "round": 1,
+              "spent": 1
+            },
+            {
+              "eventIndex": 348,
+              "roomIndex": 2,
+              "round": 1,
+              "spent": 1
+            },
+            {
+              "eventIndex": 363,
+              "roomIndex": 2,
+              "round": 1,
+              "spent": 1
+            }
+          ]
+        },
+        {
+          "key": "arrow",
+          "name": "箭矢",
+          "start": 12,
+          "gained": 0,
+          "spent": 3,
+          "end": 9,
+          "recent": [
+            {
+              "eventIndex": 31,
+              "roomIndex": 0,
+              "round": 1,
+              "spent": 1
+            },
+            {
+              "eventIndex": 157,
+              "roomIndex": 1,
+              "round": 1,
+              "spent": 1
+            },
+            {
+              "eventIndex": 377,
+              "roomIndex": 2,
+              "round": 1,
+              "spent": 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "desktopGold": 140,
+  "finalGold": 240,
+  "finalHero": "f"
+}

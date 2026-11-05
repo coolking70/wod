@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.106「潮刻余响」**，分支`feature/v106-clocktower-epilogue`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.107「攻略目标复盘」**，分支`feature/v107-objective-review`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -204,3 +204,5 @@ node --test tests/*.test.mjs
 新增[方案册迁移](docs/V105_PLAN_BOOK_TRANSFER.md)：单独交换方案与绑定，默认追加副本/保留分配，明确选择才替换或采用分配；预览、校验、损坏原始导出和陈旧写入保护不覆盖个人成长。763测试、十一套浏览器流程通过。
 
 新增[潮刻余响单人故事](docs/V106_CLOCKTOWER_EPILOGUE.md)：正常钟楼通关、三条职责路线任选全员攻略、钟楼留存首证，串成可预览/交付一次的后续旅程。复用现有39件固定装备与单次携带规则，不依赖永久补给决策。
+
+新增[攻略目标复盘](docs/V107_OBJECTIVE_REVIEW.md)：逐项说明通关、全员与留存缺口，定位倒下/止步/真实材料支出；可载入本次目标与方案调整，保留当前资产和待领取快照。777测试和正常桌面/手机复战通过。
