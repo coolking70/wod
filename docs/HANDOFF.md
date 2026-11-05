@@ -2,13 +2,13 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V57_ALL_CLASS_ADVANCEMENT → V56_INDEPENDENT_ADVANCEMENT → V55_EXPERIENCE_TRAINING → V54_FREE_TRAINING。
+README → PROJECT_STATUS → V58_GROWTH_ACCOUNTING → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V57_ALL_CLASS_ADVANCEMENT → V56_INDEPENDENT_ADVANCEMENT → V55_EXPERIENCE_TRAINING → V54_FREE_TRAINING。
 
-用户已确认普通技能自由培养、独立后期职业进阶；DECISION_SPECIALIZATION只是已撤回的历史提案，不得据它重新询问或实现普通技能互斥。当前待补的是原版数值标定的参考服/版本及资料，见RULE_CALIBRATION_BOUNDARY。
+用户已确认普通技能自由培养、独立后期职业进阶；DECISION_SPECIALIZATION只是已撤回的历史提案，不得据它重新询问或实现普通技能互斥。原版数值标定的参考服/版本及资料仍待补，见RULE_CALIBRATION_BOUNDARY；这不阻塞培养规划等独立开发。Delta仅为可替换研究候选。
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码，不是缓存。Node24.19.0、Python3.12.14、Chromium154.0.8037.57；392项测试通过，142个ES模块及12个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码，不是缓存。Node24.19.0、Python3.12.14、Chromium154.0.8037.57；398项测试通过，146个ES模块及13个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --directory dist
@@ -59,3 +59,7 @@ trainingCost返回递增费用单位，经验金额用trainingInvestment；没�
 本轮从v0.53 1970394继续，v0.54 8a63322、v0.55 7b033c1、v0.56 988ddcd及v0.57均仅本地。最后已批准推送的仍为v0.49 d6f77b8；本轮只读核验main为16986e0，未推送新阶段、合并或部署。源码、验证与报告一起提交；后续推送或Site发布遵循实际用户授权，不因一般建议自动执行。
 
 本机存档不等于源码备份。不要提交凭据、个人浏览器数据或临时运行文件；测试备份由正常游戏事务生成、只在独立测试上下文恢复。素材来源见ASSETS与历史报告，没有补造第三方许可或全仓库开源许可证。
+
+## v0.58接续
+
+当前feature/v058-growth-accounting：PROGRESSION_RULES是深层只读的项目参数，无已选参考服。experienceLedger按可用/训练/课程/进阶分解累计经验；重修不遗忘课程。check-v58需v0.57 a533454参考目录，21份完整战报严格等价，不排除规则标签；RULESET仍0.57。browser-v58验证真实赚取备份中的逐级/整体/进阶退款账目。没有复跑活动样本，不能把上轮重放算作本轮执行。继续做培养草案；不推送、合并或部署。

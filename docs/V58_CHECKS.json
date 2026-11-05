@@ -1,0 +1,156 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "progressionProfile": "abbey-prototype-growth-1",
+  "referenceServer": null,
+  "unchanged": {
+    "reference": "a533454",
+    "reports": 21,
+    "excluded": []
+  },
+  "rows": [
+    {
+      "id": "a",
+      "path": "shieldcraft",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "a",
+      "path": "breachcraft",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "b",
+      "path": "huntercraft",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "b",
+      "path": "volleycraft",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "c",
+      "path": "evoker",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "c",
+      "path": "summoner",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "d",
+      "path": "wardcraft",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "d",
+      "path": "sigilcraft",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "e",
+      "path": "mentor",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "e",
+      "path": "tempo",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "f",
+      "path": "emergency",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    },
+    {
+      "id": "f",
+      "path": "apothecary",
+      "ledger": {
+        "available": 85,
+        "training": 240,
+        "courses": 40,
+        "advancement": 80,
+        "earned": 445,
+        "refundable": 320
+      }
+    }
+  ]
+}

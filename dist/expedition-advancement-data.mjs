@@ -1,6 +1,7 @@
+import {PROGRESSION_RULES} from './expedition-progression-rules.mjs';
 import {HEROES,SKILLS} from './expedition-data.mjs';
-export const ADVANCEMENT_COST=80;
-export const ADVANCEMENT_REQUIRED_XP=300;
+export const ADVANCEMENT_COST=PROGRESSION_RULES.advancement.costXp;
+export const ADVANCEMENT_REQUIRED_XP=PROGRESSION_RULES.advancement.requiredXp;
 // Project-specific advancement values; ordinary skills remain independently available.
 export const ADVANCEMENTS={
  shieldcraft:{name:'盾阵研修',classId:'guardian',desc:'守势法力消耗3→2；进攻技能仍可自由使用。',mana:{guard:-1}},

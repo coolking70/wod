@@ -1,3 +1,4 @@
+import {PROGRESSION_RULES,rankCost} from './expedition-progression-rules.mjs';
 import {HARBOR_ROOMS,harborPlan,harborRooms} from './expedition-harbor.mjs';
 import {GEAR,equipmentKit,gearSupports,gearRequirementName} from './expedition-equipment.mjs';
 export {GEAR,gearSupports,gearRequirementName} from './expedition-equipment.mjs';
@@ -84,8 +85,8 @@ vigil[2].enemies=[{...enemy('vs1','碎印守誓者','front','strike',480,10),ski
 export function roomsFor(c){return (c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
 export function challengeConfig(){const c=defaults();c.expedition='vigil';for(const h of c.heroes){h.item=['c','d','e','f'].includes(h.id)?'tonic':'salve';h.itemPolicy.threshold=h.item==='tonic'?.3:.5;}c.heroes.find(h=>h.id==='c').prep=[row('sentinel','front')];c.heroes.find(h=>h.id==='d').overrides.cistern={prep:[row('ward','center')]};for(const id of ['b','e']){const h=c.heroes.find(h=>h.id===id);h.overrides.altar={defenses:{...h.defenses,magic:'resist'}};}return c;}
 
-export const MAX_TRAINING_RANK=3;
-export const rankCost=n=>n*(n+1)/2;
+export {rankCost} from './expedition-progression-rules.mjs';
+export const MAX_TRAINING_RANK=PROGRESSION_RULES.training.maxRank;
 export const trainingCost=training=>Object.values(training).reduce((n,v)=>n+rankCost(v),0);
 export function trainingOptions(heroId){const h=HEROES.find(h=>h.id===heroId);return Object.fromEntries([...h.skills.map(id=>['skill:'+id,{name:SKILLS[id].name,kind:'skill',id}]),...Object.keys(DEFENSES).filter(id=>id!=='natural').map(id=>['defense:'+id,{name:DEFENSES[id].name,kind:'defense',id}])]);}
 export function trainingBuild(kind='balanced'){const c=challengeConfig();for(const h of c.heroes){if(kind==='defense')h.training={['defense:'+h.defenseFocus]:3};else if(kind==='support')h.training={['skill:'+({a:'guard',b:'volley',c:'sentinel',d:'ward',e:'insight',f:'heal'}[h.id])]:3};else h.training={['skill:'+h.trained]:2,['defense:'+h.defenseFocus]:2};}return c;}
