@@ -5,13 +5,14 @@ export function personalReport(report,heroId){
  const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0,controlApplications:0,weakeningApplications:0,cleansedEffects:0,healingBlocks:0,passiveHealing:0,passiveRecords:0,passiveOverheal:0});
  const total=blank(),rooms=report.rooms.map((r,i)=>({index:i,name:r.name,...blank()})),given=new Map(),received=new Map(),issues=new Map(),evidence=[],supplies={herb:0,rune:0,arrow:0};
  let stock={...report.config.supplies};const buffKeys=new Set(),inKeys=new Set(),controlKeys=new Set(),proofKeys=new Set();
- const add=(room,key,n=1)=>{total[key]+=n;if(rooms[room])rooms[room][key]+=n;};
+ const add=(room,key,n=1)=>{total[key]=(total[key]||0)+n;if(rooms[room])rooms[room][key]=(rooms[room][key]||0)+n;};
  const proof=(e,index,kind)=>{if(!proofKeys.has(kind)){proofKeys.add(kind);evidence.push({index,kind,text:e.text,roomIndex:e.roomIndex});}};
  const link=(map,id,key,amount,index)=>{if(!map.has(id))map.set(id,{id,healing:0,buffs:0,index});map.get(id)[key]+=amount;if(!Object.hasOwn(map.get(id),key+'Index'))map.get(id)[key+'Index']=index;};
  report.events.forEach((e,index)=>{
   const own=e.actor===heroId,target=e.targets.includes(heroId),d=e.detail||{};
   for(const key of Object.keys(stock)){if(own&&e.supplies)supplies[key]+=Math.max(0,stock[key]-e.supplies[key]);if(e.supplies)stock[key]=e.supplies[key];}
   if(own&&e.type==='cast'){add(e.roomIndex,'casts');add(e.roomIndex,'castMana',Math.max(0,d.mpBefore-d.mpAfter));}
+  if(own&&e.type==='intercept'){add(e.roomIndex,'interceptAttempts');add(e.roomIndex,'interceptMana',d.cost);if(d.success)add(e.roomIndex,'interceptions');proof(e,index,'本人援护尝试');}
   if(own&&e.type==='defend')add(e.roomIndex,'defenseMana',Math.max(0,d.mpBefore-d.mpAfter));
   if(e.type==='attack'){
    if(own){add(e.roomIndex,'damage',d.actual);proof(e,index,'本人攻击');}

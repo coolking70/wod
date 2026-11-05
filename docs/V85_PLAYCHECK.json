@@ -1,0 +1,2990 @@
+{
+  "note": "36 bounded actual inputs, same fresh assets and per-route supplies/gear/training/ordinary commands; only guardian prep self-guard versus cover-rear. Discovery101–102, confirmation201–204. Cover adds reaction rolls and can change subsequent RNG flow; no prevented-damage counterfactual, necessity or global optimality claim. Normal played chain separately chooses free interpose specialization, then pays20XP for rank1; no gifted assets.",
+  "cases": [
+    {
+      "route": "inquest",
+      "plan": "guard",
+      "seed": 101,
+      "configFingerprint": "0b118c877cec754fbf59e0672df54885a00de00d45145730fa9a80cadebea44f",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 253,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 186,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 123,
+        "mp": 3,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 87
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "guard",
+      "seed": 102,
+      "configFingerprint": "aa619aa12ea667f0d7b7ede04eb004066170e98ba45e0bc849aba85f4e5daa0a",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 185,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 125,
+        "mp": 1,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "guard",
+      "seed": 201,
+      "configFingerprint": "d103eee9a3e82b3e04ae7520f0936a6775a872fbb16ac8d067a50eed8a26b427",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 126,
+        "mp": 8,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "guard",
+      "seed": 202,
+      "configFingerprint": "798c21f6a205d46207521a27f5d5181145b2a66898fb7422d8b34991f321bf68",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 189,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 90,
+        "mp": 7,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 89
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "guard",
+      "seed": 203,
+      "configFingerprint": "9f901f697779509e3e288cff062ef1c1534fb20d02679d3557029665d90b140e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 190,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 113,
+        "mp": 3,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "guard",
+      "seed": 204,
+      "configFingerprint": "9a96a3ac918caae3e233c887460cc051b81495171b963235a837d45d2129934f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 258,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 120,
+        "mp": 3,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 86
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "cover",
+      "seed": 101,
+      "configFingerprint": "e67122dd638e585295817af65dc587ed71ef7c3e163410bdb73dc227d418ea3b",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 245,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 186,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 103,
+        "mp": 1,
+        "attempts": 4,
+        "success": 3,
+        "reactionMana": 8
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "cover",
+      "seed": 102,
+      "configFingerprint": "2a1db094330745b3be2ff42e39f3dd91a5f91d0084c1b61a7e1f4541d9aa4afa",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 232,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 179,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 118,
+        "mp": 3,
+        "attempts": 5,
+        "success": 4,
+        "reactionMana": 10
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "cover",
+      "seed": 201,
+      "configFingerprint": "50915bf86ea7987187876ec9fc688d306a005913ba9f20ed283a8c2a1fae58e8",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 237,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 187,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 126,
+        "mp": 0,
+        "attempts": 5,
+        "success": 4,
+        "reactionMana": 10
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 84
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "cover",
+      "seed": 202,
+      "configFingerprint": "fe8844f65ce304e853b6ed6598131c2c0853edc93f9a46bfae19151f4f4d5a4f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 179,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 123,
+        "mp": 1,
+        "attempts": 5,
+        "success": 5,
+        "reactionMana": 10
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "cover",
+      "seed": 203,
+      "configFingerprint": "e482527319f12d507b970bcb249c195f6fd08726316a5c802daf6336848b1f8a",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 245,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 195,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 113,
+        "mp": 3,
+        "attempts": 4,
+        "success": 4,
+        "reactionMana": 8
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "inquest",
+      "plan": "cover",
+      "seed": 204,
+      "configFingerprint": "f08dfe801ff7a78b9d15c2a9754dfa33dd1178c7f3da523e013155800676ff08",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 243,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 187,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 124,
+        "mp": 3,
+        "attempts": 4,
+        "success": 2,
+        "reactionMana": 8
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "survival",
+      "plan": "guard",
+      "seed": 101,
+      "configFingerprint": "f4971337ffccb139e79daeeca235f81347175a671de904083fac583f2f176442",
+      "set": "discovery",
+      "won": true,
+      "alive": 4,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 278,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 199,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 9,
+          "survivors": 4,
+          "hp": 319,
+          "mp": 160,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 60,
+        "mp": 23,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 51
+        },
+        {
+          "id": "e",
+          "hp": 0
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "survival",
+      "plan": "guard",
+      "seed": 102,
+      "configFingerprint": "7bb43bc15f93b3b34b9033387a90adde82d8da6f39a41c2fbbbd9ed87abe63f2",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 286,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 211,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 449,
+          "mp": 165,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 75,
+        "mp": 22,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 74
+        },
+        {
+          "id": "e",
+          "hp": 69
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "survival",
+      "plan": "guard",
+      "seed": 201,
+      "configFingerprint": "c9ec2adf0f4a4b42a883d17d831e5394573f4496713cdb0e57935bbf364f9dbf",
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 287,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 208,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 426,
+          "mp": 159,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 5
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 5
+      },
+      "guardian": {
+        "hp": 78,
+        "mp": 26,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 82
+        },
+        {
+          "id": "e",
+          "hp": 58
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "survival",
+      "plan": "guard",
+      "seed": 202,
+      "configFingerprint": "8ed19b56c556c7be6875994405a8a264a8a9e8afe027e2328e39aaec4b0a98a0",
+      "set": "confirmation",
+      "won": true,
+      "alive": 3,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 563,
+          "mp": 287,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 214,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 11,
+          "survivors": 3,
+          "hp": 251,
+          "mp": 140,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 43,
+        "mp": 20,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 0
+        },
+        {
+          "id": "e",
+          "hp": 0
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "survival",
+      "plan": "guard",
+      "seed": 203,
+      "configFingerprint": "8bbe16b2ec2d54f68f1b51758049102cf67eaf482adfbb3a23f6aa31a1854a9c",
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 563,
+          "mp": 290,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 574,
+          "mp": 221,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 7,
+          "survivors": 5,
+          "hp": 372,
+          "mp": 174,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 97,
+        "mp": 25,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 53
+        },
+        {
+          "id": "e",
+          "hp": 14
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "survival",
+      "plan": "guard",
+      "seed": 204,
+      "configFingerprint": "4c7d63c67e01aa73b9222b8b5585f6b99bd18f42c50ffc89d823d36af0ed0967",
+      "set": "confirmation",
+      "won": true,
+      "alive": 4,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 280,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 215,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 7,
+          "survivors": 4,
+          "hp": 386,
+          "mp": 171,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 103,
+        "mp": 25,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 75
+        },
+        {
+          "id": "e",
+          "hp": 0
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "survival",
+      "plan": "cover",
+      "seed": 101,
+      "configFingerprint": "93129955e24047ac95f7706f95286670a2022d42125954875e7a1b857b33a604",
+      "set": "discovery",
+      "won": true,
+      "alive": 4,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 552,
+          "mp": 275,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 552,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 1,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 8,
+          "survivors": 4,
+          "hp": 295,
+          "mp": 160,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 3
+      },
+      "guardian": {
+        "hp": 23,
+        "mp": 5,
+        "attempts": 6,
+        "success": 2,
+        "reactionMana": 12
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 64
+        },
+        {
+          "id": "e",
+          "hp": 0
+        }
+      ],
+      "physicalSkips": 5
+    },
+    {
+      "route": "survival",
+      "plan": "cover",
+      "seed": 102,
+      "configFingerprint": "a6f1bbf833a594937a44fea3ba79a7460a308f218945fed044ad3b1aa147db8e",
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 535,
+          "mp": 275,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 517,
+          "mp": 189,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 8,
+          "survivors": 5,
+          "hp": 505,
+          "mp": 161,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 3
+      },
+      "guardian": {
+        "hp": 117,
+        "mp": 5,
+        "attempts": 6,
+        "success": 3,
+        "reactionMana": 12
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 86
+        },
+        {
+          "id": "e",
+          "hp": 94
+        }
+      ],
+      "physicalSkips": 5
+    },
+    {
+      "route": "survival",
+      "plan": "cover",
+      "seed": 201,
+      "configFingerprint": "fc8a34f59de26f632e1f5e3d903adceff01da8e81eb9e1d68f811e627fc0b915",
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 571,
+          "mp": 276,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 546,
+          "mp": 191,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 6,
+          "survivors": 5,
+          "hp": 454,
+          "mp": 135,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 3
+      },
+      "guardian": {
+        "hp": 100,
+        "mp": 3,
+        "attempts": 6,
+        "success": 2,
+        "reactionMana": 12
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 64
+        },
+        {
+          "id": "e",
+          "hp": 0
+        }
+      ],
+      "physicalSkips": 4
+    },
+    {
+      "route": "survival",
+      "plan": "cover",
+      "seed": 202,
+      "configFingerprint": "b6dae9ba528b34f29565e9e1780fefd3cf1d7dc310d31c4ef0724af4691a6ed4",
+      "set": "confirmation",
+      "won": true,
+      "alive": 3,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 277,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 207,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 11,
+          "survivors": 3,
+          "hp": 279,
+          "mp": 131,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 0,
+        "mp": 2,
+        "attempts": 7,
+        "success": 0,
+        "reactionMana": 14
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 71
+        },
+        {
+          "id": "e",
+          "hp": 0
+        }
+      ],
+      "physicalSkips": 3
+    },
+    {
+      "route": "survival",
+      "plan": "cover",
+      "seed": 203,
+      "configFingerprint": "e97b0196d090ad8c02593c218d72181e48ced1bc66e987e25459db01a0374be7",
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 288,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 520,
+          "mp": 205,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 8,
+          "survivors": 5,
+          "hp": 387,
+          "mp": 120,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 115,
+        "mp": 1,
+        "attempts": 7,
+        "success": 1,
+        "reactionMana": 14
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 45
+        },
+        {
+          "id": "e",
+          "hp": 0
+        }
+      ],
+      "physicalSkips": 3
+    },
+    {
+      "route": "survival",
+      "plan": "cover",
+      "seed": 204,
+      "configFingerprint": "caf02ecd2ebf2d54ef2fa0a1455aa9519b10f5b805ab50408db198eb03ce283f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "rooms": [
+        {
+          "name": "01 · 狙灯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 266,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 碎灯礼堂",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 550,
+          "mp": 195,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 最后一盏灯",
+          "won": true,
+          "rounds": 8,
+          "survivors": 5,
+          "hp": 352,
+          "mp": 142,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 4
+      },
+      "guardian": {
+        "hp": 58,
+        "mp": 4,
+        "attempts": 8,
+        "success": 1,
+        "reactionMana": 16
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 47
+        },
+        {
+          "id": "e",
+          "hp": 39
+        }
+      ],
+      "physicalSkips": 4
+    },
+    {
+      "route": "shoals",
+      "plan": "guard",
+      "seed": 101,
+      "configFingerprint": "5748cfd96b05df90b901eb271863e834dfa23a2d0616d1b4f7b6871f6f4871c0",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 313,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 260,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 202,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 103,
+        "mp": 1,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 90
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "shoals",
+      "plan": "guard",
+      "seed": 102,
+      "configFingerprint": "efa8a0463b420e56896f34fbb22cdf5a061fa01b74d5d8ef3585b8fb17d4fd39",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 265,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 116,
+        "mp": 2,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "shoals",
+      "plan": "guard",
+      "seed": 201,
+      "configFingerprint": "d36e850cfb5a77a54fcac652ee95b20d5bd89f992ce021a8c17fd940f6807e54",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 262,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 185,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 105,
+        "mp": 1,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "shoals",
+      "plan": "guard",
+      "seed": 202,
+      "configFingerprint": "d8543e9071aa2949e15d52bda00bf464fdc9df216cd967b2fc14b9821acf39e1",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 317,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 266,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 197,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 111,
+        "mp": 1,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 84
+        },
+        {
+          "id": "e",
+          "hp": 89
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "shoals",
+      "plan": "guard",
+      "seed": 203,
+      "configFingerprint": "05218dac57641ec54f2da4d8e58adae4afb730a2313829a14174f1292d7cb429",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 317,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 255,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 184,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 101,
+        "mp": 1,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 95
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "shoals",
+      "plan": "guard",
+      "seed": 204,
+      "configFingerprint": "9063ac9324bdf33e7f622b880ecce08d2fc15e76db781206ca394a75a160497a",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 316,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 279,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 5
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 200,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 126,
+        "mp": 3,
+        "attempts": 0,
+        "success": 0,
+        "reactionMana": 0
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 84
+        },
+        {
+          "id": "e",
+          "hp": 83
+        }
+      ],
+      "physicalSkips": 0
+    },
+    {
+      "route": "shoals",
+      "plan": "cover",
+      "seed": 101,
+      "configFingerprint": "e06d68123fb08b0979707c41b45bac0546cc5de87d3807e3d701423ee6a22355",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 311,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 251,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 173,
+          "supplies": {
+            "herb": 1,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 126,
+        "mp": 0,
+        "attempts": 3,
+        "success": 3,
+        "reactionMana": 6
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 85
+        }
+      ],
+      "physicalSkips": 1
+    },
+    {
+      "route": "shoals",
+      "plan": "cover",
+      "seed": 102,
+      "configFingerprint": "0aa3ae2bc723366fec19eb53caac64a27aca9e1f3a75cd90370084f4b3de387d",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 307,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 239,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 179,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 81,
+        "mp": 1,
+        "attempts": 4,
+        "success": 4,
+        "reactionMana": 8
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 102
+        }
+      ],
+      "physicalSkips": 3
+    },
+    {
+      "route": "shoals",
+      "plan": "cover",
+      "seed": 201,
+      "configFingerprint": "a0f119a1df61bc2723e2990f7fcf0b2d365088769587b4cafbeefbfef895c67b",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 228,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 186,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 86,
+        "mp": 1,
+        "attempts": 5,
+        "success": 3,
+        "reactionMana": 10
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 87
+        }
+      ],
+      "physicalSkips": 3
+    },
+    {
+      "route": "shoals",
+      "plan": "cover",
+      "seed": 202,
+      "configFingerprint": "92f8b2f763d9d5cfa3f3e890a6e0ea7df3e36157f432ad902953283114e5a3ea",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 308,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 244,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 198,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 93,
+        "mp": 2,
+        "attempts": 3,
+        "success": 3,
+        "reactionMana": 6
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 82
+        }
+      ],
+      "physicalSkips": 2
+    },
+    {
+      "route": "shoals",
+      "plan": "cover",
+      "seed": 203,
+      "configFingerprint": "105d95cd433af38c2d729bc7fb8101f7e4a6caa8e0bd8339a5a7453fbcbffd51",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 311,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 242,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 180,
+          "supplies": {
+            "herb": 1,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 116,
+        "mp": 0,
+        "attempts": 3,
+        "success": 3,
+        "reactionMana": 6
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 102
+        },
+        {
+          "id": "e",
+          "hp": 92
+        }
+      ],
+      "physicalSkips": 2
+    },
+    {
+      "route": "shoals",
+      "plan": "cover",
+      "seed": 204,
+      "configFingerprint": "e0fa88d9c5809791776a241d8c3790803507b1ed241ada1f630acd407be0c66d",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "shoals_landing",
+          "node": "shingle",
+          "note": "两名守军集中前排，近战抗性30%、法术弱点15%；群攻能利用集中站位，但符纸要留给后两场。",
+          "name": "01 · 砾风浅滩",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 314,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "id": "shoals_crossing",
+          "node": "sailnet",
+          "note": "左右弩手分散射击后排；后排救护师抗法60%、弱远程15%，会用自己的普通行动和药草救护。射手拆救护、法术压侧翼可以分工，也要给后排留保护。",
+          "name": "02 · 悬帆救护网",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 248,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "id": "shoals_depth",
+          "node": "sealstake",
+          "note": "中央唤礁者反复召唤潮卫，抗远程60%、弱法15%；后排咏者抗法60%、弱远程15%，以法术压中央。右翼护桩师抗远程60%、弱法15%，屏障保护前排。召唤物随主人倒下消散，屏障已附着仍到期。",
+          "name": "03 · 封潮桩",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 185,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "guardian": {
+        "hp": 114,
+        "mp": 0,
+        "attempts": 4,
+        "success": 3,
+        "reactionMana": 8
+      },
+      "rearHp": [
+        {
+          "id": "b",
+          "hp": 84
+        },
+        {
+          "id": "e",
+          "hp": 83
+        }
+      ],
+      "physicalSkips": 2
+    }
+  ],
+  "summary": {
+    "runs": 36,
+    "uniqueBattleInputs": 36,
+    "failures": 0,
+    "injured": 11
+  },
+  "normal": {
+    "seed": 1,
+    "plan": "cover rear, free interpose specialization",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 639,
+        "mp": 238,
+        "supplies": {
+          "herb": 5,
+          "rune": 6,
+          "arrow": 1
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 572,
+        "mp": 184,
+        "supplies": {
+          "herb": 3,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 3,
+      "rune": 3,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 140,
+      "xp": 60,
+      "firstClear": true,
+      "loot": [
+        "calmribbon"
+      ]
+    },
+    "reactions": [
+      {
+        "room": 0,
+        "round": 1,
+        "success": true,
+        "protected": "b",
+        "reaction": 85,
+        "difficulty": 37,
+        "cost": 2
+      },
+      {
+        "room": 0,
+        "round": 2,
+        "success": true,
+        "protected": "b",
+        "reaction": 63,
+        "difficulty": 45,
+        "cost": 2
+      },
+      {
+        "room": 0,
+        "round": 3,
+        "success": false,
+        "protected": "b",
+        "reaction": 38,
+        "difficulty": 48,
+        "cost": 2
+      },
+      {
+        "room": 0,
+        "round": 4,
+        "success": false,
+        "protected": "b",
+        "reaction": 47,
+        "difficulty": 50,
+        "cost": 2
+      }
+    ],
+    "typeSkips": 0
+  },
+  "repeat": {
+    "seed": 2,
+    "plan": "paid rank1 and active ranged dodge",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 636,
+        "mp": 243,
+        "supplies": {
+          "herb": 6,
+          "rune": 6,
+          "arrow": 1
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 594,
+        "mp": 192,
+        "supplies": {
+          "herb": 4,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 4,
+      "rune": 3,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 90,
+      "xp": 40,
+      "firstClear": false,
+      "loot": [
+        "calmribbon"
+      ]
+    },
+    "reactions": [
+      {
+        "room": 0,
+        "round": 1,
+        "success": true,
+        "protected": "e",
+        "reaction": 60,
+        "difficulty": 44,
+        "cost": 2
+      },
+      {
+        "room": 0,
+        "round": 2,
+        "success": true,
+        "protected": "e",
+        "reaction": 60,
+        "difficulty": 51,
+        "cost": 2
+      },
+      {
+        "room": 0,
+        "round": 3,
+        "success": true,
+        "protected": "e",
+        "reaction": 68,
+        "difficulty": 41,
+        "cost": 2
+      },
+      {
+        "room": 0,
+        "round": 4,
+        "success": true,
+        "protected": "e",
+        "reaction": 61,
+        "difficulty": 46,
+        "cost": 2
+      }
+    ],
+    "typeSkips": 0
+  },
+  "mobile": {
+    "seed": 3,
+    "plan": "cover center, magic/mental bypass",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 635,
+        "mp": 244,
+        "supplies": {
+          "herb": 5,
+          "rune": 6,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 630,
+        "mp": 188,
+        "supplies": {
+          "herb": 3,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 3,
+      "rune": 3,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 90,
+      "xp": 40,
+      "firstClear": false,
+      "loot": [
+        "calmribbon"
+      ]
+    },
+    "reactions": [],
+    "typeSkips": 2
+  },
+  "unchanged": {
+    "reference": "7402fe1412bf3143a83a8e7a3df3a9e38728591e",
+    "count": 34,
+    "rawFullEqual": false,
+    "assertedAvailableSkill": {
+      "interpose": 6
+    },
+    "otherFieldsExcluded": [],
+    "rows": [
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equalAfterAssertedSkill": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equalAfterAssertedSkill": true
+      }
+    ]
+  }
+}

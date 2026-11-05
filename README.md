@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.84「召唤形态与潮灵归还」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.84仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.85「守卫援护与实际接招」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.85仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -23,6 +23,8 @@
 新增[心理攻击与镜心问堂](docs/V83_MENTAL_ATTACKS.md)：吟游者对重甲使用心理输出，独立心理抗性、共用心智抵抗防御，配套两场短线与有代价的固定缎带。568测试，18组不同战斗输入、桌面/390px真实正常培养配装与完整公会API等价通过。
 
 新增[召唤形态与潮灵归还](docs/V84_SUMMON_FORMS.md)：较耐打的近战潮卫或优先后排的弩灵，普通召唤共用存活上限；付2法力召回后需另占预备重召，不退原消耗，并保留实际缺料失败。577测试、48有限输入、桌面/390px正常培养配装与完整公会API等价通过。
+
+新增[守卫援护与实际接招](docs/V85_GUARDIAN_INTERCEPTION.md)：为其他队员建立援护，付个人法力并检定代接物理攻击，成功后仍正常防御承伤；保留失败、法术/心理绕过和独立反应记账。588测试、36有限输入（11次有伤员）及桌面/390px完整公会API对照通过。
 
 ## 开发交接入口
 

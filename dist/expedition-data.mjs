@@ -13,7 +13,7 @@ export const clone=x=>structuredClone(x);
 export const POS={front:'前排',left:'左翼',right:'右翼',center:'中央',rear:'后排'};
 export const ROLE_TARGETS={healer:'治疗者',summoner:'召唤者'};
 export const roleTargetAllowed=s=>s.kind==='attack'&&s.mode==='single'&&['ranged','magic','mental'].includes(s.type);
-export const targetOptions=s=>s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS}:POS;
+export const targetOptions=s=>s.cover?POS:s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS}:POS;
 export const ATTR={str:'力量',con:'体质',int:'智力',dex:'灵巧',cha:'魅力',agi:'敏捷',per:'感知',wil:'意志'};
 export const TYPES={melee:'近战',ranged:'远程',magic:'法术',mental:'心理'};
 // Mental attacks share the existing mind-resist choice; no fourth config slot.
@@ -32,6 +32,7 @@ export const SKILLS={
  dissonance:{name:'挫志弦',kind:'attack',type:'magic',primary:'cha',secondary:'wil',power:.65,cost:5,mode:'single',max:1,requiresGear:'lute',weakening:true,desc:'吟游者普通技能，需乐器；5法力、无共享耗材，低伤害魅力/意志单体法术。命中未倒下者附挫志：攻击技能等级-3，持续当前与下一回合；固定削弱与期限不随训练提高，不叠加、不刷新，击倒来源不解除。影响之后的攻击命中与伤害，不影响辅助、救护、防御技能或已完成检定；闪避不附着，吸收伤害仍可附着。'},
  cleanse:{name:'清心符',kind:'buff',primary:'int',secondary:'wil',cost:4,item:'rune',mode:'position',max:3,requiresGear:'focus',cleanse:true,desc:'学者普通技能，预备阶段用4法力和1符纸，移除所选阵位最多3名存活者身上的技能负面效果；不移除增益、不复活、不回滚此前检定、不提供免疫，无负面目标免费跳过。通常下一回合才有机会净化挫志，禁疗往往已先到期。净化数量固定、不随训练提高，一次施放多人仅扣1符纸，占用本次预备行动。'},
  spark:{name:'微光',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1,cost:1,mode:'single',max:1,desc:'低消耗法术单体。'},
+ interpose:{name:'援护架势',kind:'buff',primary:'con',secondary:'per',cost:5,mode:'position',max:3,cover:true,scope:'rounds',duration:1,stat:'cover',base:1,scale:0,desc:'守卫预备技能，5法力，为所选阵位最多3名其他存活友方建立当前和下一回合的援护。近战/远程攻击到来时，存活守卫若有2法力且本回合未尝试，付2法力以体质/感知和本技能作援护检定；实掷不低于本次攻击实掷×0.8向上取整才代为接招，随后仍需正常防御并承担伤害。失败也付费、计本回合一次；不足免费跳过。法术/心理不触发，不援护自己，每次攻击最多重定向一次；群攻只接一名目标的一次攻击，不取消其他目标。'},
  guard:{name:'守势',kind:'buff',primary:'con',secondary:'wil',cost:3,mode:'self',max:1,scope:'rounds',duration:1,stat:'defense',scale:0.15,base:3,desc:'自身所有防御检定提高，持续当前与下一回合。'},
  insight:{name:'灵感启蒙',kind:'buff',primary:'cha',secondary:'wil',cost:4,mode:'position',max:3,scope:'battle',stat:'int',scale:0.3,base:2,desc:'目标位置智力提高；后施放的法术辅助受益，持续本房间。'},
  ward:{name:'潮纹屏障',kind:'buff',primary:'int',secondary:'wil',cost:5,item:'rune',mode:'position',max:3,scope:'rounds',duration:2,stat:'defense',scale:0.18,base:3,desc:'目标位置所有防御检定提高；施放时按智力和技能等级取值，持续当前与之后 2 回合。'},
@@ -60,7 +61,7 @@ Object.assign(SKILLS,{
 });
 const attrs=(str,con,int,dex,cha,agi,per,wil)=>({str,con,int,dex,cha,agi,per,wil});
 const FOUNDERS=[
- {id:'a',name:'阿瑟',role:'守卫',mark:'盾',pos:'front',gear:'plate',attrs:attrs(12,16,5,11,6,8,9,12),skills:['strike','guard','shieldbash','rallyguard'],base:6},
+ {id:'a',name:'阿瑟',role:'守卫',mark:'盾',pos:'front',gear:'plate',attrs:attrs(12,16,5,11,6,8,9,12),skills:['strike','guard','shieldbash','rallyguard','interpose'],base:6},
  {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep'],base:6},
  {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt','tidearcher','recall'],base:6},
  {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse'],base:6},

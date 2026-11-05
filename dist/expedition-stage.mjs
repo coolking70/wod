@@ -8,6 +8,7 @@ export function stageFrame(group){
  const events=group.events,last=events.at(-1),cast=events.find(e=>e.type==='cast'),lead=cast||events[0],cues=[],links=[];
  for(const e of events){
   if(e.type==='attack'){const d=e.detail,kind=d.grade==='闪避'?'miss':d.actual>0?'damage':'blocked';cues.push({unit:e.targets[0],kind,text:kind==='miss'?'闪避':kind==='blocked'?'吸收':`−${d.actual}`,note:d.grade+(d.resistance>0?' · 抗性减伤':d.resistance<0?' · 弱点':''),eventId:e.id});}
+  else if(e.type==='intercept'||e.type==='intercept-skip')cues.push({unit:e.actor,kind:'cover',text:e.type==='intercept'?(e.detail.success?'接招':'援护未及'):'援护未触发',note:e.detail.reason||'2法力 · 不占普通行动',eventId:e.id});
   else if(e.type==='heal')cues.push({unit:e.targets[0],kind:'heal',text:'+'+e.detail.actual,note:e.detail.passive?'缓释':'救护',eventId:e.id});
   else if(e.type==='item')cues.push({unit:e.actor,kind:e.detail.resource==='hp'?'heal':'mana',text:'+'+e.detail.actual,note:e.detail.resource==='hp'?'药匣恢复':'药瓶回蓝',eventId:e.id});
   else if(['effect','cleanse','activate','summon','down','dismiss','defend'].includes(e.type)){
@@ -15,6 +16,7 @@ export function stageFrame(group){
    cues.push({unit,kind,text:e.type==='cleanse'?'净化':e.type==='defend'?e.detail.name:e.type==='summon'?'召唤':e.type==='down'?'倒下':e.type==='dismiss'?(e.detail.recall?'召回':'消散'):e.type==='activate'?'生效':e.detail.harmful?(e.detail.component||'负面'):e.detail.active===false?'待生效':'增益',note:e.detail.component||'',eventId:e.id});
   }
   if(e.detail.healingBlock||e.detail.healingDecision?.status==='blocked')cues.push({unit:e.actor,kind:'control',text:'救护受阻',note:'按普通指令继续',eventId:e.id});
+  if(e.type==='intercept'&&e.detail.success)links.push({from:e.actor,to:e.targets[0],kind:'support',eventId:e.id});
   if(['attack','heal','effect','cleanse','summon','activate','expire'].includes(e.type))for(const target of e.targets)links.push({from:e.actor,to:target,kind:e.type==='attack'?e.detail.attackType:e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'support'):e.type,eventId:e.id});
  }
  return {units:structuredClone(last.units),actor:lead.actor,targets:[...new Set(cues.map(c=>c.unit).filter(Boolean))],cues,links,phase:lead.phase,round:lead.round,supplies:structuredClone(last.supplies),transition:['room','victory','defeat','scene','encounter','route','rescue','branch'].includes(lead.type)?lead.type:null};

@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前577项测试通过，0失败/跳过；239个ES模块、39个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前588项测试通过，0失败/跳过；243个ES模块、40个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -278,3 +278,18 @@ feature/v084-summon-forms从868ef25干净568基线。summons纯模板保持原se
 withSummonPlan仅改C预备，不送资产；48不同输入含none/guardian/archer/shift×问堂/异变×六种子，全部六人但不推荐最优。34原报告只归一已断言C新增技能6/6，其余全同。新公会弩灵seed1=4/4回合140/60；20XP训练弩灵、分配缎带C；shift seed2=5/5回合90/40，首场60潮卫→召回→45弩灵，次场召回后rune0未重召。不要延续早期把两场都说成成功换形态的错误判断，replacement-blocked.json是实际反例。手机seed3改弩灵入场front仍攻击敌rear，4/5回合90/40，最终320gold/C120XP/其余140XP；两份整公会API/UI均同。
 
 577最终全回归、239mjs39cjs通过，新三次浏览器和v83完整回归通过。第一次快捷编辑导航脚本错误、第二次真实inquest账本hidden白名单缺项及修复均保留，不强制点击或删断言。截图只内部；证据/workspace/wod-evidence/v84、旧参考/tmp/wod-v083-reference。没有新地城/装备/账号/服务或重大待决，保持本地提交与单人方向。
+
+
+## v0.85守卫援护续接
+
+v0.85按R1增加真实守卫援护：5法力预备许可覆盖一个阵位最多3名其他友方，近战/远程到来时每回合最多付2法力尝试一次，体质/感知/援护检定达到攻击实掷×0.8上取整才接招；随后仍正常防御承伤，失败也付费，法术/心理绕过。原目标/实际受击者、许可来源、反应法力分别可追溯。588测试、36不同有限输入全通/11次有伤员、34旧报告除严格核对的守卫可用技能外全同；桌面/390px三次真实出征与两份完整公会API等价、v84召唤浏览器回归通过。仍17路线/35装备，详见[V85_GUARDIAN_INTERCEPTION.md](V85_GUARDIAN_INTERCEPTION.md)。新增阶段仅本地，不推送/合并/部署。
+
+feature/v085-guardian-interception从7402fe1干净577基线。interception纯候选检查，engine本房Map按来源/round限一次，攻击先固定本次attack roll，再反应付2MP/roll(mean interpose)与ceil(attack*.8)比较；成功替换本次chosen的实际target，之后正常defense/armor/resistance/HP，原cast.targets不改且attack.detail.interception另记原目标/反应事件。无援护时不加roll/event，34旧报告仅新增A可用技能6外完全同。cover正面许可自己除外、最多3；失效原因写intercept-skip，未付费不占次数，范围攻击不去重代接者，不递归援护。
+
+ledger/personal反应MP独立累计，不混施法或主动防御；sourceTrace匹配cover唯一身份和原受护人，支持跳回许可/返回。stage显示接招/未及/未触发，支援记录不换算避免伤害。每种守卫技能仍自由培养，训练interpose提高反应mean2/级，不提高覆盖人数或次数；援护卫士角色起点需明确应用。
+
+初稿直接比攻击实掷导致守灯seed1 4尝试0成功且失败，完整initial-direct报告保留，无控制组不能归因；只调新机制系数0.8后固定，敌人不改。36矩阵均通但11伤员，守灯确认低成功，不推荐通用升级。正常问堂免费专修interpose→seed1 5/5回合140/60，4尝试2成功：首下闪避0、次下命中15、失败两下原目标15/21；20XP训一级→选dodge→seed2 5/5回合90/40，4/4但不同种子/防御不做训练因果。手机改center→seed3 5/5回合、心理免费绕过，最终320gold/A120XP/其余140XP/三缎带未分配，两份整guild API/UI皆同。
+
+最终588测试（新增11，含近战/已入场弩灵保护），243mjs40cjs、新三次浏览器及v84完整召唤回归通过。初始browser误要首次接招正伤害，改同seed精确校验0闪避与15实扣，失败原件保留，无调数值/挑种子/删扣血断言。截图内部；证据/workspace/wod-evidence/v85，参考/tmp/wod-v084-reference。无新地城/装备/迁移/账号/服务或重大待决，持续单人、本地提交。
+
+最终复核还补齐致命代接后原群攻列表再轮到已倒下护卫的边界：attack-skip不再掷骰/防御/重复down，不退原施法，其余活目标继续。固定D/C/A夹具原稿A/C/A重复down两次保留；最终A/C+skip只一次down，新增第11项，最终588测试。

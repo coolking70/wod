@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "steps": [
+    "新公会通过实际编辑召唤弩灵，42生命、己方后排入场、独立穿石箭优先敌方后排且不耗箭，首通两场各一次召唤；编辑不赠资产",
+    "pending改准备/刷新原报告不变；正常140/60后20经验训练弩灵并分配奖励缎带；首场1/2/3回合潮卫/召回/45生命弩灵，次场召回后符纸0重召失败，保留实际风险；90/40、账本、历史和备份通过",
+    "390px完整恢复历史与培养，明确把弩灵入场改前排，指令编辑无溢出；实际seed3的45生命弩灵仍优先攻击敌方后排，正常再领90/40，最终320金币"
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "plan": "archer",
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 254,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 187,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 2,
+      "plan": "shift",
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 231,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 149,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "firstRoomReplacement": true,
+      "secondRoomReplacementBlockedByRuneZero": true
+    },
+    {
+      "seed": 3,
+      "plan": "archer in own front",
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 245,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 161,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

@@ -1,3 +1,4 @@
+import {INTERCEPTION,interceptionCandidate} from './expedition-interception.mjs';
 import {SUMMON_FORMS,hasSummoningSkill} from './expedition-summons.mjs';
 import {mediumId,CASTING_MEDIA} from './expedition-media-data.mjs';
 import {commandCost} from './expedition-media.mjs';
@@ -19,7 +20,7 @@ const routes={front:['front','left','right','center','rear'],left:['right','fron
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
  if(!Object.hasOwn(POS,h.pos))throw Error('站位无效');
- for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(s)mediumId(s,r);if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait'].includes(s.kind))||!['repeat','cycle','once','round'].includes(r.mode)||(r.mode==='round'&&phase!=='main')||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');}}
+ for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(s)mediumId(s,r);if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait'].includes(s.kind))||!['repeat','cycle','once','round'].includes(r.mode)||(r.mode==='round'&&phase!=='main')||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');if(s.cover&&!Object.hasOwn(POS,r.target))throw Error('援护必须选择其他队员所在阵位');}}
  if(!h.healing||!['lowest','self_first'].includes(h.healing.priority??'lowest')||typeof h.healing.enabled!=='boolean'||![.5,.65,.8].includes(h.healing.threshold)||![...Object.keys(POS),'all','self'].includes(h.healing.target)||(h.healing.enabled&&!t.skills.includes('heal')))throw Error('治疗设置不合法');
  if(!h.itemPolicy||typeof h.itemPolicy.enabled!=='boolean'||![.3,.5,.7].includes(h.itemPolicy.threshold))throw Error('道具使用策略无效');
  if(!h.defenses||Object.keys(h.defenses).length!==3)throw Error('防御配置无效');
@@ -114,7 +115,7 @@ export function simulate(c,options={}){
    if(roomIndex===2){rooms[roomIndex]=clone(courierSource?COURIER_RELAY:COURIER_ROOMS[2]);if(courierSource)courierRelay={domain:'courier',kind:'relay',chosen:'keel',sourceEventId:courierSource,reason:'第二场实际布缆走船底，切断前排鼓令；鼓手转为给后排医师节拍。',changes:[{id:'cfb',name:'催帆鼓手',skill:'rhythm',before:'front',after:'rear'}],suppliesBefore:clone(supplies),suppliesAfter:clone(supplies),rule:'由第二场实际通路决定；没有第二次费用、检定或隐藏伤害，原敌方生命、抗性、技能等级与普通指令不变。'};}
   }
   const room=rooms[roomIndex];round=0;phase='进场';for(const u of party){const h=c.heroes.find(h=>h.id===u.id);if(h){const plan=resolveHeroPlan(h,room.id);for(const key of PLAN_FIELDS)u[key]=clone(plan[key]);}}enemies=room.enemies.map(u=>({...u,effects:[],side:'enemy'}));enemySupplies={herb:60,rune:60,arrow:60};
-  const cursors=new Map(),used=new Set(),roundUsed=new Map(),roundCursors=new Map();let serial=0;
+  const cursors=new Map(),used=new Set(),roundUsed=new Map(),roundCursors=new Map(),interceptUsed=new Map();let serial=0;
   emit('room',room.name+'：生命、法力、补给与远征效果继承。',null,[],{rule:'房间效果结束；远征效果保留；行动游标重置。',...(c.expedition==='shoals'?{chart:shoalsChartId(c),node:room.node}:{})});
   if(harborDecision){for(const [key,delta] of Object.entries(harborDelta))supplies[key]+=delta;emit('branch',room.name+' · '+harborDecision.reason,harborDecision.actor,[],{...harborDecision,sourceEventId:roomIndex===3?harborSource:null});if(roomIndex===2)harborSource=events.at(-1).id;}
   if(foundryPass){for(const [key,delta] of Object.entries(foundryPass.delta))supplies[key]+=delta;emit('branch',room.name+' · '+foundryPass.decision.reason,null,[],foundryPass.decision);if(foundryPass.decision.chosen==='channel')foundrySource=events.at(-1).id;}
@@ -156,9 +157,9 @@ export function simulate(c,options={}){
    else if((reservation=reserveBlock(c,roomIndex,u,s,stock,payment)))reason='为第三场事件预留2符纸，尝试下一条指令';
    let targets=[];
    if(!reason&&!['wait','summon'].includes(s.kind)){
-    targets=chooseTargets(u,s.cleanse?all().filter(t=>cleansableEffects(t).length):all(),s,r.target,rng);
+    targets=chooseTargets(u,s.cleanse?all().filter(t=>cleansableEffects(t).length):s.cover?all().filter(t=>t.id!==u.id):all(),s,r.target,rng);
     if(s.kind==='buff'&&!s.cleanse)targets=targets.filter(t=>!t.effects.some(e=>e.skill===r.skill));
-    if(!targets.length)reason=Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.cleanse?'没有可净化的负面效果':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
+    if(!targets.length)reason=Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.cleanse?'没有可净化的负面效果':s.cover?'没有可援护的其他队员':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
    }
    if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,...(payment.medium!=='standard'?{medium:payment.medium,requiredMana:payment.mana,requiredResource:payment.resource,requiredAmount:payment.amount}:{}),requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {}),...(healingBlock?{healingBlock}: {})});return false;}
    if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);roundUsed.set(key,round);return true;}
@@ -172,19 +173,29 @@ export function simulate(c,options={}){
     const components=s.components||[{stat:s.stat,base:s.base,scale:s.scale,scope:s.scope,duration:s.duration,delay:0}];
     for(const [componentIndex,part] of components.entries()){
      const advancementBonus=advancementEffectBonus(u,r.skill,part.stat),v=Math.floor(part.base+m*part.scale)+advancementBonus,delay=part.delay||0,e={id:`${roomIndex}:${cast}:${t.id}:${componentIndex}`,skill:r.skill,name:s.name,component:part.label||s.name,source:u.id,sourceName:u.name,stat:part.stat,value:v,scope:part.scope,active:delay===0,activateTick:clock+delay,activateRound:round+delay,expires:part.scope==='rounds'?round+delay+part.duration:null,expiresTick:part.scope==='rounds'?clock+delay+part.duration:null};
-     t.effects.push(e);emit('effect',t.name+' '+(e.active?'获得':'等待')+'「'+s.name+(e.component!==s.name?' · '+e.component:'')+'」：'+({regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'}[part.stat]||part.stat)+' +'+v,u.id,[t.id],{effectId:e.id,cast,skill:r.skill,component:e.component,stat:e.stat,value:v,mean:m,formula:`floor(${part.base} + ${m} × ${part.scale})${advancementBonus?' + '+advancementBonus:''}`,scope:e.scope,expires:e.expires,active:e.active,activateRound:e.activateRound,sources:effectTrace(u)});
+     t.effects.push(e);emit('effect',t.name+' '+(e.active?'获得':'等待')+'「'+s.name+(e.component!==s.name?' · '+e.component:'')+'」：'+({cover:'援护许可',regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'}[part.stat]||part.stat)+' +'+v,u.id,[t.id],{effectId:e.id,cast,skill:r.skill,component:e.component,stat:e.stat,value:v,mean:m,formula:`floor(${part.base} + ${m} × ${part.scale})${advancementBonus?' + '+advancementBonus:''}`,scope:e.scope,expires:e.expires,active:e.active,activateRound:e.activateRound,sources:effectTrace(u)});
     }
    }
    if(s.kind==='heal'){const t=targets[0],amount=Math.floor(m*.7),actual=Math.min(t.maxHp-t.hp,amount);t.hp+=actual;if(stats[u.id]){stats[u.id].healing+=actual;stats[u.id].interrupts++;}emit('heal',u.name+' 为 '+t.name+' 恢复 '+actual+' 生命',u.id,[t.id],{cast,skill:r.skill,amount,actual,overheal:amount-actual,formula:`floor(${m} × 0.7)`,ordinaryCursorUnchanged:true});}
-   if(s.kind==='attack')for(const t of targets){
-    const attack=roll(m),profile=defenseProfile(t,s.type),mpBefore=t.mp;t.mp-=profile.cost;
+   if(s.kind==='attack')for(const chosen of targets){
+    if(chosen.hp<=0){emit('attack-skip',u.name+' 不再结算指向 '+chosen.name+' 的攻击：原目标已倒下',u.id,[chosen.id],{cast,skill:r.skill,reason:'原目标已倒下',cost:0,consumedAction:false,rule:'已完成施法不退款；不重复防御、攻击或记录倒下，其余原目标继续结算。'});continue;}
+    const attack=roll(m);let t=chosen,interception=null;
+    const cover=interceptionCandidate(chosen,all(),s.type,round,interceptUsed);
+    if(cover){const {effect,guardian,reason}=cover,identity={effectId:effect.id,source:effect.source,recipient:chosen.id,skill:effect.skill,component:effect.component,stat:effect.stat,value:effect.value},common={cast,skill:r.skill,attackType:s.type,protected:chosen.id,protectedName:chosen.name,guardian:effect.source,guardianName:guardian?.name||effect.source,cover:identity};
+     if(reason)emit('intercept-skip',(guardian?.name||effect.source)+' 未尝试援护 '+chosen.name+'：'+reason,effect.source,[chosen.id],{...common,reason,cost:0,consumedAction:false});
+     else {const before=guardian.mp;guardian.mp-=INTERCEPTION.cost;interceptUsed.set(guardian.id,round);const reactionMean=mean(guardian,INTERCEPTION.skill),reaction=roll(reactionMean),difficulty=Math.ceil(attack*.8),success=reaction>=difficulty;
+      emit('intercept',guardian.name+(success?' 接下了原本指向 ':' 未及接下指向 ')+chosen.name+' 的攻击',guardian.id,[chosen.id],{...common,attack,difficulty,reactionMean,reaction,success,actualTarget:success?guardian.id:chosen.id,level:skillLevel(guardian,INTERCEPTION.skill),mpBefore:before,mpAfter:guardian.mp,cost:INTERCEPTION.cost,consumedAction:false,sources:effectTrace(guardian),rule:'援护实掷不低于本次攻击实掷×0.8向上取整才重定向；之后按实际目标正常防御和扣生命。每位援护者每回合最多尝试一次，失败也付2法力；不取消其他目标，不折算避免伤害。'});
+      interception={eventId:events.at(-1).id,protected:chosen.id,protectedName:chosen.name,guardian:guardian.id,success,cover:identity};if(stats[guardian.id]){stats[guardian.id].interceptAttempts=(stats[guardian.id].interceptAttempts||0)+1;stats[guardian.id].interceptMana=(stats[guardian.id].interceptMana||0)+INTERCEPTION.cost;if(success)stats[guardian.id].interceptions=(stats[guardian.id].interceptions||0)+1;}if(success)t=guardian;
+     }
+    }
+    const profile=defenseProfile(t,s.type),mpBefore=t.mp;t.mp-=profile.cost;
     if(stats[t.id]){stats[t.id].defenses++;stats[t.id].defenseMana+=profile.cost;}
     const defenseMean=profile.mean,defense=roll(defenseMean);
     emit('defend',t.name+' 使用「'+profile.name+'」应对'+TYPES[s.type]+(profile.reason?'（'+profile.reason+'，回退自然防御）':''),t.id,[u.id],{cast,attackType:s.type,...profile,roll:defense,mpBefore,mpAfter:t.mp});
     const grade=attack<=defense?'闪避':attack<=defense*1.5?'命中':attack<=defense*2.25?'重击':'致命';const multiplier={'闪避':0,'命中':1,'重击':1.25,'致命':1.5}[grade];
     const base=current(u,s.primary)/2+current(u,s.secondary)/3+lv/2,rolled=grade==='闪避'?0:roll(base*s.power),armorBefore=current(t,'armor'),armorIgnored=s.type==='mental'?Math.max(0,armorBefore):Math.min(Math.max(0,armorBefore),s.ignoreArmor||0),armor=s.type==='mental'?0:armorBefore-armorIgnored,resistance=resistanceOf(t,s.type),mitigation=damageResult(rolled,multiplier,armor,resistance),damage=grade==='闪避'?0:mitigation.damage,actual=Math.min(t.hp,damage),beforeHp=t.hp;t.hp-=actual;
     if(stats[u.id]){stats[u.id].damage+=damage;stats[u.id].actual+=actual;stats[u.id].overkill+=damage-actual;}
-    emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+' 伤害'+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,...(s.type==='mental'?{mentalRule:'心理攻击沿用法术栏防御；物理护甲不参与，只采用心理抗性。'}:{}),resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-damage,damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});
+    emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+' 伤害'+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,...(interception?{interception}:{}),defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,...(s.type==='mental'?{mentalRule:'心理攻击沿用法术栏防御；物理护甲不参与，只采用心理抗性。'}:{}),resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-damage,damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});
     if(t.hp===0){emit('down',t.name+' 倒下。',u.id,[t.id],{cast});removeSummons(t.id,'主人倒下');}
     else if(canApplyHealingBlock(s,grade,t)){
      const effect={id:`${roomIndex}:${cast}:${t.id}:healingBlock`,skill:r.skill,name:s.name,component:'禁疗',source:u.id,sourceName:u.name,stat:HEALING_BLOCK_STAT,value:1,scope:'rounds',active:true,harmful:true,activateTick:clock,activateRound:round,expires:round,expiresTick:clock};
