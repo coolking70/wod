@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.58「六职业进阶」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；main仍为v0.45。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.59「六职业进阶」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；main仍为v0.45。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
 
 ## 开发交接入口
 

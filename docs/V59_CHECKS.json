@@ -1,0 +1,65 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "unchanged": {
+    "reference": "63975dd",
+    "reports": 9,
+    "excluded": []
+  },
+  "trainingPlans": [
+    {
+      "id": "a",
+      "removed": "skill:strike",
+      "added": "skill:guard",
+      "cost": 120,
+      "refund": 120,
+      "available": 165,
+      "earned": 445
+    },
+    {
+      "id": "b",
+      "removed": "skill:pierce",
+      "added": "skill:shot",
+      "cost": 120,
+      "refund": 120,
+      "available": 165,
+      "earned": 445
+    },
+    {
+      "id": "c",
+      "removed": "skill:lance",
+      "added": "skill:wave",
+      "cost": 120,
+      "refund": 120,
+      "available": 165,
+      "earned": 445
+    },
+    {
+      "id": "d",
+      "removed": "skill:spark",
+      "added": "skill:ward",
+      "cost": 120,
+      "refund": 120,
+      "available": 165,
+      "earned": 445
+    },
+    {
+      "id": "e",
+      "removed": "skill:shot",
+      "added": "skill:insight",
+      "cost": 120,
+      "refund": 120,
+      "available": 165,
+      "earned": 445
+    },
+    {
+      "id": "f",
+      "removed": "skill:shot",
+      "added": "skill:provisions",
+      "cost": 120,
+      "refund": 120,
+      "available": 165,
+      "earned": 445
+    }
+  ],
+  "note": "All progression earned normally; six atomic plans also produce reports identical to the prior engine for the same final configuration. Functional validation, not a balance claim."
+}

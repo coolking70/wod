@@ -1,3 +1,4 @@
+import {quoteTrainingPlan} from './expedition-training-plan.mjs';
 import {PROGRESSION_RULES,COURSE_REQUIRED_XP} from './expedition-progression-rules.mjs';
 import {HARBOR_OBJECTIVES,HARBOR_EXCHANGE,harborReward} from './expedition-harbor-contract.mjs';
 import {validEquipment,sameEquipment,replaceEquipment} from './expedition-equipment.mjs';
@@ -44,6 +45,7 @@ export function sellLoot(g,gear){const n=editable(g);if(!isRelic(gear)||!(n.ware
 function editable(g){validateGuild(g);if(g.pending)throw Error('领取远征结算后才能更改公会资产');return clone(g);}
 export function train(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key);if(!q.allowed)throw Error(q.reasons.join('；'));h.xp-=q.cost;h.training={...h.training,[key]:q.nextRank};return n;}
 export function lowerTraining(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key,-1);if(!q.allowed)throw Error(q.reasons.join('；'));if(q.nextRank)h.training[key]=q.nextRank;else delete h.training[key];h.xp+=q.refund;return n;}
+export function applyTrainingPlan(g,id,plan){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h||typeof plan?.expected!=='string')throw Error('培养草案缺少角色或原始快照');const q=quoteTrainingPlan(h,plan.target,{expected:plan.expected});if(!q.allowed)throw Error(q.reasons.join('；'));h.xp=q.availableAfter;h.training=q.target;return validateGuild(n);}
 export function equip(g,id,gear){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h||!Object.hasOwn(GEAR,gear))throw Error('装备无效');if(!h.owned.includes(gear)){if(isRelic(gear))throw Error('地下城装备须从战利品仓库分配');if(n.gold<GEAR_PRICE)throw Error('公会金币不足');n.gold-=GEAR_PRICE;h.owned.push(gear);}h.gear=replaceEquipment(h.gear,gear);return n;}
 export function retrain(g,id){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('队员无效');const returned=h.xp+trainingInvestment(h.training);if(!Number.isSafeInteger(returned))throw Error('返还后经验超出安全范围');h.xp=returned;h.training={};return n;}
 
