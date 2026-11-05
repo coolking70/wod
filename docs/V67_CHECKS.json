@@ -1,0 +1,26 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "note": "Normal earned fixture and explicit draft edits; no XP, equipment, training or progression transferred. Room comparison cannot mutate the engine room list. No reference directory means old-engine equivalence is null, not verified.",
+  "historyId": 11,
+  "roomScope": [
+    "gallery",
+    "cistern",
+    "altar"
+  ],
+  "ignoredHistoricalRooms": [
+    "harbor_cache"
+  ],
+  "memberAssetsUnchanged": true,
+  "defaultRoomOverrideCleared": true,
+  "currentDormantRoomPreserved": true,
+  "realDeparture": {
+    "seed": 12,
+    "rooms": 3,
+    "won": true
+  },
+  "unchanged": {
+    "reference": "dd3bcc9",
+    "count": 9,
+    "excluded": []
+  }
+}

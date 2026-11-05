@@ -63,7 +63,8 @@ function format(key,value){
  return String(value);
 }
 export function configurationChanges(a,b){
- const roomLabels=a.expedition===b.expedition?roomsFor(a):[...new Set([...roomsFor(a),...roomsFor(b)].map(r=>r.id))].map(id=>({id,name:'房间槽 '+id}));
+ const roomLabels=a.expedition===b.expedition?roomsFor(a).map(r=>({id:r.id,name:r.name})):[...new Set([...roomsFor(a),...roomsFor(b)].map(r=>r.id))].map(id=>({id,name:'房间槽 '+id}));
+ const knownRooms=new Set(roomLabels.map(r=>r.id));for(const id of [...Object.keys(a.roomOrders),...Object.keys(b.roomOrders),...[...a.heroes,...b.heroes].flatMap(h=>Object.keys(h.overrides))])if(!knownRooms.has(id)){knownRooms.add(id);roomLabels.push({id,name:'其他房间槽 '+id});}
  const changes=[],labels={advancement:'后期职业进阶',pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
  const compare=(label,key,x,y)=>{if(canonical(x??null)!==canonical(y??null))changes.push({label,before:format(key,x),after:format(key,y)});};
  if(a.expedition==='harbor'||b.expedition==='harbor'){compare('港口符纸预留','harborReserve',harborReserve(a),harborReserve(b));compare('港口难度','harborDifficulty',harborDifficulty(a),harborDifficulty(b));compare('港口通路策略','harborPass',a.harbor?.pass,b.harbor?.pass);compare('港口事件策略','harborTask',a.harbor?.task,b.harbor?.task);}

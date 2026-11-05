@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前433项测试通过，0失败/跳过；168个ES模块、21个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前441项测试通过，0失败/跳过；173个ES模块、22个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -102,3 +102,7 @@ roleTargetCandidates与伙伴预览共用初始能力筛选，不检查敌方法
 ## v0.66接续
 
 historyComparison新增lineupChanges元数据，原有变化计数/逐人列表保持；快照是深复制，分离left/joined，不猜多人配对。settings是对应配置，rooms是按各自路线resolve后的实际计划。草稿不等于拥有资产，历史无XP/课程付款字段则不补推。433回归与只读/历史导出浏览器闭环通过。可继续单角色战术复用等独立工作，保持资产/课程校验，不需要为版本号等待用户确认；完整原版数值仍需实际参考服资料。
+
+## v0.67接续
+
+historyTacticPreview/reuseHistoryTactic只复制PERSONAL_TACTIC_FIELDS，保持身份/装备/道具种类/永久训练/进阶/经验及全队全局设置。仅当前同职业出战目标，课程未学/待结算/过期拒绝，重新计算不信任传入结果。copyRooms只在同路线允许，按两份路线roomsFor的ID并集替换；范围外当前覆盖保留、历史额外槽忽略。比较器把合法额外roomOrders/overrides也列入，标签数组须新建，不能push到roomsFor返回的静态房间数组。v33旧断言已精确补齐两项变化，441全过。check-v67参考dd3bcc9、生成正常额外槽备份；最后浏览器release-browser。配置undo不回滚托管职责，恢复原职责需伙伴面板明确选择，不得声称完整事务撤回。所有代码只本地提交，原版数值仍待参考服证据。
