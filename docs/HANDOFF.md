@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前499项测试通过，0失败/跳过；200个ES模块、30个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前506项测试通过，0失败/跳过；204个ES模块、31个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -181,3 +181,13 @@ watchProfiles用普通疗所→付费训练→正常铸库潮渠13/7→分配巡
 499回归/200mjs30cjs语法；compare-reports对v74核9旧路线，V75_FOUNDRY_CHECKS另核回廊/潮渠/自动各3种子完整报告；无排除。未重跑v73/v74矩阵或旧候补活动研究。v75没有新增插图，既有图复用按文档记录，不上传新浏览器截图。
 
 连续内容告一段落后的真实产品决定为是否进入原M4/R4每人一角色异步小组；DECISION_ASYNC_GROUP列出最小两参与者/六位置、所有权、准备版本、权威模拟和幂等资产的具体切片，不实施未决账号/云服务。原版参考服仍待核，普通技能自由+独立进阶已确认，不重复问。保持不push/merge/deploy，原生Library交付仍以实际失败记录为准。
+
+## v0.76单人归航续接
+
+用户已选择单人，DECISION_ASYNC_GROUP暂缓，不再反复问。基线a54957c干净499测试，本地feature/v076-foundry-homecoming。远端只读快照在V76_REMOTE_CHECK；origin URL与v75候选ref已确认，v75远端当时不存在，main16986e0；不推送。当前新阶段不改变v75本地ref，便于父线程单独处理已完成分支。
+
+foundry-story独立定义三段正常已结算条件（foundry clear、任一foundry目标、watch clear）与convoy/archive/vigil结局，40gold和指定现有遗物，无XP。g.foundryStory只存ending，validateGuild检查字段与已完成条件；claimFoundryStory在editable后检查canClaim、安全数值，加一次金币和仓库，最后validate返回。只读进度/视图不写；重复改选拒绝，pending不能交付，存储沿用原raw检查。
+
+guild pane journey、地图入口、三个故事段落/结局预览、装备来源已接；同一故事结局不改变未来敌情。UI prepare路由只载入foundryConfig/watchConfig，资产/职责保留。story CSS自适应三列/单列。新课、训练或技能规则没有改动。
+
+506测试，204mjs31cjs语法。check-v76正常watch seed4领奖形成3/3，各结局独立快照精确40/1件，archive分配学者后seed5再通；带v75参考目录对4种pending/report/reward/claim逐对象相同，compare-reports另核9旧报告。browser-v76桌面/390px0→2→3、实验不进度、待结算刷新、旧标签页拒绝改选、装备分配、历史同报告、备份同结局通过。截图只内部验收。未重跑旧大样本。接续主线章节/港口单人旅程，不新增服务或多人投入。

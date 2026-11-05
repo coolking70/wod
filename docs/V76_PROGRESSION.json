@@ -1,0 +1,215 @@
+{
+  "unchanged": {
+    "reference": "a54957cc2af51d3c65542718130a05a873f46477",
+    "cases": [
+      {
+        "name": "foundry-split",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      },
+      {
+        "name": "foundry-shelter",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      },
+      {
+        "name": "watch-split",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      },
+      {
+        "name": "watch-shelter",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      }
+    ],
+    "excluded": []
+  },
+  "note": "Normal earned guild, then actual watch departure/settlement. Three endings tested from independent copies of the same legal unclaimed checkpoint, not three rewards in one playthrough.",
+  "before": {
+    "next": 4,
+    "gold": 480,
+    "progress": {
+      "steps": [
+        {
+          "id": "quiet",
+          "title": "让炉火停下",
+          "route": "foundry",
+          "condition": "领取一次锈潮铸库通关结算",
+          "before": "老匠赫宁听见外港又响起了炉锤声。“他们守着一座早该散班的工坊。先让炉火停下，再看看守望者到底留下了什么。”",
+          "after": "炉心安静下来，赫宁把耳朵贴在锈门上。“终于能听见海了。现在，让外港知道你们带回了什么。”",
+          "done": true
+        },
+        {
+          "id": "proof",
+          "title": "带回一种回答",
+          "route": "foundry",
+          "condition": "正常完成“封存图纸”或“整队归航”任一目标",
+          "before": "带回完整图纸，或让同行的人完整归航。赫宁没有替你们决定哪一个更值得：“别只报一个胜字。告诉我，你们为什么还能回来。”",
+          "after": "外港收到了你们的回答。图纸与同伴的名字都能证明，这趟远征并非只为把守军打倒；已经完成的两项目标任意一项都计入旅程。",
+          "done": true
+        },
+        {
+          "id": "watch",
+          "title": "替最后一班交接",
+          "route": "foundrywatch",
+          "condition": "领取一次封库守望通关结算",
+          "before": "换防门廊的灯仍亮着。解印师、医师与守望者各守一段旧命令，没人知道谁有权宣布散班。把他们的配合拆开，替最后一班完成交接。",
+          "after": "最后一班交出了钥印。赫宁在空白的交接簿上停了很久，终于把笔推向你们：“剩下的，由活着回来的人决定。”",
+          "done": false
+        }
+      ],
+      "completed": 2,
+      "ready": false,
+      "ending": null,
+      "canClaim": false,
+      "reason": "完成三段实际远征条件后，可以选择归航结局。"
+    }
+  },
+  "watch": {
+    "seed": 4,
+    "won": true,
+    "reward": {
+      "cleared": 3,
+      "gold": 210,
+      "xp": 90,
+      "firstClear": true,
+      "loot": [
+        "watchseal"
+      ]
+    }
+  },
+  "ready": {
+    "next": 5,
+    "gold": 690,
+    "progress": {
+      "steps": [
+        {
+          "id": "quiet",
+          "title": "让炉火停下",
+          "route": "foundry",
+          "condition": "领取一次锈潮铸库通关结算",
+          "before": "老匠赫宁听见外港又响起了炉锤声。“他们守着一座早该散班的工坊。先让炉火停下，再看看守望者到底留下了什么。”",
+          "after": "炉心安静下来，赫宁把耳朵贴在锈门上。“终于能听见海了。现在，让外港知道你们带回了什么。”",
+          "done": true
+        },
+        {
+          "id": "proof",
+          "title": "带回一种回答",
+          "route": "foundry",
+          "condition": "正常完成“封存图纸”或“整队归航”任一目标",
+          "before": "带回完整图纸，或让同行的人完整归航。赫宁没有替你们决定哪一个更值得：“别只报一个胜字。告诉我，你们为什么还能回来。”",
+          "after": "外港收到了你们的回答。图纸与同伴的名字都能证明，这趟远征并非只为把守军打倒；已经完成的两项目标任意一项都计入旅程。",
+          "done": true
+        },
+        {
+          "id": "watch",
+          "title": "替最后一班交接",
+          "route": "foundrywatch",
+          "condition": "领取一次封库守望通关结算",
+          "before": "换防门廊的灯仍亮着。解印师、医师与守望者各守一段旧命令，没人知道谁有权宣布散班。把他们的配合拆开，替最后一班完成交接。",
+          "after": "最后一班交出了钥印。赫宁在空白的交接簿上停了很久，终于把笔推向你们：“剩下的，由活着回来的人决定。”",
+          "done": true
+        }
+      ],
+      "completed": 3,
+      "ready": true,
+      "ending": null,
+      "canClaim": true,
+      "reason": "可以选择一个结局，领取一次旅程奖励。"
+    }
+  },
+  "branches": [
+    {
+      "ending": "convoy",
+      "gear": "bellowscoat",
+      "gold": 40,
+      "warehouseBefore": 0,
+      "warehouseAfter": 1,
+      "noRepeat": true
+    },
+    {
+      "ending": "archive",
+      "gear": "kilngauge",
+      "gold": 40,
+      "warehouseBefore": 0,
+      "warehouseAfter": 1,
+      "noRepeat": true
+    },
+    {
+      "ending": "vigil",
+      "gear": "watchseal",
+      "gold": 40,
+      "warehouseBefore": 1,
+      "warehouseAfter": 2,
+      "noRepeat": true
+    }
+  ],
+  "archive": {
+    "ending": "archive",
+    "gold": 730,
+    "member": "d",
+    "accessory": "kilngauge"
+  },
+  "later": {
+    "seed": 5,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 换防门廊",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 606,
+        "mp": 320,
+        "supplies": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        }
+      },
+      {
+        "name": "02 · 断印索桥",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 569,
+        "mp": 278,
+        "supplies": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 8
+        }
+      },
+      {
+        "name": "03 · 最后一班守望",
+        "won": true,
+        "rounds": 9,
+        "survivors": 6,
+        "hp": 567,
+        "mp": 243,
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 7
+        }
+      }
+    ]
+  }
+}

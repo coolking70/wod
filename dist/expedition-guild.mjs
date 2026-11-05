@@ -11,6 +11,7 @@ import {advancementStatus,validMemberAdvancement} from './expedition-advancement
 import {trainingQuote,trainingInvestment} from './expedition-training.mjs';
 import {ROUTE_REWARDS,expeditionReward,isRelic} from './expedition-loot.mjs';
 import {defaults,clone,HEROES,GEAR,trainingOptions,MAX_TRAINING_RANK} from './expedition-data.mjs';
+import {validateFoundryStory,foundryStoryProgress,FOUNDRY_STORY_ENDINGS,FOUNDRY_STORY_GOLD} from './expedition-foundry-story.mjs';
 import {validate,simulate} from './expedition-engine.mjs';
 export const GUILD_KEY='abbey-guild-v6';
 export const GEAR_PRICE=60;
@@ -19,6 +20,7 @@ const integer=n=>Number.isSafeInteger(n)&&n>=0;
 export function validateGuild(g){
  validateCommand(g?.command);
  validateFoundryState(g?.foundry);
+ validateFoundryStory(g?.foundryStory);
  if(!g||g.version!==6||!integer(g.gold)||!integer(g.next)||g.next<1||!Array.isArray(g.members)||g.members.length<6||g.members.length>HEROES.length||new Set(g.members.map(h=>h.id)).size!==g.members.length)throw Error('公会存档格式无效');
  if(!g.harbor||!integer(g.harbor.charts)||!Array.isArray(g.harbor.claimed)||new Set(g.harbor.claimed).size!==g.harbor.claimed.length||g.harbor.claimed.some(id=>!Object.hasOwn(HARBOR_OBJECTIVES,id)))throw Error('港口委托存档无效');
  validateRoster(g);
@@ -29,6 +31,7 @@ export function validateGuild(g){
  if(g.pending!==null){validateCommand(g.pending?.command);if(!g.pending||g.pending.id!==g.next-1||g.history.some(r=>r.id===g.pending.id))throw Error('待结算远征无效');validate(g.pending.config);for(const h of g.pending.config.heroes){const m=g.members.find(m=>m.id===h.id);if(!sameEquipment(h.gear,m.gear)||JSON.stringify(h.training)!==JSON.stringify(m.training)||(h.advancement||null)!==(m.advancement?.path||null))throw Error('远征资产快照不一致');assertGuildSkills(m,h);}}
  if(!g.warehouse||typeof g.warehouse!=="object"||Array.isArray(g.warehouse)||Object.entries(g.warehouse).some(([k,n])=>!isRelic(k)||!integer(n))||!g.clears||typeof g.clears!=="object"||Array.isArray(g.clears)||Object.entries(g.clears).some(([k,n])=>!Object.hasOwn(ROUTE_REWARDS,k)||!integer(n)))throw Error("战利品或通关记录无效");
  if(g.pending&&![1,2].includes(g.pending.rewardVersion))throw Error("结算版本无效");
+ if(g.foundryStory&&!foundryStoryProgress(g).ready)throw Error('铸库归航记录缺少正常远征条件');
  return g;
 }
 export function migrateGuild(input){return validateGuild(clone(input));}
@@ -44,6 +47,14 @@ export function claim(g){validateGuild(g);if(!g.pending)throw Error('没有待�
  if(g.pending.rewardVersion===2&&report.won)n.clears[report.config.expedition]=(n.clears[report.config.expedition]||0)+1;
  n.history.unshift({id:g.pending.id,route:report.config.expedition,won:report.won,...reward,config:clone(g.pending.config),...(g.pending.command?{command:clone(g.pending.command)}:{})});n.history=n.history.slice(0,20);n.pending=null;return n;}
 export function assignLoot(g,id,gear){const n=editable(g),h=n.members.find(h=>h.id===id);if(!h||!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('没有可分配的战利品');if(h.owned.includes(gear))throw Error('该队员已拥有此装备，可分给其他队员或出售');n.warehouse[gear]--;h.owned.push(gear);h.gear=replaceEquipment(h.gear,gear);return n;}
+export function claimFoundryStory(g,ending){
+ const n=editable(g),p=foundryStoryProgress(n);
+ if(typeof ending!=='string'||!Object.hasOwn(FOUNDRY_STORY_ENDINGS,ending))throw Error('请选择有效的归航结局');
+ if(!p.canClaim)throw Error(p.reason);
+ const gear=FOUNDRY_STORY_ENDINGS[ending].gear,gold=n.gold+FOUNDRY_STORY_GOLD,count=(n.warehouse[gear]||0)+1;
+ if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');
+ n.gold=gold;n.warehouse[gear]=count;n.foundryStory={ending};return validateGuild(n);
+}
 export function sellLoot(g,gear){const n=editable(g);if(!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('仓库中没有该装备');n.warehouse[gear]--;n.gold+=20;return n;}
 function editable(g){validateGuild(g);if(g.pending)throw Error('领取远征结算后才能更改公会资产');return clone(g);}
 export function train(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key);if(!q.allowed)throw Error(q.reasons.join('；'));h.xp-=q.cost;h.training={...h.training,[key]:q.nextRank};return n;}

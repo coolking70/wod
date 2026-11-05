@@ -1,0 +1,17 @@
+{
+  "remote": "origin",
+  "fetchUrl": "https://github.com/coolking70/wod.git",
+  "pushUrls": [
+    "https://github.com/coolking70/wod.git"
+  ],
+  "localBranch": "feature/v075-foundry-watch",
+  "localRef": "refs/heads/feature/v075-foundry-watch",
+  "localCommit": "a54957cc2af51d3c65542718130a05a873f46477",
+  "workingTreeClean": true,
+  "remoteRefExists": false,
+  "remoteMainCommit": "16986e02d205e6bff1261e375b0ef8bc6d20777c",
+  "candidatePushTarget": "origin refs/heads/feature/v075-foundry-watch",
+  "pushExecuted": false,
+  "date": "2026-11-05",
+  "scope": "Read-only config/status/show/log/ls-remote; no remote mutation"
+}

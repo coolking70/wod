@@ -1,10 +1,12 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.75「封库守望」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；已记录的main基线为v0.45，本轮未重新核验远端。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.76「铸库归航」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；已记录的main基线为v0.45，本轮未重新核验远端。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
-新增三场后续挑战“封库守望”与固定守望徽记，按真实敌方救护/截疗/召唤/屏障持续分工，见[v0.75报告](docs/V75_FOUNDRY_WATCH.md)。下一类异步组队系统的待决方案见[异步小组](docs/DECISION_ASYNC_GROUP.md)。
+新增三场后续挑战“封库守望”与固定守望徽记，按真实敌方救护/截疗/召唤/屏障持续分工，见[v0.75报告](docs/V75_FOUNDRY_WATCH.md)。用户已选择继续单人内容，异步组队暂缓。
+
+新增可完成的[铸库归航单人旅程](docs/V76_HOMECOMING.md)：正常探索与目标串成故事，三种可预览结局提供一次定向奖励。
 
 ## 开发交接入口
 
