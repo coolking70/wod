@@ -1,0 +1,8 @@
+import {SKILLS,DEFENSES,TYPES} from './expedition-data.mjs';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function trainingRehearsalView(p){
+ if(!p)return '';
+ const a=p.summary.before,b=p.summary.after,rows=[['远征结果',a.won?'通关':'止步',b.won?'通关':'止步'],['已通关场数',a.cleared,b.cleared],['生还角色',a.alive,b.alive],['总回合',a.rounds,b.rounds],['本人施放次数',a.personal.casts,b.personal.casts],['本人施放法力',a.personal.castMana,b.personal.castMana],['本人实际伤害',a.personal.damage,b.personal.damage],['本人实际治疗',a.personal.healing,b.personal.healing],['本人增益施加',a.personal.buffApplications,b.personal.buffApplications],['本人阻止救护次数',a.personal.healingBlocks,b.personal.healingBlocks]];
+ for(const [key,name] of Object.entries({herb:'药草',rune:'符纸',arrow:'箭矢'}))rows.push(['本人消耗'+name,a.personal.supplies[key],b.personal.supplies[key]]);
+ return `<section class="training-rehearsal"><h3>${esc(p.name)} · 培养草案试演</h3><p>当前公会资产与草案使用同一出征方案、种子${p.seed}分别完整模拟；没有出征、支付经验或发放奖励。只改本人的永久训练，课程、后期进阶、装备与指令保留。</p><p>${[...p.skills.map(r=>`${SKILLS[r.skill].name}静态等级 ${r.before}→${r.after}`),...p.defenses.map(r=>`${TYPES[r.type]} / ${DEFENSES[r.defense].name}出发等级 ${r.before}→${r.after}`)].map(esc).join('；')||'实际出战静态技能未变化'}</p><div class="training-rehearsal-scroll"><table><thead><tr><th>实测项</th><th>当前培养</th><th>培养草案</th></tr></thead><tbody>${rows.map(([name,x,y])=>`<tr><th>${name}</th><td>${x}</td><td>${y}</td></tr>`).join('')}</tbody></table></div><p>这是一个种子的功能比较，不是胜率或稳定收益；不同动作可能改变后续随机抽取顺序。止步后的较少回合不能当作效率优势，伤害差异也不等于该技能的独立贡献。</p><button data-training-report="before">查看当前培养战报</button><button data-training-report="after">查看草案战报</button></section>`;
+}

@@ -1,0 +1,491 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "unchanged": {
+    "reference": "066cdec",
+    "reports": 9,
+    "excluded": []
+  },
+  "rehearsals": [
+    {
+      "id": "a",
+      "seed": 10,
+      "cost": 120,
+      "refund": 120,
+      "summary": {
+        "before": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 74,
+            "healing": 0,
+            "received": 0,
+            "taken": 0,
+            "casts": 9,
+            "castMana": 12,
+            "defenseMana": 4,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 4,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 0,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        },
+        "after": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 69,
+            "healing": 0,
+            "received": 0,
+            "taken": 0,
+            "casts": 9,
+            "castMana": 12,
+            "defenseMana": 4,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 4,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 0,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        }
+      }
+    },
+    {
+      "id": "b",
+      "seed": 10,
+      "cost": 120,
+      "refund": 120,
+      "summary": {
+        "before": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 269,
+            "healing": 0,
+            "received": 0,
+            "taken": 18,
+            "casts": 7,
+            "castMana": 35,
+            "defenseMana": 1,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 0,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 0,
+              "arrow": 7
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        },
+        "after": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 269,
+            "healing": 0,
+            "received": 0,
+            "taken": 18,
+            "casts": 7,
+            "castMana": 35,
+            "defenseMana": 1,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 0,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 0,
+              "arrow": 7
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        }
+      }
+    },
+    {
+      "id": "c",
+      "seed": 10,
+      "cost": 120,
+      "refund": 120,
+      "summary": {
+        "before": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 539,
+            "healing": 0,
+            "received": 0,
+            "taken": 0,
+            "casts": 7,
+            "castMana": 42,
+            "defenseMana": 14,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 0,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 7,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        },
+        "after": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 557,
+            "healing": 0,
+            "received": 0,
+            "taken": 0,
+            "casts": 7,
+            "castMana": 42,
+            "defenseMana": 14,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 0,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 7,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        }
+      }
+    },
+    {
+      "id": "d",
+      "seed": 10,
+      "cost": 120,
+      "refund": 120,
+      "summary": {
+        "before": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 224,
+            "healing": 0,
+            "received": 0,
+            "taken": 20,
+            "casts": 9,
+            "castMana": 21,
+            "defenseMana": 14,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 3,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 3,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        },
+        "after": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 210,
+            "healing": 0,
+            "received": 0,
+            "taken": 20,
+            "casts": 9,
+            "castMana": 21,
+            "defenseMana": 14,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 3,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 3,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        }
+      }
+    },
+    {
+      "id": "e",
+      "seed": 10,
+      "cost": 120,
+      "refund": 120,
+      "summary": {
+        "before": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 92,
+            "healing": 0,
+            "received": 47,
+            "taken": 60,
+            "casts": 13,
+            "castMana": 27,
+            "defenseMana": 0,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 15,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 0,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        },
+        "after": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 80,
+            "healing": 0,
+            "received": 47,
+            "taken": 60,
+            "casts": 13,
+            "castMana": 27,
+            "defenseMana": 0,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 15,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 0,
+              "rune": 0,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        }
+      }
+    },
+    {
+      "id": "f",
+      "seed": 10,
+      "cost": 120,
+      "refund": 120,
+      "summary": {
+        "before": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 7,
+          "alive": 6,
+          "personal": {
+            "damage": 52,
+            "healing": 47,
+            "received": 0,
+            "taken": 0,
+            "casts": 7,
+            "castMana": 8,
+            "defenseMana": 14,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 6,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 2,
+              "rune": 0,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 9
+          }
+        },
+        "after": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 8,
+          "alive": 6,
+          "personal": {
+            "damage": 17,
+            "healing": 47,
+            "received": 0,
+            "taken": 0,
+            "casts": 7,
+            "castMana": 8,
+            "defenseMana": 18,
+            "failed": 0,
+            "items": 0,
+            "summonDamage": 0,
+            "buffApplications": 6,
+            "controlApplications": 0,
+            "healingBlocks": 0,
+            "passiveHealing": 0,
+            "passiveRecords": 0,
+            "passiveOverheal": 0,
+            "supplies": {
+              "herb": 2,
+              "rune": 0,
+              "arrow": 0
+            },
+            "issues": []
+          },
+          "supplies": {
+            "herb": 14,
+            "rune": 11,
+            "arrow": 9
+          }
+        }
+      }
+    }
+  ],
+  "note": "Six normally earned characters; both complete rehearsal reports equal real departure reports before/after explicit application. Guild inputs unchanged. Functional cases, not win-rate or class rankings."
+}

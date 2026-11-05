@@ -8,7 +8,7 @@ README → PROJECT_STATUS → V58_GROWTH_ACCOUNTING → ROADMAP → DEVELOPMENT_
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码，不是缓存。Node24.19.0、Python3.12.14、Chromium154.0.8037.57；407项测试通过，150个ES模块及14个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码，不是缓存。Node24.19.0、Python3.12.14、Chromium154.0.8037.57；415项测试通过，154个ES模块及15个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --directory dist
@@ -67,3 +67,7 @@ trainingCost返回递增费用单位，经验金额用trainingInvestment；没�
 ## v0.59接续
 
 quoteTrainingPlan只读，applyTrainingPlan重新计算费用与余额并原子保存；不信任客户端结果。trainingSnapshot覆盖个人成长与profile，既有草案过期时须重启。UI草案只驻内存，刷新丢弃，不改公会schema/key。check-v59参考63975dd，九份旧报告及六职业换训完整等价。继续只读试演；不推送、合并或部署。
+
+## v0.60接续
+
+rehearseTrainingPlan对当前/原子应用后的独立配置模拟下一次出征种子，不改公会。summaries复用personalReport，真实防御用defenseProfile；不可把healingBlocks说成本人治疗被阻止，它是本人截疗造成的救护受阻。loadReport的可选origin仅用于可见试演提示，不写战报格式；正式加载清除。缓存覆盖公会raw、准备配置和目标/成长快照，跨页变化须重新进入。check-v60参考066cdec；12份报告与实际出征严格相同。继续候补验证，无新推送授权。
