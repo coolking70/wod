@@ -89,3 +89,7 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .training-plan{padding:16px;border:1px solid #48636b;margin:16px 0;background:#10252d}.training-plan-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.training-plan-options label{display:flex;flex-direction:column;gap:6px}.training-plan-options select{min-width:0;width:100%}.training-plan-totals{line-height:1.8}.training-plan button{margin:5px 8px 5px 0}
 
 .training-rehearsal{padding:16px;border:1px solid #6e7857;margin:16px 0;background:#18282a}.training-rehearsal-scroll{overflow-x:auto}.training-rehearsal table{width:100%;border-collapse:collapse}.training-rehearsal th,.training-rehearsal td{padding:8px;text-align:left;border-bottom:1px solid #3d5054}.training-rehearsal button{margin:5px 8px 5px 0}
+
+.roster-growth{font-size:.85rem;line-height:1.6;color:#b8ced0;overflow-wrap:anywhere}
+
+@media(max-width:500px){.roster-active{grid-template-columns:repeat(2,minmax(0,1fr))}}

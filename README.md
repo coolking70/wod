@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.60「六职业进阶」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；main仍为v0.45。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.61「候补成长核对」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；main仍为v0.45。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
 
 ## 开发交接入口
 
@@ -29,6 +29,11 @@ v0.46从v0.45重新实现：逐房协作核对、288次候补对照、268项测�
 
 原创 WoD 灵感远征原型，尚非原版数值复刻。十一路线地图、真实单场引导、六人多套构筑起点与六场连续章节已接入。生命、法力、道具与补给跨房间继承，救援和沉钟事件改变遭遇；战报仍保留实际检定与因果依据。新增敌方支援角色AI画像，保留既有事件插画与战术实验。已加入本机公会存档、金币/经验结算、永久训练、个人装备购买与备份恢复。公会与实验配置分离，新增路线奖励、首通记录、九件地下城专属装备、公会仓库与属性比较。新增六职业高阶普通课程、三个成长阶段和公会学习限制，并接入独立的六职业后期研修。新增熟练/资深两条试炼、敌方组合、三套对照方案与128次样本。新增六人实际资产核对、逐房间指令视图与定位调整入口。新增三部位固定配装、30件具名装备、按部位比较、技能条件影响与掉落来源。新增盐风港四场连续遭遇、七个可能节点、两项预设策略、实际状态选路与解封因果记录。两张原创AI场景图按事件呈现。港口通关海图、三项一次性委托与三件指定装备兑换已接入公会结算。新增可选风暴敌群、职责分工/分散方案、三项风暴目标、逐房效率复盘和敌方治疗溯源。暂无账号和云同步。
 
+- docs/V61_TRAINED_RESERVES.md：个人名册成长、288次较高成长候补验证与失败边界。
+- docs/V60_TRAINING_REHEARSAL.md：当前/培养草案只读试演，完整战报与真实出征一致。
+- docs/V59_TRAINING_PLANS.md：目标培养费用/退款、过期保护与原子应用。
+- docs/V58_GROWTH_ACCOUNTING.md：只读原型参数和经验去向账目。
+- docs/DELTA_REFERENCE_CANDIDATE.md：中文Delta仅为未选择的可替换研究参考。
 - docs/V57_ALL_CLASS_ADVANCEMENT.md：六职业各两个独立后期方向，392项测试与六职业浏览器验收。
 - docs/RULE_CALIBRATION_BOUNDARY.md：下一轮原版数值校准的参考服/规则资料缺口。
 - docs/V56_INDEPENDENT_ADVANCEMENT.md：独立后期进阶、真实资格/支付/重选、普通技能保留，384项测试与浏览器验收。
@@ -81,7 +86,7 @@ v0.46从v0.45重新实现：逐房协作核对、288次候补对照、268项测�
 - docs/V27_LOOT.md：奖励表、战利品仓库、旧存档迁移与验证。
 - docs/V26_GUILD.md：固定公会规则、持久化边界与验收。
 - docs/V25_ADVENTURE.md：实现范围、96次样本、验证与待决策事项。
-- dist/index.html：v0.57 主入口；legacy.html 保留v0.2。
+- dist/index.html：v0.61 主入口；legacy.html 保留v0.2。
 - dist/expedition-data.mjs：原创内容、默认配置与迁移。
 - dist/expedition-engine.mjs：无DOM的确定性模拟。
 - dist/expedition-report.mjs：无损事件分组。

@@ -1,0 +1,8442 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "note": "Every XP, course, training rank and advancement comes from normal guild transactions. No balance values changed. All six cases fixed before discovery and all carried to confirmation, including failures. Roster comparisons also change roles and damage distribution; equal seeds do not guarantee identical random streams. Not a profession ranking or universal recommendation.",
+  "prerequisites": {
+    "completed": 28,
+    "trainingRuns": [
+      {
+        "id": 10,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 11,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 12,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 13,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 14,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 15,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 16,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 17,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 18,
+        "won": true,
+        "rooms": 3,
+        "earned": 40
+      },
+      {
+        "id": 19,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 20,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 21,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 22,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 23,
+        "won": true,
+        "rooms": 3,
+        "earned": 40
+      },
+      {
+        "id": 24,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 25,
+        "won": true,
+        "rooms": 3,
+        "earned": 40
+      },
+      {
+        "id": 26,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      },
+      {
+        "id": 27,
+        "won": true,
+        "rooms": 3,
+        "earned": 40
+      },
+      {
+        "id": 28,
+        "won": false,
+        "rooms": 3,
+        "earned": 20
+      }
+    ],
+    "members": [
+      {
+        "id": "a",
+        "earned": 905,
+        "available": 545,
+        "training": {
+          "skill:strike": 3,
+          "defense:parry": 3
+        },
+        "unlocked": [
+          "rallyguard"
+        ],
+        "advancement": {
+          "path": "shieldcraft",
+          "paidXp": 80
+        }
+      },
+      {
+        "id": "b",
+        "earned": 445,
+        "available": 85,
+        "training": {
+          "skill:pierce": 3,
+          "defense:dodge": 3
+        },
+        "unlocked": [
+          "sweep"
+        ],
+        "advancement": {
+          "path": "huntercraft",
+          "paidXp": 80
+        }
+      },
+      {
+        "id": "c",
+        "earned": 905,
+        "available": 545,
+        "training": {
+          "skill:lance": 3,
+          "defense:resist": 3
+        },
+        "unlocked": [
+          "tidebolt"
+        ],
+        "advancement": {
+          "path": "evoker",
+          "paidXp": 80
+        }
+      },
+      {
+        "id": "d",
+        "earned": 905,
+        "available": 545,
+        "training": {
+          "skill:spark": 3,
+          "defense:resist": 3
+        },
+        "unlocked": [
+          "foresight"
+        ],
+        "advancement": {
+          "path": "wardcraft",
+          "paidXp": 80
+        }
+      },
+      {
+        "id": "e",
+        "earned": 445,
+        "available": 85,
+        "training": {
+          "skill:shot": 3,
+          "defense:resist": 3
+        },
+        "unlocked": [
+          "resolvechant"
+        ],
+        "advancement": {
+          "path": "mentor",
+          "paidXp": 80
+        }
+      },
+      {
+        "id": "f",
+        "earned": 905,
+        "available": 545,
+        "training": {
+          "skill:shot": 3,
+          "defense:resist": 3
+        },
+        "unlocked": [
+          "poultice"
+        ],
+        "advancement": {
+          "path": "emergency",
+          "paidXp": 80
+        }
+      },
+      {
+        "id": "mira",
+        "earned": 460,
+        "available": 100,
+        "training": {
+          "skill:suppress": 3,
+          "defense:resist": 3
+        },
+        "unlocked": [
+          "foresight"
+        ],
+        "advancement": {
+          "path": "sigilcraft",
+          "paidXp": 80
+        }
+      },
+      {
+        "id": "orin",
+        "earned": 460,
+        "available": 100,
+        "training": {
+          "skill:heal": 3,
+          "defense:resist": 3
+        },
+        "unlocked": [
+          "poultice"
+        ],
+        "advancement": {
+          "path": "apothecary",
+          "paidXp": 80
+        }
+      }
+    ]
+  },
+  "rows": [
+    {
+      "group": "discovery",
+      "route": "hospice",
+      "key": "original",
+      "name": "原阵容",
+      "summary": {
+        "runs": 8,
+        "wins": 8,
+        "allAlive": 8,
+        "successfulRounds": 16.625
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 600,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 538,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 552,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 632,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 711,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 593,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 530,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 14,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 471,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 7
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "hospice",
+      "key": "scholarSplit",
+      "name": "米菈替射手：屏障与节制截疗",
+      "summary": {
+        "runs": 8,
+        "wins": 8,
+        "allAlive": 8,
+        "successfulRounds": 17.375
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 14,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 584,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 589,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 14
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 667,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 607,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 591,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 646,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 547,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 509,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "hospice",
+      "key": "scholarSeal",
+      "name": "米菈替射手：护印与节制截疗",
+      "summary": {
+        "runs": 8,
+        "wins": 8,
+        "allAlive": 8,
+        "successfulRounds": 17.5
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 660,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 595,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 583,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 645,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 599,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 713,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 565,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 615,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "hospice",
+      "key": "healerBard",
+      "name": "奥林替吟游：普通救护与缓释",
+      "summary": {
+        "runs": 8,
+        "wins": 8,
+        "allAlive": 2,
+        "successfulRounds": 36.5
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 34,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 277,
+          "healing": 108,
+          "passiveHealing": 108,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 272,
+          "healing": 83,
+          "passiveHealing": 83,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 21
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 188,
+          "healing": 76,
+          "passiveHealing": 76,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 309,
+          "healing": 70,
+          "passiveHealing": 70,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 19
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 34,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 258,
+          "healing": 110,
+          "passiveHealing": 110,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 16
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 296,
+          "healing": 71,
+          "passiveHealing": 71,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 34,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 289,
+          "healing": 119,
+          "passiveHealing": 119,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 300,
+          "healing": 104,
+          "passiveHealing": 104,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "hospice",
+      "key": "healerRanger",
+      "name": "奥林替射手：普通救护与缓释",
+      "summary": {
+        "runs": 8,
+        "wins": 8,
+        "allAlive": 8,
+        "successfulRounds": 20.25
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 188,
+          "healing": 67,
+          "passiveHealing": 67,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 181,
+          "healing": 119,
+          "passiveHealing": 119,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 101,
+          "healing": 91,
+          "passiveHealing": 91,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 147,
+          "healing": 38,
+          "passiveHealing": 38,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 80,
+          "healing": 83,
+          "passiveHealing": 83,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 147,
+          "healing": 81,
+          "passiveHealing": 81,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 186,
+          "healing": 46,
+          "passiveHealing": 46,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 166,
+          "healing": 104,
+          "passiveHealing": 104,
+          "healingBlocks": 0,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "hospice",
+      "key": "healerImmediate",
+      "name": "奥林替吟游：双普通救护",
+      "summary": {
+        "runs": 8,
+        "wins": 8,
+        "allAlive": 6,
+        "successfulRounds": 36.625
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 209,
+          "healing": 102,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 43,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 207,
+          "healing": 138,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 34,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 203,
+          "healing": 145,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 261,
+          "healing": 123,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 32,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 271,
+          "healing": 176,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 226,
+          "healing": 208,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 6
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 36,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 235,
+          "healing": 180,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 4
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 230,
+          "healing": 263,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "storm",
+      "key": "original",
+      "name": "原阵容",
+      "summary": {
+        "runs": 8,
+        "wins": 8,
+        "allAlive": 8,
+        "successfulRounds": 29.25
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 29,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 447,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 28,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 463,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 27,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 493,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 16
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 30,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 497,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 19
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 530,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 19
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 29,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 402,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 30,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 480,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 18
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 29,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 430,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "storm",
+      "key": "scholarSplit",
+      "name": "米菈替射手：屏障与节制截疗",
+      "summary": {
+        "runs": 8,
+        "wins": 4,
+        "allAlive": 1,
+        "successfulRounds": 39.25
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 47,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 323,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 30
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 30
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 467,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": false,
+          "alive": 3,
+          "rooms": 2,
+          "rounds": 43,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 250,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 15
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 14
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 417,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 415,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 52,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 309,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 30
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 29
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 487,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 21
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": false,
+          "alive": 2,
+          "rooms": 3,
+          "rounds": 48,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 387,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "storm",
+      "key": "scholarSeal",
+      "name": "米菈替射手：护印与节制截疗",
+      "summary": {
+        "runs": 8,
+        "wins": 7,
+        "allAlive": 3,
+        "successfulRounds": 39.42857142857143
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1085,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1042,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 817,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 28
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1060,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1048,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1080,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1075,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1071,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "storm",
+      "key": "healerBard",
+      "name": "奥林替吟游：普通救护与缓释",
+      "summary": {
+        "runs": 8,
+        "wins": 0,
+        "allAlive": 0,
+        "successfulRounds": null
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 46,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 304,
+          "healing": 25,
+          "passiveHealing": 25,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 50,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 357,
+          "healing": 133,
+          "passiveHealing": 85,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 32
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 390,
+          "healing": 91,
+          "passiveHealing": 91,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 44,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 236,
+          "healing": 69,
+          "passiveHealing": 69,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 27
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 19
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 46,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 307,
+          "healing": 45,
+          "passiveHealing": 45,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 28
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 14
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 358,
+          "healing": 63,
+          "passiveHealing": 15,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 33
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 18
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 204,
+          "healing": 65,
+          "passiveHealing": 17,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 25
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 214,
+          "healing": 14,
+          "passiveHealing": 14,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "storm",
+      "key": "healerRanger",
+      "name": "奥林替射手：普通救护与缓释",
+      "summary": {
+        "runs": 8,
+        "wins": 0,
+        "allAlive": 0,
+        "successfulRounds": null
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 247,
+          "healing": 93,
+          "passiveHealing": 38,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 25
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 225,
+          "healing": 54,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": false,
+          "alive": 0,
+          "rooms": 1,
+          "rounds": 27,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 160,
+          "healing": 40,
+          "passiveHealing": 40,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 30,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 176,
+          "healing": 188,
+          "passiveHealing": 59,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 198,
+          "healing": 49,
+          "passiveHealing": 49,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 16
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 172,
+          "healing": 235,
+          "passiveHealing": 23,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 19
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 141,
+          "healing": 112,
+          "passiveHealing": 41,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 207,
+          "healing": 109,
+          "passiveHealing": 26,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 20
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "discovery",
+      "route": "storm",
+      "key": "healerImmediate",
+      "name": "奥林替吟游：双普通救护",
+      "summary": {
+        "runs": 8,
+        "wins": 0,
+        "allAlive": 0,
+        "successfulRounds": null
+      },
+      "samples": [
+        {
+          "seed": 33,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 47,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 383,
+          "healing": 134,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 23
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 34,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 53,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 402,
+          "healing": 249,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 25
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 35,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 56,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 358,
+          "healing": 255,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 26
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 25
+            }
+          ]
+        },
+        {
+          "seed": 36,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 50,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 376,
+          "healing": 195,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 26
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 37,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 370,
+          "healing": 171,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 38,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 54,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 412,
+          "healing": 151,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 26
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 25
+            }
+          ]
+        },
+        {
+          "seed": 39,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 396,
+          "healing": 222,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 25
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 40,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 53,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 359,
+          "healing": 295,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "hospice",
+      "key": "original",
+      "name": "原阵容",
+      "summary": {
+        "runs": 16,
+        "wins": 16,
+        "allAlive": 16,
+        "successfulRounds": 16.4375
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 577,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 517,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 578,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 684,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 621,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 573,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 642,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 586,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 565,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 539,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 14,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 522,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 13,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 444,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 6
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 539,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 574,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 579,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 533,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "hospice",
+      "key": "scholarSplit",
+      "name": "米菈替射手：屏障与节制截疗",
+      "summary": {
+        "runs": 16,
+        "wins": 16,
+        "allAlive": 16,
+        "successfulRounds": 17.9375
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 606,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 594,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 629,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 557,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 670,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 691,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 749,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 654,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 14
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 461,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 571,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 535,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 607,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 544,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 582,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 11
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 572,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 578,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 10
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "hospice",
+      "key": "scholarSeal",
+      "name": "米菈替射手：护印与节制截疗",
+      "summary": {
+        "runs": 16,
+        "wins": 16,
+        "allAlive": 16,
+        "successfulRounds": 17.75
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 622,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 617,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 686,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 594,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 681,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 550,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 656,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 630,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 586,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 584,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 622,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 569,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 14
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 629,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 14
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 504,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 555,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "mira",
+          "damage": 570,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "hospice",
+      "key": "healerBard",
+      "name": "奥林替吟游：普通救护与缓释",
+      "summary": {
+        "runs": 16,
+        "wins": 13,
+        "allAlive": 3,
+        "successfulRounds": 37.30769230769231
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": false,
+          "alive": 1,
+          "rooms": 2,
+          "rounds": 42,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 286,
+          "healing": 121,
+          "passiveHealing": 121,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 15
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 43,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 277,
+          "healing": 132,
+          "passiveHealing": 132,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 16
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 245,
+          "healing": 146,
+          "passiveHealing": 146,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 353,
+          "healing": 120,
+          "passiveHealing": 120,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 19
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 33,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 260,
+          "healing": 77,
+          "passiveHealing": 77,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": false,
+          "alive": 3,
+          "rooms": 2,
+          "rounds": 44,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 343,
+          "healing": 106,
+          "passiveHealing": 106,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 23
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 294,
+          "healing": 84,
+          "passiveHealing": 84,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 288,
+          "healing": 139,
+          "passiveHealing": 139,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 299,
+          "healing": 108,
+          "passiveHealing": 108,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 218,
+          "healing": 98,
+          "passiveHealing": 98,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 258,
+          "healing": 81,
+          "passiveHealing": 81,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 205,
+          "healing": 69,
+          "passiveHealing": 69,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 273,
+          "healing": 108,
+          "passiveHealing": 108,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 5,
+          "rooms": 3,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 314,
+          "healing": 88,
+          "passiveHealing": 88,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 15
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 308,
+          "healing": 95,
+          "passiveHealing": 95,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 14
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": false,
+          "alive": 4,
+          "rooms": 2,
+          "rounds": 43,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 304,
+          "healing": 120,
+          "passiveHealing": 120,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 20
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "hospice",
+      "key": "healerRanger",
+      "name": "奥林替射手：普通救护与缓释",
+      "summary": {
+        "runs": 16,
+        "wins": 16,
+        "allAlive": 16,
+        "successfulRounds": 21.125
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 143,
+          "healing": 82,
+          "passiveHealing": 82,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 25,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 195,
+          "healing": 67,
+          "passiveHealing": 67,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 140,
+          "healing": 86,
+          "passiveHealing": 86,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 183,
+          "healing": 80,
+          "passiveHealing": 80,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 105,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 178,
+          "healing": 59,
+          "passiveHealing": 59,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 106,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 143,
+          "healing": 60,
+          "passiveHealing": 60,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 131,
+          "healing": 60,
+          "passiveHealing": 60,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 210,
+          "healing": 55,
+          "passiveHealing": 55,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 3
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 134,
+          "healing": 70,
+          "passiveHealing": 70,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 161,
+          "healing": 60,
+          "passiveHealing": 60,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 102,
+          "healing": 98,
+          "passiveHealing": 98,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 165,
+          "healing": 88,
+          "passiveHealing": 88,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 166,
+          "healing": 99,
+          "passiveHealing": 99,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 198,
+          "healing": 66,
+          "passiveHealing": 66,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 194,
+          "healing": 66,
+          "passiveHealing": 66,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 116,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 12
+          },
+          "observer": "orin",
+          "damage": 151,
+          "healing": 66,
+          "passiveHealing": 66,
+          "healingBlocks": 0,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "hospice",
+      "key": "healerImmediate",
+      "name": "奥林替吟游：双普通救护",
+      "summary": {
+        "runs": 16,
+        "wins": 15,
+        "allAlive": 15,
+        "successfulRounds": 36.93333333333333
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 266,
+          "healing": 161,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 6
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 225,
+          "healing": 317,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 7
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": false,
+          "alive": 5,
+          "rooms": 2,
+          "rounds": 42,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 183,
+          "healing": 242,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 13
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 230,
+          "healing": 260,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 276,
+          "healing": 177,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 4
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 280,
+          "healing": 193,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 36,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 229,
+          "healing": 180,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 7
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 243,
+          "healing": 143,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 5
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 250,
+          "healing": 288,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 7
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 278,
+          "healing": 211,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 5
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 34,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 191,
+          "healing": 57,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": []
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 242,
+          "healing": 96,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 246,
+          "healing": 144,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 3
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 42,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 242,
+          "healing": 117,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 8
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 258,
+          "healing": 144,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 7
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": true,
+          "alive": 6,
+          "rooms": 3,
+          "rounds": 34,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 199,
+          "healing": 63,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "storm",
+      "key": "original",
+      "name": "原阵容",
+      "summary": {
+        "runs": 16,
+        "wins": 15,
+        "allAlive": 15,
+        "successfulRounds": 29.333333333333332
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 30,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 483,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 19
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 18
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 31,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 522,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 33,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 486,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 21
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 20
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 28,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 382,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 28,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 512,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 27,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 489,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 26,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 472,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 15
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 28,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 410,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 16
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 29,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 382,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 29,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 504,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 30,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 444,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 31,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 424,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 20
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 18
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 31,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 483,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 29,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 528,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 18
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 42,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 341,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 26
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 25
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 30,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "d",
+          "damage": 447,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 19
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "storm",
+      "key": "scholarSplit",
+      "name": "米菈替射手：屏障与节制截疗",
+      "summary": {
+        "runs": 16,
+        "wins": 12,
+        "allAlive": 6,
+        "successfulRounds": 39.25
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 4,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 505,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 4,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 410,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 440,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 422,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 23
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 277,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": false,
+          "alive": 3,
+          "rooms": 2,
+          "rounds": 43,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 283,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 430,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 400,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 4,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 433,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": false,
+          "alive": 4,
+          "rooms": 2,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 245,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 399,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 415,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 23
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 443,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 420,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 2,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 42,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 451,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 1,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": false,
+          "alive": 4,
+          "rooms": 2,
+          "rounds": 41,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 282,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 3,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "ward",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "suppress",
+              "count": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "storm",
+      "key": "scholarSeal",
+      "name": "米菈替射手：护印与节制截疗",
+      "summary": {
+        "runs": 16,
+        "wins": 11,
+        "allAlive": 3,
+        "successfulRounds": 39.45454545454545
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1072,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1091,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 51,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 896,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 33
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 52,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 735,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 26
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 45,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 768,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1180,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 930,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1087,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": true,
+          "alive": 4,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1109,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1071,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 788,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 31
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": true,
+          "alive": 6,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 961,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": true,
+          "alive": 4,
+          "rooms": 4,
+          "rounds": 39,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1026,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 50,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 760,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 26
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": true,
+          "alive": 5,
+          "rooms": 4,
+          "rounds": 43,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1184,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 25
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": true,
+          "alive": 4,
+          "rooms": 4,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "mira",
+          "damage": 1009,
+          "healing": 0,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "bulwark",
+              "count": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "storm",
+      "key": "healerBard",
+      "name": "奥林替吟游：普通救护与缓释",
+      "summary": {
+        "runs": 16,
+        "wins": 0,
+        "allAlive": 0,
+        "successfulRounds": null
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": false,
+          "alive": 0,
+          "rooms": 1,
+          "rounds": 31,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 202,
+          "healing": 36,
+          "passiveHealing": 36,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 43,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 303,
+          "healing": 75,
+          "passiveHealing": 75,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 25
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 48,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 264,
+          "healing": 19,
+          "passiveHealing": 19,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 31
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 18
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 55,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 338,
+          "healing": 84,
+          "passiveHealing": 84,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 35
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 31
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 45,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 311,
+          "healing": 76,
+          "passiveHealing": 76,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 53,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 410,
+          "healing": 39,
+          "passiveHealing": 39,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 35
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 19
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 45,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 249,
+          "healing": 54,
+          "passiveHealing": 54,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 16
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 29
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 46,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 339,
+          "healing": 70,
+          "passiveHealing": 70,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 27
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 318,
+          "healing": 64,
+          "passiveHealing": 64,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": false,
+          "alive": 0,
+          "rooms": 1,
+          "rounds": 25,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 137,
+          "healing": 45,
+          "passiveHealing": 45,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 9
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 40,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 208,
+          "healing": 92,
+          "passiveHealing": 44,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 20
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 50,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 323,
+          "healing": 88,
+          "passiveHealing": 88,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 14
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": false,
+          "alive": 0,
+          "rooms": 1,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 94,
+          "healing": 55,
+          "passiveHealing": 55,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 44,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 196,
+          "healing": 26,
+          "passiveHealing": 26,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 48,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 254,
+          "healing": 62,
+          "passiveHealing": 14,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 28
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": false,
+          "alive": 2,
+          "rooms": 1,
+          "rounds": 31,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 183,
+          "healing": 47,
+          "passiveHealing": 47,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 15
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "storm",
+      "key": "healerRanger",
+      "name": "奥林替射手：普通救护与缓释",
+      "summary": {
+        "runs": 16,
+        "wins": 0,
+        "allAlive": 0,
+        "successfulRounds": null
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 228,
+          "healing": 82,
+          "passiveHealing": 22,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 21
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 266,
+          "healing": 55,
+          "passiveHealing": 55,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 22
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 30,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 165,
+          "healing": 34,
+          "passiveHealing": 34,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 15
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 33,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 263,
+          "healing": 82,
+          "passiveHealing": 30,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 21
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 29,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 131,
+          "healing": 122,
+          "passiveHealing": 53,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": false,
+          "alive": 0,
+          "rooms": 1,
+          "rounds": 25,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 109,
+          "healing": 76,
+          "passiveHealing": 20,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 35,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 195,
+          "healing": 99,
+          "passiveHealing": 42,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 12
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 18
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 34,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 248,
+          "healing": 177,
+          "passiveHealing": 33,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 33,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 144,
+          "healing": 92,
+          "passiveHealing": 36,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 18
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": false,
+          "alive": 0,
+          "rooms": 1,
+          "rounds": 23,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 117,
+          "healing": 38,
+          "passiveHealing": 38,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 6
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 168,
+          "healing": 28,
+          "passiveHealing": 28,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 17
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 33,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 177,
+          "healing": 128,
+          "passiveHealing": 15,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 14
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 38,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 292,
+          "healing": 203,
+          "passiveHealing": 37,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 25
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": false,
+          "alive": 0,
+          "rooms": 1,
+          "rounds": 26,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 150,
+          "healing": 39,
+          "passiveHealing": 39,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 14
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 32,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 252,
+          "healing": 70,
+          "passiveHealing": 11,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 21
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 37,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 10
+          },
+          "observer": "orin",
+          "damage": 237,
+          "healing": 140,
+          "passiveHealing": 27,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "slowcare",
+              "count": 24
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "confirmation",
+      "route": "storm",
+      "key": "healerImmediate",
+      "name": "奥林替吟游：双普通救护",
+      "summary": {
+        "runs": 16,
+        "wins": 0,
+        "allAlive": 0,
+        "successfulRounds": null
+      },
+      "samples": [
+        {
+          "seed": 101,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 52,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 357,
+          "healing": 195,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 26
+            }
+          ]
+        },
+        {
+          "seed": 102,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 52,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 379,
+          "healing": 272,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 26
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "seed": 103,
+          "won": false,
+          "alive": 1,
+          "rooms": 2,
+          "rounds": 52,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 435,
+          "healing": 194,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 33
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 30
+            }
+          ]
+        },
+        {
+          "seed": 104,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 53,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 316,
+          "healing": 216,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 26
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 23
+            }
+          ]
+        },
+        {
+          "seed": 105,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 393,
+          "healing": 145,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 28
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 28
+            }
+          ]
+        },
+        {
+          "seed": 106,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 51,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 344,
+          "healing": 198,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 30
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 28
+            }
+          ]
+        },
+        {
+          "seed": 107,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 50,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 414,
+          "healing": 168,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 26
+            }
+          ]
+        },
+        {
+          "seed": 108,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 51,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 340,
+          "healing": 107,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 30
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 26
+            }
+          ]
+        },
+        {
+          "seed": 109,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 56,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 309,
+          "healing": 245,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 29
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 27
+            }
+          ]
+        },
+        {
+          "seed": 110,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 53,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 364,
+          "healing": 196,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 31
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 29
+            }
+          ]
+        },
+        {
+          "seed": 111,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 58,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 425,
+          "healing": 229,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 36
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 34
+            }
+          ]
+        },
+        {
+          "seed": 112,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 49,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 403,
+          "healing": 193,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 21
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 20
+            }
+          ]
+        },
+        {
+          "seed": 113,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 55,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 446,
+          "healing": 262,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 26
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 21
+            }
+          ]
+        },
+        {
+          "seed": 114,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 48,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 278,
+          "healing": 300,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 22
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 19
+            }
+          ]
+        },
+        {
+          "seed": 115,
+          "won": false,
+          "alive": 0,
+          "rooms": 3,
+          "rounds": 52,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 428,
+          "healing": 107,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 31
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 30
+            }
+          ]
+        },
+        {
+          "seed": 116,
+          "won": false,
+          "alive": 0,
+          "rooms": 2,
+          "rounds": 50,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "observer": "orin",
+          "damage": 301,
+          "healing": 244,
+          "passiveHealing": 0,
+          "healingBlocks": 0,
+          "issues": [
+            {
+              "reason": "耗材耗尽",
+              "skill": "provisions",
+              "count": 25
+            },
+            {
+              "reason": "耗材耗尽",
+              "skill": "heal",
+              "count": 21
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

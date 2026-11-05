@@ -1,73 +1,84 @@
 # 接手开发指南
 
-## 先读
+## 先读与当前约束
 
-README → PROJECT_STATUS → V58_GROWTH_ACCOUNTING → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V57_ALL_CLASS_ADVANCEMENT → V56_INDEPENDENT_ADVANCEMENT → V55_EXPERIENCE_TRAINING → V54_FREE_TRAINING。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V61_TRAINED_RESERVES → V60_TRAINING_REHEARSAL → V59_TRAINING_PLANS → V58_GROWTH_ACCOUNTING。
 
-用户已确认普通技能自由培养、独立后期职业进阶；DECISION_SPECIALIZATION只是已撤回的历史提案，不得据它重新询问或实现普通技能互斥。原版数值标定的参考服/版本及资料仍待补，见RULE_CALIBRATION_BOUNDARY；这不阻塞培养规划等独立开发。Delta仅为可替换研究候选。
+用户已确认普通职业技能自由培养、独立后期职业进阶；DECISION_SPECIALIZATION仅是已撤回的普通技能互斥提案，不得据它重新询问或实施。参考服务器/版本尚未指定，Delta只作可替换研究候选，运行profile.referenceServer为null。这个资料约束只影响原版数值标定，不阻塞其他开发，见RULE_CALIBRATION_BOUNDARY与DELTA_REFERENCE_CANDIDATE。
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码，不是缓存。Node24.19.0、Python3.12.14、Chromium154.0.8037.57；415项测试通过，154个ES模块及15个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前415项测试通过，0失败/跳过；156个ES模块、16个浏览器脚本语法检查通过。
 
 ```sh
-python3 -m http.server 8000 --directory dist
+python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
 node --test tests/*.test.mjs
 node --check dist/expedition-ui.mjs
-git worktree add --detach /tmp/wod-v056-check 988ddcd
-node scripts/check-v57.mjs /tmp/wod-v056-check
-git worktree remove /tmp/wod-v056-check
+git worktree add --detach /tmp/wod-v059-check 066cdec
+node scripts/check-v60.mjs /tmp/wod-v059-check
+git worktree remove /tmp/wod-v059-check
+node scripts/check-v61.mjs
 git diff --check
 ```
 
-check-v57生成/tmp/wod-v57-earned-guild.json，来自正常8次疗所结算、课程/训练及资深试炼通关，不注入经验或通关标志。可用WOD_EARNED_GUILD指定备份路径。浏览器脚本browser-v57.cjs需外部Playwright/Chromium与HTTP服务，四个WOD_*参数沿用V49报告；当前默认备份路径与check脚本一致。服务端口可自由选择，本轮仅绑定127.0.0.1:8002，没有公开部署。
+check-v60要求v0.59参考目录，检查9份完整旧报告及六人12份试演/实际出征报告等价，不排除标签。check-v61重建正常赚取候补，并执行288次固定发现/确认组，更新对应docs回执；会花费几十秒，未完成时不得把旧回执称为本轮结果。check-v57生成/tmp/wod-v57-earned-guild.json，check-v61生成/tmp/wod-v61-trained-roster.json，两者均可用WOD_EARNED_GUILD改路径，且都来自普通游戏事务，不注入经验。
 
-规则标签original-wod-inspired-0.57.0，配置schema仍0.40.0。页面v13/v14/v16的1,824条活动样本已按当前引擎重放，除规则标签外数值相同。历史研究数据保持当时口径，不冒充新进阶的平衡验证。历史全报告比较应检出对应提交；当前入口为check-v57和v0.56参考工作树。无参考目录执行会把旧版比较写为null，不得称为复验通过。
+浏览器脚本需要外部Playwright/Chromium与HTTP服务。示例（路径由实际环境提供，不要求依赖在BrogueJS）：
+
+```sh
+WOD_PLAYWRIGHT_MODULE=/absolute/path/to/playwright \
+WOD_CHROMIUM_PATH=/usr/bin/chromium \
+WOD_BASE_URL=http://127.0.0.1:8000 \
+WOD_EVIDENCE_DIR=/tmp/wod-browser-v61 \
+node scripts/browser-v61.cjs
+```
+
+浏览器备份只在独立测试上下文通过正常恢复入口导入，不覆盖用户浏览器。当前本轮服务仅127.0.0.1:8002，未部署公开站点。
+
+规则标签保持original-wod-inspired-0.57.0，schema仍0.40.0、guild key仍abbey-guild-v6。本次v0.58–v0.61没有改变战斗数值/事件结构。活动样本1,824条最后重放于v0.57，本次未重跑；旧研究口径和这次288次候补研究分开，不能混称。
 
 ## 代码地图
 
 | 路径 | 职责 |
 |---|---|
-| dist/index.html、expedition-ui.mjs、expedition.css | 当前入口、准备/实验、回放与证据 |
-| dist/expedition-data.mjs、content.mjs | 原创内容、技能、配置与每项训练上限 |
-| dist/expedition-engine.mjs | 无DOM确定性模拟，规则/呈现分离 |
-| dist/expedition-training.mjs | 逐级费用、累计投入与精确退款报价 |
-| dist/expedition-growth.mjs | 当前3阶段与高阶普通课程；不是原版完整英雄等级 |
-| dist/expedition-advancement-data.mjs、advancement.mjs | 项目后期路径、统一法力/效果加成及资格（后者同样有expedition-前缀） |
-| dist/expedition-guild*.mjs、roster*.mjs、personal*.mjs | 个人资产、公会、名册和逐人报告 |
-| dist/expedition-readiness.mjs | 真实资产核对，customizeForEditing保留实际职责再切自定义 |
-| dist/expedition-equipment*.mjs、loot.mjs | 固定属性装备、来源和奖励（后者有expedition-前缀） |
-| dist/expedition-disruption.mjs、healing.mjs、regeneration.mjs | 禁疗、救护决策和缓释触发（后两项同样有前缀） |
-| dist/expedition-cooperation.mjs、support*.mjs、source-trace.mjs | 协作候选、原始支援字段及来源（后两项同样有前缀） |
-| dist/expedition-harbor*.mjs、resource-ledger.mjs | 港口分支/预留与用料账本（后者有前缀） |
-| dist/expedition-report.mjs、review.mjs、stage.mjs、history*.mjs | 分组、复盘、战场和历史（后几项同样有前缀） |
-| scripts/、tests/、docs/、dist/assets/ | 复验脚本、测试、报告/截图和素材 |
-| .openai/hosting.json | 原Site身份/目录配置；不是GitHub Pages配置 |
+| dist/index.html、expedition-ui.mjs、expedition.css | 当前入口、编辑/回放/实验；loadReport可选origin显示试演提示 |
+| dist/expedition-data.mjs、content.mjs、engine.mjs | 原创内容、配置和确定性引擎（后两项同样有expedition-前缀） |
+| dist/expedition-progression-rules.mjs | 当前项目的只读成长参数；研究资料不能选择运行规则 |
+| dist/expedition-growth.mjs、progression-view.mjs | 成长阶段与个人四类经验账目（后者有expedition-前缀） |
+| dist/expedition-training.mjs、training-plan.mjs、training-plan-view.mjs | 单项报价、整份草案与原子调配入口（后两项有前缀） |
+| dist/expedition-training-rehearsal.mjs、training-rehearsal-view.mjs | 真实资产的当前/草案双试演及事实比较（后者有前缀） |
+| dist/expedition-advancement-data.mjs、advancement.mjs | 12条项目后期路径、法力/效果来源和资格（后者有前缀） |
+| dist/expedition-guild*.mjs、roster*.mjs、personal*.mjs | 公会事务、个人资产/名册成长与战报投影（后两项有前缀） |
+| dist/expedition-readiness.mjs、command*.mjs | 实际资产核对与伙伴职责，编辑时保留实际方案（后者有前缀） |
+| dist/expedition-equipment*.mjs、loot.mjs | 固定装备、来源和奖励（后者有前缀） |
+| dist/expedition-disruption.mjs、healing.mjs、regeneration.mjs | 截疗、救护、缓释（后两项有前缀） |
+| dist/expedition-cooperation.mjs、support*.mjs、source-trace.mjs | 支援字段与来源，不计算胜负贡献（后两项有前缀） |
+| dist/expedition-harbor*.mjs、resource-ledger.mjs | 港口分支/预留与收支（后者有前缀） |
+| dist/expedition-report.mjs、review.mjs、stage.mjs、history*.mjs | 分组、复盘、表现与历史（后几项有前缀） |
+| scripts/advancement-cases.mjs、trained-reserve-cases.mjs | 正常赚取测试状态；后者的低成长同时培养路径并非玩家推荐 |
+| scripts/、tests/、docs/、dist/assets/ | 复验、测试、报告/截图及素材 |
+| .openai/hosting.json | 原Site身份/目录配置，不是本轮部署授权 |
 
-## 实现边界
+## 资产与草案边界
 
-trainingCost返回递增费用单位，经验金额用trainingInvestment；没有总6点预算，MAX_TRAINING_RANK只约束每项。公会必须实际付经验，实验不能发放资产；降低一级只返该级成本，退到零不能重复退款。
+trainingCost返回递增费用单位，经验用trainingInvestment。无总6点预算，每项上限仍为项目参数+3；公会实际付经验，实验不能授予资产。experienceLedger把可用、训练、课程与后期进阶分开；退回不降低累计/阶段、不遗忘课程，装备/临时加成不算永久投入。
 
-个人advancement={path,paidXp:80}是独立资产，配置仅存路径。guildConfig、readiness、companionPreview和historyComparison都须经applyAdvancementAsset读取个人选择，实验草稿不能授予真实进阶。skillManaCost同时用于施法、治疗决策及预览；effectBonus进入真实效果值与来源，不能额外算一次贡献。
+quoteTrainingPlan只读，applyTrainingPlan重新计算整份目标费用/退款，净额用整数处理，不相信界面传入金额。快照覆盖profile及本人身份/经验/培养/课程/进阶；本人变化须重开草案。草案只驻当前页面内存，刷新丢弃；不是公会存档的一部分。待结算禁止应用，既有跨页保存冲突保护保留。
 
-已付进阶成本计入careerXp，退回守恒；普通unlocked课程与训练不被删除。历史保留当时路径，当前退回不改历史；待结算必须匹配现有资产且不允许中途改配。普通技能互斥和后期路径选择是两种不同约束，不能混为一谈。
+rehearseTrainingPlan只在独立克隆中应用，按实际下一次种子模拟当前/草案，不创建pending或奖励。实际配置复用guildConfig，包括个人装备、训练、已选进阶和托管职责。缓存覆盖公会raw、准备配置和目标/成长快照，过期不展示，跨页变化须重新进入。回放的origin只是界面提示，不写入战报结构。personalReport.healingBlocks表示本人截疗造成救护受阻，不能写成本人治疗被阻止。
 
-当前300经验/资深试炼/80费用、3阶段、每项+3均是项目参数。原版1–40英雄等级、差异费用/金币、精通冻结与重置点尚未核实为某个现行服规则，不能把历史百科当作已验证数值。规则证据和HTTP403缺口见WOD_DESIGN_REFERENCE_2026-11-05与RULE_CALIBRATION_BOUNDARY。
+个人advancement={path,paidXp:80}是独立资产；guildConfig/readiness/companionPreview/historyComparison须读取真实选择。skillManaCost用于施法、治疗决策及预览，effectBonus进入实际字段。历史保持当时路径，不随当前重选改变。
 
-## Git与发布
+当前所有费用、3阶段、每项+3和12路径效果都是项目参数。将来校准成本须先处理已付金额/数据，不能直接切换profile重算旧投入。完整原版等级、差异费用/金币、精通冻结与重置点尚未核实某个现行服，未擅自移植；禁止把历史百科和Delta单个技能公开描述当作完整现行成本表。
 
-本轮从v0.53 1970394继续，v0.54 8a63322、v0.55 7b033c1、v0.56 988ddcd及v0.57均仅本地。最后已批准推送的仍为v0.49 d6f77b8；本轮只读核验main为16986e0，未推送新阶段、合并或部署。源码、验证与报告一起提交；后续推送或Site发布遵循实际用户授权，不因一般建议自动执行。
+## 候补证据与后续
 
-本机存档不等于源码备份。不要提交凭据、个人浏览器数据或临时运行文件；测试备份由正常游戏事务生成、只在独立测试上下文恢复。素材来源见ASSETS与历史报告，没有补造第三方许可或全仓库开源许可证。
+v0.61正常构造共28次结算，候补各460经验，19次同时培养中15次止步。它证明资产可正常赚取，不证明培养路径高效。固定较高成长疗所确认组：米菈两种分工和奥林替射手均16/16六人生还，平均回合比原阵容更长；风暴双药师0/16、学者也未优于本次原阵容。只增加有限可用案例，不完成全路线/早期成长可靠性，不新增通用升级快捷方案。
 
-## v0.58接续
+独立下一步可先验证逐名上场、及时投入与早期职责，保留当前经验归属，不需要预先添加免费候补经验。若真实证据要求改经验归属或成长经济，再作为产品取舍处理，不能以参考服待定为由暂停所有工作。
 
-当前feature/v058-growth-accounting：PROGRESSION_RULES是深层只读的项目参数，无已选参考服。experienceLedger按可用/训练/课程/进阶分解累计经验；重修不遗忘课程。check-v58需v0.57 a533454参考目录，21份完整战报严格等价，不排除规则标签；RULESET仍0.57。browser-v58验证真实赚取备份中的逐级/整体/进阶退款账目。没有复跑活动样本，不能把上轮重放算作本轮执行。继续做培养草案；不推送、合并或部署。
+## Git、交付与权限
 
-## v0.59接续
+本轮续接v0.57 a533454，v0.58 63975dd、v0.59 066cdec、v0.60 a9f7d50及v0.61均只本地。最后获准推送仍为v0.49 d6f77b8；main为16986e0。未推送新阶段、合并或部署，后续遵从实际授权。
 
-quoteTrainingPlan只读，applyTrainingPlan重新计算费用与余额并原子保存；不信任客户端结果。trainingSnapshot覆盖个人成长与profile，既有草案过期时须重启。UI草案只驻内存，刷新丢弃，不改公会schema/key。check-v59参考63975dd，九份旧报告及六职业换训完整等价。继续只读试演；不推送、合并或部署。
-
-## v0.60接续
-
-rehearseTrainingPlan对当前/原子应用后的独立配置模拟下一次出征种子，不改公会。summaries复用personalReport，真实防御用defenseProfile；不可把healingBlocks说成本人治疗被阻止，它是本人截疗造成的救护受阻。loadReport的可选origin仅用于可见试演提示，不写战报格式；正式加载清除。缓存覆盖公会raw、准备配置和目标/成长快照，跨页变化须重新进入。check-v60参考066cdec；12份报告与实际出征严格相同。继续候补验证，无新推送授权。
+源码/补丁/Git bundle/校验清单位于/workspace/wod-delivery/对应版本目录；本地文件不代表原生Library文件，未创建文件ID。旧交付保留。测试证据在/workspace/wod-evidence/。本机游戏存档不等于Git源码备份，不提交凭据、个人浏览器数据或临时运行文件。素材来源见ASSETS，未补造第三方许可或全仓库开源许可证。
