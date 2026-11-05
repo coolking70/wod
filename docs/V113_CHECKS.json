@@ -1,0 +1,328 @@
+{
+  "version": "0.113",
+  "branch": "feature/v113-confluence-infirmary",
+  "baseline": "b401325f0c64d50d71aef1ac16deac340098d7e6",
+  "fullTests": {
+    "passed": 838,
+    "failed": 0,
+    "skipped": 0,
+    "log": "full-tests.tap"
+  },
+  "newTests": {
+    "passed": 10,
+    "failed": 0,
+    "log": "unit-initial.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 21,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "pageErrors": 0,
+    "stockScopeLabelsVerified": true,
+    "log": "acceptance/browser-acceptance.json",
+    "finalNewWorkflow": "browser-v113.json",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 425
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 118,
+    "checkedReferences": 135,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "b401325f0c64d50d71aef1ac16deac340098d7e6",
+    "priorRoutes": 21,
+    "currentRoutes": 22,
+    "newRoute": "confluence",
+    "count": 42,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "legacyChecker": "scripts/check-v113-legacy.mjs",
+  "normalProgression": {
+    "routes": [
+      {
+        "plan": "source",
+        "seed": 1,
+        "objective": "clear",
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 3,
+          "gold": 175,
+          "xp": 75,
+          "firstClear": true,
+          "loot": [
+            "triagepin"
+          ]
+        },
+        "gold": 175,
+        "rounds": [
+          5,
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 2,
+          "rune": 4,
+          "arrow": 0
+        },
+        "enemyGroup": 0,
+        "enemySingle": 3,
+        "enemyHealingBlocked": 0,
+        "interceptAttempts": 2,
+        "enemyGroupCasts": []
+      },
+      {
+        "plan": "suppress",
+        "seed": 2,
+        "objective": "survive",
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 3,
+          "gold": 120,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "triagepin"
+          ]
+        },
+        "gold": 295,
+        "rounds": [
+          5,
+          4,
+          8
+        ],
+        "supplies": {
+          "herb": 1,
+          "rune": 0,
+          "arrow": 0
+        },
+        "enemyGroup": 3,
+        "enemySingle": 6,
+        "enemyHealingBlocked": 3,
+        "interceptAttempts": 0,
+        "enemyGroupCasts": [
+          {
+            "id": 45,
+            "room": 0,
+            "round": 1,
+            "actor": "cfcm",
+            "targets": [
+              "cfc1",
+              "cfc2"
+            ],
+            "mana": 10,
+            "amount": 2,
+            "herbBefore": 11,
+            "herbAfter": 11
+          },
+          {
+            "id": 554,
+            "room": 2,
+            "round": 3,
+            "actor": "cfsm",
+            "targets": [
+              "cfs2",
+              "cfs1"
+            ],
+            "mana": 10,
+            "amount": 2,
+            "herbBefore": 4,
+            "herbAfter": 4
+          },
+          {
+            "id": 600,
+            "room": 2,
+            "round": 4,
+            "actor": "cfsm",
+            "targets": [
+              "cfs2",
+              "cfs1"
+            ],
+            "mana": 10,
+            "amount": 2,
+            "herbBefore": 3,
+            "herbAfter": 3
+          }
+        ]
+      },
+      {
+        "plan": "spread",
+        "seed": 3,
+        "objective": "reserve",
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 3,
+          "gold": 120,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "triagepin"
+          ]
+        },
+        "gold": 415,
+        "rounds": [
+          6,
+          6,
+          5
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 8
+        },
+        "enemyGroup": 0,
+        "enemySingle": 1,
+        "enemyHealingBlocked": 0,
+        "interceptAttempts": 3,
+        "enemyGroupCasts": []
+      }
+    ],
+    "fullReportsAndGuildEqualToAPI": true,
+    "earnedGoldBalances": [
+      175,
+      295,
+      415
+    ],
+    "paidTraining": {
+      "hero": "d",
+      "key": "skill:suppress",
+      "xp": 20
+    },
+    "ownedGearAssigned": {
+      "hero": "f",
+      "item": "triagepin"
+    },
+    "goalProofIds": [
+      1,
+      2,
+      3
+    ],
+    "goalCount": 66,
+    "campaignPlanAndBindingRestore": true,
+    "historyImmutableNoDuplicateClaim": true
+  },
+  "finiteCases": {
+    "count": 18,
+    "plans": [
+      "source",
+      "suppress",
+      "spread"
+    ],
+    "seeds": [
+      1,
+      2,
+      7,
+      19,
+      73,
+      731
+    ],
+    "allWon": true,
+    "allSixStanding": true,
+    "initialDiscoveryOutcomesRetained": true,
+    "enemyStatsTunedAfterDiscovery": false,
+    "limits": "Fresh authored cases only. Complete presets change several decisions; equal seed is not a paired attack-RNG or single-skill causal comparison. Suppression cases exhaust rune/arrow, some spread cases exhaust herbs and take longer."
+  },
+  "content": {
+    "rooms": 3,
+    "groupMedicScopes": [
+      "front",
+      "rear",
+      "front"
+    ],
+    "groupMedicPositions": [
+      "rear",
+      "left",
+      "rear"
+    ],
+    "lastRoomHealers": 2,
+    "firstClearReward": {
+      "gold": 175,
+      "xp": 75,
+      "gear": "triagepin"
+    },
+    "repeatClearReward": {
+      "gold": 120,
+      "xp": 55,
+      "gear": "triagepin"
+    },
+    "gearTradeoffs": "int+2/per+2/rangedResist+10; con-2/wil-1/magicResist-10; no automatic award or equip"
+  },
+  "initialFindings": {
+    "fullTestFailure": "One old 4/21 route receipt expectation; updated to 4/22 and full suite rerun. Map/goal counts increased strictly to 22/66; reward/outcome assertions unchanged.",
+    "browserFailure": "Fixture path omitted -api-guild suffix; corrected reference, full comparisons retained.",
+    "discoveryNote": "Discovery-only null actor diagnostic corrected; all original 18 results retained.",
+    "logs": [
+      "full-initial.tap",
+      "browser-initial.json",
+      "browser-initial.stderr",
+      "discovery-note.json"
+    ],
+    "assertionsWeakened": false,
+    "seedsChangedToPass": false
+  },
+  "referenceBoundary": {
+    "readFullText": "https://world-of-dungeons.net/",
+    "evidence": "Official homepage player testimonials describe studying opponents, coordinating protection/buffs and choosing weapons, positions and priority targets. This supports tactical direction only, not a mechanics specification.",
+    "currentServerRulesVerified": false,
+    "authored": "New three-room solo dungeon, enemy values, formation-specific healing plans, provisional presets and fixed equipment/rewards are project-original content. Existing v112 group aid/solo aid/healing block/interception rules reused exactly. No original numeric tables imported.",
+    "restrictedPagesRetried": false
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 22,
+    "gear": 40,
+    "combatEngineChanged": false,
+    "newSkillsOrFormulas": false,
+    "newTrainingCosts": false,
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "limitations": [
+      "Official homepage supports tactical direction only, not current server rules. New content and every numeric/reward/preset decision are project-original adaptations.",
+      "Finite cases do not establish global balance or optimal tactics.",
+      "Permanent supply economy remains deferred; independent solo development possible."
+    ]
+  }
+}

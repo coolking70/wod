@@ -16,6 +16,7 @@ Object.assign(GEAR,{
 
 export const SLOTS={weapon:'武器',armor:'防具',accessory:'饰品'};
 Object.assign(GEAR,{
+ triagepin:{name:'分诊铜签',slot:'accessory',armor:0,bonus:{int:2,per:2,con:-2,wil:-1},resistances:{ranged:10,magic:-10},dungeonOnly:true},
  clockpin:{name:'潮刻怀表',slot:'accessory',armor:0,bonus:{per:3,agi:2,con:-1},resistances:{magic:5,mental:-10},dungeonOnly:true},
  filterveil:{name:'滤露面纱',slot:'accessory',armor:0,bonus:{wil:2,int:-2,agi:-1},resistances:{magic:20},dungeonOnly:true},
  counterlens:{name:'辨印晶镜',slot:'accessory',armor:0,bonus:{int:2,per:1,con:-2,wil:-1},resistances:{magic:10,mental:-10},dungeonOnly:true},

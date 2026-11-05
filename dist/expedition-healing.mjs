@@ -1,8 +1,9 @@
 import {groupAidDecision} from './expedition-group-aid.mjs';
 import {skillManaCost} from './expedition-advancement-data.mjs';
-import {SKILLS} from './expedition-data.mjs';
+import {SKILLS,POS} from './expedition-data.mjs';
 import {healingBlockTrace} from './expedition-disruption.mjs';
 export const HEAL_PRIORITIES={lowest:'最低生命比例',self_first:'自身达阈值时优先自保'};
+export function healingPlanDescription(unit){const p=unit.healing;if(!p?.enabled)return '未启用自动救护';return `≤${Math.round(p.threshold*100)}% / ${HEAL_PRIORITIES[p.priority||'lowest']} / ${POS[p.target]||{all:'全队',self:'自身'}[p.target]}；单救等级${unit.skills.heal} / ${skillManaCost(unit,'heal')}法力/1药草${p.groupAid?`；同位合剂优先，等级${unit.skills.groupheal} / ${skillManaCost(unit,'groupheal')}法力/2药草；最紧急伤员同位至少2名达阈值伤员，最多3人，各恢复本技能均值45%，不足人数或资源回单救`:''}；占普通行动，禁疗与道具优先照旧。`;}
 export function selectHealingTarget(actor,units,target){
  const ranked=units.filter(u=>u.side===actor.side&&u.hp>0&&u.hp<u.maxHp&&(target==='all'||(target==='self'?u.id===actor.id:u.pos===target))).sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp);
  if(actor.healing?.priority==='self_first'){const self=ranked.find(u=>u.id===actor.id&&u.hp/u.maxHp<=actor.healing.threshold);if(self)return self;}

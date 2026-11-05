@@ -1,0 +1,507 @@
+{
+  "design": "Authored project dungeon using existing group aid, single healing, healing block and interception rules. Official homepage supports tactical direction only; not original content/numeric replication.",
+  "normal": [
+    {
+      "plan": "source",
+      "seed": 1,
+      "objective": "clear",
+      "won": true,
+      "alive": 6,
+      "reward": {
+        "cleared": 3,
+        "gold": 175,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "triagepin"
+        ]
+      },
+      "gold": 175,
+      "rounds": [
+        5,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyGroup": 0,
+      "enemySingle": 3,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 2,
+      "enemyGroupCasts": []
+    },
+    {
+      "plan": "suppress",
+      "seed": 2,
+      "objective": "survive",
+      "won": true,
+      "alive": 6,
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "triagepin"
+        ]
+      },
+      "gold": 295,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyGroup": 3,
+      "enemySingle": 6,
+      "enemyHealingBlocked": 3,
+      "interceptAttempts": 0,
+      "enemyGroupCasts": [
+        {
+          "id": 45,
+          "room": 0,
+          "round": 1,
+          "actor": "cfcm",
+          "targets": [
+            "cfc1",
+            "cfc2"
+          ],
+          "mana": 10,
+          "amount": 2,
+          "herbBefore": 11,
+          "herbAfter": 11
+        },
+        {
+          "id": 554,
+          "room": 2,
+          "round": 3,
+          "actor": "cfsm",
+          "targets": [
+            "cfs2",
+            "cfs1"
+          ],
+          "mana": 10,
+          "amount": 2,
+          "herbBefore": 4,
+          "herbAfter": 4
+        },
+        {
+          "id": 600,
+          "room": 2,
+          "round": 4,
+          "actor": "cfsm",
+          "targets": [
+            "cfs2",
+            "cfs1"
+          ],
+          "mana": 10,
+          "amount": 2,
+          "herbBefore": 3,
+          "herbAfter": 3
+        }
+      ]
+    },
+    {
+      "plan": "spread",
+      "seed": 3,
+      "objective": "reserve",
+      "won": true,
+      "alive": 6,
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "triagepin"
+        ]
+      },
+      "gold": 415,
+      "rounds": [
+        6,
+        6,
+        5
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 8
+      },
+      "enemyGroup": 0,
+      "enemySingle": 1,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 3,
+      "enemyGroupCasts": []
+    }
+  ],
+  "matrix": [
+    {
+      "plan": "source",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyGroup": 0,
+      "enemySingle": 3,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 2
+    },
+    {
+      "plan": "source",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5,
+        5
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyGroup": 0,
+      "enemySingle": 2,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 3
+    },
+    {
+      "plan": "source",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyGroup": 1,
+      "enemySingle": 0,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 3
+    },
+    {
+      "plan": "source",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyGroup": 0,
+      "enemySingle": 4,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 2
+    },
+    {
+      "plan": "source",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyGroup": 0,
+      "enemySingle": 1,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 2
+    },
+    {
+      "plan": "source",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyGroup": 1,
+      "enemySingle": 1,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 2
+    },
+    {
+      "plan": "suppress",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyGroup": 4,
+      "enemySingle": 3,
+      "enemyHealingBlocked": 2,
+      "interceptAttempts": 0
+    },
+    {
+      "plan": "suppress",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyGroup": 5,
+      "enemySingle": 3,
+      "enemyHealingBlocked": 3,
+      "interceptAttempts": 0
+    },
+    {
+      "plan": "suppress",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyGroup": 4,
+      "enemySingle": 4,
+      "enemyHealingBlocked": 2,
+      "interceptAttempts": 0
+    },
+    {
+      "plan": "suppress",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyGroup": 4,
+      "enemySingle": 5,
+      "enemyHealingBlocked": 1,
+      "interceptAttempts": 0
+    },
+    {
+      "plan": "suppress",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyGroup": 5,
+      "enemySingle": 3,
+      "enemyHealingBlocked": 1,
+      "interceptAttempts": 0
+    },
+    {
+      "plan": "suppress",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyGroup": 2,
+      "enemySingle": 11,
+      "enemyHealingBlocked": 1,
+      "interceptAttempts": 0
+    },
+    {
+      "plan": "spread",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 8
+      },
+      "enemyGroup": 0,
+      "enemySingle": 1,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 3
+    },
+    {
+      "plan": "spread",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 8
+      },
+      "enemyGroup": 0,
+      "enemySingle": 0,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 2
+    },
+    {
+      "plan": "spread",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 8
+      },
+      "enemyGroup": 0,
+      "enemySingle": 3,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 3
+    },
+    {
+      "plan": "spread",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 8
+      },
+      "enemyGroup": 1,
+      "enemySingle": 1,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 3
+    },
+    {
+      "plan": "spread",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 8
+      },
+      "enemyGroup": 0,
+      "enemySingle": 1,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 3
+    },
+    {
+      "plan": "spread",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 4,
+        "arrow": 8
+      },
+      "enemyGroup": 1,
+      "enemySingle": 1,
+      "enemyHealingBlocked": 0,
+      "interceptAttempts": 2
+    }
+  ],
+  "limit": "18 fixed predeclared fresh cases plus normal earned seeds 1/2/3. Three starting presets change multiple decisions, not a causal single-skill comparison or global balance proof."
+}

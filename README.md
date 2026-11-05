@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.112「同位合剂与单救后备」**，分支`feature/v112-group-first-aid`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.113「合流救护站」**，分支`feature/v113-confluence-infirmary`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -216,3 +216,5 @@ node --test tests/*.test.mjs
 新增[敌方攻击范围核对](docs/V111_ENEMY_THREAT_MAP.md)：公开敌方普通指令逐房映射到草稿/公会实际队员，区分候选与单次人数上限，显示本人的防御/抗性并直接进入本房调整。只读检查不预演战斗，也不把空候选当作安全保证。
 
 新增[同位合剂与单救后备](docs/V112_GROUP_FIRST_AID.md)：药师可选择最紧急伤员同阵位至少两名达阈值伤员时，以10法力/2药草、一次行动照顾最多3人；每人效果较单救低，不足人数/资源则回单救。默认不启用，具体参数为项目改编。
+
+新增[合流救护站](docs/V113_CONFLUENCE_INFIRMARY.md)：三场连续地城复用敌我同位合剂/单救、援护与截疗规则；前后排救护转位及末房双医带来集火/截疗/散阵取舍。固定分诊铜签有明确属性代价，正常领取后配装，具体内容和数值为项目原创。
