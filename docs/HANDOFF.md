@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前441项测试通过，0失败/跳过；173个ES模块、22个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前453项测试通过，0失败/跳过；176个ES模块、23个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -49,6 +49,7 @@ node scripts/browser-v61.cjs
 | dist/expedition-training-rehearsal.mjs、training-rehearsal-view.mjs | 真实资产的当前/草案双试演及事实比较（后者有前缀） |
 | dist/expedition-advancement-data.mjs、advancement.mjs | 12条项目后期路径、法力/效果来源和资格（后者有前缀） |
 | dist/expedition-guild*.mjs、roster*.mjs、personal*.mjs | 公会事务、个人资产/名册成长与战报投影（后两项有前缀） |
+| dist/expedition-config-undo.mjs | 配置与本次伙伴职责撤销，角色差量与成对写入/失败回退 |
 | dist/expedition-readiness.mjs、command*.mjs | 实际资产核对与伙伴职责，编辑时保留实际方案（后者有前缀） |
 | dist/expedition-equipment*.mjs、loot.mjs | 固定装备、来源和奖励（后者有前缀） |
 | dist/expedition-disruption.mjs、healing.mjs、regeneration.mjs | 截疗、救护、缓释（后两项有前缀） |
@@ -106,3 +107,11 @@ historyComparison新增lineupChanges元数据，原有变化计数/逐人列表�
 ## v0.67接续
 
 historyTacticPreview/reuseHistoryTactic只复制PERSONAL_TACTIC_FIELDS，保持身份/装备/道具种类/永久训练/进阶/经验及全队全局设置。仅当前同职业出战目标，课程未学/待结算/过期拒绝，重新计算不信任传入结果。copyRooms只在同路线允许，按两份路线roomsFor的ID并集替换；范围外当前覆盖保留、历史额外槽忽略。比较器把合法额外roomOrders/overrides也列入，标签数组须新建，不能push到roomsFor返回的静态房间数组。v33旧断言已精确补齐两项变化，441全过。check-v67参考dd3bcc9、生成正常额外槽备份；最后浏览器release-browser。配置undo不回滚托管职责，恢复原职责需伙伴面板明确选择，不得声称完整事务撤回。所有代码只本地提交，原版数值仍待参考服证据。
+
+## v0.68职责撤销续接
+
+从3ee8714干净基线441测试开始，feature/v068-companion-config-undo。configurationUndo只保留旧配置、heroId/lineup/next与被改职责的before/after，不保留整个公会旧快照。四入口（实际队员编辑、协作行编辑、高阶安装、历史单人复用）用applyTacticEdit统一处理；restoreConfigurationUndo按当前公会补回该次职责，期间资产与其他职责保留。待结算、新出征、主角/名单或目标职责冲突拒绝整次撤销，失败不消费记录。
+
+commitPreparationChange先核对两份存储当前文本，再写配置、公会；第二写失败回退配置。首次写失败不改公会；回退也失败明确报错，不称完整事务保证。无持久撤销日志、崩溃恢复或多标签原子锁：撤销仍为本页面会话单槽，普通载入覆盖旧槽且不回退历史职责。不要恢复整个旧公会来修撤销。
+
+453测试、9份完整报告与3ee8714等价；browser-v68最终回执final-browser，覆盖四入口、期间正常训练/另一伙伴选择、跨页拒绝后读取重试、待结算拒绝、单次写失败/回退重试及390px。真实修道院种子3三房通关。复验check-v68需要v0.67参考目录；无参考unchanged=null。正常seerGuild备份可由该脚本重建，WOD_SEER_GUILD可换路径。未重跑432路线研究或1,824条旧活动样本；无新原版数字、推送、合并、部署。详见V68_CONFIG_UNDO.md。

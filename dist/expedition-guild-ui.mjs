@@ -1,4 +1,6 @@
 import {historyTacticPreview,reuseHistoryTactic} from './expedition-tactic-reuse.mjs';
+import {configurationUndo,restoreConfigurationUndo,commitPreparationChange} from './expedition-config-undo.mjs';
+import {validate} from './expedition-engine.mjs';
 import {tacticReuseView} from './expedition-tactic-reuse-view.mjs';
 import {lineupChangesView} from './expedition-lineup-diff.mjs';
 import {initialTargetWarningsView} from './expedition-target-check.mjs';
@@ -28,7 +30,7 @@ import {ADVANCED,UNLOCK_COST,growth,isAdvanced,installAdvanced} from './expediti
 import {rewardPreview,gearDifference,isRelic} from './expedition-loot.mjs';
 import {redeemHarbor,GUILD_KEY,GEAR_PRICE,historyConfig,historyReport,newGuild,validateGuild,migrateGuild,pendingReward,assignLoot,sellLoot,guildConfig,depart,pendingReport,rewardFor,claim,train,lowerTraining,applyTrainingPlan,chooseAdvancement,resetAdvancement,equip,retrain,learnAdvanced} from './expedition-guild.mjs';
 import {HEROES,GEAR,ATTR,SKILLS,POS,DEFENSES,ITEMS,roomsFor,EXPEDITIONS,trainingOptions,trainingCost,MAX_TRAINING_RANK} from './expedition-data.mjs';
-export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,editHero,updateConfig}){
+export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,editHero,updateConfig,configKey}){
  const root=document.querySelector('#guild'),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let raw=null,g=null,selected='a',failure='',checkScope='',pane='hero',message='',gearFilter='owned',equipmentSlot='all',compareId=null,compareMode='draft',companionRoom='',previews={},reuseOpen=false,reuseSource='',reuseTarget='',reuseRooms=false,lastReusePreview=null;
  const paneNames={roster:'招募与出战',hero:'我的英雄与伙伴',departure:'出征准备',team:'角色成长',equipment:'装备与仓库',contracts:'港口委托',history:'履历与备份'};
  try{const ui=JSON.parse(sessionStorage.getItem('abbey-guild-ui')||'null');if(ui){if(Object.hasOwn(paneNames,ui.pane))pane=ui.pane;if(HEROES.some(h=>h.id===ui.selected))selected=ui.selected;if(typeof ui.checkScope==='string')checkScope=ui.checkScope;if(['owned','shop','all'].includes(ui.gearFilter))gearFilter=ui.gearFilter;}}catch{}
@@ -38,6 +40,9 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  function switchPanel(next){pane=next;render();root.querySelector(`[data-guild-tab="${pane}"]`)?.focus();root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});}
  function read(){try{raw=localStorage.getItem(GUILD_KEY);g=migrateGuild(raw?JSON.parse(raw):newGuild());failure='';if(!raw)message='港口远征版使用独立公会存档；此前版本存档不迁移。请先选择自己的英雄。';}catch(e){g=null;failure=e.message;}}
  function save(next){validateGuild(next);if(localStorage.getItem(GUILD_KEY)!==raw)throw Error('另一页面已修改公会，请重新进入公会后再操作');const text=JSON.stringify(next);localStorage.setItem(GUILD_KEY,text);raw=text;g=next;}
+ function savePreparation(config,guild){const stored=commitPreparationChange(localStorage,{configKey,guildKey:GUILD_KEY,expectedConfig:JSON.stringify(getConfig()),expectedGuild:raw,config,guild});raw=stored.guildRaw;g=guild;}
+ function applyTacticEdit(edit,apply){validate(edit.config);const undo=configurationUndo(getConfig(),g,edit.guild);if(localStorage.getItem(GUILD_KEY)!==raw)throw Error('另一页面已修改公会，请重新进入公会后再操作');if(undo.roles)savePreparation(edit.config,edit.guild);apply(edit.config,undo,Boolean(undo.roles));}
+ function undoConfiguration(undo){const restored=restoreConfigurationUndo(g,undo);if(restored.guild){savePreparation(restored.config,restored.guild);previews={};reuseOpen=false;lastReusePreview=null;}return {config:restored.config,persisted:Boolean(restored.guild)};}
  function comparisonHTML(){
  if(!compareId||!g.history.some(r=>r.id===compareId&&r.config))return '';
  const d=historyComparison(g,compareId,getConfig(),compareMode);
@@ -87,20 +92,20 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  else if(b.dataset.personal){selected=g.command.heroId;if(b.dataset.personal==='tactics'){updateConfig(rosterConfig(g,getConfig()));editHero(selected,'');return;}switchPanel(b.dataset.personal==='growth'?'team':'equipment');return;}
  else if(b.dataset.reuseOpen){reuseOpen=true;reuseSource='';reuseTarget='';reuseRooms=false;render();root.querySelector('.tactic-reuse')?.scrollIntoView({block:'start'});return;}
  else if(b.dataset.reuseClose){reuseOpen=false;lastReusePreview=null;render();return;}
- else if(b.dataset.reuseApply){if(!lastReusePreview||!reuseOpen)throw Error('请先预览单人战术');const request=lastReusePreview,result=reuseHistoryTactic(g,getConfig(),request);save(result.guild);reuseOpen=false;lastReusePreview=null;loadConfig(result.config);editHero(request.targetId,'');inform('历史单人战术已应用到'+request.targetName+'，当前装备、培养、后期选择和经验保留；请核对实际出征配置。');return;}
+ else if(b.dataset.reuseApply){if(!lastReusePreview||!reuseOpen)throw Error('请先预览单人战术');const request=lastReusePreview,result=reuseHistoryTactic(g,getConfig(),request);applyTacticEdit(result,loadConfig);reuseOpen=false;lastReusePreview=null;editHero(request.targetId,'');inform('历史单人战术已应用到'+request.targetName+'，当前装备、培养、后期选择和经验保留；可在方案管理撤销配置与本次伙伴职责变化。');return;}
  else if(b.dataset.historyCompare){compareId=Number(b.dataset.historyCompare);reuseOpen=false;lastReusePreview=null;render();root.querySelector('#history-comparison')?.scrollIntoView({block:'start'});return;}
  else if(b.dataset.historyClose){compareId=null;render();root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});return;}
  else if(b.dataset.historyReport){showReport(historyReport(g,Number(b.dataset.historyReport)));inform('正在按当前规则重演第'+b.dataset.historyReport+'次远征，不发放奖励。');return;}
  else if(b.dataset.historyLoad){loadConfig(historyConfig(g,Number(b.dataset.historyLoad)));inform('历史出征方案已载入，可撤销。再次公会出征使用当前装备与训练，并采用新的出征种子。');return;}
  else if(b.dataset.guildTab){switchPanel(b.dataset.guildTab);return;}
  else if(b.dataset.member)selected=b.dataset.member;
- else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,edit=customizeForEditing(g,getConfig(),id,room);delete previews[id];if(edit.changed)save(edit.guild);updateConfig(edit.config);editHero(id,room,b.dataset.cooperationRow,b.dataset.cooperationPhase||'prep');inform('已保留当前实际职责指令并切到自定义，可从本房继续修改。');return;}
- else if(b.dataset.readyEdit){const id=b.dataset.readyEdit,edit=customizeForEditing(g,getConfig(),id,checkScope);delete previews[id];if(edit.changed)save(edit.guild);updateConfig(edit.config);editHero(id,checkScope);inform('已保留当前实际职责指令；该队员现使用自定义，可逐房调整。');return;}
+ else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,edit=customizeForEditing(g,getConfig(),id,room);delete previews[id];applyTacticEdit(edit,updateConfig);editHero(id,room,b.dataset.cooperationRow,b.dataset.cooperationPhase||'prep');inform('已保留当前实际职责指令并切到自定义，可从本房继续修改；方案管理可撤销配置与本次职责变化。');return;}
+ else if(b.dataset.readyEdit){const id=b.dataset.readyEdit,edit=customizeForEditing(g,getConfig(),id,checkScope);delete previews[id];applyTacticEdit(edit,updateConfig);editHero(id,checkScope);inform('已保留当前实际职责指令；该队员现使用自定义，可逐房调整；方案管理可撤销配置与本次职责变化。');return;}
  else if(b.dataset.readyMember){selected=b.dataset.readyMember;switchPanel("team");return;}
  else if(b.dataset.advancement){save(chooseAdvancement(g,selected,b.dataset.advancement));inform('已选择后期职业进阶，普通技能和训练保留。');}
  else if(b.dataset.resetAdvancement){save(resetAdvancement(g,b.dataset.resetAdvancement));inform('已退回后期进阶并返还'+ADVANCEMENT_COST+'经验；普通技能和训练保留。');}
  else if(b.dataset.unlock)save(learnAdvanced(g,b.dataset.unlock));
- else if(b.dataset.install){const edit=customizeForEditing(g,getConfig(),selected),installed=installAdvanced(edit.config,selected,b.dataset.install);if(edit.changed)save(edit.guild);delete previews[selected];loadConfig(installed);inform("已保留实际职责并加入高阶普通技能；伙伴现为自定义，该阶段逐房指令覆盖已清除。请核对目标、资源与行动顺序；可撤销方案载入。");return;}
+ else if(b.dataset.install){const edit=customizeForEditing(g,getConfig(),selected),installed=installAdvanced(edit.config,selected,b.dataset.install);delete previews[selected];applyTacticEdit({...edit,config:installed},loadConfig);inform("已保留实际职责并加入高阶普通技能；伙伴现为自定义，该阶段逐房指令覆盖已清除。请核对目标、资源与行动顺序；可撤销配置与本次职责变化。");return;}
  else if(b.dataset.assign){save(assignLoot(g,selected,b.dataset.assign));inform("战利品已分配并装备，可在已持有装备中查看。");}
  else if(b.dataset.sell)save(sellLoot(g,b.dataset.sell));
  else if(b.dataset.learn)save(train(g,selected,b.dataset.learn));
@@ -124,5 +129,5 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  function open(next='hero'){pane=typeof next==='string'?next:'hero';read();render();view('guild');window.scrollTo({top:0});}
  document.querySelector('header [data-view="guild"]').onclick=open;
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
- read();render();return {open,heroId:()=>g?.command?.heroId||null};
+ read();render();return {open,undoConfiguration,heroId:()=>g?.command?.heroId||null};
 }

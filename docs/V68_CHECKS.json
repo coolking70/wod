@@ -1,0 +1,10 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "normalEarnedFixture": "seerGuild() plus explicit seer role; no asset injection",
+  "unchanged": {
+    "reference": "3ee8714",
+    "count": 9,
+    "excluded": []
+  },
+  "note": "No reference argument means old-report equivalence is null, not verified. No old sample matrices rerun."
+}
