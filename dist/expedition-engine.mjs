@@ -1,3 +1,4 @@
+import {manaRecipients,manaTransferAmount,MANA_TRANSFER_RULE} from './expedition-mana-transfer.mjs';
 import {validateStockFloor,stockFloorCheck,STOCK_NAMES} from './expedition-stock-floor.mjs';
 import {CORROSION,corrosionOn,corrosionTicks,corrosionSource} from './expedition-corrosion.mjs';
 import {validateSummonTarget,summonOrders} from './expedition-summon-orders.mjs';
@@ -24,7 +25,7 @@ const routes={front:['front','left','right','center','rear'],left:['right','fron
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
  if(!Object.hasOwn(POS,h.pos))throw Error('站位无效');
- for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(s){mediumId(s,r);validateSummonTarget(r);validateStockFloor(r);}if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait'].includes(s.kind))||!['repeat','cycle','once','round'].includes(r.mode)||(r.mode==='round'&&phase!=='main')||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');if(s.cover&&!Object.hasOwn(POS,r.target))throw Error('援护必须选择其他队员所在阵位');}}
+ for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(s){mediumId(s,r);validateSummonTarget(r);validateStockFloor(r);}if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait','transfer'].includes(s.kind))||!['repeat','cycle','once','round'].includes(r.mode)||(r.mode==='round'&&phase!=='main')||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');if(s.cover&&!Object.hasOwn(POS,r.target))throw Error('援护必须选择其他队员所在阵位');if(s.kind==='transfer'&&r.target!=='all'&&!Object.hasOwn(POS,r.target))throw Error('法力援助必须选择友方阵位或全队');}}
  if(!h.healing||!['lowest','self_first'].includes(h.healing.priority??'lowest')||typeof h.healing.enabled!=='boolean'||![.5,.65,.8].includes(h.healing.threshold)||![...Object.keys(POS),'all','self'].includes(h.healing.target)||(h.healing.enabled&&!t.skills.includes('heal')))throw Error('治疗设置不合法');
  if(!h.itemPolicy||typeof h.itemPolicy.enabled!=='boolean'||![.3,.5,.7].includes(h.itemPolicy.threshold))throw Error('道具使用策略无效');
  if(!h.defenses||Object.keys(h.defenses).length!==3)throw Error('防御配置无效');
@@ -68,6 +69,7 @@ export function defenseProfile(u,type){
  return {requested,skill,name:d.name,reason,level,training,specialization,temporaryLevel,cost:d.cost,primary,secondary,primaryValue:current(u,primary),secondaryValue:current(u,secondary),base,bonus:current(u,'defense'),mean:base+current(u,'defense')};
 }
 export function chooseTargets(actor,units,s,target,rng=()=>0){
+ if(s.kind==='transfer')return manaRecipients(actor,units,target).slice(0,1);
  const aid=s.kind==='buff'||s.kind==='heal';let pool=units.filter(u=>u.hp>0&&(aid?u.side===actor.side:u.side!==actor.side));
  if(s.dispel)pool=pool.filter(u=>removableBuffs(u).length);
  if(s.mode==='self')return [actor];
@@ -165,7 +167,7 @@ export function simulate(c,options={}){
    if(!reason&&!['wait','summon'].includes(s.kind)){
     targets=chooseTargets(u,s.cleanse?all().filter(t=>cleansableEffects(t).length):s.cover?all().filter(t=>t.id!==u.id):all(),s,r.target,rng);
     if(s.kind==='buff'&&!s.cleanse)targets=targets.filter(t=>!t.effects.some(e=>e.skill===r.skill));
-    if(!targets.length)reason=s.dispel?'没有带可破除技能增益的合法敌人':Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.cleanse?'没有可净化的负面效果':s.cover?'没有可援护的其他队员':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
+    if(!targets.length)reason=s.kind==='transfer'?'范围内没有其他法力不高于50%的存活正式友方':s.dispel?'没有带可破除技能增益的合法敌人':Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.cleanse?'没有可净化的负面效果':s.cover?'没有可援护的其他队员':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
    }
    if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,...(payment.medium!=='standard'?{medium:payment.medium,requiredMana:payment.mana,requiredResource:payment.resource,requiredAmount:payment.amount}:{}),requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {}),...(healingBlock?{healingBlock}: {}),...(stockFloor?{stockFloor}: {})});return false;}
    if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);roundUsed.set(key,round);return true;}
@@ -182,6 +184,7 @@ export function simulate(c,options={}){
      t.effects.push(e);emit('effect',t.name+' '+(e.active?'获得':'等待')+'「'+s.name+(e.component!==s.name?' · '+e.component:'')+'」：'+({cover:'援护许可',regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'}[part.stat]||part.stat)+' +'+v,u.id,[t.id],{effectId:e.id,cast,skill:r.skill,component:e.component,stat:e.stat,value:v,mean:m,formula:`floor(${part.base} + ${m} × ${part.scale})${advancementBonus?' + '+advancementBonus:''}`,scope:e.scope,expires:e.expires,active:e.active,activateRound:e.activateRound,sources:effectTrace(u)});
     }
    }
+   if(s.kind==='transfer'){const t=targets[0],amount=manaTransferAmount(m,manaCost),beforeMp=t.mp,actual=Math.min(t.maxMp-t.mp,amount);t.mp+=actual;if(stats[u.id])stats[u.id].manaGiven=(stats[u.id].manaGiven||0)+actual;if(stats[t.id])stats[t.id].manaReceived=(stats[t.id].manaReceived||0)+actual;emit('mana-transfer',u.name+' 向 '+t.name+' 转入 '+actual+' 法力',u.id,[t.id],{cast,skill:r.skill,mean:m,amount,actual,overflow:amount-actual,paidMana:manaCost,donorBefore:before,donorAfter:u.mp,targetBefore:beforeMp,targetAfter:t.mp,targetMax:t.maxMp,netLoss:manaCost-actual,threshold:.5,formula:`min(${manaCost}, max(1, floor(1 + ${m} × 0.08)))`,consumedAction:true,rule:MANA_TRANSFER_RULE,sources:effectTrace(u)});}
    if(s.kind==='heal'){const t=targets[0],amount=Math.floor(m*.7),actual=Math.min(t.maxHp-t.hp,amount);t.hp+=actual;if(stats[u.id]){stats[u.id].healing+=actual;stats[u.id].interrupts++;}emit('heal',u.name+' 为 '+t.name+' 恢复 '+actual+' 生命',u.id,[t.id],{cast,skill:r.skill,amount,actual,overheal:amount-actual,formula:`floor(${m} × 0.7)`,ordinaryCursorUnchanged:true});}
    if(s.kind==='attack')for(const chosen of targets){
     if(chosen.hp<=0){emit('attack-skip',u.name+' 不再结算指向 '+chosen.name+' 的攻击：原目标已倒下',u.id,[chosen.id],{cast,skill:r.skill,reason:'原目标已倒下',cost:0,consumedAction:false,rule:'已完成施法不退款；不重复防御、攻击或记录倒下，其余原目标继续结算。'});continue;}

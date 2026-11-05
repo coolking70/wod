@@ -1,0 +1,11 @@
+{
+  "desktop": true,
+  "mobile": true,
+  "excluded": [],
+  "desktopGold": 370,
+  "desktopNext": 3,
+  "desktopHeroXp": 35,
+  "mobileGold": 500,
+  "mobileNext": 4,
+  "mobileHeroXp": 90
+}

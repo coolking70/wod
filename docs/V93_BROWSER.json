@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "steps": [
+    "本人吟游者从零资产正常选择借潮援法，温室seed1实际转6/付8/净损2；原始证据、双方个人给予/收到及来源跳转连通，生命治疗不混记",
+    "pending改目标/刷新仍保留原报告；书库seed2正常180/75后370金币、每人155经验，再真实支付20/40/60共120XP培养借潮咏3级，本人余35；历史与整公会备份保留",
+    "390px恢复全部历史与合法3级培养，剧场seed3改援前排，两次真实均值77转7/付8，正常130/55后500金币、本人90/其他210XP，三奖未分配；证据和界面无横向溢出"
+  ],
+  "runs": [
+    {
+      "route": "greenhouse",
+      "seed": 1,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 249,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 187,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "actor": "e",
+          "target": "c",
+          "mean": 71,
+          "actual": 6,
+          "paid": 8,
+          "netLoss": 2
+        }
+      ]
+    },
+    {
+      "route": "scriptorium",
+      "seed": 2,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 296,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 244,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 186,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "actor": "e",
+          "target": "d",
+          "mean": 71,
+          "actual": 6,
+          "paid": 8,
+          "netLoss": 2
+        }
+      ]
+    },
+    {
+      "route": "theater",
+      "seed": 3,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 228,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "actor": "e",
+          "target": "a",
+          "mean": 77,
+          "actual": 7,
+          "paid": 8,
+          "netLoss": 1
+        },
+        {
+          "actor": "e",
+          "target": "a",
+          "mean": 77,
+          "actual": 7,
+          "paid": 8,
+          "netLoss": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

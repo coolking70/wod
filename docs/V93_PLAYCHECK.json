@@ -1,0 +1,1028 @@
+{
+  "note": "24 distinct fresh finite inputs: 3 routes ×4 predeclared seeds ×2 policies. Pair differs only e.main. Both keep same specialization/gear/training/preparations. Action changes shift subsequent RNG. Transfer spends donor ordinary action and8MP, gives min(paid, floor(1+mean*.08)), cap target; no global advantage/attributed avoided-shortage claim. Existing1MP per-round natural regeneration and personal tonics unchanged.",
+  "summary": {
+    "runs": 24,
+    "won": 24,
+    "allSix": 24,
+    "failures": 0,
+    "injured": 0,
+    "activeWithNoTransfer": 8
+  },
+  "cases": [
+    {
+      "seed": 101,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "discovery",
+      "fingerprint": "b7a7c4b018e1568afa40a1eee521c9635802be917fabd4cc9b76ace199a6e390"
+    },
+    {
+      "seed": 101,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "id": 369,
+          "room": 2,
+          "round": 2,
+          "actor": "e",
+          "target": "c",
+          "mean": 71,
+          "paid": 8,
+          "actual": 6,
+          "before": 35,
+          "after": 41,
+          "netLoss": 2
+        }
+      ],
+      "given": 6,
+      "sourceManaShortages": 0,
+      "noEligible": 9,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "discovery",
+      "fingerprint": "d3a330afbcd022c4a153105085b678ab9243c620eb53a0597ae3904a95bca70e"
+    },
+    {
+      "seed": 102,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "discovery",
+      "fingerprint": "b9686443117418e0b53c2fcbbdaa84da62fc3bb616bb960e7decc0e5d076fa5f"
+    },
+    {
+      "seed": 102,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "id": 423,
+          "room": 2,
+          "round": 3,
+          "actor": "e",
+          "target": "c",
+          "mean": 71,
+          "paid": 8,
+          "actual": 6,
+          "before": 35,
+          "after": 41,
+          "netLoss": 2
+        }
+      ],
+      "given": 6,
+      "sourceManaShortages": 0,
+      "noEligible": 10,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "discovery",
+      "fingerprint": "9652311e2e34d5f1635e6f13dbc6f429fd608ceb88a14188ac6a69bf05adc641"
+    },
+    {
+      "seed": 201,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "confirmation",
+      "fingerprint": "965fcce5ee06ff8dcc147729ae3a7f0bb789aaa62e4742eb5709f3abbb331cfc"
+    },
+    {
+      "seed": 201,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "id": 355,
+          "room": 2,
+          "round": 2,
+          "actor": "e",
+          "target": "c",
+          "mean": 71,
+          "paid": 8,
+          "actual": 6,
+          "before": 35,
+          "after": 41,
+          "netLoss": 2
+        }
+      ],
+      "given": 6,
+      "sourceManaShortages": 0,
+      "noEligible": 9,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "confirmation",
+      "fingerprint": "c224cba578a98c83b3ed6d9cb15ee63da8dfa64e8cb5e267a5080b060236df27"
+    },
+    {
+      "seed": 202,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "confirmation",
+      "fingerprint": "5b7b8d3b2586d77ffe49364f2fa8245f594c2a4699954fd5fb9dff45e981e33f"
+    },
+    {
+      "seed": 202,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "id": 382,
+          "room": 2,
+          "round": 2,
+          "actor": "e",
+          "target": "c",
+          "mean": 71,
+          "paid": 8,
+          "actual": 6,
+          "before": 34,
+          "after": 40,
+          "netLoss": 2
+        }
+      ],
+      "given": 6,
+      "sourceManaShortages": 0,
+      "noEligible": 9,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "confirmation",
+      "fingerprint": "feb585a6dc980b25956ed9fe25ef41b48fd8e332de7cba28e75b25e6554e807b"
+    },
+    {
+      "seed": 101,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "discovery",
+      "fingerprint": "1960aa110f76d652cd61783da6ee1f3d5b904ce58993678e5da5f607c1ede696"
+    },
+    {
+      "seed": 101,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 12,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "discovery",
+      "fingerprint": "95d25f75441034551f7f75a2e7841ec96f0263568453c97a914cdfb7fbd4f6f2"
+    },
+    {
+      "seed": 102,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "discovery",
+      "fingerprint": "81aff60581ee20a4d92f611cf4ac2e705b4446dac0423b64fcb53b7478a4c7d1"
+    },
+    {
+      "seed": 102,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 14,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "discovery",
+      "fingerprint": "9777d8e6450e3e46f6b3214a0ea9fc664713484f5964810c389124ba6b36c448"
+    },
+    {
+      "seed": 201,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "confirmation",
+      "fingerprint": "5be855b9f685189230daac54a8a747d86753a4c43804e9dc10902418c04f3d3e"
+    },
+    {
+      "seed": 201,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 11,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "confirmation",
+      "fingerprint": "b42d216f649636bd15d1bc8819b8222cf2cd6a859a1b26faffc2fe221f8a18b1"
+    },
+    {
+      "seed": 202,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "confirmation",
+      "fingerprint": "0ed5a7e86f8f30f09ad9ea15e3d277f9ec37c046c3f3736d2f2217209963e3c2"
+    },
+    {
+      "seed": 202,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 12,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "confirmation",
+      "fingerprint": "f014a3c2f42ce4ec4812cce9b8878d9baa50e47ec588e3135f96e564ee8103ca"
+    },
+    {
+      "seed": 101,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "discovery",
+      "fingerprint": "f054efeb5ae0f2ba5f8ce310670bf920215c71543b9fec23b91e3ce4d638afef"
+    },
+    {
+      "seed": 101,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 8,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "discovery",
+      "fingerprint": "1f02a2cd650cb2262feee692ffcb41fa2330c012aa284018b374745e30f75da9"
+    },
+    {
+      "seed": 102,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "discovery",
+      "fingerprint": "ef3677f50086cd2541acbc40829b969c18ada3105c47396e15f50474f1b07732"
+    },
+    {
+      "seed": 102,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 8,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "discovery",
+      "fingerprint": "5d2bb7b3367c4194a50a5c73a379266716bad2b151f2cef3449b256723377bc6"
+    },
+    {
+      "seed": 201,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "confirmation",
+      "fingerprint": "5bddfb14893d02a4e0173fb19ee1cad580f419f51804a513bf4e37f68d0c0ef7"
+    },
+    {
+      "seed": 201,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 7,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "confirmation",
+      "fingerprint": "5fb9365f07541855c1cab566106d6bea66f1ae26a58a32d9e9457eca23cccf67"
+    },
+    {
+      "seed": 202,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 0,
+      "sourceFailed": 0,
+      "active": false,
+      "set": "confirmation",
+      "fingerprint": "98835cbf2e861887fb5dcb65c0cfcd4190d3223d7979221c68a0ca6747f45c44"
+    },
+    {
+      "seed": 202,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [],
+      "given": 0,
+      "sourceManaShortages": 0,
+      "noEligible": 8,
+      "sourceFailed": 0,
+      "active": true,
+      "set": "confirmation",
+      "fingerprint": "5e5ef374dd504c7304dac3be3dc8447a9156a8eca8251a19b955ef00b2d38dfb"
+    }
+  ],
+  "normal": [
+    {
+      "seed": 1,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "id": 410,
+          "room": 2,
+          "round": 3,
+          "actor": "e",
+          "target": "c",
+          "mean": 71,
+          "paid": 8,
+          "actual": 6,
+          "before": 34,
+          "after": 40,
+          "netLoss": 2
+        }
+      ],
+      "given": 6,
+      "sourceManaShortages": 0,
+      "noEligible": 9,
+      "sourceFailed": 0,
+      "reward": {
+        "cleared": 3,
+        "gold": 190,
+        "xp": 80,
+        "firstClear": true,
+        "loot": [
+          "filterveil"
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "id": 681,
+          "room": 2,
+          "round": 7,
+          "actor": "e",
+          "target": "d",
+          "mean": 71,
+          "paid": 8,
+          "actual": 6,
+          "before": 36,
+          "after": 42,
+          "netLoss": 2
+        }
+      ],
+      "given": 6,
+      "sourceManaShortages": 0,
+      "noEligible": 14,
+      "sourceFailed": 0,
+      "reward": {
+        "cleared": 3,
+        "gold": 180,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "counterlens"
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "transfers": [
+        {
+          "id": 279,
+          "room": 1,
+          "round": 3,
+          "actor": "e",
+          "target": "a",
+          "mean": 77,
+          "paid": 8,
+          "actual": 7,
+          "before": 17,
+          "after": 24,
+          "netLoss": 1
+        },
+        {
+          "id": 356,
+          "room": 1,
+          "round": 5,
+          "actor": "e",
+          "target": "a",
+          "mean": 77,
+          "paid": 8,
+          "actual": 7,
+          "before": 17,
+          "after": 24,
+          "netLoss": 1
+        }
+      ],
+      "given": 14,
+      "sourceManaShortages": 0,
+      "noEligible": 5,
+      "sourceFailed": 0,
+      "reward": {
+        "cleared": 2,
+        "gold": 130,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "votivelute"
+        ]
+      }
+    }
+  ],
+  "final": {
+    "gold": 500,
+    "xp": [
+      {
+        "id": "a",
+        "xp": 210
+      },
+      {
+        "id": "b",
+        "xp": 210
+      },
+      {
+        "id": "c",
+        "xp": 210
+      },
+      {
+        "id": "d",
+        "xp": 210
+      },
+      {
+        "id": "e",
+        "xp": 90
+      },
+      {
+        "id": "f",
+        "xp": 210
+      }
+    ],
+    "warehouse": {
+      "filterveil": 1,
+      "counterlens": 1,
+      "votivelute": 1
+    }
+  },
+  "unchanged": {
+    "reference": "c996d791ef8e8b1d67b7af7cc1807e8217fae094",
+    "count": 40,
+    "rawFullEqual": false,
+    "eventsAndResultsEqual": true,
+    "excluded": [
+      "only party[id=e].skills.manalink exactly asserted =6 then removed"
+    ],
+    "rows": [
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equalAfterExactNewSkillAssertion": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equalAfterExactNewSkillAssertion": true
+      }
+    ]
+  }
+}

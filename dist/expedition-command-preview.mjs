@@ -1,3 +1,4 @@
+import {manaRecipients} from './expedition-mana-transfer.mjs';
 import {stockFloorWarnings,stockFloorLabel} from './expedition-stock-floor.mjs';
 import {commandCost} from './expedition-media.mjs';
 import {roleTargetCandidates} from './expedition-target-check.mjs';
@@ -19,6 +20,7 @@ export function companionPreview(g,tactics,id,mode,roomId=''){
   if(s.requiresGear&&!gearSupports(actor.gear,s.requiresGear))warnings.push('缺少'+gearRequirementName(s.requiresGear));
   if(payment.resource&&config.supplies[payment.resource]<payment.amount)warnings.push(payment.medium==='standard'?'出发补给中此耗材为0':'出发补给不足本次所需'+payment.amount+'份');
   if(s.kind==='buff'&&!s.recall)candidates=chooseTargets(actor,s.cover?party.filter(t=>t.id!==actor.id):party,s,r.target).map(u=>u.name);
+  if(s.kind==='transfer'){candidates=manaRecipients(actor,party,r.target,{eligible:false}).map(u=>u.name);warnings.push('普通行动仅援助范围内其他法力不高于50%的存活正式队员；初始候选不保证实际转入，不给自己/召唤物，无合格者免费后备。');}
   if(s.recall)warnings.push('仅召回自己当时存活的召唤物；无目标免费跳过，实际召回占本次预备且不返还原消耗');
   if(s.kind==='attack'){
    if(['healer','summoner'].includes(r.target))candidates=roleTargetCandidates(enemies,r.target).map(u=>u.name);

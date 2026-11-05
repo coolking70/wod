@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.92「指令用料底线」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.92仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.93「吟游者法力援助」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.93仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -39,6 +39,8 @@
 新增[蚀潮温室与敌方持续侵蚀](docs/V91_MIRE_GREENHOUSE.md)：三场不同阵位的敌方蚀潮、按房净化与拆来源取舍，固定抗性面纱有属性代价。647测试、36有限输入、38份旧原始完整报告零排除一致，桌面/390px正常成长与完整公会API等价通过。
 
 新增[跨路线指令用料底线](docs/V92_COMMAND_STOCK_FLOORS.md)：明确限制某条进攻或支援施放后的共享余量，保留自动救护和其他指令的用料自由，材料不足底线时免费走后备并可追溯。656测试、24有限输入、40份旧原始完整报告零排除一致，桌面/390px正常成长与完整公会API等价通过。
+
+新增[吟游者法力援助](docs/V93_MANA_TRANSFER.md)：用自身法力和普通行动援助低法力队友，金额受实际支付限制，双方实际收支与个人来源可查。666测试、24有限输入，40旧报告仅精确新增可用技能字段外相同，桌面/390px正常付费培养与完整公会API等价通过；保留未触发和战斗延长的结果。
 
 ## 开发交接入口
 

@@ -7,7 +7,7 @@ export function personalReport(report,heroId){
  let stock={...report.config.supplies};const buffKeys=new Set(),inKeys=new Set(),controlKeys=new Set(),proofKeys=new Set();
  const add=(room,key,n=1)=>{total[key]=(total[key]||0)+n;if(rooms[room])rooms[room][key]=(rooms[room][key]||0)+n;};
  const proof=(e,index,kind)=>{if(!proofKeys.has(kind)){proofKeys.add(kind);evidence.push({index,kind,text:e.text,roomIndex:e.roomIndex});}};
- const link=(map,id,key,amount,index)=>{if(!map.has(id))map.set(id,{id,healing:0,buffs:0,index});map.get(id)[key]+=amount;if(!Object.hasOwn(map.get(id),key+'Index'))map.get(id)[key+'Index']=index;};
+ const link=(map,id,key,amount,index)=>{if(!map.has(id))map.set(id,{id,healing:0,buffs:0,index});map.get(id)[key]=(map.get(id)[key]||0)+amount;if(!Object.hasOwn(map.get(id),key+'Index'))map.get(id)[key+'Index']=index;};
  report.events.forEach((e,index)=>{
   const own=e.actor===heroId,target=e.targets.includes(heroId),d=e.detail||{};
   for(const key of Object.keys(stock)){if(own&&e.supplies)supplies[key]+=Math.max(0,stock[key]-e.supplies[key]);if(e.supplies)stock[key]=e.supplies[key];}
@@ -19,6 +19,7 @@ export function personalReport(report,heroId){
    if(target){add(e.roomIndex,'taken',d.actual);proof(e,index,'受到攻击');}
    if(e.units.find(u=>u.id===e.actor)?.owner===heroId){add(e.roomIndex,'summonDamage',d.actual);proof(e,index,'召唤物攻击');}
   }
+  if(e.type==='mana-transfer'){if(own){add(e.roomIndex,'manaGiven',d.actual);add(e.roomIndex,'manaTransfers');proof(e,index,'本人法力援助');link(given,e.targets[0],'mana',d.actual,index);}if(target){add(e.roomIndex,'manaReceived',d.actual);link(received,e.actor,'mana',d.actual,index);proof(e,index,'得到法力援助');}}
   if(e.type==='heal'){
    if(own&&d.passive){add(e.roomIndex,'passiveRecords');add(e.roomIndex,'passiveHealing',d.actual);add(e.roomIndex,'passiveOverheal',d.overheal);}
    if(own){add(e.roomIndex,'healing',d.actual);proof(e,index,'本人治疗');if(e.targets[0]!==heroId)link(given,e.targets[0],'healing',d.actual,index);}

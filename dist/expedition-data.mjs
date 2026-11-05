@@ -16,7 +16,7 @@ export const clone=x=>structuredClone(x);
 export const POS={front:'前排',left:'左翼',right:'右翼',center:'中央',rear:'后排'};
 export const ROLE_TARGETS={healer:'治疗者',summoner:'召唤者'};
 export const roleTargetAllowed=s=>s.kind==='attack'&&s.mode==='single'&&['ranged','magic','mental'].includes(s.type);
-export const targetOptions=s=>s.cover?POS:s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS}:POS;
+export const targetOptions=s=>s.kind==='transfer'?{...POS,all:'全队'}:s.cover?POS:s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS}:POS;
 export const ATTR={str:'力量',con:'体质',int:'智力',dex:'灵巧',cha:'魅力',agi:'敏捷',per:'感知',wil:'意志'};
 export const TYPES={melee:'近战',ranged:'远程',magic:'法术',mental:'心理'};
 // Mental attacks share the existing mind-resist choice; no fourth config slot.
@@ -26,6 +26,7 @@ export const naturalDefenses=()=>({melee:'natural',ranged:'natural',magic:'natur
 export const ROOM_IDS=['harbor_gate','harbor_pass','harbor_cache','harbor_beacon','gallery','cistern','altar','infirmary','garden','heart',...FOUNDRY_ROOMS.map(r=>r.id),...WATCH_ROOMS.map(r=>r.id),...COURIER_ROOMS.map(r=>r.id),...THEATER_ROOMS.map(r=>r.id),...SHOALS_SLOTS,...INQUEST_ROOMS.map(r=>r.id),...PALISADE_ROOMS.map(r=>r.id),...SCRIPTORIUM_ROOMS.map(r=>r.id),...GREENHOUSE_ROOMS.map(r=>r.id)];
 // All content and tuning below are original. Formula policies are documented in docs/V3_RULES.md.
 export const SKILLS={
+ manalink:{name:'借潮咏',kind:'transfer',primary:'cha',secondary:'wil',cost:8,mode:'position',max:1,requiresGear:'lute',desc:'吟游者自由普通技能，需乐器；占一次普通行动、8法力、无材料。所选友方阵位或全队中，按最低法力比例选择不高于50%的另一名存活正式单位；同值按队伍顺序，不给自己/召唤物，无合格者免费后备。转入min(实际支付, max(1, floor(1+施放均值×0.08)))，受目标法力上限截断，不随机检定；培养与属性影响均值，但整数档位不保证每级提高。已支付不因上限截断退款；不是生命治疗，不被仅禁草药救护的禁疗阻止，不撤销先前缺蓝、不给额外行动。'},
  strike:{name:'剑术',kind:'attack',type:'melee',primary:'dex',secondary:'str',power:1.3,cost:0,mode:'single',max:1,desc:'近战单体；按近战路线寻找目标。'},
  shot:{name:'穿石箭',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.2,cost:0,mode:'single',max:1,desc:'远程单体；优先指定位置。'},
  volley:{name:'齐射',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.1,cost:5,item:'arrow',mode:'position',max:3,desc:'同位置最多 3 人，分别检定；不跨位置补齐。'},
@@ -70,7 +71,7 @@ const FOUNDERS=[
  {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep'],base:6},
  {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt','tidearcher','recall'],base:6},
  {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse','unravel'],base:6},
- {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance','mindcall'],base:6},
+ {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance','mindcall','manalink'],base:6},
  {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','shot','poultice','slowcare','mireflask'],base:6}
 ];
 export const CLASS_IDS={a:'guardian',b:'ranger',c:'tidecaller',d:'scholar',e:'bard',f:'herbalist'};

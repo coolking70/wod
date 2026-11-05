@@ -1,0 +1,2 @@
+import {greenhouseConfig,scriptoriumConfig,theaterConfig,row} from '../dist/expedition-data.mjs';import {applyBuild} from '../dist/expedition-builds.mjs';
+export function manaAidConfig(route='greenhouse',active=true,target='center'){const c=applyBuild({greenhouse:greenhouseConfig,scriptorium:scriptoriumConfig,theater:theaterConfig}[route](),'e','conduit');c.heroes.find(h=>h.id==='e').main[0].target=target;if(!active)c.heroes.find(h=>h.id==='e').main=[row('shot','rear')];return c;}
