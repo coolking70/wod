@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "remote": "https://github.com/coolking70/wod.git",
+  "ref": "refs/heads/main",
+  "previous": "16986e02d205e6bff1261e375b0ef8bc6d20777c",
+  "local": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+  "remoteVerified": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+  "merge": "fast-forward only",
+  "pushExit": 0,
+  "force": false,
+  "deployment": false,
+  "stdout": "To https://github.com/coolking70/wod.git\n \t357336294d0e5eb9191a8a21ba6c8d1147afe215:refs/heads/main\t16986e0..3573362\nDone\n",
+  "stderr": ""
+}
