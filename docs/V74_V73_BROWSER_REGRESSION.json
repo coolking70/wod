@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "steps": [
+    "正常通路出征以10/13/7满足图纸目标；只在抵达扣2符纸，刷新待结算和历史重演完全相同，领取240金币并记目标一次",
+    "明确潮渠但抵达缺料时实际走风箱回廊，场景、敌情和记录显示回退，通路不收费",
+    "桌面无抗法装备：按抵达实际抗性自动选择bellows，新方案按钮保留策略，草案不修改资产",
+    "390px三枚正常购得护符：按抵达实际抗性自动选择channel，新方案按钮保留策略，草案不修改资产"
+  ],
+  "runs": [
+    {
+      "seed": 3,
+      "approach": "channel",
+      "chosen": "channel",
+      "won": true,
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 3
+      }
+    },
+    {
+      "seed": 3,
+      "approach": "channel",
+      "chosen": "bellows",
+      "won": true
+    },
+    {
+      "seed": 3,
+      "approach": "adaptive",
+      "chosen": "bellows",
+      "qualified": 0,
+      "won": true,
+      "mobile": false
+    },
+    {
+      "seed": 3,
+      "approach": "adaptive",
+      "chosen": "channel",
+      "qualified": 3,
+      "won": true,
+      "mobile": true
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

@@ -1,0 +1,578 @@
+{
+  "note": "24 bounded reports: twelve unchanged-asset/budget route comparisons. First three encounters exactly equal, including events. Same seed after divergent actions is not per-attack paired RNG. No global balance claim.",
+  "cases": [
+    {
+      "seed": 101,
+      "set": "discovery",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 567,
+          "maxHp": 640,
+          "hpPercent": 88,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 555,
+          "maxHp": 640,
+          "hpPercent": 86,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 5,
+        "cooled": 5
+      },
+      "source": 137
+    },
+    {
+      "seed": 102,
+      "set": "discovery",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 550,
+          "maxHp": 640,
+          "hpPercent": 85,
+          "rounds": 18,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 563,
+          "maxHp": 640,
+          "hpPercent": 87,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 5,
+        "cooled": 6
+      },
+      "source": 131
+    },
+    {
+      "seed": 103,
+      "set": "discovery",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 544,
+          "maxHp": 640,
+          "hpPercent": 85,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 507,
+          "maxHp": 640,
+          "hpPercent": 79,
+          "rounds": 14,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 7,
+        "cooled": 8
+      },
+      "source": 129
+    },
+    {
+      "seed": 104,
+      "set": "discovery",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 548,
+          "maxHp": 640,
+          "hpPercent": 85,
+          "rounds": 18,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 539,
+          "maxHp": 640,
+          "hpPercent": 84,
+          "rounds": 17,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 5,
+        "cooled": 7
+      },
+      "source": 159
+    },
+    {
+      "seed": 201,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 544,
+          "maxHp": 640,
+          "hpPercent": 85,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 613,
+          "maxHp": 640,
+          "hpPercent": 95,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": true
+        }
+      },
+      "herb": {
+        "original": 7,
+        "cooled": 5
+      },
+      "source": 129
+    },
+    {
+      "seed": 202,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 522,
+          "maxHp": 640,
+          "hpPercent": 81,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 542,
+          "maxHp": 640,
+          "hpPercent": 84,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 9,
+        "cooled": 7
+      },
+      "source": 132
+    },
+    {
+      "seed": 203,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 597,
+          "maxHp": 640,
+          "hpPercent": 93,
+          "rounds": 14,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": true
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 604,
+          "maxHp": 640,
+          "hpPercent": 94,
+          "rounds": 14,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": true
+        }
+      },
+      "herb": {
+        "original": 5,
+        "cooled": 5
+      },
+      "source": 126
+    },
+    {
+      "seed": 204,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 570,
+          "maxHp": 640,
+          "hpPercent": 89,
+          "rounds": 14,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 551,
+          "maxHp": 640,
+          "hpPercent": 86,
+          "rounds": 14,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 7,
+        "cooled": 7
+      },
+      "source": 119
+    },
+    {
+      "seed": 205,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 510,
+          "maxHp": 640,
+          "hpPercent": 79,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 570,
+          "maxHp": 640,
+          "hpPercent": 89,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 7,
+        "cooled": 7
+      },
+      "source": 126
+    },
+    {
+      "seed": 206,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 614,
+          "maxHp": 640,
+          "hpPercent": 95,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": true
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 600,
+          "maxHp": 640,
+          "hpPercent": 93,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": true
+        }
+      },
+      "herb": {
+        "original": 3,
+        "cooled": 5
+      },
+      "source": 133
+    },
+    {
+      "seed": 207,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 508,
+          "maxHp": 640,
+          "hpPercent": 79,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 544,
+          "maxHp": 640,
+          "hpPercent": 85,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "herb": {
+        "original": 5,
+        "cooled": 5
+      },
+      "source": 132
+    },
+    {
+      "seed": 208,
+      "set": "confirmation",
+      "original": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 560,
+          "maxHp": 640,
+          "hpPercent": 87,
+          "rounds": 16,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        }
+      },
+      "cooled": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 584,
+          "maxHp": 640,
+          "hpPercent": 91,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": true
+        }
+      },
+      "herb": {
+        "original": 7,
+        "cooled": 7
+      },
+      "source": 90
+    }
+  ],
+  "unchanged": {
+    "reference": "71ae145254424a17f41939e04cc25464973b1a2a",
+    "count": 9,
+    "excluded": []
+  },
+  "normal": {
+    "seed": 3,
+    "metrics": {
+      "won": true,
+      "cleared": 4,
+      "alive": 6,
+      "hp": 574,
+      "maxHp": 640,
+      "hpPercent": 89,
+      "rounds": 15,
+      "rune": 3,
+      "arrow": 3
+    },
+    "goals": {
+      "blueprints": true,
+      "home": false
+    },
+    "reward": {
+      "cleared": 4,
+      "gold": 240,
+      "xp": 90,
+      "firstClear": true,
+      "loot": [
+        "bellowscoat",
+        "kilngauge"
+      ],
+      "foundry": {
+        "metrics": {
+          "won": true,
+          "cleared": 4,
+          "alive": 6,
+          "hp": 574,
+          "maxHp": 640,
+          "hpPercent": 89,
+          "rounds": 15,
+          "rune": 3,
+          "arrow": 3
+        },
+        "goals": {
+          "blueprints": true,
+          "home": false
+        },
+        "earned": [
+          "blueprints"
+        ],
+        "gold": 20,
+        "loot": [
+          "kilngauge"
+        ]
+      }
+    }
+  }
+}

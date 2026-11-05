@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前487项测试通过，0失败/跳过；191个ES模块、27个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前493项测试通过，0失败/跳过；196个ES模块、29个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -159,3 +159,13 @@ foundry-view提供双敌情/战前选择、本房channelTactics以及事件/证�
 487测试、9旧路线+9默认铸库完整报告与v72相等。check-v73重建96有限组、三个同预算seed3例和两次正常自动选路，普通装备equip花180金币；输出三护符公会/tmp/wod-v73-three-seals-guild.json。10/13/7是最终helper达图纸例，10/12/8真实失败保留。browser-v73需check-v71的普通trained公会与上述三护符备份，4流程桌面/390px通过，证据在v73/final-browser。
 
 初次helper职业标识和通路证据港口索引问题已修；初始失败与最终成功回执均保留。未重跑旧候补研究。继续有限分支结果影响后续遭遇，重大多人/账号/经济方向不擅动。不推送/合并/部署。
+
+## v0.74引流封库续接
+
+feature/v074-foundry-consequences从71ae145干净487基线继续。foundryFlow可选cooling-1，最新factory与通路明确选择写入；旧缺字段的v73channel/adaptive报告必须保持旧行为。engine.validFoundryFlow校验，外层foundrySource记录第二场真实channel事件ID；第四场先复位FOUNDRY_ROOMS原封库（重要：不能执行roomsFor显式潮渠的条件预览），只有真实source且新flow才用COOLED_VAULT。后者只改fvp.prep ward前排→左翼，其余敌方资产/技能/普通指令不变。branch.kind=vault含sourceEventId/changes及零库存变化，不带第二场members检查。result.path=cooled，实际scene标签跟随result。
+
+foundryEventView/EvidenceCells按kind区分，data-foundry-source与港口定位共享移动逻辑，replay-layout支持该按钮。foundryOutcomeView真正追加resourceLedgerView；其内部路由白名单也必须含foundry。UI对foundry-outcome的ledger-source/edit事件与harbor-assessment共用处理。V73报告已纠正“v73账本UI”的过度描述。A/B解释flow变化为保留原出口/启用潮渠引流，不让产品用户管理兼容字段。
+
+493回归、196mjs/29cjs语法通过；check-v74带v73参考目录核9完整旧通路，compare-reports另核9旧路线。24有限报告前3场完全等价，末房有收益也有代价，不作最优承诺。正常seed3新出口15回合574HP/余3符3箭，240gold90XP图纸奖励；旧出口同预算16回合569HP。browser-v74桌面/390px追溯/账本/刷新/领奖/历史通过；另复跑browser-v73四路径。首轮v74浏览器因账本view内部限港口内容为空而失败，已补白名单与单测，原失败保留。
+
+不重跑旧96/72或候补大样本。当前数值仍为原创原型，不冒认现行原版。开发无权限阻塞；仅原生Library交付以实际结果为准。不推送、合并、部署。

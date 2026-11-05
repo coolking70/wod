@@ -16,7 +16,12 @@ export const FOUNDRY_CHANNEL={id:'foundry_bellows',name:'02 · 冷却潮渠',not
 export const FOUNDRY_APPROACHES={bellows:'风箱回廊',channel:'冷却潮渠',adaptive:'按抵达状态选路'};
 export const FOUNDRY_PASSAGE_RULE='抵达第二场时，符纸至少4份且至少3名存活正式队员法术抗性达到10%，走潮渠并支付2符纸；否则走风箱回廊。';
 export function foundryApproach(c){const choice=c.foundryApproach??'bellows';if(c.foundryApproach===null||typeof choice!=='string'||!Object.hasOwn(FOUNDRY_APPROACHES,choice))throw Error('铸库通路策略无效');return choice;}
-export function foundryRooms(c){return FOUNDRY_ROOMS.map((r,i)=>i===1&&foundryApproach(c)==='channel'?FOUNDRY_CHANNEL:r);}
+export const FOUNDRY_COOLED_VAULT=structuredClone(FOUNDRY_ROOMS[3]);
+FOUNDRY_COOLED_VAULT.name='04 · 引流封库';
+FOUNDRY_COOLED_VAULT.note='第二场实际走冷却潮渠后，引流迫使护炉师改为护住左翼自己，不再屏障前排监工。原有生命、抗性与普通攻击不变：左翼仍抗远程且弱法，后排仍抗法且弱远程。拆左翼支援更难、监工失去覆盖，分工可以重新取舍。出口不另收费，没有额外伤害或削减生命。';
+FOUNDRY_COOLED_VAULT.enemies.find(u=>u.id==='fvp').prep=[row('ward','left')];
+export function validFoundryFlow(c){if(c.foundryFlow!==undefined&&c.foundryFlow!=='cooling-1')throw Error('铸库探索规则无效');return c.foundryFlow==='cooling-1';}
+export function foundryRooms(c){const channel=foundryApproach(c)==='channel',flow=validFoundryFlow(c);return FOUNDRY_ROOMS.map((r,i)=>channel&&i===1?FOUNDRY_CHANNEL:channel&&flow&&i===3?FOUNDRY_COOLED_VAULT:r);}
 export function resolveFoundryPass(c,party,supplies,resistanceOf){
  const preference=foundryApproach(c),members=party.filter(u=>!u.owner&&u.hp>0&&c.heroes.some(h=>h.id===u.id)).map(u=>({id:u.id,name:u.name,magic:resistanceOf(u,'magic')})),qualified=members.filter(u=>u.magic>=10).length;
  const channel=preference==='channel'?supplies.rune>=2:preference==='adaptive'&&supplies.rune>=4&&qualified>=3,chosen=channel?'channel':'bellows',delta=channel?{rune:-2}:{},before={...supplies},after={...supplies,rune:supplies.rune+(delta.rune||0)};

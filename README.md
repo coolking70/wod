@@ -1,8 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.73「铸库通路」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；已记录的main基线为v0.45，本轮未重新核验远端。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.74「引流封库」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；已记录的main基线为v0.45，本轮未重新核验远端。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
 
-铸库新增第二场可选通路与抵达条件选路：共享符纸、职业分工和定向委托形成同预算取舍，整段自动执行。见[v0.73报告](docs/V73_FOUNDRY_PASSAGES.md)。
+连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
 ## 开发交接入口
 

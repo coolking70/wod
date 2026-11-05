@@ -213,7 +213,7 @@ export function harborConfig(){const c=defaults();c.expedition='harbor';c.suppli
 // No experience, equipment or course is granted by this tactical starting plan.
 export function foundryConfig(plan='split'){
  if(!['plain','split','shelter'].includes(plan))throw Error('未知铸库方案');
- const c=defaults();c.expedition='foundry';c.supplies={herb:10,rune:10,arrow:10};
+ const c=defaults();c.expedition='foundry';c.foundryFlow='cooling-1';c.supplies={herb:10,rune:10,arrow:10};
  for(const h of c.heroes){h.item=['c','d','e','f'].includes(h.id)?'tonic':'salve';h.itemPolicy.threshold=h.item==='tonic'?.3:.5;}
  if(plan==='plain')return c;
  const get=id=>c.heroes.find(h=>h.id===id),a=get('a'),b=get('b'),mage=get('c'),d=get('d'),e=get('e'),f=get('f');

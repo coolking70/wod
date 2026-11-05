@@ -18,6 +18,6 @@ export function mountReplayLayout({onChange}){
  function open(key,scroll=false){if(!panes[key])return;if(key!=='battle'){document.body.classList.remove('replay-focus');q('#theatre-mode').checked=false;}onChange();for(const [id,el] of Object.entries(panes))el.hidden=id!==key;root.dataset.workspace=key;for(const b of nav.querySelectorAll('button')){b.classList.toggle('active',b.dataset.replayPane===key);b.setAttribute('aria-pressed',String(b.dataset.replayPane===key));}if(scroll)nav.scrollIntoView({block:'start'});}
  root.addEventListener('click',e=>{const b=e.target.closest('[data-replay-pane]');if(b)open(b.dataset.replayPane,true);},true);
  // Existing evidence and outcome shortcuts must reveal their target before scrolling.
- root.addEventListener('click',e=>{if(e.target.closest('[data-harbor-source],[data-evidence],[data-key-event],[data-ledger-event]'))open('battle');if(e.target.closest('[data-journey-evidence],[data-trace-origin],[data-trace-return]'))open('evidence');},true);
+ root.addEventListener('click',e=>{if(e.target.closest('[data-harbor-source],[data-foundry-source],[data-evidence],[data-key-event],[data-ledger-event]'))open('battle');if(e.target.closest('[data-journey-evidence],[data-trace-origin],[data-trace-return]'))open('evidence');},true);
  open('battle');return {open};
 }

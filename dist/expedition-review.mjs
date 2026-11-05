@@ -49,6 +49,7 @@ export function reviewReport(report){
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
 const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
+ if(key==='foundryFlow')return value==='cooling-1'?'启用潮渠引流':'保留原出口';
  if(key==='advancement'&&!value)return '未选择';
  if(value===undefined)return '继承默认';
  if(key==='harborReserve')return HARBOR_RESERVE[value];if(key==='harborDifficulty')return HARBOR_DIFFICULTY[value];if(key==='harborPass')return HARBOR_PASS[value];if(key==='harborTask')return HARBOR_TASK[value];
@@ -71,7 +72,7 @@ export function configurationChanges(a,b){
  const changes=[],labels={advancement:'后期职业进阶',pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
  const compare=(label,key,x,y)=>{if(canonical(x??null)!==canonical(y??null))changes.push({label,before:format(key,x),after:format(key,y)});};
  if(a.expedition==='harbor'||b.expedition==='harbor'){compare('港口符纸预留','harborReserve',harborReserve(a),harborReserve(b));compare('港口难度','harborDifficulty',harborDifficulty(a),harborDifficulty(b));compare('港口通路策略','harborPass',a.harbor?.pass,b.harbor?.pass);compare('港口事件策略','harborTask',a.harbor?.task,b.harbor?.task);}
- if(a.expedition==='foundry'||b.expedition==='foundry')compare('铸库第二场通路','foundryApproach',foundryApproach(a),foundryApproach(b));
+ if(a.expedition==='foundry'||b.expedition==='foundry'){compare('铸库第二场通路','foundryApproach',foundryApproach(a),foundryApproach(b));compare('铸库通路出口','foundryFlow',a.foundryFlow,b.foundryFlow);}
  compare('回廊救援策略','rescueApproach',a.rescueApproach,b.rescueApproach);
  compare('沉钟机关策略','bellApproach',a.bellApproach,b.bellApproach);
  compare('远征路线','expedition',a.expedition,b.expedition);compare('种子','seed',a.seed,b.seed);compare('默认协作顺序','prepOrder',a.prepOrder,b.prepOrder);
