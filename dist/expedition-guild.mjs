@@ -1,6 +1,7 @@
 import {quoteTrainingPlan} from './expedition-training-plan.mjs';
 import {PROGRESSION_RULES,COURSE_REQUIRED_XP} from './expedition-progression-rules.mjs';
 import {HARBOR_OBJECTIVES,HARBOR_EXCHANGE,harborReward} from './expedition-harbor-contract.mjs';
+import {validateFoundryState,foundryReward} from './expedition-foundry-contract.mjs';
 import {validEquipment,sameEquipment,replaceEquipment} from './expedition-equipment.mjs';
 import {newMember,validateRoster} from './expedition-roster.mjs';
 import {validateCommand,commandConfig} from './expedition-command.mjs';
@@ -17,6 +18,7 @@ export function newGuild(){return {version:6,harbor:{charts:0,claimed:[]},lineup
 const integer=n=>Number.isSafeInteger(n)&&n>=0;
 export function validateGuild(g){
  validateCommand(g?.command);
+ validateFoundryState(g?.foundry);
  if(!g||g.version!==6||!integer(g.gold)||!integer(g.next)||g.next<1||!Array.isArray(g.members)||g.members.length<6||g.members.length>HEROES.length||new Set(g.members.map(h=>h.id)).size!==g.members.length)throw Error('公会存档格式无效');
  if(!g.harbor||!integer(g.harbor.charts)||!Array.isArray(g.harbor.claimed)||new Set(g.harbor.claimed).size!==g.harbor.claimed.length||g.harbor.claimed.some(id=>!Object.hasOwn(HARBOR_OBJECTIVES,id)))throw Error('港口委托存档无效');
  validateRoster(g);
@@ -34,9 +36,10 @@ export function guildConfig(g,tactics){validateGuild(g);const c=commandConfig(g,
 export function depart(g,tactics){validateGuild(g);if(g.pending)throw Error('请先领取上次远征结算');const n=clone(g),config=guildConfig(g,tactics);config.seed=(g.next-1)%999999+1;n.pending={id:g.next,config,rewardVersion:2,...(g.command?{command:clone(g.command)}:{})};n.next++;return n;}
 export function pendingReport(g){validateGuild(g);if(!g.pending)throw Error('没有待结算远征');return {...simulate(clone(g.pending.config)),...(g.pending.command?{perspective:clone(g.pending.command)}:{})};}
 export function rewardFor(report){return expeditionReward(report);}
-export function pendingReward(g){const report=pendingReport(g);const base=expeditionReward(report,{version:g.pending.rewardVersion,first:!(g.clears[report.config.expedition]>0),id:g.pending.id}),harbor=harborReward(report,g);return {...base,...(harbor?{gold:base.gold+harbor.gold,harbor}:{})};}
+export function pendingReward(g){const report=pendingReport(g);const base=expeditionReward(report,{version:g.pending.rewardVersion,first:!(g.clears[report.config.expedition]>0),id:g.pending.id}),harbor=harborReward(report,g),foundry=foundryReward(report,g);return {...base,...(harbor?{gold:base.gold+harbor.gold,harbor}:{}),...(foundry?{gold:base.gold+foundry.gold,loot:[...(base.loot||[]),...foundry.loot],foundry}:{})};}
 export function claim(g){validateGuild(g);if(!g.pending)throw Error('没有待领取奖励');const report=pendingReport(g),reward=pendingReward(g),n=clone(g);n.gold+=reward.gold;for(const h of n.members)if(g.pending.config.heroes.some(u=>u.id===h.id))h.xp+=reward.xp;
  if(reward.harbor){n.harbor.charts+=reward.harbor.charts;n.harbor.claimed.push(...reward.harbor.earned);}
+ if(reward.foundry)n.foundry={claimed:[...(n.foundry?.claimed||[]),...reward.foundry.earned]};
  for(const gear of reward.loot||[])n.warehouse[gear]=(n.warehouse[gear]||0)+1;
  if(g.pending.rewardVersion===2&&report.won)n.clears[report.config.expedition]=(n.clears[report.config.expedition]||0)+1;
  n.history.unshift({id:g.pending.id,route:report.config.expedition,won:report.won,...reward,config:clone(g.pending.config),...(g.pending.command?{command:clone(g.pending.command)}:{})});n.history=n.history.slice(0,20);n.pending=null;return n;}

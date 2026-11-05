@@ -19,7 +19,7 @@ test('四房间继承生命法力道具与补给，模拟不改变路线静态�
 });
 test('公会通过正常资产出征并领取首通，掉落只进仓库，不能重复领奖',()=>{
  const g=clone(trained),c=foundryConfig(),before=clone(g),actual=guildConfig(g,c);assert.deepEqual(actual.heroes.find(h=>h.id==='c').training,g.members.find(m=>m.id==='c').training);
- const pending=depart(g,c),r=pendingReport(pending),reward=pendingReward(pending);assert.equal(r.won,true);assert.equal(r.rooms.length,4);assert.equal(reward.firstClear,true);assert.deepEqual(reward.loot,['bellowscoat']);assert.equal(reward.gold,220);assert.equal(reward.xp,90);
+ const pending=depart(g,c),r=pendingReport(pending),reward=pendingReward(pending);assert.equal(r.won,true);assert.equal(r.rooms.length,4);assert.equal(reward.firstClear,true);assert.deepEqual(expeditionReward(r,{first:true,id:g.next}).loot,['bellowscoat']);assert.deepEqual(reward.loot,['bellowscoat','kilngauge']);assert.deepEqual(reward.foundry.earned,['blueprints']);assert.equal(reward.gold,240);assert.equal(reward.xp,90);
  const done=claim(pending);assert.equal(done.clears.foundry,1);assert.equal(done.warehouse.bellowscoat,1);assert.equal(done.members.some(m=>m.owned.includes('bellowscoat')),false);assert.throws(()=>claim(done),/没有待领取/);assert.deepEqual(g,before);
 });
 test('铸库专属装备有明确来源且不能凭金币购买，分配保留部位和属性代价',()=>{

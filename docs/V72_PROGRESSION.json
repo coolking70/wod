@@ -1,0 +1,129 @@
+{
+  "note": "Normal settlements, training, three foundry departures and explicit equipment assignment; no injected XP, loot, completion or seed counter. No reference argument means combatUnchanged is null.",
+  "records": [
+    {
+      "seed": 3,
+      "plan": "shelter",
+      "reward": {
+        "cleared": 4,
+        "gold": 240,
+        "xp": 90,
+        "firstClear": true,
+        "loot": [
+          "bellowscoat",
+          "bellowscoat"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 581,
+            "maxHp": 640,
+            "hpPercent": 90,
+            "rounds": 21,
+            "rune": 3,
+            "arrow": 2
+          },
+          "goals": {
+            "blueprints": false,
+            "home": true
+          },
+          "earned": [
+            "home"
+          ],
+          "gold": 20,
+          "loot": [
+            "bellowscoat"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "plan": "split",
+      "reward": {
+        "cleared": 4,
+        "gold": 170,
+        "xp": 65,
+        "firstClear": false,
+        "loot": [
+          "kilngauge",
+          "kilngauge"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 537,
+            "maxHp": 640,
+            "hpPercent": 83,
+            "rounds": 17,
+            "rune": 3,
+            "arrow": 4
+          },
+          "goals": {
+            "blueprints": true,
+            "home": false
+          },
+          "earned": [
+            "blueprints"
+          ],
+          "gold": 20,
+          "loot": [
+            "kilngauge"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 5,
+      "plan": "split",
+      "reward": {
+        "cleared": 4,
+        "gold": 150,
+        "xp": 65,
+        "firstClear": false,
+        "loot": [
+          "kilngauge"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 530,
+            "maxHp": 636,
+            "hpPercent": 83,
+            "rounds": 17,
+            "rune": 3,
+            "arrow": 3
+          },
+          "goals": {
+            "blueprints": true,
+            "home": false
+          },
+          "earned": [],
+          "gold": 0,
+          "loot": []
+        }
+      }
+    }
+  ],
+  "claimed": [
+    "home",
+    "blueprints"
+  ],
+  "warehouse": {
+    "remedybag": 1,
+    "wardpendant": 1,
+    "bellowscoat": 1,
+    "kilngauge": 2
+  },
+  "combatUnchanged": {
+    "reference": "881d1858ae6119f475b498e0674d0afac7e9df47",
+    "count": 9,
+    "excluded": []
+  }
+}

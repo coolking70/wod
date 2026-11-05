@@ -5,7 +5,7 @@ export function mountReplayLayout({onChange}){
  q('#result').after(nav);
  for(const key of ['battle','evidence','review']){const pane=document.createElement('div');pane.dataset.replayPaneContent=key;root.append(pane);panes[key]=pane;}
  const move=(key,selectors)=>selectors.forEach(s=>{const el=q(s);if(el)panes[key].append(el);});
- move('review',['.settlement-panel','#support-evidence','#harbor-assessment','#chapter-ending','#contract-outcome','#survival-outcome','#chain-summary','.review-panel','.battle-grid>aside']);
+ move('review',['.settlement-panel','#support-evidence','#harbor-assessment','#foundry-outcome','#chapter-ending','#contract-outcome','#survival-outcome','#chain-summary','.review-panel','.battle-grid>aside']);
  const journalBar=q('#diagnostic').closest('.bar');
  move('evidence',['#support-focus','#care-panel','#detail']);panes.evidence.append(journalBar);move('evidence',['#journal']);
  move('battle',['#harbor-journey','#rescue-result','#route-consequence','#event-scene','.replay-hint','.stage','#cue-strip','#unit-inspector']);
