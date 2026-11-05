@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ breakwater:{bonus:60,xp:25,firstGold:50,firstXp:20,pool:[]},
  counterpoint:{bonus:35,xp:15,firstGold:35,firstXp:15,pool:[]},
  confluence:{bonus:60,xp:25,firstGold:55,firstXp:20,pool:['triagepin']},
  clocktower:{bonus:70,xp:25,firstGold:55,firstXp:20,pool:['clockpin']},

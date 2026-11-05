@@ -1,3 +1,4 @@
+import {encounterEnemies} from './expedition-waves.mjs';
 import {hasSummoningSkill} from './expedition-summons.mjs';
 import {COURIER_ROOMS,COURIER_KEEL} from './expedition-courier.mjs';
 import {harborNodes,HARBOR_NODES} from './expedition-harbor.mjs';
@@ -32,10 +33,10 @@ export function healingActivity(report){
 export function enemyBadge(config,unit){
  if(unit.side!=='enemy')return null;
  if(unit.owner||unit.summoned)return {kind:'summon',label:'召唤',symbol:'◇'};
- const template=(config.expedition==='courier'?[...COURIER_ROOMS,COURIER_KEEL]:config.expedition==='harbor'?Object.values(harborNodes(config)):roomsFor(config)).flatMap(r=>r.enemies).find(u=>u.id===unit.id);
+ const template=(config.expedition==='courier'?[...COURIER_ROOMS,COURIER_KEEL]:config.expedition==='harbor'?Object.values(harborNodes(config)):roomsFor(config)).flatMap(encounterEnemies).find(u=>u.id===unit.id);
  if(template?.skills.mireflask!==undefined)return {kind:'magic',label:'蚀潮施法',symbol:'蚀'};
  if(template?.skills.unravel!==undefined)return {kind:'magic',label:'破印者',symbol:'解'};
- if(['palisade','harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&template?.skills.heal!==undefined)return {kind:'magic',label:'治疗支援',symbol:'药'};
+ if(['breakwater','palisade','harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&template?.skills.heal!==undefined)return {kind:'magic',label:'治疗支援',symbol:'药'};
  if(['harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&hasSummoningSkill(template))return {kind:'magic',label:'召唤支援',symbol:'潮'};
  if(template?.skills.interpose!==undefined)return {kind:'mixed',label:'援护支援',symbol:'盾'};
  const types=[...new Set(Object.keys(template?.skills||{}).map(k=>SKILLS[k]?.type).filter(Boolean))];

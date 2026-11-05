@@ -1,0 +1,545 @@
+{
+  "version": "0.117",
+  "branch": "feature/v117-wave-reinforcements",
+  "baseline": "56fcb1af4234693a7bb7ff87854214b0c38c1ab2",
+  "fullTests": {
+    "passed": 895,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-tests.tap"
+  },
+  "newTests": {
+    "passed": 17,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "unit-final.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 25,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "pageErrors": 0,
+    "log": "acceptance/browser-acceptance.json",
+    "finalNewWorkflow": "acceptance/browser-v117/browser-v117.json",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 450,
+    "errors": [],
+    "lastChangedFileRechecked": "tests/v117.test.mjs"
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 123,
+    "checkedReferences": 140,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "56fcb1af4234693a7bb7ff87854214b0c38c1ab2",
+    "priorRoutes": 23,
+    "currentRoutes": 24,
+    "newRoute": "breakwater",
+    "count": 46,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "legacyChecker": "scripts/check-v117-legacy.mjs",
+  "legacyFullHashLog": "legacy.json",
+  "normalProgression": {
+    "startGold": 840,
+    "reports": [
+      {
+        "plan": "advance",
+        "seed": 10,
+        "objective": "clear",
+        "reward": {
+          "cleared": 2,
+          "gold": 150,
+          "xp": 65,
+          "firstClear": true,
+          "loot": []
+        },
+        "gold": 990,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          8,
+          7
+        ],
+        "waves": [
+          {
+            "total": 2,
+            "entered": 2,
+            "remaining": 0,
+            "completed": 2,
+            "cleared": [
+              {
+                "index": 1,
+                "eventId": 162,
+                "round": 3
+              }
+            ],
+            "lastCleared": 2
+          },
+          {
+            "total": 2,
+            "entered": 2,
+            "remaining": 0,
+            "completed": 2,
+            "cleared": [
+              {
+                "index": 1,
+                "eventId": 486,
+                "round": 3
+              }
+            ],
+            "lastCleared": 2
+          }
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 6
+        },
+        "arrivals": [
+          {
+            "eventId": 164,
+            "room": 0,
+            "round": 4,
+            "index": 2,
+            "total": 2,
+            "name": "追浪接应队",
+            "sourceEventId": 162,
+            "arrivals": [
+              {
+                "id": "bwr1",
+                "name": "追浪守卫",
+                "pos": "front",
+                "hp": 165,
+                "mp": 85
+              },
+              {
+                "id": "bwrm",
+                "name": "接应医师",
+                "pos": "rear",
+                "hp": 130,
+                "mp": 85
+              },
+              {
+                "id": "bwra",
+                "name": "追浪射手",
+                "pos": "right",
+                "hp": 110,
+                "mp": 85
+              }
+            ],
+            "enemySupplies": {
+              "herb": 60,
+              "rune": 60,
+              "arrow": 60
+            },
+            "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+          },
+          {
+            "eventId": 488,
+            "room": 1,
+            "round": 4,
+            "index": 2,
+            "total": 2,
+            "name": "归潮信号队",
+            "sourceEventId": 486,
+            "arrivals": [
+              {
+                "id": "bwb2",
+                "name": "归潮重卫",
+                "pos": "front",
+                "hp": 180,
+                "mp": 85
+              },
+              {
+                "id": "bwa1",
+                "name": "信号弩手",
+                "pos": "rear",
+                "hp": 110,
+                "mp": 85
+              },
+              {
+                "id": "bwa2",
+                "name": "信号弩手",
+                "pos": "rear",
+                "hp": 110,
+                "mp": 85
+              }
+            ],
+            "enemySupplies": {
+              "herb": 60,
+              "rune": 59,
+              "arrow": 60
+            },
+            "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+          }
+        ],
+        "onceCasts": [
+          {
+            "room": 0,
+            "round": 1,
+            "actor": "b",
+            "skill": "pierce"
+          },
+          {
+            "room": 0,
+            "round": 1,
+            "actor": "c",
+            "skill": "wave"
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "actor": "c",
+            "skill": "wave"
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "actor": "b",
+            "skill": "pierce"
+          }
+        ],
+        "healerHunts": []
+      },
+      {
+        "plan": "hunt",
+        "seed": 11,
+        "objective": "reserve",
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 1090,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          8,
+          7
+        ],
+        "waves": [
+          {
+            "total": 2,
+            "entered": 2,
+            "remaining": 0,
+            "completed": 2,
+            "cleared": [
+              {
+                "index": 1,
+                "eventId": 196,
+                "round": 4
+              }
+            ],
+            "lastCleared": 2
+          },
+          {
+            "total": 2,
+            "entered": 2,
+            "remaining": 0,
+            "completed": 2,
+            "cleared": [
+              {
+                "index": 1,
+                "eventId": 502,
+                "round": 3
+              }
+            ],
+            "lastCleared": 2
+          }
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 5
+        },
+        "arrivals": [
+          {
+            "eventId": 198,
+            "room": 0,
+            "round": 5,
+            "index": 2,
+            "total": 2,
+            "name": "追浪接应队",
+            "sourceEventId": 196,
+            "arrivals": [
+              {
+                "id": "bwr1",
+                "name": "追浪守卫",
+                "pos": "front",
+                "hp": 165,
+                "mp": 85
+              },
+              {
+                "id": "bwrm",
+                "name": "接应医师",
+                "pos": "rear",
+                "hp": 130,
+                "mp": 85
+              },
+              {
+                "id": "bwra",
+                "name": "追浪射手",
+                "pos": "right",
+                "hp": 110,
+                "mp": 85
+              }
+            ],
+            "enemySupplies": {
+              "herb": 60,
+              "rune": 60,
+              "arrow": 60
+            },
+            "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+          },
+          {
+            "eventId": 504,
+            "room": 1,
+            "round": 4,
+            "index": 2,
+            "total": 2,
+            "name": "归潮信号队",
+            "sourceEventId": 502,
+            "arrivals": [
+              {
+                "id": "bwb2",
+                "name": "归潮重卫",
+                "pos": "front",
+                "hp": 180,
+                "mp": 85
+              },
+              {
+                "id": "bwa1",
+                "name": "信号弩手",
+                "pos": "rear",
+                "hp": 110,
+                "mp": 85
+              },
+              {
+                "id": "bwa2",
+                "name": "信号弩手",
+                "pos": "rear",
+                "hp": 110,
+                "mp": 85
+              }
+            ],
+            "enemySupplies": {
+              "herb": 60,
+              "rune": 59,
+              "arrow": 60
+            },
+            "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+          }
+        ],
+        "onceCasts": [
+          {
+            "room": 0,
+            "round": 5,
+            "actor": "b",
+            "skill": "pierce"
+          },
+          {
+            "room": 0,
+            "round": 6,
+            "actor": "b",
+            "skill": "pierce"
+          },
+          {
+            "room": 0,
+            "round": 7,
+            "actor": "b",
+            "skill": "pierce"
+          }
+        ],
+        "healerHunts": [
+          {
+            "room": 0,
+            "round": 5,
+            "targets": [
+              "bwrm"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 6,
+            "targets": [
+              "bwrm"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 7,
+            "targets": [
+              "bwrm"
+            ]
+          }
+        ]
+      }
+    ],
+    "fullReportsAndGuildEqualToAPI": true,
+    "earnedGoldBalances": [
+      990,
+      1090
+    ],
+    "paidTraining": {
+      "hero": "b",
+      "key": "skill:pierce",
+      "xp": 20
+    },
+    "retainedOwnedGear": {
+      "hero": "b",
+      "item": "postbell"
+    },
+    "proofIds": {
+      "clear": 10,
+      "reserve": 11
+    },
+    "campaignPlanAndBindingRestore": true,
+    "historyImmutableNoDuplicateClaim": true,
+    "priorFailuresAndWithdrawalPreserved": true
+  },
+  "finiteCases": {
+    "count": 18,
+    "plans": [
+      "advance",
+      "hunt",
+      "steady"
+    ],
+    "seeds": [
+      1,
+      2,
+      7,
+      19,
+      73,
+      731
+    ],
+    "allWon": true,
+    "allSixStanding": true,
+    "noMaterialExhaustionInTheseCases": true,
+    "limits": "18 predeclared fresh route/plan/seed inputs and actual earned departures10/11. Same seed is not paired attack randomness once actions differ; no global balance, avoided damage or single-skill win attribution.",
+    "enemyStatsTunedAfterDiscovery": false,
+    "initialOutcomeMetricsRetained": true
+  },
+  "mechanic": {
+    "configuration": "Authored room.reinforcements contains1-2 additional public waves, total2-3. Enemy IDs distinct per room.",
+    "arrival": "Following room round after scheduled start ticks, before withdrawal/preparation. A periodic kill at start closes the wave and waits another round.",
+    "continuity": [
+      "Room round limit",
+      "Room-wide round windows",
+      "Ordinary cursors and once-use",
+      "HP/MP and item charges",
+      "Allied summons",
+      "Buff/debuff expiry and source identities",
+      "Player shared supplies",
+      "Enemy independent room stock"
+    ],
+    "completion": "All published waves required; each completed room pays once; an unentered wave at the shared cap or withdrawal is not room victory.",
+    "boundariesVerified": [
+      "Maximum three-wave consecutive source links and one-room payment",
+      "Once/cycle/window retention",
+      "Summon/owner mana/material retention",
+      "Room-vs-round effect expiry",
+      "Real corrosion kill and delayed arrival",
+      "Cap with unentered wave fails",
+      "Incoming wave then withdrawal fails room",
+      "Enemy herb59 not restored",
+      "Future medic identity and only actual-target pursuit",
+      "Default/highlight/personal replay and exact source round trip"
+    ]
+  },
+  "initialFindings": {
+    "newUnitInitial": "16/16 passed; subsequently added real reinforcement stage cue assertion and maximum-three-wave case, final17/17 and complete895 passed.",
+    "newBrowserInitial": "Passed; final unified browser additionally verifies stage shows reinforcement arrival and does not label the arriving medic as a summon.",
+    "assertionsWeakened": false,
+    "seedsChangedToPass": false,
+    "logs": [
+      "unit-initial.tap",
+      "unit-final.tap",
+      "full-tests.tap",
+      "browser-v117.json",
+      "acceptance/browser-v117/browser-v117.json"
+    ]
+  },
+  "referenceBoundary": {
+    "successfulFullText": {
+      "url": "https://world-of-dungeons.net/",
+      "supports": "Official homepage player accounts support studying enemies, choosing weapons/positions/priority targets, protection and coordination; tactical direction only."
+    },
+    "indexedOnly": {
+      "url": "https://world-of-dungeons.net/ency/Group_-_Dungeons",
+      "excerptSupports": "Different dungeon levels vary in difficulty; does not verify same-room reinforcement mechanics.",
+      "fullTextRead": false,
+      "failure": "502 Bad Gateway",
+      "retried": false
+    },
+    "currentServerRulesVerified": false,
+    "projectOriginal": "Finite1-2 reinforcement waves, next-round arrival after scheduled start ticks, shared room clocks/once-use/cursors/effects/summons/player and enemy room stock, full-wave room-completion rewards; two-room Breakwater route, enemy templates/plans and currency-only rewards. No new skill/damage formula/gear/training cost/permanent supply rule."
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 24,
+    "gear": 40,
+    "goalCount": 72,
+    "combatEngineChanged": true,
+    "newSkillsOrDamageFormulas": false,
+    "newTrainingCosts": false,
+    "newPlayerConfigFields": false,
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "limitations": [
+      "Same-room reinforcement timing/continuity and new route/stats/plans/rewards are project-original provisional content, not a verified original-server implementation.",
+      "Official homepage supports tactical direction. Group-Dungeons full text502 not retried; indexed summary is not treated as read full text.",
+      "18 finite successful samples do not establish global balance or higher-tier reliability; previous normal failures and withdrawal remain preserved.",
+      "Firefox/Safari/physical devices not tested. Permanent supplies remain deferred."
+    ]
+  }
+}

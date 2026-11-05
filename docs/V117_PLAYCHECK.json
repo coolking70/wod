@@ -1,0 +1,3015 @@
+{
+  "startGold": 840,
+  "normal": [
+    {
+      "plan": "advance",
+      "seed": 10,
+      "objective": "clear",
+      "reward": {
+        "cleared": 2,
+        "gold": 150,
+        "xp": 65,
+        "firstClear": true,
+        "loot": []
+      },
+      "gold": 990,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 162,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 486,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 6
+      },
+      "arrivals": [
+        {
+          "eventId": 164,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 162,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 488,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 486,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": []
+    },
+    {
+      "plan": "hunt",
+      "seed": 11,
+      "objective": "reserve",
+      "reward": {
+        "cleared": 2,
+        "gold": 100,
+        "xp": 45,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 1090,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 196,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 502,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 5
+      },
+      "arrivals": [
+        {
+          "eventId": 198,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 196,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 504,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 502,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": [
+        {
+          "room": 0,
+          "round": 5,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "targets": [
+            "bwrm"
+          ]
+        }
+      ]
+    }
+  ],
+  "matrix": [
+    {
+      "plan": "advance",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        7,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 162,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 448,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 6
+      },
+      "arrivals": [
+        {
+          "eventId": 164,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 162,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 450,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 448,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": []
+    },
+    {
+      "plan": "advance",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        9,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 165,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 531,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 6
+      },
+      "arrivals": [
+        {
+          "eventId": 167,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 165,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 533,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 531,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        }
+      ],
+      "healerHunts": []
+    },
+    {
+      "plan": "advance",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 156,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 492,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 6
+      },
+      "arrivals": [
+        {
+          "eventId": 158,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 156,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 494,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 492,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        }
+      ],
+      "healerHunts": []
+    },
+    {
+      "plan": "advance",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        9,
+        8
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 191,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 525,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 6
+      },
+      "arrivals": [
+        {
+          "eventId": 193,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 191,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 527,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 525,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        }
+      ],
+      "healerHunts": []
+    },
+    {
+      "plan": "advance",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 165,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 513,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 6
+      },
+      "arrivals": [
+        {
+          "eventId": 167,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 165,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 515,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 513,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": []
+    },
+    {
+      "plan": "advance",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        9,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 189,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 545,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 6
+      },
+      "arrivals": [
+        {
+          "eventId": 191,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 189,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 547,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 545,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        },
+        {
+          "room": 0,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "actor": "c",
+          "skill": "wave"
+        }
+      ],
+      "healerHunts": []
+    },
+    {
+      "plan": "hunt",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 216,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 545,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 5
+      },
+      "arrivals": [
+        {
+          "eventId": 218,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 216,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 547,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 545,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": [
+        {
+          "room": 0,
+          "round": 5,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "targets": [
+            "bwrm"
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "hunt",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        9,
+        8
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 205,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 553,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 4
+      },
+      "arrivals": [
+        {
+          "eventId": 207,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 205,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 555,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 553,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 8,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": [
+        {
+          "room": 0,
+          "round": 5,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 8,
+          "targets": [
+            "bwrm"
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "hunt",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 200,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 495,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 5
+      },
+      "arrivals": [
+        {
+          "eventId": 202,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 200,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 497,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 495,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": [
+        {
+          "room": 0,
+          "round": 5,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "targets": [
+            "bwrm"
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "hunt",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 192,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 502,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 5
+      },
+      "arrivals": [
+        {
+          "eventId": 194,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 192,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 504,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 502,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": [
+        {
+          "room": 0,
+          "round": 5,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "targets": [
+            "bwrm"
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "hunt",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        8,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 196,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 505,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 5
+      },
+      "arrivals": [
+        {
+          "eventId": 198,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 196,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 507,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 505,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": [
+        {
+          "room": 0,
+          "round": 5,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "targets": [
+            "bwrm"
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "hunt",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        9,
+        7
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 208,
+              "round": 4
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 573,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 4
+      },
+      "arrivals": [
+        {
+          "eventId": 210,
+          "room": 0,
+          "round": 5,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 208,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 575,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 573,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [
+        {
+          "room": 0,
+          "round": 5,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "actor": "b",
+          "skill": "pierce"
+        },
+        {
+          "room": 0,
+          "round": 8,
+          "actor": "b",
+          "skill": "pierce"
+        }
+      ],
+      "healerHunts": [
+        {
+          "room": 0,
+          "round": 5,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "targets": [
+            "bwrm"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 8,
+          "targets": [
+            "bwrm"
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "steady",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        7,
+        6
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 144,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 406,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 5,
+        "arrow": 8
+      },
+      "arrivals": [
+        {
+          "eventId": 146,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 144,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 408,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 406,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [],
+      "healerHunts": []
+    },
+    {
+      "plan": "steady",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        6
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 147,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 378,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 6,
+        "arrow": 8
+      },
+      "arrivals": [
+        {
+          "eventId": 149,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 147,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 380,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 378,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [],
+      "healerHunts": []
+    },
+    {
+      "plan": "steady",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        7,
+        6
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 147,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 404,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 5,
+        "arrow": 8
+      },
+      "arrivals": [
+        {
+          "eventId": 149,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 147,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 406,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 404,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [],
+      "healerHunts": []
+    },
+    {
+      "plan": "steady",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        7,
+        6
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 149,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 417,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 5,
+        "arrow": 8
+      },
+      "arrivals": [
+        {
+          "eventId": 151,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 149,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 419,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 417,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [],
+      "healerHunts": []
+    },
+    {
+      "plan": "steady",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        6
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 147,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 379,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 6,
+        "arrow": 8
+      },
+      "arrivals": [
+        {
+          "eventId": 149,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 147,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 381,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 379,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [],
+      "healerHunts": []
+    },
+    {
+      "plan": "steady",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        6
+      ],
+      "waves": [
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 151,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        },
+        {
+          "total": 2,
+          "entered": 2,
+          "remaining": 0,
+          "completed": 2,
+          "cleared": [
+            {
+              "index": 1,
+              "eventId": 385,
+              "round": 3
+            }
+          ],
+          "lastCleared": 2
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 6,
+        "arrow": 8
+      },
+      "arrivals": [
+        {
+          "eventId": 153,
+          "room": 0,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "追浪接应队",
+          "sourceEventId": 151,
+          "arrivals": [
+            {
+              "id": "bwr1",
+              "name": "追浪守卫",
+              "pos": "front",
+              "hp": 165,
+              "mp": 85
+            },
+            {
+              "id": "bwrm",
+              "name": "接应医师",
+              "pos": "rear",
+              "hp": 130,
+              "mp": 85
+            },
+            {
+              "id": "bwra",
+              "name": "追浪射手",
+              "pos": "right",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 60,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        },
+        {
+          "eventId": 387,
+          "room": 1,
+          "round": 4,
+          "index": 2,
+          "total": 2,
+          "name": "归潮信号队",
+          "sourceEventId": 385,
+          "arrivals": [
+            {
+              "id": "bwb2",
+              "name": "归潮重卫",
+              "pos": "front",
+              "hp": 180,
+              "mp": 85
+            },
+            {
+              "id": "bwa1",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            },
+            {
+              "id": "bwa2",
+              "name": "信号弩手",
+              "pos": "rear",
+              "hp": 110,
+              "mp": 85
+            }
+          ],
+          "enemySupplies": {
+            "herb": 60,
+            "rune": 59,
+            "arrow": 60
+          },
+          "rule": "清完当前波后，剩余已排普通行动结束；下一波在下个回合既有持续效果结算后、撤退检查与预备之前抵达。各波共用本房回合上限、指令游标/本房一次次数、生命法力、道具、召唤物和补给；不回满、不退料、不重置效果期限。敌方同房库存也不重置。全部公开波次清完才算通过本房，单波不发房间收益。回合窗口按本房累计回合，不从新波重新计1。时机与数量为项目原创设计。"
+        }
+      ],
+      "onceCasts": [],
+      "healerHunts": []
+    }
+  ],
+  "design": "Project-original two-room route with one finite public reinforcement per room. Next wave comes in next room round after existing start ticks; all room clocks/cursors/once use/player and enemy stock/summons persist. No new gear/skill/damage formula/permanent supply economy; only full room completion pays room rewards.",
+  "limit": "18 predeclared fresh route/plan/seed inputs and actual earned departures10/11. Same seed is not paired attack randomness once actions differ; no global balance, avoided damage or single-skill win attribution."
+}

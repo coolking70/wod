@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.116「整队撤退计划」**，分支`feature/v116-planned-withdrawal`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.117「潮堤接应」**，分支`feature/v117-wave-reinforcements`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[同房分波增援与潮堤接应](docs/V117_WAVE_REINFORCEMENTS.md)：两房各两波，回合、once/游标、召唤和双方库存跨波延续，不回满或单波领奖；全部敌情按波公开，抵达可往返前波清场来源。正常编号10/11全报告及990/1090金币公会同API，旧失败/撤退保留；无新装备/技能。见[V117验证](docs/V117_CHECKS.json)。
 
 新增[战前整队撤退计划](docs/V116_PLANNED_WITHDRAWAL.md)：显式设定存活正式队员人数，持续效果结算后、预备/排队前按计划结束远征，既定上回合行动与已付费用保留。未清场只领原有部分收益；默认关闭，方案/实际出征卡/回放/整档与历史贯通。正常邮路三人撤退至565、回廊至640、再战真实首通至840，保留原失败和撤退报告。见[V116验证](docs/V116_CHECKS.json)。
 
