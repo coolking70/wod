@@ -2,7 +2,7 @@
 import {HEROES} from './expedition-data.mjs';
 export function personalReport(report,heroId){
  if(!HEROES.some(h=>h.id===heroId))throw Error('未知观察角色');
- const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0,controlApplications:0,healingBlocks:0,passiveHealing:0,passiveRecords:0,passiveOverheal:0});
+ const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0,controlApplications:0,weakeningApplications:0,cleansedEffects:0,healingBlocks:0,passiveHealing:0,passiveRecords:0,passiveOverheal:0});
  const total=blank(),rooms=report.rooms.map((r,i)=>({index:i,name:r.name,...blank()})),given=new Map(),received=new Map(),issues=new Map(),evidence=[],supplies={herb:0,rune:0,arrow:0};
  let stock={...report.config.supplies};const buffKeys=new Set(),inKeys=new Set(),controlKeys=new Set(),proofKeys=new Set();
  const add=(room,key,n=1)=>{total[key]+=n;if(rooms[room])rooms[room][key]+=n;};
@@ -27,10 +27,11 @@ export function personalReport(report,heroId){
   if(e.type==='effect')for(const id of e.targets){
    // A multi-component buff on one recipient is one application, not several contributions.
    const key=[e.roomIndex,e.actionId||d.cast||e.id,e.actor,id,d.skill].join(':');
-   if(d.harmful){if(own&&!controlKeys.has(key)){controlKeys.add(key);add(e.roomIndex,'controlApplications');proof(e,index,'施加禁疗');}continue;}
+   if(d.harmful){if(own&&!controlKeys.has(key)){controlKeys.add(key);add(e.roomIndex,'controlApplications');if(d.skill==='dissonance')add(e.roomIndex,'weakeningApplications');proof(e,index,'施加'+(d.component||'负面'));}continue;}
    if(own&&!buffKeys.has(key)){buffKeys.add(key);add(e.roomIndex,'buffApplications');if(id!==heroId)link(given,id,'buffs',1,index);proof(e,index,'施加增益');}
    if(id===heroId&&!own&&!inKeys.has(key)){inKeys.add(key);link(received,e.actor,'buffs',1,index);proof(e,index,'得到增益');}
   }
+  if(e.type==='cleanse'){if(own){add(e.roomIndex,'cleansedEffects',d.removed.length);proof(e,index,'本人净化');}if(target&&!own)proof(e,index,'得到净化');}
   if(own&&e.type==='item'){add(e.roomIndex,'items');proof(e,index,'使用道具');}
   if(own&&e.type==='failed'){add(e.roomIndex,'failed');proof(e,index,'行动空过');}
   if(own&&e.type==='skip'&&['法力不足','耗材耗尽','装备条件不满足'].includes(d.reason)){

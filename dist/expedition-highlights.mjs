@@ -3,7 +3,7 @@ import {groupActions} from './expedition-report.mjs';
 export function highlightedSteps(events){
  const seen=new Set();
  return groupActions(events).filter(g=>{
- const keyEvents=['room','victory','defeat','scene','encounter','route','rescue','branch','deadline','summon','down','item','activate'];
+ const keyEvents=['room','victory','defeat','scene','encounter','route','rescue','branch','deadline','summon','down','item','cleanse','activate'];
  if(g.events.some(e=>keyEvents.includes(e.type)||(e.detail.reservation||e.detail.healingBlock)))return true;
  const cast=g.events.find(e=>e.type==='cast');
  if(g.events.some(e=>e.type==='effect')){const key=g.roomIndex+':'+g.events[0].actor+':'+(cast?.detail.skill||g.events[0].detail.skill);if(!seen.has(key)){seen.add(key);return true;}}

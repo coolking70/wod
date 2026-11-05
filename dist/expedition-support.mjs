@@ -1,12 +1,13 @@
+import {effectValue} from './expedition-afflictions.mjs';
 // Read-only support cues; recipients are recorded results, never predicted coverage.
 import {groupActions} from './expedition-report.mjs';
-const kinds=new Set(['effect','activate','expire','heal']);
+const kinds=new Set(['effect','cleanse','activate','expire','heal']);
 const stats={regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数',str:'力量',dex:'灵巧',agi:'敏捷',wil:'意志',cha:'魅力'};
 export function supportFrame(group){
  const last=group.events.at(-1),name=id=>last.units.find(u=>u.id===id)?.name||id;
  const changes=group.events.filter(e=>kinds.has(e.type)).flatMap(e=>e.targets.map(target=>{
- const d=e.detail,harmful=Boolean(d.harmful||d.stat==='healingBlock'),state=e.type==='heal'?(d.passive?'缓释恢复':'治疗'):e.type==='expire'?'到期':e.type==='activate'?'开始生效':harmful?'禁疗已附着':d.active===false?'等待生效':'获得增益';
- const value=e.type==='heal'?`恢复 ${d.actual} 生命`:e.type==='expire'?`${d.component||'效果'}结束`:harmful?'本回合后续自动救护受限':`${d.component||'效果'} · ${stats[d.stat]||d.stat} +${d.value}`;
+ const d=e.detail,harmful=Boolean(d.harmful||d.stat==='healingBlock'),state=e.type==='cleanse'?'净化':e.type==='heal'?(d.passive?'缓释恢复':'治疗'):e.type==='expire'?'到期':e.type==='activate'?'开始生效':harmful?(d.component||'负面')+'已附着':d.active===false?'等待生效':'获得增益';
+ const value=e.type==='cleanse'?d.removed.map(effectValue).join('；'):e.type==='heal'?`恢复 ${d.actual} 生命`:e.type==='expire'?`${d.component||'效果'}结束`:harmful?effectValue(d):`${d.component||'效果'} · ${stats[d.stat]||d.stat} +${d.value}`;
  const timing=e.type==='effect'&&d.active===false?`第${d.activateRound}回合生效`:d.expires?`第${d.expires}回合末到期`:d.scope==='expedition'?'远征有效':d.scope==='battle'?'本房间有效':'';
  return {eventId:e.id,from:e.actor,to:target,source:name(e.actor),recipient:name(target),state,value,timing,kind:e.type,harmful,pending:d.active===false};
  }));

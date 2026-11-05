@@ -1,0 +1,22 @@
+{
+  "equal": true,
+  "excluded": [],
+  "history": [
+    2,
+    1
+  ],
+  "next": 3,
+  "gold": 215,
+  "bard": {
+    "xp": 75,
+    "training": {
+      "skill:dissonance": 1
+    },
+    "gear": {
+      "weapon": "votivelute",
+      "armor": "cloth",
+      "accessory": "token"
+    }
+  },
+  "note": "Whole guild after actual new-player seed1 cleanse claim, lute assignment,20XP ordinary training,seed2 pressure repeat claim equals normal API progression. No fields excluded."
+}

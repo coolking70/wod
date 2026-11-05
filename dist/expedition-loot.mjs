@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ theater:{bonus:45,xp:20,firstGold:45,firstXp:15,pool:['votivelute','echocharm']},
  courier:{bonus:75,xp:25,firstGold:65,firstXp:25,pool:['postbell']},
  foundrywatch:{bonus:80,xp:30,firstGold:70,firstXp:30,pool:['watchseal']},
  foundry:{bonus:70,xp:25,firstGold:70,firstXp:25,pool:['bellowscoat','kilngauge']},

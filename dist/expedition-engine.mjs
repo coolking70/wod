@@ -1,3 +1,4 @@
+import {WEAKENING,cleansableEffects,activeWeakening,canWeaken} from './expedition-afflictions.mjs';
 import {courierPass,resolveCourierPass,COURIER_ROOMS,COURIER_RELAY} from './expedition-courier.mjs';
 import {reserveBlock} from './expedition-harbor-reserve.mjs';
 import {advancementOptions,skillManaCost,advancementEffectBonus,advancementTrace} from './expedition-advancement-data.mjs';
@@ -149,9 +150,9 @@ export function simulate(c,options={}){
    else if((reservation=reserveBlock(c,roomIndex,u,s,stock)))reason='为第三场事件预留2符纸，尝试下一条指令';
    let targets=[];
    if(!reason&&!['wait','summon'].includes(s.kind)){
-    targets=chooseTargets(u,all(),s,r.target,rng);
-    if(s.kind==='buff')targets=targets.filter(t=>!t.effects.some(e=>e.skill===r.skill));
-    if(!targets.length)reason=Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
+    targets=chooseTargets(u,s.cleanse?all().filter(t=>cleansableEffects(t).length):all(),s,r.target,rng);
+    if(s.kind==='buff'&&!s.cleanse)targets=targets.filter(t=>!t.effects.some(e=>e.skill===r.skill));
+    if(!targets.length)reason=Object.hasOwn(ROLE_TARGETS,r.target)?'没有存活的'+ROLE_TARGETS[r.target]+'，尝试下一条指令':s.cleanse?'没有可净化的负面效果':s.kind==='buff'?'无可覆盖目标或同名效果仍在':'没有合法目标';
    }
    if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {}),...(healingBlock?{healingBlock}: {})});return false;}
    if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);roundUsed.set(key,round);return true;}
@@ -159,7 +160,8 @@ export function simulate(c,options={}){
    const lv=skillLevel(u,r.skill),m=mean(u,r.skill),cast=++serial;actionId=roomIndex+':'+cast;
    emit('cast',u.name+' '+(interrupt?'中断普通指令，使用':'使用')+'「'+s.name+'」',u.id,targets.map(t=>t.id),{cast,skill:r.skill,skillLevel:lv,levelSources:skillBreakdown(u,r.skill),...(advancement?{advancement}:{}),primary:current(u,s.primary),secondary:current(u,s.secondary),mean:m,formula:'主属性 ×2 + 副属性 + 实时技能等级 ×2',mpBefore:before,mpAfter:u.mp,item:s.item||null,interrupt,...(Object.hasOwn(ROLE_TARGETS,r.target)?{targetPolicy:{requested:r.target,rule:'仅选择存活且拥有'+(r.target==='healer'?'治疗':'召唤')+'技能的敌人；多人符合时随机选一人，不要求当前资源充足。',selected:targets.map(t=>({id:t.id,name:t.name,pos:t.pos}))}}:{}),sources:effectTrace(u)});
    if(s.kind==='summon')spawn(u,r.target);
-   if(s.kind==='buff')for(const t of targets){
+   if(s.cleanse)for(const t of targets){const removed=cleansableEffects(t);t.effects=t.effects.filter(e=>!removed.includes(e));emit('cleanse',u.name+' 为 '+t.name+' 净化 '+removed.map(e=>e.component||e.name).join('、'),u.id,[t.id],{cast,skill:r.skill,removed:removed.map(e=>({effectId:e.id,skill:e.skill,name:e.name,component:e.component,stat:e.stat,value:e.value,source:e.source,sourceName:e.sourceName})),rule:'只移除本次实际记录的负面效果；不移除正面增益、不回滚此前检定、不提供后续免疫。'});}
+   if(s.kind==='buff'&&!s.cleanse)for(const t of targets){
     const components=s.components||[{stat:s.stat,base:s.base,scale:s.scale,scope:s.scope,duration:s.duration,delay:0}];
     for(const [componentIndex,part] of components.entries()){
      const advancementBonus=advancementEffectBonus(u,r.skill,part.stat),v=Math.floor(part.base+m*part.scale)+advancementBonus,delay=part.delay||0,e={id:`${roomIndex}:${cast}:${t.id}:${componentIndex}`,skill:r.skill,name:s.name,component:part.label||s.name,source:u.id,sourceName:u.name,stat:part.stat,value:v,scope:part.scope,active:delay===0,activateTick:clock+delay,activateRound:round+delay,expires:part.scope==='rounds'?round+delay+part.duration:null,expiresTick:part.scope==='rounds'?clock+delay+part.duration:null};
@@ -181,6 +183,7 @@ export function simulate(c,options={}){
      const effect={id:`${roomIndex}:${cast}:${t.id}:healingBlock`,skill:r.skill,name:s.name,component:'禁疗',source:u.id,sourceName:u.name,stat:HEALING_BLOCK_STAT,value:1,scope:'rounds',active:true,harmful:true,activateTick:clock,activateRound:round,expires:round,expiresTick:clock};
      t.effects.push(effect);emit('effect',t.name+' 受到「禁疗」：本回合余下的自动草药救护受限，仍可执行普通指令',u.id,[t.id],{effectId:effect.id,cast,skill:r.skill,component:effect.component,stat:effect.stat,value:1,scope:'rounds',active:true,harmful:true,activateRound:round,expires:round,rule:'命中后仅限制本回合余下的自动草药救护；已完成治疗不撤销，不阻止普通指令，同回合不叠加或延长。',sources:effectTrace(u)});
     }
+    if(t.hp>0&&s.weakening&&grade!=='闪避'){if(canWeaken(s,grade,t)){const effect={id:`${roomIndex}:${cast}:${t.id}:weakening`,skill:r.skill,name:s.name,component:WEAKENING.name,source:u.id,sourceName:u.name,stat:WEAKENING.stat,value:WEAKENING.value,scope:'rounds',active:true,harmful:true,activateTick:clock,activateRound:round,expires:round+WEAKENING.duration,expiresTick:clock+WEAKENING.duration};t.effects.push(effect);emit('effect',t.name+' 受到「挫志」：攻击技能等级-3，持续当前与下一回合',u.id,[t.id],{effectId:effect.id,cast,skill:r.skill,component:effect.component,stat:effect.stat,value:effect.value,scope:effect.scope,active:true,harmful:true,activateRound:round,expires:effect.expires,rule:'不叠加或刷新；只影响之后的攻击技能，不影响防御、辅助、救护或已经完成的检定；来源倒下不撤销，可在预备阶段净化。',sources:effectTrace(u)});}else {const effect=activeWeakening(t);emit('effect-blocked',t.name+' 已有挫志，本次不叠加或刷新；攻击照常付费',u.id,[t.id],{cast,skill:r.skill,effectId:effect.id,source:effect.source,component:effect.component,reason:'同名负面效果仍在',expires:effect.expires,consumedAction:true});}}
    }actionId=null;for(const enemy of enemies)awaken(enemy);return true;
   }
   function act(u,p){

@@ -1,0 +1,2920 @@
+{
+  "note": "Original optional mechanics and a teaching short dungeon, not a universal optimal build. Fixed discovery101–102 and confirmation201–204, fresh/grown founder profiles, equal24 supply and no injected assets. Grouped plan changes and RNG divergence prevent assigning outcome differences to a single status.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 585,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 246,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 3,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 5
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 604,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 244,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 3,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 605,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 312,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 245,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 5
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 580,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 244,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 3,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 625,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 239,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 0,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 627,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 236,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 301,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 238,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 1,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 10
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 607,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 301,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 237,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 1,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 11
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 234,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 2,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 10
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 230,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 2,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 10
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 601,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 236,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 0,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 14
+    },
+    {
+      "profile": "fresh",
+      "plan": "cleanse",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 602,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 242,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 2,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 11
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 579,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 283,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 182,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 5,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 1
+      },
+      "affectedAttacks": {
+        "party": 4,
+        "enemy": 3
+      },
+      "freeCleanseSkips": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 629,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 295,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 203,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 4,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 5
+      },
+      "freeCleanseSkips": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 596,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 293,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 200,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 4,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 4
+      },
+      "freeCleanseSkips": 3
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 615,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 297,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 193,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 4,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 4
+      },
+      "freeCleanseSkips": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 628,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 296,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 196,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 3,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 0,
+        "enemy": 4
+      },
+      "freeCleanseSkips": 3
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 297,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 203,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 5,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 1
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 3
+      },
+      "freeCleanseSkips": 1
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 605,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 242,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 599,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 250,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 3,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 618,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 245,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 3,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 5
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 595,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 246,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 3
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 4,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 579,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 309,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 247,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 4,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 591,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 245,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 4,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 4
+    },
+    {
+      "profile": "grown",
+      "plan": "cleanse",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 578,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 295,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 234,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 3
+      },
+      "cleanse": {
+        "party": 2,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 10
+    },
+    {
+      "profile": "grown",
+      "plan": "cleanse",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 244,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 1,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "cleanse",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 591,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 302,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 238,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 3
+      },
+      "cleanse": {
+        "party": 2,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 12
+    },
+    {
+      "profile": "grown",
+      "plan": "cleanse",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 613,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 230,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 1,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "cleanse",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 234,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 1,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 10
+    },
+    {
+      "profile": "grown",
+      "plan": "cleanse",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 584,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 248,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 0,
+        "enemy": 0
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 0,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "pressure",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 570,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 293,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 206,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 1,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 2
+      },
+      "freeCleanseSkips": 2
+    },
+    {
+      "profile": "grown",
+      "plan": "pressure",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 300,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 218,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 4,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 0
+      },
+      "freeCleanseSkips": 2
+    },
+    {
+      "profile": "grown",
+      "plan": "pressure",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 620,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 296,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 206,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 3,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 1
+      },
+      "affectedAttacks": {
+        "party": 1,
+        "enemy": 3
+      },
+      "freeCleanseSkips": 2
+    },
+    {
+      "profile": "grown",
+      "plan": "pressure",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 573,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 300,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 214,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 5,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 4,
+        "enemy": 1
+      },
+      "freeCleanseSkips": 1
+    },
+    {
+      "profile": "grown",
+      "plan": "pressure",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 623,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 210,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 4,
+        "enemy": 1
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 1
+      },
+      "affectedAttacks": {
+        "party": 2,
+        "enemy": 2
+      },
+      "freeCleanseSkips": 1
+    },
+    {
+      "profile": "grown",
+      "plan": "pressure",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 564,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 297,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 219,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "weakening": {
+        "party": 4,
+        "enemy": 2
+      },
+      "cleanse": {
+        "party": 0,
+        "enemy": 0
+      },
+      "affectedAttacks": {
+        "party": 4,
+        "enemy": 3
+      },
+      "freeCleanseSkips": 2
+    }
+  ],
+  "summary": {
+    "fresh": {
+      "plain": {
+        "runs": 4,
+        "wins": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "rune": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "affectedPartyAttacks": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "affectedEnemyAttacks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enemyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cleanse": {
+        "runs": 4,
+        "wins": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "rune": [
+          2,
+          2,
+          4,
+          2
+        ],
+        "affectedPartyAttacks": [
+          2,
+          2,
+          0,
+          2
+        ],
+        "affectedEnemyAttacks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partyCleanse": [
+          2,
+          2,
+          0,
+          2
+        ],
+        "enemyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "pressure": {
+        "runs": 4,
+        "wins": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "rune": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "affectedPartyAttacks": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "affectedEnemyAttacks": [
+          4,
+          4,
+          4,
+          3
+        ],
+        "partyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enemyCleanse": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "grown": {
+      "plain": {
+        "runs": 4,
+        "wins": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "rune": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "affectedPartyAttacks": [
+          3,
+          4,
+          4,
+          4
+        ],
+        "affectedEnemyAttacks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enemyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cleanse": {
+        "runs": 4,
+        "wins": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "rune": [
+          2,
+          3,
+          3,
+          4
+        ],
+        "affectedPartyAttacks": [
+          2,
+          1,
+          2,
+          0
+        ],
+        "affectedEnemyAttacks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partyCleanse": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "enemyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "pressure": {
+        "runs": 4,
+        "wins": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "rune": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "affectedPartyAttacks": [
+          1,
+          4,
+          2,
+          4
+        ],
+        "affectedEnemyAttacks": [
+          3,
+          1,
+          2,
+          3
+        ],
+        "partyCleanse": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enemyCleanse": [
+          1,
+          0,
+          1,
+          0
+        ]
+      }
+    }
+  },
+  "normal": {
+    "seed": 1,
+    "rooms": [
+      {
+        "name": "01 · 噤声前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 636,
+        "mp": 300,
+        "supplies": {
+          "herb": 8,
+          "rune": 5,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "02 · 无声合唱席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 625,
+        "mp": 234,
+        "supplies": {
+          "herb": 5,
+          "rune": 2,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 5,
+      "rune": 2,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 130,
+      "xp": 55,
+      "firstClear": true,
+      "loot": [
+        "votivelute"
+      ]
+    },
+    "partyCleanse": 2
+  },
+  "training": {
+    "hero": "e",
+    "key": "skill:dissonance",
+    "cost": 20,
+    "xpBefore": 55,
+    "xpAfter": 35,
+    "rank": 1
+  },
+  "repeat": {
+    "seed": 2,
+    "rooms": [
+      {
+        "name": "01 · 噤声前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 632,
+        "mp": 298,
+        "supplies": {
+          "herb": 8,
+          "rune": 7,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "02 · 无声合唱席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 572,
+        "mp": 208,
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 5,
+      "rune": 4,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 85,
+      "xp": 40,
+      "firstClear": false,
+      "loot": [
+        "echocharm"
+      ]
+    },
+    "enemyCleanse": 2
+  },
+  "unchanged": {
+    "reference": "075f7489996f373ff4277f2f4ea1d653793b3465",
+    "count": 28,
+    "cases": [
+      {
+        "route": "courier",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "eventsEqual": true,
+        "allOtherFieldsEqual": true,
+        "addedAvailableSkills": [
+          {
+            "hero": "d",
+            "skill": "cleanse",
+            "level": 6
+          },
+          {
+            "hero": "e",
+            "skill": "dissonance",
+            "level": 6
+          }
+        ]
+      }
+    ],
+    "normalization": "Only the explicitly asserted new available cleanse/dissonance skill entries in final party are removed for old-report comparison. Every event, room, resource, stat, config and all other party fields remain exact. No simulation field is broadly excluded."
+  }
+}

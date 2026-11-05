@@ -221,3 +221,15 @@ feature/v079-courier-keel从e012aec干净521基线。courier模块增加COURIER_
 courier-view提供双方敌情、keelTactics只改B/C/D本房、实况事件与证据格。UI select持久化、其他起点保留pass；出征实际配置说明成本/回退；scene/report.notes用实际路径，care/portrait同时识别两路单位，comparison逐房显示A/B真实名字。费用到ledger按事件净变化单列。医师死后位置回退可能重新把节拍交前排，文案不承诺永久去掉额外行动。
 
 528测试、217mjs/34cjs；check-v79复用正常courierProfiles，48固定案例保留12失败；带/tmp/wod-v078-reference对14旧路线1/731共28全报告无排除。normal6/7三房分别4/3/11和4/3/8，均六人，200/80→铜铃B→135/55；API完整guild与browser-v79导出完全相同。browser-v79含桌面完整收费/来源/账本/刷新/领奖/配装复战/历史和390px实际低箭seed8零费回退与原末房，0错误无溢出；v78浏览器完整回归通过。最初测试control误用seed731而真实depart用next6，大对象比较时进程SIGKILL，保留失败并纠正控制组，未改敌方数字或放宽比较。脚本默认/tmp/wod-v79，可用WOD_EVIDENCE_DIR；浏览器需现成Playwright/Chromium。新阶段仅本地，持续单人，无新重大待决事项；Library传输结果独立，不作为游戏验证通过依据。
+
+## v0.80削弱/净化续接
+
+feature/v080-weakening-cleanse从075f748干净528基线。新增afflictions纯函数/常量，dissonance为吟游者乐器cha/wil低伤法术，命中存活附skill-3当前+下一回合、同名不刷；cleanse为两学者普通预备，4MP/1rune按负面先筛同阵位最多3活人，移除harmful、保留正面。引擎在attack后记录harmful effect/effect-blocked，在buff前独立处理cleanse并跳过正面effect生成；无负面目标免费skip，正常装备/资源/港口预留照常。没有攻击/防御公式改变，普通技能不互斥。固定效果不随训练增强。
+
+独立theater2房24预算，第二房敌方净谱师cleanse-front repeat→ward-front cycle；源头击杀/屏障承压/净化/主动挫志都有真实资源和行动代价。theaterConfig三起点，地图/实际场景/结尾/用料账本/130gold55XP首通古琴/85gold40XP重复古琴或耳坠接齐，15路线34装备。BUILDS新增cleanser、dissonance并按原逻辑给米菈同类职责；加载不自动买装或培养。
+
+UI负面组件不再统一叫禁疗，signed避免+-3；cleanse events进动作结果/高亮/支援变化，sourceTrace记录已移除的效果和唯一来源可跳回再返回；单位当前快照不把移除状态保留。personal增加weakeningApplications/cleansedEffects，controlApplications仍全负面，禁疗单独显示。属性增益supportEvidence跳过cleanse，净化证据另看原始动作；cooperation不把两次净化候选当同名buff互斥。
+
+540测试、222mjs35cjs；affliction-cases仅显式规则边界，绝不是玩家成长。check-v80正常fresh选择E、grown正常courier资产，36固定样本都六人，教学短线无平衡必要性结论；seed1正常130/55/古琴→E配装→20XP训dissonance+1→seed2敌净化2次、85/40/耳坠，完整最终guild与浏览器完全相同。旧14路线28原事件/结果/资源/其余字段严格同，仅party.skills新增cleanse/dissonance键先断言6再归一比较，不要称原始完整报告完全相同。现有规则/配置/公会编号沿用，新增可选状态规则由v80代码复现，无旧档迁移工程。
+
+browser-v80桌面-3来源/返回、净化保留屏障、pending同报告、领奖/20XP培养/敌净化复战/历史/备份，390px恢复后实际应用D清心职责不改成员资产并seed3六人通过；v79浏览器完整回归通过。首次脚本误点隐藏pane的return导致超时，改正常tab导航，原失败留存，未强制点击。截图仅内部。证据默认/tmp/wod-v80，云端/workspace/wod-evidence/v80，normal JSON都有正常所得资产。无推送/合并/PR/部署，单人继续；后续优先新系统/内容，避免无限局部调参。

@@ -15,7 +15,7 @@ export function supportEvidence(report){
  const rooms=report.rooms.map((r,i)=>({index:i,roomId:r.id||roomsFor(report.config)[i]?.id||null,name:r.name,casts:[],skips:[]}));
  const casts=new Map(),origins=new Map(),ambiguous=new Set(),seenUses=new Set();let unlinkedReferences=0;
  report.events.forEach((e,index)=>{
-  if(!ids.has(e.actor)||SKILLS[e.detail?.skill]?.kind!=='buff'||!rooms[e.roomIndex])return;
+  if(!ids.has(e.actor)||(SKILLS[e.detail?.skill]?.kind!=='buff'||SKILLS[e.detail?.skill]?.cleanse)||!rooms[e.roomIndex])return;
   if(e.type==='cast'){
    const d=e.detail,c={eventId:e.id,index,roomIndex:e.roomIndex,actor:e.actor,name:name(e.actor),skill:d.skill,round:e.round,mana:Number.isFinite(d.mpBefore)&&Number.isFinite(d.mpAfter)?d.mpBefore-d.mpAfter:null,item:d.item||null,targets:[...new Set(e.targets)],effects:[],uses:[]};
    rooms[e.roomIndex].casts.push(c);const k=key(e.roomIndex,e.actor,d.cast);if(!casts.has(k))casts.set(k,[]);casts.get(k).push(c);

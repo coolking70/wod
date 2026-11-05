@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "steps": [
+    "全新吟游者零资产进入独立两场，真实挫志进入攻击技能-3；可追施加来源并返回，下一回合清心符移除原效果，屏障仍在，双方计费与实际结尾可见",
+    "刷新pending同报告，正常130金币/55经验/古琴，花20经验自由训练新技能并配装；复战实际使用+1，敌方净谱师净化吟游者挫志可溯源，正常85金币/40经验/耳坠，原历史与备份准确",
+    "390px恢复训练/古琴/耳坠和完整旧战报，净化来源可读；实际应用清心学者职责不购装/改培养，核对后真实seed3出征保留个人+1和伙伴净化指令，无页面横向溢出"
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "plan": "cleanse",
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 300,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 234,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 2,
+      "plan": "pressure",
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 298,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 208,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "enemyCleanse": 2
+    },
+    {
+      "seed": 3,
+      "mode": "390px-managed-cleanser",
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 300,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 229,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}
