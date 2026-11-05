@@ -1,0 +1,26 @@
+{
+  "ruleset": "original-wod-inspired-0.55.0",
+  "normalProgression": {
+    "completed": 6,
+    "earned": 255,
+    "available": 15,
+    "training": {
+      "skill:ward": 3,
+      "skill:suppress": 3
+    },
+    "invested": 240,
+    "resetAvailable": 255,
+    "run": {
+      "route": "hospice",
+      "seed": 1,
+      "won": true,
+      "rooms": 3
+    }
+  },
+  "unchanged": {
+    "reference": "8a63322",
+    "count": 9,
+    "excluded": "Ruleset label only; all existing legal configurations retain identical actions, snapshots, random results and resources."
+  },
+  "note": "Normal guild earnings, no injected experience or equipment. Two rank-3 skills cost240 XP. This is functionality verification, not a balance sample."
+}

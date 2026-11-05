@@ -19,9 +19,9 @@ const card=page.locator('[data-guild-pane="hero"] .companion-grid article').filt
 await page.locator('[data-apply-companion="d"]').click();assert.equal((await guild()).command.companions.d,'suppress');assert.equal(assets(await guild()),initialAssets);
 note('从既有疗所正面方案进入公会，预览并应用截疗学者，未赠送训练或购买装备');
 await page.locator('.guild-tabs [data-guild-tab="departure"]').click();await page.locator('#check-scope').selectOption('cistern');
-const ready=page.locator('.ready-hero').filter({has:page.locator('[data-ready-edit="d"]')});assert.match(await ready.innerText(),/专修 截疗符/);assert.match(await ready.innerText(),/永久训练 0\/6/);assert.match(await ready.innerText(),/微光/);
+const ready=page.locator('.ready-hero').filter({has:page.locator('[data-ready-edit="d"]')});assert.match(await ready.innerText(),/专修 截疗符/);assert.match(await ready.innerText(),/永久训练 · 累计投入 0经验/);assert.match(await ready.innerText(),/微光/);
 await page.locator('[data-guild="depart"]').click();await page.locator('#result').waitFor({state:'visible'});const report=await exported();
-assert.equal(report.ruleset,'original-wod-inspired-0.53.0');const effects=report.events.filter(e=>e.type==='effect'&&e.detail.harmful),skips=report.events.filter(e=>e.type==='skip'&&e.detail.healingBlock);assert.ok(effects.length>0&&skips.length>0);
+assert.equal(report.ruleset,'original-wod-inspired-0.55.0');const effects=report.events.filter(e=>e.type==='effect'&&e.detail.harmful),skips=report.events.filter(e=>e.type==='skip'&&e.detail.healingBlock);assert.ok(effects.length>0&&skips.length>0);
 const skip=skips[0],effect=effects.find(e=>e.detail.effectId===skip.detail.healingBlock.effectId),fallback=report.events.find(e=>e.actor===skip.actor&&e.id>skip.id&&e.roomIndex===skip.roomIndex&&e.round===skip.round&&e.detail.healingDecision?.status==='blocked');assert.ok(effect&&fallback);assert.equal(fallback.detail.skill,'spark');
 assert.equal(report.config.heroes.find(h=>h.id==='d').training['skill:suppress'],undefined);const pending=JSON.stringify((await guild()).pending);
 note('真实公会出征产生截疗命中和救护受阻；被阻药师继续执行微光，实际资产与训练正确');

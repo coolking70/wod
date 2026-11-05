@@ -2,7 +2,7 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V54_FREE_TRAINING → V53_SUSTAINED_CARE → DECISION_SPECIALIZATION → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V55_EXPERIENCE_TRAINING → V54_FREE_TRAINING → V53_SUSTAINED_CARE → DECISION_SPECIALIZATION → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
 
 ## 运行与验证
 
@@ -63,3 +63,5 @@ round只允许普通阶段；有该条目时该角色本回合首次普通检查
 缓释只由已激活、正值且目标存活的药敷触发；回合开始先激活后恢复，不新增随机调用。每次恢复不扣费，不占普通行动，不复活，固定8点不随训练提高。统计已包含在总治疗，不与普通救护占行动混淆。
 
 2026-11-05当前方向已确认，不再停在DECISION_SPECIALIZATION。普通技能保持自由，后期职业进阶独立。v0.54当前360项测试通过；trainingQuote统一显示成本/退款，lowerTraining只退最后一级，守恒careerXp并保留已学技能。browser-v54.cjs验证实际赚取经验和出征快照。
+
+v0.55移除TRAINING_BUDGET，改用MAX_TRAINING_RANK约束每项。trainingCost仍返回递增费用单位，真实经验金额使用trainingInvestment，不能再当总点数预算。当前368项测试通过，旧版等价入口check-v55及v0.54参考工作树。

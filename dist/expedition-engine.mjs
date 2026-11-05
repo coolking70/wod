@@ -5,8 +5,8 @@ import {validHarborPlan,resolveHarborStep} from './expedition-harbor.mjs';
 import {validEquipment,equipmentTotals} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
-import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,trainingCost,TRAINING_BUDGET} from './expedition-data.mjs';
-export const RULESET='original-wod-inspired-0.53.0';
+import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,MAX_TRAINING_RANK} from './expedition-data.mjs';
+export const RULESET='original-wod-inspired-0.55.0';
 const routes={front:['front','left','right','center','rear'],left:['right','front','center','rear','left'],right:['left','front','center','rear','right'],center:['front','left','right','center','rear'],rear:['front','left','right','center','rear']};
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
@@ -29,7 +29,7 @@ export function validate(c){
  for(const [roomId,order] of Object.entries(c.roomOrders)){if(!ROOM_IDS.includes(roomId))throw Error('未知房间');validateOrder(order,c.heroes);}
  let total=0;for(const k of ['herb','rune','arrow']){const n=c.supplies?.[k];if(!Number.isInteger(n)||n<0||n>60)throw Error('补给数量须为 0–60');total+=n;}if(total>supplyBudget(c))throw Error('此路线补给总预算为 '+supplyBudget(c));
  for(const h of c.heroes){const t=HEROES.find(t=>t.id===h.id);if(!t||!Object.hasOwn(ITEMS,h.item)||!validEquipment(h.gear)||!t.skills.includes(h.trained)||!Object.hasOwn(t.attrs,h.attribute)||!Object.hasOwn(DEFENSES,h.defenseFocus)||h.defenseFocus==='natural')throw Error('队员配置无效');validatePlan(h,t);
-  if(!h.training||typeof h.training!=='object'||Array.isArray(h.training)||Object.entries(h.training).some(([k,n])=>!Object.hasOwn(trainingOptions(h.id),k)||!Number.isInteger(n)||n<0||n>3)||trainingCost(h.training)>TRAINING_BUDGET)throw Error('训练点配置无效或超过每人6点预算');
+  if(!h.training||typeof h.training!=='object'||Array.isArray(h.training)||Object.entries(h.training).some(([k,n])=>!Object.hasOwn(trainingOptions(h.id),k)||!Number.isInteger(n)||n<0||n>MAX_TRAINING_RANK))throw Error('训练配置无效或超过每项等级上限');
   if(!h.overrides||typeof h.overrides!=='object'||Array.isArray(h.overrides))throw Error('房间覆盖无效');
   for(const [roomId,patch] of Object.entries(h.overrides)){if(!ROOM_IDS.includes(roomId)||!patch||typeof patch!=='object'||Array.isArray(patch)||Object.keys(patch).some(k=>!PLAN_FIELDS.includes(k)))throw Error('房间覆盖包含未知字段');validatePlan(resolveHeroPlan(h,roomId),t);}
  }return true;
