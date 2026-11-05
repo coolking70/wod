@@ -1,9 +1,9 @@
 export const HARBOR_RESERVE={none:'不预留符纸',seal:'为第三场预留2符纸'};
 export const harborReserve=c=>c.harbor?.reserve||'none';
 export function harborReserveFloor(c,roomIndex){return c.expedition==='harbor'&&harborReserve(c)==='seal'&&['adaptive','seal'].includes(c.harbor.task)&&roomIndex>=0&&roomIndex<2?2:0;}
-export function reserveBlock(c,roomIndex,unit,skill,stock){
+export function reserveBlock(c,roomIndex,unit,skill,stock,payment={resource:skill.item,amount:1}){
  const floor=harborReserveFloor(c,roomIndex);
- return floor&&unit.side==='party'&&skill.item==='rune'&&stock.rune>0&&stock.rune-1<floor?{resource:'rune',floor,available:stock.rune,releaseRoom:2}:null;
+ return floor&&unit.side==='party'&&payment.resource==='rune'&&stock.rune>=payment.amount&&stock.rune-payment.amount<floor?{resource:'rune',floor,available:stock.rune,releaseRoom:2}:null;
 }
 export function reserveSummary(report){
  const skips=report.events.filter(e=>e.type==='skip'&&e.detail.reservation),decision=report.events.find(e=>e.type==='branch'&&e.roomIndex===2);

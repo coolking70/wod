@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "steps": [
+    "零资产公会通过逐条编辑形成C心诵/D复写，实际10法力0符与2法力2符；原始证据、支援成本索引和分媒介账本一致，编辑未赠送资产",
+    "pending期间修改准备媒介并刷新，原战报仍为心诵；正常130/55与85/40结算，第二次学者复写争用符纸使C群攻实际跳过，旧报告和备份保持原媒介",
+    "390px恢复完整媒介历史，当前行实际复写3法力/2符可读且无页面溢出；改为不耗符纸的微光会清除旧媒介，公会资产/培养不变"
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "mode": "mixed",
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 2,
+      "mode": "scribeScholar",
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 304,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 250,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "waveCasts": 1,
+      "waveResourceSkips": 1
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

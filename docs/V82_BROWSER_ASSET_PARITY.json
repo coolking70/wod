@@ -1,0 +1,37 @@
+{
+  "equal": true,
+  "excluded": [],
+  "gold": 215,
+  "next": 3,
+  "history": [
+    2,
+    1
+  ],
+  "xp": [
+    {
+      "id": "a",
+      "xp": 95
+    },
+    {
+      "id": "b",
+      "xp": 95
+    },
+    {
+      "id": "c",
+      "xp": 95
+    },
+    {
+      "id": "d",
+      "xp": 95
+    },
+    {
+      "id": "e",
+      "xp": 95
+    },
+    {
+      "id": "f",
+      "xp": 95
+    }
+  ],
+  "note": "Entire normal new-guild state after mixed-media seed1 and scribed-scholar seed2, exact claims and no purchases/training, equals actual UI progression. No fields excluded."
+}

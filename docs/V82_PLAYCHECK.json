@@ -1,0 +1,3976 @@
+{
+  "note": "48 bounded checks at same24-supply theater layout and actual fresh/grown assets. Discovery101–102,confirmation201–204. Modes only assign optional media to caster/scholar existing rune rows; no levels,gear,targets or supplies granted. Cost changes can alter later action/RNG sequences; no global optimality claim.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "mode": "standard",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 301,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 238,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 61,
+          "manaPaid": 18,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 46,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "fresh",
+      "mode": "standard",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 607,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 301,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 237,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 58,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 53,
+          "manaPaid": 27,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "fresh",
+      "mode": "standard",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 234,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 63,
+          "manaPaid": 16,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 46,
+          "manaPaid": 30,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "fresh",
+      "mode": "standard",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 230,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 61,
+          "manaPaid": 18,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 46,
+          "manaPaid": 30,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "fresh",
+      "mode": "standard",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 601,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 236,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 60,
+          "manaPaid": 18,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 56,
+          "manaPaid": 23,
+          "runesPaid": 3,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "fresh",
+      "mode": "standard",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 602,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 242,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 61,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 48,
+          "manaPaid": 31,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "fresh",
+      "mode": "memoryMage",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 297,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 230,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 5,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 46,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "fresh",
+      "mode": "memoryMage",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 607,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 297,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 229,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 5,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 50,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 53,
+          "manaPaid": 27,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "fresh",
+      "mode": "memoryMage",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 226,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 55,
+          "manaPaid": 24,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 46,
+          "manaPaid": 30,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "fresh",
+      "mode": "memoryMage",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 295,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 222,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 46,
+          "manaPaid": 30,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "fresh",
+      "mode": "memoryMage",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 601,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 302,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 228,
+          "supplies": {
+            "herb": 4,
+            "rune": 6,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 6,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 52,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 56,
+          "manaPaid": 23,
+          "runesPaid": 3,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "fresh",
+      "mode": "memoryMage",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 602,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 295,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 234,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 48,
+          "manaPaid": 31,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "fresh",
+      "mode": "scribeScholar",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 252,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 61,
+          "manaPaid": 18,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 60,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "fresh",
+      "mode": "scribeScholar",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 607,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 251,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 58,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 67,
+          "manaPaid": 13,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "fresh",
+      "mode": "scribeScholar",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 314,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 252,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 63,
+          "manaPaid": 16,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 64,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "fresh",
+      "mode": "scribeScholar",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 252,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 66,
+          "manaPaid": 13,
+          "runesPaid": 1,
+          "waveCasts": 1,
+          "resourceSkips": 1,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 63,
+          "manaPaid": 13,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 4
+    },
+    {
+      "profile": "fresh",
+      "mode": "scribeScholar",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 601,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 309,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 245,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 60,
+          "manaPaid": 18,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 65,
+          "manaPaid": 14,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 4,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "fresh",
+      "mode": "scribeScholar",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 555,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 65,
+          "manaPaid": 12,
+          "runesPaid": 1,
+          "waveCasts": 1,
+          "resourceSkips": 1,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 64,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 4
+    },
+    {
+      "profile": "fresh",
+      "mode": "mixed",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 242,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 58,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 2,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "fresh",
+      "mode": "mixed",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 607,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 241,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 50,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 65,
+          "manaPaid": 15,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 2,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "fresh",
+      "mode": "mixed",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 609,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 310,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 55,
+          "manaPaid": 24,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 63,
+          "manaPaid": 13,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 6,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "fresh",
+      "mode": "mixed",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 617,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 239,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 63,
+          "manaPaid": 13,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "fresh",
+      "mode": "mixed",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 601,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 237,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 52,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 65,
+          "manaPaid": 14,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 5
+    },
+    {
+      "profile": "fresh",
+      "mode": "mixed",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 602,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 251,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 65,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 10,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "standard",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 578,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 295,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 234,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 64,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 45,
+          "manaPaid": 31,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "grown",
+      "mode": "standard",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 244,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 62,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 52,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "grown",
+      "mode": "standard",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 591,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 302,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 238,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 62,
+          "manaPaid": 18,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 49,
+          "manaPaid": 30,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "grown",
+      "mode": "standard",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 613,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 303,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 230,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 60,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 52,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "grown",
+      "mode": "standard",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 234,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 61,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 51,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "grown",
+      "mode": "standard",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 584,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 248,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 63,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 54,
+          "manaPaid": 21,
+          "runesPaid": 3,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 0
+    },
+    {
+      "profile": "grown",
+      "mode": "memoryMage",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 578,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 291,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 226,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 56,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 45,
+          "manaPaid": 31,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "memoryMage",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 236,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 5,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 54,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 52,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "memoryMage",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 591,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 298,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 230,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 54,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 49,
+          "manaPaid": 30,
+          "runesPaid": 5,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "memoryMage",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 613,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 299,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 222,
+          "supplies": {
+            "herb": 4,
+            "rune": 5,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 5,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 52,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 52,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "memoryMage",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 301,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 226,
+          "supplies": {
+            "herb": 4,
+            "rune": 5,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 5,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 51,
+          "manaPaid": 26,
+          "runesPaid": 4,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "memoryMage",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 584,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 240,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 6,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 55,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 54,
+          "manaPaid": 21,
+          "runesPaid": 3,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "scribeScholar",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 595,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 252,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 69,
+          "manaPaid": 12,
+          "runesPaid": 1,
+          "waveCasts": 1,
+          "resourceSkips": 1,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 64,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 4
+    },
+    {
+      "profile": "grown",
+      "mode": "scribeScholar",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 309,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 62,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 66,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "grown",
+      "mode": "scribeScholar",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 591,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 308,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 256,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 62,
+          "manaPaid": 18,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 67,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 10,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "grown",
+      "mode": "scribeScholar",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 613,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 309,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 244,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 60,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 66,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "grown",
+      "mode": "scribeScholar",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 311,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 248,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 61,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 65,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "grown",
+      "mode": "scribeScholar",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 584,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 311,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 257,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 63,
+          "manaPaid": 17,
+          "runesPaid": 2,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 63,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 2,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 3
+    },
+    {
+      "profile": "grown",
+      "mode": "mixed",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 578,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 300,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 56,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 62,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 8,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "mixed",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 587,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 248,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 54,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 64,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 2,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "mixed",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 591,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 247,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 54,
+          "manaPaid": 26,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 66,
+          "manaPaid": 13,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 4,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "mixed",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 613,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 234,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 52,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 64,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 2,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "mixed",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 582,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 238,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 53,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 63,
+          "manaPaid": 14,
+          "runesPaid": 8,
+          "waveCasts": 0,
+          "resourceSkips": 2,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "mixed",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 584,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 249,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 0
+      },
+      "actors": [
+        {
+          "id": "c",
+          "mp": 55,
+          "manaPaid": 25,
+          "runesPaid": 0,
+          "waveCasts": 2,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        },
+        {
+          "id": "d",
+          "mp": 63,
+          "manaPaid": 12,
+          "runesPaid": 6,
+          "waveCasts": 0,
+          "resourceSkips": 0,
+          "manaSkips": 0
+        }
+      ],
+      "mediaCasts": 5
+    }
+  ],
+  "summary": {
+    "fresh": {
+      "standard": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          2,
+          2,
+          4,
+          2
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 63,
+              "paid": 16,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 46,
+              "paid": 30,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 61,
+              "paid": 18,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 46,
+              "paid": 30,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 60,
+              "paid": 18,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 56,
+              "paid": 23,
+              "runes": 3,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 61,
+              "paid": 17,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 48,
+              "paid": 31,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ]
+        ]
+      },
+      "memoryMage": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          4,
+          4,
+          6,
+          4
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 55,
+              "paid": 24,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 46,
+              "paid": 30,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 53,
+              "paid": 26,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 46,
+              "paid": 30,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 52,
+              "paid": 26,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 56,
+              "paid": 23,
+              "runes": 3,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 53,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 48,
+              "paid": 31,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ]
+        ]
+      },
+      "scribeScholar": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 63,
+              "paid": 16,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 64,
+              "paid": 12,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 8
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 66,
+              "paid": 13,
+              "runes": 1,
+              "waves": 1,
+              "shortage": 1
+            },
+            {
+              "id": "d",
+              "mp": 63,
+              "paid": 13,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 8
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 60,
+              "paid": 18,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 65,
+              "paid": 14,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 4
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 65,
+              "paid": 12,
+              "runes": 1,
+              "waves": 1,
+              "shortage": 1
+            },
+            {
+              "id": "d",
+              "mp": 64,
+              "paid": 14,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 8
+            }
+          ]
+        ]
+      },
+      "mixed": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          1,
+          1,
+          3,
+          1
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 55,
+              "paid": 24,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 63,
+              "paid": 13,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 6
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 53,
+              "paid": 26,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 63,
+              "paid": 13,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 8
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 52,
+              "paid": 26,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 65,
+              "paid": 14,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 53,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 65,
+              "paid": 14,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 10
+            }
+          ]
+        ]
+      }
+    },
+    "grown": {
+      "standard": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          2,
+          3,
+          3,
+          4
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 62,
+              "paid": 18,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 49,
+              "paid": 30,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 60,
+              "paid": 17,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 52,
+              "paid": 26,
+              "runes": 4,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 61,
+              "paid": 17,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 51,
+              "paid": 26,
+              "runes": 4,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 63,
+              "paid": 17,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 54,
+              "paid": 21,
+              "runes": 3,
+              "waves": 0,
+              "shortage": 0
+            }
+          ]
+        ]
+      },
+      "memoryMage": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          4,
+          5,
+          5,
+          6
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 54,
+              "paid": 26,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 49,
+              "paid": 30,
+              "runes": 5,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 52,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 52,
+              "paid": 26,
+              "runes": 4,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 53,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 51,
+              "paid": 26,
+              "runes": 4,
+              "waves": 0,
+              "shortage": 0
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 55,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 54,
+              "paid": 21,
+              "runes": 3,
+              "waves": 0,
+              "shortage": 0
+            }
+          ]
+        ]
+      },
+      "scribeScholar": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 62,
+              "paid": 18,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 67,
+              "paid": 12,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 10
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 60,
+              "paid": 17,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 66,
+              "paid": 12,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 8
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 61,
+              "paid": 17,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 65,
+              "paid": 12,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 8
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 63,
+              "paid": 17,
+              "runes": 2,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 63,
+              "paid": 12,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 2
+            }
+          ]
+        ]
+      },
+      "mixed": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "runes": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "casterMP": [
+          [
+            {
+              "id": "c",
+              "mp": 54,
+              "paid": 26,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 66,
+              "paid": 13,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 4
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 52,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 64,
+              "paid": 14,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 2
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 53,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 63,
+              "paid": 14,
+              "runes": 8,
+              "waves": 0,
+              "shortage": 2
+            }
+          ],
+          [
+            {
+              "id": "c",
+              "mp": 55,
+              "paid": 25,
+              "runes": 0,
+              "waves": 2,
+              "shortage": 0
+            },
+            {
+              "id": "d",
+              "mp": 63,
+              "paid": 12,
+              "runes": 6,
+              "waves": 0,
+              "shortage": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "normal": {
+    "mode": "mixed",
+    "seed": 1,
+    "rooms": [
+      {
+        "name": "01 · 噤声前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 636,
+        "mp": 305,
+        "supplies": {
+          "herb": 8,
+          "rune": 3,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "02 · 无声合唱席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 625,
+        "mp": 243,
+        "supplies": {
+          "herb": 5,
+          "rune": 1,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 5,
+      "rune": 1,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 130,
+      "xp": 55,
+      "firstClear": true,
+      "loot": [
+        "votivelute"
+      ]
+    }
+  },
+  "repeat": {
+    "mode": "scribeScholar",
+    "seed": 2,
+    "rooms": [
+      {
+        "name": "01 · 噤声前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 640,
+        "mp": 304,
+        "supplies": {
+          "herb": 7,
+          "rune": 2,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "02 · 无声合唱席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 586,
+        "mp": 250,
+        "supplies": {
+          "herb": 3,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 3,
+      "rune": 0,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 85,
+      "xp": 40,
+      "firstClear": false,
+      "loot": [
+        "votivelute"
+      ]
+    },
+    "waveCasts": 1,
+    "waveResourceSkips": 1
+  },
+  "unchanged": {
+    "reference": "e188ed7286ba865d33df70023658db01fd6cf0c1",
+    "count": 32,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  }
+}

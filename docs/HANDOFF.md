@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前521项测试通过，0失败/跳过；214个ES模块、33个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前560项测试通过，0失败/跳过；231个ES模块、37个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -243,3 +243,14 @@ g.shoals可选charted数组，validate在clears合法后检查编号/去重/不�
 发现正常id=seed与旧掉落低位抵消导致二件池固定，现用独立32bit avalanche混合后取模，不动战斗RNG/金额/首件。13多件池各128纯选择器案例都覆盖全池，非实际胜利或严格等概率证据。新重复掉落可能与更新前不同，历史已发物品不改，旧pending奖励按当前代码重算可能改变；无旧档兼容工程。browser-v80回归仅把seed2重复物品精确预期改为古琴，仍严格检查仓库，旧v80文档保留当时证据。
 
 549测试、226mjs36cjs。check-v81固定96案例全通/18伤员，限定发现101/确认201；正常grown两图1/6→药师护袍→8/7及手机续12/8，整份公会API与UI都严格相同；另独立正常12图完整收集。test另正常21次证明history20截断仍保留册。首次test3把configurationChanges格式化值误当number，已改精确string1/8，失败TAP保留。浏览器桌面pending期间换图后仍只记原图，全部场景/奖励/首通唯一/历史/备份，390px实际第三图、完整册恢复只读展示通过，0错误无溢出；v80完整浏览器回归通过。新截图仅内部。默认/tmp/wod-v81或WOD_EVIDENCE_DIR。当前无新增重大产品待决，继续单人系统/内容；不推送、合并或部署。
+
+
+## v0.82施法媒介续接
+
+v0.82按R1技能/媒介选择加入跨路线资源取舍：符纸类攻击/支援/召唤逐行选标准、心诵（+4MP/0符纸）或复写（-3MP最低1/2符纸），先个人进阶后媒介；效果与检定不变，港口预留/免费跳过/后备指令/分媒介账本按真实成本。560测试、32完整默认旧报告等价、48有限六人通关样本及正常两次公会结算全对象UI/API等价、桌面/390px和v81浏览器回归通过。原型参数，不冒称原版数字，16路线/34装备保持，详见[V82_CASTING_MEDIA.md](V82_CASTING_MEDIA.md)。新增阶段仅本地，不推送/合并/部署。
+
+feature/v082-casting-media从e188ed7干净549基线接续。media-data纯枚举与校验，media.commandCost先skillManaCost再调整，所有支付/预览共用。engine只有非标准cast加medium对象/itemAmount，非标准skip记所需和0支付；默认报告无新字段。ledger按skill+medium分组并累计实际amount，support/cooperation/readiness/resource-check不再硬编码每次1张；review/guild ready/UI显示媒介，切非符纸技能清字段。只有明确自定义才覆盖托管职责。
+
+新增11项tests/v82.test.mjs；casting-media-cases只作固定研究方案，不是公开最优预设。check-v82两资产×四组×六种子，发现/确认分开，48全六人不等于普遍必要；学者缺料尝试也不等于损失有效施法。正常新公会seed1混合→seed2仅学者复写，130/55古琴→85/40古琴，最终215gold/全员95XP/两琴未配装，无购买/培养。browser-v82与API完整guild严格同。390px只恢复/证据/编辑/切技能，没有第三次实际出征。v81完整浏览器回归通过；两次初稿导航假定超时原件保留，未改规则。
+
+云端证据/workspace/wod-evidence/v82，独立v81参考/tmp/wod-v081-reference；复验命令和限制见V82_CASTING_MEDIA。原版数值待核不阻塞新系统；保持单人、普通技能自由与独立进阶。无推送/合并/PR/部署，无新重大待决。

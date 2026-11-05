@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.81「有限海图与勘探册」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.81仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.82「施法媒介与共享符纸」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.82仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -17,6 +17,8 @@
 新增[削弱与净化战斗系统](docs/V80_WEAKENING_CLEANSE.md)：吟游者挫志、学者净化及双方反制，配套独立两场“失声剧场”。540测试、36固定教学短线样本、28旧路线事件/结果核对、桌面/390px真实自由培养与伙伴出征闭环通过。
 
 新增[有限海图与勘探册](docs/V81_CHARTED_SHOALS.md)：8组新遭遇按压力约束组合为12张公开海图，三场自动远征与正常通关勘探记录；修复固定装备池被同号种子/出征ID锁死的问题。549测试、全部12图的96有限检查、30旧战斗报告与桌面/390px完整资产等价通过。
+
+新增[施法媒介与共享符纸](docs/V82_CASTING_MEDIA.md)：逐行在标准、心诵与复写之间取舍个人法力/共享符纸，支援、召唤、港口预留及战报按实际支付记账。560测试、32完整旧战报等价、48有限资源检查及桌面/390px与全量公会API对照通过。
 
 ## 开发交接入口
 
