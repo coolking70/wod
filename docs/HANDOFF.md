@@ -2,7 +2,7 @@
 
 ## 先读
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → V53_SUSTAINED_CARE → DECISION_SPECIALIZATION → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V54_FREE_TRAINING → V53_SUSTAINED_CARE → DECISION_SPECIALIZATION → V52_CADENCE → V51_EDITING → V50_SEER → V49_DISRUPTION → V48_SUPPORT_EVIDENCE → V47_SCHOLARS → V46_COOPERATION → V45_LEDGER。按任务再看相关版本报告和测试。不要因旧报告仍写“待决策”就重复询问已经确认的选项。
 
 ## 运行与验证
 
@@ -61,3 +61,5 @@ GitHub仓库作为后续接续入口，建议每个可验证阶段及时提交�
 round只允许普通阶段；有该条目时该角色本回合首次普通检查从首条开始，按条目计成功，闪避也计次，不越过前置持续指令。道具/救护优先且不消耗普通指令次数。
 
 缓释只由已激活、正值且目标存活的药敷触发；回合开始先激活后恢复，不新增随机调用。每次恢复不扣费，不占普通行动，不复活，固定8点不随训练提高。统计已包含在总治疗，不与普通救护占行动混淆。
+
+2026-11-05当前方向已确认，不再停在DECISION_SPECIALIZATION。普通技能保持自由，后期职业进阶独立。v0.54当前360项测试通过；trainingQuote统一显示成本/退款，lowerTraining只退最后一级，守恒careerXp并保留已学技能。browser-v54.cjs验证实际赚取经验和出征快照。

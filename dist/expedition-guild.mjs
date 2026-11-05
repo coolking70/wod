@@ -3,6 +3,7 @@ import {validEquipment,sameEquipment,replaceEquipment} from './expedition-equipm
 import {newMember,validateRoster} from './expedition-roster.mjs';
 import {validateCommand,commandConfig} from './expedition-command.mjs';
 import {ADVANCED,UNLOCK_COST,isAdvanced,growth,assertGuildSkills} from './expedition-growth.mjs';
+import {trainingQuote} from './expedition-training.mjs';
 import {ROUTE_REWARDS,expeditionReward,isRelic} from './expedition-loot.mjs';
 import {defaults,clone,HEROES,GEAR,trainingOptions,trainingCost,TRAINING_BUDGET} from './expedition-data.mjs';
 import {validate,simulate} from './expedition-engine.mjs';
@@ -38,7 +39,8 @@ export function claim(g){validateGuild(g);if(!g.pending)throw Error('没有待�
 export function assignLoot(g,id,gear){const n=editable(g),h=n.members.find(h=>h.id===id);if(!h||!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('没有可分配的战利品');if(h.owned.includes(gear))throw Error('该队员已拥有此装备，可分给其他队员或出售');n.warehouse[gear]--;h.owned.push(gear);h.gear=replaceEquipment(h.gear,gear);return n;}
 export function sellLoot(g,gear){const n=editable(g);if(!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('仓库中没有该装备');n.warehouse[gear]--;n.gold+=20;return n;}
 function editable(g){validateGuild(g);if(g.pending)throw Error('领取远征结算后才能更改公会资产');return clone(g);}
-export function train(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h||!Object.hasOwn(trainingOptions(id),key))throw Error('训练项目无效');if(key.startsWith('skill:')&&isAdvanced(key.slice(6))&&(!h.unlocked.includes(key.slice(6))||(h.training[key]||0)>=growth(h).advancedRank))throw Error('先学习技能；熟练阶段训练最多1级，资深阶段开放2至3级');const rank=h.training[key]||0,cost=20*(rank+1),training={...h.training,[key]:rank+1};if(rank>=3||trainingCost(training)>TRAINING_BUDGET)throw Error('已达到训练上限（每项3级、总预算6点）');if(h.xp<cost)throw Error('该队员经验不足');h.xp-=cost;h.training=training;return n;}
+export function train(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key);if(!q.allowed)throw Error(q.reasons.join('；'));h.xp-=q.cost;h.training={...h.training,[key]:q.nextRank};return n;}
+export function lowerTraining(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key,-1);if(!q.allowed)throw Error(q.reasons.join('；'));if(q.nextRank)h.training[key]=q.nextRank;else delete h.training[key];h.xp+=q.refund;return n;}
 export function equip(g,id,gear){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h||!Object.hasOwn(GEAR,gear))throw Error('装备无效');if(!h.owned.includes(gear)){if(isRelic(gear))throw Error('地下城装备须从战利品仓库分配');if(n.gold<GEAR_PRICE)throw Error('公会金币不足');n.gold-=GEAR_PRICE;h.owned.push(gear);}h.gear=replaceEquipment(h.gear,gear);return n;}
 export function retrain(g,id){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('队员无效');h.xp+=trainingCost(h.training)*20;h.training={};return n;}
 

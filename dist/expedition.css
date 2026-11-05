@@ -80,3 +80,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .cue-control{color:#ffb09c}.support-path.control{stroke:#e99d91}.support-change.control{border-color:#e99d91}
 
 .unit.control-recipient{border-color:#e99d91;box-shadow:0 0 0 2px #e99d9144}.healing-block-proof small{display:block;margin-top:.5rem;color:var(--muted)}
+.guild-panel .training-row>div:last-child{display:flex;flex-wrap:wrap;gap:6px;align-content:center;justify-content:flex-end;max-width:52%}
+@media(max-width:600px){.guild-panel .training-row{flex-direction:column}.guild-panel .training-row>div:last-child{max-width:100%;justify-content:flex-start}}
