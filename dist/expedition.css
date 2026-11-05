@@ -104,3 +104,4 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 
 .tactic-reuse{padding:16px;margin:18px 0;border:1px solid #6b785a;background:#162b2c}.tactic-reuse>label{display:block;margin:12px 0}.tactic-reuse select{max-width:100%}.tactic-reuse table{min-width:580px}.tactic-reuse button{margin:8px 10px 4px 0}.reuse-rooms input{margin-right:8px}
 .layout>*{min-width:0}.draft-command-bridge,.draft-command-preview{max-width:100%;min-width:0}
+.roster-rehearsal{padding:18px;margin:20px 0;border:1px solid var(--gold);background:#132a30;min-width:0;max-width:100%}.roster-rehearsal table{min-width:620px}.roster-rehearsal-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.roster-rehearsal-summary article{padding:14px;background:#102129}.roster-rehearsal td{vertical-align:top}@media(max-width:600px){.roster-rehearsal-summary{grid-template-columns:1fr}}

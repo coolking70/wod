@@ -1,0 +1,117 @@
+{
+  "note": "A deterministic functional fixture, not an independent balance study. Guild earned through normal settlements/recruitment/training/course APIs. No input mutation, actual swap, departure or reward.",
+  "seed": 3,
+  "summary": {
+    "before": {
+      "won": true,
+      "cleared": 3,
+      "planned": 3,
+      "rounds": 12,
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "stopReason": ""
+    },
+    "after": {
+      "won": false,
+      "cleared": 1,
+      "planned": 3,
+      "rounds": 8,
+      "alive": 6,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 8
+      },
+      "stopReason": "潮水封路"
+    }
+  },
+  "rooms": [
+    {
+      "id": "gallery",
+      "name": "01 · 铁壳门廊",
+      "before": {
+        "won": true,
+        "rounds": 3,
+        "roundLimit": 5,
+        "survivors": 6,
+        "hp": 601,
+        "mp": 295,
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 5
+        },
+        "stopReason": ""
+      },
+      "after": {
+        "won": true,
+        "rounds": 3,
+        "roundLimit": 5,
+        "survivors": 6,
+        "hp": 640,
+        "mp": 328,
+        "supplies": {
+          "herb": 5,
+          "rune": 3,
+          "arrow": 8
+        },
+        "stopReason": ""
+      }
+    },
+    {
+      "id": "cistern",
+      "name": "02 · 镜潮回廊",
+      "before": {
+        "won": true,
+        "rounds": 5,
+        "roundLimit": 5,
+        "survivors": 6,
+        "hp": 621,
+        "mp": 255,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 1
+        },
+        "stopReason": ""
+      },
+      "after": {
+        "won": false,
+        "rounds": 5,
+        "roundLimit": 5,
+        "survivors": 6,
+        "hp": 624,
+        "mp": 301,
+        "supplies": {
+          "herb": 4,
+          "rune": 0,
+          "arrow": 8
+        },
+        "stopReason": "潮水封路"
+      }
+    },
+    {
+      "id": "altar",
+      "name": "03 · 分誓封印",
+      "before": {
+        "won": true,
+        "rounds": 4,
+        "roundLimit": 5,
+        "survivors": 6,
+        "hp": 609,
+        "mp": 213,
+        "supplies": {
+          "herb": 6,
+          "rune": 0,
+          "arrow": 0
+        },
+        "stopReason": ""
+      },
+      "after": null
+    }
+  ]
+}

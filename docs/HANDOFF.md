@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前460项测试通过，0失败/跳过；179个ES模块、24个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前465项测试通过，0失败/跳过；183个ES模块、25个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -49,6 +49,7 @@ node scripts/browser-v61.cjs
 | dist/expedition-training-rehearsal.mjs、training-rehearsal-view.mjs | 真实资产的当前/草案双试演及事实比较（后者有前缀） |
 | dist/expedition-advancement-data.mjs、advancement.mjs | 12条项目后期路径、法力/效果来源和资格（后者有前缀） |
 | dist/expedition-guild*.mjs、roster*.mjs、personal*.mjs | 公会事务、个人资产/名册成长与战报投影（后两项有前缀） |
+| dist/expedition-roster-rehearsal.mjs、roster-rehearsal-view.mjs | 正常换人事务的前后实际队伍试演、逐房事实、独立报告（后者有expedition前缀） |
 | dist/expedition-draft-commands.mjs | 托管伙伴的草稿指令预览/明确采用；只替换默认或本房三类指令 |
 | dist/expedition-config-undo.mjs | 配置与本次伙伴职责撤销，角色差量与成对写入/失败回退 |
 | dist/expedition-readiness.mjs、command*.mjs | 实际资产核对与伙伴职责，编辑时保留实际方案（后者有前缀） |
@@ -124,3 +125,11 @@ commitPreparationChange先核对两份存储当前文本，再写配置、公会
 编辑器只在目标实际托管且草稿/公会均出战时显示入口；从战报进入编辑仍不自动改职责。预览使用resolveHeroPlan后的完整实际三类指令，不只给“继承默认”占位。请求签名覆盖目标资产、队伍/职责、next/pending与当前草稿，后台重算，不信任返回候选。课程/待结算拒绝，跨页写保护仍有效。guildUI由初始null在挂载后赋值，首次planner也能挂接入口；不可在挂载前直接访问未初始化const。
 
 460测试、9完整报告与e08585a等价、v68八条浏览器流程复验及v69七条桌面/390px闭环通过。首次针对性用例把全部overrides元数据当作本房有效字段，修正为比较全部有效字段、排除覆盖容器，原失败initial-focused-tests.tap保留。视觉发现初始内部宽度断言不足，已修.layout直接子项min-width与页面级边界断言；最终release-browser。compare-reports.mjs参考目录必填，可输出新阶段回执，禁止覆盖旧阶段结果。未重跑432研究/1,824活动样本。详细见V69_DRAFT_COMMANDS。
+
+## v0.70名册换人试演
+
+从dbb363a干净基线、已验证460测试继续，feature/v070-roster-rehearsal。rehearseReplacement先走swapCompanion，再以两份guildConfig和正常next种子分别simulate；不保存guild、改经验或提前编入。两份报告按当前command附perspective，正常实际换人/出征报告应完整相等。rooms按当前路线完整列槽，未抵达用null，不能补零；总回合只累计已遭遇部分，止步少回合不作效率优势。
+
+UI只有一个内存换人试演，replacementSelections保留每个候补的明确选择；signature含完整公会、草稿、outgoing/incoming，变化就停用旧报告入口。实际换人仍调用原swap，不套用试演返回状态，成功后清试演。其他标签页更新先拒绝查看，重新读取后标过期。报告viewer新增可选origin.note，名册试演明确需另行编入；训练试演旧文案保持。试演区滚动偏移按实际sticky guild-tabs高度计算，390px标题不能被遮挡。
+
+465回归、9完整报告与dbb363a相等、桌面/390px及完整正式出征等于候补试演通过。check-v70生成普通赚取/招募/单项训练/课程的固定断潮案例，原队通关，换射手为零培养米菈后六人仍活但第二房超时、末房未抵达；不是新平衡矩阵。初轮测试用了付不起的二级训练和已是同职责的无变化操作，改为可付的另一普通技能和不同职责，断言保留；初始日志保留，最终465复跑通过。最终浏览器release-browser。未重跑432研究或1,824活动样本，原版数值仍待参考服，不推送/合并/部署。

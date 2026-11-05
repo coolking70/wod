@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.69「草稿指令用于公会」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；main仍为v0.45。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.70「候补换人试演」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；main仍为v0.45。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
 
 ## 开发交接入口
 
@@ -92,7 +92,7 @@ v0.46从v0.45重新实现：逐房协作核对、288次候补对照、268项测�
 - docs/V27_LOOT.md：奖励表、战利品仓库、旧存档迁移与验证。
 - docs/V26_GUILD.md：固定公会规则、持久化边界与验收。
 - docs/V25_ADVENTURE.md：实现范围、96次样本、验证与待决策事项。
-- dist/index.html：v0.69 主入口；legacy.html 保留v0.2。
+- dist/index.html：v0.70 主入口；legacy.html 保留v0.2。
 - dist/expedition-data.mjs：原创内容、默认配置与迁移。
 - dist/expedition-engine.mjs：无DOM的确定性模拟。
 - dist/expedition-report.mjs：无损事件分组。
