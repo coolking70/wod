@@ -1,0 +1,2717 @@
+{
+  "note": "36 bounded unique inputs, normal fresh and earned first-palisade assets. Earned is first real seed1 bypass claim, mantle assignedA and20XP pierce rank1 paidB. No assets or next injected. Discovery101–102, confirmation201–204; same30 supply budget and actual assets within profile. Plans change several tactics/free specialization/item use and RNG flow; no prevented-damage or global optimality claim.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 101,
+      "configFingerprint": "a10740f34be4cc4c969a452d3573daf5ea21649f8c286b05f8ceef550a2c6d0e",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 277,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 220,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 191,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 12,
+        "redirected": 6,
+        "reactionMP": 24,
+        "healCasts": 9,
+        "typeBypasses": 12
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 102,
+      "configFingerprint": "82cb85b8f4707882fadb0c9a8a34976bcb151631b8fa8a00ef309675ac1ceba5",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 299,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 245,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 212,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 16,
+        "redirected": 10,
+        "reactionMP": 32,
+        "healCasts": 8,
+        "typeBypasses": 16
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 201,
+      "configFingerprint": "482ede79fb1527bbdd828097c8f8fa0a7665eb8791db83dc89742a0613e9d9d0",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 293,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 222,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 11,
+        "redirected": 7,
+        "reactionMP": 22,
+        "healCasts": 8,
+        "typeBypasses": 10
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 202,
+      "configFingerprint": "efeb4dab8519881c91256b48c91e8780381acd63ed8d546ed7d124d10c5af131",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 282,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 224,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 203,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 14,
+        "redirected": 9,
+        "reactionMP": 28,
+        "healCasts": 8,
+        "typeBypasses": 15
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 203,
+      "configFingerprint": "ec0d430a4795102badc04d5bc8b226a460723f0d29ef2fe82245edaabba26a44",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 251,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 211,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 11,
+        "redirected": 9,
+        "reactionMP": 22,
+        "healCasts": 4,
+        "typeBypasses": 11
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 204,
+      "configFingerprint": "cea8f58ce37ed896ffe5fb374b5cefcd20c047e97f53687ad1bfbbba48d53e0b",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 296,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 256,
+          "supplies": {
+            "herb": 11,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 221,
+          "supplies": {
+            "herb": 10,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 12,
+        "redirected": 7,
+        "reactionMP": 24,
+        "healCasts": 6,
+        "typeBypasses": 11
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "fresh",
+      "plan": "break",
+      "seed": 101,
+      "configFingerprint": "1c6c5c5f5d35067956a20503ec6c6fd9e073911d67b1df1a4c3f03ffd953d128",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 263,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 233,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 178,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 6,
+        "reactionMP": 12,
+        "healCasts": 9,
+        "typeBypasses": 25
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 1
+    },
+    {
+      "profile": "fresh",
+      "plan": "break",
+      "seed": 102,
+      "configFingerprint": "2e1bf5eeb4e72e2c1580811d86a4a0807cb7f7e15a650d6968c305b1c08d6c5a",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 243,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 190,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 6,
+        "reactionMP": 12,
+        "healCasts": 8,
+        "typeBypasses": 22
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "break",
+      "seed": 201,
+      "configFingerprint": "668aac052b56ba57223c0c9959d71942641456b42d75f32a6b76df0096e66e0e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 272,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 229,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 187,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 6,
+        "reactionMP": 12,
+        "healCasts": 8,
+        "typeBypasses": 24
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 3
+    },
+    {
+      "profile": "fresh",
+      "plan": "break",
+      "seed": 202,
+      "configFingerprint": "a87d648d475a97bea78c03f795b8624302d863944c6187831f6e5f4325f235f8",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 249,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 189,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 7,
+        "redirected": 6,
+        "reactionMP": 14,
+        "healCasts": 7,
+        "typeBypasses": 24
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "break",
+      "seed": 203,
+      "configFingerprint": "aa4ff2899a308a6080f4aa57ee379bb2ec2dfaae5a5dd3f83f0752c140cc21d0",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 272,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 245,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 203,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 5,
+        "reactionMP": 12,
+        "healCasts": 5,
+        "typeBypasses": 21
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "break",
+      "seed": 204,
+      "configFingerprint": "92308ee4b58e7eef9bc21785be4cef3690a1deab55332aa5b048ad04c9599778",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 235,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 190,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 5,
+        "redirected": 5,
+        "reactionMP": 10,
+        "healCasts": 7,
+        "typeBypasses": 21
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 1
+    },
+    {
+      "profile": "fresh",
+      "plan": "bypass",
+      "seed": 101,
+      "configFingerprint": "d396723480003afaeb911519f0aec3b537f5522da6e57436fefc5468cbbdd9b0",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 267,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 207,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 196,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 13,
+        "redirected": 8,
+        "reactionMP": 26,
+        "healCasts": 5,
+        "typeBypasses": 21
+      },
+      "partyAttempts": 6,
+      "itemUses": 2,
+      "guardianMP": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "bypass",
+      "seed": 102,
+      "configFingerprint": "e63bd55e2748febe0f89094012b5e5f924e6d3ac584cb0332b628650a7263de5",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 219,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 191,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 10,
+        "redirected": 7,
+        "reactionMP": 20,
+        "healCasts": 3,
+        "typeBypasses": 22
+      },
+      "partyAttempts": 6,
+      "itemUses": 2,
+      "guardianMP": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "bypass",
+      "seed": 201,
+      "configFingerprint": "7f19bc27682603dd7958ee93427c883770d2e3641a97a0ce68b2ad386899475a",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 280,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 217,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 202,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 14,
+        "redirected": 13,
+        "reactionMP": 28,
+        "healCasts": 5,
+        "typeBypasses": 22
+      },
+      "partyAttempts": 5,
+      "itemUses": 3,
+      "guardianMP": 1
+    },
+    {
+      "profile": "fresh",
+      "plan": "bypass",
+      "seed": 202,
+      "configFingerprint": "81c24172f1e79f35a77d8e3634d81ec64615d6f48dc552236ca8b3498e6e21ea",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 291,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 219,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 188,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 11,
+        "redirected": 6,
+        "reactionMP": 22,
+        "healCasts": 2,
+        "typeBypasses": 19
+      },
+      "partyAttempts": 5,
+      "itemUses": 1,
+      "guardianMP": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "bypass",
+      "seed": 203,
+      "configFingerprint": "9104ce04f3009f8cc52c235ee15fd8eebfe0d2131ffb8d049ce791078e7c9f9e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 273,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 214,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 198,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 1
+      },
+      "enemy": {
+        "attempts": 10,
+        "redirected": 8,
+        "reactionMP": 20,
+        "healCasts": 3,
+        "typeBypasses": 20
+      },
+      "partyAttempts": 5,
+      "itemUses": 1,
+      "guardianMP": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "bypass",
+      "seed": 204,
+      "configFingerprint": "f6a04ab0370fe36cd21705404396226fc541e452c1a2b731d99e337d8fdc5037",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 227,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 185,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 13,
+        "redirected": 10,
+        "reactionMP": 26,
+        "healCasts": 3,
+        "typeBypasses": 20
+      },
+      "partyAttempts": 5,
+      "itemUses": 1,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "plain",
+      "seed": 101,
+      "configFingerprint": "bfc9e26baa0ce9cce678c027cd636cb930befccc71ba509c691df20262855091",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 273,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 215,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 190,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 14,
+        "redirected": 7,
+        "reactionMP": 28,
+        "healCasts": 10,
+        "typeBypasses": 15
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "plain",
+      "seed": 102,
+      "configFingerprint": "62fef30af6a6fbf23539be625840861d9d3bd661fd34a3f0e77ccbb44631b116",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 288,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 245,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 216,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 14,
+        "redirected": 7,
+        "reactionMP": 28,
+        "healCasts": 5,
+        "typeBypasses": 14
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "plain",
+      "seed": 201,
+      "configFingerprint": "c78d8df8d82d917b9d58e94ae310fdf461dd9938a65b7cb6a79315035b963793",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 289,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 252,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 220,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 10,
+        "redirected": 6,
+        "reactionMP": 20,
+        "healCasts": 6,
+        "typeBypasses": 10
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "plain",
+      "seed": 202,
+      "configFingerprint": "a269df0430247fcbfce83871f0f3f6de25e8814b56d6f05858d1de2297832aff",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 278,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 229,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 208,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 13,
+        "redirected": 9,
+        "reactionMP": 26,
+        "healCasts": 8,
+        "typeBypasses": 12
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "plain",
+      "seed": 203,
+      "configFingerprint": "8c5ffbe8b934f2d13c8e35b356bae9413577566ae494434b598288a0cbfb8809",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 639,
+          "mp": 296,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 252,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 210,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 10,
+        "redirected": 7,
+        "reactionMP": 20,
+        "healCasts": 4,
+        "typeBypasses": 12
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "plain",
+      "seed": 204,
+      "configFingerprint": "3cf538d9599367b8b89aecc1fe89d40a82b4cebbcef8916b76986a88147602e4",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 293,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 243,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 213,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 12,
+        "redirected": 4,
+        "reactionMP": 24,
+        "healCasts": 9,
+        "typeBypasses": 12
+      },
+      "partyAttempts": 0,
+      "itemUses": 0,
+      "guardianMP": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "break",
+      "seed": 101,
+      "configFingerprint": "aa2fdbbdd7384e1ac9d2997583f90a4c8061fc2113329365b5292c83facbbfa3",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 264,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 228,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 182,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 5,
+        "reactionMP": 12,
+        "healCasts": 10,
+        "typeBypasses": 25
+      },
+      "partyAttempts": 0,
+      "itemUses": 3,
+      "guardianMP": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "break",
+      "seed": 102,
+      "configFingerprint": "2f3c13d5b36bc1c4cfc0cdf855cc5fea6f9b61adfbebfa578a0485e7657c3d94",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 639,
+          "mp": 266,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 239,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 181,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 7,
+        "redirected": 7,
+        "reactionMP": 14,
+        "healCasts": 9,
+        "typeBypasses": 25
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "break",
+      "seed": 201,
+      "configFingerprint": "b6a5766dd2a7b08049091b8f91c2093d6d115d9c316ca4699ddbdbb3e6651531",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 642,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 225,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 187,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 4,
+        "reactionMP": 12,
+        "healCasts": 8,
+        "typeBypasses": 18
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 3
+    },
+    {
+      "profile": "earned",
+      "plan": "break",
+      "seed": 202,
+      "configFingerprint": "063e879844d818bb0e1ebebe9c8dbbd3a07fd5686b31416e13b283dc576d2dd8",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 277,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 252,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 209,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 5,
+        "reactionMP": 12,
+        "healCasts": 6,
+        "typeBypasses": 20
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "break",
+      "seed": 203,
+      "configFingerprint": "e92d6acfdc8b5302202f95b313974077b595539d7e2a100ce0b0dd834dc55788",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 635,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 232,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 180,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 5,
+        "redirected": 5,
+        "reactionMP": 10,
+        "healCasts": 10,
+        "typeBypasses": 17
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "break",
+      "seed": 204,
+      "configFingerprint": "724edb7e8c4c43986f5647cedf43b3e4b2d6072e9b3bfba9eaee0244f922f6ab",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 266,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 227,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 183,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 6,
+        "redirected": 5,
+        "reactionMP": 12,
+        "healCasts": 8,
+        "typeBypasses": 25
+      },
+      "partyAttempts": 0,
+      "itemUses": 2,
+      "guardianMP": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "bypass",
+      "seed": 101,
+      "configFingerprint": "4e73f820844f40f7f80e9a1850ada6c7749cdfcc650c96f42c9000e2ae0e2339",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 267,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 203,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 175,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 14,
+        "redirected": 9,
+        "reactionMP": 28,
+        "healCasts": 5,
+        "typeBypasses": 19
+      },
+      "partyAttempts": 6,
+      "itemUses": 1,
+      "guardianMP": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "bypass",
+      "seed": 102,
+      "configFingerprint": "08d26cdf9dd8aff7099b802723eca07f1fa9e8759d7454dc700c5465bf35f3fc",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 206,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 190,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 11,
+        "redirected": 7,
+        "reactionMP": 22,
+        "healCasts": 3,
+        "typeBypasses": 20
+      },
+      "partyAttempts": 6,
+      "itemUses": 2,
+      "guardianMP": 1
+    },
+    {
+      "profile": "earned",
+      "plan": "bypass",
+      "seed": 201,
+      "configFingerprint": "9d98d4d565eed348a8d34ab4c0482467e581b6e1fda575790958685641f238f1",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 276,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 213,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 196,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 14,
+        "redirected": 12,
+        "reactionMP": 28,
+        "healCasts": 5,
+        "typeBypasses": 22
+      },
+      "partyAttempts": 5,
+      "itemUses": 2,
+      "guardianMP": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "bypass",
+      "seed": 202,
+      "configFingerprint": "390ce2cab41fec15ffe96d467ec4c9a86ed921f29d8edaed743353f012a90c4b",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 287,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 222,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 221,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 3,
+        "arrow": 2
+      },
+      "enemy": {
+        "attempts": 10,
+        "redirected": 6,
+        "reactionMP": 20,
+        "healCasts": 1,
+        "typeBypasses": 16
+      },
+      "partyAttempts": 5,
+      "itemUses": 1,
+      "guardianMP": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "bypass",
+      "seed": 203,
+      "configFingerprint": "00857f2df942beb3929f0a6e46744235eed31179a2a7e776ec958d8b9b0aa041",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 269,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 214,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 189,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 11,
+        "redirected": 7,
+        "reactionMP": 22,
+        "healCasts": 4,
+        "typeBypasses": 21
+      },
+      "partyAttempts": 4,
+      "itemUses": 1,
+      "guardianMP": 0
+    },
+    {
+      "profile": "earned",
+      "plan": "bypass",
+      "seed": 204,
+      "configFingerprint": "4c57a26d41abdccc38651215e86e24fb4d17c01484ad7988e198e4419248de61",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 207,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 648,
+          "mp": 181,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "attempts": 12,
+        "redirected": 7,
+        "reactionMP": 24,
+        "healCasts": 3,
+        "typeBypasses": 20
+      },
+      "partyAttempts": 5,
+      "itemUses": 1,
+      "guardianMP": 0
+    }
+  ],
+  "summary": {
+    "runs": 36,
+    "uniqueBattleInputs": 36,
+    "failures": 0,
+    "injured": 0
+  },
+  "normal": {
+    "seed": 1,
+    "plan": "bypass",
+    "rooms": [
+      {
+        "name": "01 · 护讯栈桥",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 622,
+        "mp": 263,
+        "supplies": {
+          "herb": 9,
+          "rune": 7,
+          "arrow": 6
+        }
+      },
+      {
+        "name": "02 · 交错弩台",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 619,
+        "mp": 206,
+        "supplies": {
+          "herb": 8,
+          "rune": 5,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "03 · 双盾指挥席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 596,
+        "mp": 198,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 1
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 6,
+      "rune": 2,
+      "arrow": 1
+    },
+    "reward": {
+      "cleared": 3,
+      "gold": 170,
+      "xp": 70,
+      "firstClear": true,
+      "loot": [
+        "watchmantle"
+      ]
+    },
+    "enemyAttempts": 10,
+    "enemyRedirected": 6
+  },
+  "equipment": {
+    "hp": 8,
+    "mp": -4,
+    "interceptionMean": 5
+  },
+  "repeat": {
+    "seed": 2,
+    "plan": "bypass, actual mantle and paid pierce1",
+    "rooms": [
+      {
+        "name": "01 · 护讯栈桥",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 634,
+        "mp": 270,
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 6
+        }
+      },
+      {
+        "name": "02 · 交错弩台",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 615,
+        "mp": 231,
+        "supplies": {
+          "herb": 8,
+          "rune": 5,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "03 · 双盾指挥席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 635,
+        "mp": 172,
+        "supplies": {
+          "herb": 5,
+          "rune": 2,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 5,
+      "rune": 2,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 3,
+      "gold": 115,
+      "xp": 50,
+      "firstClear": false,
+      "loot": [
+        "watchmantle"
+      ]
+    },
+    "enemyAttempts": 11,
+    "enemyRedirected": 9
+  },
+  "mobile": {
+    "seed": 3,
+    "plan": "break",
+    "rooms": [
+      {
+        "name": "01 · 护讯栈桥",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 610,
+        "mp": 282,
+        "supplies": {
+          "herb": 11,
+          "rune": 8,
+          "arrow": 5
+        }
+      },
+      {
+        "name": "02 · 交错弩台",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 595,
+        "mp": 257,
+        "supplies": {
+          "herb": 11,
+          "rune": 6,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "03 · 双盾指挥席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 613,
+        "mp": 213,
+        "supplies": {
+          "herb": 9,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 9,
+      "rune": 3,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 3,
+      "gold": 115,
+      "xp": 50,
+      "firstClear": false,
+      "loot": [
+        "watchmantle"
+      ]
+    },
+    "enemyAttempts": 6,
+    "enemyRedirected": 6
+  },
+  "unchanged": {
+    "reference": "59a98cdb4da1ead3e6872efda75c7fe56256dd3d",
+    "count": 34,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  }
+}

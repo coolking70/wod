@@ -1,0 +1,3 @@
+import {palisadeConfig} from '../dist/expedition-data.mjs';import {newGuild,depart,pendingReport,pendingReward,claim,assignLoot,train} from '../dist/expedition-guild.mjs';import {selectHero} from '../dist/expedition-command.mjs';
+export const PALISADE_PLANS=['plain','break','bypass'];
+export function palisadeProgression(){const start=selectHero(newGuild(),'b'),pending=depart(start,palisadeConfig('bypass')),first=pendingReport(pending),reward=pendingReward(pending),claimed=claim(pending),equipped=assignLoot(claimed,'a','watchmantle'),trained=train(equipped,'b','skill:pierce');return {start,pending,first,reward,claimed,equipped,trained};}

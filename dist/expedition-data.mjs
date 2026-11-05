@@ -1,3 +1,4 @@
+import {PALISADE_ROOMS} from './expedition-palisade.mjs';
 import {INQUEST_ROOMS} from './expedition-inquest.mjs';
 import {SHOALS_SLOTS,shoalsRooms,shoalsChart} from './expedition-shoals.mjs';
 import {THEATER_ROOMS} from './expedition-theater.mjs';
@@ -20,7 +21,7 @@ export const TYPES={melee:'近战',ranged:'远程',magic:'法术',mental:'心理
 export const DEFENSE_TYPES={melee:TYPES.melee,ranged:TYPES.ranged,magic:'法术 / 心理'};
 export const DEFENSES={natural:{name:'自然防御',cost:0,types:['melee','ranged','magic','mental']},parry:{name:'盾牌格挡',primary:'dex',secondary:'str',cost:1,types:['melee'],gear:'plate'},sidestep:{name:'闪身卸力',primary:'dex',secondary:'agi',cost:1,types:['melee']},dodge:{name:'躲避箭矢',primary:'agi',secondary:'per',cost:1,types:['ranged']},resist:{name:'心智抵抗',primary:'wil',secondary:'int',cost:2,types:['magic','mental']}};
 export const naturalDefenses=()=>({melee:'natural',ranged:'natural',magic:'natural'});
-export const ROOM_IDS=['harbor_gate','harbor_pass','harbor_cache','harbor_beacon','gallery','cistern','altar','infirmary','garden','heart',...FOUNDRY_ROOMS.map(r=>r.id),...WATCH_ROOMS.map(r=>r.id),...COURIER_ROOMS.map(r=>r.id),...THEATER_ROOMS.map(r=>r.id),...SHOALS_SLOTS,...INQUEST_ROOMS.map(r=>r.id)];
+export const ROOM_IDS=['harbor_gate','harbor_pass','harbor_cache','harbor_beacon','gallery','cistern','altar','infirmary','garden','heart',...FOUNDRY_ROOMS.map(r=>r.id),...WATCH_ROOMS.map(r=>r.id),...COURIER_ROOMS.map(r=>r.id),...THEATER_ROOMS.map(r=>r.id),...SHOALS_SLOTS,...INQUEST_ROOMS.map(r=>r.id),...PALISADE_ROOMS.map(r=>r.id)];
 // All content and tuning below are original. Formula policies are documented in docs/V3_RULES.md.
 export const SKILLS={
  strike:{name:'剑术',kind:'attack',type:'melee',primary:'dex',secondary:'str',power:1.3,cost:0,mode:'single',max:1,desc:'近战单体；按近战路线寻找目标。'},
@@ -88,7 +89,7 @@ export function resolveHeroPlan(h,roomId){const plan=clone(h);for(const k of PLA
 export function migrateConfig(raw){const c=clone(raw);if(c?.version==='0.3.0'){c.version='0.4.0';c.roomOrders={};for(const h of c.heroes){h.overrides={};h.defenses=naturalDefenses();h.defenseFocus=h.id==='a'?'parry':h.id==='b'?'dodge':'resist';}}if(c?.version==='0.4.0'){c.version='0.5.0';c.expedition='classic';for(const h of c.heroes){h.item='none';h.itemPolicy={enabled:true,threshold:.3};}}if(c?.version==='0.5.0')c.version='0.6.0';if(c?.version==='0.6.0'){c.version='0.7.0';for(const h of c.heroes)h.training={};}if(c?.version==='0.7.0')c.version='0.8.0';if(c?.version==='0.8.0'){c.version='0.11.0';c.bellApproach='bypass';}if(c?.version==='0.10.0')c.version='0.11.0';if(c?.version==='0.11.0'){c.version=VERSION;c.rescueApproach??='pass';}if(['0.12.0','0.14.0','0.20.0','0.23.0'].includes(c?.version))c.version=VERSION;return c;}
 
 export const ITEMS={none:{name:'不携带',charges:0},tonic:{name:'凝潮药瓶',charges:2,resource:'mp',amount:24,desc:'法力低于阈值时自用，恢复24法力；整次远征2次。'},salve:{name:'救急药匣',charges:2,resource:'hp',amount:40,desc:'生命低于阈值时自用，恢复40生命；整次远征2次。'}};
-export const EXPEDITIONS={inquest:{name:'镜心问堂 · 心理攻防'},shoals:{name:"漂流群礁 · 有限海图远征"},theater:{name:"失声剧场 · 削弱与净化"},courier:{name:"灯塔后续 · 沉船邮路"},foundrywatch:{name:"铸库后续 · 封库守望"},foundry:{name:"锈潮铸库 · 四场连续支线"},harbor:{name:"第二章 · 盐风港的无光灯塔"},seasoned:{name:'熟练试炼 · 裂潮哨站'},veteran:{name:'资深试炼 · 沉钟议庭'},tutorial:{name:'初次出征 · 回声侧廊'},chapter:{name:'第一章 · 沉钟之下'},classic:{name:'修道院 · 基线远征'},vigil:{name:'潮汐异变 · 战术挑战'},archive:{name:'封库试炼 · 敌情与克制'},scarcity:{name:'断潮封库 · 限时补给挑战'},survival:{name:'守灯归途 · 生存试炼'},hospice:{name:'溺潮疗所 · 切断支援'}};
+export const EXPEDITIONS={palisade:{name:'折潮哨垒 · 敌方援护与拆援'},inquest:{name:'镜心问堂 · 心理攻防'},shoals:{name:"漂流群礁 · 有限海图远征"},theater:{name:"失声剧场 · 削弱与净化"},courier:{name:"灯塔后续 · 沉船邮路"},foundrywatch:{name:"铸库后续 · 封库守望"},foundry:{name:"锈潮铸库 · 四场连续支线"},harbor:{name:"第二章 · 盐风港的无光灯塔"},seasoned:{name:'熟练试炼 · 裂潮哨站'},veteran:{name:'资深试炼 · 沉钟议庭'},tutorial:{name:'初次出征 · 回声侧廊'},chapter:{name:'第一章 · 沉钟之下'},classic:{name:'修道院 · 基线远征'},vigil:{name:'潮汐异变 · 战术挑战'},archive:{name:'封库试炼 · 敌情与克制'},scarcity:{name:'断潮封库 · 限时补给挑战'},survival:{name:'守灯归途 · 生存试炼'},hospice:{name:'溺潮疗所 · 切断支援'}};
 const vigil=clone(ROOMS);
 vigil[0].note='前排两名护卫掩护后排召潮者。召潮者每次存活潮卫被击倒后可再次召唤；远程集中后排可以切断召唤来源。';
 vigil[0].enemies=[enemy('vg1','潮壳护卫','front','strike',160),enemy('vg2','潮壳护卫','front','strike',160),{...enemy('vg3','召潮者','rear','spark',150),skills:{spark:7,sentinel:7},prep:[row('sentinel','front')]}];
@@ -96,7 +97,7 @@ vigil[1].note='两名祭司用群体法术压制中央。分散站位可减少�
 vigil[1].enemies=[enemy('vc1','潮闸巨卫','front','strike',230),enemy('vc2','深潮祭司','rear','wave',160,10),enemy('vc3','深潮祭司','rear','wave',160,10)];
 vigil[2].note='守誓者生命不高于一半且仍存活时碎印：召来两名潮卫，后续普通行动改为压制后排的法术。击倒主人会同时驱散其召唤物。请为此房间保留法力与药瓶。';
 vigil[2].enemies=[{...enemy('vs1','碎印守誓者','front','strike',480,10),skills:{strike:10,wave:10,guard:6},prep:[row('guard','self')],awakens:true},enemy('vs2','誓约祭司','rear','spark',140,8)];
-export function roomsFor(c){return (c.expedition==='inquest'?INQUEST_ROOMS:c.expedition==='shoals'?shoalsRooms(c):c.expedition==='theater'?THEATER_ROOMS:c.expedition==='courier'?courierRooms(c):c.expedition==='foundrywatch'?WATCH_ROOMS:c.expedition==='foundry'?foundryRooms(c):c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
+export function roomsFor(c){return (c.expedition==='palisade'?PALISADE_ROOMS:c.expedition==='inquest'?INQUEST_ROOMS:c.expedition==='shoals'?shoalsRooms(c):c.expedition==='theater'?THEATER_ROOMS:c.expedition==='courier'?courierRooms(c):c.expedition==='foundrywatch'?WATCH_ROOMS:c.expedition==='foundry'?foundryRooms(c):c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
 export function challengeConfig(){const c=defaults();c.expedition='vigil';for(const h of c.heroes){h.item=['c','d','e','f'].includes(h.id)?'tonic':'salve';h.itemPolicy.threshold=h.item==='tonic'?.3:.5;}c.heroes.find(h=>h.id==='c').prep=[row('sentinel','front')];c.heroes.find(h=>h.id==='d').overrides.cistern={prep:[row('ward','center')]};for(const id of ['b','e']){const h=c.heroes.find(h=>h.id===id);h.overrides.altar={defenses:{...h.defenses,magic:'resist'}};}return c;}
 
 export {rankCost} from './expedition-progression-rules.mjs';
@@ -130,7 +131,7 @@ export function archiveConfig(adapted=false){
 }
 
 export const hasArchiveEvents=c=>['archive','scarcity','chapter'].includes(c.expedition);
-export const supplyBudget=c=>c.expedition==='veteran'?30:['scarcity','theater','inquest'].includes(c.expedition)?24:['shoals','foundry','foundrywatch','courier'].includes(c.expedition)?30:['survival','hospice','seasoned','harbor'].includes(c.expedition)?36:60;
+export const supplyBudget=c=>c.expedition==='veteran'?30:['scarcity','theater','inquest'].includes(c.expedition)?24:['palisade','shoals','foundry','foundrywatch','courier'].includes(c.expedition)?30:['survival','hospice','seasoned','harbor'].includes(c.expedition)?36:60;
 export function roomTimeBudget(c,roomId){return c.expedition==='scarcity'?5-(roomId==='cistern'&&c.rescueApproach==='gather'?1:0):24;}
 export function scarcityConfig(adapted=false){const c=archiveConfig(adapted);c.expedition='scarcity';c.supplies={herb:8,rune:8,arrow:8};return c;}
 
@@ -294,5 +295,18 @@ export function inquestConfig(plan='pressure'){
  if(plan==='plain')return c;
  e.main=[row('mindcall','front','round'),row('shot','front')];e.overrides.inquest_seat={main:[row('mindcall','rear','round'),row('shot','rear')]};
  if(plan==='composure'){a.defenses.magic='resist';mage.defenses.magic='resist';d.defenses.magic='resist';e.prep=[row('resolvechant','front','once'),row('insight','center','once')];e.overrides.inquest_seat.prep=[row('resolvechant','center','once'),row('mastery','rear','once')];}
+ return c;
+}
+
+export function palisadeConfig(plan='break'){
+ if(!['plain','break','bypass'].includes(plan))throw Error('未知哨垒方案');
+ const c=defaults();c.expedition='palisade';c.supplies={herb:12,rune:10,arrow:8};
+ const get=id=>c.heroes.find(h=>h.id===id),a=get('a'),b=get('b'),mage=get('c'),d=get('d'),e=get('e'),f=get('f');
+ for(const h of c.heroes){h.item=['a','b'].includes(h.id)?'salve':'tonic';h.itemPolicy.threshold=h.item==='salve'?.5:.3;}
+ a.main=[row('shieldbash','front','round'),row('strike')];b.main=[row('pierce','rear','round'),row('shot','rear')];mage.main=[row('wave','front','once'),row('spark','front')];f.healing.threshold=.8;e.defenses.ranged='dodge';d.overrides.palisade_crossfire={prep:[row('ward','rear')]};d.overrides.palisade_command={prep:[row('ward','center')]};
+ if(plan==='plain')return c;
+ e.trained='mindcall';e.main=[row('mindcall','front','round'),row('shot','front')];b.overrides.palisade_crossfire={main:[row('pierce','rear','round'),row('shot','rear')]};e.overrides.palisade_crossfire={main:[row('mindcall','rear','round'),row('shot','rear')]};
+ if(plan==='break'){b.main=[row('pierce','front','round'),row('shot','front')];b.overrides.palisade_command={main:[row('pierce','left','round'),row('shot','left')]};e.overrides.palisade_command={main:[row('mindcall','healer','round'),row('shot','rear')]};}
+ if(plan==='bypass'){a.trained='interpose';a.prep=[row('interpose','rear')];b.main=[row('pierce','healer','round'),row('shot','healer'),row('shot','rear')];mage.main=[row('lance','healer','once'),row('spark','healer'),row('spark','front')];mage.overrides.palisade_crossfire={main:[row('wave','front','once'),row('spark','front')]};e.main=[row('mindcall','healer','round'),row('shot','rear')];}
  return c;
 }
