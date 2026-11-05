@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "steps": [
+    "零资产本人学者应用破印构筑未支付培养，实际seed1命中并破除敌方援护；精确组件与原施放来源可跳转返回，个人记录按3组计数",
+    "pending改配/刷新保留原战报；正常170/70后分配披甲并付20经验学破印1级；seed2邮路实际失败，只领取两房40金币/20经验，无通关掉落，失败历史与备份完整",
+    "390px完整恢复失败历史/装备/培养，剧场实际seed3破印与证据无横向溢出；正常130/55后总340金币、本人125经验、未自动装备祷潮古琴"
+  ],
+  "runs": [
+    {
+      "route": "palisade",
+      "seed": 1,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 护讯栈桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 257,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 交错弩台",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 203,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双盾指挥席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 176,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 1
+      },
+      "removedGroups": 3
+    },
+    {
+      "route": "courier",
+      "seed": 2,
+      "won": false,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 278,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 499,
+          "mp": 205,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 13,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 189,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "removedGroups": 2
+    },
+    {
+      "route": "theater",
+      "seed": 3,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 304,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 238,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "removedGroups": 2
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

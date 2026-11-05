@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "steps": [
+    "零资产本人学者从逆印书库地图实际seed1三场出征，敌方拆印抄录员移除本人的屏障，破印者徽记、确切效果与原施放跳转/返回可读，三场账本和结尾连通",
+    "pending换准备/刷新保留原战报；正常180/75领取晶镜，比较明确显示心理弱点和生命损失，分给本人并付20经验学破印1级；重施方案seed2再战125/55，历史和完整备份通过",
+    "390px恢复完整历史/培养/晶镜，少用增益实际seed3无药膳与吟游辅助，三场说明/账本无横向溢出；125/55正常领取后430金币、本人165经验、两件未分配晶镜"
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 243,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 190,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemyRemovedGroups": 2
+    },
+    {
+      "seed": 2,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 258,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 217,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 170,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyRemovedGroups": 3
+    },
+    {
+      "seed": 3,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 267,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 239,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 12,
+          "survivors": 6,
+          "hp": 559,
+          "mp": 233,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemyRemovedGroups": 6
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

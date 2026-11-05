@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ scriptorium:{bonus:65,xp:25,firstGold:55,firstXp:20,pool:['counterlens']},
  palisade:{bonus:55,xp:20,firstGold:55,firstXp:20,pool:['watchmantle']},
  inquest:{bonus:50,xp:20,firstGold:50,firstXp:20,pool:['calmribbon']},
  shoals:{bonus:55,xp:20,firstGold:55,firstXp:20,pool:['saltcloak','echocharm']},
@@ -35,4 +36,4 @@ export function expeditionReward(report,{version=2,first=false,id=1}={}){const c
  const gear=won&&r.pool.length?r.pool[firstClear?0:x%r.pool.length]:null;
  return {cleared,gold:cleared*20+(won?r.bonus:0)+(firstClear?r.firstGold:0),xp:cleared*10+(won?r.xp:0)+(firstClear?r.firstXp:0),firstClear,loot:gear?[gear]:[]};
 }
-export function gearDifference(current,next){const a=equipmentTotals(current),b=equipmentTotals(typeof current==='string'?next:replaceEquipment(current,next));return [['护甲',b.armor-a.armor],['生命上限',4*((b.bonus.con||0)-(a.bonus.con||0))],['法力上限',2*((b.bonus.int||0)-(a.bonus.int||0))+(b.bonus.wil||0)-(a.bonus.wil||0)],...Object.entries(ATTR).map(([k,name])=>[name,(b.bonus[k]||0)-(a.bonus[k]||0)]),...Object.entries({melee:'近战抗性(百分点)',ranged:'远程抗性(百分点)',magic:'法术抗性(百分点)'}).map(([k,name])=>[name,(b.resistances[k]||0)-(a.resistances[k]||0)])].filter(([,v])=>v!==0).map(([name,v])=>`${name} ${v>0?'+':''}${v}`).join(' / ')||'数值相同';}
+export function gearDifference(current,next){const a=equipmentTotals(current),b=equipmentTotals(typeof current==='string'?next:replaceEquipment(current,next));return [['护甲',b.armor-a.armor],['生命上限',4*((b.bonus.con||0)-(a.bonus.con||0))],['法力上限',2*((b.bonus.int||0)-(a.bonus.int||0))+(b.bonus.wil||0)-(a.bonus.wil||0)],...Object.entries(ATTR).map(([k,name])=>[name,(b.bonus[k]||0)-(a.bonus[k]||0)]),...Object.entries({melee:'近战抗性(百分点)',ranged:'远程抗性(百分点)',magic:'法术抗性(百分点)',mental:'心理抗性(百分点)'}).map(([k,name])=>[name,(b.resistances[k]||0)-(a.resistances[k]||0)])].filter(([,v])=>v!==0).map(([name,v])=>`${name} ${v>0?'+':''}${v}`).join(' / ')||'数值相同';}

@@ -1,0 +1,2825 @@
+{
+  "note": "36 bounded unique inputs: 2 actual asset profiles ×3 multi-variable plans ×6 predeclared seeds (discovery101–102, confirmation201–204). Earned is normal source seed1 claim180/75, lens assignedD and20XP unravel1 paidD. Same30 supply budget and actual assets within profile. Plans change multiple commands/free specialization and RNG consumption; no single-variable attribution, prevented damage, cancelled actions or universal recommendation. Failed/long/low-resource results retained.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "e4e922f3ff0260d70f4d7123dbc9e322b649d1541efe13486eda2011ffd0102b",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 240,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 173,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 5,
+        "removedComponents": 5,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 5
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "f6b9383bc4dadf188c64b62c66d3dc43560dc3b8796d5a4e1610363b3e965447",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 233,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 158,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 6,
+        "removedComponents": 6,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 4
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "f79c244cb53968cb28aae01a8e5b5b2594502352972fc6333a6711c809750718",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 272,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 247,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 183,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 2
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "eb60c27adb231e158f0e443c9156d06be5abf94cad31f695b208cce85cb90139",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 282,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 229,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 196,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 3,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 3,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 1
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "534745f2014ba8ca1908c55ad773fa9ef885cbce9f97c8e834795338e18d5f6d",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 287,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 222,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 167,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "source",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "51cb0de1d1131db0d8ed3860644cbd09499da4e23f4c3c92f73b1f1052d8ec86",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 275,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 218,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 161,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "lean",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "37d012fe49b65a6f33b93f490d0b229f1edf069481f3b10694cfd6833965c9e2",
+      "won": true,
+      "alive": 6,
+      "rounds": 29,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 279,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 242,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 18,
+          "survivors": 6,
+          "hp": 448,
+          "mp": 219,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 7,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "lean",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "ed01463816cb8b05a775955936687138c7587a8196ffbdfaaeaf7e43cab7767a",
+      "won": true,
+      "alive": 5,
+      "rounds": 28,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 277,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 241,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 17,
+          "survivors": 5,
+          "hp": 406,
+          "mp": 230,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "lean",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "f34c3dc760a083f0325beb17c511ffa913cd13164f77280392004b4766b44512",
+      "won": true,
+      "alive": 6,
+      "rounds": 31,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 276,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 250,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 18,
+          "survivors": 6,
+          "hp": 493,
+          "mp": 227,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 9,
+        "removedGroups": 8,
+        "removedComponents": 8,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "lean",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "cf252ea2a45b806c309d11ca9790d3aa15f16c71cd4c4606ef1557097001f177",
+      "won": true,
+      "alive": 6,
+      "rounds": 30,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 639,
+          "mp": 289,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 251,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 20,
+          "survivors": 6,
+          "hp": 418,
+          "mp": 225,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 8,
+        "removedGroups": 5,
+        "removedComponents": 5,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "lean",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "2f2574f75635525d909ce3fefb589e3862c490713d51fd20015a91e41fe67aa4",
+      "won": true,
+      "alive": 5,
+      "rounds": 29,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 238,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 18,
+          "survivors": 5,
+          "hp": 309,
+          "mp": 204,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 8,
+        "removedGroups": 6,
+        "removedComponents": 6,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 3
+    },
+    {
+      "profile": "fresh",
+      "plan": "lean",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "baa4e4abdce974760bdc6f4e5c2060c1a535a9ecade0c46c5094dc8c280395c1",
+      "won": true,
+      "alive": 6,
+      "rounds": 24,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 279,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 250,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 215,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 7,
+        "removedGroups": 6,
+        "removedComponents": 6,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "renew",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "b1ae0e1372602dd80c52387fdf408e541d9e2c25df0c5c5211a399ee3b403fa8",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 259,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 212,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 160,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 6,
+        "removedComponents": 7,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 5
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "renew",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "d3309ea18f1ab80eeb1d4114a785484690473016bb3065ae633f6bce45b4da8a",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 260,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 209,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 568,
+          "mp": 167,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 3,
+        "removedComponents": 4,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "renew",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "592ce5bb87196215c1db32296b39b29d0f9a8ada94d8fe403910deabe1ab6a3f",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 252,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 198,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 155,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 5,
+        "removedComponents": 6,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 4
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "renew",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "948489539fbf372a2c1fcdb28a6e371facfd7e12d3fece8cd0c9aaa57090a13c",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 259,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 208,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 154,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 3,
+        "removedComponents": 4,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "renew",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "0bdf27c52c7baf348622f8d1c7eb2ffa67171ca58395f09837a0bafa07fa6e69",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 267,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 202,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 165,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 4,
+        "removedComponents": 5,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "fresh",
+      "plan": "renew",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "4e37df34789b2aa1cee87b1f9a7a1a71ccad359ace8d03f3cbabf1f76ad0b094",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 253,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 212,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 157,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 5,
+        "removedComponents": 6,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 4,
+        "provisionsCasts": 4
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "33cc4c53f7cf412c08a6b35830fb598f193fcd2def537f7cca16df9038d2b324",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 270,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 241,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 162,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 4
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "92a5ade3ef6164d402920e33a308be0cca3d3794da80349ca95c36f231995b37",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 279,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 247,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 164,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "6acc48724648587799d734f17865af4dd6a3bbd3561773cd6accbdde22dafdfb",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 273,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 227,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 168,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "87e9584f87ecfef9444fe3b23fae7af23d70d42a2ac9e166e29441f5a07eb45f",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 285,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 232,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 199,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 3,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 3,
+        "removedGroups": 0,
+        "removedComponents": 0,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 1
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "536052712029daebb7b730b073db9e12e8aec46eec0b4179bfa93ef0579a037a",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 290,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 225,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 170,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 3,
+        "removedComponents": 3,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "source",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "1beabe243edac01440a4ab9ac397dd330c387463051c2ce1bf7990c30ca0907a",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 280,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 253,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 188,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 3,
+        "removedGroups": 2,
+        "removedComponents": 2,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 2
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "lean",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "b5e8beacf735d10cffe08a4e4269c9bfa7092770d6c017a3bc4f81b536858c0d",
+      "won": true,
+      "alive": 6,
+      "rounds": 28,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 258,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 234,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 14,
+          "survivors": 6,
+          "hp": 431,
+          "mp": 206,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 9,
+        "removedGroups": 6,
+        "removedComponents": 6,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 3
+    },
+    {
+      "profile": "earned",
+      "plan": "lean",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "fe2057246fbb59f8a53f620e3460a18f4727102ffe84c2e5577d579a2b42bb7e",
+      "won": true,
+      "alive": 6,
+      "rounds": 26,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 243,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 15,
+          "survivors": 6,
+          "hp": 534,
+          "mp": 227,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 4,
+        "removedComponents": 4,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 3
+    },
+    {
+      "profile": "earned",
+      "plan": "lean",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "4bf24beab103649ba09c418ec1a6d0312aeaae426f5ac5c36c2a6d9eaaf1574c",
+      "won": true,
+      "alive": 6,
+      "rounds": 28,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 279,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 550,
+          "mp": 253,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 15,
+          "survivors": 6,
+          "hp": 521,
+          "mp": 228,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 9,
+        "removedGroups": 8,
+        "removedComponents": 8,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 4
+    },
+    {
+      "profile": "earned",
+      "plan": "lean",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "c003bddc3619b785f41fdc53b9558781fa12c4fa915e86e50e9c23932fe13f35",
+      "won": true,
+      "alive": 6,
+      "rounds": 29,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 299,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 249,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 18,
+          "survivors": 6,
+          "hp": 492,
+          "mp": 225,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 8,
+        "removedGroups": 2,
+        "removedComponents": 2,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 4
+    },
+    {
+      "profile": "earned",
+      "plan": "lean",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "e16de8e4f1f274761f8d0261c3accd1e5d427f60ef9ce4afc5bb6fb0cf007fda",
+      "won": true,
+      "alive": 6,
+      "rounds": 30,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 284,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 247,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 18,
+          "survivors": 6,
+          "hp": 398,
+          "mp": 241,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 7,
+        "removedGroups": 5,
+        "removedComponents": 5,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 4
+    },
+    {
+      "profile": "earned",
+      "plan": "lean",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "27b58f457c9410faac3d0a285fbb2e6712dea320437d4712b2a4c1ac67fe6d49",
+      "won": true,
+      "alive": 6,
+      "rounds": 25,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 277,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 242,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 14,
+          "survivors": 6,
+          "hp": 545,
+          "mp": 207,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 8,
+        "removedGroups": 7,
+        "removedComponents": 7,
+        "pendingRemoved": 0
+      },
+      "party": {
+        "unravelCasts": 0,
+        "provisionsCasts": 0
+      },
+      "itemUses": 3
+    },
+    {
+      "profile": "earned",
+      "plan": "renew",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "aab988345e55fdc56927153a0098f519a1b15d89ea41fe5a48828c031a405083",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 255,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 218,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 182,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 4,
+        "removedGroups": 3,
+        "removedComponents": 4,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "renew",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "b0f3f77263c579cdf720fa5ada3b5c883d5cbef670f86395067627125ba6f7fd",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 262,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 211,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 159,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 4,
+        "removedComponents": 5,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "renew",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "f2e1908a1079fb48d2f8b52a6b750ce5d30e41a704d24efde4fd0b777c4c1827",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 255,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 201,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 158,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 5,
+        "removedComponents": 6,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 4
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "renew",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "6396805dafad31c1e0397852360da4d6b266fd706f635fe4822e5258e85626e2",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 262,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 211,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 151,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 3,
+        "removedComponents": 4,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "renew",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "1f5f6431eba3aab1f30a3d227ab6cfcae2b494dfc9a17e59714b480595aad308",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 270,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 205,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 168,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 5,
+        "removedGroups": 4,
+        "removedComponents": 5,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 3,
+        "provisionsCasts": 3
+      },
+      "itemUses": 2
+    },
+    {
+      "profile": "earned",
+      "plan": "renew",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "e587802364b091c74e6848dcf22babe1585a20f463b7b979b13a759e38d71c19",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 256,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 215,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 160,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "enemy": {
+        "unravelCasts": 6,
+        "removedGroups": 5,
+        "removedComponents": 6,
+        "pendingRemoved": 1
+      },
+      "party": {
+        "unravelCasts": 4,
+        "provisionsCasts": 4
+      },
+      "itemUses": 2
+    }
+  ],
+  "summary": {
+    "runs": 36,
+    "uniqueBattleInputs": 36,
+    "failures": 0,
+    "injured": 2,
+    "byPlan": [
+      {
+        "plan": "source",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "enemyRemovedGroups": 38
+      },
+      {
+        "plan": "lean",
+        "runs": 12,
+        "won": 12,
+        "allSix": 10,
+        "enemyRemovedGroups": 65
+      },
+      {
+        "plan": "renew",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "enemyRemovedGroups": 50
+      }
+    ]
+  },
+  "equipment": {
+    "hp": -8,
+    "mp": 3,
+    "spellMean": 3
+  },
+  "normal": {
+    "seed": 1,
+    "plan": "source",
+    "rooms": [
+      {
+        "name": "01 · 残印前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 637,
+        "mp": 273,
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 5
+        }
+      },
+      {
+        "name": "02 · 回印阶室",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 622,
+        "mp": 243,
+        "supplies": {
+          "herb": 10,
+          "rune": 5,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "03 · 封存裁室",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 603,
+        "mp": 190,
+        "supplies": {
+          "herb": 7,
+          "rune": 2,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 7,
+      "rune": 2,
+      "arrow": 0
+    },
+    "enemyRemovedGroups": 2,
+    "enemyPendingRemoved": 0,
+    "playerRemovedGroups": 0,
+    "reward": {
+      "cleared": 3,
+      "gold": 180,
+      "xp": 75,
+      "firstClear": true,
+      "loot": [
+        "counterlens"
+      ]
+    }
+  },
+  "desktop": {
+    "seed": 2,
+    "plan": "renew, actual lens and paid unravel1",
+    "rooms": [
+      {
+        "name": "01 · 残印前厅",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 632,
+        "mp": 258,
+        "supplies": {
+          "herb": 9,
+          "rune": 4,
+          "arrow": 4
+        }
+      },
+      {
+        "name": "02 · 回印阶室",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 609,
+        "mp": 217,
+        "supplies": {
+          "herb": 8,
+          "rune": 0,
+          "arrow": 1
+        }
+      },
+      {
+        "name": "03 · 封存裁室",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 594,
+        "mp": 170,
+        "supplies": {
+          "herb": 3,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 3,
+      "rune": 0,
+      "arrow": 0
+    },
+    "enemyRemovedGroups": 3,
+    "enemyPendingRemoved": 1,
+    "playerRemovedGroups": 3,
+    "reward": {
+      "cleared": 3,
+      "gold": 125,
+      "xp": 55,
+      "firstClear": false,
+      "loot": [
+        "counterlens"
+      ]
+    }
+  },
+  "mobile": {
+    "seed": 3,
+    "plan": "lean",
+    "rooms": [
+      {
+        "name": "01 · 残印前厅",
+        "won": true,
+        "rounds": 7,
+        "survivors": 6,
+        "hp": 619,
+        "mp": 267,
+        "supplies": {
+          "herb": 9,
+          "rune": 7,
+          "arrow": 1
+        }
+      },
+      {
+        "name": "02 · 回印阶室",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 596,
+        "mp": 239,
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 0
+        }
+      },
+      {
+        "name": "03 · 封存裁室",
+        "won": true,
+        "rounds": 12,
+        "survivors": 6,
+        "hp": 559,
+        "mp": 233,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 0,
+      "rune": 0,
+      "arrow": 0
+    },
+    "enemyRemovedGroups": 6,
+    "enemyPendingRemoved": 0,
+    "playerRemovedGroups": 0,
+    "reward": {
+      "cleared": 3,
+      "gold": 125,
+      "xp": 55,
+      "firstClear": false,
+      "loot": [
+        "counterlens"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "abe535b17906968cb8b56814b8d94986b1992b1d",
+    "count": 36,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  }
+}
