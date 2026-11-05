@@ -1,3 +1,4 @@
+import {saveEquipmentSet,applyEquipmentSet,deleteEquipmentSet} from './expedition-guild.mjs';
 import {GOALS,withObjective} from './expedition-goal-data.mjs';
 import {bookProof,bookReport,bookOrigin} from './expedition-book.mjs';
 import {expeditionBookView,objectiveResultView} from './expedition-book-view.mjs';
@@ -123,6 +124,10 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  panels();
  }
  root.onclick=e=>{const b=e.target.closest('button');if(!b)return;try{
+ if(b.dataset.setSave){const slot=Number(b.dataset.setSave),name=root.querySelector(`[data-set-name="${slot}"]`).value;save(saveEquipmentSet(g,selected,slot,name));inform('当前三部位已存入此人的配装栏；没有更换或购买装备。');render();return;}
+ if(b.dataset.setApply){save(applyEquipmentSet(g,selected,Number(b.dataset.setApply)));inform('已应用此人整套已持有装备，请核对技能装备条件；训练与职责保留。');render();return;}
+ if(b.dataset.setDelete){save(deleteEquipmentSet(g,selected,Number(b.dataset.setDelete)));inform('已删除配装栏，实际装备保留。');render();return;}
+
  if(b.dataset.goalPrepare){const [route,goal]=b.dataset.goalPrepare.split(':'),c=withObjective(adventureConfig(route),goal);c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('目标与路线已选定；请按实际队伍调整战术后正式挑战。');return;}
  if(b.dataset.goalReport){const [route,goal]=b.dataset.goalReport.split(':');showReport(bookReport(g,route,goal),bookOrigin(g,route,goal));return;}
  if(b.dataset.goalLoad){const [route,goal]=b.dataset.goalLoad.split(':');loadConfig(structuredClone(bookProof(g,route,goal).config));inform('首次方案已载入供调整；当前资产、队伍、本人及已应用职责保留。');return;}

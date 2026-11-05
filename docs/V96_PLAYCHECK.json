@@ -1,0 +1,26 @@
+{
+  "normal": [
+    {
+      "seed": 6,
+      "won": true,
+      "gear": {
+        "weapon": "guardblade",
+        "armor": "plate",
+        "accessory": "token"
+      }
+    },
+    {
+      "seed": 7,
+      "won": true,
+      "gear": {
+        "weapon": "quicklute",
+        "armor": "plate",
+        "accessory": "saltseal"
+      }
+    }
+  ],
+  "desktopGold": 460,
+  "finalGold": 500,
+  "oldRawReports": 40,
+  "excluded": []
+}
