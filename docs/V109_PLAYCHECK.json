@@ -1,0 +1,878 @@
+{
+  "designStatus": "project adaptation; historical official indexed configuration text, direct full-text fetch unavailable",
+  "normal": [
+    {
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 45,
+        "firstClear": true,
+        "loot": [
+          "reliquaryshield"
+        ]
+      },
+      "selections": [
+        {
+          "order": [
+            "rear",
+            "center",
+            "left",
+            "right",
+            "front"
+          ],
+          "candidates": [
+            {
+              "pos": "rear",
+              "count": 2
+            },
+            {
+              "pos": "center",
+              "count": 0
+            },
+            {
+              "pos": "left",
+              "count": 0
+            },
+            {
+              "pos": "right",
+              "count": 0
+            },
+            {
+              "pos": "front",
+              "count": 1
+            }
+          ],
+          "selectedPosition": "rear",
+          "available": 2,
+          "limit": 3,
+          "rule": "仅“按个人阵位优先”的远程、法术、心理指令使用此顺序；每次从第一组合法存活敌人中按原上限选取，不跨阵位补齐，不预抽随机数。显式阵位、职责追击和近战仍沿原规则；群攻数量不足会检查后备，不自动改选后来人数更多的阵位。"
+        },
+        {
+          "order": [
+            "rear",
+            "center",
+            "left",
+            "right",
+            "front"
+          ],
+          "candidates": [
+            {
+              "pos": "rear",
+              "count": 2
+            },
+            {
+              "pos": "center",
+              "count": 0
+            },
+            {
+              "pos": "left",
+              "count": 0
+            },
+            {
+              "pos": "right",
+              "count": 0
+            },
+            {
+              "pos": "front",
+              "count": 1
+            }
+          ],
+          "selectedPosition": "rear",
+          "available": 2,
+          "limit": 3,
+          "rule": "仅“按个人阵位优先”的远程、法术、心理指令使用此顺序；每次从第一组合法存活敌人中按原上限选取，不跨阵位补齐，不预抽随机数。显式阵位、职责追击和近战仍沿原规则；群攻数量不足会检查后备，不自动改选后来人数更多的阵位。"
+        },
+        {
+          "order": [
+            "rear",
+            "center",
+            "left",
+            "right",
+            "front"
+          ],
+          "candidates": [
+            {
+              "pos": "rear",
+              "count": 1
+            },
+            {
+              "pos": "center",
+              "count": 0
+            },
+            {
+              "pos": "left",
+              "count": 0
+            },
+            {
+              "pos": "right",
+              "count": 0
+            },
+            {
+              "pos": "front",
+              "count": 1
+            }
+          ],
+          "selectedPosition": "rear",
+          "available": 1,
+          "limit": 3,
+          "rule": "仅“按个人阵位优先”的远程、法术、心理指令使用此顺序；每次从第一组合法存活敌人中按原上限选取，不跨阵位补齐，不预抽随机数。显式阵位、职责追击和近战仍沿原规则；群攻数量不足会检查后备，不自动改选后来人数更多的阵位。"
+        }
+      ]
+    },
+    {
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "remedybag"
+        ]
+      },
+      "selections": [
+        {
+          "order": [
+            "front",
+            "rear",
+            "center",
+            "left",
+            "right"
+          ],
+          "candidates": [
+            {
+              "pos": "front",
+              "count": 2
+            },
+            {
+              "pos": "rear",
+              "count": 1
+            },
+            {
+              "pos": "center",
+              "count": 0
+            },
+            {
+              "pos": "left",
+              "count": 0
+            },
+            {
+              "pos": "right",
+              "count": 0
+            }
+          ],
+          "selectedPosition": "front",
+          "available": 1,
+          "limit": 1,
+          "rule": "仅“按个人阵位优先”的远程、法术、心理指令使用此顺序；每次从第一组合法存活敌人中按原上限选取，不跨阵位补齐，不预抽随机数。显式阵位、职责追击和近战仍沿原规则；群攻数量不足会检查后备，不自动改选后来人数更多的阵位。"
+        },
+        {
+          "order": [
+            "rear",
+            "center",
+            "left",
+            "right",
+            "front"
+          ],
+          "candidates": [
+            {
+              "pos": "rear",
+              "count": 1
+            },
+            {
+              "pos": "center",
+              "count": 0
+            },
+            {
+              "pos": "left",
+              "count": 0
+            },
+            {
+              "pos": "right",
+              "count": 0
+            },
+            {
+              "pos": "front",
+              "count": 2
+            }
+          ],
+          "selectedPosition": "rear",
+          "available": 1,
+          "limit": 1,
+          "rule": "仅“按个人阵位优先”的远程、法术、心理指令使用此顺序；每次从第一组合法存活敌人中按原上限选取，不跨阵位补齐，不预抽随机数。显式阵位、职责追击和近战仍沿原规则；群攻数量不足会检查后备，不自动改选后来人数更多的阵位。"
+        },
+        {
+          "order": [
+            "rear",
+            "center",
+            "left",
+            "right",
+            "front"
+          ],
+          "candidates": [
+            {
+              "pos": "rear",
+              "count": 1
+            },
+            {
+              "pos": "center",
+              "count": 1
+            },
+            {
+              "pos": "left",
+              "count": 0
+            },
+            {
+              "pos": "right",
+              "count": 0
+            },
+            {
+              "pos": "front",
+              "count": 2
+            }
+          ],
+          "selectedPosition": "rear",
+          "available": 1,
+          "limit": 1,
+          "rule": "仅“按个人阵位优先”的远程、法术、心理指令使用此顺序；每次从第一组合法存活敌人中按原上限选取，不跨阵位补齐，不预抽随机数。显式阵位、职责追击和近战仍沿原规则；群攻数量不足会检查后备，不自动改选后来人数更多的阵位。"
+        }
+      ]
+    }
+  ],
+  "gold": [
+    120,
+    260
+  ],
+  "matrix": [
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 11,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 10,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "classic",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 9
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "hospice",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "fresh",
+      "route": "clocktower",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 11,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 9,
+        "arrow": 7
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 10,
+        "arrow": 8
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "classic",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 9
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "hospice",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "asset": "earned",
+      "route": "clocktower",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      }
+    }
+  ],
+  "limit": "36 predeclared finite inputs; real priorities, no automatic optimization or guarantee of improvement. Hypothetical matrix awards nothing."
+}

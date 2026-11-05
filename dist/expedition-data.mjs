@@ -17,7 +17,8 @@ export const clone=x=>structuredClone(x);
 export const POS={front:'前排',left:'左翼',right:'右翼',center:'中央',rear:'后排'};
 export const ROLE_TARGETS={healer:'治疗者',summoner:'召唤者'};
 export const roleTargetAllowed=s=>s.kind==='attack'&&s.mode==='single'&&['ranged','magic','mental'].includes(s.type);
-export const targetOptions=s=>s.kind==='transfer'?{...POS,all:'全队'}:s.cover?POS:s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS}:POS;
+export const positionOrderAllowed=s=>s?.kind==='attack'&&['ranged','magic','mental'].includes(s.type)&&['single','position'].includes(s.mode);
+export const targetOptions=s=>s.kind==='transfer'?{...POS,all:'全队'}:s.cover?POS:s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS,priority:'按个人阵位优先'}:positionOrderAllowed(s)?{...POS,priority:'按个人阵位优先'}:POS;
 export const ATTR={str:'力量',con:'体质',int:'智力',dex:'灵巧',cha:'魅力',agi:'敏捷',per:'感知',wil:'意志'};
 export const TYPES={melee:'近战',ranged:'远程',magic:'法术',mental:'心理'};
 // Mental attacks share the existing mind-resist choice; no fourth config slot.
@@ -90,7 +91,7 @@ export const ROOMS=[
  {id:'altar',name:'03 · 守誓圣坛',note:'守誓者先施放守势；敌我使用相同技能规则。保留资源、准备备用指令，避免空过行动。',enemies:[{...enemy('s1','守誓者','front','strike',300,10),skills:{strike:8,guard:6},prep:[row('guard','self')]},enemy('s2','誓约残影','rear','wave',160,9)]}
 ];
 
-export const PLAN_FIELDS=['pos','prep','main','healing','defenses','itemPolicy'];
+export const PLAN_FIELDS=['attackOrder','pos','prep','main','healing','defenses','itemPolicy'];
 export function resolveHeroPlan(h,roomId){const plan=clone(h);for(const k of PLAN_FIELDS)if(Object.hasOwn(h.overrides?.[roomId]||{},k))plan[k]=clone(h.overrides[roomId][k]);return plan;}
 export function migrateConfig(raw){const c=clone(raw);if(c?.version==='0.3.0'){c.version='0.4.0';c.roomOrders={};for(const h of c.heroes){h.overrides={};h.defenses=naturalDefenses();h.defenseFocus=h.id==='a'?'parry':h.id==='b'?'dodge':'resist';}}if(c?.version==='0.4.0'){c.version='0.5.0';c.expedition='classic';for(const h of c.heroes){h.item='none';h.itemPolicy={enabled:true,threshold:.3};}}if(c?.version==='0.5.0')c.version='0.6.0';if(c?.version==='0.6.0'){c.version='0.7.0';for(const h of c.heroes)h.training={};}if(c?.version==='0.7.0')c.version='0.8.0';if(c?.version==='0.8.0'){c.version='0.11.0';c.bellApproach='bypass';}if(c?.version==='0.10.0')c.version='0.11.0';if(c?.version==='0.11.0'){c.version=VERSION;c.rescueApproach??='pass';}if(['0.12.0','0.14.0','0.20.0','0.23.0'].includes(c?.version))c.version=VERSION;return c;}
 

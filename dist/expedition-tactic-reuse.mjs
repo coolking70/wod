@@ -2,7 +2,7 @@ import {HEROES,SKILLS,roomsFor,clone} from './expedition-data.mjs';
 import {historyConfig,validateGuild} from './expedition-guild.mjs';
 import {rosterConfig} from './expedition-roster.mjs';import {readiness} from './expedition-readiness.mjs';import {validate} from './expedition-engine.mjs';
 import {lockedSkills} from './expedition-growth.mjs';import {configurationChanges} from './expedition-review.mjs';
-export const PERSONAL_TACTIC_FIELDS=['pos','trained','attribute','defenseFocus','defenses','itemPolicy','healing','prep','main'];
+export const PERSONAL_TACTIC_FIELDS=['attackOrder','pos','trained','attribute','defenseFocus','defenses','itemPolicy','healing','prep','main'];
 // A stale-preview check, not an authentication token. Source assets are never copied.
 export function historyTacticPreview(g,tactics,{historyId,sourceId,targetId,copyRooms=false}){
  validateGuild(g);validate(tactics);if(typeof copyRooms!=='boolean')throw Error('逐房复制选项无效');
@@ -11,7 +11,7 @@ export function historyTacticPreview(g,tactics,{historyId,sourceId,targetId,copy
  if(definition(sourceId).classId!==definition(targetId).classId)throw Error('只能复用同职业队员的战术');
  const actual=readiness(g,tactics).config.heroes.find(h=>h.id===targetId),before=rosterConfig(g,tactics),slot=before.heroes.findIndex(h=>h.id===targetId);before.heroes[slot]=clone(actual);
  const config=clone(before),target=config.heroes[slot],reasons=[],sameRoute=historical.expedition===tactics.expedition;
- for(const key of PERSONAL_TACTIC_FIELDS)target[key]=clone(source[key]);
+ for(const key of PERSONAL_TACTIC_FIELDS){if(source[key]===undefined)delete target[key];else target[key]=clone(source[key]);}
  const roomScope=[...new Set([...roomsFor(historical),...roomsFor(tactics)].map(r=>r.id))],ignoredRooms=Object.keys(source.overrides).filter(id=>!roomScope.includes(id));
  if(copyRooms&&sameRoute)target.overrides={...Object.fromEntries(Object.entries(target.overrides).filter(([id])=>!roomScope.includes(id))),...clone(Object.fromEntries(Object.entries(source.overrides).filter(([id])=>roomScope.includes(id))))};
  if(copyRooms&&!sameRoute)reasons.push('路线不同，只能复制默认战术并保留当前逐房覆盖');

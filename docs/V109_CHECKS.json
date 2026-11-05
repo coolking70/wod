@@ -1,0 +1,396 @@
+{
+  "baseline": "1ba775a8ff350ce315905ca6388a349cca98d382",
+  "fullTests": {
+    "passed": 793,
+    "failed": 0,
+    "skipped": 0
+  },
+  "releaseTargetTests": 11,
+  "browserAcceptance": {
+    "passed": true,
+    "results": [
+      {
+        "version": 76,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v76"
+      },
+      {
+        "version": 77,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v77"
+      },
+      {
+        "version": 94,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v94"
+      },
+      {
+        "version": 95,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v95"
+      },
+      {
+        "version": 96,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v96"
+      },
+      {
+        "version": 97,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v97"
+      },
+      {
+        "version": 98,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v98"
+      },
+      {
+        "version": 99,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v99"
+      },
+      {
+        "version": 101,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v101"
+      },
+      {
+        "version": 102,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v102"
+      },
+      {
+        "version": 103,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v103"
+      },
+      {
+        "version": 104,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v104"
+      },
+      {
+        "version": 105,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v105"
+      },
+      {
+        "version": 106,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v106"
+      },
+      {
+        "version": 107,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v107"
+      },
+      {
+        "version": 108,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v108"
+      },
+      {
+        "version": 109,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v109/acceptance/browser-v109"
+      }
+    ]
+  },
+  "finalBrowser": {
+    "passed": true,
+    "steps": [
+      "桌面通过真实编辑器选个人优先并重排五阵位，逐房覆盖可恢复继承；保存/绑定及核对可读。正常seed1后排优先的完整战报与API相同，证据跳转不改pending；领取120、分盾和付20XP后完整公会API相同",
+      "390px整档恢复个人排序及命名方案；疗所只把首房改为前排优先，次房恢复默认后排顺序。正式seed2两房证据与完整API战报相同，正常领取260金币完整公会相同；旧报告仍原排序、不重复领奖，无横向溢出"
+    ],
+    "errors": []
+  },
+  "legacyReports": {
+    "reference": "1ba775a8ff350ce315905ca6388a349cca98d382",
+    "count": 42,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "ab171d5805eabe4528aedeb8393e3b1aa8e4e833894fe8cd3507f37b90f66617"
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "5a63657980554763b08845f9b77cc4e2f9769baacca5e75dbd73bccec9535e5b"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "1e22ad858c1fbc08317a6de6aeb98b4eb4834f286ad0c3e1f8ae9b344343f4d6"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "0ef724e460141825a641e910d85235124ba99bc206a51e85aa637a544a1c4cc1"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "253db734b9441c4cb4e08ed3917bb39071fe276c4ca38ee2e8e0333dd4645fb2"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "bbb785da5b0b4967c439b63ef37676e176b88357bbfd286295ae865da2860a60"
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "22c325b0b66433b181e86893ac96f04a15b93b85c071822976706b92098b95c1"
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "c912b7071773cfe29baacec2eae18945976027a16f8fe8cee8701b986f94b289"
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "6ef7a250e2e1841e00b1a0330507d0c00d653ebb5103e638cb24f6ceae5e0cae"
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "76122f5890cd42f9702646b7caa3937fe9024ebf3716b43f6f4a433537bed9c3"
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "6b53be872ed2b8118f047ecce17aec5b652f2872a3c644154048780885ce77f2"
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "1c0ec94a32b838a43cf421349f6a96642b6fd4345b42862d557e4734880f445d"
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "b51a02c2c811791131de91329419c539411d89a165e9eda1c3b7b3de2908f6a3"
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "1c228e8803fc9daf4455492169a74dd14bd1bb2749c65a95c2b07c0804483959"
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "5618886c42ca9116c7312490b8f3dc4f0ea0c0e394e0f1e8aaa54bd4dcd6e182"
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "e41eee728d1c3a58501c5a585c6529551f4c35fef33720e3674148aabe329ecb"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "c8053dda17ab31161761311ae36a35a4f60c8daf5e0b07b8417d4720574ea86d"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "f705ac09ea53c38c1fb23e15fe7fc7867e2a0fae8bb51bdb209819b0b818f514"
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "b1e964dbc2d0e97de4f0a354f69cf837195f8bf1c5d855974b8e87b0c01f3d3e"
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "15eb666efcc68e7e2254229336508e81f2788e0743f200720dd97845d7892c97"
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "1634644318901ab36911d4d2242cedb6b4e2704ac23646715c2f553e0ab19509"
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "89ebde9f4746c4491773c898b61ae13571eff8e33df9912bda7d365a37a3aed8"
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "eb6af1c7f563b2b1ffb1261bfa5d58cdbed7765bc8e614ec3444f0c076b7caad"
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "76d8a6df8bbc86d5af35c8b24eaf6b61dbde28624dbeee294871ce9cca35002e"
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "e3e02ab4e343810e3cb2cf52001165adb8ab609177a13686da42f291dcb045ff"
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "83f95f31e7255b8753cf4c6ca224077a411e72505d6da7e576648b19298a4775"
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "05092cddcc693a6e8336a11d59ff88fe6f6c7352e8f9acada0c7e4910ef23d9c"
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "d2a3297ea617d9c8bae5da0933408f888691db2ebca4ab8de83e60eece33f53a"
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "b8eff5beab03eb9645e8a36451c71dace05c45192c3d1ed9b14d20e2eb4a2ec3"
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "445efdc7a3f70d4c6d7dbf65b3c71fea5c900849cc353cc01927dd1302645dfc"
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "e7c604e0659a8c96eef4932545c7b6bc8a1a96f0c0dab4dcba0e291d48618ebf"
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "85a5e275675e02bc6a45e249d2615d10a2fd94df3bead4b5efb46a6e2f09cf8e"
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "ac819defdfd259dd8c731f1b884cf966648c27fdd8ce6b856c54a60b58f21ead"
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "98162a0ff5daf640124d6c2690f294084a716347f740d9a2b1f132b27f27aacc"
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "da59a1b4c7fe96830a3146879a391bef83a74c0a5d159990e3e778d34ceafb73"
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "ee48e4a2701da384c7f4244f08208a15748931d574b4721df0db100fe9f8e6ef"
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "cd95a68812e4a57ead5e4a7439ed3f83f9bf479e73234445ca70acf3eb7c5574"
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "9540e16ea4c0cd4ceaf526180936de02a6d077f3855f4315f71e65503d7c6717"
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "ef714e1f45ad7703f4804c0d534273bafb3d7fcf6eac7499760233ae6b87bf27"
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "8032945009c9be41f2cbcbd2403020d5743e4232a82d9f5206f57c0a051237fd"
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "c5af13a4c4e094f114bc8efb3fe131e8bfdc3b7344df9b6bafee8da57f547ba8"
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "a8481d357375d195d246fdb7d6d763fa7863c0774c39e5ae54eb6616fffdb511"
+      }
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 403
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 114,
+    "checkedReferences": 131,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "finiteMatrix": {
+    "samples": 36,
+    "wins": 36,
+    "allSixAlive": 36,
+    "notGlobalBalanceProof": true
+  },
+  "normalGold": [
+    120,
+    260
+  ],
+  "completeNormalReportsAndGuildsAPIEqual": true,
+  "sourceBoundary": {
+    "date": "2026-11-05",
+    "indexedOfficialHistoricalSources": [
+      {
+        "url": "https://www.world-of-dungeons.de/ency/Konfiguration_-_Allgemein",
+        "indexedRevision": "2012-08-07",
+        "oldid": 7161,
+        "visibleStructure": "ranged/magic/social position priority and fixed melee sequence",
+        "directBodyStatus": 502
+      },
+      {
+        "url": "https://www.world-of-dungeons.de/ency/Konfiguration_-_Experten_%28kein_JS%29",
+        "directBodyStatus": 403
+      },
+      {
+        "url": "https://world-of-dungeons.de/ency/Kampfsystem_-_Nahkampf",
+        "indexedRevision": "2014-10-23",
+        "oldid": 7786,
+        "directBodyStatus": 403
+      },
+      {
+        "url": "https://world-of-dungeons.de/ency/Spieltipps_-_Tipps_f%C3%BCr_Fortgeschrittene",
+        "directBodyStatus": 502
+      }
+    ],
+    "deniedPagesRetried": false,
+    "boundary": "Search/indexed historical text supports direction; direct full-page retrieval unsuccessful, not a verified current-server specification. Five positions, explicit opt-in and per-room overrides are project adaptations."
+  },
+  "permanentSupplyImplemented": false,
+  "remoteMutations": false,
+  "deployment": false
+}
