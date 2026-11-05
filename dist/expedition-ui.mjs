@@ -1,3 +1,4 @@
+import {mountPlanTransfer} from './expedition-plan-transfer-view.mjs';
 import {PLAN_BOOK_KEY,readPlanBook,saveBookPlan,bindBookPlan,unbindBookRoute,deleteBookPlan,commitPlanBook,readRoutePreparation} from './expedition-plan-book.mjs';
 import {comparePlans,comparisonBasisView} from './expedition-plan-comparison.mjs';
 import {supportsTargetCount,withTargetCount,targetCountEvidenceView} from './expedition-target-count.mjs';
@@ -77,7 +78,7 @@ const plansKey=PLAN_BOOK_KEY;let planBook=readPlanBook(null),plans=[],planBookRa
 function refreshPlanBook(){try{const raw=localStorage.getItem(plansKey);if(raw===planBookRaw&&!planBookError)return true;const book=readPlanBook(raw);planBookRaw=raw;planBook=book;plans=book.plans;planBookError='';}catch(e){planBookError=e.message;}return !planBookError;}
 refreshPlanBook();
 function tell(t){$('#notice').textContent=t;}
-function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.104';}
+function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.105';}
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));savedState();}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
 function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value="${esc(k)}" ${k===value?'selected':''}>${esc(typeof v==='object'?v.name:v)}</option>`).join('');}
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}
@@ -278,6 +279,7 @@ $('#saved-plans').onchange=()=>{refreshPlanBook();const p=plans.find(p=>p.id===$
 $('#bind-plan').onclick=()=>{try{writePlanBook(bindBookPlan(planBook,config.expedition,$('#saved-plans').value));tell('本路线方案已分配，当前草稿与公会资产未改变。');}catch(e){tell('分配失败：'+e.message);}};
 $('#unbind-plan').onclick=()=>{try{writePlanBook(unbindBookRoute(planBook,config.expedition));tell('已解除本路线绑定；保存的方案和当前草稿保留。');}catch(e){tell('解除失败：'+e.message);}};
 $('#delete-plan').onclick=()=>{try{const id=$('#saved-plans').value,p=plans.find(p=>p.id===id);if(!p)throw Error('请先选择一个方案');const n=Object.values(planBook.bindings).filter(value=>value===id).length;if(!confirm('删除「'+p.name+'」？将解除'+n+'项路线绑定，当前草稿与公会资产保留。'))return;writePlanBook(deleteBookPlan(planBook,id));tell('已删除保存方案及其绑定，当前草稿与公会资产保留。');}catch(e){tell('删除失败：'+e.message);}};
+mountPlanTransfer({storage:localStorage,onCommit:()=>{refreshPlanBook();renderPlans();renderAdventure();},notice:tell});
 $('#load-plan').onclick=()=>{if(!refreshPlanBook()){tell(planBookError);return;}const p=plans.find(p=>p.id===$('#saved-plans').value);if(!p){tell('请先选择一个已保存方案。');return;}replaceConfig(p.config);scope='';persist();planner();tell('已载入「'+p.name+'」，可撤销本次载入。历史战报不变。');};
 $('#undo-load').onclick=()=>{if(!undoConfig)return;try{const roles=Boolean(undoConfig.roles),prior=guildUI.undoConfiguration(undoConfig);config=prior.config;undoConfig=null;scope='';if(prior.persisted)savedState();else persist();planner();tell(roles?'已恢复载入前配置与本次改动的伙伴职责；当前训练、装备和其他公会资产保留。':'已恢复载入前的配置。');}catch(e){tell('无法撤销：'+e.message);}};
 $('#report-to-a').onclick=()=>{if(!report)return;savedA=clone(report.config);try{localStorage.setItem(storageKey+'-a',JSON.stringify(savedA));}catch{}planner();tell('本次战报的出发配置已设为 A；当前编辑配置保持原样。');};

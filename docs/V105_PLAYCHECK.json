@@ -1,0 +1,76 @@
+{
+  "designStatus": "project provisional file format, not official WoD exchange format",
+  "defaultSummary": {
+    "mode": "append",
+    "existing": 1,
+    "imported": 2,
+    "after": 3,
+    "remapped": 1,
+    "adoptBindings": false,
+    "damagedCurrent": false,
+    "changes": []
+  },
+  "adoptedSummary": {
+    "mode": "append",
+    "existing": 3,
+    "imported": 2,
+    "after": 5,
+    "remapped": 2,
+    "adoptBindings": true,
+    "damagedCurrent": false,
+    "changes": [
+      {
+        "route": "classic",
+        "before": "自己的旧方案",
+        "after": "修道院少敌后备"
+      },
+      {
+        "route": "hospice",
+        "before": null,
+        "after": "疗所按房群攻"
+      }
+    ]
+  },
+  "normalDeparture": {
+    "route": "hospice",
+    "seed": 2,
+    "won": true,
+    "reward": {
+      "cleared": 3,
+      "gold": 140,
+      "xp": 55,
+      "firstClear": true,
+      "loot": [
+        "remedybag"
+      ]
+    }
+  },
+  "startGold": 120,
+  "finalGold": 260,
+  "finalXP": [
+    {
+      "id": "a",
+      "xp": 100
+    },
+    {
+      "id": "b",
+      "xp": 100
+    },
+    {
+      "id": "c",
+      "xp": 80
+    },
+    {
+      "id": "d",
+      "xp": 100
+    },
+    {
+      "id": "e",
+      "xp": 100
+    },
+    {
+      "id": "f",
+      "xp": 100
+    }
+  ]
+}
