@@ -95,3 +95,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 @media(max-width:500px){.roster-active{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .reserve-practice-guide{margin:20px 0;padding:16px;border:1px solid #48636b;background:#10252d;line-height:1.7}
+
+.cooperation-resources table{min-width:620px}.cooperation-resources h4{margin-top:22px}

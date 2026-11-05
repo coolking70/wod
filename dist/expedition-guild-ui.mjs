@@ -75,7 +75,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  else if(b.dataset.historyLoad){loadConfig(historyConfig(g,Number(b.dataset.historyLoad)));inform('历史出征方案已载入，可撤销。再次公会出征使用当前装备与训练，并采用新的出征种子。');return;}
  else if(b.dataset.guildTab){switchPanel(b.dataset.guildTab);return;}
  else if(b.dataset.member)selected=b.dataset.member;
- else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,edit=customizeForEditing(g,getConfig(),id,room);delete previews[id];if(edit.changed)save(edit.guild);updateConfig(edit.config);editHero(id,room,b.dataset.cooperationRow);inform('已保留当前实际职责指令并切到自定义，可从本房继续修改。');return;}
+ else if(b.dataset.cooperationEdit){const id=b.dataset.cooperationEdit,room=b.dataset.cooperationRoom,edit=customizeForEditing(g,getConfig(),id,room);delete previews[id];if(edit.changed)save(edit.guild);updateConfig(edit.config);editHero(id,room,b.dataset.cooperationRow,b.dataset.cooperationPhase||'prep');inform('已保留当前实际职责指令并切到自定义，可从本房继续修改。');return;}
  else if(b.dataset.readyEdit){const id=b.dataset.readyEdit,edit=customizeForEditing(g,getConfig(),id,checkScope);delete previews[id];if(edit.changed)save(edit.guild);updateConfig(edit.config);editHero(id,checkScope);inform('已保留当前实际职责指令；该队员现使用自定义，可逐房调整。');return;}
  else if(b.dataset.readyMember){selected=b.dataset.readyMember;switchPanel("team");return;}
  else if(b.dataset.advancement){save(chooseAdvancement(g,selected,b.dataset.advancement));inform('已选择后期职业进阶，普通技能和训练保留。');}
