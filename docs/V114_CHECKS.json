@@ -1,0 +1,332 @@
+{
+  "version": "0.114",
+  "branch": "feature/v114-offbeat-control",
+  "baseline": "c6451fd43ea63522263334874e1b6348cf339515",
+  "fullTests": {
+    "passed": 852,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-tests.tap"
+  },
+  "newTests": {
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "unit-final.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 22,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "pageErrors": 0,
+    "log": "acceptance/browser-acceptance.json",
+    "finalNewWorkflow": "acceptance/browser-v114/browser-v114.json",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 431,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 119,
+    "checkedReferences": 136,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "c6451fd43ea63522263334874e1b6348cf339515",
+    "routes": 22,
+    "count": 44,
+    "rawFullEqual": false,
+    "normalizedFullEqual": true,
+    "allowedDifference": "Exactly checked new party.e.skills.offbeat=6 catalog entry only; full config/events/RNG/resources/statistics/outcomes unchanged."
+  },
+  "legacyChecker": "scripts/check-v114-legacy.mjs",
+  "legacyFullHashLog": "legacy-final.json",
+  "normalProgression": {
+    "reports": [
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          4,
+          8
+        ],
+        "supplies": {
+          "herb": 2,
+          "rune": 0,
+          "arrow": 0
+        },
+        "offbeatCasts": 2,
+        "applied": 2,
+        "limits": [
+          {
+            "eventId": 282,
+            "room": 1,
+            "round": 2,
+            "target": "cta2",
+            "name": "齿廊弩卫",
+            "source": "e",
+            "effectId": "1:7:cta2:offbeat",
+            "before": 2,
+            "removed": 1,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          },
+          {
+            "eventId": 332,
+            "room": 1,
+            "round": 3,
+            "target": "cta1",
+            "name": "齿廊弩卫",
+            "source": "e",
+            "effectId": "1:24:cta1:offbeat",
+            "before": 1,
+            "removed": 0,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          }
+        ],
+        "paidMana": 14
+      },
+      {
+        "route": "courier",
+        "seed": 2,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          4,
+          4,
+          13
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "offbeatCasts": 3,
+        "applied": 3,
+        "limits": [
+          {
+            "eventId": 87,
+            "room": 0,
+            "round": 2,
+            "target": "cp1",
+            "name": "断桥守卫",
+            "source": "e",
+            "effectId": "0:11:cp1:offbeat",
+            "before": 2,
+            "removed": 1,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          },
+          {
+            "eventId": 146,
+            "room": 0,
+            "round": 3,
+            "target": "cp2",
+            "name": "断桥守卫",
+            "source": "e",
+            "effectId": "0:20:cp2:offbeat",
+            "before": 2,
+            "removed": 1,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          },
+          {
+            "eventId": 340,
+            "room": 1,
+            "round": 3,
+            "target": "csm",
+            "name": "潮墨术士",
+            "source": "e",
+            "effectId": "1:17:csm:offbeat",
+            "before": 1,
+            "removed": 0,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          }
+        ],
+        "paidMana": 21
+      },
+      {
+        "route": "courier",
+        "seed": 3,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          3,
+          4,
+          15
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "offbeatCasts": 3,
+        "applied": 2,
+        "limits": [
+          {
+            "eventId": 146,
+            "room": 0,
+            "round": 3,
+            "target": "cp1",
+            "name": "断桥守卫",
+            "source": "e",
+            "effectId": "0:24:cp1:offbeat",
+            "before": 2,
+            "removed": 1,
+            "after": 1,
+            "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+          }
+        ],
+        "paidMana": 21
+      }
+    ],
+    "fullReportsAndGuildEqualToAPI": true,
+    "earnedGoldBalances": [
+      185,
+      225,
+      265
+    ],
+    "firstReward": {
+      "gold": 185,
+      "xp": 75,
+      "loot": [
+        "clockpin"
+      ]
+    },
+    "twoFailures": {
+      "seeds": [
+        2,
+        3
+      ],
+      "clearedEach": 2,
+      "goldEach": 40,
+      "xpEach": 20,
+      "firstClear": false,
+      "loot": []
+    },
+    "paidTraining": {
+      "hero": "e",
+      "key": "skill:offbeat",
+      "xp": 20
+    },
+    "ownedGearAssigned": {
+      "hero": "e",
+      "item": "clockpin"
+    },
+    "campaignPlanAndBindingRestore": true,
+    "historyImmutableNoDuplicateClaim": true,
+    "retryPolicy": "One predeclared next-natural-seed retry; both failures retained; no further seed search or outcome tuning."
+  },
+  "finiteCases": {
+    "count": 36,
+    "routes": [
+      "clocktower",
+      "courier",
+      "palisade"
+    ],
+    "modes": [
+      "plain",
+      "repeat",
+      "opening"
+    ],
+    "seeds": [
+      1,
+      2,
+      7,
+      19
+    ],
+    "won": 30,
+    "failed": 6,
+    "courierWinsPerMode": {
+      "plain": 2,
+      "repeat": 2,
+      "opening": 2
+    },
+    "palisadeActualReduced": 0,
+    "limits": "36 predeclared finite route/mode/seed inputs and normal earned seeds1/2/3, including one predeclared post-failure retry; no seed search or prevented-damage/win attribution. Equal seeds do not pair later random draws once actions change."
+  },
+  "initialFindings": {
+    "unitFixtureFailure": "Source-death fixture changed in-memory positions but room setup reapplied configured positions. Fixed both configured and party positions; death/queue assertions retained.",
+    "browserFailures": "Two initial literal wording expectations used 下一回合 / 下回合仅少排 instead of the shipped 下回合少排至多. Corrected exact text; full config/report/guild/resource/outcome assertions retained.",
+    "codeReviewFix": "Personal negative-effect summary had labelled all non-dissonance effects as healing blocks. Changed to total harmful applications / of which dissonance, with offbeat actual queue count separate; final browser verifies 2 negative applications and no false 禁疗2. Full tests rerun after fix.",
+    "logs": [
+      "unit-initial.tap",
+      "browser-initial.json",
+      "browser-initial.stderr",
+      "browser-wording-retry.json",
+      "browser-wording-retry.stderr"
+    ],
+    "combatAssertionsWeakened": false,
+    "seedsChangedToPass": false
+  },
+  "referenceBoundary": {
+    "readFullText": "https://world-of-dungeons.de/skill/Lied%2Bder%2Bunertr%C3%A4glichen%2BPein&is_popup=1&world=WD",
+    "sourceTitle": "Lied der unerträglichen Pein",
+    "verifiedPublicDescription": "Official public skill text shows action-count reductions including delayed components. Read successfully via search result link.",
+    "currentAuthenticatedServerRulesVerified": false,
+    "adaptation": "Bard ordinary mental single attack, only currently bonus-action targets, 7 MP, no material, low damage, next-round one-extra-action limit with base action preserved, no stacking and cleanse. Every numeric rule/class assignment is provisional project design; original cost/target count/durations/tables not copied."
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 22,
+    "gear": 40,
+    "combatEngineChanged": true,
+    "newSkill": "offbeat (optional ordinary bard skill)",
+    "newTrainingCosts": false,
+    "configSchemaChanged": false,
+    "defaultPlansChanged": false,
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "limitations": [
+      "Skill public description is verified; current authenticated server values are not. Numeric and base-action-protection rules are provisional project adaptations.",
+      "Finite cases do not establish global balance or an unconditional skill upgrade. Two normal courier failures are retained.",
+      "Permanent supply economy remains deferred; independent solo development can continue."
+    ]
+  }
+}

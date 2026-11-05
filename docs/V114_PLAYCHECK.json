@@ -1,0 +1,1394 @@
+{
+  "design": "Official public skill text supports delayed action-count reductions. Project adaptation only limits one extra action next round and preserves base action; cost, eligibility and duration are original provisional choices.",
+  "normal": [
+    {
+      "route": "clocktower",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 282,
+          "room": 1,
+          "round": 2,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:7:cta2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 332,
+          "room": 1,
+          "round": 3,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:24:cta1:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "courier",
+      "seed": 2,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        4,
+        4,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "offbeatCasts": 3,
+      "applied": 3,
+      "limits": [
+        {
+          "eventId": 87,
+          "room": 0,
+          "round": 2,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:11:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 146,
+          "room": 0,
+          "round": 3,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:20:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 340,
+          "room": 1,
+          "round": 3,
+          "target": "csm",
+          "name": "潮墨术士",
+          "source": "e",
+          "effectId": "1:17:csm:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 21
+    },
+    {
+      "route": "courier",
+      "seed": 3,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        3,
+        4,
+        15
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "offbeatCasts": 3,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 146,
+          "room": 0,
+          "round": 3,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:24:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 21
+    }
+  ],
+  "gold": [
+    185,
+    225,
+    265
+  ],
+  "matrix": [
+    {
+      "route": "clocktower",
+      "mode": "plain",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "clocktower",
+      "mode": "plain",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "clocktower",
+      "mode": "plain",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "clocktower",
+      "mode": "plain",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "clocktower",
+      "mode": "repeat",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 282,
+          "room": 1,
+          "round": 2,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:7:cta2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 332,
+          "room": 1,
+          "round": 3,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:24:cta1:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "clocktower",
+      "mode": "repeat",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 322,
+          "room": 1,
+          "round": 2,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:12:cta1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 369,
+          "room": 1,
+          "round": 3,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:24:cta2:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "clocktower",
+      "mode": "repeat",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 317,
+          "room": 1,
+          "round": 2,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:7:cta1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 368,
+          "room": 1,
+          "round": 3,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:17:cta2:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "clocktower",
+      "mode": "repeat",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 290,
+          "room": 1,
+          "round": 2,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:9:cta1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 337,
+          "room": 1,
+          "round": 3,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:23:cta2:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "clocktower",
+      "mode": "opening",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 282,
+          "room": 1,
+          "round": 2,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:7:cta2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 332,
+          "room": 1,
+          "round": 3,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:24:cta1:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "clocktower",
+      "mode": "opening",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 322,
+          "room": 1,
+          "round": 2,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:12:cta1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 369,
+          "room": 1,
+          "round": 3,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:24:cta2:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "clocktower",
+      "mode": "opening",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 317,
+          "room": 1,
+          "round": 2,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:7:cta1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 368,
+          "room": 1,
+          "round": 3,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:17:cta2:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "clocktower",
+      "mode": "opening",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "offbeatCasts": 2,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 290,
+          "room": 1,
+          "round": 2,
+          "target": "cta1",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:9:cta1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 337,
+          "room": 1,
+          "round": 3,
+          "target": "cta2",
+          "name": "齿廊弩卫",
+          "source": "e",
+          "effectId": "1:23:cta2:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 14
+    },
+    {
+      "route": "courier",
+      "mode": "plain",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 1
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "courier",
+      "mode": "plain",
+      "seed": 2,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        4,
+        4,
+        14
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "courier",
+      "mode": "plain",
+      "seed": 7,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 5,
+        "arrow": 2
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "courier",
+      "mode": "plain",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "courier",
+      "mode": "repeat",
+      "seed": 1,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        4,
+        4,
+        14
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "offbeatCasts": 4,
+      "applied": 4,
+      "limits": [
+        {
+          "eventId": 87,
+          "room": 0,
+          "round": 2,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:9:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 147,
+          "room": 0,
+          "round": 3,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:26:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 197,
+          "room": 0,
+          "round": 4,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:36:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 28
+    },
+    {
+      "route": "courier",
+      "mode": "repeat",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        11
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "offbeatCasts": 5,
+      "applied": 3,
+      "limits": [
+        {
+          "eventId": 147,
+          "room": 0,
+          "round": 3,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:22:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 505,
+          "room": 2,
+          "round": 2,
+          "target": "cfg",
+          "name": "拦邮卫",
+          "source": "e",
+          "effectId": "2:15:cfg:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 35
+    },
+    {
+      "route": "courier",
+      "mode": "repeat",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 3
+      },
+      "offbeatCasts": 4,
+      "applied": 4,
+      "limits": [
+        {
+          "eventId": 87,
+          "room": 0,
+          "round": 2,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:10:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 146,
+          "room": 0,
+          "round": 3,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:24:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 197,
+          "room": 0,
+          "round": 4,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:32:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 447,
+          "room": 2,
+          "round": 2,
+          "target": "cfg",
+          "name": "拦邮卫",
+          "source": "e",
+          "effectId": "2:7:cfg:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 28
+    },
+    {
+      "route": "courier",
+      "mode": "repeat",
+      "seed": 19,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        5,
+        5,
+        12
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "offbeatCasts": 5,
+      "applied": 3,
+      "limits": [
+        {
+          "eventId": 146,
+          "room": 0,
+          "round": 3,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:24:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 196,
+          "room": 0,
+          "round": 4,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:35:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 35
+    },
+    {
+      "route": "courier",
+      "mode": "opening",
+      "seed": 1,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        4,
+        4,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "offbeatCasts": 3,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 87,
+          "room": 0,
+          "round": 2,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:9:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 147,
+          "room": 0,
+          "round": 3,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:26:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 21
+    },
+    {
+      "route": "courier",
+      "mode": "opening",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "offbeatCasts": 3,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 147,
+          "room": 0,
+          "round": 3,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:22:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 506,
+          "room": 2,
+          "round": 2,
+          "target": "cfg",
+          "name": "拦邮卫",
+          "source": "e",
+          "effectId": "2:15:cfg:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 21
+    },
+    {
+      "route": "courier",
+      "mode": "opening",
+      "seed": 7,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        4,
+        4,
+        15
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "offbeatCasts": 3,
+      "applied": 3,
+      "limits": [
+        {
+          "eventId": 87,
+          "room": 0,
+          "round": 2,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:10:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 146,
+          "room": 0,
+          "round": 3,
+          "target": "cp1",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:24:cp1:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 341,
+          "room": 1,
+          "round": 3,
+          "target": "csm",
+          "name": "潮墨术士",
+          "source": "e",
+          "effectId": "1:18:csm:offbeat",
+          "before": 1,
+          "removed": 0,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 21
+    },
+    {
+      "route": "courier",
+      "mode": "opening",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 4,
+        "arrow": 3
+      },
+      "offbeatCasts": 4,
+      "applied": 2,
+      "limits": [
+        {
+          "eventId": 146,
+          "room": 0,
+          "round": 3,
+          "target": "cp2",
+          "name": "断桥守卫",
+          "source": "e",
+          "effectId": "0:24:cp2:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        },
+        {
+          "eventId": 525,
+          "room": 2,
+          "round": 3,
+          "target": "cfg",
+          "name": "拦邮卫",
+          "source": "e",
+          "effectId": "2:23:cfg:offbeat",
+          "before": 2,
+          "removed": 1,
+          "after": 1,
+          "rule": "只选择当前已拥有额外普通行动、且没有迟拍（含待生效）的存活敌人。命中且目标存活后，迟拍在下一回合开始生效，仅该回合少排至多1次额外普通行动；保留基础行动，不重排或取消当前已确定队列。可净化，不叠加/刷新，来源倒下不自动解除；若到时已无额外行动则不减少。费用、伤害和期限是项目暂定设计。"
+        }
+      ],
+      "paidMana": 28
+    },
+    {
+      "route": "palisade",
+      "mode": "plain",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        8
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "plain",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        3,
+        9
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "plain",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "plain",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "repeat",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        8
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "repeat",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        3,
+        9
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "repeat",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "repeat",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "opening",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        8
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "opening",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        3,
+        9
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "opening",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    },
+    {
+      "route": "palisade",
+      "mode": "opening",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "offbeatCasts": 0,
+      "applied": 0,
+      "limits": [],
+      "paidMana": 0
+    }
+  ],
+  "limit": "36 predeclared finite route/mode/seed inputs and normal earned seeds1/2/3, including one predeclared post-failure retry; no seed search or prevented-damage/win attribution. Equal seeds do not pair later random draws once actions change."
+}

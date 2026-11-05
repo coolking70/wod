@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.113「合流救护站」**，分支`feature/v113-confluence-infirmary`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.114「迟拍弦」**，分支`feature/v114-offbeat-control`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[迟拍弦与延迟额外行动反制](docs/V114_OFFBEAT_CONTROL.md)：吟游者自由普通技能，命中后仅下一回合少排至多一次额外普通行动，保留基础行动/当前队列，可净化且不叠加。默认回放可查免费后备、实际2→1或1→1和来源；正常钟楼通关后两次邮路失败均保留，不能视作通用升级。验证见[V114_CHECKS](docs/V114_CHECKS.json)。
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
