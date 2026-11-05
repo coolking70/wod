@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.88「逆印书库与敌方破印」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.88仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.89「弩灵战前目标规划」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.89仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -31,6 +31,8 @@
 新增[破印与敌方增益反制](docs/V87_UNRAVELING.md)：学者低伤法术命中后破除一组真实技能增益，保留本次防御、既定队列与来源重施；含待生效组件和精确来源。610测试、72有限输入（12失败）、36旧报告除精确新增技能字段外等价、桌面/390px正常失败部分结算与完整公会API对照通过。
 
 新增[逆印书库与敌方破印](docs/V88_COUNTERSEAL_LIBRARY.md)：三场敌方反制与真实重施成本，固定晶镜具有生命/心理弱点代价。618测试、36有限输入（2次有人倒下）、36旧原始完整战报零排除相同、桌面/390px正常配装培养与完整公会API等价通过。
+
+新增[弩灵战前目标规划](docs/V89_SUMMON_ORDERS.md)：己方入场与攻击优先分开，弩灵可追击治疗者/召唤者，无目标每次检查后排后备。625测试、72有限输入、38旧原始完整报告零排除相同、桌面/390px正常培养与整公会API等价通过。
 
 ## 开发交接入口
 

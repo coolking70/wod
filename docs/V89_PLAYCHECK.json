@@ -1,0 +1,4494 @@
+{
+  "note": "72 bounded distinct battle inputs, 2 normal asset profiles ×2 routes ×3 targets ×6 predeclared seeds. Only summoning row optional summonTarget differs within same profile/route/seed; default rear omits field. Earned is normal first inquest140/60 and20XP tidearcher1 paidC, all loot remains unassigned. Same seeds are reproducible, not per-attack RNG alignment. No universal recommendation or guaranteed interception/kill; pet damage only ownerC, enemy pets excluded.",
+  "summary": {
+    "runs": 72,
+    "uniqueBattleInputs": 72,
+    "failures": 0,
+    "injured": 0,
+    "groups": [
+      {
+        "route": "inquest",
+        "aim": "rear",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      },
+      {
+        "route": "inquest",
+        "aim": "healer",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      },
+      {
+        "route": "inquest",
+        "aim": "summoner",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      },
+      {
+        "route": "hospice",
+        "aim": "rear",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      },
+      {
+        "route": "hospice",
+        "aim": "healer",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      },
+      {
+        "route": "hospice",
+        "aim": "summoner",
+        "runs": 12,
+        "won": 12,
+        "allSix": 12
+      }
+    ]
+  },
+  "cases": [
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "13eb4f6dcd9657c2277d0a3383eaec1d4a324f4e76b2287e475c05de2476fa01",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 249,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 153,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "490832f513f188f7bf4814decdde17fa605ac4302715443dca9841d32edc55ba",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 269,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 176,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "34920e22d84d5e11fb9cf490031de953b90bdca044ace82ea008c91edff45600",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 209,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "970ada57861469e8172038ddb10429bd1de98b22db5b4f806877714b2d368018",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 192,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 169,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "54644a86a585edac459b17f45ed06c2b26119f89ad16df78f8a6807fb9b58eb3",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 193,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 9,
+      "petDamage": 230,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "f63559d6de3e86f8452f43f032c7c9715d2179d58930aec4e8610f9d30d5cb7f",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 155,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "17f0243f596fb174bc26e191aba3a19381c52f8cc2ac213116d5644389822579",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 249,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 153,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "57fb7ee5fb6c85ea594affe8693d294c80c6a4a3ce12079ae31b40b27c13b85d",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 269,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 176,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "686b0fc7c40d183c9d5a3c36feb4f13bdedf4d7b80d46c6e68b3ee20c7b2dc34",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 209,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "5718797bfb73cf3dd2a7e688ac25c49818b39af725c8c1f345e036cc04b058ad",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 192,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 169,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "b6f9ed1e342a640d1f1442ecb2071cb0a87ac08759d6c7ef680108e9ec3c64e6",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 193,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 9,
+      "petDamage": 230,
+      "roleCasts": 0,
+      "fallbackSkips": 9
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "15990f16e485fdded498ad561a769d4ca589660307765b5fa345793ae66d8299",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 155,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "d75ec5da3fdb6074ec16944ffe18cff40421e9430856a119ea18a925830d5c74",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 249,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 153,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "f82e139669e96c45244fb7ce36aa135afc301565b4977032d63e5191823d08ef",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 269,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 176,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "e331e4c5d42f18392c01b395fee3f2b021c6e666a76d9412dc01e8422be08864",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 209,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "d52722f27d546f99237cd352ad58c78b4548fe55dadca3608d9e4df7fef19ae2",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 192,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 169,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "8e0842ec390749c7cece520487855b1bf070caa161023830142fa1dfe74034bb",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 193,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 9,
+      "petDamage": 230,
+      "roleCasts": 0,
+      "fallbackSkips": 9
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "9dea6159c8fcdc916ef1f2dc64c59c1151d850554cbe96ad031ef1fa5fa7f7e6",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 155,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "a9723038332665beed5dabef86cc1e6f9e8bd61f6ed0daad600d5ff597d2597c",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 266,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 214,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 415,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "1306bfe9a2ff9484ec21b39d8b2584c59cb961cb5c2a6fed589971620f0d0f9c",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 215,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 13,
+      "petDamage": 426,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "cb0c5461e2e6f18f3f162714cca738bd7278de2734d538e0125355bdbddcf817",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 208,
+          "supplies": {
+            "herb": 10,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 373,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "b967c89c7b54b83690c05e2f5a76366183b6c894f7eaff8c3d83e070fc9193c0",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 309,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 218,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 351,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "6b6a56935ad9f527e0025185c72826d7f65190906305a6660d2db1e296f633dd",
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 303,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 252,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 205,
+          "supplies": {
+            "herb": 10,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 15,
+      "petDamage": 478,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "b7a873eed3ef2ab6daa542c11be9406b8c2f733d881953c4489e9c66e838c5d8",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 264,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 212,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 362,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "23dd9ef2b3de9e5e43a910789e3c1a728a4622159dd97415e94c4fb96f772236",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 266,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 214,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 415,
+      "roleCasts": 8,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "791a348f6c9224cd1cab4dac1c524b91c23a22b823f3f9fecae118be0a7f6f61",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 215,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 13,
+      "petDamage": 426,
+      "roleCasts": 8,
+      "fallbackSkips": 5
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "8b6ff61a308cbf7ec8f0b586060aeab7db4ce68a79d6b834150b92bf6f55957f",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 208,
+          "supplies": {
+            "herb": 10,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 373,
+      "roleCasts": 10,
+      "fallbackSkips": 4
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "3b5541631d21a38e6efb1ef991c13aaef9390bad163ef8e8c0de543f30d8bcb5",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 309,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 218,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 351,
+      "roleCasts": 8,
+      "fallbackSkips": 4
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "3fbc7c59b20f2f1154cb595df6cd509814fa37ce7459ddfc8a1c0fc2a3ab19e9",
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 303,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 252,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 205,
+          "supplies": {
+            "herb": 10,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 15,
+      "petDamage": 478,
+      "roleCasts": 11,
+      "fallbackSkips": 4
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "e871121f0c0c3a641af8a4759f16ac5f16bc9500f44f1009c3a8a1009b7d70f8",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 264,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 212,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 362,
+      "roleCasts": 11,
+      "fallbackSkips": 3
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "e58429b313aad436c9cb8edeb15108ee71c8d8751f21542b6a3cd8f2f6b70a4b",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 266,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 214,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 373,
+      "roleCasts": 8,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "61affb6b4849555abcea67034548e4b1bb1ebcc80dc809d6b6812c37661094f7",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 223,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 1
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 366,
+      "roleCasts": 7,
+      "fallbackSkips": 5
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "0b056f1f46c9ccc04848fa4047314365bfe7851f476197cc42ce18fbe725dc0a",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 216,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 13,
+      "petDamage": 348,
+      "roleCasts": 7,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "060d0ef2c5a1c91899f7cacd5c0d2bddb891cfd3f19bdb5503cb129b6b3e1e00",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 309,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 218,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 357,
+      "roleCasts": 6,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "a9e50e3d76143a4fb0b4a2656293d27c67b126a1e00a845e03883d9896d8eff9",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 303,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 252,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 212,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 442,
+      "roleCasts": 7,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "fresh",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "5d0bfeecfed96534995ddd515643279108345a7945d2af0a7412f53267262f31",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 264,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 216,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 290,
+      "roleCasts": 6,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "65e3a2780cee5970f75ddea8c79f5081551583b6ba71b012d87e2d45e32012da",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 249,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 161,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "fd353226d8542dbf3c5c65630c24452ff4220e21390016478fabe4a64ec68ef3",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 269,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 181,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "a376129e07814015339a74ccc8cfa14a079a14e2ef1b5e2d14963ed9dfdf6688",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 212,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "9208af0a1fd00f7a5e0a0b3e0a6d1434020e03d03107e4ff4ec4acb824bd44ed",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 192,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 177,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "b9296eee7a354deb9eb8b87a5d5199178a6e69e4b64ac47291aca18d705c77e9",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 9,
+      "petDamage": 263,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "rear",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "b296ec254b7e67215bcbc6c57354f929acf4b816b9d2c37a7dea61c4d77d4684",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 159,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "c52e272b720b1a6a88bfa0d0ada9ffad8309772d7d62b53a23ed0d26be5e2b92",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 249,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 161,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "586f7eeef0b604c66573bde783318cd7a6206d93fa26acc3df055a96e304fd9a",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 269,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 181,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "548b26ced5833b312d91f89b2b73e3f8b95170d528e992517e0979c4706e336b",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 212,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "9c6a84ef2b9ba7a84d3d4825046ca53212f95d63a02ae783962f5ff0c11410a7",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 192,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 177,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "0af8cebb5a96e2b04191a81e46d97d061303b4744174c5ace6dced66b3c981f2",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 9,
+      "petDamage": 263,
+      "roleCasts": 0,
+      "fallbackSkips": 9
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "healer",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "8b694f4206caa48ac9902539bc2848b30437dcc0962a151869fb4985fd931489",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 159,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "1e1429757c416dc7050e763b7ecd0382b018503262ebca32925371125e7723f7",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 249,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 161,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "0dcbaeffcdfcb729f2834081ae2740b5b1b6a42db4e2416a9b794d1d147a67f4",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 269,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 181,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "0ac1d1b4e284593ef947e3a9f3c31718af76da6bf10040d6efa695a3048a778b",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 8,
+      "petDamage": 212,
+      "roleCasts": 0,
+      "fallbackSkips": 8
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "3eb29a0ca20be39166ef703451605700d3727c04413d42e26d8665c7eac9e882",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 192,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 177,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "ab8067c9af6b23a98a830827247ed4f02b1773c4db6aaf0d9e6095660da81dd9",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 9,
+      "petDamage": 263,
+      "roleCasts": 0,
+      "fallbackSkips": 9
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "aim": "summoner",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "b40dac10089d3571006d835b26c6456df84c26525f8002bff962b3120c6de07e",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 2,
+      "petAttacks": 7,
+      "petDamage": 159,
+      "roleCasts": 0,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "20105a84474ea1f3fe3fa485e90c68515fa30d157e74a3435d3feaa106cee286",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 266,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 214,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 428,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "1883ec8dd954d105f628c5ed4efaa8546cdb9c140e9ca1af20b90ebfabdde177",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 215,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 13,
+      "petDamage": 429,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "528243a40b3d1ac64cabc5cec2100d741cac6e1efd4d1335de98f299fb8864ba",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 209,
+          "supplies": {
+            "herb": 10,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 381,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "0478a9747b7060718ce1babb92ef1cd2b9e474d45e5e8240f329bd4572fffadb",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 309,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 218,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 361,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "5061564d354f819dff38ba908edcf7a7c5c7e943ea8250a47b3d14edb9a91266",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 259,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 443,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "rear",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "8fa4a9ae4a4be3ec11f928a54b881faf361bc9fa31e21d48ae7628bdb9ba19d9",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 264,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 212,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 362,
+      "roleCasts": 0,
+      "fallbackSkips": 0
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "5b0f51aab83c3b6cf65116db9007d4fc00e25ecd680230e34a1c6aaffb96982a",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 266,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 214,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 428,
+      "roleCasts": 8,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "35ab52c7ddf85146d8ba4c2fc2aaee65dd37a1d63af7c584eca15fb332b6d888",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 215,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 13,
+      "petDamage": 429,
+      "roleCasts": 8,
+      "fallbackSkips": 5
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "e54786582e4edba65303b2c1808d07e02aa0e15b9e34d641c0225a698f325a52",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 209,
+          "supplies": {
+            "herb": 10,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 381,
+      "roleCasts": 10,
+      "fallbackSkips": 4
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "5ed87eee0c5fe3071cb38bb2f137a4e2dbf921d26189c77f6b3012bdb2eae35c",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 309,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 218,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 361,
+      "roleCasts": 8,
+      "fallbackSkips": 4
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "e969060388f80c92392b321ba4e71396861d41e1ecae4d74e3409cdac35bef01",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 259,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 443,
+      "roleCasts": 11,
+      "fallbackSkips": 3
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "healer",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "7eb049dd7d6623efe997392a5f42de3068e7677964143fe85183cfa8844e93d8",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 264,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 212,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 362,
+      "roleCasts": 11,
+      "fallbackSkips": 3
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 101,
+      "set": "discovery",
+      "configFingerprint": "884cfc50e5c9f2590ead0ca8ffef45f59312671441fc50c3aa3633e815030e7e",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 266,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 214,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 382,
+      "roleCasts": 8,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 102,
+      "set": "discovery",
+      "configFingerprint": "36a88288befa1a0074efca4398898b7166c5231e785efa30eaf64d874f9b9088",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 314,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 223,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 1
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 367,
+      "roleCasts": 7,
+      "fallbackSkips": 5
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 201,
+      "set": "confirmation",
+      "configFingerprint": "50c1cfb23ccd66711f68dc0cf6e6809caa382219cfdda382d7aa3bf98c16f22e",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 9,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 214,
+          "supplies": {
+            "herb": 11,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 13,
+      "petDamage": 338,
+      "roleCasts": 7,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 202,
+      "set": "confirmation",
+      "configFingerprint": "093ea01d7699cdf4a0b7cfe2865a5f47cbab28c296cdc0f2c9b6a0282c2752b5",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 309,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 261,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 219,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 365,
+      "roleCasts": 6,
+      "fallbackSkips": 6
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 203,
+      "set": "confirmation",
+      "configFingerprint": "bf3c000f9467f804bf21ed4bdd5d154ff21df530e2e7a4868496e765f13ffde6",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 259,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 206,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 3,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 14,
+      "petDamage": 452,
+      "roleCasts": 7,
+      "fallbackSkips": 7
+    },
+    {
+      "profile": "earned",
+      "route": "hospice",
+      "aim": "summoner",
+      "seed": 204,
+      "set": "confirmation",
+      "configFingerprint": "8d87ffafaa049f630a1a8b7c523da15d28347eb7c660e87dc33d933663651a93",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 308,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 264,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 216,
+          "supplies": {
+            "herb": 11,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 4,
+        "arrow": 0
+      },
+      "summons": 3,
+      "petAttacks": 12,
+      "petDamage": 290,
+      "roleCasts": 6,
+      "fallbackSkips": 6
+    }
+  ],
+  "normal": {
+    "route": "inquest",
+    "seed": 1,
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 640,
+        "mp": 259,
+        "supplies": {
+          "herb": 7,
+          "rune": 6,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 629,
+        "mp": 197,
+        "supplies": {
+          "herb": 7,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 7,
+      "rune": 3,
+      "arrow": 0
+    },
+    "petDamage": 120,
+    "summons": [
+      {
+        "level": 9,
+        "pos": "rear",
+        "orders": {
+          "target": "healer",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      },
+      {
+        "level": 9,
+        "pos": "rear",
+        "orders": {
+          "target": "healer",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 2,
+      "gold": 140,
+      "xp": 60,
+      "firstClear": true,
+      "loot": [
+        "calmribbon"
+      ]
+    }
+  },
+  "desktop": {
+    "route": "hospice",
+    "seed": 2,
+    "rooms": [
+      {
+        "name": "01 · 引潮病廊",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 622,
+        "mp": 310,
+        "supplies": {
+          "herb": 11,
+          "rune": 10,
+          "arrow": 9
+        }
+      },
+      {
+        "name": "02 · 不息药庭",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 640,
+        "mp": 259,
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 5
+        }
+      },
+      {
+        "name": "03 · 双灯心室",
+        "won": true,
+        "rounds": 8,
+        "survivors": 6,
+        "hp": 616,
+        "mp": 215,
+        "supplies": {
+          "herb": 10,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 10,
+      "rune": 3,
+      "arrow": 0
+    },
+    "petDamage": 418,
+    "summons": [
+      {
+        "level": 10,
+        "pos": "rear",
+        "orders": {
+          "target": "healer",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      },
+      {
+        "level": 10,
+        "pos": "rear",
+        "orders": {
+          "target": "healer",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      },
+      {
+        "level": 10,
+        "pos": "rear",
+        "orders": {
+          "target": "healer",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 3,
+      "gold": 140,
+      "xp": 55,
+      "firstClear": true,
+      "loot": [
+        "remedybag"
+      ]
+    }
+  },
+  "mobile": {
+    "route": "scriptorium",
+    "seed": 3,
+    "rooms": [
+      {
+        "name": "01 · 残印前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 582,
+        "mp": 278,
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 5
+        }
+      },
+      {
+        "name": "02 · 回印阶室",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 600,
+        "mp": 211,
+        "supplies": {
+          "herb": 7,
+          "rune": 5,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "03 · 封存裁室",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 620,
+        "mp": 159,
+        "supplies": {
+          "herb": 1,
+          "rune": 2,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 1,
+      "rune": 2,
+      "arrow": 0
+    },
+    "petDamage": 249,
+    "summons": [
+      {
+        "level": 10,
+        "pos": "rear",
+        "orders": {
+          "target": "summoner",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      },
+      {
+        "level": 10,
+        "pos": "rear",
+        "orders": {
+          "target": "summoner",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      },
+      {
+        "level": 10,
+        "pos": "rear",
+        "orders": {
+          "target": "summoner",
+          "fallback": "rear",
+          "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 3,
+      "gold": 180,
+      "xp": 75,
+      "firstClear": true,
+      "loot": [
+        "counterlens"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "2c351ef5b6fc290c8734c0471bfa22960c107d59",
+    "count": 38,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  }
+}

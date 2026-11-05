@@ -1,3 +1,4 @@
+import {validateSummonTarget,summonOrders} from './expedition-summon-orders.mjs';
 import {removableBuffs,removedBuffRecord} from './expedition-unravel.mjs';
 import {INTERCEPTION,interceptionCandidate} from './expedition-interception.mjs';
 import {SUMMON_FORMS,hasSummoningSkill} from './expedition-summons.mjs';
@@ -21,7 +22,7 @@ const routes={front:['front','left','right','center','rear'],left:['right','fron
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
  if(!Object.hasOwn(POS,h.pos))throw Error('站位无效');
- for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(s)mediumId(s,r);if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait'].includes(s.kind))||!['repeat','cycle','once','round'].includes(r.mode)||(r.mode==='round'&&phase!=='main')||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');if(s.cover&&!Object.hasOwn(POS,r.target))throw Error('援护必须选择其他队员所在阵位');}}
+ for(const phase of ['prep','main']){if(!Array.isArray(h[phase])||h[phase].length>4)throw Error('每阶段至多 4 条指令');for(const r of h[phase]){const s=SKILLS[r?.skill];if(s){mediumId(s,r);validateSummonTarget(r);}if(!s||(!t.skills.includes(r.skill)&&r.skill!=='wait')||!(phase==='prep'?['buff','summon'].includes(s.kind):['attack','wait'].includes(s.kind))||!['repeat','cycle','once','round'].includes(r.mode)||(r.mode==='round'&&phase!=='main')||![...Object.keys(POS),'self','all',...(roleTargetAllowed(s)?Object.keys(ROLE_TARGETS):[])].includes(r.target))throw Error('指令不合法');if(s.kind==='summon'&&!Object.hasOwn(POS,r.target))throw Error('召唤位置无效');if(s.cover&&!Object.hasOwn(POS,r.target))throw Error('援护必须选择其他队员所在阵位');}}
  if(!h.healing||!['lowest','self_first'].includes(h.healing.priority??'lowest')||typeof h.healing.enabled!=='boolean'||![.5,.65,.8].includes(h.healing.threshold)||![...Object.keys(POS),'all','self'].includes(h.healing.target)||(h.healing.enabled&&!t.skills.includes('heal')))throw Error('治疗设置不合法');
  if(!h.itemPolicy||typeof h.itemPolicy.enabled!=='boolean'||![.3,.5,.7].includes(h.itemPolicy.threshold))throw Error('道具使用策略无效');
  if(!h.defenses||Object.keys(h.defenses).length!==3)throw Error('防御配置无效');
@@ -86,12 +87,12 @@ export function simulate(c,options={}){
  const snapshot=()=>all().map(u=>({id:u.id,name:u.name,mark:u.mark,side:u.side,owner:u.owner||null,summoned:Boolean(u.owner),itemInstance:u.itemInstance?clone(u.itemInstance):null,pos:u.pos,resistances:Object.fromEntries(Object.keys(TYPES).map(t=>[t,resistanceOf(u,t)])),hp:u.hp,maxHp:u.maxHp,mp:u.mp,maxMp:u.maxMp,effects:clone(u.effects),defenses:clone(u.defenses||{}),attrs:Object.fromEntries(Object.keys(u.attrs).map(k=>[k,current(u,k)]))}));
  function emit(type,text,actor=null,targets=[],detail={}){events.push({id:++sequence,roomIndex,round,phase,type,text,actor,targets,actionId,detail:clone(detail),units:snapshot(),supplies:clone(supplies)});}
  function removeSummons(owner,reason,extra={}){const gone=summons.filter(u=>u.hp>0&&(!owner||u.owner===owner));for(const u of gone){u.hp=0;emit('dismiss',u.name+' 消散：'+reason,u.owner,[u.id],{reason,owner:u.owner,...extra});}}
- function spawn(owner,pos,skill='sentinel'){
-  const form=SUMMON_FORMS[skill];if(!form)throw Error('未知召唤形态');
+ function spawn(owner,pos,skill='sentinel',aim){
+  const form=SUMMON_FORMS[skill];if(!form)throw Error('未知召唤形态');const orders=summonOrders(skill,aim);
   const id='summon:'+roomIndex+':'+(++summonSerial),level=skillLevel(owner,skill)||8,hp=form.hpBase+level*form.hpPerLevel;
-  const u={id,name:owner.side==='party'?form.partyName:form.enemyName,mark:form.mark,owner:owner.id,side:owner.side,pos,gear:'field',attrs:clone(form.attrs),hp,maxHp:hp,mp:form.mana,maxMp:form.mana,skills:{[form.attack]:level},defenses:naturalDefenses(),effects:[],prep:[],main:[row(form.attack,form.target)],healing:{enabled:false}};
+  const u={id,name:owner.side==='party'?form.partyName:form.enemyName,mark:form.mark,owner:owner.id,side:owner.side,pos,gear:'field',attrs:clone(form.attrs),hp,maxHp:hp,mp:form.mana,maxMp:form.mana,skills:{[form.attack]:level},defenses:naturalDefenses(),effects:[],prep:[],main:orders.commands,healing:{enabled:false}};
   summons.push(u);stats[id]={damage:0,actual:0,overkill:0,healing:0,interrupts:0,failed:0,defenses:0,defenseMana:0,owner:owner.id,name:u.name};
-  emit('summon',owner.name+' 召来 '+u.name,owner.id,[id],{owner:owner.id,skill,level,pos,hp,...(skill!=='sentinel'?{form:{id:skill,attack:form.attack,target:form.target,rule:'弩灵生命较低，以穿石箭优先后排，不消耗箭矢；后排空缺按原远程路线回退。'}}:{}),rule:'本房间有效；主人倒下即消散；仅进入尚未生成的行动队列。'});return u;
+  emit('summon',owner.name+' 召来 '+u.name,owner.id,[id],{owner:owner.id,skill,level,pos,hp,...(skill!=='sentinel'?{form:{id:skill,attack:form.attack,target:orders.target,rule:orders.record?orders.record.rule:'弩灵生命较低，以穿石箭优先后排，不消耗箭矢；后排空缺按原远程路线回退。'}}:{}),...(orders.record?{orders:orders.record}:{}),rule:'本房间有效；主人倒下即消散；仅进入尚未生成的行动队列。'});return u;
  }
  function awaken(u){if(!u.awakens||u.awakened||u.hp<=0||u.hp>u.maxHp/2)return;
   u.awakened=true;u.main=[row('wave','rear')];const saved=actionId;actionId=null;
@@ -168,7 +169,7 @@ export function simulate(c,options={}){
    const before=u.mp;u.mp-=manaCost;if(payment.resource)stock[payment.resource]-=payment.amount;used.add(key);roundUsed.set(key,round);
    const lv=skillLevel(u,r.skill),m=mean(u,r.skill),cast=++serial;actionId=roomIndex+':'+cast;
    emit('cast',u.name+' '+(interrupt?'中断普通指令，使用':'使用')+'「'+s.name+'」',u.id,targets.map(t=>t.id),{cast,skill:r.skill,skillLevel:lv,levelSources:skillBreakdown(u,r.skill),...(advancement?{advancement}:{}),primary:current(u,s.primary),secondary:current(u,s.secondary),mean:m,formula:'主属性 ×2 + 副属性 + 实时技能等级 ×2',mpBefore:before,mpAfter:u.mp,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:{id:payment.medium,name:CASTING_MEDIA[payment.medium].name,baseMana:payment.baseMana,manaDelta:CASTING_MEDIA[payment.medium].manaDelta,actualMana:payment.mana,resource:payment.resource,amount:payment.amount,rule:'只改变法力与符纸支付；效果、检定、装备、目标和指令节奏保持。'}}:{}),interrupt,...(Object.hasOwn(ROLE_TARGETS,r.target)?{targetPolicy:{requested:r.target,rule:'仅选择存活且拥有'+(r.target==='healer'?'治疗':'召唤')+'技能的敌人；多人符合时随机选一人，不要求当前资源充足。',selected:targets.map(t=>({id:t.id,name:t.name,pos:t.pos}))}}:{}),sources:effectTrace(u)});
-   if(s.kind==='summon')spawn(u,r.target,r.skill);
+   if(s.kind==='summon')spawn(u,r.target,r.skill,r.summonTarget);
    if(s.recall)removeSummons(u.id,'主人施放潮灵归还',{recall:true,skill:r.skill,rule:'仅召回本人的存活召唤物，占本次预备；不返还原召唤消耗，不影响其他主人。'});
    if(s.cleanse)for(const t of targets){const removed=cleansableEffects(t);t.effects=t.effects.filter(e=>!removed.includes(e));emit('cleanse',u.name+' 为 '+t.name+' 净化 '+removed.map(e=>e.component||e.name).join('、'),u.id,[t.id],{cast,skill:r.skill,removed:removed.map(e=>({effectId:e.id,skill:e.skill,name:e.name,component:e.component,stat:e.stat,value:e.value,source:e.source,sourceName:e.sourceName})),rule:'只移除本次实际记录的负面效果；不移除正面增益、不回滚此前检定、不提供后续免疫。'});}
    if(s.kind==='buff'&&!s.cleanse&&!s.recall)for(const t of targets){
