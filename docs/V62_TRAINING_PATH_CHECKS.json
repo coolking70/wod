@@ -1,0 +1,830 @@
+{
+  "note": "Two sequential paths, same route and fixed roles; only timing of ordinary training differs, plus post-training free redistribution of paid ranks. Actual next-departure seeds and advancement timing differ as paths progress, so this is a reproducible path comparison rather than isolated randomized causal proof. No XP grants or balance changes. V61 higher-growth final combat configs compared exactly instead of replaying its matrix.",
+  "referenceV61": {
+    "trainingRuns": 19,
+    "losses": 15,
+    "note": "Historical simultaneous low-growth setup; roles and roster differ. Not directly comparable or a recommended path."
+  },
+  "rows": [
+    {
+      "strategy": "hoard",
+      "runs": [
+        {
+          "id": "mira",
+          "departure": 10,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 11,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 12,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 13,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 14,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 15,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 16,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 17,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 18,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 19,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 20,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 21,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 22,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 23,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 24,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 25,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 26,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 27,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 28,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 29,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 30,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 31,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 32,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 33,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        }
+      ],
+      "investments": [
+        {
+          "afterDeparture": 21,
+          "id": "mira",
+          "key": "skill:spark",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 21,
+          "id": "mira",
+          "key": "skill:spark",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 21,
+          "id": "mira",
+          "key": "skill:spark",
+          "rank": 3,
+          "cost": 60
+        },
+        {
+          "afterDeparture": 21,
+          "id": "mira",
+          "key": "defense:resist",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 21,
+          "id": "mira",
+          "key": "defense:resist",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 21,
+          "id": "mira",
+          "key": "defense:resist",
+          "rank": 3,
+          "cost": 60
+        },
+        {
+          "afterDeparture": 33,
+          "id": "orin",
+          "key": "skill:heal",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 33,
+          "id": "orin",
+          "key": "skill:heal",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 33,
+          "id": "orin",
+          "key": "skill:heal",
+          "rank": 3,
+          "cost": 60
+        },
+        {
+          "afterDeparture": 33,
+          "id": "orin",
+          "key": "defense:resist",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 33,
+          "id": "orin",
+          "key": "defense:resist",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 33,
+          "id": "orin",
+          "key": "defense:resist",
+          "rank": 3,
+          "cost": 60
+        }
+      ],
+      "transfers": [
+        {
+          "id": "mira",
+          "cost": 120,
+          "refund": 120,
+          "available": 120
+        }
+      ],
+      "summaries": [
+        {
+          "id": "mira",
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "earned": 480,
+          "available": 120,
+          "training": {
+            "defense:resist": 3,
+            "skill:suppress": 3
+          },
+          "advancement": {
+            "path": "sigilcraft",
+            "paidXp": 80
+          }
+        },
+        {
+          "id": "orin",
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "earned": 480,
+          "available": 120,
+          "training": {
+            "skill:heal": 3,
+            "defense:resist": 3
+          },
+          "advancement": {
+            "path": "apothecary",
+            "paidXp": 80
+          }
+        }
+      ],
+      "finalConfigurationsEqualToV61": 12
+    },
+    {
+      "strategy": "timely",
+      "runs": [
+        {
+          "id": "mira",
+          "departure": 10,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 11,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 12,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 13,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 14,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 15,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 16,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 17,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 18,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 19,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 20,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "mira",
+          "departure": 21,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 22,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 23,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 24,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 25,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 26,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 27,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 28,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 29,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 30,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 31,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 32,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        },
+        {
+          "id": "orin",
+          "departure": 33,
+          "won": true,
+          "rooms": 3,
+          "earned": 40
+        }
+      ],
+      "investments": [
+        {
+          "afterDeparture": 10,
+          "id": "mira",
+          "key": "skill:spark",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 10,
+          "id": "mira",
+          "key": "defense:resist",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 11,
+          "id": "mira",
+          "key": "skill:spark",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 12,
+          "id": "mira",
+          "key": "defense:resist",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 14,
+          "id": "mira",
+          "key": "skill:spark",
+          "rank": 3,
+          "cost": 60
+        },
+        {
+          "afterDeparture": 15,
+          "id": "mira",
+          "key": "defense:resist",
+          "rank": 3,
+          "cost": 60
+        },
+        {
+          "afterDeparture": 22,
+          "id": "orin",
+          "key": "skill:heal",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 22,
+          "id": "orin",
+          "key": "defense:resist",
+          "rank": 1,
+          "cost": 20
+        },
+        {
+          "afterDeparture": 23,
+          "id": "orin",
+          "key": "skill:heal",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 24,
+          "id": "orin",
+          "key": "defense:resist",
+          "rank": 2,
+          "cost": 40
+        },
+        {
+          "afterDeparture": 26,
+          "id": "orin",
+          "key": "skill:heal",
+          "rank": 3,
+          "cost": 60
+        },
+        {
+          "afterDeparture": 27,
+          "id": "orin",
+          "key": "defense:resist",
+          "rank": 3,
+          "cost": 60
+        }
+      ],
+      "transfers": [
+        {
+          "id": "mira",
+          "cost": 120,
+          "refund": 120,
+          "available": 120
+        }
+      ],
+      "summaries": [
+        {
+          "id": "mira",
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "earned": 480,
+          "available": 120,
+          "training": {
+            "defense:resist": 3,
+            "skill:suppress": 3
+          },
+          "advancement": {
+            "path": "sigilcraft",
+            "paidXp": 80
+          }
+        },
+        {
+          "id": "orin",
+          "runs": 12,
+          "wins": 12,
+          "losses": 0,
+          "earned": 480,
+          "available": 120,
+          "training": {
+            "skill:heal": 3,
+            "defense:resist": 3
+          },
+          "advancement": {
+            "path": "apothecary",
+            "paidXp": 80
+          }
+        }
+      ],
+      "finalConfigurationsEqualToV61": 12
+    }
+  ],
+  "early": {
+    "opening": [
+      {
+        "departure": 1,
+        "won": true
+      },
+      {
+        "departure": 2,
+        "won": true
+      }
+    ],
+    "runs": [
+      {
+        "id": "mira",
+        "departure": 3,
+        "won": true,
+        "alive": 6,
+        "rounds": 21,
+        "earned": 40
+      },
+      {
+        "id": "mira",
+        "departure": 4,
+        "won": true,
+        "alive": 6,
+        "rounds": 21,
+        "earned": 40
+      },
+      {
+        "id": "mira",
+        "departure": 5,
+        "won": true,
+        "alive": 6,
+        "rounds": 19,
+        "earned": 40
+      },
+      {
+        "id": "mira",
+        "departure": 6,
+        "won": true,
+        "alive": 6,
+        "rounds": 23,
+        "earned": 40
+      },
+      {
+        "id": "orin",
+        "departure": 7,
+        "won": true,
+        "alive": 6,
+        "rounds": 27,
+        "earned": 40
+      },
+      {
+        "id": "orin",
+        "departure": 8,
+        "won": true,
+        "alive": 6,
+        "rounds": 26,
+        "earned": 40
+      },
+      {
+        "id": "orin",
+        "departure": 9,
+        "won": true,
+        "alive": 6,
+        "rounds": 29,
+        "earned": 40
+      },
+      {
+        "id": "orin",
+        "departure": 10,
+        "won": true,
+        "alive": 6,
+        "rounds": 24,
+        "earned": 40
+      }
+    ],
+    "investments": [
+      {
+        "afterDeparture": 3,
+        "id": "mira",
+        "key": "skill:spark",
+        "rank": 1,
+        "cost": 20
+      },
+      {
+        "afterDeparture": 3,
+        "id": "mira",
+        "key": "defense:resist",
+        "rank": 1,
+        "cost": 20
+      },
+      {
+        "afterDeparture": 4,
+        "id": "mira",
+        "key": "skill:spark",
+        "rank": 2,
+        "cost": 40
+      },
+      {
+        "afterDeparture": 5,
+        "id": "mira",
+        "key": "defense:resist",
+        "rank": 2,
+        "cost": 40
+      },
+      {
+        "afterDeparture": 7,
+        "id": "orin",
+        "key": "skill:heal",
+        "rank": 1,
+        "cost": 20
+      },
+      {
+        "afterDeparture": 7,
+        "id": "orin",
+        "key": "defense:resist",
+        "rank": 1,
+        "cost": 20
+      },
+      {
+        "afterDeparture": 8,
+        "id": "orin",
+        "key": "skill:heal",
+        "rank": 2,
+        "cost": 40
+      },
+      {
+        "afterDeparture": 9,
+        "id": "orin",
+        "key": "defense:resist",
+        "rank": 2,
+        "cost": 40
+      }
+    ],
+    "transfers": [
+      {
+        "id": "mira",
+        "rank": 2,
+        "cost": 60,
+        "refund": 60
+      }
+    ],
+    "members": [
+      {
+        "id": "a",
+        "earned": 415,
+        "available": 415,
+        "training": {},
+        "unlocked": [],
+        "advancement": null
+      },
+      {
+        "id": "b",
+        "earned": 95,
+        "available": 95,
+        "training": {},
+        "unlocked": [],
+        "advancement": null
+      },
+      {
+        "id": "c",
+        "earned": 415,
+        "available": 415,
+        "training": {},
+        "unlocked": [],
+        "advancement": null
+      },
+      {
+        "id": "d",
+        "earned": 415,
+        "available": 415,
+        "training": {},
+        "unlocked": [],
+        "advancement": null
+      },
+      {
+        "id": "e",
+        "earned": 415,
+        "available": 415,
+        "training": {},
+        "unlocked": [],
+        "advancement": null
+      },
+      {
+        "id": "f",
+        "earned": 415,
+        "available": 415,
+        "training": {},
+        "unlocked": [],
+        "advancement": null
+      },
+      {
+        "id": "mira",
+        "earned": 160,
+        "available": 40,
+        "training": {
+          "defense:resist": 2,
+          "skill:suppress": 2
+        },
+        "unlocked": [],
+        "advancement": null
+      },
+      {
+        "id": "orin",
+        "earned": 160,
+        "available": 40,
+        "training": {
+          "skill:heal": 2,
+          "defense:resist": 2
+        },
+        "unlocked": [],
+        "advancement": null
+      }
+    ]
+  }
+}

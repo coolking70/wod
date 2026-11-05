@@ -2,13 +2,13 @@
 
 ## 先读与当前约束
 
-README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V61_TRAINED_RESERVES → V60_TRAINING_REHEARSAL → V59_TRAINING_PLANS → V58_GROWTH_ACCOUNTING。
+README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRESSION → V62_RESERVE_TRAINING_PATHS → V61_TRAINED_RESERVES → V60_TRAINING_REHEARSAL → V59_TRAINING_PLANS → V58_GROWTH_ACCOUNTING。
 
 用户已确认普通职业技能自由培养、独立后期职业进阶；DECISION_SPECIALIZATION仅是已撤回的普通技能互斥提案，不得据它重新询问或实施。参考服务器/版本尚未指定，Delta只作可替换研究候选，运行profile.referenceServer为null。这个资料约束只影响原版数值标定，不阻塞其他开发，见RULE_CALIBRATION_BOUNDARY与DELTA_REFERENCE_CANDIDATE。
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前415项测试通过，0失败/跳过；156个ES模块、16个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前415项测试通过，0失败/跳过；158个ES模块、17个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -75,10 +75,14 @@ rehearseTrainingPlan只在独立克隆中应用，按实际下一次种子模拟
 
 v0.61正常构造共28次结算，候补各460经验，19次同时培养中15次止步。它证明资产可正常赚取，不证明培养路径高效。固定较高成长疗所确认组：米菈两种分工和奥林替射手均16/16六人生还，平均回合比原阵容更长；风暴双药师0/16、学者也未优于本次原阵容。只增加有限可用案例，不完成全路线/早期成长可靠性，不新增通用升级快捷方案。
 
-独立下一步可先验证逐名上场、及时投入与早期职责，保留当前经验归属，不需要预先添加免费候补经验。若真实证据要求改经验归属或成长经济，再作为产品取舍处理，不能以参考服待定为由暂停所有工作。
+v0.62已验证逐名上场/及时投入：两资深路径各24次零失败，完成次数相同；另新公会逐名候补8次全员通关。普通训练等额转投保持累计经验，空存档浏览器贯通；没有添加免费候补经验。跨路线与其他初期构筑仍待覆盖，有限成功不作全局保证。若真实证据要求改经验归属或成长经济，再作为产品取舍处理，不能以参考服待定为由暂停所有工作。
 
 ## Git、交付与权限
 
-本轮续接v0.57 a533454，v0.58 63975dd、v0.59 066cdec、v0.60 a9f7d50及v0.61均只本地。最后获准推送仍为v0.49 d6f77b8；main为16986e0。未推送新阶段、合并或部署，后续遵从实际授权。
+本轮续接v0.57 a533454，v0.58 63975dd、v0.59 066cdec、v0.60 a9f7d50、v0.61 9f97859及v0.62均只本地。最后获准推送仍为v0.49 d6f77b8；main为16986e0。未推送新阶段、合并或部署，后续遵从实际授权。
 
 源码/补丁/Git bundle/校验清单位于/workspace/wod-delivery/对应版本目录；本地文件不代表原生Library文件，未创建文件ID。旧交付保留。测试证据在/workspace/wod-evidence/。本机游戏存档不等于Git源码备份，不提交凭据、个人浏览器数据或临时运行文件。素材来源见ASSETS，未补造第三方许可或全仓库开源许可证。
+
+## v0.62复验入口
+
+node scripts/check-v62.mjs：复建v0.61合法基线、两条逐名资深培养与新公会短路径，校验12份最终作战配置完全一致，未重跑288矩阵。WOD_BACKUP_DIR指定三份备份目录。browser-v62不导入备份，从空存档正常游戏，验证+1练习培养和20经验等额换训；脚本使用同一四个WOD环境参数。规则与数据schema不变，无新增关键产品决策；可继续跨路线早期职责验证，无需为版本号单独询问用户。
