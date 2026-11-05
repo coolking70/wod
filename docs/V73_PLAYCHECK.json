@@ -1,0 +1,5429 @@
+{
+  "note": "Original prototype route content, not official server rules. 96 bounded simulations at unchanged 10/10/10 budget, plus three same-budget tradeoff and two normal adaptive departures. Not a general balance guarantee.",
+  "records": [
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 516,
+        "maxHp": 640,
+        "hpPercent": 80,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 559,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 508,
+        "maxHp": 640,
+        "hpPercent": 79,
+        "rounds": 17,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 586,
+        "maxHp": 640,
+        "hpPercent": 91,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": true
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 458,
+        "maxHp": 640,
+        "hpPercent": 71,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 549,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 18,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 563,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 5
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 7,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 557,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 588,
+        "maxHp": 640,
+        "hpPercent": 91,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": true
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 549,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 17,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 518,
+        "maxHp": 640,
+        "hpPercent": 80,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 552,
+        "maxHp": 640,
+        "hpPercent": 86,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 2,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 573,
+        "maxHp": 640,
+        "hpPercent": 89,
+        "rounds": 18,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 606,
+        "maxHp": 640,
+        "hpPercent": 94,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 610,
+        "maxHp": 640,
+        "hpPercent": 95,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 597,
+        "maxHp": 640,
+        "hpPercent": 93,
+        "rounds": 19,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 2,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 504,
+        "maxHp": 640,
+        "hpPercent": 78,
+        "rounds": 16,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 593,
+        "maxHp": 640,
+        "hpPercent": 92,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 565,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 17,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 607,
+        "maxHp": 640,
+        "hpPercent": 94,
+        "rounds": 16,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 552,
+        "maxHp": 640,
+        "hpPercent": 86,
+        "rounds": 18,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 588,
+        "maxHp": 640,
+        "hpPercent": 91,
+        "rounds": 17,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 1,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 564,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 17,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 565,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 594,
+        "maxHp": 640,
+        "hpPercent": 92,
+        "rounds": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 536,
+        "maxHp": 640,
+        "hpPercent": 83,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 617,
+        "maxHp": 640,
+        "hpPercent": 96,
+        "rounds": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 502,
+        "maxHp": 640,
+        "hpPercent": 78,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 574,
+        "maxHp": 640,
+        "hpPercent": 89,
+        "rounds": 16,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 560,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 615,
+        "maxHp": 640,
+        "hpPercent": 96,
+        "rounds": 16,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 605,
+        "maxHp": 640,
+        "hpPercent": 94,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 563,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 581,
+        "maxHp": 640,
+        "hpPercent": 90,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 2,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 7,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 7,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 513,
+        "maxHp": 640,
+        "hpPercent": 80,
+        "rounds": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 607,
+        "maxHp": 640,
+        "hpPercent": 94,
+        "rounds": 14,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 567,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 14,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 561,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 17,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 544,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 15,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 529,
+        "maxHp": 640,
+        "hpPercent": 82,
+        "rounds": 18,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 573,
+        "maxHp": 640,
+        "hpPercent": 89,
+        "rounds": 17,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 554,
+        "maxHp": 640,
+        "hpPercent": 86,
+        "rounds": 15,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 583,
+        "maxHp": 640,
+        "hpPercent": 91,
+        "rounds": 15,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 543,
+        "maxHp": 640,
+        "hpPercent": 84,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 579,
+        "maxHp": 640,
+        "hpPercent": 90,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 606,
+        "maxHp": 640,
+        "hpPercent": 94,
+        "rounds": 17,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 7,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 7,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 487,
+        "maxHp": 640,
+        "hpPercent": 76,
+        "rounds": 17,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 572,
+        "maxHp": 640,
+        "hpPercent": 89,
+        "rounds": 14,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 520,
+        "maxHp": 640,
+        "hpPercent": 81,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 559,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 571,
+        "maxHp": 640,
+        "hpPercent": 89,
+        "rounds": 17,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 548,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 18,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 563,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 553,
+        "maxHp": 640,
+        "hpPercent": 86,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 560,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 5
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 7,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 561,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 15,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 588,
+        "maxHp": 640,
+        "hpPercent": 91,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": true
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 508,
+        "maxHp": 640,
+        "hpPercent": 79,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 518,
+        "maxHp": 640,
+        "hpPercent": 80,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 515,
+        "maxHp": 640,
+        "hpPercent": 80,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "herb": 7,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 583,
+        "maxHp": 640,
+        "hpPercent": 91,
+        "rounds": 18,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 606,
+        "maxHp": 640,
+        "hpPercent": 94,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 614,
+        "maxHp": 640,
+        "hpPercent": 95,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 545,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 18,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 3,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 504,
+        "maxHp": 640,
+        "hpPercent": 78,
+        "rounds": 16,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 563,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 16,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 623,
+        "maxHp": 640,
+        "hpPercent": 97,
+        "rounds": 18,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 605,
+        "maxHp": 640,
+        "hpPercent": 94,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 4,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 588,
+        "maxHp": 640,
+        "hpPercent": 91,
+        "rounds": 17,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 554,
+        "maxHp": 640,
+        "hpPercent": 86,
+        "rounds": 16,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 534,
+        "maxHp": 640,
+        "hpPercent": 83,
+        "rounds": 17,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 596,
+        "maxHp": 640,
+        "hpPercent": 93,
+        "rounds": 15,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 5,
+      "pass": null
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 579,
+        "maxHp": 640,
+        "hpPercent": 90,
+        "rounds": 16,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 566,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 617,
+        "maxHp": 640,
+        "hpPercent": 96,
+        "rounds": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 549,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 545,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 16,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 531,
+        "maxHp": 640,
+        "hpPercent": 82,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 601,
+        "maxHp": 640,
+        "hpPercent": 93,
+        "rounds": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 640,
+        "maxHp": 640,
+        "hpPercent": 100,
+        "rounds": 16,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 563,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 17,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 578,
+        "maxHp": 640,
+        "hpPercent": 90,
+        "rounds": 16,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 4,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 7,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 7,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 507,
+        "maxHp": 640,
+        "hpPercent": 79,
+        "rounds": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 564,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 6,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 101,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 567,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 15,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 102,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 550,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 18,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 103,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 544,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 15,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 104,
+      "set": "discovery",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 548,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 18,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 201,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 544,
+        "maxHp": 640,
+        "hpPercent": 85,
+        "rounds": 15,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 202,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 522,
+        "maxHp": 640,
+        "hpPercent": 81,
+        "rounds": 15,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 9,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 203,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 597,
+        "maxHp": 640,
+        "hpPercent": 93,
+        "rounds": 14,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 204,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 570,
+        "maxHp": 640,
+        "hpPercent": 89,
+        "rounds": 14,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 8,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 205,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 510,
+        "maxHp": 640,
+        "hpPercent": 79,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 206,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 614,
+        "maxHp": 640,
+        "hpPercent": 95,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": true
+      },
+      "herb": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 7,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 7,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 207,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 508,
+        "maxHp": 640,
+        "hpPercent": 79,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 5,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "seed": 208,
+      "set": "confirmation",
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 560,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "herb": 7,
+      "pass": {
+        "domain": "foundry",
+        "preference": "channel",
+        "chosen": "channel",
+        "reason": "符纸足够，按计划开启冷却潮渠；支付2符纸。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "冷却潮渠仅在抵达时有至少2符纸才执行；不足则改走风箱回廊，费用为0。"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "original",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 8,
+      "home": 1,
+      "hp": [
+        458,
+        549,
+        563,
+        557,
+        588,
+        549,
+        518,
+        552
+      ],
+      "rounds": [
+        16,
+        18,
+        16,
+        15,
+        16,
+        17,
+        16,
+        15
+      ],
+      "remainingRune": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "remainingArrow": [
+        3,
+        3,
+        5,
+        4,
+        4,
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "profile": "fresh",
+      "path": "bellows",
+      "tactic": "channel",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 0,
+      "home": 3,
+      "hp": [
+        504,
+        593,
+        565,
+        607,
+        552,
+        588,
+        564,
+        565
+      ],
+      "rounds": [
+        16,
+        15,
+        17,
+        16,
+        18,
+        17,
+        17,
+        15
+      ],
+      "remainingRune": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "remainingArrow": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "original",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 0,
+      "home": 4,
+      "hp": [
+        574,
+        560,
+        615,
+        605,
+        563,
+        581,
+        513,
+        607
+      ],
+      "rounds": [
+        16,
+        17,
+        16,
+        17,
+        17,
+        17,
+        15,
+        14
+      ],
+      "remainingRune": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "remainingArrow": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "profile": "fresh",
+      "path": "channel",
+      "tactic": "channel",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 0,
+      "home": 3,
+      "hp": [
+        573,
+        554,
+        583,
+        543,
+        579,
+        606,
+        487,
+        572
+      ],
+      "rounds": [
+        17,
+        15,
+        15,
+        16,
+        16,
+        17,
+        17,
+        14
+      ],
+      "remainingRune": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "remainingArrow": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "original",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 8,
+      "home": 1,
+      "hp": [
+        563,
+        553,
+        560,
+        561,
+        588,
+        508,
+        518,
+        515
+      ],
+      "rounds": [
+        15,
+        16,
+        16,
+        15,
+        16,
+        16,
+        16,
+        16
+      ],
+      "remainingRune": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "remainingArrow": [
+        3,
+        4,
+        5,
+        4,
+        4,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "profile": "trained",
+      "path": "bellows",
+      "tactic": "channel",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 0,
+      "home": 4,
+      "hp": [
+        504,
+        563,
+        623,
+        605,
+        588,
+        554,
+        534,
+        596
+      ],
+      "rounds": [
+        16,
+        16,
+        18,
+        15,
+        17,
+        16,
+        17,
+        15
+      ],
+      "remainingRune": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "remainingArrow": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "original",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 0,
+      "home": 3,
+      "hp": [
+        545,
+        531,
+        601,
+        640,
+        563,
+        578,
+        507,
+        564
+      ],
+      "rounds": [
+        16,
+        17,
+        15,
+        16,
+        17,
+        16,
+        15,
+        15
+      ],
+      "remainingRune": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "remainingArrow": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "profile": "trained",
+      "path": "channel",
+      "tactic": "channel",
+      "n": 8,
+      "clears": 8,
+      "sixAlive": 8,
+      "blueprints": 0,
+      "home": 2,
+      "hp": [
+        544,
+        522,
+        597,
+        570,
+        510,
+        614,
+        508,
+        560
+      ],
+      "rounds": [
+        15,
+        15,
+        14,
+        14,
+        16,
+        16,
+        16,
+        16
+      ],
+      "remainingRune": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "remainingArrow": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  ],
+  "tradeoffs": [
+    {
+      "supplies": {
+        "herb": 10,
+        "rune": 10,
+        "arrow": 10
+      },
+      "seed": 3,
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 569,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "reward": {
+        "cleared": 4,
+        "gold": 220,
+        "xp": 90,
+        "firstClear": true,
+        "loot": [
+          "bellowscoat"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 569,
+            "maxHp": 640,
+            "hpPercent": 88,
+            "rounds": 16,
+            "rune": 0,
+            "arrow": 6
+          },
+          "goals": {
+            "blueprints": false,
+            "home": false
+          },
+          "earned": [],
+          "gold": 0,
+          "loot": []
+        }
+      }
+    },
+    {
+      "supplies": {
+        "herb": 10,
+        "rune": 12,
+        "arrow": 8
+      },
+      "seed": 3,
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 569,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 16,
+        "rune": 2,
+        "arrow": 4
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "reward": {
+        "cleared": 4,
+        "gold": 220,
+        "xp": 90,
+        "firstClear": true,
+        "loot": [
+          "bellowscoat"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 569,
+            "maxHp": 640,
+            "hpPercent": 88,
+            "rounds": 16,
+            "rune": 2,
+            "arrow": 4
+          },
+          "goals": {
+            "blueprints": false,
+            "home": false
+          },
+          "earned": [],
+          "gold": 0,
+          "loot": []
+        }
+      }
+    },
+    {
+      "supplies": {
+        "herb": 10,
+        "rune": 13,
+        "arrow": 7
+      },
+      "seed": 3,
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 569,
+        "maxHp": 640,
+        "hpPercent": 88,
+        "rounds": 16,
+        "rune": 3,
+        "arrow": 3
+      },
+      "goals": {
+        "blueprints": true,
+        "home": false
+      },
+      "reward": {
+        "cleared": 4,
+        "gold": 240,
+        "xp": 90,
+        "firstClear": true,
+        "loot": [
+          "bellowscoat",
+          "kilngauge"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 569,
+            "maxHp": 640,
+            "hpPercent": 88,
+            "rounds": 16,
+            "rune": 3,
+            "arrow": 3
+          },
+          "goals": {
+            "blueprints": true,
+            "home": false
+          },
+          "earned": [
+            "blueprints"
+          ],
+          "gold": 20,
+          "loot": [
+            "kilngauge"
+          ]
+        }
+      }
+    }
+  ],
+  "adaptive": [
+    {
+      "profile": "trained",
+      "seed": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "adaptive",
+        "chosen": "bellows",
+        "reason": "抵达时有8符纸、0名存活正式队员法术抗性达到10%；条件未同时满足，走风箱回廊，不支付通路费用。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 0
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 0
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 0
+          }
+        ],
+        "qualified": 0,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "rule": "抵达第二场时，符纸至少4份且至少3名存活正式队员法术抗性达到10%，走潮渠并支付2符纸；否则走风箱回廊。"
+      },
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 562,
+        "maxHp": 640,
+        "hpPercent": 87,
+        "rounds": 16,
+        "rune": 2,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "reward": {
+        "cleared": 4,
+        "gold": 220,
+        "xp": 90,
+        "firstClear": true,
+        "loot": [
+          "bellowscoat"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 562,
+            "maxHp": 640,
+            "hpPercent": 87,
+            "rounds": 16,
+            "rune": 2,
+            "arrow": 6
+          },
+          "goals": {
+            "blueprints": false,
+            "home": false
+          },
+          "earned": [],
+          "gold": 0,
+          "loot": []
+        }
+      }
+    },
+    {
+      "profile": "three-paid-seals",
+      "seed": 3,
+      "pass": {
+        "domain": "foundry",
+        "preference": "adaptive",
+        "chosen": "channel",
+        "reason": "抵达时有8符纸、3名存活正式队员法术抗性达到10%；满足两项条件，支付2符纸进入潮渠。",
+        "members": [
+          {
+            "id": "a",
+            "name": "阿瑟",
+            "magic": 0
+          },
+          {
+            "id": "b",
+            "name": "莱恩",
+            "magic": 0
+          },
+          {
+            "id": "c",
+            "name": "伊芙",
+            "magic": 20
+          },
+          {
+            "id": "d",
+            "name": "维斯",
+            "magic": 20
+          },
+          {
+            "id": "e",
+            "name": "塞恩",
+            "magic": 0
+          },
+          {
+            "id": "f",
+            "name": "露弥",
+            "magic": 20
+          }
+        ],
+        "qualified": 3,
+        "suppliesBefore": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        },
+        "suppliesAfter": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        },
+        "rule": "抵达第二场时，符纸至少4份且至少3名存活正式队员法术抗性达到10%，走潮渠并支付2符纸；否则走风箱回廊。"
+      },
+      "metrics": {
+        "won": true,
+        "cleared": 4,
+        "alive": 6,
+        "hp": 511,
+        "maxHp": 640,
+        "hpPercent": 79,
+        "rounds": 16,
+        "rune": 0,
+        "arrow": 6
+      },
+      "goals": {
+        "blueprints": false,
+        "home": false
+      },
+      "reward": {
+        "cleared": 4,
+        "gold": 220,
+        "xp": 90,
+        "firstClear": true,
+        "loot": [
+          "bellowscoat"
+        ],
+        "foundry": {
+          "metrics": {
+            "won": true,
+            "cleared": 4,
+            "alive": 6,
+            "hp": 511,
+            "maxHp": 640,
+            "hpPercent": 79,
+            "rounds": 16,
+            "rune": 0,
+            "arrow": 6
+          },
+          "goals": {
+            "blueprints": false,
+            "home": false
+          },
+          "earned": [],
+          "gold": 0,
+          "loot": []
+        }
+      }
+    }
+  ],
+  "unchanged": {
+    "commit": "4f51c3802f54443478efa2d2c92780d7f306ca57",
+    "count": 9,
+    "excluded": []
+  }
+}

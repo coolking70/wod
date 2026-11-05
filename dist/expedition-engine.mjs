@@ -3,6 +3,7 @@ import {advancementOptions,skillManaCost,advancementEffectBonus,advancementTrace
 import {regenerationTicks} from './expedition-regeneration.mjs';
 import {HEALING_BLOCK_REASON,HEALING_BLOCK_STAT,healingBlockTrace,canApplyHealingBlock} from './expedition-disruption.mjs';
 import {validHarborPlan,resolveHarborStep} from './expedition-harbor.mjs';
+import {foundryApproach,resolveFoundryPass} from './expedition-foundry.mjs';
 import {validEquipment,equipmentTotals} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
@@ -23,6 +24,7 @@ export function validate(c){
  if(!Array.isArray(c.heroes)||c.heroes.length!==6||new Set(c.heroes.map(h=>h.id)).size!==6)throw Error('必须包含 6 名不同队员');
  if((c.expedition==='harbor'||c.harbor!==undefined)&&!validHarborPlan(c.harbor))throw Error('港口分支策略无效');
  if(!Object.hasOwn(EXPEDITIONS,c.expedition))throw Error('远征路线无效');
+ foundryApproach(c);
  if(!Object.hasOwn(BELL_CHOICES,c.bellApproach))throw Error('机关应对策略无效');
  if(!Object.hasOwn(RESCUE_CHOICES,c.rescueApproach))throw Error('救援策略无效');
  validateOrder(c.prepOrder,c.heroes);
@@ -95,12 +97,14 @@ export function simulate(c,options={}){
  const roll=m=>Math.floor(m*(.5+(rng()+rng())/2));
  function effectTrace(u){return u.effects.filter(e=>e.active!==false).map(e=>({effectId:e.id,source:e.source,name:e.name,component:e.component,stat:e.stat,value:e.value}));}
  for(roomIndex=0;roomIndex<rooms.length;roomIndex++){
-  let harborDecision=null,harborDelta={};
+  let harborDecision=null,harborDelta={},foundryPass=null;
   if(c.expedition==='harbor'&&!options.rooms){const selected=resolveHarborStep(roomIndex,c,party,supplies,mean,resistanceOf,random(c.seed^0x48A01^roomIndex),harborFlags);rooms[roomIndex]=selected.room;harborFlags=selected.flags;harborDecision=selected.decision;harborDelta=selected.delta;}
+  if(c.expedition==='foundry'&&roomIndex===1&&!options.rooms&&foundryApproach(c)!=='bellows'){foundryPass=resolveFoundryPass(c,party,supplies,resistanceOf);rooms[roomIndex]=clone(foundryPass.room);}
   const room=rooms[roomIndex];round=0;phase='进场';for(const u of party){const h=c.heroes.find(h=>h.id===u.id);if(h){const plan=resolveHeroPlan(h,room.id);for(const key of PLAN_FIELDS)u[key]=clone(plan[key]);}}enemies=room.enemies.map(u=>({...u,effects:[],side:'enemy'}));enemySupplies={herb:60,rune:60,arrow:60};
   const cursors=new Map(),used=new Set(),roundUsed=new Map(),roundCursors=new Map();let serial=0;
   emit('room',room.name+'：生命、法力、补给与远征效果继承。',null,[],{rule:'房间效果结束；远征效果保留；行动游标重置。'});
   if(harborDecision){for(const [key,delta] of Object.entries(harborDelta))supplies[key]+=delta;emit('branch',room.name+' · '+harborDecision.reason,harborDecision.actor,[],{...harborDecision,sourceEventId:roomIndex===3?harborSource:null});if(roomIndex===2)harborSource=events.at(-1).id;}
+  if(foundryPass){for(const [key,delta] of Object.entries(foundryPass.delta))supplies[key]+=delta;emit('branch',room.name+' · '+foundryPass.decision.reason,null,[],foundryPass.decision);}
   if(c.expedition==='scarcity')emit('deadline','潮水封路：本房须在 '+roomTimeBudget(c,room.id)+' 回合内清场。',null,[],{limit:roomTimeBudget(c,room.id),gatherDelay:room.id==='cistern'&&c.rescueApproach==='gather'?1:0,rule:room.id==='cistern'&&c.rescueApproach==='gather'?'拾取药草占用1回合，原5回合缩短为4回合；不额外跳过战斗行动。':'本房第5回合结束仍有敌人则远征停止。'});
   if(hasArchiveEvents(c)&&room.id==='altar'){
    const route=bellRoute(bellRecord?.detail),result=applyBellRoute(enemies,route);enemies=result.enemies;
@@ -197,7 +201,7 @@ export function simulate(c,options={}){
   }
   round=Math.min(round-1,maxRounds);const won=heroesAlive()&&live('enemy').length===0;phase='房间结算';removeSummons(null,'房间结束');
   for(const u of party){const expired=u.effects.filter(e=>e.scope!=='expedition');u.effects=u.effects.filter(e=>e.scope==='expedition');for(const e of expired)emit('expire',u.name+' 的「'+e.name+'」随战斗结束',e.source,[u.id],{scope:e.scope,component:e.component,stat:e.stat});}
-  results.push({...(c.expedition==='harbor'?{id:room.id,node:room.node,note:room.note}:{}),...(c.expedition==='scarcity'?{roundLimit:maxRounds,stopReason:won?null:heroesAlive()?'潮水封路':'全员倒下'}:{}),name:room.name,won,rounds:round,survivors:party.filter(u=>u.hp>0).length,hp:party.reduce((n,u)=>n+u.hp,0),mp:party.reduce((n,u)=>n+u.mp,0),supplies:clone(supplies)});emit(won?'victory':'defeat',won?'房间肃清，整队继续前进。':'远征停止：'+(heroesAlive()?(c.expedition==='scarcity'?'潮水封路，未在 '+maxRounds+' 回合内清场。':'达到回合上限。'):'队伍全员倒下。'));
+  results.push({...(foundryPass?{id:room.id,path:foundryPass.decision.chosen,note:room.note}:{}),...(c.expedition==='harbor'?{id:room.id,node:room.node,note:room.note}:{}),...(c.expedition==='scarcity'?{roundLimit:maxRounds,stopReason:won?null:heroesAlive()?'潮水封路':'全员倒下'}:{}),name:room.name,won,rounds:round,survivors:party.filter(u=>u.hp>0).length,hp:party.reduce((n,u)=>n+u.hp,0),mp:party.reduce((n,u)=>n+u.mp,0),supplies:clone(supplies)});emit(won?'victory':'defeat',won?'房间肃清，整队继续前进。':'远征停止：'+(heroesAlive()?(c.expedition==='scarcity'?'潮水封路，未在 '+maxRounds+' 回合内清场。':'达到回合上限。'):'队伍全员倒下。'));
   summons=[];if(!won)break;
  }
  return {version:VERSION,ruleset:RULESET,config:clone(c),events,rooms:results,stats,party:clone(party),supplies,won:results.length===rooms.length&&results.every(r=>r.won)};

@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前479项测试通过，0失败/跳过；191个ES模块、27个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前487项测试通过，0失败/跳过；191个ES模块、27个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -149,3 +149,13 @@ UI只有一个内存换人试演，replacementSelections保留每个候补的明
 479完整回归、9旧路线与9铸库完整战斗报告等价；正常shelter→split→split、首批巡衣分配/再分配尺规后得到240/170/150金币，分别home/blueprints/无新增，XP90/65/65；首通基础仍220，首通新20由委托单列。V71原基础奖励断言保留语义并更新合并结果为精确240/两件指定loot，不用宽松比较，旧881d185仍可复验历史220。浏览器首轮“已完成”广泛文本匹配把说明也计入，收窄到目标卡h3精确两项后final-browser全流程通过，原失败保留。
 
 check-v72可重建正常三轮完成备份，带v0.71参考目录核对9铸库报告，否则combatUnchanged=null；compare-reports另核9旧路线。不重跑72新地城游玩矩阵/旧432候补/1,824活动样本。无重大新决策，无开发环境阻塞，不推送/合并/部署。
+
+## v0.73通路续接
+
+基线4f51c38，feature/v073-foundry-passages。foundry.mjs增加CHANNEL/APPROACHES/resolveFoundryPass，data.roomsFor固定潮渠预览、adaptive默认回廊预览；engine仅foundry第二场且非options.rooms时按实际party/supplies解析，房间覆盖仍foundry_bellows。branch.detail.domain=foundry，room结果仅新决策加id/path/note，旧缺字段默认不加事件以保持完整报告。共享费用在room事件后/预备前结算一次，不抽战斗RNG。resourceLedger复用前后库存。
+
+foundry-view提供双敌情/战前选择、本房channelTactics以及事件/证据cells；classId潮术师为tidecaller。UI的战场事件和行动证据两处都必须按domain分流，不能统一索引HARBOR_NODES。sceneFor使用actualRoom.name，尤其计划潮渠但不足2符回廊时。guild ready显示实际计划，review比较foundryApproach，切换起点保留选择。helper只改本房ranger/tidecaller/scholar指令，不清managed角色。
+
+487测试、9旧路线+9默认铸库完整报告与v72相等。check-v73重建96有限组、三个同预算seed3例和两次正常自动选路，普通装备equip花180金币；输出三护符公会/tmp/wod-v73-three-seals-guild.json。10/13/7是最终helper达图纸例，10/12/8真实失败保留。browser-v73需check-v71的普通trained公会与上述三护符备份，4流程桌面/390px通过，证据在v73/final-browser。
+
+初次helper职业标识和通路证据港口索引问题已修；初始失败与最终成功回执均保留。未重跑旧候补研究。继续有限分支结果影响后续遭遇，重大多人/账号/经济方向不擅动。不推送/合并/部署。

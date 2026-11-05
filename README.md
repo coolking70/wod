@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.72「铸库委托」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；main仍为v0.45。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.73「铸库通路」**。v0.49已按用户批准推送至 [feature/v049-healing-disruption](https://github.com/coolking70/wod/tree/feature/v049-healing-disruption)，完整SHA `d6f77b8adb0ea7b696015d62c24172d5526b1a89`；已记录的main基线为v0.45，本轮未重新核验远端。后续阶段仅本地提交，未推送或发布。GitHub 接续仓库：https://github.com/coolking70/wod
+
+铸库新增第二场可选通路与抵达条件选路：共享符纸、职业分工和定向委托形成同预算取舍，整段自动执行。见[v0.73报告](docs/V73_FOUNDRY_PASSAGES.md)。
 
 ## 开发交接入口
 
