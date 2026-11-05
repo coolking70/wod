@@ -103,3 +103,4 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .lineup-diff{margin:18px 0;padding:16px;border:1px solid #49636a;background:#10262d}.lineup-diff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.lineup-diff-card{border:1px solid #3b565f;padding:14px;margin:10px 0;overflow-wrap:anywhere}.lineup-room-plans{margin-top:12px}.lineup-room-plans>div{padding:10px 0;border-bottom:1px solid #3b565f}
 
 .tactic-reuse{padding:16px;margin:18px 0;border:1px solid #6b785a;background:#162b2c}.tactic-reuse>label{display:block;margin:12px 0}.tactic-reuse select{max-width:100%}.tactic-reuse table{min-width:580px}.tactic-reuse button{margin:8px 10px 4px 0}.reuse-rooms input{margin-right:8px}
+.layout>*{min-width:0}.draft-command-bridge,.draft-command-preview{max-width:100%;min-width:0}

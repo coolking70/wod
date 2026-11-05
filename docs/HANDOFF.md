@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前453项测试通过，0失败/跳过；176个ES模块、23个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前460项测试通过，0失败/跳过；179个ES模块、24个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -49,6 +49,7 @@ node scripts/browser-v61.cjs
 | dist/expedition-training-rehearsal.mjs、training-rehearsal-view.mjs | 真实资产的当前/草案双试演及事实比较（后者有前缀） |
 | dist/expedition-advancement-data.mjs、advancement.mjs | 12条项目后期路径、法力/效果来源和资格（后者有前缀） |
 | dist/expedition-guild*.mjs、roster*.mjs、personal*.mjs | 公会事务、个人资产/名册成长与战报投影（后两项有前缀） |
+| dist/expedition-draft-commands.mjs | 托管伙伴的草稿指令预览/明确采用；只替换默认或本房三类指令 |
 | dist/expedition-config-undo.mjs | 配置与本次伙伴职责撤销，角色差量与成对写入/失败回退 |
 | dist/expedition-readiness.mjs、command*.mjs | 实际资产核对与伙伴职责，编辑时保留实际方案（后者有前缀） |
 | dist/expedition-equipment*.mjs、loot.mjs | 固定装备、来源和奖励（后者有前缀） |
@@ -115,3 +116,11 @@ historyTacticPreview/reuseHistoryTactic只复制PERSONAL_TACTIC_FIELDS，保持�
 commitPreparationChange先核对两份存储当前文本，再写配置、公会；第二写失败回退配置。首次写失败不改公会；回退也失败明确报错，不称完整事务保证。无持久撤销日志、崩溃恢复或多标签原子锁：撤销仍为本页面会话单槽，普通载入覆盖旧槽且不回退历史职责。不要恢复整个旧公会来修撤销。
 
 453测试、9份完整报告与3ee8714等价；browser-v68最终回执final-browser，覆盖四入口、期间正常训练/另一伙伴选择、跨页拒绝后读取重试、待结算拒绝、单次写失败/回退重试及390px。真实修道院种子3三房通关。复验check-v68需要v0.67参考目录；无参考unchanged=null。正常seerGuild备份可由该脚本重建，WOD_SEER_GUILD可换路径。未重跑432路线研究或1,824条旧活动样本；无新原版数字、推送、合并、部署。详见V68_CONFIG_UNDO.md。
+
+## v0.69草稿到实际指令
+
+从e08585a干净基线、既有已验证453测试继续，分支feature/v069-draft-command-bridge。draftCommandPreview以rosterConfig为草稿载体，只将目标替换为readiness实际角色，再复制该目标指定scope的prep/main/healing；不复制专修、站位、防御、道具策略或资产。本房写覆盖，其他房间先保留实际托管方案；默认采用保留实际覆盖，其余继承新默认。明确应用只把目标切custom，接入applyTacticEdit，配置/职责撤销和成对写入失败补偿沿用v68。
+
+编辑器只在目标实际托管且草稿/公会均出战时显示入口；从战报进入编辑仍不自动改职责。预览使用resolveHeroPlan后的完整实际三类指令，不只给“继承默认”占位。请求签名覆盖目标资产、队伍/职责、next/pending与当前草稿，后台重算，不信任返回候选。课程/待结算拒绝，跨页写保护仍有效。guildUI由初始null在挂载后赋值，首次planner也能挂接入口；不可在挂载前直接访问未初始化const。
+
+460测试、9完整报告与e08585a等价、v68八条浏览器流程复验及v69七条桌面/390px闭环通过。首次针对性用例把全部overrides元数据当作本房有效字段，修正为比较全部有效字段、排除覆盖容器，原失败initial-focused-tests.tap保留。视觉发现初始内部宽度断言不足，已修.layout直接子项min-width与页面级边界断言；最终release-browser。compare-reports.mjs参考目录必填，可输出新阶段回执，禁止覆盖旧阶段结果。未重跑432研究/1,824活动样本。详细见V69_DRAFT_COMMANDS。

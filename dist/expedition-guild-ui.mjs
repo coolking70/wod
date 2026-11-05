@@ -1,4 +1,5 @@
 import {historyTacticPreview,reuseHistoryTactic} from './expedition-tactic-reuse.mjs';
+import {draftCommandPreview,adoptDraftCommands} from './expedition-draft-commands.mjs';
 import {configurationUndo,restoreConfigurationUndo,commitPreparationChange} from './expedition-config-undo.mjs';
 import {validate} from './expedition-engine.mjs';
 import {tacticReuseView} from './expedition-tactic-reuse-view.mjs';
@@ -43,6 +44,20 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  function savePreparation(config,guild){const stored=commitPreparationChange(localStorage,{configKey,guildKey:GUILD_KEY,expectedConfig:JSON.stringify(getConfig()),expectedGuild:raw,config,guild});raw=stored.guildRaw;g=guild;}
  function applyTacticEdit(edit,apply){validate(edit.config);const undo=configurationUndo(getConfig(),g,edit.guild);if(localStorage.getItem(GUILD_KEY)!==raw)throw Error('另一页面已修改公会，请重新进入公会后再操作');if(undo.roles)savePreparation(edit.config,edit.guild);apply(edit.config,undo,Boolean(undo.roles));}
  function undoConfiguration(undo){const restored=restoreConfigurationUndo(g,undo);if(restored.guild){savePreparation(restored.config,restored.guild);previews={};reuseOpen=false;lastReusePreview=null;}return {config:restored.config,persisted:Boolean(restored.guild)};}
+ function renderDraftBridge({targetId,roomId=''}){
+  const bridge=document.querySelector('#draft-command-bridge');if(!bridge)return;
+  const mode=g?.command?.companions[targetId],managed=g?.command&&g.command.heroId!==targetId&&mode&&mode!=='custom';
+  if(!managed||!g.lineup.includes(targetId)||!getConfig().heroes.some(h=>h.id===targetId)){bridge.hidden=true;bridge.innerHTML='';return;}
+  bridge.hidden=false;bridge.className='tactic-reuse draft-command-bridge';
+  bridge.innerHTML=`<h3>让草稿指令用于公会出征</h3><p>当前公会职责：${esc(commandLabel(g,targetId))}。公会仍采用该职责的指令；编辑器中的草稿可先预览，再明确应用。</p><p>${roomId?'只采用本房预备、普通和救护指令，其他房间保留当前实际指令。':'采用默认预备、普通和救护指令；已有实际逐房覆盖保留，其余房间继承新默认。'}目标的专修、站位、防御、道具策略与实际资产保留。应用会切到自定义，可在方案管理撤销。</p><button data-draft-preview="true">预览采用${roomId?'本房':'默认'}草稿指令</button>`;
+  bridge.onclick=e=>{const b=e.target.closest('button');if(!b)return;try{
+   if(b.dataset.draftPreview){const p=draftCommandPreview(g,getConfig(),{targetId,roomId});
+    const panel=document.createElement('div');panel.className='draft-command-preview';panel.innerHTML=`<h4>${esc(p.targetName)} · ${esc(p.scopeName)}</h4><p>仅复制预备、普通与救护指令。当前专修、课程、训练、装备、经验和其他队员保留。</p><div class="table-scroll"><table><thead><tr><th>指令阶段</th><th>当前实际配置</th><th>将采用的配置</th></tr></thead><tbody>${p.commands.map(c=>`<tr><th>${esc(c.label)}${c.changed?'':'（相同）'}</th><td>${esc(c.before)}</td><td>${esc(c.after)}</td></tr>`).join('')}</tbody></table></div><small>窄屏可横向滚动查看将采用的指令。</small>${p.warnings.map(w=>`<p class="ready-diff">${esc(w)}</p>`).join('')}${p.reasons.map(r=>`<p class="ready-diff">${esc(r)}</p>`).join('')}<button data-draft-apply="true" ${p.allowed?'':'disabled'}>采用${roomId?'本房':'默认'}指令并切到自定义</button>`;
+    bridge.querySelector('.draft-command-preview')?.remove();bridge.append(panel);panel.querySelector('[data-draft-apply]').onclick=ev=>{ev.stopPropagation();try{const result=adoptDraftCommands(g,getConfig(),p);applyTacticEdit(result,loadConfig);editHero(targetId,roomId);inform('已将'+p.targetName+'的'+p.scopeName+'草稿指令用于公会；'+(p.roomId?'其他房间、专修与当前资产保留':'已有逐房覆盖、专修与当前资产保留，其余房间继承新默认')+'，可撤销配置与本次职责变化。');}catch(error){tell(error.message);}};
+    panel.scrollIntoView({block:'nearest'});
+   }
+  }catch(error){tell(error.message);}};
+ }
  function comparisonHTML(){
  if(!compareId||!g.history.some(r=>r.id===compareId&&r.config))return '';
  const d=historyComparison(g,compareId,getConfig(),compareMode);
@@ -129,5 +144,5 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  function open(next='hero'){pane=typeof next==='string'?next:'hero';read();render();view('guild');window.scrollTo({top:0});}
  document.querySelector('header [data-view="guild"]').onclick=open;
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
- read();render();return {open,undoConfiguration,heroId:()=>g?.command?.heroId||null};
+ read();render();return {open,undoConfiguration,renderDraftBridge,heroId:()=>g?.command?.heroId||null};
 }

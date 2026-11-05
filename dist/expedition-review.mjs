@@ -62,6 +62,7 @@ function format(key,value){
  if(lookup){const v=lookup[value];return typeof v==='object'?v.name:v;}
  return String(value);
 }
+export const describeConfigValue=(key,value)=>format(key,value);
 export function configurationChanges(a,b){
  const roomLabels=a.expedition===b.expedition?roomsFor(a).map(r=>({id:r.id,name:r.name})):[...new Set([...roomsFor(a),...roomsFor(b)].map(r=>r.id))].map(id=>({id,name:'房间槽 '+id}));
  const knownRooms=new Set(roomLabels.map(r=>r.id));for(const id of [...Object.keys(a.roomOrders),...Object.keys(b.roomOrders),...[...a.heroes,...b.heroes].flatMap(h=>Object.keys(h.overrides))])if(!knownRooms.has(id)){knownRooms.add(id);roomLabels.push({id,name:'其他房间槽 '+id});}

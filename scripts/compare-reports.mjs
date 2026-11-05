@@ -1,0 +1,6 @@
+import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';
+import {defaults,harborConfig,trialConfig} from '../dist/expedition-data.mjs';import {simulate,RULESET} from '../dist/expedition-engine.mjs';
+if(!process.argv[2])throw Error('Usage: node scripts/compare-reports.mjs REFERENCE_DIR [RECEIPT_JSON]');
+const reference=resolve(process.argv[2]),engine=await import(pathToFileURL(resolve(reference,'dist/expedition-engine.mjs')).href),commit=execFileSync('git',['rev-parse','HEAD'],{cwd:reference,encoding:'utf8'}).trim(),cases=[];
+for(const [name,make] of [['classic',defaults],['harbor',harborConfig],['veteran-adapted',()=>trialConfig('veteran','adapted')]])for(const seed of [1,3,731]){const config=make();config.seed=seed;assert.deepEqual(simulate(config),engine.simulate(config));cases.push({profile:name,seed,equal:true});}
+const receipt={ruleset:RULESET,referenceCommit:commit,count:cases.length,excluded:[],cases};writeFileSync(resolve(process.argv[3]||'/tmp/wod-report-equivalence.json'),JSON.stringify(receipt,null,2)+'\n');console.log('Complete report equality:',cases.length,'reference:',commit);
