@@ -17,13 +17,14 @@ export function companionPreview(g,tactics,id,mode,roomId=''){
   if(isAdvanced(r.skill)&&!g.members.find(m=>m.id===id).unlocked.includes(r.skill))warnings.push('尚未永久学习'+s.name+'，请先在公会学习；当前不可按此职责出征');
   if(s.requiresGear&&!gearSupports(actor.gear,s.requiresGear))warnings.push('缺少'+gearRequirementName(s.requiresGear));
   if(payment.resource&&config.supplies[payment.resource]<payment.amount)warnings.push(payment.medium==='standard'?'出发补给中此耗材为0':'出发补给不足本次所需'+payment.amount+'份');
-  if(s.kind==='buff')candidates=chooseTargets(actor,party,s,r.target).map(u=>u.name);
+  if(s.kind==='buff'&&!s.recall)candidates=chooseTargets(actor,party,s,r.target).map(u=>u.name);
+  if(s.recall)warnings.push('仅召回自己当时存活的召唤物；无目标免费跳过，实际召回占本次预备且不返还原消耗');
   if(s.kind==='attack'){
    if(['healer','summoner'].includes(r.target))candidates=roleTargetCandidates(enemies,r.target).map(u=>u.name);
    else {const chosen=chooseTargets(actor,[...party,...enemies],s,r.target);candidates=(s.mode==='all'?chosen:enemies.filter(u=>u.pos===chosen[0]?.pos&&u.hp>0)).map(u=>u.name);}
    if(!candidates.length)warnings.push('本房初始敌人无此目标，将检查下一条指令');
   }
-  return {phase,skill:r.skill,name:s.name,mode:r.mode,target:POS[r.target]||{self:'自身',all:'全队',healer:'治疗者',summoner:'召唤者'}[r.target],kind:s.kind,candidates,max:s.max,cost:payment.mana,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:payment.medium}:{}),warnings};
+  return {phase,skill:r.skill,name:s.name,mode:r.mode,target:POS[r.target]||{self:'自身',all:'全队',healer:'治疗者',summoner:'召唤者'}[r.target],kind:s.recall?'recall':s.kind,candidates,max:s.max,cost:payment.mana,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:payment.medium}:{}),warnings};
  }));
  return {roomId:room.id,roomName:room.name,rows,healing:clone(actor.healing),heroId:g.command.heroId};
 }

@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前568项测试通过，0失败/跳过；235个ES模块、38个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前577项测试通过，0失败/跳过；239个ES模块、39个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -267,3 +267,14 @@ inquest模块2场公开原创敌群；data接route/budget/IDs/config，adventure
 check-v83正常首通140/60→40XP学定心吟→20XP训诘心一级→缎带C→复战90/40，最终230gold/E40XP/其余100XP；手机把C magic改natural后seed3真实6/9回合→320gold/E80XP/其余140XP，两份完整guild均与UI全对象同。30模拟包含plain/pressure在fresh/studied重复，按configFingerprint记录18不同输入，不算30独立策略证据。全部六人只为有限教学短线结果。
 
 568全回归、235mjs38cjs，新桌面/390px与v82完整媒介浏览器通过。首次规则夹具的回蓝/进场初始化/课程/节拍成本断言失败和真实review崩溃全部保留，未弱化断言或调敌人过测。云端证据/workspace/wod-evidence/v83，参考/tmp/wod-v082-reference，截图内部。没有推送、合并、PR、部署或新重大待决。
+
+
+## v0.84召唤形态续接
+
+v0.84扩展跨路线召唤：潮卫/较脆的远程弩灵共用每主人一只存活限制，新增2法力预备召回，仅本人、不退款、之后另付成本重召；召回不当作增益，目标检查认识所有形态。既有唤潮研修/媒介、独立行动和主人倒下/房间清理一致。577测试、48不同有限输入全员通关、34旧报告除严格核对的潮术师两项可用技能外相同，桌面/390px三次真实出征与两份完整公会API等价、v83浏览器回归通过；保留第二场召回后缺符纸重召失败。另修复问堂账本被显示条件隐藏。仍17路线/35装备，无新资产赠送，详见[V84_SUMMON_FORMS.md](V84_SUMMON_FORMS.md)。新增阶段仅本地，不推送/合并/部署。
+
+feature/v084-summon-forms从868ef25干净568基线。summons纯模板保持原sentinel完全一致，tidearcher生命24+3lv、shot优先rear、低生命/无箭支出；spawn传入实际skill。hasSummoningSkill统一职责/预览/画像，不误认召唤物。recall为buff标记的固定utility，只在预备、2MP，空目标免费，实际移除仅owner自有存活单位并发recall dismiss；不生effect、不返还资源、不占同次重召。deployment/preview/support-index排除虚假增益，原始详情/演出显示召回。唤潮研修同为两形态-2MP，召回不减；媒介先研修后调整。
+
+withSummonPlan仅改C预备，不送资产；48不同输入含none/guardian/archer/shift×问堂/异变×六种子，全部六人但不推荐最优。34原报告只归一已断言C新增技能6/6，其余全同。新公会弩灵seed1=4/4回合140/60；20XP训练弩灵、分配缎带C；shift seed2=5/5回合90/40，首场60潮卫→召回→45弩灵，次场召回后rune0未重召。不要延续早期把两场都说成成功换形态的错误判断，replacement-blocked.json是实际反例。手机seed3改弩灵入场front仍攻击敌rear，4/5回合90/40，最终320gold/C120XP/其余140XP；两份整公会API/UI均同。
+
+577最终全回归、239mjs39cjs通过，新三次浏览器和v83完整回归通过。第一次快捷编辑导航脚本错误、第二次真实inquest账本hidden白名单缺项及修复均保留，不强制点击或删断言。截图只内部；证据/workspace/wod-evidence/v84、旧参考/tmp/wod-v083-reference。没有新地城/装备/账号/服务或重大待决，保持本地提交与单人方向。

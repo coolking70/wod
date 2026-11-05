@@ -12,7 +12,7 @@ export function stageFrame(group){
   else if(e.type==='item')cues.push({unit:e.actor,kind:e.detail.resource==='hp'?'heal':'mana',text:'+'+e.detail.actual,note:e.detail.resource==='hp'?'药匣恢复':'药瓶回蓝',eventId:e.id});
   else if(['effect','cleanse','activate','summon','down','dismiss','defend'].includes(e.type)){
    const unit=e.type==='defend'?e.actor:e.targets[0],kind=e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'buff'):e.type;
-   cues.push({unit,kind,text:e.type==='cleanse'?'净化':e.type==='defend'?e.detail.name:e.type==='summon'?'召唤':e.type==='down'?'倒下':e.type==='dismiss'?'消散':e.type==='activate'?'生效':e.detail.harmful?(e.detail.component||'负面'):e.detail.active===false?'待生效':'增益',note:e.detail.component||'',eventId:e.id});
+   cues.push({unit,kind,text:e.type==='cleanse'?'净化':e.type==='defend'?e.detail.name:e.type==='summon'?'召唤':e.type==='down'?'倒下':e.type==='dismiss'?(e.detail.recall?'召回':'消散'):e.type==='activate'?'生效':e.detail.harmful?(e.detail.component||'负面'):e.detail.active===false?'待生效':'增益',note:e.detail.component||'',eventId:e.id});
   }
   if(e.detail.healingBlock||e.detail.healingDecision?.status==='blocked')cues.push({unit:e.actor,kind:'control',text:'救护受阻',note:'按普通指令继续',eventId:e.id});
   if(['attack','heal','effect','cleanse','summon','activate','expire'].includes(e.type))for(const target of e.targets)links.push({from:e.actor,to:target,kind:e.type==='attack'?e.detail.attackType:e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'support'):e.type,eventId:e.id});

@@ -1,6 +1,6 @@
+import {hasSummoningSkill} from './expedition-summons.mjs';
 import {ROLE_TARGETS,SKILLS} from './expedition-data.mjs';
-const capability={healer:'heal',summoner:'sentinel'};
-export function roleTargetCandidates(enemies,target){if(!Object.hasOwn(capability,target))return [];return enemies.filter(u=>u.hp>0&&u.skills?.[capability[target]]!==undefined);}
+export function roleTargetCandidates(enemies,target){if(!Object.hasOwn(ROLE_TARGETS,target))return [];return enemies.filter(u=>u.hp>0&&(target==='summoner'?hasSummoningSkill(u):u.skills?.heal!==undefined));}
 export function initialTargetWarnings(plan,room){
  const warnings=[];
  for(const phase of ['prep','main'])plan[phase].forEach((command,row)=>{if(SKILLS[command.skill].kind==='attack'&&Object.hasOwn(ROLE_TARGETS,command.target)&&!roleTargetCandidates(room.enemies,command.target).length)warnings.push({actor:plan.id,roomId:room.id,roomName:room.name,phase,row,skill:command.skill,target:command.target});});

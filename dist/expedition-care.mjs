@@ -1,3 +1,4 @@
+import {hasSummoningSkill} from './expedition-summons.mjs';
 import {COURIER_ROOMS,COURIER_KEEL} from './expedition-courier.mjs';
 import {harborNodes,HARBOR_NODES} from './expedition-harbor.mjs';
 import {healingReason} from './expedition-healing.mjs';
@@ -33,7 +34,7 @@ export function enemyBadge(config,unit){
  if(unit.owner||unit.summoned)return {kind:'summon',label:'召唤',symbol:'◇'};
  const template=(config.expedition==='courier'?[...COURIER_ROOMS,COURIER_KEEL]:config.expedition==='harbor'?Object.values(harborNodes(config)):roomsFor(config)).flatMap(r=>r.enemies).find(u=>u.id===unit.id);
  if(['harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&template?.skills.heal!==undefined)return {kind:'magic',label:'治疗支援',symbol:'药'};
- if(['harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&template?.skills.sentinel!==undefined)return {kind:'magic',label:'召唤支援',symbol:'潮'};
+ if(['harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&hasSummoningSkill(template))return {kind:'magic',label:'召唤支援',symbol:'潮'};
  const types=[...new Set(Object.keys(template?.skills||{}).map(k=>SKILLS[k]?.type).filter(Boolean))];
  if(types.length>1)return {kind:'mixed',label:'复合',symbol:'✧'};
  return ({melee:{kind:'melee',label:'近战',symbol:'盾'},ranged:{kind:'ranged',label:'远程',symbol:'弩'},magic:{kind:'magic',label:'法术',symbol:'咒'}})[types[0]]||{kind:'mixed',label:'敌方',symbol:'◇'};

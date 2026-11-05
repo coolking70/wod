@@ -1,3 +1,4 @@
+import {SUMMON_FORMS,hasSummoningSkill} from './expedition-summons.mjs';
 import {mediumId,CASTING_MEDIA} from './expedition-media-data.mjs';
 import {commandCost} from './expedition-media.mjs';
 import {shoalsChartId} from './expedition-shoals.mjs';
@@ -67,7 +68,7 @@ export function chooseTargets(actor,units,s,target,rng=()=>0){
  if(s.kind==='heal'){const selected=selectHealingTarget(actor,pool,target);return selected?[selected]:[];}
  if(s.mode==='all')return pool.slice(0,s.max);
  if(aid)return pool.filter(u=>target==='self'?u.id===actor.id:u.pos===target).slice(0,s.max);
- if(Object.hasOwn(ROLE_TARGETS,target)){if(!roleTargetAllowed(s))return [];const candidates=pool.filter(u=>u.skills?.[target==='healer'?'heal':'sentinel']!==undefined);for(let i=candidates.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}return candidates.slice(0,s.max);}
+ if(Object.hasOwn(ROLE_TARGETS,target)){if(!roleTargetAllowed(s))return [];const candidates=pool.filter(u=>(target==='healer'?u.skills?.heal!==undefined:hasSummoningSkill(u)));for(let i=candidates.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}return candidates.slice(0,s.max);}
  const order=s.type==='melee'?routes[actor.pos]:[target,...Object.keys(POS).filter(p=>p!==target)];
  for(const p of order){const group=pool.filter(u=>u.pos===p);if(group.length){for(let i=group.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[group[i],group[j]]=[group[j],group[i]];}return group.slice(0,s.max);}}return [];
 }
@@ -81,12 +82,13 @@ export function simulate(c,options={}){
  const heroesAlive=()=>party.some(u=>u.hp>0);
  const snapshot=()=>all().map(u=>({id:u.id,name:u.name,mark:u.mark,side:u.side,owner:u.owner||null,summoned:Boolean(u.owner),itemInstance:u.itemInstance?clone(u.itemInstance):null,pos:u.pos,resistances:Object.fromEntries(Object.keys(TYPES).map(t=>[t,resistanceOf(u,t)])),hp:u.hp,maxHp:u.maxHp,mp:u.mp,maxMp:u.maxMp,effects:clone(u.effects),defenses:clone(u.defenses||{}),attrs:Object.fromEntries(Object.keys(u.attrs).map(k=>[k,current(u,k)]))}));
  function emit(type,text,actor=null,targets=[],detail={}){events.push({id:++sequence,roomIndex,round,phase,type,text,actor,targets,actionId,detail:clone(detail),units:snapshot(),supplies:clone(supplies)});}
- function removeSummons(owner,reason){const gone=summons.filter(u=>u.hp>0&&(!owner||u.owner===owner));for(const u of gone){u.hp=0;emit('dismiss',u.name+' 消散：'+reason,u.owner,[u.id],{reason,owner:u.owner});}}
+ function removeSummons(owner,reason,extra={}){const gone=summons.filter(u=>u.hp>0&&(!owner||u.owner===owner));for(const u of gone){u.hp=0;emit('dismiss',u.name+' 消散：'+reason,u.owner,[u.id],{reason,owner:u.owner,...extra});}}
  function spawn(owner,pos,skill='sentinel'){
-  const id='summon:'+roomIndex+':'+(++summonSerial),level=skillLevel(owner,skill)||8,hp=36+level*4;
-  const u={id,name:owner.side==='party'?'唤潮卫':'溺誓潮卫',mark:'灵',owner:owner.id,side:owner.side,pos,gear:'field',attrs:{str:10,con:10,int:8,dex:12,cha:0,agi:8,per:10,wil:10},hp,maxHp:hp,mp:20,maxMp:20,skills:{strike:level},defenses:naturalDefenses(),effects:[],prep:[],main:[row('strike')],healing:{enabled:false}};
+  const form=SUMMON_FORMS[skill];if(!form)throw Error('未知召唤形态');
+  const id='summon:'+roomIndex+':'+(++summonSerial),level=skillLevel(owner,skill)||8,hp=form.hpBase+level*form.hpPerLevel;
+  const u={id,name:owner.side==='party'?form.partyName:form.enemyName,mark:form.mark,owner:owner.id,side:owner.side,pos,gear:'field',attrs:clone(form.attrs),hp,maxHp:hp,mp:form.mana,maxMp:form.mana,skills:{[form.attack]:level},defenses:naturalDefenses(),effects:[],prep:[],main:[row(form.attack,form.target)],healing:{enabled:false}};
   summons.push(u);stats[id]={damage:0,actual:0,overkill:0,healing:0,interrupts:0,failed:0,defenses:0,defenseMana:0,owner:owner.id,name:u.name};
-  emit('summon',owner.name+' 召来 '+u.name,owner.id,[id],{owner:owner.id,skill,level,pos,hp,rule:'本房间有效；主人倒下即消散；仅进入尚未生成的行动队列。'});return u;
+  emit('summon',owner.name+' 召来 '+u.name,owner.id,[id],{owner:owner.id,skill,level,pos,hp,...(skill!=='sentinel'?{form:{id:skill,attack:form.attack,target:form.target,rule:'弩灵生命较低，以穿石箭优先后排，不消耗箭矢；后排空缺按原远程路线回退。'}}:{}),rule:'本房间有效；主人倒下即消散；仅进入尚未生成的行动队列。'});return u;
  }
  function awaken(u){if(!u.awakens||u.awakened||u.hp<=0||u.hp>u.maxHp/2)return;
   u.awakened=true;u.main=[row('wave','rear')];const saved=actionId;actionId=null;
@@ -148,6 +150,7 @@ export function simulate(c,options={}){
    else if(s.requiresGear&&!gearSupports(u.gear,s.requiresGear))reason='装备条件不满足';
    else if(s.kind==='heal'&&(healingBlock=healingBlockTrace(u)))reason=HEALING_BLOCK_REASON;
    else if(s.kind==='summon'&&summons.some(t=>t.owner===u.id&&t.hp>0))reason='已有存活召唤物';
+   else if(s.recall&&!summons.some(t=>t.owner===u.id&&t.hp>0))reason='没有自己的存活召唤物可召回';
    else if(u.mp<manaCost)reason='法力不足';
    else if(payment.resource&&stock[payment.resource]<payment.amount)reason='耗材耗尽';
    else if((reservation=reserveBlock(c,roomIndex,u,s,stock,payment)))reason='为第三场事件预留2符纸，尝试下一条指令';
@@ -162,9 +165,10 @@ export function simulate(c,options={}){
    const before=u.mp;u.mp-=manaCost;if(payment.resource)stock[payment.resource]-=payment.amount;used.add(key);roundUsed.set(key,round);
    const lv=skillLevel(u,r.skill),m=mean(u,r.skill),cast=++serial;actionId=roomIndex+':'+cast;
    emit('cast',u.name+' '+(interrupt?'中断普通指令，使用':'使用')+'「'+s.name+'」',u.id,targets.map(t=>t.id),{cast,skill:r.skill,skillLevel:lv,levelSources:skillBreakdown(u,r.skill),...(advancement?{advancement}:{}),primary:current(u,s.primary),secondary:current(u,s.secondary),mean:m,formula:'主属性 ×2 + 副属性 + 实时技能等级 ×2',mpBefore:before,mpAfter:u.mp,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:{id:payment.medium,name:CASTING_MEDIA[payment.medium].name,baseMana:payment.baseMana,manaDelta:CASTING_MEDIA[payment.medium].manaDelta,actualMana:payment.mana,resource:payment.resource,amount:payment.amount,rule:'只改变法力与符纸支付；效果、检定、装备、目标和指令节奏保持。'}}:{}),interrupt,...(Object.hasOwn(ROLE_TARGETS,r.target)?{targetPolicy:{requested:r.target,rule:'仅选择存活且拥有'+(r.target==='healer'?'治疗':'召唤')+'技能的敌人；多人符合时随机选一人，不要求当前资源充足。',selected:targets.map(t=>({id:t.id,name:t.name,pos:t.pos}))}}:{}),sources:effectTrace(u)});
-   if(s.kind==='summon')spawn(u,r.target);
+   if(s.kind==='summon')spawn(u,r.target,r.skill);
+   if(s.recall)removeSummons(u.id,'主人施放潮灵归还',{recall:true,skill:r.skill,rule:'仅召回本人的存活召唤物，占本次预备；不返还原召唤消耗，不影响其他主人。'});
    if(s.cleanse)for(const t of targets){const removed=cleansableEffects(t);t.effects=t.effects.filter(e=>!removed.includes(e));emit('cleanse',u.name+' 为 '+t.name+' 净化 '+removed.map(e=>e.component||e.name).join('、'),u.id,[t.id],{cast,skill:r.skill,removed:removed.map(e=>({effectId:e.id,skill:e.skill,name:e.name,component:e.component,stat:e.stat,value:e.value,source:e.source,sourceName:e.sourceName})),rule:'只移除本次实际记录的负面效果；不移除正面增益、不回滚此前检定、不提供后续免疫。'});}
-   if(s.kind==='buff'&&!s.cleanse)for(const t of targets){
+   if(s.kind==='buff'&&!s.cleanse&&!s.recall)for(const t of targets){
     const components=s.components||[{stat:s.stat,base:s.base,scale:s.scale,scope:s.scope,duration:s.duration,delay:0}];
     for(const [componentIndex,part] of components.entries()){
      const advancementBonus=advancementEffectBonus(u,r.skill,part.stat),v=Math.floor(part.base+m*part.scale)+advancementBonus,delay=part.delay||0,e={id:`${roomIndex}:${cast}:${t.id}:${componentIndex}`,skill:r.skill,name:s.name,component:part.label||s.name,source:u.id,sourceName:u.name,stat:part.stat,value:v,scope:part.scope,active:delay===0,activateTick:clock+delay,activateRound:round+delay,expires:part.scope==='rounds'?round+delay+part.duration:null,expiresTick:part.scope==='rounds'?clock+delay+part.duration:null};

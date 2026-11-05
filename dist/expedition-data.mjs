@@ -42,7 +42,9 @@ export const SKILLS={
  heal:{name:'草药救护',kind:'heal',primary:'int',secondary:'wil',cost:5,item:'herb',mode:'single',max:1,desc:'在自身行动点检查治疗阈值；触发后占用行动，不推进普通指令。'},
  cadence:{name:'蓄势合奏',kind:'buff',primary:'cha',secondary:'wil',cost:7,mode:'position',max:3,components:[{label:'抢拍',stat:'actions',base:1,scale:0,scope:'rounds',duration:0,delay:0},{label:'余韵',stat:'skill',base:3,scale:0.08,scope:'rounds',duration:1,delay:1}],desc:'同一次施放：本回合行动 +1；下一回合开始攻击技能等级提高，持续生效回合及再下一回合。所有组件结束前同名互斥。'},
  bulwark:{name:'延时护印',kind:'buff',primary:'int',secondary:'wil',cost:5,item:'rune',mode:'position',max:3,components:[{label:'符壳',stat:'armor',base:3,scale:0,scope:'rounds',duration:0,delay:0},{label:'护印展开',stat:'defenseSkill',base:4,scale:0.05,scope:'rounds',duration:1,delay:1}],desc:'当回合护甲 +3；下一回合起防御技能等级提高，持续两回合。延迟期间不占持续时间。'},
- sentinel:{name:'唤潮卫',kind:'summon',primary:'int',secondary:'wil',cost:10,item:'rune',mode:'position',max:1,desc:'召唤一名潮卫至指定位置，存续本房间。每位施法者最多一名存活召唤物；召唤物独立行动、可受击，主人倒下时消散。'},
+ tidearcher:{name:'唤潮弩灵',kind:'summon',primary:'int',secondary:'wil',cost:10,item:'rune',mode:'position',max:1,desc:'召唤弩灵至指定己方阵位，本房有效；基础24生命+每技能等级3生命，低于潮卫。独立以穿石箭优先敌方后排、无箭矢消耗，后排空缺按远程路线回退。普通召唤技能每位主人在所有形态间最多一只存活召唤物，不能叠召；主人倒下或房间结束会消散。入场只进入之后生成的行动队列。'},
+ recall:{name:'潮灵归还',kind:'buff',primary:'int',secondary:'wil',cost:2,mode:'self',max:1,recall:true,desc:'预备阶段花2法力召回自己当前存活的召唤物，占本次预备；不伤主人、不影响其他主人或其他队员，不返还原召唤法力/符纸。无存活召唤物免费跳过并检查后备。可用一次指令在后续回合换形态；不能在同一行动里召回并重召，后续重召可能因缺蓝或材料失败，不会自动回滚召回。行为和成本固定，培养不增加收益。'},
+ sentinel:{name:'唤潮卫',kind:'summon',primary:'int',secondary:'wil',cost:10,item:'rune',mode:'position',max:1,desc:'召唤一名潮卫至指定位置，存续本房间。普通召唤技能每位施法者在所有形态间最多一名存活召唤物；潮卫使用近战路线，召唤物独立行动、可受击，主人倒下时消散。'},
  shieldbash:{name:'盾缘重击',kind:'attack',type:'melee',primary:'str',secondary:'con',power:1.4,cost:3,mode:'single',max:1,requiresGear:'plate',ignoreArmor:3,desc:'需要携盾武器；力量/体质检定，单体近战，忽略最多3护甲。'},
  pierce:{name:'破甲重箭',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.45,cost:4,item:'arrow',mode:'single',max:1,requiresGear:'bow',ignoreArmor:4,desc:'需要弓具类装备；单体远程，优先指定位置，忽略最多4护甲。消耗1箭矢。'},
  lance:{name:'凝潮长枪',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:2,cost:9,item:'rune',mode:'single',max:1,requiresGear:'focus',desc:'需要法器类装备；高消耗单体法术，可优先后排。对单目标集中火力，失去群体覆盖。'},
@@ -60,7 +62,7 @@ const attrs=(str,con,int,dex,cha,agi,per,wil)=>({str,con,int,dex,cha,agi,per,wil
 const FOUNDERS=[
  {id:'a',name:'阿瑟',role:'守卫',mark:'盾',pos:'front',gear:'plate',attrs:attrs(12,16,5,11,6,8,9,12),skills:['strike','guard','shieldbash','rallyguard'],base:6},
  {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep'],base:6},
- {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt'],base:6},
+ {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt','tidearcher','recall'],base:6},
  {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse'],base:6},
  {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance','mindcall'],base:6},
  {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','shot','poultice','slowcare'],base:6}

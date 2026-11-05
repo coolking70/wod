@@ -1,0 +1,3787 @@
+{
+  "note": "48 bounded actual inputs: two existing routes × none/guardian/archer/shift × discovery101–102 and confirmation201–204. Normal new-guild assets, same per-route supplies/gear/training/ordinary commands; only tidecaller preparation changed. Form changes alter targets/actions and RNG flow, not a matched-roll damage counterfactual or global balance proof. No new route, reward or gifted asset.",
+  "cases": [
+    {
+      "route": "inquest",
+      "plan": "none",
+      "seed": 101,
+      "configFingerprint": "0b118c877cec754fbf59e0672df54885a00de00d45145730fa9a80cadebea44f",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 253,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 186,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casterMP": 61,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 21
+    },
+    {
+      "route": "inquest",
+      "plan": "none",
+      "seed": 102,
+      "configFingerprint": "aa619aa12ea667f0d7b7ede04eb004066170e98ba45e0bc849aba85f4e5daa0a",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 185,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casterMP": 61,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 19
+    },
+    {
+      "route": "inquest",
+      "plan": "none",
+      "seed": 201,
+      "configFingerprint": "d103eee9a3e82b3e04ae7520f0936a6775a872fbb16ac8d067a50eed8a26b427",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casterMP": 64,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 18
+    },
+    {
+      "route": "inquest",
+      "plan": "none",
+      "seed": 202,
+      "configFingerprint": "798c21f6a205d46207521a27f5d5181145b2a66898fb7422d8b34991f321bf68",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 189,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casterMP": 59,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 18
+    },
+    {
+      "route": "inquest",
+      "plan": "none",
+      "seed": 203,
+      "configFingerprint": "9f901f697779509e3e288cff062ef1c1534fb20d02679d3557029665d90b140e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 190,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casterMP": 64,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 19
+    },
+    {
+      "route": "inquest",
+      "plan": "none",
+      "seed": 204,
+      "configFingerprint": "9a96a3ac918caae3e233c887460cc051b81495171b963235a837d45d2129934f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 258,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casterMP": 60,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 19
+    },
+    {
+      "route": "inquest",
+      "plan": "guardian",
+      "seed": 101,
+      "configFingerprint": "6563e9af9013d8878d9fade7596dee36387cbffa909ea390f18d7eab4940ac66",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 246,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 159,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 40,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 23,
+      "petCasts": 8,
+      "ownerMana": 39
+    },
+    {
+      "route": "inquest",
+      "plan": "guardian",
+      "seed": 102,
+      "configFingerprint": "e119a70ff61cee53203ad0a7ebd367410b4dd81643463f43fe3daa6ad4299b89",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 246,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 158,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 39,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 27,
+      "petCasts": 8,
+      "ownerMana": 39
+    },
+    {
+      "route": "inquest",
+      "plan": "guardian",
+      "seed": 201,
+      "configFingerprint": "0f1150e3b942de284e918c2899d9b6235d9fa1cde2e607bd228f9c96bf3c6d46",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 227,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 165,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 46,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 1,
+      "petActualDamage": 11,
+      "petCasts": 6,
+      "ownerMana": 38
+    },
+    {
+      "route": "inquest",
+      "plan": "guardian",
+      "seed": 202,
+      "configFingerprint": "d80d3c81d72443a9955f237c61be264035b1edf91829aa294bcc2a92612b4a7d",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 258,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 170,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 43,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 22,
+      "petCasts": 8,
+      "ownerMana": 38
+    },
+    {
+      "route": "inquest",
+      "plan": "guardian",
+      "seed": 203,
+      "configFingerprint": "bb8e06ae30bfb966de7e748b27419085d72be49a4f9aea7f5f40427b60a45460",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 240,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 158,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 44,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 34,
+      "petCasts": 9,
+      "ownerMana": 38
+    },
+    {
+      "route": "inquest",
+      "plan": "guardian",
+      "seed": 204,
+      "configFingerprint": "43a37d7d6a32747da62c9ace4a6b1f91dd9738ed08951c1598d696a01f0d462f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 239,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 163,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 41,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 41,
+      "petCasts": 8,
+      "ownerMana": 38
+    },
+    {
+      "route": "inquest",
+      "plan": "archer",
+      "seed": 101,
+      "configFingerprint": "8d6de4b5e01346d86a31ebcf8a8bec07010234ec273145870e8aa6c9dd61868d",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 262,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 192,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "casterMP": 44,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 144,
+      "petCasts": 7,
+      "ownerMana": 36
+    },
+    {
+      "route": "inquest",
+      "plan": "archer",
+      "seed": 102,
+      "configFingerprint": "7e7e100f59b0ebb376d1180ae3b962e0ba971b7c36259dd3e174671c4ea84bd1",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 265,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 188,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 1,
+        "arrow": 0
+      },
+      "casterMP": 45,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 116,
+      "petCasts": 7,
+      "ownerMana": 37
+    },
+    {
+      "route": "inquest",
+      "plan": "archer",
+      "seed": 201,
+      "configFingerprint": "25eac71b5aebf0cfd8699f98566dc363689bee04884061f0759865cb5bf157a9",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 255,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 182,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "casterMP": 41,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 203,
+      "petCasts": 8,
+      "ownerMana": 37
+    },
+    {
+      "route": "inquest",
+      "plan": "archer",
+      "seed": 202,
+      "configFingerprint": "069bf6d4f7a5bea5def2780eec782a5c816ff720f3ee086ff1d61d9d98dd5696",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 257,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 639,
+          "mp": 182,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "casterMP": 44,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 137,
+      "petCasts": 7,
+      "ownerMana": 36
+    },
+    {
+      "route": "inquest",
+      "plan": "archer",
+      "seed": 203,
+      "configFingerprint": "11999588e9da8c2215d804453c5ca39a28ce3ca36b447b452492cb0f665fea66",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 253,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 184,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "casterMP": 46,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 217,
+      "petCasts": 9,
+      "ownerMana": 37
+    },
+    {
+      "route": "inquest",
+      "plan": "archer",
+      "seed": 204,
+      "configFingerprint": "1e7d660c9dd41edbd2359e398c6a618305bdb95e09c5e263fbdb6422453bd0bd",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 261,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 191,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "casterMP": 43,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 166,
+      "petCasts": 7,
+      "ownerMana": 37
+    },
+    {
+      "route": "inquest",
+      "plan": "shift",
+      "seed": 101,
+      "configFingerprint": "8460ba7a2c2e2bb40122dbd2a13deadc3f82222030587fe17163b45f069acbf0",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 228,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 156,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 29,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 2,
+      "petDeaths": 0,
+      "petActualDamage": 43,
+      "petCasts": 4,
+      "ownerMana": 53
+    },
+    {
+      "route": "inquest",
+      "plan": "shift",
+      "seed": 102,
+      "configFingerprint": "89a0544df21d27b99bcf75533559726cd271b66c56d993b9aa9710c4d53fcaa2",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 232,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 155,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 28,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 2,
+      "petDeaths": 0,
+      "petActualDamage": 53,
+      "petCasts": 4,
+      "ownerMana": 54
+    },
+    {
+      "route": "inquest",
+      "plan": "shift",
+      "seed": 201,
+      "configFingerprint": "b1d1130693a3a47953e13497c9f16d37b597ef7eb56ae91f28988b8de661e491",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 240,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 167,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 26,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 2,
+      "petDeaths": 0,
+      "petActualDamage": 22,
+      "petCasts": 4,
+      "ownerMana": 52
+    },
+    {
+      "route": "inquest",
+      "plan": "shift",
+      "seed": 202,
+      "configFingerprint": "eca5537878877e17d51fc08ca328bcd2ef438f606011549f895b7fe2516092ed",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 240,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 159,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 29,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 2,
+      "petDeaths": 0,
+      "petActualDamage": 4,
+      "petCasts": 3,
+      "ownerMana": 52
+    },
+    {
+      "route": "inquest",
+      "plan": "shift",
+      "seed": 203,
+      "configFingerprint": "c64a0e2414322f7b551cbb5f348a7191bb13f2b091deebc8e9303e2f2bec66fb",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 232,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 163,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 29,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 2,
+      "petDeaths": 0,
+      "petActualDamage": 19,
+      "petCasts": 4,
+      "ownerMana": 52
+    },
+    {
+      "route": "inquest",
+      "plan": "shift",
+      "seed": 204,
+      "configFingerprint": "8a1957e423e413d12e2957409b21803237e266fc64cacb95dfc3f766f7468281",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 236,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 175,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casterMP": 31,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        }
+      ],
+      "recalls": 2,
+      "petDeaths": 0,
+      "petActualDamage": 43,
+      "petCasts": 4,
+      "ownerMana": 51
+    },
+    {
+      "route": "vigil",
+      "plan": "none",
+      "seed": 101,
+      "configFingerprint": "567e70960a48519b27fe50fc87b57efecd950355f2f2fa18f886b91621e743cf",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 300,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 219,
+          "supplies": {
+            "herb": 15,
+            "rune": 13,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 497,
+          "mp": 194,
+          "supplies": {
+            "herb": 15,
+            "rune": 7,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 7,
+        "arrow": 7
+      },
+      "casterMP": 37,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 60
+    },
+    {
+      "route": "vigil",
+      "plan": "none",
+      "seed": 102,
+      "configFingerprint": "d20c5bae3c6f95d2838346a2bae4b928f6e11196fd67ebac4ae5dad6a7b555fa",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 300,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 236,
+          "supplies": {
+            "herb": 15,
+            "rune": 14,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 205,
+          "supplies": {
+            "herb": 14,
+            "rune": 8,
+            "arrow": 8
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 8,
+        "arrow": 8
+      },
+      "casterMP": 40,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 60
+    },
+    {
+      "route": "vigil",
+      "plan": "none",
+      "seed": 201,
+      "configFingerprint": "e13eb001cb374064cad3df15f787765474379b2d25ebbc514f0587ef78438096",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 298,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 221,
+          "supplies": {
+            "herb": 15,
+            "rune": 14,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 188,
+          "supplies": {
+            "herb": 14,
+            "rune": 8,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 8,
+        "arrow": 7
+      },
+      "casterMP": 36,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 60
+    },
+    {
+      "route": "vigil",
+      "plan": "none",
+      "seed": 202,
+      "configFingerprint": "397d5201c93bc3010ace6550b12840e31d18a218710c3176c446baff32358e3e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 299,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 223,
+          "supplies": {
+            "herb": 15,
+            "rune": 14,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 190,
+          "supplies": {
+            "herb": 14,
+            "rune": 8,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 8,
+        "arrow": 7
+      },
+      "casterMP": 37,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 60
+    },
+    {
+      "route": "vigil",
+      "plan": "none",
+      "seed": 203,
+      "configFingerprint": "d5daf55359ac4bafd3ad0c3bc8521d694c3b5f2a7179e462fcdcdce0393b5bbf",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 292,
+          "supplies": {
+            "herb": 15,
+            "rune": 17,
+            "arrow": 12
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 215,
+          "supplies": {
+            "herb": 15,
+            "rune": 13,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 178,
+          "supplies": {
+            "herb": 12,
+            "rune": 7,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 12,
+        "rune": 7,
+        "arrow": 7
+      },
+      "casterMP": 37,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 60
+    },
+    {
+      "route": "vigil",
+      "plan": "none",
+      "seed": 204,
+      "configFingerprint": "9b4e27dbb6e0a6ad112e53e3242c6472c0f961c163798dca9608697cc69d5b1a",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 297,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 220,
+          "supplies": {
+            "herb": 15,
+            "rune": 14,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 509,
+          "mp": 191,
+          "supplies": {
+            "herb": 15,
+            "rune": 8,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 8,
+        "arrow": 7
+      },
+      "casterMP": 36,
+      "summons": [],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 0,
+      "petCasts": 0,
+      "ownerMana": 60
+    },
+    {
+      "route": "vigil",
+      "plan": "guardian",
+      "seed": 101,
+      "configFingerprint": "47cda9e54a9fb3a46f856310f068df261769d41bce556ca08fc4224a3be4566c",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 285,
+          "supplies": {
+            "herb": 15,
+            "rune": 16,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 219,
+          "supplies": {
+            "herb": 14,
+            "rune": 11,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 171,
+          "supplies": {
+            "herb": 12,
+            "rune": 3,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 12,
+        "rune": 3,
+        "arrow": 7
+      },
+      "casterMP": 44,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 60,
+      "petCasts": 9,
+      "ownerMana": 78
+    },
+    {
+      "route": "vigil",
+      "plan": "guardian",
+      "seed": 102,
+      "configFingerprint": "bab6f55ff184d9d99298c6ea6520d66ee9580fd821ef049b59f7d2e95d4bd4ce",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 283,
+          "supplies": {
+            "herb": 14,
+            "rune": 16,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 217,
+          "supplies": {
+            "herb": 14,
+            "rune": 11,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 552,
+          "mp": 155,
+          "supplies": {
+            "herb": 11,
+            "rune": 2,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 2,
+        "arrow": 7
+      },
+      "casterMP": 36,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 58,
+      "petCasts": 10,
+      "ownerMana": 84
+    },
+    {
+      "route": "vigil",
+      "plan": "guardian",
+      "seed": 201,
+      "configFingerprint": "d51a48abeee70aa11f93e402741beb5cca98cd1c65721b5d616ae673229c06b0",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 281,
+          "supplies": {
+            "herb": 14,
+            "rune": 16,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 216,
+          "supplies": {
+            "herb": 14,
+            "rune": 11,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 534,
+          "mp": 172,
+          "supplies": {
+            "herb": 13,
+            "rune": 3,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 13,
+        "rune": 3,
+        "arrow": 7
+      },
+      "casterMP": 42,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 82,
+      "petCasts": 9,
+      "ownerMana": 78
+    },
+    {
+      "route": "vigil",
+      "plan": "guardian",
+      "seed": 202,
+      "configFingerprint": "50e38f0b66b627e9b549909330cef632bcee4d74fbd0c22400f7e71d40a58c87",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 282,
+          "supplies": {
+            "herb": 14,
+            "rune": 16,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 221,
+          "supplies": {
+            "herb": 14,
+            "rune": 11,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 190,
+          "supplies": {
+            "herb": 13,
+            "rune": 2,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 13,
+        "rune": 2,
+        "arrow": 7
+      },
+      "casterMP": 36,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 58,
+      "petCasts": 11,
+      "ownerMana": 84
+    },
+    {
+      "route": "vigil",
+      "plan": "guardian",
+      "seed": 203,
+      "configFingerprint": "52d06ecd9e34fc1d7e9b27c4630118dc37cc5b980dd29fb71f7643da54356819",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 287,
+          "supplies": {
+            "herb": 15,
+            "rune": 16,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 223,
+          "supplies": {
+            "herb": 14,
+            "rune": 11,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 178,
+          "supplies": {
+            "herb": 12,
+            "rune": 3,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 12,
+        "rune": 3,
+        "arrow": 7
+      },
+      "casterMP": 44,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 56,
+      "petCasts": 9,
+      "ownerMana": 78
+    },
+    {
+      "route": "vigil",
+      "plan": "guardian",
+      "seed": 204,
+      "configFingerprint": "3bf5b3e1d73bb9989bccbc015cd8df42a4ee7c35cf84e1289dea68aafa4e35e6",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 270,
+          "supplies": {
+            "herb": 14,
+            "rune": 14,
+            "arrow": 12
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 221,
+          "supplies": {
+            "herb": 14,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 166,
+          "supplies": {
+            "herb": 11,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 1,
+        "arrow": 7
+      },
+      "casterMP": 34,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 63,
+      "petCasts": 10,
+      "ownerMana": 90
+    },
+    {
+      "route": "vigil",
+      "plan": "archer",
+      "seed": 101,
+      "configFingerprint": "80e3f8b59ae2b7c47447e8541b46cc0b1a90414e593bd4c892d0043108495b07",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 292,
+          "supplies": {
+            "herb": 15,
+            "rune": 17,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 238,
+          "supplies": {
+            "herb": 15,
+            "rune": 12,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 542,
+          "mp": 194,
+          "supplies": {
+            "herb": 14,
+            "rune": 5,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 5,
+        "arrow": 7
+      },
+      "casterMP": 35,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 2,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 4,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 1,
+      "petActualDamage": 221,
+      "petCasts": 10,
+      "ownerMana": 88
+    },
+    {
+      "route": "vigil",
+      "plan": "archer",
+      "seed": 102,
+      "configFingerprint": "3a9aa64b4953df8e7c5c52ad99763eba632e421fe95bc4e874d7f62737e7af43",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 295,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 215,
+          "supplies": {
+            "herb": 15,
+            "rune": 13,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 177,
+          "supplies": {
+            "herb": 13,
+            "rune": 7,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 13,
+        "rune": 7,
+        "arrow": 7
+      },
+      "casterMP": 20,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 206,
+      "petCasts": 8,
+      "ownerMana": 78
+    },
+    {
+      "route": "vigil",
+      "plan": "archer",
+      "seed": 201,
+      "configFingerprint": "96f0bb3a92fb5017420fcbd14be8142bcc648be709b7fa0e1595889cb15ea575",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 296,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 222,
+          "supplies": {
+            "herb": 15,
+            "rune": 13,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 189,
+          "supplies": {
+            "herb": 15,
+            "rune": 7,
+            "arrow": 8
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 7,
+        "arrow": 8
+      },
+      "casterMP": 22,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 1,
+      "petActualDamage": 246,
+      "petCasts": 9,
+      "ownerMana": 78
+    },
+    {
+      "route": "vigil",
+      "plan": "archer",
+      "seed": 202,
+      "configFingerprint": "5536fc80a33c3cb72c72380e550fdc244e97b7d1abb0018c0d170a8420ee28ea",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 297,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 222,
+          "supplies": {
+            "herb": 15,
+            "rune": 13,
+            "arrow": 11
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 506,
+          "mp": 185,
+          "supplies": {
+            "herb": 13,
+            "rune": 6,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 13,
+        "rune": 6,
+        "arrow": 7
+      },
+      "casterMP": 35,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 2,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 4,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 1,
+      "petActualDamage": 155,
+      "petCasts": 8,
+      "ownerMana": 88
+    },
+    {
+      "route": "vigil",
+      "plan": "archer",
+      "seed": 203,
+      "configFingerprint": "8b819add6eaf9b04d0ce05803e8f3e5602d83a6612285a75c83bb452cc323488",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 284,
+          "supplies": {
+            "herb": 15,
+            "rune": 15,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 228,
+          "supplies": {
+            "herb": 15,
+            "rune": 11,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 191,
+          "supplies": {
+            "herb": 14,
+            "rune": 5,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 5,
+        "arrow": 7
+      },
+      "casterMP": 37,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 284,
+      "petCasts": 11,
+      "ownerMana": 84
+    },
+    {
+      "route": "vigil",
+      "plan": "archer",
+      "seed": 204,
+      "configFingerprint": "cfa37fe4d29af506a69cddcfa70d99d04c7048348e1c765a2fe7496ee80cdfe6",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 299,
+          "supplies": {
+            "herb": 15,
+            "rune": 18,
+            "arrow": 14
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 221,
+          "supplies": {
+            "herb": 15,
+            "rune": 13,
+            "arrow": 11
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 189,
+          "supplies": {
+            "herb": 15,
+            "rune": 7,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 7,
+        "arrow": 7
+      },
+      "casterMP": 19,
+      "summons": [
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "tidearcher",
+          "round": 1,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 0,
+      "petDeaths": 0,
+      "petActualDamage": 205,
+      "petCasts": 8,
+      "ownerMana": 78
+    },
+    {
+      "route": "vigil",
+      "plan": "shift",
+      "seed": 101,
+      "configFingerprint": "c595d52c10a47902adb4c93c24d25f7971bf7d000691bdcc409eaf9a5f11e262",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 269,
+          "supplies": {
+            "herb": 15,
+            "rune": 14,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 200,
+          "supplies": {
+            "herb": 15,
+            "rune": 9,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 147,
+          "supplies": {
+            "herb": 15,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 1,
+        "arrow": 7
+      },
+      "casterMP": 7,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 3,
+      "petDeaths": 1,
+      "petActualDamage": 95,
+      "petCasts": 7,
+      "ownerMana": 114
+    },
+    {
+      "route": "vigil",
+      "plan": "shift",
+      "seed": 102,
+      "configFingerprint": "00c494f02ddbde09baa5c8005e934fa02c6e97e569f88390840d882dc39f8567",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 269,
+          "supplies": {
+            "herb": 14,
+            "rune": 15,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 209,
+          "supplies": {
+            "herb": 13,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 142,
+          "supplies": {
+            "herb": 11,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 1,
+        "arrow": 7
+      },
+      "casterMP": 5,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 3,
+      "petDeaths": 0,
+      "petActualDamage": 111,
+      "petCasts": 7,
+      "ownerMana": 120
+    },
+    {
+      "route": "vigil",
+      "plan": "shift",
+      "seed": 201,
+      "configFingerprint": "58fda8c4c7813b95e825a97aa717d7d8bdd260da0fef5973930fbfcc547ded5e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 275,
+          "supplies": {
+            "herb": 15,
+            "rune": 15,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 191,
+          "supplies": {
+            "herb": 15,
+            "rune": 9,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 143,
+          "supplies": {
+            "herb": 14,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 1,
+        "arrow": 7
+      },
+      "casterMP": 5,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 3,
+      "petDeaths": 0,
+      "petActualDamage": 103,
+      "petCasts": 7,
+      "ownerMana": 114
+    },
+    {
+      "route": "vigil",
+      "plan": "shift",
+      "seed": 202,
+      "configFingerprint": "24fbad866238d501b6f3ceee56a1aeaa1f5ade69b01a642e85bbcb22690c2f6b",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 275,
+          "supplies": {
+            "herb": 14,
+            "rune": 16,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 552,
+          "mp": 190,
+          "supplies": {
+            "herb": 14,
+            "rune": 9,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 494,
+          "mp": 135,
+          "supplies": {
+            "herb": 14,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 1,
+        "arrow": 7
+      },
+      "casterMP": 5,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 3,
+      "petDeaths": 0,
+      "petActualDamage": 112,
+      "petCasts": 7,
+      "ownerMana": 114
+    },
+    {
+      "route": "vigil",
+      "plan": "shift",
+      "seed": 203,
+      "configFingerprint": "49e87c39c812f682b104626bcb58ebb504618fee72d74c5b6626801b408fc18f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 281,
+          "supplies": {
+            "herb": 15,
+            "rune": 16,
+            "arrow": 13
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 191,
+          "supplies": {
+            "herb": 14,
+            "rune": 9,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 125,
+          "supplies": {
+            "herb": 12,
+            "rune": 1,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 12,
+        "rune": 1,
+        "arrow": 7
+      },
+      "casterMP": 5,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 3,
+      "petDeaths": 0,
+      "petActualDamage": 153,
+      "petCasts": 8,
+      "ownerMana": 114
+    },
+    {
+      "route": "vigil",
+      "plan": "shift",
+      "seed": 204,
+      "configFingerprint": "17c66d582870043a4ed98b41b0ab00d93fcd89595ac20fd6f1a365a9421e9705",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 254,
+          "supplies": {
+            "herb": 15,
+            "rune": 13,
+            "arrow": 12
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 198,
+          "supplies": {
+            "herb": 15,
+            "rune": 8,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 524,
+          "mp": 145,
+          "supplies": {
+            "herb": 14,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 0,
+        "arrow": 7
+      },
+      "casterMP": 5,
+      "summons": [
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 0,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 0,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 1,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 1,
+          "hp": 42
+        },
+        {
+          "skill": "sentinel",
+          "round": 1,
+          "room": 2,
+          "hp": 60
+        },
+        {
+          "skill": "tidearcher",
+          "round": 3,
+          "room": 2,
+          "hp": 42
+        }
+      ],
+      "recalls": 3,
+      "petDeaths": 0,
+      "petActualDamage": 128,
+      "petCasts": 9,
+      "ownerMana": 115
+    }
+  ],
+  "summary": {
+    "runs": 48,
+    "uniqueBattleInputs": 48,
+    "failures": 0,
+    "injured": 0
+  },
+  "normal": {
+    "seed": 1,
+    "plan": "archer",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 640,
+        "mp": 254,
+        "supplies": {
+          "herb": 7,
+          "rune": 5,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 629,
+        "mp": 187,
+        "supplies": {
+          "herb": 7,
+          "rune": 1,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 7,
+      "rune": 1,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 140,
+      "xp": 60,
+      "firstClear": true,
+      "loot": [
+        "calmribbon"
+      ]
+    },
+    "forms": [
+      {
+        "skill": "tidearcher",
+        "round": 1,
+        "room": 0,
+        "hp": 42
+      },
+      {
+        "skill": "tidearcher",
+        "round": 1,
+        "room": 1,
+        "hp": 42
+      }
+    ],
+    "recalls": []
+  },
+  "repeat": {
+    "seed": 2,
+    "plan": "shift",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 579,
+        "mp": 231,
+        "supplies": {
+          "herb": 6,
+          "rune": 3,
+          "arrow": 1
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 610,
+        "mp": 149,
+        "supplies": {
+          "herb": 3,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 3,
+      "rune": 0,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 90,
+      "xp": 40,
+      "firstClear": false,
+      "loot": [
+        "calmribbon"
+      ]
+    },
+    "forms": [
+      {
+        "skill": "sentinel",
+        "round": 1,
+        "room": 0,
+        "hp": 60
+      },
+      {
+        "skill": "tidearcher",
+        "round": 3,
+        "room": 0,
+        "hp": 45
+      },
+      {
+        "skill": "sentinel",
+        "round": 1,
+        "room": 1,
+        "hp": 60
+      }
+    ],
+    "recalls": [
+      {
+        "round": 2,
+        "room": 0
+      },
+      {
+        "round": 2,
+        "room": 1
+      }
+    ]
+  },
+  "mobile": {
+    "seed": 3,
+    "plan": "archer in own front",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 584,
+        "mp": 245,
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 588,
+        "mp": 161,
+        "supplies": {
+          "herb": 1,
+          "rune": 0,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 1,
+      "rune": 0,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 90,
+      "xp": 40,
+      "firstClear": false,
+      "loot": [
+        "calmribbon"
+      ]
+    },
+    "forms": [
+      {
+        "skill": "tidearcher",
+        "round": 1,
+        "room": 0,
+        "hp": 45
+      },
+      {
+        "skill": "tidearcher",
+        "round": 1,
+        "room": 1,
+        "hp": 45
+      }
+    ],
+    "recalls": []
+  },
+  "unchanged": {
+    "reference": "868ef2595cfe90105bc1fe119263188098061c00",
+    "count": 34,
+    "rawFullEqual": false,
+    "assertedAvailableSkills": {
+      "tidearcher": 6,
+      "recall": 6
+    },
+    "otherFieldsExcluded": [],
+    "rows": [
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equalAfterAssertedAvailableSkills": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equalAfterAssertedAvailableSkills": true
+      }
+    ]
+  }
+}

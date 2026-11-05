@@ -15,7 +15,7 @@ export function supportEvidence(report){
  const rooms=report.rooms.map((r,i)=>({index:i,roomId:r.id||roomsFor(report.config)[i]?.id||null,name:r.name,casts:[],skips:[]}));
  const casts=new Map(),origins=new Map(),ambiguous=new Set(),seenUses=new Set();let unlinkedReferences=0;
  report.events.forEach((e,index)=>{
-  if(!ids.has(e.actor)||(SKILLS[e.detail?.skill]?.kind!=='buff'||SKILLS[e.detail?.skill]?.cleanse)||!rooms[e.roomIndex])return;
+  if(!ids.has(e.actor)||(SKILLS[e.detail?.skill]?.kind!=='buff'||SKILLS[e.detail?.skill]?.cleanse||SKILLS[e.detail?.skill]?.recall)||!rooms[e.roomIndex])return;
   if(e.type==='cast'){
    const d=e.detail,c={eventId:e.id,index,roomIndex:e.roomIndex,actor:e.actor,name:name(e.actor),skill:d.skill,round:e.round,mana:Number.isFinite(d.mpBefore)&&Number.isFinite(d.mpAfter)?d.mpBefore-d.mpAfter:null,item:d.item||null,...(d.medium?{itemAmount:d.itemAmount,medium:d.medium}:{}),targets:[...new Set(e.targets)],effects:[],uses:[]};
    rooms[e.roomIndex].casts.push(c);const k=key(e.roomIndex,e.actor,d.cast);if(!casts.has(k))casts.set(k,[]);casts.get(k).push(c);
@@ -46,7 +46,7 @@ export function supportEvidence(report){
  report.events.forEach((e,index)=>{
   const d=e.detail||{};
   // Attack casts are represented by their real per-target checks, not counted twice.
-  if(e.type==='cast'&&SKILLS[d.skill]?.kind!=='attack')record(e,index,e.actor,d.sources,'cast',stat=>skillWeight(d.skill,stat),d.mean);
+  if(e.type==='cast'&&SKILLS[d.skill]?.kind!=='attack'&&!SKILLS[d.skill]?.recall)record(e,index,e.actor,d.sources,'cast',stat=>skillWeight(d.skill,stat),d.mean);
   if(e.type==='attack'){
    record(e,index,e.actor,d.sources,'attack',stat=>skillWeight(d.skill,stat),d.attackMean);
    record(e,index,e.targets[0],d.targetSources,'defense',stat=>defenseWeight(d.defenseProfile,stat),d.defenseMean);
