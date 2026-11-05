@@ -1,3 +1,4 @@
+import {validateObjective} from './expedition-goal-data.mjs';
 import {manaRecipients,manaTransferAmount,MANA_TRANSFER_RULE} from './expedition-mana-transfer.mjs';
 import {validateStockFloor,stockFloorCheck,STOCK_NAMES} from './expedition-stock-floor.mjs';
 import {CORROSION,corrosionOn,corrosionTicks,corrosionSource} from './expedition-corrosion.mjs';
@@ -32,6 +33,7 @@ function validatePlan(h,t){
  for(const type of Object.keys(DEFENSE_TYPES))if(!DEFENSES[h.defenses[type]]?.types.includes(type))throw Error('防御技能与攻击类型不匹配');
 }
 export function validate(c){
+ validateObjective(c);
  if(c?.version!==VERSION||!Number.isInteger(c.seed)||c.seed<1||c.seed>999999)throw Error('配置版本或种子无效');
  if(!Array.isArray(c.heroes)||c.heroes.length!==6||new Set(c.heroes.map(h=>h.id)).size!==6)throw Error('必须包含 6 名不同队员');
  if((c.expedition==='harbor'||c.harbor!==undefined)&&!validHarborPlan(c.harbor))throw Error('港口分支策略无效');

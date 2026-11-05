@@ -1,3 +1,5 @@
+import {bookProof} from './expedition-book.mjs';
+import {GOALS} from './expedition-goal-data.mjs';
 import {ADVENTURES} from './expedition-adventure.mjs';
 import {newGuild,migrateGuild,validateGuild,pendingReward,claim,GUILD_KEY} from './expedition-guild.mjs';
 import {trainingInvestment} from './expedition-training.mjs';
@@ -29,6 +31,7 @@ export function reportHandoff(g,origin,report){
  validateGuild(g);const otherPending=g.pending?.id||null;
  if(origin?.rehearsal||origin?.source==='rehearsal')return {status:'rehearsal',title:'试演战报 · 未正式出征',text:'没有支付培养草案、编入队伍或发放奖励；需要回营明确应用和正式出征。',otherPending};
  if(!origin?.source||origin.source==='experiment')return {status:'experiment',title:'实验战报 · 不发成长奖励',text:'这次试跑不写入公会履历。可以回到正式出征核对，以实际公会资产出发。',otherPending};
+ if(origin.source==='record'){try{const p=bookProof(g,origin.route,origin.goal);if(p.id===origin.id&&origin.signature===JSON.stringify(p)&&matches(p,report))return {status:'recorded',title:'攻略首次达成 · '+GOALS.find(x=>x.id===origin.goal).name,text:'第'+p.id+'次方案按当前规则重演；首次指标保留，不发奖励、不修改攻略。',otherPending};}catch{}return {status:'stale',title:'攻略来源已变化',text:'请回营重新打开攻略记录；当前战报不能领取。',otherPending};}
  const record=g.history.find(r=>r.id===origin.id);
  if(['pending','history'].includes(origin.source)&&Number.isSafeInteger(origin.id)&&matches(record,report))return {status:'claimed',title:(origin.source==='history'?'历史重演 · ':'')+'第'+origin.id+'次正式远征 · 已领取',text:origin.source==='history'?'历史按当前规则重演，收益按原已领取记录显示，不再次发奖。':'下方是这次已经到账的收益，不是再次可领的奖励。',receipt:record,otherPending};
  if(origin.source==='pending'&&g.pending?.id===origin.id&&origin.signature===JSON.stringify(g.pending)&&matches(g.pending,report))return {status:'pending',title:'第'+origin.id+'次正式远征 · 待领取',text:'出征已记录，金币、经验与装备尚未入账。可先复盘，再领取归营。',receipt:pendingReward(g),otherPending:null};

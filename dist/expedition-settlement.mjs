@@ -1,11 +1,8 @@
 import {HOSPICE_GOALS,contractResult} from './expedition-contract.mjs';
 // Read-only projections of recorded outcomes; no simulation or random draws.
 export const SUPPLY_NAMES={herb:'药草',rune:'符纸',arrow:'箭矢'};
-export const GOALS=[
- {id:'clear',name:'完成远征',rule:'肃清本路线全部房间。'},
- {id:'survive',name:'全员归航',rule:'完成远征，且六名队员全部存活。'},
- {id:'reserve',name:'留有余力',rule:'完成远征，且至少带回2符纸与2箭矢。'}
-];
+export {GOALS} from './expedition-goal-data.mjs';
+import {GOALS} from './expedition-goal-data.mjs';
 export function settlementGoals(report){
  const values={clear:report.won,survive:report.won&&report.party.filter(u=>u.hp>0).length===6,reserve:report.won&&report.supplies.rune>=2&&report.supplies.arrow>=2};
  const contract=contractResult(report);return [...GOALS.map(g=>({...g,done:Boolean(values[g.id])})),...(contract?HOSPICE_GOALS.map(g=>({...g,done:contract[g.id]})):[])];

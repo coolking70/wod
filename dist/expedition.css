@@ -118,3 +118,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .command .casting-media input{width:84px;max-width:100%;min-width:0}
 
 .adventure-group{grid-column:1/-1;min-width:0}.adventure-group-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.camp-cycle .bar{flex-wrap:wrap}.cycle-receipt,.handoff-reward{padding:12px;background:#10212a;border-left:3px solid var(--gold)}@media(max-width:700px){.adventure-group-cards{grid-template-columns:1fr}.camp-cycle .bar button{max-width:100%}}
+
+.book-goals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.book-goals article,.objective-result{border:1px solid #516574;padding:12px;border-radius:8px}.book-route{margin:16px 0}.book-proof{color:#a6d6b1}.objective-result small{display:block}@media(max-width:900px){.book-goals{grid-template-columns:1fr}}

@@ -1,3 +1,4 @@
+import {GOALS} from './expedition-goal-data.mjs';
 import {stockFloorLabel} from './expedition-stock-floor.mjs';
 import {mediumLabel} from './expedition-media-data.mjs';
 import {shoalsChartId} from './expedition-shoals.mjs';
@@ -54,6 +55,7 @@ export function reviewReport(report){
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
 const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
+ if(key==='objective')return GOALS.find(g=>g.id===value)?.name||'自由探索';
  if(key==='courierPass')return COURIER_PASSES[value];
  if(key==='foundryFlow')return value==='cooling-1'?'启用潮渠引流':'保留原出口';
  if(key==='advancement'&&!value)return '未选择';
@@ -83,6 +85,7 @@ export function configurationChanges(a,b){
  if(a.expedition==='foundry'||b.expedition==='foundry'){compare('铸库第二场通路','foundryApproach',foundryApproach(a),foundryApproach(b));compare('铸库通路出口','foundryFlow',a.foundryFlow,b.foundryFlow);}
  compare('回廊救援策略','rescueApproach',a.rescueApproach,b.rescueApproach);
  compare('沉钟机关策略','bellApproach',a.bellApproach,b.bellApproach);
+ if(a.objective||b.objective)compare('攻略目标','objective',a.objective,b.objective);
  compare('远征路线','expedition',a.expedition,b.expedition);compare('种子','seed',a.seed,b.seed);compare('默认协作顺序','prepOrder',a.prepOrder,b.prepOrder);
  for(const key of ['herb','rune','arrow'])compare({herb:'药草',rune:'符纸',arrow:'箭矢'}[key],key,a.supplies[key],b.supplies[key]);
  for(const room of roomLabels)compare(room.name+' / 协作顺序','roomOrder',a.roomOrders[room.id],b.roomOrders[room.id]);

@@ -1,0 +1,380 @@
+{
+  "normal": [
+    {
+      "seed": 1,
+      "goal": {
+        "id": "reserve",
+        "met": false,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 14,
+          "alive": 6,
+          "herb": 9,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "remedybag"
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "goal": {
+        "id": "reserve",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 13,
+          "alive": 6,
+          "herb": 10,
+          "rune": 6,
+          "arrow": 9
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 100,
+        "xp": 40,
+        "firstClear": false,
+        "loot": [
+          "votivelute"
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "goal": {
+        "id": "clear",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 15,
+          "alive": 6,
+          "herb": 10,
+          "rune": 6,
+          "arrow": 9
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 100,
+        "xp": 40,
+        "firstClear": false,
+        "loot": [
+          "remedybag"
+        ]
+      }
+    },
+    {
+      "seed": 4,
+      "goal": {
+        "id": "survive",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 14,
+          "alive": 6,
+          "herb": 10,
+          "rune": 6,
+          "arrow": 9
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 100,
+        "xp": 40,
+        "firstClear": false,
+        "loot": [
+          "remedybag"
+        ]
+      }
+    },
+    {
+      "seed": 5,
+      "goal": {
+        "id": "reserve",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 14,
+          "alive": 6,
+          "herb": 9,
+          "rune": 6,
+          "arrow": 9
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 100,
+        "xp": 40,
+        "firstClear": false,
+        "loot": [
+          "wardpendant"
+        ]
+      }
+    }
+  ],
+  "final": {
+    "gold": 540,
+    "hero": "a",
+    "progress": {
+      "done": 3,
+      "total": 60
+    }
+  },
+  "aged": {
+    "gold": 1340,
+    "history": [
+      25,
+      24,
+      23,
+      22,
+      21,
+      20,
+      19,
+      18,
+      17,
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      7,
+      6
+    ],
+    "proof": 2
+  },
+  "unchanged": {
+    "reference": "1f9df35d49d29d99b087d79b81382214a2f682e3",
+    "count": 40,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  },
+  "objectivePairs": {
+    "count": 6,
+    "onlyExpectedDifference": "config.objective"
+  }
+}
