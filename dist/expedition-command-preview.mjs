@@ -1,3 +1,4 @@
+import {roleTargetCandidates} from './expedition-target-check.mjs';
 import {clone,SKILLS,HEROES,roomsFor,resolveHeroPlan,gearSupports,gearRequirementName,POS} from './expedition-data.mjs';
 import {applyAdvancementAsset,skillManaCost} from './expedition-advancement-data.mjs';
 import {isAdvanced} from './expedition-growth.mjs';
@@ -17,7 +18,7 @@ export function companionPreview(g,tactics,id,mode,roomId=''){
   if(s.item&&config.supplies[s.item]===0)warnings.push('出发补给中此耗材为0');
   if(s.kind==='buff')candidates=chooseTargets(actor,party,s,r.target).map(u=>u.name);
   if(s.kind==='attack'){
-   if(['healer','summoner'].includes(r.target))candidates=enemies.filter(u=>u.skills?.[r.target==='healer'?'heal':'sentinel']!==undefined&&u.hp>0).map(u=>u.name);
+   if(['healer','summoner'].includes(r.target))candidates=roleTargetCandidates(enemies,r.target).map(u=>u.name);
    else {const chosen=chooseTargets(actor,[...party,...enemies],s,r.target);candidates=(s.mode==='all'?chosen:enemies.filter(u=>u.pos===chosen[0]?.pos&&u.hp>0)).map(u=>u.name);}
    if(!candidates.length)warnings.push('本房初始敌人无此目标，将检查下一条指令');
   }

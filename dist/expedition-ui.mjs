@@ -50,7 +50,7 @@ try{const stored=JSON.parse(localStorage.getItem(storageKey)||'null');if(stored)
 const plansKey='abbey-plan-library-v1';let plans=[],undoConfig=null;
 try{const loaded=readPlans(localStorage.getItem(plansKey));plans=loaded.plans;if(loaded.rejected)$('#notice').textContent='有 '+loaded.rejected+' 个无效方案未载入；其余方案可用。';}catch{$('#notice').textContent='方案存档无法读取，未覆盖原始存档。';}
 function tell(t){$('#notice').textContent=t;}
-function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));$('#save-state').textContent='当前配置已保存在本机 · v0.64';}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
+function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));$('#save-state').textContent='当前配置已保存在本机 · v0.65';}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
 function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value="${esc(k)}" ${k===value?'selected':''}>${esc(typeof v==='object'?v.name:v)}</option>`).join('');}
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}
 function stop(){clearInterval(timer);timer=null;$('#play').textContent='▶ 播放';}

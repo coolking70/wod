@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前425项测试通过，0失败/跳过；164个ES模块、19个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前429项测试通过，0失败/跳过；166个ES模块、20个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -94,3 +94,7 @@ cooperationCheck增加resources与断潮roundLimit，resourceAssignments仅枚�
 ## v0.64接续
 
 replacementChoices只读排序同职业可选项，不是最佳阵容评分；主角排除，需明确编入，资产与职责不自动继承。cross-route-cases统一合法profile，check-v64要求v63已有回执且个人资产一致后引用原队，不重复旧矩阵；216新样本覆盖同职业替补。browser-v64正常恢复零培养名册并真实断潮通关，保留射手；无需以特定种子功能通关推断可靠性。继续初始职责目标核对；不调数值或擅加经验。
+
+## v0.65接续
+
+roleTargetCandidates与伙伴预览共用初始能力筛选，不检查敌方法力是否够或声称战中始终没有候选。readiness.targetWarnings是逐房元数据，单独显示且不加入阻止出征的errors；普通阵位空位有引擎回退，不用此职责提示。新浏览器验证首房提醒→改配→其他房保留→实际战报，429回归通过。下一步轮换前后历史名单/双方快照，目前configurationChanges仅对新增/离队者显示出战状态，不能看资产细节；可补只读信息，不推断资产继承或贡献。
