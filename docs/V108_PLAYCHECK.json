@@ -1,0 +1,39 @@
+{
+  "designStatus": "optional read-only camp guidance; no changed assets/reward/supply rules",
+  "goalRetry": {
+    "stage": "goal-retry",
+    "id": "1",
+    "afterMetStage": "tutorial",
+    "gold": 240
+  },
+  "journeys": {
+    "pending": [
+      {
+        "id": "clocktower",
+        "label": "潮刻余响",
+        "completed": 3,
+        "ready": true,
+        "canClaim": false,
+        "ending": null
+      }
+    ],
+    "claimed": [
+      {
+        "id": "clocktower",
+        "label": "潮刻余响",
+        "completed": 3,
+        "ready": true,
+        "canClaim": true,
+        "ending": null
+      }
+    ],
+    "delivered": []
+  },
+  "normalPending": {
+    "seed": 5,
+    "won": true,
+    "goldBefore": 625,
+    "goldAfterClaim": 755,
+    "goldAfterExplicitStoryDelivery": 795
+  }
+}

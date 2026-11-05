@@ -78,7 +78,7 @@ const plansKey=PLAN_BOOK_KEY;let planBook=readPlanBook(null),plans=[],planBookRa
 function refreshPlanBook(){try{const raw=localStorage.getItem(plansKey);if(raw===planBookRaw&&!planBookError)return true;const book=readPlanBook(raw);planBookRaw=raw;planBook=book;plans=book.plans;planBookError='';}catch(e){planBookError=e.message;}return !planBookError;}
 refreshPlanBook();
 function tell(t){$('#notice').textContent=t;}
-function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.107';}
+function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.108';}
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));savedState();}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
 function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value="${esc(k)}" ${k===value?'selected':''}>${esc(typeof v==='object'?v.name:v)}</option>`).join('');}
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}

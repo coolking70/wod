@@ -197,7 +197,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
  function cycle(action,value=''){read();if(!g)throw Error('公会暂不可用，请先检查或恢复备份');
   if(action==='prepare'){const assigned=readRoutePreparation(localStorage,value,{seed:getConfig().seed}),c=assigned.config;loadConfig(c,undefined,false,{overview:true});inform(assigned.plan?'已准备本路线分配的「'+assigned.plan.name+'」；请核对实际公会资产与伙伴职责。':'已准备现有路线；请核对实际公会队伍后正式出征，实验不发成长奖励。');}
-  else if(action==='retry'){loadConfig(historyConfig(g,Number(value)));inform('已载入止步时方案供检查；再次出征使用当前公会资产，不自动保证通关。');}
+  else if(action==='retry'){const c=historyConfig(g,Number(value));loadConfig(c,undefined,false,{overview:true});inform('已载入第'+value+'次的'+(c.objective?'目标与':'')+'出发方案；当前资产与伙伴职责保留，再次正式出征分配新种子。');}
   else if(action==='pending'){if(!g.pending){open('departure');return;}showReport(pendingReport(g),pendingOrigin(g));}
   else if(action==='training'||action==='equipment'){selected=g.command?.heroId||selected;open(action==='training'?'team':'equipment');}
   else if(action==='goals'){bookRoute=getConfig().expedition;open('goals');}else if(action==='hero')open('hero');else if(action==='official')open('departure');else if(action==='journey'){if(!Object.hasOwn(journeyNames,value))throw Error('旅程无效');open('journey',value);}
