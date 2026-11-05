@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前506项测试通过，0失败/跳过；204个ES模块、31个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前512项测试通过，0失败/跳过；210个ES模块、32个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -191,3 +191,13 @@ foundry-story独立定义三段正常已结算条件（foundry clear、任一fou
 guild pane journey、地图入口、三个故事段落/结局预览、装备来源已接；同一故事结局不改变未来敌情。UI prepare路由只载入foundryConfig/watchConfig，资产/职责保留。story CSS自适应三列/单列。新课、训练或技能规则没有改动。
 
 506测试，204mjs31cjs语法。check-v76正常watch seed4领奖形成3/3，各结局独立快照精确40/1件，archive分配学者后seed5再通；带v75参考目录对4种pending/report/reward/claim逐对象相同，compare-reports另核9旧报告。browser-v76桌面/390px0→2→3、实验不进度、待结算刷新、旧标签页拒绝改选、装备分配、历史同报告、备份同结局通过。截图只内部验收。未重跑旧大样本。接续主线章节/港口单人旅程，不新增服务或多人投入。
+
+## v0.77灯塔来信续接
+
+feature/v077-lighthouse-letter从75f57b7干净506基线接续。harbor-story定义chapter clear/harbor clear/任一home-seal-salvage条件与light/bridge/chart三回信（40gold+beaconrod/quaycoat/tidecompass）。g.harborStory和g.foundryStory独立；validateGuild检查正常条件，claimHarborStory仅正常可编辑时一次奖励，海图不花、不发XP。普通或风暴clear都可，第三条件不要求storm目标。没有新数值/装备/关卡。
+
+solo-story-view共用展示，foundry/harbor wrappers保留文本和奖励。guildUI的journeyBook仅session阅读状态、枚举校验，旅程面板只渲染当前一本；prepare支持chapter/harbor/foundry/watch，仍保留实际资产/职责；地图两个入口明确book，open可传book。browser-v76旧入口收窄到foundry属性值，维持原意精确测试。equipmentSource列出新三选一来源。
+
+512测试，210mjs32cjs。lighthouseCases正常grown→chapter4→harbor5；check-v77保存三独立分支、兑换海图后交付/射手装备/再港口6、另一正常watch6后同档两故事结局。各额外40，合计80，不注入；输出/tmp/wod-v77-lighthouse-{start,chapter,ready,chart,both}.json。带v76参考目录核4真实结算链，compare-reports另核9完整旧报告。browser-v77桌面/390px正常主线/刷新/原奖励/海图兑换/回信/装备/历史/双故事备份通过；v76完整回归浏览器通过。截图只内部，不进交付ZIP。
+
+重复只读远端v75检查见V77_REMOTE_V75_CHECK：URL与a54957c未变，同名远端ref当时不存在。父线程随后明确授权仅该确定v75，已用目标必须为空的租约保护创建远端分支并重新核验完整a54957cc2af51d3c65542718130a05a873f46477；没有覆盖、合并或部署，新v76/v77不推送。后续方向继续单人，异步提案暂缓，普通技能自由与独立进阶不重问。原版数值未核实，不冒称复刻。保存本地提交与恢复包，Library结果以实际回执为准。

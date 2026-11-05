@@ -1,0 +1,263 @@
+{
+  "note": "Normal earned guild → chapter seed4 → normal harbor seed5. Three ending forks use independent legal unclaimed snapshots, not multiple claims in one playthrough. No injected balance, progress or seed counters.",
+  "chapter": {
+    "seed": 4,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 铁壳门廊",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 616,
+        "mp": 303,
+        "supplies": {
+          "herb": 15,
+          "rune": 21,
+          "arrow": 17
+        }
+      },
+      {
+        "name": "02 · 镜潮回廊",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 595,
+        "mp": 272,
+        "supplies": {
+          "herb": 12,
+          "rune": 17,
+          "arrow": 13
+        }
+      },
+      {
+        "name": "03 · 分誓封印",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 572,
+        "mp": 198,
+        "supplies": {
+          "herb": 12,
+          "rune": 11,
+          "arrow": 12
+        }
+      },
+      {
+        "name": "04 · 引潮病廊",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 572,
+        "mp": 192,
+        "supplies": {
+          "herb": 12,
+          "rune": 7,
+          "arrow": 11
+        }
+      },
+      {
+        "name": "05 · 不息药庭",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 572,
+        "mp": 169,
+        "supplies": {
+          "herb": 12,
+          "rune": 2,
+          "arrow": 10
+        }
+      },
+      {
+        "name": "06 · 双灯心室",
+        "won": true,
+        "rounds": 12,
+        "survivors": 6,
+        "hp": 596,
+        "mp": 185,
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 9
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 6,
+      "gold": 280,
+      "xp": 120,
+      "firstClear": true,
+      "loot": [
+        "bellfocus"
+      ]
+    }
+  },
+  "harbor": {
+    "seed": 5,
+    "won": true,
+    "rooms": [
+      {
+        "id": "harbor_gate",
+        "node": "gate",
+        "note": "前排锚卫掩护后排弩手；先保留药草，下一处通路依据战后状态选择。",
+        "name": "01 · 盐风关卡",
+        "won": true,
+        "rounds": 2,
+        "survivors": 6,
+        "hp": 636,
+        "mp": 318,
+        "supplies": {
+          "herb": 11,
+          "rune": 11,
+          "arrow": 10
+        }
+      },
+      {
+        "id": "harbor_pass",
+        "node": "upper",
+        "note": "两翼弩手狙击后排；远程抗性与分区保护有用。同位置群攻无法一次覆盖两翼。",
+        "name": "02 · 高架栈桥",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 593,
+        "mp": 288,
+        "supplies": {
+          "herb": 11,
+          "rune": 7,
+          "arrow": 10
+        }
+      },
+      {
+        "id": "harbor_cache",
+        "node": "seal",
+        "note": "进入机房先尝试解封，再迎战守卫。成功解读会削弱末场灯塔核心；失败消耗照付。",
+        "name": "03 · 潮锁机房",
+        "won": true,
+        "rounds": 2,
+        "survivors": 6,
+        "hp": 593,
+        "mp": 265,
+        "supplies": {
+          "herb": 11,
+          "rune": 2,
+          "arrow": 10
+        }
+      },
+      {
+        "id": "harbor_beacon",
+        "node": "beacon",
+        "note": "灯塔核心压制中央，后排药灯守护者持续救护。封印成功则核心法术等级降低3级。 已兑现解封优势：法术等级10→7。",
+        "name": "04 · 无光灯塔",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 593,
+        "mp": 225,
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 7
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 4,
+      "gold": 325,
+      "xp": 100,
+      "firstClear": true,
+      "loot": [
+        "beaconrod"
+      ],
+      "harbor": {
+        "charts": 2,
+        "gold": 80,
+        "earned": [
+          "home",
+          "seal"
+        ]
+      }
+    }
+  },
+  "branches": [
+    {
+      "ending": "light",
+      "gear": "beaconrod",
+      "gold": 40,
+      "noRepeat": true
+    },
+    {
+      "ending": "bridge",
+      "gear": "quaycoat",
+      "gold": 40,
+      "noRepeat": true
+    },
+    {
+      "ending": "chart",
+      "gear": "tidecompass",
+      "gold": 40,
+      "noRepeat": true
+    }
+  ],
+  "chart": {
+    "charts": 0,
+    "goldDelta": 40,
+    "gear": "tidecompass"
+  },
+  "later": {
+    "seed": 6,
+    "won": true
+  },
+  "both": {
+    "harborStory": {
+      "ending": "chart"
+    },
+    "foundryStory": {
+      "ending": "archive"
+    },
+    "goldDelta": 80
+  },
+  "unchanged": {
+    "reference": "75f57b7fe167a10e4191cee1496b20f6e4c330ba",
+    "cases": [
+      {
+        "name": "chapter",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      },
+      {
+        "name": "harbor",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      },
+      {
+        "name": "harbor-salvage",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      },
+      {
+        "name": "foundry",
+        "equal": [
+          "pending",
+          "completeReport",
+          "reward",
+          "settledGuild"
+        ]
+      }
+    ],
+    "excluded": []
+  }
+}

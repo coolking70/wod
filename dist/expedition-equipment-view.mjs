@@ -1,3 +1,4 @@
+import {HARBOR_STORY_ENDINGS} from './expedition-harbor-story.mjs';
 import {FOUNDRY_STORY_ENDINGS} from './expedition-foundry-story.mjs';
 import {GEAR,SLOTS,equipmentName,equipmentTotals,gearSupports,gearRequirementName,replaceEquipment} from './expedition-equipment.mjs';
 import {HEROES,ATTR,TYPES,SKILLS,DEFENSES,EXPEDITIONS} from './expedition-data.mjs';
@@ -7,7 +8,7 @@ export function equipmentImpact(plan,current,next){
  for(const p of [plan,...Object.values(plan.overrides||{})]){for(const r of [...(p.prep||[]),...(p.main||[])])skills.add(r.skill);for(const id of Object.values(p.defenses||{}))defenses.add(id);}
  const result=[];for(const [ids,table] of [[skills,SKILLS],[defenses,DEFENSES]])for(const id of ids){const s=table[id],required=s.requiresGear||s.gear;if(required&&gearSupports(current,required)!==gearSupports(changed,required))result.push(`${s.name}：${gearSupports(changed,required)?'满足装备条件':'失去装备条件'}`);}return result;
 }
-export function equipmentSource(id){if(!isRelic(id))return '营地商店 · 60金币';return (Object.values(FOUNDRY_STORY_ENDINGS).some(e=>e.gear===id)?'单人旅程·铸库归航（三选一，一次）；':'')+(id==='kilngauge'?'铸库一次性委托·封存图纸（定向）；':id==='bellowscoat'?'铸库一次性委托·整队归航（定向）；':'')+(['beaconrod','quaycoat','tidecompass'].includes(id)?'港口委托 · 2张海图指定兑换；':'')+Object.entries(ROUTE_REWARDS).filter(([,r])=>r.pool.includes(id)).map(([key,r])=>EXPEDITIONS[key].name+(r.pool[0]===id?'（首通必得）':'（通关掉落池）')).join('；');}
+export function equipmentSource(id){if(!isRelic(id))return '营地商店 · 60金币';return (Object.values(HARBOR_STORY_ENDINGS).some(e=>e.gear===id)?'单人旅程·灯塔来信（三选一，一次）；':'')+(Object.values(FOUNDRY_STORY_ENDINGS).some(e=>e.gear===id)?'单人旅程·铸库归航（三选一，一次）；':'')+(id==='kilngauge'?'铸库一次性委托·封存图纸（定向）；':id==='bellowscoat'?'铸库一次性委托·整队归航（定向）；':'')+(['beaconrod','quaycoat','tidecompass'].includes(id)?'港口委托 · 2张海图指定兑换；':'')+Object.entries(ROUTE_REWARDS).filter(([,r])=>r.pool.includes(id)).map(([key,r])=>EXPEDITIONS[key].name+(r.pool[0]===id?'（首通必得）':'（通关掉落池）')).join('；');}
 export function equipmentStats(gear){const v=equipmentTotals(gear);return [`护甲 ${v.armor}`,...Object.entries(v.bonus).map(([k,n])=>`${ATTR[k]} ${n>=0?'+':''}${n}`),...Object.entries(v.resistances).map(([k,n])=>`${TYPES[k]}抗性 ${n>=0?'+':''}${n}%`)].join(' · ');}
 export function equipmentPanel(g,selected,filter,slot,plan){
  const m=g.members.find(m=>m.id===selected),hero=HEROES.find(h=>h.id===selected);

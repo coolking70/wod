@@ -108,3 +108,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 
 /* Finite solo homecoming scenes and ending choices. */
 .story-steps,.story-endings{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:1rem;margin:1rem 0}.story-step,.story-ending{padding:1rem;border:1px solid var(--line,#37515b);border-radius:.5rem;background:#102730}.story-step p,.story-ending p{line-height:1.7}.story-ending small{display:block}.story-endings button{max-width:100%;white-space:normal;margin-top:.75rem}.story-progress{padding:.75rem;border-left:3px solid #bdac74;background:#102730}
+
+.journey-books button[aria-pressed="true"]{border-color:#bdac74;background:#253a40}.story-step button{max-width:100%;white-space:normal}

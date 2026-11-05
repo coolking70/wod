@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-05",
+  "scope": "Read-only recheck, then later explicitly authorized creation of the v0.75 remote branch and read-only SHA verification",
+  "remote": "origin",
+  "pushUrl": "https://github.com/coolking70/wod.git",
+  "v075LocalRef": "refs/heads/feature/v075-foundry-watch",
+  "v075Commit": "a54957cc2af51d3c65542718130a05a873f46477",
+  "remoteRefExists": true,
+  "candidateTarget": "origin refs/heads/feature/v075-foundry-watch",
+  "developmentBranchAtCheck": "feature/v077-lighthouse-letter",
+  "pushExecuted": true,
+  "remoteRefExistsBeforePush": false,
+  "remoteCommit": "a54957cc2af51d3c65542718130a05a873f46477",
+  "pushExitCode": 0,
+  "verifiedExactSha": true,
+  "createdNewRemoteBranch": true,
+  "overwroteRemoteChanges": false,
+  "mergedMain": false,
+  "deployed": false,
+  "publicationScope": "Only v0.75; new v0.76/v0.77 local commits not pushed"
+}

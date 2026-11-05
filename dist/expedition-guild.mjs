@@ -1,3 +1,4 @@
+import {validateHarborStory,harborStoryProgress,HARBOR_STORY_ENDINGS,HARBOR_STORY_GOLD} from './expedition-harbor-story.mjs';
 import {quoteTrainingPlan} from './expedition-training-plan.mjs';
 import {PROGRESSION_RULES,COURSE_REQUIRED_XP} from './expedition-progression-rules.mjs';
 import {HARBOR_OBJECTIVES,HARBOR_EXCHANGE,harborReward} from './expedition-harbor-contract.mjs';
@@ -20,7 +21,7 @@ const integer=n=>Number.isSafeInteger(n)&&n>=0;
 export function validateGuild(g){
  validateCommand(g?.command);
  validateFoundryState(g?.foundry);
- validateFoundryStory(g?.foundryStory);
+ validateFoundryStory(g?.foundryStory);validateHarborStory(g?.harborStory);
  if(!g||g.version!==6||!integer(g.gold)||!integer(g.next)||g.next<1||!Array.isArray(g.members)||g.members.length<6||g.members.length>HEROES.length||new Set(g.members.map(h=>h.id)).size!==g.members.length)throw Error('公会存档格式无效');
  if(!g.harbor||!integer(g.harbor.charts)||!Array.isArray(g.harbor.claimed)||new Set(g.harbor.claimed).size!==g.harbor.claimed.length||g.harbor.claimed.some(id=>!Object.hasOwn(HARBOR_OBJECTIVES,id)))throw Error('港口委托存档无效');
  validateRoster(g);
@@ -31,6 +32,7 @@ export function validateGuild(g){
  if(g.pending!==null){validateCommand(g.pending?.command);if(!g.pending||g.pending.id!==g.next-1||g.history.some(r=>r.id===g.pending.id))throw Error('待结算远征无效');validate(g.pending.config);for(const h of g.pending.config.heroes){const m=g.members.find(m=>m.id===h.id);if(!sameEquipment(h.gear,m.gear)||JSON.stringify(h.training)!==JSON.stringify(m.training)||(h.advancement||null)!==(m.advancement?.path||null))throw Error('远征资产快照不一致');assertGuildSkills(m,h);}}
  if(!g.warehouse||typeof g.warehouse!=="object"||Array.isArray(g.warehouse)||Object.entries(g.warehouse).some(([k,n])=>!isRelic(k)||!integer(n))||!g.clears||typeof g.clears!=="object"||Array.isArray(g.clears)||Object.entries(g.clears).some(([k,n])=>!Object.hasOwn(ROUTE_REWARDS,k)||!integer(n)))throw Error("战利品或通关记录无效");
  if(g.pending&&![1,2].includes(g.pending.rewardVersion))throw Error("结算版本无效");
+ if(g.harborStory&&!harborStoryProgress(g).ready)throw Error('灯塔来信记录缺少正常远征条件');
  if(g.foundryStory&&!foundryStoryProgress(g).ready)throw Error('铸库归航记录缺少正常远征条件');
  return g;
 }
@@ -73,3 +75,12 @@ export function historyConfig(g,id){validateGuild(g);const record=g.history.find
 export function historyReport(g,id){const report=simulate(historyConfig(g,id)),command=g.history.find(r=>r.id===id)?.command;return {...report,...(command?{perspective:clone(command)}:{})};}
 
 export function redeemHarbor(g,gear){const n=editable(g);if(!HARBOR_EXCHANGE.includes(gear))throw Error('不是港口兑换装备');if(n.harbor.charts<2)throw Error('需要2张海图');n.harbor.charts-=2;n.warehouse[gear]=(n.warehouse[gear]||0)+1;return n;}
+
+export function claimHarborStory(g,ending){
+ const n=editable(g),p=harborStoryProgress(n);
+ if(typeof ending!=='string'||!Object.hasOwn(HARBOR_STORY_ENDINGS,ending))throw Error('请选择有效的来信结局');
+ if(!p.canClaim)throw Error(p.reason);
+ const gear=HARBOR_STORY_ENDINGS[ending].gear,gold=n.gold+HARBOR_STORY_GOLD,count=(n.warehouse[gear]||0)+1;
+ if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');
+ n.gold=gold;n.warehouse[gear]=count;n.harborStory={ending};return validateGuild(n);
+}
