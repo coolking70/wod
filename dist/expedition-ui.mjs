@@ -1,3 +1,4 @@
+import {clocktowerConfig} from './expedition-data.mjs';
 import {withSchedule,scheduleLabel,SCHEDULE_RULE} from './expedition-schedule.mjs';
 import {withObjective} from './expedition-goal-data.mjs';
 import {objectiveResultView} from './expedition-book-view.mjs';
@@ -71,7 +72,7 @@ try{const stored=JSON.parse(localStorage.getItem(storageKey)||'null');if(stored)
 const plansKey='abbey-plan-library-v1';let plans=[],undoConfig=null;
 try{const loaded=readPlans(localStorage.getItem(plansKey));plans=loaded.plans;if(loaded.rejected)$('#notice').textContent='有 '+loaded.rejected+' 个无效方案未载入；其余方案可用。';}catch{$('#notice').textContent='方案存档无法读取，未覆盖原始存档。';}
 function tell(t){$('#notice').textContent=t;}
-function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.98';}
+function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.99';}
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));savedState();}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
 function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value="${esc(k)}" ${k===value?'selected':''}>${esc(typeof v==='object'?v.name:v)}</option>`).join('');}
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}
@@ -81,6 +82,7 @@ function selectedBase(){return config.heroes.find(h=>h.id===selected);}
 function setPlan(key,value){const base=selectedBase();if(scope){base.overrides[scope]??={};base.overrides[scope][key]=clone(value);}else base[key]=clone(value);}
 function inheritance(key){if(!scope)return '<small class="scope-label">默认设置</small>';const own=Object.hasOwn(selectedBase().overrides[scope]||{},key);return `<small class="scope-label ${own?'overridden':''}">${own?'本房间覆盖':'继承默认'}</small>${own?` <button class="link" data-inherit="${key}">恢复继承</button>`:''}`;}
 function planner(){
+ renderClocktower();
  if(!config.heroes.some(h=>h.id===selected))selected=config.heroes[0].id;
  if(scope&&!roomsFor(config).some(r=>r.id===scope))scope="";
  renderGreenhouseBrief();renderScriptoriumBrief();renderPalisadeBrief();renderInquestBrief();renderShoalsBrief();renderTheaterBrief();renderFoundryBrief();renderWatchBrief();renderCourierBrief();renderHarborPlan();renderAdventure();renderGuide();renderHeroBuilds();renderTrialBrief();$('#route-size').textContent='6 位队员 · '+roomsFor(config).length+' 场遭遇 · 战前配置 / 自动结算';
@@ -290,7 +292,7 @@ $('#case-training').onclick=()=>loadCase('training');$('#case-pierce').onclick=(
 
 function renderIntel(){
  $('#intel-route').textContent=EXPEDITIONS[config.expedition].name;
- $('#intel').innerHTML=roomsFor(config).map((r,i)=>`<article class="encounter-card"><div class="encounter-heading"><small>ENCOUNTER 0${i+1}</small><h3>${esc(r.name)}</h3><span>${r.enemies.length} 名敌人 · ${new Set(r.enemies.map(e=>e.pos)).size} 个阵位</span></div><p>${esc(r.note)}</p><div class="enemy-dossier">${r.enemies.map(u=>`<details><summary><b>${esc(u.name)}</b><span>${POS[u.pos]} · ${u.maxHp} HP</span></summary><div class="enemy-facts"><span>护甲 <b>${current(u,'armor')}</b></span>${Object.entries(TYPES).map(([k,v])=>{const n=resistanceOf(u,k);return `<span class="${n>0?'resist':n<0?'vulnerable':''}">${v} ${n<0?'弱点':'抗性'} <b>${Math.abs(n)}%</b></span>`;}).join('')}</div><p><small>预备：${u.prep.length?u.prep.map(r=>SKILLS[r.skill].name+' → '+(POS[r.target]||'自身')).join('；'):'无'}${u.healing?.enabled?'<br>治疗：'+Math.round(u.healing.threshold*100)+'% · 最低生命比例 · 全队 · 等级 '+u.skills.heal+' · 每次5法力/1药草':''}<br>普通：${u.main.map(r=>SKILLS[r.skill].name+' → '+POS[r.target]+' · 等级 '+u.skills[r.skill]+' / 均值 '+mean(u,r.skill)).join('；')}</small></p></details>`).join('')}</div><button data-intel-room="${r.id}">配置这个房间</button></article>`).join('');
+ $('#intel').innerHTML=roomsFor(config).map((r,i)=>`<article class="encounter-card"><div class="encounter-heading"><small>ENCOUNTER 0${i+1}</small><h3>${esc(r.name)}</h3><span>${r.enemies.length} 名敌人 · ${new Set(r.enemies.map(e=>e.pos)).size} 个阵位</span></div><p>${esc(r.note)}</p><div class="enemy-dossier">${r.enemies.map(u=>`<details><summary><b>${esc(u.name)}</b><span>${POS[u.pos]} · ${u.maxHp} HP</span></summary><div class="enemy-facts"><span>护甲 <b>${current(u,'armor')}</b></span>${Object.entries(TYPES).map(([k,v])=>{const n=resistanceOf(u,k);return `<span class="${n>0?'resist':n<0?'vulnerable':''}">${v} ${n<0?'弱点':'抗性'} <b>${Math.abs(n)}%</b></span>`;}).join('')}</div><p><small>预备：${u.prep.length?u.prep.map(r=>SKILLS[r.skill].name+scheduleLabel(r)+' · '+({once:'本房一次',round:'每回合一次',repeat:'持续',cycle:'轮转'}[r.mode])+' → '+(POS[r.target]||'自身')).join('；'):'无'}${u.healing?.enabled?'<br>治疗：'+Math.round(u.healing.threshold*100)+'% · 最低生命比例 · 全队 · 等级 '+u.skills.heal+' · 每次5法力/1药草':''}<br>普通：${u.main.map(r=>SKILLS[r.skill].name+scheduleLabel(r)+' · '+({once:'本房一次',round:'每回合一次',repeat:'持续',cycle:'轮转'}[r.mode])+' → '+POS[r.target]+' · 等级 '+u.skills[r.skill]+' / 均值 '+mean(u,r.skill)).join('；')}</small></p></details>`).join('')}</div><button data-intel-room="${r.id}">配置这个房间</button></article>`).join('');
 }
 $('#intel').onclick=e=>{const b=e.target.closest('[data-intel-room]');if(b){scope=b.dataset.intelRoom;planner();setPrep('team');$('#editor').scrollIntoView({block:'start'});tell('已定位房间配置。训练、装备和补给仍为整次远征共用。');}};
 $('#archive-start').onclick=()=>{replaceConfig(archiveConfig());scope='';persist();planner();view('planning');tell('已载入封库试炼的均衡方案。先展开敌情，再按房间调整目标和技能。');};
@@ -509,3 +511,6 @@ function refreshReportHandoff(){const box=$('#report-handoff');if(!box)return;bo
 $('#report-handoff').onclick=e=>{const b=e.target.closest('[data-report-cycle]');if(!b)return;try{if(b.dataset.reportCycle==='claim')guildUI.settleReport(reportOrigin,report);else guildUI.cycle(b.dataset.reportCycle);}catch(error){tell(error.message);}refreshReportHandoff();};
 window.addEventListener('storage',e=>{if(!e.key||e.key==='abbey-guild-v6')refreshReportHandoff();});
 window.addEventListener('focus',()=>refreshReportHandoff());
+
+function renderClocktower(){const box=$('#clocktower-brief');box.hidden=config.expedition!=='clocktower';if(box.hidden)return;box.innerHTML='<p class=eyebrow>三场连续 / 时机与资源</p><h2>同一座钟楼，不同的行动时机。</h2><p>门厅第三回合蓄势，齿廊第一回合急拍，观台早期屏障与之后冲击。完整敌人指令与窗口在敌情中公开；每房重新计时，已生效效果不因窗口结束自动撤销。时序只是构筑选择，不保证及时出手或胜利。</p><div class=bar>'+Object.entries({rush:'先拆来源',timed:'分房防护与延迟爆发',steady:'低耗持续'}).map(([id,name])=>`<button data-clocktower-plan="${id}">${name}</button>`).join('')+'</div><p>起点替换战术草稿，保留本次种子和目标；公会仍按当前资产与已应用伙伴职责核对。潮刻怀表需正式通关领取、明确分配。</p>';}
+$('#clocktower-brief').onclick=e=>{const b=e.target.closest('[data-clocktower-plan]');if(!b)return;const c=clocktowerConfig(b.dataset.clocktowerPlan);c.seed=config.seed;replaceConfig(preserveObjective(c));scope='';persist();planner();view('planning');setPrep('team');tell('钟楼战术起点已载入；请逐房核对实际指令与伙伴职责。');};

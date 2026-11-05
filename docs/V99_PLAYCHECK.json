@@ -1,0 +1,1052 @@
+{
+  "normal": [
+    {
+      "plan": "rush",
+      "seed": 1,
+      "won": true,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "objective": {
+        "id": "clear",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 16,
+          "alive": 6,
+          "herb": 2,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 185,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "clockpin"
+        ]
+      }
+    },
+    {
+      "plan": "timed",
+      "seed": 2,
+      "won": true,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "objective": {
+        "id": "survive",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 17,
+          "alive": 6,
+          "herb": 0,
+          "rune": 3,
+          "arrow": 0
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 130,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "clockpin"
+        ]
+      }
+    },
+    {
+      "plan": "steady",
+      "seed": 3,
+      "won": true,
+      "rounds": [
+        5,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 8
+      },
+      "objective": {
+        "id": "reserve",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 17,
+          "alive": 6,
+          "herb": 5,
+          "rune": 3,
+          "arrow": 8
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 130,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "clockpin"
+        ]
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "asset": "new",
+      "plan": "rush",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "rush",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "rush",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "rush",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "rush",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "rush",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "timed",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "timed",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "timed",
+      "seed": 7,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        6,
+        4,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "timed",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "timed",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "timed",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "steady",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "steady",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        7,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "steady",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "steady",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "steady",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "new",
+      "plan": "steady",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "rush",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "rush",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        7,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "rush",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "rush",
+      "seed": 19,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        6,
+        4,
+        11
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "rush",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "rush",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "lateEnemyWaves": []
+    },
+    {
+      "asset": "earned",
+      "plan": "timed",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "timed",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "timed",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "timed",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "timed",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "timed",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "steady",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "steady",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        7,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "steady",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "steady",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "steady",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    },
+    {
+      "asset": "earned",
+      "plan": "steady",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 8
+      },
+      "lateEnemyWaves": [
+        {
+          "room": 0,
+          "round": 3
+        },
+        {
+          "room": 2,
+          "round": 3
+        }
+      ]
+    }
+  ],
+  "note": "36 fixed inputs: three tactics, six predeclared seeds, fresh guild vs actually earned first-clear accessory and one20XP wave rank. Matrix is simulation only and awards nothing; no seed search or global reliability claim."
+}
