@@ -1,0 +1,664 @@
+{
+  "normal": [
+    {
+      "route": "classic",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 1,
+      "won": true,
+      "rounds": [
+        3,
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 17,
+        "arrow": 7
+      },
+      "blocked": 9,
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 45,
+        "firstClear": true,
+        "loot": [
+          "reliquaryshield"
+        ]
+      }
+    },
+    {
+      "route": "hospice",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 2,
+      "won": true,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "blocked": 0,
+      "reward": {
+        "cleared": 3,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "remedybag"
+        ]
+      }
+    },
+    {
+      "route": "clocktower",
+      "actor": "b",
+      "minimum": 3,
+      "seed": 3,
+      "won": true,
+      "rounds": [
+        5,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 8
+      },
+      "blocked": 19,
+      "reward": {
+        "cleared": 3,
+        "gold": 185,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "clockpin"
+        ]
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "route": "classic",
+      "actor": "b",
+      "minimum": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "supplies": {
+        "herb": 15,
+        "rune": 11,
+        "arrow": 8
+      },
+      "casts": 8,
+      "blocked": 0
+    },
+    {
+      "route": "classic",
+      "actor": "b",
+      "minimum": 0,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 9
+      },
+      "casts": 7,
+      "blocked": 0
+    },
+    {
+      "route": "classic",
+      "actor": "b",
+      "minimum": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "supplies": {
+        "herb": 15,
+        "rune": 11,
+        "arrow": 15
+      },
+      "casts": 1,
+      "blocked": 7
+    },
+    {
+      "route": "classic",
+      "actor": "b",
+      "minimum": 2,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 16
+      },
+      "casts": 0,
+      "blocked": 7
+    },
+    {
+      "route": "classic",
+      "actor": "b",
+      "minimum": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "supplies": {
+        "herb": 14,
+        "rune": 11,
+        "arrow": 16
+      },
+      "casts": 0,
+      "blocked": 8
+    },
+    {
+      "route": "classic",
+      "actor": "b",
+      "minimum": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 16
+      },
+      "casts": 0,
+      "blocked": 7
+    },
+    {
+      "route": "classic",
+      "actor": "c",
+      "minimum": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "supplies": {
+        "herb": 14,
+        "rune": 10,
+        "arrow": 8
+      },
+      "casts": 8,
+      "blocked": 0
+    },
+    {
+      "route": "classic",
+      "actor": "c",
+      "minimum": 0,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "supplies": {
+        "herb": 14,
+        "rune": 11,
+        "arrow": 8
+      },
+      "casts": 8,
+      "blocked": 0
+    },
+    {
+      "route": "classic",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "supplies": {
+        "herb": 14,
+        "rune": 17,
+        "arrow": 7
+      },
+      "casts": 0,
+      "blocked": 9
+    },
+    {
+      "route": "classic",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "supplies": {
+        "herb": 14,
+        "rune": 17,
+        "arrow": 8
+      },
+      "casts": 1,
+      "blocked": 7
+    },
+    {
+      "route": "classic",
+      "actor": "c",
+      "minimum": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "supplies": {
+        "herb": 14,
+        "rune": 17,
+        "arrow": 7
+      },
+      "casts": 0,
+      "blocked": 9
+    },
+    {
+      "route": "classic",
+      "actor": "c",
+      "minimum": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "supplies": {
+        "herb": 14,
+        "rune": 18,
+        "arrow": 8
+      },
+      "casts": 0,
+      "blocked": 8
+    },
+    {
+      "route": "hospice",
+      "actor": "b",
+      "minimum": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 2
+      },
+      "casts": 10,
+      "blocked": 0
+    },
+    {
+      "route": "hospice",
+      "actor": "b",
+      "minimum": 0,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 2
+      },
+      "casts": 10,
+      "blocked": 0
+    },
+    {
+      "route": "hospice",
+      "actor": "b",
+      "minimum": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 3
+      },
+      "casts": 9,
+      "blocked": 2
+    },
+    {
+      "route": "hospice",
+      "actor": "b",
+      "minimum": 2,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 5
+      },
+      "casts": 7,
+      "blocked": 6
+    },
+    {
+      "route": "hospice",
+      "actor": "b",
+      "minimum": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 12
+      },
+      "casts": 0,
+      "blocked": 18
+    },
+    {
+      "route": "hospice",
+      "actor": "b",
+      "minimum": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 12
+      },
+      "casts": 0,
+      "blocked": 13
+    },
+    {
+      "route": "hospice",
+      "actor": "c",
+      "minimum": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 8,
+      "blocked": 0
+    },
+    {
+      "route": "hospice",
+      "actor": "c",
+      "minimum": 0,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 8,
+      "blocked": 0
+    },
+    {
+      "route": "hospice",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 7,
+      "blocked": 3
+    },
+    {
+      "route": "hospice",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 7,
+      "blocked": 3
+    },
+    {
+      "route": "hospice",
+      "actor": "c",
+      "minimum": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 9,
+        "rune": 5,
+        "arrow": 0
+      },
+      "casts": 0,
+      "blocked": 18
+    },
+    {
+      "route": "hospice",
+      "actor": "c",
+      "minimum": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 9,
+        "rune": 5,
+        "arrow": 0
+      },
+      "casts": 0,
+      "blocked": 17
+    },
+    {
+      "route": "clocktower",
+      "actor": "b",
+      "minimum": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 8,
+      "blocked": 0
+    },
+    {
+      "route": "clocktower",
+      "actor": "b",
+      "minimum": 0,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 8,
+      "blocked": 0
+    },
+    {
+      "route": "clocktower",
+      "actor": "b",
+      "minimum": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "casts": 6,
+      "blocked": 12
+    },
+    {
+      "route": "clocktower",
+      "actor": "b",
+      "minimum": 2,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 2
+      },
+      "casts": 6,
+      "blocked": 10
+    },
+    {
+      "route": "clocktower",
+      "actor": "b",
+      "minimum": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 8
+      },
+      "casts": 0,
+      "blocked": 19
+    },
+    {
+      "route": "clocktower",
+      "actor": "b",
+      "minimum": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 8
+      },
+      "casts": 0,
+      "blocked": 19
+    },
+    {
+      "route": "clocktower",
+      "actor": "c",
+      "minimum": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 6,
+      "blocked": 0
+    },
+    {
+      "route": "clocktower",
+      "actor": "c",
+      "minimum": 0,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 7,
+      "blocked": 0
+    },
+    {
+      "route": "clocktower",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 5,
+      "blocked": 1
+    },
+    {
+      "route": "clocktower",
+      "actor": "c",
+      "minimum": 2,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "casts": 6,
+      "blocked": 1
+    },
+    {
+      "route": "clocktower",
+      "actor": "c",
+      "minimum": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casts": 0,
+      "blocked": 16
+    },
+    {
+      "route": "clocktower",
+      "actor": "c",
+      "minimum": 3,
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "casts": 0,
+      "blocked": 19
+    }
+  ],
+  "note": "36 predeclared simulations; no rewards granted by matrix. Zero, two, three means the same attack setup with no condition vs at least2/3. Count uses original first target group, not all enemies. No global upgrade or conservation guarantee."
+}
