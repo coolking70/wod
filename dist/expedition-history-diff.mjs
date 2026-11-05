@@ -1,3 +1,4 @@
+import {lineupChanges} from './expedition-lineup-diff.mjs';
 import {applyAdvancementAsset} from './expedition-advancement-data.mjs';
 import {commandConfig} from './expedition-command.mjs';
 import {HEROES,clone} from './expedition-data.mjs';
@@ -11,5 +12,5 @@ export function historyComparison(g,id,tactics,mode='draft'){
  if(mode==='guild')for(const h of after.heroes){const m=g.members.find(m=>m.id===h.id);h.gear=clone(m.gear);h.training=clone(m.training);applyAdvancementAsset(h,m);}
  const changes=configurationChanges(before,after);
  const heroes=HEROES.map(h=>({id:h.id,name:h.name,changes:changes.filter(c=>c.label.startsWith(h.name+' / '))}));
- return {id,mode,routeChanged:before.expedition!==after.expedition,total:changes.length,global:changes.filter(c=>!heroes.some(h=>c.label.startsWith(h.name+' / '))),heroes};
+ return {id,mode,routeChanged:before.expedition!==after.expedition,total:changes.length,lineup:lineupChanges(before,after),global:changes.filter(c=>!heroes.some(h=>c.label.startsWith(h.name+' / '))),heroes};
 }

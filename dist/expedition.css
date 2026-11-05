@@ -99,3 +99,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .cooperation-resources table{min-width:620px}.cooperation-resources h4{margin-top:22px}
 
 .ready-target-check{padding:12px;border:1px solid #6d7054;margin:12px 0;background:#1b2a2b}.ready-target-check li{margin:12px 0}.ready-target-check button{display:block;margin-top:6px}
+
+.lineup-diff{margin:18px 0;padding:16px;border:1px solid #49636a;background:#10262d}.lineup-diff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.lineup-diff-card{border:1px solid #3b565f;padding:14px;margin:10px 0;overflow-wrap:anywhere}.lineup-room-plans{margin-top:12px}.lineup-room-plans>div{padding:10px 0;border-bottom:1px solid #3b565f}

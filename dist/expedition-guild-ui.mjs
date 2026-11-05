@@ -1,3 +1,4 @@
+import {lineupChangesView} from './expedition-lineup-diff.mjs';
 import {initialTargetWarningsView} from './expedition-target-check.mjs';
 import {rehearseTrainingPlan} from './expedition-training-rehearsal.mjs';
 import {trainingRehearsalView} from './expedition-training-rehearsal-view.mjs';
@@ -39,7 +40,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  if(!compareId||!g.history.some(r=>r.id===compareId&&r.config))return '';
  const d=historyComparison(g,compareId,getConfig(),compareMode);
  const rows=items=>items.length?`<div class="history-diff-scroll"><table class="history-diff-table"><thead><tr><th>配置项</th><th>历史出征</th><th>${compareMode==='guild'?'当前公会资产＋当前战术':'当前准备方案'}</th></tr></thead><tbody>${items.map(c=>`<tr><th scope="row">${esc(c.label)}</th><td>${esc(c.before)}</td><td>${esc(c.after)}</td></tr>`).join('')}</tbody></table></div>`:'<p>无差异。</p>';
- return `<section id="history-comparison" class="guild-panel" data-guild-pane="history"><h2>第${compareId}次远征 → 当前方案</h2><label>比较对象 <select id="history-compare-mode"><option value="draft" ${compareMode==='draft'?'selected':''}>当前准备方案</option><option value="guild" ${compareMode==='guild'?'selected':''}>当前公会资产＋当前战术</option></select></label><p>${d.total} 项配置差异。左侧为历史，右侧为当前；仅列出变化，不判断改动是否更好。</p><p>公会模式采用伙伴职责及现有装备与训练；种子仍显示准备页值，实际出征会分配新种子。技能学习与出征资格请到出征准备核对。</p>${d.routeChanged?'<p class="ready-diff">两份方案路线不同；房间按配置槽比较，不代表相同敌人或战斗环境。</p>':''}<h3>全队与路线</h3>${rows(d.global)}${d.heroes.map(h=>`<details ${h.changes.length?'open':''}><summary>${h.name} · ${h.changes.length} 项变化</summary>${rows(h.changes)}</details>`).join('')}<button data-history-load="${compareId}">载入这次历史方案</button><button data-history-close="true">关闭对比</button></section>`;
+ return `<section id="history-comparison" class="guild-panel" data-guild-pane="history"><h2>第${compareId}次远征 → 当前方案</h2><label>比较对象 <select id="history-compare-mode"><option value="draft" ${compareMode==='draft'?'selected':''}>当前准备方案</option><option value="guild" ${compareMode==='guild'?'selected':''}>当前公会资产＋当前战术</option></select></label><p>${d.total} 项配置差异。左侧为历史，右侧为当前；仅列出变化，不判断改动是否更好。</p><p>公会模式采用伙伴职责及现有装备与训练；种子仍显示准备页值，实际出征会分配新种子。技能学习与出征资格请到出征准备核对。</p>${d.routeChanged?'<p class="ready-diff">两份方案路线不同；房间按配置槽比较，不代表相同敌人或战斗环境。</p>':''}${lineupChangesView(d.lineup,compareMode)}<h3>全队与路线</h3>${rows(d.global)}${d.heroes.map(h=>`<details ${h.changes.length?'open':''}><summary>${h.name} · ${h.changes.length} 项变化</summary>${rows(h.changes)}</details>`).join('')}<button data-history-load="${compareId}">载入这次历史方案</button><button data-history-close="true">关闭对比</button></section>`;
  }
  const trainingDrafts={},trainingRehearsals={};
  const rehearsalSignature=plan=>JSON.stringify([raw,getConfig(),plan.expected,plan.target]);
