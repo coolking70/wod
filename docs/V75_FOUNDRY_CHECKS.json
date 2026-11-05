@@ -1,0 +1,52 @@
+{
+  "reference": "9e9feaa1d4a88fb216b0dfe589f6f9fe7a1d24f1",
+  "count": 9,
+  "excluded": [],
+  "cases": [
+    {
+      "path": "bellows",
+      "seed": 3,
+      "equal": true
+    },
+    {
+      "path": "bellows",
+      "seed": 101,
+      "equal": true
+    },
+    {
+      "path": "bellows",
+      "seed": 208,
+      "equal": true
+    },
+    {
+      "path": "channel",
+      "seed": 3,
+      "equal": true
+    },
+    {
+      "path": "channel",
+      "seed": 101,
+      "equal": true
+    },
+    {
+      "path": "channel",
+      "seed": 208,
+      "equal": true
+    },
+    {
+      "path": "adaptive",
+      "seed": 3,
+      "equal": true
+    },
+    {
+      "path": "adaptive",
+      "seed": 101,
+      "equal": true
+    },
+    {
+      "path": "adaptive",
+      "seed": 208,
+      "equal": true
+    }
+  ]
+}

@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前493项测试通过，0失败/跳过；196个ES模块、29个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前499项测试通过，0失败/跳过；200个ES模块、30个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -169,3 +169,15 @@ foundryEventView/EvidenceCells按kind区分，data-foundry-source与港口定位
 493回归、196mjs/29cjs语法通过；check-v74带v73参考目录核9完整旧通路，compare-reports另核9旧路线。24有限报告前3场完全等价，末房有收益也有代价，不作最优承诺。正常seed3新出口15回合574HP/余3符3箭，240gold90XP图纸奖励；旧出口同预算16回合569HP。browser-v74桌面/390px追溯/账本/刷新/领奖/历史通过；另复跑browser-v73四路径。首轮v74浏览器因账本view内部限港口内容为空而失败，已补白名单与单测，原失败保留。
 
 不重跑旧96/72或候补大样本。当前数值仍为原创原型，不冒认现行原版。开发无权限阻塞；仅原生Library交付以实际结果为准。不推送、合并、部署。
+
+## v0.75封库守望续接
+
+feature/v075-foundry-watch从9e9feaa干净493基线继续。expedition-watch.mjs定义WATCH_ROOMS三遭遇，data全局ROOM_IDS+3、foundrywatch/30预算/watchConfig(plain/split/shelter)，没有新战斗公式/技能/特例。watchConfig只给战术起点，无训练/装备/课程；目前英雄6人/候补2不变。末班监工gear=guardblade，解印师gear=focus，不留装备条件伪技能。敌方使用已有suppress/round/healer，9条真正受阻来自已有普通规则，不是新禁疗机制。
+
+watchseal固定饰品，wil3/cha2/str-2/dex-2，magic10/ranged-10；ROUTE_REWARDS独立首通210gold90XP、重复140gold60XP且每次一枚，原foundry两目标不适用。地图入口/独立watch-brief/敌情/场景和结尾使用铸库既有图；foundryOutcomeView给watch仅资源账本，不调用铸库目标奖励，resourceLedgerView白名单含foundrywatch；原ledger定位/改配处理复用。
+
+watchProfiles用普通疗所→付费训练→正常铸库潮渠13/7→分配巡衣B/尺规C→各60XP升原技能一级，输出/tmp/wod-v75-watch-guild.json next4、/tmp/wod-v75-earned-watchseal.json。check-v75保存36有限报告和正常首通/再通奖励，不注入资产。全部通关但不外推必胜；fresh分阵常用尽药草，不当候补推荐。浏览器真实seed4首通、分配给学者、seed5再通，导出备份到390px seed6分阵继续，刷新/历史纯读取与账本通过。
+
+499回归/200mjs30cjs语法；compare-reports对v74核9旧路线，V75_FOUNDRY_CHECKS另核回廊/潮渠/自动各3种子完整报告；无排除。未重跑v73/v74矩阵或旧候补活动研究。v75没有新增插图，既有图复用按文档记录，不上传新浏览器截图。
+
+连续内容告一段落后的真实产品决定为是否进入原M4/R4每人一角色异步小组；DECISION_ASYNC_GROUP列出最小两参与者/六位置、所有权、准备版本、权威模拟和幂等资产的具体切片，不实施未决账号/云服务。原版参考服仍待核，普通技能自由+独立进阶已确认，不重复问。保持不push/merge/deploy，原生Library交付仍以实际失败记录为准。

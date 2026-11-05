@@ -1,0 +1,53 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "referenceCommit": "9e9feaa1d4a88fb216b0dfe589f6f9fe7a1d24f1",
+  "count": 9,
+  "excluded": [],
+  "cases": [
+    {
+      "profile": "classic",
+      "seed": 1,
+      "equal": true
+    },
+    {
+      "profile": "classic",
+      "seed": 3,
+      "equal": true
+    },
+    {
+      "profile": "classic",
+      "seed": 731,
+      "equal": true
+    },
+    {
+      "profile": "harbor",
+      "seed": 1,
+      "equal": true
+    },
+    {
+      "profile": "harbor",
+      "seed": 3,
+      "equal": true
+    },
+    {
+      "profile": "harbor",
+      "seed": 731,
+      "equal": true
+    },
+    {
+      "profile": "veteran-adapted",
+      "seed": 1,
+      "equal": true
+    },
+    {
+      "profile": "veteran-adapted",
+      "seed": 3,
+      "equal": true
+    },
+    {
+      "profile": "veteran-adapted",
+      "seed": 731,
+      "equal": true
+    }
+  ]
+}

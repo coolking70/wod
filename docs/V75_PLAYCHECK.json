@@ -1,0 +1,1047 @@
+{
+  "note": "36 bounded content sanity reports, original prototype numbers; not a global balance or candidate recommendation. Two discovery and four confirmation seeds per plan/profile.",
+  "profiles": {
+    "fresh": {
+      "next": 1,
+      "gold": 0,
+      "members": [
+        {
+          "id": "a",
+          "xp": 0,
+          "training": {},
+          "gear": {
+            "weapon": "guardblade",
+            "armor": "plate",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "b",
+          "xp": 0,
+          "training": {},
+          "gear": {
+            "weapon": "bow",
+            "armor": "cloth",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "c",
+          "xp": 0,
+          "training": {},
+          "gear": {
+            "weapon": "focus",
+            "armor": "cloth",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "d",
+          "xp": 0,
+          "training": {},
+          "gear": {
+            "weapon": "focus",
+            "armor": "cloth",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "e",
+          "xp": 0,
+          "training": {},
+          "gear": {
+            "weapon": "lute",
+            "armor": "cloth",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "f",
+          "xp": 0,
+          "training": {},
+          "gear": {
+            "weapon": "starterblade",
+            "armor": "field",
+            "accessory": "token"
+          }
+        }
+      ]
+    },
+    "grown": {
+      "next": 4,
+      "gold": 480,
+      "members": [
+        {
+          "id": "a",
+          "xp": 65,
+          "training": {
+            "skill:guard": 3
+          },
+          "gear": {
+            "weapon": "guardblade",
+            "armor": "plate",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "b",
+          "xp": 65,
+          "training": {
+            "skill:pierce": 3
+          },
+          "gear": {
+            "weapon": "bow",
+            "armor": "bellowscoat",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "c",
+          "xp": 65,
+          "training": {
+            "skill:lance": 3
+          },
+          "gear": {
+            "weapon": "focus",
+            "armor": "cloth",
+            "accessory": "kilngauge"
+          }
+        },
+        {
+          "id": "d",
+          "xp": 65,
+          "training": {
+            "skill:ward": 3
+          },
+          "gear": {
+            "weapon": "focus",
+            "armor": "cloth",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "e",
+          "xp": 65,
+          "training": {
+            "skill:insight": 3
+          },
+          "gear": {
+            "weapon": "lute",
+            "armor": "cloth",
+            "accessory": "token"
+          }
+        },
+        {
+          "id": "f",
+          "xp": 65,
+          "training": {
+            "skill:heal": 3
+          },
+          "gear": {
+            "weapon": "starterblade",
+            "armor": "field",
+            "accessory": "token"
+          }
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 579,
+      "rounds": [
+        6,
+        4,
+        13
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 1
+      },
+      "healingBlocks": 1,
+      "blockedRescues": 1,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 578,
+      "rounds": [
+        4,
+        4,
+        14
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 553,
+      "rounds": [
+        4,
+        4,
+        15
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 1
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 577,
+      "rounds": [
+        4,
+        4,
+        13
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 593,
+      "rounds": [
+        3,
+        4,
+        17
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 1,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 538,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "split",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 570,
+      "rounds": [
+        6,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "split",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 607,
+      "rounds": [
+        5,
+        4,
+        10
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 1,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "split",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 563,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "split",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 618,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "split",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 603,
+      "rounds": [
+        5,
+        3,
+        9
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "split",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 552,
+      "rounds": [
+        5,
+        4,
+        10
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "shelter",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 546,
+      "rounds": [
+        7,
+        4,
+        11
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "shelter",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 489,
+      "rounds": [
+        7,
+        4,
+        14
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 4,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "shelter",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 552,
+      "rounds": [
+        6,
+        4,
+        12
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 3,
+      "blockedRescues": 1,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "shelter",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 588,
+      "rounds": [
+        5,
+        4,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "shelter",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 583,
+      "rounds": [
+        5,
+        4,
+        11
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "shelter",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 456,
+      "rounds": [
+        7,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 3,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 582,
+      "rounds": [
+        4,
+        4,
+        10
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 561,
+      "rounds": [
+        5,
+        4,
+        11
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 522,
+      "rounds": [
+        4,
+        3,
+        13
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 3
+      },
+      "healingBlocks": 1,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 550,
+      "rounds": [
+        4,
+        4,
+        12
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 1,
+      "blockedRescues": 1,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 527,
+      "rounds": [
+        3,
+        4,
+        14
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 3
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 610,
+      "rounds": [
+        4,
+        5,
+        11
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 2
+      },
+      "healingBlocks": 1,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "split",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 598,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 1,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "split",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 611,
+      "rounds": [
+        5,
+        3,
+        9
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "split",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 589,
+      "rounds": [
+        4,
+        3,
+        8
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "split",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 580,
+      "rounds": [
+        5,
+        3,
+        9
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "split",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 541,
+      "rounds": [
+        5,
+        3,
+        8
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "split",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 597,
+      "rounds": [
+        4,
+        3,
+        9
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 0,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "shelter",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 585,
+      "rounds": [
+        6,
+        4,
+        10
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "shelter",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 560,
+      "rounds": [
+        7,
+        4,
+        10
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 4,
+      "blockedRescues": 4,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "shelter",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 538,
+      "rounds": [
+        6,
+        3,
+        10
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 3,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "shelter",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 559,
+      "rounds": [
+        7,
+        4,
+        11
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 2,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "shelter",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 577,
+      "rounds": [
+        6,
+        4,
+        13
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    },
+    {
+      "profile": "grown",
+      "plan": "shelter",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 558,
+      "rounds": [
+        5,
+        4,
+        12
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 4,
+        "arrow": 7
+      },
+      "healingBlocks": 2,
+      "blockedRescues": 0,
+      "enemyMissingGear": 0
+    }
+  ],
+  "normal": {
+    "seed": 4,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 换防门廊",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 616,
+        "mp": 313,
+        "supplies": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 9
+        }
+      },
+      {
+        "name": "02 · 断印索桥",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 582,
+        "mp": 270,
+        "supplies": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 8
+        }
+      },
+      {
+        "name": "03 · 最后一班守望",
+        "won": true,
+        "rounds": 8,
+        "survivors": 6,
+        "hp": 592,
+        "mp": 237,
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 7
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 6,
+      "rune": 4,
+      "arrow": 7
+    },
+    "reward": {
+      "cleared": 3,
+      "gold": 210,
+      "xp": 90,
+      "firstClear": true,
+      "loot": [
+        "watchseal"
+      ]
+    },
+    "repeatReward": {
+      "cleared": 3,
+      "gold": 140,
+      "xp": 60,
+      "firstClear": false,
+      "loot": [
+        "watchseal"
+      ]
+    }
+  }
+}
