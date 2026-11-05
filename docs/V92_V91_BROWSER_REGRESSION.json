@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "steps": [
+    "零资产本人学者温室seed1三场出征，首跳后按房净化精确移除4个状态，敌方蚀潮徽记、原效果跳转返回、个人记录/三场账本与结尾连通",
+    "pending改方案/刷新仍保留原报告；190/80领取面纱、明确分给守卫，装备比较显示抗性收益与法力代价；本人付20经验训练心智抵抗，拆来源seed2正常135/60，历史和完整备份通过",
+    "390px恢复完整历史/面纱/心智培养，药蚀反制seed3仍80%救护优先，实际敌方跳伤证据和完整说明无横向溢出；135/60后460金币、本人180经验、两件面纱未分配"
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 292,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 245,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 542,
+          "mp": 189,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "cleansed": 4
+    },
+    {
+      "seed": 2,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 302,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 244,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 191,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "cleansed": 0
+    },
+    {
+      "seed": 3,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 288,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 217,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 190,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "cleansed": 0
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

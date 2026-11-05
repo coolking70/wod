@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.91「蚀潮温室与敌方持续侵蚀」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.91仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.92「指令用料底线」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.92仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -37,6 +37,8 @@
 新增[潮蚀与净化反制](docs/V90_CORROSION.md)：药师低伤药剂换后续两回合持续伤害，与救护共享药草，可被净化；抗性/生命/溢出/来源与个人持续实伤可追溯。639测试、72有限输入、38旧报告除精确新增可用技能外相同、桌面/390px正常培养和整公会API等价通过。
 
 新增[蚀潮温室与敌方持续侵蚀](docs/V91_MIRE_GREENHOUSE.md)：三场不同阵位的敌方蚀潮、按房净化与拆来源取舍，固定抗性面纱有属性代价。647测试、36有限输入、38份旧原始完整报告零排除一致，桌面/390px正常成长与完整公会API等价通过。
+
+新增[跨路线指令用料底线](docs/V92_COMMAND_STOCK_FLOORS.md)：明确限制某条进攻或支援施放后的共享余量，保留自动救护和其他指令的用料自由，材料不足底线时免费走后备并可追溯。656测试、24有限输入、40份旧原始完整报告零排除一致，桌面/390px正常成长与完整公会API等价通过。
 
 ## 开发交接入口
 

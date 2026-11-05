@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "steps": [
+    "桌面真实编辑0/4、非法值不改变原值、逐房覆盖/恢复继承和心诵底线不参与；温室seed1药草4时免费后备，之后真实救护用到3；复盘定位与实际后备跳转通过",
+    "pending改底线/刷新仍保留原报告；正常190/80后付20XP训药剂，书库seed2继续跨房实际底线后备，正常180/75后370金币、本人135XP；历史与完整备份保留",
+    "390px恢复全部资产/培养/底线历史，剧场seed3正常130/55；本次没有底线跳过，如实保留。最终500金币、本人190/其他210XP，三件奖励未分配；界面无横向溢出"
+  ],
+  "runs": [
+    {
+      "route": "greenhouse",
+      "seed": 1,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 浊芽苗圃",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 287,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 湿膜苗床",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 213,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 根脉孵庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 160,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "floorSkips": 1
+    },
+    {
+      "route": "scriptorium",
+      "seed": 2,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 265,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 226,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 166,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 0
+      },
+      "floorSkips": 2
+    },
+    {
+      "route": "theater",
+      "seed": 3,
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 292,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 221,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "floorSkips": 0
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

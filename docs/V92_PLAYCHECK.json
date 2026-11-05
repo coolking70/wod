@@ -1,0 +1,1002 @@
+{
+  "note": "24 distinct fresh finite inputs, 3 routes ×4 predeclared seeds ×2 policies. Pair differs only f.main[0].keepStock absent/4. Same seed does not align subsequent RNG. Not a global or optimality claim; herb floor does not lock supplies for a hero or constrain autoheal/events.",
+  "summary": {
+    "runs": 24,
+    "won": 24,
+    "allSix": 24,
+    "failures": 0,
+    "injured": 0
+  },
+  "cases": [
+    {
+      "seed": 101,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 5,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "discovery",
+      "fingerprint": "3a5c0c77afbad4ea36da040c80de5fca2992baa0bc2a7d4a25f51346061e0900"
+    },
+    {
+      "seed": 101,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 5,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 4,
+      "set": "discovery",
+      "fingerprint": "26c073d8a14c2e08053dc698d3c88d1c333ce5ecf8a03bf980d963d61a83a193"
+    },
+    {
+      "seed": 102,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 7,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "discovery",
+      "fingerprint": "8e7901b9890e70693aafdf681b9bae7cf87eaddb13e1b798062cf25a42458b8a"
+    },
+    {
+      "seed": 102,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 7,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 4,
+      "set": "discovery",
+      "fingerprint": "04b2d3c7cee6724399378b2169855a63583c76d77e611673b17f7ca01104485a"
+    },
+    {
+      "seed": 201,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 5,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "confirmation",
+      "fingerprint": "5b63ffab35b09f67fb203f2b4f12d6e9b31f417da0fc9f1a62bdda9bce21046d"
+    },
+    {
+      "seed": 201,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 4,
+      "floorSkips": 2,
+      "substitutes": [
+        {
+          "eventId": 400,
+          "type": "cast",
+          "skill": "shot"
+        },
+        {
+          "eventId": 448,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "floor": 4,
+      "set": "confirmation",
+      "fingerprint": "5f60cbea14de5fe6c6f55da4e1877fc316e3d5cbfdf60d6221c7a5cd3e4b294a"
+    },
+    {
+      "seed": 202,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "confirmation",
+      "fingerprint": "10f8929b365194df6cddf58abda976b4d5a7d33f8ed797a4b5fecb887f0829eb"
+    },
+    {
+      "seed": 202,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 4,
+      "set": "confirmation",
+      "fingerprint": "b9f2bdca8b22cc1b795cc37eb08d78c77bdb4ab140de47f49f6e9efddb5c5ccc"
+    },
+    {
+      "seed": 101,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 6,
+      "herbalHeals": 3,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "discovery",
+      "fingerprint": "7a3f50be51ed504d34820b9b9357c442f4e18589b9fe71e4248358859956464d"
+    },
+    {
+      "seed": 101,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 4,
+      "floorSkips": 2,
+      "substitutes": [
+        {
+          "eventId": 350,
+          "type": "cast",
+          "skill": "shot"
+        },
+        {
+          "eventId": 466,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "floor": 4,
+      "set": "discovery",
+      "fingerprint": "c3b9f271d4f39dba1dcea908ab9ee17a714f741b366a6851f6dbb3a3d827bbe0"
+    },
+    {
+      "seed": 102,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 5,
+      "herbalHeals": 3,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "discovery",
+      "fingerprint": "242da7006e563913545fa52cd983ca7b09aa2448c63ce2cd60ff07f31ed34157"
+    },
+    {
+      "seed": 102,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 4,
+      "floorSkips": 3,
+      "substitutes": [
+        {
+          "eventId": 395,
+          "type": "cast",
+          "skill": "shot"
+        },
+        {
+          "eventId": 433,
+          "type": "cast",
+          "skill": "shot"
+        },
+        {
+          "eventId": 489,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "floor": 4,
+      "set": "discovery",
+      "fingerprint": "3e552d4eaad7ff9d2b5150706dab46f329f4cdc8ceab7422e0116395adc227db"
+    },
+    {
+      "seed": 201,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 7,
+      "herbalHeals": 3,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "confirmation",
+      "fingerprint": "a11dd94b71c59f3fb3b40746a7816a49101205e0e26e0059229e59eaaff75cc7"
+    },
+    {
+      "seed": 201,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 7,
+      "herbalHeals": 3,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 4,
+      "set": "confirmation",
+      "fingerprint": "7c0e836570bd728f6b9c0e9d4f289a4504c1c754306f5c4fa2e239359b1260cc"
+    },
+    {
+      "seed": 202,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 7,
+      "herbalHeals": 3,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "confirmation",
+      "fingerprint": "e248dc57afb0faf3e115c8c11f4aab4f2aea72cbb6edb37abf86d262b359c17b"
+    },
+    {
+      "seed": 202,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 5,
+      "herbalHeals": 4,
+      "floorSkips": 2,
+      "substitutes": [
+        {
+          "eventId": 467,
+          "type": "cast",
+          "skill": "shot"
+        },
+        {
+          "eventId": 506,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "floor": 4,
+      "set": "confirmation",
+      "fingerprint": "bcedabf16c0e4e12a26e268750e68256753778c65fca770a7cdce284919f5475"
+    },
+    {
+      "seed": 101,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "discovery",
+      "fingerprint": "b6a50710a777f8bd07cbaed72478b049219cb12bba20b8f14085df0f9068cca7"
+    },
+    {
+      "seed": 101,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 3,
+      "floorSkips": 2,
+      "substitutes": [
+        {
+          "eventId": 283,
+          "type": "cast",
+          "skill": "shot"
+        },
+        {
+          "eventId": 337,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "floor": 4,
+      "set": "discovery",
+      "fingerprint": "0c0bb6ca033b3276776bd1a85a6d7d2fc60dfabf02514ba07ff825bbfa8f1070"
+    },
+    {
+      "seed": 102,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 5,
+      "herbalHeals": 1,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "discovery",
+      "fingerprint": "eac8c7da55ffb23a8b45b72593b945e199739e14f5f81e4a8c0ac7c29f6f61be"
+    },
+    {
+      "seed": 102,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 1,
+      "floorSkips": 1,
+      "substitutes": [
+        {
+          "eventId": 335,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "floor": 4,
+      "set": "discovery",
+      "fingerprint": "c3132f8576f359fa62b3bc7ac7230eb20e727fce9687f1a9d0a55149670e5f8f"
+    },
+    {
+      "seed": 201,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "confirmation",
+      "fingerprint": "dfe76a03ba02c0963826933d489ace0cc39748bad71ebb2790b5790ff2fede17"
+    },
+    {
+      "seed": 201,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 4,
+      "set": "confirmation",
+      "fingerprint": "156f8420738550aa1b7c46baabd75c4edf1c659bf87f67ecc0327f2909220a12"
+    },
+    {
+      "seed": 202,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 4,
+      "herbalHeals": 4,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "floor": 0,
+      "set": "confirmation",
+      "fingerprint": "a63b26f37c3a6b8057e40f81899aba5fd468e2b401424cbedd434fbe7da54ec6"
+    },
+    {
+      "seed": 202,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 4,
+      "floorSkips": 1,
+      "substitutes": [
+        {
+          "eventId": 222,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "floor": 4,
+      "set": "confirmation",
+      "fingerprint": "afcf7d5d62011d47a86b9f6c729cfffd8cd8f27c97309d33564181371400beb6"
+    }
+  ],
+  "normal": [
+    {
+      "seed": 1,
+      "route": "greenhouse",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 6,
+      "herbalHeals": 2,
+      "floorSkips": 1,
+      "substitutes": [
+        {
+          "eventId": 377,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "reward": {
+        "cleared": 3,
+        "gold": 190,
+        "xp": 80,
+        "firstClear": true,
+        "loot": [
+          "filterveil"
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "route": "scriptorium",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 0
+      },
+      "materialCasts": 5,
+      "herbalHeals": 4,
+      "floorSkips": 2,
+      "substitutes": [
+        {
+          "eventId": 488,
+          "type": "cast",
+          "skill": "shot"
+        },
+        {
+          "eventId": 537,
+          "type": "cast",
+          "skill": "shot"
+        }
+      ],
+      "failed": 0,
+      "reward": {
+        "cleared": 3,
+        "gold": 180,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "counterlens"
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "route": "theater",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "materialCasts": 3,
+      "herbalHeals": 3,
+      "floorSkips": 0,
+      "substitutes": [],
+      "failed": 0,
+      "reward": {
+        "cleared": 2,
+        "gold": 130,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "votivelute"
+        ]
+      }
+    }
+  ],
+  "final": {
+    "gold": 500,
+    "xp": [
+      {
+        "id": "a",
+        "xp": 210
+      },
+      {
+        "id": "b",
+        "xp": 210
+      },
+      {
+        "id": "c",
+        "xp": 210
+      },
+      {
+        "id": "d",
+        "xp": 210
+      },
+      {
+        "id": "e",
+        "xp": 210
+      },
+      {
+        "id": "f",
+        "xp": 190
+      }
+    ],
+    "warehouse": {
+      "filterveil": 1,
+      "counterlens": 1,
+      "votivelute": 1
+    }
+  },
+  "unchanged": {
+    "reference": "7fc32d910a55f82602fac80081a82e814b19730e",
+    "count": 40,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  }
+}

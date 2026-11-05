@@ -1,0 +1,9 @@
+{
+  "desktop": true,
+  "mobile": true,
+  "excluded": [],
+  "desktopGold": 370,
+  "desktopNext": 3,
+  "mobileGold": 500,
+  "mobileNext": 4
+}
