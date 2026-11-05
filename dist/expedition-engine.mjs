@@ -12,7 +12,7 @@ import {foundryApproach,resolveFoundryPass,validFoundryFlow,FOUNDRY_COOLED_VAULT
 import {validEquipment,equipmentTotals} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
-import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,MAX_TRAINING_RANK} from './expedition-data.mjs';
+import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,DEFENSE_TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,MAX_TRAINING_RANK} from './expedition-data.mjs';
 export const RULESET='original-wod-inspired-0.57.0';
 const routes={front:['front','left','right','center','rear'],left:['right','front','center','rear','left'],right:['left','front','center','rear','right'],center:['front','left','right','center','rear'],rear:['front','left','right','center','rear']};
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
@@ -22,7 +22,7 @@ function validatePlan(h,t){
  if(!h.healing||!['lowest','self_first'].includes(h.healing.priority??'lowest')||typeof h.healing.enabled!=='boolean'||![.5,.65,.8].includes(h.healing.threshold)||![...Object.keys(POS),'all','self'].includes(h.healing.target)||(h.healing.enabled&&!t.skills.includes('heal')))throw Error('治疗设置不合法');
  if(!h.itemPolicy||typeof h.itemPolicy.enabled!=='boolean'||![.3,.5,.7].includes(h.itemPolicy.threshold))throw Error('道具使用策略无效');
  if(!h.defenses||Object.keys(h.defenses).length!==3)throw Error('防御配置无效');
- for(const type of Object.keys(TYPES))if(!DEFENSES[h.defenses[type]]?.types.includes(type))throw Error('防御技能与攻击类型不匹配');
+ for(const type of Object.keys(DEFENSE_TYPES))if(!DEFENSES[h.defenses[type]]?.types.includes(type))throw Error('防御技能与攻击类型不匹配');
 }
 export function validate(c){
  if(c?.version!==VERSION||!Number.isInteger(c.seed)||c.seed<1||c.seed>999999)throw Error('配置版本或种子无效');
@@ -50,13 +50,13 @@ export function skillLevel(u,sid){return (u.skills[sid]||0)+(SKILLS[sid]?.kind==
 export function skillBreakdown(u,sid){const training=u.training?.['skill:'+sid]||0,specialization=u.trained===sid?3:0,temporary=SKILLS[sid]?.kind==='attack'?current(u,'skill'):0;return {base:(u.skills[sid]||0)-training-specialization,specialization,training,temporary,total:skillLevel(u,sid)};}
 export function mean(u,sid){const s=SKILLS[sid];return 2*current(u,s.primary)+current(u,s.secondary)+2*skillLevel(u,sid);}
 export function defenseProfile(u,type){
- const requested=u.defenses?.[type]||'natural',chosen=DEFENSES[requested];
+ const requested=u.defenses?.[type==='mental'?'magic':type]||'natural',chosen=DEFENSES[requested];
  let reason=null;
  if(!chosen||!chosen.types.includes(type))reason='类型不匹配';
  else if(chosen.gear&&!gearSupports(u.gear,chosen.gear))reason='缺少盾牌（需携盾武器）';
  else if(u.mp<chosen.cost)reason='法力不足';
  const skill=reason?'natural':requested,d=DEFENSES[skill];
- const [primary,secondary]=skill==='natural'?(type==='melee'?['dex','agi']:type==='magic'?['wil','int']:['agi','per']):[d.primary,d.secondary];
+ const [primary,secondary]=skill==='natural'?(type==='melee'?['dex','agi']:['magic','mental'].includes(type)?['wil','int']:['agi','per']):[d.primary,d.secondary];
  const training=skill==='natural'?0:u.training?.['defense:'+skill]||0,specialization=skill==='natural'?0:u.defenseFocus===skill?3:0,temporaryLevel=skill==='natural'?0:current(u,'defenseSkill'),level=skill==='natural'?0:6+specialization+training+temporaryLevel;
  const base=2*current(u,primary)+current(u,secondary)+2*level;
  return {requested,skill,name:d.name,reason,level,training,specialization,temporaryLevel,cost:d.cost,primary,secondary,primaryValue:current(u,primary),secondaryValue:current(u,secondary),base,bonus:current(u,'defense'),mean:base+current(u,'defense')};
@@ -178,9 +178,9 @@ export function simulate(c,options={}){
     const defenseMean=profile.mean,defense=roll(defenseMean);
     emit('defend',t.name+' 使用「'+profile.name+'」应对'+TYPES[s.type]+(profile.reason?'（'+profile.reason+'，回退自然防御）':''),t.id,[u.id],{cast,attackType:s.type,...profile,roll:defense,mpBefore,mpAfter:t.mp});
     const grade=attack<=defense?'闪避':attack<=defense*1.5?'命中':attack<=defense*2.25?'重击':'致命';const multiplier={'闪避':0,'命中':1,'重击':1.25,'致命':1.5}[grade];
-    const base=current(u,s.primary)/2+current(u,s.secondary)/3+lv/2,rolled=grade==='闪避'?0:roll(base*s.power),armorBefore=current(t,'armor'),armorIgnored=Math.min(Math.max(0,armorBefore),s.ignoreArmor||0),armor=armorBefore-armorIgnored,resistance=resistanceOf(t,s.type),mitigation=damageResult(rolled,multiplier,armor,resistance),damage=grade==='闪避'?0:mitigation.damage,actual=Math.min(t.hp,damage),beforeHp=t.hp;t.hp-=actual;
+    const base=current(u,s.primary)/2+current(u,s.secondary)/3+lv/2,rolled=grade==='闪避'?0:roll(base*s.power),armorBefore=current(t,'armor'),armorIgnored=s.type==='mental'?Math.max(0,armorBefore):Math.min(Math.max(0,armorBefore),s.ignoreArmor||0),armor=s.type==='mental'?0:armorBefore-armorIgnored,resistance=resistanceOf(t,s.type),mitigation=damageResult(rolled,multiplier,armor,resistance),damage=grade==='闪避'?0:mitigation.damage,actual=Math.min(t.hp,damage),beforeHp=t.hp;t.hp-=actual;
     if(stats[u.id]){stats[u.id].damage+=damage;stats[u.id].actual+=actual;stats[u.id].overkill+=damage-actual;}
-    emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+' 伤害'+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-damage,damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});
+    emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+' 伤害'+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,...(s.type==='mental'?{mentalRule:'心理攻击沿用法术栏防御；物理护甲不参与，只采用心理抗性。'}:{}),resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-damage,damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});
     if(t.hp===0){emit('down',t.name+' 倒下。',u.id,[t.id],{cast});removeSummons(t.id,'主人倒下');}
     else if(canApplyHealingBlock(s,grade,t)){
      const effect={id:`${roomIndex}:${cast}:${t.id}:healingBlock`,skill:r.skill,name:s.name,component:'禁疗',source:u.id,sourceName:u.name,stat:HEALING_BLOCK_STAT,value:1,scope:'rounds',active:true,harmful:true,activateTick:clock,activateRound:round,expires:round,expiresTick:clock};

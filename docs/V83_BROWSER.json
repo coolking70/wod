@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "steps": [
+    "新公会实际诘心出征：18物理护甲不参与、心理弱点-10%按记录结算；敌我都有心理攻击，无挫志附着，公开敌情和原始证据可读",
+    "pending期间改准备方案/刷新仍保留原报告；正常140/60后付40经验学定心吟、20经验训练诘心、缎带分给法师；复战90/40、心理抗性20%及意志来源、历史/备份通过",
+    "390px恢复完整历史、三栏共享防御可读且无溢出；明确把法师法术/心理栏改自然防御，实际seed3出征零费心理防御并领取90/40，最终320金币"
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "plan": "pressure",
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 257,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 193,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 2,
+      "plan": "composure",
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 239,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 181,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 3,
+      "plan": "composure, c natural mind defense",
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 238,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 190,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 0
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

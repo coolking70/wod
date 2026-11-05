@@ -1,3 +1,4 @@
+import {INQUEST_ROOMS} from './expedition-inquest.mjs';
 import {SHOALS_SLOTS,shoalsRooms,shoalsChart} from './expedition-shoals.mjs';
 import {THEATER_ROOMS} from './expedition-theater.mjs';
 import {COURIER_ROOMS,courierRooms} from './expedition-courier.mjs';
@@ -11,13 +12,15 @@ export const VERSION='0.40.0';
 export const clone=x=>structuredClone(x);
 export const POS={front:'前排',left:'左翼',right:'右翼',center:'中央',rear:'后排'};
 export const ROLE_TARGETS={healer:'治疗者',summoner:'召唤者'};
-export const roleTargetAllowed=s=>s.kind==='attack'&&s.mode==='single'&&['ranged','magic'].includes(s.type);
+export const roleTargetAllowed=s=>s.kind==='attack'&&s.mode==='single'&&['ranged','magic','mental'].includes(s.type);
 export const targetOptions=s=>s.mode==='self'?{self:'自身'}:s.mode==='all'?{all:'全队'}:s.kind==='buff'?{...POS,self:'自身'}:roleTargetAllowed(s)?{...POS,...ROLE_TARGETS}:POS;
 export const ATTR={str:'力量',con:'体质',int:'智力',dex:'灵巧',cha:'魅力',agi:'敏捷',per:'感知',wil:'意志'};
-export const TYPES={melee:'近战',ranged:'远程',magic:'法术'};
-export const DEFENSES={natural:{name:'自然防御',cost:0,types:['melee','ranged','magic']},parry:{name:'盾牌格挡',primary:'dex',secondary:'str',cost:1,types:['melee'],gear:'plate'},sidestep:{name:'闪身卸力',primary:'dex',secondary:'agi',cost:1,types:['melee']},dodge:{name:'躲避箭矢',primary:'agi',secondary:'per',cost:1,types:['ranged']},resist:{name:'心智抵抗',primary:'wil',secondary:'int',cost:2,types:['magic']}};
+export const TYPES={melee:'近战',ranged:'远程',magic:'法术',mental:'心理'};
+// Mental attacks share the existing mind-resist choice; no fourth config slot.
+export const DEFENSE_TYPES={melee:TYPES.melee,ranged:TYPES.ranged,magic:'法术 / 心理'};
+export const DEFENSES={natural:{name:'自然防御',cost:0,types:['melee','ranged','magic','mental']},parry:{name:'盾牌格挡',primary:'dex',secondary:'str',cost:1,types:['melee'],gear:'plate'},sidestep:{name:'闪身卸力',primary:'dex',secondary:'agi',cost:1,types:['melee']},dodge:{name:'躲避箭矢',primary:'agi',secondary:'per',cost:1,types:['ranged']},resist:{name:'心智抵抗',primary:'wil',secondary:'int',cost:2,types:['magic','mental']}};
 export const naturalDefenses=()=>({melee:'natural',ranged:'natural',magic:'natural'});
-export const ROOM_IDS=['harbor_gate','harbor_pass','harbor_cache','harbor_beacon','gallery','cistern','altar','infirmary','garden','heart',...FOUNDRY_ROOMS.map(r=>r.id),...WATCH_ROOMS.map(r=>r.id),...COURIER_ROOMS.map(r=>r.id),...THEATER_ROOMS.map(r=>r.id),...SHOALS_SLOTS];
+export const ROOM_IDS=['harbor_gate','harbor_pass','harbor_cache','harbor_beacon','gallery','cistern','altar','infirmary','garden','heart',...FOUNDRY_ROOMS.map(r=>r.id),...WATCH_ROOMS.map(r=>r.id),...COURIER_ROOMS.map(r=>r.id),...THEATER_ROOMS.map(r=>r.id),...SHOALS_SLOTS,...INQUEST_ROOMS.map(r=>r.id)];
 // All content and tuning below are original. Formula policies are documented in docs/V3_RULES.md.
 export const SKILLS={
  strike:{name:'剑术',kind:'attack',type:'melee',primary:'dex',secondary:'str',power:1.3,cost:0,mode:'single',max:1,desc:'近战单体；按近战路线寻找目标。'},
@@ -25,6 +28,7 @@ export const SKILLS={
  volley:{name:'齐射',kind:'attack',type:'ranged',primary:'dex',secondary:'per',power:1.1,cost:5,item:'arrow',mode:'position',max:3,desc:'同位置最多 3 人，分别检定；不跨位置补齐。'},
  wave:{name:'潮汐冲击',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1.5,cost:6,item:'rune',mode:'position',max:3,desc:'同位置最多 3 人；造成法术伤害。'},
  suppress:{name:'截疗符',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:.65,cost:6,item:'rune',mode:'single',max:1,requiresGear:'focus',healingBlock:true,desc:'学者单体法术；需法器，消耗6法力和1符纸。命中仍存活且拥有救护技能的目标后，封锁其本回合余下的自动草药救护；目标仍可普通行动，已完成治疗不撤销。闪避不附着；命中但伤害被吸收仍可附着；同回合不叠加或延长。伤害低于微光，晚于目标行动时可能没有救护可阻。'},
+ mindcall:{name:'诘心回声',kind:'attack',type:'mental',primary:'cha',secondary:'wil',power:.85,cost:6,mode:'single',max:1,requiresGear:'lute',desc:'吟游者普通心理攻击，需乐器；6法力、无共享材料，魅力/意志单体检定。可指定阵位或敌方职责；与法术共用心智抵抗选择和对应培养，命中按心理抗性减伤、物理护甲不参与。不附挫志，不偷取法力；先手击倒来源、定心吟/屏障和心理抗性都可应对，法术抗性不替代心理抗性。'},
  dissonance:{name:'挫志弦',kind:'attack',type:'magic',primary:'cha',secondary:'wil',power:.65,cost:5,mode:'single',max:1,requiresGear:'lute',weakening:true,desc:'吟游者普通技能，需乐器；5法力、无共享耗材，低伤害魅力/意志单体法术。命中未倒下者附挫志：攻击技能等级-3，持续当前与下一回合；固定削弱与期限不随训练提高，不叠加、不刷新，击倒来源不解除。影响之后的攻击命中与伤害，不影响辅助、救护、防御技能或已完成检定；闪避不附着，吸收伤害仍可附着。'},
  cleanse:{name:'清心符',kind:'buff',primary:'int',secondary:'wil',cost:4,item:'rune',mode:'position',max:3,requiresGear:'focus',cleanse:true,desc:'学者普通技能，预备阶段用4法力和1符纸，移除所选阵位最多3名存活者身上的技能负面效果；不移除增益、不复活、不回滚此前检定、不提供免疫，无负面目标免费跳过。通常下一回合才有机会净化挫志，禁疗往往已先到期。净化数量固定、不随训练提高，一次施放多人仅扣1符纸，占用本次预备行动。'},
  spark:{name:'微光',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:1,cost:1,mode:'single',max:1,desc:'低消耗法术单体。'},
@@ -58,7 +62,7 @@ const FOUNDERS=[
  {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep'],base:6},
  {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt'],base:6},
  {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse'],base:6},
- {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance'],base:6},
+ {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance','mindcall'],base:6},
  {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','shot','poultice','slowcare'],base:6}
 ];
 export const CLASS_IDS={a:'guardian',b:'ranger',c:'tidecaller',d:'scholar',e:'bard',f:'herbalist'};
@@ -81,7 +85,7 @@ export function resolveHeroPlan(h,roomId){const plan=clone(h);for(const k of PLA
 export function migrateConfig(raw){const c=clone(raw);if(c?.version==='0.3.0'){c.version='0.4.0';c.roomOrders={};for(const h of c.heroes){h.overrides={};h.defenses=naturalDefenses();h.defenseFocus=h.id==='a'?'parry':h.id==='b'?'dodge':'resist';}}if(c?.version==='0.4.0'){c.version='0.5.0';c.expedition='classic';for(const h of c.heroes){h.item='none';h.itemPolicy={enabled:true,threshold:.3};}}if(c?.version==='0.5.0')c.version='0.6.0';if(c?.version==='0.6.0'){c.version='0.7.0';for(const h of c.heroes)h.training={};}if(c?.version==='0.7.0')c.version='0.8.0';if(c?.version==='0.8.0'){c.version='0.11.0';c.bellApproach='bypass';}if(c?.version==='0.10.0')c.version='0.11.0';if(c?.version==='0.11.0'){c.version=VERSION;c.rescueApproach??='pass';}if(['0.12.0','0.14.0','0.20.0','0.23.0'].includes(c?.version))c.version=VERSION;return c;}
 
 export const ITEMS={none:{name:'不携带',charges:0},tonic:{name:'凝潮药瓶',charges:2,resource:'mp',amount:24,desc:'法力低于阈值时自用，恢复24法力；整次远征2次。'},salve:{name:'救急药匣',charges:2,resource:'hp',amount:40,desc:'生命低于阈值时自用，恢复40生命；整次远征2次。'}};
-export const EXPEDITIONS={shoals:{name:"漂流群礁 · 有限海图远征"},theater:{name:"失声剧场 · 削弱与净化"},courier:{name:"灯塔后续 · 沉船邮路"},foundrywatch:{name:"铸库后续 · 封库守望"},foundry:{name:"锈潮铸库 · 四场连续支线"},harbor:{name:"第二章 · 盐风港的无光灯塔"},seasoned:{name:'熟练试炼 · 裂潮哨站'},veteran:{name:'资深试炼 · 沉钟议庭'},tutorial:{name:'初次出征 · 回声侧廊'},chapter:{name:'第一章 · 沉钟之下'},classic:{name:'修道院 · 基线远征'},vigil:{name:'潮汐异变 · 战术挑战'},archive:{name:'封库试炼 · 敌情与克制'},scarcity:{name:'断潮封库 · 限时补给挑战'},survival:{name:'守灯归途 · 生存试炼'},hospice:{name:'溺潮疗所 · 切断支援'}};
+export const EXPEDITIONS={inquest:{name:'镜心问堂 · 心理攻防'},shoals:{name:"漂流群礁 · 有限海图远征"},theater:{name:"失声剧场 · 削弱与净化"},courier:{name:"灯塔后续 · 沉船邮路"},foundrywatch:{name:"铸库后续 · 封库守望"},foundry:{name:"锈潮铸库 · 四场连续支线"},harbor:{name:"第二章 · 盐风港的无光灯塔"},seasoned:{name:'熟练试炼 · 裂潮哨站'},veteran:{name:'资深试炼 · 沉钟议庭'},tutorial:{name:'初次出征 · 回声侧廊'},chapter:{name:'第一章 · 沉钟之下'},classic:{name:'修道院 · 基线远征'},vigil:{name:'潮汐异变 · 战术挑战'},archive:{name:'封库试炼 · 敌情与克制'},scarcity:{name:'断潮封库 · 限时补给挑战'},survival:{name:'守灯归途 · 生存试炼'},hospice:{name:'溺潮疗所 · 切断支援'}};
 const vigil=clone(ROOMS);
 vigil[0].note='前排两名护卫掩护后排召潮者。召潮者每次存活潮卫被击倒后可再次召唤；远程集中后排可以切断召唤来源。';
 vigil[0].enemies=[enemy('vg1','潮壳护卫','front','strike',160),enemy('vg2','潮壳护卫','front','strike',160),{...enemy('vg3','召潮者','rear','spark',150),skills:{spark:7,sentinel:7},prep:[row('sentinel','front')]}];
@@ -89,7 +93,7 @@ vigil[1].note='两名祭司用群体法术压制中央。分散站位可减少�
 vigil[1].enemies=[enemy('vc1','潮闸巨卫','front','strike',230),enemy('vc2','深潮祭司','rear','wave',160,10),enemy('vc3','深潮祭司','rear','wave',160,10)];
 vigil[2].note='守誓者生命不高于一半且仍存活时碎印：召来两名潮卫，后续普通行动改为压制后排的法术。击倒主人会同时驱散其召唤物。请为此房间保留法力与药瓶。';
 vigil[2].enemies=[{...enemy('vs1','碎印守誓者','front','strike',480,10),skills:{strike:10,wave:10,guard:6},prep:[row('guard','self')],awakens:true},enemy('vs2','誓约祭司','rear','spark',140,8)];
-export function roomsFor(c){return (c.expedition==='shoals'?shoalsRooms(c):c.expedition==='theater'?THEATER_ROOMS:c.expedition==='courier'?courierRooms(c):c.expedition==='foundrywatch'?WATCH_ROOMS:c.expedition==='foundry'?foundryRooms(c):c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
+export function roomsFor(c){return (c.expedition==='inquest'?INQUEST_ROOMS:c.expedition==='shoals'?shoalsRooms(c):c.expedition==='theater'?THEATER_ROOMS:c.expedition==='courier'?courierRooms(c):c.expedition==='foundrywatch'?WATCH_ROOMS:c.expedition==='foundry'?foundryRooms(c):c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
 export function challengeConfig(){const c=defaults();c.expedition='vigil';for(const h of c.heroes){h.item=['c','d','e','f'].includes(h.id)?'tonic':'salve';h.itemPolicy.threshold=h.item==='tonic'?.3:.5;}c.heroes.find(h=>h.id==='c').prep=[row('sentinel','front')];c.heroes.find(h=>h.id==='d').overrides.cistern={prep:[row('ward','center')]};for(const id of ['b','e']){const h=c.heroes.find(h=>h.id===id);h.overrides.altar={defenses:{...h.defenses,magic:'resist'}};}return c;}
 
 export {rankCost} from './expedition-progression-rules.mjs';
@@ -123,7 +127,7 @@ export function archiveConfig(adapted=false){
 }
 
 export const hasArchiveEvents=c=>['archive','scarcity','chapter'].includes(c.expedition);
-export const supplyBudget=c=>c.expedition==='veteran'?30:['scarcity','theater'].includes(c.expedition)?24:['shoals','foundry','foundrywatch','courier'].includes(c.expedition)?30:['survival','hospice','seasoned','harbor'].includes(c.expedition)?36:60;
+export const supplyBudget=c=>c.expedition==='veteran'?30:['scarcity','theater','inquest'].includes(c.expedition)?24:['shoals','foundry','foundrywatch','courier'].includes(c.expedition)?30:['survival','hospice','seasoned','harbor'].includes(c.expedition)?36:60;
 export function roomTimeBudget(c,roomId){return c.expedition==='scarcity'?5-(roomId==='cistern'&&c.rescueApproach==='gather'?1:0):24;}
 export function scarcityConfig(adapted=false){const c=archiveConfig(adapted);c.expedition='scarcity';c.supplies={herb:8,rune:8,arrow:8};return c;}
 
@@ -276,5 +280,16 @@ export function shoalsConfig(plan='roles',chart=1){
  for(const h of c.heroes){const kind=HEROES.find(t=>t.id===h.id).classId;if(kind==='guardian')h.main=[row('shieldbash','front','round'),row('strike')];if(kind==='scholar')h.pos='left';if(kind==='herbalist'){h.pos='right';h.healing.threshold=.8;}
   for(const [i,node] of map.nodes.entries()){const rows=node.tactics[kind];if(rows)h.overrides[SHOALS_SLOTS[i]]={[kind==='scholar'?'prep':'main']:clone(rows)};}
  }
+ return c;
+}
+
+export function inquestConfig(plan='pressure'){
+ if(!['plain','pressure','composure'].includes(plan))throw Error('未知问堂方案');
+ const c=theaterConfig('plain');c.expedition='inquest';
+ const get=id=>c.heroes.find(h=>h.id===id),a=get('a'),mage=get('c'),d=get('d'),e=get('e');
+ d.overrides.inquest_seat={prep:[row('ward','center')]};
+ if(plan==='plain')return c;
+ e.main=[row('mindcall','front','round'),row('shot','front')];e.overrides.inquest_seat={main:[row('mindcall','rear','round'),row('shot','rear')]};
+ if(plan==='composure'){a.defenses.magic='resist';mage.defenses.magic='resist';d.defenses.magic='resist';e.prep=[row('resolvechant','front','once'),row('insight','center','once')];e.overrides.inquest_seat.prep=[row('resolvechant','center','once'),row('mastery','rear','once')];}
  return c;
 }

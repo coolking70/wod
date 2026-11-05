@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前560项测试通过，0失败/跳过；231个ES模块、37个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前568项测试通过，0失败/跳过；235个ES模块、38个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -254,3 +254,16 @@ feature/v082-casting-media从e188ed7干净549基线接续。media-data纯枚举�
 新增11项tests/v82.test.mjs；casting-media-cases只作固定研究方案，不是公开最优预设。check-v82两资产×四组×六种子，发现/确认分开，48全六人不等于普遍必要；学者缺料尝试也不等于损失有效施法。正常新公会seed1混合→seed2仅学者复写，130/55古琴→85/40古琴，最终215gold/全员95XP/两琴未配装，无购买/培养。browser-v82与API完整guild严格同。390px只恢复/证据/编辑/切技能，没有第三次实际出征。v81完整浏览器回归通过；两次初稿导航假定超时原件保留，未改规则。
 
 云端证据/workspace/wod-evidence/v82，独立v81参考/tmp/wod-v081-reference；复验命令和限制见V82_CASTING_MEDIA。原版数值待核不阻塞新系统；保持单人、普通技能自由与独立进阶。无推送/合并/PR/部署，无新重大待决。
+
+
+## v0.83心理攻击续接
+
+v0.83按R1增加心理攻击：吟游者自由普通技能诘心回声，6法力/无材料，独立心理抗性、物理护甲不参与；仍共用法术/心理防御栏和既有心智抵抗培养。新两场24补给镜心问堂含首场心理薄弱重甲、末场抗心理弱法审守与定心支援，固定定心缎带有心理抗性/法术弱点取舍。568测试、30执行/18不同战斗输入的有限检查、32旧报告除严格断言的新增零抗性/可用技能外相同；桌面/390px三次真实出征和两份全量公会API等价、v82媒介浏览器回归通过。17路线/35装备，原型数值；详见[V83_MENTAL_ATTACKS.md](V83_MENTAL_ATTACKS.md)。新增阶段仅本地，不推送/合并/部署。
+
+feature/v083-mental-assault从9aeb7a6干净560基线。TYPES增加mental、DEFENSE_TYPES保留原三栏，defenseProfile mental映射magic并用原意志/智力与resist成本。mental attack只令本次armor=0并记mentalRule，抗性独立；dissonance仍magic。心理快照增加mental键，E最终skills新增mindcall，所以32旧报告只在严格核零/基础6后归一这两处，全其余对象相同，不冒称raw全等。review差异格式化必须用DEFENSE_TYPES，首次全回归在此发现崩溃已修。
+
+inquest模块2场公开原创敌群；data接route/budget/IDs/config，adventure/stage/ledger/outcome接真实场景/结尾。calmribbon固定饰品wil2/agi-2、mental20/magic-10，仅正常通关领取。pressure基本可用，composure用已有resolvechant课程，须正常40XP学习；questioner个人构筑不预装未学课程。普通技能/后期进阶没有互斥改动。
+
+check-v83正常首通140/60→40XP学定心吟→20XP训诘心一级→缎带C→复战90/40，最终230gold/E40XP/其余100XP；手机把C magic改natural后seed3真实6/9回合→320gold/E80XP/其余140XP，两份完整guild均与UI全对象同。30模拟包含plain/pressure在fresh/studied重复，按configFingerprint记录18不同输入，不算30独立策略证据。全部六人只为有限教学短线结果。
+
+568全回归、235mjs38cjs，新桌面/390px与v82完整媒介浏览器通过。首次规则夹具的回蓝/进场初始化/课程/节拍成本断言失败和真实review崩溃全部保留，未弱化断言或调敌人过测。云端证据/workspace/wod-evidence/v83，参考/tmp/wod-v082-reference，截图内部。没有推送、合并、PR、部署或新重大待决。

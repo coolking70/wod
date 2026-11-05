@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ inquest:{bonus:50,xp:20,firstGold:50,firstXp:20,pool:['calmribbon']},
  shoals:{bonus:55,xp:20,firstGold:55,firstXp:20,pool:['saltcloak','echocharm']},
  theater:{bonus:45,xp:20,firstGold:45,firstXp:15,pool:['votivelute','echocharm']},
  courier:{bonus:75,xp:25,firstGold:65,firstXp:25,pool:['postbell']},

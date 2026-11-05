@@ -1,0 +1,1658 @@
+{
+  "note": "30 bounded actual simulations: fresh basic plain/pressure and normally earned studied plain/pressure/composure. Studied is one normal inquest claim then40XP course, no gear assignment/training. Its plain/pressure inputs duplicate fresh; count distinct actual configs separately, not independent strategy evidence. Composure is deliberately rejected before course, no gifted unlock. Discovery101–102 and confirmation201–204; same24 supplies/actual assets within profile; plans change multiple tactics and RNG order, no avoided-damage or global optimality claim.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 101,
+      "configFingerprint": "ca1ff3c52759ee4f23f6def205d7454b22c4e3e8eb587d6ac743a0f65556d9fa",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 272,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 234,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 0,
+      "defenseMana": 19,
+      "bardMP": 49
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 102,
+      "configFingerprint": "4a550bd8d70bba4bbc2624f8d18c687493e3b2d1043bb352169e5cf078ff94da",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 277,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 235,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 48,
+      "defenseMana": 18,
+      "bardMP": 48
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 201,
+      "configFingerprint": "4a634a54538c7492b9b60f19380b09b14b41c4bffd8da465d31a1e016db66ca6",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 279,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 53,
+      "defenseMana": 15,
+      "bardMP": 47
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 202,
+      "configFingerprint": "12d1c231e55ffed6cc3b00d0864e00d0ddf201eee59e8068eded952b4e2c548e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 273,
+          "supplies": {
+            "herb": 4,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 231,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 48,
+      "defenseMana": 15,
+      "bardMP": 48
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 203,
+      "configFingerprint": "a10ffa1f0755fd7f0dc39f94f8fa47fee26ed8c8d113881a5dce47214c11c800",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 275,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 228,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 70,
+      "defenseMana": 18,
+      "bardMP": 48
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 204,
+      "configFingerprint": "ab0af55a53939cea4d9cc497415a68df370216316c297ed693a23e8568625d0e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 285,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 229,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 58,
+      "defenseMana": 19,
+      "bardMP": 47
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 101,
+      "configFingerprint": "0b118c877cec754fbf59e0672df54885a00de00d45145730fa9a80cadebea44f",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 253,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 186,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 48,
+      "defenseMana": 19,
+      "bardMP": 6
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 102,
+      "configFingerprint": "aa619aa12ea667f0d7b7ede04eb004066170e98ba45e0bc849aba85f4e5daa0a",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 185,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 64,
+      "defenseMana": 14,
+      "bardMP": 0
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 201,
+      "configFingerprint": "d103eee9a3e82b3e04ae7520f0936a6775a872fbb16ac8d067a50eed8a26b427",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 61,
+      "defenseMana": 13,
+      "bardMP": 4
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 202,
+      "configFingerprint": "798c21f6a205d46207521a27f5d5181145b2a66898fb7422d8b34991f321bf68",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 189,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 29,
+      "defenseMana": 14,
+      "bardMP": 3
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 203,
+      "configFingerprint": "9f901f697779509e3e288cff062ef1c1534fb20d02679d3557029665d90b140e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 190,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 33,
+      "defenseMana": 13,
+      "bardMP": 5
+    },
+    {
+      "profile": "fresh",
+      "plan": "pressure",
+      "seed": 204,
+      "configFingerprint": "9a96a3ac918caae3e233c887460cc051b81495171b963235a837d45d2129934f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 258,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 47,
+      "defenseMana": 15,
+      "bardMP": 5
+    },
+    {
+      "profile": "studied",
+      "plan": "plain",
+      "seed": 101,
+      "configFingerprint": "ca1ff3c52759ee4f23f6def205d7454b22c4e3e8eb587d6ac743a0f65556d9fa",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 272,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 234,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 0,
+      "defenseMana": 19,
+      "bardMP": 49
+    },
+    {
+      "profile": "studied",
+      "plan": "plain",
+      "seed": 102,
+      "configFingerprint": "4a550bd8d70bba4bbc2624f8d18c687493e3b2d1043bb352169e5cf078ff94da",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 277,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 624,
+          "mp": 235,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 48,
+      "defenseMana": 18,
+      "bardMP": 48
+    },
+    {
+      "profile": "studied",
+      "plan": "plain",
+      "seed": 201,
+      "configFingerprint": "4a634a54538c7492b9b60f19380b09b14b41c4bffd8da465d31a1e016db66ca6",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 279,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 53,
+      "defenseMana": 15,
+      "bardMP": 47
+    },
+    {
+      "profile": "studied",
+      "plan": "plain",
+      "seed": 202,
+      "configFingerprint": "12d1c231e55ffed6cc3b00d0864e00d0ddf201eee59e8068eded952b4e2c548e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 273,
+          "supplies": {
+            "herb": 4,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 231,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 48,
+      "defenseMana": 15,
+      "bardMP": 48
+    },
+    {
+      "profile": "studied",
+      "plan": "plain",
+      "seed": 203,
+      "configFingerprint": "a10ffa1f0755fd7f0dc39f94f8fa47fee26ed8c8d113881a5dce47214c11c800",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 275,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 228,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 70,
+      "defenseMana": 18,
+      "bardMP": 48
+    },
+    {
+      "profile": "studied",
+      "plan": "plain",
+      "seed": 204,
+      "configFingerprint": "ab0af55a53939cea4d9cc497415a68df370216316c297ed693a23e8568625d0e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 285,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 229,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 0,
+      "psychicDamageTaken": 58,
+      "defenseMana": 19,
+      "bardMP": 47
+    },
+    {
+      "profile": "studied",
+      "plan": "pressure",
+      "seed": 101,
+      "configFingerprint": "0b118c877cec754fbf59e0672df54885a00de00d45145730fa9a80cadebea44f",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 253,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 186,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 48,
+      "defenseMana": 19,
+      "bardMP": 6
+    },
+    {
+      "profile": "studied",
+      "plan": "pressure",
+      "seed": 102,
+      "configFingerprint": "aa619aa12ea667f0d7b7ede04eb004066170e98ba45e0bc849aba85f4e5daa0a",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 185,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 64,
+      "defenseMana": 14,
+      "bardMP": 0
+    },
+    {
+      "profile": "studied",
+      "plan": "pressure",
+      "seed": 201,
+      "configFingerprint": "d103eee9a3e82b3e04ae7520f0936a6775a872fbb16ac8d067a50eed8a26b427",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 264,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 61,
+      "defenseMana": 13,
+      "bardMP": 4
+    },
+    {
+      "profile": "studied",
+      "plan": "pressure",
+      "seed": 202,
+      "configFingerprint": "798c21f6a205d46207521a27f5d5181145b2a66898fb7422d8b34991f321bf68",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 189,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 29,
+      "defenseMana": 14,
+      "bardMP": 3
+    },
+    {
+      "profile": "studied",
+      "plan": "pressure",
+      "seed": 203,
+      "configFingerprint": "9f901f697779509e3e288cff062ef1c1534fb20d02679d3557029665d90b140e",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 259,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 190,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 33,
+      "defenseMana": 13,
+      "bardMP": 5
+    },
+    {
+      "profile": "studied",
+      "plan": "pressure",
+      "seed": 204,
+      "configFingerprint": "9a96a3ac918caae3e233c887460cc051b81495171b963235a837d45d2129934f",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 258,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "mentalCasts": 7,
+      "psychicDamageTaken": 47,
+      "defenseMana": 15,
+      "bardMP": 5
+    },
+    {
+      "profile": "studied",
+      "plan": "composure",
+      "seed": 101,
+      "configFingerprint": "c3001e9a66b7609be1ebc0bab314c3c02964706ea872bc472bb4ffe946a977ae",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 226,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 181,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 2,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 27,
+      "defenseMana": 33,
+      "bardMP": 4
+    },
+    {
+      "profile": "studied",
+      "plan": "composure",
+      "seed": 102,
+      "configFingerprint": "acbc17b0bb7970b8db048c63d5f4bd4e09af42f91dcfa8cb11c449c69509a6fb",
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 233,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 187,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 24,
+      "defenseMana": 33,
+      "bardMP": 4
+    },
+    {
+      "profile": "studied",
+      "plan": "composure",
+      "seed": 201,
+      "configFingerprint": "098bf799cc12ec0d9f23b2fafab130a413c4d152967547d4e3cffccf8e351be4",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 245,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 188,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 0,
+      "defenseMana": 36,
+      "bardMP": 2
+    },
+    {
+      "profile": "studied",
+      "plan": "composure",
+      "seed": 202,
+      "configFingerprint": "7d7ed58fde0b1ddc0874e923fd67460f5b0819654bd85bd6f5cc5a3cc7f9a5c9",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 241,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 191,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 21,
+      "defenseMana": 28,
+      "bardMP": 4
+    },
+    {
+      "profile": "studied",
+      "plan": "composure",
+      "seed": 203,
+      "configFingerprint": "e1e1df9907554cc03284e650544c77aef1749167f802db696f858cdc5c3dfeef",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 227,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 173,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 52,
+      "defenseMana": 33,
+      "bardMP": 3
+    },
+    {
+      "profile": "studied",
+      "plan": "composure",
+      "seed": 204,
+      "configFingerprint": "898ce84af0c15aee6b9a12eb2436909afa370c0bc98bfccc88cf1503c407b638",
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 230,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 184,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "mentalCasts": 8,
+      "psychicDamageTaken": 47,
+      "defenseMana": 33,
+      "bardMP": 3
+    }
+  ],
+  "summary": {
+    "runs": 30,
+    "uniqueBattleInputs": 18,
+    "failures": 0,
+    "injured": 0
+  },
+  "normal": {
+    "seed": 1,
+    "plan": "pressure",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 610,
+        "mp": 257,
+        "supplies": {
+          "herb": 6,
+          "rune": 6,
+          "arrow": 1
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 588,
+        "mp": 193,
+        "supplies": {
+          "herb": 4,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 4,
+      "rune": 3,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 140,
+      "xp": 60,
+      "firstClear": true,
+      "loot": [
+        "calmribbon"
+      ]
+    }
+  },
+  "repeat": {
+    "seed": 2,
+    "plan": "composure",
+    "coursePaid": 40,
+    "skillRankPaid": 20,
+    "gearAssignedTo": "c",
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 614,
+        "mp": 239,
+        "supplies": {
+          "herb": 6,
+          "rune": 6,
+          "arrow": 0
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 588,
+        "mp": 181,
+        "supplies": {
+          "herb": 2,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 2,
+      "rune": 3,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 90,
+      "xp": 40,
+      "firstClear": false,
+      "loot": [
+        "calmribbon"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "9aeb7a6dd16f77711cc1968dd4e08975ec0cb449",
+    "count": 32,
+    "rawFullEqual": false,
+    "assertedAdditions": {
+      "snapshotMentalResistanceZero": 216030,
+      "availableBardSkillMindcallAtBase6": 32
+    },
+    "otherFieldsExcluded": [],
+    "rows": [
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equalAfterExplicitAdditions": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equalAfterExplicitAdditions": true
+      }
+    ]
+  }
+}

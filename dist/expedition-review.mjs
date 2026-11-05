@@ -9,7 +9,7 @@ import {SLOTS} from './expedition-equipment.mjs';
 import {HEAL_PRIORITIES} from './expedition-healing.mjs';
 import {BELL_CHOICES,RESCUE_CHOICES} from './expedition-events.mjs';
 // Read-only projections. Findings describe observations, never inferred combat causality.
-import {ROLE_TARGETS,HEROES,ROOMS,POS,TYPES,SKILLS,GEAR,ATTR,DEFENSES,ITEMS,EXPEDITIONS,clone,migrateConfig,trainingOptions,roomsFor} from './expedition-data.mjs';
+import {ROLE_TARGETS,HEROES,ROOMS,POS,TYPES,DEFENSE_TYPES,SKILLS,GEAR,ATTR,DEFENSES,ITEMS,EXPEDITIONS,clone,migrateConfig,trainingOptions,roomsFor} from './expedition-data.mjs';
 import {validate} from './expedition-engine.mjs';
 const heroIds=new Set(HEROES.map(h=>h.id));
 const heroName=id=>HEROES.find(h=>h.id===id)?.name||id;
@@ -62,7 +62,7 @@ function format(key,value){
  if(key==='bellApproach')return BELL_CHOICES[value].name;
  if(['prep','main'].includes(key))return commandText(value);
  if(['prepOrder','roomOrder'].includes(key))return value.map(heroName).join(' → ');
- if(key==='defenses')return Object.entries(TYPES).map(([k,label])=>label+'：'+DEFENSES[value[k]].name).join('；');
+ if(key==='defenses')return Object.entries(DEFENSE_TYPES).map(([k,label])=>label+'：'+DEFENSES[value[k]].name).join('；');
  if(key==='healing')return `${HEAL_PRIORITIES[value.priority||'lowest']} / ${value.enabled?'开启':'关闭'} / ${value.threshold*100}% / ${POS[value.target]||({all:'全队',self:'自身'}[value.target])}`;
  if(key==='itemPolicy')return `${value.enabled?'开启':'关闭'} / ${value.threshold*100}%`;
  const lookup={advancement:ADVANCEMENTS,pos:POS,gear:GEAR,trained:SKILLS,attribute:ATTR,defenseFocus:DEFENSES,item:ITEMS,expedition:EXPEDITIONS}[key];
