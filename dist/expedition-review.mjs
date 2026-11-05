@@ -1,3 +1,4 @@
+import {groupAidLabel} from './expedition-group-aid.mjs';
 import {targetCountLabel} from './expedition-target-count.mjs';
 import {scheduleLabel} from './expedition-schedule.mjs';
 import {GOALS} from './expedition-goal-data.mjs';
@@ -72,7 +73,7 @@ function format(key,value){
  if(['prep','main'].includes(key))return commandText(value);
  if(['prepOrder','roomOrder'].includes(key))return value.map(heroName).join(' → ');
  if(key==='defenses')return Object.entries(DEFENSE_TYPES).map(([k,label])=>label+'：'+DEFENSES[value[k]].name).join('；');
- if(key==='healing')return `${HEAL_PRIORITIES[value.priority||'lowest']} / ${value.enabled?'开启':'关闭'} / ${value.threshold*100}% / ${POS[value.target]||({all:'全队',self:'自身'}[value.target])}`;
+ if(key==='healing')return `${HEAL_PRIORITIES[value.priority||'lowest']} / ${value.enabled?'开启':'关闭'} / ${value.threshold*100}% / ${POS[value.target]||({all:'全队',self:'自身'}[value.target])}${groupAidLabel(value)}`;
  if(key==='itemPolicy')return `${value.enabled?'开启':'关闭'} / ${value.threshold*100}%`;
  const lookup={advancement:ADVANCEMENTS,pos:POS,gear:GEAR,trained:SKILLS,attribute:ATTR,defenseFocus:DEFENSES,item:ITEMS,expedition:EXPEDITIONS}[key];
  if(lookup){const v=lookup[value];return typeof v==='object'?v.name:v;}

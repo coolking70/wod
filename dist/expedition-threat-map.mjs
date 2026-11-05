@@ -23,7 +23,7 @@ export function enemyThreatMap(config,scope=''){
    return [{id:enemy.id+':'+row,source:enemy.id,name:enemy.name,sourcePosition:enemy.pos,row,skill:command.skill,type:skill.type,target:command.target,mode:command.mode,limit:skill.max,window:command.roundWindow?clone(command.roundWindow):null,dispel:Boolean(skill.dispel),targetCount:count,candidates:candidates.map(u=>u.id)}];
   }));
   const heroes=party.map(u=>({id:u.id,name:u.name,pos:u.pos,attacks:attacks.filter(a=>a.candidates.includes(u.id)).map(a=>{
-   const profile=defenseProfile(u,a.type);return {attack:a.id,type:a.type,defense:profile.name,defenseCost:profile.cost,defenseReason:profile.reason||'',resistance:resistanceOf(u,a.type),armor:['melee','ranged'].includes(a.type)?current(u,'armor'):null};
+   const profile=defenseProfile(u,a.type);return {attack:a.id,type:a.type,defense:profile.name,defenseCost:profile.cost,defenseReason:profile.reason||'',resistance:resistanceOf(u,a.type),armor:a.type==='mental'?null:current(u,'armor')};
   })}));
   return {roomId:room.id,name:room.name,note:room.note,conditional:['chapter','harbor','foundry','courier'].includes(config.expedition),attacks,heroes};
  });

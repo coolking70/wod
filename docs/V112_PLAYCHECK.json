@@ -1,0 +1,314 @@
+{
+  "design": "Project group healing adaptation; indexed original multi-ally healing direction only, direct pages unavailable; no original numbers copied.",
+  "normal": [
+    {
+      "route": "clocktower",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": [
+        {
+          "id": 359,
+          "room": 1,
+          "round": 3,
+          "targets": [
+            "d",
+            "c"
+          ],
+          "mana": 10,
+          "herbs": 2,
+          "healing": [
+            {
+              "target": "d",
+              "amount": 28,
+              "actual": 28,
+              "overheal": 0
+            },
+            {
+              "target": "c",
+              "amount": 28,
+              "actual": 28,
+              "overheal": 0
+            }
+          ]
+        }
+      ],
+      "singleCasts": 8
+    },
+    {
+      "route": "clocktower",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": [],
+      "singleCasts": 5
+    }
+  ],
+  "gold": [
+    185,
+    315
+  ],
+  "matrix": [
+    {
+      "route": "clocktower",
+      "threshold": 0.65,
+      "enabled": false,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 9
+    },
+    {
+      "route": "clocktower",
+      "threshold": 0.65,
+      "enabled": true,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": 1,
+      "singleCasts": 8
+    },
+    {
+      "route": "clocktower",
+      "threshold": 0.8,
+      "enabled": false,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 11
+    },
+    {
+      "route": "clocktower",
+      "threshold": 0.8,
+      "enabled": true,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": 2,
+      "singleCasts": 7
+    },
+    {
+      "route": "palisade",
+      "threshold": 0.65,
+      "enabled": false,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 1,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 1
+    },
+    {
+      "route": "palisade",
+      "threshold": 0.65,
+      "enabled": true,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 1,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 1
+    },
+    {
+      "route": "palisade",
+      "threshold": 0.8,
+      "enabled": false,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 1,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 3
+    },
+    {
+      "route": "palisade",
+      "threshold": 0.8,
+      "enabled": true,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        3,
+        7
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 1,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 3
+    },
+    {
+      "route": "greenhouse",
+      "threshold": 0.65,
+      "enabled": false,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 3
+    },
+    {
+      "route": "greenhouse",
+      "threshold": 0.65,
+      "enabled": true,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 3
+    },
+    {
+      "route": "greenhouse",
+      "threshold": 0.8,
+      "enabled": false,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 5
+    },
+    {
+      "route": "greenhouse",
+      "threshold": 0.8,
+      "enabled": true,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "groupCasts": 0,
+      "singleCasts": 5
+    }
+  ],
+  "limit": "Twelve fixed route/threshold/opt-in cases at seed1 and normal earned seed1/2 progression. No seed search, universal balance claim or free permanent materials."
+}

@@ -1,0 +1,242 @@
+{
+  "version": "0.112",
+  "branch": "feature/v112-group-first-aid",
+  "baseline": "a827dd88c0443812050d20cc155d39ccf6e96e61",
+  "fullTests": {
+    "passed": 828,
+    "failed": 0,
+    "skipped": 0,
+    "log": "full-tests.tap"
+  },
+  "newTests": {
+    "passed": 14,
+    "log": "unit-release.tap"
+  },
+  "finalSharedResourceAndGroupTests": {
+    "passed": 23,
+    "log": "targeted-release.tap",
+    "note": "Includes final static resource fallback wording/metadata; no false single-heal ordinary-command index."
+  },
+  "browser": {
+    "passed": true,
+    "suites": 20,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ],
+    "log": "acceptance/browser-acceptance.json",
+    "pageErrors": 0
+  },
+  "syntax": {
+    "passed": true,
+    "count": 419
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 117,
+    "checkedReferences": 134,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "a827dd88c0443812050d20cc155d39ccf6e96e61",
+    "count": 42,
+    "rawFullEqual": false,
+    "normalizedFullEqual": true,
+    "allowedDifference": "Each report has exactly one explicitly verified party.f.skills.groupheal:6 catalog addition. No configuration/event/RNG/outcome/resource/statistics differences. Original and normalized SHA256 equal for every complete report.",
+    "checker": "scripts/check-v112-legacy.mjs",
+    "log": "legacy-final.json"
+  },
+  "normal": {
+    "routes": [
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          4,
+          7
+        ],
+        "supplies": {
+          "herb": 1,
+          "rune": 0,
+          "arrow": 0
+        },
+        "groupCasts": [
+          {
+            "id": 359,
+            "room": 1,
+            "round": 3,
+            "targets": [
+              "d",
+              "c"
+            ],
+            "mana": 10,
+            "herbs": 2,
+            "healing": [
+              {
+                "target": "d",
+                "amount": 28,
+                "actual": 28,
+                "overheal": 0
+              },
+              {
+                "target": "c",
+                "amount": 28,
+                "actual": 28,
+                "overheal": 0
+              }
+            ]
+          }
+        ],
+        "singleCasts": 8
+      },
+      {
+        "route": "clocktower",
+        "seed": 2,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          4,
+          8
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 0,
+          "arrow": 0
+        },
+        "groupCasts": [],
+        "singleCasts": 5
+      }
+    ],
+    "fullReportsAndGuildEqualToAPI": true,
+    "claimedGoldBalances": [
+      185,
+      315
+    ],
+    "paidTraining": {
+      "hero": "f",
+      "key": "skill:groupheal",
+      "xp": 20
+    },
+    "realOwnedGearAssigned": {
+      "hero": "a",
+      "item": "clockpin"
+    },
+    "firstGroupHeal": {
+      "recipients": [
+        "d",
+        "c"
+      ],
+      "eachActual": 28,
+      "mana": 10,
+      "herb": 2,
+      "actions": 1
+    },
+    "secondGroupCasts": 0,
+    "campaignAndNamedPlanRestore": true,
+    "roomOverrideAndInheritance": true,
+    "noDuplicateClaim": true
+  },
+  "finiteCases": {
+    "count": 12,
+    "seed": 1,
+    "routes": [
+      "clocktower",
+      "palisade",
+      "greenhouse"
+    ],
+    "thresholds": [
+      0.65,
+      0.8
+    ],
+    "enabled": [
+      false,
+      true
+    ],
+    "allWon": true,
+    "allSixStanding": true,
+    "enabledCasesWithoutGroupCast": 4,
+    "counterexample": "At 65% clocktower, enabling group aid costs one extra herb with unchanged room rounds. Not a universal strength or efficiency upgrade."
+  },
+  "fixes": {
+    "v111ThreatMap": "Magical attacks use physical armor in current project engine; only mental attacks ignore it. Display and prior document/playcheck corrected; actual armorBefore=2 checked, no damage formula change."
+  },
+  "initialFailures": {
+    "unit": [
+      "Ignored natural +1 MP at round start in insufficient-mana fixture.",
+      "Party item policy was overwritten by per-room plan application; fixture now sets real configuration."
+    ],
+    "browser": [
+      "Resource details needed explicit expansion.",
+      "Two healing results require combined-action mode, not single-record diagnostics."
+    ],
+    "logs": [
+      "unit-initial.tap",
+      "browser-initial.json",
+      "browser-second.json",
+      "browser-initial.stderr",
+      "browser-final.stderr"
+    ],
+    "assertionsWeakened": false,
+    "seedsChangedToPass": false
+  },
+  "reference": {
+    "direction": "Official indexed skill pages describe healing multiple allies. No original numeric rules used.",
+    "indexedSources": [
+      "https://world-of-dungeons.de/skill/Quell%2Bdes%2BLebens%26is_popup%3D1%26world%3DWC",
+      "https://world-of-dungeons.de/skill/Gabe%3A%2BGeste%2Bder%2BHeilung%26is_popup%3D1%26world%3DWA"
+    ],
+    "directAccess": "Both inaccessible via web tool; no retry or workaround. Not read full text or verified current-server rules.",
+    "adaptation": "Herbalist skill, same-position urgency selection, at least two eligible, cap three, 10 mana/2 herbs, 0.45 mean per recipient, fallback single healing all provisional project design."
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 21,
+    "gear": 39,
+    "newSkill": "groupheal",
+    "defaultOptIn": false,
+    "newProgressionCosts": false,
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "limitations": [
+      "Original skill pages only indexed; full/current-server mechanics unverified. Herbalist assignment and every numeric parameter explicitly provisional.",
+      "Only fixed finite demonstrations, no global balance proof.",
+      "Current per-expedition carrying budgets remain; persistent supply decision still deferred."
+    ]
+  }
+}
