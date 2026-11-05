@@ -16,6 +16,7 @@ Object.assign(GEAR,{
 
 export const SLOTS={weapon:'武器',armor:'防具',accessory:'饰品'};
 Object.assign(GEAR,{
+ postbell:{name:'回邮铜铃',slot:'accessory',armor:0,bonus:{agi:3,wil:1,int:-2},resistances:{ranged:5,magic:-5},dungeonOnly:true},
  watchseal:{name:'守望徽记',slot:'accessory',armor:0,bonus:{wil:3,cha:2,str:-2,dex:-2},resistances:{magic:10,ranged:-10},dungeonOnly:true},
  bellowscoat:{name:'风箱巡衣',slot:'armor',armor:2,bonus:{agi:2,int:-2},resistances:{ranged:10,magic:-10},dungeonOnly:true},
  kilngauge:{name:'炉心尺规',slot:'accessory',armor:0,bonus:{per:3,int:1,con:-1},dungeonOnly:true},

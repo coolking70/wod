@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前512项测试通过，0失败/跳过；210个ES模块、32个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前521项测试通过，0失败/跳过；214个ES模块、33个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -201,3 +201,15 @@ solo-story-view共用展示，foundry/harbor wrappers保留文本和奖励。gui
 512测试，210mjs32cjs。lighthouseCases正常grown→chapter4→harbor5；check-v77保存三独立分支、兑换海图后交付/射手装备/再港口6、另一正常watch6后同档两故事结局。各额外40，合计80，不注入；输出/tmp/wod-v77-lighthouse-{start,chapter,ready,chart,both}.json。带v76参考目录核4真实结算链，compare-reports另核9完整旧报告。browser-v77桌面/390px正常主线/刷新/原奖励/海图兑换/回信/装备/历史/双故事备份通过；v76完整回归浏览器通过。截图只内部，不进交付ZIP。
 
 重复只读远端v75检查见V77_REMOTE_V75_CHECK：URL与a54957c未变，同名远端ref当时不存在。父线程随后明确授权仅该确定v75，已用目标必须为空的租约保护创建远端分支并重新核验完整a54957cc2af51d3c65542718130a05a873f46477；没有覆盖、合并或部署，新v76/v77不推送。后续方向继续单人，异步提案暂缓，普通技能自由与独立进阶不重问。原版数值未核实，不冒称复刻。保存本地提交与恢复包，Library结果以实际回执为准。
+
+## v0.78沉船邮路续接
+
+feature/v078-drowned-postroute从f569c47干净512基线。expedition-courier定义3新ID，data接courier/30预算/courierConfig(plain/rhythm/ward)，GEAR.postbell固定饰品和独立ROUTE_REWARDS。无新战斗规则。source preset分阵C左/F右/D后/E中央，E心智抵抗+药匣70%，F救护80%，mid D持续护中/B每回合重箭。两种prepared只在末房C优先左鼓手/中印师不同。加载不赠送装备/培养/课程，托管仍用已应用职责。
+
+灯塔结尾传followup给通用story view，guild prepare枚举/map加courier；地图新入口/brief/敌情、ledger、实际scene label接入。复用港口图。结尾从真实正式成员与余量区分全员/带伤/失败，UI转义title/text。新铜铃agi3/wil1/int-2/ranged5/magic-5，首通200/80一件，重复135/55一件，不触发港口/铸库目标。
+
+courierPreparation从正常lighthouse ready→chart40+罗盘给B→E买saltseal/plate共120，1125→1005；不是load preset自动购装。check-v78生成before-protection/start/earned-postbell备份；36固定新内容组，有12失败；prepared确认两方案各4/4六人。未防护的36前稿、初TAP/部分结算40失败和初稿可重演config都在证据目录保留，未弱化奖励断言或改敌人数据。中央空会导致敌方位置目标回退，不能当规避。来源倒下不撤销既有组件。
+
+521回归，214mjs33cjs语法。check-v78带v77参考对所有13旧路线各1/731共26全报告相等，否则unchanged=null。browser-v78 release-browser：实际UI买120装备→first6全员4/4/7→200/80→铜铃B→ward7全员4/4/10→135/55，pending刷新/历史完全相同；导出完整guild与脚本逐字段相同，V78_BROWSER_ASSET_PARITY记录。手机恢复与首通历史只读。真实抢拍的两个队列来源追溯+返回，以及死谱师/活术士余韵同时存在可见；该例余韵未产生攻击，最初浏览器错误假定存在该攻击已纠正，原失败留存。
+
+先前灯塔3种结局各自正常支付120防护的seed6均六人通过，仅chart才装备获奖罗盘，不把其他分支虚构同物品。截图只内部不进Library交付。没有运行旧候补/活动大样本，原版服务器数值仍未核验。新增阶段不推送/合并/部署，v75已发布事实不变。继续单人方向。

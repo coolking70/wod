@@ -1,0 +1,11 @@
+{
+  "equal": true,
+  "scope": "Complete guild backup from normal UI purchases, departure6, claim, bell assignment, departure7 and repeat claim equals the API progression script. No excluded fields.",
+  "historyIds": [
+    6,
+    7
+  ],
+  "next": 8,
+  "gold": 1340,
+  "excluded": []
+}

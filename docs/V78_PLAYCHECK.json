@@ -1,0 +1,1166 @@
+{
+  "note": "36 bounded content checks at unchanged30 total supply budget; original prototype content, no general balance claim. Discovery101–102, confirmation201–204. Normal grown guild earned through chapter/harbor/story, explicit compass assignment and normal60-gold saltseal and60-gold plate purchases for the central bard, with a self-salve policy in tactical starts.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        3,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 2,
+        "arrow": 0
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 13
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 5,
+      "hp": 526,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 0,
+        "arrow": 0
+      },
+      "dead": [
+        "d"
+      ],
+      "enemyExtraQueues": 10
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        3,
+        6,
+        18
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 0
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 16
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 3,
+      "hp": 300,
+      "rounds": [
+        3,
+        7,
+        19
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "dead": [
+        "a",
+        "c",
+        "d"
+      ],
+      "enemyExtraQueues": 13
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 3,
+      "hp": 265,
+      "rounds": [
+        3,
+        8,
+        18
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "dead": [
+        "a",
+        "c",
+        "d"
+      ],
+      "enemyExtraQueues": 11
+    },
+    {
+      "profile": "fresh",
+      "plan": "plain",
+      "seed": 204,
+      "set": "confirmation",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        3,
+        5,
+        6
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 10
+    },
+    {
+      "profile": "fresh",
+      "plan": "rhythm",
+      "seed": 101,
+      "set": "discovery",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        6,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 1
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 18
+    },
+    {
+      "profile": "fresh",
+      "plan": "rhythm",
+      "seed": 102,
+      "set": "discovery",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        4,
+        15
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 20
+    },
+    {
+      "profile": "fresh",
+      "plan": "rhythm",
+      "seed": 201,
+      "set": "confirmation",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        5,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 1
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 18
+    },
+    {
+      "profile": "fresh",
+      "plan": "rhythm",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 501,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 10
+    },
+    {
+      "profile": "fresh",
+      "plan": "rhythm",
+      "seed": 203,
+      "set": "confirmation",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        4,
+        14
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 18
+    },
+    {
+      "profile": "fresh",
+      "plan": "rhythm",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 561,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      },
+      "dead": [],
+      "enemyExtraQueues": 11
+    },
+    {
+      "profile": "fresh",
+      "plan": "ward",
+      "seed": 101,
+      "set": "discovery",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        6,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 1
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 18
+    },
+    {
+      "profile": "fresh",
+      "plan": "ward",
+      "seed": 102,
+      "set": "discovery",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        4,
+        15
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 20
+    },
+    {
+      "profile": "fresh",
+      "plan": "ward",
+      "seed": 201,
+      "set": "confirmation",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        5,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 1
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 18
+    },
+    {
+      "profile": "fresh",
+      "plan": "ward",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 598,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 10
+    },
+    {
+      "profile": "fresh",
+      "plan": "ward",
+      "seed": 203,
+      "set": "confirmation",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        4,
+        14
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 18
+    },
+    {
+      "profile": "fresh",
+      "plan": "ward",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 598,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      },
+      "dead": [],
+      "enemyExtraQueues": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 3,
+      "hp": 254,
+      "rounds": [
+        3,
+        7,
+        19
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "dead": [
+        "a",
+        "c",
+        "d"
+      ],
+      "enemyExtraQueues": 13
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 102,
+      "set": "discovery",
+      "won": false,
+      "cleared": 2,
+      "alive": 0,
+      "hp": 0,
+      "rounds": [
+        4,
+        6,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "dead": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "enemyExtraQueues": 9
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 5,
+      "hp": 511,
+      "rounds": [
+        3,
+        3,
+        10
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "dead": [
+        "c"
+      ],
+      "enemyExtraQueues": 9
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 4,
+      "hp": 236,
+      "rounds": [
+        3,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 0
+      },
+      "dead": [
+        "c",
+        "f"
+      ],
+      "enemyExtraQueues": 9
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 555,
+      "rounds": [
+        3,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 1
+      },
+      "dead": [],
+      "enemyExtraQueues": 6
+    },
+    {
+      "profile": "grown",
+      "plan": "plain",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 569,
+      "rounds": [
+        3,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "dead": [],
+      "enemyExtraQueues": 6
+    },
+    {
+      "profile": "grown",
+      "plan": "rhythm",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 557,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "rhythm",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 4,
+      "hp": 402,
+      "rounds": [
+        5,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 5,
+        "arrow": 1
+      },
+      "dead": [
+        "a",
+        "d"
+      ],
+      "enemyExtraQueues": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "rhythm",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 595,
+      "rounds": [
+        5,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 8
+    },
+    {
+      "profile": "grown",
+      "plan": "rhythm",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 583,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 7
+    },
+    {
+      "profile": "grown",
+      "plan": "rhythm",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 570,
+      "rounds": [
+        3,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 10
+    },
+    {
+      "profile": "grown",
+      "plan": "rhythm",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 612,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 10
+    },
+    {
+      "profile": "grown",
+      "plan": "ward",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 576,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 12
+    },
+    {
+      "profile": "grown",
+      "plan": "ward",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "cleared": 3,
+      "alive": 4,
+      "hp": 402,
+      "rounds": [
+        5,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 5,
+        "arrow": 1
+      },
+      "dead": [
+        "a",
+        "d"
+      ],
+      "enemyExtraQueues": 12
+    },
+    {
+      "profile": "grown",
+      "plan": "ward",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 544,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 12
+    },
+    {
+      "profile": "grown",
+      "plan": "ward",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 569,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "ward",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 602,
+      "rounds": [
+        3,
+        4,
+        10
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 11
+    },
+    {
+      "profile": "grown",
+      "plan": "ward",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "cleared": 3,
+      "alive": 6,
+      "hp": 593,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 2
+      },
+      "dead": [],
+      "enemyExtraQueues": 10
+    }
+  ],
+  "preparation": {
+    "member": "e",
+    "gear": [
+      "saltseal",
+      "plate"
+    ],
+    "goldBefore": 1125,
+    "goldAfter": 1005,
+    "cost": 120
+  },
+  "normal": {
+    "seed": 6,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 外港断桥",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 607,
+        "mp": 305,
+        "supplies": {
+          "herb": 11,
+          "rune": 8,
+          "arrow": 7
+        }
+      },
+      {
+        "name": "02 · 折帆分舱",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 610,
+        "mp": 240,
+        "supplies": {
+          "herb": 8,
+          "rune": 5,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "03 · 封蜡回邮台",
+        "won": true,
+        "rounds": 7,
+        "survivors": 6,
+        "hp": 591,
+        "mp": 203,
+        "supplies": {
+          "herb": 3,
+          "rune": 3,
+          "arrow": 2
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 3,
+      "rune": 3,
+      "arrow": 2
+    },
+    "reward": {
+      "cleared": 3,
+      "gold": 200,
+      "xp": 80,
+      "firstClear": true,
+      "loot": [
+        "postbell"
+      ]
+    }
+  },
+  "repeat": {
+    "seed": 7,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 外港断桥",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 624,
+        "mp": 299,
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 7
+        }
+      },
+      {
+        "name": "02 · 折帆分舱",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 550,
+        "mp": 234,
+        "supplies": {
+          "herb": 7,
+          "rune": 5,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "03 · 封蜡回邮台",
+        "won": true,
+        "rounds": 10,
+        "survivors": 6,
+        "hp": 611,
+        "mp": 199,
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        }
+      }
+    ],
+    "reward": {
+      "cleared": 3,
+      "gold": 135,
+      "xp": 55,
+      "firstClear": false,
+      "loot": [
+        "postbell"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "f569c47054b92553b55f51646a646a493edb460f",
+    "count": 26,
+    "cases": [
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ],
+    "excluded": []
+  }
+}

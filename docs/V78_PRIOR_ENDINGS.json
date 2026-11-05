@@ -1,0 +1,53 @@
+{
+  "note": "Three independent prior-story ending forks from a legal earned checkpoint, with normal120-gold protective purchases. Compass only equipped when actually awarded; no invented item.",
+  "rows": [
+    {
+      "ending": "light",
+      "seed": 6,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      }
+    },
+    {
+      "ending": "bridge",
+      "seed": 6,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      }
+    },
+    {
+      "ending": "chart",
+      "seed": 6,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 2
+      }
+    }
+  ]
+}

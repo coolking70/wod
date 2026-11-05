@@ -3,7 +3,7 @@ import {foundryStoryView} from './expedition-foundry-story-view.mjs';
 import {foundryApproach,FOUNDRY_APPROACHES,FOUNDRY_PASSAGE_RULE} from './expedition-foundry.mjs';
 import {foundryContracts} from './expedition-foundry-contract-view.mjs';
 import {FOUNDRY_OBJECTIVES} from './expedition-foundry-contract.mjs';
-import {chapterConfig,harborConfig,watchConfig,foundryConfig} from './expedition-data.mjs';
+import {courierConfig,chapterConfig,harborConfig,watchConfig,foundryConfig} from './expedition-data.mjs';
 import {historyTacticPreview,reuseHistoryTactic} from './expedition-tactic-reuse.mjs';
 import {draftCommandPreview,adoptDraftCommands} from './expedition-draft-commands.mjs';
 import {configurationUndo,restoreConfigurationUndo,commitPreparationChange} from './expedition-config-undo.mjs';
@@ -113,7 +113,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  if(b.dataset.journeyBook){if(!Object.hasOwn(journeyNames,b.dataset.journeyBook))throw Error('旅程无效');journeyBook=b.dataset.journeyBook;render();return;}
  else if(b.dataset.harborStoryEnd){save(claimHarborStory(g,b.dataset.harborStoryEnd));inform('来信结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
  else if(b.dataset.foundryStoryEnd){const ending=b.dataset.foundryStoryEnd;save(claimFoundryStory(g,ending));inform('归航结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
- else if(b.dataset.journeyPrepare){const route=b.dataset.journeyPrepare;if(!['foundry','foundrywatch','chapter','harbor'].includes(route))throw Error('旅程路线无效');const c=({foundry:foundryConfig,foundrywatch:watchConfig,chapter:chapterConfig,harbor:harborConfig}[route])();c.seed=getConfig().seed;loadConfig(c);inform('旅程路线已准备；当前公会资产与已应用伙伴职责保留，完成后正常领取结算。');return;}
+ else if(b.dataset.journeyPrepare){const route=b.dataset.journeyPrepare;if(!['foundry','foundrywatch','chapter','harbor','courier'].includes(route))throw Error('旅程路线无效');const c=({foundry:foundryConfig,foundrywatch:watchConfig,courier:courierConfig,chapter:chapterConfig,harbor:harborConfig}[route])();c.seed=getConfig().seed;loadConfig(c);inform('旅程路线已准备；当前公会资产与已应用伙伴职责保留，完成后正常领取结算。');return;}
  else if(b.dataset.foundryPrepare){const c=foundryConfig();c.seed=getConfig().seed;loadConfig(c);inform('铸库已准备；委托在正常出征结算时核对，当前尚未支付或领取奖励。');return;}
  else if(b.dataset.rosterRehearse){if(localStorage.getItem(GUILD_KEY)!==raw)throw Error('另一页面已修改公会，请重新进入公会后再试演');const incoming=b.dataset.rosterRehearse,outgoing=root.querySelector('#replace-'+incoming)?.value;if(!outgoing)throw Error('请先选择替换伙伴');replacementSelections[incoming]=outgoing;replacementTrial=rehearseReplacement(g,getConfig(),outgoing,incoming);inform('两套实际队伍试演完成，没有换人、出征或发奖；正式编入仍由你选择。');render();const panel=root.querySelector('.roster-rehearsal');if(panel){panel.style.scrollMarginTop=((root.querySelector('.guild-tabs')?.getBoundingClientRect().height||0)+12)+'px';panel.scrollIntoView({block:'start'});}return;}
  else if(b.dataset.rosterReport){if(localStorage.getItem(GUILD_KEY)!==raw)throw Error('另一页面已修改公会，请重新进入公会后再查看试演');const trial=replacementTrialState(),key=b.dataset.rosterReport;if(!trial||trial.stale||!['before','after'].includes(key))throw Error('换人试演已过期，请重新试演');showReport(structuredClone(trial.value.reports[key]),{rehearsal:true,label:key==='before'?'当前队伍':'换人后队伍',note:'换人仍需在名册中明确编入。'});inform('正在查看换人试演战报；未出征、未换人、未发奖。');return;}
