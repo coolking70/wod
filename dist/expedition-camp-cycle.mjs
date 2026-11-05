@@ -29,7 +29,7 @@ export function pendingOrigin(g){validateGuild(g);if(!g.pending)throw Error('没
 const matches=(record,report)=>record&&JSON.stringify(record.config)===JSON.stringify(report.config)&&JSON.stringify(record.command||null)===JSON.stringify(report.perspective||null);
 export function reportHandoff(g,origin,report){
  validateGuild(g);const otherPending=g.pending?.id||null;
- if(origin?.rehearsal||origin?.source==='rehearsal')return {status:'rehearsal',title:'试演战报 · 未正式出征',text:'没有支付培养草案、编入队伍或发放奖励；需要回营明确应用和正式出征。',otherPending};
+ if(origin?.rehearsal||origin?.source==='rehearsal')return origin.kind==='guild-comparison'?{status:'rehearsal',title:'公会实装对照 · 未正式出征',text:'使用对照时的真实队伍资产与伙伴职责，本次未写入正式出征、结算或奖励。旧结果保持当时快照，重新运行才读取现状；正式出征仍按正常编号分配种子。',otherPending}:{status:'rehearsal',title:'试演战报 · 未正式出征',text:'没有支付培养草案、编入队伍或发放奖励；需要回营明确应用和正式出征。',otherPending};
  if(!origin?.source||origin.source==='experiment')return {status:'experiment',title:'实验战报 · 不发成长奖励',text:'这次试跑不写入公会履历。可以回到正式出征核对，以实际公会资产出发。',otherPending};
  if(origin.source==='record'){try{const p=bookProof(g,origin.route,origin.goal);if(p.id===origin.id&&origin.signature===JSON.stringify(p)&&matches(p,report))return {status:'recorded',title:'攻略首次达成 · '+GOALS.find(x=>x.id===origin.goal).name,text:'第'+p.id+'次方案按当前规则重演；首次指标保留，不发奖励、不修改攻略。',otherPending};}catch{}return {status:'stale',title:'攻略来源已变化',text:'请回营重新打开攻略记录；当前战报不能领取。',otherPending};}
  const record=g.history.find(r=>r.id===origin.id);

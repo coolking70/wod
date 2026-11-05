@@ -1,0 +1,197 @@
+{
+  "draft": {
+    "mode": "draft",
+    "seed": 731,
+    "draftChanges": 3,
+    "effectiveChanges": 3,
+    "overrides": [
+      0,
+      0
+    ],
+    "runs": [
+      {
+        "won": true,
+        "rounds": [
+          3,
+          4,
+          8
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 0
+        },
+        "training": {
+          "skill:wave": 2,
+          "defense:resist": 2
+        },
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        }
+      },
+      {
+        "won": true,
+        "rounds": [
+          3,
+          4,
+          8
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 0
+        },
+        "training": {
+          "skill:wave": 3
+        },
+        "gear": {
+          "weapon": "stormfocus",
+          "armor": "cloth",
+          "accessory": "token"
+        }
+      }
+    ]
+  },
+  "beforePurchase": {
+    "mode": "guild",
+    "seed": 731,
+    "draftChanges": 3,
+    "effectiveChanges": 0,
+    "overrides": [
+      13,
+      13
+    ],
+    "runs": [
+      {
+        "won": true,
+        "rounds": [
+          3,
+          5,
+          6
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 0
+        },
+        "training": {
+          "skill:wave": 1
+        },
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        }
+      },
+      {
+        "won": true,
+        "rounds": [
+          3,
+          5,
+          6
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 0
+        },
+        "training": {
+          "skill:wave": 1
+        },
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        }
+      }
+    ]
+  },
+  "afterPurchase": {
+    "mode": "guild",
+    "seed": 731,
+    "draftChanges": 3,
+    "effectiveChanges": 0,
+    "overrides": [
+      13,
+      12
+    ],
+    "runs": [
+      {
+        "won": true,
+        "rounds": [
+          3,
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 0
+        },
+        "training": {
+          "skill:wave": 2
+        },
+        "gear": {
+          "weapon": "stormfocus",
+          "armor": "cloth",
+          "accessory": "token"
+        }
+      },
+      {
+        "won": true,
+        "rounds": [
+          3,
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 0
+        },
+        "training": {
+          "skill:wave": 2
+        },
+        "gear": {
+          "weapon": "stormfocus",
+          "armor": "cloth",
+          "accessory": "token"
+        }
+      }
+    ]
+  },
+  "finalGold": 200,
+  "finalXP": [
+    {
+      "id": "a",
+      "xp": 100
+    },
+    {
+      "id": "b",
+      "xp": 100
+    },
+    {
+      "id": "c",
+      "xp": 40
+    },
+    {
+      "id": "d",
+      "xp": 100
+    },
+    {
+      "id": "e",
+      "xp": 100
+    },
+    {
+      "id": "f",
+      "xp": 100
+    }
+  ],
+  "handoff": [
+    "rehearsal",
+    "rehearsal"
+  ],
+  "note": "Two same-seed pairs, both actual inputs use current held assets and roles. A/B prototype asset differences disappear until assets truly acquired; no automated investment or extra rewards."
+}

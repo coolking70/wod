@@ -1,0 +1,3 @@
+import{areaConfig,targetCountLoop}from'./target-count-cases.mjs';import{depart,claim,equip,train}from'../dist/expedition-guild.mjs';
+export function comparisonDrafts(){const a=areaConfig('hospice','c',2),b=structuredClone(a),hero=b.heroes.find(h=>h.id==='c');b.seed=731;hero.gear.weapon='stormfocus';hero.training={'skill:wave':3};return {a,b};}
+export function equippedComparisonCase(){const start=targetCountLoop().desktop,{a,b}=comparisonDrafts(),pending=depart(start,b),claimed=claim(pending),final=train(equip(claimed,'c','stormfocus'),'c','skill:wave');return {start,a,b,pending,claimed,final};}
