@@ -82,3 +82,4 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .unit.control-recipient{border-color:#e99d91;box-shadow:0 0 0 2px #e99d9144}.healing-block-proof small{display:block;margin-top:.5rem;color:var(--muted)}
 .guild-panel .training-row>div:last-child{display:flex;flex-wrap:wrap;gap:6px;align-content:center;justify-content:flex-end;max-width:52%}
 @media(max-width:600px){.guild-panel .training-row{flex-direction:column}.guild-panel .training-row>div:last-child{max-width:100%;justify-content:flex-start}}
+.advancement-card{margin:18px 0;padding:14px;border:1px solid var(--line);border-radius:6px}.advancement-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:12px;margin:12px 0}.advancement-options article{padding:12px;background:#10252f}.advancement-options h4{margin:0 0 8px}.advancement-proof{padding:12px;border-left:2px solid var(--gold);background:#26352f}

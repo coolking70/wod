@@ -1,6 +1,6 @@
 import {HEROES,CLASSES,STARTER_IDS,clone,defaultHero} from './expedition-data.mjs';
 export const definition=id=>HEROES.find(h=>h.id===id);
-export function newMember(id){const h=defaultHero(id);return {id,classId:definition(id).classId,unlocked:[],xp:0,gear:clone(h.gear),owned:Object.values(h.gear),training:{},tactics:h};}
+export function newMember(id){const h=defaultHero(id);return {id,classId:definition(id).classId,unlocked:[],advancement:null,xp:0,gear:clone(h.gear),owned:Object.values(h.gear),training:{},tactics:h};}
 export function rosterConfig(g,tactics){
  const c=clone(tactics),active=new Set(g.lineup),old=c.heroes.map(h=>h.id);
  c.heroes=g.lineup.map(id=>clone(c.heroes.find(h=>h.id===id)||g.members.find(m=>m.id===id)?.tactics||defaultHero(id)));

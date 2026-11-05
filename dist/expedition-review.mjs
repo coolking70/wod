@@ -1,3 +1,4 @@
+import {ADVANCEMENTS} from './expedition-advancement-data.mjs';
 import {HARBOR_RESERVE,harborReserve} from './expedition-harbor-reserve.mjs';
 import {HARBOR_PASS,HARBOR_TASK,HARBOR_DIFFICULTY,harborDifficulty} from './expedition-harbor.mjs';
 import {SLOTS} from './expedition-equipment.mjs';
@@ -47,6 +48,7 @@ export function reviewReport(report){
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
 const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
+ if(key==='advancement'&&!value)return '未选择';
  if(value===undefined)return '继承默认';
  if(key==='harborReserve')return HARBOR_RESERVE[value];if(key==='harborDifficulty')return HARBOR_DIFFICULTY[value];if(key==='harborPass')return HARBOR_PASS[value];if(key==='harborTask')return HARBOR_TASK[value];
  if(key==='rescueApproach')return RESCUE_CHOICES[value].name;
@@ -56,13 +58,13 @@ function format(key,value){
  if(key==='defenses')return Object.entries(TYPES).map(([k,label])=>label+'：'+DEFENSES[value[k]].name).join('；');
  if(key==='healing')return `${HEAL_PRIORITIES[value.priority||'lowest']} / ${value.enabled?'开启':'关闭'} / ${value.threshold*100}% / ${POS[value.target]||({all:'全队',self:'自身'}[value.target])}`;
  if(key==='itemPolicy')return `${value.enabled?'开启':'关闭'} / ${value.threshold*100}%`;
- const lookup={pos:POS,gear:GEAR,trained:SKILLS,attribute:ATTR,defenseFocus:DEFENSES,item:ITEMS,expedition:EXPEDITIONS}[key];
+ const lookup={advancement:ADVANCEMENTS,pos:POS,gear:GEAR,trained:SKILLS,attribute:ATTR,defenseFocus:DEFENSES,item:ITEMS,expedition:EXPEDITIONS}[key];
  if(lookup){const v=lookup[value];return typeof v==='object'?v.name:v;}
  return String(value);
 }
 export function configurationChanges(a,b){
  const roomLabels=a.expedition===b.expedition?roomsFor(a):[...new Set([...roomsFor(a),...roomsFor(b)].map(r=>r.id))].map(id=>({id,name:'房间槽 '+id}));
- const changes=[],labels={pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
+ const changes=[],labels={advancement:'后期职业进阶',pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
  const compare=(label,key,x,y)=>{if(canonical(x??null)!==canonical(y??null))changes.push({label,before:format(key,x),after:format(key,y)});};
  if(a.expedition==='harbor'||b.expedition==='harbor'){compare('港口符纸预留','harborReserve',harborReserve(a),harborReserve(b));compare('港口难度','harborDifficulty',harborDifficulty(a),harborDifficulty(b));compare('港口通路策略','harborPass',a.harbor?.pass,b.harbor?.pass);compare('港口事件策略','harborTask',a.harbor?.task,b.harbor?.task);}
  compare('回廊救援策略','rescueApproach',a.rescueApproach,b.rescueApproach);

@@ -1,0 +1,230 @@
+{
+  "ruleset": "original-wod-inspired-0.56.0",
+  "note": "Normal 8 hospice settlements plus learned skills/training and one successful veteran settlement; no XP, equipment or clear flags injected. Project advancement parameters are not claimed to match a current WoD server.",
+  "prerequisites": {
+    "completed": 9,
+    "clears": {
+      "hospice": 8,
+      "veteran": 1
+    },
+    "memberExperience": [
+      {
+        "id": "a",
+        "available": 165,
+        "earned": 445
+      },
+      {
+        "id": "b",
+        "available": 165,
+        "earned": 445
+      },
+      {
+        "id": "c",
+        "available": 165,
+        "earned": 445
+      },
+      {
+        "id": "d",
+        "available": 165,
+        "earned": 445
+      },
+      {
+        "id": "e",
+        "available": 165,
+        "earned": 445
+      },
+      {
+        "id": "f",
+        "available": 165,
+        "earned": 445
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "d",
+      "path": "wardcraft",
+      "paid": 80,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "casts": [
+        {
+          "event": 7,
+          "skill": "ward",
+          "mp": 5,
+          "trace": {
+            "path": "wardcraft",
+            "name": "结界研修",
+            "baseMana": 5,
+            "mana": 5,
+            "effectBonus": {
+              "defense": 2
+            }
+          }
+        },
+        {
+          "event": 147,
+          "skill": "ward",
+          "mp": 5,
+          "trace": {
+            "path": "wardcraft",
+            "name": "结界研修",
+            "baseMana": 5,
+            "mana": 5,
+            "effectBonus": {
+              "defense": 2
+            }
+          }
+        },
+        {
+          "event": 265,
+          "skill": "ward",
+          "mp": 5,
+          "trace": {
+            "path": "wardcraft",
+            "name": "结界研修",
+            "baseMana": 5,
+            "mana": 5,
+            "effectBonus": {
+              "defense": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "d",
+      "path": "sigilcraft",
+      "paid": 80,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "casts": [
+        {
+          "event": 168,
+          "skill": "suppress",
+          "mp": 4,
+          "trace": {
+            "path": "sigilcraft",
+            "name": "制符研修",
+            "baseMana": 6,
+            "mana": 4,
+            "effectBonus": {}
+          }
+        },
+        {
+          "event": 202,
+          "skill": "suppress",
+          "mp": 4,
+          "trace": {
+            "path": "sigilcraft",
+            "name": "制符研修",
+            "baseMana": 6,
+            "mana": 4,
+            "effectBonus": {}
+          }
+        },
+        {
+          "event": 264,
+          "skill": "suppress",
+          "mp": 4,
+          "trace": {
+            "path": "sigilcraft",
+            "name": "制符研修",
+            "baseMana": 6,
+            "mana": 4,
+            "effectBonus": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "f",
+      "path": "emergency",
+      "paid": 80,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "casts": [
+        {
+          "event": 477,
+          "skill": "heal",
+          "mp": 4,
+          "trace": {
+            "path": "emergency",
+            "name": "急救研修",
+            "baseMana": 5,
+            "mana": 4,
+            "effectBonus": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "f",
+      "path": "apothecary",
+      "paid": 80,
+      "available": 85,
+      "run": {
+        "won": true,
+        "rooms": 3
+      },
+      "casts": [
+        {
+          "event": 9,
+          "skill": "slowcare",
+          "mp": 4,
+          "trace": {
+            "path": "apothecary",
+            "name": "调剂研修",
+            "baseMana": 4,
+            "mana": 4,
+            "effectBonus": {
+              "regeneration": 2
+            }
+          }
+        },
+        {
+          "event": 149,
+          "skill": "slowcare",
+          "mp": 4,
+          "trace": {
+            "path": "apothecary",
+            "name": "调剂研修",
+            "baseMana": 4,
+            "mana": 4,
+            "effectBonus": {
+              "regeneration": 2
+            }
+          }
+        },
+        {
+          "event": 282,
+          "skill": "slowcare",
+          "mp": 4,
+          "trace": {
+            "path": "apothecary",
+            "name": "调剂研修",
+            "baseMana": 4,
+            "mana": 4,
+            "effectBonus": {
+              "regeneration": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "unchanged": {
+    "reference": "7b033c1",
+    "count": 9,
+    "excluded": "Ruleset label only; no automatic advancement, stat changes, new RNG draws or outcome changes in existing configs."
+  }
+}

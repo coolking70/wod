@@ -1,4 +1,5 @@
 import {reserveBlock} from './expedition-harbor-reserve.mjs';
+import {advancementOptions,skillManaCost,advancementEffectBonus,advancementTrace} from './expedition-advancement-data.mjs';
 import {regenerationTicks} from './expedition-regeneration.mjs';
 import {HEALING_BLOCK_REASON,HEALING_BLOCK_STAT,healingBlockTrace,canApplyHealingBlock} from './expedition-disruption.mjs';
 import {validHarborPlan,resolveHarborStep} from './expedition-harbor.mjs';
@@ -6,7 +7,7 @@ import {validEquipment,equipmentTotals} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
 import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,MAX_TRAINING_RANK} from './expedition-data.mjs';
-export const RULESET='original-wod-inspired-0.55.0';
+export const RULESET='original-wod-inspired-0.56.0';
 const routes={front:['front','left','right','center','rear'],left:['right','front','center','rear','left'],right:['left','front','center','rear','right'],center:['front','left','right','center','rear'],rear:['front','left','right','center','rear']};
 function validateOrder(order,heroes){if(!Array.isArray(order)||order.length!==6||new Set(order).size!==6||order.some(id=>!heroes.some(h=>h.id===id)))throw Error('预备顺序必须包含所有队员');}
 function validatePlan(h,t){
@@ -28,7 +29,7 @@ export function validate(c){
  if(!c.roomOrders||typeof c.roomOrders!=='object'||Array.isArray(c.roomOrders))throw Error('房间顺序配置无效');
  for(const [roomId,order] of Object.entries(c.roomOrders)){if(!ROOM_IDS.includes(roomId))throw Error('未知房间');validateOrder(order,c.heroes);}
  let total=0;for(const k of ['herb','rune','arrow']){const n=c.supplies?.[k];if(!Number.isInteger(n)||n<0||n>60)throw Error('补给数量须为 0–60');total+=n;}if(total>supplyBudget(c))throw Error('此路线补给总预算为 '+supplyBudget(c));
- for(const h of c.heroes){const t=HEROES.find(t=>t.id===h.id);if(!t||!Object.hasOwn(ITEMS,h.item)||!validEquipment(h.gear)||!t.skills.includes(h.trained)||!Object.hasOwn(t.attrs,h.attribute)||!Object.hasOwn(DEFENSES,h.defenseFocus)||h.defenseFocus==='natural')throw Error('队员配置无效');validatePlan(h,t);
+ for(const h of c.heroes){const t=HEROES.find(t=>t.id===h.id);if(!t||!Object.hasOwn(ITEMS,h.item)||!validEquipment(h.gear)||!t.skills.includes(h.trained)||!Object.hasOwn(t.attrs,h.attribute)||!Object.hasOwn(DEFENSES,h.defenseFocus)||h.defenseFocus==='natural')throw Error('队员配置无效');if(h.advancement!==undefined&&!advancementOptions(h.id).some(([id])=>id===h.advancement))throw Error('后期进阶与职业不匹配');validatePlan(h,t);
   if(!h.training||typeof h.training!=='object'||Array.isArray(h.training)||Object.entries(h.training).some(([k,n])=>!Object.hasOwn(trainingOptions(h.id),k)||!Number.isInteger(n)||n<0||n>MAX_TRAINING_RANK))throw Error('训练配置无效或超过每项等级上限');
   if(!h.overrides||typeof h.overrides!=='object'||Array.isArray(h.overrides))throw Error('房间覆盖无效');
   for(const [roomId,patch] of Object.entries(h.overrides)){if(!ROOM_IDS.includes(roomId)||!patch||typeof patch!=='object'||Array.isArray(patch)||Object.keys(patch).some(k=>!PLAN_FIELDS.includes(k)))throw Error('房间覆盖包含未知字段');validatePlan(resolveHeroPlan(h,roomId),t);}
@@ -123,13 +124,13 @@ export function simulate(c,options={}){
    emit('encounter','沉钟机关 · '+choice.name+' · '+({success:'成功',failure:'失败',bypassed:'绕过',unavailable:'未执行'}[outcome.status]),actor?.id||null,affected,detail);bellRecord=events.at(-1);
   }
   function attempt(u,r,key,interrupt=false){
-   const s=SKILLS[r.skill],stock=u.side==='party'?supplies:enemySupplies;let reason='',reservation=null,healingBlock=null;
+   const s=SKILLS[r.skill],manaCost=skillManaCost(u,r.skill),advancement=advancementTrace(u,r.skill),stock=u.side==='party'?supplies:enemySupplies;let reason='',reservation=null,healingBlock=null;
    if(used.has(key)&&r.mode==='once')reason='本房间一次指令已执行';
    else if(roundUsed.get(key)===round&&r.mode==='round')reason='本回合一次指令已执行，继续后备';
    else if(s.requiresGear&&!gearSupports(u.gear,s.requiresGear))reason='装备条件不满足';
    else if(s.kind==='heal'&&(healingBlock=healingBlockTrace(u)))reason=HEALING_BLOCK_REASON;
    else if(s.kind==='summon'&&summons.some(t=>t.owner===u.id&&t.hp>0))reason='已有存活召唤物';
-   else if(u.mp<s.cost)reason='法力不足';
+   else if(u.mp<manaCost)reason='法力不足';
    else if(s.item&&stock[s.item]<=0)reason='耗材耗尽';
    else if((reservation=reserveBlock(c,roomIndex,u,s,stock)))reason='为第三场事件预留2符纸，尝试下一条指令';
    let targets=[];
@@ -140,15 +141,15 @@ export function simulate(c,options={}){
    }
    if(reason){emit('skip',u.name+' 跳过「'+s.name+'」：'+reason,u.id,[],{reason,skill:r.skill,requiredGear:s.requiresGear||null,cost:0,consumedAction:false,...(reservation?{reservation}: {}),...(healingBlock?{healingBlock}: {})});return false;}
    if(s.kind==='wait'){emit('wait',u.name+' 等待。',u.id,[],{consumedAction:true});used.add(key);roundUsed.set(key,round);return true;}
-   const before=u.mp;u.mp-=s.cost;if(s.item)stock[s.item]--;used.add(key);roundUsed.set(key,round);
+   const before=u.mp;u.mp-=manaCost;if(s.item)stock[s.item]--;used.add(key);roundUsed.set(key,round);
    const lv=skillLevel(u,r.skill),m=mean(u,r.skill),cast=++serial;actionId=roomIndex+':'+cast;
-   emit('cast',u.name+' '+(interrupt?'中断普通指令，使用':'使用')+'「'+s.name+'」',u.id,targets.map(t=>t.id),{cast,skill:r.skill,skillLevel:lv,levelSources:skillBreakdown(u,r.skill),primary:current(u,s.primary),secondary:current(u,s.secondary),mean:m,formula:'主属性 ×2 + 副属性 + 实时技能等级 ×2',mpBefore:before,mpAfter:u.mp,item:s.item||null,interrupt,...(Object.hasOwn(ROLE_TARGETS,r.target)?{targetPolicy:{requested:r.target,rule:'仅选择存活且拥有'+(r.target==='healer'?'治疗':'召唤')+'技能的敌人；多人符合时随机选一人，不要求当前资源充足。',selected:targets.map(t=>({id:t.id,name:t.name,pos:t.pos}))}}:{}),sources:effectTrace(u)});
+   emit('cast',u.name+' '+(interrupt?'中断普通指令，使用':'使用')+'「'+s.name+'」',u.id,targets.map(t=>t.id),{cast,skill:r.skill,skillLevel:lv,levelSources:skillBreakdown(u,r.skill),...(advancement?{advancement}:{}),primary:current(u,s.primary),secondary:current(u,s.secondary),mean:m,formula:'主属性 ×2 + 副属性 + 实时技能等级 ×2',mpBefore:before,mpAfter:u.mp,item:s.item||null,interrupt,...(Object.hasOwn(ROLE_TARGETS,r.target)?{targetPolicy:{requested:r.target,rule:'仅选择存活且拥有'+(r.target==='healer'?'治疗':'召唤')+'技能的敌人；多人符合时随机选一人，不要求当前资源充足。',selected:targets.map(t=>({id:t.id,name:t.name,pos:t.pos}))}}:{}),sources:effectTrace(u)});
    if(s.kind==='summon')spawn(u,r.target);
    if(s.kind==='buff')for(const t of targets){
     const components=s.components||[{stat:s.stat,base:s.base,scale:s.scale,scope:s.scope,duration:s.duration,delay:0}];
     for(const [componentIndex,part] of components.entries()){
-     const v=Math.floor(part.base+m*part.scale),delay=part.delay||0,e={id:`${roomIndex}:${cast}:${t.id}:${componentIndex}`,skill:r.skill,name:s.name,component:part.label||s.name,source:u.id,sourceName:u.name,stat:part.stat,value:v,scope:part.scope,active:delay===0,activateTick:clock+delay,activateRound:round+delay,expires:part.scope==='rounds'?round+delay+part.duration:null,expiresTick:part.scope==='rounds'?clock+delay+part.duration:null};
-     t.effects.push(e);emit('effect',t.name+' '+(e.active?'获得':'等待')+'「'+s.name+(e.component!==s.name?' · '+e.component:'')+'」：'+({regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'}[part.stat]||part.stat)+' +'+v,u.id,[t.id],{effectId:e.id,cast,skill:r.skill,component:e.component,stat:e.stat,value:v,mean:m,formula:`floor(${part.base} + ${m} × ${part.scale})`,scope:e.scope,expires:e.expires,active:e.active,activateRound:e.activateRound,sources:effectTrace(u)});
+     const advancementBonus=advancementEffectBonus(u,r.skill,part.stat),v=Math.floor(part.base+m*part.scale)+advancementBonus,delay=part.delay||0,e={id:`${roomIndex}:${cast}:${t.id}:${componentIndex}`,skill:r.skill,name:s.name,component:part.label||s.name,source:u.id,sourceName:u.name,stat:part.stat,value:v,scope:part.scope,active:delay===0,activateTick:clock+delay,activateRound:round+delay,expires:part.scope==='rounds'?round+delay+part.duration:null,expiresTick:part.scope==='rounds'?clock+delay+part.duration:null};
+     t.effects.push(e);emit('effect',t.name+' '+(e.active?'获得':'等待')+'「'+s.name+(e.component!==s.name?' · '+e.component:'')+'」：'+({regeneration:'每回合缓释恢复',defense:'全防御检定',int:'智力',skill:'攻击技能等级',defenseSkill:'防御技能等级',armor:'护甲',actions:'行动次数'}[part.stat]||part.stat)+' +'+v,u.id,[t.id],{effectId:e.id,cast,skill:r.skill,component:e.component,stat:e.stat,value:v,mean:m,formula:`floor(${part.base} + ${m} × ${part.scale})${advancementBonus?' + '+advancementBonus:''}`,scope:e.scope,expires:e.expires,active:e.active,activateRound:e.activateRound,sources:effectTrace(u)});
     }
    }
    if(s.kind==='heal'){const t=targets[0],amount=Math.floor(m*.7),actual=Math.min(t.maxHp-t.hp,amount);t.hp+=actual;if(stats[u.id]){stats[u.id].healing+=actual;stats[u.id].interrupts++;}emit('heal',u.name+' 为 '+t.name+' 恢复 '+actual+' 生命',u.id,[t.id],{cast,skill:r.skill,amount,actual,overheal:amount-actual,formula:`floor(${m} × 0.7)`,ordinaryCursorUnchanged:true});}

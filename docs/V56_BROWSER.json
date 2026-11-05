@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "steps": [
+    "新公会进阶门槛拒绝；恢复经8次正常疗所和1次资深通关赚取的备份，选择/退回/重选各精确80经验，普通训练和课程保留",
+    "公会实际进阶进入职责预览、核对和战报：截疗扣4法力仍用符纸，调剂药敷记录为10；普通技能与训练不被替换",
+    "未结算时移动视口锁定重选；结算退回当前进阶后，历史仍精确重演当时进阶且不重复收费或领奖"
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57",
+  "prerequisites": {
+    "completed": 9,
+    "veteran": 1,
+    "availableBefore": 165
+  },
+  "run": {
+    "seed": 10,
+    "won": true,
+    "rooms": 3
+  },
+  "example": {
+    "event": 230,
+    "skill": "suppress",
+    "baseMana": 6,
+    "actualMana": 4
+  }
+}

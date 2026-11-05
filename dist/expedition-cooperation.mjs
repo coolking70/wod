@@ -1,4 +1,5 @@
 import {POS,SKILLS,roomsFor,resolveHeroPlan} from './expedition-data.mjs';
+import {skillManaCost} from './expedition-advancement-data.mjs';
 import {validate} from './expedition-engine.mjs';
 import {deploymentPreview} from './expedition-deployment.mjs';
 
@@ -18,7 +19,7 @@ export function cooperationCheck(config,scope=''){
    if(a.actor!==b.actor&&a.skill===b.skill&&overlap.length)duplicates.push({skill:a.skill,actors:[a.actor,b.actor],recipients:overlap});
   }
   const herbUsers=plans.map(h=>({id:h.id,skills:[...new Set([...h.prep,...h.main].map(r=>r.skill).filter(id=>SKILLS[id].item==='herb').concat(h.healing.enabled?['heal']:[]))]})).filter(h=>h.skills.length);
-  const coverage=preview.coverage.map(r=>({...r,order:preview.order.indexOf(r.actor)+1,mode:plans.find(h=>h.id===r.actor).prep[r.row].mode,mana:SKILLS[r.skill].cost,resource:SKILLS[r.skill].item||null}));
+  const coverage=preview.coverage.map(r=>({...r,order:preview.order.indexOf(r.actor)+1,mode:plans.find(h=>h.id===r.actor).prep[r.row].mode,mana:skillManaCost(plans.find(h=>h.id===r.actor),r.skill),resource:SKILLS[r.skill].item||null}));
   return {roomId:room.id,name:room.name,units:preview.units,coverage,healers,healing,duplicates,herbUsers,herb:config.supplies.herb};
  });
 }
