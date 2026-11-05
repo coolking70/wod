@@ -1,4 +1,4 @@
-import {COURIER_ROOMS} from './expedition-courier.mjs';
+import {COURIER_ROOMS,courierRooms} from './expedition-courier.mjs';
 import {WATCH_ROOMS} from './expedition-watch.mjs';
 import {PROGRESSION_RULES,rankCost} from './expedition-progression-rules.mjs';
 import {HARBOR_ROOMS,harborPlan,harborRooms} from './expedition-harbor.mjs';
@@ -85,7 +85,7 @@ vigil[1].note='两名祭司用群体法术压制中央。分散站位可减少�
 vigil[1].enemies=[enemy('vc1','潮闸巨卫','front','strike',230),enemy('vc2','深潮祭司','rear','wave',160,10),enemy('vc3','深潮祭司','rear','wave',160,10)];
 vigil[2].note='守誓者生命不高于一半且仍存活时碎印：召来两名潮卫，后续普通行动改为压制后排的法术。击倒主人会同时驱散其召唤物。请为此房间保留法力与药瓶。';
 vigil[2].enemies=[{...enemy('vs1','碎印守誓者','front','strike',480,10),skills:{strike:10,wave:10,guard:6},prep:[row('guard','self')],awakens:true},enemy('vs2','誓约祭司','rear','spark',140,8)];
-export function roomsFor(c){return (c.expedition==='courier'?COURIER_ROOMS:c.expedition==='foundrywatch'?WATCH_ROOMS:c.expedition==='foundry'?foundryRooms(c):c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
+export function roomsFor(c){return (c.expedition==='courier'?courierRooms(c):c.expedition==='foundrywatch'?WATCH_ROOMS:c.expedition==='foundry'?foundryRooms(c):c.expedition==='harbor'?harborRooms(c):null)||trials[c.expedition]||(c.expedition==='tutorial'?ROOMS.slice(0,1):c.expedition==='chapter'?chapter:c.expedition==='hospice'?hospice:c.expedition==='survival'?survival:hasArchiveEvents(c)?archive:c.expedition==='vigil'?vigil:ROOMS);}
 export function challengeConfig(){const c=defaults();c.expedition='vigil';for(const h of c.heroes){h.item=['c','d','e','f'].includes(h.id)?'tonic':'salve';h.itemPolicy.threshold=h.item==='tonic'?.3:.5;}c.heroes.find(h=>h.id==='c').prep=[row('sentinel','front')];c.heroes.find(h=>h.id==='d').overrides.cistern={prep:[row('ward','center')]};for(const id of ['b','e']){const h=c.heroes.find(h=>h.id===id);h.overrides.altar={defenses:{...h.defenses,magic:'resist'}};}return c;}
 
 export {rankCost} from './expedition-progression-rules.mjs';

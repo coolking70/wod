@@ -1,0 +1,16 @@
+{
+  "equal": true,
+  "excluded": [],
+  "history": [
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "next": 8,
+  "gold": 1340,
+  "note": "Whole earned guild after actual seed6/7 UI departure, first/repeat claim and bell assignment equals normally earned API progression; no fields excluded."
+}

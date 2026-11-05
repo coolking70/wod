@@ -1,6 +1,6 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.78「沉船邮路」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.78仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
+当前本地开发版本：**v0.79「船底缆道与断令回邮」**。v0.75已按明确范围推送至 [feature/v075-foundry-watch](https://github.com/coolking70/wod/tree/feature/v075-foundry-watch)，远端核验完整SHA `a54957cc2af51d3c65542718130a05a873f46477`。v0.76–v0.79仅本地提交，本轮未合并main或部署。GitHub接续仓库：https://github.com/coolking70/wod
 
 连续完成铸库第二场通路与引流出口：共享符纸和职业分工形成取舍，真实选路改变末房守护并可追溯；整段自动执行，旧履历保留原遭遇。见[v0.73](docs/V73_FOUNDRY_PASSAGES.md)和[v0.74报告](docs/V74_FOUNDRY_CONSEQUENCES.md)。
 
@@ -11,6 +11,8 @@
 继续完成[灯塔来信单人主线](docs/V77_LIGHTHOUSE_LETTER.md)：沉钟章节→盐风港→任选普通委托，三种回信与定向奖励；两本旅程分别保存，512测试及桌面/手机完整流程通过。
 
 新增灯塔后的[沉船邮路](docs/V78_DROWNED_POSTROUTE.md)：三场拆援、真实敌方额外行动与延时支援，固定回邮铜铃及分结果结尾。521测试、旧路线全报告等价与桌面/手机真实购装—出征—领奖—复战通过。
+
+继续加入[船底缆道与断令回邮](docs/V79_COURIER_KEEL.md)：战前选择第二场通路，抵达支付2箭矢、缺料回退；实际通路改变末房节拍接收者，医师救护与前排压力形成取舍。528测试、28旧报告等价、桌面/390px真实付费/复战/回退与完整资产等价通过。
 
 ## 开发交接入口
 

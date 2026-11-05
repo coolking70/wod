@@ -1,0 +1,3516 @@
+{
+  "note": "48 bounded checks, fixed discovery101–102 and confirmation201–204. Grown profile is normally earned and buys120-gold protection; fresh is unprepared. All30 supply totals, fallback intentionally reallocates to15/14/1 and is not a controlled estimate of passage strength. No global balance claim.",
+  "cases": [
+    {
+      "profile": "fresh",
+      "mode": "sails",
+      "seed": 101,
+      "set": "discovery",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 571,
+          "mp": 302,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 6,
+          "survivors": 5,
+          "hp": 446,
+          "mp": 232,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 13,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 182,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 1
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 11
+    },
+    {
+      "profile": "fresh",
+      "mode": "sails",
+      "seed": 102,
+      "set": "discovery",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 301,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 485,
+          "mp": 238,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 15,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 191,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 13
+    },
+    {
+      "profile": "fresh",
+      "mode": "sails",
+      "seed": 201,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 298,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 454,
+          "mp": 234,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 13,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 188,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 1
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 11
+    },
+    {
+      "profile": "fresh",
+      "mode": "sails",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 501,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 482,
+          "mp": 241,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 501,
+          "mp": 198,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 4
+    },
+    {
+      "profile": "fresh",
+      "mode": "sails",
+      "seed": 203,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 5,
+          "hp": 462,
+          "mp": 233,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 14,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 180,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 13
+    },
+    {
+      "profile": "fresh",
+      "mode": "sails",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 561,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 304,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 537,
+          "mp": 245,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 194,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 4
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-existing",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 614,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 571,
+          "mp": 302,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 233,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 12,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 219,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 16
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-existing",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 4,
+      "hp": 311,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 301,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 232,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 17,
+          "survivors": 4,
+          "hp": 311,
+          "mp": 214,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-existing",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 511,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 298,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 232,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 511,
+          "mp": 215,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-existing",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 514,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 239,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 14,
+          "survivors": 5,
+          "hp": 514,
+          "mp": 222,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-existing",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 565,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 243,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 10,
+          "survivors": 6,
+          "hp": 565,
+          "mp": 209,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 11
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-existing",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 537,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 304,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 245,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 537,
+          "mp": 220,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-plan",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 451,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 571,
+          "mp": 302,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 244,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 14,
+          "survivors": 5,
+          "hp": 451,
+          "mp": 218,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-plan",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 578,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 301,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 244,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 217,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 18
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-plan",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 523,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 298,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 248,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 14,
+          "survivors": 6,
+          "hp": 523,
+          "mp": 219,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-plan",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 640,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 308,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 257,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 12,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 216,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 18
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-plan",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 580,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 258,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 580,
+          "mp": 222,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 18
+    },
+    {
+      "profile": "fresh",
+      "mode": "keel-plan",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 600,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 304,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 262,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 228,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 8
+    },
+    {
+      "profile": "fresh",
+      "mode": "fallback",
+      "seed": 101,
+      "set": "discovery",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 571,
+          "mp": 302,
+          "supplies": {
+            "herb": 13,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 8,
+          "survivors": 5,
+          "hp": 482,
+          "mp": 183,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 13,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 166,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 9
+    },
+    {
+      "profile": "fresh",
+      "mode": "fallback",
+      "seed": 102,
+      "set": "discovery",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 301,
+          "supplies": {
+            "herb": 13,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 449,
+          "mp": 183,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 11,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 173,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 8
+    },
+    {
+      "profile": "fresh",
+      "mode": "fallback",
+      "seed": 201,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 298,
+          "supplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 8,
+          "survivors": 4,
+          "hp": 369,
+          "mp": 190,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 7,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 177,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 3
+    },
+    {
+      "profile": "fresh",
+      "mode": "fallback",
+      "seed": 202,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 308,
+          "supplies": {
+            "herb": 13,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 9,
+          "survivors": 4,
+          "hp": 391,
+          "mp": 195,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 8,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 153,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 3
+    },
+    {
+      "profile": "fresh",
+      "mode": "fallback",
+      "seed": 203,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 310,
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 8,
+          "survivors": 5,
+          "hp": 508,
+          "mp": 195,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 13,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 168,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 11
+    },
+    {
+      "profile": "fresh",
+      "mode": "fallback",
+      "seed": 204,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 304,
+          "supplies": {
+            "herb": 13,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 496,
+          "mp": 182,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 11,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 193,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 8
+    },
+    {
+      "profile": "grown",
+      "mode": "sails",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 557,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 300,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 236,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 198,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 4
+    },
+    {
+      "profile": "grown",
+      "mode": "sails",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 4,
+      "hp": 402,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 287,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 5,
+          "survivors": 5,
+          "hp": 507,
+          "mp": 218,
+          "supplies": {
+            "herb": 4,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 10,
+          "survivors": 4,
+          "hp": 402,
+          "mp": 205,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 5,
+        "arrow": 1
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 3
+    },
+    {
+      "profile": "grown",
+      "mode": "sails",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 595,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 285,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 535,
+          "mp": 222,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 202,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "sails",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 583,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 294,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 230,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 203,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "sails",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 570,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 242,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 200,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 4
+    },
+    {
+      "profile": "grown",
+      "mode": "sails",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 612,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 574,
+          "mp": 240,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 191,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "path": null,
+      "relay": false,
+      "enemyFinalHeals": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-existing",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 568,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 300,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 246,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 568,
+          "mp": 218,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 16
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-existing",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 484,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 287,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 236,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 484,
+          "mp": 224,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-existing",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 5,
+      "hp": 485,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 285,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 233,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 14,
+          "survivors": 5,
+          "hp": 485,
+          "mp": 215,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-existing",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 603,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 294,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 233,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 11,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 216,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 13
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-existing",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 605,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 242,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 213,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 3
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-existing",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 602,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 247,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 218,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 4
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-plan",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 602,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 300,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 249,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 12,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 210,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 2,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-plan",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 544,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 287,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 248,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 14,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 228,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-plan",
+      "seed": 201,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 632,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 285,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 246,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 227,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 18
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-plan",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 625,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 294,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 256,
+          "supplies": {
+            "herb": 9,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 11,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 220,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 18
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-plan",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 577,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 307,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 255,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 577,
+          "mp": 220,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 1
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 2,
+        "arrow": 1
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 7
+    },
+    {
+      "profile": "grown",
+      "mode": "keel-plan",
+      "seed": 204,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 574,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 303,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 7
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "keel",
+          "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+          "name": "02 · 船底缆道",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 244,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 1
+          }
+        },
+        {
+          "id": "courier_seal",
+          "path": "relay",
+          "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+          "name": "03 · 断令回邮台",
+          "won": true,
+          "rounds": 13,
+          "survivors": 6,
+          "hp": 574,
+          "mp": 210,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 1,
+        "arrow": 0
+      },
+      "path": "keel",
+      "relay": true,
+      "enemyFinalHeals": 20
+    },
+    {
+      "profile": "grown",
+      "mode": "fallback",
+      "seed": 101,
+      "set": "discovery",
+      "won": true,
+      "alive": 5,
+      "hp": 458,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 300,
+          "supplies": {
+            "herb": 13,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 180,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 10,
+          "survivors": 5,
+          "hp": 458,
+          "mp": 196,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 5
+    },
+    {
+      "profile": "grown",
+      "mode": "fallback",
+      "seed": 102,
+      "set": "discovery",
+      "won": true,
+      "alive": 6,
+      "hp": 601,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 287,
+          "supplies": {
+            "herb": 11,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 193,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 9,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 183,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 5
+    },
+    {
+      "profile": "grown",
+      "mode": "fallback",
+      "seed": 201,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 285,
+          "supplies": {
+            "herb": 11,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 7,
+          "survivors": 5,
+          "hp": 502,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 14,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 168,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 11
+    },
+    {
+      "profile": "grown",
+      "mode": "fallback",
+      "seed": 202,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 614,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 294,
+          "supplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 182,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 177,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 6
+    },
+    {
+      "profile": "grown",
+      "mode": "fallback",
+      "seed": 203,
+      "set": "confirmation",
+      "won": true,
+      "alive": 6,
+      "hp": 605,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 307,
+          "supplies": {
+            "herb": 14,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 526,
+          "mp": 194,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 157,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 2
+    },
+    {
+      "profile": "grown",
+      "mode": "fallback",
+      "seed": 204,
+      "set": "confirmation",
+      "won": false,
+      "alive": 0,
+      "hp": 0,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 303,
+          "supplies": {
+            "herb": 13,
+            "rune": 12,
+            "arrow": 0
+          }
+        },
+        {
+          "id": "courier_sails",
+          "path": "sails",
+          "note": "左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。",
+          "name": "02 · 折帆分舱",
+          "won": true,
+          "rounds": 9,
+          "survivors": 5,
+          "hp": 442,
+          "mp": 191,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "won": false,
+          "rounds": 9,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 203,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "path": "sails",
+      "relay": false,
+      "enemyFinalHeals": 4
+    }
+  ],
+  "summary": {
+    "fresh": {
+      "sails": {
+        "runs": 4,
+        "clears": 2,
+        "allSix": 2,
+        "rounds": [
+          [
+            4,
+            5,
+            13
+          ],
+          [
+            4,
+            4,
+            9
+          ],
+          [
+            4,
+            4,
+            14
+          ],
+          [
+            4,
+            4,
+            8
+          ]
+        ],
+        "enemyFinalHeals": [
+          11,
+          4,
+          13,
+          4
+        ]
+      },
+      "keel-existing": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 3,
+        "rounds": [
+          [
+            4,
+            4,
+            13
+          ],
+          [
+            4,
+            5,
+            14
+          ],
+          [
+            4,
+            4,
+            10
+          ],
+          [
+            4,
+            5,
+            13
+          ]
+        ],
+        "enemyFinalHeals": [
+          20,
+          20,
+          11,
+          20
+        ]
+      },
+      "keel-plan": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            4,
+            3,
+            14
+          ],
+          [
+            4,
+            3,
+            12
+          ],
+          [
+            4,
+            3,
+            13
+          ],
+          [
+            4,
+            3,
+            9
+          ]
+        ],
+        "enemyFinalHeals": [
+          20,
+          18,
+          18,
+          8
+        ]
+      },
+      "fallback": {
+        "runs": 4,
+        "clears": 0,
+        "allSix": 0,
+        "rounds": [
+          [
+            4,
+            8,
+            7
+          ],
+          [
+            4,
+            9,
+            8
+          ],
+          [
+            4,
+            8,
+            13
+          ],
+          [
+            4,
+            9,
+            11
+          ]
+        ],
+        "enemyFinalHeals": [
+          3,
+          3,
+          11,
+          8
+        ]
+      }
+    },
+    "grown": {
+      "sails": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            5,
+            4,
+            9
+          ],
+          [
+            4,
+            4,
+            8
+          ],
+          [
+            3,
+            4,
+            8
+          ],
+          [
+            4,
+            4,
+            7
+          ]
+        ],
+        "enemyFinalHeals": [
+          6,
+          6,
+          4,
+          2
+        ]
+      },
+      "keel-existing": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 3,
+        "rounds": [
+          [
+            5,
+            4,
+            14
+          ],
+          [
+            4,
+            5,
+            11
+          ],
+          [
+            3,
+            5,
+            7
+          ],
+          [
+            4,
+            4,
+            8
+          ]
+        ],
+        "enemyFinalHeals": [
+          20,
+          13,
+          3,
+          4
+        ]
+      },
+      "keel-plan": {
+        "runs": 4,
+        "clears": 4,
+        "allSix": 4,
+        "rounds": [
+          [
+            5,
+            3,
+            13
+          ],
+          [
+            4,
+            3,
+            11
+          ],
+          [
+            3,
+            3,
+            8
+          ],
+          [
+            4,
+            4,
+            13
+          ]
+        ],
+        "enemyFinalHeals": [
+          18,
+          18,
+          7,
+          20
+        ]
+      },
+      "fallback": {
+        "runs": 4,
+        "clears": 2,
+        "allSix": 2,
+        "rounds": [
+          [
+            5,
+            7,
+            14
+          ],
+          [
+            4,
+            7,
+            8
+          ],
+          [
+            3,
+            7,
+            7
+          ],
+          [
+            4,
+            9,
+            9
+          ]
+        ],
+        "enemyFinalHeals": [
+          11,
+          6,
+          2,
+          4
+        ]
+      }
+    }
+  },
+  "normal": {
+    "seed": 6,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 外港断桥",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 607,
+        "mp": 305,
+        "supplies": {
+          "herb": 11,
+          "rune": 8,
+          "arrow": 7
+        }
+      },
+      {
+        "id": "courier_sails",
+        "path": "keel",
+        "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+        "name": "02 · 船底缆道",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 627,
+        "mp": 261,
+        "supplies": {
+          "herb": 10,
+          "rune": 5,
+          "arrow": 2
+        }
+      },
+      {
+        "id": "courier_seal",
+        "path": "relay",
+        "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+        "name": "03 · 断令回邮台",
+        "won": true,
+        "rounds": 11,
+        "survivors": 6,
+        "hp": 605,
+        "mp": 226,
+        "supplies": {
+          "herb": 3,
+          "rune": 3,
+          "arrow": 1
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 3,
+      "rune": 3,
+      "arrow": 1
+    },
+    "reward": {
+      "cleared": 3,
+      "gold": 200,
+      "xp": 80,
+      "firstClear": true,
+      "loot": [
+        "postbell"
+      ]
+    }
+  },
+  "repeat": {
+    "seed": 7,
+    "won": true,
+    "rooms": [
+      {
+        "name": "01 · 外港断桥",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 624,
+        "mp": 299,
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 7
+        }
+      },
+      {
+        "id": "courier_sails",
+        "path": "keel",
+        "note": "抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。",
+        "name": "02 · 船底缆道",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 616,
+        "mp": 253,
+        "supplies": {
+          "herb": 10,
+          "rune": 4,
+          "arrow": 2
+        }
+      },
+      {
+        "id": "courier_seal",
+        "path": "relay",
+        "note": "第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。",
+        "name": "03 · 断令回邮台",
+        "won": true,
+        "rounds": 8,
+        "survivors": 6,
+        "hp": 622,
+        "mp": 215,
+        "supplies": {
+          "herb": 4,
+          "rune": 2,
+          "arrow": 1
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 4,
+      "rune": 2,
+      "arrow": 1
+    },
+    "reward": {
+      "cleared": 3,
+      "gold": 135,
+      "xp": 55,
+      "firstClear": false,
+      "loot": [
+        "postbell"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "e012aec5dbf5343cd326b522b660eb268dc46899",
+    "count": 28,
+    "cases": [
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ],
+    "excluded": []
+  }
+}

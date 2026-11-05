@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "steps": [
+    "地图进入、通路在载入起点后保留，本房分工不改资产；真实抵达7箭矢扣至5，三场六人完成，医师获得节拍；末房能跳转实际布缆，账本-2和原始证据一致",
+    "pending刷新完全相同，首通200金币/80经验与铜铃、分配后复战135金币/55经验，历史战报保持且备份保留实际通路",
+    "390px备份恢复与原历史准确，准备/改补给不改资产；实际低箭出征在第二场零费回退分舱，末房显示原封蜡回邮台，预览不冒充结果且无页面横向溢出"
+  ],
+  "runs": [
+    {
+      "seed": 6,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "rounds": 4,
+          "alive": 6
+        },
+        {
+          "name": "02 · 船底缆道",
+          "rounds": 3,
+          "alive": 6
+        },
+        {
+          "name": "03 · 断令回邮台",
+          "rounds": 11,
+          "alive": 6
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 1
+      }
+    },
+    {
+      "seed": 7,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "rounds": 4,
+          "alive": 6
+        },
+        {
+          "name": "02 · 船底缆道",
+          "rounds": 3,
+          "alive": 6
+        },
+        {
+          "name": "03 · 断令回邮台",
+          "rounds": 8,
+          "alive": 6
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 1
+      }
+    },
+    {
+      "seed": 8,
+      "mode": "low-arrow-fallback",
+      "won": true,
+      "rooms": [
+        {
+          "name": "01 · 外港断桥",
+          "rounds": 4,
+          "alive": 6
+        },
+        {
+          "name": "02 · 折帆分舱",
+          "rounds": 8,
+          "alive": 6
+        },
+        {
+          "name": "03 · 封蜡回邮台",
+          "rounds": 10,
+          "alive": 5
+        }
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

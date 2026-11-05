@@ -213,3 +213,11 @@ courierPreparation从正常lighthouse ready→chart40+罗盘给B→E买saltseal/
 521回归，214mjs33cjs语法。check-v78带v77参考对所有13旧路线各1/731共26全报告相等，否则unchanged=null。browser-v78 release-browser：实际UI买120装备→first6全员4/4/7→200/80→铜铃B→ward7全员4/4/10→135/55，pending刷新/历史完全相同；导出完整guild与脚本逐字段相同，V78_BROWSER_ASSET_PARITY记录。手机恢复与首通历史只读。真实抢拍的两个队列来源追溯+返回，以及死谱师/活术士余韵同时存在可见；该例余韵未产生攻击，最初浏览器错误假定存在该攻击已纠正，原失败留存。
 
 先前灯塔3种结局各自正常支付120防护的seed6均六人通过，仅chart才装备获奖罗盘，不把其他分支虚构同物品。截图只内部不进Library交付。没有运行旧候补/活动大样本，原版服务器数值仍未核验。新增阶段不推送/合并/部署，v75已发布事实不变。继续单人方向。
+
+## v0.79船底缆道续接
+
+feature/v079-courier-keel从e012aec干净521基线。courier模块增加COURIER_KEEL(同courier_sails覆盖ID)/RELAY、courierPass(sails缺省/keel严格枚举)、按抵达arrow>=2的resolve。引擎仅在courier且非options.rooms时第二场动态决策，真实keel事件ID保存在本次模拟courierSource，第三场据此切换鼓手rhythm front→rear；失败止步不提前出末房、fallback不出relay，默认无新事件，旧14路线28全报告等价。战斗公式/RNG/奖励/版本未改。
+
+courier-view提供双方敌情、keelTactics只改B/C/D本房、实况事件与证据格。UI select持久化、其他起点保留pass；出征实际配置说明成本/回退；scene/report.notes用实际路径，care/portrait同时识别两路单位，comparison逐房显示A/B真实名字。费用到ledger按事件净变化单列。医师死后位置回退可能重新把节拍交前排，文案不承诺永久去掉额外行动。
+
+528测试、217mjs/34cjs；check-v79复用正常courierProfiles，48固定案例保留12失败；带/tmp/wod-v078-reference对14旧路线1/731共28全报告无排除。normal6/7三房分别4/3/11和4/3/8，均六人，200/80→铜铃B→135/55；API完整guild与browser-v79导出完全相同。browser-v79含桌面完整收费/来源/账本/刷新/领奖/配装复战/历史和390px实际低箭seed8零费回退与原末房，0错误无溢出；v78浏览器完整回归通过。最初测试control误用seed731而真实depart用next6，大对象比较时进程SIGKILL，保留失败并纠正控制组，未改敌方数字或放宽比较。脚本默认/tmp/wod-v79，可用WOD_EVIDENCE_DIR；浏览器需现成Playwright/Chromium。新阶段仅本地，持续单人，无新重大待决事项；Library传输结果独立，不作为游戏验证通过依据。

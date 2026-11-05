@@ -1,3 +1,4 @@
+import {courierPass,resolveCourierPass,COURIER_ROOMS,COURIER_RELAY} from './expedition-courier.mjs';
 import {reserveBlock} from './expedition-harbor-reserve.mjs';
 import {advancementOptions,skillManaCost,advancementEffectBonus,advancementTrace} from './expedition-advancement-data.mjs';
 import {regenerationTicks} from './expedition-regeneration.mjs';
@@ -24,7 +25,7 @@ export function validate(c){
  if(!Array.isArray(c.heroes)||c.heroes.length!==6||new Set(c.heroes.map(h=>h.id)).size!==6)throw Error('必须包含 6 名不同队员');
  if((c.expedition==='harbor'||c.harbor!==undefined)&&!validHarborPlan(c.harbor))throw Error('港口分支策略无效');
  if(!Object.hasOwn(EXPEDITIONS,c.expedition))throw Error('远征路线无效');
- foundryApproach(c);validFoundryFlow(c);
+ foundryApproach(c);validFoundryFlow(c);courierPass(c);
  if(!Object.hasOwn(BELL_CHOICES,c.bellApproach))throw Error('机关应对策略无效');
  if(!Object.hasOwn(RESCUE_CHOICES,c.rescueApproach))throw Error('救援策略无效');
  validateOrder(c.prepOrder,c.heroes);
@@ -70,7 +71,7 @@ function random(seed){let x=seed>>>0;return ()=>{x+=0x6D2B79F5;let t=x;t=Math.im
 export function simulate(c,options={}){
  validate(c);const rng=random(c.seed),party=options.party?clone(options.party):buildParty(c),rooms=clone(options.rooms||roomsFor(c)),supplies=clone(c.supplies),events=[],results=[];
  const stats=Object.fromEntries(party.map(u=>[u.id,{damage:0,actual:0,overkill:0,healing:0,interrupts:0,failed:0,defenses:0,defenseMana:0}]));
- let harborFlags={},harborSource=null,foundrySource=null;let bellRecord=null,rescueRecord=null;let summons=[],summonSerial=0;let enemies=[],roomIndex=0,round=0,phase='',sequence=0,enemySupplies={},clock=0,actionId=null;
+ let harborFlags={},harborSource=null,foundrySource=null,courierSource=null;let bellRecord=null,rescueRecord=null;let summons=[],summonSerial=0;let enemies=[],roomIndex=0,round=0,phase='',sequence=0,enemySupplies={},clock=0,actionId=null;
  party.forEach(u=>u.effects??=[]);
  const all=()=>[...party,...enemies,...summons],live=side=>all().filter(u=>u.side===side&&u.hp>0);
  const heroesAlive=()=>party.some(u=>u.hp>0);
@@ -97,17 +98,23 @@ export function simulate(c,options={}){
  const roll=m=>Math.floor(m*(.5+(rng()+rng())/2));
  function effectTrace(u){return u.effects.filter(e=>e.active!==false).map(e=>({effectId:e.id,source:e.source,name:e.name,component:e.component,stat:e.stat,value:e.value}));}
  for(roomIndex=0;roomIndex<rooms.length;roomIndex++){
-  let harborDecision=null,harborDelta={},foundryPass=null,foundryVault=null;
+  let harborDecision=null,harborDelta={},foundryPass=null,foundryVault=null,courierPath=null,courierRelay=null;
   if(c.expedition==='harbor'&&!options.rooms){const selected=resolveHarborStep(roomIndex,c,party,supplies,mean,resistanceOf,random(c.seed^0x48A01^roomIndex),harborFlags);rooms[roomIndex]=selected.room;harborFlags=selected.flags;harborDecision=selected.decision;harborDelta=selected.delta;}
   if(c.expedition==='foundry'&&roomIndex===1&&!options.rooms&&foundryApproach(c)!=='bellows'){foundryPass=resolveFoundryPass(c,party,supplies,resistanceOf);rooms[roomIndex]=clone(foundryPass.room);}
   if(c.expedition==='foundry'&&roomIndex===3&&!options.rooms)rooms[roomIndex]=clone(FOUNDRY_ROOMS[3]);
   if(c.expedition==='foundry'&&roomIndex===3&&foundrySource&&validFoundryFlow(c)&&!options.rooms){rooms[roomIndex]=clone(FOUNDRY_COOLED_VAULT);foundryVault={domain:'foundry',kind:'vault',chosen:'channel',sourceEventId:foundrySource,reason:'第二场实际开启冷却潮渠，引流迫使护炉师转向左翼自守，不再覆盖前排监工。',changes:[{id:'fvp',name:'护炉师',skill:'ward',before:'front',after:'left'}],suppliesBefore:clone(supplies),suppliesAfter:clone(supplies),rule:'只由第二场实际执行的通路决定，不再次检查抗性、不掷骰、不收费；敌方生命、抗性与普通指令不变。'};}
+  if(c.expedition==='courier'&&!options.rooms){
+   if(roomIndex===1&&courierPass(c)!=='sails'){courierPath=resolveCourierPass(c,supplies);rooms[roomIndex]=clone(courierPath.room);}
+   if(roomIndex===2){rooms[roomIndex]=clone(courierSource?COURIER_RELAY:COURIER_ROOMS[2]);if(courierSource)courierRelay={domain:'courier',kind:'relay',chosen:'keel',sourceEventId:courierSource,reason:'第二场实际布缆走船底，切断前排鼓令；鼓手转为给后排医师节拍。',changes:[{id:'cfb',name:'催帆鼓手',skill:'rhythm',before:'front',after:'rear'}],suppliesBefore:clone(supplies),suppliesAfter:clone(supplies),rule:'由第二场实际通路决定；没有第二次费用、检定或隐藏伤害，原敌方生命、抗性、技能等级与普通指令不变。'};}
+  }
   const room=rooms[roomIndex];round=0;phase='进场';for(const u of party){const h=c.heroes.find(h=>h.id===u.id);if(h){const plan=resolveHeroPlan(h,room.id);for(const key of PLAN_FIELDS)u[key]=clone(plan[key]);}}enemies=room.enemies.map(u=>({...u,effects:[],side:'enemy'}));enemySupplies={herb:60,rune:60,arrow:60};
   const cursors=new Map(),used=new Set(),roundUsed=new Map(),roundCursors=new Map();let serial=0;
   emit('room',room.name+'：生命、法力、补给与远征效果继承。',null,[],{rule:'房间效果结束；远征效果保留；行动游标重置。'});
   if(harborDecision){for(const [key,delta] of Object.entries(harborDelta))supplies[key]+=delta;emit('branch',room.name+' · '+harborDecision.reason,harborDecision.actor,[],{...harborDecision,sourceEventId:roomIndex===3?harborSource:null});if(roomIndex===2)harborSource=events.at(-1).id;}
   if(foundryPass){for(const [key,delta] of Object.entries(foundryPass.delta))supplies[key]+=delta;emit('branch',room.name+' · '+foundryPass.decision.reason,null,[],foundryPass.decision);if(foundryPass.decision.chosen==='channel')foundrySource=events.at(-1).id;}
   if(foundryVault)emit('branch',room.name+' · '+foundryVault.reason,null,['fvp'],foundryVault);
+  if(courierPath){for(const [key,delta] of Object.entries(courierPath.delta))supplies[key]+=delta;emit('branch',room.name+' · '+courierPath.decision.reason,null,[],courierPath.decision);if(courierPath.decision.chosen==='keel')courierSource=events.at(-1).id;}
+  if(courierRelay)emit('branch',room.name+' · '+courierRelay.reason,null,['cfb'],courierRelay);
   if(c.expedition==='scarcity')emit('deadline','潮水封路：本房须在 '+roomTimeBudget(c,room.id)+' 回合内清场。',null,[],{limit:roomTimeBudget(c,room.id),gatherDelay:room.id==='cistern'&&c.rescueApproach==='gather'?1:0,rule:room.id==='cistern'&&c.rescueApproach==='gather'?'拾取药草占用1回合，原5回合缩短为4回合；不额外跳过战斗行动。':'本房第5回合结束仍有敌人则远征停止。'});
   if(hasArchiveEvents(c)&&room.id==='altar'){
    const route=bellRoute(bellRecord?.detail),result=applyBellRoute(enemies,route);enemies=result.enemies;
@@ -204,7 +211,7 @@ export function simulate(c,options={}){
   }
   round=Math.min(round-1,maxRounds);const won=heroesAlive()&&live('enemy').length===0;phase='房间结算';removeSummons(null,'房间结束');
   for(const u of party){const expired=u.effects.filter(e=>e.scope!=='expedition');u.effects=u.effects.filter(e=>e.scope==='expedition');for(const e of expired)emit('expire',u.name+' 的「'+e.name+'」随战斗结束',e.source,[u.id],{scope:e.scope,component:e.component,stat:e.stat});}
-  results.push({...((foundryPass||foundryVault)?{id:room.id,path:foundryVault?'cooled':foundryPass.decision.chosen,note:room.note}:{}),...(c.expedition==='harbor'?{id:room.id,node:room.node,note:room.note}:{}),...(c.expedition==='scarcity'?{roundLimit:maxRounds,stopReason:won?null:heroesAlive()?'潮水封路':'全员倒下'}:{}),name:room.name,won,rounds:round,survivors:party.filter(u=>u.hp>0).length,hp:party.reduce((n,u)=>n+u.hp,0),mp:party.reduce((n,u)=>n+u.mp,0),supplies:clone(supplies)});emit(won?'victory':'defeat',won?'房间肃清，整队继续前进。':'远征停止：'+(heroesAlive()?(c.expedition==='scarcity'?'潮水封路，未在 '+maxRounds+' 回合内清场。':'达到回合上限。'):'队伍全员倒下。'));
+  results.push({...((courierPath||courierRelay)?{id:room.id,path:courierRelay?'relay':courierPath.decision.chosen,note:room.note}:{}),...((foundryPass||foundryVault)?{id:room.id,path:foundryVault?'cooled':foundryPass.decision.chosen,note:room.note}:{}),...(c.expedition==='harbor'?{id:room.id,node:room.node,note:room.note}:{}),...(c.expedition==='scarcity'?{roundLimit:maxRounds,stopReason:won?null:heroesAlive()?'潮水封路':'全员倒下'}:{}),name:room.name,won,rounds:round,survivors:party.filter(u=>u.hp>0).length,hp:party.reduce((n,u)=>n+u.hp,0),mp:party.reduce((n,u)=>n+u.mp,0),supplies:clone(supplies)});emit(won?'victory':'defeat',won?'房间肃清，整队继续前进。':'远征停止：'+(heroesAlive()?(c.expedition==='scarcity'?'潮水封路，未在 '+maxRounds+' 回合内清场。':'达到回合上限。'):'队伍全员倒下。'));
   summons=[];if(!won)break;
  }
  return {version:VERSION,ruleset:RULESET,config:clone(c),events,rooms:results,stats,party:clone(party),supplies,won:results.length===rooms.length&&results.every(r=>r.won)};

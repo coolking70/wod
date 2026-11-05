@@ -7,3 +7,18 @@ export const COURIER_ROOMS=[
  {id:'courier_sails',name:'02 · 折帆分舱',note:'左翼潮墨谱师先启蒙后排术士，再施放蓄势合奏：本回合抢拍、下一回合才获得余韵技能加成。右翼钩索弩手抗远程60%、弱法15%，每回合一次重箭攻击后排；后排术士抗法60%、弱远程15%，每回合一次群攻中央，额外行动用微光。先断谱师或先拆输出是不同分工，杀死来源不会撤销已施放的组件。',enemies:[{...unit('csb','潮墨谱师','left','spark',160,7),gear:'lute',attrs:{...attrs,cha:18,wil:16},skills:{spark:7,insight:7,cadence:8},prep:[row('insight','rear','once'),row('cadence','rear')]},{...unit('csm','潮墨术士','rear','wave',180,9),gear:'focus',skills:{wave:9,spark:7},main:[row('wave','center','round'),row('spark','center')],resistances:{magic:60,ranged:-15}},{...unit('csa','钩索弩手','right','shot',150,8),gear:'bow',attrs:{...attrs,dex:18,per:17},skills:{pierce:8,shot:8},main:[row('pierce','rear','round'),row('shot','rear')],resistances:{ranged:60,magic:-15}}]},
  {id:'courier_seal',name:'03 · 封蜡回邮台',note:'前排携盾拦邮卫受左翼鼓手的急行节拍与中央印师的延时护印支持，后排医师以普通行动救护。鼓手抗远程50%、弱法15%；印师抗远程60%、弱法15%；医师抗法60%、弱远程15%。先断节拍或先拆护印都会留下另一种压力；效果已生效时，击倒来源不即时驱散。',enemies:[{...unit('cfg','拦邮卫','front','strike',260,9),gear:'guardblade',skills:{strike:9,shieldbash:9,guard:7},prep:[row('guard','self','once')],main:[row('shieldbash','front','round'),row('strike')]},{...unit('cfb','催帆鼓手','left','spark',150,7),gear:'lute',attrs:{...attrs,cha:18,wil:16},skills:{spark:7,rhythm:8},prep:[row('rhythm','front')],resistances:{ranged:50,magic:-15}},{...unit('cfw','护邮印师','center','spark',160,7),gear:'focus',attrs:{...attrs,int:17},skills:{spark:7,bulwark:8},prep:[row('bulwark','front')],resistances:{ranged:60,magic:-15}},{...unit('cfh','收信医师','rear','shot',150,7),skills:{shot:7,heal:9},healing:{enabled:true,threshold:.65,target:'all',priority:'lowest'},resistances:{magic:60,ranged:-15}}]}
 ];
+
+// Both passages share the second-room command slot. The cost is checked against
+// the supplies on arrival; no combat roll or individual action is consumed.
+export const COURIER_PASSES={sails:'折帆分舱',keel:'船底缆道'};
+export function courierPass(c){const pass=c.courierPass??'sails';if(c.courierPass===null||typeof pass!=='string'||!Object.hasOwn(COURIER_PASSES,pass))throw Error('邮路通路策略无效');return pass;}
+export const COURIER_KEEL={id:'courier_sails',name:'02 · 船底缆道',note:'抵达时花2箭矢布设过船缆索，不足则走折帆分舱。两名缆卫集中前排，近战抗性15%、远程抗性50%、弱法15%；后排系缆咒师抗法50%、弱远程15%，持续召来前排潮卫。击倒咒师会驱散其召唤。实际通过此路会切断末房前排鼓令，鼓手转为给后排医师节拍：后排医师存活时，前排不获该节拍，医师可能更频繁救护；后排空缺后仍按原位置回退规则选目标。',enemies:[...['ck1','ck2'].map(id=>({...unit(id,'船底缆卫','front','strike',175,9),resistances:{melee:15,ranged:50,magic:-15}})),{...unit('cks','系缆咒师','rear','spark',160,7),gear:'focus',skills:{spark:7,sentinel:8},prep:[row('sentinel','front')],resistances:{magic:50,ranged:-15}}]};
+export const COURIER_RELAY=structuredClone(COURIER_ROOMS[2]);
+COURIER_RELAY.name='03 · 断令回邮台';
+COURIER_RELAY.note='第二场实际走船底缆道，前排鼓令被切断，催帆鼓手改为对后排医师施放急行节拍。后排医师存活时，拦邮卫不获该节拍，医师可能在更多普通行动中救护；医师倒下后仍按位置回退规则选目标。中央印师仍护前排。生命、抗性、技能等级与普通指令不变；无额外收费或隐藏伤害，实际施放仍消耗敌方自己的资源。';
+COURIER_RELAY.enemies.find(u=>u.id==='cfb').prep=[row('rhythm','rear')];
+export function courierRooms(c){const keel=courierPass(c)==='keel';return COURIER_ROOMS.map((r,i)=>keel&&i===1?COURIER_KEEL:keel&&i===2?COURIER_RELAY:r);}
+export function resolveCourierPass(c,supplies){
+ const preference=courierPass(c),chosen=preference==='keel'&&supplies.arrow>=2?'keel':'sails',before={...supplies},after={...supplies,arrow:supplies.arrow-(chosen==='keel'?2:0)},reason=chosen==='keel'?'抵达时箭矢足够，花2箭矢布缆，进入船底缆道。':preference==='sails'?'按计划走折帆分舱，不支付通路费用。':'抵达时不足2箭矢，改走折帆分舱；不支付通路费用。';
+ return {room:chosen==='keel'?COURIER_KEEL:COURIER_ROOMS[1],delta:chosen==='keel'?{arrow:-2}:{},decision:{domain:'courier',kind:'passage',preference,chosen,reason,suppliesBefore:before,suppliesAfter:after,rule:'只按抵达时箭矢检查，不借用初始库存、不掷骰、不占个人行动；两条通路共用第二场指令。'}};
+}
