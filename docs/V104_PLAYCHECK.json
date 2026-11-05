@@ -1,0 +1,88 @@
+{
+  "designStatus": "project provisional; official assignment text not fully accessible",
+  "normal": [
+    {
+      "route": "classic",
+      "seed": 1,
+      "won": true,
+      "rounds": [
+        3,
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 14,
+        "rune": 17,
+        "arrow": 7
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 45,
+        "firstClear": true,
+        "loot": [
+          "reliquaryshield"
+        ]
+      }
+    },
+    {
+      "route": "hospice",
+      "seed": 2,
+      "won": true,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": [
+          "remedybag"
+        ]
+      }
+    }
+  ],
+  "bindings": {
+    "classic": "classic-calm",
+    "hospice": "hospice-group"
+  },
+  "desktopGold": 120,
+  "finalGold": 260,
+  "pendingOriginalCount": 2,
+  "updatedProfileCount": 3,
+  "finalHero": "c",
+  "finalXP": [
+    {
+      "id": "a",
+      "xp": 100
+    },
+    {
+      "id": "b",
+      "xp": 100
+    },
+    {
+      "id": "c",
+      "xp": 80
+    },
+    {
+      "id": "d",
+      "xp": 100
+    },
+    {
+      "id": "e",
+      "xp": 100
+    },
+    {
+      "id": "f",
+      "xp": 100
+    }
+  ]
+}
