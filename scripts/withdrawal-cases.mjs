@@ -1,0 +1,5 @@
+import {counterpointLoop} from './counterpoint-cases.mjs';
+import {courierConfig,counterpointConfig} from '../dist/expedition-data.mjs';
+import {withWithdrawal} from '../dist/expedition-withdrawal.mjs';import {withObjective} from '../dist/expedition-goal-data.mjs';
+import {depart,pendingReport,pendingReward,claim,train,assignLoot} from '../dist/expedition-guild.mjs';
+export function withdrawalLoop(){const start=counterpointLoop().final;let g=start;const runs=[];let desktop;for(const [route,threshold] of [['courier',3],['counterpoint',0],['courier',2]]){const config=withObjective(withWithdrawal(route==='courier'?courierConfig():counterpointConfig('source'),threshold),'clear'),pending=depart(g,config),report=pendingReport(pending),reward=pendingReward(pending);g=claim(pending);runs.push({route,config,pending,report,reward,claimed:g});if(route==='courier'&&threshold===3){g=train(g,'b','skill:shot');g=train(g,'c','skill:spark');desktop=g;}}if(g.warehouse.postbell)g=assignLoot(g,'b','postbell');return {start,runs,desktop,final:g};}

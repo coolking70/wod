@@ -1,3 +1,4 @@
+import {validateWithdrawal,withdrawalDecision} from './expedition-withdrawal.mjs';
 import {OFFBEAT,OFFBEAT_RULE,offbeatEligible,existingOffbeat,ordinaryActionDecision,offbeatTargetCheck} from './expedition-offbeat.mjs';
 import {validateGroupAid,groupAidCandidates} from './expedition-group-aid.mjs';
 import {validateSupportOrder,supportPriorityChoice} from './expedition-support-priority.mjs';
@@ -41,7 +42,7 @@ function validatePlan(h,t){
  for(const type of Object.keys(DEFENSE_TYPES))if(!DEFENSES[h.defenses[type]]?.types.includes(type))throw Error('防御技能与攻击类型不匹配');
 }
 export function validate(c){
- validateObjective(c);
+ validateObjective(c);validateWithdrawal(c);
  if(c?.version!==VERSION||!Number.isInteger(c.seed)||c.seed<1||c.seed>999999)throw Error('配置版本或种子无效');
  if(!Array.isArray(c.heroes)||c.heroes.length!==6||new Set(c.heroes.map(h=>h.id)).size!==6)throw Error('必须包含 6 名不同队员');
  if((c.expedition==='harbor'||c.harbor!==undefined)&&!validHarborPlan(c.harbor))throw Error('港口分支策略无效');
@@ -245,7 +246,7 @@ export function simulate(c,options={}){
    if(p==='main'){if(stats[u.id])stats[u.id].failed++;emit('failed',u.name+' 无法执行任何行动。',u.id,[],{consumedAction:true,automaticAttack:false});}
    } finally {const emittedAction=events.slice(start),reserved=emittedAction.filter(e=>e.type==='skip'&&e.detail.reservation);if(reserved.length){const outcome=emittedAction.find(e=>['cast','item','wait','failed'].includes(e.type));for(const e of reserved)e.detail.reserveOutcome=outcome?{eventId:outcome.id,type:outcome.type,skill:outcome.detail.skill||null}:{eventId:null,type:'no-preparation',skill:null};}const floorSkips=emittedAction.filter(e=>e.type==='skip'&&e.detail.stockFloor?.blocked);if(floorSkips.length){const outcome=emittedAction.find(e=>['cast','item','wait','failed'].includes(e.type));for(const e of floorSkips)e.detail.stockOutcome=outcome?{eventId:outcome.id,type:outcome.type,skill:outcome.detail.skill||null}:{eventId:null,type:'no-preparation',skill:null};}const scheduled=emittedAction.filter(e=>e.type==='skip'&&e.detail.schedule);if(scheduled.length){const outcome=emittedAction.find(e=>['cast','item','wait','failed'].includes(e.type));for(const e of scheduled)e.detail.scheduleOutcome=outcome?{eventId:outcome.id,type:outcome.type,skill:outcome.detail.skill||null}:{eventId:null,type:'no-preparation',skill:null};}const countSkips=emittedAction.filter(e=>e.type==='skip'&&e.detail.targetCount?.blocked);if(countSkips.length){const outcome=emittedAction.find(e=>['cast','item','wait','failed'].includes(e.type));for(const e of countSkips)e.detail.targetCountOutcome=outcome?{eventId:outcome.id,type:outcome.type,skill:outcome.detail.skill||null}:{eventId:null,type:'no-preparation',skill:null};}if(trace){const emitted=events.slice(start),entry=emitted.find(e=>['cast','item','failed','wait'].includes(e.type))||emitted[0];if(emitted.some(e=>e.type==='heal'&&e.actor===u.id))trace.status='healed';if(entry)entry.detail.healingDecision=clone(trace);}}
   }
-  const maxRounds=c.expedition==='scarcity'?Math.min(options.maxRounds??24,roomTimeBudget(c,room.id)):(options.maxRounds??24);
+  let withdrawal=null;const maxRounds=c.expedition==='scarcity'?Math.min(options.maxRounds??24,roomTimeBudget(c,room.id)):(options.maxRounds??24);
   for(round=1;round<=maxRounds&&heroesAlive()&&live('enemy').length;round++){
    clock++;phase='回合开始';emit('round','第 '+round+' 回合');
    for(const u of all())for(const e of u.effects)if(e.active===false&&e.activateTick<=clock){e.active=true;emit('activate',u.name+' 的「'+e.name+(e.component!==e.name?' · '+e.component:'')+'」开始生效',e.source,[u.id],{component:e.component,stat:e.stat,value:e.value,expires:e.expires,...(e.harmful?{harmful:true}:{})});}
@@ -261,6 +262,7 @@ export function simulate(c,options={}){
     if(u.hp===0){emit('down',u.name+' 因潮蚀倒下。',effect.source,[u.id],{effectId:effect.id,passive:true});removeSummons(u.id,'主人倒下');}else if(u.side==='enemy')awaken(u);actionId=null;
    }
    if(!heroesAlive()||!live('enemy').length)continue;
+   withdrawal=withdrawalDecision(c,party,live('enemy'));if(withdrawal){phase='撤退';emit('withdraw','按战前计划整队撤退：'+withdrawal.alive.length+'名正式队员仍存活。',null,[],{withdrawal});break;}
    phase='回合前';const ordered=[...(c.roomOrders[room.id]||c.prepOrder).map(id=>party.find(u=>u.id===id)).filter(Boolean),...enemies];for(const u of ordered)if(u.hp>0)act(u,'prep');
    phase='自然回复';for(const u of all().filter(u=>u.hp>0)){const before=u.mp;u.mp=Math.min(u.maxMp,u.mp+1);if(u.mp!==before)emit('regen',u.name+' 自然回复 1 法力',u.id,[],{before,after:u.mp});}
    phase='先攻';const order=[],actionLimits=[];for(const u of all().filter(u=>u.hp>0)){const decision=ordinaryActionDecision(u);if(decision.trace)actionLimits.push(decision.trace);const agi=current(u,'agi'),per=current(u,'per'),actions=decision.actions,mean=2*agi+per,base=roll(mean),count=decision.count;for(let i=0;i<count;i++)order.push({u,value:base/(1+i*.6),ordinal:i+1,total:count,agi,per,actions,mean,base});}
@@ -268,9 +270,9 @@ export function simulate(c,options={}){
    phase='主行动';for(const e of order){if(!heroesAlive()||!live('enemy').length)break;if(e.u.hp>0)act(e.u,'main');}
    phase='回合结束';for(const u of all()){const expired=u.effects.filter(e=>e.scope==='rounds'&&e.expiresTick<=clock);u.effects=u.effects.filter(e=>!expired.includes(e));for(const e of expired)emit('expire',u.name+' 的「'+e.name+(e.component!==e.name?' · '+e.component:'')+'」到期',e.source,[u.id],{scope:e.scope,component:e.component,stat:e.stat});}
   }
-  round=Math.min(round-1,maxRounds);const won=heroesAlive()&&live('enemy').length===0;phase='房间结算';removeSummons(null,'房间结束');
+  round=withdrawal?round:Math.min(round-1,maxRounds);const won=heroesAlive()&&live('enemy').length===0;phase='房间结算';removeSummons(null,'房间结束');
   for(const u of party){const expired=u.effects.filter(e=>e.scope!=='expedition');u.effects=u.effects.filter(e=>e.scope==='expedition');for(const e of expired)emit('expire',u.name+' 的「'+e.name+'」随战斗结束',e.source,[u.id],{scope:e.scope,component:e.component,stat:e.stat});}
-  results.push({...(c.expedition==='shoals'?{id:room.id,node:room.node,note:room.note}:{}),...((courierPath||courierRelay)?{id:room.id,path:courierRelay?'relay':courierPath.decision.chosen,note:room.note}:{}),...((foundryPass||foundryVault)?{id:room.id,path:foundryVault?'cooled':foundryPass.decision.chosen,note:room.note}:{}),...(c.expedition==='harbor'?{id:room.id,node:room.node,note:room.note}:{}),...(c.expedition==='scarcity'?{roundLimit:maxRounds,stopReason:won?null:heroesAlive()?'潮水封路':'全员倒下'}:{}),name:room.name,won,rounds:round,survivors:party.filter(u=>u.hp>0).length,hp:party.reduce((n,u)=>n+u.hp,0),mp:party.reduce((n,u)=>n+u.mp,0),supplies:clone(supplies)});emit(won?'victory':'defeat',won?'房间肃清，整队继续前进。':'远征停止：'+(heroesAlive()?(c.expedition==='scarcity'?'潮水封路，未在 '+maxRounds+' 回合内清场。':'达到回合上限。'):'队伍全员倒下。'));
+  results.push({...(withdrawal?{stopReason:'按计划撤退',withdrawal:clone(withdrawal)}:{}),...(c.expedition==='shoals'?{id:room.id,node:room.node,note:room.note}:{}),...((courierPath||courierRelay)?{id:room.id,path:courierRelay?'relay':courierPath.decision.chosen,note:room.note}:{}),...((foundryPass||foundryVault)?{id:room.id,path:foundryVault?'cooled':foundryPass.decision.chosen,note:room.note}:{}),...(c.expedition==='harbor'?{id:room.id,node:room.node,note:room.note}:{}),...(c.expedition==='scarcity'?{roundLimit:maxRounds,...(!withdrawal?{stopReason:won?null:heroesAlive()?'潮水封路':'全员倒下'}:{})}:{}),name:room.name,won,rounds:round,survivors:party.filter(u=>u.hp>0).length,hp:party.reduce((n,u)=>n+u.hp,0),mp:party.reduce((n,u)=>n+u.mp,0),supplies:clone(supplies)});emit(won?'victory':'defeat',won?'房间肃清，整队继续前进。':'远征停止：'+(withdrawal?'按战前计划整队撤退；仍存活'+withdrawal.alive.length+'人。':heroesAlive()?(c.expedition==='scarcity'?'潮水封路，未在 '+maxRounds+' 回合内清场。':'达到回合上限。'):'队伍全员倒下。'),null,[],withdrawal?{withdrawal}:{});
   summons=[];if(!won)break;
  }
  return {version:VERSION,ruleset:RULESET,config:clone(c),events,rooms:results,stats,party:clone(party),supplies,won:results.length===rooms.length&&results.every(r=>r.won)};

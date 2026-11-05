@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.115「错拍回廊」**，分支`feature/v115-counterpoint-corridor`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.116「整队撤退计划」**，分支`feature/v116-planned-withdrawal`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[战前整队撤退计划](docs/V116_PLANNED_WITHDRAWAL.md)：显式设定存活正式队员人数，持续效果结算后、预备/排队前按计划结束远征，既定上回合行动与已付费用保留。未清场只领原有部分收益；默认关闭，方案/实际出征卡/回放/整档与历史贯通。正常邮路三人撤退至565、回廊至640、再战真实首通至840，保留原失败和撤退报告。见[V116验证](docs/V116_CHECKS.json)。
 
 新增[错拍回廊](docs/V115_COUNTERPOINT_CORRIDOR.md)：两场24补给短线，敌方按同规则迟拍，急拍推进/付费净化/少用急拍拆来源互有代价；无新装备或技能。沿用两次邮路失败后真实存档，正常375/450/525金币与完整报告/公会同API，保留净化耗尽符纸仍受限、援护未及反例。见[V115验证](docs/V115_CHECKS.json)。
 

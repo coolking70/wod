@@ -1,0 +1,935 @@
+{
+  "startGold": 525,
+  "normal": [
+    {
+      "route": "courier",
+      "seed": 7,
+      "threshold": 3,
+      "reward": {
+        "cleared": 2,
+        "gold": 40,
+        "xp": 20,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 565,
+      "won": false,
+      "alive": 3,
+      "rounds": [
+        4,
+        4,
+        11
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "withdrawals": [
+        {
+          "eventId": 865,
+          "room": 2,
+          "round": 11,
+          "threshold": 3,
+          "alive": [
+            {
+              "id": "b",
+              "name": "莱恩",
+              "hp": 85,
+              "maxHp": 102
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "hp": 102,
+              "maxHp": 102
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "hp": 83,
+              "maxHp": 110
+            }
+          ],
+          "fallen": [
+            {
+              "id": "a",
+              "name": "阿瑟"
+            },
+            {
+              "id": "c",
+              "name": "伊芙"
+            },
+            {
+              "id": "e",
+              "name": "塞恩"
+            }
+          ],
+          "enemyAlive": 4,
+          "rule": "仅显式启用。每个回合开始的缓释、持续伤害等既有结算之后、预备和先攻之前，若仍有敌人且存活正式队员不多于设定人数，整队自动撤退并结束本次远征。只数本次六名正式队员，不数召唤物；不取消上回合已排队行动，不保证不会在检查前全员倒下。未清场不算通关，不发通关/首通加成、不记普通攻略证明；只领取已通过房间的原有收益，已支付资源不退，本次余料不永久保存。检查时机和整队规则是项目暂定改编。"
+        }
+      ]
+    },
+    {
+      "route": "counterpoint",
+      "seed": 8,
+      "threshold": 0,
+      "reward": {
+        "cleared": 2,
+        "gold": 75,
+        "xp": 35,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 640,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 4,
+        "arrow": 5
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "seed": 9,
+      "threshold": 2,
+      "reward": {
+        "cleared": 3,
+        "gold": 200,
+        "xp": 80,
+        "firstClear": true,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 840,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 2
+      },
+      "withdrawals": []
+    }
+  ],
+  "matrix": [
+    {
+      "route": "courier",
+      "threshold": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        4,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 0,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 1
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 0,
+      "seed": 7,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        3,
+        5,
+        11
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 0,
+      "seed": 19,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        5,
+        5,
+        13
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        4,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 2,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 1
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 2,
+      "seed": 7,
+      "won": false,
+      "alive": 2,
+      "rounds": [
+        3,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "withdrawals": [
+        {
+          "eventId": 776,
+          "room": 2,
+          "round": 10,
+          "threshold": 2,
+          "alive": [
+            {
+              "id": "b",
+              "name": "莱恩",
+              "hp": 48,
+              "maxHp": 102
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "hp": 92,
+              "maxHp": 102
+            }
+          ],
+          "fallen": [
+            {
+              "id": "a",
+              "name": "阿瑟"
+            },
+            {
+              "id": "c",
+              "name": "伊芙"
+            },
+            {
+              "id": "e",
+              "name": "塞恩"
+            },
+            {
+              "id": "f",
+              "name": "露弥"
+            }
+          ],
+          "enemyAlive": 4,
+          "rule": "仅显式启用。每个回合开始的缓释、持续伤害等既有结算之后、预备和先攻之前，若仍有敌人且存活正式队员不多于设定人数，整队自动撤退并结束本次远征。只数本次六名正式队员，不数召唤物；不取消上回合已排队行动，不保证不会在检查前全员倒下。未清场不算通关，不发通关/首通加成、不记普通攻略证明；只领取已通过房间的原有收益，已支付资源不退，本次余料不永久保存。检查时机和整队规则是项目暂定改编。"
+        }
+      ]
+    },
+    {
+      "route": "courier",
+      "threshold": 2,
+      "seed": 19,
+      "won": false,
+      "alive": 2,
+      "rounds": [
+        5,
+        5,
+        10
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "withdrawals": [
+        {
+          "eventId": 866,
+          "room": 2,
+          "round": 10,
+          "threshold": 2,
+          "alive": [
+            {
+              "id": "b",
+              "name": "莱恩",
+              "hp": 81,
+              "maxHp": 102
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "hp": 95,
+              "maxHp": 102
+            }
+          ],
+          "fallen": [
+            {
+              "id": "a",
+              "name": "阿瑟"
+            },
+            {
+              "id": "c",
+              "name": "伊芙"
+            },
+            {
+              "id": "e",
+              "name": "塞恩"
+            },
+            {
+              "id": "f",
+              "name": "露弥"
+            }
+          ],
+          "enemyAlive": 4,
+          "rule": "仅显式启用。每个回合开始的缓释、持续伤害等既有结算之后、预备和先攻之前，若仍有敌人且存活正式队员不多于设定人数，整队自动撤退并结束本次远征。只数本次六名正式队员，不数召唤物；不取消上回合已排队行动，不保证不会在检查前全员倒下。未清场不算通关，不发通关/首通加成、不记普通攻略证明；只领取已通过房间的原有收益，已支付资源不退，本次余料不永久保存。检查时机和整队规则是项目暂定改编。"
+        }
+      ]
+    },
+    {
+      "route": "courier",
+      "threshold": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        4,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 3,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 1
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "courier",
+      "threshold": 3,
+      "seed": 7,
+      "won": false,
+      "alive": 3,
+      "rounds": [
+        3,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "withdrawals": [
+        {
+          "eventId": 701,
+          "room": 2,
+          "round": 8,
+          "threshold": 3,
+          "alive": [
+            {
+              "id": "b",
+              "name": "莱恩",
+              "hp": 99,
+              "maxHp": 102
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "hp": 92,
+              "maxHp": 102
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "hp": 110,
+              "maxHp": 110
+            }
+          ],
+          "fallen": [
+            {
+              "id": "a",
+              "name": "阿瑟"
+            },
+            {
+              "id": "c",
+              "name": "伊芙"
+            },
+            {
+              "id": "e",
+              "name": "塞恩"
+            }
+          ],
+          "enemyAlive": 4,
+          "rule": "仅显式启用。每个回合开始的缓释、持续伤害等既有结算之后、预备和先攻之前，若仍有敌人且存活正式队员不多于设定人数，整队自动撤退并结束本次远征。只数本次六名正式队员，不数召唤物；不取消上回合已排队行动，不保证不会在检查前全员倒下。未清场不算通关，不发通关/首通加成、不记普通攻略证明；只领取已通过房间的原有收益，已支付资源不退，本次余料不永久保存。检查时机和整队规则是项目暂定改编。"
+        }
+      ]
+    },
+    {
+      "route": "courier",
+      "threshold": 3,
+      "seed": 19,
+      "won": false,
+      "alive": 3,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "withdrawals": [
+        {
+          "eventId": 786,
+          "room": 2,
+          "round": 8,
+          "threshold": 3,
+          "alive": [
+            {
+              "id": "b",
+              "name": "莱恩",
+              "hp": 102,
+              "maxHp": 102
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "hp": 95,
+              "maxHp": 102
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "hp": 110,
+              "maxHp": 110
+            }
+          ],
+          "fallen": [
+            {
+              "id": "a",
+              "name": "阿瑟"
+            },
+            {
+              "id": "c",
+              "name": "伊芙"
+            },
+            {
+              "id": "e",
+              "name": "塞恩"
+            }
+          ],
+          "enemyAlive": 4,
+          "rule": "仅显式启用。每个回合开始的缓释、持续伤害等既有结算之后、预备和先攻之前，若仍有敌人且存活正式队员不多于设定人数，整队自动撤退并结束本次远征。只数本次六名正式队员，不数召唤物；不取消上回合已排队行动，不保证不会在检查前全员倒下。未清场不算通关，不发通关/首通加成、不记普通攻略证明；只领取已通过房间的原有收益，已支付资源不退，本次余料不永久保存。检查时机和整队规则是项目暂定改编。"
+        }
+      ]
+    },
+    {
+      "route": "clocktower",
+      "threshold": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 0,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 0,
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 0,
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 2,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 2,
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 2,
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 3,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 3,
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "clocktower",
+      "threshold": 3,
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        6,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 0,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 0,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 0,
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 0,
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 2,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 2,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 2,
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 2,
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 3,
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 3,
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 3,
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    },
+    {
+      "route": "counterpoint",
+      "threshold": 3,
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 6
+      },
+      "withdrawals": []
+    }
+  ],
+  "design": "Project-original optional team withdrawal after existing round-start ticks and before preparation/initiative. Existing damage, costs, per-room partial rewards and next-departure recovery reused; no permanent supplies or current-server flee equivalence claimed.",
+  "limit": "36 predeclared finite route/threshold/seed inputs plus actual normal earned departures7/8/9 after prior failures. No seed search, no hypothetical avoided harm or guaranteed survival/win attribution. Threshold is optional and not a numeric difficulty nerf."
+}

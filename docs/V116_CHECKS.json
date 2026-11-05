@@ -1,0 +1,322 @@
+{
+  "version": "0.116",
+  "branch": "feature/v116-planned-withdrawal",
+  "baseline": "0ba4b02bf5d03a4477ca4afa17b075ba0535bf84",
+  "fullTests": {
+    "passed": 878,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-tests.tap"
+  },
+  "newTests": {
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "unit-final.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 24,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "pageErrors": 0,
+    "log": "acceptance/browser-acceptance.json",
+    "finalNewWorkflow": "acceptance/browser-v116/browser-v116.json",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 443,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 121,
+    "checkedReferences": 138,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "0ba4b02bf5d03a4477ca4afa17b075ba0535bf84",
+    "routes": 23,
+    "count": 46,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "legacyChecker": "scripts/check-v116-legacy.mjs",
+  "legacyFullHashLog": "legacy.json",
+  "normalProgression": {
+    "startGold": 525,
+    "reports": [
+      {
+        "route": "courier",
+        "seed": 7,
+        "threshold": 3,
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 565,
+        "won": false,
+        "alive": 3,
+        "rounds": [
+          4,
+          4,
+          11
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "withdrawals": [
+          {
+            "eventId": 865,
+            "room": 2,
+            "round": 11,
+            "threshold": 3,
+            "alive": [
+              {
+                "id": "b",
+                "name": "莱恩",
+                "hp": 85,
+                "maxHp": 102
+              },
+              {
+                "id": "d",
+                "name": "维斯",
+                "hp": 102,
+                "maxHp": 102
+              },
+              {
+                "id": "f",
+                "name": "露弥",
+                "hp": 83,
+                "maxHp": 110
+              }
+            ],
+            "fallen": [
+              {
+                "id": "a",
+                "name": "阿瑟"
+              },
+              {
+                "id": "c",
+                "name": "伊芙"
+              },
+              {
+                "id": "e",
+                "name": "塞恩"
+              }
+            ],
+            "enemyAlive": 4,
+            "rule": "仅显式启用。每个回合开始的缓释、持续伤害等既有结算之后、预备和先攻之前，若仍有敌人且存活正式队员不多于设定人数，整队自动撤退并结束本次远征。只数本次六名正式队员，不数召唤物；不取消上回合已排队行动，不保证不会在检查前全员倒下。未清场不算通关，不发通关/首通加成、不记普通攻略证明；只领取已通过房间的原有收益，已支付资源不退，本次余料不永久保存。检查时机和整队规则是项目暂定改编。"
+          }
+        ]
+      },
+      {
+        "route": "counterpoint",
+        "seed": 8,
+        "threshold": 0,
+        "reward": {
+          "cleared": 2,
+          "gold": 75,
+          "xp": 35,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 640,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4
+        ],
+        "supplies": {
+          "herb": 8,
+          "rune": 4,
+          "arrow": 5
+        },
+        "withdrawals": []
+      },
+      {
+        "route": "courier",
+        "seed": 9,
+        "threshold": 2,
+        "reward": {
+          "cleared": 3,
+          "gold": 200,
+          "xp": 80,
+          "firstClear": true,
+          "loot": [
+            "postbell"
+          ]
+        },
+        "gold": 840,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4,
+          7
+        ],
+        "supplies": {
+          "herb": 2,
+          "rune": 3,
+          "arrow": 2
+        },
+        "withdrawals": []
+      }
+    ],
+    "fullReportsAndGuildEqualToAPI": true,
+    "earnedGoldBalances": [
+      565,
+      640,
+      840
+    ],
+    "paidTraining": [
+      {
+        "hero": "b",
+        "key": "skill:shot",
+        "xp": 20
+      },
+      {
+        "hero": "c",
+        "key": "skill:spark",
+        "xp": 20
+      }
+    ],
+    "earnedRelicAssigned": {
+      "hero": "b",
+      "item": "postbell"
+    },
+    "newCourierClearProof": 9,
+    "priorCounterpointClearProofRetained": 4,
+    "campaignPlanAndBindingRestore": true,
+    "historyImmutableNoDuplicateClaim": true,
+    "allPriorFailuresPreserved": true,
+    "withdrawalSnapshotAndUncontrolledEventPrefixEqual": true,
+    "hypotheticalAvoidedDamageOrSurvivorAttribution": false
+  },
+  "finiteCases": {
+    "count": 36,
+    "routes": [
+      "courier",
+      "clocktower",
+      "counterpoint"
+    ],
+    "thresholds": [
+      0,
+      2,
+      3
+    ],
+    "seeds": [
+      1,
+      2,
+      7,
+      19
+    ],
+    "won": 30,
+    "withdrawn": 4,
+    "otherFailure": 2,
+    "limits": "36 predeclared finite route/threshold/seed inputs plus actual normal earned departures7/8/9 after prior failures. No seed search, no hypothetical avoided harm or guaranteed survival/win attribution. Threshold is optional and not a numeric difficulty nerf.",
+    "enemyStatsTunedAfterDiscovery": false,
+    "initialDiscoveryOutcomeMetricsRetained": true
+  },
+  "mechanic": {
+    "field": "optional root withdrawAt integer1-5, absent means disabled",
+    "checkTime": "After existing round-start activation/regeneration/corrosion; before preparation/natural mana/initiative",
+    "counted": "Only this config six formal hero IDs, excluding summons",
+    "scope": "Whole expedition stops; no personal fleeing state",
+    "currentFixedQueue": "Previous round fully preserved",
+    "victoryAndWipePriority": "Existing ticks can clear last enemy or wipe group before the check; no fabricated survival",
+    "payment": "No extra fee or refund; existing partial per-cleared-room rewards only; no clear/first-clear bonus, loot or normal objective proof",
+    "defaultsChanged": false
+  },
+  "initialFindings": {
+    "unitFailure": "Scarcity test used helper maxRounds3 while expecting real five-round room budget. Passed explicit24 so engine chooses actual5; kept reason/tide assertions.",
+    "strengthenedBoundary": "Replaced a misleading pre-attached enemy-effect fixture (reset at room entry) with a real zero-initial-damage corrosion application and next-round kill before withdrawal; asserts actual combat and victory priority.",
+    "browserFailure": "First last-config assertion read old dropdown0 before asynchronous file parse completed. Waits for stored courier/withdrawAt2 then keeps exact2 and complete config/report/guild/payment/outcome comparisons.",
+    "logs": [
+      "unit-initial.tap",
+      "browser-initial.json",
+      "browser-initial.stderr"
+    ],
+    "combatAssertionsWeakened": false,
+    "seedsChangedToPass": false
+  },
+  "referenceBoundary": {
+    "successfulFullText": {
+      "url": "https://world-of-dungeons.net/",
+      "supports": "Official homepage player accounts support planned protection, studying opponents and group tactics only; not exact retreat timing or numerical server rules."
+    },
+    "configurationSource": {
+      "url": "https://www.world-of-dungeons.de/ency/Konfiguration_-_Allgemein",
+      "indexedEvidence": "Public search excerpt mentions personal fleeing at low hit points, low mana or too few remaining companions. Exact full text not read.",
+      "fullTextRead": false,
+      "failure": "502 Bad Gateway",
+      "retried": false
+    },
+    "currentServerRulesVerified": false,
+    "projectAdaptation": "Optional whole-team retreat based only on living formal-member count, after all scheduled round-start ticks, before preparation/initiative. Threshold1–5, no permanent stock refund, no clear credit or bonus, preserve prior per-room rewards. This is project-original provisional design, not a replica of personal flee timing/thresholds or server reward rules."
+  },
+  "scope": {
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 23,
+    "gear": 40,
+    "goalCount": 69,
+    "combatEngineChanged": true,
+    "newSkillsOrDamageFormulas": false,
+    "newTrainingCosts": false,
+    "newOptionalConfigField": "withdrawAt",
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "limitations": [
+      "Whole-team threshold/timing is project-original provisional adaptation. Official personal flee configuration is supported only by a public indexed excerpt; full text returned502 without retry. No current-server flee/threshold/reward equivalence verified.",
+      "A group can wipe before the round-start check; withdrawal is not immunity or guaranteed survival.",
+      "Finite samples do not establish global balance or causal benefit. Normal seed9 clear also includes paid training and a new natural seed.",
+      "Firefox, Safari and physical devices not tested. Permanent supply economy remains deferred; independent solo development can continue."
+    ]
+  }
+}

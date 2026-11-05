@@ -24,6 +24,6 @@ export function tideFrame(report,event){
  if(!limit)return null;
  const sealed=event.type==='defeat'&&report.rooms[event.roomIndex].stopReason==='潮水封路';
  const settled=['victory','defeat'].includes(event.type);
- const elapsed=Math.min(limit,Math.max(0,event.round-((settled||event.phase==='回合结束')?0:1)));
- return {limit,elapsed,remaining:limit-elapsed,sealed,status:sealed?'潮水封路':event.type==='victory'?'本房肃清':event.type==='defeat'?'队伍倒下':'潮位推进',ratio:elapsed/limit};
+ const elapsed=Math.min(limit,Math.max(0,event.round-(event.detail?.withdrawal?1:(settled||event.phase==='回合结束')?0:1)));
+ return {limit,elapsed,remaining:limit-elapsed,sealed,status:sealed?'潮水封路':event.detail?.withdrawal?'按计划撤退':event.type==='victory'?'本房肃清':event.type==='defeat'?'队伍倒下':'潮位推进',ratio:elapsed/limit};
 }

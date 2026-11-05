@@ -1,3 +1,4 @@
+import {withdrawalLabel} from './expedition-withdrawal.mjs';
 import {groupAidLabel} from './expedition-group-aid.mjs';
 import {targetCountLabel} from './expedition-target-count.mjs';
 import {scheduleLabel} from './expedition-schedule.mjs';
@@ -22,6 +23,7 @@ export function reviewReport(report){
  return report.rooms.map((result,roomIndex)=>{
   const events=report.events.map((event,index)=>({...event,index})).filter(e=>e.roomIndex===roomIndex),findings=[];
   const add=(kind,title,fact,suggestion,evidence,hero)=>findings.push({id:`${roomIndex}:${kind}:${hero||findings.length}`,kind,title,fact,suggestion,eventIndex:evidence.index,hero:heroIds.has(hero)?hero:null,roomId:roomsFor(report.config)[roomIndex].id});
+  const withdrawal=events.find(e=>e.type==='withdraw');if(withdrawal)add('withdrawal','按战前计划撤退',`实际${withdrawal.detail.withdrawal.alive.length}名正式队员存活，达到不多于${withdrawal.detail.withdrawal.threshold}人的设定，仍有敌人所以未通关。`,'可保留、调整或关闭战前计划；不保证关闭后能够通关，已过房间收益仍须正常领取。',withdrawal);
   if(result.stopReason==='潮水封路'){const e=events.find(e=>e.type==='defeat');if(e)add('deadline','潮水封路',`本房${result.roundLimit}回合用尽时仍未清场，队员存活不代表通过。`,'核对输出覆盖、抗性与材料；拾取会缩短第二房间限时，可与赶路对照。',e);}
   for(const h of HEROES){
    const deaths=events.filter(e=>e.type==='down'&&e.targets.includes(h.id));
@@ -60,6 +62,7 @@ export function reviewReport(report){
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
 const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}${scheduleLabel(r)}${targetCountLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队',priority:'按个人阵位优先',supportPriority:'按辅助阵位优先'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
+ if(key==='withdrawAt')return withdrawalLabel(value===undefined?{}:{withdrawAt:value});
  if(['attackOrder','supportOrder'].includes(key))return value===undefined?'默认阵位顺序':value.map(pos=>POS[pos]).join(' → ');
  if(key==='objective')return GOALS.find(g=>g.id===value)?.name||'自由探索';
  if(key==='courierPass')return COURIER_PASSES[value];
@@ -91,6 +94,7 @@ export function configurationChanges(a,b){
  if(a.expedition==='foundry'||b.expedition==='foundry'){compare('铸库第二场通路','foundryApproach',foundryApproach(a),foundryApproach(b));compare('铸库通路出口','foundryFlow',a.foundryFlow,b.foundryFlow);}
  compare('回廊救援策略','rescueApproach',a.rescueApproach,b.rescueApproach);
  compare('沉钟机关策略','bellApproach',a.bellApproach,b.bellApproach);
+ compare('整队撤退计划','withdrawAt',a.withdrawAt,b.withdrawAt);
  if(a.objective||b.objective)compare('攻略目标','objective',a.objective,b.objective);
  compare('远征路线','expedition',a.expedition,b.expedition);compare('种子','seed',a.seed,b.seed);compare('默认协作顺序','prepOrder',a.prepOrder,b.prepOrder);
  for(const key of ['herb','rune','arrow'])compare({herb:'药草',rune:'符纸',arrow:'箭矢'}[key],key,a.supplies[key],b.supplies[key]);
