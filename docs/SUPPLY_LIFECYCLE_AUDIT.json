@@ -1,0 +1,310 @@
+{
+  "scope": "12 normal runs, fixed current prototype configs; no global balance claim",
+  "designStatus": "audit only; current per-expedition budget, no persistent supplies model implemented",
+  "trials": [
+    {
+      "name": "classic-fresh",
+      "initialGold": 0,
+      "finalGold": 570,
+      "guildTopLevelFields": [
+        "clears",
+        "command",
+        "gold",
+        "harbor",
+        "history",
+        "lineup",
+        "members",
+        "next",
+        "pending",
+        "version",
+        "warehouse"
+      ],
+      "rounds": [
+        {
+          "id": 1,
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 16,
+            "rune": 22,
+            "arrow": 16
+          },
+          "endSupplies": {
+            "herb": 14,
+            "rune": 17,
+            "arrow": 7
+          },
+          "preDepartureGold": 0,
+          "departureGold": 0,
+          "afterClaimGold": 120,
+          "rewardGold": 120,
+          "carryingBudget": 60,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 2,
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 16,
+            "rune": 22,
+            "arrow": 16
+          },
+          "endSupplies": {
+            "herb": 15,
+            "rune": 17,
+            "arrow": 8
+          },
+          "preDepartureGold": 120,
+          "departureGold": 120,
+          "afterClaimGold": 210,
+          "rewardGold": 90,
+          "carryingBudget": 60,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 3,
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 16,
+            "rune": 22,
+            "arrow": 16
+          },
+          "endSupplies": {
+            "herb": 15,
+            "rune": 16,
+            "arrow": 8
+          },
+          "preDepartureGold": 210,
+          "departureGold": 210,
+          "afterClaimGold": 300,
+          "rewardGold": 90,
+          "carryingBudget": 60,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 4,
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 16,
+            "rune": 22,
+            "arrow": 16
+          },
+          "endSupplies": {
+            "herb": 14,
+            "rune": 17,
+            "arrow": 8
+          },
+          "preDepartureGold": 300,
+          "departureGold": 300,
+          "afterClaimGold": 390,
+          "rewardGold": 90,
+          "carryingBudget": 60,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 5,
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 16,
+            "rune": 22,
+            "arrow": 16
+          },
+          "endSupplies": {
+            "herb": 14,
+            "rune": 17,
+            "arrow": 7
+          },
+          "preDepartureGold": 390,
+          "departureGold": 390,
+          "afterClaimGold": 480,
+          "rewardGold": 90,
+          "carryingBudget": 60,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 6,
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 16,
+            "rune": 22,
+            "arrow": 16
+          },
+          "endSupplies": {
+            "herb": 13,
+            "rune": 18,
+            "arrow": 8
+          },
+          "preDepartureGold": 480,
+          "departureGold": 480,
+          "afterClaimGold": 570,
+          "rewardGold": 90,
+          "carryingBudget": 60,
+          "permanentTrainingUnchanged": true
+        }
+      ]
+    },
+    {
+      "name": "hospice-after-earned-shield-and-wave",
+      "initialGold": 120,
+      "finalGold": 760,
+      "guildTopLevelFields": [
+        "clears",
+        "command",
+        "gold",
+        "harbor",
+        "history",
+        "lineup",
+        "members",
+        "next",
+        "pending",
+        "version",
+        "warehouse"
+      ],
+      "rounds": [
+        {
+          "id": 2,
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 12
+          },
+          "endSupplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "preDepartureGold": 120,
+          "departureGold": 120,
+          "afterClaimGold": 260,
+          "rewardGold": 140,
+          "carryingBudget": 36,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 3,
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 12
+          },
+          "endSupplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "preDepartureGold": 260,
+          "departureGold": 260,
+          "afterClaimGold": 360,
+          "rewardGold": 100,
+          "carryingBudget": 36,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 4,
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 12
+          },
+          "endSupplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "preDepartureGold": 360,
+          "departureGold": 360,
+          "afterClaimGold": 460,
+          "rewardGold": 100,
+          "carryingBudget": 36,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 5,
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 12
+          },
+          "endSupplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "preDepartureGold": 460,
+          "departureGold": 460,
+          "afterClaimGold": 560,
+          "rewardGold": 100,
+          "carryingBudget": 36,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 6,
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 12
+          },
+          "endSupplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "preDepartureGold": 560,
+          "departureGold": 560,
+          "afterClaimGold": 660,
+          "rewardGold": 100,
+          "carryingBudget": 36,
+          "permanentTrainingUnchanged": true
+        },
+        {
+          "id": 7,
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "startSupplies": {
+            "herb": 12,
+            "rune": 12,
+            "arrow": 12
+          },
+          "endSupplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "preDepartureGold": 660,
+          "departureGold": 660,
+          "afterClaimGold": 760,
+          "rewardGold": 100,
+          "carryingBudget": 36,
+          "permanentTrainingUnchanged": true
+        }
+      ]
+    }
+  ]
+}

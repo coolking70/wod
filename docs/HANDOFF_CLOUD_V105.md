@@ -7,3 +7,5 @@ v104路线分配/删除754测试；v105独立方案册迁移763测试，42原始
 方案册append默认不动旧绑定，明确adoptBindings才改；replace明确整体替换，可修复坏册。导入只写abbey-plan-library-v1，另三键不回滚；旧校验预览陈旧拒绝。pending及真实成长保持。当前实际装备仍仅在正式/实装对照校验，不由文件赠送。
 
 证据/workspace/wod-evidence/v104、v105。验证node --test tests/*.test.mjs；node scripts/verify-release.mjs；使用本机8002和已有Playwright运行scripts/run-browser-acceptance.mjs，不安装或部署。个人身份固定和多人已经暂缓，不据此阻塞。继续检查整个单人循环的真实缺口，不重复堆叠局部工具。后续只本地提交及恢复文件，不推送/合并/部署。
+
+后续核对已到新的核心经济决定：材料仍是单次预算，还是永久公会补给/购料/免费恢复委托；见DECISION_SUPPLY_PERSISTENCE.md和12次只读生命周期审计。仅提案，未实施、未迁移或清空资产。请用户选择后再开发这个系统，不重问身份/多人。独立内容仍可沿用当前规则；不把参考服未选当作技术硬阻塞。
