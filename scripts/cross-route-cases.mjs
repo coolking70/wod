@@ -1,0 +1,4 @@
+import {newGuild,depart,claim} from '../dist/expedition-guild.mjs';import {recruit} from '../dist/expedition-roster.mjs';import {selectHero,setCompanion} from '../dist/expedition-command.mjs';
+import {defaults,archiveConfig,scarcityConfig,hospiceConfig} from '../dist/expedition-data.mjs';import {earlyReserveTrainingGuild} from './reserve-training-paths.mjs';
+export const EARLY_ROUTES={classic:defaults,archive:()=>archiveConfig(true),scarcity:()=>scarcityConfig(true)};
+export function crossRouteProfiles(){let fresh=selectHero(newGuild(),'c');for(let i=0;i<2;i++)fresh=claim(depart(fresh,hospiceConfig('front')));fresh=recruit(recruit(fresh,'mira'),'orin');fresh=setCompanion(fresh,'d','measured');fresh=setCompanion(fresh,'f','medic');return {recruited:fresh,trained:earlyReserveTrainingGuild().guild};}

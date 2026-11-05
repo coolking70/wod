@@ -1,8 +1,8 @@
+import {crossRouteProfiles,EARLY_ROUTES} from './cross-route-cases.mjs';
 import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
-import {newGuild,depart,claim,guildConfig} from '../dist/expedition-guild.mjs';import {recruit,swapCompanion} from '../dist/expedition-roster.mjs';import {selectHero,setCompanion} from '../dist/expedition-command.mjs';
-import {earlyReserveTrainingGuild} from './reserve-training-paths.mjs';import {defaults,archiveConfig,scarcityConfig,hospiceConfig,clone} from '../dist/expedition-data.mjs';import {simulate,RULESET} from '../dist/expedition-engine.mjs';import {personalReport} from '../dist/expedition-personal.mjs';import {careerXp} from '../dist/expedition-growth.mjs';
-let fresh=selectHero(newGuild(),'c');for(let i=0;i<2;i++)fresh=claim(depart(fresh,hospiceConfig('front')));fresh=recruit(recruit(fresh,'mira'),'orin');fresh=setCompanion(fresh,'d','measured');fresh=setCompanion(fresh,'f','medic');
-const profiles={recruited:fresh,trained:earlyReserveTrainingGuild().guild},routes={classic:defaults,archive:()=>archiveConfig(true),scarcity:()=>scarcityConfig(true)},cases={original:null,scholar:['b','mira'],herbalist:['b','orin']},rows=[];
+import {guildConfig} from '../dist/expedition-guild.mjs';import {swapCompanion} from '../dist/expedition-roster.mjs';import {setCompanion} from '../dist/expedition-command.mjs';
+import {clone} from '../dist/expedition-data.mjs';import {simulate,RULESET} from '../dist/expedition-engine.mjs';import {personalReport} from '../dist/expedition-personal.mjs';import {careerXp} from '../dist/expedition-growth.mjs';
+const profiles=crossRouteProfiles(),routes=EARLY_ROUTES,cases={original:null,scholar:['b','mira'],herbalist:['b','orin']},rows=[];
 for(const [profile,base] of Object.entries(profiles))for(const [route,make] of Object.entries(routes))for(const [key,swap] of Object.entries(cases)){
  let g=clone(base);const tactics=make();if(swap)g=swapCompanion(g,tactics,...swap);g=setCompanion(g,'d',key==='scholar'?'ward':'measured');if(key==='scholar')g=setCompanion(g,'mira','measured');if(key==='herbalist')g=setCompanion(g,'orin','slowcare');const config=guildConfig(g,tactics),before=clone(g);
  for(const [group,start,count] of [['discovery',201,4],['confirmation',301,8]]){

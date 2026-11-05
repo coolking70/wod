@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前422项测试通过，0失败/跳过；161个ES模块、18个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前425项测试通过，0失败/跳过；164个ES模块、19个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -90,3 +90,7 @@ node scripts/check-v62.mjs：复建v0.61合法基线、两条逐名资深培养�
 ## v0.63接续
 
 cooperationCheck增加resources与断潮roundLimit，resourceAssignments仅枚举静态配置，禁止把行数求和成需求预测。耗材行后续只含同阶段之后的无材料指令；救护另列普通阶段。focusCommandRow通过phase定位普通/预备，guild编辑先保留实际职责。九份报告与ababfe6完全等价。check-v63三路线/两成长档/三配置共216，候补断潮全超时，双学者资源跳过0；不可解释为缺符纸。browser-v63最后回执在readable-browser，正式功能出征本身止步第二房，不得称通关。继续同职业接替，不调数值或擅增经验。
+
+## v0.64接续
+
+replacementChoices只读排序同职业可选项，不是最佳阵容评分；主角排除，需明确编入，资产与职责不自动继承。cross-route-cases统一合法profile，check-v64要求v63已有回执且个人资产一致后引用原队，不重复旧矩阵；216新样本覆盖同职业替补。browser-v64正常恢复零培养名册并真实断潮通关，保留射手；无需以特定种子功能通关推断可靠性。继续初始职责目标核对；不调数值或擅加经验。

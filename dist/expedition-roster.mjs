@@ -9,6 +9,8 @@ export function rosterConfig(g,tactics){
 }
 export function recruitmentStatus(g,id){const d=definition(id),r=d?.recruit;return {available:Boolean(r&&!g.pending&&!g.members.some(m=>m.id===id)&&g.history.length>=r.completed&&g.gold>=r.cost),cost:r?.cost,completed:r?.completed};}
 export function recruit(g,id){const status=recruitmentStatus(g,id);if(!status.available)throw Error('尚未满足招募条件，或角色已加入');const n=clone(g);n.gold-=status.cost;n.members.push(newMember(id));if(n.command)n.command.companions[id]='custom';return n;}
+// Selection order only. Same profession does not transfer assets or predict a win.
+export function replacementChoices(g,incoming){const member=g.members.find(m=>m.id===incoming);if(!member||g.lineup.includes(incoming)||!g.command)return [];return g.lineup.filter(id=>id!==g.command.heroId).map(id=>({id,sameClass:g.members.find(m=>m.id===id).classId===member.classId})).sort((a,b)=>Number(b.sameClass)-Number(a.sameClass));}
 export function swapCompanion(g,tactics,outgoing,incoming){
  if(g.pending)throw Error('请先领取远征结算');
  if(!g.command)throw Error('请先选择自己的英雄');
