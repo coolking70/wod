@@ -1,3 +1,6 @@
+import {campObjective,pendingOrigin,claimReport,readCycleGuild} from './expedition-camp-cycle.mjs';
+import {campCycleView} from './expedition-camp-cycle-view.mjs';
+import {adventureConfig} from './expedition-adventure.mjs';
 import {stockFloorLabel} from './expedition-stock-floor.mjs';
 import {mediumLabel} from './expedition-media-data.mjs';
 import {commandCostText} from './expedition-media.mjs';
@@ -103,7 +106,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  const ready=readiness(g,getConfig(),checkScope);
  const advancement=advancementStatus(g,selected);
  const m=g.members.find(h=>h.id===selected),hero=HEROES.find(h=>h.id===selected),pending=g.pending?pendingReward(g):null,progress=growth(m),advanced=ADVANCED[m.id],learned=m.unlocked.includes(advanced);const draft=trainingDrafts[selected],plan=quoteTrainingPlan(m,draft?.target||m.training,draft?{expected:draft.expected}:{});const trial=trainingRehearsals[selected],rehearsal=trial?.signature===rehearsalSignature(plan)?trial.value:null;
- root.innerHTML=`<div class="guild-hub"><p class="eyebrow">海岸公会 / 常驻营地</p><div class="guild-hub-row"><div><h1>整备，再次出发。</h1><p>${esc(EXPEDITIONS[getConfig().expedition].name)} · 金币 <strong>${g.gold}</strong> · 已完成 ${g.next-1-(g.pending?1:0)} 次远征</p></div><button data-guild="prepare">到准备页调整战术 →</button></div><p id="guild-feedback" role="status">${esc(message||'选择一个面板管理队伍。出征使用公会实际装备与训练。')}</p></div><nav class="guild-tabs" aria-label="公会面板">${Object.entries(paneNames).map(([key,label])=>`<button data-guild-tab="${key}">${label}${key==='equipment'?' · '+Object.values(g.warehouse).reduce((a,b)=>a+b,0):''}</button>`).join('')}</nav>
+ root.innerHTML=`<div class="guild-hub"><p class="eyebrow">海岸公会 / 常驻营地</p><div class="guild-hub-row"><div><h1>整备，再次出发。</h1><p>${esc(EXPEDITIONS[getConfig().expedition].name)} · 金币 <strong>${g.gold}</strong> · 已完成 ${g.next-1-(g.pending?1:0)} 次远征</p></div><button data-guild="prepare">到准备页调整战术 →</button></div><p id="guild-feedback" role="status">${esc(message||'选择一个面板管理队伍。出征使用公会实际装备与训练。')}</p></div>${campCycleView(campObjective(g))}<nav class="guild-tabs" aria-label="公会面板">${Object.entries(paneNames).map(([key,label])=>`<button data-guild-tab="${key}">${label}${key==='equipment'?' · '+Object.values(g.warehouse).reduce((a,b)=>a+b,0):''}</button>`).join('')}</nav>
  ${commandHome(g,rosterConfig(g,getConfig()),previews,companionRoom)}${rosterHome(g,{selections:replacementSelections,trial:replacementTrialState()})}
  <section class="guild-panel journey-books" data-guild-pane="journey"><h2>旅程手记</h2><p>选择一段故事查看；两段旅程分别记录结局与一次奖励。</p><div class="bar">${Object.entries(journeyNames).map(([id,label])=>`<button data-journey-book="${id}" aria-pressed="${journeyBook===id}">${label}</button>`).join('')}</div></section>${journeyBook==='harbor'?harborStoryView(g):foundryStoryView(g)}${foundryContracts(g)}${harborContracts(g)}<section class="guild-panel" data-guild-pane="contracts">${shoalsAtlasView(g,{selected:shoalsChartId(getConfig())})}</section>
  ${pending?`<section class="guild-panel"><h2>第 ${g.pending.id} 次远征待结算</h2><p>通过 ${pending.cleared} 场 · ${pending.gold} 金币 · 每位出战者 ${pending.xp} 经验。刷新页面仍可恢复。</p><p>${pending.firstClear?'首次通关加成已计入。':''}${pending.loot?.length?'装备：'+lootLabel(pending.loot):'本次无装备掉落。'}</p>${pending.foundry?`<p class=foundry-pending>铸库本次新达成：${pending.foundry.earned.map(id=>FOUNDRY_OBJECTIVES[id].name).join('、')||'无'}；额外${pending.foundry.gold}金币与定向遗物已计入上方总计，领取后才记为完成。已完成委托不会重复发奖。</p>`:''}${pending.harbor?`<p>海图 +${pending.harbor.charts}；新达成委托：${pending.harbor.earned.map(id=>HARBOR_OBJECTIVES[id].name).join("、")||"无"}（委托金币已计入上方总额）。</p>`:""}<button data-guild="report">查看本次战报</button><button class="primary" data-guild="claim">领取奖励并归营</button></section>`:''}
@@ -116,7 +119,8 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  panels();
  }
  root.onclick=e=>{const b=e.target.closest('button');if(!b)return;try{
- if(b.dataset.journeyBook){if(!Object.hasOwn(journeyNames,b.dataset.journeyBook))throw Error('旅程无效');journeyBook=b.dataset.journeyBook;render();return;}
+ if(b.dataset.cycleAction){cycle(b.dataset.cycleAction,b.dataset.cycleValue||'');return;}
+ else if(b.dataset.journeyBook){if(!Object.hasOwn(journeyNames,b.dataset.journeyBook))throw Error('旅程无效');journeyBook=b.dataset.journeyBook;render();return;}
  else if(b.dataset.harborStoryEnd){save(claimHarborStory(g,b.dataset.harborStoryEnd));inform('来信结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
  else if(b.dataset.foundryStoryEnd){const ending=b.dataset.foundryStoryEnd;save(claimFoundryStory(g,ending));inform('归航结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
  else if(b.dataset.shoalsChart){const c=shoalsConfig('roles',Number(b.dataset.shoalsChart));c.seed=getConfig().seed;loadConfig(c);inform('已准备指定海图；成员资产与伙伴职责保留，通关领取后才记入勘探册。');return;}
@@ -135,7 +139,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  else if(b.dataset.reuseApply){if(!lastReusePreview||!reuseOpen)throw Error('请先预览单人战术');const request=lastReusePreview,result=reuseHistoryTactic(g,getConfig(),request);applyTacticEdit(result,loadConfig);reuseOpen=false;lastReusePreview=null;editHero(request.targetId,'');inform('历史单人战术已应用到'+request.targetName+'，当前装备、培养、后期选择和经验保留；可在方案管理撤销配置与本次伙伴职责变化。');return;}
  else if(b.dataset.historyCompare){compareId=Number(b.dataset.historyCompare);reuseOpen=false;lastReusePreview=null;render();root.querySelector('#history-comparison')?.scrollIntoView({block:'start'});return;}
  else if(b.dataset.historyClose){compareId=null;render();root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});return;}
- else if(b.dataset.historyReport){showReport(historyReport(g,Number(b.dataset.historyReport)));inform('正在按当前规则重演第'+b.dataset.historyReport+'次远征，不发放奖励。');return;}
+ else if(b.dataset.historyReport){showReport(historyReport(g,Number(b.dataset.historyReport)),{source:'history',id:Number(b.dataset.historyReport)});inform('正在按当前规则重演第'+b.dataset.historyReport+'次远征，不发放奖励。');return;}
  else if(b.dataset.historyLoad){loadConfig(historyConfig(g,Number(b.dataset.historyLoad)));inform('历史出征方案已载入，可撤销。再次公会出征使用当前装备与训练，并采用新的出征种子。');return;}
  else if(b.dataset.guildTab){switchPanel(b.dataset.guildTab);return;}
  else if(b.dataset.member)selected=b.dataset.member;
@@ -160,8 +164,8 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  case 'check':switchPanel('departure');return;
  case 'backup':download('sunken-abbey-guild.json',g||{unreadable:raw});return;
  case 'prepare':loadConfig(guildConfig(g,getConfig()));inform('公会装备与永久训练已载入。修改指令后请使用“公会出征”；实验配置中的装备与训练不会覆盖公会资产。');return;
- case 'depart':save(depart(g,getConfig()));showReport(pendingReport(g));inform('公会远征已记录。请返回公会领取奖励；刷新后可恢复战报与待结算状态。');break;
- case 'report':showReport(pendingReport(g));break;
+ case 'depart':save(depart(g,getConfig()));showReport(pendingReport(g),pendingOrigin(g));inform('公会远征已记录。请返回公会领取奖励；刷新后可恢复战报与待结算状态。');break;
+ case 'report':showReport(pendingReport(g),pendingOrigin(g));break;
  case 'claim':{const hasLoot=(pendingReward(g).loot||[]).length>0;save(claim(g));selected=g.command?.heroId||selected;pane=hasLoot?'equipment':'team';}inform('奖励已存入公会，出战者已获得经验；候补保留原成长，装备和训练保留。');break;
  case 'retrain':save(retrain(g,selected));break;
  }render();}catch(e){inform(e.message);}};
@@ -169,5 +173,14 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  function open(next='hero',book){if(Object.hasOwn(journeyNames,book))journeyBook=book;pane=typeof next==='string'?next:'hero';read();render();view('guild');window.scrollTo({top:0});}
  document.querySelector('header [data-view="guild"]').onclick=open;
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
- read();render();return {open,undoConfiguration,renderDraftBridge,snapshot:()=>g?structuredClone(g):null,heroId:()=>g?.command?.heroId||null};
+ function cycle(action,value=''){read();if(!g)throw Error('公会暂不可用，请先检查或恢复备份');
+  if(action==='prepare'){const c=adventureConfig(value);c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('已准备现有路线；请核对实际公会队伍后正式出征，实验不发成长奖励。');}
+  else if(action==='retry'){loadConfig(historyConfig(g,Number(value)));inform('已载入止步时方案供检查；再次出征使用当前公会资产，不自动保证通关。');}
+  else if(action==='pending'){if(!g.pending){open('departure');return;}showReport(pendingReport(g),pendingOrigin(g));}
+  else if(action==='training'||action==='equipment'){selected=g.command?.heroId||selected;open(action==='training'?'team':'equipment');}
+  else if(action==='hero')open('hero');else if(action==='official')open('departure');else if(action==='journey'){if(!Object.hasOwn(journeyNames,value))throw Error('旅程无效');open('journey',value);}
+  else if(action==='map')view('adventure');else if(action==='camp')open('hero');else throw Error('营地操作无效');
+ }
+ function settleReport(origin,report){read();if(!g)throw Error('公会暂不可用，原存档未覆盖');const next=claimReport(g,origin,report),loot=next.history[0].loot||[];save(next);selected=g.command?.heroId||selected;pane=loot.length?'equipment':'team';inform('本次收益已正式到账。现在可分配装备、培养自己的英雄，或继续营地目标。');render();view('guild');window.scrollTo({top:0});}
+ read();render();return {open,cycle,settleReport,currentSnapshot:()=>readCycleGuild(localStorage),undoConfiguration,renderDraftBridge,snapshot:()=>g?structuredClone(g):null,heroId:()=>g?.command?.heroId||null};
 }

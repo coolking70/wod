@@ -1,0 +1,604 @@
+{
+  "note": "UI flow only; no engine/content/rewards/skills/asset/schema changes. Four ordinary departures from empty guild, one explicit relic assignment, one20XP parry rank, and existing harbor light ending chosen as test input. Not a new quest/reward, automated investment or forced path. Free route choices remain open. Report provenance is UI state and not added to battle JSON.",
+  "stages": [
+    "tutorial",
+    "classic",
+    "growth",
+    "chapter",
+    "harbor",
+    "letter",
+    "foundry"
+  ],
+  "normal": [
+    {
+      "route": "tutorial",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 308,
+          "supplies": {
+            "herb": 15,
+            "rune": 19,
+            "arrow": 14
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 19,
+        "arrow": 14
+      },
+      "reward": {
+        "cleared": 1,
+        "gold": 40,
+        "xp": 10,
+        "firstClear": true,
+        "loot": []
+      },
+      "pendingStatus": "pending",
+      "claimedStatus": "claimed",
+      "experimentStatus": "experiment",
+      "rehearsalStatus": "rehearsal"
+    },
+    {
+      "route": "classic",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 回声侧廊",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 310,
+          "supplies": {
+            "herb": 15,
+            "rune": 19,
+            "arrow": 14
+          }
+        },
+        {
+          "name": "02 · 浸潮蓄水厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 252,
+          "supplies": {
+            "herb": 15,
+            "rune": 16,
+            "arrow": 11
+          }
+        },
+        {
+          "name": "03 · 守誓圣坛",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 189,
+          "supplies": {
+            "herb": 15,
+            "rune": 10,
+            "arrow": 8
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 15,
+        "rune": 10,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 45,
+        "firstClear": true,
+        "loot": [
+          "reliquaryshield"
+        ]
+      },
+      "pendingStatus": "pending",
+      "claimedStatus": "claimed",
+      "experimentStatus": "experiment",
+      "rehearsalStatus": "rehearsal"
+    },
+    {
+      "route": "chapter",
+      "seed": 3,
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "name": "01 · 铁壳门廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 293,
+          "supplies": {
+            "herb": 14,
+            "rune": 20,
+            "arrow": 17
+          }
+        },
+        {
+          "name": "02 · 镜潮回廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 270,
+          "supplies": {
+            "herb": 11,
+            "rune": 16,
+            "arrow": 14
+          }
+        },
+        {
+          "name": "03 · 分誓封印",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 191,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "04 · 引潮病廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 177,
+          "supplies": {
+            "herb": 11,
+            "rune": 5,
+            "arrow": 10
+          }
+        },
+        {
+          "name": "05 · 不息药庭",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 153,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "06 · 双灯心室",
+          "won": true,
+          "rounds": 10,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 151,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 7
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 7
+      },
+      "reward": {
+        "cleared": 6,
+        "gold": 280,
+        "xp": 120,
+        "firstClear": true,
+        "loot": [
+          "bellfocus"
+        ]
+      },
+      "pendingStatus": "pending",
+      "claimedStatus": "claimed",
+      "experimentStatus": "experiment",
+      "rehearsalStatus": "rehearsal"
+    },
+    {
+      "route": "harbor",
+      "seed": 4,
+      "won": true,
+      "alive": 6,
+      "rooms": [
+        {
+          "id": "harbor_gate",
+          "node": "gate",
+          "note": "前排锚卫掩护后排弩手；先保留药草，下一处通路依据战后状态选择。",
+          "name": "01 · 盐风关卡",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 321,
+          "supplies": {
+            "herb": 11,
+            "rune": 11,
+            "arrow": 10
+          }
+        },
+        {
+          "id": "harbor_pass",
+          "node": "upper",
+          "note": "两翼弩手狙击后排；远程抗性与分区保护有用。同位置群攻无法一次覆盖两翼。",
+          "name": "02 · 高架栈桥",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 292,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 10
+          }
+        },
+        {
+          "id": "harbor_cache",
+          "node": "seal",
+          "note": "进入机房先尝试解封，再迎战守卫。成功解读会削弱末场灯塔核心；失败消耗照付。",
+          "name": "03 · 潮锁机房",
+          "won": true,
+          "rounds": 2,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 268,
+          "supplies": {
+            "herb": 11,
+            "rune": 2,
+            "arrow": 10
+          }
+        },
+        {
+          "id": "harbor_beacon",
+          "node": "beacon",
+          "note": "灯塔核心压制中央，后排药灯守护者持续救护。封印成功则核心法术等级降低3级。",
+          "name": "04 · 无光灯塔",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 219,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 6
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 4,
+        "gold": 285,
+        "xp": 100,
+        "firstClear": true,
+        "loot": [
+          "beaconrod"
+        ],
+        "harbor": {
+          "charts": 2,
+          "gold": 40,
+          "earned": [
+            "home"
+          ]
+        }
+      },
+      "pendingStatus": "pending",
+      "claimedStatus": "claimed",
+      "experimentStatus": "experiment",
+      "rehearsalStatus": "rehearsal"
+    }
+  ],
+  "desktop": {
+    "gold": 160,
+    "next": 3,
+    "xp": [
+      {
+        "id": "a",
+        "xp": 35
+      },
+      {
+        "id": "b",
+        "xp": 55
+      },
+      {
+        "id": "c",
+        "xp": 55
+      },
+      {
+        "id": "d",
+        "xp": 55
+      },
+      {
+        "id": "e",
+        "xp": 55
+      },
+      {
+        "id": "f",
+        "xp": 55
+      }
+    ],
+    "warehouse": {
+      "reliquaryshield": 0
+    }
+  },
+  "beforeEnding": {
+    "gold": 725,
+    "charts": 2,
+    "contracts": [
+      "home"
+    ]
+  },
+  "final": {
+    "gold": 765,
+    "next": 5,
+    "xp": [
+      {
+        "id": "a",
+        "xp": 255
+      },
+      {
+        "id": "b",
+        "xp": 275
+      },
+      {
+        "id": "c",
+        "xp": 275
+      },
+      {
+        "id": "d",
+        "xp": 275
+      },
+      {
+        "id": "e",
+        "xp": 275
+      },
+      {
+        "id": "f",
+        "xp": 275
+      }
+    ],
+    "warehouse": {
+      "reliquaryshield": 0,
+      "bellfocus": 1,
+      "beaconrod": 2
+    },
+    "ending": {
+      "ending": "light"
+    },
+    "nextObjective": "foundry"
+  },
+  "unchanged": {
+    "reference": "09c5383148cacf8afb6af4630ed6cd1f696eac26",
+    "count": 40,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equal": true
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equal": true
+      }
+    ]
+  }
+}
