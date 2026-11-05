@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "steps": [
+    "本人潮术师零资产应用猎援弩灵，召唤位置与攻击目标分开；切换潮卫清理无效字段，再切弩灵恢复默认后排，实际问堂seed1无治疗者时免费后备，召唤快照可读",
+    "pending换目标/刷新保留出发指令；140/60后付20经验训练弩灵1级，疗所seed2实际10级弩灵按能力追击治疗者，正常140/55与历史/备份通过，奖励未自动装备",
+    "390px恢复完整训练/历史，另选召唤者目标，编辑和召唤证明无横向溢出；实际书库seed3无职责者时走后排后备，正常180/75后460金币、本人170经验，三件奖励仍在仓库"
+  ],
+  "runs": [
+    {
+      "route": "inquest",
+      "seed": 1,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 629,
+          "mp": 197,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 0
+      },
+      "orders": [
+        {
+          "level": 9,
+          "pos": "rear",
+          "orders": {
+            "target": "healer",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        },
+        {
+          "level": 9,
+          "pos": "rear",
+          "orders": {
+            "target": "healer",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        }
+      ]
+    },
+    {
+      "route": "hospice",
+      "seed": 2,
+      "rooms": [
+        {
+          "name": "01 · 引潮病廊",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 310,
+          "supplies": {
+            "herb": 11,
+            "rune": 10,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 不息药庭",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 259,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 双灯心室",
+          "won": true,
+          "rounds": 8,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 215,
+          "supplies": {
+            "herb": 10,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 3,
+        "arrow": 0
+      },
+      "orders": [
+        {
+          "level": 10,
+          "pos": "rear",
+          "orders": {
+            "target": "healer",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        },
+        {
+          "level": 10,
+          "pos": "rear",
+          "orders": {
+            "target": "healer",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        },
+        {
+          "level": 10,
+          "pos": "rear",
+          "orders": {
+            "target": "healer",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        }
+      ]
+    },
+    {
+      "route": "scriptorium",
+      "seed": 3,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 211,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 159,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 1,
+        "rune": 2,
+        "arrow": 0
+      },
+      "orders": [
+        {
+          "level": 10,
+          "pos": "rear",
+          "orders": {
+            "target": "summoner",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        },
+        {
+          "level": 10,
+          "pos": "rear",
+          "orders": {
+            "target": "summoner",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        },
+        {
+          "level": 10,
+          "pos": "rear",
+          "orders": {
+            "target": "summoner",
+            "fallback": "rear",
+            "rule": "每次普通行动先检查存活职责目标，无合格者免费检查后排后备；后备执行后重新从首条检查。不消耗箭矢。"
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

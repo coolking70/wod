@@ -1,3 +1,4 @@
+import {CORROSION,corrosionOn,corrosionTicks,corrosionSource} from './expedition-corrosion.mjs';
 import {validateSummonTarget,summonOrders} from './expedition-summon-orders.mjs';
 import {removableBuffs,removedBuffRecord} from './expedition-unravel.mjs';
 import {INTERCEPTION,interceptionCandidate} from './expedition-interception.mjs';
@@ -206,6 +207,7 @@ export function simulate(c,options={}){
      t.effects.push(effect);emit('effect',t.name+' 受到「禁疗」：本回合余下的自动草药救护受限，仍可执行普通指令',u.id,[t.id],{effectId:effect.id,cast,skill:r.skill,component:effect.component,stat:effect.stat,value:1,scope:'rounds',active:true,harmful:true,activateRound:round,expires:round,rule:'命中后仅限制本回合余下的自动草药救护；已完成治疗不撤销，不阻止普通指令，同回合不叠加或延长。',sources:effectTrace(u)});
     }
     if(t.hp>0&&s.weakening&&grade!=='闪避'){if(canWeaken(s,grade,t)){const effect={id:`${roomIndex}:${cast}:${t.id}:weakening`,skill:r.skill,name:s.name,component:WEAKENING.name,source:u.id,sourceName:u.name,stat:WEAKENING.stat,value:WEAKENING.value,scope:'rounds',active:true,harmful:true,activateTick:clock,activateRound:round,expires:round+WEAKENING.duration,expiresTick:clock+WEAKENING.duration};t.effects.push(effect);emit('effect',t.name+' 受到「挫志」：攻击技能等级-3，持续当前与下一回合',u.id,[t.id],{effectId:effect.id,cast,skill:r.skill,component:effect.component,stat:effect.stat,value:effect.value,scope:effect.scope,active:true,harmful:true,activateRound:round,expires:effect.expires,rule:'不叠加或刷新；只影响之后的攻击技能，不影响防御、辅助、救护或已经完成的检定；来源倒下不撤销，可在预备阶段净化。',sources:effectTrace(u)});}else {const effect=activeWeakening(t);emit('effect-blocked',t.name+' 已有挫志，本次不叠加或刷新；攻击照常付费',u.id,[t.id],{cast,skill:r.skill,effectId:effect.id,source:effect.source,component:effect.component,reason:'同名负面效果仍在',expires:effect.expires,consumedAction:true});}}
+    if(s.corrosion&&grade!=='闪避'&&t.hp>0){const prior=corrosionOn(t);if(prior)emit('effect-blocked',t.name+' 已有潮蚀，不叠加或刷新',u.id,[t.id],{cast,skill:r.skill,effectId:prior.id,source:prior.source,component:CORROSION.name,reason:'同名负面效果仍在',expires:prior.expires,consumedAction:true});else{const effect={id:`${roomIndex}:${cast}:${t.id}:corrosion`,skill:r.skill,name:s.name,component:CORROSION.name,source:u.id,sourceName:u.name,stat:CORROSION.stat,value:CORROSION.value,scope:'rounds',harmful:true,active:false,activateTick:clock+1,activateRound:round+1,expires:round+CORROSION.duration,expiresTick:clock+CORROSION.duration};t.effects.push(effect);emit('effect',t.name+' 附着潮蚀：之后两个回合开始结算法术抗性持续伤害',u.id,[t.id],{effectId:effect.id,cast,skill:r.skill,component:effect.component,stat:effect.stat,value:effect.value,scope:effect.scope,harmful:true,active:false,activateRound:effect.activateRound,expires:effect.expires,rule:'之后两个回合开始各按基值6和当时法术抗性结算；不再攻防检定、不重复收费、不叠加刷新，可净化；来源倒下仍保留，房间结束清理。'});}}
    }actionId=null;for(const enemy of enemies)awaken(enemy);return true;
   }
   function act(u,p){
@@ -221,12 +223,19 @@ export function simulate(c,options={}){
   const maxRounds=c.expedition==='scarcity'?Math.min(options.maxRounds??24,roomTimeBudget(c,room.id)):(options.maxRounds??24);
   for(round=1;round<=maxRounds&&heroesAlive()&&live('enemy').length;round++){
    clock++;phase='回合开始';emit('round','第 '+round+' 回合');
-   for(const u of all())for(const e of u.effects)if(e.active===false&&e.activateTick<=clock){e.active=true;emit('activate',u.name+' 的「'+e.name+(e.component!==e.name?' · '+e.component:'')+'」开始生效',e.source,[u.id],{component:e.component,stat:e.stat,value:e.value,expires:e.expires});}
+   for(const u of all())for(const e of u.effects)if(e.active===false&&e.activateTick<=clock){e.active=true;emit('activate',u.name+' 的「'+e.name+(e.component!==e.name?' · '+e.component:'')+'」开始生效',e.source,[u.id],{component:e.component,stat:e.stat,value:e.value,expires:e.expires,...(e.harmful?{harmful:true}:{})});}
    for(const u of all())for(const effect of regenerationTicks(u)){
     const before=u.hp,actual=Math.min(u.maxHp-before,effect.value);u.hp+=actual;
     if(stats[effect.source])stats[effect.source].healing+=actual;
     emit('heal',u.name+' 的「'+effect.name+'」缓释恢复 '+actual+' 生命'+(effect.value>actual?'（未生效 '+(effect.value-actual)+'）':''),effect.source,[u.id],{skill:effect.skill,effectId:effect.id,passive:true,before,after:u.hp,actual,overheal:effect.value-actual,consumedAction:false,cost:0,sources:[{effectId:effect.id,source:effect.source,name:effect.name,component:effect.component,stat:effect.stat,value:effect.value}],rule:'回合开始缓释，不消耗普通行动或再次扣材料；不复活倒下者，不受仅限制自动草药救护的禁疗影响。'});
    }
+   for(const u of all())for(const effect of corrosionTicks(u)){
+    if(u.hp<=0)break;const hpBefore=u.hp,resistance=resistanceOf(u,'magic'),damage=Math.floor(effect.value*(1-resistance/100)),actual=Math.min(hpBefore,damage);u.hp-=actual;actionId=`tick:${clock}:${effect.id}`;
+    if(stats[effect.source]){stats[effect.source].damage+=damage;stats[effect.source].actual+=actual;stats[effect.source].overkill+=damage-actual;}
+    emit('harm',u.name+' 受到潮蚀 '+actual+' 持续伤害',effect.source,[u.id],{skill:effect.skill,effectId:effect.id,passive:true,base:effect.value,resistanceType:'magic',resistance,damage,actual,overkill:damage-actual,hpBefore,hpAfter:u.hp,consumedAction:false,cost:0,sources:[corrosionSource(effect)],rule:'回合开始在缓释恢复之后结算；按当前法术抗性，不重掷攻防、不用物理护甲、不重复扣材料或消耗普通行动。净化不能撤销已发生伤害。'});
+    if(u.hp===0){emit('down',u.name+' 因潮蚀倒下。',effect.source,[u.id],{effectId:effect.id,passive:true});removeSummons(u.id,'主人倒下');}else if(u.side==='enemy')awaken(u);actionId=null;
+   }
+   if(!heroesAlive()||!live('enemy').length)continue;
    phase='回合前';const ordered=[...(c.roomOrders[room.id]||c.prepOrder).map(id=>party.find(u=>u.id===id)).filter(Boolean),...enemies];for(const u of ordered)if(u.hp>0)act(u,'prep');
    phase='自然回复';for(const u of all().filter(u=>u.hp>0)){const before=u.mp;u.mp=Math.min(u.maxMp,u.mp+1);if(u.mp!==before)emit('regen',u.name+' 自然回复 1 法力',u.id,[],{before,after:u.mp});}
    phase='先攻';const order=[];for(const u of all().filter(u=>u.hp>0)){const agi=current(u,'agi'),per=current(u,'per'),actions=current(u,'actions'),mean=2*agi+per,base=roll(mean),count=Math.max(0,Math.floor(1+actions));for(let i=0;i<count;i++)order.push({u,value:base/(1+i*.6),ordinal:i+1,total:count,agi,per,actions,mean,base});}

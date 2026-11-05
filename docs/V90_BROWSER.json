@@ -1,0 +1,219 @@
+{
+  "passed": true,
+  "steps": [
+    "零资产本人药师正常书库seed1命中附蚀，回合开始实际跳伤/法术抗性/实扣/溢出可读且不重复收费，精确来源可跳转返回，个人实伤单列19持续实伤",
+    "pending改准备/刷新保留原报告；正常180/75后付20经验训练药剂1级，剧场seed2敌方净化只保留已发生首跳、移除后续跳伤，正常130/55与历史/备份通过",
+    "390px恢复全部历史/培养，问堂seed3实际基值6经法术弱点结算7伤害，证据无横向溢出；正常140/60后450金币、本人170经验，三件奖励未自动装备"
+  ],
+  "runs": [
+    {
+      "route": "scriptorium",
+      "seed": 1,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 274,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 226,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 177,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "ticks": [
+        {
+          "round": 2,
+          "room": 0,
+          "target": "seg",
+          "actual": 6,
+          "resistance": 0
+        },
+        {
+          "round": 3,
+          "room": 0,
+          "target": "seg",
+          "actual": 1,
+          "resistance": 0
+        },
+        {
+          "round": 3,
+          "room": 1,
+          "target": "ssg",
+          "actual": 6,
+          "resistance": -10
+        },
+        {
+          "round": 2,
+          "room": 2,
+          "target": "svg",
+          "actual": 3,
+          "resistance": 35
+        },
+        {
+          "round": 3,
+          "room": 2,
+          "target": "svg",
+          "actual": 3,
+          "resistance": 35
+        }
+      ]
+    },
+    {
+      "route": "theater",
+      "seed": 2,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 304,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 245,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "ticks": [
+        {
+          "round": 2,
+          "room": 0,
+          "target": "tf1",
+          "actual": 6,
+          "resistance": -10
+        },
+        {
+          "round": 2,
+          "room": 1,
+          "target": "tcg",
+          "actual": 6,
+          "resistance": -10
+        }
+      ]
+    },
+    {
+      "route": "inquest",
+      "seed": 3,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 260,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "ticks": [
+        {
+          "round": 2,
+          "room": 0,
+          "target": "igv",
+          "actual": 3,
+          "resistance": 40
+        },
+        {
+          "round": 3,
+          "room": 0,
+          "target": "igv",
+          "actual": 3,
+          "resistance": 40
+        },
+        {
+          "round": 2,
+          "room": 1,
+          "target": "isv",
+          "actual": 7,
+          "resistance": -20
+        },
+        {
+          "round": 3,
+          "room": 1,
+          "target": "isv",
+          "actual": 7,
+          "resistance": -20
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.57"
+}

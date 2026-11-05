@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前625项测试通过，0失败/跳过；259个ES模块、44个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前639项测试通过，0失败/跳过；263个ES模块、45个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -333,3 +333,14 @@ v0.89新增弩灵战前攻击优先，与己方入场阵位分开；可选敌方
 从2c351ef5b6fc290c8734c0471bfa22960c107d59干净618基线，feature/v089-summon-orders。可选prep行summonTarget仅弩灵合法；无字段的旧默认命令/报告不变。summon-orders纯函数生成主指令，职责后备cycle确保每次再检查；spawn固定当次命令，事件orders/form记录实际目标，UI用SUMMON_TARGETS解释职责。切换技能删字段、选rear删可选字段。常规召唤限制/成本/清理和原脚本双卫不改。
 
 正常本人C：问堂1 140/60→付20XP tidearcher1→疗所2 140/55→手机恢复书库3 180/75，六人、总460金币/本人170经验其他190，三件奖励未分配。UI/API整公会无排除相等；72输入只变目标字段，38旧完整报告原始全等；625/625，259mjs44cjs，新浏览器/v88回归通过，无初稿失败。证据/workspace/wod-evidence/v89，参考/tmp/wod-v088-reference，截图内部。无新迁移/账号/持续费用/重大待决；继续单人本地。
+
+
+## v0.90潮蚀续接
+
+v0.90新增药师普通技能蚀潮药剂与潮蚀持续伤害：4法力/1药草、低伤初击，命中存活者后下一及再下一回合开始按基值6/当时法术抗性跳伤；不重掷/重复收费、不刷新，可净化。含真实生命/溢出、来源、个人持续实伤和终局/召唤/碎印时序。639测试、72不同有限输入全员通关、38旧报告仅精确新增药师可用技能字段外相同；桌面/390px正常培养/敌方净化/三次领取与完整公会API等价，v89浏览器回归通过。仍19路线/37装备，详见[V90_CORROSION.md](V90_CORROSION.md)。本轮本地，不推送/合并/部署。
+
+从956130b53a0837892a8f87165d58f1cf310f465b干净625基线，feature/v090-corrosion。corrosion纯常量/筛选/来源，mireflask加入两药师普通技能。初击后挂harmful且pending，activateTick+1/expiresTick+2；原净化即可移除。回合开始先原缓释再harm，tick作用按当前magic抗性，记录真实HP/溢出、零费用；source死仍保留。down清主人召唤；半血awakens在随后队列前处理；终局continue使当前回合正确计数，跳过多余预备/自然回复/先攻。
+
+个人damage/taken含harm，periodDamage/periodRecords单列；source-trace精确原effect，stage/highlights/UI可读，负面激活带harmful元数据，旧正面事件不加字段。原公式/其他技能不变，旧38报告仅严格断言的F可用技能新增外全等，不写原始零排除。正常书库1 180/75→付20XP mireflask1→剧场2敌方净化130/55→手机问堂3 140/60；总450金币、本人F170经验其他190，三件奖励未分配，两份整个公会与API同。
+
+14新增专项/最终639全过，263mjs45cjs、新浏览器/v89回归通过。首稿12/13是同排召唤物分走目标，改合法summoner职责锁定主人并加强溢出；后增跨房夹具13/14因高敏捷提高远程防御，改可靠法术收尾。原JSON/TAP/首个全量失败保留，不改普通数值/种子或削断言。source-dead初探未击倒来源亦已注明改边界夹具。证据/workspace/wod-evidence/v90，参考/tmp/wod-v089-reference；截图内部，Library另记。无新迁移/账号/持续费用/重大待决，继续单人本地。

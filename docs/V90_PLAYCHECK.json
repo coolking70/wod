@@ -1,0 +1,4852 @@
+{
+  "note": "72 unique bounded inputs, 2 normal asset profiles ×3 routes ×6 predeclared seeds ×2 main-command plans. Within pair only F.main changes, same free specialization/autoheal/gear/training/prep/supplies; control is not an independently optimized shot build. Earned is source first real scriptorium180/75 then20XP mireflask1 paidF, loot unassigned. Damage/ticks recorded after current magic resistance and HP cap, never inferred healing blocked or global optimality. Same seed is not attack-by-attack RNG alignment.",
+  "pairedConfigDifference": [
+    "f.main"
+  ],
+  "summary": {
+    "runs": 72,
+    "uniqueBattleInputs": 72,
+    "failures": 0,
+    "injured": 0,
+    "groups": [
+      {
+        "route": "scriptorium",
+        "active": false,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "periodDamage": 0,
+        "cleansedComponents": 0
+      },
+      {
+        "route": "scriptorium",
+        "active": true,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "periodDamage": 276,
+        "cleansedComponents": 0
+      },
+      {
+        "route": "theater",
+        "active": false,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "periodDamage": 0,
+        "cleansedComponents": 0
+      },
+      {
+        "route": "theater",
+        "active": true,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "periodDamage": 108,
+        "cleansedComponents": 6
+      },
+      {
+        "route": "inquest",
+        "active": false,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "periodDamage": 0,
+        "cleansedComponents": 0
+      },
+      {
+        "route": "inquest",
+        "active": true,
+        "runs": 12,
+        "won": 12,
+        "allSix": 12,
+        "periodDamage": 212,
+        "cleansedComponents": 0
+      }
+    ]
+  },
+  "cases": [
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "781029ee8fd7f84ce0bd99cadeb4f95ca90c2d7be1250c6d5e108eef88a16a3e",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 235,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 183,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "49b148c33e501c285f7e88700657b746ec6498a849f3a2850e7d7a5585d1963d",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 270,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 231,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 158,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 6,
+        "periodDamage": 30,
+        "overkill": 0,
+        "heals": 4
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "ca7f6479b20be813bdbf126b5aa361be35d96f8c72f7afabb4f377e45e04197a",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 234,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 171,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "e8221b1e3c3b35ef6c09a0b8d859e7a2a6d9f1fbd29cf689f5044f2bf97bbdc7",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 280,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 234,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 162,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 5,
+        "periodDamage": 24,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "8889975e987353c363f977feae379ddf150396f0d505ccdc619aab0c70cbd4de",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 270,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 228,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 167,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "49dacb6582410bcbba72c97d0d6bc8e27277152dd9a10de294a137d2ef97d4ae",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 267,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 222,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 160,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 6,
+        "periodDamage": 30,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "3c73b6b7ed33ea25ef4c9e0ab00b56b79f686c164097fa1213c24c45c6270931",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 234,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 196,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "869610c5fcc36ddcbb8a350a1ae6413980d7de010104b1c31281ba1b2ac09db0",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 279,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 239,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 176,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 4,
+        "periodDamage": 18,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "5413fbc9cb26104bd2d50cc649d7a25e3c2f16a687b7f90971712870d2e9cfdb",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 287,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 254,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 181,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "f94bcb2a51559c82225a8a62d02c203b67f70ea6fd6159b5929bea5f5eb8f776",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 283,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 247,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 4,
+        "periodDamage": 18,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "9aef129c95b46a6e7dc2ada26c77dc2a1c67aa91a8f5e7891550e91788a5ddff",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 280,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 244,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 179,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "scriptorium",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "e4b7b303e4a8c45722eace2519200adf3ea82558774a2b397a6fd213ececf3ec",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 287,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 225,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 540,
+          "mp": 186,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 4,
+        "periodDamage": 18,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "9cbde2f76a71326d0b385dbd9baf463d0baf51d6d4963d1adaea7513ce8885a9",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 533,
+          "mp": 252,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "8d9d81e48f9b89cea130eec8595b53ec286cc4bc03c1f278af9b410a2424be26",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 301,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 244,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 12,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "c236871e1f2ae0dfc7d2bb4dfb89597c17664e805adcfdd7f32106875c7e594e",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 248,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "715c74d65563b8ff5a9a1af71aa69cbcd9d3eafd78979a7d0ce077f1af0450d2",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 301,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 244,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 1,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "4b9822b203695cd553e5a60c9d020fadbd59fc992c219a4ffeedfae130159d5f",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 312,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 247,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "ff994bfb8e3791849f99d02c1ec785c6615d17674dd9e5e8c245a43c5096cf10",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 308,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 241,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 12,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "76e55fd08f3c19c6e11336e694f010c215e01908d63e563acb67c5d83c75bb6a",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 245,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "aa471a4888f15fc9aa21e85a65ffb828c45731d5844521ba2b92f8ef71f2bbd4",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 303,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 244,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 12,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "6566f4670e68d2d4d0922b564ff0d6f3c2b42f78e3b85cfb8c5fa96fe158ee34",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 253,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "dc8e8947c5cbb404519410c7b5770ab96ad2a55817adafd890f23355d3461935",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 308,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 243,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 1,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "db33ca05bc1fbc6c4cea7481d71ee9c257dcef845248b6f8ffc0af35d117f193",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 252,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "theater",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "0376b554f0ef3738d5f8fd018349abd3dabb51e2d5eaae6e048a54fd1ce0e89c",
+      "won": true,
+      "alive": 6,
+      "rounds": 7,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 303,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 246,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 1,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 1
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "51dc948b7ec04802af34321cf1f73c8aefe427beec94ca5f05e0591a8ac87513",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 262,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 199,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "9974359b10648636bfea2b0e567b8fe54c07112411b951a4388ad80871da404b",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 252,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "fc1242524638d1e06a6b4b5d268a79589cab61fc5747d19cf98731b23b007f26",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 266,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "3970f8649d5daf8b89c61425ec8300d02189fb0dd3ea6dbd2c429a821a2ee7d9",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 262,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 193,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "c993ef2ecf83d07ae7a44210db76a2ed0ee4f448797ff9c29ae62e851fe414d2",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 272,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 202,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "d5cbf6e4e99f2d63bc6946b0ba533633960edd30b09dad284690fa0f47170faa",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 269,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 197,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "86d37ca7cea29ccd58f657c144343dd3609621552fdf819596ec6dde9488df9b",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 270,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 205,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "74162c22ec1f7e07b738c7a706e002603a01483ffb79cac3e8b6efe1013a953f",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 199,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "61b5981cb61f062ffca3d5859ed5e298c65cbb7fce8a1b05f1259feaae58efe1",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 574,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 203,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "044717806c8a34428cfcef3a36d920f5510993eeb63d4d1e02014981a20df884",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 261,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 193,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "cc3ad70872182c9097dcba3a256f8b1e987fa20bff060fd87634b6be87b9a11e",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 261,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 196,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "fresh",
+      "route": "inquest",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "a8f5257d301f6bd34e5c67a45e9f9471a6c4537b58bc6d5b49a354e810826592",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 273,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 204,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "e517c1d388d1734dea604c8d248d9280465be4aa86f0705269f1c952c94ad390",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 273,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 235,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 183,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "9ba2699ba40f9e2476a82c584f9778f53756fb208b7aa9a2ffccb4e04c82487f",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 270,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 231,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 158,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 6,
+        "periodDamage": 30,
+        "overkill": 0,
+        "heals": 4
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "2ca2a118e48a204fa652e7644b784549883ff37d50687ae466cc5718202ea54f",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 278,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 584,
+          "mp": 234,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 599,
+          "mp": 171,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "273da64eab5f51ab55244529401ed797adb01e44a0c6d786a673ecc5b7fffba6",
+      "won": true,
+      "alive": 6,
+      "rounds": 13,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 280,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 634,
+          "mp": 234,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 162,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 5,
+        "periodDamage": 24,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "54f269f9b46c1aa01ba6a7a5dad9db441a01cfa7aca0f23ac085fe53949edeae",
+      "won": true,
+      "alive": 6,
+      "rounds": 15,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 270,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 228,
+          "supplies": {
+            "herb": 10,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 7,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 167,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "d561513e0fe14844855e9865e87e927e37370b01ce65da4d3f07bb357fb86e81",
+      "won": true,
+      "alive": 6,
+      "rounds": 14,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 593,
+          "mp": 267,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 222,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 160,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 6,
+        "periodDamage": 30,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "2294f7a94de0f97c9da6c6ec4a90a63b66706948a6f303a30392a554d03cdcaa",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 281,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 234,
+          "supplies": {
+            "herb": 10,
+            "rune": 6,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 196,
+          "supplies": {
+            "herb": 8,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "7ffd348afa3324e912bd06fc686cca0102f9bf0b93751cf5c84d531e34a40994",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 279,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 239,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 176,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 4,
+        "periodDamage": 18,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "ba1f2f7332e2c1a34dec36f03990fc1a5a816977e9a54df4a12d561c519e1a4c",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 287,
+          "supplies": {
+            "herb": 11,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 254,
+          "supplies": {
+            "herb": 11,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 181,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "77505c966b49188735b0a0814cabc1330929988d5059bc5969de6dab570ec2fc",
+      "won": true,
+      "alive": 6,
+      "rounds": 11,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 283,
+          "supplies": {
+            "herb": 10,
+            "rune": 8,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 564,
+          "mp": 247,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 4,
+        "periodDamage": 18,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "f360c1778f21c56e9a697415005eb638d4c6956eeec2c81bcf817747f3984c54",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 280,
+          "supplies": {
+            "herb": 11,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 244,
+          "supplies": {
+            "herb": 10,
+            "rune": 5,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 179,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "scriptorium",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "e358bd554f640d6b6ec6def0d941b22eb6dd21fe5e342b599f91058c37f8cabf",
+      "won": true,
+      "alive": 6,
+      "rounds": 12,
+      "rooms": [
+        {
+          "name": "01 · 残印前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 287,
+          "supplies": {
+            "herb": 10,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "02 · 回印阶室",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 225,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 封存裁室",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 540,
+          "mp": 186,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 2,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 3,
+        "ticks": 4,
+        "periodDamage": 18,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "38f49e2523a612f1027620c393711e4eebb128f60ec13e66600ad2226378257d",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 533,
+          "mp": 252,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "dc7251ea9bf7660d1ba138955e9294908f01ec25a00658bc49e90018e872a56f",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 301,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 244,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 12,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "aee68f56cc3f73e9ab676bc84a9c21b9262c4dcff6ba973517e94ff92aa8f58e",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 305,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 248,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "e75622ad8024f2d1ee59c01bf0d429bf4da2a90e69cf0d7dbc753d142d1a34b6",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 301,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 244,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 1,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "013448eabe8c893eb9a1cfe7774e38525cb619929950be639eadee1166890edc",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 312,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 247,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "3f57c6803441cbb6a017a7dcb03507677bdbb246c300de39a6d129f5e7cb662d",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 637,
+          "mp": 308,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 592,
+          "mp": 241,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 12,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 1
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "a489c46c8592cd232726ee7512efc4de46394c1e631773d781215ac2d63d9821",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 245,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "cb9d849e38fcfef92689d0e5356254d8187ce5e192a86b4df634520ef8e4e490",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 303,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 244,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 12,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 1
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "55e463d83bfa210d6fdb2efb197be595a1d9b5a9370247f10e1919645f4c43b5",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 306,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 253,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "8b694945519e88034e46bf5af537c49ce8791f1a8e9fd57979647387b0a5dd85",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 308,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 243,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 1,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "cd0cdefb3067b1ff92fc855fee9088e0609e5958336fb18522bfeea07fe12f10",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 307,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 252,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "theater",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "c3598fbccf4d113a08d7c6aaa594b5b509d25a304dd9b3f95abc8063a708c140",
+      "won": true,
+      "alive": 6,
+      "rounds": 7,
+      "rooms": [
+        {
+          "name": "01 · 噤声前厅",
+          "won": true,
+          "rounds": 3,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 303,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "02 · 无声合唱席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 246,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 1,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 1
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 101,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "c46e00e74bd583727550d69ed9010da5d1db805a83967068b931df29033c3eb4",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 262,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 199,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 101,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "d9bf716f9268fbed9eaab55409b9dafa8cbef4e52310b896431129d7dc9823e2",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 252,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 102,
+      "active": false,
+      "set": "discovery",
+      "configFingerprint": "b4ab832256eb7d0a2088c7c941f68278ac7b69b1dcd7082b5f266548b9129ef1",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 266,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 201,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 102,
+      "active": true,
+      "set": "discovery",
+      "configFingerprint": "09c4adeeca25c741da125966bbc3fb4bab192e8d84af8c0ae82fb3324897b746",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 262,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 6,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 193,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 2,
+        "periodDamage": 6,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 201,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "3029d5e09db0c0ee02e4fbd4abea44f1f4fd5fe0845582effb0e56fa6144333a",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 272,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 202,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 201,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "0c1f109ab4f99890d24b6b36af20602317ebe0e20895b378a82b99857a7272b4",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 269,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 197,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 202,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "bd900d41414358f418fc85e036b951e187e41362fe4707960370d125ce1e205c",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 270,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 205,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 202,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "4bbfdf10d9198cba29201b4dc510bd6d46b0fb3672c0d2ee19f6de3bb238c204",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 266,
+          "supplies": {
+            "herb": 6,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 199,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 2
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 203,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "992decec83ece39c1bc336910a9b50761e44c52a3881a94b1b5a519f99f1a1c1",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 574,
+          "mp": 265,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 203,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 203,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "a9dd99629a4801f62c460e1dd367da650484c5bd4dee6372d60550c5d4469f19",
+      "won": true,
+      "alive": 6,
+      "rounds": 8,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 261,
+          "supplies": {
+            "herb": 5,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 193,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 204,
+      "active": false,
+      "set": "confirmation",
+      "configFingerprint": "30d6546b04177ea0b52fcc357be34f8a9c515eebe17eac6ff34814e62b4c67bb",
+      "won": true,
+      "alive": 6,
+      "rounds": 10,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 261,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 196,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 0,
+        "ticks": 0,
+        "periodDamage": 0,
+        "overkill": 0,
+        "heals": 3
+      },
+      "cleansedComponents": 0
+    },
+    {
+      "profile": "earned",
+      "route": "inquest",
+      "seed": 204,
+      "active": true,
+      "set": "confirmation",
+      "configFingerprint": "12af88d3c71b0dfeebc0479345af9664e04c7c244bcd47337e41b87f5512c8af",
+      "won": true,
+      "alive": 6,
+      "rounds": 9,
+      "rooms": [
+        {
+          "name": "01 · 叩心门廊",
+          "won": true,
+          "rounds": 4,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 273,
+          "supplies": {
+            "herb": 7,
+            "rune": 6,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "02 · 镜心审席",
+          "won": true,
+          "rounds": 5,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 204,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 0
+          }
+        }
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 0
+      },
+      "herbalist": {
+        "casts": 2,
+        "ticks": 4,
+        "periodDamage": 20,
+        "overkill": 0,
+        "heals": 1
+      },
+      "cleansedComponents": 0
+    }
+  ],
+  "normal": {
+    "route": "scriptorium",
+    "seed": 1,
+    "rooms": [
+      {
+        "name": "01 · 残印前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 597,
+        "mp": 274,
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 5
+        }
+      },
+      {
+        "name": "02 · 回印阶室",
+        "won": true,
+        "rounds": 4,
+        "survivors": 6,
+        "hp": 630,
+        "mp": 226,
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 1
+        }
+      },
+      {
+        "name": "03 · 封存裁室",
+        "won": true,
+        "rounds": 6,
+        "survivors": 6,
+        "hp": 604,
+        "mp": 177,
+        "supplies": {
+          "herb": 4,
+          "rune": 1,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 4,
+      "rune": 1,
+      "arrow": 0
+    },
+    "ticks": [
+      {
+        "room": 0,
+        "round": 2,
+        "target": "seg",
+        "damage": 6,
+        "actual": 6,
+        "overkill": 0,
+        "resistance": 0
+      },
+      {
+        "room": 0,
+        "round": 3,
+        "target": "seg",
+        "damage": 6,
+        "actual": 1,
+        "overkill": 5,
+        "resistance": 0
+      },
+      {
+        "room": 1,
+        "round": 3,
+        "target": "ssg",
+        "damage": 6,
+        "actual": 6,
+        "overkill": 0,
+        "resistance": -10
+      },
+      {
+        "room": 2,
+        "round": 2,
+        "target": "svg",
+        "damage": 3,
+        "actual": 3,
+        "overkill": 0,
+        "resistance": 35
+      },
+      {
+        "room": 2,
+        "round": 3,
+        "target": "svg",
+        "damage": 3,
+        "actual": 3,
+        "overkill": 0,
+        "resistance": 35
+      }
+    ],
+    "cleansedComponents": 0,
+    "reward": {
+      "cleared": 3,
+      "gold": 180,
+      "xp": 75,
+      "firstClear": true,
+      "loot": [
+        "counterlens"
+      ]
+    }
+  },
+  "desktop": {
+    "route": "theater",
+    "seed": 2,
+    "rooms": [
+      {
+        "name": "01 · 噤声前厅",
+        "won": true,
+        "rounds": 3,
+        "survivors": 6,
+        "hp": 617,
+        "mp": 304,
+        "supplies": {
+          "herb": 7,
+          "rune": 7,
+          "arrow": 3
+        }
+      },
+      {
+        "name": "02 · 无声合唱席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 549,
+        "mp": 245,
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 5,
+      "rune": 4,
+      "arrow": 0
+    },
+    "ticks": [
+      {
+        "room": 0,
+        "round": 2,
+        "target": "tf1",
+        "damage": 6,
+        "actual": 6,
+        "overkill": 0,
+        "resistance": -10
+      },
+      {
+        "room": 1,
+        "round": 2,
+        "target": "tcg",
+        "damage": 6,
+        "actual": 6,
+        "overkill": 0,
+        "resistance": -10
+      }
+    ],
+    "cleansedComponents": 1,
+    "reward": {
+      "cleared": 2,
+      "gold": 130,
+      "xp": 55,
+      "firstClear": true,
+      "loot": [
+        "votivelute"
+      ]
+    }
+  },
+  "mobile": {
+    "route": "inquest",
+    "seed": 3,
+    "rooms": [
+      {
+        "name": "01 · 叩心门廊",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 561,
+        "mp": 260,
+        "supplies": {
+          "herb": 6,
+          "rune": 6,
+          "arrow": 2
+        }
+      },
+      {
+        "name": "02 · 镜心审席",
+        "won": true,
+        "rounds": 5,
+        "survivors": 6,
+        "hp": 561,
+        "mp": 192,
+        "supplies": {
+          "herb": 4,
+          "rune": 3,
+          "arrow": 0
+        }
+      }
+    ],
+    "supplies": {
+      "herb": 4,
+      "rune": 3,
+      "arrow": 0
+    },
+    "ticks": [
+      {
+        "room": 0,
+        "round": 2,
+        "target": "igv",
+        "damage": 3,
+        "actual": 3,
+        "overkill": 0,
+        "resistance": 40
+      },
+      {
+        "room": 0,
+        "round": 3,
+        "target": "igv",
+        "damage": 3,
+        "actual": 3,
+        "overkill": 0,
+        "resistance": 40
+      },
+      {
+        "room": 1,
+        "round": 2,
+        "target": "isv",
+        "damage": 7,
+        "actual": 7,
+        "overkill": 0,
+        "resistance": -20
+      },
+      {
+        "room": 1,
+        "round": 3,
+        "target": "isv",
+        "damage": 7,
+        "actual": 7,
+        "overkill": 0,
+        "resistance": -20
+      }
+    ],
+    "cleansedComponents": 0,
+    "reward": {
+      "cleared": 2,
+      "gold": 140,
+      "xp": 60,
+      "firstClear": true,
+      "loot": [
+        "calmribbon"
+      ]
+    }
+  },
+  "unchanged": {
+    "reference": "956130b53a0837892a8f87165d58f1cf310f465b",
+    "count": 38,
+    "rawFullEqual": false,
+    "eventsAndResultsEqual": true,
+    "excluded": [
+      "only exactly asserted new herbalist available skill party[].skills.mireflask=base"
+    ],
+    "rows": [
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "equalAfterExactNewSkill": true,
+        "added": [
+          {
+            "id": "f",
+            "skill": "mireflask",
+            "level": 6
+          }
+        ]
+      }
+    ]
+  }
+}
