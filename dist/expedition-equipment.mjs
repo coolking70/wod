@@ -16,6 +16,8 @@ Object.assign(GEAR,{
 
 export const SLOTS={weapon:'武器',armor:'防具',accessory:'饰品'};
 Object.assign(GEAR,{
+ bellowscoat:{name:'风箱巡衣',slot:'armor',armor:2,bonus:{agi:2,int:-2},resistances:{ranged:10,magic:-10},dungeonOnly:true},
+ kilngauge:{name:'炉心尺规',slot:'accessory',armor:0,bonus:{per:3,int:1,con:-1},dungeonOnly:true},
  beaconrod:{name:'引灯仪杖',slot:'weapon',armor:0,bonus:{int:3,agi:-2},resistances:{magic:10},countsAs:'focus',dungeonOnly:true},
  quaycoat:{name:'盐风哨衣',slot:'armor',armor:3,bonus:{},resistances:{ranged:15,magic:-10},dungeonOnly:true},
  tidecompass:{name:'归航罗盘',slot:'accessory',armor:0,bonus:{agi:2,per:2,con:-1},dungeonOnly:true},

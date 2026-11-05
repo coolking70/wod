@@ -1,0 +1,2 @@
+import {newGuild,depart,claim,train} from '../dist/expedition-guild.mjs';import {selectHero} from '../dist/expedition-command.mjs';import {hospiceConfig} from '../dist/expedition-data.mjs';
+export function foundryProfiles(){const fresh=selectHero(newGuild(),'c');let trained=structuredClone(fresh);for(let i=0;i<2;i++)trained=claim(depart(trained,hospiceConfig('front')));for(const [id,skill] of Object.entries({a:'guard',b:'pierce',c:'lance',d:'ward',e:'insight',f:'heal'}))for(let rank=0;rank<2;rank++)trained=train(trained,id,'skill:'+skill);return {fresh,trained};}

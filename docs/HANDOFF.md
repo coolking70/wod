@@ -8,7 +8,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前465项测试通过，0失败/跳过；183个ES模块、25个浏览器脚本语法检查通过。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前472项测试通过，0失败/跳过；187个ES模块、26个浏览器脚本语法检查通过。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
@@ -133,3 +133,9 @@ commitPreparationChange先核对两份存储当前文本，再写配置、公会
 UI只有一个内存换人试演，replacementSelections保留每个候补的明确选择；signature含完整公会、草稿、outgoing/incoming，变化就停用旧报告入口。实际换人仍调用原swap，不套用试演返回状态，成功后清试演。其他标签页更新先拒绝查看，重新读取后标过期。报告viewer新增可选origin.note，名册试演明确需另行编入；训练试演旧文案保持。试演区滚动偏移按实际sticky guild-tabs高度计算，390px标题不能被遮挡。
 
 465回归、9完整报告与dbb363a相等、桌面/390px及完整正式出征等于候补试演通过。check-v70生成普通赚取/招募/单项训练/课程的固定断潮案例，原队通关，换射手为零培养米菈后六人仍活但第二房超时、末房未抵达；不是新平衡矩阵。初轮测试用了付不起的二级训练和已是同职责的无变化操作，改为可付的另一普通技能和不同职责，断言保留；初始日志保留，最终465复跑通过。最终浏览器release-browser。未重跑432研究或1,824活动样本，原版数值仍待参考服，不推送/合并/部署。
+
+## v0.71新增地城续接
+
+从3e65c8f干净465基线按整体P3开发，不继续局部工具。expedition-foundry定义四个普通遭遇，无隐藏环境规则；data接入foundry路线/4新房间ID/30预算及plain/split/shelter起点，无训练/课程/装备赠送。split集中辅助，shelter分散中央并护后，不能称通用最优。两件dungeonOnly遗物bellowscoat/kilngauge有实际属性代价，正常首通220金币/90XP/固定巡衣，重复150金币/65XP/池内一件。
+
+472回归、9旧报告完整等价、72有限playcheck通过；发现组plain有失败，不隐藏。browser-v71完成正常实际资产首通、刷新pending同报告、领奖/个人分配/历史不改/再通/390px分阵，三次都4房通关。场景foundry-v71.png为一张AI离线生成图复用4房，原图保留，非4张素材。新内容没有改技能公式、成长体系或原版数字。下步一次性委托/定向遗物；不推送/合并/部署。

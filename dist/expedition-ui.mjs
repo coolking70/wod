@@ -1,3 +1,4 @@
+import {foundryConfig} from './expedition-data.mjs';
 import {trainingCostText} from './expedition-progression-rules.mjs';
 import {configurationUndo} from './expedition-config-undo.mjs';
 import {advancementOptions,ADVANCEMENTS} from './expedition-advancement-data.mjs';
@@ -51,7 +52,7 @@ try{const stored=JSON.parse(localStorage.getItem(storageKey)||'null');if(stored)
 const plansKey='abbey-plan-library-v1';let plans=[],undoConfig=null;
 try{const loaded=readPlans(localStorage.getItem(plansKey));plans=loaded.plans;if(loaded.rejected)$('#notice').textContent='有 '+loaded.rejected+' 个无效方案未载入；其余方案可用。';}catch{$('#notice').textContent='方案存档无法读取，未覆盖原始存档。';}
 function tell(t){$('#notice').textContent=t;}
-function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.70';}
+function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.71';}
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));savedState();}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
 function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value="${esc(k)}" ${k===value?'selected':''}>${esc(typeof v==='object'?v.name:v)}</option>`).join('');}
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}
@@ -63,7 +64,7 @@ function inheritance(key){if(!scope)return '<small class="scope-label">默认设
 function planner(){
  if(!config.heroes.some(h=>h.id===selected))selected=config.heroes[0].id;
  if(scope&&!roomsFor(config).some(r=>r.id===scope))scope="";
- renderHarborPlan();renderAdventure();renderGuide();renderHeroBuilds();renderTrialBrief();$('#route-size').textContent='6 位队员 · '+roomsFor(config).length+' 场遭遇 · 战前配置 / 自动结算';
+ renderFoundryBrief();renderHarborPlan();renderAdventure();renderGuide();renderHeroBuilds();renderTrialBrief();$('#route-size').textContent='6 位队员 · '+roomsFor(config).length+' 场遭遇 · 战前配置 / 自动结算';
  $('#goal-brief').innerHTML='<p class=eyebrow>出发前 / 完成目标</p><div class=departure-cards>'+[...GOALS,...(config.expedition==='hospice'?HOSPICE_GOALS:[])].map(g=>`<article><h3>${g.name}</h3><p>${g.rule}</p></article>`).join('')+' </div><small>额外目标仅记录本次表现，不发放成长奖励。失败时物资余量仍可复盘，不算达成储备目标。</small>'; 
  $('#plan-scope').innerHTML='<option value="">默认方案</option>'+roomsFor(config).map(r=>`<option value="${r.id}">${esc(r.name)}</option>`).join('');
  $('#scope-hint').textContent=scope?'正在编辑：'+roomsFor(config).find(r=>r.id===scope).name:'正在编辑全队默认方案';
@@ -428,3 +429,9 @@ $('#support-evidence').onclick=e=>{const source=e.target.closest('[data-support-
 $('#support-evidence').onchange=e=>{if(e.target.id==='support-evidence-actor')$('#support-evidence').innerHTML=supportEvidenceView(supportEvidenceData,e.target.value);else if(e.target.matches('[data-support-evidence-record]')&&e.target.value)openSupportEvidenceEvent(e.target.value);};
 
 $('#replay').addEventListener('click',e=>{const edit=e.target.closest('[data-healing-edit]');if(edit){editFromReport(edit.dataset.healingEdit);return;}const b=e.target.closest('[data-healing-origin]');if(!b)return;const at=Number(b.dataset.healingOrigin);if(!Number.isInteger(at)||!report?.events[at])return;traceReturn=index;stop();$('#highlights-only').checked=false;$('#diagnostic').checked=true;replayWorkspace.open('evidence');renderJournal();move(at);$('#support-focus').scrollIntoView({block:'start'});});
+
+function renderFoundryBrief(){
+ const enabled=config.expedition==='foundry';$('#foundry-brief').hidden=!enabled;if(!enabled)return;
+ $('#foundry-brief').innerHTML='<p class="eyebrow">新支线 / 四场连续作战</p><h2>锈潮铸库：先拆配合，再取炉心。</h2><p>盐风港外的旧铸库重新轰鸣。链甲门场、风箱回廊、熔盐坩埚与炉心封库连续作战；生命、法力、道具次数和30份补给跨房继承。整段自动执行，房间间不能临时改配。</p><p>建议熟悉职业分工后挑战，成长阶段不限制进入。先看四场敌情：首房聚集且弱法，第二房两翼分散并受抗法药师救护，第三房唤炉者反复补召，末房两类支援拥有不同抗性。所有压力来自可见技能与抗性，没有额外隐藏灼烧。</p><div class="bar"><button data-foundry-plan="split">载入分工集火</button><button data-foundry-plan="shelter">载入分阵护后</button><button data-foundry-plan="plain">载入直接推进</button></div><p>方案只提供战术起点，不赠送训练或装备。分阵方案把潮术师与药师移出中央，并把屏障转向后排；代价是失去集中辅助的部分覆盖。分工方案集中中央辅助，保留低耗后备，把材料留给指定支援。实际公会仍采用当前个人资产与已应用伙伴职责，请在出征前核对。</p><p>通关可带回风箱巡衣或炉心尺规；首通固定风箱巡衣。巡衣提高敏捷与远程抗性，降低智力及法术抗性；尺规提高感知/智力，牺牲体质。领取后可分配到个人装备栏。</p>';
+}
+$('#foundry-brief').onclick=e=>{const b=e.target.closest('[data-foundry-plan]');if(!b)return;const next=foundryConfig(b.dataset.foundryPlan);next.seed=config.seed;replaceConfig(next);scope='';persist();planner();view('planning');setPrep('team');tell('铸库战术起点已载入；当前公会资产与已应用伙伴职责保留，请核对四场实际指令。');};

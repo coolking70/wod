@@ -1,0 +1,11 @@
+// Original side-dungeon content. Every pressure source is an ordinary visible
+// skill, formation or resistance; there is no hidden environment damage.
+const row=(skill,target='front',mode='repeat')=>({skill,target,mode});
+const attrs={str:13,con:12,int:15,dex:15,cha:8,agi:12,per:13,wil:14};
+const enemy=(id,name,pos,skill,hp,level=8)=>({id,name,role:'铸库守军',mark:skill==='shot'?'弩':skill==='strike'?'锤':'炉',side:'enemy',pos,defenseFocus:'resist',defenses:{melee:'natural',ranged:'natural',magic:'natural'},gear:'field',attrs:{...attrs},skills:{[skill]:level},hp,maxHp:hp,mp:80,maxMp:80,prep:[],main:[row(skill,skill==='wave'?'center':skill==='shot'?'rear':'front')],healing:{enabled:false}});
+export const FOUNDRY_ROOMS=[
+ {id:'foundry_gate',name:'01 · 锈链门场',note:'两名链甲守军集中前排，近战/远程抗性35%、法术弱点20%；后排弩手攻击我方后排。法术群攻可利用开场聚集，但符纸还要撑过另外三场。没有隐藏环境伤害。',enemies:[...['fg1','fg2'].map(id=>({...enemy(id,'锈链守军','front','strike',145),resistances:{melee:35,ranged:35,magic:-20}})),{...enemy('fg3','巡炉弩手','rear','shot',120),attrs:{...attrs,dex:18,per:16}}]},
+ {id:'foundry_bellows',name:'02 · 风箱回廊',note:'两翼弩手分散射击后排，同位置群攻不能兼顾。后排药炉师法术抗性65%、远程弱点15%，会消耗自己的行动救护；射手切治疗者、法师处理侧翼是一个分工起点，也可先压低前线承伤。',enemies:[...['left','right'].map((pos,i)=>({...enemy('fb'+i,'风箱弩手',pos,'shot',120),attrs:{...attrs,dex:18,agi:14,per:16}})),{...enemy('fbm','药炉师','rear','shot',140,7),skills:{shot:7,heal:8},resistances:{magic:65,ranged:-15},healing:{enabled:true,threshold:.65,target:'all',priority:'lowest'}}]},
+ {id:'foundry_crucible',name:'03 · 熔盐坩埚',note:'中央唤炉者远程抗性60%，会在潮卫倒下后继续召唤。前排守军与左翼术士拖住队伍，术士的法术攻击中央。击倒召唤来源会驱散其潮卫；分散与集中辅助仍有取舍。',enemies:[enemy('fcg','坩埚守军','front','strike',180,9),{...enemy('fcs','唤炉者','center','spark',160),skills:{spark:8,sentinel:8},prep:[row('sentinel','front')],resistances:{ranged:60}},{...enemy('fcw','熔盐术士','left','wave',140),attrs:{...attrs,int:18,wil:16}}]},
+ {id:'foundry_vault',name:'04 · 炉心封库',note:'前排炉心监工以守势拖延；左翼护炉师持续屏障保护前排，远程抗性55%、法术弱点15%。后排余烬咏唱者法术抗性65%、远程弱点15%，群攻中央。把输出类型分给不同支援，或先稳住防线再拆除保护。',enemies:[{...enemy('fvg','炉心监工','front','strike',260,10),skills:{strike:10,guard:7},prep:[row('guard','self')]},{...enemy('fvp','护炉师','left','spark',140),skills:{spark:8,ward:8},prep:[row('ward','front')],resistances:{ranged:55,magic:-15}},{...enemy('fvc','余烬咏唱者','rear','wave',140,9),attrs:{...attrs,int:18,wil:16},resistances:{magic:65,ranged:-15}}]}
+];

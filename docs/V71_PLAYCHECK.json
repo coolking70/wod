@@ -1,0 +1,4543 @@
+{
+  "note": "72 bounded new-content functional playchecks; discovery and confirmation separated. Normal starting assets or normally earned two-rank training. Single seeds and multi-setting plans do not establish global balance or independent causality.",
+  "count": 72,
+  "groups": [
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "n": 8,
+      "wins": 8,
+      "allSix": 8,
+      "rounds": 147,
+      "meanHerb": 4.75,
+      "meanRune": 0
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "n": 8,
+      "wins": 8,
+      "allSix": 8,
+      "rounds": 129,
+      "meanHerb": 4.125,
+      "meanRune": 3
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "n": 8,
+      "wins": 8,
+      "allSix": 8,
+      "rounds": 147,
+      "meanHerb": 2,
+      "meanRune": 3
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "n": 8,
+      "wins": 8,
+      "allSix": 8,
+      "rounds": 147,
+      "meanHerb": 4.875,
+      "meanRune": 0
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "n": 8,
+      "wins": 8,
+      "allSix": 8,
+      "rounds": 126,
+      "meanHerb": 4.875,
+      "meanRune": 3
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "n": 8,
+      "wins": 8,
+      "allSix": 8,
+      "rounds": 144,
+      "meanHerb": 2.375,
+      "meanRune": 3
+    }
+  ],
+  "samples": [
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 101,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 616,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 599,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 554,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 578,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 102,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 595,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 618,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 8,
+          "hp": 585,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 584,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 103,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 611,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 604,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 541,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 580,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 104,
+      "won": false,
+      "cleared": 3,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 545,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 6,
+          "hp": 490,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 17,
+          "hp": 103,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": false,
+          "rounds": 3,
+          "hp": 0,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 0,
+      "rounds": 29,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": "远征停止：队伍全员倒下。"
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 201,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 596,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 548,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 579,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 202,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 597,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 535,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 600,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 203,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 600,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 590,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 588,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 530,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 2
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 204,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 582,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 593,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 586,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 608,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 2
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 205,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 593,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 624,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 574,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 506,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 206,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 613,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 612,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 542,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 564,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 207,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 601,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 640,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 621,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 550,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 208,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 627,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 595,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 517,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 504,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 101,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 623,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 604,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 513,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 516,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 102,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 586,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 555,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 559,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 103,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 578,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 640,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 589,
+          "supplies": {
+            "herb": 4,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 508,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 104,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 4,
+          "hp": 580,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 628,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 548,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 586,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 201,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 592,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 615,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 591,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 458,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 202,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 594,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 597,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 528,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 549,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 203,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 574,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 596,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 596,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 563,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 5
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 5
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 204,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 559,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 580,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 557,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 205,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 580,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 605,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 580,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 588,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 206,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 7,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 620,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 533,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 549,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 207,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 586,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 605,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 581,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 518,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 208,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 2,
+          "hp": 585,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 624,
+          "supplies": {
+            "herb": 5,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 588,
+          "supplies": {
+            "herb": 4,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 552,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 101,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 624,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 594,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 534,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 7,
+          "hp": 561,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 102,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 604,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 612,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 604,
+          "supplies": {
+            "herb": 4,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 614,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 103,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 620,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 576,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 556,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 573,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 104,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 546,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 602,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 595,
+          "supplies": {
+            "herb": 2,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 550,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 201,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 636,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 604,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 536,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 576,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 202,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 589,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 589,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 553,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 532,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 203,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 4,
+          "hp": 596,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 629,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 583,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 607,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 204,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 610,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 614,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 614,
+          "supplies": {
+            "herb": 4,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 604,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 205,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 579,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 511,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 533,
+          "supplies": {
+            "herb": 2,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 538,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 206,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 599,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 587,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 535,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 536,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 207,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 4,
+          "hp": 587,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 584,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 587,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 576,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 2
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 21,
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 2
+      },
+      "defeat": null
+    },
+    {
+      "growth": "fresh",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 208,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 592,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 573,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 562,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 546,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 101,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 616,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 599,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 554,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 578,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 102,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 595,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 618,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 8,
+          "hp": 585,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 584,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 103,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 611,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 604,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 541,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 580,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "discovery",
+      "seed": 104,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 615,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 623,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 8,
+          "hp": 576,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 588,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 20,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 201,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 596,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 548,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 579,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 202,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 597,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 534,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 553,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 203,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 600,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 590,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 588,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 542,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 2
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 204,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 582,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 593,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 586,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 608,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 2
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 2
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 205,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 593,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 624,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 574,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 506,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 206,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 613,
+          "supplies": {
+            "herb": 9,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 612,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 562,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 573,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 207,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 601,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 640,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 3
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 621,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 550,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "plain",
+      "group": "confirmation",
+      "seed": 208,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 627,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 8
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 595,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 7,
+          "hp": 517,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 2
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 504,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 1
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 101,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 623,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 608,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 517,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 520,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 102,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 586,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 555,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 559,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 103,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 578,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 640,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 589,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 571,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 17,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "discovery",
+      "seed": 104,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 4,
+          "hp": 580,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 632,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 612,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 548,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 201,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 592,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 615,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 576,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 563,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 202,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 575,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 611,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 574,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 553,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 203,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 574,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 596,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 7
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 605,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 560,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 5
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 5
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 204,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 559,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 584,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 4,
+          "hp": 561,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 15,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 205,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 580,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 605,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 580,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 588,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 206,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 640,
+          "supplies": {
+            "herb": 7,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 620,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 533,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 508,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 207,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 586,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 3,
+          "hp": 605,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 581,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 518,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "split",
+      "group": "confirmation",
+      "seed": 208,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 2,
+          "hp": 603,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 602,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 537,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 515,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 101,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 624,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 594,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 538,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 539,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 102,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 604,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 569,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 528,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 522,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 103,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 581,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 587,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 551,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 569,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "discovery",
+      "seed": 104,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 546,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 604,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 577,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 573,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 201,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 636,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 597,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 547,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 634,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 1,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 202,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 617,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 609,
+          "supplies": {
+            "herb": 6,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 589,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 572,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 203,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 4,
+          "hp": 596,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 629,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 585,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 613,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 204,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 612,
+          "supplies": {
+            "herb": 8,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 582,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 4,
+          "hp": 548,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 536,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 16,
+      "supplies": {
+        "herb": 4,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 205,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 579,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 513,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 6
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 6,
+          "hp": 547,
+          "supplies": {
+            "herb": 2,
+            "rune": 5,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 556,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 4
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 4
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 206,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 599,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 5,
+          "hp": 587,
+          "supplies": {
+            "herb": 8,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 538,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 5,
+          "hp": 540,
+          "supplies": {
+            "herb": 5,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 5,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 207,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 4,
+          "hp": 587,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 544,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 571,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 551,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 19,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    },
+    {
+      "growth": "trained",
+      "plan": "shelter",
+      "group": "confirmation",
+      "seed": 208,
+      "won": true,
+      "cleared": 4,
+      "rooms": [
+        {
+          "name": "01 · 锈链门场",
+          "won": true,
+          "rounds": 3,
+          "hp": 592,
+          "supplies": {
+            "herb": 9,
+            "rune": 8,
+            "arrow": 9
+          }
+        },
+        {
+          "name": "02 · 风箱回廊",
+          "won": true,
+          "rounds": 4,
+          "hp": 575,
+          "supplies": {
+            "herb": 7,
+            "rune": 7,
+            "arrow": 5
+          }
+        },
+        {
+          "name": "03 · 熔盐坩埚",
+          "won": true,
+          "rounds": 5,
+          "hp": 571,
+          "supplies": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 4
+          }
+        },
+        {
+          "name": "04 · 炉心封库",
+          "won": true,
+          "rounds": 6,
+          "hp": 566,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 3
+          }
+        }
+      ],
+      "alive": 6,
+      "rounds": 18,
+      "supplies": {
+        "herb": 3,
+        "rune": 3,
+        "arrow": 3
+      },
+      "defeat": null
+    }
+  ],
+  "normalProgression": {
+    "seed": 3,
+    "won": true,
+    "firstClear": true,
+    "gold": 220,
+    "xp": 90,
+    "loot": [
+      "bellowscoat"
+    ],
+    "assigned": "bellowscoat"
+  }
+}

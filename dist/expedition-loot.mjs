@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ foundry:{bonus:70,xp:25,firstGold:70,firstXp:25,pool:['bellowscoat','kilngauge']},
  harbor:{bonus:85,xp:30,firstGold:80,firstXp:30,pool:["beaconrod","quaycoat","tidecompass"]},
  seasoned:{bonus:65,xp:25,firstGold:65,firstXp:25,pool:["tidebow","saltcloak","remedybag"]},
  veteran:{bonus:90,xp:40,firstGold:90,firstXp:40,pool:["reliquaryshield","bellfocus","votivelute"]},
