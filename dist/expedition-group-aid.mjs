@@ -4,7 +4,7 @@ export const GROUP_AID_RULE='先沿既有最低生命比例/优先自保策略�
 export function validateGroupAid(healing,template){if(!Object.hasOwn(healing,'groupAid'))return;if(typeof healing.groupAid!=='boolean'||!template.skills.includes('groupheal'))throw Error('同位合剂仅药师可配置，须为布尔值');}
 export function groupAidCandidates(actor,units,target,lead){
  if(!lead||lead.hp<=0||lead.hp/lead.maxHp>actor.healing.threshold)return [];
- return units.filter(u=>u.side===actor.side&&u.hp>0&&u.hp<u.maxHp&&u.hp/u.maxHp<=actor.healing.threshold&&u.pos===lead.pos&&(target==='all'||(target==='self'?u.id===actor.id:u.pos===target))).sort((a,b)=>(Number(b.id===lead.id)-Number(a.id===lead.id)||a.hp/a.maxHp-b.hp/b.maxHp)).slice(0,SKILLS.groupheal.max);
+ return units.filter(u=>u.side===actor.side&&!u.mechanism&&u.hp>0&&u.hp<u.maxHp&&u.hp/u.maxHp<=actor.healing.threshold&&u.pos===lead.pos&&(target==='all'||(target==='self'?u.id===actor.id:u.pos===target))).sort((a,b)=>(Number(b.id===lead.id)-Number(a.id===lead.id)||a.hp/a.maxHp-b.hp/b.maxHp)).slice(0,SKILLS.groupheal.max);
 }
 export function groupAidDecision(actor,units,stock,lead){
  const candidates=groupAidCandidates(actor,units,actor.healing.target,lead),mana=skillManaCost(actor,'groupheal'),herb=SKILLS.groupheal.itemAmount;

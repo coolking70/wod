@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.121「个人演武」**，分支`feature/v121-personal-sparring`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.122「潮闸机廊」**，分支`feature/v122-dungeon-mechanisms`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[地城机关与潮闸机廊](docs/V122_DUNGEON_MECHANISMS.md)：机关只接受专门拆解，射手用普通行动/3法力处理机关，队友清生物并分位保护；不把机关当类型免疫或普通治疗对象。正常19/20六人生还至2060/2150，先射后拆多用两箭且喷口多行动一轮，合法无拆解实验24回合未过首房。全部为标明边界的暂定改编，见[V122验证](docs/V122_CHECKS.json)。
 
 新增[个人演武](docs/V121_PERSONAL_SPARRING.md)：自己的实际英雄/普通培养/独立进阶对战三名公开AI，用默认指令观察无队友时的真实后备与资源。专用事件回放和过期提示，无奖励/存档写入；固定731三次落败保留，真实付20XP后回六人正式18至1920金币，未把单挑当职业排名。见[V121验证](docs/V121_CHECKS.json)。
 

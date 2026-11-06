@@ -5,14 +5,14 @@ import {healingBlockTrace} from './expedition-disruption.mjs';
 export const HEAL_PRIORITIES={lowest:'最低生命比例',self_first:'自身达阈值时优先自保'};
 export function healingPlanDescription(unit){const p=unit.healing;if(!p?.enabled)return '未启用自动救护';return `≤${Math.round(p.threshold*100)}% / ${HEAL_PRIORITIES[p.priority||'lowest']} / ${POS[p.target]||{all:'全队',self:'自身'}[p.target]}；单救等级${unit.skills.heal} / ${skillManaCost(unit,'heal')}法力/1药草${p.groupAid?`；同位合剂优先，等级${unit.skills.groupheal} / ${skillManaCost(unit,'groupheal')}法力/2药草；最紧急伤员同位至少2名达阈值伤员，最多3人，各恢复本技能均值45%，不足人数或资源回单救`:''}；占普通行动，禁疗与道具优先照旧。`;}
 export function selectHealingTarget(actor,units,target){
- const ranked=units.filter(u=>u.side===actor.side&&u.hp>0&&u.hp<u.maxHp&&(target==='all'||(target==='self'?u.id===actor.id:u.pos===target))).sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp);
+ const ranked=units.filter(u=>u.side===actor.side&&!u.mechanism&&u.hp>0&&u.hp<u.maxHp&&(target==='all'||(target==='self'?u.id===actor.id:u.pos===target))).sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp);
  if(actor.healing?.priority==='self_first'){const self=ranked.find(u=>u.id===actor.id&&u.hp/u.maxHp<=actor.healing.threshold);if(self)return self;}
  return ranked[0];
 }
 // Read-only facts captured at an actual main-action opportunity. No RNG or mutations.
 export function healingDecision(actor,units,supplies){
  const policy=actor.healing||{},threshold=policy.threshold??0;
- const candidates=units.filter(u=>u.side===actor.side).map(u=>{
+ const candidates=units.filter(u=>u.side===actor.side&&!u.mechanism).map(u=>{
   const inRange=policy.target==='all'||(policy.target==='self'?u.id===actor.id:u.pos===policy.target);
   const ratio=u.hp/u.maxHp;
   return {id:u.id,name:u.name,hp:u.hp,maxHp:u.maxHp,ratio,inRange,reason:u.hp<=0?'已倒下':!inRange?'范围之外':u.hp>=u.maxHp?'生命已满':ratio>threshold?'高于阈值':'满足阈值'};

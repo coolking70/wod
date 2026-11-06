@@ -1,0 +1,1269 @@
+{
+  "startGold": 1920,
+  "own": "e",
+  "normal": [
+    {
+      "plan": "disarm",
+      "seed": 19,
+      "gold": 2060,
+      "objective": {
+        "id": "clear",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 2,
+          "rooms": 2,
+          "rounds": 7,
+          "alive": 6,
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        }
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 140,
+        "xp": 60,
+        "firstClear": true,
+        "loot": []
+      },
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "disarmCasts": 6,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 10
+    },
+    {
+      "plan": "rush",
+      "seed": 20,
+      "gold": 2150,
+      "objective": {
+        "id": "survive",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 2,
+          "rooms": 2,
+          "rounds": 7,
+          "alive": 6,
+          "herb": 10,
+          "rune": 6,
+          "arrow": 6
+        }
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 90,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 6
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "f",
+            "d"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "c",
+            "d"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 6
+    }
+  ],
+  "paid": {
+    "hero": "b",
+    "skill": "disarm",
+    "cost": 20,
+    "before": 875,
+    "after": 855
+  },
+  "matrix": [
+    {
+      "plan": "disarm",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "disarmCasts": 6,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "f",
+            "d"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 13
+    },
+    {
+      "plan": "disarm",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 2,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 5
+    },
+    {
+      "plan": "disarm",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "disarmCasts": 7,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "d",
+            "c"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "f",
+            "d"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "d",
+            "c"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 8
+    },
+    {
+      "plan": "disarm",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "disarmCasts": 7,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 7
+    },
+    {
+      "plan": "disarm",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 2,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "f",
+            "c"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 3
+    },
+    {
+      "plan": "disarm",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "disarmCasts": 6,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 2,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "f",
+            "c"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 4
+    },
+    {
+      "plan": "rush",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 6
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "f",
+            "c"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "f",
+            "d"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 14
+    },
+    {
+      "plan": "rush",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 6,
+        "arrow": 6
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 14
+    },
+    {
+      "plan": "rush",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 6
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "d",
+            "c"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "f",
+            "d"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "d",
+            "c"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 14
+    },
+    {
+      "plan": "rush",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 6
+      },
+      "disarmCasts": 6,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 5,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "c",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "d",
+            "f"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 11
+    },
+    {
+      "plan": "rush",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 6
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "d",
+            "c"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "f",
+            "d"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "d",
+            "f",
+            "c"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 13
+    },
+    {
+      "plan": "rush",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 6
+      },
+      "disarmCasts": 5,
+      "mechanismDamage": 180,
+      "disabled": [
+        {
+          "room": 0,
+          "round": 3,
+          "id": "twt",
+          "actor": "b"
+        },
+        {
+          "room": 1,
+          "round": 4,
+          "id": "tst",
+          "actor": "b"
+        }
+      ],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 1,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "d",
+            "c"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "skill": "wave",
+          "targets": [
+            "c",
+            "f",
+            "d"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "skill": "wave",
+          "targets": [
+            "f",
+            "c",
+            "d"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 8
+    }
+  ],
+  "bad": {
+    "won": false,
+    "alive": 6,
+    "rounds": [
+      24
+    ],
+    "supplies": {
+      "herb": 10,
+      "rune": 2,
+      "arrow": 8
+    },
+    "disarmCasts": 0,
+    "mechanismDamage": 0,
+    "disabled": [],
+    "mechanismAttacks": [
+      {
+        "room": 0,
+        "round": 1,
+        "skill": "volley",
+        "targets": [
+          "e",
+          "b"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 2,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 3,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 4,
+        "skill": "volley",
+        "targets": [
+          "e",
+          "b"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 5,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 6,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 7,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 8,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 11,
+        "skill": "volley",
+        "targets": [
+          "e",
+          "b"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 16,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      },
+      {
+        "room": 0,
+        "round": 21,
+        "skill": "volley",
+        "targets": [
+          "b",
+          "e"
+        ]
+      }
+    ],
+    "freeCategoryChecks": 206,
+    "rewarded": false
+  },
+  "limits": "Fixed two starting plans and six seeds, no trap stats/HP/cost changes after initial execution. Missing disarm is kept as a legal failure, never rewarded. Changed plans, training and normal seeds do not isolate benefits; finite samples are not class/roster/global balance. Category exclusion is not damage-type immunity; only actual durability loss is counted, no prevented-damage or win-contribution estimate."
+}

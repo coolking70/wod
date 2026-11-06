@@ -1,0 +1,2198 @@
+{
+  "stage": "v0.122",
+  "baseline": {
+    "baseline": "dec82fa5bbe275c86869c4dc8b62aec099338fad",
+    "tree": "62fcdc8c13ce58202449bf5916a62fda418bf5ee",
+    "branch": "feature/v121-personal-sparring",
+    "status": "",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "remote": "https://github.com/coolking70/wod.git"
+  },
+  "baselineTests": {
+    "tests": 958,
+    "passed": 958,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "baseline-tests.tap"
+  },
+  "unitTests": {
+    "tests": 19,
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "unit-final.tap"
+  },
+  "fullTests": {
+    "tests": 977,
+    "passed": 977,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-final-tests.tap"
+  },
+  "browserAcceptance": {
+    "passed": true,
+    "count": 30,
+    "results": [
+      {
+        "version": 76,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v76"
+      },
+      {
+        "version": 77,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v77"
+      },
+      {
+        "version": 94,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v94"
+      },
+      {
+        "version": 95,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v95"
+      },
+      {
+        "version": 96,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v96"
+      },
+      {
+        "version": 97,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v97"
+      },
+      {
+        "version": 98,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v98"
+      },
+      {
+        "version": 99,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v99"
+      },
+      {
+        "version": 101,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v101"
+      },
+      {
+        "version": 102,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v102"
+      },
+      {
+        "version": 103,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v103"
+      },
+      {
+        "version": 104,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v104"
+      },
+      {
+        "version": 105,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v105"
+      },
+      {
+        "version": 106,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v106"
+      },
+      {
+        "version": 107,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v107"
+      },
+      {
+        "version": 108,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v108"
+      },
+      {
+        "version": 109,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v109"
+      },
+      {
+        "version": 110,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v110"
+      },
+      {
+        "version": 111,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v111"
+      },
+      {
+        "version": 112,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v112"
+      },
+      {
+        "version": 113,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v113"
+      },
+      {
+        "version": 114,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v114"
+      },
+      {
+        "version": 115,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v115"
+      },
+      {
+        "version": 116,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v116"
+      },
+      {
+        "version": 117,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v117"
+      },
+      {
+        "version": 118,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v118"
+      },
+      {
+        "version": 119,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v119"
+      },
+      {
+        "version": 120,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v120"
+      },
+      {
+        "version": 121,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v121"
+      },
+      {
+        "version": 122,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v122/acceptance/browser-v122"
+      }
+    ],
+    "retry": {
+      "passed": true,
+      "retries": [
+        {
+          "version": 95,
+          "exit": 0,
+          "passed": true,
+          "dir": "/workspace/wod-evidence/v122/acceptance/browser-v95"
+        },
+        {
+          "version": 94,
+          "exit": 0,
+          "passed": true,
+          "dir": "/workspace/wod-evidence/v122/acceptance/browser-v94"
+        },
+        {
+          "version": 99,
+          "exit": 0,
+          "passed": true,
+          "dir": "/workspace/wod-evidence/v122/acceptance/browser-v99"
+        },
+        {
+          "version": 113,
+          "exit": 0,
+          "passed": true,
+          "dir": "/workspace/wod-evidence/v122/acceptance/browser-v113"
+        },
+        {
+          "version": 117,
+          "exit": 0,
+          "passed": true,
+          "dir": "/workspace/wod-evidence/v122/acceptance/browser-v117"
+        },
+        {
+          "version": 115,
+          "exit": 0,
+          "passed": true,
+          "dir": "/workspace/wod-evidence/v122/acceptance/browser-v115"
+        }
+      ],
+      "unchangedPassedVersions": [
+        76,
+        77,
+        96,
+        97,
+        98,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        114,
+        116,
+        118,
+        119,
+        120,
+        121,
+        122
+      ],
+      "reason": "Only six obsolete exact catalogue assertions updated25→26/75→78; runtime and combat/report/reward assertions unchanged.",
+      "additionalRetry": {
+        "version": 117,
+        "passed": true,
+        "reason": "Remaining later exact6/75 goal denominator updated6/78; all complete report, state and reward checks retained. Initial retry saved in browser-retry-initial.json."
+      }
+    },
+    "newDesktopAnd390px": {
+      "passed": true,
+      "steps": [
+        "合法无拆解实验全报告同API：24回合未过首房，机弩75耐久完整、无领取，默认/精华机关排除→实际后备/空过→返回均只读，1920真实公会未变化。",
+        "26路线进入新机廊，7敌含两机关，耐久/类别独立于免疫，准备草稿和公会实际逐房拆解分工均可见。正常seed19完整报告/pending同API，六人首通140/60至2060、实际拆解含在本人实伤，射手付20XP875→855培养，仍本人E。方案命名绑定后整档导出保留原资产/寻物目标。",
+        "390px整档恢复已培养伙伴/命名绑定；rush起点保留种子/目标/全部资产，正常seed20完整报告/pending同API。拆除后快照0耐久/已拆除、个人实伤中拆解180可读；多付两箭且喷口多行动一轮的代价原样保存。普通90/40至2150、首证19/20，无装备或额外奖励；旧14报告原样不可再领，无页面错误/横向溢出。"
+      ],
+      "errors": []
+    },
+    "managedCompanionAbsenceWarningAndExactRestore": true
+  },
+  "syntax": {
+    "passed": true,
+    "count": 485,
+    "failures": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 133,
+    "checkedReferences": 150,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyComparison": {
+    "reference": "dec82fa5bbe275c86869c4dc8b62aec099338fad",
+    "priorRoutes": 25,
+    "currentRoutes": 26,
+    "count": 56,
+    "defaultReportCount": 50,
+    "actualHistoricalReports": 6,
+    "completeComparison": true,
+    "onlyAllowedExclusion": "party[ranger].skills.disarm after asserting the precise new base/specialization/training value and absence in baseline",
+    "combatSnapshotsDiceActionsPaymentsRewardsUnchanged": true,
+    "rows": [
+      {
+        "route": "ossuary",
+        "seed": 1,
+        "sha256": "d87ca5dec7555cb6075ff56ad9ec50e82a621c0c489e0a1179ff20b6fd1a8158",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "ossuary",
+        "seed": 731,
+        "sha256": "f69ef873f44e25217c636288f2bc2df188b7f74aaba4e74ada106ff256f01ecb",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "breakwater",
+        "seed": 1,
+        "sha256": "8c9d2656dee10f0809e391d8372d97d6373ae7c5a3644f2926bd0ea334f4d6e1",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "breakwater",
+        "seed": 731,
+        "sha256": "e79d45f950648b62bcb6c63e15a550a5796cf468fd892845b525dfbd732566b7",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "counterpoint",
+        "seed": 1,
+        "sha256": "dfa1e96122cfe7526878dd0149134d6dacadb1c8ff77f035bedcefb80b7bb1e8",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "counterpoint",
+        "seed": 731,
+        "sha256": "a561bcc7a127a49fd44911d45c7edd83f04f80c28ac189a293831a1e0e9a0151",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "confluence",
+        "seed": 1,
+        "sha256": "0b08883b37d64533c5a806427771b59a8f2c5ef49acd602ff9270d73d0d3290d",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "confluence",
+        "seed": 731,
+        "sha256": "f7b90ff1b3bb8c85269645b69da1b511781ef7733562e8734339e2bf969c81ba",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "67125bf676673c5c288cfe51562a16baa3f7ecba3314b1d8adbe1e430fc35e4b",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "e90766e11b310c1875e4b2e48b36f4bde7b07d6f624021a645bea154433bf96c",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "e753b76d2b370eed806922e89e74d3b8834f6d0c2546a0c9d30538ce8ed13699",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "2e2c78ec038e88aa7740ba6e8939eb96c722e0b041364eb37cdaaf90831b69e3",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "b6cc7c26985c09e7d6b7ea13afe44b624b9df02e8ef5faa334e1b6469ce101ae",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "ea4740b2caa0bc95552c4ce64cbf0b9067a15e3c7eafce06921361eb188811a0",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "a347a1763a6837db7eb2afbd0cc87672dbae16da205732e6d456b7fc24ef691e",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "6e694d274e7dcda04d046cd7b10ea320154ae94b2f69671b756c7592f473337a",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "7052502a74422aa25ef0c11c58505e78d419c0a66f94dbf20e0552610f6f526d",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "7e554ce7a74b5fcb6e16364f520a50677f78a2cc2d3902f9dc125a028a5ceba3",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "9e9b8290c43a5acb423f2534a9d3984aca849b3bc67491ea49bb8b7ce78f6706",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "b8929f852cdbbc9c0fc6867ee8ad45f45e6aad95efd5c2087079c4ef4f55d66b",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "c7f4a218756497cc800f7697234ef43a145b2bd269769379d71c363685ad11da",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "b80362c21b71497c2a056d9791fa5a9da59f0825998e7b7d1f26529a8378b8e7",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "8ad2ef279c85065d559f027e4abc9739c1e1bc6df106cd882bb2a1343efb4629",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "c019b2ebdc6875f4ce4472c90bd63868847a5bb09343e5d67255a5d40c587af8",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "48ac9671803a47a6d27ba253f204bc7bb7c25538bd14f34fd590cd66dcba1dcf",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "582729f02c623cca09d9ec154a6084a255b5e703768f1a63d038a06d1d6828b8",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "4ee51397336a485ed1fb11af3071b9ae0be50c811c8345d6ce58dbc4c3723424",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "051e592e109369e60644d7ca2cf51364e6c014bcd74dcbda5213fbf232f8e300",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "e8a5182d82e4ed5fc937f7fae0952050ff44978cb28a91d2a423af27f3ad4914",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "10c5bd04e4530534146b555e395ce99ae351312592e53b7991aa33a5d0382dee",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "df239c167ebee0109aead635a6b026e6c56a18275372e3dc272c59fa390e0f9c",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "2195e99cf491ed9b6a92d8d0ada489c08192fbe5074443141a30127a4a84ca64",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "b0441c79be867f3080f8a79719016e0f635f5bc81152f30b5a3fc7b0ff20d502",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "26d426ddd3b5401bc0133b946303f42b2e3c5a455601ada1a2a8b74627f446c6",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "546af5be0c6ba3628005e94aed20761502d8ebb985c61200540c1a26519dd265",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "184f8338990fcd62a6c1934c0da79afa9e67c064000d7f3426c10789f4800d49",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "bf3ff7c3cf7001d85143f4c3922a3ba5dd80a04f9debc23a1af2c9399df6072d",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "db0908d8bc5009e119105c8d80e0ecce3a28ca828ef7ce1efee203c2be4a66bd",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "6f1aee009447ed76daab2a199629c12b73cf18785db831c86699fe46dd454024",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "0647245c520f5cf770afe16c13d9c08630b0b4c106943c7468ab54743b3723c0",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "255bd9ca6e6f58f91e7bdc6c14a1dab8b686917b1ed11c0f7bb510a96943eeb0",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "142efdeaee3ba53ad21584caf50472af7b62eb2203bf337f7d4aa0e889836c86",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "67630e80ca4e7735691f8a7c375df1bca3d19915b7f03e4559ac66706918e2c7",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "2a8590b7805ea3f07f8e209067562317bed8f9d9f22cf5fd2eafce212f5ddd6f",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "11a36719c77ca15b601accbc0e7bf5d67ff06caa02a3b1810168f6dc067fbc12",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "c0fca005bcfa923dfa567552fdfb434077a63c350f3b3c0f895b95ea45163da2",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "383f974de167e68d988f3c2b0e325c0e6526c77a4dc23c28f1f9ef5c6ce7f360",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "763dc364867e257f0436ee651072a2ba091ac75d50c806b6bae626c5c716de6a",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "ea23457093c68584f3652c15fe9114f200b4d26c0466a6941466db0657b12e8c",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "9c2150dc6e7488c751d26a4124e441cbb7e0bc3a02699fc78bb1ce0370b12e0a",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "kind": "earned-history",
+        "id": 7,
+        "route": "courier",
+        "seed": 7,
+        "sha256": "0f33fffc14b3260844827b42fb6d44558f80e7e43eb81f980bfcc2dab18ff0c5",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "kind": "earned-history",
+        "id": 14,
+        "route": "confluence",
+        "seed": 14,
+        "sha256": "a9a74b4ee5655211c5e102e6ea478143c947ddaf13f1fc2fce7d12b00e15fd8a",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "kind": "earned-history",
+        "id": 15,
+        "route": "confluence",
+        "seed": 15,
+        "sha256": "0d12fe6d4d46731015c3453e84b6e4409ed5332827ed35243927ffc3a05c3ecb",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "kind": "earned-history",
+        "id": 16,
+        "route": "ossuary",
+        "seed": 16,
+        "sha256": "5616d5d68cef1ce360609db60907e171c8ef8af945373bc775860298ae2f3622",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "kind": "earned-history",
+        "id": 17,
+        "route": "ossuary",
+        "seed": 17,
+        "sha256": "063e2781692536815de097f7b7b8c62d70ce407b622fad7e1484d1aec05ad4e6",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      },
+      {
+        "kind": "earned-history",
+        "id": 18,
+        "route": "ossuary",
+        "seed": 18,
+        "sha256": "e946ee9e386054e33685791337c901d851f88a660b7bc3f95c8ba9fbbadfa4b8",
+        "excluded": [
+          "party[b].skills.disarm"
+        ]
+      }
+    ]
+  },
+  "realPlay": {
+    "startGold": 1920,
+    "own": "e",
+    "normal": [
+      {
+        "plan": "disarm",
+        "seed": 19,
+        "gold": 2060,
+        "objective": {
+          "id": "clear",
+          "met": true,
+          "metrics": {
+            "won": true,
+            "cleared": 2,
+            "rooms": 2,
+            "rounds": 7,
+            "alive": 6,
+            "herb": 10,
+            "rune": 6,
+            "arrow": 8
+          }
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 60,
+          "firstClear": true,
+          "loot": []
+        },
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "disarmCasts": 6,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 10
+      },
+      {
+        "plan": "rush",
+        "seed": 20,
+        "gold": 2150,
+        "objective": {
+          "id": "survive",
+          "met": true,
+          "metrics": {
+            "won": true,
+            "cleared": 2,
+            "rooms": 2,
+            "rounds": 7,
+            "alive": 6,
+            "herb": 10,
+            "rune": 6,
+            "arrow": 6
+          }
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 90,
+          "xp": 40,
+          "firstClear": false,
+          "loot": []
+        },
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 6
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "f",
+              "d"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 6
+      }
+    ],
+    "paid": {
+      "hero": "b",
+      "skill": "disarm",
+      "cost": 20,
+      "before": 875,
+      "after": 855
+    },
+    "matrix": [
+      {
+        "plan": "disarm",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "disarmCasts": 6,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "f",
+              "d"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 13
+      },
+      {
+        "plan": "disarm",
+        "seed": 2,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 2,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 5
+      },
+      {
+        "plan": "disarm",
+        "seed": 7,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "disarmCasts": 7,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "d",
+              "c"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "f",
+              "d"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "d",
+              "c"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 8
+      },
+      {
+        "plan": "disarm",
+        "seed": 19,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "disarmCasts": 7,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 7
+      },
+      {
+        "plan": "disarm",
+        "seed": 73,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 2,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "f",
+              "c"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 3
+      },
+      {
+        "plan": "disarm",
+        "seed": 731,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "disarmCasts": 6,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 2,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "f",
+              "c"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 4
+      },
+      {
+        "plan": "rush",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 6
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "f",
+              "c"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "f",
+              "d"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 14
+      },
+      {
+        "plan": "rush",
+        "seed": 2,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 6
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "c",
+              "d"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 14
+      },
+      {
+        "plan": "rush",
+        "seed": 7,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 6
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "d",
+              "c"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "f",
+              "d"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "d",
+              "c"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 14
+      },
+      {
+        "plan": "rush",
+        "seed": 19,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 6
+        },
+        "disarmCasts": 6,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 5,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "c",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 11
+      },
+      {
+        "plan": "rush",
+        "seed": 73,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 6
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "d",
+              "c"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "f",
+              "d"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "d",
+              "f",
+              "c"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 13
+      },
+      {
+        "plan": "rush",
+        "seed": 731,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 6
+        },
+        "disarmCasts": 5,
+        "mechanismDamage": 180,
+        "disabled": [
+          {
+            "room": 0,
+            "round": 3,
+            "id": "twt",
+            "actor": "b"
+          },
+          {
+            "room": 1,
+            "round": 4,
+            "id": "tst",
+            "actor": "b"
+          }
+        ],
+        "mechanismAttacks": [
+          {
+            "room": 0,
+            "round": 1,
+            "skill": "volley",
+            "targets": [
+              "e",
+              "b"
+            ]
+          },
+          {
+            "room": 0,
+            "round": 2,
+            "skill": "volley",
+            "targets": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 1,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "d",
+              "c"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "skill": "wave",
+            "targets": [
+              "c",
+              "f",
+              "d"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "skill": "wave",
+            "targets": [
+              "f",
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "freeCategoryChecks": 8
+      }
+    ],
+    "bad": {
+      "won": false,
+      "alive": 6,
+      "rounds": [
+        24
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 2,
+        "arrow": 8
+      },
+      "disarmCasts": 0,
+      "mechanismDamage": 0,
+      "disabled": [],
+      "mechanismAttacks": [
+        {
+          "room": 0,
+          "round": 1,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 2,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 3,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 4,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 5,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 6,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 7,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 8,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 11,
+          "skill": "volley",
+          "targets": [
+            "e",
+            "b"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 16,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "room": 0,
+          "round": 21,
+          "skill": "volley",
+          "targets": [
+            "b",
+            "e"
+          ]
+        }
+      ],
+      "freeCategoryChecks": 206,
+      "rewarded": false
+    },
+    "limits": "Fixed two starting plans and six seeds, no trap stats/HP/cost changes after initial execution. Missing disarm is kept as a legal failure, never rewarded. Changed plans, training and normal seeds do not isolate benefits; finite samples are not class/roster/global balance. Category exclusion is not damage-type immunity; only actual durability loss is counted, no prevented-damage or win-contribution estimate."
+  },
+  "stateAssertions": {
+    "startGold": 1920,
+    "finalGold": 2150,
+    "normalDepartures": [
+      19,
+      20
+    ],
+    "ordinaryRewardsOnly": true,
+    "paidDisarmXp": 20,
+    "mechanismDamageSubset180NotAddedTwice": true,
+    "extraArrowAndTrapTurnRetained": true,
+    "old18HistoriesUnchanged": true,
+    "identityRolesWarehouseEquipmentGoalUnchanged": true,
+    "actualCourseAndOtherTrainingUnchanged": true,
+    "campaignAndNamedRouteBindingRestore": true,
+    "proofs": {
+      "clear": 19,
+      "survive": 20
+    },
+    "experimentNoClaim": true
+  },
+  "initialFindings": {
+    "unitInitial": {
+      "tests": 15,
+      "passed": 14,
+      "failed": 1,
+      "log": "unit-initial.tap",
+      "cause": "Healer at maxHP minus20 was still above80% threshold. Use a genuine60%-HP wounded recipient; no production threshold changes."
+    },
+    "fullInitial": {
+      "tests": 973,
+      "passed": 966,
+      "failed": 7,
+      "log": "full-initial-tests.tap",
+      "cause": "One same fixture error plus six obsolete exact catalogue totals25/75; strict expectations updated26/78, combat/reward assertions unchanged."
+    },
+    "waveFixture": {
+      "unitSecond": {
+        "tests": 18,
+        "passed": 17,
+        "failed": 1,
+        "log": "unit-second.tap"
+      },
+      "fullSecond": {
+        "tests": 976,
+        "passed": 975,
+        "failed": 1,
+        "log": "full-second-tests.tap"
+      },
+      "cause": "Missing required reinforcement id rejected by existing validation; added id without weakening schema."
+    },
+    "cursorFixture": {
+      "tests": 19,
+      "passed": 18,
+      "failed": 1,
+      "log": "unit-third.tap",
+      "cause": "A repeat fallback that itself loses all targets can cycle through the original failure search. Isolated still-legal repeat fallback vs cycle using explicit1-durability/10000HP wave fixtures; production cursor unchanged."
+    },
+    "browserInitial": {
+      "passed": false,
+      "total": 30,
+      "passedCount": 24,
+      "failedVersions": [
+        94,
+        95,
+        99,
+        113,
+        115,
+        117
+      ],
+      "file": "acceptance/browser-acceptance-initial.json",
+      "cause": "Only old exact route/goal catalogue assertions; six affected scripts rerun after strict26/78 corrections. Twenty-four passed scripts not needlessly repeated."
+    },
+    "browserRetry117": {
+      "file": "acceptance/browser-retry-initial.json",
+      "cause": "After route fix, later6/75 goal denominator also required exact6/78 update; reran only117 and passed. Final source step prose corrected to78; original raw stdout/steps retained without editing."
+    },
+    "preflight": "Temporary smoke omitted opening adventure before clicking hidden route, timed out. Explicit-navigation formal browser passed. Temporary session stopped with exit130; no persistent app changes.",
+    "assertionsWeakened": false,
+    "seedsChangedToPass": false,
+    "authoredTrapStatsOrCostsAdjustedAfterDiscovery": false
+  },
+  "referenceBoundary": {
+    "date": "2026-11-06",
+    "primary": [
+      {
+        "url": "https://www.world-of-dungeons.de/ency/Bestiarium",
+        "access": "public primary search index; direct open502, not retried",
+        "supports": "Historical bestiary says traps can only be attacked with Disarm Traps and many use special attacks with corresponding defense."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/Compendium_-_Classes_and_Races_-_Archer",
+        "access": "public primary search index; direct open502, not retried",
+        "supports": "Historical Archer list contains Detect Traps and Disarm Traps, listed at historical levels4/6, not implemented as current-server gates."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/Hero_-_Attributes",
+        "access": "public primary search index only",
+        "supports": "Historical attribute overview lists Perception/Agility for disarm defense; this prototype does not replicate that separate original defense."
+      }
+    ],
+    "adaptation": "Authored boolean mechanism, disarm as special category of existing ranged attack with per/dex/3MP/no material, existing armor/resistance/natural ranged defense, no physical interception, no ordinary healing/buff/mana targets, durability and all two-room enemies/stats/rewards are project-original provisional design. No fifth original attack/defense type or current level/skill-cost numbers claimed.",
+    "deniedReferenceRetries": false,
+    "currentServerRulesVerified": false
+  },
+  "scope": {
+    "combatEngineChanged": true,
+    "newAuthoredEnemyCategory": "mechanism:true",
+    "newOrdinarySkill": "ranger disarm",
+    "newRoute": "trapworks",
+    "routes": 26,
+    "gear": 40,
+    "ordinaryGoals": 78,
+    "newPlayerConfigFields": false,
+    "ordinaryTrainingCostsChanged": false,
+    "oldLootRewardsChanged": false,
+    "newGear": false,
+    "rulesetVersionChanged": false,
+    "permanentSuppliesImplemented": false,
+    "extraMechanismRewards": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "dist ships editable source directly; no bundler build"
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Supply persistence remains asked by parent and unimplemented, not an overall blocker.",
+    "limitations": [
+      "Only indexed historical primary support; new full-text pages502 and not retried, no current-server numeric claim.",
+      "Special category uses existing ranged attack/natural defense instead of original independent trap attack/defense;3MP/per-dex/power1.2/no materials/interception exclusion and all new content are original provisional design.",
+      "No hidden detection step or tool slot implemented; public authored devices always disclosed.",
+      "12 finite fresh successes plus two real earned runs and legal failed experiment do not establish global/roster balance or single-change benefit.",
+      "Low/high HP wave and summoned mechanism-owner fixtures isolate engine boundaries, not actual new dungeon or player assets.",
+      "No Firefox/Safari/physical-device validation.",
+      "Old report equality has exactly verified new ranger skill-catalogue field exclusions, not zero exclusions."
+    ]
+  }
+}
