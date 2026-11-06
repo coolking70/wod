@@ -1,0 +1,253 @@
+{
+  "version": "0.118",
+  "baseline": "9c53301ae83a8773a6a97692f0e2a3a96b3be59e",
+  "branch": "feature/v118-equipment-pursuit",
+  "baselineTests": {
+    "passed": 895,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "baseline-tests.tap"
+  },
+  "fullTests": {
+    "passed": 906,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-tests-final.tap"
+  },
+  "newTests": {
+    "count": 11,
+    "finalFullSuiteCovered": true,
+    "initialStandalone": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "log": "unit-initial.tap"
+    }
+  },
+  "browser": {
+    "passed": true,
+    "suites": 26,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "newWorkflowPageErrors": 0,
+    "log": "acceptance/browser-acceptance.json",
+    "newWorkflow": "acceptance/browser-v118/browser-v118.json",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 457,
+    "failed": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 125,
+    "checkedReferences": 142,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "9c53301ae83a8773a6a97692f0e2a3a96b3be59e",
+    "routes": 24,
+    "count": 48,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "legacyChecker": "scripts/check-v118-legacy.mjs",
+  "legacyFullHashLog": "legacy.json",
+  "normalProgression": {
+    "startGold": 1090,
+    "runs": [
+      {
+        "heroId": "f",
+        "seed": 12,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 3,
+          "rune": 4,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 175,
+          "xp": 75,
+          "firstClear": true,
+          "loot": [
+            "triagepin"
+          ]
+        },
+        "gold": 1265,
+        "otherOwners": []
+      },
+      {
+        "heroId": "e",
+        "seed": 13,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 4,
+          "rune": 4,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 120,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "triagepin"
+          ]
+        },
+        "gold": 1385,
+        "otherOwners": [
+          "f"
+        ]
+      }
+    ],
+    "endGold": 1385,
+    "fullReportsAndAllGuildStatesEqualToAPI": true,
+    "oneGoalPerGuild": true,
+    "pendingDoesNotCountAsAcquired": true,
+    "manualAssignmentToExactHeroRequired": true,
+    "otherOwnerDoesNotCompleteTarget": true,
+    "notWearingStillOwned": true,
+    "campaignAndRouteBindingRestore": true,
+    "staleGoalWriteRefused": true,
+    "priorHistoryFailuresWithdrawalAndIdentityUnchanged": true,
+    "noExtraRewards": true,
+    "limits": "Two consecutive earned departures, both exhaust arrows. No global balance, material saving, item recommendation or single-change causality claim."
+  },
+  "initialFindings": {
+    "fullInitial": {
+      "tests": 906,
+      "passed": 903,
+      "failed": 3,
+      "log": "full-tests-initial.tap",
+      "reason": "Unified source formatting broke three exact once-only story labels; restored the explicit adjacent one-of-three/once wording."
+    },
+    "browserInitial": {
+      "passed": false,
+      "log": "browser-initial.stderr",
+      "reason": "Script read visible source text before expanding nested details. Fixed by opening details and keeping the original source assertion; target-name check explicitly uses actual hero name."
+    },
+    "afterSourceLabelFix": {
+      "tests": 906,
+      "passed": 906,
+      "log": "full-tests.tap"
+    },
+    "finalAdjustment": "Explicitly distinguish story-ready-but-pending conditions; bring newly selected goal into view. Complete final906 and unified26 re-run. UI badge/save-state updated to0.118.",
+    "assertionsWeakened": false,
+    "seedsChangedToPass": false,
+    "lootOrCombatNumbersTuned": false
+  },
+  "mechanic": {
+    "storage": "Optional guild.equipmentGoal={heroId,gearId}, recruited member + existing relic only; no battle config or ruleset version change.",
+    "states": [
+      "seeking",
+      "warehouse",
+      "owned"
+    ],
+    "completion": "Derived from target member.owned, never a reward flag or wearing requirement.",
+    "sourceTables": [
+      "ROUTE_REWARDS",
+      "Story endings/progress",
+      "FOUNDRY_OBJECTIVES",
+      "HARBOR_EXCHANGE"
+    ],
+    "guarantees": "Only first pool entry guaranteed on first clear; single-item repeats guaranteed; multi-item repeats explicitly not guaranteed. Never predicts future seed/drop.",
+    "sourceActions": "Existing route preparation/binding, story or contract panel; no automatic departure/purchase/claim/exchange/assignment.",
+    "safety": "Pending blocks goal/asset writes; original raw-guild stale write guard; full campaign retains state."
+  },
+  "referenceBoundary": {
+    "date": "2026-11-06",
+    "verified": [
+      {
+        "url": "https://world-of-dungeons.net/",
+        "kind": "Official public homepage full text",
+        "supports": "Exploration, desired equipment collection and preparation/coordination as gameplay direction only. Testimonials are not a current mechanical specification."
+      }
+    ],
+    "unread": [
+      {
+        "url": "https://world-of-dungeons.net/ency/Dungeon_Guide",
+        "result": "502 Bad Gateway, no retry",
+        "indexedSummary": "Items are acquired and managed through dungeon play; not treated as full text read or current server specification."
+      }
+    ],
+    "originalProvisional": "One optional target for a recruited hero, dynamic ownership completion and source navigation are original project design; no claim of an original-server wishlist feature, drop probability, trade/transfer rule or numeric replica. Existing loot/cost/ownership/supply systems unchanged."
+  },
+  "scope": {
+    "combatEngineChanged": false,
+    "dataGearLootChanged": false,
+    "newSkillsOrTrainingCosts": false,
+    "newRoutes": false,
+    "newPlayerConfigFields": false,
+    "permanentSuppliesImplemented": false,
+    "extraGoalRewards": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 24,
+    "gear": 40,
+    "relics": 22,
+    "ordinaryGoals": 72,
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Permanent supply persistence already asked by parent, not implemented while awaiting reply.",
+    "limitations": [
+      "Wishlist/goal presentation is original provisional project design, not a verified original-server feature.",
+      "Official public homepage supports collection/tactical direction; testimonials are not a current mechanic specification. DungeonGuide full text502 not retried.",
+      "Two normal runs exhausted arrows; no balance or resource-saving claim.",
+      "Firefox/Safari/physical devices not tested."
+    ]
+  }
+}

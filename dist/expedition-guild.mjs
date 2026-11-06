@@ -1,3 +1,4 @@
+import {validateEquipmentGoal} from './expedition-equipment-goal.mjs';
 import {validateClocktowerStory,clocktowerStoryProgress,CLOCKTOWER_STORY_ENDINGS,CLOCKTOWER_STORY_GOLD} from './expedition-clocktower-story.mjs';
 import {validateEquipmentSets,equipmentSet,EQUIPMENT_SET_SLOTS} from './expedition-equipment-sets.mjs';
 import {validateExpeditionBook,validateObjectiveRecord,objectiveAssessment,recordExpeditionObjective} from './expedition-book.mjs';
@@ -35,6 +36,7 @@ export function validateGuild(g){
  for(const r of g.history){validateObjectiveRecord(r);validateCommand(r.command);if(r.config!==undefined){validate(r.config);if(r.config.expedition!==r.route)throw Error("历史远征路线与快照不一致");}}
  if(g.pending!==null){validateCommand(g.pending?.command);if(!g.pending||g.pending.id!==g.next-1||g.history.some(r=>r.id===g.pending.id))throw Error('待结算远征无效');validate(g.pending.config);for(const h of g.pending.config.heroes){const m=g.members.find(m=>m.id===h.id);if(!sameEquipment(h.gear,m.gear)||JSON.stringify(h.training)!==JSON.stringify(m.training)||(h.advancement||null)!==(m.advancement?.path||null))throw Error('远征资产快照不一致');assertGuildSkills(m,h);}}
  if(!g.warehouse||typeof g.warehouse!=="object"||Array.isArray(g.warehouse)||Object.entries(g.warehouse).some(([k,n])=>!isRelic(k)||!integer(n))||!g.clears||typeof g.clears!=="object"||Array.isArray(g.clears)||Object.entries(g.clears).some(([k,n])=>!Object.hasOwn(ROUTE_REWARDS,k)||!integer(n)))throw Error("战利品或通关记录无效");
+ validateEquipmentGoal(g);
  validateExpeditionBook(g.expeditionBook,g.next);
  validateShoalsState(g.shoals,g.clears.shoals||0);
  if(g.pending&&![1,2].includes(g.pending.rewardVersion))throw Error("结算版本无效");
@@ -69,6 +71,8 @@ export function claimFoundryStory(g,ending){
 export function claimClocktowerStory(g,ending){const n=editable(g),p=clocktowerStoryProgress(n);if(typeof ending!=='string'||!Object.hasOwn(CLOCKTOWER_STORY_ENDINGS,ending))throw Error('请选择有效的余响结局');if(!p.canClaim)throw Error(p.reason);const gear=CLOCKTOWER_STORY_ENDINGS[ending].gear,gold=n.gold+CLOCKTOWER_STORY_GOLD,count=(n.warehouse[gear]||0)+1;if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');n.gold=gold;n.warehouse[gear]=count;n.clocktowerStory={ending};return validateGuild(n);}
 export function sellLoot(g,gear){const n=editable(g);if(!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('仓库中没有该装备');n.warehouse[gear]--;n.gold+=20;return n;}
 function editable(g){validateGuild(g);if(g.pending)throw Error('领取远征结算后才能更改公会资产');return clone(g);}
+export function setEquipmentGoal(g,heroId,gearId){const n=editable(g);n.equipmentGoal={heroId,gearId};validateEquipmentGoal(n);if(n.members.find(m=>m.id===heroId).owned.includes(gearId))throw Error('此人已持有该遗物，请选择尚未持有的目标');return n;}
+export function clearEquipmentGoal(g){const n=editable(g);delete n.equipmentGoal;return n;}
 export function train(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key);if(!q.allowed)throw Error(q.reasons.join('；'));h.xp-=q.cost;h.training={...h.training,[key]:q.nextRank};return n;}
 export function lowerTraining(g,id,key){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h)throw Error('训练项目无效');const q=trainingQuote(h,key,-1);if(!q.allowed)throw Error(q.reasons.join('；'));if(q.nextRank)h.training[key]=q.nextRank;else delete h.training[key];h.xp+=q.refund;return n;}
 export function applyTrainingPlan(g,id,plan){const n=editable(g),h=n.members.find(m=>m.id===id);if(!h||typeof plan?.expected!=='string')throw Error('培养草案缺少角色或原始快照');const q=quoteTrainingPlan(h,plan.target,{expected:plan.expected});if(!q.allowed)throw Error(q.reasons.join('；'));h.xp=q.availableAfter;h.training=q.target;return validateGuild(n);}

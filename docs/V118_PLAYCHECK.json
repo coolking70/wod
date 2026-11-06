@@ -1,0 +1,64 @@
+{
+  "normal": [
+    {
+      "heroId": "f",
+      "seed": 12,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 175,
+        "xp": 75,
+        "firstClear": true,
+        "loot": [
+          "triagepin"
+        ]
+      },
+      "gold": 1265,
+      "otherOwners": []
+    },
+    {
+      "heroId": "e",
+      "seed": 13,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 4,
+        "rune": 4,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "triagepin"
+        ]
+      },
+      "gold": 1385,
+      "otherOwners": [
+        "f"
+      ]
+    }
+  ],
+  "firstGoal": "f/triagepin",
+  "secondGoal": "e/triagepin",
+  "ownership": "A partner holding the same relic does not complete the selected member goal; explicit assignment required.",
+  "limits": "Two fixed consecutive earned departures, no balance claim. First run uses all arrows; not a resource-saving recommendation."
+}
