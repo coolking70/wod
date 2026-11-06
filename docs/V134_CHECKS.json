@@ -1,0 +1,1543 @@
+{
+  "phase": "v0.134 cross-page propagation verification, stale-draft safety and actual solo retries",
+  "date": "2026-11-06",
+  "baseline": {
+    "baseline": "8ab84f08aa3b5d6dcc8d1f1bf35f3e4d9e73ab0c",
+    "tree": "e573e9c043b72beb1c866da0978b958461a1a59d",
+    "branch": "feature/v134-cross-page-drafts",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "remote": "https://github.com/coolking70/wod.git",
+    "statusBeforeEdits": "",
+    "tests": {
+      "tests": 1174,
+      "pass": 1174,
+      "fail": 0,
+      "skipped": 0,
+      "log": "baseline-tests.tap",
+      "durationMs": 163126.753091
+    }
+  },
+  "branch": "feature/v134-cross-page-drafts",
+  "localOnly": true,
+  "tests": {
+    "full": {
+      "tests": 1189,
+      "pass": 1189,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-final-tests.tap",
+      "durationMs": 199912.553537
+    },
+    "newSpecialized": {
+      "tests": 15,
+      "pass": 15,
+      "fail": 0,
+      "draft": {
+        "tests": 11,
+        "pass": 11,
+        "fail": 0,
+        "skipped": 0,
+        "log": "unit-final.tap",
+        "durationMs": 81.383927
+      },
+      "actualPlay": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0,
+        "skipped": 0,
+        "log": "play-unit.tap",
+        "durationMs": 14010.435242
+      }
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "count": 567,
+    "failures": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 152,
+    "checkedReferences": 170,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": true,
+    "suites": 42,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134
+    ],
+    "file": "acceptance/browser-acceptance.json",
+    "firstUnifiedRunAllPassed": true,
+    "v123PassedInUnified": true,
+    "phase": {
+      "passed": true,
+      "steps": [
+        "1440px真实5820/next54与原五收藏：四次另一页真实种子修改，等待对应storage事件后整份两页数据一致；旧页属性调整不得覆盖，未保存完整草稿可导出。陈旧正式出征被阻止且公会不变，明确载入最新后可继续。正常54自然先攻完整报告/公会同API，3/4/8、6人、2草0符0箭，原135/55至5955，无新培养换装。",
+        "390px整档恢复后再四轮跨页修改/旧页拒绝/完整未保存草稿导出/载入最新全部严格一致。正常55保留自然先攻并增加既有后排援护，完整报告/公会同API：4/4/15、0人生还、全料0，两次实际接招成功仍未清末房，原部分40/20至5995。原22冻结失败完整导出和五原payload保持，无溢出。",
+        "新上下文恢复5995/next56，公会及五压缩字节、实际成员/训练/装备/课程/身份职责/任务与准备配置同API。会话中的冲突不写入新存档字段；55历史完整失败报告同API，不能重复领奖。无页面错误，无永久补给/推送/部署。"
+      ],
+      "conflicts": [
+        {
+          "seed": 888,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        },
+        {
+          "seed": 889,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        },
+        {
+          "seed": 890,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        },
+        {
+          "seed": 891,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        },
+        {
+          "seed": 988,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        },
+        {
+          "seed": 989,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        },
+        {
+          "seed": 990,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        },
+        {
+          "seed": 991,
+          "writerSaved": true,
+          "actualStorageEventReceived": true,
+          "staleAttributeDidNotOverwrite": true,
+          "unsavedWholeDraftExportExact": true,
+          "explicitReloadWholeSnapshotExact": true
+        }
+      ],
+      "errors": []
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "visualInspection": [
+      "draft-conflict-desktop.png",
+      "draft-conflict-mobile.png"
+    ],
+    "allCompleteReportsAndWholeGuildComparedWithAPI": true,
+    "allFiveArchiveWireBytesExact": true,
+    "sameBrowserBackupRestoreAllFieldsExact": true,
+    "eightActualWriterNotificationsBeforeStrictReaderChecks": true,
+    "staleDraftWholeExportAndExplicitReloadPreserveGuild": true,
+    "staleFormalDepartureRefusedBeforePendingOrRewardWrite": true,
+    "otherEnginesOrPhysicalDevicesTested": false
+  },
+  "rootCause": {
+    "passed": true,
+    "originalSymptomReproduced": 2,
+    "fullParallelAttempts": 3,
+    "negativeMinimalAttempts": 12,
+    "readerDeliveryRace": [
+      {
+        "run": 1,
+        "readerImmediateSeed": 2,
+        "writerSuccessfullySaved888": true,
+        "laterReaderStorageEventAndRead888": true,
+        "noLaterReaderWrite": true
+      },
+      {
+        "run": 2,
+        "readerImmediateSeed": 2,
+        "writerSuccessfullySaved888": true,
+        "laterReaderStorageEventAndRead888": true,
+        "noLaterReaderWrite": true
+      }
+    ],
+    "writerChangeWasNotMissed": true,
+    "lateBootstrapOverwriteNotObservedInRaceTraces": true,
+    "fixedParallelPairs": {
+      "passed": true,
+      "rows": [
+        {
+          "run": 1,
+          "version": 124,
+          "exit": 0,
+          "passed": true
+        },
+        {
+          "run": 1,
+          "version": 123,
+          "exit": 0,
+          "passed": true
+        },
+        {
+          "run": 2,
+          "version": 124,
+          "exit": 0,
+          "passed": true
+        },
+        {
+          "run": 2,
+          "version": 123,
+          "exit": 0,
+          "passed": true
+        },
+        {
+          "run": 3,
+          "version": 124,
+          "exit": 0,
+          "passed": true
+        },
+        {
+          "run": 3,
+          "version": 123,
+          "exit": 0,
+          "passed": true
+        }
+      ]
+    },
+    "fix": "Listener installed before actual writer UI change; strict writer full snapshot then await matching real reader localStorage notification, then original strict reader assertions and stale-load protection. Restoration also waits for corresponding notification and exact original full snapshot.",
+    "independentProductionBug": {
+      "before": {
+        "baseline": "8ab84f08aa3b5d6dcc8d1f1bf35f3e4d9e73ab0c",
+        "oldSeed": 2,
+        "writerSeed": 888,
+        "afterStaleAttributeEditSeed": 2,
+        "oldAttribute": "con",
+        "afterAttribute": "int",
+        "writerConfigPreserved": false,
+        "note": "Distinct deterministic stale-editor overwrite; does not establish historicalv123 failure cause."
+      },
+      "after": {
+        "baseline": "8ab84f08aa3b5d6dcc8d1f1bf35f3e4d9e73ab0c",
+        "oldSeed": 2,
+        "writerSeed": 888,
+        "afterStaleAttributeEditSeed": 888,
+        "oldAttribute": "con",
+        "afterAttribute": "con",
+        "writerConfigPreserved": true,
+        "note": "Distinct deterministic stale-editor overwrite; does not establish historicalv123 failure cause."
+      },
+      "fix": "Compare known whole preparation snapshot before write; preserve unsaved local draft, offer export and explicit latest reload, reject stale formal departure."
+    },
+    "limits": "Current Chromium tests. Snapshot comparison is not a cross-process lock or an atomic multi-page transaction. Originalv123 observed failure was propagation/read synchronization, distinct from deterministic stale-editor overwrite."
+  },
+  "legacy": {
+    "reference": "8ab84f08aa3b5d6dcc8d1f1bf35f3e4d9e73ab0c",
+    "passed": true,
+    "routes": 28,
+    "count": 68,
+    "defaultReports": 56,
+    "earnedHistoricalReports": 12,
+    "excluded": [],
+    "rawFullEqual": true,
+    "baselineEarnedGuildAllFieldsExact": true,
+    "rows": [
+      {
+        "route": "turncourt",
+        "seed": 1,
+        "sha256": "c53b699a75d895168bd64e34622404f0da536cb1b77362b5117a535d09020294"
+      },
+      {
+        "route": "turncourt",
+        "seed": 731,
+        "sha256": "2bceaea83c9c9de0b50eb82f7350960c7036d212838bb68eb86fae8709b8dd36"
+      },
+      {
+        "route": "beaconbridge",
+        "seed": 1,
+        "sha256": "b3ca421fadbec1c17358509595bc3be80b78f4494b488f5509d9e2d4f4c511e9"
+      },
+      {
+        "route": "beaconbridge",
+        "seed": 731,
+        "sha256": "b3552813e30b1940150ef96db1adfc47d1d4c8df9679a415e6ab3d1df8569b20"
+      },
+      {
+        "route": "trapworks",
+        "seed": 1,
+        "sha256": "c8588cdc91530f06423735f9fd627b36a5bf93ca8ca76c25765f17f0bcf4a6f1"
+      },
+      {
+        "route": "trapworks",
+        "seed": 731,
+        "sha256": "a6ce0437ebfe5cc88c410e350a9511282112de9e08fb8208815c873b8c724198"
+      },
+      {
+        "route": "ossuary",
+        "seed": 1,
+        "sha256": "c0812857e35c3c00c8e74096016bb8005f149d12bf517cd25a91a09f20870117"
+      },
+      {
+        "route": "ossuary",
+        "seed": 731,
+        "sha256": "cc7401f722ea83768267803ebd07e07a42fd4e74aea2899d8d306e70fc7be0d3"
+      },
+      {
+        "route": "breakwater",
+        "seed": 1,
+        "sha256": "92ae5e9935102dc7107c562f1eb347a71dc0d9da334b5cebfcc32ad3fd897215"
+      },
+      {
+        "route": "breakwater",
+        "seed": 731,
+        "sha256": "87852c5d648ef515e7f124129adad60d4ce1906295c0662b2826fd91fc964df5"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 1,
+        "sha256": "e9f9abc2b9b05162874d1b64b7d9af736652ad9b000ed77dbf4b4a630a0482a5"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 731,
+        "sha256": "5e1dbb9b691b3dbb633a201d2778df036bb03cbfc886f76b639148d282966215"
+      },
+      {
+        "route": "confluence",
+        "seed": 1,
+        "sha256": "069c9882259a399369498b66c6d357678d7be6a208d1c366bfe075ad29a40e63"
+      },
+      {
+        "route": "confluence",
+        "seed": 731,
+        "sha256": "728597ebabf88152832fb5bf5caa000e6a3960a5bedbeef323cd85b82ce7a808"
+      },
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "e78705d4a81b25cb89b36e34d77f519a0309d3824b92cb69f603ed6e28021125"
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "4a7ce56cb099a1c0a1cc2b68a3eaa8f6e7f1bb58ab6b8ba4fa34fc36d09957fe"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "354589e66296d3c1c0210d472ba45fc07fc9041cc0e90d374207194fcca8c733"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "924979a7ba8e97d257fed8327233ab92465bd22731d015b64d8f24410d8b5123"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "63dce5b2110c8135ba76ee149a10a8d173778964b20853d992de2cc272e056da"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "1576eed7a62d35946015903f0d9b6e0ded9f83c13ae661cb399514f332bf5cae"
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "bca3d833b77880a4e5bcf57a676c2546bc80282bc0f610d4253ff7178612dc6a"
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "1feec96dddeb5380447ba1c9b0bca83090b9c15ad1b4017a0eca780eff1d3e0d"
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "5ea343d2c9a590920cf0003aa66e1518c1e50315a7fa3e4c095c0be1f11e8e0d"
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "151283507c1aee6bf3b1b1aa3554eaead9d236b6c9eaaf627d599b5ee6ca4fdf"
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "50f6ee9ed950d9ac64111c447d11fed3f5bfbc4ca2c76001415f0332f1d1fd4a"
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "586615de1f2ba96c38bfcd4b7d22dc4d9731a4ee31dce2bfc12b70c56221fc2f"
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "13288227979cbe74e15f1fcd9010c89597ae616a66207e41ff19c2a46eb84b16"
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "56281a4eec0ad0ab9863cf00a8b6a49a22f98d362d00fa9eb1839cac7a63886c"
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "b9d64f3ace1a3c4da164cea35c66985fcd22a4a6f0b33b6783fe1066bffdfb63"
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "00331ee59a8584e9790c3adbc285323e3eba473b6b71c091ad31e882f713ac1c"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "443cf03846b13303259cdbdc7688b396895f9263de43b870373f999ba11ac38b"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "75f2667ad37d808bc27ca5c231d2d2e8ac16a8176fc09c7436cefc41a211c251"
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "48f2b5c35085688d8f4144a7a06fb90b33bf903208061d613e12775037ed1686"
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "685c6bc639f031886e4a5e9477add8c8a763d8611b939633f3704aa0d4829141"
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "eaf008121613e1fe0e7f9cd079339b293ec55459a49a5dfd323d17736fe75fa6"
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "0c9d8a47042597d8a96b2dac43d1d763d4d58073b9c32a0503b957f22ab3a26e"
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "5a3a5feca7f4a100d8b49c2c50e8a18ee1602cbea4aa3b481606332cdeba2592"
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "c7e985355a5442439002cff5437de70b671b80a78af7c018b57c91b59efbbf3a"
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "c6d9af2fc25103ef124830f46d75b8a5982b2d05ea11781a9f3889d8010609f1"
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "9a5da7571d8dae9de2441ff59f6fca5cd23d8b2969d74abf468d60cf5f407b60"
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "85ea73d76233c74bdedde9372443c8690f536684e1249f2dc1ac18ce9838ff26"
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "f6dea815ecb8c364d5aa76741b77d3a757e996688d094f0a8d85832322cdc449"
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "0ec2134c0780ba2ab2c309c1c236f777d7ffb60861dc1e7866fc4282e54cb943"
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "80fe5bfc215c56763420f69fa09448cc583afccc7b97935823bc8aee9eecfb14"
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "c9d0bea1dc55174435cb7cd265c9a72c83a13f7652df8629bd0aaa7f82c04c14"
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "85a4c8c1d405d5bdf40cc12d199aa22593ed9efb6af50f5a10e36d79dd44b6e6"
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "786b5ebe975149b1a007ea359014b3ec99d5dfdd42010505843aa824e4154129"
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "fce55d52813c080b319fbc7ac311c7656980bd37184d3b764c4215857105de12"
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "482385f19bb27ab6de5b4e6902c925fe833dc9dc5699ed8af75b3664ba2685e0"
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "21e934f546b6a65649da3e8edbc57338c93e8542f6925552ffdb96649c7cc678"
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "b5004688f2b9739825df67b4a05fe4c42c29db37286b05b8d493267e46ae6ba1"
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "c49350322b02a6e460a0118309c30d8dcc75d750726a4bd3800da7bad981026b"
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "eefd11fc73e6d329d28d3af7adc95588902dc84da53332131e14839df18299e7"
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "21736e07f5c17751c0a5172d4703579dad5f09113bd4dabe08fe23bc1cfb4262"
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "2cefd86bc3d07d3c906987bec96f559bc234bddebcad2a71b99366097274626a"
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "d9d406c8a246c5a41414b35e0e425d32c5c0753be706754ecda8ace799a645e0"
+      },
+      {
+        "kind": "earned-history",
+        "id": 36,
+        "sha256": "9773cdb60705dc4b2e9d83ae083405cb06f2cb3f55ee067b7bbaae52ad4d9529"
+      },
+      {
+        "kind": "earned-history",
+        "id": 38,
+        "sha256": "982a6bf153a2b3f253559ba29dbf18ff916ec1351807197bd7219b3662902224"
+      },
+      {
+        "kind": "earned-history",
+        "id": 42,
+        "sha256": "d0384d5590f2fbb66cc1055470be32584a795b340384bb4f808664ef1ac384ad"
+      },
+      {
+        "kind": "earned-history",
+        "id": 43,
+        "sha256": "eedf0aa7161547ccf2284664019118c2dee498d3b19e733adadcf48203069226"
+      },
+      {
+        "kind": "earned-history",
+        "id": 46,
+        "sha256": "df979087d011202378ec70bd1bb192841a8531c55e09856ebbcb4f2b167952ea"
+      },
+      {
+        "kind": "earned-history",
+        "id": 47,
+        "sha256": "ba24298c91ad264034b398b23a1d53af7d6b0679908c8166b35d29e3a9bd7df6"
+      },
+      {
+        "kind": "earned-history",
+        "id": 48,
+        "sha256": "735cc5f999902d63eb05e1d36745d83c80bb408c298a7f4c5c3cfbf86b7d6cd3"
+      },
+      {
+        "kind": "earned-history",
+        "id": 49,
+        "sha256": "67a0dafa3e8ce3862af102eebcfa823147a461422a128ae6e8ed66fb93d7bcf8"
+      },
+      {
+        "kind": "earned-history",
+        "id": 50,
+        "sha256": "34dae1847ef40e5cbb611c84dafa7dae1e633dae92b7877198379476beab9696"
+      },
+      {
+        "kind": "earned-history",
+        "id": 51,
+        "sha256": "01a9649615b9fa4185cba7f742c98249082694066a781547335427ae860fa69f"
+      },
+      {
+        "kind": "earned-history",
+        "id": 52,
+        "sha256": "eaee0e82115b36d63888ad7da574fc424446bcf775ef191795d1e9b2097e4530"
+      },
+      {
+        "kind": "earned-history",
+        "id": 53,
+        "sha256": "747e6e24952b7ef3763dc7a606995340030af111c53d312b32cdfa502b967b97"
+      }
+    ]
+  },
+  "statePreservation": {
+    "passed": true,
+    "startExactV133": true,
+    "authoredBothNormalConfigurationsUnchangedAfterResults": true,
+    "allExistingDistExceptFourUIFilesBytesExact": true,
+    "unchangedFileCount": 179,
+    "unchangedFiles": [
+      {
+        "file": "dist/assets/abbey.png",
+        "sha256": "41663fecc1223ab1413399d719006487f455c692da84060c2194e3a7b10ecca1"
+      },
+      {
+        "file": "dist/assets/drowned-infirmary-v21.png",
+        "sha256": "471d58357bb6c7e9e839df0dcbfcb713578f9a22335a20360f9dd1dd7573f1ad"
+      },
+      {
+        "file": "dist/assets/enemy-supports-v25.png",
+        "sha256": "bfebf04062e549b50055140cade628d5954611c07aabf5f6b055788be4a78650"
+      },
+      {
+        "file": "dist/assets/flood-gate-v15.png",
+        "sha256": "918e3d023feafe1856eecf909ed111cc884009b2ebde8c3391223fca98c8c157"
+      },
+      {
+        "file": "dist/assets/foundry-v71.png",
+        "sha256": "ff1a7896c292c98a8609cc61b730a0768af0ed3cdceb77d7176c70420dbdbde3"
+      },
+      {
+        "file": "dist/assets/harbor-seal-v41.png",
+        "sha256": "851caea183c565f3066b572dd4b4b1c55df769deb6731b08a9849c930e1fd481"
+      },
+      {
+        "file": "dist/assets/last-lantern-v17.png",
+        "sha256": "e8c7925897f7af34acf5cce4c0d551ad52ae7c73373c2db70d32907bd8f53ae0"
+      },
+      {
+        "file": "dist/assets/mirror-gallery-v9.png",
+        "sha256": "9c465a1c3352c6b93714a3313cdfab18fd13565d5f403095163c8933d07dd9ad"
+      },
+      {
+        "file": "dist/assets/oathbreaker-v5.png",
+        "sha256": "2f273f80cd5ad8b1c0c896d4ae68b73c77c33ae4c0dfd7cd9ea3a4701bfd54ef"
+      },
+      {
+        "file": "dist/assets/portraits-v4.png",
+        "sha256": "ff4e82b712b082626dd40f8bf49958b268be3b929a276d928d1d49b3d69ebd3c"
+      },
+      {
+        "file": "dist/assets/saltwind-harbor-v41.png",
+        "sha256": "d33b130d59c2400928516693180ec240429cb17e2694c287d20dbfee26d2a02b"
+      },
+      {
+        "file": "dist/assets/sunken-bell-v10.png",
+        "sha256": "bd0de96a77ed02ab8efcd131ecf06e690e084b9762f9dd12e2243ce311f5c86e"
+      },
+      {
+        "file": "dist/assets/support-portraits-v10.png",
+        "sha256": "ecb7f11d669575c098f541d155a20ac44c47f3adc85578bef36d8fe52c2e9ec7"
+      },
+      {
+        "file": "dist/content.mjs",
+        "sha256": "ee90161df2edb611ea1a955a7e09583809c4d5d1a3667e125f6812c995df4d40"
+      },
+      {
+        "file": "dist/expedition-advancement-data.mjs",
+        "sha256": "d1e00da749a4c1727c422f26c3f720b2f056cff0f0883cf74a833521d2e8328b"
+      },
+      {
+        "file": "dist/expedition-advancement.mjs",
+        "sha256": "a8d6341ab74cd08d0b4200c510594d1123a1570e2deef6ad7c5b67a8f4b8b4bd"
+      },
+      {
+        "file": "dist/expedition-adventure.mjs",
+        "sha256": "f244ffde27a3db72d9db1608d2c439f97c5a51c4c4a61f90c09c72b81a4eb572"
+      },
+      {
+        "file": "dist/expedition-afflictions.mjs",
+        "sha256": "8727dcec83fd397d3d00c9eefe46132cc92c5f61237b38aa11d020377273680f"
+      },
+      {
+        "file": "dist/expedition-attribute-training-view.mjs",
+        "sha256": "03fd0886b1e1a129b1b8ac2985dfb40743bd3cc9249c3ad0bc73d2adde5e193c"
+      },
+      {
+        "file": "dist/expedition-attribute-training.mjs",
+        "sha256": "d185356a16aa145db7ecfd39f3e96f440407178cf5448a021d7e739bf8b31938"
+      },
+      {
+        "file": "dist/expedition-beaconbridge.mjs",
+        "sha256": "aa9e813de8b5d37fe22b27c40349c5281775919d73ff51c07639c3f9c11f8f4c"
+      },
+      {
+        "file": "dist/expedition-book-view.mjs",
+        "sha256": "80d630519326213acc7f7bd4dc8ec9f7e821c59bc025dbdbf957eeeadb966018"
+      },
+      {
+        "file": "dist/expedition-book.mjs",
+        "sha256": "44a44ce72f66fdd47dff5842d5b400b66b6928eb213b972d14330a1cd83b3b21"
+      },
+      {
+        "file": "dist/expedition-breakwater.mjs",
+        "sha256": "c8b03281facbea7f39063074547bad640b4d1774a6c0be6a3c20cba8ada69981"
+      },
+      {
+        "file": "dist/expedition-builds.mjs",
+        "sha256": "2c5af5792a4fad9b884c1ef43282946a9a6f3a0a5998a323447bfb4f89cc59d1"
+      },
+      {
+        "file": "dist/expedition-camp-cycle-view.mjs",
+        "sha256": "0aa67bca5a0e11defb2f5f2929e577848490edf7a7ec9bf8faa7ba457e46b96f"
+      },
+      {
+        "file": "dist/expedition-camp-cycle.mjs",
+        "sha256": "aef2f177fbe4a790a159290a9d6594762a8162919f30fbee6988b716464f8109"
+      },
+      {
+        "file": "dist/expedition-camp-journeys.mjs",
+        "sha256": "f3631c1214d86726d60137f47c2a9276907ccdaa6103b803a952d8c9b81ce7c3"
+      },
+      {
+        "file": "dist/expedition-campaign-backup.mjs",
+        "sha256": "ae3db062797afbe1a8baa5770757e998cb2ce9461d2cf21989cb94e871a20cbd"
+      },
+      {
+        "file": "dist/expedition-care.mjs",
+        "sha256": "cc8eadd609edb4d6dbaaafac6e5b557dd2b6cbcdbb9fcabcb9d8a32fd7f6737d"
+      },
+      {
+        "file": "dist/expedition-clocktower-story-view.mjs",
+        "sha256": "5e32c0bee4ef7f6315c5d19c46c533f3c92cb1d222718ef2b8867a2d42db10ee"
+      },
+      {
+        "file": "dist/expedition-clocktower-story.mjs",
+        "sha256": "c431c48394ec109ab3e5b1ad52bf58e7b864c09c56538108c5d4130aec1877c8"
+      },
+      {
+        "file": "dist/expedition-clocktower.mjs",
+        "sha256": "50636f5c58d44066af586a2c6c7f09a1f729491ebc2c952144fb365289f7ed02"
+      },
+      {
+        "file": "dist/expedition-command-preview.mjs",
+        "sha256": "d39e092b96bf50224cac0c74d4aa8241101b1d1968e1080fff92d879a8fd08e8"
+      },
+      {
+        "file": "dist/expedition-command-view.mjs",
+        "sha256": "5c0018ac56b0200f1216ba41eed856f58c8c5852d6d7530241ef8bc43b54d81e"
+      },
+      {
+        "file": "dist/expedition-command.mjs",
+        "sha256": "8e3d6431da473e4067126d2ea802a025671ff758c700302b427b5b0083154628"
+      },
+      {
+        "file": "dist/expedition-config-undo.mjs",
+        "sha256": "b49dcae66eef4a188b1347acef647ae97a086f6677c0117cb6a40f06e4d0acc9"
+      },
+      {
+        "file": "dist/expedition-confluence.mjs",
+        "sha256": "604959e6aa40bdc2fc02f0caca4c313e785b4fbeb0a4339d117ffc83605b5c81"
+      },
+      {
+        "file": "dist/expedition-contract.mjs",
+        "sha256": "25594fdf93efbde9cea152875dc75038aab353f20cb4cfffb1ae8f1fd9fd176d"
+      },
+      {
+        "file": "dist/expedition-cooperation.mjs",
+        "sha256": "5c996819983370dc3050925952f732831950d3a7116dcfe3c1d117a2906c5d53"
+      },
+      {
+        "file": "dist/expedition-corrosion.mjs",
+        "sha256": "a4283218e4ff75318dd57a42f1ef625911776e1c6f7fd2479e20999ce747a0e2"
+      },
+      {
+        "file": "dist/expedition-counterpoint.mjs",
+        "sha256": "3cb2e52bd614d9827566e4674b41b46bdb77dee456141dc77dc31120ad23ce29"
+      },
+      {
+        "file": "dist/expedition-courier-view.mjs",
+        "sha256": "3578992066366369fe5b97a046cb7e11ac0decba3187f9503fde691448875a97"
+      },
+      {
+        "file": "dist/expedition-courier.mjs",
+        "sha256": "4b050c9466312e42e9135d59457f0decb1507f0a1ed63649c67730be1a8686ba"
+      },
+      {
+        "file": "dist/expedition-damage-channel.mjs",
+        "sha256": "53d79f5122e8000796f19786e862567c8b8eb37c87865318c2770dc3557955fe"
+      },
+      {
+        "file": "dist/expedition-data.mjs",
+        "sha256": "8605af71bd6e824a054fda188e041fc837a87af8c26dfd00336c7c595b77e7cb"
+      },
+      {
+        "file": "dist/expedition-deployment.mjs",
+        "sha256": "155b2b30cf36b057a36b51669bbcc620a8e4a0f0526108d15dc6f79c56bd4d21"
+      },
+      {
+        "file": "dist/expedition-disruption.mjs",
+        "sha256": "fa61bbf1b2c35f593f90fb4c06a3c8b28d056fba6e770f1cbb84558273b2ef36"
+      },
+      {
+        "file": "dist/expedition-draft-commands.mjs",
+        "sha256": "62073c7f4d9986c9bdfd3458e0b96fb6fc26d1c1c8fc341073a5c3ca84f99588"
+      },
+      {
+        "file": "dist/expedition-engine.mjs",
+        "sha256": "7aeacc979ea256e5b8dd15c8fd8411618d8f56b0dab0a569edb824dd6517bada"
+      },
+      {
+        "file": "dist/expedition-equipment-goal-view.mjs",
+        "sha256": "3867de9d03d007b0d67f943e52ebee003baca8ed43653f3aeda932cce0e2f9e8"
+      },
+      {
+        "file": "dist/expedition-equipment-goal.mjs",
+        "sha256": "fbe378dc8580360b6c9d90f426bd8d3d46faac170fac07659216a127e14cee64"
+      },
+      {
+        "file": "dist/expedition-equipment-ranks-view.mjs",
+        "sha256": "1c6d91b14042e45b1e0b00b4f1c2d1ebffc89436c0bad7f4eb6b9b5d125e0e47"
+      },
+      {
+        "file": "dist/expedition-equipment-sets.mjs",
+        "sha256": "dc7f259782e213043186af93e77471beb210c91e196df23bf43784a80eff9596"
+      },
+      {
+        "file": "dist/expedition-equipment-view.mjs",
+        "sha256": "8cff36d1f28f1593417230781f940b271589b12c2dab178cdf26b93317881b2e"
+      },
+      {
+        "file": "dist/expedition-equipment.mjs",
+        "sha256": "2708ce3ec9c9f8d14d79c7242036661fdde14bbcd168d58520d28b09824a966b"
+      },
+      {
+        "file": "dist/expedition-events.mjs",
+        "sha256": "550c7d3bd43c0c58cfb7ddf1762afdd4407e674c532e12b0cb58c49777a2b838"
+      },
+      {
+        "file": "dist/expedition-foundry-contract-view.mjs",
+        "sha256": "ad806e1831171d9583eda8f8a452f071d98cdf2204cb542259aece028621f46a"
+      },
+      {
+        "file": "dist/expedition-foundry-contract.mjs",
+        "sha256": "4f100bb9c3c7a60a719ba862db75093bac5465d7656f077fad821fcda68cda25"
+      },
+      {
+        "file": "dist/expedition-foundry-story-view.mjs",
+        "sha256": "ac2dc820115bf77df81e9b3a33451c6df17412dbf549e32f025078ac1c3d0230"
+      },
+      {
+        "file": "dist/expedition-foundry-story.mjs",
+        "sha256": "6b1df77a931fb644062181a6a6cbbf09500aef9c3737d692469932c31fc8c6b6"
+      },
+      {
+        "file": "dist/expedition-foundry-view.mjs",
+        "sha256": "a407d74fd3584c68b747e1c0db478df8ccb386d465350284b2f7824216ce4955"
+      },
+      {
+        "file": "dist/expedition-foundry.mjs",
+        "sha256": "4e0bf5c2c6250feb1ce11868d126122fa8944ad6e0a9586a181472a852056890"
+      },
+      {
+        "file": "dist/expedition-goal-data.mjs",
+        "sha256": "3538c0913b43c983690a9fa9b0a7e24f7219673a6fcda5de2d7cc417317ba546"
+      },
+      {
+        "file": "dist/expedition-greenhouse.mjs",
+        "sha256": "2ef5466f807294d3d4567112da5c99a49399ba16d4bd670130161cdfd47807a2"
+      },
+      {
+        "file": "dist/expedition-group-aid.mjs",
+        "sha256": "205d304fc088668d801e9030b994eea8329c39f4b72eb6548d4976fe0ef2ec42"
+      },
+      {
+        "file": "dist/expedition-growth.mjs",
+        "sha256": "70bc6dd59c2b8d65289c54103209ca99f7b012dabf6eb90bd0b486c8799c01af"
+      },
+      {
+        "file": "dist/expedition-guardian-motion.mjs",
+        "sha256": "a34f4722ad10885b81e4316d493afe7e9c20e83fd69b1bd770fcdaf58b898aff"
+      },
+      {
+        "file": "dist/expedition-guild.mjs",
+        "sha256": "f57adde6d6f24943547c80d1cce7f889e6a213a5ea16de5de704801843fd611a"
+      },
+      {
+        "file": "dist/expedition-harbor-assessment.mjs",
+        "sha256": "c659a2c93dfc3816afdaff1ad23fbe561837036c3363500de08ccfd784834df1"
+      },
+      {
+        "file": "dist/expedition-harbor-contract-view.mjs",
+        "sha256": "9e6840fd9e280112073e8e8ffcfe0b0a0ab7e68c489fb2165f169400ccbdf580"
+      },
+      {
+        "file": "dist/expedition-harbor-contract.mjs",
+        "sha256": "0f624800240386ac6f2562ebc6eea6e08bd5ff3b7cff23116cc7eec9cf9a3c78"
+      },
+      {
+        "file": "dist/expedition-harbor-reserve.mjs",
+        "sha256": "cc5227c77b4a9e76de7834228864547f042ff3dec8321ca3ca68982ce36daa70"
+      },
+      {
+        "file": "dist/expedition-harbor-story-view.mjs",
+        "sha256": "8fc8ee33bf16958dd3d971b97a8a0b612213fb3d668e56d40d202a0480f11846"
+      },
+      {
+        "file": "dist/expedition-harbor-story.mjs",
+        "sha256": "835dd0e3a7473804d4cbd4b826194ba3bf4f1e8305efbddfa8e55e132c771da2"
+      },
+      {
+        "file": "dist/expedition-harbor-tactics.mjs",
+        "sha256": "f489c8e31d3f25092b6731df6bbf9d09450a865da3a15dac7c8c4f466c991f8c"
+      },
+      {
+        "file": "dist/expedition-harbor-view.mjs",
+        "sha256": "3e7b0776eeb5f17c0665cf006daec4e682a8e0a616ace1d3b782f363f3bf45d5"
+      },
+      {
+        "file": "dist/expedition-harbor.mjs",
+        "sha256": "0d7370d1ce02fafe732200ab7ce1ef5cd727c8d59fe37bab09569f92b4e378f3"
+      },
+      {
+        "file": "dist/expedition-healing.mjs",
+        "sha256": "f7c325a0bb43d6e94be0610425f72c547e3ea44fae8ab83b82e4391da4993c33"
+      },
+      {
+        "file": "dist/expedition-health-phases.mjs",
+        "sha256": "c2f3197228a0ddcc06f5082149c13ed3ee2ba589c1570753972cc4f61566fe7f"
+      },
+      {
+        "file": "dist/expedition-highlights.mjs",
+        "sha256": "ad59454e14f51cd7fe07555f26a960a98b6a475a3cd077ffcec9ab2611765370"
+      },
+      {
+        "file": "dist/expedition-history-diff.mjs",
+        "sha256": "01a795c4dfc2fe4243f86d5fd4765eeb453e1e3e6312654b574bbe24dc11539a"
+      },
+      {
+        "file": "dist/expedition-hospice.mjs",
+        "sha256": "b38a1bfd2d42bc2db80c20883823982f521aac1e6006c34035b437f3c575c4a8"
+      },
+      {
+        "file": "dist/expedition-immunity.mjs",
+        "sha256": "28e90232144c826945eeac2834dcf4389bcc541d72b1f0c1d95b63fafb7e3343"
+      },
+      {
+        "file": "dist/expedition-initiative.mjs",
+        "sha256": "7450d7e349cf0115f76cbed7d2c165ef7004a5dd6fb8c788d940713a13c25f12"
+      },
+      {
+        "file": "dist/expedition-inquest.mjs",
+        "sha256": "1d32b595a03e8b4457259e0122c93e08d039b1580b8217ff0118f29bd19339d9"
+      },
+      {
+        "file": "dist/expedition-interception.mjs",
+        "sha256": "228824a85028bb1c20e4e047e5b86f566aca39dc59e5c386569bb5ebfc8bad08"
+      },
+      {
+        "file": "dist/expedition-item-sets-view.mjs",
+        "sha256": "ec92b7c26bbcaa923a865d3cc564207f8b2b2da8d4b523edc671fb215cb76935"
+      },
+      {
+        "file": "dist/expedition-item-sets.mjs",
+        "sha256": "fee3b6b8f76cd29486d955aed5cfc60826504da313007d60839a4d7270b07618"
+      },
+      {
+        "file": "dist/expedition-lineup-diff.mjs",
+        "sha256": "a1cd7dc86fe052dd9e0c1dfa4fc2771f082fac2967d7289638b7a557744f9fdd"
+      },
+      {
+        "file": "dist/expedition-loot.mjs",
+        "sha256": "661231a6ea95829d924fb755812f9527476dc90161a9915f41bfc46a5147f243"
+      },
+      {
+        "file": "dist/expedition-mana-damage.mjs",
+        "sha256": "894e5b68d5787edc60ba6f6e598bfc93fa61a0192096893a8dff9e8ea4dc91f2"
+      },
+      {
+        "file": "dist/expedition-mana-transfer.mjs",
+        "sha256": "780b4d8e18f9ea673c44762fa9e71d34d00dee84ebef315db0d259211130c38f"
+      },
+      {
+        "file": "dist/expedition-mechanisms-view.mjs",
+        "sha256": "68628f6c38eed58bf5e497fb04412ac38cf5e15233e324a5d539eefbea9aac95"
+      },
+      {
+        "file": "dist/expedition-mechanisms.mjs",
+        "sha256": "1c8aca840eebd17a441ca65aba060ced137520ad876008cf5ba87bc3f11d34c0"
+      },
+      {
+        "file": "dist/expedition-media-data.mjs",
+        "sha256": "4d9014b4ceceaf6c1ca2cc6f6afde3d63b45885e158568337fbf4e1583489300"
+      },
+      {
+        "file": "dist/expedition-media.mjs",
+        "sha256": "2a96ec286b4e75c6ccd40b952d73f68374f62eb1b35262ac7c1059ba31b97555"
+      },
+      {
+        "file": "dist/expedition-objective-review.mjs",
+        "sha256": "370b6f0c6ac56d0eaa1c977cf9ec993b9d0b30e890fb4b5be85f781cdc4cd0bc"
+      },
+      {
+        "file": "dist/expedition-offbeat.mjs",
+        "sha256": "e87c13e8b892b8b2a8d522d189c7d67a9d2142f7f81d3736e4dcce459e817606"
+      },
+      {
+        "file": "dist/expedition-ossuary.mjs",
+        "sha256": "241646ec8b6ea10f76017462c76afcd9606f458ecc84e0c9ec7f4207637ddc30"
+      },
+      {
+        "file": "dist/expedition-palisade.mjs",
+        "sha256": "87642178a2bc9d5fb6c6b095b55e5311708eca78ee8fc124da4aa3ec796ef67c"
+      },
+      {
+        "file": "dist/expedition-personal-view.mjs",
+        "sha256": "5e19c933b265bcb2067ca510c01fc75bf86d76647226e50216a1042b0411273c"
+      },
+      {
+        "file": "dist/expedition-personal.mjs",
+        "sha256": "87eae59f1f1f340ee47589842e6481a838504ef80b3d3e1e6a57d9f712e4e5d5"
+      },
+      {
+        "file": "dist/expedition-plan-book.mjs",
+        "sha256": "eca4d0f27c8fa78550e4f87da6c29a974a94ca18b6850e12dd482e4cb5cdb174"
+      },
+      {
+        "file": "dist/expedition-plan-comparison.mjs",
+        "sha256": "d9ccf16598f2f616043785724a2126efdfbeb7f69500d1ea779970f9ef7a99da"
+      },
+      {
+        "file": "dist/expedition-plan-transfer-view.mjs",
+        "sha256": "42c3f979ffbc028393c7465b3f323ee06ad9971b848dc7a56b62e2540477e7a4"
+      },
+      {
+        "file": "dist/expedition-plan-transfer.mjs",
+        "sha256": "c8122b4b8854b32f1f9fa65e0a82544787943d9c97edbc6dfbd8515b0a8e4587"
+      },
+      {
+        "file": "dist/expedition-position-only.mjs",
+        "sha256": "df67f6ce1d7b264572cd9f4871b30bff22ef3247b77e7d285916870298cb4753"
+      },
+      {
+        "file": "dist/expedition-position-priority.mjs",
+        "sha256": "7ba8c4e72fb124bd3fc94dc0a49aa8fff3dffce39b9ead5dad03ada83c311009"
+      },
+      {
+        "file": "dist/expedition-post-quest-view.mjs",
+        "sha256": "5e288d5e9d1dcccc1c13e85e871bac969930bd4c759af6194de2e3174fe68006"
+      },
+      {
+        "file": "dist/expedition-post-quest.mjs",
+        "sha256": "8449cae9a734c44b96a5d9818c1eecba97c93cd62c200ffd0ae9b8ffc83ba72a"
+      },
+      {
+        "file": "dist/expedition-progression-rules.mjs",
+        "sha256": "081d341a293163ffcdf093efc420bbacdbf971074a5f854f5389d3888d0cb55b"
+      },
+      {
+        "file": "dist/expedition-progression-view.mjs",
+        "sha256": "9d630d0c9dd1efb4bba187bf90972da0b4d0a75edad2bcc272d63aa95a7dae11"
+      },
+      {
+        "file": "dist/expedition-readiness.mjs",
+        "sha256": "2aa22719460352fe7432e6eb35a8e218ad7c6ba8e2d5b840f283c3f7f5384d40"
+      },
+      {
+        "file": "dist/expedition-regeneration.mjs",
+        "sha256": "e6e43bf4fe5a992343e292a93f20027d92bce920205ad77758711166bfe3320c"
+      },
+      {
+        "file": "dist/expedition-replay-layout.mjs",
+        "sha256": "4a4d3e902aaeed5c97ba67b2e035d271c3d2ef5aab21862000fd941cbe75537b"
+      },
+      {
+        "file": "dist/expedition-report-archive-guild.mjs",
+        "sha256": "3219e2d346eba739e72679cd9093d736cfcadf6c636adda42a2397047da976e2"
+      },
+      {
+        "file": "dist/expedition-report-archive-view.mjs",
+        "sha256": "8adbfd8737894bf7b1f874b601801ca08f61fdabdad5f760ed07ef62ba884c84"
+      },
+      {
+        "file": "dist/expedition-report-archive.mjs",
+        "sha256": "9c100d77dcd346b3953608b07c1d41ab0ffcc0c540e649f6149fe316d68aa28c"
+      },
+      {
+        "file": "dist/expedition-report-pool.mjs",
+        "sha256": "f2c25f1f89837e1095f95f4a6190a2075c27ce0f990ed3ad4f2ffbe28b18d8aa"
+      },
+      {
+        "file": "dist/expedition-report.mjs",
+        "sha256": "b68d65c1d290f4475b784037aada3c0bc60f82a70b61e8eb8292ed5d971602a0"
+      },
+      {
+        "file": "dist/expedition-reserve.mjs",
+        "sha256": "f577a098c4c4d5ac8d76f65221a33cfb61d19122002a968cd6eed644a97d692e"
+      },
+      {
+        "file": "dist/expedition-resource-check.mjs",
+        "sha256": "27e4e9f4a1e441433a32e1617e8b2e39feeb4fee64ade596fd4a953f5edf5b86"
+      },
+      {
+        "file": "dist/expedition-resource-ledger.mjs",
+        "sha256": "3eed0ca3224fa9476d90cbdf90c4b5ca7571cc272f1e1bf91d062bebb956d2ab"
+      },
+      {
+        "file": "dist/expedition-review.mjs",
+        "sha256": "d420d9be94beb543cc53bc17105acedb0b8fa47149c6b26ef1d62a9411c7390b"
+      },
+      {
+        "file": "dist/expedition-roster-rehearsal-view.mjs",
+        "sha256": "d36225bf5f45dfad510601ce6acf1d8d7c9cc3967f68e4aad64d3431a113d90c"
+      },
+      {
+        "file": "dist/expedition-roster-rehearsal.mjs",
+        "sha256": "5eeb7beaebb6d7941a39b80558ddf1c4c8e90a4836f369d3fbaeec34a75fb554"
+      },
+      {
+        "file": "dist/expedition-roster-view.mjs",
+        "sha256": "8ebbf10ffdc2bf5ef162cbadf2b268008d84dae20a6f0f3600d16bb77696a86e"
+      },
+      {
+        "file": "dist/expedition-roster.mjs",
+        "sha256": "0a7cc9e87d402f6317eb1737a965d37b48f976f57a65f280d2003bfc335b84ea"
+      },
+      {
+        "file": "dist/expedition-sampling.mjs",
+        "sha256": "2a068464b8c2dae6ffd5a5dac83178ee3bdd2d57d6e0b554d34dc011f31fc162"
+      },
+      {
+        "file": "dist/expedition-schedule-view.mjs",
+        "sha256": "fb2baff7338f7551bfa624777c15b10e69339966dc183f9ca58a662d49e01185"
+      },
+      {
+        "file": "dist/expedition-schedule.mjs",
+        "sha256": "19f17d140ffff9545e27a56db90b206aa40571beeff25feb6bb88eca3c8be0e1"
+      },
+      {
+        "file": "dist/expedition-scriptorium.mjs",
+        "sha256": "f1890b8bae515869c5859a95546b8551c75b220d7af7c4776aaec1e690f3f960"
+      },
+      {
+        "file": "dist/expedition-settlement.mjs",
+        "sha256": "b2671e6b9523777709cfb441be5784a0ba00630ecefb174c83892702e6a2047c"
+      },
+      {
+        "file": "dist/expedition-shoals-view.mjs",
+        "sha256": "19a13661efe6130e7e3e442c6a3351f6dbb2c2ba3da0f85ac6a530821dd656ad"
+      },
+      {
+        "file": "dist/expedition-shoals.mjs",
+        "sha256": "54fe4b4217058d6fb1ca3a8f485fca3b8f5a204e2e9a9523ff450ba93b9be0bb"
+      },
+      {
+        "file": "dist/expedition-solo-story-view.mjs",
+        "sha256": "d23e40cd563d4a6df61eafe5bf83acb8260d9fba4599f0f2ff64fd20b6013e0b"
+      },
+      {
+        "file": "dist/expedition-source-trace.mjs",
+        "sha256": "51c842394f2faa7f81858f03ec48b76b925416b9ccea5e7cd825ca73f545a9ae"
+      },
+      {
+        "file": "dist/expedition-sparring-view.mjs",
+        "sha256": "a65f334214d2ce43ad89abac4bc2797a82d48ea1d529855aa1f00bd49d4e6fd1"
+      },
+      {
+        "file": "dist/expedition-sparring.mjs",
+        "sha256": "355e67e6510b4fcaaa787dab16ac7a0a4d3faf0620c106165339dc8d6604c2c0"
+      },
+      {
+        "file": "dist/expedition-stage.mjs",
+        "sha256": "b81e2d69d3d2dce7d138e9459f9a3476ad3ed070f720c0dc3f78f4ce7c8c598a"
+      },
+      {
+        "file": "dist/expedition-stock-floor.mjs",
+        "sha256": "d368349c3ac96f96be288a29b0412bbbfee407df33c91fb99b264a05e9a7e00c"
+      },
+      {
+        "file": "dist/expedition-summon-orders.mjs",
+        "sha256": "804edc40dcb50514726f9f8c02994cb7e3405f8248a5af0e9aae6b526046690d"
+      },
+      {
+        "file": "dist/expedition-summons.mjs",
+        "sha256": "5512f55e74ee9f5836b0b18a5a499ca4a5bd524f3f9ec0ce7778ed4788fe8b24"
+      },
+      {
+        "file": "dist/expedition-support-evidence.mjs",
+        "sha256": "a12558aff00bda124d03f6b97c69b72ea39cb76f346272d327c6aebbf1933b26"
+      },
+      {
+        "file": "dist/expedition-support-priority.mjs",
+        "sha256": "d57c8ae4c50d64622efb2c796d173de7fffc9f5d9d6d5778b1376e52a42abfeb"
+      },
+      {
+        "file": "dist/expedition-support.mjs",
+        "sha256": "791512979c3797e12521a4d04dd2909e4cbe2c5caa7dc6a2145eadf6a56e8738"
+      },
+      {
+        "file": "dist/expedition-tactic-reuse-view.mjs",
+        "sha256": "268f98242b27cc6081eab278d744d8ac09d64aee325930d236ea4bbf5db56f88"
+      },
+      {
+        "file": "dist/expedition-tactic-reuse.mjs",
+        "sha256": "35a52f072aa13fc49b1df1a2f205476f594f8588defc022c283e2638417da87b"
+      },
+      {
+        "file": "dist/expedition-target-check.mjs",
+        "sha256": "3fd11118ae5cbded67ad572b238611467dd7d384b714b719bcabfd442e669ba1"
+      },
+      {
+        "file": "dist/expedition-target-count.mjs",
+        "sha256": "d1de1f5827bd52cfdb059ee9fcdcabb362f2e2d79758a992e643294ca2a91c76"
+      },
+      {
+        "file": "dist/expedition-theater.mjs",
+        "sha256": "0e9145b288ce853f5cbc82931c993d83d4167d991def97e2789b26e50bb85101"
+      },
+      {
+        "file": "dist/expedition-threat-map.mjs",
+        "sha256": "824836393c2524ad820963b75ee06c22e7dffb0a54aed5fccf8e62b6218c154c"
+      },
+      {
+        "file": "dist/expedition-training-plan-view.mjs",
+        "sha256": "0fa9fb500bf9b021810f13f3b42c5822030f0900d12c9fc4481270ba2ff56844"
+      },
+      {
+        "file": "dist/expedition-training-plan.mjs",
+        "sha256": "cdc532f1fd3e368507e49e971181334eb5201ba8a78c296975d41f7bbdbf3865"
+      },
+      {
+        "file": "dist/expedition-training-rehearsal-view.mjs",
+        "sha256": "be4666eca018cd15afadcb42a110d2b1f791a4fd5af4abe6867e033e5df0bd85"
+      },
+      {
+        "file": "dist/expedition-training-rehearsal.mjs",
+        "sha256": "b5bde34438073ad5b84e4718344c34550a6ca02cc3989f96451ad5064fe6b193"
+      },
+      {
+        "file": "dist/expedition-training.mjs",
+        "sha256": "b0b48009e5d000861a9e75b437d40ffac59d2c7952e702b7292aeb7e703159a2"
+      },
+      {
+        "file": "dist/expedition-trapworks.mjs",
+        "sha256": "65d5baaed3916b19c76be30792e42ce1eb2d54fd638f8c4a7312b75f60dac0fe"
+      },
+      {
+        "file": "dist/expedition-turncourt.mjs",
+        "sha256": "45c569795b9538bbe30b2bba47b4a86f96c03d2a573397534280f2253bd3885d"
+      },
+      {
+        "file": "dist/expedition-unravel.mjs",
+        "sha256": "fc0a7852c2d8251c64a1fc9a4aa4d84ab67d23f35348f281dc03d52b115187dc"
+      },
+      {
+        "file": "dist/expedition-watch.mjs",
+        "sha256": "d88d9d54aa0b8450dfa64ac20fded3ce339d9d268a010b64c379d12b79784ad7"
+      },
+      {
+        "file": "dist/expedition-waves.mjs",
+        "sha256": "c4d53a2b6e4b9dc8c5c8492f63b54afee94f1b10c07cd1e143a6bfeef0cd8f45"
+      },
+      {
+        "file": "dist/expedition-withdrawal.mjs",
+        "sha256": "3957c331c89fd0be030be8717a165857d2409566602d94879a3b45aaa153810b"
+      },
+      {
+        "file": "dist/guardian-motion.css",
+        "sha256": "34550c68bd221db5a6c205ef15ec4a16e30f25998943e0d47a1a1fe7aa03e33e"
+      },
+      {
+        "file": "dist/legacy.html",
+        "sha256": "772db7ee3b6d484130bed93c6dba5d439586076ba4f85eec1db2aa78cb23d1cd"
+      },
+      {
+        "file": "dist/samples-v13.json",
+        "sha256": "78a299dabb4e6f2dcde4bf9619b3209353afff0f7c4246509eb94b1b8ec1c239"
+      },
+      {
+        "file": "dist/samples-v14.json",
+        "sha256": "c6cd976eb10ce066bc804db1003fc38e25b40d745b8dba5d564aa8014e2057f0"
+      },
+      {
+        "file": "dist/samples-v16.json",
+        "sha256": "fcbd0ec7110ba9b9cc6293c2051a3ebcbad88083d1626dff3fa2763c9e27fd1f"
+      },
+      {
+        "file": "dist/samples-v17.json",
+        "sha256": "294f057059b391e206e5f3a9031ce1b99219e05b77f888ad3f3754f1b740fe6d"
+      },
+      {
+        "file": "dist/samples-v20.json",
+        "sha256": "965d5de6c15990a1e14a9a3679dc5b4c196f77f64806a6151826f6ef6db10d58"
+      },
+      {
+        "file": "dist/samples-v21.json",
+        "sha256": "9cd0c47f39d79ed4287ad9dccc9afe22fd03e2b4787f9f7e51843a3d99394294"
+      },
+      {
+        "file": "dist/samples-v22.json",
+        "sha256": "b30c8fd8a5e76241397d602a9aaeef059f277c7e189586558671360bbec2bcfa"
+      },
+      {
+        "file": "dist/samples-v23.json",
+        "sha256": "8a7b9effc3b0a35c7440f5bcb201dbe00008df929a1d00f46d082e62ca85648b"
+      },
+      {
+        "file": "dist/samples-v25.json",
+        "sha256": "edbf69b05a4d88027e6d0f0c0f76d0ac53d2b9ea0373fa6a4f2b84b1f7e796d8"
+      },
+      {
+        "file": "dist/samples-v29.json",
+        "sha256": "a3db3446e63de406970173e1bc86d495b7a38f447d89fcbf46ba0a5f75f3d5c4"
+      },
+      {
+        "file": "dist/sim.mjs",
+        "sha256": "0ac426082d6307fde807cc771d9f2a47a20e7bc3d6f1e507a5952686dcdff2a0"
+      },
+      {
+        "file": "dist/workroom.css",
+        "sha256": "2c9143c87370bb2b9f46567354cebfa789e8cc9a45739307cb298023da66ea74"
+      },
+      {
+        "file": "dist/workroom.mjs",
+        "sha256": "cfb57631f2c8155632a5f54eb1b3119da3e2d5f4f4dbb122f89789d0f465dcd3"
+      }
+    ],
+    "onlyExistingRuntimeFilesChanged": [
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html"
+    ],
+    "newNormalCompleteReportsEqualV133": true,
+    "normalHashes": [
+      {
+        "id": 54,
+        "sha256": "bb9f3e10d21d1acd0dab0efeb0a534c11d281a7e3083aa9a6478974f85e9fc38"
+      },
+      {
+        "id": 55,
+        "sha256": "f32f3098c5e0a7584fbfa902ed77dbe9b9ce92eb939be35f9c80b6079629619c"
+      }
+    ],
+    "finalGold": 5995,
+    "next": 56,
+    "ordinaryGold": 175,
+    "ordinaryXpEach": 75,
+    "noPurchasesCoursesTrainingRefundGearOrRoleChanges": true,
+    "oldFiveFullArchiveEntriesExactIncludingPayload": true,
+    "archiveUsage": 793208,
+    "history": [
+      55,
+      54,
+      53,
+      52,
+      51,
+      50,
+      49,
+      48,
+      47,
+      46,
+      45,
+      44,
+      43,
+      42,
+      41,
+      40,
+      39,
+      38,
+      37,
+      36
+    ],
+    "oldHistory36Through53Exact": true,
+    "normalRollOff": [
+      34,
+      35
+    ],
+    "allOldFirstProofsExact": true,
+    "onlyWarehouseIncrease": {
+      "postbell": 1
+    },
+    "normal55ZeroAliveAndOnlyTwoRoomsCleared": true,
+    "noPending": true,
+    "noIdentityRolesTasksGoalsEquipsOwnedOrProgressionChange": true,
+    "handoffHistoryPreserved": true
+  },
+  "firstFailuresPreserved": {
+    "v133Original": {
+      "file": "/workspace/wod-evidence/v133/acceptance/browser-v123/browser-v123.json",
+      "reasonWasUnknownAtThatStage": true
+    },
+    "thisPhaseOriginalFailureReproduced": {
+      "parallelAttempts": 3,
+      "failedV123Runs": [
+        1,
+        2
+      ],
+      "files": [
+        "full-pair-1-v123/cross-trace-before-assert.json",
+        "full-pair-2-v123/cross-trace-before-assert.json"
+      ],
+      "threeV124ControlsPassed": true,
+      "originalSeed888ReaderAssertionRetained": true,
+      "strictWriterFullSnapshotAndRestoreAssertionsAdded": true
+    },
+    "unitInitial": {
+      "file": "unit-initial.tap",
+      "pass": 10,
+      "fail": 1,
+      "reason": "Test expected object shared nested heroes with edited old draft; corrected test to clone expected input independently. Production correctly retained con."
+    },
+    "unitFinal": {
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "skipped": 0,
+      "log": "unit-final.tap",
+      "durationMs": 81.383927
+    },
+    "phaseBrowserFirstRunPassed": true,
+    "full1189FirstRunPassed": true,
+    "combatParametersConfigsSeedsOrRewardsTunedForTests": false,
+    "assertionsWeakened": false
+  },
+  "technicalReference": {
+    "verified": [
+      {
+        "url": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+        "supports": "Remote storage notifications queue tasks; no cross-agent locking guarantee."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/chromium/chromium/main/third_party/blink/renderer/modules/storage/cached_storage_area.h",
+        "supports": "Per-process local mapping cache with observer callbacks for nonlocal changes; main-source architecture, not an exact installed-binary audit."
+      }
+    ],
+    "inferenceBoundary": "Actual two matching failed observations prove writer888 and early reader2/later event888. Source supports the cache/notification mechanism; not a claim all Storage implementations must return old reads.",
+    "firstChromiumGitilesURLUnavailable": true,
+    "newOriginalWoDServerRulesOrNumbers": false
+  },
+  "productionChange": {
+    "newModule": "expedition-draft-storage.mjs",
+    "wholeKnownPreparationSnapshotCheckedBeforeWrite": true,
+    "unchangedStartupDoesNotRewrite": true,
+    "unsavedLocalDraftRetainedAndExportable": true,
+    "latestPreparationLoadedOnlyOnExplicitUserAction": true,
+    "ownSuccessfulConfigTransactionsRefreshExpectedSnapshot": true,
+    "noForceOverwriteUI": true,
+    "formalDepartureUsesExactSavedDraft": true,
+    "noNewSaveFields": true,
+    "notCrossProcessMutexOrServerTransaction": true,
+    "remainingConcurrencyBoundary": "Before propagation, separate page caches may differ. This snapshot check protects the tested visible stale edits; it is not atomic simultaneous multiprocess update control."
+  },
+  "scope": {
+    "routes": 28,
+    "gear": 45,
+    "ordinaryGoals": 84,
+    "newSkillsGearRoutesOrRewards": false,
+    "allExistingCombatAndProgressionBytesUnchanged": true,
+    "allOriginalImageAssetsBytesUnchanged": true,
+    "newNormal54And55CompleteRawReportsSameAsV133": true,
+    "noCourseTrainingPurchasesRolesOrAutomaticChanges": true,
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "Editable dist directly served;no bundler build."
+  },
+  "actualPlayLimits": {
+    "normal54SixAlive": true,
+    "normal55ZeroAliveAllMaterialsZero": true,
+    "normal55OnlyTwoRoomsReward40Gold20XP": true,
+    "normal55CoverSucceededTwiceButNoClear": true,
+    "paired54BothSixAliveWithDifferentMaterialUse": true,
+    "paid54IndependentMana60": true,
+    "oldFailure53AndFrozen22NotRewritten": true,
+    "noSingleCauseOrGlobalUpgradeClaim": true
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Permanent supplies and backup push still waiting;neither blocks independent local solo development.",
+    "limitations": [
+      "Validated current Chromium;Firefox/Safari/physical devices not tested.",
+      "Snapshot comparison is not a cross-process lock or an atomic multi-page/server transaction.",
+      "Repeated tests establish this reproduced path and measured fix;they are not proof of no future browser timing defects.",
+      "55 still wipes with full material exhaustion despite two successful cover attempts;no balance or stable-clear claim."
+    ],
+    "next": "Continue actual solo failure/resource/party-cooperation bottlenecks;avoid adding storage categories or treating one successful reaction as proof of team success."
+  }
+}

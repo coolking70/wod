@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.133「守卫关节动作样板」**，分支`feature/v133-guardian-motion`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.134「改配保护与失败复战」**，分支`feature/v134-cross-page-drafts`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[跨页改配保护与失败复战](docs/V134_CROSS_PAGE_DRAFTS.md)：复现并定位v123写入页已保存、读取页尚未收到传播的验收时序，保留严格断言并等待真实通知；另修旧页普通调整静默覆盖新配置的问题，支持保留/导出本页草稿、明确载入最新及正式出征核对。正常54六人，55两次接招仍全灭，部分领取至5995金币，见[V134验证](docs/V134_CHECKS.json)。
 
 新增[守卫关节动作样板](docs/V133_GUARDIAN_MOTION.md)：同一程序SVG以9关节表现真实出手、援护未及/接招、挡架后受击与倒下，区分真实剑盾/重盾。暂停、快进和减少动态效果只改只读演出，全部规则/旧素材保持。正常53仅两人生还及全补给耗尽不隐藏，最终5820金币，见[V133验证](docs/V133_CHECKS.json)。
 

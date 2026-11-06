@@ -1,0 +1,271 @@
+{
+  "startGold": 5820,
+  "normal": [
+    {
+      "id": 54,
+      "rounds": [
+        3,
+        4,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "guardian": {
+        "damage": 140,
+        "healing": 0,
+        "received": 205,
+        "taken": 212,
+        "casts": 19,
+        "castMana": 36,
+        "defenseMana": 19,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 5,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "scholar": {
+        "damage": 250,
+        "healing": 0,
+        "received": 53,
+        "taken": 53,
+        "casts": 19,
+        "castMana": 50,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 4,
+        "controlApplications": 3,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "cover": [],
+      "independentMana": 0,
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 5955
+    },
+    {
+      "id": 55,
+      "rounds": [
+        4,
+        4,
+        15
+      ],
+      "alive": 0,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "guardian": {
+        "damage": 64,
+        "healing": 0,
+        "received": 453,
+        "taken": 619,
+        "casts": 18,
+        "castMana": 36,
+        "defenseMana": 18,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 9,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "interceptAttempts": 2,
+        "interceptMana": 4,
+        "interceptions": 2
+      },
+      "scholar": {
+        "damage": 284,
+        "healing": 0,
+        "received": 43,
+        "taken": 145,
+        "casts": 22,
+        "castMana": 54,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 3,
+        "controlApplications": 3,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 1,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "cover": [
+        {
+          "eventId": 253,
+          "success": true,
+          "protected": "d",
+          "cost": 2
+        },
+        {
+          "eventId": 294,
+          "success": true,
+          "protected": "d",
+          "cost": 2
+        }
+      ],
+      "independentMana": 0,
+      "reward": {
+        "cleared": 2,
+        "gold": 40,
+        "xp": 20,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 5995
+    }
+  ],
+  "comparison": {
+    "seed": 54,
+    "onlyChangedField": "heroes[d].initiative",
+    "sameActualEarnedGuild": true,
+    "natural": {
+      "rounds": [
+        3,
+        4,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      },
+      "guardian": {
+        "damage": 140,
+        "healing": 0,
+        "received": 205,
+        "taken": 212,
+        "casts": 19,
+        "castMana": 36,
+        "defenseMana": 19,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 5,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "scholar": {
+        "damage": 250,
+        "healing": 0,
+        "received": 53,
+        "taken": 53,
+        "casts": 19,
+        "castMana": 50,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 4,
+        "controlApplications": 3,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "cover": [],
+      "independentMana": 0
+    },
+    "paid": {
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 1,
+        "arrow": 0
+      },
+      "guardian": {
+        "damage": 95,
+        "healing": 0,
+        "received": 193,
+        "taken": 230,
+        "casts": 17,
+        "castMana": 36,
+        "defenseMana": 19,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 5,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "scholar": {
+        "damage": 252,
+        "healing": 0,
+        "received": 106,
+        "taken": 106,
+        "casts": 17,
+        "castMana": 43,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 2,
+        "summonDamage": 0,
+        "buffApplications": 4,
+        "controlApplications": 2,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 2,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "initiativeChecks": 15,
+        "initiativeMana": 60
+      },
+      "cover": [],
+      "independentMana": 60
+    }
+  },
+  "finalGold": 5995,
+  "next": 56,
+  "limits": "Existing skills, costs, enemies, equipment, rewards and economy unchanged. Two fixed new normal54/55: natural scholar initiative, then existing guardian rear interpose. No tuning after outcomes. Paired54 only changes initiative but later RNG/target branches may diverge; neither two seeds nor both plan changes prove global upgrade or a single cause of success."
+}

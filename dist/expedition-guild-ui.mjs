@@ -75,7 +75,7 @@ import {ADVANCED,UNLOCK_COST,growth,isAdvanced,installAdvanced} from './expediti
 import {rewardPreview,gearDifference,isRelic} from './expedition-loot.mjs';
 import {setEquipmentGoal,clearEquipmentGoal,redeemHarbor,GUILD_KEY,GEAR_PRICE,historyConfig,historyReport,claimClocktowerStory,claimFoundryStory,claimHarborStory,newGuild,validateGuild,migrateGuild,pendingReward,assignLoot,sellLoot,guildConfig,depart,pendingReport,rewardFor,claim,train,lowerTraining,applyTrainingPlan,chooseAdvancement,resetAdvancement,equip,retrain,learnAdvanced} from './expedition-guild.mjs';
 import {HEROES,GEAR,ATTR,SKILLS,POS,DEFENSES,ITEMS,roomsFor,EXPEDITIONS,trainingOptions,trainingCost,MAX_TRAINING_RANK} from './expedition-data.mjs';
-export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,editHero,updateConfig,configKey}){
+export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showReport,view,tell,download,editHero,updateConfig,configKey}){
  const root=document.querySelector('#guild'),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let raw=null,g=null,selected='a',failure='',checkScope='',pane='hero',message='',gearFilter='owned',equipmentSlot='all',compareId=null,compareMode='draft',companionRoom='',previews={},reuseOpen=false,reuseSource='',reuseTarget='',reuseRooms=false,lastReusePreview=null;
  const lootLabel=items=>Object.entries(items.reduce((counts,id)=>(counts[id]=(counts[id]||0)+1,counts),{})).map(([id,n])=>GEAR[id].name+(n>1?' ×'+n:'')).join('、');
  let archiveReader=null;
@@ -230,7 +230,7 @@ export function mountGuild({getConfig,loadConfig,showReport,view,tell,download,e
  case 'check':switchPanel('departure');return;
  case 'backup':download('sunken-abbey-guild.json',g||{unreadable:raw});return;
  case 'prepare':loadConfig(guildConfig(g,getConfig()));inform('公会装备与永久训练已载入。修改指令后请使用“公会出征”；实验配置中的装备与训练不会覆盖公会资产。');return;
- case 'depart':save(depart(g,getConfig()));showReport(pendingReport(g),pendingOrigin(g));inform('公会远征已记录。请返回公会领取奖励；刷新后可恢复战报与待结算状态。');break;
+ case 'depart':assertPreparation();save(depart(g,getConfig()));showReport(pendingReport(g),pendingOrigin(g));inform('公会远征已记录。请返回公会领取奖励；刷新后可恢复战报与待结算状态。');break;
  case 'report':showReport(pendingReport(g),pendingOrigin(g));break;
  case 'claim':{const hasLoot=(pendingReward(g).loot||[]).length>0;save(claim(g));selected=g.command?.heroId||selected;pane=hasLoot?'equipment':'team';}inform('奖励已存入公会，出战者已获得经验；候补保留原成长，装备和训练保留。');break;
  case 'retrain':save(retrain(g,selected));break;
