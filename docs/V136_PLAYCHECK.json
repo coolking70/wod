@@ -1,0 +1,1101 @@
+{
+  "startGold": 6265,
+  "normal": [
+    {
+      "id": 58,
+      "rounds": [
+        4,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 8,
+        "rune": 6,
+        "arrow": 4
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 168,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 169,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 75,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 73,
+          "round": 2,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 240,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 238,
+          "round": 2,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 336,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 334,
+          "round": 4,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 302,
+        "healing": 0,
+        "received": 0,
+        "taken": 14,
+        "casts": 10,
+        "castMana": 34,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 73,
+        "healing": 0,
+        "received": 0,
+        "taken": 12,
+        "casts": 12,
+        "castMana": 18,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 140,
+        "xp": 60,
+        "firstClear": true,
+        "loot": []
+      },
+      "gold": 6405
+    },
+    {
+      "id": 59,
+      "rounds": [
+        3,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 5,
+        "rune": 6,
+        "arrow": 5
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 158,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 159,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 128,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 126,
+          "round": 3,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 288,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 286,
+          "round": 3,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 383,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 381,
+          "round": 5,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 291,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 10,
+        "castMana": 30,
+        "defenseMana": 4,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 146,
+        "healing": 0,
+        "received": 22,
+        "taken": 22,
+        "casts": 12,
+        "castMana": 66,
+        "defenseMana": 4,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 90,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 6495
+    }
+  ],
+  "comparison": {
+    "seed": 58,
+    "sameEarnedGuild": true,
+    "changes": "B first shot/healer timing and E physical vs mental jointly differ",
+    "disarm": {
+      "rounds": [
+        4,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 8,
+        "rune": 6,
+        "arrow": 4
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 168,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 169,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 75,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 73,
+          "round": 2,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 240,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 238,
+          "round": 2,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 336,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 334,
+          "round": 4,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 302,
+        "healing": 0,
+        "received": 0,
+        "taken": 14,
+        "casts": 10,
+        "castMana": 34,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 73,
+        "healing": 0,
+        "received": 0,
+        "taken": 12,
+        "casts": 12,
+        "castMana": 18,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    "bypass": {
+      "rounds": [
+        4,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 6,
+        "arrow": 4
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 181,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 182,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 127,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 125,
+          "round": 3,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 310,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 308,
+          "round": 3,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 401,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 399,
+          "round": 5,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 293,
+        "healing": 0,
+        "received": 24,
+        "taken": 24,
+        "casts": 10,
+        "castMana": 34,
+        "defenseMana": 3,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 157,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 12,
+        "castMana": 66,
+        "defenseMana": 4,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    }
+  },
+  "exploratory": [
+    {
+      "plan": "disarm",
+      "seed": 1,
+      "won": true,
+      "rounds": [
+        5,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 6,
+        "arrow": 6
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 218,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 219,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 137,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 135,
+          "round": 3,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 291,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 289,
+          "round": 2,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 392,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 390,
+          "round": 4,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 288,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 10,
+        "castMana": 29,
+        "defenseMana": 1,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 73,
+        "healing": 0,
+        "received": 0,
+        "taken": 7,
+        "casts": 14,
+        "castMana": 18,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    {
+      "plan": "disarm",
+      "seed": 731,
+      "won": true,
+      "rounds": [
+        3,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 7,
+        "rune": 6,
+        "arrow": 5
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 143,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 144,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 79,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 77,
+          "round": 2,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 216,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 214,
+          "round": 2,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 311,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 309,
+          "round": 4,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 295,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 9,
+        "castMana": 30,
+        "defenseMana": 3,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 60,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 12,
+        "castMana": 18,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    {
+      "plan": "disarm",
+      "seed": 732,
+      "won": true,
+      "rounds": [
+        3,
+        5
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 7,
+        "rune": 6,
+        "arrow": 6
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 145,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 146,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 79,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 77,
+          "round": 2,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 234,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 232,
+          "round": 2,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 327,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 325,
+          "round": 4,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 289,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 8,
+        "castMana": 26,
+        "defenseMana": 3,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 52,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 12,
+        "castMana": 18,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    {
+      "plan": "bypass",
+      "seed": 1,
+      "won": true,
+      "rounds": [
+        3,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 7,
+        "rune": 6,
+        "arrow": 5
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 146,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 147,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 129,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 127,
+          "round": 3,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 278,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 276,
+          "round": 3,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 365,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 363,
+          "round": 5,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 293,
+        "healing": 0,
+        "received": 0,
+        "taken": 19,
+        "casts": 10,
+        "castMana": 30,
+        "defenseMana": 5,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 96,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 12,
+        "castMana": 66,
+        "defenseMana": 4,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    {
+      "plan": "bypass",
+      "seed": 731,
+      "won": true,
+      "rounds": [
+        3,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 7,
+        "rune": 6,
+        "arrow": 4
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 143,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 144,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 133,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 131,
+          "round": 3,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 285,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 283,
+          "round": 3,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 381,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 379,
+          "round": 5,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 326,
+        "healing": 0,
+        "received": 0,
+        "taken": 14,
+        "casts": 10,
+        "castMana": 34,
+        "defenseMana": 3,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 111,
+        "healing": 0,
+        "received": 0,
+        "taken": 6,
+        "casts": 11,
+        "castMana": 60,
+        "defenseMana": 4,
+        "failed": 1,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    {
+      "plan": "bypass",
+      "seed": 732,
+      "won": true,
+      "rounds": [
+        3,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 6,
+        "arrow": 5
+      },
+      "established": [
+        {
+          "eventId": 2,
+          "source": "lws",
+          "target": "lwg",
+          "armor": 12
+        },
+        {
+          "eventId": 141,
+          "source": "lwl",
+          "target": "lwd",
+          "armor": 8
+        },
+        {
+          "eventId": 142,
+          "source": "lwr",
+          "target": "lwd",
+          "armor": 8
+        }
+      ],
+      "released": [
+        {
+          "eventId": 127,
+          "source": "lws",
+          "target": "lwg",
+          "sourceDamageEventId": 125,
+          "round": 3,
+          "armorBefore": 12,
+          "armorAfter": 0,
+          "released": 12
+        },
+        {
+          "eventId": 267,
+          "source": "lwl",
+          "target": "lwd",
+          "sourceDamageEventId": 265,
+          "round": 3,
+          "armorBefore": 16,
+          "armorAfter": 8,
+          "released": 8
+        },
+        {
+          "eventId": 358,
+          "source": "lwr",
+          "target": "lwd",
+          "sourceDamageEventId": 356,
+          "round": 5,
+          "armorBefore": 8,
+          "armorAfter": 0,
+          "released": 8
+        }
+      ],
+      "ranger": {
+        "damage": 272,
+        "healing": 0,
+        "received": 31,
+        "taken": 31,
+        "casts": 9,
+        "castMana": 30,
+        "defenseMana": 8,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "mechanismDamage": 180
+      },
+      "bard": {
+        "damage": 123,
+        "healing": 0,
+        "received": 0,
+        "taken": 14,
+        "casts": 12,
+        "castMana": 66,
+        "defenseMana": 4,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    }
+  ],
+  "finalGold": 6495,
+  "next": 60,
+  "limits": "Original finite encounter links, targets, values and two normal configurations frozen before outcomes; not an original server rule. Normal58/59 no training/gear/course/role purchases. Six untrained experimental inputs are finite observations, not balance proof. Same seed does not hold downstream random/target paths fixed; damage prevented or net added damage is not inferred. All mechanisms must still die for room clear."
+}
