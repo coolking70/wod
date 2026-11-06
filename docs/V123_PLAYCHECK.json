@@ -1,0 +1,208 @@
+{
+  "startGold": 2150,
+  "normal": [
+    {
+      "id": 21,
+      "seed": 21,
+      "won": true,
+      "rounds": [
+        3,
+        4
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 90,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 2240,
+      "objective": {
+        "id": "reserve",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 2,
+          "rooms": 2,
+          "rounds": 7,
+          "alive": 6,
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        }
+      }
+    },
+    {
+      "id": 22,
+      "seed": 22,
+      "won": false,
+      "rounds": [
+        4,
+        6,
+        12
+      ],
+      "alive": 0,
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 3
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 40,
+        "xp": 20,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 2280,
+      "objective": {
+        "id": "survive",
+        "met": false,
+        "metrics": {
+          "won": false,
+          "cleared": 2,
+          "rooms": 3,
+          "rounds": 22,
+          "alive": 0,
+          "herb": 0,
+          "rune": 4,
+          "arrow": 3
+        }
+      }
+    }
+  ],
+  "archives": [
+    {
+      "id": 22,
+      "title": "邮路复战仍止步",
+      "source": "pending",
+      "rawBytes": 6784516,
+      "compressedBytes": 168932,
+      "encodedChars": 225244,
+      "sha256": "71a026c1e6dddbc8c11f1e60b19c907739b9d64917c8dac353ffca1f0460ac7c",
+      "completeEqual": true,
+      "won": false,
+      "cleared": 2,
+      "roomCount": 3,
+      "rounds": [
+        4,
+        6,
+        12
+      ],
+      "alive": 0,
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 3
+      }
+    },
+    {
+      "id": 21,
+      "title": "机廊留余完成",
+      "source": "pending",
+      "rawBytes": 2928755,
+      "compressedBytes": 79028,
+      "encodedChars": 105372,
+      "sha256": "80194db694ae2d2150ce4fccf6559f5ccf248a07a6168ced8efee04c3429b21a",
+      "completeEqual": true,
+      "won": true,
+      "cleared": 2,
+      "roomCount": 2,
+      "rounds": [
+        3,
+        4
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      }
+    },
+    {
+      "id": 2,
+      "title": "第一次邮路失败",
+      "source": "history",
+      "rawBytes": 6850406,
+      "compressedBytes": 169773,
+      "encodedChars": 226364,
+      "sha256": "eb731bc577537d7d7c95f7f3f296caf955c82e21db6bedd153bcb3893f0d0495",
+      "completeEqual": true,
+      "won": false,
+      "cleared": 2,
+      "roomCount": 3,
+      "rounds": [
+        4,
+        4,
+        13
+      ],
+      "alive": 0,
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      }
+    },
+    {
+      "id": 1,
+      "title": "第一趟钟楼归来",
+      "source": "history",
+      "rawBytes": 5659311,
+      "compressedBytes": 140004,
+      "encodedChars": 186672,
+      "sha256": "f9d748813227b3c2a86d5fab3270bbbd3ad33d94834e5f278ad97ad25dad00c8",
+      "completeEqual": true,
+      "won": true,
+      "cleared": 3,
+      "roomCount": 3,
+      "rounds": [
+        5,
+        4,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 2,
+        "rune": 0,
+        "arrow": 0
+      }
+    }
+  ],
+  "usage": {
+    "count": 4,
+    "encodedChars": 743652
+  },
+  "rolledOut": [
+    1,
+    2
+  ],
+  "historyIds": [
+    22,
+    21,
+    20,
+    19,
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3
+  ],
+  "rules": "Existing20-entry claimed history remains rolling. Four explicitly selected full snapshots retained; history sources were reconstructed at capture time then frozen, not claimed to be original execution logs. No archive rewards/assets/automatic resimulation; gzip bytes are implementation-dependent, decoded complete reports and all metadata are compared. Normal22 failed with all heroes down; kept without tuning seed/enemies/gear or claiming training guarantees victory."
+}

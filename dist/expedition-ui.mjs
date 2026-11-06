@@ -1,3 +1,4 @@
+import {mountArchiveCapture} from './expedition-report-archive-view.mjs';
 import {mechanismPreparationView} from './expedition-mechanisms-view.mjs';
 import {trapworksConfig} from './expedition-data.mjs';
 import {mechanismLabel,mechanismEvidenceView,mechanismOutcomeIndex,MECHANISM_RULE} from './expedition-mechanisms.mjs';
@@ -85,6 +86,7 @@ let guideDismissed=false,observedHero='a',guildUI=null;
 let coverageId='d:0';
 let supportEvidenceData=null,supportEvidenceReturn=false;
 let prepTab='overview',sampleData=null,pressureData=null;
+let archiveCapture=null;
 let config=defaults(),selected='a',report=null,index=0,room=0,timer=null,savedA=null,pair=null,pairOrigins=[],scope='',groups=[],selectedUnit=null,originMap=new Map(),traceReturn=null,scheduleReturn=null,positionReturn=null,immunityReturn=null,waveReturn=null,mechanismReturn=null;
 const replayWorkspace=mountReplayLayout({onChange:()=>{stop();if(report)requestAnimationFrame(()=>drawFx(stageFrame(selectedGroup())));}});
 const personalUI=mountPersonalReport({onHeroChange:id=>{observedHero=id;syncPersonalReplay();},onEvidence:i=>{replayWorkspace.open('evidence');if(report.events[i].type==='skip'){$('#highlights-only').checked=false;$('#diagnostic').checked=true;renderJournal();}move(i);$('#detail').scrollIntoView({block:'start'});},onCamp:()=>guildUI.open()});
@@ -94,7 +96,7 @@ const plansKey=PLAN_BOOK_KEY;let planBook=readPlanBook(null),plans=[],planBookRa
 function refreshPlanBook(){try{const raw=localStorage.getItem(plansKey);if(raw===planBookRaw&&!planBookError)return true;const book=readPlanBook(raw);planBookRaw=raw;planBook=book;plans=book.plans;planBookError='';}catch(e){planBookError=e.message;}return !planBookError;}
 refreshPlanBook();
 function tell(t){$('#notice').textContent=t;}
-function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.122';}
+function savedState(){$('#save-state').textContent='当前配置已保存在本机 · v0.123';}
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(config));savedState();}catch{$('#save-state').textContent='本机存储不可用，请导出配置备份。';}}
 function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value="${esc(k)}" ${k===value?'selected':''}>${esc(typeof v==='object'?v.name:v)}</option>`).join('');}
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}
@@ -467,6 +469,7 @@ $('#lab-scenario-body').append($('.build-presets'));
 view('adventure');
 
 guildUI=mountGuild({configKey:storageKey,editHero:(id,roomId,row,phase='prep')=>{selected=id;scope=roomId;planner();view("planning");setPrep("team");$("#editor").scrollIntoView({block:"start"});focusCommandRow(row,phase);tell("正在调整该队员战术。完成后点击公会出征重新核对实际配置。");},updateConfig:(c,undo,persisted)=>{replaceConfig(c,undo);scope='';if(persisted)savedState();else persist();planner();},getConfig:()=>config,loadConfig:(c,undo,persisted,options={})=>{replaceConfig(c,undo);scope="";if(options.overview)guideDismissed=false;if(persisted)savedState();else persist();planner();view("planning");setPrep(options.overview?"overview":"team");window.scrollTo({top:0});},showReport:loadReport,view,tell,download});
+archiveCapture=mountArchiveCapture({getGuild:()=>readCycleGuild(localStorage),getReport:()=>report,getOrigin:()=>reportOrigin,onSave:(r,o,title)=>guildUI.saveReportArchive(r,o,title),onLibrary:()=>guildUI.open('history'),tell});
 planner();guildUI.open();
 
 function renderTrialBrief(){const isTrial=['seasoned','veteran'].includes(config.expedition);$('#trial-brief').hidden=!isTrial;if(!isTrial)return;$('#trial-brief').innerHTML=`<p class=eyebrow>阶段试炼 / ${config.expedition==='seasoned'?'建议熟练':'建议资深'}</p><h2>${EXPEDITIONS[config.expedition].name}</h2><p>${config.expedition==='seasoned'?'保护后排，分开处理高法抗治疗者与高远程抗性召唤者。':'双翼伏弩、中央群攻和末场支援链；调整站位并为后三名敌人保留资源。'}</p><p>以下方案用于对照思路，会载入整队战术、训练和补给；可撤销。公会出征仍使用实际持有的装备与训练。进阶技能可自行加入，建议阶段不是进入门槛。</p><div class=bar><button data-trial-plan="front">正面突破</button><button data-trial-plan="roles">统一职责集火</button><button data-trial-plan="adapted">分工与保护</button></div><p class=muted>先查看逐房敌情，再判断方案适不适合你的队伍；预设不保证通关。</p>`;}
@@ -540,7 +543,7 @@ function renderGreenhouseBrief(){const enabled=config.expedition==='greenhouse';
 $('#greenhouse-brief').onclick=e=>{const b=e.target.closest('[data-greenhouse-plan]');if(!b)return;const next=greenhouseConfig(b.dataset.greenhousePlan);next.seed=config.seed;replaceConfig(preserveObjective(next));scope='';persist();planner();view('planning');setPrep('team');tell('温室起点已载入；请核对实际资产、逐房目标与净化/救护分工。');};
 
 function campMapView(){try{return campCycleView(campObjective(readCycleGuild(localStorage)));}catch{return '<section class="panel"><p>公会暂不可读，原存档未覆盖；请回营导出或恢复有效备份。</p><button data-cycle-action=hero>回营检查</button></section>';}}
-function refreshReportHandoff(){const box=$('#report-handoff');if(!box)return;box.hidden=!report;if(!report)return;try{const state=reportHandoff(readCycleGuild(localStorage),reportOrigin,report);box.dataset.status=state.status;box.innerHTML=reportHandoffView(state,objectiveResultView(report));}catch{box.dataset.status='unavailable';box.innerHTML='<h2>公会暂不可读取</h2><p>原存档未覆盖，不能从这里领取；请回营检查或恢复备份。</p><button data-report-cycle=camp>回营检查</button>';}}
+function refreshReportHandoff(){const box=$('#report-handoff');if(!box)return;box.hidden=!report;if(!report)return;try{const state=reportHandoff(readCycleGuild(localStorage),reportOrigin,report);box.dataset.status=state.status;box.innerHTML=reportHandoffView(state,objectiveResultView(report));archiveCapture?.render();}catch{archiveCapture?.hide();box.dataset.status='unavailable';box.innerHTML='<h2>公会暂不可读取</h2><p>原存档未覆盖，不能从这里领取；请回营检查或恢复备份。</p><button data-report-cycle=camp>回营检查</button>';}}
 $('#report-handoff').onclick=e=>{const proof=e.target.closest('[data-objective-event]');if(proof){stop();$('#personal-playback').checked=false;$('#highlights-only').checked=false;$('#diagnostic').checked=true;replayWorkspace.open('evidence');renderJournal();move(Number(proof.dataset.objectiveEvent));$('#detail').scrollIntoView({block:'start'});return;}if(e.target.closest('[data-objective-edit]')){try{replaceConfig(report.config);savedA=clone(report.config);try{localStorage.setItem(storageKey+'-a',JSON.stringify(savedA));}catch{}scope='';persist();planner();view('planning');setPrep('overview');tell('本次目标与方案已载入，并冻结为A供对照。请按当前公会资产与伙伴职责调整；待领远征不变，正式重试仍须先正常领取。');}catch(error){tell('未能载入目标方案：'+error.message);}return;}const b=e.target.closest('[data-report-cycle]');if(!b)return;try{if(b.dataset.reportCycle==='claim')guildUI.settleReport(reportOrigin,report);else guildUI.cycle(b.dataset.reportCycle);}catch(error){tell(error.message);}refreshReportHandoff();};
 window.addEventListener('storage',e=>{if(!e.key||e.key==='abbey-guild-v6')refreshReportHandoff();});
 window.addEventListener('focus',()=>refreshReportHandoff());

@@ -1,3 +1,4 @@
+import {validateArchiveStore} from './expedition-report-archive.mjs';
 import {validateEquipmentGoal} from './expedition-equipment-goal.mjs';
 import {validateClocktowerStory,clocktowerStoryProgress,CLOCKTOWER_STORY_ENDINGS,CLOCKTOWER_STORY_GOLD} from './expedition-clocktower-story.mjs';
 import {validateEquipmentSets,equipmentSet,EQUIPMENT_SET_SLOTS} from './expedition-equipment-sets.mjs';
@@ -43,6 +44,7 @@ export function validateGuild(g){
  if(g.clocktowerStory&&!clocktowerStoryProgress(g).ready)throw Error('潮刻余响记录缺少正常远征条件');
  if(g.harborStory&&!harborStoryProgress(g).ready)throw Error('灯塔来信记录缺少正常远征条件');
  if(g.foundryStory&&!foundryStoryProgress(g).ready)throw Error('铸库归航记录缺少正常远征条件');
+ validateArchiveStore(g.reportArchives,g.next);
  return g;
 }
 export function migrateGuild(input){return validateGuild(clone(input));}

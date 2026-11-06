@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.122「潮闸机廊」**，分支`feature/v122-dungeon-mechanisms`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.123「关键战报收藏」**，分支`feature/v123-report-archive`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[关键战报收藏](docs/V123_REPORT_ARCHIVE.md)：最近20条履历之外，可主动冻结最多6份完整报告，独立事件回看、导出及随整档恢复；历史源明确为收藏时重演，打开收藏不重新模拟、不领奖。旧1/2滚出后仍保留，第21次留余完成至2240、第22次用旧战术复战仍全员倒下，只领已过两房40金币至2280。容量、内层校验和跨页面覆盖保护均已接入，见[V123验证](docs/V123_CHECKS.json)。
 
 新增[地城机关与潮闸机廊](docs/V122_DUNGEON_MECHANISMS.md)：机关只接受专门拆解，射手用普通行动/3法力处理机关，队友清生物并分位保护；不把机关当类型免疫或普通治疗对象。正常19/20六人生还至2060/2150，先射后拆多用两箭且喷口多行动一轮，合法无拆解实验24回合未过首房。全部为标明边界的暂定改编，见[V122验证](docs/V122_CHECKS.json)。
 
