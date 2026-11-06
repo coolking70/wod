@@ -1,0 +1,266 @@
+{
+  "phase": "v0.127 mana pressure",
+  "date": "2026-11-06",
+  "baseline": {
+    "baseline": "8b90f7990c2b0f578bd389b5f08ab7d67b375ab3",
+    "tree": "5b35d6c4156fd10e1fca97cb56308befe71412c8",
+    "statusBeforeEdits": "",
+    "branch": "feature/v127-mana-pressure",
+    "remote": "https://github.com/coolking70/wod.git",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "tests": {
+      "passed": 1049,
+      "failed": 0,
+      "log": "baseline-tests.tap"
+    }
+  },
+  "branch": "feature/v127-mana-pressure",
+  "localOnly": true,
+  "tests": {
+    "full": {
+      "tests": 1066,
+      "pass": 1066,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-initial-tests.tap"
+    },
+    "newSpecialized": {
+      "tests": 17,
+      "pass": 17,
+      "fail": 0,
+      "skipped": 0,
+      "log": "unit-final.tap"
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "count": 521,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 144,
+    "checkedReferences": 161,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": true,
+    "suites": 35,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "file": "acceptance/browser-acceptance.json",
+    "phase": {
+      "passed": true,
+      "steps": [
+        "1440px真实3905档从普通技能配置断流，实验+3不改变公会实际零培养；正常37完整报告/公会同API，实际削减77法力且生命不变，消耗符纸至0。个人记录定位原始计算、MP动画/防御支付与截断，pending禁止培养；领取至4025后明确付20XP培养D断流，整档携带原任务/4收藏/两配装和命名绑定。",
+        "390px整档恢复后，正常38每回合一次断流完整报告同API，只实际削减12，金币按真实奖励至4145；正常39原邮路削减39、六人生还但药草/符纸同时0，领取135至4280。手机个人报告把法力削减与生命实伤/自付耗蓝分开，不推算阻止治疗；所有完整公会字段同API且无横向溢出。",
+        "旧36按当时配置重演，新增可用技能列表不改变任何既有事件/数值；旧2冻结失败原始报告完整导出保持。越界drain+4导入写前拒绝，另页培养时旧页拒绝覆盖，精确退级后仍为最终API。新上下文整档恢复4280/next40、D断流+1、E当前两件套/两配装、原任务/4收藏及命名路线绑定，页面错误为零。"
+      ],
+      "errors": []
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "visualInspection": [
+      "mana-desktop.png",
+      "mana-mobile.png"
+    ],
+    "finalBrowserScriptSeparatelySyntaxChecked": true,
+    "fullReportsAndGuildComparedWithAPI": true,
+    "otherEnginesOrPhysicalDevicesTested": false
+  },
+  "legacy": {
+    "reference": "8b90f7990c2b0f578bd389b5f08ab7d67b375ab3",
+    "routes": 27,
+    "count": 61,
+    "defaultReports": 54,
+    "earnedHistoricalReports": 7,
+    "passed": true,
+    "allEventsSnapshotsStatsResultsExact": true,
+    "otherExcludedFields": [],
+    "file": "legacy.json",
+    "onlyNormalized": "Each scholar report.party[i].skills.drain must be exactly6 and absent in baseline; no old input trains or uses drain. Remove only those verified availability keys before complete deep and JSON equality. Every individual path recorded in legacy.json.",
+    "zeroFieldExclusionsClaimed": false
+  },
+  "authoredParametersUnchanged": {
+    "passed": true,
+    "allDrainingSkillParametersAndDescriptionUnchanged": true,
+    "existingEnemyAndLootDefinitionsNotEdited": true,
+    "note": "Skill recorded after initial smoke check, before3normal cases. Rule wording later clarified unchanged1MPnatural recovery and MP-positive role eligibility; original records retained."
+  },
+  "statePreservation": {
+    "passed": true,
+    "baselineGuildRawSHA256": "0728e2ee94c87faf2379568227f0c51fa11088cd886c4603e62a3857dafa6bc8",
+    "baselineAllFieldsExact": true,
+    "startGold": 3905,
+    "finalGold": 4280,
+    "ordinaryGold": 375,
+    "ordinaryXpEach": 165,
+    "onlyNewTraining": {
+      "heroId": "d",
+      "key": "skill:drain",
+      "rank": 1,
+      "costXp": 20
+    },
+    "next": 40,
+    "history": [
+      39,
+      38,
+      37,
+      36,
+      35,
+      34,
+      33,
+      32,
+      31,
+      30,
+      29,
+      28,
+      27,
+      26,
+      25,
+      24,
+      23,
+      22,
+      21,
+      20
+    ],
+    "oldHistory20Through36Exact": true,
+    "oldFrozenArchivesExact": true,
+    "oldTaskThreeProofsExact": true,
+    "oldOrdinaryProofsExact": true,
+    "newOrdinarySurvivalProof": {
+      "courier": 39
+    },
+    "identityRolesLoadoutsEquipmentGoalExact": true,
+    "actualEsetPieces": 2,
+    "newOrdinaryLootKeptInWarehouse": {
+      "bridgecoat": 1,
+      "bridgebadge": 1,
+      "postbell": 1
+    },
+    "noExtraManaReward": true
+  },
+  "fixture": {
+    "file": "scripts/fixtures/v126-earned-final.json.gz",
+    "sha256": "3fbc69987d64516bd28665134887f869f0ed0c2c1c708c89954cce1f83c05fe6",
+    "rawSHA256": "0728e2ee94c87faf2379568227f0c51fa11088cd886c4603e62a3857dafa6bc8",
+    "preservesPreviousFrozenArchivePayloadsExactly": true
+  },
+  "firstFailuresPreserved": {
+    "unit": {
+      "log": "unit-initial.tap",
+      "passed": 11,
+      "failed": 5,
+      "reason": "Fixtures omitted existing natural+1MP regeneration, used non-existentstaff, or treated room-end summon cleanup as caused by drain; corrected exact expectations/validgear/specific cause, then added explicit next-round regeneration/cheapspell test. Final17allpassed; production rules/numbers unchanged."
+    },
+    "browser": {
+      "file": "browser-v127-initial.json",
+      "passed": false,
+      "reason": "Personal evidence buttons inside collapsed details. Explicitly expand summary before click, no forced hidden controls."
+    },
+    "stateReceipt": {
+      "reason": "Initial assumption expeditionBook entirely unchanged failed: courier survival firstproof39 legitimately added. Verified exact new receipt and every old receipt unchanged.",
+      "log": "state-preservation-initial.txt"
+    },
+    "initialDiscovery": {
+      "directory": "initial-discovery",
+      "reason": "Generic role policy text did not mention MP eligibility; final text clarifies MP>0 and existing natural1MP recovery, all numeric play outcomes unchanged."
+    }
+  },
+  "referenceBoundary": {
+    "primary": [
+      {
+        "url": "https://world-of-dungeons.de/item/Spruchrolle%2BManaraub%26is_popup%3D1%26world%3DWD",
+        "access": "Official search index; direct full page unavailable via tool, not retried",
+        "supports": "Mana destruction can weaken enemy spell casting direction."
+      },
+      {
+        "url": "https://world-of-dungeons.de/skill/Armbrust%2Bschie%C3%9Fen%2B%28Maguskraut%29%26is_popup%3D1%26world%3DWC",
+        "access": "Official search index; direct full page unavailable via tool, not retried",
+        "supports": "Mana damage appears as a damage effect."
+      }
+    ],
+    "projectOriginal": "Scholar drain, costs6MP/1rune, power1.1, shared magic-defense/resistance, no physical armor/HP or caster gain, eligibility/defense-firstclamp and timing are prototype adaptation. No original current-server numerical table claimed.",
+    "currentServerNumbersVerified": false
+  },
+  "scope": {
+    "routes": 27,
+    "gear": 43,
+    "ordinaryGoals": 81,
+    "newOrdinarySkill": "drain",
+    "newEvent": "mana-damage",
+    "oldSkillsTrainingCostsEnemiesLootUnchanged": true,
+    "mandatoryNewSaveFields": false,
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "Editable dist directly served; no bundler build."
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Permanent supplies and backup push authorization still waiting; neither blocks independent local development.",
+    "limitations": [
+      "Three mature-party normal samples use different seeds/modes/growth/routes, not global balance or a single-variable comparison.",
+      "Normal37rune0,normal39herb/rune0; actualMPdamage does not prove cancelled spells/healing.",
+      "Official search-index direction only, two full pages unavailable.",
+      "Firefox/Safari/physical devices not tested."
+    ],
+    "next": "Continue actual party-role and exploration bottlenecks, avoid only duplicating MP-denial variants."
+  },
+  "handoffPreservation": {
+    "passed": true,
+    "originalLines": 411,
+    "finalLines": 411,
+    "onlyCurrentVersionAndCheckLinksUpdated": true,
+    "allHistoricalTextExactAfterReversingEntryUpdates": true,
+    "initialLocalCommitSuperseded": "f0802e3",
+    "initialSourcePackageWillBeKeptAsSupersededNotDelivered": true
+  }
+}

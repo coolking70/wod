@@ -1,0 +1,2364 @@
+{
+  "startGold": 3905,
+  "normal": [
+    {
+      "id": 37,
+      "route": "beaconbridge",
+      "mode": "repeat",
+      "seed": 37,
+      "won": true,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgecoat"
+        ]
+      },
+      "gold": 4025,
+      "drainCasts": 3,
+      "manaHits": [
+        {
+          "eventId": 273,
+          "roomIndex": 1,
+          "target": "bbch",
+          "grade": "重击",
+          "mpBefore": 80,
+          "mpAfter": 54,
+          "actual": 26,
+          "wasted": 0,
+          "hpBefore": 3,
+          "hpAfter": 3
+        },
+        {
+          "eventId": 429,
+          "roomIndex": 2,
+          "target": "bbwh",
+          "grade": "重击",
+          "mpBefore": 80,
+          "mpAfter": 57,
+          "actual": 23,
+          "wasted": 0,
+          "hpBefore": 150,
+          "hpAfter": 150
+        },
+        {
+          "eventId": 488,
+          "roomIndex": 2,
+          "target": "bbwh",
+          "grade": "致命",
+          "mpBefore": 53,
+          "mpAfter": 25,
+          "actual": 28,
+          "wasted": 0,
+          "hpBefore": 71,
+          "hpAfter": 71
+        }
+      ],
+      "scholar": {
+        "damage": 352,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 19,
+        "castMana": 54,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 10,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "manaDamage": 77
+      },
+      "ledger": [
+        {
+          "roomIndex": 0,
+          "roomId": "beaconbridge_pier",
+          "name": "01 · 低桥巡弩",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 9,
+              "mana": 33,
+              "defenseMana": 7,
+              "interceptMana": 4,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "interpose",
+                  "name": "援护架势",
+                  "count": 3,
+                  "mana": 15,
+                  "resource": null,
+                  "firstEvent": 15
+                },
+                {
+                  "skill": "shieldbash",
+                  "name": "盾缘重击",
+                  "count": 4,
+                  "mana": 12,
+                  "resource": null,
+                  "firstEvent": 56
+                },
+                {
+                  "skill": "guard",
+                  "name": "守势",
+                  "count": 2,
+                  "mana": 6,
+                  "resource": null,
+                  "firstEvent": 66
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 4,
+              "mana": 0,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 27
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 5,
+              "mana": 5,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 5,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 53
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 7,
+              "mana": 15,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 2,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "rune",
+                  "firstEvent": 5
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 5,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 44
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 6,
+              "mana": 9,
+              "defenseMana": 8,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 3
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 48
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 60
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 5,
+              "mana": 18,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 4,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "provisions",
+                  "name": "远征药膳",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": "herb",
+                  "firstEvent": 8
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 1,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 33
+                },
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 3,
+                  "mana": 15,
+                  "resource": "herb",
+                  "firstEvent": 90
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 0
+          },
+          "otherCasts": 0
+        },
+        {
+          "roomIndex": 1,
+          "roomId": "beaconbridge_cross",
+          "name": "02 · 回灯校场",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 4,
+              "mana": 3,
+              "defenseMana": 2,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 10,
+              "firstShortage": 241,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "guard",
+                  "name": "守势",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 242
+                },
+                {
+                  "skill": "strike",
+                  "name": "剑术",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 280
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 4,
+              "mana": 4,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 1
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "pierce",
+                  "name": "破甲重箭",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": "arrow",
+                  "firstEvent": 256
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 301
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 3,
+              "mana": 11,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "lance",
+                  "name": "凝潮长枪",
+                  "count": 1,
+                  "mana": 9,
+                  "resource": "rune",
+                  "firstEvent": 266
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 2,
+                  "mana": 2,
+                  "resource": null,
+                  "firstEvent": 305
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 5,
+              "mana": 18,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 3,
+                "arrow": 0
+              },
+              "manaDamage": 26,
+              "manaLost": 0,
+              "firstManaDamage": 273,
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "rune",
+                  "firstEvent": 237
+                },
+                {
+                  "skill": "drain",
+                  "name": "断流符",
+                  "count": 1,
+                  "mana": 6,
+                  "resource": "rune",
+                  "firstEvent": 270
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 2,
+                  "mana": 2,
+                  "resource": null,
+                  "firstEvent": 322
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 5,
+              "mana": 15,
+              "defenseMana": 6,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 235
+                },
+                {
+                  "skill": "mindcall",
+                  "name": "诘心回声",
+                  "count": 1,
+                  "mana": 6,
+                  "resource": null,
+                  "firstEvent": 274
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 284
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 2,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 315
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 3,
+              "mana": 0,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 260
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 1
+          },
+          "otherCasts": 0
+        },
+        {
+          "roomIndex": 2,
+          "roomId": "beaconbridge_watch",
+          "name": "03 · 复灯转台",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 6,
+              "mana": 3,
+              "defenseMana": 3,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 19,
+              "firstShortage": 407,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "strike",
+                  "name": "剑术",
+                  "count": 5,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 450
+                },
+                {
+                  "skill": "shieldbash",
+                  "name": "盾缘重击",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 498
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 7,
+              "mana": 4,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 1
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "pierce",
+                  "name": "破甲重箭",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": "arrow",
+                  "firstEvent": 419
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 6,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 473
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 6,
+              "mana": 14,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "lance",
+                  "name": "凝潮长枪",
+                  "count": 1,
+                  "mana": 9,
+                  "resource": "rune",
+                  "firstEvent": 441
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 5,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 481
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 7,
+              "mana": 21,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 3,
+                "arrow": 0
+              },
+              "manaDamage": 51,
+              "manaLost": 0,
+              "firstManaDamage": 429,
+              "shortages": 6,
+              "firstShortage": 508,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": "rune",
+                  "firstEvent": 403
+                },
+                {
+                  "skill": "drain",
+                  "name": "断流符",
+                  "count": 2,
+                  "mana": 12,
+                  "resource": "rune",
+                  "firstEvent": 426
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 4,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 554
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 8,
+              "mana": 21,
+              "defenseMana": 12,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 9,
+              "firstShortage": 506,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 401
+                },
+                {
+                  "skill": "mindcall",
+                  "name": "诘心回声",
+                  "count": 2,
+                  "mana": 12,
+                  "resource": null,
+                  "firstEvent": 445
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 454
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 541
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 7,
+              "mana": 25,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 5,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 5,
+                  "mana": 25,
+                  "resource": "herb",
+                  "firstEvent": 439
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 2,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 631
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 1
+          },
+          "otherCasts": 0
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "route": "beaconbridge",
+      "mode": "round",
+      "seed": 38,
+      "won": true,
+      "rounds": [
+        4,
+        4,
+        5
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 5,
+        "rune": 1,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgebadge"
+        ]
+      },
+      "gold": 4145,
+      "drainCasts": 1,
+      "manaHits": [
+        {
+          "eventId": 215,
+          "roomIndex": 1,
+          "target": "bbch",
+          "grade": "命中",
+          "mpBefore": 80,
+          "mpAfter": 68,
+          "actual": 12,
+          "wasted": 0,
+          "hpBefore": 145,
+          "hpAfter": 145
+        }
+      ],
+      "scholar": {
+        "damage": 282,
+        "healing": 0,
+        "received": 28,
+        "taken": 28,
+        "casts": 18,
+        "castMana": 47,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 12,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "manaDamage": 12
+      },
+      "ledger": [
+        {
+          "roomIndex": 0,
+          "roomId": "beaconbridge_pier",
+          "name": "01 · 低桥巡弩",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 7,
+              "mana": 25,
+              "defenseMana": 5,
+              "interceptMana": 2,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "interpose",
+                  "name": "援护架势",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": null,
+                  "firstEvent": 15
+                },
+                {
+                  "skill": "shieldbash",
+                  "name": "盾缘重击",
+                  "count": 3,
+                  "mana": 9,
+                  "resource": null,
+                  "firstEvent": 55
+                },
+                {
+                  "skill": "guard",
+                  "name": "守势",
+                  "count": 2,
+                  "mana": 6,
+                  "resource": null,
+                  "firstEvent": 65
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 4,
+              "mana": 0,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 24
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 4,
+              "mana": 4,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 4,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 38
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 5,
+              "mana": 13,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 2,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "rune",
+                  "firstEvent": 5
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 3,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 52
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 5,
+              "mana": 9,
+              "defenseMana": 8,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 3
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 42
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 59
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 5,
+              "mana": 13,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 3,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "provisions",
+                  "name": "远征药膳",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": "herb",
+                  "firstEvent": 8
+                },
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "herb",
+                  "firstEvent": 49
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 2,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 93
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 0
+          },
+          "otherCasts": 0
+        },
+        {
+          "roomIndex": 1,
+          "roomId": "beaconbridge_cross",
+          "name": "02 · 回灯校场",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 5,
+              "mana": 11,
+              "defenseMana": 3,
+              "interceptMana": 2,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 7,
+              "firstShortage": 250,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "interpose",
+                  "name": "援护架势",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 200
+                },
+                {
+                  "skill": "shieldbash",
+                  "name": "盾缘重击",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 241
+                },
+                {
+                  "skill": "guard",
+                  "name": "守势",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 251
+                },
+                {
+                  "skill": "strike",
+                  "name": "剑术",
+                  "count": 2,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 291
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 4,
+              "mana": 4,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 1
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "pierce",
+                  "name": "破甲重箭",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": "arrow",
+                  "firstEvent": 227
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 264
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 4,
+              "mana": 12,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "lance",
+                  "name": "凝潮长枪",
+                  "count": 1,
+                  "mana": 9,
+                  "resource": "rune",
+                  "firstEvent": 234
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 3,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 276
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 6,
+              "mana": 19,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 3,
+                "arrow": 0
+              },
+              "manaDamage": 12,
+              "manaLost": 0,
+              "firstManaDamage": 215,
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "rune",
+                  "firstEvent": 196
+                },
+                {
+                  "skill": "drain",
+                  "name": "断流符",
+                  "count": 1,
+                  "mana": 6,
+                  "resource": "rune",
+                  "firstEvent": 212
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 3,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 280
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 6,
+              "mana": 15,
+              "defenseMana": 8,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 194
+                },
+                {
+                  "skill": "mindcall",
+                  "name": "诘心回声",
+                  "count": 1,
+                  "mana": 6,
+                  "resource": null,
+                  "firstEvent": 216
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 245
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 287
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 4,
+              "mana": 5,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 1,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 231
+                },
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": "herb",
+                  "firstEvent": 324
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 1,
+            "rune": 4,
+            "arrow": 1
+          },
+          "otherCasts": 0
+        },
+        {
+          "roomIndex": 2,
+          "roomId": "beaconbridge_watch",
+          "name": "03 · 复灯转台",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 5,
+              "mana": 3,
+              "defenseMana": 4,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 14,
+              "firstShortage": 396,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "strike",
+                  "name": "剑术",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 441
+                },
+                {
+                  "skill": "shieldbash",
+                  "name": "盾缘重击",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 625
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 5,
+              "mana": 4,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 1
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "pierce",
+                  "name": "破甲重箭",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": "arrow",
+                  "firstEvent": 414
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 463
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 5,
+              "mana": 13,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "lance",
+                  "name": "凝潮长枪",
+                  "count": 1,
+                  "mana": 9,
+                  "resource": "rune",
+                  "firstEvent": 424
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 4,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 484
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 7,
+              "mana": 15,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 2,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "rune",
+                  "firstEvent": 392
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 5,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 430
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 7,
+              "mana": 9,
+              "defenseMana": 16,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 1,
+              "firstShortage": 621,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 390
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 5,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 434
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 445
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 5,
+              "mana": 15,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 3,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 2,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 411
+                },
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 3,
+                  "mana": 15,
+                  "resource": "herb",
+                  "firstEvent": 487
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 1
+          },
+          "otherCasts": 0
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "route": "courier",
+      "mode": "round",
+      "seed": 39,
+      "won": true,
+      "rounds": [
+        5,
+        4,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 4280,
+      "drainCasts": 3,
+      "manaHits": [
+        {
+          "eventId": 490,
+          "roomIndex": 2,
+          "target": "cfh",
+          "grade": "命中",
+          "mpBefore": 90,
+          "mpAfter": 84,
+          "actual": 6,
+          "wasted": 0,
+          "hpBefore": 91,
+          "hpAfter": 91
+        },
+        {
+          "eventId": 545,
+          "roomIndex": 2,
+          "target": "cfh",
+          "grade": "致命",
+          "mpBefore": 80,
+          "mpAfter": 60,
+          "actual": 20,
+          "wasted": 0,
+          "hpBefore": 98,
+          "hpAfter": 98
+        },
+        {
+          "eventId": 600,
+          "roomIndex": 2,
+          "target": "cfh",
+          "grade": "致命",
+          "mpBefore": 56,
+          "mpAfter": 43,
+          "actual": 13,
+          "wasted": 0,
+          "hpBefore": 41,
+          "hpAfter": 41
+        }
+      ],
+      "scholar": {
+        "damage": 219,
+        "healing": 0,
+        "received": 39,
+        "taken": 39,
+        "casts": 20,
+        "castMana": 51,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 4,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "manaDamage": 39
+      },
+      "ledger": [
+        {
+          "roomIndex": 0,
+          "roomId": "courier_bridge",
+          "name": "01 · 外港断桥",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 7,
+              "mana": 21,
+              "defenseMana": 16,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "guard",
+                  "name": "守势",
+                  "count": 3,
+                  "mana": 9,
+                  "resource": null,
+                  "firstEvent": 14
+                },
+                {
+                  "skill": "shieldbash",
+                  "name": "盾缘重击",
+                  "count": 4,
+                  "mana": 12,
+                  "resource": null,
+                  "firstEvent": 64
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 5,
+              "mana": 4,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 1
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "pierce",
+                  "name": "破甲重箭",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": "arrow",
+                  "firstEvent": 45
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 93
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 4,
+              "mana": 9,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "wave",
+                  "name": "潮汐冲击",
+                  "count": 1,
+                  "mana": 6,
+                  "resource": "rune",
+                  "firstEvent": 40
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 3,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 115
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 6,
+              "mana": 10,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": "rune",
+                  "firstEvent": 5
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 5,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 61
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 6,
+              "mana": 9,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 3
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 4,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 48
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 68
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 5,
+              "mana": 13,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 3,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "provisions",
+                  "name": "远征药膳",
+                  "count": 1,
+                  "mana": 3,
+                  "resource": "herb",
+                  "firstEvent": 7
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 2,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 34
+                },
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "herb",
+                  "firstEvent": 173
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 1
+          },
+          "otherCasts": 0
+        },
+        {
+          "roomIndex": 1,
+          "roomId": "courier_sails",
+          "name": "02 · 折帆分舱",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 5,
+              "mana": 12,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 2,
+              "firstShortage": 400,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "guard",
+                  "name": "守势",
+                  "count": 2,
+                  "mana": 6,
+                  "resource": null,
+                  "firstEvent": 272
+                },
+                {
+                  "skill": "shieldbash",
+                  "name": "盾缘重击",
+                  "count": 2,
+                  "mana": 6,
+                  "resource": null,
+                  "firstEvent": 307
+                },
+                {
+                  "skill": "strike",
+                  "name": "剑术",
+                  "count": 1,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 401
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 4,
+              "mana": 16,
+              "defenseMana": 3,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 4
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "pierce",
+                  "name": "破甲重箭",
+                  "count": 4,
+                  "mana": 16,
+                  "resource": "arrow",
+                  "firstEvent": 283
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 4,
+              "mana": 12,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "lance",
+                  "name": "凝潮长枪",
+                  "count": 1,
+                  "mana": 9,
+                  "resource": "rune",
+                  "firstEvent": 294
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 3,
+                  "mana": 3,
+                  "resource": null,
+                  "firstEvent": 342
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 6,
+              "mana": 14,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 2,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 2,
+                  "mana": 10,
+                  "resource": "rune",
+                  "firstEvent": 269
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 4,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 304
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 5,
+              "mana": 9,
+              "defenseMana": 8,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 267
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 3,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 297
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 311
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 4,
+              "mana": 20,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 4,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 4,
+                  "mana": 20,
+                  "resource": "herb",
+                  "firstEvent": 292
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 4
+          },
+          "otherCasts": 0
+        },
+        {
+          "roomIndex": 2,
+          "roomId": "courier_seal",
+          "name": "03 · 封蜡回邮台",
+          "actors": [
+            {
+              "id": "a",
+              "name": "阿瑟",
+              "casts": 6,
+              "mana": 0,
+              "defenseMana": 7,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 13,
+              "firstShortage": 453,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "strike",
+                  "name": "剑术",
+                  "count": 6,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 501
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "name": "莱恩",
+              "casts": 7,
+              "mana": 4,
+              "defenseMana": 1,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 1
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "pierce",
+                  "name": "破甲重箭",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": "arrow",
+                  "firstEvent": 471
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 6,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 527
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "name": "伊芙",
+              "casts": 7,
+              "mana": 15,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 1,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "lance",
+                  "name": "凝潮长枪",
+                  "count": 1,
+                  "mana": 9,
+                  "resource": "rune",
+                  "firstEvent": 491
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 6,
+                  "mana": 6,
+                  "resource": null,
+                  "firstEvent": 535
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "name": "维斯",
+              "casts": 8,
+              "mana": 27,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 0
+              },
+              "manaDamage": 39,
+              "manaLost": 0,
+              "firstManaDamage": 490,
+              "shortages": 4,
+              "firstShortage": 664,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "ward",
+                  "name": "潮纹屏障",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": "rune",
+                  "firstEvent": 450
+                },
+                {
+                  "skill": "drain",
+                  "name": "断流符",
+                  "count": 3,
+                  "mana": 18,
+                  "resource": "rune",
+                  "firstEvent": 488
+                },
+                {
+                  "skill": "spark",
+                  "name": "微光",
+                  "count": 4,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 665
+                }
+              ]
+            },
+            {
+              "id": "e",
+              "name": "塞恩",
+              "casts": 8,
+              "mana": 45,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 0,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 0,
+              "firstShortage": null,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "insight",
+                  "name": "灵感启蒙",
+                  "count": 1,
+                  "mana": 4,
+                  "resource": null,
+                  "firstEvent": 448
+                },
+                {
+                  "skill": "mindcall",
+                  "name": "诘心回声",
+                  "count": 6,
+                  "mana": 36,
+                  "resource": null,
+                  "firstEvent": 480
+                },
+                {
+                  "skill": "mastery",
+                  "name": "战技传授",
+                  "count": 1,
+                  "mana": 5,
+                  "resource": null,
+                  "firstEvent": 507
+                }
+              ]
+            },
+            {
+              "id": "f",
+              "name": "露弥",
+              "casts": 6,
+              "mana": 25,
+              "defenseMana": 0,
+              "spent": {
+                "herb": 5,
+                "rune": 0,
+                "arrow": 0
+              },
+              "shortages": 2,
+              "firstShortage": 727,
+              "failed": 0,
+              "reserved": 0,
+              "skills": [
+                {
+                  "skill": "heal",
+                  "name": "草药救护",
+                  "count": 5,
+                  "mana": 25,
+                  "resource": "herb",
+                  "firstEvent": 483
+                },
+                {
+                  "skill": "shot",
+                  "name": "穿石箭",
+                  "count": 1,
+                  "mana": 0,
+                  "resource": null,
+                  "firstEvent": 758
+                }
+              ]
+            }
+          ],
+          "branches": [],
+          "spent": {
+            "herb": 5,
+            "rune": 5,
+            "arrow": 1
+          },
+          "otherCasts": 0
+        }
+      ]
+    }
+  ],
+  "training": {
+    "heroId": "d",
+    "key": "skill:drain",
+    "cost": 20
+  },
+  "finalGold": 4280,
+  "next": 40,
+  "limits": "Fixed normal seeds37..39, repeat then trained round-mode on bridge then old courier route. Different seeds/modes/training/routes are not a single-variable comparison. Preserve defeats, deaths and exhausted supplies; no authored skill/enemy/loot retuning, extra rewards or permanent supply economy."
+}

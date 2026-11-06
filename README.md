@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.126「灯桥守望套装」**，分支`feature/v126-item-set-bonuses`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.127「法力压制」**，分支`feature/v127-mana-pressure`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[法力压制](docs/V127_MANA_PRESSURE.md)：学者断流符把敌方法力作为独立攻击目标，不扣生命或给自己回蓝；实际削减、生命实伤和本人施法支出分账。三次正常远征保留符纸/药草耗尽，真实培养后至4280金币；原有回蓝与低耗后备仍有效，详见[V127验证](docs/V127_CHECKS.json)。
 
 新增[灯桥守望套装与巡行](docs/V126_ITEM_SET_BONUSES.md)：同一英雄实穿两件／三件时，各档组合效果只生效一次；库存、其他伙伴和未应用配装册不计。三件提供智力与远程保护，也带心理弱点。三场新路线按普通掉落取得部件，七次正常远征保留重复件、耗尽药草及留余失败，最后主动用两件保留缎带至3905金币。见[V126验证](docs/V126_CHECKS.json)。
 

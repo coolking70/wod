@@ -28,6 +28,7 @@ export function companionPreview(g,tactics,id,mode,roomId=''){
   if(s.kind==='transfer'){candidates=manaRecipients(actor,party,r.target,{eligible:false}).map(u=>u.name);warnings.push('普通行动仅援助范围内其他法力不高于50%的存活正式队员；初始候选不保证实际转入，不给自己/召唤物，无合格者免费后备。');}
   if(s.recall)warnings.push('仅召回自己当时存活的召唤物；无目标免费跳过，实际召回占本次预备且不返还原消耗');
   if(s.kind==='attack'){
+   if(s.manaDamage)warnings.push('只削减目标剩余法力，不扣生命或给自己回蓝；先付本次防御费用，无剩余法力者免费后备。削减不等于阻止施法，低耗后备和回蓝仍可执行。');
    if(r.onlyPosition)warnings.push(POSITION_ONLY_RULE);
    if(room.reinforcements)warnings.push('本房有公开增援；这里仅列首波候选，实际到场/减员后重新检查。本房一次、指令游标与累计回合不因换波重置。');
    if(s.actionDamp){const chosen=chooseTargets(actor,[...party,...enemies],s,r.target,()=>0,r);candidates=enemies.filter(u=>offbeatEligible(u)&&attackEligible(u,s)&&(r.target==='healer'?u.skills.heal!==undefined:r.target==='summoner'?roleTargetCandidates(enemies,'summoner',s).some(t=>t.id===u.id):s.mode==='all'||u.pos===chosen[0]?.pos)).map(u=>u.name);warnings.push('迟拍只选当前已获得额外行动且无迟拍者；入场空候选不代表敌方预备后不能选。实际命中后只影响下回合队列，净化可移除。');}

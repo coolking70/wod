@@ -12,6 +12,7 @@ export function summaryOf(group){
  const cast=group.events.find(e=>e.type==='cast');
  if(!cast)return group.events[0].text;
  const transfer=group.events.find(e=>e.type==='mana-transfer');if(transfer)return cast.text+' · 实际转入'+transfer.detail.actual+'法力 / 来源付'+transfer.detail.paidMana;
+ const mana=group.events.filter(e=>e.type==='mana-damage');if(mana.length)return cast.text+' · 实际削减 '+mana.reduce((n,e)=>n+e.detail.actual,0)+' 法力 / 生命不变';
  const summons=group.events.filter(e=>e.type==='summon');if(summons.length)return cast.text+' · 召唤 '+summons.length+' 名单位';
  const hits=group.events.filter(e=>e.type==='attack');
  const heals=group.events.filter(e=>e.type==='heal');

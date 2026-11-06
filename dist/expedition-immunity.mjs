@@ -1,9 +1,10 @@
+import {manaTargetEligible} from './expedition-mana-damage.mjs';
 import {mechanismEligible} from './expedition-mechanisms.mjs';
 import {TYPES} from './expedition-data.mjs';
 export const IMMUNITY_RULE='攻击类型免疫是公开固有特性，不是抗性百分比或可驱散效果。该类型攻击选目标前排除免疫者，沿既有合法候选路线继续；全无目标免费查后备，不额外抽战斗随机。不改变指令游标或已用once标记，未成功者须等游标再次走到才重查。援护后实际目标免疫时，已付施法/援护费用保留，不再防御或造成伤害/附着。法术免疫同样阻止潮蚀后续跳伤；不移除旧效果或回滚过去。治疗、友方辅助、召唤本身不受影响；召唤物不继承主人的免疫。规则细节为项目改编。';
 export function validateAttackImmunities(unit){if(!Object.hasOwn(unit,'immuneTo'))return;const value=unit.immuneTo;if(!Array.isArray(value)||!value.length||value.length>4||new Set(value).size!==value.length||value.some(t=>typeof t!=='string'||!Object.hasOwn(TYPES,t)))throw Error('攻击类型免疫须为1–4个不同的已知攻击类型');}
 export const immuneToAttack=(unit,type)=>Boolean(unit.immuneTo?.includes(type));
-export const attackEligible=(unit,skill)=>skill.kind!=='attack'||mechanismEligible(unit,skill)&&!immuneToAttack(unit,skill.type);
+export const attackEligible=(unit,skill)=>skill.kind!=='attack'||mechanismEligible(unit,skill)&&!immuneToAttack(unit,skill.type)&&manaTargetEligible(unit,skill);
 export const immunityLabel=unit=>unit.immuneTo?.length?'攻击类型免疫：'+unit.immuneTo.map(t=>TYPES[t]).join('、')+'；此类攻击不能选中。':'';
 export function immunityDecision(actor,units,skill,target){if(skill.kind!=='attack')return null;const excluded=units.filter(u=>u.hp>0&&u.side!==actor.side&&immuneToAttack(u,skill.type)).map(u=>({id:u.id,name:u.name,pos:u.pos,immuneTo:[...u.immuneTo]}));return excluded.length?{attackType:skill.type,requested:target,excluded,selected:[],rule:IMMUNITY_RULE}:null;}
 export function immunityOutcomeIndex(report,event){const o=event?.detail?.immunityOutcome;if(!event?.detail?.attackImmunity||!Number.isSafeInteger(o?.eventId))return -1;const source=report.events.findIndex(e=>e.id===event.id);if(source<0)return -1;const i=report.events.findIndex(e=>e.id===o.eventId),first=report.events.findIndex((e,j)=>j>source&&e.actor===event.actor&&['cast','wait','failed','item'].includes(e.type)),next=report.events[i];return i===first&&next&&next.id>event.id&&next.roomIndex===event.roomIndex&&next.round===event.round&&next.phase===event.phase&&next.type===o.type&&(next.detail.skill||null)===o.skill?i:-1;}
