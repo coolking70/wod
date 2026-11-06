@@ -1,0 +1,770 @@
+{
+  "startGold": 1625,
+  "normal": [
+    {
+      "plan": "divide",
+      "seed": 16,
+      "objective": {
+        "id": "clear",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 2,
+          "rooms": 2,
+          "rounds": 9,
+          "alive": 6,
+          "herb": 7,
+          "rune": 4,
+          "arrow": 4
+        }
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 125,
+        "xp": 55,
+        "firstClear": true,
+        "loot": []
+      },
+      "gold": 1750,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 4,
+      "typedCasts": 27,
+      "mentalHealerCasts": [],
+      "failedActions": 4
+    },
+    {
+      "plan": "voices",
+      "seed": 17,
+      "objective": {
+        "id": "survive",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 2,
+          "rooms": 2,
+          "rounds": 7,
+          "alive": 6,
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        }
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 85,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 1835,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 6,
+      "typedCasts": 21,
+      "mentalHealerCasts": [
+        {
+          "room": 1,
+          "round": 1,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "targets": [
+            "osm"
+          ]
+        }
+      ],
+      "failedActions": 4
+    }
+  ],
+  "matrix": [
+    {
+      "plan": "divide",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        6
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 1,
+      "typedCasts": 29,
+      "mentalHealerCasts": [],
+      "failedActions": 1
+    },
+    {
+      "plan": "divide",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 5,
+      "typedCasts": 24,
+      "mentalHealerCasts": [],
+      "failedActions": 5
+    },
+    {
+      "plan": "divide",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 0,
+      "typedCasts": 29,
+      "mentalHealerCasts": [],
+      "failedActions": 0
+    },
+    {
+      "plan": "divide",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 3,
+      "typedCasts": 30,
+      "mentalHealerCasts": [],
+      "failedActions": 3
+    },
+    {
+      "plan": "divide",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 0,
+      "typedCasts": 32,
+      "mentalHealerCasts": [],
+      "failedActions": 0
+    },
+    {
+      "plan": "divide",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 5,
+      "typedCasts": 22,
+      "mentalHealerCasts": [],
+      "failedActions": 5
+    },
+    {
+      "plan": "voices",
+      "seed": 1,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        5
+      ],
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 5,
+      "typedCasts": 25,
+      "mentalHealerCasts": [
+        {
+          "room": 1,
+          "round": 1,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "targets": [
+            "osm"
+          ]
+        }
+      ],
+      "failedActions": 1
+    },
+    {
+      "plan": "voices",
+      "seed": 2,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 8,
+      "typedCasts": 24,
+      "mentalHealerCasts": [
+        {
+          "room": 1,
+          "round": 1,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "targets": [
+            "osm"
+          ]
+        }
+      ],
+      "failedActions": 5
+    },
+    {
+      "plan": "voices",
+      "seed": 7,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 4,
+      "typedCasts": 25,
+      "mentalHealerCasts": [
+        {
+          "room": 1,
+          "round": 1,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "targets": [
+            "osm"
+          ]
+        }
+      ],
+      "failedActions": 0
+    },
+    {
+      "plan": "voices",
+      "seed": 19,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 8,
+      "typedCasts": 30,
+      "mentalHealerCasts": [
+        {
+          "room": 1,
+          "round": 1,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "targets": [
+            "osm"
+          ]
+        }
+      ],
+      "failedActions": 3
+    },
+    {
+      "plan": "voices",
+      "seed": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 5,
+      "typedCasts": 27,
+      "mentalHealerCasts": [
+        {
+          "room": 1,
+          "round": 1,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "targets": [
+            "osm"
+          ]
+        }
+      ],
+      "failedActions": 0
+    },
+    {
+      "plan": "voices",
+      "seed": 731,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "typeExcludedChecks": 8,
+      "typedCasts": 22,
+      "mentalHealerCasts": [
+        {
+          "room": 1,
+          "round": 1,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 2,
+          "targets": [
+            "osm"
+          ]
+        },
+        {
+          "room": 1,
+          "round": 3,
+          "targets": [
+            "osm"
+          ]
+        }
+      ],
+      "failedActions": 5
+    }
+  ],
+  "bad": {
+    "config": {
+      "version": "0.40.0",
+      "expedition": "ossuary",
+      "harbor": {
+        "pass": "adaptive",
+        "task": "adaptive"
+      },
+      "bellApproach": "bypass",
+      "rescueApproach": "pass",
+      "seed": 731,
+      "roomOrders": {},
+      "prepOrder": [
+        "e",
+        "d",
+        "f",
+        "a",
+        "b",
+        "c"
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 8,
+        "arrow": 6
+      },
+      "heroes": [
+        {
+          "id": "a",
+          "training": {},
+          "item": "none",
+          "itemPolicy": {
+            "enabled": true,
+            "threshold": 0.3
+          },
+          "pos": "front",
+          "gear": {
+            "weapon": "guardblade",
+            "armor": "plate",
+            "accessory": "token"
+          },
+          "overrides": {},
+          "defenseFocus": "parry",
+          "defenses": {
+            "melee": "parry",
+            "ranged": "natural",
+            "magic": "natural"
+          },
+          "trained": "strike",
+          "attribute": "con",
+          "prep": [
+            {
+              "skill": "guard",
+              "target": "self",
+              "mode": "repeat"
+            }
+          ],
+          "main": [
+            {
+              "skill": "strike",
+              "target": "front",
+              "mode": "repeat"
+            }
+          ],
+          "healing": {
+            "enabled": false,
+            "threshold": 0.65,
+            "target": "all"
+          }
+        },
+        {
+          "id": "b",
+          "training": {
+            "skill:shot": 1,
+            "skill:pierce": 1
+          },
+          "item": "none",
+          "itemPolicy": {
+            "enabled": true,
+            "threshold": 0.3
+          },
+          "pos": "rear",
+          "gear": {
+            "weapon": "bow",
+            "armor": "cloth",
+            "accessory": "postbell"
+          },
+          "overrides": {
+            "ossuary_seal": {}
+          },
+          "defenseFocus": "dodge",
+          "defenses": {
+            "melee": "natural",
+            "ranged": "dodge",
+            "magic": "natural"
+          },
+          "trained": "shot",
+          "attribute": "con",
+          "prep": [],
+          "main": [
+            {
+              "skill": "shot",
+              "target": "front",
+              "mode": "repeat"
+            }
+          ],
+          "healing": {
+            "enabled": false,
+            "threshold": 0.65,
+            "target": "all"
+          }
+        },
+        {
+          "id": "c",
+          "training": {
+            "skill:spark": 1
+          },
+          "item": "none",
+          "itemPolicy": {
+            "enabled": true,
+            "threshold": 0.3
+          },
+          "pos": "center",
+          "gear": {
+            "weapon": "focus",
+            "armor": "cloth",
+            "accessory": "token"
+          },
+          "overrides": {
+            "ossuary_seal": {}
+          },
+          "defenseFocus": "resist",
+          "defenses": {
+            "melee": "natural",
+            "ranged": "natural",
+            "magic": "resist"
+          },
+          "trained": "wave",
+          "attribute": "con",
+          "prep": [],
+          "main": [
+            {
+              "skill": "wait",
+              "target": "front",
+              "mode": "repeat"
+            }
+          ],
+          "healing": {
+            "enabled": false,
+            "threshold": 0.65,
+            "target": "all"
+          }
+        },
+        {
+          "id": "d",
+          "training": {
+            "skill:ward": 1
+          },
+          "item": "none",
+          "itemPolicy": {
+            "enabled": true,
+            "threshold": 0.3
+          },
+          "pos": "center",
+          "gear": {
+            "weapon": "focus",
+            "armor": "cloth",
+            "accessory": "token"
+          },
+          "overrides": {
+            "ossuary_seal": {
+              "prep": [
+                {
+                  "skill": "ward",
+                  "target": "rear",
+                  "mode": "repeat"
+                }
+              ]
+            }
+          },
+          "defenseFocus": "resist",
+          "defenses": {
+            "melee": "natural",
+            "ranged": "natural",
+            "magic": "resist"
+          },
+          "trained": "ward",
+          "attribute": "con",
+          "prep": [
+            {
+              "skill": "ward",
+              "target": "front",
+              "mode": "repeat"
+            }
+          ],
+          "main": [
+            {
+              "skill": "wait",
+              "target": "front",
+              "mode": "repeat"
+            }
+          ],
+          "healing": {
+            "enabled": false,
+            "threshold": 0.65,
+            "target": "all"
+          }
+        },
+        {
+          "id": "e",
+          "training": {
+            "skill:offbeat": 1
+          },
+          "item": "none",
+          "itemPolicy": {
+            "enabled": true,
+            "threshold": 0.3
+          },
+          "pos": "rear",
+          "gear": {
+            "weapon": "lute",
+            "armor": "cloth",
+            "accessory": "triagepin"
+          },
+          "overrides": {},
+          "defenseFocus": "resist",
+          "defenses": {
+            "melee": "natural",
+            "ranged": "natural",
+            "magic": "resist"
+          },
+          "trained": "insight",
+          "attribute": "con",
+          "prep": [
+            {
+              "skill": "insight",
+              "target": "center",
+              "mode": "once"
+            },
+            {
+              "skill": "mastery",
+              "target": "rear",
+              "mode": "repeat"
+            }
+          ],
+          "main": [
+            {
+              "skill": "shot",
+              "target": "front",
+              "mode": "repeat"
+            }
+          ],
+          "healing": {
+            "enabled": false,
+            "threshold": 0.65,
+            "target": "all"
+          }
+        },
+        {
+          "id": "f",
+          "training": {},
+          "item": "none",
+          "itemPolicy": {
+            "enabled": true,
+            "threshold": 0.3
+          },
+          "pos": "center",
+          "gear": {
+            "weapon": "starterblade",
+            "armor": "field",
+            "accessory": "triagepin"
+          },
+          "overrides": {},
+          "defenseFocus": "resist",
+          "defenses": {
+            "melee": "natural",
+            "ranged": "natural",
+            "magic": "resist"
+          },
+          "trained": "provisions",
+          "attribute": "con",
+          "prep": [
+            {
+              "skill": "provisions",
+              "target": "all",
+              "mode": "repeat"
+            }
+          ],
+          "main": [
+            {
+              "skill": "shot",
+              "target": "front",
+              "mode": "repeat"
+            }
+          ],
+          "healing": {
+            "enabled": true,
+            "threshold": 0.8,
+            "target": "all",
+            "priority": "lowest"
+          }
+        }
+      ]
+    },
+    "won": false,
+    "alive": 6,
+    "rounds": [
+      24
+    ],
+    "supplies": {
+      "herb": 6,
+      "rune": 0,
+      "arrow": 6
+    },
+    "typeExcludedChecks": 87,
+    "typedCasts": 6,
+    "mentalHealerCasts": [],
+    "failedActions": 87,
+    "rewarded": false
+  },
+  "limits": "Twelve fixed fresh inputs plus consecutive earned16/17. All-physical experiment retained as failure, no rewards. Not global balance or benefit attribution; new two-room route is not a resource comparison with three-room Confluence."
+}

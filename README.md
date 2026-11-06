@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.119「定点与后备」**，分支`feature/v119-strict-position`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.120「潮影墓廊」**，分支`feature/v120-attack-immunity`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[攻击类型免疫与潮影墓廊](docs/V120_ATTACK_IMMUNITY.md)：公开固有特性要求物理/法术/心理分工，选目标前排除，不当抗性或可驱散效果；援护后免疫保留已付费用，周期/召唤边界明确。两房24补给，无新技能/装备；正常16/17六人生还至1750/1835，合法全物理实验24回合未清且无奖励。见[V120验证](docs/V120_CHECKS.json)。
 
 新增[仅指定阵位与实际后备](docs/V119_STRICT_POSITION.md)：显式远攻可限定本阵位，空则免费查下一条，每新回合重查且不重置本房一次；默认保持原后备。来源/真实候选/回放与整档贯通。正常seed14仍5人/0箭，seed15组合已有留2箭达标却耗尽药草，保留取舍，不当通用升级。见[V119验证](docs/V119_CHECKS.json)。
 

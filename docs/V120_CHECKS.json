@@ -1,0 +1,999 @@
+{
+  "version": "0.120",
+  "baseline": "92c84ac77f79caccea1bef3f5686c48935548530",
+  "branch": "feature/v120-attack-immunity",
+  "baselineTests": {
+    "passed": 920,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "baseline-tests.tap"
+  },
+  "fullTests": {
+    "passed": 939,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-tests.tap"
+  },
+  "newTests": {
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "unit-display-final.tap"
+  },
+  "browser": {
+    "passed": true,
+    "suites": 28,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
+    ],
+    "engine": "Chromium; desktop and 390px viewport emulation",
+    "newWorkflowPageErrors": 0,
+    "log": "acceptance/browser-acceptance.json",
+    "newWorkflow": "acceptance/browser-v120/browser-v120.json",
+    "postDisplayRerun": "After the all-pass28-suite run, clarified magic/mental never trigger physical cover; all new19 unit tests and desktop/mobile120 re-run passed. No combat, report or payment changes; old27 cases have no immunity content.",
+    "scope": "Real normal type exclusion/typed role warning/cast/fallback/experiment receipts and campaign. Redirected immunity and pre-existing periodic immunity are runtime unit boundaries, not claimed as authored normal events.",
+    "unverified": [
+      "Firefox",
+      "Safari",
+      "physical mobile devices"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "count": 470,
+    "failed": [],
+    "postDisplayChecks": {
+      "passed": true,
+      "files": [
+        "dist/expedition-immunity.mjs",
+        "tests/v120.test.mjs",
+        "scripts/browser-v120.cjs"
+      ],
+      "method": "node --check after wording distinguishes physical interception from magic/mental bypass; all other files unchanged since470-file scan"
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 128,
+    "checkedReferences": 145,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "legacyReports": {
+    "reference": "92c84ac77f79caccea1bef3f5686c48935548530",
+    "priorRoutes": 24,
+    "currentRoutes": 25,
+    "newRoute": "ossuary",
+    "count": 51,
+    "defaultReportCount": 48,
+    "actualHistoricalReports": 3,
+    "rawFullEqual": true,
+    "excluded": []
+  },
+  "legacyChecker": "scripts/check-v120-legacy.mjs",
+  "legacyFullHashLog": "legacy.json",
+  "legacyCases": "Old24 routes seeds1/731=48 plus actual earned historical configs7/14/15=3. Complete raw reports, zero exclusions.",
+  "normalProgression": {
+    "startGold": 1625,
+    "runs": [
+      {
+        "plan": "divide",
+        "seed": 16,
+        "objective": {
+          "id": "clear",
+          "met": true,
+          "metrics": {
+            "won": true,
+            "cleared": 2,
+            "rooms": 2,
+            "rounds": 9,
+            "alive": 6,
+            "herb": 7,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 125,
+          "xp": 55,
+          "firstClear": true,
+          "loot": []
+        },
+        "gold": 1750,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          6
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 4,
+        "typedCasts": 27,
+        "mentalHealerCasts": [],
+        "failedActions": 4
+      },
+      {
+        "plan": "voices",
+        "seed": 17,
+        "objective": {
+          "id": "survive",
+          "met": true,
+          "metrics": {
+            "won": true,
+            "cleared": 2,
+            "rooms": 2,
+            "rounds": 7,
+            "alive": 6,
+            "herb": 6,
+            "rune": 4,
+            "arrow": 4
+          }
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 85,
+          "xp": 40,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 1835,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 6,
+        "typedCasts": 21,
+        "mentalHealerCasts": [
+          {
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "targets": [
+              "osm"
+            ]
+          }
+        ],
+        "failedActions": 4
+      }
+    ],
+    "endGold": 1835,
+    "fullReportsAndAllGuildStatesEqualToAPI": true,
+    "noNewPaidTrainingOrEquipment": true,
+    "ordinaryRewardsOnly": true,
+    "noGearDrops": true,
+    "oldHistoryFailuresWithdrawalAndIdentityUnchanged": true,
+    "priorEquipmentGoalPreserved": true,
+    "campaignAndNamedRouteBindingRestore": true,
+    "defaultFallbackAndReturnReadOnly": true,
+    "firstProofs": {
+      "clear": 16,
+      "survive": 17
+    },
+    "mentalHealerCastsInSecondRoom": 3,
+    "limits": "New2-room24-supply route is not a savings comparison with3-roomConfluence; different seeds/actions do not isolate plan or skill causality."
+  },
+  "finiteCases": {
+    "matrix": [
+      {
+        "plan": "divide",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          6
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 1,
+        "typedCasts": 29,
+        "mentalHealerCasts": [],
+        "failedActions": 1
+      },
+      {
+        "plan": "divide",
+        "seed": 2,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          6
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 5,
+        "typedCasts": 24,
+        "mentalHealerCasts": [],
+        "failedActions": 5
+      },
+      {
+        "plan": "divide",
+        "seed": 7,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 0,
+        "typedCasts": 29,
+        "mentalHealerCasts": [],
+        "failedActions": 0
+      },
+      {
+        "plan": "divide",
+        "seed": 19,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 3,
+        "typedCasts": 30,
+        "mentalHealerCasts": [],
+        "failedActions": 3
+      },
+      {
+        "plan": "divide",
+        "seed": 73,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          6
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 0,
+        "typedCasts": 32,
+        "mentalHealerCasts": [],
+        "failedActions": 0
+      },
+      {
+        "plan": "divide",
+        "seed": 731,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 5,
+        "typedCasts": 22,
+        "mentalHealerCasts": [],
+        "failedActions": 5
+      },
+      {
+        "plan": "voices",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          5
+        ],
+        "supplies": {
+          "herb": 5,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 5,
+        "typedCasts": 25,
+        "mentalHealerCasts": [
+          {
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "targets": [
+              "osm"
+            ]
+          }
+        ],
+        "failedActions": 1
+      },
+      {
+        "plan": "voices",
+        "seed": 2,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 8,
+        "typedCasts": 24,
+        "mentalHealerCasts": [
+          {
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "targets": [
+              "osm"
+            ]
+          }
+        ],
+        "failedActions": 5
+      },
+      {
+        "plan": "voices",
+        "seed": 7,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 4,
+        "typedCasts": 25,
+        "mentalHealerCasts": [
+          {
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "targets": [
+              "osm"
+            ]
+          }
+        ],
+        "failedActions": 0
+      },
+      {
+        "plan": "voices",
+        "seed": 19,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 8,
+        "typedCasts": 30,
+        "mentalHealerCasts": [
+          {
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "targets": [
+              "osm"
+            ]
+          }
+        ],
+        "failedActions": 3
+      },
+      {
+        "plan": "voices",
+        "seed": 73,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 5,
+        "typedCasts": 27,
+        "mentalHealerCasts": [
+          {
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "targets": [
+              "osm"
+            ]
+          }
+        ],
+        "failedActions": 0
+      },
+      {
+        "plan": "voices",
+        "seed": 731,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "typeExcludedChecks": 8,
+        "typedCasts": 22,
+        "mentalHealerCasts": [
+          {
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 2,
+            "targets": [
+              "osm"
+            ]
+          },
+          {
+            "room": 1,
+            "round": 3,
+            "targets": [
+              "osm"
+            ]
+          }
+        ],
+        "failedActions": 5
+      }
+    ],
+    "freshCount": 12,
+    "plans": [
+      "divide",
+      "voices"
+    ],
+    "seeds": [
+      1,
+      2,
+      7,
+      19,
+      73,
+      731
+    ],
+    "allSixStanding": true,
+    "discoveryMetricsUnchanged": true,
+    "enemyStatsTunedAfterDiscovery": false,
+    "allPhysicalExperiment": {
+      "config": {
+        "version": "0.40.0",
+        "expedition": "ossuary",
+        "harbor": {
+          "pass": "adaptive",
+          "task": "adaptive"
+        },
+        "bellApproach": "bypass",
+        "rescueApproach": "pass",
+        "seed": 731,
+        "roomOrders": {},
+        "prepOrder": [
+          "e",
+          "d",
+          "f",
+          "a",
+          "b",
+          "c"
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 6
+        },
+        "heroes": [
+          {
+            "id": "a",
+            "training": {},
+            "item": "none",
+            "itemPolicy": {
+              "enabled": true,
+              "threshold": 0.3
+            },
+            "pos": "front",
+            "gear": {
+              "weapon": "guardblade",
+              "armor": "plate",
+              "accessory": "token"
+            },
+            "overrides": {},
+            "defenseFocus": "parry",
+            "defenses": {
+              "melee": "parry",
+              "ranged": "natural",
+              "magic": "natural"
+            },
+            "trained": "strike",
+            "attribute": "con",
+            "prep": [
+              {
+                "skill": "guard",
+                "target": "self",
+                "mode": "repeat"
+              }
+            ],
+            "main": [
+              {
+                "skill": "strike",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ],
+            "healing": {
+              "enabled": false,
+              "threshold": 0.65,
+              "target": "all"
+            }
+          },
+          {
+            "id": "b",
+            "training": {
+              "skill:shot": 1,
+              "skill:pierce": 1
+            },
+            "item": "none",
+            "itemPolicy": {
+              "enabled": true,
+              "threshold": 0.3
+            },
+            "pos": "rear",
+            "gear": {
+              "weapon": "bow",
+              "armor": "cloth",
+              "accessory": "postbell"
+            },
+            "overrides": {
+              "ossuary_seal": {}
+            },
+            "defenseFocus": "dodge",
+            "defenses": {
+              "melee": "natural",
+              "ranged": "dodge",
+              "magic": "natural"
+            },
+            "trained": "shot",
+            "attribute": "con",
+            "prep": [],
+            "main": [
+              {
+                "skill": "shot",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ],
+            "healing": {
+              "enabled": false,
+              "threshold": 0.65,
+              "target": "all"
+            }
+          },
+          {
+            "id": "c",
+            "training": {
+              "skill:spark": 1
+            },
+            "item": "none",
+            "itemPolicy": {
+              "enabled": true,
+              "threshold": 0.3
+            },
+            "pos": "center",
+            "gear": {
+              "weapon": "focus",
+              "armor": "cloth",
+              "accessory": "token"
+            },
+            "overrides": {
+              "ossuary_seal": {}
+            },
+            "defenseFocus": "resist",
+            "defenses": {
+              "melee": "natural",
+              "ranged": "natural",
+              "magic": "resist"
+            },
+            "trained": "wave",
+            "attribute": "con",
+            "prep": [],
+            "main": [
+              {
+                "skill": "wait",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ],
+            "healing": {
+              "enabled": false,
+              "threshold": 0.65,
+              "target": "all"
+            }
+          },
+          {
+            "id": "d",
+            "training": {
+              "skill:ward": 1
+            },
+            "item": "none",
+            "itemPolicy": {
+              "enabled": true,
+              "threshold": 0.3
+            },
+            "pos": "center",
+            "gear": {
+              "weapon": "focus",
+              "armor": "cloth",
+              "accessory": "token"
+            },
+            "overrides": {
+              "ossuary_seal": {
+                "prep": [
+                  {
+                    "skill": "ward",
+                    "target": "rear",
+                    "mode": "repeat"
+                  }
+                ]
+              }
+            },
+            "defenseFocus": "resist",
+            "defenses": {
+              "melee": "natural",
+              "ranged": "natural",
+              "magic": "resist"
+            },
+            "trained": "ward",
+            "attribute": "con",
+            "prep": [
+              {
+                "skill": "ward",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ],
+            "main": [
+              {
+                "skill": "wait",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ],
+            "healing": {
+              "enabled": false,
+              "threshold": 0.65,
+              "target": "all"
+            }
+          },
+          {
+            "id": "e",
+            "training": {
+              "skill:offbeat": 1
+            },
+            "item": "none",
+            "itemPolicy": {
+              "enabled": true,
+              "threshold": 0.3
+            },
+            "pos": "rear",
+            "gear": {
+              "weapon": "lute",
+              "armor": "cloth",
+              "accessory": "triagepin"
+            },
+            "overrides": {},
+            "defenseFocus": "resist",
+            "defenses": {
+              "melee": "natural",
+              "ranged": "natural",
+              "magic": "resist"
+            },
+            "trained": "insight",
+            "attribute": "con",
+            "prep": [
+              {
+                "skill": "insight",
+                "target": "center",
+                "mode": "once"
+              },
+              {
+                "skill": "mastery",
+                "target": "rear",
+                "mode": "repeat"
+              }
+            ],
+            "main": [
+              {
+                "skill": "shot",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ],
+            "healing": {
+              "enabled": false,
+              "threshold": 0.65,
+              "target": "all"
+            }
+          },
+          {
+            "id": "f",
+            "training": {},
+            "item": "none",
+            "itemPolicy": {
+              "enabled": true,
+              "threshold": 0.3
+            },
+            "pos": "center",
+            "gear": {
+              "weapon": "starterblade",
+              "armor": "field",
+              "accessory": "triagepin"
+            },
+            "overrides": {},
+            "defenseFocus": "resist",
+            "defenses": {
+              "melee": "natural",
+              "ranged": "natural",
+              "magic": "resist"
+            },
+            "trained": "provisions",
+            "attribute": "con",
+            "prep": [
+              {
+                "skill": "provisions",
+                "target": "all",
+                "mode": "repeat"
+              }
+            ],
+            "main": [
+              {
+                "skill": "shot",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ],
+            "healing": {
+              "enabled": true,
+              "threshold": 0.8,
+              "target": "all",
+              "priority": "lowest"
+            }
+          }
+        ]
+      },
+      "won": false,
+      "alive": 6,
+      "rounds": [
+        24
+      ],
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 6
+      },
+      "typeExcludedChecks": 87,
+      "typedCasts": 6,
+      "mentalHealerCasts": [],
+      "failedActions": 87,
+      "rewarded": false
+    },
+    "limits": "Finite successes are not global balance or higher-tier/roster reliability. Legal all-physical/wait experiment fails24-round first room and is never rewarded."
+  },
+  "initialFindings": {
+    "caseGenerator": "First all-physical builder attempted illegal shot for C/D; existing profession validation rejected it before fixture delivery. Corrected to valid wait for those casters, retained failure log. No skills whitelist relaxed.",
+    "unitInitial": {
+      "tests": 19,
+      "passed": 17,
+      "failed": 2,
+      "log": "unit-initial.tap",
+      "causes": [
+        "Guardian end mana expected83 omitted existing natural+1; verify prep5, regen1, reaction2, actual84.",
+        "Once retry expected wave to reset repeat fallback cursor. Production cursor kept unchanged; test now explicitly verifies cycle rechecks, repeat stays, no once consumed on free skip."
+      ]
+    },
+    "fullInitial": {
+      "tests": 939,
+      "passed": 936,
+      "failed": 3,
+      "log": "full-tests-initial.tap",
+      "cause": "New route changed exact catalog totals from24/72 to25/75; strict count expectations updated, combat/reward assertions unchanged."
+    },
+    "browserInitial": {
+      "passed": false,
+      "log": "browser-initial.json / browser-initial.stderr",
+      "cause": "Final achievement-label assertion guessed wrong name. Replaced with precise route/goal-ID checks for actual first receipts16/17, while retaining complete report/guild comparisons."
+    },
+    "assertionsWeakened": false,
+    "seedsChangedToPass": false,
+    "damageOrCostsOrHPAdjustedToPass": false
+  },
+  "mechanic": {
+    "data": "Optional fixed authored unit.immuneTo,1–4 distinct existing types. Not accepted in hero config; all room waves validate. No empty keys in old snapshots.",
+    "selection": "Exclude this type from legal living opponents before old position/role/priority/cap/shuffle selection. Basic eligibility, minimum-target checks and strictPosition compose; no cross-position count pooling.",
+    "freeFallback": "No MP/material/action or extra battle RNG when no valid target. Existing cursor/once/round semantics unchanged; no new recheck condition. No legal fallback still consumes original failed slot.",
+    "redirection": "Actual original attack and interception roll/payment retained; immune actual guardian causes0 damage, no defense/cost/roll/status and no refund.",
+    "periodic": "Magic immunity causes0 corrosion tick without another payment, early removal or rollback. Old expiry remains.",
+    "supportAndSummons": "Healing/buffs/cleanse/summoning unaffected. Dispel cannot remove innate trait. Child does not inherit owner immunity.",
+    "evidence": "Public dossier and unit snapshot; excluded field explicitly a type list, not claimed original target range. Exact actual selection/following action, default/highlight/personal projections, no inferred prevented damage."
+  },
+  "referenceBoundary": {
+    "date": "2026-11-06",
+    "indexedPrimary": [
+      {
+        "url": "https://world-of-dungeons.de/ency/Fertigkeiten",
+        "supports": "Public index says some enemies are immune to particular attack types, with animals/social attacks as an example.",
+        "fullText": "502 Bad Gateway on direct open, not retried; not treated as full text or current server verification."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/Dungeon_Guide",
+        "supports": "Public index says enemies may be immune to damage types or accessible only to magic/ranged, with information in battle reports.",
+        "fullText": "Already502 in v118, not reopened or retried in v120."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/FAQ",
+        "supports": "Public index gives undead/social attacks and other type restrictions as examples.",
+        "fullText": "Index only, no full-text-read claim."
+      }
+    ],
+    "adaptation": "Coarse four-type innate immuneTo array, excluding targets before selection, existing legal-position routes, no new screening cover, post-interception paid immunity, corrosion no-damage timing, no inherited summon immunity, metadata/UI and all two-room authored content/stats/rewards are project-original provisional design. Not a current original-server or numeric replica."
+  },
+  "scope": {
+    "combatEngineChanged": true,
+    "newEnemyTrait": "immuneTo",
+    "newRoute": "ossuary",
+    "newSkillsOrTrainingCosts": false,
+    "gearChanged": false,
+    "oldLootRewardsChanged": false,
+    "newPlayerConfigFields": false,
+    "rulesetVersionChanged": false,
+    "permanentSuppliesImplemented": false,
+    "extraGoalRewards": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "routes": 25,
+    "gear": 40,
+    "ordinaryGoals": 75,
+    "build": "dist ships directly; no bundler/build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Supply persistence already asked by parent, not implemented while awaiting reply.",
+    "limitations": [
+      "Indexed historical primary evidence supports attack-type restrictions; new full-text attempt502, no retries or current-server claim.",
+      "Four broad types, old legal melee routes and all timing/content/numbers are original provisional adaptation.",
+      "12 fresh successes and2 normal runs are finite evidence; no global balance, roster or single-change benefit claim.",
+      "Redirected and preloaded periodic immunity are explicit boundary fixtures, not authored normal encounters demonstrated in browser.",
+      "Firefox/Safari/physical devices not tested."
+    ]
+  }
+}

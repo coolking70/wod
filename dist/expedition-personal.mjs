@@ -19,6 +19,8 @@ export function personalReport(report,heroId){
    if(target){add(e.roomIndex,'taken',d.actual);proof(e,index,'受到攻击');}
    if(e.units.find(u=>u.id===e.actor)?.owner===heroId){add(e.roomIndex,'summonDamage',d.actual);proof(e,index,'召唤物攻击');}
   }
+  if(e.type==='immune'){if(own){add(e.roomIndex,'immuneRecords');proof(e,index,'实际受击者免疫');}if(target){add(e.roomIndex,'immuneReceipts');proof(e,index,'本人固有免疫');}}
+  if(own&&e.type==='skip'&&d.attackImmunity)proof(e,index,'本人的类型排除与后备');
   if(e.type==='mana-transfer'){if(own){add(e.roomIndex,'manaGiven',d.actual);add(e.roomIndex,'manaTransfers');proof(e,index,'本人法力援助');link(given,e.targets[0],'mana',d.actual,index);}if(target){add(e.roomIndex,'manaReceived',d.actual);link(received,e.actor,'mana',d.actual,index);proof(e,index,'得到法力援助');}}
   if(e.type==='heal'){
    if(own&&d.passive){add(e.roomIndex,'passiveRecords');add(e.roomIndex,'passiveHealing',d.actual);add(e.roomIndex,'passiveOverheal',d.overheal);}
