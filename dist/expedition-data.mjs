@@ -35,6 +35,7 @@ export const naturalDefenses=()=>({melee:'natural',ranged:'natural',magic:'natur
 export const ROOM_IDS=[...BEACONBRIDGE_ROOMS.map(r=>r.id),...TRAPWORKS_ROOMS.map(r=>r.id),...OSSUARY_ROOMS.map(r=>r.id),...BREAKWATER_ROOMS.map(r=>r.id),...COUNTERPOINT_ROOMS.map(r=>r.id),...CONFLUENCE_ROOMS.map(r=>r.id),'harbor_gate','harbor_pass','harbor_cache','harbor_beacon','gallery','cistern','altar','infirmary','garden','heart',...FOUNDRY_ROOMS.map(r=>r.id),...WATCH_ROOMS.map(r=>r.id),...COURIER_ROOMS.map(r=>r.id),...THEATER_ROOMS.map(r=>r.id),...SHOALS_SLOTS,...INQUEST_ROOMS.map(r=>r.id),...PALISADE_ROOMS.map(r=>r.id),...SCRIPTORIUM_ROOMS.map(r=>r.id),...GREENHOUSE_ROOMS.map(r=>r.id),...CLOCKTOWER_ROOMS.map(r=>r.id)];
 // All content and tuning below are original. Formula policies are documented in docs/V3_RULES.md.
 export const SKILLS={
+ arcshot:{name:'潮印箭',kind:'attack',type:'ranged',damageType:'magic',primary:'dex',secondary:'per',power:1.15,cost:4,item:'arrow',mode:'single',max:1,requiresGear:'bow',desc:'射手自由普通技能；需弓具，4法力/1箭矢，占普通行动。按灵巧/感知做远程攻防、目标/援护/攻击免疫仍按远程；命中后采用法术伤害抗性，原护甲仍参与，不额外穿甲。单体，可指定治疗者等职责；不附状态、不回蓝，闪避也付费。弱于重箭的基础威力，取舍取决于实际抗性与防御。规则数值为项目暂定改编。'},
  disarm:{name:'机巧拆解',kind:'attack',type:'ranged',primary:'per',secondary:'dex',power:1.2,cost:3,mode:'single',max:1,disarm:true,desc:'射手自由普通技能，只选固定机关，不攻击生物。3法力、无共享材料，占普通行动；感知/灵巧沿原远程攻防、护甲和抗性削减机关耐久，不触发援护。耐久归零停机，既有攻击不撤销；无合法机关免费查后备。具体费用/规则为项目暂定改编。'},
  manalink:{name:'借潮咏',kind:'transfer',primary:'cha',secondary:'wil',cost:8,mode:'position',max:1,requiresGear:'lute',desc:'吟游者自由普通技能，需乐器；占一次普通行动、8法力、无材料。所选友方阵位或全队中，按最低法力比例选择不高于50%的另一名存活正式单位；同值按队伍顺序，不给自己/召唤物，无合格者免费后备。转入min(实际支付, max(1, floor(1+施放均值×0.08)))，受目标法力上限截断，不随机检定；培养与属性影响均值，但整数档位不保证每级提高。已支付不因上限截断退款；不是生命治疗，不被仅禁草药救护的禁疗阻止，不撤销先前缺蓝、不给额外行动。'},
  strike:{name:'剑术',kind:'attack',type:'melee',primary:'dex',secondary:'str',power:1.3,cost:0,mode:'single',max:1,desc:'近战单体；按近战路线寻找目标。'},
@@ -81,7 +82,7 @@ Object.assign(SKILLS,{
 const attrs=(str,con,int,dex,cha,agi,per,wil)=>({str,con,int,dex,cha,agi,per,wil});
 const FOUNDERS=[
  {id:'a',name:'阿瑟',role:'守卫',mark:'盾',pos:'front',gear:'plate',attrs:attrs(12,16,5,11,6,8,9,12),skills:['strike','guard','shieldbash','rallyguard','interpose'],base:6},
- {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep','disarm'],base:6},
+ {id:'b',name:'莱恩',role:'射手',mark:'弓',pos:'rear',gear:'bow',attrs:attrs(9,10,5,16,6,13,15,8),skills:['shot','volley','pierce','sweep','disarm','arcshot'],base:6},
  {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt','tidearcher','recall'],base:6},
  {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse','unravel','drain'],base:6},
  {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance','mindcall','manalink','offbeat'],base:6},

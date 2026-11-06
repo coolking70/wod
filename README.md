@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.128「装备技能等级」**，分支`feature/v128-equipment-skill-ranks`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.129「攻击方式与伤害通道」**，分支`feature/v129-attack-damage-channels`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[攻击方式与伤害通道](docs/V129_ATTACK_DAMAGE_CHANNELS.md)：远程攻防与法术伤害可分别结算；射手自由普通潮印箭沿远程目标/闪避/援护/攻击免疫，命中后用法术抗性、保留原护甲。四次正常远征保留两次未施放和全部箭矢耗尽，真实培养后至5025金币，见[V129验证](docs/V129_CHECKS.json)。
 
 新增[装备技能等级](docs/V128_EQUIPMENT_SKILL_RANKS.md)：两件固定商店装备提供技能/防御等级，与永久培养分账；换下即移除，不授予职业外技能、不复制经验或提高培养上限。三次正常远征保留两人倒下和耗尽，退款/换装后至4550金币，见[V128验证](docs/V128_CHECKS.json)。
 

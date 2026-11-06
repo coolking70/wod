@@ -1,0 +1,394 @@
+{
+  "startGold": 4550,
+  "normal": [
+    {
+      "id": 43,
+      "route": "courier",
+      "target": "healer",
+      "seed": 43,
+      "won": true,
+      "rounds": [
+        3,
+        5,
+        8
+      ],
+      "alive": 6,
+      "fallen": [],
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 4685,
+      "arcCasts": 0,
+      "hits": [],
+      "ranger": {
+        "damage": 578,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 16,
+        "castMana": 32,
+        "defenseMana": 1,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    {
+      "id": 44,
+      "route": "palisade",
+      "target": "healer",
+      "seed": 44,
+      "won": true,
+      "rounds": [
+        5,
+        3,
+        5
+      ],
+      "alive": 6,
+      "fallen": [],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 170,
+        "xp": 70,
+        "firstClear": true,
+        "loot": [
+          "watchmantle"
+        ]
+      },
+      "gold": 4855,
+      "arcCasts": 5,
+      "hits": [
+        {
+          "eventId": 29,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "psm",
+          "grade": "重击",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 2,
+          "actual": 30,
+          "interception": {
+            "eventId": 27,
+            "protected": "psm",
+            "protectedName": "传讯医师",
+            "guardian": "psg",
+            "success": false,
+            "cover": {
+              "effectId": "0:5:psm:0",
+              "source": "psg",
+              "recipient": "psm",
+              "skill": "interpose",
+              "component": "援护架势",
+              "stat": "cover",
+              "value": 1
+            }
+          }
+        },
+        {
+          "eventId": 73,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "psm",
+          "grade": "重击",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 2,
+          "actual": 34,
+          "interception": {
+            "eventId": 71,
+            "protected": "psm",
+            "protectedName": "传讯医师",
+            "guardian": "psg",
+            "success": false,
+            "cover": {
+              "effectId": "0:5:psm:0",
+              "source": "psg",
+              "recipient": "psm",
+              "skill": "interpose",
+              "component": "援护架势",
+              "stat": "cover",
+              "value": 1
+            }
+          }
+        },
+        {
+          "eventId": 120,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "psm",
+          "grade": "致命",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 2,
+          "actual": 37,
+          "interception": {
+            "eventId": 118,
+            "protected": "psm",
+            "protectedName": "传讯医师",
+            "guardian": "psg",
+            "success": false,
+            "cover": {
+              "effectId": "0:26:psm:0",
+              "source": "psg",
+              "recipient": "psm",
+              "skill": "interpose",
+              "component": "援护架势",
+              "stat": "cover",
+              "value": 1
+            }
+          }
+        },
+        {
+          "eventId": 163,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "psm",
+          "grade": "致命",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 2,
+          "actual": 41,
+          "interception": null
+        },
+        {
+          "eventId": 206,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "psm",
+          "grade": "致命",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 2,
+          "actual": 44,
+          "interception": null
+        }
+      ],
+      "ranger": {
+        "damage": 503,
+        "healing": 0,
+        "received": 0,
+        "taken": 0,
+        "casts": 13,
+        "castMana": 32,
+        "defenseMana": 3,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "channelDamage": 186,
+        "channelHits": 5
+      }
+    },
+    {
+      "id": 45,
+      "route": "ossuary",
+      "target": "healer",
+      "seed": 45,
+      "won": true,
+      "rounds": [
+        3,
+        5
+      ],
+      "alive": 6,
+      "fallen": [],
+      "supplies": {
+        "herb": 8,
+        "rune": 4,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 85,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 4940,
+      "arcCasts": 0,
+      "hits": [],
+      "ranger": {
+        "damage": 274,
+        "healing": 0,
+        "received": 0,
+        "taken": 9,
+        "casts": 7,
+        "castMana": 24,
+        "defenseMana": 4,
+        "failed": 1,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    {
+      "id": 46,
+      "route": "ossuary",
+      "target": "priority",
+      "seed": 46,
+      "won": true,
+      "rounds": [
+        3,
+        6
+      ],
+      "alive": 6,
+      "fallen": [],
+      "supplies": {
+        "herb": 3,
+        "rune": 4,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 85,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 5025,
+      "arcCasts": 6,
+      "hits": [
+        {
+          "eventId": 25,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "ovb",
+          "grade": "命中",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 0,
+          "actual": 21,
+          "interception": null
+        },
+        {
+          "eventId": 67,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "ovb",
+          "grade": "致命",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 0,
+          "actual": 49,
+          "interception": null
+        },
+        {
+          "eventId": 143,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "osg",
+          "grade": "致命",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 5,
+          "actual": 14,
+          "interception": null
+        },
+        {
+          "eventId": 194,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "osg",
+          "grade": "重击",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 5,
+          "actual": 37,
+          "interception": null
+        },
+        {
+          "eventId": 245,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "osg",
+          "grade": "重击",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 5,
+          "actual": 26,
+          "interception": null
+        },
+        {
+          "eventId": 296,
+          "attackType": "ranged",
+          "damageType": "magic",
+          "target": "osg",
+          "grade": "致命",
+          "defense": "natural",
+          "resistance": 0,
+          "armor": 5,
+          "actual": 43,
+          "interception": null
+        }
+      ],
+      "ranger": {
+        "damage": 279,
+        "healing": 0,
+        "received": 51,
+        "taken": 67,
+        "casts": 8,
+        "castMana": 24,
+        "defenseMana": 3,
+        "failed": 1,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "channelDamage": 190,
+        "channelHits": 6
+      }
+    }
+  ],
+  "training": {
+    "heroId": "b",
+    "key": "skill:arcshot",
+    "xp": 20
+  },
+  "finalGold": 5025,
+  "next": 47,
+  "limits": "Initial fixed43courier/44palisade/45ossuary then after observing no healer retarget46ossuary to priority without resetting seed or changing authored parameters, ranger specialization arcshot freely changes tactical focus; train20XP only after43. Attackmethod ranged controls dodge/interception/immunity; magicdamage controls resistance, originalarmor stays. Different seeds/routes/configs/training are not causal or global balance evidence; no original enemy/skill/reward tuning, no added route/gear/currency."
+}

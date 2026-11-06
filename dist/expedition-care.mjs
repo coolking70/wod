@@ -3,7 +3,7 @@ import {hasSummoningSkill} from './expedition-summons.mjs';
 import {COURIER_ROOMS,COURIER_KEEL} from './expedition-courier.mjs';
 import {harborNodes,HARBOR_NODES} from './expedition-harbor.mjs';
 import {healingReason} from './expedition-healing.mjs';
-import {HEROES,roomsFor,SKILLS} from './expedition-data.mjs';
+import {HEROES,roomsFor,SKILLS,TYPES} from './expedition-data.mjs';
 // Prefix-only projection: never reads events after the selected replay snapshot.
 export function careTimeline(report,unitId,eventId,limit=12){
  const end=report.events.findIndex(e=>e.id===eventId);if(end<0)return null;
@@ -13,7 +13,7 @@ export function careTimeline(report,unitId,eventId,limit=12){
   if(e.roomIndex!==now.roomIndex)continue;
   const d=e.detail||{},target=e.targets.includes(unitId),snapshot=e.units.find(u=>u.id===unitId);
   let kind=null,detail='';
-  if(e.type==='attack'&&target){kind='damage';detail=`HP ${d.hpBefore} → ${d.hpAfter}；${d.defenseProfile?.name||'自然防御'}：${d.defense} 对攻击 ${d.attack}；护甲 ${d.armor} / 抗性 ${d.resistance||0}%；实扣 ${d.actual}`;if(d.defenseProfile?.reason)detail+='；回退原因：'+d.defenseProfile.reason;}
+  if(e.type==='attack'&&target){kind='damage';detail=`${d.damageChannel?TYPES[d.attackType]+'攻防 / '+TYPES[d.damageType]+'伤害；':''}HP ${d.hpBefore} → ${d.hpAfter}；${d.defenseProfile?.name||'自然防御'}：${d.defense} 对攻击 ${d.attack}；护甲 ${d.armor} / 抗性 ${d.resistance||0}%；实扣 ${d.actual}`;if(d.defenseProfile?.reason)detail+='；回退原因：'+d.defenseProfile.reason;}
   else if(e.type==='heal'&&target){kind='heal';detail=`${d.passive?'缓释恢复（不占普通行动）':'有效治疗'} ${d.actual} / 未生效 ${d.overheal}；HP ${snapshot.hp-d.actual} → ${snapshot.hp}`;}
   else if(e.type==='item'&&e.actor===unitId&&d.resource==='hp'){kind='heal';detail=`自用药匣；HP ${d.before} → ${d.after}；占用本人行动`;}
   else if(e.type==='down'&&target){kind='down';detail='HP 0；倒下后无法行动，也不会随换房复活。';}

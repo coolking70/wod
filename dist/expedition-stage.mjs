@@ -1,4 +1,4 @@
-import {roomsFor} from './expedition-data.mjs';
+import {roomsFor,TYPES} from './expedition-data.mjs';
 // Read-only presentation. All outcomes and unit states come from the recorded event stream.
 import {groupActions} from './expedition-report.mjs';
 export function replaySteps(events,diagnostic=false){return diagnostic?events.map((e,i)=>({start:i,end:i,roomIndex:e.roomIndex,round:e.round,phase:e.phase,type:e.type,events:[e]})):groupActions(events).filter(g=>!['skip','regen','round'].includes(g.type)||g.events.some(e=>e.detail.reservation||e.detail.healingBlock||e.detail.schedule||e.detail.targetCount?.blocked||e.detail.positionOnly?.blocked||e.detail.attackImmunity||e.detail.mechanismSelection||e.detail.offbeatSelection||e.detail.manaSelection));}
@@ -11,7 +11,7 @@ export function stageFrame(group){
   if(e.type==='withdraw')for(const u of e.detail.withdrawal.alive)cues.push({unit:u.id,kind:'control',text:'整队撤退',note:'仍存活，不算本房通关',eventId:e.id});
   if(e.type==='initiative'&&e.detail.actionLimits)for(const l of e.detail.actionLimits)cues.push({unit:l.target,kind:'control',text:l.removed?'额外行动 −'+l.removed:'迟拍未减',note:l.before+'→'+l.after+'次普通行动',eventId:e.id});
   if(e.type==='immune')cues.push({unit:e.targets[0],kind:'control',text:'免疫',note:'本次0伤害',eventId:e.id});
-  else if(e.type==='attack'||e.type==='harm'){const d=e.detail,kind=d.grade==='闪避'?'miss':d.actual>0?'damage':'blocked';cues.push({unit:e.targets[0],kind,text:kind==='miss'?'闪避':kind==='blocked'?'吸收':`−${d.actual}`,note:(e.type==='harm'?'潮蚀持续伤害':d.mechanismHit?'机关耐久拆解 · '+d.grade:d.grade)+(d.resistance>0?' · 抗性减伤':d.resistance<0?' · 弱点':''),eventId:e.id});}
+  else if(e.type==='attack'||e.type==='harm'){const d=e.detail,kind=d.grade==='闪避'?'miss':d.actual>0?'damage':'blocked';cues.push({unit:e.targets[0],kind,text:kind==='miss'?'闪避':kind==='blocked'?'吸收':`−${d.actual}`,note:(e.type==='harm'?'潮蚀持续伤害':d.mechanismHit?'机关耐久拆解 · '+d.grade:d.grade)+(d.damageChannel?' · '+TYPES[d.attackType]+'攻防/'+TYPES[d.damageType]+'伤害':'')+(d.resistance>0?' · 抗性减伤':d.resistance<0?' · 弱点':''),eventId:e.id});}
   else if(e.type==='intercept'||e.type==='intercept-skip')cues.push({unit:e.actor,kind:'cover',text:e.type==='intercept'?(e.detail.success?'接招':'援护未及'):'援护未触发',note:e.detail.reason||'2法力 · 不占普通行动',eventId:e.id});
   else if(e.type==='mana-damage')cues.push({unit:e.targets[0],kind:'mana',text:e.detail.grade==='闪避'?'闪避':'−'+e.detail.actual+' MP',note:'断流 · 生命不变',eventId:e.id});
   else if(e.type==='mana-transfer')cues.push({unit:e.targets[0],kind:'mana',text:'+'+e.detail.actual+' MP',note:'借潮咏 · 来源付'+e.detail.paidMana+'法力/普通行动',eventId:e.id});
