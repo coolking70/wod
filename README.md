@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.124「归信航程」**，分支`feature/v124-branching-quest`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.125「属性培养」**，分支`feature/v125-attribute-training`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[属性培养](docs/V125_ATTRIBUTE_TRAINING.md)：八项属性与技能/防御共用真实经验，可分别培养与重修；区分基础、倾向、培养和装备，出发生命/法力与检定沿原有公式。试演只读、实验草稿不能授予公会属性。正常28邮路仍全员止步，29资深试炼六人首通但0符纸0箭矢，金币至3005，保留取舍。见[V125验证](docs/V125_CHECKS.json)。
 
 新增[单人分支任务「归信航程」](docs/V124_BRANCHING_QUEST.md)：接取后依次选岸路、渡海接应，再挑战沉船邮路，只计入新的正常通关结算；前两段未走分支不回填，失败/绕路不清空路签。正常23/24取得两段路签，25/26邮路两败保留，实付380XP并调整指令后27六人生还但0药草。最后手动交付40金币和一件已有遗物至2725，无任务经验。见[V124验证](docs/V124_CHECKS.json)。
 

@@ -1,3 +1,4 @@
+import {applyAttributeTraining} from './expedition-attribute-training.mjs';
 import {validateAttackImmunities,attackEligible,immuneToAttack,immunityDecision,IMMUNITY_RULE} from './expedition-immunity.mjs';
 import {validatePositionOnly,positionOnlyCheck} from './expedition-position-only.mjs';
 import {roomWaves,WAVE_RULE} from './expedition-waves.mjs';
@@ -66,7 +67,7 @@ export function validate(c){
   for(const [roomId,patch] of Object.entries(h.overrides)){if(!ROOM_IDS.includes(roomId)||!patch||typeof patch!=='object'||Array.isArray(patch)||Object.keys(patch).some(k=>!PLAN_FIELDS.includes(k)))throw Error('房间覆盖包含未知字段');validatePlan(resolveHeroPlan(h,roomId),t);}
  }return true;
 }
-export function buildParty(c){return c.heroes.map(h=>{const t=HEROES.find(t=>t.id===h.id),a=clone(t.attrs);a[h.attribute]+=3;const bonus=equipmentTotals(h.gear).bonus,maxHp=50+4*(a.con+(bonus.con||0)),maxMp=20+2*(a.int+(bonus.int||0))+a.wil+(bonus.wil||0);return {...clone(t),...clone(h),attrs:a,itemInstance:{id:h.id+':'+h.item,kind:h.item,remaining:ITEMS[h.item].charges},side:'party',hp:maxHp,maxHp,mp:maxMp,maxMp,skills:Object.fromEntries(t.skills.map(s=>[s,t.base+(h.trained===s?3:0)+(h.training['skill:'+s]||0)])),effects:[]};});}
+export function buildParty(c){return c.heroes.map(h=>{const t=HEROES.find(t=>t.id===h.id),a=applyAttributeTraining(t.attrs,h.training);a[h.attribute]+=3;const bonus=equipmentTotals(h.gear).bonus,maxHp=50+4*(a.con+(bonus.con||0)),maxMp=20+2*(a.int+(bonus.int||0))+a.wil+(bonus.wil||0);return {...clone(t),...clone(h),attrs:a,itemInstance:{id:h.id+':'+h.item,kind:h.item,remaining:ITEMS[h.item].charges},side:'party',hp:maxHp,maxHp,mp:maxMp,maxMp,skills:Object.fromEntries(t.skills.map(s=>[s,t.base+(h.trained===s?3:0)+(h.training['skill:'+s]||0)])),effects:[]};});}
 export function current(u,key){const gear=equipmentTotals(u.gear);return (u.attrs[key]??(key==='armor'?gear.armor:0))+(gear.bonus[key]||0)+(u.effects||[]).reduce((n,e)=>n+(e.active!==false&&e.stat===key?e.value:0),0);}
 export function resistanceOf(u,type){return Math.max(-50,Math.min(75,(u.resistances?.[type]||0)+(equipmentTotals(u.gear).resistances[type]||0)));}
 export function damageResult(rolled,multiplier,armor,resistance=0){const afterArmor=Math.max(0,rolled*multiplier-armor),damage=Math.floor(afterArmor*(1-resistance/100));return {afterArmor,unresisted:Math.floor(afterArmor),damage};}

@@ -1,0 +1,2432 @@
+{
+  "startGold": 2725,
+  "paidFirstQuote": {
+    "cost": 40,
+    "refund": 0,
+    "attributes": [
+      {
+        "key": "con",
+        "before": 13,
+        "after": 14
+      },
+      {
+        "key": "int",
+        "before": 11,
+        "after": 12
+      }
+    ],
+    "resources": [
+      {
+        "key": "maxHp",
+        "before": 102,
+        "after": 106
+      },
+      {
+        "key": "maxMp",
+        "before": 57,
+        "after": 59
+      }
+    ]
+  },
+  "training": [
+    {
+      "id": "f",
+      "key": "attr:int",
+      "before": 1075,
+      "after": 1055
+    },
+    {
+      "id": "b",
+      "key": "attr:agi",
+      "before": 1035,
+      "after": 1015
+    }
+  ],
+  "normal": [
+    {
+      "id": 28,
+      "seed": 28,
+      "route": "courier",
+      "won": false,
+      "rounds": [
+        4,
+        4,
+        15
+      ],
+      "alive": 0,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 40,
+        "xp": 20,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 2765,
+      "objective": "reserve"
+    },
+    {
+      "id": 29,
+      "seed": 29,
+      "route": "veteran",
+      "won": true,
+      "rounds": [
+        6,
+        7,
+        17
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 240,
+        "xp": 110,
+        "firstClear": true,
+        "loot": [
+          "reliquaryshield"
+        ]
+      },
+      "gold": 3005,
+      "objective": "survive"
+    }
+  ],
+  "refundCon": 20,
+  "respec": {
+    "refund": 20,
+    "cost": 20,
+    "availableBefore": 1115,
+    "availableAfter": 1115
+  },
+  "samples": {
+    "start": {
+      "heroes": {
+        "a": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 16,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 19,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 11,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 11,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": -4,
+              "total": 4,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 126,
+            "maxMp": 42
+          },
+          "ledger": {
+            "available": 1195,
+            "training": 0,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 0
+          }
+        },
+        "b": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 3,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 13,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 16,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 15,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 1,
+              "total": 9,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 35
+          },
+          "ledger": {
+            "available": 1035,
+            "training": 160,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 160
+          }
+        },
+        "c": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 9,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 98,
+            "maxMp": 74
+          },
+          "ledger": {
+            "available": 1055,
+            "training": 140,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 140
+          }
+        },
+        "d": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 7,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 7,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 13,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 72
+          },
+          "ledger": {
+            "available": 1175,
+            "training": 20,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 20
+          }
+        },
+        "e": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 11,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 11,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 13,
+              "focus": 0,
+              "training": 0,
+              "equipment": 2,
+              "total": 15,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 57
+          },
+          "ledger": {
+            "available": 1115,
+            "training": 80,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 80
+          }
+        },
+        "f": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 12,
+              "focus": 3,
+              "training": 0,
+              "equipment": -2,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": 2,
+              "total": 17,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 2,
+              "total": 14,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": -1,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 68
+          },
+          "ledger": {
+            "available": 1075,
+            "training": 120,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 120
+          }
+        }
+      }
+    },
+    "trained": {
+      "heroes": {
+        "a": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 16,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 19,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 11,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 11,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": -4,
+              "total": 4,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 126,
+            "maxMp": 42
+          },
+          "ledger": {
+            "available": 1195,
+            "training": 0,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 0
+          }
+        },
+        "b": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 3,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 13,
+              "focus": 0,
+              "training": 1,
+              "equipment": 3,
+              "total": 17,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 15,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 1,
+              "total": 9,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 35
+          },
+          "ledger": {
+            "available": 1015,
+            "training": 180,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 180
+          }
+        },
+        "c": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 9,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 98,
+            "maxMp": 74
+          },
+          "ledger": {
+            "available": 1055,
+            "training": 140,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 140
+          }
+        },
+        "d": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 7,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 7,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 13,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 72
+          },
+          "ledger": {
+            "available": 1175,
+            "training": 20,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 20
+          }
+        },
+        "e": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 1,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 11,
+              "focus": 0,
+              "training": 1,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 13,
+              "focus": 0,
+              "training": 0,
+              "equipment": 2,
+              "total": 15,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 106,
+            "maxMp": 59
+          },
+          "ledger": {
+            "available": 1075,
+            "training": 120,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 120
+          }
+        },
+        "f": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 12,
+              "focus": 3,
+              "training": 0,
+              "equipment": -2,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 15,
+              "focus": 0,
+              "training": 1,
+              "equipment": 2,
+              "total": 18,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 2,
+              "total": 14,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": -1,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 70
+          },
+          "ledger": {
+            "available": 1055,
+            "training": 140,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1195,
+            "refundable": 140
+          }
+        }
+      }
+    },
+    "respecced": {
+      "heroes": {
+        "a": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 16,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 19,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 11,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 11,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": -4,
+              "total": 4,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 126,
+            "maxMp": 42
+          },
+          "ledger": {
+            "available": 1215,
+            "training": 0,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1215,
+            "refundable": 0
+          }
+        },
+        "b": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 3,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 13,
+              "focus": 0,
+              "training": 1,
+              "equipment": 3,
+              "total": 17,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 15,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 1,
+              "total": 9,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 35
+          },
+          "ledger": {
+            "available": 1035,
+            "training": 180,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1215,
+            "refundable": 180
+          }
+        },
+        "c": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 9,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 98,
+            "maxMp": 74
+          },
+          "ledger": {
+            "available": 1075,
+            "training": 140,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1215,
+            "refundable": 140
+          }
+        },
+        "d": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 7,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 7,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 13,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 72
+          },
+          "ledger": {
+            "available": 1195,
+            "training": 20,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1215,
+            "refundable": 20
+          }
+        },
+        "e": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 11,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 11,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 13,
+              "focus": 0,
+              "training": 1,
+              "equipment": 2,
+              "total": 16,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 58
+          },
+          "ledger": {
+            "available": 1115,
+            "training": 100,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1215,
+            "refundable": 100
+          }
+        },
+        "f": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 12,
+              "focus": 3,
+              "training": 0,
+              "equipment": -2,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 15,
+              "focus": 0,
+              "training": 1,
+              "equipment": 2,
+              "total": 18,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 2,
+              "total": 14,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": -1,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 70
+          },
+          "ledger": {
+            "available": 1075,
+            "training": 140,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1215,
+            "refundable": 140
+          }
+        }
+      }
+    },
+    "final": {
+      "heroes": {
+        "a": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 16,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 19,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 11,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 11,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": -4,
+              "total": 4,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 126,
+            "maxMp": 42
+          },
+          "ledger": {
+            "available": 1325,
+            "training": 0,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1325,
+            "refundable": 0
+          }
+        },
+        "b": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 3,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 13,
+              "focus": 0,
+              "training": 1,
+              "equipment": 3,
+              "total": 17,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 15,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 1,
+              "total": 9,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 35
+          },
+          "ledger": {
+            "available": 1145,
+            "training": 180,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1325,
+            "refundable": 180
+          }
+        },
+        "c": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 9,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 98,
+            "maxMp": 74
+          },
+          "ledger": {
+            "available": 1185,
+            "training": 140,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1325,
+            "refundable": 140
+          }
+        },
+        "d": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 5,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 5,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 16,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 19,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 7,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 7,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 13,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 14,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 72
+          },
+          "ledger": {
+            "available": 1305,
+            "training": 20,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1325,
+            "refundable": 20
+          }
+        },
+        "e": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 10,
+              "focus": 3,
+              "training": 0,
+              "equipment": 0,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 11,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 11,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 9,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 9,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 17,
+              "focus": 0,
+              "training": 0,
+              "equipment": 3,
+              "total": 20,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": -2,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 12,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 13,
+              "focus": 0,
+              "training": 1,
+              "equipment": 2,
+              "total": 16,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 58
+          },
+          "ledger": {
+            "available": 1225,
+            "training": 100,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1325,
+            "refundable": 100
+          }
+        },
+        "f": {
+          "attributes": [
+            {
+              "key": "str",
+              "name": "力量",
+              "base": 6,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 6,
+              "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+            },
+            {
+              "key": "con",
+              "name": "体质",
+              "base": 12,
+              "focus": 3,
+              "training": 0,
+              "equipment": -2,
+              "total": 13,
+              "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+            },
+            {
+              "key": "int",
+              "name": "智力",
+              "base": 15,
+              "focus": 0,
+              "training": 1,
+              "equipment": 2,
+              "total": 18,
+              "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+            },
+            {
+              "key": "dex",
+              "name": "灵巧",
+              "base": 8,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 8,
+              "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+            },
+            {
+              "key": "cha",
+              "name": "魅力",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+            },
+            {
+              "key": "agi",
+              "name": "敏捷",
+              "base": 10,
+              "focus": 0,
+              "training": 0,
+              "equipment": 0,
+              "total": 10,
+              "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+            },
+            {
+              "key": "per",
+              "name": "感知",
+              "base": 12,
+              "focus": 0,
+              "training": 0,
+              "equipment": 2,
+              "total": 14,
+              "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+            },
+            {
+              "key": "wil",
+              "name": "意志",
+              "base": 15,
+              "focus": 0,
+              "training": 0,
+              "equipment": -1,
+              "total": 14,
+              "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+            }
+          ],
+          "resources": {
+            "maxHp": 102,
+            "maxMp": 70
+          },
+          "ledger": {
+            "available": 1185,
+            "training": 140,
+            "courses": 0,
+            "advancement": 0,
+            "earned": 1325,
+            "refundable": 140
+          }
+        }
+      }
+    }
+  },
+  "finalGold": 3005,
+  "limits": "All training is actual earned XP, no combat/stat/seed edits. Prototype20/40/60 rank costs,3 cap,per-rank+1 attributes and exact refunds; no claim to original server numbers. Attributes feed existing starting HP/MP and opposed/initiative formulas, not extra actions or fixed buff effects. Same-seed rehearsal is read-only and finite, not a stable benefit estimate; normal28/29 differ in route/seed and training, not causal comparison."
+}

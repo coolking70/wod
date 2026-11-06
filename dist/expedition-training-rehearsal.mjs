@@ -1,7 +1,7 @@
-import {clone,HEROES,TYPES} from './expedition-data.mjs';
+import {clone,HEROES,TYPES,ATTR} from './expedition-data.mjs';
 import {guildConfig,applyTrainingPlan} from './expedition-guild.mjs';
 import {quoteTrainingPlan} from './expedition-training-plan.mjs';
-import {simulate,buildParty,defenseProfile} from './expedition-engine.mjs';
+import {simulate,buildParty,defenseProfile,current} from './expedition-engine.mjs';
 import {personalReport} from './expedition-personal.mjs';
 // Two independent simulations of actual assets; neither run is a guild departure.
 export function rehearseTrainingPlan(g,tactics,id,plan){
@@ -17,5 +17,6 @@ export function rehearseTrainingPlan(g,tactics,id,plan){
  }
  const skills=Object.keys(units.before.skills).map(skill=>({skill,before:units.before.skills[skill],after:units.after.skills[skill]})).filter(r=>r.before!==r.after);
  const defenses=Object.keys(TYPES).map(type=>{const a=defenseProfile(units.before,type),b=defenseProfile(units.after,type);return {type,defense:a.skill,before:a.level,after:b.level};}).filter(r=>r.before!==r.after);
- return {id,name:HEROES.find(h=>h.id===id).name,seed,quote,skills,defenses,summary,reports};
+ const attributes=Object.keys(ATTR).map(key=>({key,before:current(units.before,key),after:current(units.after,key)})).filter(r=>r.before!==r.after),resources=['maxHp','maxMp'].map(key=>({key,before:units.before[key],after:units.after[key]})).filter(r=>r.before!==r.after);
+ return {id,name:HEROES.find(h=>h.id===id).name,seed,quote,skills,defenses,...(attributes.length||resources.length?{attributes,resources}:{}),summary,reports};
 }
