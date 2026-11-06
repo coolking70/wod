@@ -1,0 +1,578 @@
+{
+  "startGold": 5570,
+  "normal": [
+    {
+      "id": 52,
+      "route": "palisade",
+      "rounds": [
+        4,
+        3,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 0,
+        "arrow": 0
+      },
+      "guardian": {
+        "groups": 405,
+        "animated": 38,
+        "poses": {
+          "brace": 19,
+          "parry": 10,
+          "evade": 3,
+          "windup": 12,
+          "strike": 12,
+          "hit": 7
+        },
+        "examples": {
+          "strike": {
+            "groupStart": 53,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "strike",
+            "beats": [
+              {
+                "eventId": 54,
+                "pose": "windup",
+                "label": "准备出手"
+              },
+              {
+                "eventId": 56,
+                "pose": "strike",
+                "label": "实际出手"
+              }
+            ],
+            "sourceEvents": [
+              54,
+              56
+            ],
+            "label": "准备出手 → 实际出手",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "cover": null,
+          "reach": null,
+          "parry": {
+            "groupStart": 43,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "parry",
+            "beats": [
+              {
+                "eventId": 45,
+                "pose": "brace",
+                "label": "挡架检定"
+              },
+              {
+                "eventId": 46,
+                "pose": "parry",
+                "label": "挡开"
+              }
+            ],
+            "sourceEvents": [
+              45,
+              46
+            ],
+            "label": "挡架检定 → 挡开",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "evade": {
+            "groupStart": 47,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "evade",
+            "beats": [
+              {
+                "eventId": 50,
+                "pose": "evade",
+                "label": "闪避"
+              }
+            ],
+            "sourceEvents": [
+              50
+            ],
+            "label": "闪避",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "hit": {
+            "groupStart": 89,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "hit",
+            "beats": [
+              {
+                "eventId": 92,
+                "pose": "hit",
+                "label": "受击 −14"
+              }
+            ],
+            "sourceEvents": [
+              92
+            ],
+            "label": "受击 −14",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "fallen": null
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 115,
+        "xp": 50,
+        "firstClear": false,
+        "loot": [
+          "watchmantle"
+        ]
+      },
+      "gold": 5685
+    },
+    {
+      "id": 53,
+      "route": "courier",
+      "rounds": [
+        4,
+        4,
+        19
+      ],
+      "alive": 2,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "guardian": {
+        "groups": 718,
+        "animated": 63,
+        "poses": {
+          "brace": 27,
+          "parry": 14,
+          "hit": 31,
+          "windup": 11,
+          "strike": 11,
+          "evade": 2,
+          "fallen": 1
+        },
+        "examples": {
+          "strike": {
+            "groupStart": 65,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "strike",
+            "beats": [
+              {
+                "eventId": 66,
+                "pose": "windup",
+                "label": "准备出手"
+              },
+              {
+                "eventId": 68,
+                "pose": "strike",
+                "label": "实际出手"
+              }
+            ],
+            "sourceEvents": [
+              66,
+              68
+            ],
+            "label": "准备出手 → 实际出手",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "cover": null,
+          "reach": null,
+          "parry": {
+            "groupStart": 35,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "parry",
+            "beats": [
+              {
+                "eventId": 37,
+                "pose": "brace",
+                "label": "挡架检定"
+              },
+              {
+                "eventId": 38,
+                "pose": "parry",
+                "label": "挡开"
+              }
+            ],
+            "sourceEvents": [
+              37,
+              38
+            ],
+            "label": "挡架检定 → 挡开",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "evade": {
+            "groupStart": 490,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "evade",
+            "beats": [
+              {
+                "eventId": 493,
+                "pose": "evade",
+                "label": "闪避"
+              }
+            ],
+            "sourceEvents": [
+              493
+            ],
+            "label": "闪避",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "hit": {
+            "groupStart": 45,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "idle",
+            "mode": "hit",
+            "beats": [
+              {
+                "eventId": 48,
+                "pose": "hit",
+                "label": "受击 −7"
+              }
+            ],
+            "sourceEvents": [
+              48
+            ],
+            "label": "受击 −7",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          },
+          "fallen": {
+            "groupStart": 804,
+            "id": "a",
+            "name": "阿瑟",
+            "weapon": "sword",
+            "settled": "fallen",
+            "mode": "fallen",
+            "beats": [
+              {
+                "eventId": 807,
+                "pose": "hit",
+                "label": "受击 −8"
+              },
+              {
+                "eventId": 808,
+                "pose": "fallen",
+                "label": "倒下"
+              }
+            ],
+            "sourceEvents": [
+              807,
+              808
+            ],
+            "label": "受击 −8 → 倒下",
+            "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+          }
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 5820
+    }
+  ],
+  "oldFailure22": {
+    "groups": 565,
+    "animated": 56,
+    "poses": {
+      "brace": 24,
+      "hit": 26,
+      "parry": 11,
+      "windup": 10,
+      "strike": 10,
+      "evade": 3,
+      "fallen": 1
+    },
+    "examples": {
+      "strike": {
+        "groupStart": 61,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "strike",
+        "beats": [
+          {
+            "eventId": 62,
+            "pose": "windup",
+            "label": "准备出手"
+          },
+          {
+            "eventId": 64,
+            "pose": "strike",
+            "label": "实际出手"
+          }
+        ],
+        "sourceEvents": [
+          62,
+          64
+        ],
+        "label": "准备出手 → 实际出手",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "cover": null,
+      "reach": null,
+      "parry": {
+        "groupStart": 53,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "parry",
+        "beats": [
+          {
+            "eventId": 55,
+            "pose": "brace",
+            "label": "挡架检定"
+          },
+          {
+            "eventId": 56,
+            "pose": "parry",
+            "label": "挡开"
+          }
+        ],
+        "sourceEvents": [
+          55,
+          56
+        ],
+        "label": "挡架检定 → 挡开",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "evade": {
+        "groupStart": 93,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "evade",
+        "beats": [
+          {
+            "eventId": 96,
+            "pose": "evade",
+            "label": "闪避"
+          }
+        ],
+        "sourceEvents": [
+          96
+        ],
+        "label": "闪避",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "hit": {
+        "groupStart": 35,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "hit",
+        "beats": [
+          {
+            "eventId": 38,
+            "pose": "hit",
+            "label": "受击 −3"
+          }
+        ],
+        "sourceEvents": [
+          38
+        ],
+        "label": "受击 −3",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "fallen": {
+        "groupStart": 676,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "fallen",
+        "mode": "fallen",
+        "beats": [
+          {
+            "eventId": 679,
+            "pose": "hit",
+            "label": "受击 −12"
+          },
+          {
+            "eventId": 680,
+            "pose": "fallen",
+            "label": "倒下"
+          }
+        ],
+        "sourceEvents": [
+          679,
+          680
+        ],
+        "label": "受击 −12 → 倒下",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      }
+    }
+  },
+  "finalGold": 5820,
+  "next": 54,
+  "limits": "No changes to engine, config, skills, items, resources or rewards. Recorded gestures are project presentation, not physical movement, combat timing or extra actions. Same original earned guild and fixed normal52/53, no combat tuning. Old failed22 is the existing complete frozen archive, not a new run or reward. Existing history38 current-rule replay illustrates both actual failed and successful guardian cover; no new run/reward.",
+  "oldCover38": {
+    "groups": 372,
+    "animated": 32,
+    "poses": {
+      "brace": 18,
+      "parry": 7,
+      "hit": 7,
+      "reach": 1,
+      "windup": 11,
+      "strike": 11,
+      "cover": 1
+    },
+    "examples": {
+      "strike": {
+        "groupStart": 54,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "strike",
+        "beats": [
+          {
+            "eventId": 55,
+            "pose": "windup",
+            "label": "准备出手"
+          },
+          {
+            "eventId": 57,
+            "pose": "strike",
+            "label": "实际出手"
+          }
+        ],
+        "sourceEvents": [
+          55,
+          57
+        ],
+        "label": "准备出手 → 实际出手",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "cover": {
+        "groupStart": 222,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "hit",
+        "beats": [
+          {
+            "eventId": 224,
+            "pose": "cover",
+            "label": "援护接招"
+          },
+          {
+            "eventId": 226,
+            "pose": "hit",
+            "label": "受击 −14"
+          }
+        ],
+        "sourceEvents": [
+          224,
+          226
+        ],
+        "label": "援护接招 → 受击 −14",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "reach": {
+        "groupStart": 44,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "reach",
+        "beats": [
+          {
+            "eventId": 46,
+            "pose": "reach",
+            "label": "援护未及"
+          }
+        ],
+        "sourceEvents": [
+          46
+        ],
+        "label": "援护未及",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "parry": {
+        "groupStart": 29,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "parry",
+        "beats": [
+          {
+            "eventId": 31,
+            "pose": "brace",
+            "label": "挡架检定"
+          },
+          {
+            "eventId": 32,
+            "pose": "parry",
+            "label": "挡开"
+          }
+        ],
+        "sourceEvents": [
+          31,
+          32
+        ],
+        "label": "挡架检定 → 挡开",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "evade": null,
+      "hit": {
+        "groupStart": 32,
+        "id": "a",
+        "name": "阿瑟",
+        "weapon": "sword",
+        "settled": "idle",
+        "mode": "hit",
+        "beats": [
+          {
+            "eventId": 34,
+            "pose": "brace",
+            "label": "挡架检定"
+          },
+          {
+            "eventId": 35,
+            "pose": "hit",
+            "label": "受击 −2"
+          }
+        ],
+        "sourceEvents": [
+          34,
+          35
+        ],
+        "label": "挡架检定 → 受击 −2",
+        "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+      },
+      "fallen": null
+    }
+  }
+}

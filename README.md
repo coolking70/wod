@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.132「个人先攻选择」**，分支`feature/v132-initiative-choice`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.133「守卫关节动作样板」**，分支`feature/v133-guardian-motion`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[守卫关节动作样板](docs/V133_GUARDIAN_MOTION.md)：同一程序SVG以9关节表现真实出手、援护未及/接招、挡架后受击与倒下，区分真实剑盾/重盾。暂停、快进和减少动态效果只改只读演出，全部规则/旧素材保持。正常53仅两人生还及全补给耗尽不隐藏，最终5820金币，见[V133验证](docs/V133_CHECKS.json)。
 
 新增[个人先攻选择](docs/V132_INITIATIVE_CHOICE.md)：学者复用已有普通先觉阵，在预备与回蓝后独立支付法力检定，不占普通行动；支持分房继承、缺蓝自然回退和完整支出证据。正常50花60MP及两次药瓶行动，51只首房花16MP，均六人生还至5570金币；原五冻结档与默认旧报告保持。原版结构与暂定参数分清，见[V132验证](docs/V132_CHECKS.json)。
 
