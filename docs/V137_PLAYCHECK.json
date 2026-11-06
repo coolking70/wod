@@ -1,0 +1,191 @@
+{
+  "startGold": 6495,
+  "normal": [
+    {
+      "id": 60,
+      "route": "turncourt",
+      "rounds": [
+        4,
+        5
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "own": {
+        "id": "e",
+        "attribute": "cha",
+        "trained": "mindcall",
+        "defenseFocus": "dodge"
+      },
+      "personal": {
+        "damage": 173,
+        "healing": 0,
+        "received": 26,
+        "taken": 43,
+        "casts": 11,
+        "castMana": 54,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 10,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 85,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 6580
+    },
+    {
+      "id": 61,
+      "route": "ossuary",
+      "rounds": [
+        3,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 5,
+        "rune": 4,
+        "arrow": 4
+      },
+      "own": {
+        "id": "e",
+        "attribute": "cha",
+        "trained": "mindcall",
+        "defenseFocus": "dodge"
+      },
+      "personal": {
+        "damage": 106,
+        "healing": 0,
+        "received": 54,
+        "taken": 54,
+        "casts": 11,
+        "castMana": 18,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 10,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 85,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 6665
+    }
+  ],
+  "comparison": {
+    "seed": 60,
+    "sameEarnedAssets": true,
+    "changedFields": [
+      "e.attribute",
+      "e.trained",
+      "e.defenseFocus"
+    ],
+    "carried": {
+      "route": "turncourt",
+      "rounds": [
+        4,
+        5
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "own": {
+        "id": "e",
+        "attribute": "cha",
+        "trained": "mindcall",
+        "defenseFocus": "dodge"
+      },
+      "personal": {
+        "damage": 173,
+        "healing": 0,
+        "received": 26,
+        "taken": 43,
+        "casts": 11,
+        "castMana": 54,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 10,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    },
+    "factoryReset": {
+      "route": "turncourt",
+      "rounds": [
+        4,
+        5
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 7,
+        "rune": 0,
+        "arrow": 0
+      },
+      "own": {
+        "id": "e",
+        "attribute": "con",
+        "trained": "insight",
+        "defenseFocus": "resist"
+      },
+      "personal": {
+        "damage": 161,
+        "healing": 0,
+        "received": 26,
+        "taken": 43,
+        "casts": 11,
+        "castMana": 54,
+        "defenseMana": 2,
+        "failed": 0,
+        "items": 1,
+        "summonDamage": 0,
+        "buffApplications": 10,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    }
+  },
+  "finalGold": 6665,
+  "next": 62,
+  "limits": "Navigation retains player-selected free preparation focus; not mastery, new XP investment, an automatic skill/gear upgrade or a guarantee of route compatibility. Bound full plans retain original priority; positions, commands, reactions and items use the target route. Same seed may diverge after changed hit/defense/HP paths; no isolated attribution or global upgrade claimed."
+}

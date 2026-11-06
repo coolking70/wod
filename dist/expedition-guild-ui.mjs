@@ -1,3 +1,4 @@
+import {routeFocusPreparation,routeFocusNotice} from './expedition-route-focus.mjs';
 import {initiativeLabel} from './expedition-initiative.mjs';
 import {damageChannelLabel} from './expedition-damage-channel.mjs';
 import {equipmentRanksView} from './expedition-equipment-ranks-view.mjs';
@@ -19,7 +20,6 @@ import {enemyThreatMap,enemyThreatMapView} from './expedition-threat-map.mjs';
 import {supportOrderLabel} from './expedition-support-priority.mjs';
 import {attackOrderLabel} from './expedition-position-priority.mjs';
 import {clocktowerStoryView} from './expedition-clocktower-story-view.mjs';
-import {readRoutePreparation} from './expedition-plan-book.mjs';
 import {targetCountLabel} from './expedition-target-count.mjs';
 import {captureCampaign,validateCampaignBackup,restoreCampaign,campaignRaw} from './expedition-campaign-backup.mjs';
 import {scheduleLabel} from './expedition-schedule.mjs';
@@ -175,7 +175,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  if(b.dataset.setApply){save(applyEquipmentSet(g,selected,Number(b.dataset.setApply)));inform('已应用此人整套已持有装备，请核对技能装备条件；训练与职责保留。');render();return;}
  if(b.dataset.setDelete){save(deleteEquipmentSet(g,selected,Number(b.dataset.setDelete)));inform('已删除配装栏，实际装备保留。');render();return;}
 
- if(b.dataset.goalPrepare){const [route,goal]=b.dataset.goalPrepare.split(':'),c=withObjective(readRoutePreparation(localStorage,route).config,goal);c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('目标与路线已选定；请按实际队伍调整战术后正式挑战。');return;}
+ if(b.dataset.goalPrepare){const [route,goal]=b.dataset.goalPrepare.split(':'),assigned=routeFocusPreparation(localStorage,route,getConfig(),g),c=withObjective(assigned.config,goal);c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('目标与路线已选定；请按实际队伍调整战术后正式挑战。'+routeFocusNotice(assigned));return;}
  if(b.dataset.goalReport){const [route,goal]=b.dataset.goalReport.split(':');showReport(bookReport(g,route,goal),bookOrigin(g,route,goal));return;}
  if(b.dataset.goalLoad){const [route,goal]=b.dataset.goalLoad.split(':');loadConfig(structuredClone(bookProof(g,route,goal).config));inform('首次方案已载入供调整；当前资产、队伍、本人及已应用职责保留。');return;}
 
@@ -183,7 +183,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  else if(b.dataset.journeyBook){if(!Object.hasOwn(journeyNames,b.dataset.journeyBook))throw Error('旅程无效');journeyBook=b.dataset.journeyBook;render();return;}
  else if(b.hasAttribute('data-postquest-start')){save(startPostQuest(g));render();inform('已接取归信航程，旧通关不回填；先选择第一段通路。');return;}
  else if(b.dataset.postquestPath){save(choosePostQuest(g,b.dataset.postquestPath));render();inform('本段通路已选择；准备与正式出征仍需按当前实际队伍核对。');return;}
- else if(b.hasAttribute('data-postquest-prepare')){if(localStorage.getItem(GUILD_KEY)!==raw||localStorage.getItem(configKey)!==JSON.stringify(getConfig()))throw Error('另一页面已修改公会或准备配置，请重新载入后准备任务');const route=g.postQuest?.selected;if(!route||g.pending)throw Error('先选择本段通路并领取当前远征结算');const c=readRoutePreparation(localStorage,route).config;c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('已载入任务通路准备；路线绑定方案与当前资产/伙伴职责保持，正式通关领取后才取得路签。');return;}
+ else if(b.hasAttribute('data-postquest-prepare')){if(localStorage.getItem(GUILD_KEY)!==raw||localStorage.getItem(configKey)!==JSON.stringify(getConfig()))throw Error('另一页面已修改公会或准备配置，请重新载入后准备任务');const route=g.postQuest?.selected;if(!route||g.pending)throw Error('先选择本段通路并领取当前远征结算');const assigned=routeFocusPreparation(localStorage,route,getConfig(),g),c=assigned.config;c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('已载入任务通路准备；路线绑定方案与当前资产/伙伴职责保持，正式通关领取后才取得路签。'+routeFocusNotice(assigned));return;}
  else if(b.dataset.postquestDeliver){save(deliverPostQuest(g,b.dataset.postquestDeliver));render();inform('归信交付已记录；40金币与所选遗物入仓，仍需手动分配。');return;}
  else if(b.dataset.clocktowerStoryEnd){save(claimClocktowerStory(g,b.dataset.clocktowerStoryEnd));inform('余响结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
  else if(b.dataset.harborStoryEnd){save(claimHarborStory(g,b.dataset.harborStoryEnd));inform('来信结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
@@ -243,7 +243,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  document.querySelector('header [data-view="guild"]').onclick=open;
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
  function cycle(action,value=''){read();if(!g)throw Error('公会暂不可用，请先检查或恢复备份');
-  if(action==='prepare'){const assigned=readRoutePreparation(localStorage,value,{seed:getConfig().seed}),c=assigned.config;loadConfig(c,undefined,false,{overview:true});inform(assigned.plan?'已准备本路线分配的「'+assigned.plan.name+'」；请核对实际公会资产与伙伴职责。':'已准备现有路线；请核对实际公会队伍后正式出征，实验不发成长奖励。');}
+  if(action==='prepare'){const assigned=routeFocusPreparation(localStorage,value,getConfig(),g,{seed:getConfig().seed}),c=assigned.config;loadConfig(c,undefined,false,{overview:true});inform((assigned.plan?'已准备本路线分配的「'+assigned.plan.name+'」；请核对实际公会资产与伙伴职责。':'已准备现有路线；请核对实际公会队伍后正式出征，实验不发成长奖励。')+routeFocusNotice(assigned));}
   else if(action==='retry'){const c=historyConfig(g,Number(value));loadConfig(c,undefined,false,{overview:true});inform('已载入第'+value+'次的'+(c.objective?'目标与':'')+'出发方案；当前资产与伙伴职责保留，再次正式出征分配新种子。');}
   else if(action==='pending'){if(!g.pending){open('departure');return;}showReport(pendingReport(g),pendingOrigin(g));}
   else if(action==='training'||action==='equipment'){selected=g.command?.heroId||selected;open(action==='training'?'team':'equipment');}

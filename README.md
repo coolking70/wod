@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.136「机关护壁与拆源」**，分支`feature/v136-linked-wards`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.137「个人构筑随行」**，分支`feature/v137-personal-focus-travel`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[个人构筑随行与云端空间审计](docs/V137_PERSONAL_FOCUS.md)：复现并修复切换默认路线重置本人三项自由选择，完整绑定方案继续优先，支持实际名册/候补本人、撤销和整档恢复。正常60/61六人生还至6665金币，原战斗数据/五冻结字节保持；旧证据不删，大型验收改独立临时盘并逐组校验归档，见[V137验证](docs/V137_CHECKS.json)。
 
 新增[机关护壁与潮锁护库](docs/V136_LINKED_WARDS.md)：供能机关持续加护守军，先拆源或用已有心理攻击绕甲有时机/资源取舍，双源护甲按16→8→0实际解除。战前关联公开、战报拆除/来源可追溯；正常58/59六人生还至6495金币，无新技能/装备/成长购买，旧五冻结字节保持。新内容是明确原创，不冒称原版服务器规则，见[V136验证](docs/V136_CHECKS.json)。
 
