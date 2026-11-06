@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.131「完整战报无损压缩」**，分支`feature/v131-lossless-report-pooling`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.132「个人先攻选择」**，分支`feature/v132-initiative-choice`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[个人先攻选择](docs/V132_INITIATIVE_CHOICE.md)：学者复用已有普通先觉阵，在预备与回蓝后独立支付法力检定，不占普通行动；支持分房继承、缺蓝自然回退和完整支出证据。正常50花60MP及两次药瓶行动，51只首房花16MP，均六人生还至5570金币；原五冻结档与默认旧报告保持。原版结构与暂定参数分清，见[V132验证](docs/V132_CHECKS.json)。
 
 新增[完整战报无损压缩](docs/V131_LOSSLESS_REPORT_POOLING.md)：新收藏复用完全相同的单位状态，读取后完整还原并校验原JSON长度和SHA。第47次从138388降至49556字符，原四份不改即可收藏第五份；48/49仍保留超限拒绝。正常49至5320金币，见[V131验证](docs/V131_CHECKS.json)。
 

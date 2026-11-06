@@ -17,6 +17,7 @@ export function readiness(g,tactics,scope=''){
  const locked=lockedSkills(m,h);if(locked.length)errors.push({id:h.id,text:'尚未学习：'+locked.map(s=>SKILLS[s].name).join('、')});
  const checks=scope?[{id:scope,plan}]:[{id:'',plan},...roomsFor(actual).map(r=>({id:r.id,plan:resolveHeroPlan(h,r.id)}))];
  for(const entry of checks){const where=entry.id?roomsFor(actual).find(r=>r.id===entry.id).name:'默认';
+ if(entry.plan.initiative==='foresight')warnings.push(`${where}：先觉先攻每回合独立付费，缺蓝回自然先攻；预备和普通行动仍照常。`);
  for(const command of [...entry.plan.prep,...entry.plan.main]){const s=SKILLS[command.skill];if(s.requiresGear&&!gearSupports(h.gear,s.requiresGear))warnings.push(`${where}：${s.name}缺少${gearRequirementName(s.requiresGear)}`);const payment=commandCost(h,command);warnings.push(...stockFloorWarnings(command,payment,actual.supplies).map(w=>where+'：'+s.name+'，'+w));if(payment.resource&&actual.supplies[payment.resource]<payment.amount)warnings.push(`${where}：${s.name}所需${{herb:'药草',rune:'符纸',arrow:'箭矢'}[payment.resource]}${payment.medium==='standard'?'为0':'不足'+payment.amount+'份'}`);}
  for(const def of Object.values(entry.plan.defenses))if(DEFENSES[def]?.gear&&!gearSupports(h.gear,DEFENSES[def].gear))warnings.push(`${where}：${DEFENSES[def].name}缺少盾甲，将回退自然防御`);
  if(entry.plan.healing.enabled&&actual.supplies.herb===0)warnings.push(`${where}：救护已启用但药草为0`);

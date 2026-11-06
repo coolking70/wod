@@ -1,0 +1,704 @@
+{
+  "phase": "v0.132 independent personal initiative choice using existing ordinary foresight skill",
+  "date": "2026-11-06",
+  "baseline": {
+    "baseline": "ef6a023d0924fa42f322bbdb8f54226ecbfd1483",
+    "tree": "3bcecef3ed74ed7b0080708c368008af31115f34",
+    "branch": "feature/v132-initiative-choice",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "remote": "https://github.com/coolking70/wod.git",
+    "statusBeforeEdits": "",
+    "tests": {
+      "tests": 1138,
+      "pass": 1138,
+      "fail": 0,
+      "skipped": 0,
+      "log": "baseline-tests.tap",
+      "durationMs": 143669.774435
+    }
+  },
+  "branch": "feature/v132-initiative-choice",
+  "localOnly": true,
+  "tests": {
+    "full": {
+      "tests": 1158,
+      "pass": 1158,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-final-tests.tap",
+      "durationMs": 194359.888147
+    },
+    "newSpecialized": {
+      "tests": 20,
+      "pass": 20,
+      "fail": 0,
+      "skipped": 0,
+      "log": "unit-initial.tap",
+      "durationMs": 11797.534295
+    },
+    "earlyFullBeforePersonalManaTotalCorrection": {
+      "tests": 1158,
+      "pass": 1158,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-initial-tests.tap",
+      "durationMs": 174938.01297
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "count": 553,
+    "failures": [],
+    "finalEditedFilesSeparatelyRechecked": [
+      "dist/expedition-personal-view.mjs",
+      "scripts/browser-v132.cjs"
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 150,
+    "checkedReferences": 167,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": true,
+    "suites": 40,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132
+    ],
+    "file": "acceptance/browser-acceptance.json",
+    "firstUnifiedRunAllPassed": true,
+    "phase": {
+      "passed": true,
+      "steps": [
+        "1440px原5320/next50真实公会及五份冻结档逐字段导入；默认先攻切换可删除可选字段，未学先觉阵禁止正式出征。原40XP普通课程学习后正常50完整报告、公会同API：60独立法力、2药瓶行动、6人生还、1草1符0箭、原135/55至5455。个人60法力/记录跳转/舞台扣费/实际INT队列证据可查；待领不能训练，领取后原20XP培养+1，整档携带五原始payload。",
+        "390px整档恢复5455，默认自然/首房先觉可恢复继承再明确覆盖且配置同API。正常51完整报告/公会同API：只有首房4次/16法力、6人生还、8草0符0箭，原115/50至5570。原47冻结完整payload可导出，旧49可重演；非法先攻对象导入写入前拒绝，当前公会/配置不变，无横向溢出。",
+        "新上下文恢复5570/next52，整份公会包括五原压缩字节、身份职责、原训练装备、课程与一次培养完全同API，准备配置逐房选择保留；51历史完整报告一致且不能重复领奖。三个上下文均无页面错误，未改永久补给、奖励或部署。"
+      ],
+      "errors": []
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "visualInspection": [
+      "initiative-desktop.png",
+      "initiative-mobile.png"
+    ],
+    "screenshotsAreActualRecordedCheckEvidence": true,
+    "allCompleteReportsAndWholeGuildComparedWithAPI": true,
+    "allFiveArchiveWireBytesExact": true,
+    "sameBrowserBackupRestoreAllFieldsExact": true,
+    "personalTotalIncludesIndependentManaAndSeparateBreakdown": true,
+    "otherEnginesOrPhysicalDevicesTested": false
+  },
+  "legacy": {
+    "reference": "ef6a023d0924fa42f322bbdb8f54226ecbfd1483",
+    "passed": true,
+    "routes": 28,
+    "count": 63,
+    "defaultReports": 56,
+    "earnedHistoricalReports": 7,
+    "excluded": [],
+    "rawFullEqual": true,
+    "baselineEarnedGuildAllFieldsExact": true,
+    "rows": [
+      {
+        "route": "turncourt",
+        "seed": 1,
+        "sha256": "c53b699a75d895168bd64e34622404f0da536cb1b77362b5117a535d09020294"
+      },
+      {
+        "route": "turncourt",
+        "seed": 731,
+        "sha256": "2bceaea83c9c9de0b50eb82f7350960c7036d212838bb68eb86fae8709b8dd36"
+      },
+      {
+        "route": "beaconbridge",
+        "seed": 1,
+        "sha256": "b3ca421fadbec1c17358509595bc3be80b78f4494b488f5509d9e2d4f4c511e9"
+      },
+      {
+        "route": "beaconbridge",
+        "seed": 731,
+        "sha256": "b3552813e30b1940150ef96db1adfc47d1d4c8df9679a415e6ab3d1df8569b20"
+      },
+      {
+        "route": "trapworks",
+        "seed": 1,
+        "sha256": "c8588cdc91530f06423735f9fd627b36a5bf93ca8ca76c25765f17f0bcf4a6f1"
+      },
+      {
+        "route": "trapworks",
+        "seed": 731,
+        "sha256": "a6ce0437ebfe5cc88c410e350a9511282112de9e08fb8208815c873b8c724198"
+      },
+      {
+        "route": "ossuary",
+        "seed": 1,
+        "sha256": "c0812857e35c3c00c8e74096016bb8005f149d12bf517cd25a91a09f20870117"
+      },
+      {
+        "route": "ossuary",
+        "seed": 731,
+        "sha256": "cc7401f722ea83768267803ebd07e07a42fd4e74aea2899d8d306e70fc7be0d3"
+      },
+      {
+        "route": "breakwater",
+        "seed": 1,
+        "sha256": "92ae5e9935102dc7107c562f1eb347a71dc0d9da334b5cebfcc32ad3fd897215"
+      },
+      {
+        "route": "breakwater",
+        "seed": 731,
+        "sha256": "87852c5d648ef515e7f124129adad60d4ce1906295c0662b2826fd91fc964df5"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 1,
+        "sha256": "e9f9abc2b9b05162874d1b64b7d9af736652ad9b000ed77dbf4b4a630a0482a5"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 731,
+        "sha256": "5e1dbb9b691b3dbb633a201d2778df036bb03cbfc886f76b639148d282966215"
+      },
+      {
+        "route": "confluence",
+        "seed": 1,
+        "sha256": "069c9882259a399369498b66c6d357678d7be6a208d1c366bfe075ad29a40e63"
+      },
+      {
+        "route": "confluence",
+        "seed": 731,
+        "sha256": "728597ebabf88152832fb5bf5caa000e6a3960a5bedbeef323cd85b82ce7a808"
+      },
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "e78705d4a81b25cb89b36e34d77f519a0309d3824b92cb69f603ed6e28021125"
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "4a7ce56cb099a1c0a1cc2b68a3eaa8f6e7f1bb58ab6b8ba4fa34fc36d09957fe"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "354589e66296d3c1c0210d472ba45fc07fc9041cc0e90d374207194fcca8c733"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "924979a7ba8e97d257fed8327233ab92465bd22731d015b64d8f24410d8b5123"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "63dce5b2110c8135ba76ee149a10a8d173778964b20853d992de2cc272e056da"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "1576eed7a62d35946015903f0d9b6e0ded9f83c13ae661cb399514f332bf5cae"
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "bca3d833b77880a4e5bcf57a676c2546bc80282bc0f610d4253ff7178612dc6a"
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "1feec96dddeb5380447ba1c9b0bca83090b9c15ad1b4017a0eca780eff1d3e0d"
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "5ea343d2c9a590920cf0003aa66e1518c1e50315a7fa3e4c095c0be1f11e8e0d"
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "151283507c1aee6bf3b1b1aa3554eaead9d236b6c9eaaf627d599b5ee6ca4fdf"
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "50f6ee9ed950d9ac64111c447d11fed3f5bfbc4ca2c76001415f0332f1d1fd4a"
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "586615de1f2ba96c38bfcd4b7d22dc4d9731a4ee31dce2bfc12b70c56221fc2f"
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "13288227979cbe74e15f1fcd9010c89597ae616a66207e41ff19c2a46eb84b16"
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "56281a4eec0ad0ab9863cf00a8b6a49a22f98d362d00fa9eb1839cac7a63886c"
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "b9d64f3ace1a3c4da164cea35c66985fcd22a4a6f0b33b6783fe1066bffdfb63"
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "00331ee59a8584e9790c3adbc285323e3eba473b6b71c091ad31e882f713ac1c"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "443cf03846b13303259cdbdc7688b396895f9263de43b870373f999ba11ac38b"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "75f2667ad37d808bc27ca5c231d2d2e8ac16a8176fc09c7436cefc41a211c251"
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "48f2b5c35085688d8f4144a7a06fb90b33bf903208061d613e12775037ed1686"
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "685c6bc639f031886e4a5e9477add8c8a763d8611b939633f3704aa0d4829141"
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "eaf008121613e1fe0e7f9cd079339b293ec55459a49a5dfd323d17736fe75fa6"
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "0c9d8a47042597d8a96b2dac43d1d763d4d58073b9c32a0503b957f22ab3a26e"
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "5a3a5feca7f4a100d8b49c2c50e8a18ee1602cbea4aa3b481606332cdeba2592"
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "c7e985355a5442439002cff5437de70b671b80a78af7c018b57c91b59efbbf3a"
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "c6d9af2fc25103ef124830f46d75b8a5982b2d05ea11781a9f3889d8010609f1"
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "9a5da7571d8dae9de2441ff59f6fca5cd23d8b2969d74abf468d60cf5f407b60"
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "85ea73d76233c74bdedde9372443c8690f536684e1249f2dc1ac18ce9838ff26"
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "f6dea815ecb8c364d5aa76741b77d3a757e996688d094f0a8d85832322cdc449"
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "0ec2134c0780ba2ab2c309c1c236f777d7ffb60861dc1e7866fc4282e54cb943"
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "80fe5bfc215c56763420f69fa09448cc583afccc7b97935823bc8aee9eecfb14"
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "c9d0bea1dc55174435cb7cd265c9a72c83a13f7652df8629bd0aaa7f82c04c14"
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "85a4c8c1d405d5bdf40cc12d199aa22593ed9efb6af50f5a10e36d79dd44b6e6"
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "786b5ebe975149b1a007ea359014b3ec99d5dfdd42010505843aa824e4154129"
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "fce55d52813c080b319fbc7ac311c7656980bd37184d3b764c4215857105de12"
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "482385f19bb27ab6de5b4e6902c925fe833dc9dc5699ed8af75b3664ba2685e0"
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "21e934f546b6a65649da3e8edbc57338c93e8542f6925552ffdb96649c7cc678"
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "b5004688f2b9739825df67b4a05fe4c42c29db37286b05b8d493267e46ae6ba1"
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "c49350322b02a6e460a0118309c30d8dcc75d750726a4bd3800da7bad981026b"
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "eefd11fc73e6d329d28d3af7adc95588902dc84da53332131e14839df18299e7"
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "21736e07f5c17751c0a5172d4703579dad5f09113bd4dabe08fe23bc1cfb4262"
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "2cefd86bc3d07d3c906987bec96f559bc234bddebcad2a71b99366097274626a"
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "d9d406c8a246c5a41414b35e0e425d32c5c0753be706754ecda8ace799a645e0"
+      },
+      {
+        "kind": "earned-history",
+        "id": 36,
+        "sha256": "9773cdb60705dc4b2e9d83ae083405cb06f2cb3f55ee067b7bbaae52ad4d9529"
+      },
+      {
+        "kind": "earned-history",
+        "id": 42,
+        "sha256": "d0384d5590f2fbb66cc1055470be32584a795b340384bb4f808664ef1ac384ad"
+      },
+      {
+        "kind": "earned-history",
+        "id": 43,
+        "sha256": "eedf0aa7161547ccf2284664019118c2dee498d3b19e733adadcf48203069226"
+      },
+      {
+        "kind": "earned-history",
+        "id": 46,
+        "sha256": "df979087d011202378ec70bd1bb192841a8531c55e09856ebbcb4f2b167952ea"
+      },
+      {
+        "kind": "earned-history",
+        "id": 47,
+        "sha256": "ba24298c91ad264034b398b23a1d53af7d6b0679908c8166b35d29e3a9bd7df6"
+      },
+      {
+        "kind": "earned-history",
+        "id": 48,
+        "sha256": "735cc5f999902d63eb05e1d36745d83c80bb408c298a7f4c5c3cfbf86b7d6cd3"
+      },
+      {
+        "kind": "earned-history",
+        "id": 49,
+        "sha256": "67a0dafa3e8ce3862af102eebcfa823147a461422a128ae6e8ed66fb93d7bcf8"
+      }
+    ]
+  },
+  "statePreservation": {
+    "passed": true,
+    "startExactV131": true,
+    "authoredRuleSkillAndBothConfigurationsUnchangedAfterResults": true,
+    "allSkillsEquipmentDefensesAndHeroesExact": true,
+    "onlyDataFileAddition": "PLAN_FIELDS optional initiative",
+    "protectedFiles": [
+      {
+        "file": "dist/expedition-health-phases.mjs",
+        "sha256": "c2f3197228a0ddcc06f5082149c13ed3ee2ba589c1570753972cc4f61566fe7f"
+      },
+      {
+        "file": "dist/expedition-turncourt.mjs",
+        "sha256": "45c569795b9538bbe30b2bba47b4a86f96c03d2a573397534280f2253bd3885d"
+      },
+      {
+        "file": "dist/expedition-loot.mjs",
+        "sha256": "661231a6ea95829d924fb755812f9527476dc90161a9915f41bfc46a5147f243"
+      },
+      {
+        "file": "dist/expedition-guild.mjs",
+        "sha256": "f57adde6d6f24943547c80d1cce7f889e6a213a5ea16de5de704801843fd611a"
+      },
+      {
+        "file": "dist/expedition-progression-rules.mjs",
+        "sha256": "081d341a293163ffcdf093efc420bbacdbf971074a5f854f5389d3888d0cb55b"
+      },
+      {
+        "file": "dist/expedition-adventure.mjs",
+        "sha256": "f244ffde27a3db72d9db1608d2c439f97c5a51c4c4a61f90c09c72b81a4eb572"
+      },
+      {
+        "file": "dist/expedition-equipment.mjs",
+        "sha256": "2708ce3ec9c9f8d14d79c7242036661fdde14bbcd168d58520d28b09824a966b"
+      },
+      {
+        "file": "dist/expedition-report-pool.mjs",
+        "sha256": "f2c25f1f89837e1095f95f4a6190a2075c27ce0f990ed3ad4f2ffbe28b18d8aa"
+      },
+      {
+        "file": "dist/expedition-report-archive.mjs",
+        "sha256": "9c100d77dcd346b3953608b07c1d41ab0ffcc0c540e649f6149fe316d68aa28c"
+      }
+    ],
+    "finalGold": 5570,
+    "next": 52,
+    "ordinaryGold": 250,
+    "ordinaryXpEach": 105,
+    "onlyCourse": {
+      "hero": "d",
+      "skill": "foresight",
+      "xp": 40
+    },
+    "onlyTraining": {
+      "hero": "d",
+      "key": "skill:foresight",
+      "rank": 1,
+      "xp": 20
+    },
+    "allOtherMemberFieldsExact": true,
+    "careerXpIncreaseEach": 105,
+    "oldFiveFullArchiveEntriesExactIncludingPayload": true,
+    "archiveUsage": 793208,
+    "history": [
+      51,
+      50,
+      49,
+      48,
+      47,
+      46,
+      45,
+      44,
+      43,
+      42,
+      41,
+      40,
+      39,
+      38,
+      37,
+      36,
+      35,
+      34,
+      33,
+      32
+    ],
+    "oldHistory32Through49Exact": true,
+    "normalRollOff": [
+      30,
+      31
+    ],
+    "allOldFirstProofsExact": true,
+    "onlyWarehouseIncrease": {
+      "postbell": 1,
+      "watchmantle": 1
+    },
+    "noPending": true,
+    "noIdentityRolesTasksGoalsEquipsOwnedOrProgressionChange": true,
+    "handoffHistoryPreserved": true
+  },
+  "firstFailuresPreserved": {
+    "phaseBrowser": {
+      "file": "initial-browser-v132.json",
+      "log": "browser-initial.log",
+      "reason": "Selector data-hero=d matched deployment, party order and roster buttons. Scoped #roster after strict-mode failure; no production gameplay change."
+    },
+    "independentState": {
+      "passed": false,
+      "capturedFromToolOutput": true,
+      "error": "AssertionError ERR_ASSERTION: PLAN_FIELDS actual initiative prepended; independent expected array had initiative appended.",
+      "actual": [
+        "initiative",
+        "supportOrder",
+        "attackOrder",
+        "pos",
+        "prep",
+        "main",
+        "healing",
+        "defenses",
+        "itemPolicy"
+      ],
+      "expected": [
+        "supportOrder",
+        "attackOrder",
+        "pos",
+        "prep",
+        "main",
+        "healing",
+        "defenses",
+        "itemPolicy",
+        "initiative"
+      ],
+      "resolution": "Corrected independent inspection script to verify exact actual prefixed enum and original data bytes after removing only that prefix. No production data or ordering change."
+    },
+    "specialized20FirstRunPassed": true,
+    "firstFull1158Passed": true,
+    "finalFullAfterPersonalTotalCorrectionPassed": true,
+    "productionCorrection": "Personal mana metric previously omitted the new independently listed initiative payment; now total and room cost include it, budget breakdown remains separate. Final browser verifies total from actual paid events.",
+    "combatParametersConfigsSeedsOrRewardsTunedForTests": false,
+    "assertionsWeakened": false
+  },
+  "referenceBoundary": {
+    "verifiedThisPhase": {
+      "url": "https://world-of-dungeons.de/ency/Initiative",
+      "pageRevision": "2024-11-24",
+      "access": "Public encyclopedia body read successfully",
+      "supports": [
+        "Natural initiative based on agility and perception",
+        "Choice of initiative skill",
+        "One base initiative roll reused by extra actions"
+      ]
+    },
+    "unavailableThisPhase": {
+      "url": "https://world-of-dungeons.de/ency/Fertigkeit",
+      "error": "502; not read or retried this phase"
+    },
+    "projectAdaptation": [
+      "Existing prep buff foresight reused as optional personal initiative; original prep remains unchanged.",
+      "INT*2+PER+actual ordinary foresight rank*2,4MP,current timing after natural regen",
+      "Same original prototype0.6 extra-action decay, different from official extra-action formula",
+      "Existing course40XP and training20/40/60 are unchanged project values, not current server numbers"
+    ],
+    "currentReferenceServerRulesVerified": false,
+    "referenceServerUserSelected": false
+  },
+  "scope": {
+    "routes": 28,
+    "gear": 45,
+    "ordinaryGoals": 84,
+    "newSkillsGearRoutesOrRewards": false,
+    "allExistingSkillEquipmentDefenseHeroDefinitionsExact": true,
+    "oldDefaultFullReportsUnchanged": true,
+    "mandatoryNewSaveFields": false,
+    "optionalConfigField": "heroes[].initiative or per-room override: natural/foresight",
+    "noImplicitCourseTrainingOrRoleChanges": true,
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "Editable dist directly served; no bundler build."
+  },
+  "actualTradeoff": {
+    "normal50": {
+      "independentMana": 60,
+      "ordinaryPotionActions": 2,
+      "castMana": 43,
+      "defenseMana": 0,
+      "totalManaPaid": 103,
+      "sixAlive": true,
+      "supplies": {
+        "herb": 1,
+        "rune": 1,
+        "arrow": 0
+      }
+    },
+    "pairedNatural50": {
+      "independentMana": 0,
+      "ordinaryPotionActions": 0,
+      "castMana": 49,
+      "defenseMana": 0,
+      "sixAlive": true,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    "normal51": {
+      "firstRoomOnly": true,
+      "independentMana": 16,
+      "checks": 4,
+      "sixAlive": true,
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    "actualNormalFallbacks": 0,
+    "fallbackValidatedByDedicatedLowMPFixture": true,
+    "notGeneralUpgradeOrAttributedHealingPrevention": true
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Permanent supplies and backup push still waiting; neither blocks independent local single-player work.",
+    "limitations": [
+      "Two fixed normal runs and one natural same-seed experiment are not global balance or stable-clear evidence.",
+      "Later RNG and target branches may diverge after queue changes; normal51 is a different route/seed/training/room plan, not causal training comparison.",
+      "No actual normal-run initiative fallback occurred; dedicated fixture proves it.",
+      "Existing prep skill reused as initiative is project adaptation, not original skill taxonomy or verified current server numbers.",
+      "Firefox/Safari/physical devices not tested."
+    ],
+    "next": "Return to overall solo exploration/failure/party cooperation gaps; avoid repeating initiative variants or adding diagnostic switches."
+  }
+}

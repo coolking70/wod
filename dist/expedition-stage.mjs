@@ -8,6 +8,7 @@ export function stageFrame(group){
  const events=group.events,last=events.at(-1),cast=events.find(e=>e.type==='cast'),lead=cast||events[0],cues=[],links=[];
  for(const e of events){
   if(e.type==='reinforcement')for(const u of e.detail.wave.arrivals)cues.push({unit:u.id,kind:'summon',text:'增援抵达',note:'第'+e.detail.wave.index+'/'+e.detail.wave.total+'波',eventId:e.id});
+  if(e.type==='initiative-check')cues.push({unit:e.actor,kind:'mana',text:e.detail.cost?'先攻 −'+e.detail.cost+' MP':'自然先攻',note:e.detail.initiative.reason||'独立先攻选择 · 不占行动',eventId:e.id});
   if(e.type==='health-phase')cues.push({unit:e.actor,kind:'control',text:e.detail.healthPhase.name,note:'生命阶段变化 · 既定队列保留',eventId:e.id});
   if(e.type==='withdraw')for(const u of e.detail.withdrawal.alive)cues.push({unit:u.id,kind:'control',text:'整队撤退',note:'仍存活，不算本房通关',eventId:e.id});
   if(e.type==='initiative'&&e.detail.actionLimits)for(const l of e.detail.actionLimits)cues.push({unit:l.target,kind:'control',text:l.removed?'额外行动 −'+l.removed:'迟拍未减',note:l.before+'→'+l.after+'次普通行动',eventId:e.id});

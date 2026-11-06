@@ -104,7 +104,7 @@ export const ROOMS=[
  {id:'altar',name:'03 · 守誓圣坛',note:'守誓者先施放守势；敌我使用相同技能规则。保留资源、准备备用指令，避免空过行动。',enemies:[{...enemy('s1','守誓者','front','strike',300,10),skills:{strike:8,guard:6},prep:[row('guard','self')]},enemy('s2','誓约残影','rear','wave',160,9)]}
 ];
 
-export const PLAN_FIELDS=['supportOrder','attackOrder','pos','prep','main','healing','defenses','itemPolicy'];
+export const PLAN_FIELDS=['initiative','supportOrder','attackOrder','pos','prep','main','healing','defenses','itemPolicy'];
 export function resolveHeroPlan(h,roomId){const plan=clone(h);for(const k of PLAN_FIELDS)if(Object.hasOwn(h.overrides?.[roomId]||{},k))plan[k]=clone(h.overrides[roomId][k]);return plan;}
 export function migrateConfig(raw){const c=clone(raw);if(c?.version==='0.3.0'){c.version='0.4.0';c.roomOrders={};for(const h of c.heroes){h.overrides={};h.defenses=naturalDefenses();h.defenseFocus=h.id==='a'?'parry':h.id==='b'?'dodge':'resist';}}if(c?.version==='0.4.0'){c.version='0.5.0';c.expedition='classic';for(const h of c.heroes){h.item='none';h.itemPolicy={enabled:true,threshold:.3};}}if(c?.version==='0.5.0')c.version='0.6.0';if(c?.version==='0.6.0'){c.version='0.7.0';for(const h of c.heroes)h.training={};}if(c?.version==='0.7.0')c.version='0.8.0';if(c?.version==='0.8.0'){c.version='0.11.0';c.bellApproach='bypass';}if(c?.version==='0.10.0')c.version='0.11.0';if(c?.version==='0.11.0'){c.version=VERSION;c.rescueApproach??='pass';}if(['0.12.0','0.14.0','0.20.0','0.23.0'].includes(c?.version))c.version=VERSION;return c;}
 
