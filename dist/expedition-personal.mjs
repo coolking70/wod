@@ -17,6 +17,7 @@ export function personalReport(report,heroId){
   if(own&&e.type==='defend')add(e.roomIndex,'defenseMana',Math.max(0,d.mpBefore-d.mpAfter));
   if(e.type==='attack'||e.type==='harm'){
    if(own){if(d.damageChannel){add(e.roomIndex,'channelDamage',d.actual);add(e.roomIndex,'channelHits');proof(e,index,'本人攻击方式与伤害通道');}add(e.roomIndex,'damage',d.actual);if(e.type==='harm'){add(e.roomIndex,'periodDamage',d.actual);add(e.roomIndex,'periodRecords');}proof(e,index,e.type==='harm'?'本人持续伤害':'本人攻击');}
+   if(d.damageParts){if(own){add(e.roomIndex,'coatedDamage',d.damageParts.filter(p=>p.kind==='coating').reduce((n,p)=>n+p.actual,0));add(e.roomIndex,'coatedHits');proof(e,index,'本人一次攻防分段伤害');}for(const p of d.damageParts.filter(p=>p.kind==='coating'&&p.source===heroId)){add(e.roomIndex,'coatingGivenDamage',p.actual);add(e.roomIndex,'coatingGivenRecords');proof(e,index,'药剂来源的实际附加段');}}
    if(target){add(e.roomIndex,'taken',d.actual);proof(e,index,'受到攻击');}
    if(e.units.find(u=>u.id===e.actor)?.owner===heroId){add(e.roomIndex,'summonDamage',d.actual);proof(e,index,'召唤物攻击');}
   }

@@ -57,6 +57,7 @@ export const SKILLS={
  ward:{name:'潮纹屏障',kind:'buff',primary:'int',secondary:'wil',cost:5,item:'rune',mode:'position',max:3,scope:'rounds',duration:2,stat:'defense',scale:0.18,base:3,desc:'目标位置所有防御检定提高；施放时按智力和技能等级取值，持续当前与之后 2 回合。'},
  mastery:{name:'战技传授',kind:'buff',primary:'cha',secondary:'per',cost:5,mode:'position',max:3,scope:'battle',stat:'skill',scale:0.18,base:1,desc:'目标位置攻击技能等级提高；同时影响命中与伤害，持续本房间。'},
  rhythm:{name:'急行节拍',kind:'buff',primary:'cha',secondary:'wil',cost:8,mode:'position',max:3,scope:'rounds',duration:1,stat:'actions',scale:0,base:1,desc:'目标位置行动次数 +1，持续当前与下一回合。'},
+ imbue:{name:'淬潮药',kind:'buff',primary:'int',secondary:'dex',cost:4,item:'herb',mode:'position',max:3,scope:'battle',stat:'weaponDamage',weaponDamage:true,scale:.08,base:3,desc:'药师自由普通技能；4法力/1共享药草，占预备，指定阵位最多3名存活正式持械队员。仅原本为近战或远程生命伤害的攻击附加法术伤害段，基值floor(3+施放均值×0.08)，本房间有效，不叠加刷新；不覆盖召唤/机关，不作用潮印箭、法术、心理、拆解、断流或持续伤害。一次攻防、同一命中等级，两段分别采用原护甲/穿甲与各自抗性；固定药剂基值不另掷，主段先截断。药草与救护竞争，数值为项目暂定改编。'},
  provisions:{name:'远征药膳',kind:'buff',primary:'int',secondary:'wil',cost:3,item:'herb',mode:'all',max:6,scope:'expedition',stat:'armor',scale:0,base:2,desc:'全队护甲 +2，跨房间保留；同名效果仍在时跳过。'},
  mireflask:{name:'蚀潮药剂',kind:'attack',type:'magic',primary:'int',secondary:'wil',power:.45,cost:4,item:'herb',mode:'single',max:1,corrosion:true,desc:'药师自由普通技能；4法力/1药草，低伤害单体法术。命中未倒下目标后附潮蚀，之后两个回合开始各以基值6按当时法术抗性结算持续伤害，不再掷攻防或扣材料；物理护甲只参与初击。不叠加/刷新，重复攻击仍付费；闪避或击倒不附着，初击零伤仍可附着。可净化，不回滚已发生伤害；来源倒下不解除，目标倒下不再跳伤，房间结束清理。固定基值/跳数不随培养增强；与救护、药膳竞争药草，自动救护仍优先。'},
  slowcare:{name:'缓释药敷',kind:'buff',primary:'int',secondary:'wil',cost:4,item:'herb',mode:'position',max:3,components:[{label:'缓释药敷',stat:'regeneration',base:8,scale:0,scope:'rounds',duration:1,delay:1}],desc:'预备时消耗4法力、1药草，覆盖一个阵位最多3人；下一及再下一回合开始各恢复8生命，固定量不随训练提高，不能复活。首回合不能救急，同名药敷等待/生效期间不叠加；不占普通行动，不受仅限制自动草药救护的禁疗影响。'},
@@ -87,7 +88,7 @@ const FOUNDERS=[
  {id:'c',name:'伊芙',role:'潮术师',mark:'潮',pos:'center',gear:'focus',attrs:attrs(5,9,17,8,8,10,12,14),skills:['wave','spark','sentinel','lance','tidebolt','tidearcher','recall'],base:6},
  {id:'d',name:'维斯',role:'学者',mark:'书',pos:'center',gear:'focus',attrs:attrs(5,10,16,7,10,9,13,14),skills:['ward','spark','bulwark','foresight','suppress','cleanse','unravel','drain'],base:6},
  {id:'e',name:'塞恩',role:'吟游者',mark:'琴',pos:'rear',gear:'lute',attrs:attrs(6,10,11,9,17,12,12,13),skills:['insight','mastery','rhythm','shot','cadence','resolvechant','dissonance','mindcall','manalink','offbeat'],base:6},
- {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','groupheal','shot','poultice','slowcare','mireflask'],base:6}
+ {id:'f',name:'露弥',role:'药师',mark:'药',pos:'center',gear:'field',attrs:attrs(6,12,15,8,10,10,12,15),skills:['provisions','heal','groupheal','shot','poultice','slowcare','mireflask','imbue'],base:6}
 ];
 export const CLASS_IDS={a:'guardian',b:'ranger',c:'tidecaller',d:'scholar',e:'bard',f:'herbalist'};
 export const CLASSES=Object.fromEntries(FOUNDERS.map(({id,name,...template})=>[CLASS_IDS[id],{...template,id:CLASS_IDS[id],starterId:id}]));

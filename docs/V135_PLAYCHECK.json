@@ -1,0 +1,325 @@
+{
+  "startGold": 5995,
+  "normal": [
+    {
+      "id": 56,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "coatingCasts": 3,
+      "coatingApplications": [
+        {
+          "eventId": 8,
+          "recipient": "b",
+          "value": 7
+        },
+        {
+          "eventId": 238,
+          "recipient": "b",
+          "value": 7
+        },
+        {
+          "eventId": 427,
+          "recipient": "b",
+          "value": 7
+        }
+      ],
+      "attacks": 15,
+      "extraActual": 49,
+      "ranger": {
+        "damage": 566,
+        "healing": 0,
+        "received": 28,
+        "taken": 28,
+        "casts": 15,
+        "castMana": 32,
+        "defenseMana": 3,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "coatedDamage": 49,
+        "coatedHits": 15
+      },
+      "herbalist": {
+        "damage": 4,
+        "healing": 292,
+        "received": 0,
+        "taken": 0,
+        "casts": 19,
+        "castMana": 55,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 9,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "coatingGivenDamage": 49,
+        "coatingGivenRecords": 15
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 6130
+    },
+    {
+      "id": 57,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 1,
+        "arrow": 0
+      },
+      "coatingCasts": 3,
+      "coatingApplications": [
+        {
+          "eventId": 8,
+          "recipient": "b",
+          "value": 7
+        },
+        {
+          "eventId": 223,
+          "recipient": "b",
+          "value": 7
+        },
+        {
+          "eventId": 396,
+          "recipient": "b",
+          "value": 7
+        }
+      ],
+      "attacks": 13,
+      "extraActual": 43,
+      "ranger": {
+        "damage": 582,
+        "healing": 0,
+        "received": 0,
+        "taken": 26,
+        "casts": 14,
+        "castMana": 32,
+        "defenseMana": 1,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "coatedDamage": 43,
+        "coatedHits": 13,
+        "channelDamage": 10,
+        "channelHits": 1
+      },
+      "herbalist": {
+        "damage": 5,
+        "healing": 352,
+        "received": 0,
+        "taken": 0,
+        "casts": 17,
+        "castMana": 55,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 9,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "coatingGivenDamage": 43,
+        "coatingGivenRecords": 13
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 6265
+    }
+  ],
+  "comparison": {
+    "seed": 56,
+    "sameEarnedGuild": true,
+    "onlyConfigChange": "F prep removes imbue; other fields unchanged",
+    "coated": {
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "coatingCasts": 3,
+      "coatingApplications": [
+        {
+          "eventId": 8,
+          "recipient": "b",
+          "value": 7
+        },
+        {
+          "eventId": 238,
+          "recipient": "b",
+          "value": 7
+        },
+        {
+          "eventId": 427,
+          "recipient": "b",
+          "value": 7
+        }
+      ],
+      "attacks": 15,
+      "extraActual": 49,
+      "ranger": {
+        "damage": 566,
+        "healing": 0,
+        "received": 28,
+        "taken": 28,
+        "casts": 15,
+        "castMana": 32,
+        "defenseMana": 3,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "coatedDamage": 49,
+        "coatedHits": 15
+      },
+      "herbalist": {
+        "damage": 4,
+        "healing": 292,
+        "received": 0,
+        "taken": 0,
+        "casts": 19,
+        "castMana": 55,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 9,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0,
+        "coatingGivenDamage": 49,
+        "coatingGivenRecords": 15
+      }
+    },
+    "bare": {
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 0
+      },
+      "coatingCasts": 0,
+      "coatingApplications": [],
+      "attacks": 0,
+      "extraActual": 0,
+      "ranger": {
+        "damage": 596,
+        "healing": 0,
+        "received": 28,
+        "taken": 28,
+        "casts": 15,
+        "castMana": 32,
+        "defenseMana": 1,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 0,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      },
+      "herbalist": {
+        "damage": 16,
+        "healing": 487,
+        "received": 0,
+        "taken": 0,
+        "casts": 16,
+        "castMana": 58,
+        "defenseMana": 0,
+        "failed": 0,
+        "items": 0,
+        "summonDamage": 0,
+        "buffApplications": 6,
+        "controlApplications": 0,
+        "weakeningApplications": 0,
+        "cleansedEffects": 0,
+        "healingBlocks": 0,
+        "passiveHealing": 0,
+        "passiveRecords": 0,
+        "passiveOverheal": 0
+      }
+    }
+  },
+  "finalGold": 6265,
+  "next": 58,
+  "limits": "Two fixed normal seeds56/57, one explicit20XP training. No tuning. Changed prep/payment/extra components can alter later target/RNG branches; outcomes are not an estimate of universal improvement or isolated added damage. Actual five prior frozen payloads untouched; snapshot draft checks remain non-atomic, not a cross-process lock."
+}

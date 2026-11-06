@@ -1,0 +1,834 @@
+{
+  "frozenBeforeNewResults": true,
+  "baseCommit": "3f0d98962ffe7203a4afda96dcaef672cb003296",
+  "start": {
+    "gold": 5995,
+    "next": 56
+  },
+  "normal56": {
+    "version": "0.40.0",
+    "expedition": "courier",
+    "harbor": {
+      "pass": "adaptive",
+      "task": "adaptive"
+    },
+    "bellApproach": "bypass",
+    "rescueApproach": "pass",
+    "seed": 56,
+    "roomOrders": {},
+    "prepOrder": [
+      "e",
+      "d",
+      "f",
+      "a",
+      "b",
+      "c"
+    ],
+    "supplies": {
+      "herb": 12,
+      "rune": 10,
+      "arrow": 8
+    },
+    "heroes": [
+      {
+        "id": "a",
+        "training": {},
+        "item": "salve",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.5
+        },
+        "pos": "front",
+        "gear": {
+          "weapon": "guardblade",
+          "armor": "plate",
+          "accessory": "token"
+        },
+        "overrides": {},
+        "defenseFocus": "parry",
+        "defenses": {
+          "melee": "parry",
+          "ranged": "natural",
+          "magic": "natural"
+        },
+        "trained": "guard",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "guard",
+            "target": "self",
+            "mode": "repeat"
+          }
+        ],
+        "main": [
+          {
+            "skill": "shieldbash",
+            "target": "front",
+            "mode": "round"
+          },
+          {
+            "skill": "strike",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "b",
+        "training": {
+          "skill:shot": 3,
+          "skill:pierce": 1,
+          "skill:disarm": 1,
+          "attr:agi": 1,
+          "skill:arcshot": 1
+        },
+        "item": "salve",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.5
+        },
+        "pos": "rear",
+        "gear": {
+          "weapon": "bow",
+          "armor": "cloth",
+          "accessory": "postbell"
+        },
+        "overrides": {
+          "courier_sails": {},
+          "courier_seal": {}
+        },
+        "defenseFocus": "dodge",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "dodge",
+          "magic": "natural"
+        },
+        "trained": "arcshot",
+        "attribute": "con",
+        "prep": [],
+        "main": [
+          {
+            "skill": "arcshot",
+            "target": "healer",
+            "mode": "round"
+          },
+          {
+            "skill": "pierce",
+            "target": "rear",
+            "mode": "round"
+          },
+          {
+            "skill": "shot",
+            "target": "rear",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "c",
+        "training": {
+          "skill:spark": 3,
+          "skill:lance": 1
+        },
+        "item": "tonic",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.3
+        },
+        "pos": "left",
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "overrides": {
+          "courier_sails": {
+            "main": [
+              {
+                "skill": "lance",
+                "target": "left",
+                "mode": "once"
+              },
+              {
+                "skill": "spark",
+                "target": "left",
+                "mode": "repeat"
+              },
+              {
+                "skill": "spark",
+                "target": "right",
+                "mode": "repeat"
+              }
+            ]
+          },
+          "courier_seal": {
+            "main": [
+              {
+                "skill": "lance",
+                "target": "center",
+                "mode": "once"
+              },
+              {
+                "skill": "spark",
+                "target": "center",
+                "mode": "repeat"
+              },
+              {
+                "skill": "spark",
+                "target": "left",
+                "mode": "repeat"
+              }
+            ]
+          }
+        },
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "lance",
+        "attribute": "con",
+        "prep": [],
+        "main": [
+          {
+            "skill": "wave",
+            "target": "front",
+            "mode": "once"
+          },
+          {
+            "skill": "spark",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "d",
+        "training": {
+          "skill:drain": 1,
+          "skill:foresight": 1
+        },
+        "item": "tonic",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.3
+        },
+        "pos": "rear",
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "overrides": {
+          "courier_sails": {
+            "prep": [
+              {
+                "skill": "ward",
+                "target": "center",
+                "mode": "repeat"
+              }
+            ]
+          },
+          "courier_seal": {}
+        },
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "ward",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "ward",
+            "target": "front",
+            "mode": "once"
+          }
+        ],
+        "main": [
+          {
+            "skill": "suppress",
+            "target": "healer",
+            "mode": "round"
+          },
+          {
+            "skill": "spark",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "e",
+        "training": {
+          "skill:offbeat": 1,
+          "skill:mindcall": 2,
+          "attr:wil": 1
+        },
+        "item": "salve",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.7
+        },
+        "pos": "center",
+        "gear": {
+          "weapon": "bridgehorn",
+          "armor": "bridgecoat",
+          "accessory": "calmribbon"
+        },
+        "overrides": {
+          "courier_seal": {
+            "main": [
+              {
+                "skill": "mindcall",
+                "target": "healer",
+                "mode": "round"
+              },
+              {
+                "skill": "mindcall",
+                "target": "front",
+                "mode": "repeat"
+              },
+              {
+                "skill": "shot",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ]
+          }
+        },
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "insight",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "insight",
+            "target": "left",
+            "mode": "once"
+          },
+          {
+            "skill": "mastery",
+            "target": "rear",
+            "mode": "once"
+          }
+        ],
+        "main": [
+          {
+            "skill": "shot",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "f",
+        "training": {
+          "skill:heal": 3,
+          "attr:int": 1
+        },
+        "item": "tonic",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.3
+        },
+        "pos": "right",
+        "gear": {
+          "weapon": "starterblade",
+          "armor": "field",
+          "accessory": "medicbadge"
+        },
+        "overrides": {},
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "heal",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "imbue",
+            "target": "rear",
+            "mode": "once"
+          },
+          {
+            "skill": "provisions",
+            "target": "all",
+            "mode": "repeat"
+          }
+        ],
+        "main": [
+          {
+            "skill": "shot",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": true,
+          "threshold": 0.8,
+          "target": "all",
+          "priority": "lowest"
+        }
+      }
+    ],
+    "objective": "survive"
+  },
+  "normal57": {
+    "version": "0.40.0",
+    "expedition": "courier",
+    "harbor": {
+      "pass": "adaptive",
+      "task": "adaptive"
+    },
+    "bellApproach": "bypass",
+    "rescueApproach": "pass",
+    "seed": 57,
+    "roomOrders": {},
+    "prepOrder": [
+      "e",
+      "d",
+      "f",
+      "a",
+      "b",
+      "c"
+    ],
+    "supplies": {
+      "herb": 12,
+      "rune": 10,
+      "arrow": 8
+    },
+    "heroes": [
+      {
+        "id": "a",
+        "training": {},
+        "item": "salve",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.5
+        },
+        "pos": "front",
+        "gear": {
+          "weapon": "guardblade",
+          "armor": "plate",
+          "accessory": "token"
+        },
+        "overrides": {},
+        "defenseFocus": "parry",
+        "defenses": {
+          "melee": "parry",
+          "ranged": "natural",
+          "magic": "natural"
+        },
+        "trained": "guard",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "guard",
+            "target": "self",
+            "mode": "repeat"
+          }
+        ],
+        "main": [
+          {
+            "skill": "shieldbash",
+            "target": "front",
+            "mode": "round"
+          },
+          {
+            "skill": "strike",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "b",
+        "training": {
+          "skill:shot": 3,
+          "skill:pierce": 1,
+          "skill:disarm": 1,
+          "attr:agi": 1,
+          "skill:arcshot": 1
+        },
+        "item": "salve",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.5
+        },
+        "pos": "rear",
+        "gear": {
+          "weapon": "bow",
+          "armor": "cloth",
+          "accessory": "postbell"
+        },
+        "overrides": {
+          "courier_sails": {},
+          "courier_seal": {}
+        },
+        "defenseFocus": "dodge",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "dodge",
+          "magic": "natural"
+        },
+        "trained": "arcshot",
+        "attribute": "con",
+        "prep": [],
+        "main": [
+          {
+            "skill": "arcshot",
+            "target": "healer",
+            "mode": "round"
+          },
+          {
+            "skill": "pierce",
+            "target": "rear",
+            "mode": "round"
+          },
+          {
+            "skill": "shot",
+            "target": "rear",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "c",
+        "training": {
+          "skill:spark": 3,
+          "skill:lance": 1
+        },
+        "item": "tonic",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.3
+        },
+        "pos": "left",
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "overrides": {
+          "courier_sails": {
+            "main": [
+              {
+                "skill": "lance",
+                "target": "left",
+                "mode": "once"
+              },
+              {
+                "skill": "spark",
+                "target": "left",
+                "mode": "repeat"
+              },
+              {
+                "skill": "spark",
+                "target": "right",
+                "mode": "repeat"
+              }
+            ]
+          },
+          "courier_seal": {
+            "main": [
+              {
+                "skill": "lance",
+                "target": "center",
+                "mode": "once"
+              },
+              {
+                "skill": "spark",
+                "target": "center",
+                "mode": "repeat"
+              },
+              {
+                "skill": "spark",
+                "target": "left",
+                "mode": "repeat"
+              }
+            ]
+          }
+        },
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "lance",
+        "attribute": "con",
+        "prep": [],
+        "main": [
+          {
+            "skill": "wave",
+            "target": "front",
+            "mode": "once"
+          },
+          {
+            "skill": "spark",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "d",
+        "training": {
+          "skill:drain": 1,
+          "skill:foresight": 1
+        },
+        "item": "tonic",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.3
+        },
+        "pos": "rear",
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "overrides": {
+          "courier_sails": {
+            "prep": [
+              {
+                "skill": "ward",
+                "target": "center",
+                "mode": "repeat"
+              }
+            ]
+          },
+          "courier_seal": {}
+        },
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "ward",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "ward",
+            "target": "front",
+            "mode": "once"
+          }
+        ],
+        "main": [
+          {
+            "skill": "suppress",
+            "target": "healer",
+            "mode": "round"
+          },
+          {
+            "skill": "spark",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "e",
+        "training": {
+          "skill:offbeat": 1,
+          "skill:mindcall": 2,
+          "attr:wil": 1
+        },
+        "item": "salve",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.7
+        },
+        "pos": "center",
+        "gear": {
+          "weapon": "bridgehorn",
+          "armor": "bridgecoat",
+          "accessory": "calmribbon"
+        },
+        "overrides": {
+          "courier_seal": {
+            "main": [
+              {
+                "skill": "mindcall",
+                "target": "healer",
+                "mode": "round"
+              },
+              {
+                "skill": "mindcall",
+                "target": "front",
+                "mode": "repeat"
+              },
+              {
+                "skill": "shot",
+                "target": "front",
+                "mode": "repeat"
+              }
+            ]
+          }
+        },
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "insight",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "insight",
+            "target": "left",
+            "mode": "once"
+          },
+          {
+            "skill": "mastery",
+            "target": "rear",
+            "mode": "once"
+          }
+        ],
+        "main": [
+          {
+            "skill": "shot",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": false,
+          "threshold": 0.65,
+          "target": "all"
+        }
+      },
+      {
+        "id": "f",
+        "training": {
+          "skill:heal": 3,
+          "attr:int": 1
+        },
+        "item": "tonic",
+        "itemPolicy": {
+          "enabled": true,
+          "threshold": 0.3
+        },
+        "pos": "right",
+        "gear": {
+          "weapon": "starterblade",
+          "armor": "field",
+          "accessory": "medicbadge"
+        },
+        "overrides": {},
+        "defenseFocus": "resist",
+        "defenses": {
+          "melee": "natural",
+          "ranged": "natural",
+          "magic": "resist"
+        },
+        "trained": "heal",
+        "attribute": "con",
+        "prep": [
+          {
+            "skill": "imbue",
+            "target": "rear",
+            "mode": "once"
+          },
+          {
+            "skill": "provisions",
+            "target": "all",
+            "mode": "repeat"
+          }
+        ],
+        "main": [
+          {
+            "skill": "shot",
+            "target": "front",
+            "mode": "repeat"
+          }
+        ],
+        "healing": {
+          "enabled": true,
+          "threshold": 0.8,
+          "target": "all",
+          "priority": "lowest"
+        }
+      }
+    ],
+    "objective": "survive"
+  },
+  "betweenRuns": {
+    "train": "f/skill:imbue",
+    "ranks": 1,
+    "xp": 20
+  },
+  "newSkill": {
+    "id": "imbue",
+    "cost": 4,
+    "herb": 1,
+    "base": 3,
+    "scale": 0.08,
+    "extraDamageType": "magic",
+    "singleAttackDefenseCheck": true,
+    "fixedExtraNotRerolled": true,
+    "perChannelArmor": "existing including skill ignoreArmor",
+    "overflowOrder": [
+      "primary",
+      "coating"
+    ]
+  },
+  "noOutcomeTuning": true,
+  "otherChanges": "None: role, gear, route, reward, supply economy unchanged."
+}

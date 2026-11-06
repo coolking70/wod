@@ -1,6 +1,6 @@
 # 接手开发指南
 
-当前本地v0.134，先读[最新云端交接](HANDOFF_CLOUD_V134.md)、[验证收据](V134_CHECKS.json)，再按下列历史资料接续。main仍v0.100，后续没有推送/合并/部署授权。
+当前本地v0.135，先读[最新云端交接](HANDOFF_CLOUD_V135.md)、[验证收据](V135_CHECKS.json)，再按下列历史资料接续。main仍v0.100，后续没有推送/合并/部署授权。
 
 ## 先读与当前约束
 
@@ -10,7 +10,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前完整验证以[V134_CHECKS.json](V134_CHECKS.json)为准；以下历史运行说明不替代最新收据。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前完整验证以[V135_CHECKS.json](V135_CHECKS.json)为准；以下历史运行说明不替代最新收据。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist

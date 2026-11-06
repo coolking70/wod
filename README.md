@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.134「改配保护与失败复战」**，分支`feature/v134-cross-page-drafts`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.135「一次命中与分段伤害」**，分支`feature/v135-weapon-coating`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[武器淬药与分段伤害](docs/V135_WEAPON_COATING.md)：药师以共享药草换取物理攻击的法术附加段，一次攻防、逐段护甲/抗性与生命截断，战报追溯真实来源且不重复计伤。正常56/57六人生还至6265金币，药草耗尽；同种子无药也六人，不宣称必然升级。原版多伤害结构与项目暂定参数分清，见[V135验证](docs/V135_CHECKS.json)。
 
 新增[跨页改配保护与失败复战](docs/V134_CROSS_PAGE_DRAFTS.md)：复现并定位v123写入页已保存、读取页尚未收到传播的验收时序，保留严格断言并等待真实通知；另修旧页普通调整静默覆盖新配置的问题，支持保留/导出本页草稿、明确载入最新及正式出征核对。正常54六人，55两次接招仍全灭，部分领取至5995金币，见[V134验证](docs/V134_CHECKS.json)。
 
