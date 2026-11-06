@@ -1,3 +1,4 @@
+import {POST_QUEST_ENDINGS,postQuestProgress} from './expedition-post-quest.mjs';
 // Project-original collection goal. It never changes loot, ownership or rewards.
 import {GEAR,HEROES,EXPEDITIONS} from './expedition-data.mjs';
 import {ROUTE_REWARDS,isRelic,gearDifference} from './expedition-loot.mjs';
@@ -10,7 +11,7 @@ export function validateEquipmentGoal(g){
  const goal=g?.equipmentGoal;if(goal===undefined)return;
  if(!goal||typeof goal!=='object'||Array.isArray(goal)||Object.keys(goal).sort().join(',')!=='gearId,heroId'||typeof goal.heroId!=='string'||!g.members?.some(m=>m.id===goal.heroId)||typeof goal.gearId!=='string'||!isRelic(goal.gearId))throw Error('寻物目标无效');
 }
-const stories=[['clocktower','潮刻余响',CLOCKTOWER_STORY_ENDINGS,clocktowerStoryProgress],['harbor','灯塔来信',HARBOR_STORY_ENDINGS,harborStoryProgress],['foundry','铸库归航',FOUNDRY_STORY_ENDINGS,foundryStoryProgress]];
+const stories=[['postquest','归信航程',POST_QUEST_ENDINGS,postQuestProgress],['clocktower','潮刻余响',CLOCKTOWER_STORY_ENDINGS,clocktowerStoryProgress],['harbor','灯塔来信',HARBOR_STORY_ENDINGS,harborStoryProgress],['foundry','铸库归航',FOUNDRY_STORY_ENDINGS,foundryStoryProgress]];
 export function equipmentSources(id,g){
  if(!Object.hasOwn(GEAR,id))throw Error('装备无效');
  if(!isRelic(id))return [{kind:'shop',label:'营地商店 · 60金币'}];

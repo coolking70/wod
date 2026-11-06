@@ -1,3 +1,4 @@
+import {validatePostQuest,postQuestProgress,startPostQuestState,choosePostQuestState,recordPostQuest,POST_QUEST_ENDINGS,POST_QUEST_GOLD} from './expedition-post-quest.mjs';
 import {validateArchiveStore} from './expedition-report-archive.mjs';
 import {validateEquipmentGoal} from './expedition-equipment-goal.mjs';
 import {validateClocktowerStory,clocktowerStoryProgress,CLOCKTOWER_STORY_ENDINGS,CLOCKTOWER_STORY_GOLD} from './expedition-clocktower-story.mjs';
@@ -44,6 +45,7 @@ export function validateGuild(g){
  if(g.clocktowerStory&&!clocktowerStoryProgress(g).ready)throw Error('潮刻余响记录缺少正常远征条件');
  if(g.harborStory&&!harborStoryProgress(g).ready)throw Error('灯塔来信记录缺少正常远征条件');
  if(g.foundryStory&&!foundryStoryProgress(g).ready)throw Error('铸库归航记录缺少正常远征条件');
+ validatePostQuest(g.postQuest,g.next,g.pending?.id);if(g.postQuest?.steps.some(r=>!(g.clears[r.route]>0)))throw Error('归信任务路签缺少正常通关记录');for(const r of g.postQuest?.steps||[]){const h=g.history.find(v=>v.id===r.id);if(h&&(!h.won||h.route!==r.route||JSON.stringify(h.config)!==JSON.stringify(r.config)||JSON.stringify(h.command||null)!==JSON.stringify(r.command)))throw Error('归信路签与保留履历不一致');}
  validateArchiveStore(g.reportArchives,g.next);
  return g;
 }
@@ -58,7 +60,7 @@ export function claim(g){validateGuild(g);if(!g.pending)throw Error('没有待�
  if(reward.foundry)n.foundry={claimed:[...(n.foundry?.claimed||[]),...reward.foundry.earned]};
  for(const gear of reward.loot||[])n.warehouse[gear]=(n.warehouse[gear]||0)+1;
  if(g.pending.rewardVersion===2&&report.won)n.clears[report.config.expedition]=(n.clears[report.config.expedition]||0)+1;
- if(g.pending.rewardVersion===2)recordShoals(n,report);
+ if(g.pending.rewardVersion===2){recordShoals(n,report);recordPostQuest(n,report,g.pending.id,g.pending.command);}
  const objective=objectiveAssessment(report);recordExpeditionObjective(n,report,g.pending.id,g.pending.command);
  n.history.unshift({id:g.pending.id,route:report.config.expedition,won:report.won,...reward,...(objective?{objective}:{}),config:clone(g.pending.config),...(g.pending.command?{command:clone(g.pending.command)}:{})});n.history=n.history.slice(0,20);n.pending=null;return n;}
 export function assignLoot(g,id,gear){const n=editable(g),h=n.members.find(h=>h.id===id);if(!h||!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('没有可分配的战利品');if(h.owned.includes(gear))throw Error('该队员已拥有此装备，可分给其他队员或出售');n.warehouse[gear]--;h.owned.push(gear);h.gear=replaceEquipment(h.gear,gear);return n;}
@@ -70,6 +72,9 @@ export function claimFoundryStory(g,ending){
  if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');
  n.gold=gold;n.warehouse[gear]=count;n.foundryStory={ending};return validateGuild(n);
 }
+export function startPostQuest(g){const n=editable(g);n.postQuest=startPostQuestState(n);return validateGuild(n);}
+export function choosePostQuest(g,route){const n=editable(g);n.postQuest=choosePostQuestState(n,route);return validateGuild(n);}
+export function deliverPostQuest(g,ending){const n=editable(g),p=postQuestProgress(n);if(typeof ending!=='string'||!Object.hasOwn(POST_QUEST_ENDINGS,ending))throw Error('请选择有效的归信交付');if(!p.canClaim)throw Error(p.reason);const gear=POST_QUEST_ENDINGS[ending].gear,gold=n.gold+POST_QUEST_GOLD,count=(n.warehouse[gear]||0)+1;if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('归信奖励超过安全计数范围');n.gold=gold;n.warehouse[gear]=count;n.postQuest.ending=ending;return validateGuild(n);}
 export function claimClocktowerStory(g,ending){const n=editable(g),p=clocktowerStoryProgress(n);if(typeof ending!=='string'||!Object.hasOwn(CLOCKTOWER_STORY_ENDINGS,ending))throw Error('请选择有效的余响结局');if(!p.canClaim)throw Error(p.reason);const gear=CLOCKTOWER_STORY_ENDINGS[ending].gear,gold=n.gold+CLOCKTOWER_STORY_GOLD,count=(n.warehouse[gear]||0)+1;if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');n.gold=gold;n.warehouse[gear]=count;n.clocktowerStory={ending};return validateGuild(n);}
 export function sellLoot(g,gear){const n=editable(g);if(!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('仓库中没有该装备');n.warehouse[gear]--;n.gold+=20;return n;}
 function editable(g){validateGuild(g);if(g.pending)throw Error('领取远征结算后才能更改公会资产');return clone(g);}

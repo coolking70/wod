@@ -1,3 +1,4 @@
+import {postQuestProgress} from './expedition-post-quest.mjs';
 import {campJourneyProgress} from './expedition-camp-journeys.mjs';
 import {bookProof} from './expedition-book.mjs';
 import {GOALS} from './expedition-goal-data.mjs';
@@ -16,6 +17,7 @@ export function campObjective(g){
  const make=(stage,title,text,action,value,label)=>({stage,title,text,primary:{action,value,label},last,cleared,total:ADVENTURES.length,journeys:campJourneyProgress(g),heroId:own?.id||null});
  if(g.pending)return make('pending','先接回这次远征','第'+g.pending.id+'次远征已记录，奖励仍待领取；领取前不会再次出征或改变永久资产。','pending','','查看待领取战报');
  if(!own)return make('hero','选择你在队伍中的英雄','先确定自己的英雄，再以公会实际装备和训练正式出发；伙伴仍可托管。','hero','','选择我的英雄');
+ if(g.postQuest&&!g.postQuest.ending){const p=postQuestProgress(g);return make(p.ready?'postquest-delivery':'postquest',p.ready?'把三段路签交给等信的人':'继续归信航程',p.reason,'journey','postquest',p.ready?'选择归信交付':'查看当前任务与通路');}
  if(last&&!last.won)return make('retry','带着这次结果重新准备','刚才领取的是止步前的实际收益。可以载入该次方案检查，再以当前资产重试；不是保证通关的自动优化。','retry',String(last.id),'载入止步方案并检查');
  if(last?.won&&last.objective&&!last.objective.met){const name=GOALS.find(goal=>goal.id===last.objective.id).name;return make('goal-retry','通关之后，再试本次「'+name+'」','第'+last.id+'次远征已通关，普通收益已经领取；本次所选攻略目标尚未达成。可载入原目标与方案调整，再按当前资产正式挑战；也可自由改选路线。','retry',String(last.id),'载入本次目标与方案');}
  if(!g.clears.tutorial)return make('tutorial','先完成一场正式远征','回声侧廊只有一场。核对公会队伍后正式出征，复盘并领取金币和经验；实验试跑不推进成长。','prepare','tutorial','准备首次正式出征');

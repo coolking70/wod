@@ -1,0 +1,248 @@
+{
+  "startGold": 2280,
+  "normal": [
+    {
+      "id": 23,
+      "seed": 23,
+      "route": "trapworks",
+      "won": true,
+      "rounds": [
+        3,
+        4
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 10,
+        "rune": 6,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 90,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 2370,
+      "questCompleted": 1
+    },
+    {
+      "id": 24,
+      "seed": 24,
+      "route": "breakwater",
+      "won": true,
+      "rounds": [
+        9,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 2,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 100,
+        "xp": 45,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 2470,
+      "questCompleted": 2
+    },
+    {
+      "id": 25,
+      "seed": 25,
+      "route": "courier",
+      "won": false,
+      "rounds": [
+        4,
+        4,
+        16
+      ],
+      "alive": 0,
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 40,
+        "xp": 20,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 2510,
+      "questCompleted": 2
+    },
+    {
+      "id": 26,
+      "seed": 26,
+      "route": "courier",
+      "won": false,
+      "rounds": [
+        4,
+        4,
+        16
+      ],
+      "alive": 0,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 40,
+        "xp": 20,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 2550,
+      "questCompleted": 2
+    },
+    {
+      "id": 27,
+      "seed": 27,
+      "route": "courier",
+      "won": true,
+      "rounds": [
+        4,
+        3,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 3
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 2685,
+      "questCompleted": 3
+    }
+  ],
+  "training": [
+    {
+      "id": "c",
+      "key": "skill:lance",
+      "before": 1100,
+      "after": 1080,
+      "cost": 20
+    },
+    {
+      "id": "e",
+      "key": "skill:mindcall",
+      "before": 1080,
+      "after": 1040,
+      "cost": 40
+    },
+    {
+      "id": "f",
+      "key": "skill:heal",
+      "before": 1120,
+      "after": 1100,
+      "cost": 20
+    },
+    {
+      "id": "b",
+      "key": "skill:shot",
+      "before": 1080,
+      "after": 1040,
+      "cost": 40
+    },
+    {
+      "id": "b",
+      "key": "skill:shot",
+      "before": 1040,
+      "after": 980,
+      "cost": 60
+    },
+    {
+      "id": "c",
+      "key": "skill:spark",
+      "before": 1100,
+      "after": 1060,
+      "cost": 40
+    },
+    {
+      "id": "c",
+      "key": "skill:spark",
+      "before": 1060,
+      "after": 1000,
+      "cost": 60
+    },
+    {
+      "id": "f",
+      "key": "skill:heal",
+      "before": 1120,
+      "after": 1080,
+      "cost": 40
+    },
+    {
+      "id": "f",
+      "key": "skill:heal",
+      "before": 1080,
+      "after": 1020,
+      "cost": 60
+    }
+  ],
+  "trainingTotal": 380,
+  "readyGold": 2685,
+  "deliveredGold": 2725,
+  "selectedEnding": "witness",
+  "proofs": [
+    {
+      "id": 23,
+      "route": "trapworks",
+      "seed": 23,
+      "hero": "e"
+    },
+    {
+      "id": 24,
+      "route": "breakwater",
+      "seed": 24,
+      "hero": "e"
+    },
+    {
+      "id": 27,
+      "route": "courier",
+      "seed": 27,
+      "hero": "e"
+    }
+  ],
+  "finalGear": {
+    "weapon": "lute",
+    "armor": "cloth",
+    "accessory": "calmribbon"
+  },
+  "unchangedArchives": [
+    {
+      "id": 22,
+      "sha256": "71a026c1e6dddbc8c11f1e60b19c907739b9d64917c8dac353ffca1f0460ac7c"
+    },
+    {
+      "id": 21,
+      "sha256": "80194db694ae2d2150ce4fccf6559f5ccf248a07a6168ced8efee04c3429b21a"
+    },
+    {
+      "id": 2,
+      "sha256": "eb731bc577537d7d7c95f7f3f296caf955c82e21db6bedd153bcb3893f0d0495"
+    },
+    {
+      "id": 1,
+      "sha256": "f9d748813227b3c2a86d5fab3270bbbd3ad33d94834e5f278ad97ad25dad00c8"
+    }
+  ],
+  "limits": "Five consecutive normal seeds23..27, no opponent/stat/cost/seed adjustment.25 and26 failures retained; three first trainings80XP still failed26. Further legal basic training300XP plus once-only unravel and new normal seed27 gave a six-survivor clear with zero herbs. Multiple changes and normal seeds do not establish single-variable causality or general balance.Quest proof gives no combat bonus, resources or intermediate reward; one explicit40gold/existing-gear delivery, no quest XP."
+}

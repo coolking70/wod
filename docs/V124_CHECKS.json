@@ -1,0 +1,816 @@
+{
+  "phase": "v0.124 branching solo quest",
+  "date": "2026-11-06",
+  "baseline": {
+    "baseline": "45581468590e9d921f54e042ec34ecc5ad917f8e",
+    "tree": "f6b23b527a8fbc26de10eba923de3776baf6ef08",
+    "statusBeforeEdits": "",
+    "branch": "feature/v124-branching-quest",
+    "remote": "https://github.com/coolking70/wod.git",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "tests": {
+      "passed": 999,
+      "failed": 0
+    }
+  },
+  "branch": "feature/v124-branching-quest",
+  "localOnly": true,
+  "tests": {
+    "baseline": {
+      "tests": 999,
+      "passed": 999,
+      "failed": 0,
+      "log": "baseline-tests.tap"
+    },
+    "full": {
+      "tests": 1016,
+      "passed": 1016,
+      "failed": 0,
+      "skipped": 0,
+      "log": "full-initial-tests.tap"
+    },
+    "newSpecialized": {
+      "tests": 17,
+      "passed": 17,
+      "failed": 0,
+      "verifiedWithin": "full-initial-tests.tap",
+      "initialStandalone": {
+        "tests": 16,
+        "passed": 16,
+        "failed": 0,
+        "log": "unit-initial.tap"
+      },
+      "lastAddedCase": "Hero switching mid-quest retains distinct perspectives; included in final full1016 pass."
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "count": 500,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 138,
+    "checkedReferences": 155,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": true,
+    "suites": 32,
+    "file": "acceptance/browser-acceptance.json",
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124
+    ],
+    "phase": {
+      "passed": true,
+      "steps": [
+        "1440px从真实2280档接取，无旧成果回填；跨页改选后旧页写入拒绝，重新进入才恢复正确分支。正常23机廊/24潮堤完整报告与全部公会同API；pending不取路签、领取后0→1→2，未走分支不算完成，绑定方案与四份收藏整档携带。",
+        "390px恢复2/3任务，另页改seed888时旧页准备拒绝覆盖。正常25/26均全员倒下仅40/20，原2路签保留，止步方案载入不改资产。实付80+300XP、合法指令调整后正常27六人生还但0药草，全部报告/pending/公会逐字段同API。先普通135/55至2685，再亲自交付40与缎带至2725，无任务经验，手动给本人E换装且旧铜签仍持有。",
+        "旧9完整历史重演不可再领；滚出履历的冻结失败2完整导出未变。最终三命名方案/两路线绑定、全部资产与4份收藏整档恢复到新上下文后与API完全相同，交付仍锁定不可重领/重接。篡改路签编号的公会导入在写入前拒绝，页面错误与横向溢出均无。"
+      ],
+      "errors": []
+    },
+    "firstPhaseRun": {
+      "passed": true,
+      "steps": [
+        "1440px从真实2280档接取，无旧成果回填；跨页改选后旧页写入拒绝，重新进入才恢复正确分支。正常23机廊/24潮堤完整报告与全部公会同API；pending不取路签、领取后0→1→2，未走分支不算完成，绑定方案与四份收藏整档携带。",
+        "390px恢复2/3任务，另页改seed888时旧页准备拒绝覆盖。正常25/26均全员倒下仅40/20，原2路签保留，止步方案载入不改资产。实付80+300XP、合法指令调整后正常27六人生还但0药草，全部报告/pending/公会逐字段同API。先普通135/55至2685，再亲自交付40与缎带至2725，无任务经验，手动给本人E换装且旧铜签仍持有。",
+        "旧9完整历史重演不可再领；滚出履历的冻结失败2完整导出未变。最终三命名方案/两路线绑定、全部资产与4份收藏整档恢复到新上下文后与API完全相同，交付仍锁定不可重领/重接。篡改路签编号的公会导入在写入前拒绝，页面错误与横向溢出均无。"
+      ],
+      "errors": []
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "comparison": "Full ordinary reports and entire guild including exact restored compressed archive payloads compared with API; no field exclusions.",
+    "visualInspection": [
+      "quest-desktop.png",
+      "quest-mobile.png"
+    ],
+    "otherEnginesOrPhysicalDevicesTested": false
+  },
+  "legacy": {
+    "reference": "45581468590e9d921f54e042ec34ecc5ad917f8e",
+    "routes": 26,
+    "count": 59,
+    "defaultReportCount": 52,
+    "actualHistoricalReports": 7,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "trapworks",
+        "seed": 1,
+        "sha256": "2b7e1b5697d781baed2a37c382972ad5a18431dcbc2adb9a4921378e35b733c0"
+      },
+      {
+        "route": "trapworks",
+        "seed": 731,
+        "sha256": "7cbce8226a312d38a8cb616475cf527e58cb3a56b33c8e9714cb0a8fb842e98e"
+      },
+      {
+        "route": "ossuary",
+        "seed": 1,
+        "sha256": "46afe7ad38b877df3778a8410bbc20cbb11552e7619da7689a0579267459b597"
+      },
+      {
+        "route": "ossuary",
+        "seed": 731,
+        "sha256": "59820ca1c78ab78659a37a21a3ae0b51d626915661f6cd2c241457653080e15d"
+      },
+      {
+        "route": "breakwater",
+        "seed": 1,
+        "sha256": "1a2cab45752d84e416a409589fb50bec710a5ae210dc796feb826c9f109f4697"
+      },
+      {
+        "route": "breakwater",
+        "seed": 731,
+        "sha256": "7d2b27dbbf67b27b08a689c0559740e4ce941f8f0a871f2f71608aba00250024"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 1,
+        "sha256": "0a1f0ac5e4ef41e16e4be6072061311cc195d0c85d3e77d7b454d8c45fffd88c"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 731,
+        "sha256": "347db5930185d692b136a817b0f95cba23b4cd2e419fabe1d7873deb5d86a902"
+      },
+      {
+        "route": "confluence",
+        "seed": 1,
+        "sha256": "d1906096ae7cfced8943e474995042f209ae5dd729b0ee2da56ec1c7c86739c3"
+      },
+      {
+        "route": "confluence",
+        "seed": 731,
+        "sha256": "29408d3f0b5cb3da0889614ffc6dafa97621ceb826d6322dd3f89a2c199469d2"
+      },
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "8c245d326834a0edacaa42ace029320b3436b8ad7d11628ca42b649bac10250f"
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "47baec48ac1a2fa6252dd37873f006c9592427a2e4821c7d71587e53e0ae778f"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "c22d1f61f43b5550632944f22d04f130f2c10d8571d9d29e0dc497ee06f1ea7e"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "75c771b0bcc36d9462ef1dacfef73738a066f48953231debed12e7477c4d8b05"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "5fae390d1838b802f2efd1f6e36a967384b60081af78d65f006d371ea13f5b29"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "3ce49ae213cd38eb0f2c79b89484b48e044272442673ec8f608067b6070f5032"
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "c91d7f3f69b813e87dfc1e877082a3908b8fde304d58662947e5c3a6b6a59373"
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "0607be7f898f97bc6ea0327afe41808d186c7df6b93e6c2d2b1b0ae5200c8f74"
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "6c85b0c33d2c0d0150e55e4f3aa26b2eb5f7752e511a95759df29fa9c3102e22"
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "c53bb3c70a2b24fa11dcb45ea465195f63f71a9727d00d1fa5cec92aefe46f33"
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "3c49e8eac1dbac1285e0638615c45c8b706500a5de0d5df3f0f028a5e27e4876"
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "eb6b00ae850084d5183f928aa5e44a96d1f2525b364a829f4728df48208fcd96"
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "2b666dd01e01df84ca40b729f3b139c40d71ea011b43964e034e8417d33f7a06"
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "f3224b7bad1938281b4ff6cb93f29260480ef2352b616092252691014481730e"
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "b35da6894333630a110d3d24550d291aefba590ae5e138cc4dc7180d78d99dbd"
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "f0fd74b3f28306d7ac9ee1c4bdd99790ca8dad8f85005623cdf0b15faf7a04fa"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "1d46489f1332583395eff0a728e0d29d022cce78c814b63221b57ac7715ef1f9"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "0523ad597cc97fb9df57173a9bba3e659e1e932778c60b1b9b1527427f2f02fb"
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "211a1c8db6865bfffd73b5203e52aff8040560e6e92bf24124e1f4a2c68f0ab2"
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "216bb2d664b77794bd95055fa0ffc440a8723bd0057014cbbd7b617ff227fba7"
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "fe3c950e2f5845ffd9416cd1e5303d9f232b226f0ae950d7bbb2a5fc7c887e5f"
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "016169640c40371da8d22bdd9f3cd74cbd4940acdc8d9092227db42e4bea01ba"
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "b86c620fb228a405a8194fc974fb503dcbcc32c3e9d20aa64abe10b2a2bf3fd5"
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "39976431cc94a254b6bc76cf41db1873c016541a8fac2fd1c2899e3379dbbd65"
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "9a80e195a37a189c853505b344bb3f2cc4a382dd766a1efa884abc933c08fe45"
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "a4b8f4465aa76ac17ff76e8a118f9c5056fab2a165ded4718e37b4e150ba71ff"
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "dfe3fcd40794c30dd814432e2e31906d1a6d2859ef2ad745e8e9f4135a61ce1d"
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "127d998c78a89a7beb773208ea1497287854609c4ad5392b77a86fcf014fa330"
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "847e4dc5ab897d78b1ab5ac68e3d11b69dc6cb0196c7ad969219b258c80c0a1e"
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "243e58a543a9abf2cb2248be90191a66b96fe8fd0205b385104e66c526cd2ded"
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "03e3a25069512cfbac11ff5d7e20e480dcbe24c1373e3517d010011873d149d2"
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "1b2f35aa969739331d57620ed10528c5a2df31b1662cd9219de6203c551e62d9"
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "e5b81b88b4067f92e6dc9edb73a1b9f1424fcea5712be2d7c1eaa50aa44f6285"
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "c9152f28439ec5b9c35edab989c3cb0f48728566e6d8c709c5aef556f76645c6"
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "619f1f704320687cf584427dbbfefe0364c5649e354732b27fa128dcb0567ece"
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "5446890e86902b5d307ad83c6046e1136236243f237a1edc5fa5e46e7493e2b7"
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "31cf6a957a02d8dd8665727c348b6c21c3283e8225f8bef739383e37056d2bb8"
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "c316e1ffdf124a7899e875d3faf8c39a86af7010151539df05bf76ed1db3dd3c"
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "0dc9787f53dc23682ef0c383a2cb63189bbef9dacfcfebe8ab9d59e07a1b1283"
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "5dd3ff1c13ebcf5fbe5015e5c0993973cbd5aba004a861cf522802084c37fdaa"
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "5cc547df341e2f739bf94f543e570fed88333775035f1d926d9b968da3fe08ab"
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "5f3c58ccd67c97cca04feec0d80b78aba5460fd39981f963808bfe00417693ec"
+      },
+      {
+        "kind": "earned-history",
+        "id": 3,
+        "route": "courier",
+        "seed": 3,
+        "sha256": "5d72567b800ea793d278efd43b59c8325d2edf3e00c2c9877a9560aeb38ab9f9"
+      },
+      {
+        "kind": "earned-history",
+        "id": 7,
+        "route": "courier",
+        "seed": 7,
+        "sha256": "5de1ad2a92dac9d6e17f42ba506d812ccd75f1581fc828d15da427cb4a12185a"
+      },
+      {
+        "kind": "earned-history",
+        "id": 9,
+        "route": "courier",
+        "seed": 9,
+        "sha256": "87fc78b30beaef924d7bd571ce2022d70263ef931b1acef51b6dd949febe46f0"
+      },
+      {
+        "kind": "earned-history",
+        "id": 14,
+        "route": "confluence",
+        "seed": 14,
+        "sha256": "092f797210250585a798b3213998fca22d0c00bbf1b5f080c2c9b711de5f344c"
+      },
+      {
+        "kind": "earned-history",
+        "id": 19,
+        "route": "trapworks",
+        "seed": 19,
+        "sha256": "8ab40328f193d02247ea8036ff769688604680d7b98ddcd8e07ea935df81232b"
+      },
+      {
+        "kind": "earned-history",
+        "id": 21,
+        "route": "trapworks",
+        "seed": 21,
+        "sha256": "80194db694ae2d2150ce4fccf6559f5ccf248a07a6168ced8efee04c3429b21a"
+      },
+      {
+        "kind": "earned-history",
+        "id": 22,
+        "route": "courier",
+        "seed": 22,
+        "sha256": "71a026c1e6dddbc8c11f1e60b19c907739b9d64917c8dac353ffca1f0460ac7c"
+      }
+    ]
+  },
+  "playcheck": {
+    "startGold": 2280,
+    "normal": [
+      {
+        "id": 23,
+        "seed": 23,
+        "route": "trapworks",
+        "won": true,
+        "rounds": [
+          3,
+          4
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 10,
+          "rune": 6,
+          "arrow": 8
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 90,
+          "xp": 40,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 2370,
+        "questCompleted": 1
+      },
+      {
+        "id": 24,
+        "seed": 24,
+        "route": "breakwater",
+        "won": true,
+        "rounds": [
+          9,
+          7
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 6,
+          "rune": 2,
+          "arrow": 6
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 2470,
+        "questCompleted": 2
+      },
+      {
+        "id": 25,
+        "seed": 25,
+        "route": "courier",
+        "won": false,
+        "rounds": [
+          4,
+          4,
+          16
+        ],
+        "alive": 0,
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 2510,
+        "questCompleted": 2
+      },
+      {
+        "id": 26,
+        "seed": 26,
+        "route": "courier",
+        "won": false,
+        "rounds": [
+          4,
+          4,
+          16
+        ],
+        "alive": 0,
+        "supplies": {
+          "herb": 0,
+          "rune": 0,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 2550,
+        "questCompleted": 2
+      },
+      {
+        "id": 27,
+        "seed": 27,
+        "route": "courier",
+        "won": true,
+        "rounds": [
+          4,
+          3,
+          7
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 3
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        },
+        "gold": 2685,
+        "questCompleted": 3
+      }
+    ],
+    "training": [
+      {
+        "id": "c",
+        "key": "skill:lance",
+        "before": 1100,
+        "after": 1080,
+        "cost": 20
+      },
+      {
+        "id": "e",
+        "key": "skill:mindcall",
+        "before": 1080,
+        "after": 1040,
+        "cost": 40
+      },
+      {
+        "id": "f",
+        "key": "skill:heal",
+        "before": 1120,
+        "after": 1100,
+        "cost": 20
+      },
+      {
+        "id": "b",
+        "key": "skill:shot",
+        "before": 1080,
+        "after": 1040,
+        "cost": 40
+      },
+      {
+        "id": "b",
+        "key": "skill:shot",
+        "before": 1040,
+        "after": 980,
+        "cost": 60
+      },
+      {
+        "id": "c",
+        "key": "skill:spark",
+        "before": 1100,
+        "after": 1060,
+        "cost": 40
+      },
+      {
+        "id": "c",
+        "key": "skill:spark",
+        "before": 1060,
+        "after": 1000,
+        "cost": 60
+      },
+      {
+        "id": "f",
+        "key": "skill:heal",
+        "before": 1120,
+        "after": 1080,
+        "cost": 40
+      },
+      {
+        "id": "f",
+        "key": "skill:heal",
+        "before": 1080,
+        "after": 1020,
+        "cost": 60
+      }
+    ],
+    "trainingTotal": 380,
+    "readyGold": 2685,
+    "deliveredGold": 2725,
+    "selectedEnding": "witness",
+    "proofs": [
+      {
+        "id": 23,
+        "route": "trapworks",
+        "seed": 23,
+        "hero": "e"
+      },
+      {
+        "id": 24,
+        "route": "breakwater",
+        "seed": 24,
+        "hero": "e"
+      },
+      {
+        "id": 27,
+        "route": "courier",
+        "seed": 27,
+        "hero": "e"
+      }
+    ],
+    "finalGear": {
+      "weapon": "lute",
+      "armor": "cloth",
+      "accessory": "calmribbon"
+    },
+    "unchangedArchives": [
+      {
+        "id": 22,
+        "sha256": "71a026c1e6dddbc8c11f1e60b19c907739b9d64917c8dac353ffca1f0460ac7c"
+      },
+      {
+        "id": 21,
+        "sha256": "80194db694ae2d2150ce4fccf6559f5ccf248a07a6168ced8efee04c3429b21a"
+      },
+      {
+        "id": 2,
+        "sha256": "eb731bc577537d7d7c95f7f3f296caf955c82e21db6bedd153bcb3893f0d0495"
+      },
+      {
+        "id": 1,
+        "sha256": "f9d748813227b3c2a86d5fab3270bbbd3ad33d94834e5f278ad97ad25dad00c8"
+      }
+    ],
+    "limits": "Five consecutive normal seeds23..27, no opponent/stat/cost/seed adjustment.25 and26 failures retained; three first trainings80XP still failed26. Further legal basic training300XP plus once-only unravel and new normal seed27 gave a six-survivor clear with zero herbs. Multiple changes and normal seeds do not establish single-variable causality or general balance.Quest proof gives no combat bonus, resources or intermediate reward; one explicit40gold/existing-gear delivery, no quest XP."
+  },
+  "stateAssertions": {
+    "optionalAcceptanceNoOldClearBackfill": true,
+    "sequentialCurrentSelectedRoutesOnly": true,
+    "fourActualFirstTwoBranchPairsPassNormal23And24": true,
+    "pendingNotProgressUntilClaim": true,
+    "failed25And26KeepTwoProofsAndOrdinaryPartialRewards": true,
+    "oldSourceAndLegacyRewardV1NeverAdvance": true,
+    "completedBranchImmutableCurrentBranchChangeAllowed": true,
+    "noIntermediateCombatBonusResourcesOrQuestRewards": true,
+    "threeNormalProofs": [
+      23,
+      24,
+      27
+    ],
+    "normalGold": [
+      2280,
+      2370,
+      2470,
+      2510,
+      2550,
+      2685
+    ],
+    "explicitQuestDeliveryGold": 40,
+    "finalGold": 2725,
+    "normalXpPerActiveMember": 180,
+    "trainingXpPaid": 380,
+    "questXp": 0,
+    "finalEAccessory": "calmribbon",
+    "oldTriagPinRetained": true,
+    "oldHistories8Through22Unchanged": true,
+    "fourArchivesIdentityRolesLineupEquipmentGoalExpeditionBookUnchanged": true,
+    "heroSwitchMidQuestAllowed": true,
+    "proofsSurvive20FurtherNormalRuns": true,
+    "threeEndingsOnceNoRestartOrDuplicate": true,
+    "pendingAndOverflowRefuseChanges": true,
+    "campaignRestoreThreePlansTwoBindingsAllArchivesAndAssetsExact": true,
+    "standaloneCorruptQuestImportRejectedBeforeWrites": true,
+    "crossPageBranchWriteAndPreparationOverwriteRejected": true
+  },
+  "initialFindings": {
+    "testsOrBrowsersFailed": false,
+    "temporaryDiscoveryErrors": [
+      {
+        "file": "discovery-invalid-training.stderr",
+        "cause": "An exploratory attr:int key is not a legal training option in this project; original validation refused before any write. Replaced with actual class skill training."
+      },
+      {
+        "file": "discovery-invalid-command.stderr",
+        "cause": "Exploratory sealbreak/prep command was not an existing valid skill/phase. Used actual scholar unravel in main; original validation unchanged."
+      }
+    ],
+    "normalFailures": [
+      {
+        "id": 25,
+        "result": "all fallen,herb0,partial40/20;quest remains2/3"
+      },
+      {
+        "id": 26,
+        "result": "after80XP and multi-command changes still all fallen,herb0/rune0,partial40/20;quest remains2/3"
+      }
+    ],
+    "assertionsWeakened": false,
+    "seedsOrEnemyStatsChangedForPass": false,
+    "allNormalSeedsConsecutive": true,
+    "singleVariableCausalityClaimed": false
+  },
+  "referenceBoundary": {
+    "primary": [
+      {
+        "url": "https://world-of-dungeons.de/ency/Quest",
+        "access": "Official public search index; first direct full open502, not retried",
+        "supports": "Series of story dungeons, choose next path, may skip alternative branches; successful quest normally not repeatable."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/Dungeon_Guide",
+        "access": "Historical primary public search index only; previously failed full page not reopened",
+        "supports": "Quest as series of dungeons."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/First_Steps",
+        "access": "Historical primary public search index only; previously failed full page not reopened",
+        "supports": "Quest rewards direction, no numeric or current-server claims."
+      }
+    ],
+    "projectOriginal": "Solo free acceptance, three specific current routes/stages, only later ordinary claimed wins, incomplete path reselection, failure retention, proof schema, story and40gold/one existing relic reward choices. No current-server level windows, leader voting, schedules, exact failure/reward/supply rules implemented or claimed.",
+    "currentServerRulesVerified": false
+  },
+  "scope": {
+    "engineDataLootTrainingCostsUnchanged": true,
+    "routes": 26,
+    "gear": 40,
+    "ordinaryGoals": 78,
+    "newOptionalPersistentField": "guild.postQuest",
+    "maxProofs": 3,
+    "maxConfigCharsPerProof": 100000,
+    "defaultGuildMigrationRequired": false,
+    "permanentSuppliesImplemented": false,
+    "newBackendOrAccount": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "Editable dist source directly served, no bundler build."
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Permanent supplies still waiting for user, not an overall blocker.",
+    "limitations": [
+      "Only finite current-asset branch samples and five actual consecutive normal runs, not global balance or single-change win causality.",
+      "Normal27 successful but herb0; two preceding failures retained.",
+      "Proofs retain historical configuration/perspective, not complete original event logs.",
+      "Reference full text unavailable502; structure direction from primary index only.",
+      "No Firefox/Safari/physical-device validation."
+    ],
+    "next": "Continue meaningful single-player exploration/progression and role-cooperation bottlenecks; avoid cloning quest templates, archive tools or only numeric variants."
+  }
+}
