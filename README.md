@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.137「个人构筑随行」**，分支`feature/v137-personal-focus-travel`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前开发版本：**v0.138「键盘复盘」**，分支`feature/v138-keyboard-replay`。**v0.137已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`b4aa91b6295ba4fc845fb995700861c55b68cb07`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+
+新增[键盘复盘与云端接续](docs/V138_KEYBOARD_REPLAY.md)：可聚焦控制栏按现有筛选前后步进、首末跳转及播放，保留子控件输入；完整历史报告与整档原文不变。先完成GitHub备份、主干归并与重复代码归档清理，主盘实测增加约6.02GiB，唯一证据和旧提交保持，见[V138验证](docs/V138_CHECKS.json)。
 
 新增[个人构筑随行与云端空间审计](docs/V137_PERSONAL_FOCUS.md)：复现并修复切换默认路线重置本人三项自由选择，完整绑定方案继续优先，支持实际名册/候补本人、撤销和整档恢复。正常60/61六人生还至6665金币，原战斗数据/五冻结字节保持；旧证据不删，大型验收改独立临时盘并逐组校验归档，见[V137验证](docs/V137_CHECKS.json)。
 

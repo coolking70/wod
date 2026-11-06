@@ -112,7 +112,7 @@ function refreshPlanBook(){try{const raw=localStorage.getItem(plansKey);if(raw==
 refreshPlanBook();
 function tell(t){$('#notice').textContent=t;}
 function preparationProblem(message){preparationStatus.hidden=false;preparationStatus.innerHTML='<h2>请先核对准备草稿</h2><p>'+esc(message)+'</p><div class=bar><button data-draft-export=true>导出本页草稿</button><button data-draft-reload=true>载入最新准备配置</button></div><small>本页仍保留你的调整；载入最新配置会替换本页草稿。实验不发奖励，正式出征须先核对最新配置。</small>';$('#save-state').textContent='本页准备草稿未保存，请先处理上方提示。';document.body.dataset.preparationState='conflict';$('#guild-run').disabled=true;}
-function markPreparationSaved(){preparationStatus.hidden=true;document.body.dataset.preparationState='saved';$('#guild-run').disabled=false;$('#save-state').textContent='当前配置已保存在本机 · v0.137';}
+function markPreparationSaved(){preparationStatus.hidden=true;document.body.dataset.preparationState='saved';$('#guild-run').disabled=false;$('#save-state').textContent='当前配置已保存在本机 · v0.138';}
 function savedState(){try{assertCurrentDraft(localStorage,config);preparationExpected=localStorage.getItem(storageKey);markPreparationSaved();}catch(e){preparationProblem(e instanceof DraftConflict?e.message:'本机存储不可用，请导出本页草稿。');}}
 function persist(){try{preparationExpected=commitDraft(localStorage,config,preparationExpected);markPreparationSaved();return true;}catch(e){preparationProblem(e instanceof DraftConflict?e.message:'本机存储不可用，请导出本页草稿。');return false;}}
 function refreshPreparationStatus(){try{const current=localStorage.getItem(storageKey);if(current!==preparationExpected)preparationProblem(new DraftConflict().message);else if(current===JSON.stringify(config))markPreparationSaved();}catch{preparationProblem('本机存储不可用，请导出本页草稿。');}}
@@ -297,6 +297,15 @@ $('#room').onchange=()=>{stop();room=Number($('#room').value);index=roomEvents()
 $('#journal').onclick=e=>{const b=e.target.closest('[data-event]');if(b){stop();move(Number(b.dataset.event));}};
 function startPlayback(){if(!report)return;if($('#report').dataset.workspace==='review')replayWorkspace.open('battle');if(!adjacentStep(allSteps(),index,1))move(allSteps()[0].start);$('#play').textContent='Ⅱ 暂停';timer=setInterval(()=>{if(!stepBy(1))stop();},1300/Number($('#play-speed').value));}
 $('#play').onclick=()=>{if(timer)stop();else startPlayback();};
+$('.replay-controls').addEventListener('keydown',e=>{
+ if(e.target!==e.currentTarget||e.defaultPrevented||e.isComposing||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||document.body.dataset.view!=='replay'||!report||$('#report').hidden)return;
+ if(!['ArrowLeft','ArrowRight',' ','Home','End'].includes(e.key))return;
+ e.preventDefault();
+ if(e.key===' '){if(!e.repeat)$('#play').click();return;}
+ stop();
+ if(e.key==='ArrowLeft'||e.key==='ArrowRight'){stepBy(e.key==='ArrowLeft'?-1:1);return;}
+ const steps=allSteps(),target=e.key==='Home'?steps[0]:steps.at(-1);if(target)move(target.start);
+});
 $('#play-speed').onchange=()=>{if(timer){stop();startPlayback();}};
 $('#route-strip').onclick=e=>{const b=e.target.closest('[data-jump-room]');if(b){stop();move(report.events.findIndex(e=>e.roomIndex===Number(b.dataset.jumpRoom)));}};
 $('#board').onclick=e=>{const b=e.target.closest('[data-unit]');if(b){stop();selectedUnit=b.dataset.unit;renderUnitInspector();}};

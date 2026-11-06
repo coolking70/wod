@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "version": "0.138",
+  "branch": "feature/v138-keyboard-replay",
+  "baseline": {
+    "commit": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "branch": "feature/v138-keyboard-replay",
+    "mainAtStart": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "cleanAtBranchCreation": true,
+    "basis": "maintenance-final.json verified clean before branch creation; v137 exact unchanged-code receipt preserved",
+    "fullBaselineReceipt": {
+      "tests": 1251,
+      "pass": 1251,
+      "fail": 0,
+      "reusedNotRerunBeforeEdits": true
+    },
+    "keyboardBaseline": "keyboard-baseline.json",
+    "newGameplayRules": false
+  },
+  "tests": {
+    "tests": 1251,
+    "pass": 1251,
+    "fail": 0,
+    "skipped": 0,
+    "log": "full-tests.tap",
+    "durationMs": 184240.156962,
+    "newUnitTests": 0,
+    "note": "UI keyboard behavior verified by actual browser flows; no implementation-mirroring unit cases added."
+  },
+  "syntax": {
+    "passed": true,
+    "count": 590,
+    "failures": [],
+    "pythonChecked": 1,
+    "pythonFailures": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 156,
+    "checkedReferences": 174,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "suites": 46,
+    "passed": 46,
+    "unifiedFirstRunAllPassed": true,
+    "standalonePassedOnRun": 2,
+    "widths": [
+      1440,
+      390
+    ],
+    "engine": "Current installed Chromium",
+    "realTabFocus": true,
+    "fourExistingFilterModesExactSteps": true,
+    "stepAndBoundaryCrossRoomAssertions": true,
+    "nativeFormAndButtonKeyboardUntouched": true,
+    "composingModifiersAndHiddenViewIgnored": true,
+    "actualTimedPlaybackAndPause": true,
+    "repeatedSpaceDoesNotRetoggle": true,
+    "mobileHasTouchAndExistingButtonsWork": true,
+    "fullSuccess61AndFailure55ReportsUnchanged": true,
+    "fourCampaignRawKeysExact": true,
+    "noDuplicateClaim": true,
+    "noHorizontalOverflow": true,
+    "pageErrors": [],
+    "screenshotsViewed": [
+      "keyboard-desktop.png",
+      "keyboard-mobile.png"
+    ],
+    "otherEnginesPhysicalDevicesOrAssistiveTechnologyCertification": false
+  },
+  "initialFailure": {
+    "file": "initial-browser-v138.json",
+    "log": "browser-first.log",
+    "image": "initial-failure.png",
+    "cause": "Mobile test context had isMobile but lacked hasTouch; Playwright rejected tap. Added touch capability; all real tap/navigation/report/raw-state assertions retained.",
+    "assertionsWeakened": false
+  },
+  "statePreservation": {
+    "passed": true,
+    "baseline": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "onlyRuntimeFilesChanged": [
+      "dist/expedition-replay-layout.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html"
+    ],
+    "unchangedRuntimeFiles": 184,
+    "allCombatContentAssetsAndProgressionExact": true,
+    "finalGuildSameAsNativeV137AllFields": true,
+    "gold": 6665,
+    "next": 62,
+    "pending": null,
+    "newDepartures": 0,
+    "newRewards": 0,
+    "noNewSaveFields": true,
+    "oldOriginalArchivePayloadsExact": true,
+    "localMain": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "handoffHistoricalBodyPreserved": true
+  },
+  "fullStateAuditSHA256": "fd9667af500802ddeeafc341f59d8cf3d3d98853aff26f6c7ea193589e7adec7",
+  "maintenance": {
+    "remoteV137AndMain": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "formalPostV100HistoryPublished": true,
+    "mainFastForwardNoDivergentChanges": true,
+    "priorSameCode1251And45ReceiptsRechecked": true,
+    "freshAfterRestartPhaseV137BrowserPassed": true,
+    "reconstructibleCodeArtifactsRemoved": 264,
+    "logicalBytesRemoved": 6468099495,
+    "measuredMainFreeByteIncrease": 6468583424,
+    "protectedEvidenceFilesUnchanged": 18330,
+    "verificationArchivesRemoved": 0,
+    "currentV137CompleteRecoveryKept": true,
+    "unknownAndUniqueArtifactsKept": true,
+    "localMergedBranchesDeleted": 91,
+    "remoteMergedBranchesDeleted": 6,
+    "allBranchNamesAndSHASaved": true,
+    "remoteDeletionExpectedSHAProtected": true,
+    "survivingBranchHistoryRewritten": false,
+    "sixReflogCommitsRetainedWithRefsAndOfflineIncrementalRecovery": true,
+    "retainedIncrementalBytes": 137156,
+    "gcOrPruneRun": false,
+    "tmpResetAndPersistentV137ArchiveRechecked": {
+      "passed": true,
+      "archiveHashes": [
+        {
+          "file": "wod-v0.137.bundle",
+          "bytes": 52602221,
+          "sha256": "2e61637a58bb0f29a8911fadf18a95263b8e7cb92f0e31cf62c6a31ca9e5b39e"
+        },
+        {
+          "file": "wod-v0.137-source.zip",
+          "bytes": 52789226,
+          "sha256": "6e8468b616ae91f4cc63167c66916b8dabd3d924a1d8f4559fa416781ba5096e"
+        },
+        {
+          "file": "wod-v137-verification.zip",
+          "bytes": 183975617,
+          "sha256": "535e3e09e0f3504ed7f98f1999bd6d34cdaa5404840d6aad603bd3f6e4d061e8"
+        }
+      ],
+      "completeEvidenceFiles": 956,
+      "completeEvidenceImages": 79,
+      "allEvidenceEntryHashesAndCRCValid": true,
+      "sourceFiles": 1131,
+      "tmpRawCopiesNoLongerPresentAfterRestart": true,
+      "completeEvidenceStillRecoverableFromPersistentZip": true
+    },
+    "policy": "docs/CLOUD_STORAGE_AND_GIT_POLICY.md"
+  },
+  "checkpointAudit": {
+    "passed": true,
+    "suites": 46,
+    "files": 914,
+    "images": 76,
+    "rawBytes": 1454709689,
+    "archiveBytes": 182747486,
+    "sourceFilesRemoved": false,
+    "eachFileSHAAndZipCRCRecheckedIndependently": true
+  },
+  "scope": {
+    "onlyRuntimeChanges": [
+      "dist/expedition-replay-layout.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html"
+    ],
+    "newModuleOrCombatRule": false,
+    "newConfigOrGuildFields": false,
+    "newDepartures": 0,
+    "newRewards": 0,
+    "finalGold": 6665,
+    "next": 62,
+    "permanentSupplyImplemented": false,
+    "newWoDServerRuleClaim": false,
+    "mainThisStageRemainsV137": true,
+    "newStageBranchPush": "Authorized normal push after commit, exact result recorded in delivery push receipt.",
+    "deployment": false,
+    "presetBrogueJSModified": false
+  },
+  "remaining": {
+    "blockers": [],
+    "decisions": [
+      "Permanent supply economy and reference-server numeric calibration remain pending."
+    ],
+    "limits": [
+      "Chromium desktop/mobile emulation only, no physical device/other-engine/assistive-technology certification.",
+      "Existing snapshot checks remain non-atomic and are not a cross-process lock.",
+      "GitHub branch publication covers source history, not all workspace-only evidence or retained old revisions.",
+      "Current /tmp outputs are volatile; complete checkpoints and final merged verification archive retained on main."
+    ],
+    "nextMainReview": "v140–142 or coherent feature milestone; only after gates, no count-driven merge.",
+    "nextDevelopment": "Return to actual solo-play core-loop gaps rather than expanding shortcut variants."
+  }
+}

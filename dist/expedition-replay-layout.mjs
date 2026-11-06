@@ -11,6 +11,8 @@ export function mountReplayLayout({onChange}){
  move('battle',['#harbor-journey','#rescue-result','#route-consequence','#event-scene','.replay-hint','.stage','#cue-strip','#unit-inspector']);
  const action=document.createElement('div');action.className='battle-action-bar';action.innerHTML='<span id="battle-action-summary"></span><button data-replay-pane="evidence">查看本次行动依据 →</button>';panes.battle.append(action);
  const controls=q('.replay-controls');nav.after(controls);controls.after(q('#route-strip'));q('#route-strip').after(q('#timeline'));
+ controls.tabIndex=0;controls.setAttribute('role','group');controls.setAttribute('aria-label','回放控制栏');controls.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight Space Home End');controls.setAttribute('aria-describedby','replay-key-hint');
+ controls.insertAdjacentHTML('beforeend','<small id="replay-key-hint" class="muted replay-key-hint">用Tab或点击空白处聚焦控制栏：← / → 前后一步，空格播放 / 暂停，Home / End 到当前筛选的首末记录。各输入控件保留原按键。</small>');
  const brief=document.createElement('p');brief.id='playback-brief';brief.className='muted';q('#timeline').after(brief);
  controls.insertAdjacentHTML('beforeend','<div class="playback-options"><label><input id="theatre-mode" type="checkbox">专注战场</label><label><input id="highlights-only" type="checkbox">关键行动播放</label><label><input id="focus-action" type="checkbox" checked>突出当前行动</label><label><input id="personal-playback" type="checkbox">只看观察角色相关行动</label><small>精选保留完整行动，省略部分普通攻击与状态；完整战报仍可查看。</small></div>');
  const next=q('#next-actions');brief.after(next);

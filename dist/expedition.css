@@ -137,3 +137,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .item-set-summary,.item-set-collection{min-width:0;overflow-wrap:anywhere;border:1px solid #516574;border-radius:8px;padding:.7rem;margin:.7rem 0}.item-set-summary p,.item-set-collection p{margin:.45rem 0}.item-set-summary [data-set-active=true],.item-set-collection [data-set-active=true]{color:var(--gold)}@media(max-width:640px){.attribute-with-sets tr{grid-template-columns:repeat(6,minmax(0,1fr))}.attribute-with-sets td:nth-of-type(5)::before{content:'套装'}.attribute-with-sets td:nth-of-type(6)::before{content:'出发总值'}}
 
 .preparation-status{border-color:#bd9e66;background:#2c2920}.preparation-status h2{color:#ebd59e}.preparation-status[hidden]{display:none}.preparation-status .bar{justify-content:flex-start}.preparation-status small{color:#c5bdac}
+
+.replay-controls:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.replay-key-hint{display:block;flex-basis:100%;margin:2px 0}
