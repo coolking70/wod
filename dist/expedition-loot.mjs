@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR,SKILLS,DEFENSES} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ turncourt:{bonus:45,xp:20,firstGold:40,firstXp:15,pool:[]},
  beaconbridge:{bonus:60,xp:25,firstGold:60,firstXp:25,pool:['bridgehorn','bridgecoat','bridgebadge']},
  trapworks:{bonus:50,xp:20,firstGold:50,firstXp:20,pool:[]},
  ossuary:{bonus:45,xp:20,firstGold:40,firstXp:15,pool:[]},

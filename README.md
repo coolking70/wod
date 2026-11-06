@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.129「攻击方式与伤害通道」**，分支`feature/v129-attack-damage-channels`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.130「生命阶段与易相灯庭」**，分支`feature/v130-health-phases`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[生命阶段与易相灯庭](docs/V130_HEALTH_PHASES.md)：公开生命阈值后切换敌方指令和攻击免疫，物理破封、法术/心理接力；保留既定队列、资源与效果，不锁血或回满。双房正常47/48保留符纸/箭矢耗尽，明确付40XP学习已有课程后至5235金币，见[V130验证](docs/V130_CHECKS.json)。
 
 新增[攻击方式与伤害通道](docs/V129_ATTACK_DAMAGE_CHANNELS.md)：远程攻防与法术伤害可分别结算；射手自由普通潮印箭沿远程目标/闪避/援护/攻击免疫，命中后用法术抗性、保留原护甲。四次正常远征保留两次未施放和全部箭矢耗尽，真实培养后至5025金币，见[V129验证](docs/V129_CHECKS.json)。
 

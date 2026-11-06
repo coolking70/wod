@@ -8,6 +8,7 @@ export function stageFrame(group){
  const events=group.events,last=events.at(-1),cast=events.find(e=>e.type==='cast'),lead=cast||events[0],cues=[],links=[];
  for(const e of events){
   if(e.type==='reinforcement')for(const u of e.detail.wave.arrivals)cues.push({unit:u.id,kind:'summon',text:'增援抵达',note:'第'+e.detail.wave.index+'/'+e.detail.wave.total+'波',eventId:e.id});
+  if(e.type==='health-phase')cues.push({unit:e.actor,kind:'control',text:e.detail.healthPhase.name,note:'生命阶段变化 · 既定队列保留',eventId:e.id});
   if(e.type==='withdraw')for(const u of e.detail.withdrawal.alive)cues.push({unit:u.id,kind:'control',text:'整队撤退',note:'仍存活，不算本房通关',eventId:e.id});
   if(e.type==='initiative'&&e.detail.actionLimits)for(const l of e.detail.actionLimits)cues.push({unit:l.target,kind:'control',text:l.removed?'额外行动 −'+l.removed:'迟拍未减',note:l.before+'→'+l.after+'次普通行动',eventId:e.id});
   if(e.type==='immune')cues.push({unit:e.targets[0],kind:'control',text:'免疫',note:'本次0伤害',eventId:e.id});
@@ -25,5 +26,5 @@ export function stageFrame(group){
   if(e.type==='intercept'&&e.detail.success)links.push({from:e.actor,to:e.targets[0],kind:'support',eventId:e.id});
   if(['attack','mana-damage','harm','dispel','mana-transfer','heal','effect','cleanse','summon','activate','expire'].includes(e.type))for(const target of e.targets)links.push({from:e.actor,to:target,kind:['mana-damage','dispel','harm'].includes(e.type)?'control':e.type==='attack'?e.detail.attackType:e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'support'):e.type,eventId:e.id});
  }
- return {units:structuredClone(last.units),actor:lead.actor,targets:[...new Set(cues.map(c=>c.unit).filter(Boolean))],cues,links,phase:lead.phase,round:lead.round,supplies:structuredClone(last.supplies),transition:['wave-clear','reinforcement','withdraw','room','victory','defeat','scene','encounter','route','rescue','branch'].includes(lead.type)?lead.type:null};
+ return {units:structuredClone(last.units),actor:lead.actor,targets:[...new Set(cues.map(c=>c.unit).filter(Boolean))],cues,links,phase:lead.phase,round:lead.round,supplies:structuredClone(last.supplies),transition:['health-phase','wave-clear','reinforcement','withdraw','room','victory','defeat','scene','encounter','route','rescue','branch'].includes(lead.type)?lead.type:null};
 }
