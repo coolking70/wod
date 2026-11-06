@@ -1,0 +1,638 @@
+{
+  "phase": "v0.131 complete report lossless unit-state pooling",
+  "date": "2026-11-06",
+  "baseline": {
+    "baseline": "f8ec625d23cd4f9743e3c79fcc217c76b32f8cae",
+    "tree": "4ac89a208336d6f6ff1c414d9642adc8fb62d628",
+    "branch": "feature/v131-lossless-report-pooling",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "remote": "https://github.com/coolking70/wod.git",
+    "statusBeforeEdits": "",
+    "tests": {
+      "tests": 1117,
+      "pass": 1117,
+      "fail": 0,
+      "skipped": 0,
+      "log": "baseline-tests.tap"
+    }
+  },
+  "branch": "feature/v131-lossless-report-pooling",
+  "localOnly": true,
+  "tests": {
+    "full": {
+      "tests": 1138,
+      "pass": 1138,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-final-tests.tap"
+    },
+    "newSpecialized": {
+      "tests": 21,
+      "pass": 21,
+      "fail": 0,
+      "skipped": 0,
+      "log": "unit-stream-bounds.tap"
+    },
+    "affectedArchiveAndHealth": {
+      "tests": 39,
+      "pass": 39,
+      "fail": 0,
+      "skipped": 0,
+      "log": "affected-initial.tap"
+    },
+    "earlyFullBeforeTwoExtraStreamBoundsCases": {
+      "tests": 1136,
+      "pass": 1136,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-initial-tests.tap"
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "count": 547,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 149,
+    "checkedReferences": 166,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": true,
+    "suites": 39,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131
+    ],
+    "file": "acceptance/browser-acceptance.json",
+    "firstUnifiedRunAllPassed": true,
+    "phase": {
+      "passed": true,
+      "steps": [
+        "1440px导入真实5235/next49及原四gzip收藏，历史47完整报告同API；明确冻结后第5份成功，原四payload逐字段不变。独立gzip/状态引用还原及原完整JSON SHA验证后，全部公会/元数据同API（仅容许标准gzip字节表示差别）。完整47导出、真实转态事件可回看且不领奖。48仍超80万容量，原公会不变；99.2%显示与整档携带5份通过。",
+        "390px整档恢复原四及新47后正常49完整报告/公会同API，6人生还、7草0符0箭，原85/40到5320。待领49收藏超容量不改pending，正常奖励只领取一次；原2失败与新47均完整独立导出。损坏新内层SHA的公会文件写入前拒绝，无页面错误或横向溢出。",
+        "第二个新上下文恢复5320/next50，整份浏览器公会连同所有压缩字节精确相同；准备配置保持，47可回看而49历史不能重复领取。未自动整理或删除四旧收藏，未改战斗、奖励、槽位或容量上限。"
+      ],
+      "errors": []
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "visualInspection": [
+      "pool-desktop.png",
+      "pool-mobile.png"
+    ],
+    "screenshotsAreCroppedOriginalArchivedEvents": true,
+    "completeReportsAssetsAndNonCodecMetadataComparedWithAPI": true,
+    "gzipWireBytesOnlyMayDifferAcrossConformingImplementations": true,
+    "oldFourWireBytesExact": true,
+    "sameBrowserBackupRestoreAllWireBytesExact": true,
+    "actualBrowserArchiveChars": 793480,
+    "actualBrowserNew47Chars": 49828,
+    "otherEnginesOrPhysicalDevicesTested": false
+  },
+  "legacy": {
+    "reference": "f8ec625d23cd4f9743e3c79fcc217c76b32f8cae",
+    "passed": true,
+    "routes": 28,
+    "count": 63,
+    "defaultReports": 56,
+    "earnedHistoricalReports": 7,
+    "excluded": [],
+    "rawFullEqual": true,
+    "baselineEarnedGuildAllFieldsExact": true,
+    "rows": [
+      {
+        "route": "turncourt",
+        "seed": 1,
+        "sha256": "c53b699a75d895168bd64e34622404f0da536cb1b77362b5117a535d09020294"
+      },
+      {
+        "route": "turncourt",
+        "seed": 731,
+        "sha256": "2bceaea83c9c9de0b50eb82f7350960c7036d212838bb68eb86fae8709b8dd36"
+      },
+      {
+        "route": "beaconbridge",
+        "seed": 1,
+        "sha256": "b3ca421fadbec1c17358509595bc3be80b78f4494b488f5509d9e2d4f4c511e9"
+      },
+      {
+        "route": "beaconbridge",
+        "seed": 731,
+        "sha256": "b3552813e30b1940150ef96db1adfc47d1d4c8df9679a415e6ab3d1df8569b20"
+      },
+      {
+        "route": "trapworks",
+        "seed": 1,
+        "sha256": "c8588cdc91530f06423735f9fd627b36a5bf93ca8ca76c25765f17f0bcf4a6f1"
+      },
+      {
+        "route": "trapworks",
+        "seed": 731,
+        "sha256": "a6ce0437ebfe5cc88c410e350a9511282112de9e08fb8208815c873b8c724198"
+      },
+      {
+        "route": "ossuary",
+        "seed": 1,
+        "sha256": "c0812857e35c3c00c8e74096016bb8005f149d12bf517cd25a91a09f20870117"
+      },
+      {
+        "route": "ossuary",
+        "seed": 731,
+        "sha256": "cc7401f722ea83768267803ebd07e07a42fd4e74aea2899d8d306e70fc7be0d3"
+      },
+      {
+        "route": "breakwater",
+        "seed": 1,
+        "sha256": "92ae5e9935102dc7107c562f1eb347a71dc0d9da334b5cebfcc32ad3fd897215"
+      },
+      {
+        "route": "breakwater",
+        "seed": 731,
+        "sha256": "87852c5d648ef515e7f124129adad60d4ce1906295c0662b2826fd91fc964df5"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 1,
+        "sha256": "e9f9abc2b9b05162874d1b64b7d9af736652ad9b000ed77dbf4b4a630a0482a5"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 731,
+        "sha256": "5e1dbb9b691b3dbb633a201d2778df036bb03cbfc886f76b639148d282966215"
+      },
+      {
+        "route": "confluence",
+        "seed": 1,
+        "sha256": "069c9882259a399369498b66c6d357678d7be6a208d1c366bfe075ad29a40e63"
+      },
+      {
+        "route": "confluence",
+        "seed": 731,
+        "sha256": "728597ebabf88152832fb5bf5caa000e6a3960a5bedbeef323cd85b82ce7a808"
+      },
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "e78705d4a81b25cb89b36e34d77f519a0309d3824b92cb69f603ed6e28021125"
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "4a7ce56cb099a1c0a1cc2b68a3eaa8f6e7f1bb58ab6b8ba4fa34fc36d09957fe"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "354589e66296d3c1c0210d472ba45fc07fc9041cc0e90d374207194fcca8c733"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "924979a7ba8e97d257fed8327233ab92465bd22731d015b64d8f24410d8b5123"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "63dce5b2110c8135ba76ee149a10a8d173778964b20853d992de2cc272e056da"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "1576eed7a62d35946015903f0d9b6e0ded9f83c13ae661cb399514f332bf5cae"
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "bca3d833b77880a4e5bcf57a676c2546bc80282bc0f610d4253ff7178612dc6a"
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "1feec96dddeb5380447ba1c9b0bca83090b9c15ad1b4017a0eca780eff1d3e0d"
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "5ea343d2c9a590920cf0003aa66e1518c1e50315a7fa3e4c095c0be1f11e8e0d"
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "151283507c1aee6bf3b1b1aa3554eaead9d236b6c9eaaf627d599b5ee6ca4fdf"
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "50f6ee9ed950d9ac64111c447d11fed3f5bfbc4ca2c76001415f0332f1d1fd4a"
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "586615de1f2ba96c38bfcd4b7d22dc4d9731a4ee31dce2bfc12b70c56221fc2f"
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "13288227979cbe74e15f1fcd9010c89597ae616a66207e41ff19c2a46eb84b16"
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "56281a4eec0ad0ab9863cf00a8b6a49a22f98d362d00fa9eb1839cac7a63886c"
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "b9d64f3ace1a3c4da164cea35c66985fcd22a4a6f0b33b6783fe1066bffdfb63"
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "00331ee59a8584e9790c3adbc285323e3eba473b6b71c091ad31e882f713ac1c"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "443cf03846b13303259cdbdc7688b396895f9263de43b870373f999ba11ac38b"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "75f2667ad37d808bc27ca5c231d2d2e8ac16a8176fc09c7436cefc41a211c251"
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "48f2b5c35085688d8f4144a7a06fb90b33bf903208061d613e12775037ed1686"
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "685c6bc639f031886e4a5e9477add8c8a763d8611b939633f3704aa0d4829141"
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "eaf008121613e1fe0e7f9cd079339b293ec55459a49a5dfd323d17736fe75fa6"
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "0c9d8a47042597d8a96b2dac43d1d763d4d58073b9c32a0503b957f22ab3a26e"
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "5a3a5feca7f4a100d8b49c2c50e8a18ee1602cbea4aa3b481606332cdeba2592"
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "c7e985355a5442439002cff5437de70b671b80a78af7c018b57c91b59efbbf3a"
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "c6d9af2fc25103ef124830f46d75b8a5982b2d05ea11781a9f3889d8010609f1"
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "9a5da7571d8dae9de2441ff59f6fca5cd23d8b2969d74abf468d60cf5f407b60"
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "85ea73d76233c74bdedde9372443c8690f536684e1249f2dc1ac18ce9838ff26"
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "f6dea815ecb8c364d5aa76741b77d3a757e996688d094f0a8d85832322cdc449"
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "0ec2134c0780ba2ab2c309c1c236f777d7ffb60861dc1e7866fc4282e54cb943"
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "80fe5bfc215c56763420f69fa09448cc583afccc7b97935823bc8aee9eecfb14"
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "c9d0bea1dc55174435cb7cd265c9a72c83a13f7652df8629bd0aaa7f82c04c14"
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "85a4c8c1d405d5bdf40cc12d199aa22593ed9efb6af50f5a10e36d79dd44b6e6"
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "786b5ebe975149b1a007ea359014b3ec99d5dfdd42010505843aa824e4154129"
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "fce55d52813c080b319fbc7ac311c7656980bd37184d3b764c4215857105de12"
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "482385f19bb27ab6de5b4e6902c925fe833dc9dc5699ed8af75b3664ba2685e0"
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "21e934f546b6a65649da3e8edbc57338c93e8542f6925552ffdb96649c7cc678"
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "b5004688f2b9739825df67b4a05fe4c42c29db37286b05b8d493267e46ae6ba1"
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "c49350322b02a6e460a0118309c30d8dcc75d750726a4bd3800da7bad981026b"
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "eefd11fc73e6d329d28d3af7adc95588902dc84da53332131e14839df18299e7"
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "21736e07f5c17751c0a5172d4703579dad5f09113bd4dabe08fe23bc1cfb4262"
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "2cefd86bc3d07d3c906987bec96f559bc234bddebcad2a71b99366097274626a"
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "d9d406c8a246c5a41414b35e0e425d32c5c0753be706754ecda8ace799a645e0"
+      },
+      {
+        "kind": "earned-history",
+        "id": 29,
+        "sha256": "05a63668015b47182f35157567b03a23c68c245068ed28339f3f8c7d17c17430"
+      },
+      {
+        "kind": "earned-history",
+        "id": 36,
+        "sha256": "9773cdb60705dc4b2e9d83ae083405cb06f2cb3f55ee067b7bbaae52ad4d9529"
+      },
+      {
+        "kind": "earned-history",
+        "id": 42,
+        "sha256": "d0384d5590f2fbb66cc1055470be32584a795b340384bb4f808664ef1ac384ad"
+      },
+      {
+        "kind": "earned-history",
+        "id": 44,
+        "sha256": "a2fb9e1b6f4375dc1b79bfe26f8a23fe96853ce309b5674e7255a0b9f11ffc86"
+      },
+      {
+        "kind": "earned-history",
+        "id": 46,
+        "sha256": "df979087d011202378ec70bd1bb192841a8531c55e09856ebbcb4f2b167952ea"
+      },
+      {
+        "kind": "earned-history",
+        "id": 47,
+        "sha256": "ba24298c91ad264034b398b23a1d53af7d6b0679908c8166b35d29e3a9bd7df6"
+      },
+      {
+        "kind": "earned-history",
+        "id": 48,
+        "sha256": "735cc5f999902d63eb05e1d36745d83c80bb408c298a7f4c5c3cfbf86b7d6cd3"
+      }
+    ]
+  },
+  "gameplayFilesByteIdentical": {
+    "passed": true,
+    "allCombatContentRewardsGuildAndProgressionBytesUnchanged": true,
+    "rows": [
+      {
+        "file": "dist/expedition-data.mjs",
+        "sha256": "beab96fb756ec98783a5d8210fc5f9efe1256ffb1edfa5a21b091390409c5887"
+      },
+      {
+        "file": "dist/expedition-engine.mjs",
+        "sha256": "24143a99c96a3239a591f95177e7483732df4b330948a89f1e607b22417eb8fb"
+      },
+      {
+        "file": "dist/expedition-health-phases.mjs",
+        "sha256": "c2f3197228a0ddcc06f5082149c13ed3ee2ba589c1570753972cc4f61566fe7f"
+      },
+      {
+        "file": "dist/expedition-turncourt.mjs",
+        "sha256": "45c569795b9538bbe30b2bba47b4a86f96c03d2a573397534280f2253bd3885d"
+      },
+      {
+        "file": "dist/expedition-loot.mjs",
+        "sha256": "661231a6ea95829d924fb755812f9527476dc90161a9915f41bfc46a5147f243"
+      },
+      {
+        "file": "dist/expedition-guild.mjs",
+        "sha256": "f57adde6d6f24943547c80d1cce7f889e6a213a5ea16de5de704801843fd611a"
+      },
+      {
+        "file": "dist/expedition-progression-rules.mjs",
+        "sha256": "081d341a293163ffcdf093efc420bbacdbf971074a5f854f5389d3888d0cb55b"
+      },
+      {
+        "file": "dist/expedition-growth.mjs",
+        "sha256": "1987c22b69e222df92c7921faa2818ee46946a67298db929c6e82bf879919e21"
+      },
+      {
+        "file": "dist/expedition-adventure.mjs",
+        "sha256": "f244ffde27a3db72d9db1608d2c439f97c5a51c4c4a61f90c09c72b81a4eb572"
+      },
+      {
+        "file": "dist/expedition-equipment.mjs",
+        "sha256": "2708ce3ec9c9f8d14d79c7242036661fdde14bbcd168d58520d28b09824a966b"
+      }
+    ]
+  },
+  "statePreservation": {
+    "passed": true,
+    "startExactV130": true,
+    "finalGold": 5320,
+    "next": 50,
+    "ordinaryGold": 85,
+    "ordinaryXpEach": 40,
+    "noTrainingGearCourseAdvancementIdentityRolesWarehouseGoalsOrQuestChanges": true,
+    "oldFourFullArchiveEntriesExactIncludingPayload": true,
+    "onlyNewArchive": 47,
+    "newArchiveCompleteJsonSHA256": "ba24298c91ad264034b398b23a1d53af7d6b0679908c8166b35d29e3a9bd7df6",
+    "archiveUsageBefore": 743652,
+    "archiveUsageAfter": 793208,
+    "slots": 5,
+    "limitsUnchanged": {
+      "slots": 6,
+      "encodedChars": 800000,
+      "rawBytes": 12000000
+    },
+    "new48And49RemainOverCapacity": true,
+    "history": [
+      49,
+      48,
+      47,
+      46,
+      45,
+      44,
+      43,
+      42,
+      41,
+      40,
+      39,
+      38,
+      37,
+      36,
+      35,
+      34,
+      33,
+      32,
+      31,
+      30
+    ],
+    "oldHistory30Through48Exact": true,
+    "normalRolloff": [
+      29
+    ],
+    "oldFirstProofsExact": true,
+    "noArchiveRewards": true,
+    "handoffHistoryPreserved": true
+  },
+  "firstFailuresPreserved": {
+    "unitImport": {
+      "file": "unit-initial.tap",
+      "executedCases": 0,
+      "reason": "GUILD_KEY imported from campaign module rather than existing guild module; corrected import. No production change for this error."
+    },
+    "first19Then21": {
+      "initialPassed19": "unit-final.tap",
+      "afterAdditionalStreamBounds21": "unit-stream-bounds.tap",
+      "reason": "Added meaningful coverage for one ordinary gzip stream exceeding600000bytes while pool succeeds, and both representations exceeding the cap."
+    },
+    "phaseBrowserFirstRunPassed": true,
+    "combatOrCapacityAssertionsWeakened": false,
+    "oldCapacityRegressionReplacedWithExactImprovedBehavior": "Prior fifth-capture refusal assertions now verify new full capture and old four intact; strict actual48/49and valid native-gzip combined capacity rejection remain."
+  },
+  "compressionEvidence": {
+    "rawReportBytes": 3955771,
+    "packedBytes": 589658,
+    "unitSnapshots": 4113,
+    "uniqueRecordedStates": 277,
+    "ordinaryGzipEncodedChars": 138388,
+    "newEncodedChars": 49556,
+    "originalCompleteJsonSHA256": "ba24298c91ad264034b398b23a1d53af7d6b0679908c8166b35d29e3a9bd7df6",
+    "allFieldsEventsAndOrderPreserved": true,
+    "expandedBudgetBeforeRepeatedObjectAllocation": true,
+    "framesDoNotShareMutableObjects": true,
+    "originalLimitsUnchanged": {
+      "slots": 6,
+      "encodedChars": 800000,
+      "rawBytes": 12000000,
+      "configChars": 100000
+    },
+    "nativeOriginalFourAutomaticallyReencoded": false,
+    "capture48and49StillRejectedAtActualCapacity": true
+  },
+  "referenceBoundary": {
+    "technical": {
+      "url": "https://compression.spec.whatwg.org/",
+      "access": "WHATWG Compression Standard public text read",
+      "supports": "Standard gzip CompressionStream and DecompressionStream APIs only."
+    },
+    "projectImplementation": "Dictionary encoding, byte budgeting, format choice and exact original JSON digest verification are project technical implementation, not an original WoD rule.",
+    "gameplayReference": "Existing verified WoD-inspired direction retained; no skill/server rule/economy calibration introduced.",
+    "currentReferenceServerRulesVerified": false
+  },
+  "scope": {
+    "routes": 28,
+    "gear": 45,
+    "ordinaryGoals": 84,
+    "newSkillsGearRoutesOrProgression": false,
+    "oldGameplayAndRewardsByteUnchanged": true,
+    "noAutomaticRewriteOrDeletion": true,
+    "mandatoryNewSaveFields": false,
+    "newSnapshotEncodingUsedOnlyForNewCaptureIfSmaller": true,
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "Editable dist directly served; no bundler build."
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Permanent supplies and backup push still waiting; neither blocks independent local single-player work.",
+    "limitations": [
+      "Native old four remain large; only new47 fits currently,48and49 still exceed unchanged capacity.",
+      "Reports beyond12MB or both encoded representations beyond cap still reject.",
+      "One normal49 with rune/arrow0 is not global balance or stable-clear evidence.",
+      "Firefox/Safari/physical devices not tested."
+    ],
+    "next": "Return to actual solo exploration/failure and party-role bottlenecks; avoid expanding archive categories/codecs or copying more dungeons."
+  }
+}

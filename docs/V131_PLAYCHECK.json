@@ -1,0 +1,46 @@
+{
+  "startGold": 5235,
+  "startUsage": {
+    "count": 4,
+    "encodedChars": 743652
+  },
+  "savedUsage": {
+    "count": 5,
+    "encodedChars": 793208
+  },
+  "newArchive": {
+    "id": 47,
+    "encoding": "gzip-units-v1-base64",
+    "rawBytes": 3955771,
+    "packedBytes": 589658,
+    "compressedBytes": 37165,
+    "encodedChars": 49556,
+    "sha256": "ba24298c91ad264034b398b23a1d53af7d6b0679908c8166b35d29e3a9bd7df6"
+  },
+  "blocked48": "收藏容量不足，请先导出并移除旧快照",
+  "normal": {
+    "id": 49,
+    "won": true,
+    "rounds": [
+      5,
+      6
+    ],
+    "alive": 6,
+    "supplies": {
+      "herb": 7,
+      "rune": 0,
+      "arrow": 0
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 85,
+      "xp": 40,
+      "firstClear": false,
+      "loot": []
+    },
+    "gold": 5320,
+    "blockedCapture": "收藏容量不足，请先导出并移除旧快照"
+  },
+  "next": 50,
+  "limits": "Current four native gzip payloads untouched; one new47 fits,48and49 still correctly exceed800000. Normal49 fixed next seed and original route config, no balance/economy changes or archive reward. No automatic rewriting/deletion."
+}
