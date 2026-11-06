@@ -1,0 +1,1556 @@
+{
+  "startGold": 4280,
+  "purchaseGold": 4160,
+  "purchaseTotal": 120,
+  "samples": {
+    "start": {
+      "d": {
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "training": {
+          "skill:ward": 1,
+          "skill:drain": 1
+        },
+        "ranks": [],
+        "skills": {
+          "ward": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "temporary": 0,
+            "total": 10
+          },
+          "drain": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "temporary": 0,
+            "total": 7
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 9,
+          "training": 0,
+          "specialization": 3,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 14,
+          "secondaryValue": 19,
+          "base": 65,
+          "bonus": 0,
+          "mean": 65
+        },
+        "resources": {
+          "maxHp": 102,
+          "maxMp": 72
+        }
+      },
+      "f": {
+        "gear": {
+          "weapon": "starterblade",
+          "armor": "field",
+          "accessory": "triagepin"
+        },
+        "training": {
+          "skill:heal": 3,
+          "attr:int": 1
+        },
+        "ranks": [],
+        "skills": {
+          "heal": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "temporary": 0,
+            "total": 12
+          },
+          "groupheal": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "temporary": 0,
+            "total": 6
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 9,
+          "training": 0,
+          "specialization": 3,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 14,
+          "secondaryValue": 18,
+          "base": 64,
+          "bonus": 0,
+          "mean": 64
+        },
+        "resources": {
+          "maxHp": 102,
+          "maxMp": 70
+        }
+      }
+    },
+    "purchased": {
+      "d": {
+        "gear": {
+          "weapon": "wardfolio",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "training": {
+          "skill:ward": 1,
+          "skill:drain": 1
+        },
+        "ranks": [
+          {
+            "key": "skill:ward",
+            "kind": "skill",
+            "id": "ward",
+            "name": "潮纹屏障",
+            "available": true,
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "total": 13
+          },
+          {
+            "key": "skill:drain",
+            "kind": "skill",
+            "id": "drain",
+            "name": "断流符",
+            "available": true,
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "total": 8
+          },
+          {
+            "key": "defense:resist",
+            "kind": "defense",
+            "id": "resist",
+            "name": "心智抵抗",
+            "available": true,
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "equipment": 1,
+            "total": 10
+          }
+        ],
+        "skills": {
+          "ward": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          },
+          "drain": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 8
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 10,
+          "training": 0,
+          "specialization": 3,
+          "equipment": 1,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 15,
+          "secondaryValue": 17,
+          "base": 67,
+          "bonus": 0,
+          "mean": 67
+        },
+        "resources": {
+          "maxHp": 102,
+          "maxMp": 69
+        }
+      },
+      "f": {
+        "gear": {
+          "weapon": "starterblade",
+          "armor": "field",
+          "accessory": "medicbadge"
+        },
+        "training": {
+          "skill:heal": 3,
+          "attr:int": 1
+        },
+        "ranks": [
+          {
+            "key": "skill:heal",
+            "kind": "skill",
+            "id": "heal",
+            "name": "草药救护",
+            "available": true,
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "total": 14
+          },
+          {
+            "key": "skill:groupheal",
+            "kind": "skill",
+            "id": "groupheal",
+            "name": "同位合剂",
+            "available": true,
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 1,
+            "total": 7
+          }
+        ],
+        "skills": {
+          "heal": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          },
+          "groupheal": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 7
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 9,
+          "training": 0,
+          "specialization": 3,
+          "equipment": 0,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 16,
+          "secondaryValue": 16,
+          "base": 66,
+          "bonus": 0,
+          "mean": 66
+        },
+        "resources": {
+          "maxHp": 106,
+          "maxMp": 68
+        }
+      }
+    },
+    "refunded": {
+      "d": {
+        "gear": {
+          "weapon": "wardfolio",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "training": {
+          "skill:drain": 1
+        },
+        "ranks": [
+          {
+            "key": "skill:ward",
+            "kind": "skill",
+            "id": "ward",
+            "name": "潮纹屏障",
+            "available": true,
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "equipment": 3,
+            "total": 12
+          },
+          {
+            "key": "skill:drain",
+            "kind": "skill",
+            "id": "drain",
+            "name": "断流符",
+            "available": true,
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "total": 8
+          },
+          {
+            "key": "defense:resist",
+            "kind": "defense",
+            "id": "resist",
+            "name": "心智抵抗",
+            "available": true,
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "equipment": 1,
+            "total": 10
+          }
+        ],
+        "skills": {
+          "ward": {
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 12
+          },
+          "drain": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 8
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 10,
+          "training": 0,
+          "specialization": 3,
+          "equipment": 1,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 15,
+          "secondaryValue": 17,
+          "base": 67,
+          "bonus": 0,
+          "mean": 67
+        },
+        "resources": {
+          "maxHp": 102,
+          "maxMp": 69
+        }
+      },
+      "f": {
+        "gear": {
+          "weapon": "starterblade",
+          "armor": "field",
+          "accessory": "medicbadge"
+        },
+        "training": {
+          "skill:heal": 3,
+          "attr:int": 1
+        },
+        "ranks": [
+          {
+            "key": "skill:heal",
+            "kind": "skill",
+            "id": "heal",
+            "name": "草药救护",
+            "available": true,
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "total": 14
+          },
+          {
+            "key": "skill:groupheal",
+            "kind": "skill",
+            "id": "groupheal",
+            "name": "同位合剂",
+            "available": true,
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 1,
+            "total": 7
+          }
+        ],
+        "skills": {
+          "heal": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          },
+          "groupheal": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 7
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 9,
+          "training": 0,
+          "specialization": 3,
+          "equipment": 0,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 16,
+          "secondaryValue": 16,
+          "base": 66,
+          "bonus": 0,
+          "mean": 66
+        },
+        "resources": {
+          "maxHp": 106,
+          "maxMp": 68
+        }
+      }
+    },
+    "final": {
+      "d": {
+        "gear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "token"
+        },
+        "training": {
+          "skill:drain": 1
+        },
+        "ranks": [],
+        "skills": {
+          "ward": {
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "temporary": 0,
+            "total": 9
+          },
+          "drain": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "temporary": 0,
+            "total": 7
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 9,
+          "training": 0,
+          "specialization": 3,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 14,
+          "secondaryValue": 19,
+          "base": 65,
+          "bonus": 0,
+          "mean": 65
+        },
+        "resources": {
+          "maxHp": 102,
+          "maxMp": 72
+        }
+      },
+      "f": {
+        "gear": {
+          "weapon": "starterblade",
+          "armor": "field",
+          "accessory": "medicbadge"
+        },
+        "training": {
+          "skill:heal": 3,
+          "attr:int": 1
+        },
+        "ranks": [
+          {
+            "key": "skill:heal",
+            "kind": "skill",
+            "id": "heal",
+            "name": "草药救护",
+            "available": true,
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "total": 14
+          },
+          {
+            "key": "skill:groupheal",
+            "kind": "skill",
+            "id": "groupheal",
+            "name": "同位合剂",
+            "available": true,
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 1,
+            "total": 7
+          }
+        ],
+        "skills": {
+          "heal": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          },
+          "groupheal": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 7
+          }
+        },
+        "magicDefense": {
+          "requested": "resist",
+          "skill": "resist",
+          "name": "心智抵抗",
+          "reason": null,
+          "level": 9,
+          "training": 0,
+          "specialization": 3,
+          "equipment": 0,
+          "temporaryLevel": 0,
+          "cost": 2,
+          "primary": "wil",
+          "secondary": "int",
+          "primaryValue": 16,
+          "secondaryValue": 16,
+          "base": 66,
+          "bonus": 0,
+          "mean": 66
+        },
+        "resources": {
+          "maxHp": 106,
+          "maxMp": 68
+        }
+      }
+    }
+  },
+  "normal": [
+    {
+      "id": 40,
+      "route": "courier",
+      "seed": 40,
+      "won": true,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 4295,
+      "scholarCasts": [
+        {
+          "eventId": 5,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 55,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 0,
+            "total": 6
+          }
+        },
+        {
+          "eventId": 108,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 170,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 213,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 238,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 0,
+            "total": 6
+          }
+        },
+        {
+          "eventId": 289,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 337,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 349,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 387,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 430,
+          "skill": "drain",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 8
+          }
+        },
+        {
+          "eventId": 489,
+          "skill": "drain",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 12,
+            "total": 20
+          }
+        },
+        {
+          "eventId": 536,
+          "skill": "drain",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 12,
+            "total": 20
+          }
+        },
+        {
+          "eventId": 603,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 652,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 696,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 736,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 771,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        }
+      ],
+      "healingCasts": [
+        {
+          "eventId": 99,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 245,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 292,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 340,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 370,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 433,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 482,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 534,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 600,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 646,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 693,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "route": "beaconbridge",
+      "seed": 41,
+      "won": true,
+      "rounds": [
+        4,
+        4,
+        5
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgehorn"
+        ]
+      },
+      "gold": 4415,
+      "scholarCasts": [
+        {
+          "eventId": 5,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 43,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 0,
+            "total": 6
+          }
+        },
+        {
+          "eventId": 99,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 135,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 156,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 187,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 204,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 245,
+          "skill": "drain",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 8
+          }
+        },
+        {
+          "eventId": 287,
+          "skill": "drain",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 12,
+            "total": 20
+          }
+        },
+        {
+          "eventId": 344,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 358,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 386,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 406,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 1,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 13
+          }
+        },
+        {
+          "eventId": 442,
+          "skill": "drain",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "equipment": 1,
+            "temporary": 0,
+            "total": 8
+          }
+        },
+        {
+          "eventId": 487,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 547,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 587,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        }
+      ],
+      "healingCasts": [
+        {
+          "eventId": 93,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 11
+          }
+        },
+        {
+          "eventId": 144,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 11
+          }
+        },
+        {
+          "eventId": 337,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 11
+          }
+        },
+        {
+          "eventId": 389,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 11
+          }
+        },
+        {
+          "eventId": 501,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 11
+          }
+        },
+        {
+          "eventId": 618,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 11
+          }
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "route": "courier",
+      "seed": 42,
+      "won": true,
+      "rounds": [
+        4,
+        6,
+        9
+      ],
+      "alive": 4,
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 1
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 4550,
+      "scholarCasts": [
+        {
+          "eventId": 5,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 12
+          }
+        },
+        {
+          "eventId": 58,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 0,
+            "total": 6
+          }
+        },
+        {
+          "eventId": 109,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 175,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 214,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 241,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 12
+          }
+        },
+        {
+          "eventId": 273,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 0,
+            "total": 6
+          }
+        },
+        {
+          "eventId": 323,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 368,
+          "skill": "spark",
+          "level": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "equipment": 0,
+            "temporary": 12,
+            "total": 18
+          }
+        },
+        {
+          "eventId": 384,
+          "skill": "ward",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 0,
+            "equipment": 3,
+            "temporary": 0,
+            "total": 12
+          }
+        }
+      ],
+      "healingCasts": [
+        {
+          "eventId": 166,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 276,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 320,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 375,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 407,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 448,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 512,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 561,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 614,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 658,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        },
+        {
+          "eventId": 714,
+          "skill": "heal",
+          "level": {
+            "base": 6,
+            "specialization": 3,
+            "training": 3,
+            "equipment": 2,
+            "temporary": 0,
+            "total": 14
+          }
+        }
+      ]
+    }
+  ],
+  "refunded": {
+    "heroId": "d",
+    "key": "skill:ward",
+    "xp": 20
+  },
+  "finalGold": 4550,
+  "next": 43,
+  "limits": "Fixed normal40courier/41bridge/42courier, real60gold purchases each, no free assets or enemy/skill/reward tuning. Drefunded1permanentward rank20XP after41, then changes back to ownedfocus after42; savedbookinactive. Different seeds/configs/growth are not causal or global balance comparison."
+}

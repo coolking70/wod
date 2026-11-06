@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.127「法力压制」**，分支`feature/v127-mana-pressure`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.128「装备技能等级」**，分支`feature/v128-equipment-skill-ranks`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[装备技能等级](docs/V128_EQUIPMENT_SKILL_RANKS.md)：两件固定商店装备提供技能/防御等级，与永久培养分账；换下即移除，不授予职业外技能、不复制经验或提高培养上限。三次正常远征保留两人倒下和耗尽，退款/换装后至4550金币，见[V128验证](docs/V128_CHECKS.json)。
 
 新增[法力压制](docs/V127_MANA_PRESSURE.md)：学者断流符把敌方法力作为独立攻击目标，不扣生命或给自己回蓝；实际削减、生命实伤和本人施法支出分账。三次正常远征保留符纸/药草耗尽，真实培养后至4280金币；原有回蓝与低耗后备仍有效，详见[V127验证](docs/V127_CHECKS.json)。
 

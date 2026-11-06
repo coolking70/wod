@@ -1,0 +1,598 @@
+{
+  "phase": "v0.128 equipment skill ranks",
+  "date": "2026-11-06",
+  "baseline": {
+    "baseline": "c6fc7b5be5201cbc2cdf4921463b20f6216154de",
+    "tree": "bdd5a0ab6ab1d01e569135d1cdcf6d962aaaddf9",
+    "branch": "feature/v128-equipment-skill-ranks",
+    "remote": "https://github.com/coolking70/wod.git",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "statusBeforeEdits": "",
+    "tests": {
+      "passed": 1066,
+      "failed": 0,
+      "log": "baseline-tests.tap"
+    }
+  },
+  "branch": "feature/v128-equipment-skill-ranks",
+  "localOnly": true,
+  "tests": {
+    "full": {
+      "tests": 1083,
+      "pass": 1083,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-initial-tests.tap"
+    },
+    "newSpecialized": {
+      "tests": 17,
+      "pass": 17,
+      "fail": 0,
+      "skipped": 0,
+      "log": "unit-final.tap"
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "count": 527,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 145,
+    "checkedReferences": 162,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": true,
+    "suites": 36,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128
+    ],
+    "file": "acceptance/browser-acceptance.json",
+    "retryReceipt": {
+      "passed": true,
+      "initialSuites": 36,
+      "initialPassed": 35,
+      "initialFailedVersions": [
+        124
+      ],
+      "retestedVersions": [
+        124
+      ],
+      "latestPassedSuites": 36,
+      "other35ResultsUnchanged": true,
+      "initialSummary": "browser-acceptance-initial.json",
+      "retry": "browser-v124-retry/browser-v124.json",
+      "onlyScriptFix": "Wait for receiving page localStorage seed888/731 before snapshot/retry; strict complete raw state equality retained, no production change."
+    },
+    "phase": {
+      "passed": true,
+      "steps": [
+        "1440px真实4280档，实验札册/培养3显示15但实际仍旧法器；各60金币明确购买D札册和F药签至4160，不支付经验。实际屏障13/救护14、永久救护3仍满；保存D配装并正常40，全报告/公会同API，屏障来源训练1/装备3可查，pending禁退款。六人生还但药草/符纸0，领取135至4295，任务/4收藏/原配装/命名绑定整档携带。",
+        "390px恢复后正常41完整报告/公会同API；明确退D屏障1级仅返20XP，装备3不成为可退款培养，实际静态13→12。正常42邮路四人生还且药草0，全员目标失败仍只普通135/55至4550。换回已拥有法器后当前静态屏障9、札册仍拥有/保存但不生效；F仍永久3加装备2得救护14。数字可读且无横向溢出。",
+        "历史42仍按当次札册显示屏障12，不读当前法器9；旧39无装备等级、旧2冻结失败完整导出保持。非法永久培养4写前拒绝；另页应用札册时旧页拒绝覆盖，恢复法器后全公会同API。新上下文整档恢复4550/next43、两件已买所有权、D退款/闲置札册配装、F救护14、E两件套/任务/4收藏及命名绑定，页面错误为零。"
+      ],
+      "errors": []
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "visualInspection": [
+      "rank-desktop.png",
+      "rank-mobile.png"
+    ],
+    "finalBrowserScriptSeparatelySyntaxChecked": true,
+    "completeReportsAndGuildComparedWithAPI": true,
+    "otherEnginesOrPhysicalDevicesTested": false
+  },
+  "legacy": {
+    "reference": "c6fc7b5be5201cbc2cdf4921463b20f6216154de",
+    "routes": 27,
+    "count": 61,
+    "defaultReports": 54,
+    "actualHistoricalReports": 7,
+    "passed": true,
+    "rawFullEqual": true,
+    "excluded": [],
+    "baselineEarnedGuildAllFieldsExact": true,
+    "rows": [
+      {
+        "route": "beaconbridge",
+        "seed": 1,
+        "sha256": "cd8d1c300d3cc9a772599a01d8dd5bbc40a4571a51a898609d9b2589fbc35e01"
+      },
+      {
+        "route": "beaconbridge",
+        "seed": 731,
+        "sha256": "24d81607f4cc82ec235423c89c28c210bdaa0184b600862c6447ea7de81aeb0a"
+      },
+      {
+        "route": "trapworks",
+        "seed": 1,
+        "sha256": "18e900532fc6551f219d19a32bf50309f24b921e0e40d6bef5506bad043a7c4b"
+      },
+      {
+        "route": "trapworks",
+        "seed": 731,
+        "sha256": "a5b0f4972d49a981afc3ed62e2fd633ae35eb1ad0146e7d19e5cad783c9ef8e2"
+      },
+      {
+        "route": "ossuary",
+        "seed": 1,
+        "sha256": "0a4e925a757d271c2b4e784e063c976726021a0eda6141a691605992d6ecad27"
+      },
+      {
+        "route": "ossuary",
+        "seed": 731,
+        "sha256": "b651209c5e932f9ea486af72112c2aeddedffe479f43d8ebc6e223c8e7430a69"
+      },
+      {
+        "route": "breakwater",
+        "seed": 1,
+        "sha256": "5d10ecd8db5408358aad4d4f0b107aa3f9a4fbab11a3b29388d1996d57928332"
+      },
+      {
+        "route": "breakwater",
+        "seed": 731,
+        "sha256": "6f14e62e4a4f845072f3ee5ab53ea9d1b5a7a32af1467e1271a3c538274d94ac"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 1,
+        "sha256": "72ec4e3d9330922941462af023dc3fa1c6b16a76a28e1d983dbf012c4b750931"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 731,
+        "sha256": "7c8d5fb452253992967df5eeb9348509f733b4e1c87e461c3a7fce2603a18c6b"
+      },
+      {
+        "route": "confluence",
+        "seed": 1,
+        "sha256": "1a019b36346c546250a4a833f190bea267e1e51d206ab071b38e63881d6b301f"
+      },
+      {
+        "route": "confluence",
+        "seed": 731,
+        "sha256": "61f5ea0fd62fbce6f84d58ccc4eed5aa0f55606eaae031ac483409eec75cbfad"
+      },
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "bd741be6b1ff3ae91f52f04c2a266d63b27cb437e0dc36ca7f8233173d81eaa2"
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "217d8e97e9f8f94b8e2c1062556c9b588a6e78790a03e8aef1e55f3abb445e7c"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "1d638de77a32734fd87df160f8796fa8b18353d016c644d50f46ea3e4a142137"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "ee44ce9af63c8e1247557afb6d0ad7ad7e1605e3e336d0cf2dc87ad1e6043c0c"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "0fbec8d7b5efad6da684334bba26839b8dfc4075be132e62141608f3ffdefa0c"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "c081eccfad20a9092914243b3d0b5de8c08e01d7d67c5a88637f79da7b36dda5"
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "32f3b7bfe45a4cda5c9a6921a7c39ce0e4e67a44615929df5484994638d30472"
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "ce676f1f8f06e999f626ab8769052fbd1c3b6c5fab732bbcbde90fa696bed255"
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "0e4fc06f0cbb1137e3a46ed0d1a5ee31fda39beb570d8571c34499d8b69fa948"
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "e0840e2502839c240a6ac87c2e642fa74439bc9b54558ebce8d7f90b1c2bcb80"
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "b4b056e3b970ea4cb6d713003dfd0419800798880f590bd77de3d22651bee82a"
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "1cf10767a8d58f22c04ef9ff073880287c538b5a0eab9caf80a97a88caee4e22"
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "044168d23f11651877b80cc7c911dbdf873ea9fbb1baa19b41ec8529f50d1932"
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "b0f95d8e02fc9c1d059eb8847693a9260062f1a1bdfd6dafdab82b1aeff4110a"
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "029d90aaf254eb625a889a47044f92f6253b3d33cc39049772668f3dbe988d27"
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "b6c7b18b569f8c2e6ae64b0e4c470fc04aa05df9a763f3bda8727276f5999fae"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "4166866c968401703991829f2ac3dd7387f1be78e447a944036927ebeec20239"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "49c895e6d69d1fc3eb2eac44d6b80a1cd46421a9433acbe838d29e5ebdf1f847"
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "9644e4d76b77bef48cf2c3ff7002bffe6555e537f50813dff3820c206048635e"
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "85fc4226bb4000ba2a176e7e2b438bd3aad325c83b8a1e0466835d34f0f8232b"
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "60784219b7fd60bac5f7a5de66f94a64e0100954d5402d460f2294a72fa893ee"
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "b2e658102e91255a5df4a558034e7aeaef7485c8feb61c3894aee07b8a8e7213"
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "639049a8ff74715732f82c68cedc3678543ef351ad08e6abacf52a3426464071"
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "0b369072a2f034e3295d5a70bad8c9d24a5fc024f7e9b40e7c4f1edf93422397"
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "815e40ab3351a9df4db29c0974f29d8b2285d2ca1c18d7e416fe6b068227bb75"
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "25cfc56e0182f4cec8da2b5bedc9f53790c7b87cf1d1d2c6d8c6ab6150d9680e"
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "0ddce190d6dae6783349cf279660704b463e61d91ed573df32fb2c2f4cb56ff6"
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "86b21a5645363165b6614b2968b5e8a0dde83337aeb4f27cf4d05ada1b6bb1f3"
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "15ab2fe9e870b9d96299e3d3f28337b52cc4518e2c443857bdead5a745157085"
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "ec0f517bbdced8538ae1d8c503aeb37d37920c84f1d64c8523df558b680182f2"
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "e02399de89a80cbcf0473ca2b0dd3a69f996d2e1eb41bbf06fd406e18360f3de"
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "14a97220cd3ff55552decc9c20af2debe39787eae104032c1ef69859dddb9330"
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "deda386759cd47a20357db4753f0898cecfd5a59ebc1ffe96c8c103bfb293e31"
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "5fbc1ad70e8f6b74288ad3c45f24057106f52257134b7d34034c59f1560754a8"
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "7a8c64fad1b005b0520dc4c5dddf0eb194fed9b454fb78520bf06af2295be1a5"
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "19369efa61e6d229ac609692233f8dfb903d2324408bde1f1e9a59ae5aa7a35c"
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "b8676b96af53a206cb3bec6f684d5503313e6191e6f116ee4f98bc1f6ce9bde6"
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "c6bfc07b626cc619866cbc02239f43dc55226c2355b81e7a17fcbbfd299091df"
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "1be8864e67a795fc23efcda74b2bf98cb03f4c0554c72c70726f4bf0dcc5e860"
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "597ff6fd4f429abe8b7e95b5a5aad1fe8d3e58b0f9558edff8db4b93ae1e94a3"
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "867f9b578cb292a30d61e45b553e85085f96b57b98239500a29fc4c298f59fde"
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "80ff34b50d9142d6ab32fcc615894eb4b49f0303f65252dbdbbb8e60bff50d0d"
+      },
+      {
+        "kind": "earned-history",
+        "id": 29,
+        "sha256": "19ea3f3642338b2dc679b0ada9e737081f00878f875cc101f84eb262fd3050c6"
+      },
+      {
+        "kind": "earned-history",
+        "id": 33,
+        "sha256": "2acde9327c0696f7ac2f7e30d441c0af3aa05bd7af2e6da68492e4c35bcd4d60"
+      },
+      {
+        "kind": "earned-history",
+        "id": 34,
+        "sha256": "a4c46d624aac7051808ef30e340c2e172db937b311686710b66506fc950968d2"
+      },
+      {
+        "kind": "earned-history",
+        "id": 36,
+        "sha256": "1570a88b1e72d50672b2df5cd6e35352eb3ea5f6bd91b46fdf91922b412d97c7"
+      },
+      {
+        "kind": "earned-history",
+        "id": 37,
+        "sha256": "f3ef9cdc1481793fafe59d5fce79d0690f3858134238a54dbe46a83d64d75239"
+      },
+      {
+        "kind": "earned-history",
+        "id": 38,
+        "sha256": "361e70db3d2f9eaa6c73c45265cb7731daf99faa9f7e08d87a3c4896c196964f"
+      },
+      {
+        "kind": "earned-history",
+        "id": 39,
+        "sha256": "6c293fe342672a167fc77011c1b593dfbd9e2a910f8c58b12286d2c55792a13a"
+      }
+    ]
+  },
+  "authoredParametersUnchanged": {
+    "passed": true,
+    "newGearAllParametersUnchanged": true,
+    "allPreviousGearDefinitionsExact": true,
+    "oldSkillDefenseLootDefinitionsExact": true,
+    "existingPriceUnchanged": true,
+    "note": "Recorded after smoke before normal40..42; no parameters retuned for deaths/resource outcomes."
+  },
+  "statePreservation": {
+    "passed": true,
+    "startGuildAllFieldsExact": true,
+    "startGold": 4280,
+    "purchaseGold": 4160,
+    "purchaseTotal": 120,
+    "ordinaryGold": 390,
+    "netGold": 270,
+    "finalGold": 4550,
+    "next": 43,
+    "ordinaryXpEach": 165,
+    "onlyRefund": {
+      "heroId": "d",
+      "key": "skill:ward",
+      "xp": 20,
+      "finalPermanentRank": 0
+    },
+    "careerXpEachIncreasedOnly165": true,
+    "history": [
+      42,
+      41,
+      40,
+      39,
+      38,
+      37,
+      36,
+      35,
+      34,
+      33,
+      32,
+      31,
+      30,
+      29,
+      28,
+      27,
+      26,
+      25,
+      24,
+      23
+    ],
+    "oldHistory23Through39Exact": true,
+    "normal42Fallen": [
+      "a",
+      "d"
+    ],
+    "normal42AllSurvivedObjectiveFailed": true,
+    "existingProofsExact": true,
+    "courierSurviveFirstRemains39": true,
+    "taskFourArchivesIdentityRolesGoalsExact": true,
+    "newPaidOwnership": {
+      "d": "wardfolio",
+      "f": "medicbadge"
+    },
+    "finalDWeapon": "focus",
+    "savedBookInactive": true,
+    "finalDWardStatic": 9,
+    "finalFHealPermanent": 3,
+    "finalFHealEquipment": 2,
+    "finalFHealStatic": 14,
+    "newOrdinaryWarehouseLoot": {
+      "postbell": 2,
+      "bridgehorn": 1
+    },
+    "handoffHistoryPreserved": true,
+    "noExtraGearReward": true
+  },
+  "firstFailuresPreserved": {
+    "unit": {
+      "file": "unit-initial.tap",
+      "passed": 15,
+      "failed": 1,
+      "reason": "Normal40scholar received ranged natural defenses only; unsupported assertion expected magic equipment+1. Retained exact natural0 assertion and added dedicated magic attack encounter verifying rank+1 and2MPpayment; final17passed. No engine/number change."
+    },
+    "browser": [
+      {
+        "file": "browser-v128-initial.json",
+        "reason": "Tried planning-only departure button while on guild shop/team; explicit planning navigation added."
+      },
+      {
+        "file": "browser-v128-second.json",
+        "reason": "Tried hidden journal while on battle pane; explicit evidence pane navigation added."
+      }
+    ],
+    "unifiedBrowser": {
+      "passed": true,
+      "initialSuites": 36,
+      "initialPassed": 35,
+      "initialFailedVersions": [
+        124
+      ],
+      "retestedVersions": [
+        124
+      ],
+      "latestPassedSuites": 36,
+      "other35ResultsUnchanged": true,
+      "initialSummary": "browser-acceptance-initial.json",
+      "retry": "browser-v124-retry/browser-v124.json",
+      "onlyScriptFix": "Wait for receiving page localStorage seed888/731 before snapshot/retry; strict complete raw state equality retained, no production change."
+    },
+    "numericAssertionsWeakened": false
+  },
+  "referenceBoundary": {
+    "primary": {
+      "url": "https://world-of-dungeons.de/wod/spiel/hero/item.php?id=127938557&is_popup=1&name=G%C3%BCrtel+des+erfahrenen+Medikus&world=WA",
+      "access": "Official full public item page successfully read",
+      "supports": "Worn equipment can provide skill-rank modifiers; rank modifiers differ from direct effect modifiers."
+    },
+    "projectOriginal": "Two3slot items, named skill maps/all fixed ranks and attribute penalties, existing60gold shop rules, additive equipped sources, permanent cap/cost/refund remain project prototype choices. No current reference-server tables/class/race/level/fame requirements copied; direct effect modifier system not implemented.",
+    "currentServerNumbersVerified": false
+  },
+  "scope": {
+    "routes": 27,
+    "gear": 45,
+    "ordinaryGoals": 81,
+    "newEquipment": [
+      "wardfolio",
+      "medicbadge"
+    ],
+    "newSkillsOrRoutes": false,
+    "oldItemsSkillsDefenseEnemiesLootAndCostsUnchanged": true,
+    "mandatoryNewSaveFields": false,
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "Editable dist directly served; no bundler build."
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Permanent supplies and backup push authorization still waiting; neither blocks independent local single-player work.",
+    "limitations": [
+      "Three different seeds and changing purchases/refund/configurations are not single-variable causal evidence or global balance.",
+      "Normal40herb/rune0,41rune0,42herb0andA/Ddown; no all-survived guarantee.",
+      "Official item example supports structure, not current reference-server calibration.",
+      "Firefox/Safari/physical devices not tested."
+    ],
+    "next": "Continue real party-role and exploration bottlenecks; avoid merely adding more equipment-rank variants."
+  }
+}
