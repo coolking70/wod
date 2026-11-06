@@ -24,5 +24,5 @@ export function stockFloorWarnings(command,payment,stock){
 export function stockFloorEvidenceView(event){
  const f=event.detail.stockFloor;if(!f)return '';
  const outcome=event.detail.stockOutcome;
- return `<p class="stock-floor-proof">用后留存检查：当时${esc(f.available)}${STOCK_NAMES[f.resource]} − 本次所需${esc(f.amount)} = ${esc(f.afterPayment)}；底线${esc(f.floor)}。${f.blocked?'本条未施放、未付款、不占行动；继续检查后备。':'满足底线，按实际施法支付。'}${outcome?` 后续：${outcome.eventId?`记录${Number(outcome.eventId)} · ${{cast:'施法',wait:'等待',failed:'普通行动空过',item:'自用道具'}[outcome.type]||outcome.type}${outcome.skill?'「'+esc(SKILLS[outcome.skill]?.name||outcome.skill)+'」':''}<button data-stock-outcome="${Number(outcome.eventId)}">查看实际后备</button>`:'本次没有可执行预备指令。'}`:''} ${STOCK_FLOOR_RULE}</p>`;
+ return `<p class="stock-floor-proof">用后留存检查：当时${esc(f.available)}${STOCK_NAMES[f.resource]} − 本次所需${esc(f.amount)} = ${esc(f.afterPayment)}；底线${esc(f.floor)}。${f.blocked?'本条未施放、未付款、不占行动；继续检查后备。':event.type==='cast'?'满足底线，按实际施法支付。':'满足底线，但本条因后续条件未施放；本次未付款。'}${outcome?` 后续：${outcome.eventId?`记录${Number(outcome.eventId)} · ${{cast:'施法',wait:'等待',failed:'普通行动空过',item:'自用道具'}[outcome.type]||outcome.type}${outcome.skill?'「'+esc(SKILLS[outcome.skill]?.name||outcome.skill)+'」':''}<button data-stock-outcome="${Number(outcome.eventId)}">查看实际后备</button>`:'本次没有可执行预备指令。'}`:''} ${STOCK_FLOOR_RULE}</p>`;
 }

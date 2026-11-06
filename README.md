@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前本地开发版本：**v0.118「遗物寻访」**，分支`feature/v118-equipment-pursuit`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+当前本地开发版本：**v0.119「定点与后备」**，分支`feature/v119-strict-position`。**v0.100已合并并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`357336294d0e5eb9191a8a21ba6c8d1147afe215`，见[执行收据](docs/V100_EXECUTION_RECEIPT.json)。v0.94备份分支保持`1f9df35…`。v0.101及后续只本地提交；未部署。
+
+新增[仅指定阵位与实际后备](docs/V119_STRICT_POSITION.md)：显式远攻可限定本阵位，空则免费查下一条，每新回合重查且不重置本房一次；默认保持原后备。来源/真实候选/回放与整档贯通。正常seed14仍5人/0箭，seed15组合已有留2箭达标却耗尽药草，保留取舍，不当通用升级。见[V119验证](docs/V119_CHECKS.json)。
 
 新增[遗物寻访](docs/V118_EQUIPMENT_PURSUIT.md)：为指定队员记录一件目标遗物，真实来源→正常探索→领取入仓→明确分配才完成；伙伴已持有或实验草稿不算本人的。24路线/40装备原奖励不变；正常seed12/13至1265/1385，均用尽箭矢，保留限制。来源区分首通固定/重复池/故事/委托/兑换，整档与绑定方案贯通。见[V118验证](docs/V118_CHECKS.json)。
 

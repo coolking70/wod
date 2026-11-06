@@ -1,3 +1,4 @@
+import {positionOnlyLabel} from './expedition-position-only.mjs';
 import {withdrawalLabel} from './expedition-withdrawal.mjs';
 import {groupAidLabel} from './expedition-group-aid.mjs';
 import {targetCountLabel} from './expedition-target-count.mjs';
@@ -32,6 +33,7 @@ export function reviewReport(report){
    if(failed.length)add('failed',h.name+' 空过行动',`${failed.length} 个普通行动未执行任何技能。`,'检查附近的跳过记录，以及是否配置低消耗备用指令。',failed[0],h.id);
    const skips=events.filter(e=>e.type==='skip'&&e.actor===h.id&&['法力不足','耗材耗尽'].includes(e.detail.reason));
    if(skips.length)add('resource',h.name+' 资源不足',`${skips.length} 次指令检查因资源不足被跳过；这不等于空过行动次数。`,'检查法力、共享补给与备用指令；药瓶也会占用行动。',skips[0],h.id);
+   const positionSkips=events.filter(e=>e.type==='skip'&&e.actor===h.id&&e.detail.positionOnly?.blocked);if(positionSkips.length)add('position-only',h.name+' 指定阵位后备',`${positionSkips.length}次检查因指定阵位无合法目标而免费查后备，不等于普通行动空过。`,'查看本条指定阵位与实际后续行动；不自动改攻其他阵位，也不保证节料后的结果更好。',positionSkips[0],h.id);
    const counts=events.filter(e=>e.type==='skip'&&e.actor===h.id&&e.detail.targetCount?.blocked);if(counts.length)add('target-count',h.name+' 群攻数量后备',`${counts.length}次检查因本条候选不足改查后备，不等于普通行动空过。`,'检查原先目标顺序中的实际候选与后备；不跨阵位凑数，也不保证省料后的行动更有利。',counts[0],h.id);
    const schedules=events.filter(e=>e.type==='skip'&&e.actor===h.id&&e.detail.schedule);if(schedules.length)add('schedule',h.name+' 回合窗口后备',`${schedules.length}次检查在配置窗口之外免费跳过；不等于普通行动空过。`,'核对实际后备行动和窗口；本房一次不会每回合重置，其他技能和自动救护仍照原规则。',schedules[0],h.id);
    const floorSkips=events.filter(e=>e.type==='skip'&&e.actor===h.id&&e.detail.stockFloor?.blocked);if(floorSkips.length)add('stock-floor',h.name+' 用料底线后备',`${floorSkips.length} 次检查因本条用后留存不足改查后备；当时仍有材料，这不等于缺料或普通行动空过。`,'查看原始余量、底线与实际后备；底线只限本条，其他指令和自动救护仍可用料，不代表物资已划归某人。',floorSkips[0],h.id);
@@ -60,7 +62,7 @@ export function reviewReport(report){
  });
 }
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
-const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}${scheduleLabel(r)}${targetCountLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队',priority:'按个人阵位优先',supportPriority:'按辅助阵位优先'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
+const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}${scheduleLabel(r)}${targetCountLabel(r)}${positionOnlyLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队',priority:'按个人阵位优先',supportPriority:'按辅助阵位优先'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
  if(key==='withdrawAt')return withdrawalLabel(value===undefined?{}:{withdrawAt:value});
  if(['attackOrder','supportOrder'].includes(key))return value===undefined?'默认阵位顺序':value.map(pos=>POS[pos]).join(' → ');

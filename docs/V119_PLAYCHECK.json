@@ -1,0 +1,333 @@
+{
+  "startGold": 1385,
+  "normal": [
+    {
+      "keep": 0,
+      "seed": 14,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        5,
+        5,
+        8
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 3,
+        "arrow": 0
+      },
+      "objective": {
+        "id": "reserve",
+        "met": false,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 18,
+          "alive": 5,
+          "herb": 2,
+          "rune": 3,
+          "arrow": 0
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "triagepin"
+        ]
+      },
+      "gold": 1505,
+      "strictSkips": [
+        {
+          "id": 117,
+          "room": 0,
+          "round": 3,
+          "skill": "pierce",
+          "position": "rear",
+          "outcome": {
+            "eventId": 118,
+            "type": "cast",
+            "skill": "shot"
+          }
+        },
+        {
+          "id": 166,
+          "room": 0,
+          "round": 4,
+          "skill": "pierce",
+          "position": "rear",
+          "outcome": {
+            "eventId": 167,
+            "type": "cast",
+            "skill": "shot"
+          }
+        },
+        {
+          "id": 194,
+          "room": 0,
+          "round": 5,
+          "skill": "pierce",
+          "position": "rear",
+          "outcome": {
+            "eventId": 195,
+            "type": "cast",
+            "skill": "shot"
+          }
+        },
+        {
+          "id": 396,
+          "room": 1,
+          "round": 4,
+          "skill": "pierce",
+          "position": "left",
+          "outcome": {
+            "eventId": 397,
+            "type": "cast",
+            "skill": "shot"
+          }
+        },
+        {
+          "id": 437,
+          "room": 1,
+          "round": 5,
+          "skill": "pierce",
+          "position": "left",
+          "outcome": {
+            "eventId": 438,
+            "type": "cast",
+            "skill": "shot"
+          }
+        }
+      ],
+      "casts": [
+        {
+          "id": 26,
+          "actor": "b",
+          "room": 0,
+          "round": 1,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfcm"
+          ]
+        },
+        {
+          "id": 68,
+          "actor": "b",
+          "room": 0,
+          "round": 2,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfcm"
+          ]
+        },
+        {
+          "id": 229,
+          "actor": "b",
+          "room": 1,
+          "round": 1,
+          "skill": "pierce",
+          "position": "left",
+          "targets": [
+            "cfbm"
+          ]
+        },
+        {
+          "id": 288,
+          "actor": "b",
+          "room": 1,
+          "round": 2,
+          "skill": "pierce",
+          "position": "left",
+          "targets": [
+            "cfbm"
+          ]
+        },
+        {
+          "id": 362,
+          "actor": "b",
+          "room": 1,
+          "round": 3,
+          "skill": "pierce",
+          "position": "left",
+          "targets": [
+            "cfbm"
+          ]
+        },
+        {
+          "id": 472,
+          "actor": "b",
+          "room": 2,
+          "round": 1,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfsm"
+          ]
+        },
+        {
+          "id": 531,
+          "actor": "b",
+          "room": 2,
+          "round": 2,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfsm"
+          ]
+        },
+        {
+          "id": 556,
+          "actor": "b",
+          "room": 2,
+          "round": 3,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfsm"
+          ]
+        }
+      ]
+    },
+    {
+      "keep": 2,
+      "seed": 15,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        4,
+        6
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 4,
+        "arrow": 2
+      },
+      "objective": {
+        "id": "reserve",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 3,
+          "rooms": 3,
+          "rounds": 15,
+          "alive": 6,
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        }
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "triagepin"
+        ]
+      },
+      "gold": 1625,
+      "strictSkips": [
+        {
+          "id": 158,
+          "room": 0,
+          "round": 4,
+          "skill": "pierce",
+          "position": "rear",
+          "outcome": {
+            "eventId": 159,
+            "type": "cast",
+            "skill": "shot"
+          }
+        },
+        {
+          "id": 199,
+          "room": 0,
+          "round": 5,
+          "skill": "pierce",
+          "position": "rear",
+          "outcome": {
+            "eventId": 200,
+            "type": "cast",
+            "skill": "shot"
+          }
+        }
+      ],
+      "casts": [
+        {
+          "id": 26,
+          "actor": "b",
+          "room": 0,
+          "round": 1,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfcm"
+          ]
+        },
+        {
+          "id": 67,
+          "actor": "b",
+          "room": 0,
+          "round": 2,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfcm"
+          ]
+        },
+        {
+          "id": 113,
+          "actor": "b",
+          "room": 0,
+          "round": 3,
+          "skill": "pierce",
+          "position": "rear",
+          "targets": [
+            "cfcm"
+          ]
+        },
+        {
+          "id": 244,
+          "actor": "b",
+          "room": 1,
+          "round": 1,
+          "skill": "pierce",
+          "position": "left",
+          "targets": [
+            "cfbm"
+          ]
+        },
+        {
+          "id": 302,
+          "actor": "b",
+          "room": 1,
+          "round": 2,
+          "skill": "pierce",
+          "position": "left",
+          "targets": [
+            "cfbm"
+          ]
+        },
+        {
+          "id": 363,
+          "actor": "b",
+          "room": 1,
+          "round": 3,
+          "skill": "pierce",
+          "position": "left",
+          "targets": [
+            "cfbm"
+          ]
+        }
+      ]
+    }
+  ],
+  "design": "Optional explicit-position-only non-melee attack. Original per-round recheck, no extra action or reset of once. Existing stock floor remains independent. No new skill, damage, loot or permanent supply economy.",
+  "limits": "Two predeclared consecutive real earned departures, keeps0 then2. Failure/casualties/exhaustion retained; differing seeds/assets/actions do not isolate causality or establish global balance."
+}

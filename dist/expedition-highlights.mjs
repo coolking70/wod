@@ -4,7 +4,7 @@ export function highlightedSteps(events){
  const seen=new Set();
  return groupActions(events).filter(g=>{
  const keyEvents=['wave-clear','reinforcement','withdraw','room','victory','defeat','scene','encounter','route','rescue','branch','deadline','summon','down','item','mana-transfer','harm','dispel','cleanse','activate'];
- if(g.events.some(e=>keyEvents.includes(e.type)||(e.detail.reservation||e.detail.healingBlock||e.detail.actionLimits?.length||e.detail.offbeatSelection)))return true;
+ if(g.events.some(e=>keyEvents.includes(e.type)||(e.detail.positionOnly?.blocked||e.detail.reservation||e.detail.healingBlock||e.detail.actionLimits?.length||e.detail.offbeatSelection)))return true;
  const cast=g.events.find(e=>e.type==='cast');
  if(g.events.some(e=>e.type==='effect')){const key=g.roomIndex+':'+g.events[0].actor+':'+(cast?.detail.skill||g.events[0].detail.skill);if(!seen.has(key)){seen.add(key);return true;}}
  if(g.events.some(e=>e.type==='heal'&&e.detail.actual>0&&e.units.some(u=>u.id===e.targets[0]&&u.hp-e.detail.actual<=u.maxHp*.35)))return true;

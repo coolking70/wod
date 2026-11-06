@@ -1,3 +1,4 @@
+import {positionOnlyLabel,POSITION_ONLY_RULE} from './expedition-position-only.mjs';
 import {offbeatEligible} from './expedition-offbeat.mjs';
 import {supportOrderLabel} from './expedition-support-priority.mjs';
 import {attackOrderLabel} from './expedition-position-priority.mjs';
@@ -26,14 +27,15 @@ export function companionPreview(g,tactics,id,mode,roomId=''){
   if(s.kind==='transfer'){candidates=manaRecipients(actor,party,r.target,{eligible:false}).map(u=>u.name);warnings.push('普通行动仅援助范围内其他法力不高于50%的存活正式队员；初始候选不保证实际转入，不给自己/召唤物，无合格者免费后备。');}
   if(s.recall)warnings.push('仅召回自己当时存活的召唤物；无目标免费跳过，实际召回占本次预备且不返还原消耗');
   if(s.kind==='attack'){
+   if(r.onlyPosition)warnings.push(POSITION_ONLY_RULE);
    if(room.reinforcements)warnings.push('本房有公开增援；这里仅列首波候选，实际到场/减员后重新检查。本房一次、指令游标与累计回合不因换波重置。');
-   if(s.actionDamp){const chosen=chooseTargets(actor,[...party,...enemies],s,r.target);candidates=enemies.filter(u=>offbeatEligible(u)&&(r.target==='healer'?u.skills.heal!==undefined:r.target==='summoner'?roleTargetCandidates(enemies,'summoner').some(t=>t.id===u.id):s.mode==='all'||u.pos===chosen[0]?.pos)).map(u=>u.name);warnings.push('迟拍只选当前已获得额外行动且无迟拍者；入场空候选不代表敌方预备后不能选。实际命中后只影响下回合队列，净化可移除。');}
+   if(s.actionDamp){const chosen=chooseTargets(actor,[...party,...enemies],s,r.target,()=>0,r);candidates=enemies.filter(u=>offbeatEligible(u)&&(r.target==='healer'?u.skills.heal!==undefined:r.target==='summoner'?roleTargetCandidates(enemies,'summoner').some(t=>t.id===u.id):s.mode==='all'||u.pos===chosen[0]?.pos)).map(u=>u.name);warnings.push('迟拍只选当前已获得额外行动且无迟拍者；入场空候选不代表敌方预备后不能选。实际命中后只影响下回合队列，净化可移除。');}
    else
    if(['healer','summoner'].includes(r.target))candidates=roleTargetCandidates(enemies,r.target).map(u=>u.name);
-   else {const chosen=chooseTargets(actor,[...party,...enemies],s,r.target);candidates=(s.mode==='all'?chosen:enemies.filter(u=>u.pos===chosen[0]?.pos&&u.hp>0)).map(u=>u.name);}
+   else {const chosen=chooseTargets(actor,[...party,...enemies],s,r.target,()=>0,r);candidates=(s.mode==='all'?chosen:enemies.filter(u=>u.pos===chosen[0]?.pos&&u.hp>0)).map(u=>u.name);}
    if(!candidates.length)warnings.push('本房初始敌人无此目标，将检查下一条指令');
   }
-  return {phase,skill:r.skill,name:s.name+stockFloorLabel(r),mode:r.mode,target:POS[r.target]||{self:'自身',all:'全队',healer:'治疗者',summoner:'召唤者',priority:'按个人阵位优先 · '+attackOrderLabel(actor),supportPriority:'辅助阵位优先 · '+supportOrderLabel(actor)}[r.target],kind:s.recall?'recall':s.kind,candidates,max:s.max,cost:payment.mana,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:payment.medium}:{}),warnings};
+  return {phase,skill:r.skill,name:s.name+stockFloorLabel(r)+positionOnlyLabel(r),mode:r.mode,target:POS[r.target]||{self:'自身',all:'全队',healer:'治疗者',summoner:'召唤者',priority:'按个人阵位优先 · '+attackOrderLabel(actor),supportPriority:'辅助阵位优先 · '+supportOrderLabel(actor)}[r.target],kind:s.recall?'recall':s.kind,candidates,max:s.max,cost:payment.mana,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:payment.medium}:{}),warnings};
  }));
  return {roomId:room.id,roomName:room.name,rows,healing:clone(actor.healing),heroId:g.command.heroId};
 }
