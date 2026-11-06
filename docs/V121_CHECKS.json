@@ -1,0 +1,1624 @@
+{
+  "stage": "v0.121",
+  "baseline": {
+    "baseline": "e50c03fe6be97089764206932b3f3c57d46ad944",
+    "branch": "feature/v121-personal-sparring",
+    "status": "",
+    "main": "357336294d0e5eb9191a8a21ba6c8d1147afe215",
+    "remote": "https://github.com/coolking70/wod.git"
+  },
+  "baselineTests": {
+    "tests": 939,
+    "passed": 939,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "baseline-tests.tap"
+  },
+  "unitTests": {
+    "tests": 19,
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "unit-display-final.tap"
+  },
+  "fullTests": {
+    "tests": 958,
+    "passed": 958,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "full-verified-tests.tap"
+  },
+  "browserAcceptance": {
+    "passed": true,
+    "count": 29,
+    "results": [
+      {
+        "version": 76,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v76"
+      },
+      {
+        "version": 77,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v77"
+      },
+      {
+        "version": 94,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v94"
+      },
+      {
+        "version": 95,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v95"
+      },
+      {
+        "version": 96,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v96"
+      },
+      {
+        "version": 97,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v97"
+      },
+      {
+        "version": 98,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v98"
+      },
+      {
+        "version": 99,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v99"
+      },
+      {
+        "version": 101,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v101"
+      },
+      {
+        "version": 102,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v102"
+      },
+      {
+        "version": 103,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v103"
+      },
+      {
+        "version": 104,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v104"
+      },
+      {
+        "version": 105,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v105"
+      },
+      {
+        "version": 106,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v106"
+      },
+      {
+        "version": 107,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v107"
+      },
+      {
+        "version": 108,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v108"
+      },
+      {
+        "version": 109,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v109"
+      },
+      {
+        "version": 110,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v110"
+      },
+      {
+        "version": 111,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v111"
+      },
+      {
+        "version": 112,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v112"
+      },
+      {
+        "version": 113,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v113"
+      },
+      {
+        "version": 114,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v114"
+      },
+      {
+        "version": 115,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v115"
+      },
+      {
+        "version": 116,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v116"
+      },
+      {
+        "version": 117,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v117"
+      },
+      {
+        "version": 118,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v118"
+      },
+      {
+        "version": 119,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v119"
+      },
+      {
+        "version": 120,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v120"
+      },
+      {
+        "version": 121,
+        "exit": 0,
+        "passed": true,
+        "dir": "/workspace/wod-evidence/v121/acceptance/browser-v121"
+      }
+    ],
+    "finalPersonalSparringDesktopAnd390px": {
+      "passed": true,
+      "steps": [
+        "桌面恢复1835实际档/默认追医；陪练装备/数值/指令公开，完整演武快照与API逐字段相同，旧追医无候选免费后备、逐事件前后/结局显示真实HP。切陪练旧快照标过期且仍可只读导出，切回恢复匹配；所有localStorage键逐字不变，无正式领取。",
+        "通过既有我的战术改默认心理前排持续，第二次仍败、全快照同API；真实795→775经验支付20训练，资产变化使旧结果过期，第三次仍败。练习不发奖/不写四键，正式reserve方案命名绑定后整档导出不包含演武缓存。",
+        "390px整档恢复实际培养/命名绑定，无演武缓存；可切英雄且旧快照过期，实际单人actor跟随本人，不转移资产。回到E全快照同API，费用可查无横向溢出。正式seed18六人完整报告/pending同API，待结算禁演武；普通85/40至1920、reserve首证18，旧14失败样态报告保留且不可再领。",
+        "刷新只清演武缓存，全部存储键原样；同源第二页正常改种子后，旧页面拒绝再次演武，回看标旧快照，不覆盖新配置或实际公会。"
+      ],
+      "errors": []
+    },
+    "extraFinalRunAfterDisplayFix": true
+  },
+  "syntax": {
+    "passed": true,
+    "count": 477,
+    "failures": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 130,
+    "checkedReferences": 147,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "unchangedReports": {
+    "reference": "e50c03fe6be97089764206932b3f3c57d46ad944",
+    "priorRoutes": 25,
+    "currentRoutes": 25,
+    "count": 55,
+    "defaultReportCount": 50,
+    "actualHistoricalReports": 5,
+    "rawFullEqual": true,
+    "excluded": [],
+    "rows": [
+      {
+        "route": "ossuary",
+        "seed": 1,
+        "sha256": "d87ca5dec7555cb6075ff56ad9ec50e82a621c0c489e0a1179ff20b6fd1a8158"
+      },
+      {
+        "route": "ossuary",
+        "seed": 731,
+        "sha256": "f69ef873f44e25217c636288f2bc2df188b7f74aaba4e74ada106ff256f01ecb"
+      },
+      {
+        "route": "breakwater",
+        "seed": 1,
+        "sha256": "8c9d2656dee10f0809e391d8372d97d6373ae7c5a3644f2926bd0ea334f4d6e1"
+      },
+      {
+        "route": "breakwater",
+        "seed": 731,
+        "sha256": "e79d45f950648b62bcb6c63e15a550a5796cf468fd892845b525dfbd732566b7"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 1,
+        "sha256": "dfa1e96122cfe7526878dd0149134d6dacadb1c8ff77f035bedcefb80b7bb1e8"
+      },
+      {
+        "route": "counterpoint",
+        "seed": 731,
+        "sha256": "a561bcc7a127a49fd44911d45c7edd83f04f80c28ac189a293831a1e0e9a0151"
+      },
+      {
+        "route": "confluence",
+        "seed": 1,
+        "sha256": "0b08883b37d64533c5a806427771b59a8f2c5ef49acd602ff9270d73d0d3290d"
+      },
+      {
+        "route": "confluence",
+        "seed": 731,
+        "sha256": "f7b90ff1b3bb8c85269645b69da1b511781ef7733562e8734339e2bf969c81ba"
+      },
+      {
+        "route": "clocktower",
+        "seed": 1,
+        "sha256": "67125bf676673c5c288cfe51562a16baa3f7ecba3314b1d8adbe1e430fc35e4b"
+      },
+      {
+        "route": "clocktower",
+        "seed": 731,
+        "sha256": "e90766e11b310c1875e4b2e48b36f4bde7b07d6f624021a645bea154433bf96c"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 1,
+        "sha256": "e753b76d2b370eed806922e89e74d3b8834f6d0c2546a0c9d30538ce8ed13699"
+      },
+      {
+        "route": "greenhouse",
+        "seed": 731,
+        "sha256": "2e2c78ec038e88aa7740ba6e8939eb96c722e0b041364eb37cdaaf90831b69e3"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 1,
+        "sha256": "b6cc7c26985c09e7d6b7ea13afe44b624b9df02e8ef5faa334e1b6469ce101ae"
+      },
+      {
+        "route": "scriptorium",
+        "seed": 731,
+        "sha256": "ea4740b2caa0bc95552c4ce64cbf0b9067a15e3c7eafce06921361eb188811a0"
+      },
+      {
+        "route": "palisade",
+        "seed": 1,
+        "sha256": "a347a1763a6837db7eb2afbd0cc87672dbae16da205732e6d456b7fc24ef691e"
+      },
+      {
+        "route": "palisade",
+        "seed": 731,
+        "sha256": "6e694d274e7dcda04d046cd7b10ea320154ae94b2f69671b756c7592f473337a"
+      },
+      {
+        "route": "shoals",
+        "seed": 1,
+        "sha256": "7052502a74422aa25ef0c11c58505e78d419c0a66f94dbf20e0552610f6f526d"
+      },
+      {
+        "route": "shoals",
+        "seed": 731,
+        "sha256": "7e554ce7a74b5fcb6e16364f520a50677f78a2cc2d3902f9dc125a028a5ceba3"
+      },
+      {
+        "route": "inquest",
+        "seed": 1,
+        "sha256": "9e9b8290c43a5acb423f2534a9d3984aca849b3bc67491ea49bb8b7ce78f6706"
+      },
+      {
+        "route": "inquest",
+        "seed": 731,
+        "sha256": "b8929f852cdbbc9c0fc6867ee8ad45f45e6aad95efd5c2087079c4ef4f55d66b"
+      },
+      {
+        "route": "theater",
+        "seed": 1,
+        "sha256": "c7f4a218756497cc800f7697234ef43a145b2bd269769379d71c363685ad11da"
+      },
+      {
+        "route": "theater",
+        "seed": 731,
+        "sha256": "b80362c21b71497c2a056d9791fa5a9da59f0825998e7b7d1f26529a8378b8e7"
+      },
+      {
+        "route": "courier",
+        "seed": 1,
+        "sha256": "8ad2ef279c85065d559f027e4abc9739c1e1bc6df106cd882bb2a1343efb4629"
+      },
+      {
+        "route": "courier",
+        "seed": 731,
+        "sha256": "c019b2ebdc6875f4ce4472c90bd63868847a5bb09343e5d67255a5d40c587af8"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 1,
+        "sha256": "48ac9671803a47a6d27ba253f204bc7bb7c25538bd14f34fd590cd66dcba1dcf"
+      },
+      {
+        "route": "foundrywatch",
+        "seed": 731,
+        "sha256": "582729f02c623cca09d9ec154a6084a255b5e703768f1a63d038a06d1d6828b8"
+      },
+      {
+        "route": "foundry",
+        "seed": 1,
+        "sha256": "4ee51397336a485ed1fb11af3071b9ae0be50c811c8345d6ce58dbc4c3723424"
+      },
+      {
+        "route": "foundry",
+        "seed": 731,
+        "sha256": "051e592e109369e60644d7ca2cf51364e6c014bcd74dcbda5213fbf232f8e300"
+      },
+      {
+        "route": "harbor",
+        "seed": 1,
+        "sha256": "e8a5182d82e4ed5fc937f7fae0952050ff44978cb28a91d2a423af27f3ad4914"
+      },
+      {
+        "route": "harbor",
+        "seed": 731,
+        "sha256": "10c5bd04e4530534146b555e395ce99ae351312592e53b7991aa33a5d0382dee"
+      },
+      {
+        "route": "seasoned",
+        "seed": 1,
+        "sha256": "df239c167ebee0109aead635a6b026e6c56a18275372e3dc272c59fa390e0f9c"
+      },
+      {
+        "route": "seasoned",
+        "seed": 731,
+        "sha256": "2195e99cf491ed9b6a92d8d0ada489c08192fbe5074443141a30127a4a84ca64"
+      },
+      {
+        "route": "veteran",
+        "seed": 1,
+        "sha256": "b0441c79be867f3080f8a79719016e0f635f5bc81152f30b5a3fc7b0ff20d502"
+      },
+      {
+        "route": "veteran",
+        "seed": 731,
+        "sha256": "26d426ddd3b5401bc0133b946303f42b2e3c5a455601ada1a2a8b74627f446c6"
+      },
+      {
+        "route": "tutorial",
+        "seed": 1,
+        "sha256": "546af5be0c6ba3628005e94aed20761502d8ebb985c61200540c1a26519dd265"
+      },
+      {
+        "route": "tutorial",
+        "seed": 731,
+        "sha256": "184f8338990fcd62a6c1934c0da79afa9e67c064000d7f3426c10789f4800d49"
+      },
+      {
+        "route": "chapter",
+        "seed": 1,
+        "sha256": "bf3ff7c3cf7001d85143f4c3922a3ba5dd80a04f9debc23a1af2c9399df6072d"
+      },
+      {
+        "route": "chapter",
+        "seed": 731,
+        "sha256": "db0908d8bc5009e119105c8d80e0ecce3a28ca828ef7ce1efee203c2be4a66bd"
+      },
+      {
+        "route": "classic",
+        "seed": 1,
+        "sha256": "6f1aee009447ed76daab2a199629c12b73cf18785db831c86699fe46dd454024"
+      },
+      {
+        "route": "classic",
+        "seed": 731,
+        "sha256": "0647245c520f5cf770afe16c13d9c08630b0b4c106943c7468ab54743b3723c0"
+      },
+      {
+        "route": "hospice",
+        "seed": 1,
+        "sha256": "255bd9ca6e6f58f91e7bdc6c14a1dab8b686917b1ed11c0f7bb510a96943eeb0"
+      },
+      {
+        "route": "hospice",
+        "seed": 731,
+        "sha256": "142efdeaee3ba53ad21584caf50472af7b62eb2203bf337f7d4aa0e889836c86"
+      },
+      {
+        "route": "archive",
+        "seed": 1,
+        "sha256": "67630e80ca4e7735691f8a7c375df1bca3d19915b7f03e4559ac66706918e2c7"
+      },
+      {
+        "route": "archive",
+        "seed": 731,
+        "sha256": "2a8590b7805ea3f07f8e209067562317bed8f9d9f22cf5fd2eafce212f5ddd6f"
+      },
+      {
+        "route": "survival",
+        "seed": 1,
+        "sha256": "11a36719c77ca15b601accbc0e7bf5d67ff06caa02a3b1810168f6dc067fbc12"
+      },
+      {
+        "route": "survival",
+        "seed": 731,
+        "sha256": "c0fca005bcfa923dfa567552fdfb434077a63c350f3b3c0f895b95ea45163da2"
+      },
+      {
+        "route": "vigil",
+        "seed": 1,
+        "sha256": "383f974de167e68d988f3c2b0e325c0e6526c77a4dc23c28f1f9ef5c6ce7f360"
+      },
+      {
+        "route": "vigil",
+        "seed": 731,
+        "sha256": "763dc364867e257f0436ee651072a2ba091ac75d50c806b6bae626c5c716de6a"
+      },
+      {
+        "route": "scarcity",
+        "seed": 1,
+        "sha256": "ea23457093c68584f3652c15fe9114f200b4d26c0466a6941466db0657b12e8c"
+      },
+      {
+        "route": "scarcity",
+        "seed": 731,
+        "sha256": "9c2150dc6e7488c751d26a4124e441cbb7e0bc3a02699fc78bb1ce0370b12e0a"
+      },
+      {
+        "kind": "earned-history",
+        "id": 7,
+        "route": "courier",
+        "seed": 7,
+        "sha256": "0f33fffc14b3260844827b42fb6d44558f80e7e43eb81f980bfcc2dab18ff0c5"
+      },
+      {
+        "kind": "earned-history",
+        "id": 14,
+        "route": "confluence",
+        "seed": 14,
+        "sha256": "a9a74b4ee5655211c5e102e6ea478143c947ddaf13f1fc2fce7d12b00e15fd8a"
+      },
+      {
+        "kind": "earned-history",
+        "id": 15,
+        "route": "confluence",
+        "seed": 15,
+        "sha256": "0d12fe6d4d46731015c3453e84b6e4409ed5332827ed35243927ffc3a05c3ecb"
+      },
+      {
+        "kind": "earned-history",
+        "id": 16,
+        "route": "ossuary",
+        "seed": 16,
+        "sha256": "5616d5d68cef1ce360609db60907e171c8ef8af945373bc775860298ae2f3622"
+      },
+      {
+        "kind": "earned-history",
+        "id": 17,
+        "route": "ossuary",
+        "seed": 17,
+        "sha256": "063e2781692536815de097f7b7b8c62d70ce407b622fad7e1484d1aec05ad4e6"
+      }
+    ]
+  },
+  "realPlay": {
+    "startGold": 1835,
+    "own": "e",
+    "private": [
+      {
+        "seed": 731,
+        "hero": "e",
+        "rival": "shield",
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 57,
+        "opponentHp": 56,
+        "opponentMp": 51,
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 6
+        },
+        "casts": 5,
+        "skills": {
+          "mastery": 1,
+          "shot": 4
+        },
+        "noRoleChecks": 4,
+        "failed": 0,
+        "damage": 89
+      },
+      {
+        "seed": 731,
+        "hero": "e",
+        "rival": "shield",
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 33,
+        "opponentHp": 36,
+        "opponentMp": 47,
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 6
+        },
+        "casts": 5,
+        "skills": {
+          "mastery": 1,
+          "mindcall": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 109
+      },
+      {
+        "seed": 731,
+        "hero": "e",
+        "rival": "shield",
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 33,
+        "opponentHp": 33,
+        "opponentMp": 47,
+        "supplies": {
+          "herb": 10,
+          "rune": 8,
+          "arrow": 6
+        },
+        "casts": 5,
+        "skills": {
+          "mastery": 1,
+          "mindcall": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 112
+      }
+    ],
+    "paid": {
+      "hero": "e",
+      "skill": "mindcall",
+      "xp": 20,
+      "before": 795,
+      "after": 775
+    },
+    "formal": {
+      "id": 18,
+      "seed": 18,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        5
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 4
+      },
+      "objective": {
+        "id": "reserve",
+        "met": true,
+        "metrics": {
+          "won": true,
+          "cleared": 2,
+          "rooms": 2,
+          "rounds": 7,
+          "alive": 6,
+          "herb": 9,
+          "rune": 4,
+          "arrow": 4
+        }
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 85,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 1920
+    },
+    "matrix": [
+      {
+        "hero": "a",
+        "rival": "shield",
+        "seed": 1,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 30,
+        "heroMp": 6,
+        "opponentHp": 48,
+        "opponentMp": 21,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 36,
+        "skills": {
+          "guard": 12,
+          "strike": 24
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 97
+      },
+      {
+        "hero": "a",
+        "rival": "shield",
+        "seed": 731,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 80,
+        "heroMp": 6,
+        "opponentHp": 56,
+        "opponentMp": 21,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 36,
+        "skills": {
+          "guard": 12,
+          "strike": 24
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 89
+      },
+      {
+        "hero": "a",
+        "rival": "sigil",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 10,
+        "heroHp": 0,
+        "heroMp": 37,
+        "opponentHp": 6,
+        "opponentMp": 70,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 14,
+        "skills": {
+          "guard": 5,
+          "strike": 9
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 119
+      },
+      {
+        "hero": "a",
+        "rival": "sigil",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 7,
+        "heroHp": 0,
+        "heroMp": 37,
+        "opponentHp": 36,
+        "opponentMp": 75,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 10,
+        "skills": {
+          "guard": 4,
+          "strike": 6
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 89
+      },
+      {
+        "hero": "a",
+        "rival": "bow",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 5,
+        "heroHp": 0,
+        "heroMp": 38,
+        "opponentHp": 118,
+        "opponentMp": 65,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 7,
+        "skills": {
+          "guard": 3,
+          "strike": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 12
+      },
+      {
+        "hero": "a",
+        "rival": "bow",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 5,
+        "heroHp": 0,
+        "heroMp": 38,
+        "opponentHp": 115,
+        "opponentMp": 65,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 7,
+        "skills": {
+          "guard": 3,
+          "strike": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 15
+      },
+      {
+        "hero": "b",
+        "rival": "shield",
+        "seed": 1,
+        "outcome": "victory",
+        "rounds": 12,
+        "heroHp": 7,
+        "heroMp": 4,
+        "opponentHp": 0,
+        "opponentMp": 39,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 7
+        },
+        "casts": 12,
+        "skills": {
+          "volley": 9,
+          "shot": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 145
+      },
+      {
+        "hero": "b",
+        "rival": "shield",
+        "seed": 731,
+        "outcome": "victory",
+        "rounds": 9,
+        "heroHp": 43,
+        "heroMp": 1,
+        "opponentHp": 0,
+        "opponentMp": 42,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 7
+        },
+        "casts": 9,
+        "skills": {
+          "volley": 9
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 145
+      },
+      {
+        "hero": "b",
+        "rival": "sigil",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 26,
+        "opponentHp": 92,
+        "opponentMp": 80,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 13
+        },
+        "casts": 3,
+        "skills": {
+          "volley": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 33
+      },
+      {
+        "hero": "b",
+        "rival": "sigil",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 21,
+        "opponentHp": 59,
+        "opponentMp": 80,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 12
+        },
+        "casts": 4,
+        "skills": {
+          "volley": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 66
+      },
+      {
+        "hero": "b",
+        "rival": "bow",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 5,
+        "heroHp": 0,
+        "heroMp": 17,
+        "opponentHp": 72,
+        "opponentMp": 61,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 12
+        },
+        "casts": 4,
+        "skills": {
+          "volley": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 58
+      },
+      {
+        "hero": "b",
+        "rival": "bow",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 8,
+        "heroHp": 0,
+        "heroMp": 2,
+        "opponentHp": 27,
+        "opponentMp": 61,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 9
+        },
+        "casts": 7,
+        "skills": {
+          "volley": 7
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 103
+      },
+      {
+        "hero": "c",
+        "rival": "shield",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 59,
+        "opponentHp": 106,
+        "opponentMp": 49,
+        "supplies": {
+          "herb": 16,
+          "rune": 19,
+          "arrow": 16
+        },
+        "casts": 3,
+        "skills": {
+          "wave": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 39
+      },
+      {
+        "hero": "c",
+        "rival": "shield",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 5,
+        "heroHp": 0,
+        "heroMp": 48,
+        "opponentHp": 34,
+        "opponentMp": 43,
+        "supplies": {
+          "herb": 16,
+          "rune": 17,
+          "arrow": 16
+        },
+        "casts": 5,
+        "skills": {
+          "wave": 5
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 111
+      },
+      {
+        "hero": "c",
+        "rival": "sigil",
+        "seed": 1,
+        "outcome": "victory",
+        "rounds": 6,
+        "heroHp": 58,
+        "heroMp": 31,
+        "opponentHp": 0,
+        "opponentMp": 68,
+        "supplies": {
+          "herb": 16,
+          "rune": 16,
+          "arrow": 16
+        },
+        "casts": 6,
+        "skills": {
+          "wave": 6
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 125
+      },
+      {
+        "hero": "c",
+        "rival": "sigil",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 8,
+        "heroHp": 0,
+        "heroMp": 23,
+        "opponentHp": 32,
+        "opponentMp": 61,
+        "supplies": {
+          "herb": 16,
+          "rune": 15,
+          "arrow": 16
+        },
+        "casts": 7,
+        "skills": {
+          "wave": 7
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 93
+      },
+      {
+        "hero": "c",
+        "rival": "bow",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 59,
+        "opponentHp": 38,
+        "opponentMp": 64,
+        "supplies": {
+          "herb": 16,
+          "rune": 19,
+          "arrow": 16
+        },
+        "casts": 3,
+        "skills": {
+          "wave": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 92
+      },
+      {
+        "hero": "c",
+        "rival": "bow",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 3,
+        "heroHp": 0,
+        "heroMp": 64,
+        "opponentHp": 45,
+        "opponentMp": 63,
+        "supplies": {
+          "herb": 16,
+          "rune": 20,
+          "arrow": 16
+        },
+        "casts": 2,
+        "skills": {
+          "wave": 2
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 85
+      },
+      {
+        "hero": "d",
+        "rival": "shield",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 72,
+        "opponentHp": 130,
+        "opponentMp": 49,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 3,
+        "skills": {
+          "spark": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 15
+      },
+      {
+        "hero": "d",
+        "rival": "shield",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 5,
+        "heroHp": 0,
+        "heroMp": 71,
+        "opponentHp": 90,
+        "opponentMp": 43,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 5,
+        "skills": {
+          "spark": 5
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 55
+      },
+      {
+        "hero": "d",
+        "rival": "sigil",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 15,
+        "heroHp": 0,
+        "heroMp": 42,
+        "opponentHp": 19,
+        "opponentMp": 37,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 14,
+        "skills": {
+          "spark": 14
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 106
+      },
+      {
+        "hero": "d",
+        "rival": "sigil",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 8,
+        "heroHp": 0,
+        "heroMp": 56,
+        "opponentHp": 84,
+        "opponentMp": 61,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 7,
+        "skills": {
+          "spark": 7
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 41
+      },
+      {
+        "hero": "d",
+        "rival": "bow",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 72,
+        "opponentHp": 80,
+        "opponentMp": 64,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 3,
+        "skills": {
+          "spark": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 50
+      },
+      {
+        "hero": "d",
+        "rival": "bow",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 72,
+        "opponentHp": 56,
+        "opponentMp": 64,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 3,
+        "skills": {
+          "spark": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 74
+      },
+      {
+        "hero": "e",
+        "rival": "shield",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 6,
+        "heroHp": 0,
+        "heroMp": 55,
+        "opponentHp": 28,
+        "opponentMp": 48,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 7,
+        "skills": {
+          "mastery": 1,
+          "shot": 6
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 117
+      },
+      {
+        "hero": "e",
+        "rival": "shield",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 5,
+        "heroHp": 0,
+        "heroMp": 55,
+        "opponentHp": 65,
+        "opponentMp": 48,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 6,
+        "skills": {
+          "mastery": 1,
+          "shot": 5
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 80
+      },
+      {
+        "hero": "e",
+        "rival": "sigil",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 7,
+        "heroHp": 0,
+        "heroMp": 43,
+        "opponentHp": 47,
+        "opponentMp": 75,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 7,
+        "skills": {
+          "mastery": 1,
+          "shot": 6
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 78
+      },
+      {
+        "hero": "e",
+        "rival": "sigil",
+        "seed": 731,
+        "outcome": "victory",
+        "rounds": 6,
+        "heroHp": 12,
+        "heroMp": 46,
+        "opponentHp": 0,
+        "opponentMp": 81,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 7,
+        "skills": {
+          "mastery": 1,
+          "shot": 6
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 125
+      },
+      {
+        "hero": "e",
+        "rival": "bow",
+        "seed": 1,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 54,
+        "opponentHp": 96,
+        "opponentMp": 61,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 4,
+        "skills": {
+          "mastery": 1,
+          "shot": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 34
+      },
+      {
+        "hero": "e",
+        "rival": "bow",
+        "seed": 731,
+        "outcome": "defeat",
+        "rounds": 4,
+        "heroHp": 0,
+        "heroMp": 54,
+        "opponentHp": 58,
+        "opponentMp": 60,
+        "supplies": {
+          "herb": 16,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 5,
+        "skills": {
+          "mastery": 1,
+          "shot": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 72
+      },
+      {
+        "hero": "f",
+        "rival": "shield",
+        "seed": 1,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 65,
+        "heroMp": 31,
+        "opponentHp": 122,
+        "opponentMp": 32,
+        "supplies": {
+          "herb": 4,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 25,
+        "skills": {
+          "provisions": 1,
+          "shot": 13,
+          "heal": 11
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 23
+      },
+      {
+        "hero": "f",
+        "rival": "shield",
+        "seed": 731,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 72,
+        "heroMp": 26,
+        "opponentHp": 113,
+        "opponentMp": 33,
+        "supplies": {
+          "herb": 3,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 25,
+        "skills": {
+          "provisions": 1,
+          "shot": 12,
+          "heal": 12
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 32
+      },
+      {
+        "hero": "f",
+        "rival": "sigil",
+        "seed": 1,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 86,
+        "heroMp": 18,
+        "opponentHp": 56,
+        "opponentMp": 50,
+        "supplies": {
+          "herb": 11,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 25,
+        "skills": {
+          "provisions": 1,
+          "shot": 20,
+          "heal": 4
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 69
+      },
+      {
+        "hero": "f",
+        "rival": "sigil",
+        "seed": 731,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 93,
+        "heroMp": 23,
+        "opponentHp": 32,
+        "opponentMp": 50,
+        "supplies": {
+          "herb": 12,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 25,
+        "skills": {
+          "provisions": 1,
+          "shot": 21,
+          "heal": 3
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 93
+      },
+      {
+        "hero": "f",
+        "rival": "bow",
+        "seed": 1,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 57,
+        "heroMp": 26,
+        "opponentHp": 117,
+        "opponentMp": 64,
+        "supplies": {
+          "herb": 3,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 25,
+        "skills": {
+          "provisions": 1,
+          "shot": 12,
+          "heal": 12
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 13
+      },
+      {
+        "hero": "f",
+        "rival": "bow",
+        "seed": 731,
+        "outcome": "timeout",
+        "rounds": 24,
+        "heroHp": 91,
+        "heroMp": 16,
+        "opponentHp": 67,
+        "opponentMp": 65,
+        "supplies": {
+          "herb": 1,
+          "rune": 22,
+          "arrow": 16
+        },
+        "casts": 25,
+        "skills": {
+          "provisions": 1,
+          "shot": 10,
+          "heal": 14
+        },
+        "noRoleChecks": 0,
+        "failed": 0,
+        "damage": 63
+      }
+    ],
+    "limits": "Three private losses kept at seed731 without tuning the rivals or selecting another seed. The normal18 report is a six-person expedition at newly assigned seed18; not evidence that training alone caused victory or that solo ranks classes. Fixed36 fresh samples are finite, not balance coverage. Practice never writes a guild, claims rewards or persists temporary supplies."
+  },
+  "stateAssertions": {
+    "startGold": 1835,
+    "finalGold": 1920,
+    "normalDeparture": 18,
+    "normalSeed": 18,
+    "paidMindcallXp": 20,
+    "privateRewards": 0,
+    "ordinaryRewardsOnly": true,
+    "warehouseIdentityRolesEquipmentGoalUnchanged": true,
+    "allOldHistoryPreservedExactly": true,
+    "proofs": {
+      "clear": 16,
+      "survive": 17,
+      "reserve": 18
+    },
+    "campaignAndNamedBindingRestore": true,
+    "practiceAbsentFromCampaign": true,
+    "storageByteEqualityDuringPracticeAndReplay": true,
+    "crossPageChangeAndDeletionRejectedWithoutOverwrite": true
+  },
+  "initialFindings": {
+    "unitFirst": {
+      "tests": 15,
+      "passed": 13,
+      "failed": 2,
+      "log": "unit-initial.tap",
+      "causes": [
+        "Wrong expectation that all engine room summary rows carry id; verify actual room event and name without changing engine.",
+        "Invented echo skill on bard rejected by existing profession validation; replaced fixture with actual mage sentinel and rune payment."
+      ]
+    },
+    "browserFirst": {
+      "passed": false,
+      "file": "browser-initial.json",
+      "cause": "Target selector was hidden because script retained team pane; explicitly open overview."
+    },
+    "browserSecond": {
+      "passed": false,
+      "file": "browser-second.json",
+      "cause": "Script used planning-only guild-run while in guild; use actual visible departure panel."
+    },
+    "reviewFixes": [
+      "Use member.advancement.path for actual object-shaped paid progress, test real learned courses and reduced costs.",
+      "Item HP/MP recovery must be labelled recovery, not damage; readable actual material names/quantities."
+    ],
+    "itemFixtureFirst": {
+      "tests": 19,
+      "passed": 18,
+      "failed": 1,
+      "file": "unit-display-initial.tap",
+      "cause": "Threshold1 is outside existing0.3/0.5/0.7 choices. Use allowed0.7, do not broaden production validation. Full run with this initial fixture retained in full-final-release-tests.tap."
+    },
+    "assertionsWeakened": false,
+    "seedsChangedToPass": false,
+    "rivalStatsOrCostsOrHPAdjustedAfterDiscovery": false
+  },
+  "referenceBoundary": {
+    "date": "2026-11-06",
+    "primary": [
+      {
+        "url": "https://world-of-dungeons.net/",
+        "access": "full text read in public web tool",
+        "supports": "Official homepage describes hero duels and character planning/cooperation; promotional testimonials do not define current mechanics."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/Hero_-_Settings_-_Standard_View",
+        "access": "public search index only; direct open502, not retried",
+        "supports": "Indexed historical text distinguishes one-on-one, group and guild duel settings."
+      },
+      {
+        "url": "https://world-of-dungeons.net/ency/Gameplay",
+        "access": "public search index only",
+        "supports": "Indexed text states configurations govern dungeons and duels."
+      }
+    ],
+    "adaptation": "Offline one-own-hero vs3 authored local AI profiles; current actual assets/default tactics/current preparation seed and supplies; no formal rewards/registration/ranking;24-round cap/replay/snapshot/stale rules and all opponent numbers are project-original provisional design, not a verified replica of a current original server. Summons use existing engine, not additional multiplayer.",
+    "permissions": "No authentication/security settings changed. No retry or alias of previously blocked reference pages."
+  },
+  "scope": {
+    "actualOwnHeroOnly": true,
+    "existingSummonsAllowed": true,
+    "defaultCommandsOnly": true,
+    "actualGearTrainingCoursesAndAdvancement": true,
+    "formalPendingBlocksNewPractice": true,
+    "ephemeralResultAndDedicatedExport": true,
+    "noPracticeStorageWrites": true,
+    "combatEngineChanged": false,
+    "newPlayerConfigFields": false,
+    "newSkillsOrGearOrRewards": false,
+    "rulesetVersionChanged": false,
+    "routes": 25,
+    "gear": 40,
+    "ordinaryGoals": 75,
+    "permanentSuppliesImplemented": false,
+    "remoteWrites": false,
+    "mainMerge": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "build": "dist is directly shipped source; no bundler build step"
+  },
+  "remaining": {
+    "blocking": [],
+    "pendingUserDecision": "Supply persistence already asked by parent; not implemented while awaiting reply, does not block independent work.",
+    "limitations": [
+      "Original-server current duels/numbers not verified; local AI/zero-reward/24-round/snapshot rules and all opponents are project-original provisional.",
+      "36 fixed starting cases and three actual private losses plus one normal six-person run are finite evidence, not class balance/ranking or a causal training benefit.",
+      "Courses/advancement and a real item use are unit boundaries, not claimed as purchases on the normal18 browser chain.",
+      "No Firefox/Safari/physical-device testing.",
+      "No external artifact upload or remote push."
+    ]
+  }
+}

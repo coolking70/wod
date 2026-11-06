@@ -1,0 +1,978 @@
+{
+  "startGold": 1835,
+  "own": "e",
+  "private": [
+    {
+      "seed": 731,
+      "hero": "e",
+      "rival": "shield",
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 57,
+      "opponentHp": 56,
+      "opponentMp": 51,
+      "supplies": {
+        "herb": 10,
+        "rune": 8,
+        "arrow": 6
+      },
+      "casts": 5,
+      "skills": {
+        "mastery": 1,
+        "shot": 4
+      },
+      "noRoleChecks": 4,
+      "failed": 0,
+      "damage": 89
+    },
+    {
+      "seed": 731,
+      "hero": "e",
+      "rival": "shield",
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 33,
+      "opponentHp": 36,
+      "opponentMp": 47,
+      "supplies": {
+        "herb": 10,
+        "rune": 8,
+        "arrow": 6
+      },
+      "casts": 5,
+      "skills": {
+        "mastery": 1,
+        "mindcall": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 109
+    },
+    {
+      "seed": 731,
+      "hero": "e",
+      "rival": "shield",
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 33,
+      "opponentHp": 33,
+      "opponentMp": 47,
+      "supplies": {
+        "herb": 10,
+        "rune": 8,
+        "arrow": 6
+      },
+      "casts": 5,
+      "skills": {
+        "mastery": 1,
+        "mindcall": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 112
+    }
+  ],
+  "paid": {
+    "hero": "e",
+    "skill": "mindcall",
+    "xp": 20,
+    "before": 795,
+    "after": 775
+  },
+  "formal": {
+    "id": 18,
+    "seed": 18,
+    "won": true,
+    "alive": 6,
+    "rounds": [
+      2,
+      5
+    ],
+    "supplies": {
+      "herb": 9,
+      "rune": 4,
+      "arrow": 4
+    },
+    "objective": {
+      "id": "reserve",
+      "met": true,
+      "metrics": {
+        "won": true,
+        "cleared": 2,
+        "rooms": 2,
+        "rounds": 7,
+        "alive": 6,
+        "herb": 9,
+        "rune": 4,
+        "arrow": 4
+      }
+    },
+    "reward": {
+      "cleared": 2,
+      "gold": 85,
+      "xp": 40,
+      "firstClear": false,
+      "loot": []
+    },
+    "gold": 1920
+  },
+  "matrix": [
+    {
+      "hero": "a",
+      "rival": "shield",
+      "seed": 1,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 30,
+      "heroMp": 6,
+      "opponentHp": 48,
+      "opponentMp": 21,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 36,
+      "skills": {
+        "guard": 12,
+        "strike": 24
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 97
+    },
+    {
+      "hero": "a",
+      "rival": "shield",
+      "seed": 731,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 80,
+      "heroMp": 6,
+      "opponentHp": 56,
+      "opponentMp": 21,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 36,
+      "skills": {
+        "guard": 12,
+        "strike": 24
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 89
+    },
+    {
+      "hero": "a",
+      "rival": "sigil",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 10,
+      "heroHp": 0,
+      "heroMp": 37,
+      "opponentHp": 6,
+      "opponentMp": 70,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 14,
+      "skills": {
+        "guard": 5,
+        "strike": 9
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 119
+    },
+    {
+      "hero": "a",
+      "rival": "sigil",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 7,
+      "heroHp": 0,
+      "heroMp": 37,
+      "opponentHp": 36,
+      "opponentMp": 75,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 10,
+      "skills": {
+        "guard": 4,
+        "strike": 6
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 89
+    },
+    {
+      "hero": "a",
+      "rival": "bow",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 5,
+      "heroHp": 0,
+      "heroMp": 38,
+      "opponentHp": 118,
+      "opponentMp": 65,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 7,
+      "skills": {
+        "guard": 3,
+        "strike": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 12
+    },
+    {
+      "hero": "a",
+      "rival": "bow",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 5,
+      "heroHp": 0,
+      "heroMp": 38,
+      "opponentHp": 115,
+      "opponentMp": 65,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 7,
+      "skills": {
+        "guard": 3,
+        "strike": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 15
+    },
+    {
+      "hero": "b",
+      "rival": "shield",
+      "seed": 1,
+      "outcome": "victory",
+      "rounds": 12,
+      "heroHp": 7,
+      "heroMp": 4,
+      "opponentHp": 0,
+      "opponentMp": 39,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 7
+      },
+      "casts": 12,
+      "skills": {
+        "volley": 9,
+        "shot": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 145
+    },
+    {
+      "hero": "b",
+      "rival": "shield",
+      "seed": 731,
+      "outcome": "victory",
+      "rounds": 9,
+      "heroHp": 43,
+      "heroMp": 1,
+      "opponentHp": 0,
+      "opponentMp": 42,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 7
+      },
+      "casts": 9,
+      "skills": {
+        "volley": 9
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 145
+    },
+    {
+      "hero": "b",
+      "rival": "sigil",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 26,
+      "opponentHp": 92,
+      "opponentMp": 80,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 13
+      },
+      "casts": 3,
+      "skills": {
+        "volley": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 33
+    },
+    {
+      "hero": "b",
+      "rival": "sigil",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 21,
+      "opponentHp": 59,
+      "opponentMp": 80,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 12
+      },
+      "casts": 4,
+      "skills": {
+        "volley": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 66
+    },
+    {
+      "hero": "b",
+      "rival": "bow",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 5,
+      "heroHp": 0,
+      "heroMp": 17,
+      "opponentHp": 72,
+      "opponentMp": 61,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 12
+      },
+      "casts": 4,
+      "skills": {
+        "volley": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 58
+    },
+    {
+      "hero": "b",
+      "rival": "bow",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 8,
+      "heroHp": 0,
+      "heroMp": 2,
+      "opponentHp": 27,
+      "opponentMp": 61,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 9
+      },
+      "casts": 7,
+      "skills": {
+        "volley": 7
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 103
+    },
+    {
+      "hero": "c",
+      "rival": "shield",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 59,
+      "opponentHp": 106,
+      "opponentMp": 49,
+      "supplies": {
+        "herb": 16,
+        "rune": 19,
+        "arrow": 16
+      },
+      "casts": 3,
+      "skills": {
+        "wave": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 39
+    },
+    {
+      "hero": "c",
+      "rival": "shield",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 5,
+      "heroHp": 0,
+      "heroMp": 48,
+      "opponentHp": 34,
+      "opponentMp": 43,
+      "supplies": {
+        "herb": 16,
+        "rune": 17,
+        "arrow": 16
+      },
+      "casts": 5,
+      "skills": {
+        "wave": 5
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 111
+    },
+    {
+      "hero": "c",
+      "rival": "sigil",
+      "seed": 1,
+      "outcome": "victory",
+      "rounds": 6,
+      "heroHp": 58,
+      "heroMp": 31,
+      "opponentHp": 0,
+      "opponentMp": 68,
+      "supplies": {
+        "herb": 16,
+        "rune": 16,
+        "arrow": 16
+      },
+      "casts": 6,
+      "skills": {
+        "wave": 6
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 125
+    },
+    {
+      "hero": "c",
+      "rival": "sigil",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 8,
+      "heroHp": 0,
+      "heroMp": 23,
+      "opponentHp": 32,
+      "opponentMp": 61,
+      "supplies": {
+        "herb": 16,
+        "rune": 15,
+        "arrow": 16
+      },
+      "casts": 7,
+      "skills": {
+        "wave": 7
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 93
+    },
+    {
+      "hero": "c",
+      "rival": "bow",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 59,
+      "opponentHp": 38,
+      "opponentMp": 64,
+      "supplies": {
+        "herb": 16,
+        "rune": 19,
+        "arrow": 16
+      },
+      "casts": 3,
+      "skills": {
+        "wave": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 92
+    },
+    {
+      "hero": "c",
+      "rival": "bow",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 3,
+      "heroHp": 0,
+      "heroMp": 64,
+      "opponentHp": 45,
+      "opponentMp": 63,
+      "supplies": {
+        "herb": 16,
+        "rune": 20,
+        "arrow": 16
+      },
+      "casts": 2,
+      "skills": {
+        "wave": 2
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 85
+    },
+    {
+      "hero": "d",
+      "rival": "shield",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 72,
+      "opponentHp": 130,
+      "opponentMp": 49,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 3,
+      "skills": {
+        "spark": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 15
+    },
+    {
+      "hero": "d",
+      "rival": "shield",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 5,
+      "heroHp": 0,
+      "heroMp": 71,
+      "opponentHp": 90,
+      "opponentMp": 43,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 5,
+      "skills": {
+        "spark": 5
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 55
+    },
+    {
+      "hero": "d",
+      "rival": "sigil",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 15,
+      "heroHp": 0,
+      "heroMp": 42,
+      "opponentHp": 19,
+      "opponentMp": 37,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 14,
+      "skills": {
+        "spark": 14
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 106
+    },
+    {
+      "hero": "d",
+      "rival": "sigil",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 8,
+      "heroHp": 0,
+      "heroMp": 56,
+      "opponentHp": 84,
+      "opponentMp": 61,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 7,
+      "skills": {
+        "spark": 7
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 41
+    },
+    {
+      "hero": "d",
+      "rival": "bow",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 72,
+      "opponentHp": 80,
+      "opponentMp": 64,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 3,
+      "skills": {
+        "spark": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 50
+    },
+    {
+      "hero": "d",
+      "rival": "bow",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 72,
+      "opponentHp": 56,
+      "opponentMp": 64,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 3,
+      "skills": {
+        "spark": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 74
+    },
+    {
+      "hero": "e",
+      "rival": "shield",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 6,
+      "heroHp": 0,
+      "heroMp": 55,
+      "opponentHp": 28,
+      "opponentMp": 48,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 7,
+      "skills": {
+        "mastery": 1,
+        "shot": 6
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 117
+    },
+    {
+      "hero": "e",
+      "rival": "shield",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 5,
+      "heroHp": 0,
+      "heroMp": 55,
+      "opponentHp": 65,
+      "opponentMp": 48,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 6,
+      "skills": {
+        "mastery": 1,
+        "shot": 5
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 80
+    },
+    {
+      "hero": "e",
+      "rival": "sigil",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 7,
+      "heroHp": 0,
+      "heroMp": 43,
+      "opponentHp": 47,
+      "opponentMp": 75,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 7,
+      "skills": {
+        "mastery": 1,
+        "shot": 6
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 78
+    },
+    {
+      "hero": "e",
+      "rival": "sigil",
+      "seed": 731,
+      "outcome": "victory",
+      "rounds": 6,
+      "heroHp": 12,
+      "heroMp": 46,
+      "opponentHp": 0,
+      "opponentMp": 81,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 7,
+      "skills": {
+        "mastery": 1,
+        "shot": 6
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 125
+    },
+    {
+      "hero": "e",
+      "rival": "bow",
+      "seed": 1,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 54,
+      "opponentHp": 96,
+      "opponentMp": 61,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 4,
+      "skills": {
+        "mastery": 1,
+        "shot": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 34
+    },
+    {
+      "hero": "e",
+      "rival": "bow",
+      "seed": 731,
+      "outcome": "defeat",
+      "rounds": 4,
+      "heroHp": 0,
+      "heroMp": 54,
+      "opponentHp": 58,
+      "opponentMp": 60,
+      "supplies": {
+        "herb": 16,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 5,
+      "skills": {
+        "mastery": 1,
+        "shot": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 72
+    },
+    {
+      "hero": "f",
+      "rival": "shield",
+      "seed": 1,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 65,
+      "heroMp": 31,
+      "opponentHp": 122,
+      "opponentMp": 32,
+      "supplies": {
+        "herb": 4,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 25,
+      "skills": {
+        "provisions": 1,
+        "shot": 13,
+        "heal": 11
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 23
+    },
+    {
+      "hero": "f",
+      "rival": "shield",
+      "seed": 731,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 72,
+      "heroMp": 26,
+      "opponentHp": 113,
+      "opponentMp": 33,
+      "supplies": {
+        "herb": 3,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 25,
+      "skills": {
+        "provisions": 1,
+        "shot": 12,
+        "heal": 12
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 32
+    },
+    {
+      "hero": "f",
+      "rival": "sigil",
+      "seed": 1,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 86,
+      "heroMp": 18,
+      "opponentHp": 56,
+      "opponentMp": 50,
+      "supplies": {
+        "herb": 11,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 25,
+      "skills": {
+        "provisions": 1,
+        "shot": 20,
+        "heal": 4
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 69
+    },
+    {
+      "hero": "f",
+      "rival": "sigil",
+      "seed": 731,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 93,
+      "heroMp": 23,
+      "opponentHp": 32,
+      "opponentMp": 50,
+      "supplies": {
+        "herb": 12,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 25,
+      "skills": {
+        "provisions": 1,
+        "shot": 21,
+        "heal": 3
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 93
+    },
+    {
+      "hero": "f",
+      "rival": "bow",
+      "seed": 1,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 57,
+      "heroMp": 26,
+      "opponentHp": 117,
+      "opponentMp": 64,
+      "supplies": {
+        "herb": 3,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 25,
+      "skills": {
+        "provisions": 1,
+        "shot": 12,
+        "heal": 12
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 13
+    },
+    {
+      "hero": "f",
+      "rival": "bow",
+      "seed": 731,
+      "outcome": "timeout",
+      "rounds": 24,
+      "heroHp": 91,
+      "heroMp": 16,
+      "opponentHp": 67,
+      "opponentMp": 65,
+      "supplies": {
+        "herb": 1,
+        "rune": 22,
+        "arrow": 16
+      },
+      "casts": 25,
+      "skills": {
+        "provisions": 1,
+        "shot": 10,
+        "heal": 14
+      },
+      "noRoleChecks": 0,
+      "failed": 0,
+      "damage": 63
+    }
+  ],
+  "limits": "Three private losses kept at seed731 without tuning the rivals or selecting another seed. The normal18 report is a six-person expedition at newly assigned seed18; not evidence that training alone caused victory or that solo ranks classes. Fixed36 fresh samples are finite, not balance coverage. Practice never writes a guild, claims rewards or persists temporary supplies."
+}
