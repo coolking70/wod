@@ -1,0 +1,708 @@
+{
+  "startGold": 3005,
+  "normal": [
+    {
+      "id": 30,
+      "seed": 30,
+      "plan": "roles",
+      "objective": "clear",
+      "won": true,
+      "rounds": [
+        4,
+        5,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 180,
+        "xp": 80,
+        "firstClear": true,
+        "loot": [
+          "bridgehorn"
+        ]
+      },
+      "gold": 3185,
+      "assigned": [
+        "bridgehorn"
+      ],
+      "afterGear": {
+        "weapon": "bridgehorn",
+        "armor": "cloth",
+        "accessory": "calmribbon"
+      }
+    },
+    {
+      "id": 31,
+      "seed": 31,
+      "plan": "steady",
+      "objective": "survive",
+      "won": true,
+      "rounds": [
+        4,
+        5,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 4,
+        "rune": 1,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgecoat"
+        ]
+      },
+      "gold": 3305,
+      "assigned": [
+        "bridgecoat"
+      ],
+      "afterGear": {
+        "weapon": "bridgehorn",
+        "armor": "bridgecoat",
+        "accessory": "calmribbon"
+      }
+    },
+    {
+      "id": 32,
+      "seed": 32,
+      "plan": "roles",
+      "objective": "reserve",
+      "won": true,
+      "rounds": [
+        5,
+        5,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 5,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgehorn"
+        ]
+      },
+      "gold": 3425,
+      "assigned": [],
+      "afterGear": {
+        "weapon": "bridgehorn",
+        "armor": "bridgecoat",
+        "accessory": "calmribbon"
+      }
+    },
+    {
+      "id": 33,
+      "seed": 33,
+      "plan": "swift",
+      "objective": "clear",
+      "won": true,
+      "rounds": [
+        4,
+        3,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 3,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgebadge"
+        ]
+      },
+      "gold": 3545,
+      "assigned": [
+        "bridgebadge"
+      ],
+      "afterGear": {
+        "weapon": "bridgehorn",
+        "armor": "bridgecoat",
+        "accessory": "bridgebadge"
+      }
+    },
+    {
+      "id": 34,
+      "seed": 34,
+      "plan": "roles",
+      "objective": "survive",
+      "won": true,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgehorn"
+        ]
+      },
+      "gold": 3665,
+      "assigned": [],
+      "afterGear": {
+        "weapon": "bridgehorn",
+        "armor": "bridgecoat",
+        "accessory": "bridgebadge"
+      }
+    },
+    {
+      "id": 35,
+      "seed": 35,
+      "plan": "steady",
+      "objective": "reserve",
+      "won": true,
+      "rounds": [
+        4,
+        5,
+        7
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 1,
+        "arrow": 8
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgebadge"
+        ]
+      },
+      "gold": 3785,
+      "assigned": [],
+      "afterGear": {
+        "weapon": "bridgehorn",
+        "armor": "bridgecoat",
+        "accessory": "bridgebadge"
+      }
+    },
+    {
+      "id": 36,
+      "seed": 36,
+      "plan": "roles",
+      "objective": "survive",
+      "won": true,
+      "rounds": [
+        5,
+        4,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 4,
+        "rune": 0,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 120,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "bridgehorn"
+        ]
+      },
+      "gold": 3905,
+      "assigned": [],
+      "afterGear": {
+        "weapon": "bridgehorn",
+        "armor": "bridgecoat",
+        "accessory": "calmribbon"
+      }
+    }
+  ],
+  "partial": {
+    "gear": {
+      "weapon": "bridgehorn",
+      "armor": "bridgecoat",
+      "accessory": "calmribbon"
+    },
+    "totals": {
+      "armor": 2,
+      "bonus": {
+        "cha": 3,
+        "wil": 3,
+        "agi": -4,
+        "con": 1,
+        "int": -1
+      },
+      "resistances": {
+        "mental": 20,
+        "magic": 0
+      }
+    },
+    "sets": [
+      {
+        "id": "bridgewatch",
+        "name": "灯桥守望",
+        "equipped": [
+          "bridgehorn",
+          "bridgecoat"
+        ],
+        "count": 2,
+        "total": 3,
+        "tiers": [
+          {
+            "count": 2,
+            "armor": 0,
+            "bonus": {},
+            "resistances": {
+              "magic": 10
+            },
+            "active": true
+          },
+          {
+            "count": 3,
+            "armor": 0,
+            "bonus": {
+              "int": 2
+            },
+            "resistances": {
+              "ranged": 10,
+              "mental": -10
+            },
+            "active": false
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "key": "str",
+        "name": "力量",
+        "base": 6,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 6,
+        "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+      },
+      {
+        "key": "con",
+        "name": "体质",
+        "base": 10,
+        "focus": 3,
+        "training": 0,
+        "equipment": 1,
+        "set": 0,
+        "total": 14,
+        "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+      },
+      {
+        "key": "int",
+        "name": "智力",
+        "base": 11,
+        "focus": 0,
+        "training": 0,
+        "equipment": -1,
+        "set": 0,
+        "total": 10,
+        "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+      },
+      {
+        "key": "dex",
+        "name": "灵巧",
+        "base": 9,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 9,
+        "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+      },
+      {
+        "key": "cha",
+        "name": "魅力",
+        "base": 17,
+        "focus": 0,
+        "training": 0,
+        "equipment": 3,
+        "set": 0,
+        "total": 20,
+        "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+      },
+      {
+        "key": "agi",
+        "name": "敏捷",
+        "base": 12,
+        "focus": 0,
+        "training": 0,
+        "equipment": -4,
+        "set": 0,
+        "total": 8,
+        "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+      },
+      {
+        "key": "per",
+        "name": "感知",
+        "base": 12,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 12,
+        "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+      },
+      {
+        "key": "wil",
+        "name": "意志",
+        "base": 13,
+        "focus": 0,
+        "training": 1,
+        "equipment": 3,
+        "set": 0,
+        "total": 17,
+        "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+      }
+    ],
+    "resources": {
+      "maxHp": 106,
+      "maxMp": 57
+    }
+  },
+  "full": {
+    "gear": {
+      "weapon": "bridgehorn",
+      "armor": "bridgecoat",
+      "accessory": "bridgebadge"
+    },
+    "totals": {
+      "armor": 2,
+      "bonus": {
+        "cha": 3,
+        "wil": 1,
+        "agi": -2,
+        "con": 0,
+        "int": 1,
+        "per": 2
+      },
+      "resistances": {
+        "magic": 10,
+        "ranged": 10,
+        "mental": -10
+      }
+    },
+    "sets": [
+      {
+        "id": "bridgewatch",
+        "name": "灯桥守望",
+        "equipped": [
+          "bridgehorn",
+          "bridgecoat",
+          "bridgebadge"
+        ],
+        "count": 3,
+        "total": 3,
+        "tiers": [
+          {
+            "count": 2,
+            "armor": 0,
+            "bonus": {},
+            "resistances": {
+              "magic": 10
+            },
+            "active": true
+          },
+          {
+            "count": 3,
+            "armor": 0,
+            "bonus": {
+              "int": 2
+            },
+            "resistances": {
+              "ranged": 10,
+              "mental": -10
+            },
+            "active": true
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "key": "str",
+        "name": "力量",
+        "base": 6,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 6,
+        "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+      },
+      {
+        "key": "con",
+        "name": "体质",
+        "base": 10,
+        "focus": 3,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 13,
+        "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+      },
+      {
+        "key": "int",
+        "name": "智力",
+        "base": 11,
+        "focus": 0,
+        "training": 0,
+        "equipment": -1,
+        "set": 2,
+        "total": 12,
+        "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+      },
+      {
+        "key": "dex",
+        "name": "灵巧",
+        "base": 9,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 9,
+        "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+      },
+      {
+        "key": "cha",
+        "name": "魅力",
+        "base": 17,
+        "focus": 0,
+        "training": 0,
+        "equipment": 3,
+        "set": 0,
+        "total": 20,
+        "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+      },
+      {
+        "key": "agi",
+        "name": "敏捷",
+        "base": 12,
+        "focus": 0,
+        "training": 0,
+        "equipment": -2,
+        "set": 0,
+        "total": 10,
+        "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+      },
+      {
+        "key": "per",
+        "name": "感知",
+        "base": 12,
+        "focus": 0,
+        "training": 0,
+        "equipment": 2,
+        "set": 0,
+        "total": 14,
+        "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+      },
+      {
+        "key": "wil",
+        "name": "意志",
+        "base": 13,
+        "focus": 0,
+        "training": 1,
+        "equipment": 1,
+        "set": 0,
+        "total": 15,
+        "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+      }
+    ],
+    "resources": {
+      "maxHp": 102,
+      "maxMp": 59
+    }
+  },
+  "final": {
+    "gear": {
+      "weapon": "bridgehorn",
+      "armor": "bridgecoat",
+      "accessory": "calmribbon"
+    },
+    "totals": {
+      "armor": 2,
+      "bonus": {
+        "cha": 3,
+        "wil": 3,
+        "agi": -4,
+        "con": 1,
+        "int": -1
+      },
+      "resistances": {
+        "mental": 20,
+        "magic": 0
+      }
+    },
+    "sets": [
+      {
+        "id": "bridgewatch",
+        "name": "灯桥守望",
+        "equipped": [
+          "bridgehorn",
+          "bridgecoat"
+        ],
+        "count": 2,
+        "total": 3,
+        "tiers": [
+          {
+            "count": 2,
+            "armor": 0,
+            "bonus": {},
+            "resistances": {
+              "magic": 10
+            },
+            "active": true
+          },
+          {
+            "count": 3,
+            "armor": 0,
+            "bonus": {
+              "int": 2
+            },
+            "resistances": {
+              "ranged": 10,
+              "mental": -10
+            },
+            "active": false
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "key": "str",
+        "name": "力量",
+        "base": 6,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 6,
+        "use": "力量相关技能检定；不直接增加护甲或基础行动。"
+      },
+      {
+        "key": "con",
+        "name": "体质",
+        "base": 10,
+        "focus": 3,
+        "training": 0,
+        "equipment": 1,
+        "set": 0,
+        "total": 14,
+        "use": "每点增加4生命上限，同时参与相关技能检定；不直接改变护甲或抗性。"
+      },
+      {
+        "key": "int",
+        "name": "智力",
+        "base": 11,
+        "focus": 0,
+        "training": 0,
+        "equipment": -1,
+        "set": 0,
+        "total": 10,
+        "use": "每点增加2法力上限，并参与施法、救护与相关防御；不固定增加所有技能效果。"
+      },
+      {
+        "key": "dex",
+        "name": "灵巧",
+        "base": 9,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 9,
+        "use": "灵巧相关技能，以及原自然近战防御中的灵巧项。"
+      },
+      {
+        "key": "cha",
+        "name": "魅力",
+        "base": 17,
+        "focus": 0,
+        "training": 0,
+        "equipment": 3,
+        "set": 0,
+        "total": 20,
+        "use": "吟游辅助与心理技能的相关检定；不固定增加行动或覆盖人数。"
+      },
+      {
+        "key": "agi",
+        "name": "敏捷",
+        "base": 12,
+        "focus": 0,
+        "training": 0,
+        "equipment": -4,
+        "set": 0,
+        "total": 8,
+        "use": "每点增加2先攻均值，并参与相关防御；不额外增加行动次数。"
+      },
+      {
+        "key": "per",
+        "name": "感知",
+        "base": 12,
+        "focus": 0,
+        "training": 0,
+        "equipment": 0,
+        "set": 0,
+        "total": 12,
+        "use": "每点增加1先攻均值，并参与相关攻击与防御。"
+      },
+      {
+        "key": "wil",
+        "name": "意志",
+        "base": 13,
+        "focus": 0,
+        "training": 1,
+        "equipment": 3,
+        "set": 0,
+        "total": 17,
+        "use": "每点增加1法力上限，并参与相关施法与心智防御。"
+      }
+    ],
+    "resources": {
+      "maxHp": 106,
+      "maxMp": 57
+    }
+  },
+  "finalGold": 3905,
+  "finalGoal": {
+    "heroId": "e",
+    "gearId": "bridgebadge"
+  },
+  "limits": "Seven consecutive normal seeds30..36; plans/goal sequence fixed before discovery. First weapon and deterministic repeat-pool results use existing independent loot stream, no seed reset, item purchase, extra set reward or stat retuning. Same-person actually worn2/3 thresholds applied once; saved sets, inventory and other characters never count. Partial keeps mental ribbon, full adds INT/ranged defense and mental weakness; multiple input/seed changes are not causal comparison or a guarantee of global balance."
+}
