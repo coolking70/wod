@@ -1,0 +1,220 @@
+{
+  "passed": true,
+  "baselineCommit": "30918bf6224bf0b14f3e90183b826c5e945c6b08",
+  "Node": {
+    "tests": 1582,
+    "pass": 1582,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 23,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "11affected complete suites, not all66current suites",
+    "versions": [
+      121,
+      127,
+      132,
+      138,
+      140,
+      141,
+      144,
+      151,
+      157,
+      158,
+      159
+    ],
+    "originalCheckpointAttempts": 11,
+    "allCPsDurableMainAsCompleted": true,
+    "new159Screens": [
+      {
+        "file": "mana-flow-shield-desktop.png",
+        "eventId": 33,
+        "unitId": "msg",
+        "rows": 2,
+        "start": 30,
+        "received": 0,
+        "spent": 30,
+        "mp": 0,
+        "jumpTo": 33,
+        "originalFilters": {
+          "diagnostic": true,
+          "highlights-only": false,
+          "personal-playback": false
+        }
+      },
+      {
+        "file": "mana-flow-caster-desktop.png",
+        "eventId": 36,
+        "unitId": "d",
+        "rows": 3,
+        "start": 72,
+        "received": 1,
+        "spent": 11,
+        "mp": 62,
+        "jumpTo": 7,
+        "originalFilters": {
+          "diagnostic": true,
+          "highlights-only": false,
+          "personal-playback": false
+        }
+      },
+      {
+        "file": "mana-flow-grouped-desktop.png",
+        "eventId": 33,
+        "unitId": "msg",
+        "rows": 2,
+        "start": 30,
+        "received": 0,
+        "spent": 30,
+        "mp": 0,
+        "jumpTo": 33,
+        "originalFilters": {
+          "diagnostic": false,
+          "highlights-only": false,
+          "personal-playback": false
+        }
+      },
+      {
+        "file": "mana-flow-prepaid-mobile.png",
+        "eventId": 169,
+        "unitId": "pv-c",
+        "rows": 5,
+        "start": 80,
+        "received": 3,
+        "spent": 6,
+        "mp": 77,
+        "jumpTo": 44,
+        "originalFilters": {
+          "diagnostic": true,
+          "highlights-only": false,
+          "personal-playback": true
+        }
+      }
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 176,
+    "checkedReferences": 195,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 692,
+  "sourceInputs": 744,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-mana-timeline.mjs",
+      "scripts/browser-v159.cjs",
+      "scripts/check-v159.mjs",
+      "scripts/fixtures/v159-preparation-state.json",
+      "scripts/mana-timeline-cases.mjs",
+      "tests/mana-timeline.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-resource-ledger.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 732,
+    "distExact": 204
+  },
+  "compatibility": {
+    "freshOldFullJSON": 90,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through99AllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 11150,
+    "next": 102,
+    "ownHero": "e",
+    "ownXP": 4725,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "normal": [
+      {
+        "id": 100,
+        "route": "manashield",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 2,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "windups": 0
+      },
+      {
+        "id": 101,
+        "route": "pressurevault",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4
+        ],
+        "supplies": {
+          "herb": 9,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 1,
+          "gold": 70,
+          "xp": 30,
+          "firstClear": false,
+          "loot": []
+        },
+        "windups": 1
+      }
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v159/browser-final/mana-flow-final-campaign.json": "b5a5cb02473785a955aaaead7206e918b6c239ada312073511fa8f4f78e05bef",
+    "/workspace/wod-evidence/v159/browser-final/mana-flow-final-four-raw-keys.json": "b401ca0e1daaa6508c51f4a67221cf5c8eeb39e3c4d032799647030326ba7c84"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "No new full66GUI run at this minor stage; next complete milestone161–163.",
+    "Retained first test failure from missing released cast in default encounter; separate fixed highHPtime fixture added, release assertion kept.",
+    "Initial baseline and browser harness failures from hidden controls retained; no production code altered to bypass checks.",
+    "Supply economy and actual original-server numeric rules pending."
+  ],
+  "nextMainWindow": [
+    161,
+    163
+  ]
+}
