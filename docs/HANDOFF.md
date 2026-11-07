@@ -1,3 +1,5 @@
+> 当前优先看[HANDOFF_CLOUD_V156](HANDOFF_CLOUD_V156.md)，规范10540/next96，feature/v156-exploration-index；main保持155，窗口158–160，补给待决。
+
 > 当前接续优先看[HANDOFF_CLOUD_V155](HANDOFF_CLOUD_V155.md)；feature/v155-homecoming-testimony，规范10170/next94，主线状态与门禁见交付收据。
 
 > v154新增渡口招抚：公开头领可在孤立、低生命且受攻击削弱/法力耗尽时保留生命退出战斗，击倒亦可清场，不增技能/装备或招抚奖金。正常90/91六人，终9930/next92。见[实现与原创边界](V154_ENEMY_SURRENDER.md)、[交接](HANDOFF_CLOUD_V154.md)。本轮定向GUI与完整Node，main保持152、窗口155–157；已核验退役三份重复源码容器，旧证据/引用保留，补给待决。

@@ -1,0 +1,17 @@
+{
+  "stage": 156,
+  "base": "514090a99cca7f74f51aec1e97dabcb028b254df",
+  "scope": "Readonly exploration index for34existing routes: all/unvisited/cleared/bound, theme, title/mechanics/normal-drop-relic query; explicit claimed progress, pending not counted. Session-only preferences, no new campaign/guild fields. Add missing returnquest map entry and correct old UI milestone badge independently of report ruleset.",
+  "normal": [
+    "94greenhouse via unvisited ordinary-drop query滤露",
+    "95scriptorium via unvisited title逆印书库"
+  ],
+  "source": "pinned canonical155fourkeys, no historical replay as source",
+  "testing": "previous exact722source baseline1520Node62GUI reused; new scoped UI/state tests plus fullNode with2workers; complete GUI94/95/98/118/137/155/156, no full63 rerun thisminor. main158–160 futurefullgate.",
+  "storage": {
+    "oneTimeCacheArchival": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/RESULT.json",
+    "newStageEvidence": "focused suites only, original CP master, physical verification before duplicate retirement",
+    "noNewFullSourceBundle": true
+  },
+  "pending": "Permanent supply economy, real-server numeric calibration, accounts/multiplayer and deployment remain out of scope"
+}

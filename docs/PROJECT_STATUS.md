@@ -1,3 +1,5 @@
+> v156探索入口与可持续留存完成度以[V156实现](V156_EXPLORATION_INDEX.md)、[检查](V156_CHECKS.json)、[交接](HANDOFF_CLOUD_V156.md)及外部收据为准。
+
 > v155归岸证词与完整集成门禁：见[V155实现](V155_HOMECOMING_TESTIMONY.md)、[检查](V155_CHECKS.json)、[交接](HANDOFF_CLOUD_V155.md)。main是否集成以外部收据为准；不部署，补给待决。
 
 > v154新增渡口招抚：公开头领可在孤立、低生命且受攻击削弱/法力耗尽时保留生命退出战斗，击倒亦可清场，不增技能/装备或招抚奖金。正常90/91六人，终9930/next92。见[实现与原创边界](V154_ENEMY_SURRENDER.md)、[交接](HANDOFF_CLOUD_V154.md)。本轮定向GUI与完整Node，main保持152、窗口155–157；已核验退役三份重复源码容器，旧证据/引用保留，补给待决。

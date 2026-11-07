@@ -1,0 +1,473 @@
+{
+  "passed": true,
+  "baseline": "514090a99cca7f74f51aec1e97dabcb028b254df",
+  "tests": {
+    "baselineExact155Reused": {
+      "Node": 1520,
+      "GUI": 62,
+      "sourceInputs": 722,
+      "proof": "/workspace/wod-evidence/v156/baseline.json"
+    },
+    "fullFinal": {
+      "tests": 1537,
+      "pass": 1537,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "NodeWorkerCount": 2,
+    "lateRunnerOnlyFixTargets": {
+      "tests": 17,
+      "pass": 17,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "sameAppAndOther727InputsExactAfterFullRun": true,
+    "lateRunnerFix": {
+      "reason": "Legacy check-v94/95 write historical docs. Preserve generated current outputs separately, restore original155historical documents, use same direct fixture preparation as full browser runner.",
+      "restored": [
+        {
+          "path": "/workspace/wod/docs/V94_PLAYCHECK.json",
+          "generatedSHA256": "d93c2b8ce2a80319e760e4f271a964790f239cc35ffb24c8eda342d06a732f53",
+          "restored155GitBlobSHA256": "05121fc95c3111fe5d3479cc225b3388ba111261e4aa2f32a245de1e44bc0707"
+        },
+        {
+          "path": "/workspace/wod/docs/V95_PLAYCHECK.json",
+          "generatedSHA256": "4da4290eee564eb91cf8a712c6823c505f2d68d276dea779f9f1ca4bf21e78cb",
+          "restored155GitBlobSHA256": "9f56132ea35f19800c69763431188010f2685b56db9637ed77aa4bf4e60372b4"
+        }
+      ],
+      "onlyPostFullSourceChange": [
+        "scripts/run-browser-focused.mjs"
+      ],
+      "allOther727SourceInputsExact": true,
+      "appAndBrowserRuntimeSourceUnchanged": true,
+      "full1537OnSameAppInputsReused": true,
+      "requiresFresh17TargetedTestsAndComplete94and95GUI": true,
+      "original7CPsPreserved": true
+    },
+    "directFixtureBytesAndHistoricalReports": {
+      "passed": true,
+      "fixtures": [
+        {
+          "file": "goal-desktop-api-guild.json",
+          "sha256": "ad7ea897a5238c5ce9632de3f17f3bf990a53d6b580e1cd74dfa108d16a0b9c0",
+          "exactInputBytesBeforeAndAfterFix": true
+        },
+        {
+          "file": "goal-final-api-guild.json",
+          "sha256": "021a4ec816fbef9655c52a33ff014cb57c06c4b0255d89ee03dc1f74c31f57b9",
+          "exactInputBytesBeforeAndAfterFix": true
+        },
+        {
+          "file": "goal-aged-api-guild.json",
+          "sha256": "e26088fea273ddd97a0d048354c6476596f44795839a09dd4129f6a1f9483bc6",
+          "exactInputBytesBeforeAndAfterFix": true
+        }
+      ],
+      "historical94and95ReportsStillExact155GitBlobsAfterCompleteGUIs": true,
+      "allAppRuntimeSourceUnchanged": true
+    },
+    "specialized": {
+      "tests": 17,
+      "pass": 17,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "newExplorationCases": 17,
+    "PythonInsideNodeWrapper": 21,
+    "initialFailurePreserved": "browser-first: planner executes before module reached late explorationPreference initializer; moved initialization before planner, complete assertions kept. First log/screenshot preserved."
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 174,
+    "checkedReferences": 193,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "javascriptTotal": 679,
+    "javascriptCheckedThisPhase": [
+      "dist/expedition-exploration-index.mjs",
+      "dist/expedition-ui.mjs",
+      "scripts/browser-v156.cjs",
+      "scripts/check-v156.mjs",
+      "scripts/exploration-index-cases.mjs",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs",
+      "tests/exploration-index.test.mjs"
+    ],
+    "unchangedPrior155JavaScriptCount": 671,
+    "unchangedPriorPythonCount": 4,
+    "lateRunnerDocSafeSyntaxChecked": true
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "oldInputs": 722,
+    "newInputs": 728,
+    "changed": [
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldOtherExact": 717,
+    "oldDistOtherExact": 203,
+    "engineDataLootAll34RouteFactoriesAndReportRulesetExact": true
+  },
+  "sourceFilesChecked": 728,
+  "full1537AppSourceSameAsFinalPlusRunnerRetest17": true,
+  "browser": {
+    "passed": true,
+    "totalSelectedSuites": 7,
+    "versions": [
+      94,
+      95,
+      98,
+      118,
+      137,
+      155,
+      156
+    ],
+    "fullCurrent63NotRunThisMinor": true,
+    "onlyChromiumDesktopAnd390MobileViewport": true,
+    "canonicalFourKeysExactFirstAndFocusedAcceptance": true
+  },
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONExactExceptStrictAddedBardSkill6": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "nativePriorCompatibility": {
+    "153": {
+      "passed": true,
+      "rows": [
+        {
+          "id": 88,
+          "path": "/workspace/wod-evidence/v153/native-first/control-1-report.json",
+          "compactSHA256": "059458a66da0a48689fbfc61809955b8f55e2122c82d2f42de7e4e6f8535e3ef",
+          "allFieldsAndOrderExact": true
+        },
+        {
+          "id": 89,
+          "path": "/workspace/wod-evidence/v153/native-first/control-2-report.json",
+          "compactSHA256": "9d37d4b7f7f152370a86453843adda9801c018b1a8c445bfa5556189a7414495",
+          "allFieldsAndOrderExact": true
+        }
+      ]
+    },
+    "154": {
+      "passed": true,
+      "rows": [
+        {
+          "id": 90,
+          "path": "/workspace/wod-evidence/v154/native-first/surrender-1-report.json",
+          "compactSHA256": "52ff671a90c8b79ca3aeee9c4d7d21472b5086e8489a1e40357d3f490825b270",
+          "allFieldsAndOrderExact": true
+        },
+        {
+          "id": 91,
+          "path": "/workspace/wod-evidence/v154/native-first/surrender-2-report.json",
+          "compactSHA256": "36ed657326d2cfb94e65131fd4c9bc2f69c8f756c398830b9e185cabb26e6a12",
+          "allFieldsAndOrderExact": true
+        }
+      ]
+    },
+    "155": {
+      "passed": true,
+      "rows": [
+        {
+          "id": 92,
+          "path": "/workspace/wod-evidence/v155/native-final/return-1-report.json",
+          "compactSHA256": "4f11f1a44653ed880f95b7b657982197ad587431767a24214345efa4e762f9a2",
+          "allFieldsAndOrderExact": true
+        },
+        {
+          "id": 93,
+          "path": "/workspace/wod-evidence/v155/native-final/return-2-report.json",
+          "compactSHA256": "c7e08d981cd1d535d3990be26531683dca219e3eba7e33e1e6c38264fc13faaa",
+          "allFieldsAndOrderExact": true
+        }
+      ]
+    }
+  },
+  "nativeContinuation": {
+    "normal": [
+      {
+        "id": 94,
+        "route": "greenhouse",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 190,
+          "xp": 80,
+          "firstClear": true,
+          "loot": [
+            "filterveil"
+          ]
+        }
+      },
+      {
+        "id": 95,
+        "route": "scriptorium",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 5,
+          "rune": 1,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 180,
+          "xp": 75,
+          "firstClear": true,
+          "loot": [
+            "counterlens"
+          ]
+        }
+      }
+    ],
+    "canonicalFilesSHA256": {
+      "/workspace/wod-evidence/v156/browser-final/explore-final-campaign.json": "92b9adf8300a4c3b6d41b52ce3a5f7c80779b9f14e08b5f466bda32ca197193c",
+      "/workspace/wod-evidence/v156/browser-final/explore-final-four-raw-keys.json": "6f83513e31c1291a8db1006fe569c77ffd9d4289b33bf582c6b6e5c2cba18d0f"
+    },
+    "formalSourceDirectlyFrom155": true
+  },
+  "nativeState": {
+    "gold": 10540,
+    "next": 96,
+    "ownHero": "e",
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "recruited": 7,
+    "catalogue": 9,
+    "frozenEntries": 5,
+    "encodedChars": 793208,
+    "plans": 3,
+    "heroXP": 4460,
+    "claimedRoutes": 22,
+    "canonicalNativeCampaign": "/workspace/wod-evidence/v156/browser-final/explore-final-campaign.json",
+    "canonicalNativeFourKeys": "/workspace/wod-evidence/v156/browser-final/explore-final-four-raw-keys.json"
+  },
+  "maintenance": {
+    "passed": true,
+    "baseCommit": "514090a99cca7f74f51aec1e97dabcb028b254df",
+    "versions": [
+      128,
+      129,
+      130,
+      131,
+      133,
+      135
+    ],
+    "results": [
+      {
+        "version": 128,
+        "archive": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v128/wod-v128-complete-current-acceptance.zip",
+        "archiveBytes": 139064163,
+        "archiveSHA256": "06c18b23a4290aa61de3680c410a4ecc28df60a8bca657af4727cb94d3c26ffc",
+        "files": 693,
+        "images": 53,
+        "rawLogicalBytes": 1061071193,
+        "mainMeasuredNetBytesReleased": 923242496,
+        "plan": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v128/retention-plan.json",
+        "proof": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v128/physical-proof.json",
+        "receipt": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v128/retirement.json",
+        "pointer": "/workspace/wod-evidence/v128/ACCEPTANCE_RETIRED_d32f5c8dd2e2.json",
+        "temporaryDuplicateBytesRetired": 139064163
+      },
+      {
+        "version": 129,
+        "archive": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v129/wod-v129-complete-current-acceptance.zip",
+        "archiveBytes": 134441713,
+        "archiveSHA256": "f1712add6c8cc81e58552528b8a6476bef45c6fd45255aef4a365d90bbde0aa3",
+        "files": 682,
+        "images": 53,
+        "rawLogicalBytes": 1033119669,
+        "mainMeasuredNetBytesReleased": 899891200,
+        "plan": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v129/retention-plan.json",
+        "proof": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v129/physical-proof.json",
+        "receipt": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v129/retirement.json",
+        "pointer": "/workspace/wod-evidence/v129/ACCEPTANCE_RETIRED_a2c63b1655fd.json",
+        "temporaryDuplicateBytesRetired": 134441713
+      },
+      {
+        "version": 130,
+        "archive": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v130/wod-v130-complete-current-acceptance.zip",
+        "archiveBytes": 182748262,
+        "archiveSHA256": "6001e456674891c4d1a95ca7527b909b8fb0eabaf0c809d5b6683696de1751f0",
+        "files": 902,
+        "images": 67,
+        "rawLogicalBytes": 1394646090,
+        "mainMeasuredNetBytesReleased": 1213517824,
+        "plan": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v130/retention-plan.json",
+        "proof": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v130/physical-proof.json",
+        "receipt": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v130/retirement.json",
+        "pointer": "/workspace/wod-evidence/v130/ACCEPTANCE_RETIRED_1f4f6ba71a71.json",
+        "temporaryDuplicateBytesRetired": 182748262
+      },
+      {
+        "version": 131,
+        "archive": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v131/wod-v131-complete-current-acceptance.zip",
+        "archiveBytes": 118791263,
+        "archiveSHA256": "27b964061e143a2de7f103341a7d97a2158868a017ccf65b4da7c5744310438d",
+        "files": 726,
+        "images": 57,
+        "rawLogicalBytes": 1075929649,
+        "mainMeasuredNetBytesReleased": 958468096,
+        "plan": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v131/retention-plan.json",
+        "proof": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v131/physical-proof.json",
+        "receipt": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v131/retirement.json",
+        "pointer": "/workspace/wod-evidence/v131/ACCEPTANCE_RETIRED_63351d93f1bf.json",
+        "temporaryDuplicateBytesRetired": 118791263
+      },
+      {
+        "version": 133,
+        "archive": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v133/wod-v133-complete-current-acceptance.zip",
+        "archiveBytes": 139465154,
+        "archiveSHA256": "3df4bac0e37a0ebc49ce0c3ce1490c90b08e8f19ecbb3c7cbab18a12fd711ddc",
+        "files": 784,
+        "images": 65,
+        "rawLogicalBytes": 1212954640,
+        "mainMeasuredNetBytesReleased": 1074900992,
+        "plan": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v133/retention-plan.json",
+        "proof": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v133/physical-proof.json",
+        "receipt": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v133/retirement.json",
+        "pointer": "/workspace/wod-evidence/v133/ACCEPTANCE_RETIRED_6f0b31551afd.json",
+        "temporaryDuplicateBytesRetired": 139465154
+      },
+      {
+        "version": 135,
+        "archive": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v135/wod-v135-complete-current-acceptance.zip",
+        "archiveBytes": 158542597,
+        "archiveSHA256": "adbcac8c0785fa6ebb7044a2d2c46e075ca714c163b9ee49bbbed73f4aff9124",
+        "files": 834,
+        "images": 69,
+        "rawLogicalBytes": 1336272840,
+        "mainMeasuredNetBytesReleased": 1179201536,
+        "plan": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v135/retention-plan.json",
+        "proof": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v135/physical-proof.json",
+        "receipt": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v135/retirement.json",
+        "pointer": "/workspace/wod-evidence/v135/ACCEPTANCE_RETIRED_42268fb3fab3.json",
+        "temporaryDuplicateBytesRetired": 158542597
+      }
+    ],
+    "totalFilesPreserved": 4621,
+    "totalImagesPreserved": 364,
+    "rawLogicalBytesRetired": 7113994081,
+    "newPersistentArchiveBytes": 873053152,
+    "mainMeasuredNetBytesReleased": 6249181184,
+    "allOtherProtectedFilesMetadataUnchanged": 18770,
+    "allCriticalSourceChainsCanonical155AndMastersExact": true,
+    "all722SourceInputsHeadsSixRetainedUnchanged": true,
+    "beforeFreeBytes": {
+      "/workspace": 1612742656,
+      "/tmp": 7339720704
+    },
+    "afterFreeBytes": {
+      "/workspace": 7861923840,
+      "/tmp": 7339720704
+    },
+    "noOldVerificationZIPCodeBundleUniqueEvidenceRefGCPruneOrRemoteWrite": true
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "manifestSHA256": "28a52e50f6e9e0c893d6ed11feb304b68fe6dec7c0e6fec581d41927c26a0d0a",
+    "checksumFileSHA256": "cd893bc5098eed69b47664c7eebfb87eef3ea7952bc259bb5f8a80166a78e587",
+    "snapshots": [
+      {
+        "path": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v128/wod-v128-complete-current-acceptance.zip",
+        "bytes": 139064163,
+        "sha256": "06c18b23a4290aa61de3680c410a4ecc28df60a8bca657af4727cb94d3c26ffc",
+        "version": 128,
+        "files": 693,
+        "images": 53
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v129/wod-v129-complete-current-acceptance.zip",
+        "bytes": 134441713,
+        "sha256": "f1712add6c8cc81e58552528b8a6476bef45c6fd45255aef4a365d90bbde0aa3",
+        "version": 129,
+        "files": 682,
+        "images": 53
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v130/wod-v130-complete-current-acceptance.zip",
+        "bytes": 182748262,
+        "sha256": "6001e456674891c4d1a95ca7527b909b8fb0eabaf0c809d5b6683696de1751f0",
+        "version": 130,
+        "files": 902,
+        "images": 67
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v131/wod-v131-complete-current-acceptance.zip",
+        "bytes": 118791263,
+        "sha256": "27b964061e143a2de7f103341a7d97a2158868a017ccf65b4da7c5744310438d",
+        "version": 131,
+        "files": 726,
+        "images": 57
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v133/wod-v133-complete-current-acceptance.zip",
+        "bytes": 139465154,
+        "sha256": "3df4bac0e37a0ebc49ce0c3ce1490c90b08e8f19ecbb3c7cbab18a12fd711ddc",
+        "version": 133,
+        "files": 784,
+        "images": 65
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156/v135/wod-v135-complete-current-acceptance.zip",
+        "bytes": 158542597,
+        "sha256": "adbcac8c0785fa6ebb7044a2d2c46e075ca714c163b9ee49bbbed73f4aff9124",
+        "version": 135,
+        "files": 834,
+        "images": 69
+      }
+    ],
+    "newStageDoesNotDuplicateSnapshotBytes": true
+  },
+  "main": "remains155 exact514090a; next158–160 complete milestone full gates",
+  "limits": [
+    "Search/progress UI is project design, not a current-original-WoD rule claim",
+    "Ordinary-drop query is not a guarantee or complete story/contract-source search; no difficulty or win ranking",
+    "Only explicit saved goals count; pending or ordinary success does not infer three achievements",
+    "Old78permit only prior taunt6 field; remaining full fields/order/digests exact; native88–93 reports whole JSON exact",
+    "Full current63GUI not run this minor; only7complete affected suites, prior155full62 proof retained",
+    "Only Chromium desktop390mobile viewport, no real devices/other engines",
+    "Permanent supply economy pending; no force/GC/prune/deploy; old143timestamp/IDgap not claimed repaired",
+    "Retired older128129130131133135 raw acceptances require verified maintenance snapshots to restore; all old ZIPs/source refs/other unique evidence retained"
+  ],
+  "postCommitResults": "Exact commit/recovery/push/retention in external checksummed delivery receipts"
+}
