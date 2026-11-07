@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "baseline": "18cb5519fb9c596234442ee16269215b22044011",
+  "tests": {
+    "full": {
+      "tests": 1353,
+      "pass": 1353,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    },
+    "disease": {
+      "tests": 12,
+      "pass": 12,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-second.tap"
+    },
+    "evidenceTool": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "storage-initial.tap"
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 163,
+    "checkedReferences": 181,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 626,
+    "python": 2,
+    "failures": []
+  },
+  "browser": {
+    "passed": true,
+    "suites": 53,
+    "allFinalRuntime": true,
+    "directSuccessfulAttempt": 2,
+    "failedAttempt1Preserved": true,
+    "failureReason": "test asserted inside closed threat details; corrected actual overview/summary click, no forced hidden click",
+    "canonicalCampaign": "/workspace/wod-evidence/v145/browser-final/disease-final-campaign.json",
+    "canonicalFourKeys": "/workspace/wod-evidence/v145/browser-final/disease-final-four-raw-keys.json",
+    "ChromiumDesktopAnd390TouchEmulationOnly": true
+  },
+  "sourceFilesChecked": 662,
+  "compatibility": {
+    "passed": true,
+    "completePriorStatesConfigsReports": 7,
+    "byteExactZeroFieldExclusions": true
+  },
+  "guildBoundary": {
+    "passed": true,
+    "allGuildFieldsExactAfterOnlyExplicitNormalRewardsAndBoundedHistory": true,
+    "goldBefore": 8090,
+    "goldAfter": 8330,
+    "nextBefore": 74,
+    "nextAfter": 76,
+    "ordinaryGold": 240,
+    "ordinaryXP": 100,
+    "warehouseUnchanged": true,
+    "benchAWholeMemberUnchanged": true,
+    "identityRolesEquipmentTrainingItemsStoriesUnchanged": true,
+    "onlyFreePreparationChoiceChangesNotPaidGuildEdits": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "oldProofs": 25,
+    "newProof": "sporegrove/survive74",
+    "afterProofs": 26,
+    "history": "75..56, old55 naturally truncated, full old55 kept in baseline-history55 and api-final/disease-history55",
+    "sha256": "e7b488efc27d575ceeee21ef4388b59d772cd391df5539ee3639404cfb773edf"
+  },
+  "confirmation": {
+    "distinctValidInputs": 8,
+    "allSixAlive": true,
+    "onlyECHAtoCONInPairedSeeds": true,
+    "seed1CONMoreOneRound": true,
+    "seed732CONMoreOneArrow": true,
+    "noGlobalUpgradeOrPerHitRNGClaim": true,
+    "invalidInitialDuplicatePairsPreserved": "api-initial, corrected explicitCHA reference without modifying enemies/fees/seeds/Native plan"
+  },
+  "storage": {
+    "format": "wod-checkpoint-stage/version1",
+    "oneDurableContainerOfOriginalCheckpointZIPBytes": true,
+    "originalsNestedLosslessly": true,
+    "allSourceModesMtimeNsIndexed": true,
+    "tempCheckpointDuplicatesNotRetiredBeforeRestoreGate": true,
+    "finalRetirementAndSizes": "external delivery receipts; do not assume old temp paths remain present"
+  },
+  "research": {
+    "url": "https://testwelt.world-of-dungeons.de/ency/Parade",
+    "evidence": "initial primary indexed historical CON/CHA standard defence table",
+    "live": "403, not retried or bypassed",
+    "currentServerVerified": false,
+    "adapted": "skill, cost, rooms, numbers, retained nonmental armor policy"
+  },
+  "limits": [
+    "no permanent supply economy or disease injury",
+    "no new player skill/gear/defence slot",
+    "old55 naturally truncated after75; full previous report kept in evidence, old frozen entries not erased",
+    "only limited founders inputs, no balance/global necessity proof",
+    "main not merged, no deployment, no force or GC/prune"
+  ],
+  "pushAndRecovery": "Exact final commit/remote/restore and evidence-retirement state in external delivery manifest, avoiding self SHA reference"
+}

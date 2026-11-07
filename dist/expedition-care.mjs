@@ -41,5 +41,5 @@ export function enemyBadge(config,unit){
  if(template?.skills.interpose!==undefined)return {kind:'mixed',label:'援护支援',symbol:'盾'};
  const types=[...new Set(Object.keys(template?.skills||{}).map(k=>SKILLS[k]?.type).filter(Boolean))];
  if(types.length>1)return {kind:'mixed',label:'复合',symbol:'✧'};
- return ({melee:{kind:'melee',label:'近战',symbol:'盾'},ranged:{kind:'ranged',label:'远程',symbol:'弩'},magic:{kind:'magic',label:'法术',symbol:'咒'},mental:{kind:'magic',label:'心理',symbol:'心'}})[types[0]]||{kind:'mixed',label:'敌方',symbol:'◇'};
+ return ({melee:{kind:'melee',label:'近战',symbol:'盾'},ranged:{kind:'ranged',label:'远程',symbol:'弩'},magic:{kind:'magic',label:'法术',symbol:'咒'},mental:{kind:'magic',label:'心理',symbol:'心'},disease:{kind:'disease',label:'疾病',symbol:'孢'}})[types[0]]||{kind:'mixed',label:'敌方',symbol:'◇'};
 }

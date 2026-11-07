@@ -1,0 +1,103 @@
+{
+  "frozenBeforeImplementationAndResults": true,
+  "phase": "v145 disease attack and natural CON/CHA defence",
+  "core": "enemy-only disease skill, natural2CON+CHA no MP and no new defence configuration slot; existing global defence bonuses apply, existing nonmental armor and typed resistance policy retained; no persistent infection/DoT/new player skills or gear",
+  "route": "sporegrove",
+  "rooms": [
+    {
+      "id": "spore-entry",
+      "enemies": [
+        {
+          "id": "sgg",
+          "pos": "front",
+          "hp": 150,
+          "skills": {
+            "strike": 8
+          }
+        },
+        {
+          "id": "sgp",
+          "pos": "rear",
+          "hp": 180,
+          "skills": {
+            "spores": 8
+          },
+          "target": "all"
+        }
+      ]
+    },
+    {
+      "id": "spore-heart",
+      "enemies": [
+        {
+          "id": "shg",
+          "pos": "front",
+          "hp": 180,
+          "skills": {
+            "strike": 9
+          }
+        },
+        {
+          "id": "shp",
+          "pos": "rear",
+          "hp": 240,
+          "skills": {
+            "spores": 10,
+            "guard": 6
+          },
+          "prep": "guard/self/repeat",
+          "target": "all"
+        }
+      ]
+    }
+  ],
+  "attrs": {
+    "str": 12,
+    "con": 16,
+    "int": 18,
+    "dex": 12,
+    "cha": 8,
+    "agi": 12,
+    "per": 12,
+    "wil": 14
+  },
+  "mp": 80,
+  "gear": "field",
+  "enemySkill": {
+    "id": "spores",
+    "name": "孢潮喷散",
+    "type": "disease",
+    "kind": "attack",
+    "primary": "int",
+    "secondary": "con",
+    "power": 0.8,
+    "cost": 4,
+    "item": "herb",
+    "max": 6,
+    "mode": "all"
+  },
+  "budget": 30,
+  "supplies": {
+    "herb": 12,
+    "rune": 10,
+    "arrow": 8
+  },
+  "reward": {
+    "bonus": 60,
+    "xp": 25,
+    "firstGold": 40,
+    "firstXp": 10,
+    "pool": []
+  },
+  "normal": "actual144 final8090 next74, six active beryl/b/c/d/e/f ownE;74newroute defaults,75free E CHA→CON and D wardcenter; no purchases/training/course/recruit/role edits, preserve all real results",
+  "confirmation": "founder zeroXP seeds1,2,731,732 × explicitECHA / onlyEattributeCON; all other fields exact, eight distinct full configs/reports",
+  "compatibility": "old reports zero field exclusions; snapshots include disease resistance only when declared disease skill is in report templates/party; old four-type snapshots stay byte exact, frozen entries never rewritten",
+  "source": {
+    "url": "https://testwelt.world-of-dungeons.de/ency/Parade",
+    "evidence": "initial official-page indexed text lists Krankheit CON/CHA and standard mean2primary+secondary; current page request403, no retry/bypass",
+    "limitation": "historical cached index, not verified current Delta; authored skill/encounters/payment and retained nonmental armor policy are prototype adaptation"
+  },
+  "storage": "single durable nested checkpoint evidence ZIP preserves every original checkpoint ZIP byte, raw inputs/exports/images/metadata recoverable without storing two durable copies; temp checkpoint duplicates retired only after full SHA/CRC and restore proof; old evidence/recovery chains untouched",
+  "gates": "full tests +53browser suites +byte-exact previous7states/reports +completecampaign/native asset boundary +offline restore +normal branchpush; main remains143 until146–148",
+  "confirmationCorrectionAfterInitialMechanicalTest": "Initial default() already set E CON, so the proposed finite pairs were duplicates and a +12HP assertion failed. Explicit CHA reference restores intended single-input comparison; initial full outputs/log preserved. No encounter, fee, seed or Native plan tuned."
+}

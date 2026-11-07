@@ -1,3 +1,5 @@
+> 当前阶段v0.145：雾孢温径与疾病耐病，见[交接](docs/HANDOFF_CLOUD_V145.md)、[实现与原版证据边界](docs/V145_DISEASE_DEFENCE.md)、[单份证据包恢复](docs/V145_EVIDENCE_PACKAGING.md)。阶段分支推送/main状态以交付收据为准。
+
 > 当前云端阶段 v0.144：调压潮炉与蓄能时序，见[交接](docs/HANDOFF_CLOUD_V144.md)及[实现/实玩限制](docs/V144_CHANNELED_CASTING.md)。main里程碑仍为143，阶段分支推送结果看交付收据。
 
 # 深潮远征 / wod

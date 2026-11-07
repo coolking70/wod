@@ -1,0 +1,2730 @@
+{
+  "startGold": 8090,
+  "normal": [
+    {
+      "id": 74,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 2
+      },
+      "diseaseHits": [
+        {
+          "id": 44,
+          "target": "beryl",
+          "actual": 0,
+          "grade": "命中",
+          "mean": 72,
+          "mp": 0
+        },
+        {
+          "id": 47,
+          "target": "b",
+          "actual": 11,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 49,
+          "target": "c",
+          "actual": 18,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 51,
+          "target": "d",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 34,
+          "mp": 0
+        },
+        {
+          "id": 54,
+          "target": "e",
+          "actual": 9,
+          "grade": "重击",
+          "mean": 45,
+          "mp": 0
+        },
+        {
+          "id": 56,
+          "target": "f",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 38,
+          "mp": 0
+        },
+        {
+          "id": 79,
+          "target": "beryl",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 84,
+          "mp": 0
+        },
+        {
+          "id": 82,
+          "target": "b",
+          "actual": 11,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 84,
+          "target": "c",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 86,
+          "target": "d",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 34,
+          "mp": 0
+        },
+        {
+          "id": 89,
+          "target": "e",
+          "actual": 12,
+          "grade": "命中",
+          "mean": 45,
+          "mp": 0
+        },
+        {
+          "id": 91,
+          "target": "f",
+          "actual": 16,
+          "grade": "重击",
+          "mean": 38,
+          "mp": 0
+        },
+        {
+          "id": 137,
+          "target": "beryl",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 84,
+          "mp": 0
+        },
+        {
+          "id": 140,
+          "target": "b",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 142,
+          "target": "c",
+          "actual": 16,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 144,
+          "target": "d",
+          "actual": 11,
+          "grade": "重击",
+          "mean": 34,
+          "mp": 0
+        },
+        {
+          "id": 147,
+          "target": "e",
+          "actual": 11,
+          "grade": "重击",
+          "mean": 45,
+          "mp": 0
+        },
+        {
+          "id": 149,
+          "target": "f",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 38,
+          "mp": 0
+        },
+        {
+          "id": 205,
+          "target": "beryl",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 72,
+          "mp": 0
+        },
+        {
+          "id": 208,
+          "target": "b",
+          "actual": 20,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 210,
+          "target": "c",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 212,
+          "target": "d",
+          "actual": 18,
+          "grade": "重击",
+          "mean": 34,
+          "mp": 0
+        },
+        {
+          "id": 215,
+          "target": "e",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 45,
+          "mp": 0
+        },
+        {
+          "id": 217,
+          "target": "f",
+          "actual": 8,
+          "grade": "重击",
+          "mean": 38,
+          "mp": 0
+        },
+        {
+          "id": 247,
+          "target": "beryl",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 84,
+          "mp": 0
+        },
+        {
+          "id": 250,
+          "target": "b",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 252,
+          "target": "c",
+          "actual": 10,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 254,
+          "target": "d",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 34,
+          "mp": 0
+        },
+        {
+          "id": 257,
+          "target": "e",
+          "actual": 21,
+          "grade": "重击",
+          "mean": 45,
+          "mp": 0
+        },
+        {
+          "id": 259,
+          "target": "f",
+          "actual": 18,
+          "grade": "致命",
+          "mean": 38,
+          "mp": 0
+        },
+        {
+          "id": 305,
+          "target": "beryl",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 84,
+          "mp": 0
+        },
+        {
+          "id": 308,
+          "target": "b",
+          "actual": 11,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 310,
+          "target": "c",
+          "actual": 21,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 312,
+          "target": "d",
+          "actual": 20,
+          "grade": "致命",
+          "mean": 34,
+          "mp": 0
+        },
+        {
+          "id": 315,
+          "target": "e",
+          "actual": 12,
+          "grade": "命中",
+          "mean": 45,
+          "mp": 0
+        },
+        {
+          "id": 317,
+          "target": "f",
+          "actual": 9,
+          "grade": "命中",
+          "mean": 38,
+          "mp": 0
+        }
+      ],
+      "reward": {
+        "cleared": 2,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": []
+      },
+      "gold": 8230
+    },
+    {
+      "id": 75,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 2,
+        "arrow": 1
+      },
+      "diseaseHits": [
+        {
+          "id": 37,
+          "target": "beryl",
+          "actual": 10,
+          "grade": "命中",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 40,
+          "target": "b",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 42,
+          "target": "c",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 55,
+          "mp": 0
+        },
+        {
+          "id": 44,
+          "target": "d",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 57,
+          "mp": 0
+        },
+        {
+          "id": 47,
+          "target": "e",
+          "actual": 9,
+          "grade": "重击",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 49,
+          "target": "f",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 61,
+          "mp": 0
+        },
+        {
+          "id": 97,
+          "target": "beryl",
+          "actual": 2,
+          "grade": "命中",
+          "mean": 60,
+          "mp": 0
+        },
+        {
+          "id": 100,
+          "target": "b",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 102,
+          "target": "c",
+          "actual": 18,
+          "grade": "命中",
+          "mean": 55,
+          "mp": 0
+        },
+        {
+          "id": 104,
+          "target": "d",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 57,
+          "mp": 0
+        },
+        {
+          "id": 107,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 109,
+          "target": "f",
+          "actual": 10,
+          "grade": "命中",
+          "mean": 61,
+          "mp": 0
+        },
+        {
+          "id": 182,
+          "target": "beryl",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 185,
+          "target": "b",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 187,
+          "target": "c",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 55,
+          "mp": 0
+        },
+        {
+          "id": 189,
+          "target": "d",
+          "actual": 11,
+          "grade": "重击",
+          "mean": 57,
+          "mp": 0
+        },
+        {
+          "id": 192,
+          "target": "e",
+          "actual": 7,
+          "grade": "命中",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 194,
+          "target": "f",
+          "actual": 9,
+          "grade": "命中",
+          "mean": 61,
+          "mp": 0
+        },
+        {
+          "id": 235,
+          "target": "beryl",
+          "actual": 9,
+          "grade": "重击",
+          "mean": 60,
+          "mp": 0
+        },
+        {
+          "id": 238,
+          "target": "b",
+          "actual": 18,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 240,
+          "target": "c",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 55,
+          "mp": 0
+        },
+        {
+          "id": 242,
+          "target": "d",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 57,
+          "mp": 0
+        },
+        {
+          "id": 245,
+          "target": "e",
+          "actual": 9,
+          "grade": "命中",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 247,
+          "target": "f",
+          "actual": 8,
+          "grade": "命中",
+          "mean": 61,
+          "mp": 0
+        },
+        {
+          "id": 296,
+          "target": "beryl",
+          "actual": 9,
+          "grade": "命中",
+          "mean": 60,
+          "mp": 0
+        },
+        {
+          "id": 299,
+          "target": "b",
+          "actual": 18,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 301,
+          "target": "c",
+          "actual": 23,
+          "grade": "重击",
+          "mean": 55,
+          "mp": 0
+        },
+        {
+          "id": 303,
+          "target": "d",
+          "actual": 15,
+          "grade": "命中",
+          "mean": 57,
+          "mp": 0
+        },
+        {
+          "id": 306,
+          "target": "e",
+          "actual": 15,
+          "grade": "命中",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 308,
+          "target": "f",
+          "actual": 14,
+          "grade": "命中",
+          "mean": 61,
+          "mp": 0
+        },
+        {
+          "id": 349,
+          "target": "beryl",
+          "actual": 1,
+          "grade": "命中",
+          "mean": 60,
+          "mp": 0
+        },
+        {
+          "id": 352,
+          "target": "b",
+          "actual": 25,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 354,
+          "target": "c",
+          "actual": 14,
+          "grade": "命中",
+          "mean": 55,
+          "mp": 0
+        },
+        {
+          "id": 356,
+          "target": "d",
+          "actual": 16,
+          "grade": "命中",
+          "mean": 57,
+          "mp": 0
+        },
+        {
+          "id": 359,
+          "target": "e",
+          "actual": 24,
+          "grade": "致命",
+          "mean": 48,
+          "mp": 0
+        },
+        {
+          "id": 361,
+          "target": "f",
+          "actual": 10,
+          "grade": "命中",
+          "mean": 61,
+          "mp": 0
+        }
+      ],
+      "reward": {
+        "cleared": 2,
+        "gold": 100,
+        "xp": 45,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 8330
+    }
+  ],
+  "finalGold": 8330,
+  "next": 76,
+  "confirmation": [
+    {
+      "key": "confirmation-1-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 3,
+        "arrow": 2
+      },
+      "diseaseHits": [
+        {
+          "id": 43,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 45,
+          "target": "b",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 47,
+          "target": "c",
+          "actual": 28,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 49,
+          "target": "d",
+          "actual": 15,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 51,
+          "target": "e",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 53,
+          "target": "f",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 84,
+          "target": "a",
+          "actual": 5,
+          "grade": "重击",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 86,
+          "target": "b",
+          "actual": 23,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 88,
+          "target": "c",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 90,
+          "target": "d",
+          "actual": 10,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 92,
+          "target": "e",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 94,
+          "target": "f",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 160,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 162,
+          "target": "b",
+          "actual": 16,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 164,
+          "target": "c",
+          "actual": 29,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 166,
+          "target": "d",
+          "actual": 11,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 168,
+          "target": "e",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 170,
+          "target": "f",
+          "actual": 9,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 206,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 208,
+          "target": "b",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 210,
+          "target": "c",
+          "actual": 17,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 212,
+          "target": "d",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 214,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 216,
+          "target": "f",
+          "actual": 7,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 268,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 270,
+          "target": "b",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 272,
+          "target": "c",
+          "actual": 13,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 274,
+          "target": "d",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 276,
+          "target": "e",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 278,
+          "target": "f",
+          "actual": 12,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    },
+    {
+      "key": "confirmation-1-con",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 2
+      },
+      "diseaseHits": [
+        {
+          "id": 43,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 45,
+          "target": "b",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 47,
+          "target": "c",
+          "actual": 28,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 49,
+          "target": "d",
+          "actual": 15,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 51,
+          "target": "e",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 53,
+          "target": "f",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 84,
+          "target": "a",
+          "actual": 5,
+          "grade": "重击",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 86,
+          "target": "b",
+          "actual": 23,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 88,
+          "target": "c",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 90,
+          "target": "d",
+          "actual": 10,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 92,
+          "target": "e",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 94,
+          "target": "f",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 160,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 162,
+          "target": "b",
+          "actual": 16,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 164,
+          "target": "c",
+          "actual": 29,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 166,
+          "target": "d",
+          "actual": 11,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 168,
+          "target": "e",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 170,
+          "target": "f",
+          "actual": 9,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 206,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 208,
+          "target": "b",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 210,
+          "target": "c",
+          "actual": 17,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 212,
+          "target": "d",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 214,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 216,
+          "target": "f",
+          "actual": 7,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 268,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 270,
+          "target": "b",
+          "actual": 14,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 272,
+          "target": "c",
+          "actual": 13,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 274,
+          "target": "d",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 276,
+          "target": "e",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 278,
+          "target": "f",
+          "actual": 12,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    },
+    {
+      "key": "confirmation-2-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 2
+      },
+      "diseaseHits": [
+        {
+          "id": 40,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 42,
+          "target": "b",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 44,
+          "target": "c",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 46,
+          "target": "d",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 48,
+          "target": "e",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 50,
+          "target": "f",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 87,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 89,
+          "target": "b",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 91,
+          "target": "c",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 93,
+          "target": "d",
+          "actual": 10,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 95,
+          "target": "e",
+          "actual": 10,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 97,
+          "target": "f",
+          "actual": 7,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 153,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 155,
+          "target": "b",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 157,
+          "target": "c",
+          "actual": 20,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 159,
+          "target": "d",
+          "actual": 29,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 161,
+          "target": "e",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 163,
+          "target": "f",
+          "actual": 18,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 197,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 199,
+          "target": "b",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 201,
+          "target": "c",
+          "actual": 20,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 203,
+          "target": "d",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 205,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 207,
+          "target": "f",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 246,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 248,
+          "target": "b",
+          "actual": 13,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 250,
+          "target": "c",
+          "actual": 25,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 252,
+          "target": "d",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 254,
+          "target": "e",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 256,
+          "target": "f",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    },
+    {
+      "key": "confirmation-2-con",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 2,
+        "arrow": 2
+      },
+      "diseaseHits": [
+        {
+          "id": 40,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 42,
+          "target": "b",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 44,
+          "target": "c",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 46,
+          "target": "d",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 48,
+          "target": "e",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 50,
+          "target": "f",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 87,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 89,
+          "target": "b",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 91,
+          "target": "c",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 93,
+          "target": "d",
+          "actual": 10,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 95,
+          "target": "e",
+          "actual": 10,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 97,
+          "target": "f",
+          "actual": 7,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 153,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 155,
+          "target": "b",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 157,
+          "target": "c",
+          "actual": 20,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 159,
+          "target": "d",
+          "actual": 29,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 161,
+          "target": "e",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 163,
+          "target": "f",
+          "actual": 18,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 197,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 199,
+          "target": "b",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 201,
+          "target": "c",
+          "actual": 20,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 203,
+          "target": "d",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 205,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 207,
+          "target": "f",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 246,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 248,
+          "target": "b",
+          "actual": 13,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 250,
+          "target": "c",
+          "actual": 25,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 252,
+          "target": "d",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 254,
+          "target": "e",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 256,
+          "target": "f",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    },
+    {
+      "key": "confirmation-731-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 3,
+        "arrow": 3
+      },
+      "diseaseHits": [
+        {
+          "id": 34,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 36,
+          "target": "b",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 38,
+          "target": "c",
+          "actual": 19,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 40,
+          "target": "d",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 42,
+          "target": "e",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 44,
+          "target": "f",
+          "actual": 7,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 78,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 80,
+          "target": "b",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 82,
+          "target": "c",
+          "actual": 24,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 84,
+          "target": "d",
+          "actual": 16,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 86,
+          "target": "e",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 88,
+          "target": "f",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 149,
+          "target": "a",
+          "actual": 2,
+          "grade": "命中",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 151,
+          "target": "b",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 153,
+          "target": "c",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 155,
+          "target": "d",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 157,
+          "target": "e",
+          "actual": 21,
+          "grade": "致命",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 159,
+          "target": "f",
+          "actual": 12,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 188,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 190,
+          "target": "b",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 192,
+          "target": "c",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 194,
+          "target": "d",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 196,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 198,
+          "target": "f",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 234,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 236,
+          "target": "b",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 238,
+          "target": "c",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 240,
+          "target": "d",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 242,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 244,
+          "target": "f",
+          "actual": 24,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    },
+    {
+      "key": "confirmation-731-con",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 3,
+        "arrow": 3
+      },
+      "diseaseHits": [
+        {
+          "id": 34,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 36,
+          "target": "b",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 38,
+          "target": "c",
+          "actual": 19,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 40,
+          "target": "d",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 42,
+          "target": "e",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 44,
+          "target": "f",
+          "actual": 7,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 78,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 80,
+          "target": "b",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 82,
+          "target": "c",
+          "actual": 24,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 84,
+          "target": "d",
+          "actual": 16,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 86,
+          "target": "e",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 88,
+          "target": "f",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 149,
+          "target": "a",
+          "actual": 2,
+          "grade": "命中",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 151,
+          "target": "b",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 153,
+          "target": "c",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 155,
+          "target": "d",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 157,
+          "target": "e",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 159,
+          "target": "f",
+          "actual": 12,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 188,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 190,
+          "target": "b",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 192,
+          "target": "c",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 194,
+          "target": "d",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 196,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 198,
+          "target": "f",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 234,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 236,
+          "target": "b",
+          "actual": 19,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 238,
+          "target": "c",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 240,
+          "target": "d",
+          "actual": 14,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 242,
+          "target": "e",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 244,
+          "target": "f",
+          "actual": 24,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    },
+    {
+      "key": "confirmation-732-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 3
+      },
+      "diseaseHits": [
+        {
+          "id": 25,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 27,
+          "target": "b",
+          "actual": 13,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 29,
+          "target": "c",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 31,
+          "target": "d",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 33,
+          "target": "e",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 35,
+          "target": "f",
+          "actual": 18,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 96,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 98,
+          "target": "b",
+          "actual": 16,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 100,
+          "target": "c",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 102,
+          "target": "d",
+          "actual": 16,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 104,
+          "target": "e",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 106,
+          "target": "f",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 177,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 179,
+          "target": "b",
+          "actual": 25,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 181,
+          "target": "c",
+          "actual": 13,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 183,
+          "target": "d",
+          "actual": 16,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 185,
+          "target": "e",
+          "actual": 14,
+          "grade": "命中",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 187,
+          "target": "f",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 212,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 214,
+          "target": "b",
+          "actual": 16,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 216,
+          "target": "c",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 218,
+          "target": "d",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 220,
+          "target": "e",
+          "actual": 12,
+          "grade": "命中",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 222,
+          "target": "f",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 276,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 80,
+          "mp": 0
+        },
+        {
+          "id": 278,
+          "target": "b",
+          "actual": 20,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 280,
+          "target": "c",
+          "actual": 14,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 282,
+          "target": "d",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 284,
+          "target": "e",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 43,
+          "mp": 0
+        },
+        {
+          "id": 286,
+          "target": "f",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    },
+    {
+      "key": "confirmation-732-con",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        4
+      ],
+      "supplies": {
+        "herb": 7,
+        "rune": 1,
+        "arrow": 2
+      },
+      "diseaseHits": [
+        {
+          "id": 25,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 27,
+          "target": "b",
+          "actual": 13,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 29,
+          "target": "c",
+          "actual": 13,
+          "grade": "命中",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 31,
+          "target": "d",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 33,
+          "target": "e",
+          "actual": 17,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 35,
+          "target": "f",
+          "actual": 18,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 96,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 98,
+          "target": "b",
+          "actual": 16,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 100,
+          "target": "c",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 102,
+          "target": "d",
+          "actual": 16,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 104,
+          "target": "e",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 106,
+          "target": "f",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 178,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 180,
+          "target": "b",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 182,
+          "target": "c",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 184,
+          "target": "d",
+          "actual": 20,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 186,
+          "target": "e",
+          "actual": 22,
+          "grade": "致命",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 188,
+          "target": "f",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 227,
+          "target": "a",
+          "actual": 6,
+          "grade": "命中",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 229,
+          "target": "b",
+          "actual": 16,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 231,
+          "target": "c",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 233,
+          "target": "d",
+          "actual": 23,
+          "grade": "重击",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 235,
+          "target": "e",
+          "actual": 24,
+          "grade": "致命",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 237,
+          "target": "f",
+          "actual": 18,
+          "grade": "致命",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 280,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 282,
+          "target": "b",
+          "actual": 25,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 284,
+          "target": "c",
+          "actual": 26,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 286,
+          "target": "d",
+          "actual": 19,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 288,
+          "target": "e",
+          "actual": 15,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 290,
+          "target": "f",
+          "actual": 11,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        },
+        {
+          "id": 321,
+          "target": "a",
+          "actual": 0,
+          "grade": "闪避",
+          "mean": 79,
+          "mp": 0
+        },
+        {
+          "id": 323,
+          "target": "b",
+          "actual": 11,
+          "grade": "致命",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 325,
+          "target": "c",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 32,
+          "mp": 0
+        },
+        {
+          "id": 327,
+          "target": "d",
+          "actual": 17,
+          "grade": "致命",
+          "mean": 36,
+          "mp": 0
+        },
+        {
+          "id": 329,
+          "target": "e",
+          "actual": 13,
+          "grade": "重击",
+          "mean": 46,
+          "mp": 0
+        },
+        {
+          "id": 331,
+          "target": "f",
+          "actual": 14,
+          "grade": "命中",
+          "mean": 40,
+          "mp": 0
+        }
+      ]
+    }
+  ],
+  "limits": "Two predefined normal74/75, eight founders inputs; no tuning for success. CON/CHA standard defence follows indexed historical official structure, live403, not current Delta verification. Skill/encounters/costs and retained armor policy are project adaptation. Native two changes are not isolated causes; seed changes do not fix per-attack RNG. Normal20-entry history truncates55 after75, full old55 preserved in baseline and evidence, old five frozen payloads unchanged."
+}
