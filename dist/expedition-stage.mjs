@@ -16,6 +16,7 @@ export function stageFrame(group){
   if(e.type==='immune')cues.push({unit:e.targets[0],kind:'control',text:'免疫',note:'本次0伤害',eventId:e.id});
   else if(e.type==='attack'||e.type==='harm'){const d=e.detail,kind=d.grade==='闪避'?'miss':d.actual>0?'damage':'blocked';cues.push({unit:e.targets[0],kind,text:kind==='miss'?'闪避':kind==='blocked'?'吸收':`−${d.actual}`,note:(e.type==='harm'?'潮蚀持续伤害':d.mechanismHit?'机关耐久拆解 · '+d.grade:d.grade)+(d.damageChannel?' · '+TYPES[d.attackType]+'攻防/'+TYPES[d.damageType]+'伤害':'')+(d.resistance>0?' · 抗性减伤':d.resistance<0?' · 弱点':''),eventId:e.id});}
   else if(e.type==='intercept'||e.type==='intercept-skip')cues.push({unit:e.actor,kind:'cover',text:e.type==='intercept'?(e.detail.success?'接招':'援护未及'):'援护未触发',note:e.detail.reason||'2法力 · 不占普通行动',eventId:e.id});
+  else if(e.type==='control')cues.push({unit:e.targets[0],kind:'control',text:e.detail.applied?'动摇':'抵抗',note:'无生命伤害；心理攻防',eventId:e.id});
   else if(e.type==='mana-damage')cues.push({unit:e.targets[0],kind:'mana',text:e.detail.grade==='闪避'?'闪避':'−'+e.detail.actual+' MP',note:'断流 · 生命不变',eventId:e.id});
   else if(e.type==='mana-transfer')cues.push({unit:e.targets[0],kind:'mana',text:'+'+e.detail.actual+' MP',note:'借潮咏 · 来源付'+e.detail.paidMana+'法力/普通行动',eventId:e.id});
   else if(e.type==='heal')cues.push({unit:e.targets[0],kind:'heal',text:'+'+e.detail.actual,note:e.detail.passive?'缓释':'救护',eventId:e.id});
@@ -26,7 +27,7 @@ export function stageFrame(group){
   }
   if(e.detail.healingBlock||e.detail.healingDecision?.status==='blocked')cues.push({unit:e.actor,kind:'control',text:'救护受阻',note:'按普通指令继续',eventId:e.id});
   if(e.type==='intercept'&&e.detail.success)links.push({from:e.actor,to:e.targets[0],kind:'support',eventId:e.id});
-  if(['attack','mana-damage','harm','dispel','mana-transfer','heal','effect','cleanse','summon','activate','expire'].includes(e.type))for(const target of e.targets)links.push({from:e.actor,to:target,kind:['mana-damage','dispel','harm'].includes(e.type)?'control':e.type==='attack'?e.detail.attackType:e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'support'):e.type,eventId:e.id});
+  if(['control','attack','mana-damage','harm','dispel','mana-transfer','heal','effect','cleanse','summon','activate','expire'].includes(e.type))for(const target of e.targets)links.push({from:e.actor,to:target,kind:['control','mana-damage','dispel','harm'].includes(e.type)?'control':e.type==='attack'?e.detail.attackType:e.type==='effect'?(e.detail.harmful?'control':e.detail.active===false?'pending':'support'):e.type,eventId:e.id});
  }
  return {units:structuredClone(last.units),actor:lead.actor,targets:[...new Set(cues.map(c=>c.unit).filter(Boolean))],cues,links,phase:lead.phase,round:lead.round,supplies:structuredClone(last.supplies),transition:['health-phase','wave-clear','reinforcement','withdraw','room','victory','defeat','scene','encounter','route','rescue','branch'].includes(lead.type)?lead.type:null};
 }

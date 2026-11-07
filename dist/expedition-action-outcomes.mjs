@@ -17,6 +17,7 @@ export function unitActionOutcomes(group) {
   else if(e.type==='mana-damage'&&amount(d.actual)){kind=d.grade==='闪避'?'miss':'mana-loss';resource='mp';value=d.actual;text=kind==='miss'?'闪避':'−'+value+' MP';}
   else if(e.type==='mana-transfer'&&amount(d.actual)){kind='mana';resource='mp';value=d.actual;text='+'+value+' MP';}
   else if(e.type==='item'&&['hp','mp'].includes(d.resource)&&amount(d.actual)){kind=d.resource==='hp'?'heal':'mana';resource=d.resource;value=d.actual;text='+'+value;}
+  else if(e.type==='control'){kind=d.applied?'control':'resisted';value=0;text=d.applied?'动摇':'抵抗';}
   else if(e.type==='immune'){kind='immune';value=0;text='免疫';}
   else continue;
   if(!unit)continue;
@@ -30,6 +31,8 @@ export function unitActionOutcomes(group) {
   if(kind==='miss')v.misses++;
   if(kind==='blocked')v.absorbed++;
   if(kind==='immune')v.immune++;
+  if(kind==='control')v.controls=(v.controls||0)+1;
+  if(kind==='resisted')v.resisted=(v.resisted||0)+1;
  }
  for(const v of Object.values(out)){
   const parts=[];
@@ -40,11 +43,13 @@ export function unitActionOutcomes(group) {
   if(v.misses)parts.push(v.misses+'次闪避');
   if(v.absorbed)parts.push(v.absorbed+'次吸收');
   if(v.immune)parts.push(v.immune+'次免疫');
+  if(v.controls)parts.push(v.controls+'次动摇');
+  if(v.resisted)parts.push(v.resisted+'次抵抗');
   // Preserve zero effective healing and keep gains/losses separate, never netted.
   if(!parts.length)parts.push('+0 HP');
   v.multiple=v.records.length>1;
   v.text=v.multiple?parts.join(' · '):v.records[0].text;
-  v.kind=v.hpLoss?'damage':v.hpGain?'heal':v.records.some(r=>r.kind==='mana-loss')?'mana-loss':v.records.some(r=>r.kind==='mana')?'mana':v.misses?'miss':v.absorbed?'blocked':v.immune?'immune':'heal';
+  v.kind=v.hpLoss?'damage':v.hpGain?'heal':v.records.some(r=>r.kind==='mana-loss')?'mana-loss':v.records.some(r=>r.kind==='mana')?'mana':v.misses?'miss':v.absorbed?'blocked':v.immune?'immune':v.controls?'control':v.resisted?'resisted':'heal';
   v.floatText=!v.multiple?v.text:v.kind==='damage'?'−'+v.hpLoss:v.kind==='heal'?'+'+v.hpGain:v.kind==='mana-loss'?'−'+v.mpLoss+' MP':v.kind==='mana'?'+'+v.mpGain+' MP':v.kind==='miss'?v.misses+'次闪避':v.kind==='blocked'?v.absorbed+'次吸收':v.immune+'次免疫';
   v.countText=v.attackRecords?v.attackRecords+'次攻击记录':v.records.length+'项结果';
   v.eventIds=v.records.map(r=>r.eventId);

@@ -1,7 +1,7 @@
 import {ATTR,HEROES,SKILLS,roomsFor} from './expedition-data.mjs';
 
 export const SUPPORT_FIELDS={cast:'施放均值',attack:'攻击均值',defense:'防御均值',armor:'原始护甲'};
-const stats={...ATTR,skill:'攻击技能等级',defense:'全防御检定',defenseSkill:'防御技能等级',manaRegen:'自然法力回复修正',armor:'护甲',actions:'行动次数'};
+const stats={attackMean:'攻击均值修正',...ATTR,skill:'攻击技能等级',defense:'全防御检定',defenseSkill:'防御技能等级',manaRegen:'自然法力回复修正',armor:'护甲',actions:'行动次数'};
 const key=(room,actor,cast)=>JSON.stringify([room,actor,cast]);
 const skillWeight=(skill,stat)=>{const s=SKILLS[skill];return s?(stat===s.primary?2:0)+(stat===s.secondary?1:0)+(s.kind==='attack'&&stat==='skill'?2:0):0;};
 const defenseWeight=(profile,stat)=>profile?(stat===profile.primary?2:0)+(stat===profile.secondary?1:0)+(stat==='defense'?1:0)+(stat==='defenseSkill'&&profile.skill&&profile.skill!=='natural'?2:0):0;
@@ -47,7 +47,7 @@ export function supportEvidence(report){
   const d=e.detail||{};
   // Attack casts are represented by their real per-target checks, not counted twice.
   if(e.type==='cast'&&SKILLS[d.skill]?.kind!=='attack'&&!SKILLS[d.skill]?.recall)record(e,index,e.actor,d.sources,'cast',stat=>skillWeight(d.skill,stat),d.mean);
-  if(e.type==='attack'){
+  if(e.type==='attack'||e.type==='control'){
    record(e,index,e.actor,d.sources,'attack',stat=>skillWeight(d.skill,stat),d.attackMean);
    record(e,index,e.targets[0],d.targetSources,'defense',stat=>defenseWeight(d.defenseProfile,stat),d.defenseMean);
    record(e,index,e.targets[0],d.targetSources,'armor',stat=>stat==='armor'?1:0,d.armorBefore);

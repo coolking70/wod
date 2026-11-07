@@ -4,7 +4,7 @@ export function validateAutomaticAction(h){if(Object.hasOwn(h,'automaticAction')
 export function automaticDecision(actor,rows,{cost=commandCost,level=(u,k)=>u.skills[k]||0,probe=()=> '缺少合法性预检'}={}){
  if(actor.side!=='party'||actor.automaticAction!==true||actor.hp<=0)return null;
  const definition=HEROES.find(h=>h.id===actor.id),configured=new Set(rows.map(r=>r.skill)),candidates=[];
- for(const[order,skill]of(definition?.skills||[]).entries()){const s=SKILLS[skill],rank=actor.skills[skill]||0,total=level(actor,skill),row={skill,target:s.kind==='transfer'?'all':positionOrderAllowed(s)?'priority':'front',mode:'repeat'},payment=cost(actor,row);let reason='';
+ for(const[order,skill]of(definition?.skills||[]).filter(k=>!SKILLS[k].nonDamaging).entries()){const s=SKILLS[skill],rank=actor.skills[skill]||0,total=level(actor,skill),row={skill,target:s.kind==='transfer'?'all':positionOrderAllowed(s)?'priority':'front',mode:'repeat'},payment=cost(actor,row);let reason='';
   if(!['attack','transfer'].includes(s.kind))reason='不属于普通攻击或法力援助';else if(isAdvanced(skill))reason='课程技能须明确配置';else if(configured.has(skill))reason='本房主指令已有此技能，不重试或重置限制';else if(rank<1||total<1)reason='没有可用的已知技能等级';else if(payment.resource&&payment.amount>0&&payment.resource!=='arrow')reason='自动应急不使用药草或符纸';else reason=probe(row,payment)||'';
   candidates.push({skill,name:s.name,order,knownRank:rank,actualRank:total,mana:payment.mana,resource:payment.resource||null,amount:payment.amount||0,row,eligible:!reason,reason});
  }

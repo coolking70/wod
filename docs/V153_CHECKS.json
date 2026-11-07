@@ -1,0 +1,1145 @@
+{
+  "passed": true,
+  "baseline": "35ef897387d7a8960e6db653aa840c1ab7347646",
+  "tests": {
+    "baselineFull": {
+      "tests": 1452,
+      "pass": 1452,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "baseline-full.tap"
+    },
+    "fullFinal": {
+      "tests": 1473,
+      "pass": 1473,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-final.tap"
+    },
+    "newControlCasesInsideFull": 21,
+    "retentionPythonCasesInsideOneNodeEntry": 21,
+    "firstFullFailurePreserved": "full-first-failed-pool-expectations.tap:1469pass4fail; new catalogue taunt6 changes fresh47raw by exactly10bytes, independently measured and only exact constants/new-field assertions updated",
+    "initialHarnessFailuresPreserved": [
+      "specialized-first/second/third.tap: MP regeneration max cap, two wrong immune property spellings, missing real focus gear",
+      "browser-first.log and browser-first failure files: visible replay filters/index mismatch; corrected to exact real event IDs, HP invariant only for no-damage control",
+      "probe-initial-error.json: room result has no enemy arrays; use actual event snapshots"
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 170,
+    "checkedReferences": 189,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "old702InputsCompared": true,
+    "declaredChanged": [
+      {
+        "path": "dist/expedition-action-outcomes.mjs",
+        "beforeSHA256": "e4e06ec29bc63f92ce384b13c5a30ffe220f8bedf0b6632255a5c7386166a089",
+        "afterSHA256": "0a0c50f002fa63a1efa9dd3a9f621df4a0709dd1080af8aaa1acbf934a2a48fd"
+      },
+      {
+        "path": "dist/expedition-afflictions.mjs",
+        "beforeSHA256": "c8d0809a55ff81f8badbb7cbf4bfcd464d1e232b7ad18375d2bd35938be989e0",
+        "afterSHA256": "dace6ec9e78aec3747cb581e66fb209eb2a1d2df55e5c338d4b006daa0116f7c"
+      },
+      {
+        "path": "dist/expedition-automatic-action.mjs",
+        "beforeSHA256": "ecb92e1b780910c32d386f35845147907f11d014eff1a84bdbdc3b4d93922a51",
+        "afterSHA256": "5edb8d173b27e2b72c4a51916dfa6a4b290468c2bcb83b44ee9409caa8397e6e"
+      },
+      {
+        "path": "dist/expedition-data.mjs",
+        "beforeSHA256": "b05169b27e0f1612835180a13df8ed8b1f2e3cc79b49465ebac675cef3038d51",
+        "afterSHA256": "35983dc3162aa496f9b7b2bb8064b57c80c9654484ab2003f0539de14e1997fd"
+      },
+      {
+        "path": "dist/expedition-engine.mjs",
+        "beforeSHA256": "54be7a465e55361f5cadf7d2031a6405e2e1aa09cd3fcea18733a7c95d34399a",
+        "afterSHA256": "58cb6e931c4f32f4c1a7f3cb0df73e8863c574428d99a319bd7c8db2450adb50"
+      },
+      {
+        "path": "dist/expedition-highlights.mjs",
+        "beforeSHA256": "f138ef8010cffd905a390b16918f6bb6390c593c9bfedf7de538dfd380a0aa1d",
+        "afterSHA256": "1ba2c25072e80563a5d78c66ed7ae8e54f26d1b01f112276391ce031b5e3073b"
+      },
+      {
+        "path": "dist/expedition-personal-view.mjs",
+        "beforeSHA256": "574966a48d244490d32bb7cdf13316faa2536d766db4adf2145bfba5fc460f22",
+        "afterSHA256": "8ee753862b7ebdbb9fade6f8de0a5574e00a2f563c0adb5b7871f890f3f2a70f"
+      },
+      {
+        "path": "dist/expedition-personal.mjs",
+        "beforeSHA256": "3490afe068d9dfadca685d9fbaccfa7eebac5f0a95af9cfba7078a82046e57c1",
+        "afterSHA256": "c8946371d13f210b008abb6044604aa97b7c2be8aa402282edb19c3e105c9610"
+      },
+      {
+        "path": "dist/expedition-report.mjs",
+        "beforeSHA256": "520a53b66a51736765ec2733ae24c1e2de631765922737326f3d393e8b288882",
+        "afterSHA256": "aa4a3ebbf0914401a8b3fc3e9b161678d5edc73636a9b8d7f7780062b7337f4c"
+      },
+      {
+        "path": "dist/expedition-source-trace.mjs",
+        "beforeSHA256": "bad210804a6602f7a2c2f620bb11e2492dfb74aa2fe40cb8b251a7e5c64d17f3",
+        "afterSHA256": "f413abc87767402df96c5684963f6624ad9b58a525ab6727c0d1a9e86321245b"
+      },
+      {
+        "path": "dist/expedition-stage.mjs",
+        "beforeSHA256": "a42fc3f661d7129d75e7c559c7acc986c7b6680b09a5956929ba886572a827c2",
+        "afterSHA256": "f39e5e7ef6fae0828bff98f3c872c1043ee9dd488838b85e9afc910f3aa15a33"
+      },
+      {
+        "path": "dist/expedition-support-evidence.mjs",
+        "beforeSHA256": "08e69ad188db8f606bf1d322bd28828aff6ac9ba18268782d343375d1b51b35f",
+        "afterSHA256": "b2ad8362b76a0e10b3fbcc7e1b30b5f437572cbc7b3cc26ad30bf657785e1a18"
+      },
+      {
+        "path": "dist/expedition-support.mjs",
+        "beforeSHA256": "ae834ca7adda1f924eecfe1e7c1489e9a8b0d4eb14e0c013fa388b9dc2f4d252",
+        "afterSHA256": "005a343973f29b7040472acd4b16c6837281a7a869d6aa298e89a6dbaae79465"
+      },
+      {
+        "path": "dist/expedition-ui.mjs",
+        "beforeSHA256": "f861de56a95c9a15e151ba8eb40e980ee3434ec544ccbfdb41b24fb1e2b2d167",
+        "afterSHA256": "c465a6b7e6a0a85f4d61e9d143c40c382c33eacb216b6c7ee9191863a6e69517"
+      },
+      {
+        "path": "dist/expedition.css",
+        "beforeSHA256": "a3e4755545ec3493262a134c8c611a560f795c0a823565f0457909dc9c3fd524",
+        "afterSHA256": "be71fadd98123dfbe59206e7dcab94ea2f532fef313fd52f780b4ebc0ee04556"
+      },
+      {
+        "path": "scripts/run-browser-acceptance.mjs",
+        "beforeSHA256": "0fb5610954e4ac5c49d57a1728967af66e69e22f136d3e4131da2777db0ceede",
+        "afterSHA256": "66884cc387e4e5711d5823baf733e0608741f8cb5eec79720f84733a69aaa2b5"
+      }
+    ],
+    "otherOldInputsExact": 685,
+    "otherOldDistExact": 187,
+    "onlyNewBardAvailabilityMayAlterOldReports": true,
+    "additionalChangedTestOnly": [
+      {
+        "path": "tests/report-pool.test.mjs",
+        "before": "7a162379e11f44b6c5c99881984be2d77cce02ed8f9b3e1b1813e402326d8936",
+        "after": "8b0273cbc0c5ab63e8b3b9caac3b842b95cec872cf0504f856252075e2bd0c38"
+      }
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 662,
+    "python": 4,
+    "failures": [],
+    "onlySubsequentChange": "tests/report-pool.test.mjs exact constants and catalogue assertion",
+    "changedTestNodeCheckPassed": true,
+    "changedTestSHA256": "8b0273cbc0c5ab63e8b3b9caac3b842b95cec872cf0504f856252075e2bd0c38"
+  },
+  "sourceFilesChecked": 708,
+  "browser": {
+    "passed": true,
+    "existingSuites": 59,
+    "newSuite153": true,
+    "total": 60,
+    "noCoverageReduction": true,
+    "firstSuccessfulNewSuiteAlsoPassed": true,
+    "allFinalRuntimeSource": true,
+    "onlyPoolTestFileUpdatedDuringBrowserRunNoApplicationOrBrowserInputChanged": true,
+    "ChromiumDesktop390TouchEmulationOnly": true,
+    "realTrainRefundSelectionPendingLockControlUseHistoryAndCampaignRestore": true,
+    "canonicalFourKeysExactFirstAndFinalAcceptance": true
+  },
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONExactExceptStrictAddedBardSkill6": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "oldBaselineDependency": {
+    "version": 149,
+    "archiveSHA256": "82419463c1437fce3af416ff7c83685f950e3f91e04f881cc195b00af0759835",
+    "originalFullBaselineReferencedWithoutDuplicateBytes": true
+  },
+  "nativeContinuation": {
+    "passed": true,
+    "formalSourceFrom1529490Next88": true,
+    "normal": [
+      {
+        "id": 88,
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [
+          {
+            "eventId": 51,
+            "actor": "e",
+            "target": "hg-g",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 63,
+            "defense": 28,
+            "hpBefore": 28,
+            "hpAfter": 28
+          },
+          {
+            "eventId": 85,
+            "actor": "e",
+            "target": "hg-a",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 133,
+            "defense": 41,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 141,
+            "actor": "e",
+            "target": "hg-c",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 93,
+            "defense": 55,
+            "hpBefore": 73,
+            "hpAfter": 73
+          },
+          {
+            "eventId": 230,
+            "actor": "e",
+            "target": "hc-g",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 88,
+            "defense": 33,
+            "hpBefore": 180,
+            "hpAfter": 180
+          },
+          {
+            "eventId": 285,
+            "actor": "e",
+            "target": "hc-a",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 101,
+            "defense": 44,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 336,
+            "actor": "e",
+            "target": "hc-b",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 105,
+            "defense": 49,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 380,
+            "actor": "e",
+            "target": "hc-c",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 93,
+            "defense": 43,
+            "hpBefore": 79,
+            "hpAfter": 79
+          }
+        ],
+        "uses": [
+          {
+            "eventId": 78,
+            "actor": "hg-g",
+            "attackMean": 47,
+            "sources": [
+              {
+                "effectId": "0:13:hg-g:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 129,
+            "actor": "hg-a",
+            "attackMean": 54,
+            "sources": [
+              {
+                "effectId": "0:20:hg-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 168,
+            "actor": "hg-c",
+            "attackMean": 60,
+            "sources": [
+              {
+                "effectId": "0:32:hg-c:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 322,
+            "actor": "hc-a",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:24:hc-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 369,
+            "actor": "hc-b",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:35:hc-b:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 413,
+            "actor": "hc-c",
+            "attackMean": 62,
+            "sources": [
+              {
+                "effectId": "1:43:hc-c:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 89,
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [
+          {
+            "eventId": 44,
+            "actor": "e",
+            "target": "hg-g",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 101,
+            "defense": 40,
+            "hpBefore": 95,
+            "hpAfter": 95
+          },
+          {
+            "eventId": 84,
+            "actor": "e",
+            "target": "hg-a",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 104,
+            "defense": 26,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 133,
+            "actor": "e",
+            "target": "hg-c",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 89,
+            "defense": 54,
+            "hpBefore": 84,
+            "hpAfter": 84
+          },
+          {
+            "eventId": 217,
+            "actor": "e",
+            "target": "hc-g",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 76,
+            "defense": 50,
+            "hpBefore": 156,
+            "hpAfter": 156
+          },
+          {
+            "eventId": 263,
+            "actor": "e",
+            "target": "hc-a",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 113,
+            "defense": 36,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 329,
+            "actor": "e",
+            "target": "hc-b",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 82,
+            "defense": 34,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 375,
+            "actor": "e",
+            "target": "hc-c",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 113,
+            "defense": 58,
+            "hpBefore": 82,
+            "hpAfter": 82
+          }
+        ],
+        "uses": [
+          {
+            "eventId": 123,
+            "actor": "hg-a",
+            "attackMean": 54,
+            "sources": [
+              {
+                "effectId": "0:20:hg-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 251,
+            "actor": "hc-g",
+            "attackMean": 49,
+            "sources": [
+              {
+                "effectId": "1:10:hc-g:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 276,
+            "actor": "hc-a",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:21:hc-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 305,
+            "actor": "hc-a",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:21:hc-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 367,
+            "actor": "hc-b",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:37:hc-b:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 408,
+            "actor": "hc-c",
+            "attackMean": 62,
+            "sources": [
+              {
+                "effectId": "1:46:hc-c:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "canonicalFilesSHA256": {
+      "/workspace/wod-evidence/v153/browser-final/control-final-campaign.json": "c1f7e597dd04bda74008cd5d1bc4f2ee2c4f0f0e71299336f0aede68aa9dd36b",
+      "/workspace/wod-evidence/v153/browser-final/control-final-four-raw-keys.json": "3a41ab65afdc43950a2cbd7682f3b3f63aba9f420dbf5afa660131e9a3493f3c"
+    },
+    "canonicalFinalConfigExactAPI_final_source": true,
+    "noHistoricalReplayUsedAsSourceGuild": true
+  },
+  "finiteExperiments": {
+    "passed": true,
+    "sixPredeclaredActualAssetsExactFirstPending": true,
+    "cases": [
+      {
+        "seed": 731,
+        "skill": "taunt",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 6,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [
+          {
+            "eventId": 32,
+            "actor": "e",
+            "target": "hg-g",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 80,
+            "defense": 46,
+            "hpBefore": 150,
+            "hpAfter": 150
+          },
+          {
+            "eventId": 93,
+            "actor": "e",
+            "target": "hg-a",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 126,
+            "defense": 46,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 133,
+            "actor": "e",
+            "target": "hg-c",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 101,
+            "defense": 21,
+            "hpBefore": 75,
+            "hpAfter": 75
+          },
+          {
+            "eventId": 241,
+            "actor": "e",
+            "target": "hc-g",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 95,
+            "defense": 34,
+            "hpBefore": 62,
+            "hpAfter": 62
+          },
+          {
+            "eventId": 287,
+            "actor": "e",
+            "target": "hc-a",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 85,
+            "defense": 26,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 343,
+            "actor": "e",
+            "target": "hc-b",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 114,
+            "defense": 41,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 390,
+            "actor": "e",
+            "target": "hc-c",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 134,
+            "defense": 46,
+            "hpBefore": 87,
+            "hpAfter": 87
+          }
+        ],
+        "uses": [
+          {
+            "eventId": 80,
+            "actor": "hg-g",
+            "attackMean": 47,
+            "sources": [
+              {
+                "effectId": "0:7:hg-g:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 130,
+            "actor": "hg-a",
+            "attackMean": 54,
+            "sources": [
+              {
+                "effectId": "0:23:hg-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 179,
+            "actor": "hg-c",
+            "attackMean": 40,
+            "sources": [
+              {
+                "effectId": "0:30:hg-c:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 280,
+            "actor": "hc-g",
+            "attackMean": 49,
+            "sources": [
+              {
+                "effectId": "1:12:hc-g:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 291,
+            "actor": "hc-a",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:23:hc-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 374,
+            "actor": "hc-b",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:36:hc-b:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 425,
+            "actor": "hc-c",
+            "attackMean": 40,
+            "sources": [
+              {
+                "effectId": "1:45:hc-c:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seed": 731,
+        "skill": "mindcall",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 8,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [],
+        "uses": []
+      },
+      {
+        "seed": 731,
+        "skill": "dissonance",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [],
+        "uses": []
+      },
+      {
+        "seed": 732,
+        "skill": "taunt",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 8,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [
+          {
+            "eventId": 47,
+            "actor": "e",
+            "target": "hg-g",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 84,
+            "defense": 38,
+            "hpBefore": 51,
+            "hpAfter": 51
+          },
+          {
+            "eventId": 84,
+            "actor": "e",
+            "target": "hg-a",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 84,
+            "defense": 47,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 135,
+            "actor": "e",
+            "target": "hg-c",
+            "roomIndex": 0,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 102,
+            "defense": 41,
+            "hpBefore": 42,
+            "hpAfter": 42
+          },
+          {
+            "eventId": 224,
+            "actor": "e",
+            "target": "hc-g",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 77,
+            "attack": 89,
+            "defense": 33,
+            "hpBefore": 142,
+            "hpAfter": 142
+          },
+          {
+            "eventId": 276,
+            "actor": "e",
+            "target": "hc-a",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 131,
+            "defense": 52,
+            "hpBefore": 108,
+            "hpAfter": 108
+          },
+          {
+            "eventId": 328,
+            "actor": "e",
+            "target": "hc-b",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 118,
+            "defense": 48,
+            "hpBefore": 120,
+            "hpAfter": 120
+          },
+          {
+            "eventId": 376,
+            "actor": "e",
+            "target": "hc-c",
+            "roomIndex": 1,
+            "applied": true,
+            "attackMean": 101,
+            "attack": 101,
+            "defense": 44,
+            "hpBefore": 154,
+            "hpAfter": 154
+          }
+        ],
+        "uses": [
+          {
+            "eventId": 88,
+            "actor": "hg-a",
+            "attackMean": 54,
+            "sources": [
+              {
+                "effectId": "0:20:hg-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 132,
+            "actor": "hg-a",
+            "attackMean": 54,
+            "sources": [
+              {
+                "effectId": "0:20:hg-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 162,
+            "actor": "hg-c",
+            "attackMean": 60,
+            "sources": [
+              {
+                "effectId": "0:31:hg-c:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 312,
+            "actor": "hc-a",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:23:hc-a:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 371,
+            "actor": "hc-b",
+            "attackMean": 56,
+            "sources": [
+              {
+                "effectId": "1:34:hc-b:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          },
+          {
+            "eventId": 411,
+            "actor": "hc-c",
+            "attackMean": 40,
+            "sources": [
+              {
+                "effectId": "1:44:hc-c:control",
+                "source": "e",
+                "name": "讥潮短句",
+                "component": "动摇",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seed": 732,
+        "skill": "mindcall",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [],
+        "uses": []
+      },
+      {
+        "seed": 732,
+        "skill": "dissonance",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 7,
+          "rune": 0,
+          "arrow": 0
+        },
+        "controls": [],
+        "uses": []
+      }
+    ],
+    "noGlobalUpgradeOrAvoidedDamageClaim": true
+  },
+  "reportArchiveRoundtrip": {
+    "passed": true,
+    "scope": "Fresh isolated in-memory copies without original archive entries solely to test new-report encoding/schema, not a capacity change or user incident. Canonical and source files unchanged.",
+    "rows": [
+      {
+        "id": 88,
+        "passed": true,
+        "sourcePath": "/workspace/wod-evidence/v153/native-first/control-desktop.json",
+        "sourceSHA256Unchanged": "c3c80a8bb71e1af1c8a32b040f2465cc9782b61454d76fcf1479266889794c3f",
+        "originalReportCompactSHA256": "059458a66da0a48689fbfc61809955b8f55e2122c82d2f42de7e4e6f8535e3ef",
+        "allFieldsAndOrderExactAfterThaw": true,
+        "snapshotEncoding": "gzip-units-v1-base64",
+        "encodedChars": 53328,
+        "testCopyOnlyOriginalFiveRetained": true
+      },
+      {
+        "id": 89,
+        "passed": true,
+        "sourcePath": "/workspace/wod-evidence/v153/native-first/control-final.json",
+        "sourceSHA256Unchanged": "b9d0e205a8ccdb96e5e20074784312175cab09fc7be8f1538c6b4d205428d39d",
+        "originalReportCompactSHA256": "9d37d4b7f7f152370a86453843adda9801c018b1a8c445bfa5556189a7414495",
+        "allFieldsAndOrderExactAfterThaw": true,
+        "snapshotEncoding": "gzip-units-v1-base64",
+        "encodedChars": 51820,
+        "testCopyOnlyOriginalFiveRetained": true
+      }
+    ]
+  },
+  "fresh47Measurements": {
+    "passed": true,
+    "onlyThreeStrictCatalogue6FieldsAddedRelativeOriginal47": true,
+    "frozenRawBytes": 3955771,
+    "freshRawBytes": 3955802,
+    "packedBytes": 589689,
+    "poolEncoded": 49576,
+    "ordinaryGzipEncoded": 138408,
+    "freshUsage": {
+      "count": 5,
+      "encodedChars": 793228
+    },
+    "historicalUsageUnchanged": {
+      "count": 5,
+      "encodedChars": 793208
+    }
+  },
+  "nativeState": {
+    "gold": 9690,
+    "next": 90,
+    "ownHero": "e",
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "recruited": 7,
+    "catalogue": 9,
+    "frozenEntries": 5,
+    "encodedChars": 793208,
+    "plans": 3,
+    "tauntPaidRank": 1,
+    "composurePaidRank": 1,
+    "heroAvailableXP": 4115,
+    "canonicalNativeFourKeys": "/workspace/wod-evidence/v153/browser-final/control-final-four-raw-keys.json",
+    "canonicalNativeCampaign": "/workspace/wod-evidence/v153/browser-final/control-final-campaign.json"
+  },
+  "retention": {
+    "useVerified150FullMasterPhysicalProofThenRetireDuplicates": true,
+    "allOldPrimaryUniqueEvidenceSixRefsAndProtectedRecoveryChainsKept": true,
+    "recoveryChain": [
+      "152independentComplete",
+      "153incremental"
+    ],
+    "noNewFullCodeBundle": true,
+    "finalRetirementInChecksummedDeliveryReceipts": true
+  },
+  "main": "main remains152 exact35ef897; next155–157full milestone. Only153stage normal push, no deployment.",
+  "limits": [
+    "Official historical index supports non-damaging debuff direction; direct body502 no retry/bypass, not currentDelta numeric verification",
+    "All concrete skill parameters and availability are project adaptation",
+    "Normal88/89 natural seeds differ, fixed6same-seed inputs may diverge later RNG; no global efficiency/avoided damage claim",
+    "Historical five frozen entries unchanged; new report roundtrip only fresh in-memory archive copies",
+    "Old78reports permit exactly E party.skills.taunt6; all other raw fields/order/digest exact, not zero exclusions",
+    "OnlyChromiumdesktop390touch simulation; real devices and other browser engines not tested",
+    "Permanent supply economy pending; no force/GC/prune/deploy; old143exporttime/ID gap not claimed repaired"
+  ],
+  "postCommitResults": "Exact commit/remote/recovery/retirement in checksummed external delivery receipts"
+}

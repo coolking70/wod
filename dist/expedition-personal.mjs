@@ -26,6 +26,7 @@ export function personalReport(report,heroId){
   if(own&&e.type==='skip'&&d.mechanismSelection)proof(e,index,'本人的机关类别与后备');
   if(e.type==='immune'){if(own){add(e.roomIndex,'immuneRecords');proof(e,index,'实际受击者免疫');}if(target){add(e.roomIndex,'immuneReceipts');proof(e,index,'本人固有免疫');}}
   if(own&&e.type==='skip'&&d.attackImmunity)proof(e,index,'本人的类型排除与后备');
+  if(own&&e.type==='control'){add(e.roomIndex,'nonDamageAttempts');if(d.applied)add(e.roomIndex,'nonDamageApplied');proof(e,index,'本人无伤削弱攻防');}
   if(e.type==='mana-damage'){if(own){add(e.roomIndex,'manaDamage',d.actual);proof(e,index,'本人实际削减法力');}if(target){add(e.roomIndex,'manaLost',d.actual);proof(e,index,'本人受到法力削减');}}
   if(own&&e.type==='skip'&&d.manaFloor?.blocked)proof(e,index,'本人的法力留存与后备');
   if(own&&e.type==='skip'&&d.manaSelection)proof(e,index,'本人的断流候选与后备');

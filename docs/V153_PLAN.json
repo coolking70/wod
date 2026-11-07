@@ -1,0 +1,87 @@
+{
+  "stage": "0.153",
+  "base": "35ef897387d7a8960e6db653aa840c1ab7347646",
+  "scope": "Non-damaging resistible attack, ordinary bard taunt, only future attack mean reduced; no HP damage roll, no stun/forced target/extra action",
+  "reference": {
+    "url": "https://world-of-dungeons.de/ency/Fertigkeit",
+    "indexedText": "Official historical skill article describes Verschlechterungen as attacks dealing no damage, with Verspotten reducing attack value; accessed search index 2026-11-07, crawled5.2years ago",
+    "bodyAttempt": "502 Bad Gateway; no retry or bypass",
+    "boundary": "Structure reference only; skill name, universal bard availability,4MP,CHA/WIL,12 mean reduction,current+next round,train20/40/60XP all project adaptation, not currentDelta rules"
+  },
+  "skill": {
+    "id": "taunt",
+    "name": "讥潮短句",
+    "kind": "attack",
+    "type": "mental",
+    "nonDamaging": true,
+    "cost": 4,
+    "requiresGear": "lute",
+    "primary": "cha",
+    "secondary": "wil",
+    "effect": {
+      "stat": "attackMean",
+      "value": -12,
+      "duration": 1
+    },
+    "scope": "rounds",
+    "noRefreshOrStackSameEffect": true,
+    "freeIneligibleCandidateCheck": true,
+    "trainingAffectsHitOnly": true,
+    "noDamageResistanceArmorOrDamageRoll": true
+  },
+  "normalContinuation": {
+    "startGold": 9490,
+    "next": 88,
+    "route": "markedhunt",
+    "runs": 2,
+    "E_main": [
+      {
+        "skill": "taunt",
+        "target": "front",
+        "mode": "round"
+      },
+      {
+        "skill": "mindcall",
+        "target": "healer",
+        "mode": "round"
+      },
+      {
+        "skill": "shot",
+        "target": "front",
+        "mode": "repeat"
+      }
+    ],
+    "trainFirst": {
+      "hero": "e",
+      "skill": "skill:taunt",
+      "cost": 20
+    },
+    "noRerollOrTuningAfterOutcome": true,
+    "explicitFreeFocus": "taunt"
+  },
+  "finiteActualInputs": {
+    "declaredBeforeExecution": true,
+    "seeds": [
+      731,
+      732
+    ],
+    "firstSkill": [
+      "taunt",
+      "mindcall",
+      "dissonance"
+    ],
+    "actualGuildConfigBefore88": true,
+    "sameOtherFields": true,
+    "scope": "6 finite actual-asset inputs, no global win-rate or paired future-RNG claim"
+  },
+  "compatibility": "78 old full reports allow exactly added taunt:6 in E party skills dictionaries, all other fields/order/values exact; count+record each allowed path;33 default mechanismHTML exact",
+  "gates": "1452baseline; full all tests; all59previous browsers plus153;19or more meaningful newcases; actualnormal and GUI/fullcampaign/archives checks; cold source/evidence recovery, stage push; main remains152 until155–157milestone",
+  "budget": {
+    "mainFreeBytes": 2560339968,
+    "tmpFreeBytes": 7381618688,
+    "nextReferencePlusReserve": 3500000000,
+    "mainEvidenceReserve": 1200000000
+  },
+  "retention": "152 independent complete contains all heads/six retained; protect olderchains/unmatchedsourceZIP/uniqueevidence; only small153increment, no newfullbundle",
+  "pending": "permanent supply economy not implemented"
+}
