@@ -1,0 +1,85 @@
+{
+  "startGold": 7680,
+  "normal": [
+    {
+      "id": 70,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        3
+      ],
+      "escort": [
+        {
+          "id": "escort:neris",
+          "hp": 90,
+          "maxHp": 90
+        }
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 140,
+        "xp": 55,
+        "firstClear": true,
+        "loot": []
+      },
+      "gold": 7820,
+      "intercepts": [
+        {
+          "id": 223,
+          "success": true
+        }
+      ],
+      "heals": [
+        {
+          "id": 187,
+          "actual": 60
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        3
+      ],
+      "escort": [
+        {
+          "id": "escort:neris",
+          "hp": 90,
+          "maxHp": 90
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 4,
+        "arrow": 4
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 100,
+        "xp": 45,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 7920,
+      "intercepts": [],
+      "heals": [
+        {
+          "id": 154,
+          "actual": 33
+        }
+      ]
+    }
+  ],
+  "finalGold": 7920,
+  "next": 72,
+  "limits": "Two predefined normal70/71, no tuning to hide failure; six real heroes, NPC no XP/gear/actions or lasting injury/supply. This is project escort-unit adaptation, not verified original combat-NPC mechanics."
+}

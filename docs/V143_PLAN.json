@@ -1,0 +1,109 @@
+{
+  "frozenBeforeImplementationAndResults": true,
+  "phase": "v143 escorted noncombatant objective",
+  "route": "evacuation",
+  "title": "退潮护送",
+  "core": "one fixed noncombat NPC joins field but not six active heroes, targets/healing/guard use existing rules; carry HP between2rooms; defeat if NPC dies, normal partial rewards only",
+  "npc": {
+    "id": "escort:neris",
+    "name": "负伤引航员奈芮",
+    "pos": "rear",
+    "hp": 90,
+    "maxHp": 90,
+    "mp": 0,
+    "actions": 0,
+    "gear": "cloth",
+    "attrs": {
+      "str": 1,
+      "con": 10,
+      "int": 4,
+      "dex": 8,
+      "cha": 6,
+      "agi": 6,
+      "per": 8,
+      "wil": 8
+    }
+  },
+  "rooms": [
+    {
+      "id": "evac-quay",
+      "enemies": [
+        {
+          "id": "eqg",
+          "hp": 150,
+          "skill": "strike",
+          "level": 6,
+          "target": "front",
+          "pos": "front"
+        },
+        {
+          "id": "eqa",
+          "hp": 110,
+          "skill": "volley",
+          "level": 6,
+          "target": "rear",
+          "pos": "rear"
+        }
+      ]
+    },
+    {
+      "id": "evac-slip",
+      "enemies": [
+        {
+          "id": "esg",
+          "hp": 180,
+          "skill": "strike",
+          "level": 7,
+          "target": "front",
+          "pos": "front",
+          "prep": "guard/self6"
+        },
+        {
+          "id": "esa",
+          "hp": 140,
+          "skill": "volley",
+          "level": 7,
+          "target": "rear",
+          "pos": "rear"
+        }
+      ]
+    }
+  ],
+  "enemyAttrs": {
+    "str": 13,
+    "con": 12,
+    "int": 15,
+    "dex": 15,
+    "cha": 8,
+    "agi": 12,
+    "per": 12,
+    "wil": 12
+  },
+  "enemyMP": 80,
+  "enemyGear": "field",
+  "supplyBudget": 30,
+  "defaultSupplies": {
+    "herb": 12,
+    "rune": 10,
+    "arrow": 8
+  },
+  "reward": {
+    "bonus": 60,
+    "xp": 25,
+    "firstGold": 40,
+    "firstXp": 10,
+    "pool": []
+  },
+  "npcNotMember": "not recruited, cannot switch own identity to NPC, never receives XP/gear/turns; resets per new expedition, no persisted injuries or supplies",
+  "supportCaps": "unchanged; NPC may be seventh candidate and all max6 can exclude it; rear position max3 includes NPC only when capacity/order allow",
+  "normalPlay": "actual v142final7680 next70; two evacuation normal70default then71existing ward→rear and healer targetrear threshold.8, no new training/equipment; do not tune results; preserve failure and partial reward; own e and bench a unchanged",
+  "source": [
+    {
+      "url": "https://world-of-dungeons.de/wod/spiel/news/?NEWSBLOCK_PAGE=8",
+      "support": "official historical 2017 news has escort narrative and Die Eskorte route; no verified combat-NPC implementation",
+      "limit": "all escorted-unit mechanics, numbers, rooms and rewards explicitly project adaptation; not current Delta data"
+    }
+  ],
+  "gates": "full fresh final-code tests and51unifiedbrowser suites, exact old reports, wholecampaign/pending/reward/archive, offlinecomplete recovery before main143 integration; latest remote no force/deleteunique evidence",
+  "cleanup": "retired only 1863 SHA/CRC verified duplicate raw cachefiles v138/v139, archives+old refs+recovery chains kept; separate exact restore tool"
+}

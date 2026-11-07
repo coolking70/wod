@@ -7,7 +7,7 @@ import {HEROES,roomsFor,SKILLS,TYPES} from './expedition-data.mjs';
 // Prefix-only projection: never reads events after the selected replay snapshot.
 export function careTimeline(report,unitId,eventId,limit=12){
  const end=report.events.findIndex(e=>e.id===eventId);if(end<0)return null;
- const now=report.events[end],unit=now.units.find(u=>u.id===unitId);if(!unit||!HEROES.some(h=>h.id===unitId))return null;
+ const now=report.events[end],unit=now.units.find(u=>u.id===unitId);if(!unit||(!HEROES.some(h=>h.id===unitId)&&!unit.escort))return null;
  const rows=[],medics=new Set(report.config.heroes.filter(h=>HEROES.find(t=>t.id===h.id)?.skills.includes('heal')).map(h=>h.id));
  for(const e of report.events.slice(0,end+1)){
   if(e.roomIndex!==now.roomIndex)continue;

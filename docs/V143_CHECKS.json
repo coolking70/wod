@@ -1,0 +1,601 @@
+{
+  "passed": true,
+  "baseline": "37c14cfe3eb8edcc4feb1820867b3274c87f910c",
+  "tests": {
+    "full": {
+      "tests": 1323,
+      "pass": 1323,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-final-selector.tap"
+    },
+    "newStage": {
+      "tests": 12,
+      "pass": 12,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-final.tap"
+    },
+    "fullBeforeSelector": {
+      "tests": 1323,
+      "pass": 1323,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-final.tap"
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 615,
+    "python": 1,
+    "failures": [],
+    "finalRouteSelectorAndBrowserScriptRechecksParsed": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 161,
+    "checkedReferences": 179,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": 51,
+    "failed": 0,
+    "recordedRuns": 87,
+    "originalFullRunFailedVersions": [
+      94
+    ],
+    "finalRuntimePrefixRechecks": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128
+    ],
+    "checkpointAudit": {
+      "passed": true,
+      "selectedFinalBrowserSuites": 51,
+      "recordedRuns": 87,
+      "files": 1726,
+      "images": 142,
+      "rawBytes": 2762823079,
+      "archiveBytes": 331592374,
+      "sourceFilesRemoved": false
+    },
+    "direct": {
+      "passed": true,
+      "steps": [
+        "1440px真实v142四键恢复7680/next70；公开非战斗对象规则、正常70全报告/待领/领取与API一致。六队员外单列伤员，实际60治疗可回看，援护实际受击者贝芮尔/原目标引航员，复盘四键不变；正常7820/next71。",
+        "390px真实备份恢复7820，明确改护印后排/救护后排80%并保存第三方案，两旧方案/A原文保持；正常71全文和领取同API至7920/next72，六人及伤员生还，无横向溢出；旧55失败无护送残留面板、不重领，47冻结原文导出保持。",
+        "第三新上下文四原始键逐字恢复7920/next72、三方案及A，重演70完整NPC状态且不重复领奖；五冻结和角色资产保持。",
+        "第四独立实验上下文用公开配置导入，默认731跨房原46/90生命与全文相同；预定无支援seed1六人仍活、NPC倒下止步，只有一房完成，不产生正式奖励或改公会。此验证不替代正常70/71，也不覆盖正式终档。"
+      ],
+      "errors": [],
+      "finalGold": 7920,
+      "next": 72
+    },
+    "unifiedNewStage": {
+      "passed": true,
+      "steps": [
+        "1440px真实v142四键恢复7680/next70；公开非战斗对象规则、正常70全报告/待领/领取与API一致。六队员外单列伤员，实际60治疗可回看，援护实际受击者贝芮尔/原目标引航员，复盘四键不变；正常7820/next71。",
+        "390px真实备份恢复7820，明确改护印后排/救护后排80%并保存第三方案，两旧方案/A原文保持；正常71全文和领取同API至7920/next72，六人及伤员生还，无横向溢出；旧55失败无护送残留面板、不重领，47冻结原文导出保持。",
+        "第三新上下文四原始键逐字恢复7920/next72、三方案及A，重演70完整NPC状态且不重复领奖；五冻结和角色资产保持。",
+        "第四独立实验上下文用公开配置导入，默认731跨房原46/90生命与全文相同；预定无支援seed1六人仍活、NPC倒下止步，只有一房完成，不产生正式奖励或改公会。此验证不替代正常70/71，也不覆盖正式终档。"
+      ],
+      "errors": [],
+      "finalGold": 7920,
+      "next": 72
+    },
+    "freshSuccessfulFinalCodeRecordsSelected": true
+  },
+  "native": {
+    "startGold": 7680,
+    "normal": [
+      {
+        "id": 70,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3
+        ],
+        "escort": [
+          {
+            "id": "escort:neris",
+            "hp": 90,
+            "maxHp": 90
+          }
+        ],
+        "supplies": {
+          "herb": 9,
+          "rune": 4,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 55,
+          "firstClear": true,
+          "loot": []
+        },
+        "gold": 7820,
+        "intercepts": [
+          {
+            "id": 223,
+            "success": true
+          }
+        ],
+        "heals": [
+          {
+            "id": 187,
+            "actual": 60
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          3
+        ],
+        "escort": [
+          {
+            "id": "escort:neris",
+            "hp": 90,
+            "maxHp": 90
+          }
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 4,
+          "arrow": 4
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 7920,
+        "intercepts": [],
+        "heals": [
+          {
+            "id": 154,
+            "actual": 33
+          }
+        ]
+      }
+    ],
+    "finalGold": 7920,
+    "next": 72,
+    "limits": "Two predefined normal70/71, no tuning to hide failure; six real heroes, NPC no XP/gear/actions or lasting injury/supply. This is project escort-unit adaptation, not verified original combat-NPC mechanics."
+  },
+  "confirmation": {
+    "passed": true,
+    "results": [
+      {
+        "seed": 1,
+        "mode": "unprotected",
+        "won": false,
+        "alive": 6,
+        "npcHP": 0,
+        "rounds": [
+          4,
+          1
+        ],
+        "supplies": {
+          "herb": 12,
+          "rune": 7,
+          "arrow": 4
+        }
+      },
+      {
+        "seed": 1,
+        "mode": "protected",
+        "won": true,
+        "alive": 6,
+        "npcHP": 65,
+        "rounds": [
+          2,
+          3
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 4,
+          "arrow": 3
+        }
+      },
+      {
+        "seed": 2,
+        "mode": "unprotected",
+        "won": false,
+        "alive": 6,
+        "npcHP": 0,
+        "rounds": [
+          3,
+          2
+        ],
+        "supplies": {
+          "herb": 12,
+          "rune": 6,
+          "arrow": 4
+        }
+      },
+      {
+        "seed": 2,
+        "mode": "protected",
+        "won": true,
+        "alive": 6,
+        "npcHP": 78,
+        "rounds": [
+          2,
+          3
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 3,
+          "arrow": 3
+        }
+      },
+      {
+        "seed": 731,
+        "mode": "unprotected",
+        "won": false,
+        "alive": 6,
+        "npcHP": 0,
+        "rounds": [
+          3,
+          2
+        ],
+        "supplies": {
+          "herb": 12,
+          "rune": 5,
+          "arrow": 3
+        }
+      },
+      {
+        "seed": 731,
+        "mode": "protected",
+        "won": true,
+        "alive": 6,
+        "npcHP": 78,
+        "rounds": [
+          2,
+          3
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 3,
+          "arrow": 3
+        }
+      },
+      {
+        "seed": 732,
+        "mode": "unprotected",
+        "won": false,
+        "alive": 6,
+        "npcHP": 0,
+        "rounds": [
+          3,
+          1
+        ],
+        "supplies": {
+          "herb": 12,
+          "rune": 7,
+          "arrow": 5
+        }
+      },
+      {
+        "seed": 732,
+        "mode": "protected",
+        "won": true,
+        "alive": 6,
+        "npcHP": 75,
+        "rounds": [
+          2,
+          3
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 3,
+          "arrow": 4
+        }
+      }
+    ]
+  },
+  "preservation": {
+    "passed": true,
+    "allGuildFieldsExactAfterExplicitNormalRewardChanges": true,
+    "goldBefore": 7680,
+    "goldAfter": 7920,
+    "nextBefore": 70,
+    "nextAfter": 72,
+    "ordinaryGold": 240,
+    "ordinaryXP": 100,
+    "warehouseUnchanged": true,
+    "allSixActiveMembersOnlyXPChanged": true,
+    "benchAEntireMemberUnchanged": true,
+    "ownHeroAndRolesUnchanged": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "oldProofs": 23,
+    "newProof": "evacuation/survive70",
+    "afterProofs": 24,
+    "noNPCMemberOrAsset": true,
+    "finalGuildSHA256": "b41c4158b56cd9c20deeeb50406827a33e497f18a7f9e99557a0fa1e7d873a0f"
+  },
+  "oldCompatibility": {
+    "passed": true,
+    "zeroFieldExclusions": true,
+    "rows": [
+      {
+        "key": "start",
+        "bytes": 1330026,
+        "sha256": "0455a1eef2cc2ba5e9d08b298251e8384ffca48a9df99c6179706ba2876c4a1f"
+      },
+      {
+        "key": "source",
+        "bytes": 7674,
+        "sha256": "18ae37811851481654bad3892a1c3594d658759912f67df58dac130d4815f633"
+      },
+      {
+        "key": "history55",
+        "bytes": 16292968,
+        "sha256": "9725dcf8e00be3c98e4a019723847c856ecadb2fa83cb7870a7384ac0191b1a0"
+      },
+      {
+        "key": "history67",
+        "bytes": 13633573,
+        "sha256": "288a71081308eef430218f478473f30cf37548cac7bcd21061e5edb04fe56f0d"
+      },
+      {
+        "key": "default731",
+        "bytes": 6242461,
+        "sha256": "b502ae22b186a36f640bcf1a3c12de4266658c035902ebab2f6e1c7970b069a8"
+      },
+      {
+        "key": "normal68",
+        "bytes": 7359683,
+        "sha256": "1a45bfa154d788190cf2ace3b13c0144553601e384d311078504ad849a6caf0e"
+      },
+      {
+        "key": "normal69",
+        "bytes": 12443700,
+        "sha256": "fffab4ea4303d6a1ae864d9201ed3f38664186957d78b50bc40152478e9071a2"
+      }
+    ]
+  },
+  "allRuntimeScriptsTestsHashesExact": 648,
+  "temporaryRetention": {
+    "passed": true,
+    "filesRetired": 1863,
+    "logicalBytesRetired": 2971572966,
+    "beforeFreeBytes": {
+      "/workspace": 5640949760,
+      "/tmp": 1363259392
+    },
+    "afterFreeBytes": {
+      "/workspace": 5640146944,
+      "/tmp": 4338847744
+    },
+    "tmpMeasuredBytesReleased": 2975588352,
+    "primaryArchivesUnchanged": [
+      {
+        "path": "/workspace/wod-delivery/v0.138-keyboard-replay/wod-v138-verification.zip",
+        "sha256": "ae96a1b7773df551487e6f49257332a81b71e0b21c0ba4c490340769a98b15d3"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.139-loot-redistribution/wod-v139-verification.zip",
+        "sha256": "6ddaae11fa0da78d7a58e8b5aaac1c5e384b830d80877b636dae62d665f6624f"
+      }
+    ],
+    "sixRetainedRefsUnchanged": true,
+    "recoveryChainUntouched": true,
+    "noGCPrune": true
+  },
+  "selectorRecheckPlan": {
+    "reason": "top route selector was a partial handwritten list; now canonical30 EXPEDITIONS options. Recheck all completed/in-flight prefix and one conservative next pair against final UI. Original output preserved.",
+    "completedAtFix": 31,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128
+    ],
+    "runtimeEngineChanged": false
+  },
+  "catalogueAssertions": {
+    "reason": "one new optional route, exactly30 routes and90 goals; old completed goal receipts stay exact, no >= or excluded fields",
+    "files": [
+      "scripts/browser-v113.cjs",
+      "scripts/browser-v115.cjs",
+      "scripts/browser-v117.cjs",
+      "scripts/browser-v120.cjs",
+      "scripts/browser-v122.cjs",
+      "scripts/browser-v126.cjs",
+      "scripts/browser-v136.cjs",
+      "scripts/browser-v94.cjs",
+      "scripts/browser-v95.cjs",
+      "scripts/browser-v99.cjs",
+      "tests/route-focus.test.mjs",
+      "tests/v113.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs",
+      "tests/v120.test.mjs",
+      "tests/v94.test.mjs",
+      "tests/v95.test.mjs",
+      "tests/v99.test.mjs"
+    ],
+    "lateBrowser94": "strict rendered route-card count29→30; original failure and checkpoint preserved, rerun only this script against unchanged runtime",
+    "renderedRouteCardsAlsoExactly30": [
+      "scripts/browser-v115.cjs",
+      "scripts/browser-v136.cjs",
+      "scripts/browser-v117.cjs",
+      "scripts/browser-v122.cjs",
+      "scripts/browser-v113.cjs",
+      "scripts/browser-v120.cjs",
+      "scripts/browser-v126.cjs"
+    ]
+  },
+  "earlierEvidenceGap": {
+    "earlierOutputsNotAllPreserved": true,
+    "affected": [
+      "third failed direct browser round after successful three contexts",
+      "fourth successful pre-selector direct browser round"
+    ],
+    "lost": "per-round original export createdAt and generated third-plan IDs in desktop/final campaign files overwritten by later runs; cannot recreate original bytes",
+    "preserved": "API states/configs/reports, logs, scripts, failure screenshots/failure-context four keys, fourth success summary and one screenshot, later fifth root backup captured in browser-fifth-before-import-wait",
+    "impact": "No source or normal guild assets lost; final successful fresh-directory raw backup will be authoritative. Do not claim all earlier per-round exports preserved.",
+    "futureOutputDirectory": "/workspace/wod-evidence/v143/browser-final",
+    "inputFixtureCopies": [
+      "escort-1-config.json",
+      "escort-1-claimed.json",
+      "escort-source.json",
+      "escort-playcheck.json",
+      "escort-failure-config.json",
+      "escort-2-reward.json",
+      "escort-demo-config.json",
+      "escort-1-preparation.json",
+      "escort-desktop.json",
+      "escort-1-report.json",
+      "escort-start.json",
+      "escort-1-reward.json",
+      "escort-final.json",
+      "escort-history69.json",
+      "escort-2-config.json",
+      "escort-2-preparation.json",
+      "escort-2-pending.json",
+      "escort-1-pending.json",
+      "escort-2-claimed.json",
+      "escort-history55.json",
+      "escort-failure-report.json",
+      "escort-1-before.json",
+      "escort-2-report.json",
+      "escort-2-before.json",
+      "escort-demo-report.json"
+    ]
+  },
+  "source": [
+    {
+      "url": "https://world-of-dungeons.de/wod/spiel/news/?NEWSBLOCK_PAGE=8",
+      "support": "official historical 2017 news has escort narrative and Die Eskorte route; no verified combat-NPC implementation",
+      "limit": "all escorted-unit mechanics, numbers, rooms and rewards explicitly project adaptation; not current Delta data"
+    }
+  ],
+  "limits": [
+    "Escort combat NPC and all parameters are project adaptations; official history only establishes escort narrative direction",
+    "Fixed support caps unchanged, NPC is not seventh hero or an initiative/action/XP/equipment owner",
+    "Whole original six-person reports remain exact; new route needs v143 software, not backward-load compatible",
+    "Eight tactic bundle cases are finite observations, not isolated causation or global win-rate claims",
+    "Five frozen Native payloads793208chars unchanged; no capture-driven deletion or cap expansion",
+    "Third failed/fourth early successful per-round export times and generated plan IDs were overwritten, cannot recover original bytes; logs/scripts/screenshots/API and final fresh-directory full backups preserved",
+    "Chromium emulation, no physical device or other-browser claim",
+    "Permanent supply economy still pending; storage snapshot guards are not cross-process locks"
+  ],
+  "failuresPreserved": [
+    "specialized-initial: two fixture expectations incorrect (newGuild gold0; archive entry requires canonical metadata), fixed by real transaction APIs",
+    "full-initial: strict map unique size29 needed30; exact count retained",
+    "original unified browser94 strict route-card count29 needed30; initial failure/log/checkpoint retained, final-prefix rerun",
+    "browser-initial/second/third: hidden replay panes and returning from experiment to preparation; no forced hidden click",
+    "browser-final-selector: async file import not finished when immediate assertion ran; wait for complete raw config plus full equality, final output is independent browser-final/",
+    "standalone94 first recheck used wrong default localhost8000; precise connection error preserved, correct8002 rerun; no authorization bypass"
+  ],
+  "mainCandidate": {
+    "previousMain": "f04c10b435694876aed9a8940fce80a9f21276e2",
+    "reviewAt": 143,
+    "nextWindowIfSuccessful": [
+      146,
+      147,
+      148
+    ],
+    "preintegrationOfflineRecoveryRequired": true,
+    "oldRefsAndBranchesRetainedThisRound": true,
+    "gcPruneRun": false,
+    "deployed": false
+  },
+  "disksAtGate": {
+    "/workspace": {
+      "total": 33770192896,
+      "used": 26941501440,
+      "free": 5093928960
+    },
+    "/tmp": {
+      "total": 9441329152,
+      "used": 7869267968,
+      "free": 1572061184
+    }
+  }
+}

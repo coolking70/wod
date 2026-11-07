@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前开发版本：**v0.142「前线候补」**，分支`feature/v142-guardian-reserve`。**v0.140已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`f04c10b435694876aed9a8940fce80a9f21276e2`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+当前开发版本：**v0.143「退潮护送」**，分支`feature/v143-escort-objective`。周期集成状态见[GitHub实际main](https://github.com/coolking70/wod/tree/main)及本轮交付收据；本轮143为完整门禁检查点。用户已授权功能分支推送、周期评估main和冗余分支清理，未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+
+新增[退潮护送](docs/V143_ESCORT_OBJECTIVE.md)：六人保护不出手的伤员通过两房，生命跨房、治疗和援护沿原规则，伤员倒下会止步；不是第七位队员或永久伤势。真实70/71六人及伤员抵达至7920/next72，同时保留六人尚存而护送失败的固定实验，见[V143验证](docs/V143_CHECKS.json)。
 
 新增[前线候补与援护可读战报](docs/V142_GUARDIAN_RESERVE.md)：可选招募一位偏援护的守卫，挡架/输出取舍、个人资产和六人出战边界保持；完整施放也显示实际援护子事件。正常68六人/69五人，保留新守卫倒下，至7680/next70；旧报告零字段排除精确保持，见[V142验证](docs/V142_CHECKS.json)。
 
