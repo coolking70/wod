@@ -1,0 +1,2 @@
+import test from'node:test';import assert from'node:assert/strict';import{spawnSync}from'node:child_process';
+test('Python acceptance-retention suite:21 isolated recovery, metadata, safety, snapshot and capacity checks',()=>{const r=spawnSync('python3',['tests/test_evidence_retention.py'],{encoding:'utf8',env:{...process.env,PYTHONDONTWRITEBYTECODE:'1'},maxBuffer:2e6});assert.equal(r.status,0,(r.stdout||'')+(r.stderr||''));assert.match(r.stderr,/Ran 21 tests/);assert.match(r.stderr,/\nOK\s*$/);});

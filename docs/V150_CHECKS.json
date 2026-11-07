@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "baseline": "e776f1197fe4d557b8ef0fb4b92d05008f6ce45e",
+  "tests": {
+    "full": {
+      "tests": 1418,
+      "pass": 1418,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    },
+    "newPythonEntry": {
+      "tests": 1,
+      "pass": 1,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-node.tap"
+    },
+    "pythonSafetyCases": 21,
+    "pythonLog": "specialized-python.log",
+    "evidenceTool": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "storage.tap"
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 167,
+    "checkedReferences": 186,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "allOld687RuntimeScriptTestFilesByteExact": true,
+    "allOldDistFilesByteExact": 200,
+    "runtimeChanges": [],
+    "onlyThreeNewRetentionSourceTestFiles": true
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 647,
+    "python": 4,
+    "failures": []
+  },
+  "browser": {
+    "passed": true,
+    "existingSuites": 57,
+    "coverageNotReduced": true,
+    "allFinalSource": true,
+    "independentCapacityCheck": true,
+    "capacityReportId": 83,
+    "ChromiumDesktop390TouchEmulationOnly": true,
+    "nativeFourKeysByteExactOriginal149": true
+  },
+  "sourceFilesChecked": 690,
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONByteExactZeroExclusions": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "baselineArchiveDependency": {
+    "version": 149,
+    "archiveSHA256": "82419463c1437fce3af416ff7c83685f950e3f91e04f881cc195b00af0759835",
+    "fullOriginalBaselineKeptAndReferencedWithoutDuplicateCopy": true
+  },
+  "retention": {
+    "oldPrimary134136CoverageRefusalLogsKept": true,
+    "current134136CompleteStandaloneSnapshotFiles": 1666,
+    "PNGPathsNotCoveredByOldPrimaryNowPreserved": 138,
+    "bothSnapshotsPhysicallyRestoredAsWholeDirectoryIndependently": true,
+    "mainNetBytesReleasedAfterNewSnapshots": 2327023616,
+    "v147TemporaryFilesRetired": 1258,
+    "v147MeasuredTmpBytesReleased": 2019340288,
+    "v148v149TemporaryFilesRetired": [
+      1305,
+      1336
+    ],
+    "allSixRefsPrivatePackagesLatestCompleteChainsAndDirectFailuresKept": true,
+    "newVersionedPlanProveExplicitApplyRestoreSnapshotTool": true,
+    "currentStageRawRetirementOnlyAfterImmutableFinalPackageAndPhysicalProof": true
+  },
+  "capacityBoundary": {
+    "passed": true,
+    "scope": "Explicit proactive check in isolated restored test-copy only; no user-reported incident assumed; no formal campaign/file changes",
+    "reportId": 83,
+    "slotsUsed": 5,
+    "slotsLimit": 6,
+    "encodedCharsUsed": 793208,
+    "encodedCharsLimit": 800000,
+    "freeEncodedChars": 6792,
+    "newReportEncoding": "gzip-units-v1-base64",
+    "newReportRawBytes": 2892460,
+    "newReportCompressedBytes": 34452,
+    "newReportEncodedChars": 45936,
+    "wouldTotalEncodedChars": 839144,
+    "overflowEncodedChars": 39144,
+    "refusalMessage": "未能收藏：收藏容量不足，请先导出并移除旧快照",
+    "allFourRawKeysByteExactAfterRefusalAndExport": true,
+    "allOriginalFiveEntriesExact": true,
+    "exportOfNewFullReportStillWorks": true,
+    "libraryExportsAndExplicitRemovalsVisibleWithoutPerformingDeletion": true,
+    "formalCanonicalSourceFilesSHA256Unchanged": {
+      "/workspace/wod-evidence/v149/browser-final/preparation-final-campaign.json": "8a6f7a7b2db6545812faeea4509e4dc24aa2f46e87f2e1649c83a7fa4946689c",
+      "/workspace/wod-evidence/v149/browser-final/preparation-final-four-raw-keys.json": "624d9be16230267227b12695efd7d915298a01cd7e4cee32ed284974dd6fed52"
+    },
+    "browser": "154.0.8037.57",
+    "errors": []
+  },
+  "nativeState": {
+    "gold": 9110,
+    "next": 84,
+    "ownHero": "e",
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenEntries": 5,
+    "encodedChars": 793208,
+    "plans": 3,
+    "noNewFormalDeparturesOrRewardsThisInfrastructurePhase": true,
+    "canonicalNativeFourKeys": "/workspace/wod-evidence/v149/browser-final/preparation-final-four-raw-keys.json"
+  },
+  "operationalSetupErrorPreserved": "compatibility-launch-before-script-ready.log; generated-file ordering fixed, full comparison then passed without changing assertions",
+  "limits": [
+    "runtime and all old687source inputs unchanged, no new gameplay or permanent supplies",
+    "Python21 checks run inside one Node wrapper; full Node count1418 is not1418 plus21 distinct Node tests",
+    "historical134136primary ZIPs were not complete for current PNG paths; new standalone snapshots preserve currently available data, not inaccessible historical overwrites",
+    "old143export time/ID gap not claimed repaired",
+    "main stays149, next window152–154; no deployment/force/GC/prune",
+    "other browser engines and real devices not tested"
+  ],
+  "pushAndPostPackagingRetention": "Exact commit/remote/restore and final raw retirement in external checksummed delivery receipts; no self-reference guess"
+}

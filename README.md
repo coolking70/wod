@@ -1,3 +1,5 @@
+> v150补可验证验收留存：严格计划/物理恢复/显式清理，旧ZIP遗漏的当前PNG先完整备份；净释放主盘约2.17GiB并清理已核验临时副本。游戏运行原文和9110/next84正式档保持；21项安全恢复测试纳入完整套件。见[流程](docs/V150_VERIFIED_RETENTION.md)、[交接](docs/HANDOFF_CLOUD_V150.md)。main保持149，下一窗口152–154；永久补给待决。
+
 > v149补出发前应急分工核对：逐房显示已知等级/真实标准费用/固定装备资格，区别显式拆解和有条件应急；不模拟未来资源或保证结果。正常82/83终9110/next84，旧规则资产保持。见[实现](docs/V149_AUTOMATIC_PREPARATION.md)、[交接](docs/HANDOFF_CLOUD_V149.md)。本轮按149–151窗口完成门禁后评估main，实际结果看交付收据；永久补给待决。
 
 > v148增加默认关闭的普通技能自动应急：先检查所有已配行，才选未配基础攻击/法力援助，免费预检、真实最低耗蓝；课程仍须明确配技。正式80超时/81六人生还的完整失败与代价保留，终8930/next82。见[实现](docs/V148_AUTOMATIC_ACTION.md)、[交接](docs/HANDOFF_CLOUD_V148.md)。main保持146，下一完整窗口149–151；永久补给待决。
@@ -12,7 +14,7 @@
 
 # 深潮远征 / wod
 
-当前开发版本：**v0.149「出发前应急分工核对」**，分支`feature/v149-automatic-preparation`。周期集成状态见[GitHub实际main](https://github.com/coolking70/wod/tree/main)及本轮交付收据；本轮执行v149–v151窗口的完整集成门禁；main实际提交见GitHub和交付integration.json。用户已授权功能分支推送、周期评估main和冗余分支清理，未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+当前开发版本：**v0.150「可验证验收留存」**，分支`feature/v150-verified-retention`。周期集成状态见[GitHub实际main](https://github.com/coolking70/wod/tree/main)及本轮交付收据；main已集成v149，下一完整集成窗口v152–v154；实际提交见GitHub和交付收据。用户已授权功能分支推送、周期评估main和冗余分支清理，未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
 
 新增[退潮护送](docs/V143_ESCORT_OBJECTIVE.md)：六人保护不出手的伤员通过两房，生命跨房、治疗和援护沿原规则，伤员倒下会止步；不是第七位队员或永久伤势。真实70/71六人及伤员抵达至7920/next72，同时保留六人尚存而护送失败的固定实验，见[V143验证](docs/V143_CHECKS.json)。
 
