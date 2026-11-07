@@ -139,3 +139,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .preparation-status{border-color:#bd9e66;background:#2c2920}.preparation-status h2{color:#ebd59e}.preparation-status[hidden]{display:none}.preparation-status .bar{justify-content:flex-start}.preparation-status small{color:#c5bdac}
 
 .replay-controls:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.replay-key-hint{display:block;flex-basis:100%;margin:2px 0}
+
+.loot-return-control{display:grid;gap:8px}.loot-return-control small{max-width:36em}.loot-return-preview{padding:16px;border:1px solid var(--gold);background:#14282f;margin:16px 0}.loot-return-preview p{overflow-wrap:anywhere}

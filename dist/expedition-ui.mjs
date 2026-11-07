@@ -112,7 +112,7 @@ function refreshPlanBook(){try{const raw=localStorage.getItem(plansKey);if(raw==
 refreshPlanBook();
 function tell(t){$('#notice').textContent=t;}
 function preparationProblem(message){preparationStatus.hidden=false;preparationStatus.innerHTML='<h2>请先核对准备草稿</h2><p>'+esc(message)+'</p><div class=bar><button data-draft-export=true>导出本页草稿</button><button data-draft-reload=true>载入最新准备配置</button></div><small>本页仍保留你的调整；载入最新配置会替换本页草稿。实验不发奖励，正式出征须先核对最新配置。</small>';$('#save-state').textContent='本页准备草稿未保存，请先处理上方提示。';document.body.dataset.preparationState='conflict';$('#guild-run').disabled=true;}
-function markPreparationSaved(){preparationStatus.hidden=true;document.body.dataset.preparationState='saved';$('#guild-run').disabled=false;$('#save-state').textContent='当前配置已保存在本机 · v0.138';}
+function markPreparationSaved(){preparationStatus.hidden=true;document.body.dataset.preparationState='saved';$('#guild-run').disabled=false;$('#save-state').textContent='当前配置已保存在本机 · v0.139';}
 function savedState(){try{assertCurrentDraft(localStorage,config);preparationExpected=localStorage.getItem(storageKey);markPreparationSaved();}catch(e){preparationProblem(e instanceof DraftConflict?e.message:'本机存储不可用，请导出本页草稿。');}}
 function persist(){try{preparationExpected=commitDraft(localStorage,config,preparationExpected);markPreparationSaved();return true;}catch(e){preparationProblem(e instanceof DraftConflict?e.message:'本机存储不可用，请导出本页草稿。');return false;}}
 function refreshPreparationStatus(){try{const current=localStorage.getItem(storageKey);if(current!==preparationExpected)preparationProblem(new DraftConflict().message);else if(current===JSON.stringify(config))markPreparationSaved();}catch{preparationProblem('本机存储不可用，请导出本页草稿。');}}

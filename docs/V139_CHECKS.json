@@ -1,0 +1,384 @@
+{
+  "passed": true,
+  "version": "0.139",
+  "branch": "feature/v139-loot-redistribution",
+  "baseline": {
+    "commit": "acfb482138a53093cd73428df84091a41326afd1",
+    "tree": "564c0bdaeffaddd822e4e27d9fbcb0d5d548c5a8",
+    "branch": "feature/v139-loot-redistribution",
+    "main": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "clean": true,
+    "dateUTC": "2026-11-06T23:46:52Z",
+    "priorSameCodeChecks": {
+      "fullTests": 1251,
+      "unifiedBrowserSuites": 46,
+      "receiptReusedNotRerunBeforeEdits": true
+    },
+    "space": {
+      "/workspace": {
+        "total": 33770192896,
+        "used": 23983771648,
+        "free": 8051658752
+      },
+      "/tmp": {
+        "total": 9441329152,
+        "used": 1498648576,
+        "free": 7942680576
+      }
+    }
+  },
+  "tests": {
+    "full": {
+      "tests": 1267,
+      "pass": 1267,
+      "fail": 0,
+      "skipped": 0,
+      "log": "full-tests.tap",
+      "durationMs": 179482.005926
+    },
+    "newSpecialized": {
+      "tests": 16,
+      "pass": 16,
+      "fail": 0,
+      "skipped": 0,
+      "log": "specialized-second.tap",
+      "durationMs": 6732.788501
+    },
+    "assertionsWeakened": false
+  },
+  "syntax": {
+    "passed": true,
+    "count": 595,
+    "failures": [],
+    "pythonChecked": 1,
+    "pythonFailures": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 157,
+    "checkedReferences": 175,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "suites": 47,
+    "passed": 47,
+    "initialUnifiedAttemptRanSuites": 0,
+    "initialUnifiedSyntaxFailurePreserved": true,
+    "secondUnifiedInvocationAllPassed": true,
+    "standaloneFirstFunctionalRunPassed": true,
+    "standaloneAfterVisualFixPassed": true,
+    "widths": [
+      1440,
+      390
+    ],
+    "engine": "Current installed Chromium",
+    "contexts": "desktop, mobile, fresh final restore, plus two pages sharing storage",
+    "previewAndCancelAllFourCampaignRawKeysExact": true,
+    "wornSavedSetAndPendingBlockersVisible": true,
+    "oneActualOwnedCopyReturnAndReassignEntireGuildEqualAPI": true,
+    "actualNormal62And63FullReportsPendingAndClaimedGuildsEqualAPI": true,
+    "old47PooledArchiveFullExportExact": true,
+    "old61HistoryFullReportExactNoDuplicateReward": true,
+    "fullCampaignRestoreOwnershipBooksAndAssetsExact": true,
+    "stalePreviewCannotOverwriteOtherPageEquipment": true,
+    "pageErrors": [],
+    "noHorizontalOverflow": true,
+    "screenshotsViewed": [
+      "return-desktop.png",
+      "return-mobile.png"
+    ],
+    "previewHeadingVisibleAfterCenteredScrollFix": true,
+    "otherEnginesOrPhysicalDevicesTested": false
+  },
+  "implementation": {
+    "onlyExistingUnwornDungeonOnlyLoot": true,
+    "anySavedEquipmentSetReferenceBlocksReturn": true,
+    "pendingUnknownUnownedAndOverflowRejectedBeforeMutation": true,
+    "pureReturnRemovesOneOwnerEntryAddsOneWarehouseUnit": true,
+    "noAutomaticUnequipBookClearReassignmentOrPreparationMutation": true,
+    "returnGoldAndXP": 0,
+    "personalShopGearCannotEnterExistingRelicWarehouse": true,
+    "noNewGuildOrConfigFields": true,
+    "guard": "Preview guild raw comparison plus existing save check, non-atomic and not a cross-process lock."
+  },
+  "statePreservation": {
+    "passed": true,
+    "baseline": "acfb482138a53093cd73428df84091a41326afd1",
+    "sourceGuildNativeAndFrozenPlanExact": true,
+    "manualAssetExpectationsExact": true,
+    "ordinaryGold": 230,
+    "ordinaryXpEach": 100,
+    "finalGold": 6895,
+    "next": 64,
+    "pending": null,
+    "physicalClockpinCopies": 1,
+    "currentOwner": "d",
+    "allNonInventoryMemberFieldsExactExceptNormalXP": true,
+    "warehouseOnlyNormalLootAdded": true,
+    "allOriginalFirstProofsExact": true,
+    "addedFirstProofs": [
+      {
+        "route": "inquest",
+        "goal": "survive",
+        "id": 62
+      }
+    ],
+    "proofCountBefore": 20,
+    "proofCountAfter": 21,
+    "oldFiveArchiveEntriesAndWireBytesExact": true,
+    "archiveEncodedChars": 793208,
+    "history": [
+      63,
+      62,
+      61,
+      60,
+      59,
+      58,
+      57,
+      56,
+      55,
+      54,
+      53,
+      52,
+      51,
+      50,
+      49,
+      48,
+      47,
+      46,
+      45,
+      44
+    ],
+    "historyRollOff": [
+      42,
+      43
+    ],
+    "onlyExistingRuntimeChanges": [
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "dist/expedition.css"
+    ],
+    "unchangedRuntimeFiles": 183,
+    "allCombatContentGearPricesAndProgressionBytesExact": true,
+    "fourFullRawReportsEqualV138EngineWithoutExclusions": [
+      {
+        "id": 62,
+        "sha256": "3263cb4843e3f266b256c205f0e5b9ebdae76e056882b34c9781f07479f7ede8"
+      },
+      {
+        "id": 63,
+        "sha256": "1ef09e9aae0da4a9cfb4c6411b719fce75eceac67a7a8790515308653831c736"
+      },
+      {
+        "id": 55,
+        "sha256": "99bf17dbf65b31e9ede245455dd7c3db10b90d7b430b9393a974a0bb847065b4"
+      },
+      {
+        "id": 61,
+        "sha256": "44b9f69e90620e389452721a4dd6312e9300531e7287a826e55e260dbfc268dc"
+      }
+    ],
+    "staticGearDifference": {
+      "attributes": {
+        "con": -1,
+        "agi": 2,
+        "per": 3
+      },
+      "maxHp": -4,
+      "resistances": {
+        "magic": 5,
+        "mental": -10
+      }
+    },
+    "noNewTrainingPurchasesCoursesRolesRefunds": true,
+    "main": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "remoteWritesBeforeStageCommit": false,
+    "handoffHistoricalBodyPreserved": true
+  },
+  "stateAuditSHA256": "f6de0c5b7e9a11c851ab40c7706f2d829d0e4cb1ad220b87c066cf4f21f459e9",
+  "actualPlay": {
+    "startGold": 6665,
+    "sourceOwner": "e",
+    "destination": "d",
+    "item": "clockpin",
+    "physicalCopies": 1,
+    "returnGold": 0,
+    "normal": [
+      {
+        "id": 62,
+        "route": "inquest",
+        "rounds": [
+          4,
+          4
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 6,
+          "rune": 3,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 60,
+          "firstClear": true,
+          "loot": [
+            "calmribbon"
+          ]
+        },
+        "gold": 6805,
+        "scholarGear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "clockpin"
+        }
+      },
+      {
+        "id": 63,
+        "route": "lockworks",
+        "rounds": [
+          3,
+          4
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 9,
+          "rune": 6,
+          "arrow": 7
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 90,
+          "xp": 40,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 6895,
+        "scholarGear": {
+          "weapon": "focus",
+          "armor": "cloth",
+          "accessory": "clockpin"
+        }
+      }
+    ],
+    "finalGold": 6895,
+    "next": 64,
+    "warehouseClockpin": 0,
+    "ownerClockpin": [
+      "d"
+    ],
+    "noNewTrainingPurchasesRolesCoursesRefunds": true,
+    "limits": "Ownership transfer is not an automatic upgrade. Clockpin retains existing speed/perception benefits, HP and mental-resistance costs. Different action order may consume randomness differently; paired seed does not prove isolated win causation or global balance."
+  },
+  "comparison": {
+    "seed": 62,
+    "bothAlive": 6,
+    "bothRounds": [
+      4,
+      4
+    ],
+    "beforeSupplies": {
+      "herb": 7,
+      "rune": 3,
+      "arrow": 0
+    },
+    "afterSupplies": {
+      "herb": 6,
+      "rune": 3,
+      "arrow": 0
+    },
+    "notAnUpgradeRecommendation": true,
+    "randomOrderAndDownstreamBranchesMayDiffer": true
+  },
+  "reference": {
+    "url": "https://world-of-dungeons.de/ency/Gruppenlager_und_Schatzkammer",
+    "evidence": "Official public search-index excerpt describes exchange through group storage; crawler label about5.2 years old.",
+    "liveRead": "502 Bad Gateway; no full current-page claim",
+    "otherRead": "https://wiki.world-of-dungeons.de/ency/Handel returned403; not bypassed",
+    "scope": "Shared-storage structure only. Unworn/non-set relic return limits are original conservative project adaptation; no current-server binding/Unique/permission/numeric claim.",
+    "pricesAndAllExistingGearNumbersUnchanged": true
+  },
+  "baselineEvidenceStatus": {
+    "firstBaselineStructuredSummaryOverwritten": true,
+    "reason": "Baseline-reference and first functional browser invocation initially shared root output; successful functional summary replaced initial baseline JSON. Later baseline output moved into separate directory.",
+    "originalErrorLog": "baseline-browser.log",
+    "originalScreenshot": "failure.png",
+    "screenshotCopy": "baseline-initial-failure.png",
+    "originalLogSHA256": "a2659791baca21cec38762de01a53374983c4a020683bbd55f697e285620eaf1",
+    "originalScreenshotSHA256": "c91c9562ee4810cc9fb2af9d7aee88dcda1225593ef92636272354a46098305e",
+    "noOriginalSummaryRecreatedOrClaimed": true,
+    "secondFailureStructuredSummaryKept": "baseline-second-browser-v139.json",
+    "correctedBaselineSuccess": "baseline-reference/loot-baseline.json",
+    "functionalAnd47SuiteEvidenceComplete": true
+  },
+  "initialErrorLogsAndImages": {
+    "unitImport": "specialized-initial.tap used wrong module for existing guild set mutations; corrected import only.",
+    "baselineServer": "baseline-browser.log and baseline-initial-failure.png: own temporary service initially served repo root, corrected to dist. Initial structured summary was overwritten by a functional run sharing output; log and image remain, no original summary recreated.",
+    "baselineLocator": "baseline-browser-second.log and baseline-second-browser-v139.json: generic equipment pane matched two sections; scoped to pane containing gear-member, same restriction assertion retained.",
+    "unifiedInitialization": "unified-browser-initial.log: transferDir duplicated v105 fixture variable; renamed only new fixture variable before any suite ran.",
+    "visual": "first-return-desktop.png showed sticky navigation over preview heading; UI scroll changed to center, all full flows rerun.",
+    "stateAudit": "state-audit-initial.log: git-show PNG exceeded Node default maxBuffer; changed to exact Git blob hash comparison, all183 old-file checks retained.",
+    "inputsOrRewardsTunedAfterNewResults": false
+  },
+  "checkpointAudit": {
+    "passed": true,
+    "suites": 47,
+    "files": 947,
+    "images": 78,
+    "rawBytes": 1516810277,
+    "archiveBytes": 193733224,
+    "sourceFilesRemoved": false,
+    "eachFileSHAAndZipCRCRecheckedIndependently": true
+  },
+  "sourceReferenceCache": {
+    "referenceCommit": "acfb482138a53093cd73428df84091a41326afd1",
+    "directory": "/tmp/wod-v138-reference-for-v139",
+    "serverPID": 44065,
+    "port": 8005,
+    "containsGitMetadata": false,
+    "servedDirectory": "/tmp/wod-v138-reference-for-v139/dist",
+    "initialWrongRootPID": 42689,
+    "initialFailure": "Temporary reference server served repository root rather than dist; corrected only own loopback service.",
+    "completedReferenceCacheRemoved": true,
+    "allTrackedBlobsVerified": 1136,
+    "serverStopped": true,
+    "referenceCommitStillInLocalGitAndVerifiedRemoteHistory": true,
+    "sourceRecoveryChainKept": [
+      "v137 complete bundle",
+      "v138 incremental bundle"
+    ],
+    "baselineAndAllTestEvidenceKept": true
+  },
+  "scope": {
+    "routes": 29,
+    "gear": 45,
+    "goals": 87,
+    "firstProofCount": 21,
+    "newSkillsGearOrCombatNumbers": false,
+    "newTrainingCoursesPurchasesOrRoles": false,
+    "mainRemainsV137": true,
+    "stageBranchPush": "Authorized normal post-commit push; exact result in delivery push receipt.",
+    "permanentSupplyImplemented": false,
+    "deployment": false,
+    "presetBrogueJSModified": false,
+    "completeSourceArchiveRepeated": false
+  },
+  "remaining": {
+    "blockers": [],
+    "decisions": [
+      "Permanent supply economy and reference-server numeric calibration remain pending."
+    ],
+    "limits": [
+      "Chromium desktop/mobile emulation only; no other engines or physical devices.",
+      "Search-index excerpts support shared-storage structure; live official full page502 and no current-server/Unique/binding/permission claim.",
+      "Snapshot comparisons are not atomic cross-process locks.",
+      "GitHub source publication does not publish all cloud-only evidence or retained abandoned revisions."
+    ],
+    "nextMainReview": "v140–142 or coherent milestone, only after latest remote/full test/browser/data gates.",
+    "nextDevelopment": "Return to solo exploration and growth bottlenecks, avoid adding return variants or a new trade economy."
+  }
+}

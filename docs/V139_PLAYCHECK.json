@@ -1,0 +1,74 @@
+{
+  "startGold": 6665,
+  "sourceOwner": "e",
+  "destination": "d",
+  "item": "clockpin",
+  "physicalCopies": 1,
+  "returnGold": 0,
+  "normal": [
+    {
+      "id": 62,
+      "route": "inquest",
+      "rounds": [
+        4,
+        4
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 3,
+        "arrow": 0
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 140,
+        "xp": 60,
+        "firstClear": true,
+        "loot": [
+          "calmribbon"
+        ]
+      },
+      "gold": 6805,
+      "scholarGear": {
+        "weapon": "focus",
+        "armor": "cloth",
+        "accessory": "clockpin"
+      }
+    },
+    {
+      "id": 63,
+      "route": "lockworks",
+      "rounds": [
+        3,
+        4
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 9,
+        "rune": 6,
+        "arrow": 7
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 90,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 6895,
+      "scholarGear": {
+        "weapon": "focus",
+        "armor": "cloth",
+        "accessory": "clockpin"
+      }
+    }
+  ],
+  "finalGold": 6895,
+  "next": 64,
+  "warehouseClockpin": 0,
+  "ownerClockpin": [
+    "d"
+  ],
+  "noNewTrainingPurchasesRolesCoursesRefunds": true,
+  "limits": "Ownership transfer is not an automatic upgrade. Clockpin retains existing speed/perception benefits, HP and mental-resistance costs. Different action order may consume randomness differently; paired seed does not prove isolated win causation or global balance."
+}

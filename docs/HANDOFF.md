@@ -1,6 +1,6 @@
 # 接手开发指南
 
-当前v0.138，先读[最新云端交接](HANDOFF_CLOUD_V138.md)、[验证收据](V138_CHECKS.json)、[云端空间/Git约定](CLOUD_STORAGE_AND_GIT_POLICY.md)，再按下列历史资料接续。main已归并v0.137；后续阶段可正常推送分支并周期评估安全合并，不部署。
+当前v0.139，先读[最新云端交接](HANDOFF_CLOUD_V139.md)、[验证收据](V139_CHECKS.json)、[云端空间/Git约定](CLOUD_STORAGE_AND_GIT_POLICY.md)，再按下列历史资料接续。main保持已归并v0.137；完成阶段可正常推送分支，下一main评估窗口v140–142，不部署。
 
 ## 先读与当前约束
 
