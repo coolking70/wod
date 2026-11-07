@@ -26,6 +26,7 @@ export function personalReport(report,heroId){
   if(own&&e.type==='skip'&&d.mechanismSelection)proof(e,index,'本人的机关类别与后备');
   if(e.type==='immune'){if(own){add(e.roomIndex,'immuneRecords');proof(e,index,'实际受击者免疫');}if(target){add(e.roomIndex,'immuneReceipts');proof(e,index,'本人固有免疫');}}
   if(own&&e.type==='skip'&&d.attackImmunity)proof(e,index,'本人的类型排除与后备');
+  if(e.type==='surrender')proof(e,index,'头领投降');
   if(own&&e.type==='control'){add(e.roomIndex,'nonDamageAttempts');if(d.applied)add(e.roomIndex,'nonDamageApplied');proof(e,index,'本人无伤削弱攻防');}
   if(e.type==='mana-damage'){if(own){add(e.roomIndex,'manaDamage',d.actual);proof(e,index,'本人实际削减法力');}if(target){add(e.roomIndex,'manaLost',d.actual);proof(e,index,'本人受到法力削减');}}
   if(own&&e.type==='skip'&&d.manaFloor?.blocked)proof(e,index,'本人的法力留存与后备');
@@ -62,5 +63,5 @@ export function personalReport(report,heroId){
 
 // Keep complete action groups, plus room/story boundaries, for a personal replay.
 export function personalSteps(steps,heroId){
- return steps.filter(g=>g.events.some(e=>['wave-clear','reinforcement','withdraw','room','victory','defeat','scene','encounter','route','rescue','branch','deadline'].includes(e.type)||e.detail?.actionLimits?.some(l=>l.source===heroId||l.target===heroId)||e.actor===heroId||e.targets.includes(heroId)||e.units.some(u=>u.owner===heroId&&(u.id===e.actor||e.targets.includes(u.id)))));
+ return steps.filter(g=>g.events.some(e=>['surrender','wave-clear','reinforcement','withdraw','room','victory','defeat','scene','encounter','route','rescue','branch','deadline'].includes(e.type)||e.detail?.actionLimits?.some(l=>l.source===heroId||l.target===heroId)||e.actor===heroId||e.targets.includes(heroId)||e.units.some(u=>u.owner===heroId&&(u.id===e.actor||e.targets.includes(u.id)))));
 }

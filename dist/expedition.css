@@ -156,3 +156,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .mental-defense-help,.mental-defense-proof{padding:12px;border-left:2px solid #b4a6d4;margin:10px 0;overflow-wrap:anywhere}.mental-defense-proof article{border-top:1px solid #65758255;padding-top:8px;margin-top:8px}
 
 .control-proof{padding:12px;border:1px solid #66717a;border-radius:8px;margin:12px 0;overflow-wrap:anywhere}.control-proof article{padding:8px 0;border-bottom:1px solid #3a4650}.control-proof p{line-height:1.65}
+
+.surrender-preparation,.surrender-proof,.surrender-report{padding:12px;border:1px solid #6d8a88;border-radius:8px;margin:10px 0;overflow-wrap:anywhere}.surrender-proof p,.surrender-preparation p{line-height:1.65}.unit.surrendered{opacity:.7;filter:saturate(.45)}.surrender-label{display:block;color:#bce0d8;font-size:12px}

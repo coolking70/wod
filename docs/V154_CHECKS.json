@@ -1,0 +1,862 @@
+{
+  "passed": true,
+  "baseline": "6fa900291c0f2d2589098aa0329b1411b3e5039f",
+  "tests": {
+    "baselineFull": {
+      "tests": 1473,
+      "pass": 1473,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "fullFinal": {
+      "tests": 1497,
+      "pass": 1497,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "specializedPersonal": {
+      "tests": 36,
+      "pass": 36,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "targetedCatalogue": {
+      "tests": 76,
+      "pass": 76,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "newSurrenderCases": 24,
+    "PythonInsideNodeWrapper": 21,
+    "firstFullFailurePreserved": "1490pass7fail: exact goal total99→102 only; full-final1497passed",
+    "firstSpecializedFailuresPreserved": "3 fixture/assertion mistakes; fixed AoE input order and complete frozen metadata, mapcount34",
+    "browserFailuresPreserved": "5 failed attempts: four first mapcount33→34, v117 retry goal total99→102; all preserved distinct directories/CP"
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 171,
+    "checkedReferences": 190,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 668,
+    "python": 4,
+    "failures": []
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "old708InputsCompared": true,
+    "declaredChanged": [
+      {
+        "path": "dist/expedition-adventure.mjs",
+        "beforeSHA256": "82feb465fb687b714db023051460d168c10ca6a05bb785eafe2008e23b331b83",
+        "afterSHA256": "e43b1b9b8ca250b5cbd4d54b84154ba60c1c925561a8cf993d62a06027a1bf08"
+      },
+      {
+        "path": "dist/expedition-camp-cycle.mjs",
+        "beforeSHA256": "c7f50f91752bec5ec5c0fcd83a1d956bfe999e22715c6017e91acd8a0d4b129f",
+        "afterSHA256": "24a80194451dc5d253955afa73165f806cb695f1ebecba4665898a6d422e8861"
+      },
+      {
+        "path": "dist/expedition-data.mjs",
+        "beforeSHA256": "35983dc3162aa496f9b7b2bb8064b57c80c9654484ab2003f0539de14e1997fd",
+        "afterSHA256": "b438a80e7c9fa85a535176caeeca3047d58da90811b1ea08ef2a7dc7bf057578"
+      },
+      {
+        "path": "dist/expedition-engine.mjs",
+        "beforeSHA256": "58cb6e931c4f32f4c1a7f3cb0df73e8863c574428d99a319bd7c8db2450adb50",
+        "afterSHA256": "5b024aa562e609f6ccff0c1f64fa979c7a9f781601e26d459c4e3c25c799e1c1"
+      },
+      {
+        "path": "dist/expedition-guild-ui.mjs",
+        "beforeSHA256": "3bef365255c34cdacbaaac1fdd78ed77da076220692e1fdde76d099f1302184f",
+        "afterSHA256": "9fa596707826339cdad7a122d5c311f25b62ecd5af41beec6c8ddecab2022899"
+      },
+      {
+        "path": "dist/expedition-highlights.mjs",
+        "beforeSHA256": "1ba2c25072e80563a5d78c66ed7ae8e54f26d1b01f112276391ce031b5e3073b",
+        "afterSHA256": "50b23b944c160ab7a2da18d713c1d96717d916e790a54ad0a048fd2b540fb14e"
+      },
+      {
+        "path": "dist/expedition-loot.mjs",
+        "beforeSHA256": "7c7551d59f3e2e6a1a536e08bba5e8484da730cadbfb60c0d3a783be7c518e13",
+        "afterSHA256": "7c58d54738464939cca3c8ea66c2655da64b4afe50cb6a70299b4e2cd711b4e1"
+      },
+      {
+        "path": "dist/expedition-personal.mjs",
+        "beforeSHA256": "c8946371d13f210b008abb6044604aa97b7c2be8aa402282edb19c3e105c9610",
+        "afterSHA256": "4ab14e936b778b79d8d2f77f19523cf5836c66fcd86ae660ea72bb833197e856"
+      },
+      {
+        "path": "dist/expedition-stage.mjs",
+        "beforeSHA256": "f39e5e7ef6fae0828bff98f3c872c1043ee9dd488838b85e9afc910f3aa15a33",
+        "afterSHA256": "c7ca88c84d9f61d31e5a9dd73ea761d1d344fc7b992ded384695fdebe8af59f5"
+      },
+      {
+        "path": "dist/expedition-ui.mjs",
+        "beforeSHA256": "c465a6b7e6a0a85f4d61e9d143c40c382c33eacb216b6c7ee9191863a6e69517",
+        "afterSHA256": "e02a4272bf342b1944d69b6424a1e4e2079b96b75d3bb51e7191df3b46047c3a"
+      },
+      {
+        "path": "dist/expedition.css",
+        "beforeSHA256": "be71fadd98123dfbe59206e7dcab94ea2f532fef313fd52f780b4ebc0ee04556",
+        "afterSHA256": "107da956e5b51f8e43842b481c95e2b5ae4077dc305c8cdbe7d56aaf2a9d065a"
+      },
+      {
+        "path": "scripts/browser-v113.cjs",
+        "beforeSHA256": "53d47b71129288f55be36000bcaf84b7517224f4e84f8a690fa04c69f5cc1b40",
+        "afterSHA256": "3853bb0243f579e30570d703752521ed2c893a68aab5d446b2e1c721a04d7035"
+      },
+      {
+        "path": "scripts/browser-v115.cjs",
+        "beforeSHA256": "18ab82b2d6435581a3f2abd5bfe23d2ba8e27d2adc60a459c3cc3cd8c69bde43",
+        "afterSHA256": "fa43756ced37262abf3099f9936b047f2e75fd0aed1bbd889fc70e5caf7f2d7a"
+      },
+      {
+        "path": "scripts/browser-v117.cjs",
+        "beforeSHA256": "e4f290aab0bbb11a49ae2caa6b575b0d2c058f6c3808fa508fa120bc6272aa3b",
+        "afterSHA256": "1db019d9b68bfe2e47538d08dfba76a08ddead87f8b9708dfddf3db49d58fa50"
+      },
+      {
+        "path": "scripts/browser-v120.cjs",
+        "beforeSHA256": "1985e014091c2e91af9c30e314c7608daa8d0fbcf6eb8bc50f85bd404bea6161",
+        "afterSHA256": "3bbf44413d348897b05a9fde87b4cebf6887a72ee3e6e830ccce0950849a6e22"
+      },
+      {
+        "path": "scripts/browser-v122.cjs",
+        "beforeSHA256": "c8d227a9b0c2eea50839c402b9ec01b0c81ceeba38fd91c2e814a33c62169487",
+        "afterSHA256": "3b135a4feb32258dfe7d8cb4b16c51b982f16fc37f23ddab02ac6d6b0a73946c"
+      },
+      {
+        "path": "scripts/browser-v126.cjs",
+        "beforeSHA256": "321a95399ea89da7a0dcd1d28a11fe0405cd2b30ea58588283a09eb4c4af8eaf",
+        "afterSHA256": "288493641934a651071d481972974abfd4b388e1ec6bd964742d2e39e03b08ad"
+      },
+      {
+        "path": "scripts/browser-v136.cjs",
+        "beforeSHA256": "dd245e80193da0487c906a108c912209fda2a3e53a5c6b830482b40e4a73a6fb",
+        "afterSHA256": "c9081bc0489e7d321fcc3fd572991f5e95758a8021c8e2ad941d0b479076488b"
+      },
+      {
+        "path": "scripts/browser-v143.cjs",
+        "beforeSHA256": "48d37925378fd027cdb03ac9a3a102eb69a422b52deccccb3d64ba37dac9457e",
+        "afterSHA256": "5663c55eed3aa1e850901f6118dde391e7accde287bf5b29bf88809acf1340a8"
+      },
+      {
+        "path": "scripts/browser-v144.cjs",
+        "beforeSHA256": "109e4a66aa3add8edb9a8ce2f6c455993af47871ade7d1d51d38a4d143a1898a",
+        "afterSHA256": "cba150f96622fe5de48279e6a3e73ceb06b80a9270480df182e7d9de7cf76eb7"
+      },
+      {
+        "path": "scripts/browser-v145.cjs",
+        "beforeSHA256": "966b575720dda12360e41413819b67e36e2731232e42211f3537ac75a19bdfb7",
+        "afterSHA256": "ef1f2a50eec8f5c149d9642e882bcffe29358c2c1e854773e8c2c90626ea8862"
+      },
+      {
+        "path": "scripts/browser-v146.cjs",
+        "beforeSHA256": "f8aff23f0308e053df21a3c79ed997b7a92fcdf4eb58a764f990bf1b5bef100c",
+        "afterSHA256": "073bd5d4797049828589e6131ab761cac9d11a377b9d130531fa3e0e9c9f932c"
+      },
+      {
+        "path": "scripts/browser-v147.cjs",
+        "beforeSHA256": "07ed54117f6100f32b7c817da3dd242e59e1efaf72d3d381423b2f5124982cb9",
+        "afterSHA256": "d20cba83378a9f57a7f5458923b743e932be8430653c71e43776dd0c6dfd26c0"
+      },
+      {
+        "path": "scripts/browser-v148.cjs",
+        "beforeSHA256": "f0bd251dd75141900dfd22cbf1eaf2b95b986f01f284d43152b6b0ac2a69b6fc",
+        "afterSHA256": "2d974a1acf6f3dfd9a193c240314fa32f3ed5459c30ec617d60a729050e0c78a"
+      },
+      {
+        "path": "scripts/browser-v149.cjs",
+        "beforeSHA256": "21c0226920d647fe1dff92543abbee7e54a5346c132ee959bb7337f0accd1ded",
+        "afterSHA256": "44a16499e6eb55274c40d17d904e33d7b59492f16c682a4c7c2e1fb676fa8341"
+      },
+      {
+        "path": "scripts/browser-v151.cjs",
+        "beforeSHA256": "ae91d6f1332dfc100c4a90d2bdfc4261cda0e346912680ff074dfba7bbff1b0a",
+        "afterSHA256": "48699c9ebf014d268c2a44b66b6f1d9375b09d38615093324ef55ffffc8af518"
+      },
+      {
+        "path": "scripts/browser-v94.cjs",
+        "beforeSHA256": "560e427a6e31f9eb90b5e3ad4002e621ca295b7c0434331676e12611b2bbc836",
+        "afterSHA256": "df63723507ce249b013f46ab08f5b5906e4908b21f055481f1c9e03e528a67c0"
+      },
+      {
+        "path": "scripts/browser-v95.cjs",
+        "beforeSHA256": "f1bd24f405fa3d003d247c5f366a2f003a25e760a0120b1c303f176065d70f8d",
+        "afterSHA256": "c23668eb5abf031fe65793cadea556bc0cb4e0ca3e9dfdb98c9fda147ffe1665"
+      },
+      {
+        "path": "scripts/browser-v99.cjs",
+        "beforeSHA256": "e410cfb2dc7db0b78db98abd19d1c43173c242e6e66843fedd49b6eab8d0223d",
+        "afterSHA256": "00a013d9f42004d10a09d2e00ff22713fdf9019004b9ca9be9e65ba8b38d9ef1"
+      },
+      {
+        "path": "scripts/run-browser-acceptance.mjs",
+        "beforeSHA256": "66884cc387e4e5711d5823baf733e0608741f8cb5eec79720f84733a69aaa2b5",
+        "afterSHA256": "8f1af7a20820b973ba55dd670d97139d1d31c984162e82265fd2ab800dd85a28"
+      },
+      {
+        "path": "tests/v113.test.mjs",
+        "beforeSHA256": "14bd527849a6d5d02ecabd2632c54f6083e738806c52b94407d396928a14d85a",
+        "afterSHA256": "4a67a2ec094e0de684370e85f72159da5f74ca5fb727d5078c771437b6849e6b"
+      },
+      {
+        "path": "tests/v115.test.mjs",
+        "beforeSHA256": "234094d701631236e178440cbe11063044646031c87a383947b76e2d81e43613",
+        "afterSHA256": "5a37dd721993df83afbad02342b4086b091a5469b9d983393d1e6d1c045494ef"
+      },
+      {
+        "path": "tests/v117.test.mjs",
+        "beforeSHA256": "71cd4805d90c45b35b8f7ca6991e2939dc1f23b572fe34bfb98d641d5c68bede",
+        "afterSHA256": "74b52fa8826285775d8ded5c10a436daf262ec9c64e3add6873f8c0036a76679"
+      },
+      {
+        "path": "tests/v120.test.mjs",
+        "beforeSHA256": "523b05aa58a82ca41ab3e9ff9c5861488aa7f1ac74dbbc4e0d79929b110b837b",
+        "afterSHA256": "bb9db0f7111c4a8b66b89bde5172c26bf57783818a13a2d69cdfd434ad7435ea"
+      },
+      {
+        "path": "tests/v94.test.mjs",
+        "beforeSHA256": "b308d7df69450a4a7d9fd08e9e404a1d3dfe854ff35c742f35ee35ca32e14ad9",
+        "afterSHA256": "e07637cfb7b0069fac1231eede545be5322c77572952be51ad41d28e12fbc7b4"
+      },
+      {
+        "path": "tests/v95.test.mjs",
+        "beforeSHA256": "8ec10ed33e852c7afcce799b688ecc4a48aae72ed8d6157667dfa3f5d9e63cbc",
+        "afterSHA256": "f405fdaeed39a38696152b7a699b9939ed9cdf84d3c4ee94502d1908c22dba54"
+      },
+      {
+        "path": "tests/v99.test.mjs",
+        "beforeSHA256": "8111c8a3d4a3ec7b909b4d66a88532588380bd7839e3f88e193ac9cc1099df6d",
+        "afterSHA256": "6cef9a4da83f7dc89b9cf52cac4e216c2cfb3a9709598d0ebd8e9993c2055123"
+      }
+    ],
+    "otherOldInputsExact": 671,
+    "otherOldDistExact": 192,
+    "noNewPlayerSkillGearOrPersistentResource": true,
+    "postFreezeChangesOnlyTestCatalogueCountsAndRetryHarness": true
+  },
+  "sourceFilesChecked": 715,
+  "browser": {
+    "passed": true,
+    "totalSelectedSuites": 10,
+    "attemptedSuites": 15,
+    "failedAttemptsRetained": 5,
+    "fullCurrent61SuitesNotRunThisMinor": true,
+    "versions": [
+      98,
+      116,
+      117,
+      123,
+      143,
+      144,
+      146,
+      152,
+      153,
+      154
+    ],
+    "onlyChromiumDesktopAnd390TouchEmulation": true,
+    "canonicalFourKeysExactFirstAndFocusedAcceptance": true,
+    "postFreezeChangesOnlyHarnessAndCatalogueAssertions": true
+  },
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONExactExceptStrictAddedBardSkill6": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "native153Compatibility": {
+    "passed": true,
+    "rows": [
+      {
+        "id": 88,
+        "path": "/workspace/wod-evidence/v153/native-first/control-1-report.json",
+        "compactSHA256": "059458a66da0a48689fbfc61809955b8f55e2122c82d2f42de7e4e6f8535e3ef",
+        "allFieldsAndOrderExact": true
+      },
+      {
+        "id": 89,
+        "path": "/workspace/wod-evidence/v153/native-first/control-2-report.json",
+        "compactSHA256": "9d37d4b7f7f152370a86453843adda9801c018b1a8c445bfa5556189a7414495",
+        "allFieldsAndOrderExact": true
+      }
+    ]
+  },
+  "reportRoundtrip": {
+    "passed": true,
+    "scope": "Fresh isolated in-memory copies without original archive entries solely to test new-report encoding/schema, not a capacity change or user incident. Canonical and source files unchanged.",
+    "rows": [
+      {
+        "id": 90,
+        "passed": true,
+        "sourcePath": "/workspace/wod-evidence/v154/native-first/surrender-desktop.json",
+        "sourceSHA256Unchanged": "17e916b66ea8329cab5811d303bf67976493e618f4ba47ea97534537530fd511",
+        "originalReportCompactSHA256": "52ff671a90c8b79ca3aeee9c4d7d21472b5086e8489a1e40357d3f490825b270",
+        "allFieldsAndOrderExactAfterThaw": true,
+        "snapshotEncoding": "gzip-units-v1-base64",
+        "encodedChars": 35772,
+        "testCopyOnlyOriginalFiveRetained": true
+      },
+      {
+        "id": 91,
+        "passed": true,
+        "sourcePath": "/workspace/wod-evidence/v154/native-first/surrender-final.json",
+        "sourceSHA256Unchanged": "7481cf12e82add7ece5203e01e988387a71de4c25cdc2fc5b8aea568069a6224",
+        "originalReportCompactSHA256": "36ed657326d2cfb94e65131fd4c9bc2f69c8f756c398830b9e185cabb26e6a12",
+        "allFieldsAndOrderExactAfterThaw": true,
+        "snapshotEncoding": "gzip-units-v1-base64",
+        "encodedChars": 35956,
+        "testCopyOnlyOriginalFiveRetained": true
+      }
+    ]
+  },
+  "nativeContinuation": {
+    "normal": [
+      {
+        "id": 90,
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 55,
+          "firstClear": true,
+          "loot": []
+        },
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 1
+        },
+        "surrenders": [
+          {
+            "eventId": 163,
+            "roomIndex": 0,
+            "target": "ps-chief",
+            "name": "渡口哨长",
+            "threshold": 99,
+            "hpRatio": 0.45,
+            "hpBefore": 93,
+            "hpAfter": 93,
+            "mp": 24,
+            "maxMp": 32,
+            "causes": [
+              {
+                "kind": "weakening",
+                "effectId": "0:30:ps-chief:control",
+                "skill": "taunt",
+                "component": "动摇",
+                "source": "e",
+                "sourceName": "塞恩",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ],
+            "triggerEventId": 162,
+            "cost": 0,
+            "consumedAction": false,
+            "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+          },
+          {
+            "eventId": 324,
+            "roomIndex": 1,
+            "target": "pl-clerk",
+            "name": "誓录书记",
+            "threshold": 90,
+            "hpRatio": 0.45,
+            "hpBefore": 73,
+            "hpAfter": 73,
+            "mp": 17,
+            "maxMp": 36,
+            "causes": [
+              {
+                "kind": "weakening",
+                "effectId": "1:35:pl-clerk:control",
+                "skill": "taunt",
+                "component": "动摇",
+                "source": "e",
+                "sourceName": "塞恩",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ],
+            "triggerEventId": 323,
+            "cost": 0,
+            "consumedAction": false,
+            "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+          }
+        ],
+        "defeatedLeaders": []
+      },
+      {
+        "id": 91,
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 0
+        },
+        "surrenders": [
+          {
+            "eventId": 175,
+            "roomIndex": 0,
+            "target": "ps-chief",
+            "name": "渡口哨长",
+            "threshold": 99,
+            "hpRatio": 0.45,
+            "hpBefore": 94,
+            "hpAfter": 94,
+            "mp": 18,
+            "maxMp": 32,
+            "causes": [
+              {
+                "kind": "weakening",
+                "effectId": "0:30:ps-chief:control",
+                "skill": "taunt",
+                "component": "动摇",
+                "source": "e",
+                "sourceName": "塞恩",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ],
+            "triggerEventId": 174,
+            "cost": 0,
+            "consumedAction": false,
+            "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+          },
+          {
+            "eventId": 334,
+            "roomIndex": 1,
+            "target": "pl-clerk",
+            "name": "誓录书记",
+            "threshold": 90,
+            "hpRatio": 0.45,
+            "hpBefore": 78,
+            "hpAfter": 78,
+            "mp": 17,
+            "maxMp": 36,
+            "causes": [
+              {
+                "kind": "weakening",
+                "effectId": "1:33:pl-clerk:control",
+                "skill": "taunt",
+                "component": "动摇",
+                "source": "e",
+                "sourceName": "塞恩",
+                "stat": "attackMean",
+                "value": -12
+              }
+            ],
+            "triggerEventId": 333,
+            "cost": 0,
+            "consumedAction": false,
+            "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+          }
+        ],
+        "defeatedLeaders": []
+      }
+    ],
+    "canonicalFilesSHA256": {
+      "/workspace/wod-evidence/v154/browser-final/surrender-final-campaign.json": "2371ba67db490f39fa5fa03daa0a1d1387ba89cf50f13f68f08d2f395442e11f",
+      "/workspace/wod-evidence/v154/browser-final/surrender-final-four-raw-keys.json": "5d07e075d46d5ea8001fd1453dc333321015eeec7471bc4654bf7e438cf255b8"
+    },
+    "formalSourceDirectlyFrom153": true
+  },
+  "nativeState": {
+    "gold": 9930,
+    "next": 92,
+    "ownHero": "e",
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "recruited": 7,
+    "catalogue": 9,
+    "frozenEntries": 5,
+    "encodedChars": 793208,
+    "plans": 3,
+    "heroXP": 4215,
+    "tauntPaidRank": 1,
+    "composurePaidRank": 1,
+    "canonicalNativeCampaign": "/workspace/wod-evidence/v154/browser-final/surrender-final-campaign.json",
+    "canonicalNativeFourKeys": "/workspace/wod-evidence/v154/browser-final/surrender-final-four-raw-keys.json"
+  },
+  "finiteExperiments": [
+    {
+      "seed": 731,
+      "profile": "pacify",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      },
+      "surrenders": [
+        {
+          "eventId": 136,
+          "roomIndex": 0,
+          "target": "ps-chief",
+          "name": "渡口哨长",
+          "threshold": 99,
+          "hpRatio": 0.45,
+          "hpBefore": 86,
+          "hpAfter": 86,
+          "mp": 21,
+          "maxMp": 32,
+          "causes": [
+            {
+              "kind": "weakening",
+              "effectId": "0:27:ps-chief:control",
+              "skill": "taunt",
+              "component": "动摇",
+              "source": "e",
+              "sourceName": "塞恩",
+              "stat": "attackMean",
+              "value": -12
+            }
+          ],
+          "triggerEventId": 135,
+          "cost": 0,
+          "consumedAction": false,
+          "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+        },
+        {
+          "eventId": 345,
+          "roomIndex": 1,
+          "target": "pl-clerk",
+          "name": "誓录书记",
+          "threshold": 90,
+          "hpRatio": 0.45,
+          "hpBefore": 68,
+          "hpAfter": 68,
+          "mp": 11,
+          "maxMp": 36,
+          "causes": [
+            {
+              "kind": "weakening",
+              "effectId": "1:44:pl-clerk:control",
+              "skill": "taunt",
+              "component": "动摇",
+              "source": "e",
+              "sourceName": "塞恩",
+              "stat": "attackMean",
+              "value": -12
+            }
+          ],
+          "triggerEventId": 344,
+          "cost": 0,
+          "consumedAction": false,
+          "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+        }
+      ],
+      "defeatedLeaders": []
+    },
+    {
+      "seed": 731,
+      "profile": "drain",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "surrenders": [
+        {
+          "eventId": 169,
+          "roomIndex": 0,
+          "target": "ps-chief",
+          "name": "渡口哨长",
+          "threshold": 99,
+          "hpRatio": 0.45,
+          "hpBefore": 28,
+          "hpAfter": 28,
+          "mp": 0,
+          "maxMp": 32,
+          "causes": [
+            {
+              "kind": "empty-mana",
+              "mp": 0,
+              "maxMp": 32
+            }
+          ],
+          "triggerEventId": 168,
+          "cost": 0,
+          "consumedAction": false,
+          "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+        }
+      ],
+      "defeatedLeaders": [
+        {
+          "eventId": 369,
+          "roomIndex": 1,
+          "target": "pl-clerk"
+        }
+      ]
+    },
+    {
+      "seed": 731,
+      "profile": "press",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        5,
+        5
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "surrenders": [],
+      "defeatedLeaders": [
+        {
+          "eventId": 196,
+          "roomIndex": 0,
+          "target": "ps-chief"
+        },
+        {
+          "eventId": 394,
+          "roomIndex": 1,
+          "target": "pl-clerk"
+        }
+      ]
+    },
+    {
+      "seed": 732,
+      "profile": "pacify",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      },
+      "surrenders": [
+        {
+          "eventId": 176,
+          "roomIndex": 0,
+          "target": "ps-chief",
+          "name": "渡口哨长",
+          "threshold": 99,
+          "hpRatio": 0.45,
+          "hpBefore": 82,
+          "hpAfter": 82,
+          "mp": 22,
+          "maxMp": 32,
+          "causes": [
+            {
+              "kind": "weakening",
+              "effectId": "0:25:ps-chief:control",
+              "skill": "taunt",
+              "component": "动摇",
+              "source": "e",
+              "sourceName": "塞恩",
+              "stat": "attackMean",
+              "value": -12
+            }
+          ],
+          "triggerEventId": 175,
+          "cost": 0,
+          "consumedAction": false,
+          "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+        },
+        {
+          "eventId": 337,
+          "roomIndex": 1,
+          "target": "pl-clerk",
+          "name": "誓录书记",
+          "threshold": 90,
+          "hpRatio": 0.45,
+          "hpBefore": 76,
+          "hpAfter": 76,
+          "mp": 21,
+          "maxMp": 36,
+          "causes": [
+            {
+              "kind": "weakening",
+              "effectId": "1:26:pl-clerk:control",
+              "skill": "taunt",
+              "component": "动摇",
+              "source": "e",
+              "sourceName": "塞恩",
+              "stat": "attackMean",
+              "value": -12
+            }
+          ],
+          "triggerEventId": 336,
+          "cost": 0,
+          "consumedAction": false,
+          "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+        }
+      ],
+      "defeatedLeaders": []
+    },
+    {
+      "seed": 732,
+      "profile": "drain",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      },
+      "surrenders": [
+        {
+          "eventId": 158,
+          "roomIndex": 0,
+          "target": "ps-chief",
+          "name": "渡口哨长",
+          "threshold": 99,
+          "hpRatio": 0.45,
+          "hpBefore": 73,
+          "hpAfter": 73,
+          "mp": 0,
+          "maxMp": 32,
+          "causes": [
+            {
+              "kind": "empty-mana",
+              "mp": 0,
+              "maxMp": 32
+            }
+          ],
+          "triggerEventId": 157,
+          "cost": 0,
+          "consumedAction": false,
+          "rule": "仅公开指定的头领：最后一波只剩其一名存活敌人时，生命大于0且不高于公开界线，并有攻击均值/攻击等级的负面削弱，或原本有法力而现为0，才在一次完整普通行动后投降。保留生命并退出战斗，取消蓄能不退款；不是死亡、治疗或复活，不再行动、受击或成为支援对象。直接击倒仍可清场；投降不另发奖励。"
+        }
+      ],
+      "defeatedLeaders": [
+        {
+          "eventId": 379,
+          "roomIndex": 1,
+          "target": "pl-clerk"
+        }
+      ]
+    },
+    {
+      "seed": 732,
+      "profile": "press",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      },
+      "surrenders": [],
+      "defeatedLeaders": [
+        {
+          "eventId": 173,
+          "roomIndex": 0,
+          "target": "ps-chief"
+        },
+        {
+          "eventId": 346,
+          "roomIndex": 1,
+          "target": "pl-clerk"
+        }
+      ]
+    }
+  ],
+  "sourceContainerRetirement": {
+    "passed": true,
+    "retired": [
+      {
+        "path": "/workspace/wod-delivery/v0.140-personal-mana-reserve/wod-v0.140-complete.bundle",
+        "bytes": 52807680,
+        "sha256": "84d7c048546df8192902ab3161aa28bfa9a8d86a06b60870e059d0c0931f0a9d",
+        "receipt": "/workspace/wod-delivery/v0.140-personal-mana-reserve/SOURCE_BUNDLE_SUPERSEDED_V154.json"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.143-escort-objective/wod-v0.143-complete.bundle",
+        "bytes": 52850953,
+        "sha256": "ae72728af586f81ed5d24f03cf1edeb88159ec0f0ce80c86f714868010a55833",
+        "receipt": "/workspace/wod-delivery/v0.143-escort-objective/SOURCE_BUNDLE_SUPERSEDED_V154.json"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.146-coordinated-focus/wod-v0.146-complete.bundle",
+        "bytes": 52944750,
+        "sha256": "926c0fe00f3368af48c98533f8545727d3a6f1a9590e965f21a8707f58301010",
+        "receipt": "/workspace/wod-delivery/v0.146-coordinated-focus/SOURCE_BUNDLE_SUPERSEDED_V154.json"
+      }
+    ],
+    "logicalBytesRetired": 158603383,
+    "measuredMainBytesReleased": 158568448,
+    "freeMainBefore": 2117808128,
+    "freeMainAfter": 2276376576,
+    "allOtherOlderEvidenceAndDeliveryFilesMetadataExact": 22743,
+    "allCurrentHeadsSixRetainedAnd708SourceInputsUnchanged": true,
+    "keptCurrent152Plus153RecoveryChain": true,
+    "keptAlternate149And127InitialUnmatchedZIPsAllSmallIncrements": true,
+    "noEvidenceGCPruneRefDeletionOrNetworkWrite": true
+  },
+  "main": "152 at35ef897 remains unchanged;155–157 full gate planned",
+  "limits": [
+    "Enemy surrender and route are project original; no original WoD claim for rule/numbers",
+    "Finite731/732 inputs all six alive; not global efficiency or matched RNG proof",
+    "Old78report comparison permits only existing taunt6 field; all remaining fields/order/digests exact; prior88/89 raw whole reports exact",
+    "Full current61 GUI suites not run this minor; required before milestone main integration",
+    "Only Chromium154 desktop/390touch emulation, no real devices/other engines",
+    "Original5archives793208 unchanged; roundtrip on isolated memory only",
+    "Permanent supply economy pending; old143timestamp/IDgap not claimed fixed",
+    "Retired140/143/146source containers no longer exist; original compressed container bytes not promised; all source objects/refs recoverable in152and149"
+  ],
+  "postCommitResults": "Exact commit/recovery/push/retention in checksummed external delivery receipts"
+}

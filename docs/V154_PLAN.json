@@ -1,0 +1,87 @@
+{
+  "stage": "0.154",
+  "base": "6fa900291c0f2d2589098aa0329b1411b3e5039f",
+  "scope": "Optional authored enemy surrender as alive combat exit, plus two-room solo Parley Quay. No new player skill, gear, account, recruitment or persistent supplies.",
+  "authorship": "Surrender and new rooms wholly project-original. Existing WoD-inspired build/party/cost/report framework is retained; no official current-server surrender rule found or claimed.",
+  "rules": {
+    "onlyPublicRoomTarget": true,
+    "targetInFinalWaveOnly": true,
+    "lastActiveEnemyIncludingSummonsRequired": true,
+    "hpPositiveAndAtMostRatio": 0.45,
+    "condition": "active harmful attackMean<0 or skill<0, or maxMP>0 and currentMP0",
+    "checkAfterCompleteOrdinaryAction": true,
+    "removeFromCombatKeepAliveInSnapshots": true,
+    "cancelPaidChannelWithoutRefund": true,
+    "notDeathRevivalHealingOrBonusReward": true,
+    "canStillClearByOrdinaryKill": true,
+    "onlyOnePerRoom": true
+  },
+  "route": {
+    "id": "parleyquay",
+    "name": "渡口招抚",
+    "rooms": 2,
+    "supplies": {
+      "herb": 12,
+      "rune": 10,
+      "arrow": 8
+    },
+    "reward": "existing two-room baseline:100gold45XP repeat,140gold55XP first clear, no loot or surrender bonus"
+  },
+  "normal": {
+    "startGold": 9690,
+    "next": 90,
+    "runs": 2,
+    "source": "exact153canonical four raw keys",
+    "noNewTrainingOrPurchases": true,
+    "noRerollOrEnemyTuningAfterObservedOutcome": true
+  },
+  "finiteInputs": {
+    "declaredBeforeExecution": true,
+    "seeds": [
+      731,
+      732
+    ],
+    "profiles": [
+      "pacify",
+      "drain",
+      "press"
+    ],
+    "actualGuildAssetsFromFirstPending": true,
+    "profilesDifferInEandDmainOnly": "pacify E.taunt/D.spark; drain E.mindcall/D.drain; press E.mindcall/D.spark; same other fields/free focus taunt",
+    "notGlobalRateOrGuaranteedPairedFutureRandomness": true
+  },
+  "testing": {
+    "fullNodeBaseline": 1473,
+    "fullNodeFinal": true,
+    "focusedBrowserVersions": [
+      98,
+      116,
+      117,
+      123,
+      143,
+      144,
+      146,
+      152,
+      153,
+      154
+    ],
+    "allOtherPrior60SuitesNotRerunThisStage": "unchanged scoped behavior receipts from153 plus full old JSON comparisons; main155–157must perform full current suite",
+    "oldFullJSON78": "strict Eparty.taunt6 relative149, all other fields/order/digest exact; additionally153normal88/89 byte exact",
+    "noRepeatedWhole60EvidenceBundle": true
+  },
+  "storage": {
+    "threeOldCodeContainersSupersededByTwoVerifiedIndependentSources": "maintenance/source-retirement.json",
+    "keptLatestSourceRecovery": [
+      "152independentComplete",
+      "153incremental",
+      "154incremental"
+    ],
+    "uniqueEvidenceAndSixRefsKept": true,
+    "mainFreeAfterCleanup": 2276155392,
+    "tmpFree": 7339737088,
+    "mainReserve": 1073741824,
+    "tmpBudget": 2500000000
+  },
+  "main": "remains152; evaluate155–157complete milestone",
+  "pending": "supply economy remains unimplemented"
+}
