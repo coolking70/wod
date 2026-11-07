@@ -1,0 +1,384 @@
+{
+  "passed": true,
+  "baseline": "5a20fa799dfbf7f819b642c9f30f1fc608f69268",
+  "tests": {
+    "baselineFull": {
+      "tests": 1497,
+      "pass": 1497,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "fullFinal": {
+      "tests": 1520,
+      "pass": 1520,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "newReturnQuestCases": 23,
+    "specialized": {
+      "tests": 23,
+      "pass": 23,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "PythonInsideNodeWrapper": 21,
+    "initialBrowserFailurePreserved": "browser-first: API helper added objective:survive, while task UI used route defaults. Removed extra helper goal requirement; full object assertions kept. No application behavior changed for this fix."
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 173,
+    "checkedReferences": 192,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 674,
+    "python": 4,
+    "failures": [],
+    "lateChangedFilesCheckedAfterFinalSourceCorrection": [
+      "dist/expedition-equipment-goal.mjs",
+      "tests/return-quest.test.mjs"
+    ]
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "oldInputs": 715,
+    "newInputs": 722,
+    "changed": [
+      "dist/expedition-camp-cycle-view.mjs",
+      "dist/expedition-camp-journeys.mjs",
+      "dist/expedition-equipment-goal.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-guild.mjs",
+      "scripts/run-browser-acceptance.mjs"
+    ],
+    "oldOtherExact": 709,
+    "oldDistOtherExact": 199,
+    "engineDataLootAndExisting34RouteFactoriesExact": true
+  },
+  "sourceFilesChecked": 722,
+  "browser": {
+    "passed": true,
+    "total": 62,
+    "fullCurrentSuites": true,
+    "includesPrior154UnrunHistoricSuites": true,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      153,
+      154,
+      155
+    ],
+    "onlyChromiumDesktopAnd390TouchEmulation": true,
+    "canonicalFourKeysExactFirstAndFullAcceptance": true,
+    "early17SuitesRerunAfterFinalSourceCorrection": true,
+    "all79OriginalAttemptCPsRetained": true
+  },
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONExactExceptStrictAddedBardSkill6": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "native153Compatibility": {
+    "passed": true,
+    "rows": [
+      {
+        "id": 88,
+        "path": "/workspace/wod-evidence/v153/native-first/control-1-report.json",
+        "compactSHA256": "059458a66da0a48689fbfc61809955b8f55e2122c82d2f42de7e4e6f8535e3ef",
+        "allFieldsAndOrderExact": true
+      },
+      {
+        "id": 89,
+        "path": "/workspace/wod-evidence/v153/native-first/control-2-report.json",
+        "compactSHA256": "9d37d4b7f7f152370a86453843adda9801c018b1a8c445bfa5556189a7414495",
+        "allFieldsAndOrderExact": true
+      }
+    ]
+  },
+  "native154Compatibility": {
+    "passed": true,
+    "rows": [
+      {
+        "id": 90,
+        "path": "/workspace/wod-evidence/v154/native-first/surrender-1-report.json",
+        "compactSHA256": "52ff671a90c8b79ca3aeee9c4d7d21472b5086e8489a1e40357d3f490825b270",
+        "allFieldsAndOrderExact": true
+      },
+      {
+        "id": 91,
+        "path": "/workspace/wod-evidence/v154/native-first/surrender-2-report.json",
+        "compactSHA256": "36ed657326d2cfb94e65131fd4c9bc2f69c8f756c398830b9e185cabb26e6a12",
+        "allFieldsAndOrderExact": true
+      }
+    ]
+  },
+  "nativeContinuation": {
+    "normal": [
+      {
+        "id": 92,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          3
+        ],
+        "supplies": {
+          "herb": 9,
+          "rune": 3,
+          "arrow": 3
+        },
+        "escort": 90,
+        "surrenders": [],
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        }
+      },
+      {
+        "id": 93,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 0
+        },
+        "escort": null,
+        "surrenders": [
+          {
+            "id": "ps-chief",
+            "hp": 79
+          },
+          {
+            "id": "pl-clerk",
+            "hp": 28
+          }
+        ],
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "canonicalFilesSHA256": {
+      "/workspace/wod-evidence/v155/browser-final/return-final-campaign.json": "fe963f2e2807fb108cefc77d7c526cccf62b231a74e430ed37a887a922c05b1b",
+      "/workspace/wod-evidence/v155/browser-final/return-final-four-raw-keys.json": "19ae707922272903560db0a80355a7272fa843ec7ad733e06bfb421be7964dcc"
+    },
+    "formalSourceDirectlyFrom154": true
+  },
+  "nativeState": {
+    "gold": 10170,
+    "next": 94,
+    "ownHero": "e",
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "recruited": 7,
+    "catalogue": 9,
+    "frozenEntries": 5,
+    "encodedChars": 793208,
+    "plans": 3,
+    "heroXP": 4305,
+    "ending": "parleyquay",
+    "canonicalNativeCampaign": "/workspace/wod-evidence/v155/browser-final/return-final-campaign.json",
+    "canonicalNativeFourKeys": "/workspace/wod-evidence/v155/browser-final/return-final-four-raw-keys.json"
+  },
+  "finiteExperiments": [
+    {
+      "seed": 731,
+      "profile": "pacify",
+      "won": true,
+      "alive": 6,
+      "surrenders": 2,
+      "questWouldQualify": true,
+      "rounds": [
+        3,
+        5
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 731,
+      "profile": "drain",
+      "won": true,
+      "alive": 6,
+      "surrenders": 1,
+      "questWouldQualify": false,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 731,
+      "profile": "press",
+      "won": true,
+      "alive": 6,
+      "surrenders": 0,
+      "questWouldQualify": false,
+      "rounds": [
+        5,
+        5
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 732,
+      "profile": "pacify",
+      "won": true,
+      "alive": 6,
+      "surrenders": 2,
+      "questWouldQualify": true,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 732,
+      "profile": "drain",
+      "won": true,
+      "alive": 6,
+      "surrenders": 1,
+      "questWouldQualify": false,
+      "rounds": [
+        4,
+        5
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 0
+      }
+    },
+    {
+      "seed": 732,
+      "profile": "press",
+      "won": true,
+      "alive": 6,
+      "surrenders": 0,
+      "questWouldQualify": false,
+      "rounds": [
+        4,
+        4
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 0
+      }
+    }
+  ],
+  "main": "155–157 complete milestone; actual safety/push outcome in checksummed main-integration.json, no deployment",
+  "limits": [
+    "Story, quest conditions and40gold reward are project original, no originalWoD claim",
+    "Six finite actualasset samples are not global efficiency/balance or matched RNG evidence",
+    "Old78 permit only previously added taunt6 field; remaining fields/order/digests exact; prior88/89and90/91 full raw reports exact",
+    "Only Chromium154 desktop/390touch, no real devices/other engines",
+    "Original5archives793208 unchanged; local receipt schema is not anti-cheat or proof of original event data",
+    "Permanent supply economy pending; old143timestamp/IDgap not claimed repaired",
+    "Retired140/143/146source containers remain absent, source refs/objects recoverable via152and149, original compressed bytes not promised"
+  ],
+  "sourceCorrectionAndTestOrchestration": "After adding relic sources, corrected2-path wording/early closure; conservatively reran17 complete early GUI suites. Duplicate Node runners mistakenly started after failed script precondition were interrupted130 and are not gate evidence; final full1520 is a fresh single run on frozen source. All artifacts retained.",
+  "postCommitResults": "Exact commit/recovery/push/integration/retention in external checksummed delivery receipts"
+}

@@ -1,3 +1,4 @@
+import{RETURN_QUEST_PATHS,returnQuestProgress}from'./expedition-return-quest.mjs';
 import {POST_QUEST_ENDINGS,postQuestProgress} from './expedition-post-quest.mjs';
 // Project-original collection goal. It never changes loot, ownership or rewards.
 import {GEAR,HEROES,EXPEDITIONS} from './expedition-data.mjs';
@@ -20,6 +21,7 @@ export function equipmentSources(id,g){
   const p=g?progress(g):null,state=!p?'三选一，一次':p.ending?(p.ending===ending?'该结局已领取':'已选其他结局，此来源关闭'):p.ready?(g.pending?'条件已满足，先领取当前远征结算':'条件已满足，仍需亲自选择结局'):'尚待完成旅程条件';
   result.push({kind:'story',book,ending,closed:Boolean(p?.ending),label:'单人旅程·'+name+'（'+state+'） · '+e.name});
  }
+ for(const[route,path]of Object.entries(RETURN_QUEST_PATHS))if(path.gear===id){const p=g?returnQuestProgress(g):null,chosen=g?.returnQuest?.steps[1]?.route,closed=Boolean(p?.ending||chosen&&chosen!==route),state=!p?'两条通路择一，一次':closed?(p.ending===route?'本支已交付':'已完成其他通路，此来源关闭'):p.ready?'条件已满足，仍需亲自交付本支证词':'接取后完成护送与所选分支；本段未完成时可改选';result.push({kind:'story',book:'returnquest',ending:route,closed,label:'单人旅程·归岸证词（'+state+'） · '+path.name});}
  for(const [key,o]of Object.entries(FOUNDRY_OBJECTIVES))if(o.gear===id)result.push({kind:'contract',key,label:'铸库一次性委托·'+o.name+'（'+(g?.foundry?.claimed.includes(key)?'已领取，不再发放':'满足委托并领取时定向获得')+'）'});
  if(HARBOR_EXCHANGE.includes(id))result.push({kind:'exchange',label:'港口委托 · 2张海图指定兑换'+(g?'（现有'+g.harbor.charts+'张，仍需手动兑换）':'')});
  for(const [route,r]of Object.entries(ROUTE_REWARDS))if(r.pool.includes(id)){

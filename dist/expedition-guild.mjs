@@ -1,3 +1,4 @@
+import{validateReturnQuest,returnQuestProgress,startReturnQuestState,chooseReturnQuestState,recordReturnQuest,RETURN_QUEST_PATHS,RETURN_QUEST_GOLD}from'./expedition-return-quest.mjs';
 import {validatePostQuest,postQuestProgress,startPostQuestState,choosePostQuestState,recordPostQuest,POST_QUEST_ENDINGS,POST_QUEST_GOLD} from './expedition-post-quest.mjs';
 import {validateArchiveStore} from './expedition-report-archive.mjs';
 import {validateEquipmentGoal} from './expedition-equipment-goal.mjs';
@@ -46,6 +47,7 @@ export function validateGuild(g){
  if(g.harborStory&&!harborStoryProgress(g).ready)throw Error('灯塔来信记录缺少正常远征条件');
  if(g.foundryStory&&!foundryStoryProgress(g).ready)throw Error('铸库归航记录缺少正常远征条件');
  validatePostQuest(g.postQuest,g.next,g.pending?.id);if(g.postQuest?.steps.some(r=>!(g.clears[r.route]>0)))throw Error('归信任务路签缺少正常通关记录');for(const r of g.postQuest?.steps||[]){const h=g.history.find(v=>v.id===r.id);if(h&&(!h.won||h.route!==r.route||JSON.stringify(h.config)!==JSON.stringify(r.config)||JSON.stringify(h.command||null)!==JSON.stringify(r.command)))throw Error('归信路签与保留履历不一致');}
+ validateReturnQuest(g.returnQuest,g.next,g.pending?.id);for(const r of g.returnQuest?.steps||[]){if(!(g.clears[r.route]>0))throw Error('归岸证词缺少正式通关');const h=g.history.find(v=>v.id===r.id);if(h&&(!h.won||h.route!==r.route||JSON.stringify(h.config)!==JSON.stringify(r.config)||JSON.stringify(h.command||null)!==JSON.stringify(r.command)))throw Error('归岸证词与保留履历不一致');}
  validateArchiveStore(g.reportArchives,g.next);
  return g;
 }
@@ -60,7 +62,7 @@ export function claim(g){validateGuild(g);if(!g.pending)throw Error('没有待�
  if(reward.foundry)n.foundry={claimed:[...(n.foundry?.claimed||[]),...reward.foundry.earned]};
  for(const gear of reward.loot||[])n.warehouse[gear]=(n.warehouse[gear]||0)+1;
  if(g.pending.rewardVersion===2&&report.won)n.clears[report.config.expedition]=(n.clears[report.config.expedition]||0)+1;
- if(g.pending.rewardVersion===2){recordShoals(n,report);recordPostQuest(n,report,g.pending.id,g.pending.command);}
+ if(g.pending.rewardVersion===2){recordReturnQuest(n,report,g.pending.id,g.pending.command);recordShoals(n,report);recordPostQuest(n,report,g.pending.id,g.pending.command);}
  const objective=objectiveAssessment(report);recordExpeditionObjective(n,report,g.pending.id,g.pending.command);
  n.history.unshift({id:g.pending.id,route:report.config.expedition,won:report.won,...reward,...(objective?{objective}:{}),config:clone(g.pending.config),...(g.pending.command?{command:clone(g.pending.command)}:{})});n.history=n.history.slice(0,20);n.pending=null;return n;}
 export function assignLoot(g,id,gear){const n=editable(g),h=n.members.find(h=>h.id===id);if(!h||!isRelic(gear)||!(n.warehouse[gear]>0))throw Error('没有可分配的战利品');if(h.owned.includes(gear))throw Error('该队员已拥有此装备，可分给其他队员或出售');n.warehouse[gear]--;h.owned.push(gear);h.gear=replaceEquipment(h.gear,gear);return n;}
@@ -72,6 +74,9 @@ export function claimFoundryStory(g,ending){
  if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('旅程奖励超过安全计数范围');
  n.gold=gold;n.warehouse[gear]=count;n.foundryStory={ending};return validateGuild(n);
 }
+export function startReturnQuest(g){const n=editable(g);n.returnQuest=startReturnQuestState(n);return validateGuild(n);}
+export function chooseReturnQuest(g,route){const n=editable(g);n.returnQuest=chooseReturnQuestState(n,route);return validateGuild(n);}
+export function deliverReturnQuest(g){const n=editable(g),p=returnQuestProgress(n);if(!p.canClaim)throw Error(p.reason);const route=n.returnQuest.steps[1].route,gear=RETURN_QUEST_PATHS[route].gear,gold=n.gold+RETURN_QUEST_GOLD,count=(n.warehouse[gear]||0)+1;if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('归岸证词奖励超过安全计数');n.gold=gold;n.warehouse[gear]=count;n.returnQuest.ending=route;return validateGuild(n);}
 export function startPostQuest(g){const n=editable(g);n.postQuest=startPostQuestState(n);return validateGuild(n);}
 export function choosePostQuest(g,route){const n=editable(g);n.postQuest=choosePostQuestState(n,route);return validateGuild(n);}
 export function deliverPostQuest(g,ending){const n=editable(g),p=postQuestProgress(n);if(typeof ending!=='string'||!Object.hasOwn(POST_QUEST_ENDINGS,ending))throw Error('请选择有效的归信交付');if(!p.canClaim)throw Error(p.reason);const gear=POST_QUEST_ENDINGS[ending].gear,gold=n.gold+POST_QUEST_GOLD,count=(n.warehouse[gear]||0)+1;if(!Number.isSafeInteger(gold)||!Number.isSafeInteger(count))throw Error('归信奖励超过安全计数范围');n.gold=gold;n.warehouse[gear]=count;n.postQuest.ending=ending;return validateGuild(n);}
