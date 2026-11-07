@@ -1,0 +1,247 @@
+{
+  "startGold": 7070,
+  "normal": [
+    {
+      "id": 66,
+      "route": "chapter",
+      "won": true,
+      "rounds": [
+        3,
+        5,
+        4,
+        3,
+        5,
+        9
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 17
+      },
+      "mp": [
+        {
+          "id": "a",
+          "mp": 1,
+          "maxMp": 42
+        },
+        {
+          "id": "b",
+          "mp": 8,
+          "maxMp": 35
+        },
+        {
+          "id": "c",
+          "mp": 5,
+          "maxMp": 74
+        },
+        {
+          "id": "d",
+          "mp": 37,
+          "maxMp": 72
+        },
+        {
+          "id": "e",
+          "mp": 20,
+          "maxMp": 57
+        },
+        {
+          "id": "f",
+          "mp": 65,
+          "maxMp": 68
+        }
+      ],
+      "chorusCasts": 6,
+      "rhythmCasts": 0,
+      "modifiedRecords": 24,
+      "netRegenerationLoss": 22,
+      "unapplied": 2,
+      "reward": {
+        "cleared": 6,
+        "gold": 280,
+        "xp": 120,
+        "firstClear": true,
+        "loot": [
+          "bellfocus"
+        ]
+      },
+      "gold": 7350
+    },
+    {
+      "id": 67,
+      "route": "courier",
+      "won": true,
+      "rounds": [
+        4,
+        4,
+        8
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "mp": [
+        {
+          "id": "a",
+          "mp": 3,
+          "maxMp": 42
+        },
+        {
+          "id": "b",
+          "mp": 12,
+          "maxMp": 35
+        },
+        {
+          "id": "c",
+          "mp": 53,
+          "maxMp": 74
+        },
+        {
+          "id": "d",
+          "mp": 35,
+          "maxMp": 72
+        },
+        {
+          "id": "e",
+          "mp": 28,
+          "maxMp": 57
+        },
+        {
+          "id": "f",
+          "mp": 26,
+          "maxMp": 68
+        }
+      ],
+      "chorusCasts": 3,
+      "rhythmCasts": 5,
+      "modifiedRecords": 12,
+      "netRegenerationLoss": 12,
+      "unapplied": 0,
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      },
+      "gold": 7485
+    }
+  ],
+  "finalGold": 7485,
+  "next": 68,
+  "comparison": {
+    "rhythm": {
+      "won": true,
+      "rounds": [
+        3,
+        5,
+        4,
+        4,
+        5,
+        11
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 8,
+        "rune": 0,
+        "arrow": 12
+      },
+      "mp": [
+        {
+          "id": "a",
+          "mp": 2,
+          "maxMp": 42
+        },
+        {
+          "id": "b",
+          "mp": 11,
+          "maxMp": 35
+        },
+        {
+          "id": "c",
+          "mp": 1,
+          "maxMp": 74
+        },
+        {
+          "id": "d",
+          "mp": 44,
+          "maxMp": 72
+        },
+        {
+          "id": "e",
+          "mp": 23,
+          "maxMp": 57
+        },
+        {
+          "id": "f",
+          "mp": 61,
+          "maxMp": 68
+        }
+      ],
+      "chorusCasts": 0,
+      "rhythmCasts": 6,
+      "modifiedRecords": 0,
+      "netRegenerationLoss": 0,
+      "unapplied": 0
+    },
+    "chorus": {
+      "won": true,
+      "rounds": [
+        3,
+        5,
+        4,
+        3,
+        5,
+        9
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 9,
+        "rune": 0,
+        "arrow": 17
+      },
+      "mp": [
+        {
+          "id": "a",
+          "mp": 1,
+          "maxMp": 42
+        },
+        {
+          "id": "b",
+          "mp": 8,
+          "maxMp": 35
+        },
+        {
+          "id": "c",
+          "mp": 5,
+          "maxMp": 74
+        },
+        {
+          "id": "d",
+          "mp": 37,
+          "maxMp": 72
+        },
+        {
+          "id": "e",
+          "mp": 20,
+          "maxMp": 57
+        },
+        {
+          "id": "f",
+          "mp": 65,
+          "maxMp": 68
+        }
+      ],
+      "chorusCasts": 6,
+      "rhythmCasts": 0,
+      "modifiedRecords": 24,
+      "netRegenerationLoss": 22,
+      "unapplied": 2
+    }
+  },
+  "limits": "Finite actual results, no universal upgrade or isolated causation claim. Negative regeneration belongs to recipient, base+1 and active modifiers net before clamp. At zero MP the action buff continues. No new training/purchases/courses/refunds/roles or persistent supply economy."
+}

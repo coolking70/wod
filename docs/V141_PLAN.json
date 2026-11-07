@@ -1,0 +1,44 @@
+{
+  "version": "0.141",
+  "baseline": "f04c10b435694876aed9a8940fce80a9f21276e2",
+  "beforeResults": true,
+  "core": "Natural MP changes use base +1 plus active flat manaRegen modifiers, clamp0..maxMP, no action/RNG or repeated material costs. Positive/negative components of one buff remain grouped for dispel; negative component is not standalone harmful cleanse target. Absent modifiers preserve legacy event bytes.",
+  "skill": {
+    "id": "chorus",
+    "name": "合拍疾歌",
+    "class": "bard",
+    "kind": "ordinary-preparation",
+    "requires": "lute",
+    "cost": 4,
+    "materials": null,
+    "target": "one position, max3 living friends",
+    "effects": [
+      {
+        "stat": "actions",
+        "value": 1
+      },
+      {
+        "stat": "manaRegen",
+        "value": -2
+      }
+    ],
+    "duration": "current and next round, same timing as rhythm",
+    "noUpkeepGateAtZeroMP": true,
+    "notOriginalServerNumbers": true
+  },
+  "formal": [
+    {
+      "id": 66,
+      "route": "chapter",
+      "bardPrep": "chorus/rear/once then unchanged existing prep; no purchases/training/role change",
+      "objective": "survive"
+    },
+    {
+      "id": 67,
+      "route": "courier",
+      "bardPrep": "chorus/rear/once then unchanged existing prep; no purchases/training/role change",
+      "objective": "survive"
+    }
+  ],
+  "comparison": "Same start/seed66/route/config, only replace chorus with existing rhythm. Record no universal upgrade; differing action/RNG order not isolated causation."
+}

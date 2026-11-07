@@ -1,0 +1,944 @@
+{
+  "passed": true,
+  "baseline": "f04c10b435694876aed9a8940fce80a9f21276e2",
+  "tests": {
+    "full": {
+      "tests": 1300,
+      "pass": 1300,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-final.tap"
+    },
+    "specializedCombined": {
+      "tests": 39,
+      "pass": 39,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-and-catalogue-final.tap",
+      "newMechanicTests": 17,
+      "reportPoolTests": 22
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 605,
+    "python": 1,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 159,
+    "checkedReferences": 177,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": 49,
+    "failed": 0,
+    "checkpointAudit": {
+      "passed": true,
+      "suites": 49,
+      "files": 1015,
+      "images": 84,
+      "rawBytes": 1703237051,
+      "archiveBytes": 217443146,
+      "sourceFilesRemoved": false
+    },
+    "direct": {
+      "passed": true,
+      "steps": [
+        "1440px真实7070/next66：从默认方案新增/移到首行自由疾歌，准备与API相同，未培养/付费/改职责。旧方案与A原文保持，新方案保存完整。正常66六房全报告/待领/领取同API；负回复默认/重点可见，查看真实施放来源再返回，复盘四键不变；7350/next67。",
+        "390px新上下文整档恢复7350，原方案册和A原文保持；明确为新路线再配置疾歌。正常67全报告/公会同API，六人4/4/8、药草0保留、7485/next68。原47冻结战报全量导出不加新技能元数据，55历史按当前规则精确重演且不能重领奖，触摸布局无横向溢出。",
+        "第三新上下文恢复7485/next68，公会、准备、两方案与旧A四原始键逐字节相同；原五冻结条目、21旧首证、成员资产及新正常奖励保持，66完整重演不重复领奖。三个上下文无页面错误，不增加永久补给。"
+      ],
+      "errors": [],
+      "finalGold": 7485,
+      "next": 68
+    },
+    "unifiedNewStage": {
+      "passed": true,
+      "steps": [
+        "1440px真实7070/next66：从默认方案新增/移到首行自由疾歌，准备与API相同，未培养/付费/改职责。旧方案与A原文保持，新方案保存完整。正常66六房全报告/待领/领取同API；负回复默认/重点可见，查看真实施放来源再返回，复盘四键不变；7350/next67。",
+        "390px新上下文整档恢复7350，原方案册和A原文保持；明确为新路线再配置疾歌。正常67全报告/公会同API，六人4/4/8、药草0保留、7485/next68。原47冻结战报全量导出不加新技能元数据，55历史按当前规则精确重演且不能重领奖，触摸布局无横向溢出。",
+        "第三新上下文恢复7485/next68，公会、准备、两方案与旧A四原始键逐字节相同；原五冻结条目、21旧首证、成员资产及新正常奖励保持，66完整重演不重复领奖。三个上下文无页面错误，不增加永久补给。"
+      ],
+      "errors": [],
+      "finalGold": 7485,
+      "next": 68
+    }
+  },
+  "native": {
+    "startGold": 7070,
+    "normal": [
+      {
+        "id": 66,
+        "route": "chapter",
+        "won": true,
+        "rounds": [
+          3,
+          5,
+          4,
+          3,
+          5,
+          9
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 9,
+          "rune": 0,
+          "arrow": 17
+        },
+        "mp": [
+          {
+            "id": "a",
+            "mp": 1,
+            "maxMp": 42
+          },
+          {
+            "id": "b",
+            "mp": 8,
+            "maxMp": 35
+          },
+          {
+            "id": "c",
+            "mp": 5,
+            "maxMp": 74
+          },
+          {
+            "id": "d",
+            "mp": 37,
+            "maxMp": 72
+          },
+          {
+            "id": "e",
+            "mp": 20,
+            "maxMp": 57
+          },
+          {
+            "id": "f",
+            "mp": 65,
+            "maxMp": 68
+          }
+        ],
+        "chorusCasts": 6,
+        "rhythmCasts": 0,
+        "modifiedRecords": 24,
+        "netRegenerationLoss": 22,
+        "unapplied": 2,
+        "reward": {
+          "cleared": 6,
+          "gold": 280,
+          "xp": 120,
+          "firstClear": true,
+          "loot": [
+            "bellfocus"
+          ]
+        },
+        "gold": 7350
+      },
+      {
+        "id": 67,
+        "route": "courier",
+        "won": true,
+        "rounds": [
+          4,
+          4,
+          8
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "mp": [
+          {
+            "id": "a",
+            "mp": 3,
+            "maxMp": 42
+          },
+          {
+            "id": "b",
+            "mp": 12,
+            "maxMp": 35
+          },
+          {
+            "id": "c",
+            "mp": 53,
+            "maxMp": 74
+          },
+          {
+            "id": "d",
+            "mp": 35,
+            "maxMp": 72
+          },
+          {
+            "id": "e",
+            "mp": 28,
+            "maxMp": 57
+          },
+          {
+            "id": "f",
+            "mp": 26,
+            "maxMp": 68
+          }
+        ],
+        "chorusCasts": 3,
+        "rhythmCasts": 5,
+        "modifiedRecords": 12,
+        "netRegenerationLoss": 12,
+        "unapplied": 0,
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        },
+        "gold": 7485
+      }
+    ],
+    "finalGold": 7485,
+    "next": 68,
+    "comparison": {
+      "rhythm": {
+        "won": true,
+        "rounds": [
+          3,
+          5,
+          4,
+          4,
+          5,
+          11
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 8,
+          "rune": 0,
+          "arrow": 12
+        },
+        "mp": [
+          {
+            "id": "a",
+            "mp": 2,
+            "maxMp": 42
+          },
+          {
+            "id": "b",
+            "mp": 11,
+            "maxMp": 35
+          },
+          {
+            "id": "c",
+            "mp": 1,
+            "maxMp": 74
+          },
+          {
+            "id": "d",
+            "mp": 44,
+            "maxMp": 72
+          },
+          {
+            "id": "e",
+            "mp": 23,
+            "maxMp": 57
+          },
+          {
+            "id": "f",
+            "mp": 61,
+            "maxMp": 68
+          }
+        ],
+        "chorusCasts": 0,
+        "rhythmCasts": 6,
+        "modifiedRecords": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0
+      },
+      "chorus": {
+        "won": true,
+        "rounds": [
+          3,
+          5,
+          4,
+          3,
+          5,
+          9
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 9,
+          "rune": 0,
+          "arrow": 17
+        },
+        "mp": [
+          {
+            "id": "a",
+            "mp": 1,
+            "maxMp": 42
+          },
+          {
+            "id": "b",
+            "mp": 8,
+            "maxMp": 35
+          },
+          {
+            "id": "c",
+            "mp": 5,
+            "maxMp": 74
+          },
+          {
+            "id": "d",
+            "mp": 37,
+            "maxMp": 72
+          },
+          {
+            "id": "e",
+            "mp": 20,
+            "maxMp": 57
+          },
+          {
+            "id": "f",
+            "mp": 65,
+            "maxMp": 68
+          }
+        ],
+        "chorusCasts": 6,
+        "rhythmCasts": 0,
+        "modifiedRecords": 24,
+        "netRegenerationLoss": 22,
+        "unapplied": 2
+      }
+    },
+    "limits": "Finite actual results, no universal upgrade or isolated causation claim. Negative regeneration belongs to recipient, base+1 and active modifiers net before clamp. At zero MP the action buff continues. No new training/purchases/courses/refunds/roles or persistent supply economy."
+  },
+  "confirmation": {
+    "passed": true,
+    "configuredCases": 16,
+    "allConfigsValid": true,
+    "bothGuildsByteExactAfterAllSimulations": true,
+    "allFullRawReportsSaved": true,
+    "allOutcomesRetained": true,
+    "results": [
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 731,
+        "target": "front",
+        "skill": "chorus",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 14,
+          "rune": 9,
+          "arrow": 8
+        },
+        "partyMP": 140,
+        "chorusCasts": 3,
+        "netRegenerationLoss": 6,
+        "unapplied": 0,
+        "livingMP": 140,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 731,
+        "target": "front",
+        "skill": "rhythm",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 14,
+          "rune": 9,
+          "arrow": 8
+        },
+        "partyMP": 140,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 140,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 731,
+        "target": "rear",
+        "skill": "chorus",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 14,
+          "rune": 9,
+          "arrow": 10
+        },
+        "partyMP": 156,
+        "chorusCasts": 3,
+        "netRegenerationLoss": 12,
+        "unapplied": 0,
+        "livingMP": 156,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 731,
+        "target": "rear",
+        "skill": "rhythm",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 12,
+          "rune": 10,
+          "arrow": 8
+        },
+        "partyMP": 141,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 141,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 732,
+        "target": "front",
+        "skill": "chorus",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 9,
+          "arrow": 8
+        },
+        "partyMP": 117,
+        "chorusCasts": 3,
+        "netRegenerationLoss": 6,
+        "unapplied": 0,
+        "livingMP": 117,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 732,
+        "target": "front",
+        "skill": "rhythm",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 9,
+          "arrow": 8
+        },
+        "partyMP": 117,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 117,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 732,
+        "target": "rear",
+        "skill": "chorus",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          3
+        ],
+        "supplies": {
+          "herb": 13,
+          "rune": 11,
+          "arrow": 10
+        },
+        "partyMP": 147,
+        "chorusCasts": 3,
+        "netRegenerationLoss": 12,
+        "unapplied": 0,
+        "livingMP": 147,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "fresh",
+        "route": "classic",
+        "seed": 732,
+        "target": "rear",
+        "skill": "rhythm",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 13,
+          "rune": 9,
+          "arrow": 8
+        },
+        "partyMP": 144,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 144,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 68,
+        "target": "front",
+        "skill": "chorus",
+        "won": true,
+        "alive": 5,
+        "rounds": [
+          4,
+          5,
+          9
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 1
+        },
+        "partyMP": 177,
+        "chorusCasts": 3,
+        "netRegenerationLoss": 5,
+        "unapplied": 1,
+        "livingMP": 176,
+        "fallenMPRetained": 1,
+        "surviveGoalMet": false
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 68,
+        "target": "front",
+        "skill": "rhythm",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          5,
+          9
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 1
+        },
+        "partyMP": 167,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 167,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 68,
+        "target": "rear",
+        "skill": "chorus",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4,
+          7
+        ],
+        "supplies": {
+          "herb": 1,
+          "rune": 3,
+          "arrow": 2
+        },
+        "partyMP": 154,
+        "chorusCasts": 3,
+        "netRegenerationLoss": 12,
+        "unapplied": 0,
+        "livingMP": 154,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 68,
+        "target": "rear",
+        "skill": "rhythm",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4,
+          7
+        ],
+        "supplies": {
+          "herb": 1,
+          "rune": 3,
+          "arrow": 2
+        },
+        "partyMP": 165,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 165,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 69,
+        "target": "front",
+        "skill": "chorus",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          5,
+          8
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 1
+        },
+        "partyMP": 183,
+        "chorusCasts": 3,
+        "netRegenerationLoss": 5,
+        "unapplied": 1,
+        "livingMP": 183,
+        "fallenMPRetained": 0,
+        "surviveGoalMet": true
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 69,
+        "target": "front",
+        "skill": "rhythm",
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          5,
+          5,
+          12
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 1
+        },
+        "partyMP": 172,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 0,
+        "fallenMPRetained": 172,
+        "surviveGoalMet": false
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 69,
+        "target": "rear",
+        "skill": "chorus",
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          4,
+          4,
+          15
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "partyMP": 168,
+        "chorusCasts": 2,
+        "netRegenerationLoss": 8,
+        "unapplied": 0,
+        "livingMP": 0,
+        "fallenMPRetained": 168,
+        "surviveGoalMet": false
+      },
+      {
+        "profile": "earned",
+        "route": "courier",
+        "seed": 69,
+        "target": "rear",
+        "skill": "rhythm",
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          4,
+          4,
+          15
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "partyMP": 175,
+        "chorusCasts": 0,
+        "netRegenerationLoss": 0,
+        "unapplied": 0,
+        "livingMP": 0,
+        "fallenMPRetained": 175,
+        "surviveGoalMet": false
+      }
+    ],
+    "metricLimits": "partyMP sums all stored unit states including fallen; livingMP is the usable party balance. Cases are finite rehearsal outcomes, not probabilities or recommendations. No rewards or edits to either source guild.",
+    "counts": {
+      "cases": 16,
+      "won": 13,
+      "surviveGoalMet": 12
+    }
+  },
+  "preservation": {
+    "passed": true,
+    "startExactV140Guild": true,
+    "legacyComparisons": [
+      {
+        "name": "55",
+        "addedOnly": {
+          "path": "party[e].skills.chorus",
+          "value": 6
+        },
+        "allOtherFullReportJSONBytesExact": true,
+        "oldSha256": "99bf17dbf65b31e9ede245455dd7c3db10b90d7b430b9393a974a0bb847065b4",
+        "currentSha256": "d5023862b290abcd4917547cfb605bddeef71ed772efc817373b68168ff248de"
+      },
+      {
+        "name": "65",
+        "addedOnly": {
+          "path": "party[e].skills.chorus",
+          "value": 6
+        },
+        "allOtherFullReportJSONBytesExact": true,
+        "oldSha256": "cf06f301645bb952d20fc291d69ac3f37393fb28af78abb03afa861aaf7069cd",
+        "currentSha256": "4b7ac75be10cdc6b8adce64438a6d68951e07e51c30691e25e8d712916641772"
+      },
+      {
+        "name": "64",
+        "addedOnly": {
+          "path": "party[e].skills.chorus",
+          "value": 6
+        },
+        "allOtherFullReportJSONBytesExact": true,
+        "oldSha256": "c1f91605529b692d6b0f1045dfbba5a4de7013c59b142222710fe14ecb5c71c4",
+        "currentSha256": "9ae02041f916475693f45cdf111599b9093ddc3a1f57e37fca16f7d4f84fd72f"
+      },
+      {
+        "name": "63",
+        "addedOnly": {
+          "path": "party[e].skills.chorus",
+          "value": 6
+        },
+        "allOtherFullReportJSONBytesExact": true,
+        "oldSha256": "1ef09e9aae0da4a9cfb4c6411b719fce75eceac67a7a8790515308653831c736",
+        "currentSha256": "e7864ff0da433349e67d34e5e247d0a330360aa2ec7856718be95e71f8ab157b"
+      },
+      {
+        "name": "61",
+        "addedOnly": {
+          "path": "party[e].skills.chorus",
+          "value": 6
+        },
+        "allOtherFullReportJSONBytesExact": true,
+        "oldSha256": "44b9f69e90620e389452721a4dd6312e9300531e7287a826e55e260dbfc268dc",
+        "currentSha256": "45c48f0e29e8d358c19e812d6616d8dc27cc4db8fd831d075cfc7a7eb3f5e4ca"
+      },
+      {
+        "name": "66-rhythm",
+        "addedOnly": {
+          "path": "party[e].skills.chorus",
+          "value": 6
+        },
+        "allOtherFullReportJSONBytesExact": true,
+        "oldSha256": "4ec240e909d2d111a19d3d64a54a55d21aeede9d37a0c6a96400df32bc728bd4",
+        "currentSha256": "d9b51f0759be883225eb779cd961cccc1c4262943a8fccd8b69133f1e9db96fe"
+      }
+    ],
+    "comparisonExclusionsOnlyDeclaredBardChorusAvailability": true,
+    "allLegacyEventsRollsPaymentsStatesAndOutcomesExact": true,
+    "gold": {
+      "before": 7070,
+      "after": 7485,
+      "delta": 415
+    },
+    "normalXpDeltaEachActive": 175,
+    "allOtherMemberFieldsExact": true,
+    "normalWarehouseAdds": {
+      "bellfocus": 1,
+      "postbell": 1
+    },
+    "allOtherGuildFieldsExact": [
+      "version",
+      "harbor",
+      "lineup",
+      "command",
+      "equipmentGoal",
+      "reportArchives",
+      "postQuest"
+    ],
+    "oldProofsExact": 21,
+    "newProofs": [
+      {
+        "route": "chapter",
+        "goal": "survive",
+        "id": 66
+      }
+    ],
+    "frozenEntries": 5,
+    "frozenWireChars": 793208,
+    "frozenAllOriginalFieldsExact": true,
+    "history": [
+      67,
+      66,
+      65,
+      64,
+      63,
+      62,
+      61,
+      60,
+      59,
+      58,
+      57,
+      56,
+      55,
+      54,
+      53,
+      52,
+      51,
+      50,
+      49,
+      48
+    ],
+    "failure55Exact": true
+  },
+  "catalogueCompression": {
+    "passed": true,
+    "onlyFreshReportMetadataAdditions": [
+      {
+        "id": "f",
+        "skill": "imbue",
+        "addedRank": 6
+      },
+      {
+        "id": "e",
+        "skill": "chorus",
+        "addedRank": 6
+      }
+    ],
+    "allOtherOriginal47JSONBytesExact": true,
+    "originalRawBytes": 3955771,
+    "currentRawBytes": 3955792,
+    "currentPackedBytes": 589679,
+    "currentPayloadChars": 49568,
+    "currentSavedFiveChars": 793220,
+    "currentIndependentRegularGzipChars": 138404,
+    "preexistingNativeFiveChars": 793208,
+    "frozenSHA256": "ba24298c91ad264034b398b23a1d53af7d6b0679908c8166b35d29e3a9bd7df6"
+  },
+  "allFinalRuntimeScriptsTestsSourceFilesExact": 636,
+  "reference": {
+    "referenceURL": "https://world-of-dungeons.de/ency/Mana",
+    "access": "Public primary search-index content read. Direct page returned403; no retry or bypass.",
+    "indexAge": "published about14.3 years ago, indexed about5 months ago",
+    "supportedStructure": "Mana regeneration can be negative, including from skills applied by other group members; direct mana attacks and regeneration are distinct causes.",
+    "notVerified": "Current server values, class assignment, formula, upkeep or zero-MP removal rule are not verified.",
+    "projectOnly": {
+      "baseNaturalMana": 1,
+      "chorusCost": 4,
+      "chorusExtraActions": 1,
+      "chorusManaRegeneration": -2,
+      "duration": "current and next round",
+      "zeroMpDoesNotDisableBuff": true
+    },
+    "numericReferenceServer": null,
+    "noPersistentSuppliesOrCostCalibration": true
+  },
+  "limitations": [
+    "Project skill and all numeric values are adaptations; official Mana page403, public index only, no bypass",
+    "Fixed chorus components do not scale with ordinary rank/attributes; no new training recommendation",
+    "Zero MP does not end the action benefit; this is not an upkeep payment gate",
+    "Negative regeneration is net base+modifier and not an attack or material payment",
+    "Six old report comparisons exclude exactly one new bard availability entry; original frozen bytes never modified",
+    "Native five stored entries remain793208/800000; no automatic new capture, deletion or cap increase",
+    "Chromium emulation only; no physical device/other-engine acceptance",
+    "Permanent supply economy/reference server remain pending; snapshot guards not cross-process locks"
+  ],
+  "failuresPreserved": [
+    "browser-initial.log and browser-initial/: chapter preparation seed was1, not hardcoded731; fixed exact preparation fixture, formal66/67 unchanged",
+    "browser-second.log and browser-second/: real origins Map held objects, not numbers; fixed real index and tested actual effectOrigins projection",
+    "full-initial.tap: three fixed regenerated compression sizes changed by a declared chorus6 catalogue entry; exact values updated after independent original47 byte comparison and new strict regression, no bounds/assertions weakened"
+  ],
+  "main": {
+    "unchangedByThisStage": true,
+    "base": "f04c10b435694876aed9a8940fce80a9f21276e2",
+    "nextReviewWindow": [
+      143,
+      144,
+      145
+    ],
+    "forceHistoryRewrite": false,
+    "deployed": false
+  }
+}

@@ -11,6 +11,7 @@ export function personalReport(report,heroId){
  report.events.forEach((e,index)=>{
   const own=e.actor===heroId,target=e.targets.includes(heroId),d=e.detail||{};
   for(const key of Object.keys(stock)){if(own&&e.supplies)supplies[key]+=Math.max(0,stock[key]-e.supplies[key]);if(e.supplies)stock[key]=e.supplies[key];}
+  if(own&&d.manaRegeneration){add(e.roomIndex,'manaRegenerationRecords');add(e.roomIndex,'manaRegenerationGain',Math.max(0,d.manaRegeneration.actual));add(e.roomIndex,'manaRegenerationLoss',Math.max(0,-d.manaRegeneration.actual));proof(e,index,'本人自然法力回复修正');}
   if(own&&e.type==='initiative-check'){add(e.roomIndex,'initiativeChecks');add(e.roomIndex,'initiativeMana',d.cost);if(d.initiative.chosen==='natural')add(e.roomIndex,'initiativeFallbacks');proof(e,index,'本人先攻选择');}
   if(own&&e.type==='cast'){add(e.roomIndex,'casts');add(e.roomIndex,'castMana',Math.max(0,d.mpBefore-d.mpAfter));}
   if(own&&e.type==='intercept'){add(e.roomIndex,'interceptAttempts');add(e.roomIndex,'interceptMana',d.cost);if(d.success)add(e.roomIndex,'interceptions');proof(e,index,'本人援护尝试');}

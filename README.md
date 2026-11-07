@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前开发版本：**v0.140「留蓝协作」**，分支`feature/v140-personal-mana-reserve`。**v0.137已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`b4aa91b6295ba4fc845fb995700861c55b68cb07`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+当前开发版本：**v0.141「疾歌耗神」**，分支`feature/v141-mana-regeneration`。**v0.140已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`f04c10b435694876aed9a8940fce80a9f21276e2`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+
+新增[疾歌耗神与队伍法力分工](docs/V141_MANA_REGENERATION.md)：正负自然法力修正按实际受益者结算，一首自由吟游技能将行动收益与持续代价配对；0MP截断、到期和整组破印可追溯。正常66/67六人至7485/next68，保留药草耗尽及未生效损失，不当升级推荐。旧冻结字节保持，旧重演仅多一个技能目录项，见[V141验证](docs/V141_CHECKS.json)。
 
 新增[留蓝与队伍续航](docs/V140_MANA_RESERVE.md)：有费用的预备/普通指令可选付款后最低个人MP，免费查实际后备；防御/自动救护等独立费用不被锁定。真实64/65两次六人至7070/next66，对照同样通关、保留法力差别，不当升级推荐，见[V140验证](docs/V140_CHECKS.json)。
 
