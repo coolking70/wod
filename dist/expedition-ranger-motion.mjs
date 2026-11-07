@@ -1,12 +1,13 @@
 import{HEROES,SKILLS,gearSupports}from'./expedition-data.mjs';
 // Original presentation asset. Every beat consumes a recorded fact, never combat time or resources.
-export const RANGER_MOTION_RULE='携弓射手用同一关节模型表现已记录的拉弓、放箭、闪避、实扣与倒下。同组群射只演一次放箭，不代表额外箭数；法术伤害箭仍是弓的远程攻击。图形只在卡片内示意，射线、目标、生命和资源仍按本步结算快照；不新增命中、移动或行动。暂停及减少动态效果直接收束到原步存活/倒下姿态。';
+export const RANGER_MOTION_RULE='携弓射手用同一关节模型表现已记录的拉弓、放箭、闪避、实扣与倒下。同组群射只演一次放箭，不代表额外箭数；无箭拆解只表现操作，不画搭箭或射击；法术伤害箭仍是弓的远程攻击。图形只在卡片内示意，射线、目标、生命和资源仍按本步结算快照；不新增命中、移动或行动。暂停及减少动态效果直接收束到原步存活/倒下姿态。';
 export function rangerMotion(group,hero){
  if(!hero||HEROES.find(h=>h.id===hero.id)?.classId!=='ranger'||!gearSupports(hero.gear,'bow'))return null;
  const events=group.events,unit=events.at(-1)?.units.find(u=>u.id===hero.id);if(!unit)return null;const beats=[],released=new Set(),add=(e,pose,label)=>beats.push({eventId:e.id,pose,label});
  for(const e of events){const own=e.actor===hero.id,recipient=e.targets.includes(hero.id),d=e.detail;
-  if(e.type==='cast'&&own&&SKILLS[d.skill]?.kind==='attack'&&SKILLS[d.skill].type==='ranged')add(e,'draw','拉弓准备');
-  if(e.type==='attack'&&own&&d.attackType==='ranged'){const key=d.cast??e.id;if(!released.has(key)){released.add(key);add(e,'release',d.damageType==='magic'?'实际放箭 · 法术伤害':'实际放箭');}}
+  if(e.type==='cast'&&own&&SKILLS[d.skill]?.disarm)add(e,'steady','实际拆解 · 不耗箭');
+  if(e.type==='cast'&&own&&SKILLS[d.skill]?.kind==='attack'&&SKILLS[d.skill].type==='ranged'&&!SKILLS[d.skill].disarm)add(e,'draw','拉弓准备');
+  if(e.type==='attack'&&own&&d.attackType==='ranged'&&!SKILLS[d.skill]?.disarm){const key=d.cast??e.id;if(!released.has(key)){released.add(key);add(e,'release',d.damageType==='magic'?'实际放箭 · 法术伤害':'实际放箭');}}
   if(e.type==='defend'&&own&&d.skill==='dodge')add(e,'ready','闪避检定');
   if((e.type==='attack'||e.type==='harm')&&recipient){if(d.grade==='闪避')add(e,'evade','实际闪避');else if(d.actual>0)add(e,'hit','受击 −'+d.actual);else add(e,'steady','实扣0');}
   if(e.type==='down'&&recipient)add(e,'fallen','倒下');

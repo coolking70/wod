@@ -1,0 +1,47 @@
+{
+  "stage": "0.148",
+  "base": "3112cc25460f08cf8be4db5a237d5869ceab5d9e",
+  "beforeImplementationAndNormalResults": true,
+  "feature": "optional automaticAction, unconfigured basic main-action attack/MP-transfer only, default absent/off",
+  "originalSource": "https://www.world-of-dungeons.de/ency/Konfiguration_-_Allgemein",
+  "evidence": "primary historical search index describes optional least-mana learned usable alternative, no consumables except ammunition; live502 once, no bypass, not current-server verified",
+  "adaptation": [
+    "only attack/MP-transfer permitted by existing main-phase model",
+    "exclude all paid-course skills even if learned; configure them explicitly",
+    "exclude skills appearing in actual current-room main rows, so once/window/row constraints cannot be reset",
+    "one existing ordinary action; own item/healing and configured rows keep priority; explicit wait stops fallback",
+    "use current standard-medium actual cost, legal gear/target/immunity/resource; no herb/rune costs, arrows permitted",
+    "lowest actual mana then stable class skill order, no tactical optimality claim",
+    "free candidate probes consume no battle RNG/resources, execute selected actual attempt once; no change when disabled",
+    "global hero tactic only, no room override or new permanent preference; explicit plan/copy/campaign preserves choice",
+    "row-only target/window/mana/stock limits do not govern unconfigured skills; explicit opt-in/global priorities, no global resource guarantee",
+    "correct ranger disarm depiction: actual no-arrow mechanism work cannot show nocked arrow/release"
+  ],
+  "normal": [
+    {
+      "id": 80,
+      "route": "trapworks",
+      "preparation": "existing guild projection, B main shot/front/repeat only; no auto flag, other plans/overrides unchanged"
+    },
+    {
+      "id": 81,
+      "route": "trapworks",
+      "preparation": "same B shot-only; enable automaticAction for B; no paid edits"
+    }
+  ],
+  "finite": {
+    "seeds": [
+      1,
+      2,
+      731,
+      732
+    ],
+    "pair": "same normal80 preparation with only B automaticAction off/on, 8 complete configs/reports; no enemy/seed tuning"
+  },
+  "compatibility": "7 old complete states/configs/reports +66 all33route reports +normal80 and start/source/desktop states, zero exclusions; auto-off81 old reference separately preserved",
+  "assets": "only actual normal rewards/history/proofs may change; old roles/ownership/training/5frozen793208/3plans/A kept",
+  "nonGoals": [
+    "no permanent supplies, reward/death economy change or new skill/route/gear",
+    "no main merge before149–151, deployment, force, GC/prune"
+  ]
+}

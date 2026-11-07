@@ -145,3 +145,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .projectile.disease{stroke:#c2d797;stroke-width:5;stroke-dasharray:3 12;filter:drop-shadow(0 0 5px #adc376)}.enemy-disease{border-color:#a0b77b}.disease-proof{border-left:2px solid #a0b77b;padding:12px;margin:12px 0}
 
 .focus-mark-tag{border:1px solid #e3ac72;color:#ffcb91}.focus-mark-proof,.focus-target-proof{border-left:2px solid #dca168;padding:12px;margin:12px 0}
+
+.automatic-action-settings{border:1px solid #42646a;padding:12px;margin:10px 0}.automatic-action-settings label{display:flex;gap:8px;align-items:flex-start}.automatic-action-settings p,.automatic-action-proof p{overflow-wrap:anywhere}.automatic-action-proof{border-left:2px solid #90beb2;padding:12px;margin:12px 0}

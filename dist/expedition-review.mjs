@@ -80,6 +80,7 @@ function format(key,value){
  if(key==='bellApproach')return BELL_CHOICES[value].name;
  if(['prep','main'].includes(key))return commandText(value);
  if(['prepOrder','roomOrder'].includes(key))return value.map(heroName).join(' → ');
+ if(key==='automaticAction')return value?'开启':'关闭';
  if(key==='defenses')return Object.entries(DEFENSE_TYPES).map(([k,label])=>label+'：'+DEFENSES[value[k]].name).join('；');
  if(key==='healing')return `${HEAL_PRIORITIES[value.priority||'lowest']} / ${value.enabled?'开启':'关闭'} / ${value.threshold*100}% / ${POS[value.target]||({all:'全队',self:'自身'}[value.target])}${groupAidLabel(value)}`;
  if(key==='itemPolicy')return `${value.enabled?'开启':'关闭'} / ${value.threshold*100}%`;
@@ -91,8 +92,8 @@ export const describeConfigValue=(key,value)=>format(key,value);
 export function configurationChanges(a,b){
  const roomLabels=a.expedition===b.expedition?roomsFor(a).map(r=>({id:r.id,name:r.name})):[...new Set([...roomsFor(a),...roomsFor(b)].map(r=>r.id))].map(id=>({id,name:'房间槽 '+id}));
  const knownRooms=new Set(roomLabels.map(r=>r.id));for(const id of [...Object.keys(a.roomOrders),...Object.keys(b.roomOrders),...[...a.heroes,...b.heroes].flatMap(h=>Object.keys(h.overrides))])if(!knownRooms.has(id)){knownRooms.add(id);roomLabels.push({id,name:'其他房间槽 '+id});}
- const changes=[],labels={initiative:'先攻选择',supportOrder:'辅助阵位优先',attackOrder:'远攻阵位优先',advancement:'后期职业进阶',pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
- const compare=(label,key,x,y)=>{if(canonical(x??null)!==canonical(y??null))changes.push({label,before:format(key,x),after:format(key,y)});};
+ const changes=[],labels={automaticAction:'自动应急',initiative:'先攻选择',supportOrder:'辅助阵位优先',attackOrder:'远攻阵位优先',advancement:'后期职业进阶',pos:'站位',gear:'装备',trained:'技能专修',attribute:'属性专长',defenseFocus:'防御专修',item:'携带道具',prep:'预备指令',main:'普通指令',healing:'治疗策略',defenses:'防御技能',itemPolicy:'道具策略'};
+ const compare=(label,key,x,y)=>{if(key==='automaticAction'){x=Boolean(x);y=Boolean(y);}if(canonical(x??null)!==canonical(y??null))changes.push({label,before:format(key,x),after:format(key,y)});};
  if(a.expedition==='harbor'||b.expedition==='harbor'){compare('港口符纸预留','harborReserve',harborReserve(a),harborReserve(b));compare('港口难度','harborDifficulty',harborDifficulty(a),harborDifficulty(b));compare('港口通路策略','harborPass',a.harbor?.pass,b.harbor?.pass);compare('港口事件策略','harborTask',a.harbor?.task,b.harbor?.task);}
  if(a.expedition==='shoals'||b.expedition==='shoals')compare('漂礁海图编号','shoalsChart',shoalsChartId(a),shoalsChartId(b));
  if(a.expedition==='courier'||b.expedition==='courier')compare('邮路第二场通路','courierPass',courierPass(a),courierPass(b));

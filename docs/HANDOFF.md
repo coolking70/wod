@@ -1,6 +1,8 @@
+> v148增加默认关闭的普通技能自动应急：先检查所有已配行，才选未配基础攻击/法力援助，免费预检、真实最低耗蓝；课程仍须明确配技。正式80超时/81六人生还的完整失败与代价保留，终8930/next82。见[实现](V148_AUTOMATIC_ACTION.md)、[交接](HANDOFF_CLOUD_V148.md)。main保持146，下一完整窗口149–151；永久补给待决。
+
 # 接手开发指南
 
-当前v0.141优先读[云端交接](HANDOFF_CLOUD_V141.md)、[实现与实玩](V141_MANA_REGENERATION.md)、[验证](V141_CHECKS.json)。Native7485/next68；main v140，阶段可正常推送，下一主干窗口143–145。旧六引用/唯一证据保持，补给经济待决。
+历史v0.141优先读[云端交接](HANDOFF_CLOUD_V141.md)、[实现与实玩](V141_MANA_REGENERATION.md)、[验证](V141_CHECKS.json)。Native7485/next68；main v140，阶段可正常推送，下一主干窗口143–145。旧六引用/唯一证据保持，补给经济待决。
 
 
 历史v0.140接续见[云端交接](HANDOFF_CLOUD_V140.md)、[实现与正常实玩](V140_MANA_RESERVE.md)、[验证](V140_CHECKS.json)。Native7070/next66；主干/分支实际SHA见交付收据，保留六旧提交/唯一证据，补给经济待决。
@@ -16,7 +18,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前完整验证以[V141_CHECKS.json](V141_CHECKS.json)为准；以下历史运行说明不替代最新收据。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。历史v141完整验证以[V141_CHECKS.json](V141_CHECKS.json)为准；以下历史运行说明不替代最新收据。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist

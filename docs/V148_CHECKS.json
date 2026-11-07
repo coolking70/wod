@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "baseline": "3112cc25460f08cf8be4db5a237d5869ceab5d9e",
+  "tests": {
+    "full": {
+      "tests": 1405,
+      "pass": 1405,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    },
+    "automaticAction": {
+      "tests": 22,
+      "pass": 22,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-second.tap"
+    },
+    "evidenceTool": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "storage.tap"
+    }
+  },
+  "initialNewTests": {
+    "passed": 20,
+    "failed": 2,
+    "originalFile": "specialized-initial.tap",
+    "corrections": "explicit reference fallback uses cycle to perform same free checks; real nearly-full archive must reject, isolated roundtrip does not erase real five entries",
+    "assertionsNotWeakened": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 166,
+    "checkedReferences": 185,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "oldFiles": 198,
+    "onlyChangedOldFiles": [
+      "dist/expedition-engine.mjs",
+      "dist/expedition-ranger-motion.mjs",
+      "dist/expedition-review.mjs",
+      "dist/expedition-tactic-reuse.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css"
+    ],
+    "added": [
+      "dist/expedition-automatic-action.mjs"
+    ],
+    "allSkillCatalogueContentEnemiesGearRewardsImagesExact": true,
+    "allOtherOldRuntimeFilesByteExact": true,
+    "guardianModuleAndCSSExact": true,
+    "routePersonalThreeFieldProjectionExact": true
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 641,
+    "python": 2,
+    "failures": []
+  },
+  "browser": {
+    "passed": true,
+    "suites": 56,
+    "allFinalRuntime": true,
+    "directAttempt1Passed": true,
+    "contexts": 3,
+    "canonicalCampaign": "/workspace/wod-evidence/v148/browser-final/automatic-final-campaign.json",
+    "canonicalFourKeys": "/workspace/wod-evidence/v148/browser-final/automatic-final-four-raw-keys.json",
+    "ChromiumDesktop390TouchEmulationOnly": true
+  },
+  "sourceFilesChecked": 681,
+  "compatibility": {
+    "passed": true,
+    "zeroFieldExclusions": true,
+    "all77OldOrOffFullJSONByteExact": true,
+    "exactPreauthoredEnabled81Config": true,
+    "exactOld81OffFullReport": true,
+    "totalVerifiedFullJSON": 79,
+    "old7StatesConfigsReports": 7,
+    "all33RoutesTwoSeeds": 66,
+    "nativeOff80AndStartSourceDesktop": 4
+  },
+  "guildBoundary": {
+    "passed": true,
+    "allGuildFieldsExactAfterOnlyExplicitOrdinaryRewardsAndHistory": true,
+    "goldBefore": 8840,
+    "goldAfter": 8930,
+    "nextBefore": 80,
+    "nextAfter": 82,
+    "ordinaryGold": 90,
+    "ordinaryXPPerActive": 40,
+    "warehouseExact": true,
+    "identityRolesEquipmentTrainingStoriesUnchanged": true,
+    "benchAWholeMemberUnchanged": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "all27ExistingFirstProofsUnchanged": true,
+    "normal80SixAliveFirstRoom24RoundTimeout": true,
+    "normal81SixAliveSixRealDisarms18MP": true,
+    "history": "81..62; full old60/61 retained API-final, original real five-entry library remains full and rejects new81; isolated roundtrip test only",
+    "sha256": "3f3c4a0e476f032f6509e84994a2554f7b3e468c425845bddcf56fd4440073a8"
+  },
+  "feature": {
+    "defaultAbsentOrFalseByteExact": true,
+    "sameOrdinaryActionNoNewAction": true,
+    "knownBasicMainAttackAndMPTransferOnly": true,
+    "paidCoursesExcludedEvenWhenLearned": true,
+    "noHerbRuneCostsNoBattleRandomInProbe": true,
+    "configuredOnceWindowSkillsNotRetried": true,
+    "rowLimitsNotGlobalLocksExplicitlyDisclosed": true,
+    "sameActorRoomRoundPhaseSourceLinksVerified": true,
+    "newEnabledConfigsRequireV148Client": true,
+    "disarmWorkDoesNotNockOrReleaseArrow": true
+  },
+  "storage": {
+    "format": "wod-checkpoint-stage/version1",
+    "allOriginalCheckpointZIPBytesRetained": true,
+    "allOriginalRawMetadataIndexed": true,
+    "temporaryCPRetirementOnlyAfterFullRestore": true,
+    "v145VerifiedDuplicateRawRetiredFiles": 1179,
+    "v145MeasuredTmpBytesReleased": 1933402112,
+    "allOldUniqueEvidenceRefsAndRecoveryChainsPreserved": true
+  },
+  "sourceBoundary": "Historical WoD Konfiguration_-_Allgemein primary index only; live502 once; no current Delta server verification. Restricted scope and exact parameters/order are original provisional adaptations.",
+  "limits": [
+    "permanent supply economy pending",
+    "no new skill/route/gear/enemy/reward tuning",
+    "normal80 first-room24 timeout/six alive retained, normal81 six real disarms18MP and actual costs; finite8 not global-optimality",
+    "real five-entry793208char archive rejects new81; only isolated copy used for new freeze roundtrip",
+    "normal history81..62; old60/61 complete API reports retained",
+    "main remains146; next evaluation149–151, no deployment/force/GC/prune"
+  ],
+  "pushAndRecovery": "Exact final commit/remote/main/restore in external delivery receipts; no self-reference SHA guess"
+}

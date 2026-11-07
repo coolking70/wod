@@ -1,3 +1,5 @@
+> v148增加默认关闭的普通技能自动应急：先检查所有已配行，才选未配基础攻击/法力援助，免费预检、真实最低耗蓝；课程仍须明确配技。正式80超时/81六人生还的完整失败与代价保留，终8930/next82。见[实现](docs/V148_AUTOMATIC_ACTION.md)、[交接](docs/HANDOFF_CLOUD_V148.md)。main保持146，下一完整窗口149–151；永久补给待决。
+
 > v147补原R3射手关节演出：真实拉弓/同组一次放箭、双通道弧光箭与实际闪避/受击/倒下，旧战斗和守卫原文保持，不新增技能或关卡。正式78五人、79六人，原药草耗尽保留，至8840/next80；见[实现](docs/V147_RANGER_MOTION.md)、[交接](docs/HANDOFF_CLOUD_V147.md)。main保持146，下一窗口149–151，补给经济待决。
 
 > v146新增猎令哨庭与敌方合法单体集火：原阵位/资格、心理防御、净化和物理援护仍实际结算，无新玩家设置。正式76C倒下，77六人，8570/next78；仅77首次生还，零标记/晚标记反例保留。见[实现](docs/V146_COORDINATED_FOCUS.md)、[交接](docs/HANDOFF_CLOUD_V146.md)。本轮完整门禁后按授权评估main；实际状态看交付集成收据。补给经济待决。
@@ -8,7 +10,7 @@
 
 # 深潮远征 / wod
 
-当前开发版本：**v0.143「退潮护送」**，分支`feature/v143-escort-objective`。周期集成状态见[GitHub实际main](https://github.com/coolking70/wod/tree/main)及本轮交付收据；本轮143为完整门禁检查点。用户已授权功能分支推送、周期评估main和冗余分支清理，未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+当前开发版本：**v0.148「普通技能自动应急」**，分支`feature/v148-automatic-backup`。周期集成状态见[GitHub实际main](https://github.com/coolking70/wod/tree/main)及本轮交付收据；main保持v146；下一完整集成窗口v149–v151。用户已授权功能分支推送、周期评估main和冗余分支清理，未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
 
 新增[退潮护送](docs/V143_ESCORT_OBJECTIVE.md)：六人保护不出手的伤员通过两房，生命跨房、治疗和援护沿原规则，伤员倒下会止步；不是第七位队员或永久伤势。真实70/71六人及伤员抵达至7920/next72，同时保留六人尚存而护送失败的固定实验，见[V143验证](docs/V143_CHECKS.json)。
 

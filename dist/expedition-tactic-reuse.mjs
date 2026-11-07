@@ -2,7 +2,7 @@ import {HEROES,SKILLS,roomsFor,clone} from './expedition-data.mjs';
 import {historyConfig,validateGuild} from './expedition-guild.mjs';
 import {rosterConfig} from './expedition-roster.mjs';import {readiness} from './expedition-readiness.mjs';import {validate} from './expedition-engine.mjs';
 import {lockedSkills} from './expedition-growth.mjs';import {configurationChanges} from './expedition-review.mjs';
-export const PERSONAL_TACTIC_FIELDS=['supportOrder','attackOrder','pos','trained','attribute','defenseFocus','defenses','itemPolicy','healing','prep','main'];
+export const PERSONAL_TACTIC_FIELDS=['automaticAction','supportOrder','attackOrder','pos','trained','attribute','defenseFocus','defenses','itemPolicy','healing','prep','main'];
 // A stale-preview check, not an authentication token. Source assets are never copied.
 export function historyTacticPreview(g,tactics,{historyId,sourceId,targetId,copyRooms=false}){
  validateGuild(g);validate(tactics);if(typeof copyRooms!=='boolean')throw Error('逐房复制选项无效');
