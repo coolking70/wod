@@ -1,0 +1,32 @@
+{
+  "stage": 158,
+  "base": "dcc525364f5cc49705795fc5bc40b69e77b5c733",
+  "mainBefore": "514090a99cca7f74f51aec1e97dabcb028b254df",
+  "scope": "Complete solo expedition milestone for156exploration index+157mana shield, original claimed goal/backup/replay workflow, and safe full browser runner. No added battle rule/skill/item/route/XP economy; only UI milestone badge and acceptance safety guard.",
+  "normal": [
+    {
+      "id": 98,
+      "route": "manashield",
+      "mode": "direct",
+      "objective": "survive"
+    },
+    {
+      "id": 99,
+      "route": "manashield",
+      "mode": "corrode",
+      "objective": "reserve"
+    }
+  ],
+  "source": "Pinned157native actual fourkeys, no historical rerun as source. Predeclared profiles in expedition-milestone-cases before first execution.",
+  "testing": "Entire1559Node2workers plus all current65complete browser suites, all corresponding original checkpoints durable on main volume as completed; saved pending/first-proof/nonrepeatclaim/archived47/full4keyrestore flows. Frozen source runtime/syntax and88old fullJSON/data checks; both code chains cold restore before branch push, all CPphysical proof before duplicate retirement, fresh remote and prospective-main recovery before nonforceffmain.",
+  "storage": {
+    "requiredTmpBudget": 5368709120,
+    "requiredMainBudget": 2147483648,
+    "checkpoints": "/workspace/wod-checkpoints/v158",
+    "v156ProtectedRoot": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "keepAllSixSnapshotsAndManifests": true,
+    "noGCPrune": true
+  },
+  "mainGate": "No main mutation before all gates pass. If conflict/race/failure/permission reject, preserve and report. No deployment.",
+  "pending": "Permanent supply economy and original-server numeric calibration unchanged"
+}
