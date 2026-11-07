@@ -16,11 +16,22 @@ export const HOLDOUT_ROOMS=[
  {id:'holdout-causeway',name:'02 · 退潮引航道',holdout:{rounds:4},note:'生命与物资继承；撑过第4完整回合或提前清场即可回岸。前排拦路卫配合后排法术和弩火，不能只看近战防御。存活敌人不会被算作已击倒。',enemies:[foe('hcg','引航道拦路卫','front',210,'strike',8),foe('hcm','回潮术士','center',150,'spark',8),foe('hca','离岸弩手','rear',130,'shot',8)]}
 ];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export function holdoutPreparationView(rooms){const rows=rooms.filter(r=>r.holdout);return rows.length?`<section class="holdout-preparation"><h3>公开坚守条件 · 可提前清场</h3>${rows.map(r=>`<p>${esc(r.name)}：${r.holdout.rounds}个完整回合；至少一名正式队员生还。</p>`).join('')}<small>${HOLDOUT_RULE}</small></section>`:'';}
+const count=(n,max=24)=>Number.isSafeInteger(n)&&n>=0&&n<=max;
+const validPlan=h=>h&&typeof h==='object'&&!Array.isArray(h)&&count(h.rounds,12)&&h.rounds>0;
+const validProgress=d=>d&&count(d.targetRounds,12)&&d.targetRounds>0&&count(d.completedRounds)&&count(d.alive,6);
+const validResult=h=>h&&typeof h==='object'&&!Array.isArray(h)&&['held','cleared','failed'].includes(h.mode)&&validProgress(h)&&Array.isArray(h.remaining)&&h.remaining.length<=40&&h.remaining.every(u=>u&&typeof u.id==='string'&&u.id.length<=100&&typeof u.name==='string'&&u.name.length<=100&&Number.isSafeInteger(u.hp)&&u.hp>0&&Number.isSafeInteger(u.mp)&&u.mp>=0)&&new Set(h.remaining.map(u=>u.id)).size===h.remaining.length&&(h.mode!=='cleared'||h.remaining.length===0)&&(h.mode!=='held'||h.completedRounds>=h.targetRounds&&h.alive>0&&h.remaining.length>0);
+const unverified='<strong class="holdout-unverified">坚守记录未核实</strong><p>记录字段不完整或无效，无法据此确认进度或通过；原始战报保持，可导出核对。</p>';
+export function holdoutPreparationView(rooms){const rows=rooms.filter(r=>r.holdout);return rows.length?`<section class="holdout-preparation"><h3>公开坚守条件 · 可提前清场</h3>${rows.map(r=>validPlan(r.holdout)?`<p>${esc(r.name)}：${esc(r.holdout.rounds)}个完整回合；至少一名正式队员生还。</p>`:unverified).join('')}<small>${HOLDOUT_RULE}</small></section>`:'';}
 export function holdoutFrame(report,eventId){
- const end=report.events.findIndex(e=>e.id===eventId);if(end<0)return null;const now=report.events[end];let plan=null,progress=null,result=null;
- for(let i=0;i<=end;i++){const e=report.events[i];if(e.roomIndex!==now.roomIndex)continue;if(e.type==='room')plan=e.detail?.holdoutPlan||null;if(e.type==='holdout-progress')progress=e.detail;if(e.detail?.holdout)result=e.detail.holdout;}
- return plan?{targetRounds:plan.rounds,completedRounds:progress?.completedRounds||0,result,rule:plan.rule}:null;
+ const end=report.events.findIndex(e=>e.id===eventId);if(end<0)return null;const now=report.events[end];let plan=null,progress=null,result=null,invalid=false,seen=false;
+ for(let i=0;i<=end;i++){
+  const e=report.events[i];if(e.roomIndex!==now.roomIndex)continue;
+  if(e.type==='room'&&e.detail?.holdoutPlan!==undefined){seen=true;plan=e.detail.holdoutPlan;if(!validPlan(plan))invalid=true;}
+  if(e.type==='holdout-progress'){seen=true;progress=e.detail;if(!validProgress(progress)||!validPlan(plan)||progress.targetRounds!==plan.rounds)invalid=true;}
+  if(['victory','defeat'].includes(e.type)&&e.detail?.holdout!==undefined){seen=true;result=e.detail.holdout;if(!validResult(result)||!validPlan(plan)||result.targetRounds!==plan.rounds||(e.type==='victory')===(result?.mode==='failed'))invalid=true;}
+ }
+ if(!seen)return null;if(invalid||!validPlan(plan))return {unverified:true};
+ return {targetRounds:plan.rounds,completedRounds:progress?.completedRounds||0,result,rule:HOLDOUT_RULE};
 }
-export function holdoutSnapshotView(report,eventId){const h=holdoutFrame(report,eventId);if(!h)return '';return `<strong>坚守撤离 · 完整回合 ${h.completedRounds}/${h.targetRounds}</strong><p>${h.result?(h.result.mode==='held'?'撤离条件已达成；'+h.result.remaining.length+'名敌人仍存活，未计击倒':h.result.mode==='cleared'?'已清场；按本房条件通过':'本次坚守止步'):'也可提前清场；进度只含已结束的回合，不预测后续结果。'}</p>`;}
-export function holdoutEvidenceView(e){const d=e?.detail,h=d?.holdout;if(!h&&e?.type!=='holdout-progress')return '';return `<section class="holdout-proof"><h3>${h?(h.mode==='held'?'完成坚守，随潮撤离':h.mode==='cleared'?'清场通过':'坚守止步'):'完整回合已结束'}</h3><p>已完成 ${h?.completedRounds??d.completedRounds} / ${h?.targetRounds??d.targetRounds} 回合。${h?'仍存活敌人：'+(h.remaining.map(u=>esc(u.name)+' HP'+u.hp+' / MP'+u.mp).join('、')||'无'):''}</p><small>${HOLDOUT_RULE}</small></section>`;}
+export function holdoutSnapshotView(report,eventId){const h=holdoutFrame(report,eventId);if(!h)return '';if(h.unverified)return unverified;return `<strong>坚守撤离 · 完整回合 ${esc(h.completedRounds)}/${esc(h.targetRounds)}</strong><p>${h.result?(h.result.mode==='held'?'撤离条件已达成；'+h.result.remaining.length+'名敌人仍存活，未计击倒':h.result.mode==='cleared'?'已清场；按本房条件通过':'本次坚守止步'):'也可提前清场；进度只含已结束的回合，不预测后续结果。'}</p>`;}
+export function holdoutEvidenceView(e){const d=e?.detail,h=d?.holdout;if(!h&&e?.type!=='holdout-progress')return '';if(h?(!validResult(h)||!['victory','defeat'].includes(e.type)||(e.type==='victory')===(h.mode==='failed')):!validProgress(d))return `<section class="holdout-proof">${unverified}</section>`;return `<section class="holdout-proof"><h3>${h?(h.mode==='held'?'完成坚守，随潮撤离':h.mode==='cleared'?'清场通过':'坚守止步'):'完整回合已结束'}</h3><p>已完成 ${esc(h?.completedRounds??d.completedRounds)} / ${esc(h?.targetRounds??d.targetRounds)} 回合。${h?'仍存活敌人：'+(h.remaining.map(u=>esc(u.name)+' HP'+esc(u.hp)+' / MP'+esc(u.mp)).join('、')||'无'):''}</p><small>${HOLDOUT_RULE}</small></section>`;}

@@ -1,0 +1,387 @@
+{
+  "passed": true,
+  "baselineCommit": "f642b70a9703cef78e2b3ee4b2ccd9a3f317d25d",
+  "Node": {
+    "tests": 1606,
+    "pass": 1606,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 4,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "targeted24": {
+    "tests": 24,
+    "pass": 24,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "browser": {
+    "passed": true,
+    "scope": "All68current complete browser suites",
+    "total": 68,
+    "fullCurrentSuites": true,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "originalCheckpointAttempts": 68,
+    "allCPsDurableMainAsCompleted": true,
+    "new161Screens": [
+      {
+        "file": "holdout-milestone-assault-desktop.png",
+        "eventId": 164,
+        "room": 0,
+        "remaining": [
+          {
+            "id": "hqa",
+            "name": "栈桥追弩手",
+            "hp": 2,
+            "mp": 70
+          }
+        ],
+        "target": 3,
+        "completed": 3
+      },
+      {
+        "file": "holdout-milestone-shelter-mobile.png",
+        "eventId": 141,
+        "room": 0,
+        "remaining": [
+          {
+            "id": "hqg",
+            "name": "系缆守军",
+            "hp": 180,
+            "mp": 67
+          },
+          {
+            "id": "hqa",
+            "name": "栈桥追弩手",
+            "hp": 140,
+            "mp": 70
+          },
+          {
+            "id": "hqd",
+            "name": "催潮鼓手",
+            "hp": 100,
+            "mp": 57
+          }
+        ],
+        "target": 3,
+        "completed": 3
+      },
+      {
+        "file": "holdout-milestone-restored-mobile.png",
+        "eventId": 141,
+        "room": 0,
+        "remaining": [
+          {
+            "id": "hqg",
+            "name": "系缆守军",
+            "hp": 180,
+            "mp": 67
+          },
+          {
+            "id": "hqa",
+            "name": "栈桥追弩手",
+            "hp": 140,
+            "mp": 70
+          },
+          {
+            "id": "hqd",
+            "name": "催潮鼓手",
+            "hp": 100,
+            "mp": 57
+          }
+        ],
+        "target": 3,
+        "completed": 3
+      }
+    ],
+    "fourDetachedComponentBoundaryVectors": {
+      "vectors": 4,
+      "unverified": true,
+      "injected": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "Detached component DOM checks only; current archive reader is separate, no import exploit claimed."
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 177,
+    "checkedReferences": 196,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 701,
+  "sourceInputs": 755,
+  "runtimeDelta": {
+    "new": [
+      "scripts/browser-v161.cjs",
+      "scripts/check-v161.mjs",
+      "scripts/fixtures/v161-preparation-state.json",
+      "scripts/holdout-milestone-cases.mjs",
+      "tests/holdout-presentation-boundary.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-holdout.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 746,
+    "distExact": 208
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 94,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through103AllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 11590,
+    "next": 106,
+    "ownHero": "e",
+    "ownXP": 4915,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "normal": [
+      {
+        "id": 104,
+        "mode": "assault",
+        "objective": "survive",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 1
+        },
+        "rooms": [
+          {
+            "targetRounds": 3,
+            "completedRounds": 3,
+            "mode": "held",
+            "remaining": [
+              {
+                "id": "hqa",
+                "name": "栈桥追弩手",
+                "hp": 2,
+                "mp": 70
+              }
+            ],
+            "alive": 6,
+            "rule": "提前清场，或撑过公开的完整回合数，至少一名正式队员仍存活，即可通过本房。回合结束才检查坚守；同一完整施放照常结算，最后一回合全员倒下仍失败。主动按计划撤退不算坚守完成。仍存活的敌人保留生命，不算击倒、不虚构伤害；仅按普通房间与通关规则领奖，不另发坚守奖励。生命、法力、道具和物资按原规则跨房延续。全部计时、遭遇及数值是项目原创。"
+          },
+          {
+            "targetRounds": 4,
+            "completedRounds": 4,
+            "mode": "cleared",
+            "remaining": [],
+            "alive": 6,
+            "rule": "提前清场，或撑过公开的完整回合数，至少一名正式队员仍存活，即可通过本房。回合结束才检查坚守；同一完整施放照常结算，最后一回合全员倒下仍失败。主动按计划撤退不算坚守完成。仍存活的敌人保留生命，不算击倒、不虚构伤害；仅按普通房间与通关规则领奖，不另发坚守奖励。生命、法力、道具和物资按原规则跨房延续。全部计时、遭遇及数值是项目原创。"
+          }
+        ],
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        }
+      },
+      {
+        "id": 105,
+        "mode": "shelter",
+        "objective": "reserve",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 8
+        },
+        "rooms": [
+          {
+            "targetRounds": 3,
+            "completedRounds": 3,
+            "mode": "held",
+            "remaining": [
+              {
+                "id": "hqg",
+                "name": "系缆守军",
+                "hp": 180,
+                "mp": 67
+              },
+              {
+                "id": "hqa",
+                "name": "栈桥追弩手",
+                "hp": 140,
+                "mp": 70
+              },
+              {
+                "id": "hqd",
+                "name": "催潮鼓手",
+                "hp": 100,
+                "mp": 57
+              }
+            ],
+            "alive": 6,
+            "rule": "提前清场，或撑过公开的完整回合数，至少一名正式队员仍存活，即可通过本房。回合结束才检查坚守；同一完整施放照常结算，最后一回合全员倒下仍失败。主动按计划撤退不算坚守完成。仍存活的敌人保留生命，不算击倒、不虚构伤害；仅按普通房间与通关规则领奖，不另发坚守奖励。生命、法力、道具和物资按原规则跨房延续。全部计时、遭遇及数值是项目原创。"
+          },
+          {
+            "targetRounds": 4,
+            "completedRounds": 4,
+            "mode": "held",
+            "remaining": [
+              {
+                "id": "hcg",
+                "name": "引航道拦路卫",
+                "hp": 210,
+                "mp": 70
+              },
+              {
+                "id": "hcm",
+                "name": "回潮术士",
+                "hp": 150,
+                "mp": 69
+              },
+              {
+                "id": "hca",
+                "name": "离岸弩手",
+                "hp": 130,
+                "mp": 70
+              }
+            ],
+            "alive": 6,
+            "rule": "提前清场，或撑过公开的完整回合数，至少一名正式队员仍存活，即可通过本房。回合结束才检查坚守；同一完整施放照常结算，最后一回合全员倒下仍失败。主动按计划撤退不算坚守完成。仍存活的敌人保留生命，不算击倒、不虚构伤害；仅按普通房间与通关规则领奖，不另发坚守奖励。生命、法力、道具和物资按原规则跨房延续。全部计时、遭遇及数值是项目原创。"
+          }
+        ],
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v161/browser-final/holdout-milestone-final-campaign.json": "e9dad29ca5a1105de0b2618a1b8d17fec4bd84055835872ecd78dab9327ada91",
+    "/workspace/wod-evidence/v161/browser-final/holdout-milestone-final-four-raw-keys.json": "3b6d0ce7d6f0df636be49290839f75a0501812ba6538ebd7255f772d6dc9e7f5"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Detached helper markup probe only, no actual archive import exploit demonstrated; current frozen reader is separate.",
+    "Permanent supply economy and actual original-server numeric rules pending.",
+    "Main/source recovery/push/retention outcomes are separate post-commit receipts; do not infer merge from tests.",
+    "Browser desktop and390px touch emulation, not physical devices or other browser engines."
+  ],
+  "integrationWindow": [
+    161,
+    163
+  ],
+  "nextMainWindowIfSuccessful": [
+    164,
+    166
+  ]
+}
