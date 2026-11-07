@@ -1,0 +1,33 @@
+{
+  "stage": "0.151",
+  "baseline": "77ffda1128d864bef7ee7c2e409a0d953b3eeb0e",
+  "scope": "Complete per-unit action outcomes in battle replay, based on observed legal ordinary multi-target interception",
+  "observed": "Evacuation seed731 legal rear guardian experiment: same cast contains12+4HP or9+17HP to guardian; old board shows only12/9; summary counts3 attack records as3 people despite2 actual recipients",
+  "noResultInFirstSample": "149 original final reports and first confluence731 experiment did not contain duplicate result cues; kept without claiming user incident",
+  "implementation": [
+    "read-only fold recorded actual results per recipient; preserve misses/absorptions and separate HP/MP gain/loss",
+    "show total numeric outcome and persistent count for multiple same-recipient results, with exact source event IDs",
+    "count distinct attack recipients separately from attack records in action summary",
+    "keep raw cues and all original event data intact; no rule/stat/balance or storage limit changes"
+  ],
+  "validation": [
+    "all1418existing tests plus meaningful outcome tests",
+    "all57existing browser suites plus151 desktop390px keyboard/reduced motion",
+    "all78old completeJSON byte exact zero exclusions, new native reports same unchanged engine baseline",
+    "native84/85 depart/claim through UI vsAPI, preserve all five frozen reports/plans/A and finalfourkeys restore"
+  ],
+  "reference": {
+    "url": "https://world-of-dungeons.de/ency/Kampfberichte",
+    "date": "2026-11-07",
+    "searchIndex": "Official historical index describes using battle report statistics/details to adjust tactics, distinguishing attack counts, hit rates and total damage",
+    "bodyAttempt": "403 Forbidden; not retried or bypassed",
+    "boundary": "directional indexed historical reference only, not current Delta server verification. All grouping/visual labels are project-original; no imported numerical rules"
+  },
+  "budget": {
+    "beforeMainFreeBytes": 3599867904,
+    "beforeTmpFreeBytes": 7507320832,
+    "previousFull57PeakPlusReserveBytes": 2775472295
+  },
+  "main": "hold149;next152–154full milestone",
+  "pending": "permanent supply economy"
+}

@@ -1,0 +1,417 @@
+{
+  "passed": true,
+  "baseline": "77ffda1128d864bef7ee7c2e409a0d953b3eeb0e",
+  "tests": {
+    "baselineFull": {
+      "tests": 1418,
+      "pass": 1418,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "baseline-full.tap"
+    },
+    "fullFinal": {
+      "tests": 1433,
+      "pass": 1433,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    },
+    "newOutcomeCasesInsideFull": 15,
+    "retentionPythonCasesInsideOneNodeEntry": 21,
+    "initialFixtureFailurePreserved": "specialized-initial-failed.tap; temporary party position was overridden by unchanged configured entry plan; fixed config position, retained two-check assertion"
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 168,
+    "checkedReferences": 187,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "allOld690InputsCompared": true,
+    "onlyDeclaredFourChanged": [
+      {
+        "path": "dist/expedition-report.mjs",
+        "beforeSHA256": "b68d65c1d290f4475b784037aada3c0bc60f82a70b61e8eb8292ed5d971602a0",
+        "afterSHA256": "520a53b66a51736765ec2733ae24c1e2de631765922737326f3d393e8b288882"
+      },
+      {
+        "path": "dist/expedition-ui.mjs",
+        "beforeSHA256": "ea5edeba46aff68355a955fd9a0dfaf5c4e5d86f484f584b205b55121eb58b2b",
+        "afterSHA256": "94436e9ca24758c2f60189ad08173c2b34dbdb249db97518271a88a2cb0e3b35"
+      },
+      {
+        "path": "dist/expedition.css",
+        "beforeSHA256": "767f749cf6d52b2780cee8406d14bcd659b549390ff1e50e916490570daf4c8a",
+        "afterSHA256": "e4d5066403190acf22e5445d6d4c49de782b754a6ce71a7805199e86c6bcab91"
+      },
+      {
+        "path": "scripts/run-browser-acceptance.mjs",
+        "beforeSHA256": "20bdcc2d9ec74a0ab0a26821313e9b1888aad4e3f81cb493c19509278b28e2f4",
+        "afterSHA256": "1e773a07c9a4ef4f927ed162cfe3a798be00e828dd533a15c8650492dcfb2832"
+      }
+    ],
+    "allOtherOld686InputsByteExact": true,
+    "all197OtherDistFilesByteExact": true,
+    "engineAndOriginalContentAndAssetsByteExact": true
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 652,
+    "python": 4,
+    "failures": []
+  },
+  "sourceFilesChecked": 696,
+  "browser": {
+    "passed": true,
+    "existingSuites": 57,
+    "newSuite151": true,
+    "total": 58,
+    "noCoverageReduction": true,
+    "firstNewSuiteAlsoPassed": true,
+    "allFinalSource": true,
+    "ChromiumDesktop390TouchEmulationOnly": true,
+    "allFiveFrozenAndTwoPlanABRawStringsExact": true,
+    "diagnosticOriginalRecordsKeyboardAndPersistentMobileResultsVerified": true,
+    "canonicalFourKeysExactFirstAndFinalAcceptance": true
+  },
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONByteExactZeroExclusions": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "oldBaselineDependency": {
+    "version": 149,
+    "archiveSHA256": "82419463c1437fce3af416ff7c83685f950e3f91e04f881cc195b00af0759835",
+    "originalFullBaselineReferencedWithoutDuplicateBytes": true
+  },
+  "newNativeColdBaseline": {
+    "passed": true,
+    "allTwoFullReportsPendingRewardsAndClaimedGuildEqual77ffColdRuntime": true,
+    "formalSourceFrom1491509110Next84": true,
+    "normal": [
+      {
+        "id": 84,
+        "seed": 84,
+        "won": true,
+        "survivors": 6,
+        "rounds": [
+          2,
+          3
+        ],
+        "supplies": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 8
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "reportSHA256": "cdb05827217b387b5cd5a5b91b05afdfd7b7868445ffd7cec9a2d5acd87ed89f",
+        "sameEntireOld77ffEngineReport": true,
+        "guardianPos": "rear",
+        "multiple": [
+          {
+            "groupStart": 47,
+            "roomIndex": 0,
+            "round": 1,
+            "summary": "断缆弩手 使用「齐射」 · 2 名结算对象 / 3 次攻击记录 / 18 实伤",
+            "unit": "beryl",
+            "records": [
+              {
+                "eventId": 50,
+                "type": "attack",
+                "kind": "damage",
+                "resource": "hp",
+                "actual": 18,
+                "text": "−18"
+              },
+              {
+                "eventId": 53,
+                "type": "attack",
+                "kind": "miss",
+                "resource": "hp",
+                "actual": 0,
+                "text": "闪避"
+              }
+            ],
+            "attackRecords": 2,
+            "hpLoss": 18,
+            "hpGain": 0,
+            "mpLoss": 0,
+            "mpGain": 0,
+            "misses": 1,
+            "absorbed": 0,
+            "immune": 0,
+            "multiple": true,
+            "text": "−18 HP · 1次闪避",
+            "kind": "damage",
+            "floatText": "−18",
+            "countText": "2次攻击记录",
+            "eventIds": [
+              50,
+              53
+            ],
+            "title": "本次记录结果（不含施放与防御费用）：#50 −18；#53 闪避"
+          },
+          {
+            "groupStart": 82,
+            "roomIndex": 0,
+            "round": 2,
+            "summary": "断缆弩手 使用「齐射」 · 2 名结算对象 / 3 次攻击记录 / 11 实伤",
+            "unit": "beryl",
+            "records": [
+              {
+                "eventId": 86,
+                "type": "attack",
+                "kind": "miss",
+                "resource": "hp",
+                "actual": 0,
+                "text": "闪避"
+              },
+              {
+                "eventId": 91,
+                "type": "attack",
+                "kind": "miss",
+                "resource": "hp",
+                "actual": 0,
+                "text": "闪避"
+              }
+            ],
+            "attackRecords": 2,
+            "hpLoss": 0,
+            "hpGain": 0,
+            "mpLoss": 0,
+            "mpGain": 0,
+            "misses": 2,
+            "absorbed": 0,
+            "immune": 0,
+            "multiple": true,
+            "text": "2次闪避",
+            "kind": "miss",
+            "floatText": "2次闪避",
+            "countText": "2次攻击记录",
+            "eventIds": [
+              86,
+              91
+            ],
+            "title": "本次记录结果（不含施放与防御费用）：#86 闪避；#91 闪避"
+          },
+          {
+            "groupStart": 151,
+            "roomIndex": 1,
+            "round": 1,
+            "summary": "船台追弩手 使用「齐射」 · 2 名结算对象 / 3 次攻击记录 / 49 实伤",
+            "unit": "beryl",
+            "records": [
+              {
+                "eventId": 155,
+                "type": "attack",
+                "kind": "damage",
+                "resource": "hp",
+                "actual": 10,
+                "text": "−10"
+              },
+              {
+                "eventId": 160,
+                "type": "attack",
+                "kind": "damage",
+                "resource": "hp",
+                "actual": 17,
+                "text": "−17"
+              }
+            ],
+            "attackRecords": 2,
+            "hpLoss": 27,
+            "hpGain": 0,
+            "mpLoss": 0,
+            "mpGain": 0,
+            "misses": 0,
+            "absorbed": 0,
+            "immune": 0,
+            "multiple": true,
+            "text": "−27 HP",
+            "kind": "damage",
+            "floatText": "−27",
+            "countText": "2次攻击记录",
+            "eventIds": [
+              155,
+              160
+            ],
+            "title": "本次记录结果（不含施放与防御费用）：#155 −10；#160 −17"
+          },
+          {
+            "groupStart": 200,
+            "roomIndex": 1,
+            "round": 2,
+            "summary": "船台追弩手 使用「齐射」 · 2 名结算对象 / 3 次攻击记录 / 20 实伤",
+            "unit": "beryl",
+            "records": [
+              {
+                "eventId": 204,
+                "type": "attack",
+                "kind": "damage",
+                "resource": "hp",
+                "actual": 4,
+                "text": "−4"
+              },
+              {
+                "eventId": 209,
+                "type": "attack",
+                "kind": "damage",
+                "resource": "hp",
+                "actual": 3,
+                "text": "−3"
+              }
+            ],
+            "attackRecords": 2,
+            "hpLoss": 7,
+            "hpGain": 0,
+            "mpLoss": 0,
+            "mpGain": 0,
+            "misses": 0,
+            "absorbed": 0,
+            "immune": 0,
+            "multiple": true,
+            "text": "−7 HP",
+            "kind": "damage",
+            "floatText": "−7",
+            "countText": "2次攻击记录",
+            "eventIds": [
+              204,
+              209
+            ],
+            "title": "本次记录结果（不含施放与防御费用）：#204 −4；#209 −3"
+          },
+          {
+            "groupStart": 259,
+            "roomIndex": 1,
+            "round": 3,
+            "summary": "船台追弩手 使用「齐射」 · 2 名结算对象 / 3 次攻击记录 / 12 实伤",
+            "unit": "beryl",
+            "records": [
+              {
+                "eventId": 263,
+                "type": "attack",
+                "kind": "damage",
+                "resource": "hp",
+                "actual": 7,
+                "text": "−7"
+              },
+              {
+                "eventId": 268,
+                "type": "attack",
+                "kind": "damage",
+                "resource": "hp",
+                "actual": 5,
+                "text": "−5"
+              }
+            ],
+            "attackRecords": 2,
+            "hpLoss": 12,
+            "hpGain": 0,
+            "mpLoss": 0,
+            "mpGain": 0,
+            "misses": 0,
+            "absorbed": 0,
+            "immune": 0,
+            "multiple": true,
+            "text": "−12 HP",
+            "kind": "damage",
+            "floatText": "−12",
+            "countText": "2次攻击记录",
+            "eventIds": [
+              263,
+              268
+            ],
+            "title": "本次记录结果（不含施放与防御费用）：#263 −7；#268 −5"
+          }
+        ]
+      },
+      {
+        "id": 85,
+        "seed": 85,
+        "won": true,
+        "survivors": 6,
+        "rounds": [
+          3,
+          3
+        ],
+        "supplies": {
+          "herb": 9,
+          "rune": 8,
+          "arrow": 8
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "reportSHA256": "6288f500e4f49b41a980bfb8a46eb493f31e84aca93dfc9f7ddf2751792046bd",
+        "sameEntireOld77ffEngineReport": true,
+        "guardianPos": "front",
+        "multiple": []
+      }
+    ],
+    "canonicalFilesSHA256": {
+      "/workspace/wod-evidence/v151/browser-final/outcome-final-campaign.json": "c034129e2b9c8afe3a11479cc9f40d189544f000c5fa1c3fdb75b00d793a3c0a",
+      "/workspace/wod-evidence/v151/browser-final/outcome-final-four-raw-keys.json": "726f5a552f4b5f4df5c686a9cefa950d183eee08ffea3b66643ca61aebfc56a8"
+    }
+  },
+  "nativeState": {
+    "gold": 9310,
+    "next": 86,
+    "ownHero": "e",
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenEntries": 5,
+    "encodedChars": 793208,
+    "plans": 3,
+    "preservedPlanABKeys": [
+      "abbey-plan-library-v1",
+      "abbey-expedition-v40-a"
+    ],
+    "canonicalNativeFourKeys": "/workspace/wod-evidence/v151/browser-final/outcome-final-four-raw-keys.json",
+    "canonicalNativeCampaign": "/workspace/wod-evidence/v151/browser-final/outcome-final-campaign.json"
+  },
+  "retention": {
+    "useVerified150FullMastersPhysicalProofThenRetireDuplicates": true,
+    "allOldPrimaryUniqueEvidenceSixRefsAndProtectedRecoveryChainsKept": true,
+    "recoveryChain": [
+      "149complete",
+      "150incremental",
+      "151incremental"
+    ],
+    "finalRetirementStatusInChecksummedDeliveryReceipts": true
+  },
+  "limits": [
+    "Read-only display fix, no new skill/gear/dungeon or combat formulas; permanent supply economy remains pending",
+    "Original official historical report page body403, only index supports direction; no currentDelta numeric verification",
+    "Normal84 and85 have different natural seeds and cannot establish a position efficiency advantage",
+    "First confluence731 experiment did not reproduce duplicate results and wiped; its complete failure report retained",
+    "Initial rule-test fixture configuration mistake and external comparison script syntax error retained, no weakened assertions",
+    "Historical143export time/ID gap not claimed repaired",
+    "main remains149; next152–154integration window, no deployment/force/GC/prune",
+    "Other browser engines and real devices not tested"
+  ],
+  "pushAndPostPackagingRetention": "Exact commit/remote/recovery/retirement in checksummed external delivery receipts, no self-referential guess"
+}

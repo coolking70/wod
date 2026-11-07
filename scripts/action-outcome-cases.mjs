@@ -1,0 +1,5 @@
+import{automaticPreparationLoop}from'./automatic-preparation-cases.mjs';
+import{clone,row}from'../dist/expedition-data.mjs';
+import{depart,pendingReport,pendingReward,claim,historyReport}from'../dist/expedition-guild.mjs';
+export function rearCoverConfig(source,front=false){const c=clone(source);c.expedition='evacuation';c.seed=731;const guard=c.heroes.find(h=>h.id==='beryl');guard.pos=front?'front':'rear';guard.prep=[row('interpose','rear'),row('guard','self')];c.heroes.find(h=>h.id==='b').pos='front';return c;}
+let cached;export function actionOutcomeLoop(){if(cached)return clone(cached);const old=automaticPreparationLoop(),start=old.final,source=clone(old.runs[1].config);source.seed=731;const runs=[];let g=start;for(let i=0;i<2;i++){const preparation=rearCoverConfig(source,i===1),config=clone(preparation);config.seed=g.next;const before=g,pending=depart(g,config),report=pendingReport(pending),reward=pendingReward(pending);g=claim(pending);runs.push({preparation,config,before,pending,report,reward,claimed:g});}return clone(cached={start,source,runs,desktop:runs[0].claimed,final:g,history64:historyReport(start,64),history83:historyReport(start,83)});}
