@@ -1,6 +1,9 @@
 # 接手开发指南
 
-当前v0.139，先读[最新云端交接](HANDOFF_CLOUD_V139.md)、[验证收据](V139_CHECKS.json)、[云端空间/Git约定](CLOUD_STORAGE_AND_GIT_POLICY.md)，再按下列历史资料接续。main保持已归并v0.137；完成阶段可正常推送分支，下一main评估窗口v140–142，不部署。
+当前v0.140优先读[云端交接](HANDOFF_CLOUD_V140.md)、[实现与正常实玩](V140_MANA_RESERVE.md)、[验证](V140_CHECKS.json)。Native7070/next66；主干/分支实际SHA见交付收据，保留六旧提交/唯一证据，补给经济待决。
+
+
+历史v0.139接续记录，见[当时云端交接](HANDOFF_CLOUD_V139.md)、[验证收据](V139_CHECKS.json)、[云端空间/Git约定](CLOUD_STORAGE_AND_GIT_POLICY.md)，再按下列历史资料接续。以下v139段记录当时main v137；本轮v140集成须以最新交付收据为准。完成阶段可正常推送，禁止部署。
 
 ## 先读与当前约束
 
@@ -10,7 +13,7 @@ README → PROJECT_STATUS → ROADMAP → DEVELOPMENT_POLICY → DECISION_PROGRE
 
 ## 运行与当前验证
 
-无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前完整验证以[V137_CHECKS.json](V137_CHECKS.json)为准；以下历史运行说明不替代最新收据。
+无需npm安装或构建，dist是可编辑源码。Node24.19.0、Python3.12.14、Chromium154.0.8037.57。当前完整验证以[V140_CHECKS.json](V140_CHECKS.json)为准；以下历史运行说明不替代最新收据。
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist

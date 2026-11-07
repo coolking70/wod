@@ -1,0 +1,513 @@
+{
+  "passed": true,
+  "baseline": "c7022a82e3d1d3bcdb803de5f34c61ea1db535cb",
+  "tests": {
+    "full": {
+      "tests": 1282,
+      "pass": 1282,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-final.tap"
+    },
+    "specialized": {
+      "tests": 15,
+      "pass": 15,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-verified.tap"
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 600,
+    "python": 1,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 158,
+    "checkedReferences": 176,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": 48,
+    "failed": 0,
+    "newStageDirect": {
+      "passed": true,
+      "steps": [
+        "1440px真实6895/next64：逐行设6、清为0移除字段、1.5非法拒绝；公会不变。方案册精确保留条件，实际出征核对显示；64全战报/待领/领取同API，12次免费跳过可看实际后备并返回，重点模式可见，四键不被复盘修改。",
+        "390px触摸新上下文整档恢复6985，逐条条件和方案册原文保持。无绑定的65原骨廊方案须明确重设伙伴留蓝；全报告/公会同API，6人生还2/5回合至7070/next66，原55失败可重演但不重复领奖，无横向溢出。",
+        "第三新上下文恢复7070、next66及四类原始内容；超限条件导入在写入前拒绝，四键精确不变。历史64可精确重演，不重复领奖；未改个人身份/职责/训练/装备/补给持久化。"
+      ],
+      "errors": [],
+      "finalGold": 7070,
+      "next": 66
+    },
+    "newStageUnified": {
+      "passed": true,
+      "steps": [
+        "1440px真实6895/next64：逐行设6、清为0移除字段、换免费技能清条件、逐房覆盖8再恢复继承6、1.5非法拒绝；公会不变。方案册精确保留条件，实际出征核对显示；64全战报/待领/领取同API，12次免费跳过可看实际后备并返回，重点模式可见，四键不被复盘修改。",
+        "390px触摸新上下文整档恢复6985，逐条条件和方案册原文保持。无绑定的65原骨廊方案须明确重设伙伴留蓝；全报告/公会同API，6人生还2/5回合至7070/next66，原55失败可重演但不重复领奖，无横向溢出。",
+        "第三新上下文恢复7070、next66及四类原始内容；超限条件导入在写入前拒绝，四键精确不变。历史64可精确重演，不重复领奖；未改个人身份/职责/训练/装备/补给持久化。"
+      ],
+      "errors": [],
+      "finalGold": 7070,
+      "next": 66
+    },
+    "checkpointAudit": {
+      "passed": true,
+      "suites": 48,
+      "files": 980,
+      "images": 81,
+      "rawBytes": 1578481558,
+      "archiveBytes": 203775494,
+      "sourceFilesRemoved": false
+    }
+  },
+  "native": {
+    "startGold": 6895,
+    "normal": [
+      {
+        "id": 64,
+        "route": "lockworks",
+        "won": true,
+        "rounds": [
+          3,
+          6
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 8,
+          "rune": 6,
+          "arrow": 6
+        },
+        "guardianMp": 9,
+        "guardianFallbacks": [
+          {
+            "id": 243,
+            "round": 2,
+            "room": 1,
+            "check": {
+              "available": 6,
+              "cost": 3,
+              "afterPayment": 3,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": 244,
+              "type": "cast",
+              "skill": "strike"
+            }
+          },
+          {
+            "id": 254,
+            "round": 3,
+            "room": 1,
+            "check": {
+              "available": 6,
+              "cost": 3,
+              "afterPayment": 3,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          },
+          {
+            "id": 255,
+            "round": 3,
+            "room": 1,
+            "check": {
+              "available": 6,
+              "cost": 5,
+              "afterPayment": 1,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          },
+          {
+            "id": 286,
+            "round": 3,
+            "room": 1,
+            "check": {
+              "available": 6,
+              "cost": 3,
+              "afterPayment": 3,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": 287,
+              "type": "cast",
+              "skill": "strike"
+            }
+          },
+          {
+            "id": 300,
+            "round": 4,
+            "room": 1,
+            "check": {
+              "available": 6,
+              "cost": 3,
+              "afterPayment": 3,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          },
+          {
+            "id": 301,
+            "round": 4,
+            "room": 1,
+            "check": {
+              "available": 6,
+              "cost": 5,
+              "afterPayment": 1,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          },
+          {
+            "id": 333,
+            "round": 4,
+            "room": 1,
+            "check": {
+              "available": 7,
+              "cost": 3,
+              "afterPayment": 4,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": 334,
+              "type": "cast",
+              "skill": "strike"
+            }
+          },
+          {
+            "id": 342,
+            "round": 5,
+            "room": 1,
+            "check": {
+              "available": 7,
+              "cost": 3,
+              "afterPayment": 4,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          },
+          {
+            "id": 343,
+            "round": 5,
+            "room": 1,
+            "check": {
+              "available": 7,
+              "cost": 5,
+              "afterPayment": 2,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          },
+          {
+            "id": 372,
+            "round": 5,
+            "room": 1,
+            "check": {
+              "available": 8,
+              "cost": 3,
+              "afterPayment": 5,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": 373,
+              "type": "cast",
+              "skill": "strike"
+            }
+          },
+          {
+            "id": 381,
+            "round": 6,
+            "room": 1,
+            "check": {
+              "available": 8,
+              "cost": 3,
+              "afterPayment": 5,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          },
+          {
+            "id": 382,
+            "round": 6,
+            "room": 1,
+            "check": {
+              "available": 8,
+              "cost": 5,
+              "afterPayment": 3,
+              "floor": 6,
+              "blocked": true,
+              "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+            },
+            "outcome": {
+              "eventId": null,
+              "type": "no-preparation",
+              "skill": null
+            }
+          }
+        ],
+        "reward": {
+          "cleared": 2,
+          "gold": 90,
+          "xp": 40,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 6985
+      },
+      {
+        "id": 65,
+        "route": "ossuary",
+        "won": true,
+        "rounds": [
+          2,
+          5
+        ],
+        "alive": 6,
+        "supplies": {
+          "herb": 6,
+          "rune": 4,
+          "arrow": 4
+        },
+        "guardianMp": 30,
+        "guardianFallbacks": [],
+        "reward": {
+          "cleared": 2,
+          "gold": 85,
+          "xp": 40,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 7070
+      }
+    ],
+    "finalGold": 7070,
+    "next": 66,
+    "control": {
+      "guardianMp": 3,
+      "alive": 6,
+      "rounds": [
+        3,
+        6
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 6,
+        "arrow": 6
+      }
+    },
+    "limits": "Finite actual sample; floor is per command, not a lock. Defense/initiative/healing/events may spend below it. RNG order may change; no universal win or savings claim. No new purchases, training, courses, refunds, roles or assets."
+  },
+  "combatTradeoffs": {
+    "withoutFloor": {
+      "guardianHp": 126,
+      "guardianMaxHp": 126,
+      "guardianMp": 3,
+      "partyHp": 622,
+      "casts": {
+        "interpose": 3,
+        "shieldbash": 5,
+        "guard": 2,
+        "strike": 2
+      },
+      "castMana": 36,
+      "defenseMana": 6,
+      "paidDefenseChecks": 6,
+      "naturalDefenseFallbackChecks": 0,
+      "hpDamageReceived": 59,
+      "limits": "Real paired-seed outcomes; initiative/action/RNG order can diverge. Not isolated prevented-damage causation."
+    },
+    "withFloor6": {
+      "guardianHp": 126,
+      "guardianMaxHp": 126,
+      "guardianMp": 9,
+      "partyHp": 622,
+      "casts": {
+        "interpose": 3,
+        "shieldbash": 3,
+        "guard": 2,
+        "strike": 4
+      },
+      "castMana": 30,
+      "defenseMana": 6,
+      "paidDefenseChecks": 6,
+      "naturalDefenseFallbackChecks": 0,
+      "hpDamageReceived": 59,
+      "limits": "Real paired-seed outcomes; initiative/action/RNG order can diverge. Not isolated prevented-damage causation."
+    }
+  },
+  "preservation": {
+    "passed": true,
+    "legacy": [
+      {
+        "name": "55",
+        "fullRawReportEqual": true,
+        "sha256": "99bf17dbf65b31e9ede245455dd7c3db10b90d7b430b9393a974a0bb847065b4"
+      },
+      {
+        "name": "63",
+        "fullRawReportEqual": true,
+        "sha256": "1ef09e9aae0da4a9cfb4c6411b719fce75eceac67a7a8790515308653831c736"
+      },
+      {
+        "name": "62",
+        "fullRawReportEqual": true,
+        "sha256": "3263cb4843e3f266b256c205f0e5b9ebdae76e056882b34c9781f07479f7ede8"
+      },
+      {
+        "name": "61",
+        "fullRawReportEqual": true,
+        "sha256": "44b9f69e90620e389452721a4dd6312e9300531e7287a826e55e260dbfc268dc"
+      },
+      {
+        "name": "64-control",
+        "fullRawReportEqual": true,
+        "sha256": "3ab4173ba7b2da34739fd61e0e461a16a34186c47eeb67b50454e9f5dce17a2b"
+      },
+      {
+        "name": "65-floor-absent",
+        "fullRawReportEqual": true,
+        "sha256": "03e35df5f86cdb762d981aa3e0e3c764d65cc4f3ecc1d7aa28a216f7b9c9f4c7"
+      }
+    ],
+    "fullReportComparisonExclusions": [],
+    "gold": {
+      "before": 6895,
+      "after": 7070,
+      "delta": 175
+    },
+    "xpDeltaPerActiveMember": 80,
+    "allMemberFieldsExceptNormalXpExact": true,
+    "warehouseExact": true,
+    "identityRolesExact": true,
+    "archivedEntries": 5,
+    "archivedPayloadChars": 793208,
+    "archivedWireBytesExact": true,
+    "oldProofsExact": 21,
+    "newProofs": [],
+    "history": [
+      65,
+      64,
+      63,
+      62,
+      61,
+      60,
+      59,
+      58,
+      57,
+      56,
+      55,
+      54,
+      53,
+      52,
+      51,
+      50,
+      49,
+      48,
+      47,
+      46
+    ],
+    "failure55Retained": true
+  },
+  "allFinalTestedRuntimeScriptsTestsHashesRechecked": 631,
+  "originalReference": {
+    "observed": "2026-11-07",
+    "reference": {
+      "url": "https://world-of-dungeons.de/ency/Konfiguration_-_Experten",
+      "access": "public search-index content, historical encyclopedia; not authenticated current server rule",
+      "pageDate": "published about 13.8 years ago, indexed about 5.2 years ago",
+      "supported": "Configured commands are visited in sequence; insufficient mana/materials can skip to a later command. Healing can replace a configured action when its condition is met.",
+      "notSupported": "No verified original per-command post-payment mana-floor or between-room rest rule. keepMana, 1..200 UI bound and recommended sample6 are project adaptation, not original server numbers."
+    },
+    "notImplemented": [
+      "between-room rest/healing phase",
+      "resurrection",
+      "persistent supplies",
+      "new skill/equipment/dungeon content",
+      "automatic role/plan changes"
+    ],
+    "lateProgress": {
+      "singlePlayer": true,
+      "pendingSupplyEconomy": true
+    }
+  },
+  "limitations": [
+    "keepMana is project adaptation, not verified current original-server feature",
+    "not a lock: independent defense, initiative, healing and events may spend below floor",
+    "finite sample does not establish stronger build or global balance",
+    "cross-page snapshot guards are not process-wide transactions",
+    "Chromium desktop/mobile emulation only; no physical-device or other-engine acceptance",
+    "permanent supply economy and current reference-server tuning remain pending"
+  ],
+  "failuresPreserved": [
+    "specialized-initial.tap: wrong fixture expectation for paid spark",
+    "specialized-third.tap and specialized-final.tap: extra-action/actual defense config and nonexistent skill fixture errors; corrected with full strict payment assertions",
+    "state-audit.log: archive payload nesting TypeError; corrected snapshot.payload without exclusions",
+    "browser-first/: first functional pass and screenshots preserved; new detail jump/capture centered after sticky-controls visual check"
+  ],
+  "mainIntegration": {
+    "status": "gate-passed-ready-for-latest-remote-check",
+    "requiredPreviousMain": "b4aa91b6295ba4fc845fb995700861c55b68cb07",
+    "actualOutcome": "See repository-external main-integration receipt with exact source commit and remote SHA; this file does not predeclare a successful push."
+  }
+}

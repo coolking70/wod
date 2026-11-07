@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前开发版本：**v0.139「遗物回仓」**，分支`feature/v139-loot-redistribution`。**v0.137已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`b4aa91b6295ba4fc845fb995700861c55b68cb07`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+当前开发版本：**v0.140「留蓝协作」**，分支`feature/v140-personal-mana-reserve`。**v0.137已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`b4aa91b6295ba4fc845fb995700861c55b68cb07`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+
+新增[留蓝与队伍续航](docs/V140_MANA_RESERVE.md)：有费用的预备/普通指令可选付款后最低个人MP，免费查实际后备；防御/自动救护等独立费用不被锁定。真实64/65两次六人至7070/next66，对照同样通关、保留法力差别，不当升级推荐，见[V140验证](docs/V140_CHECKS.json)。
 
 新增[遗物回仓与队伍调配](docs/V139_LOOT_REDISTRIBUTION.md)：闲置且未被配装册引用的遗物可预览回仓，再交给队友；不自动脱装、清书册或发资源。实际原有怀表E→D，正常62/63六人至6895/next64，原首证和冻结字节保持，同seed对照未证明升级，见[V139验证](docs/V139_CHECKS.json)。
 

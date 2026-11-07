@@ -1,3 +1,4 @@
+import {manaFloorLabel} from './expedition-mana-floor.mjs';
 import {damageChannelTrace,damageChannelLabel,DAMAGE_CHANNEL_RULE} from './expedition-damage-channel.mjs';
 import {attackEligible} from './expedition-immunity.mjs';
 import {positionOnlyLabel,POSITION_ONLY_RULE} from './expedition-position-only.mjs';
@@ -39,7 +40,7 @@ export function companionPreview(g,tactics,id,mode,roomId=''){
    else {const chosen=chooseTargets(actor,[...party,...enemies],s,r.target,()=>0,r);candidates=(s.mode==='all'?chosen:enemies.filter(u=>u.pos===chosen[0]?.pos&&u.hp>0&&attackEligible(u,s))).map(u=>u.name);}
    if(!candidates.length)warnings.push('本房初始敌人无此目标，将检查下一条指令');
   }
-  return {phase,skill:r.skill,name:s.name+damageChannelLabel(s)+stockFloorLabel(r)+positionOnlyLabel(r),mode:r.mode,target:POS[r.target]||{self:'自身',all:'全队',healer:'治疗者',summoner:'召唤者',priority:'按个人阵位优先 · '+attackOrderLabel(actor),supportPriority:'辅助阵位优先 · '+supportOrderLabel(actor)}[r.target],kind:s.recall?'recall':s.kind,candidates,max:s.max,cost:payment.mana,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:payment.medium}:{}),warnings};
+  return {phase,skill:r.skill,name:s.name+damageChannelLabel(s)+stockFloorLabel(r)+manaFloorLabel(r)+positionOnlyLabel(r),mode:r.mode,target:POS[r.target]||{self:'自身',all:'全队',healer:'治疗者',summoner:'召唤者',priority:'按个人阵位优先 · '+attackOrderLabel(actor),supportPriority:'辅助阵位优先 · '+supportOrderLabel(actor)}[r.target],kind:s.recall?'recall':s.kind,candidates,max:s.max,cost:payment.mana,item:payment.resource,...(payment.medium!=='standard'?{itemAmount:payment.amount,medium:payment.medium}:{}),warnings};
  }));
  return {roomId:room.id,roomName:room.name,rows,healing:clone(actor.healing),heroId:g.command.heroId};
 }

@@ -26,6 +26,7 @@ export function personalReport(report,heroId){
   if(e.type==='immune'){if(own){add(e.roomIndex,'immuneRecords');proof(e,index,'实际受击者免疫');}if(target){add(e.roomIndex,'immuneReceipts');proof(e,index,'本人固有免疫');}}
   if(own&&e.type==='skip'&&d.attackImmunity)proof(e,index,'本人的类型排除与后备');
   if(e.type==='mana-damage'){if(own){add(e.roomIndex,'manaDamage',d.actual);proof(e,index,'本人实际削减法力');}if(target){add(e.roomIndex,'manaLost',d.actual);proof(e,index,'本人受到法力削减');}}
+  if(own&&e.type==='skip'&&d.manaFloor?.blocked)proof(e,index,'本人的法力留存与后备');
   if(own&&e.type==='skip'&&d.manaSelection)proof(e,index,'本人的断流候选与后备');
   if(e.type==='mana-transfer'){if(own){add(e.roomIndex,'manaGiven',d.actual);add(e.roomIndex,'manaTransfers');proof(e,index,'本人法力援助');link(given,e.targets[0],'mana',d.actual,index);}if(target){add(e.roomIndex,'manaReceived',d.actual);link(received,e.actor,'mana',d.actual,index);proof(e,index,'得到法力援助');}}
   if(e.type==='heal'){

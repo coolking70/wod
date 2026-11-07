@@ -1,0 +1,288 @@
+{
+  "startGold": 6895,
+  "normal": [
+    {
+      "id": 64,
+      "route": "lockworks",
+      "won": true,
+      "rounds": [
+        3,
+        6
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 8,
+        "rune": 6,
+        "arrow": 6
+      },
+      "guardianMp": 9,
+      "guardianFallbacks": [
+        {
+          "id": 243,
+          "round": 2,
+          "room": 1,
+          "check": {
+            "available": 6,
+            "cost": 3,
+            "afterPayment": 3,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": 244,
+            "type": "cast",
+            "skill": "strike"
+          }
+        },
+        {
+          "id": 254,
+          "round": 3,
+          "room": 1,
+          "check": {
+            "available": 6,
+            "cost": 3,
+            "afterPayment": 3,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        },
+        {
+          "id": 255,
+          "round": 3,
+          "room": 1,
+          "check": {
+            "available": 6,
+            "cost": 5,
+            "afterPayment": 1,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        },
+        {
+          "id": 286,
+          "round": 3,
+          "room": 1,
+          "check": {
+            "available": 6,
+            "cost": 3,
+            "afterPayment": 3,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": 287,
+            "type": "cast",
+            "skill": "strike"
+          }
+        },
+        {
+          "id": 300,
+          "round": 4,
+          "room": 1,
+          "check": {
+            "available": 6,
+            "cost": 3,
+            "afterPayment": 3,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        },
+        {
+          "id": 301,
+          "round": 4,
+          "room": 1,
+          "check": {
+            "available": 6,
+            "cost": 5,
+            "afterPayment": 1,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        },
+        {
+          "id": 333,
+          "round": 4,
+          "room": 1,
+          "check": {
+            "available": 7,
+            "cost": 3,
+            "afterPayment": 4,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": 334,
+            "type": "cast",
+            "skill": "strike"
+          }
+        },
+        {
+          "id": 342,
+          "round": 5,
+          "room": 1,
+          "check": {
+            "available": 7,
+            "cost": 3,
+            "afterPayment": 4,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        },
+        {
+          "id": 343,
+          "round": 5,
+          "room": 1,
+          "check": {
+            "available": 7,
+            "cost": 5,
+            "afterPayment": 2,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        },
+        {
+          "id": 372,
+          "round": 5,
+          "room": 1,
+          "check": {
+            "available": 8,
+            "cost": 3,
+            "afterPayment": 5,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": 373,
+            "type": "cast",
+            "skill": "strike"
+          }
+        },
+        {
+          "id": 381,
+          "round": 6,
+          "room": 1,
+          "check": {
+            "available": 8,
+            "cost": 3,
+            "afterPayment": 5,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        },
+        {
+          "id": 382,
+          "round": 6,
+          "room": 1,
+          "check": {
+            "available": 8,
+            "cost": 5,
+            "afterPayment": 3,
+            "floor": 6,
+            "blocked": true,
+            "rule": "只检查本条指令实际付款后的个人法力；不足免费查后备，不增加行动。独立防御、先攻、自动救护、道具及事件仍按原规则执行，也可能使法力低于此值；不是锁定或保证留给某技能的资源。数值条件为项目改编。"
+          },
+          "outcome": {
+            "eventId": null,
+            "type": "no-preparation",
+            "skill": null
+          }
+        }
+      ],
+      "reward": {
+        "cleared": 2,
+        "gold": 90,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 6985
+    },
+    {
+      "id": 65,
+      "route": "ossuary",
+      "won": true,
+      "rounds": [
+        2,
+        5
+      ],
+      "alive": 6,
+      "supplies": {
+        "herb": 6,
+        "rune": 4,
+        "arrow": 4
+      },
+      "guardianMp": 30,
+      "guardianFallbacks": [],
+      "reward": {
+        "cleared": 2,
+        "gold": 85,
+        "xp": 40,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 7070
+    }
+  ],
+  "finalGold": 7070,
+  "next": 66,
+  "control": {
+    "guardianMp": 3,
+    "alive": 6,
+    "rounds": [
+      3,
+      6
+    ],
+    "supplies": {
+      "herb": 8,
+      "rune": 6,
+      "arrow": 6
+    }
+  },
+  "limits": "Finite actual sample; floor is per command, not a lock. Defense/initiative/healing/events may spend below it. RNG order may change; no universal win or savings claim. No new purchases, training, courses, refunds, roles or assets."
+}

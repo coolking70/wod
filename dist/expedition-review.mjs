@@ -1,3 +1,4 @@
+import {manaFloorLabel} from './expedition-mana-floor.mjs';
 import {initiativeLabel} from './expedition-initiative.mjs';
 import {positionOnlyLabel} from './expedition-position-only.mjs';
 import {withdrawalLabel} from './expedition-withdrawal.mjs';
@@ -63,7 +64,7 @@ export function reviewReport(report){
  });
 }
 const canonical=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(canonical(x[k]))])):Array.isArray(x)?x.map(v=>JSON.parse(canonical(v))):x);
-const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)}${scheduleLabel(r)}${targetCountLabel(r)}${positionOnlyLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队',priority:'按个人阵位优先',supportPriority:'按辅助阵位优先'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
+const commandText=rows=>rows.length?rows.map(r=>`${SKILLS[r.skill].name}${mediumLabel(r)}${stockFloorLabel(r)+manaFloorLabel(r)}${scheduleLabel(r)}${targetCountLabel(r)}${positionOnlyLabel(r)}→${POS[r.target]||ROLE_TARGETS[r.target]||({self:'自身',all:'全队',priority:'按个人阵位优先',supportPriority:'按辅助阵位优先'}[r.target])}（${{round:'每回合一次',repeat:'持续',cycle:'轮换',once:'一次'}[r.mode]}）`).join('；'):'无指令';
 function format(key,value){
  if(key==='initiative')return initiativeLabel({initiative:value});
  if(key==='withdrawAt')return withdrawalLabel(value===undefined?{}:{withdrawAt:value});

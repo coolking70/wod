@@ -1,0 +1,28 @@
+{
+  "version": "0.140",
+  "baseline": "c7022a82e3d1d3bcdb803de5f34c61ea1db535cb",
+  "design": "Optional per-command keepMana, paid-command cost after advancement/media; post-payment floor 1..200. Absent means old behavior. No resource reservation guarantees. Defenses/initiative/items/healing/events are independent and may spend below it. Block is free and uses normal fallback/cursor; no extra action. No rest phase. Project adaptation, no verified current-original floor rule.",
+  "nativeStart": "v139 final 6895/next64",
+  "beforeResults": true,
+  "formal": [
+    {
+      "id": 64,
+      "route": "lockworks",
+      "guardianFloor": 6,
+      "rows": [
+        "prep:interpose",
+        "prep:guard",
+        "main:shieldbash"
+      ],
+      "objective": "survive"
+    },
+    {
+      "id": 65,
+      "route": "ossuary",
+      "guardianFloor": 6,
+      "rows": "all guardian paid prep/main rows",
+      "objective": "survive"
+    }
+  ],
+  "comparison": "id64 same start, route, seed and all settings, only remove guardian keepMana. Finite sample, RNG draw order can diverge; no stronger build claim."
+}
