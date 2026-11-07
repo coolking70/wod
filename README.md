@@ -1,3 +1,5 @@
+> 当前云端阶段 v0.144：调压潮炉与蓄能时序，见[交接](docs/HANDOFF_CLOUD_V144.md)及[实现/实玩限制](docs/V144_CHANNELED_CASTING.md)。main里程碑仍为143，阶段分支推送结果看交付收据。
+
 # 深潮远征 / wod
 
 当前开发版本：**v0.143「退潮护送」**，分支`feature/v143-escort-objective`。周期集成状态见[GitHub实际main](https://github.com/coolking70/wod/tree/main)及本轮交付收据；本轮143为完整门禁检查点。用户已授权功能分支推送、周期评估main和冗余分支清理，未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。

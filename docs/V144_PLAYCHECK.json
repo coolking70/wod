@@ -1,0 +1,356 @@
+{
+  "startGold": 7920,
+  "normal": [
+    {
+      "id": 72,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        4
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 3,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 1,
+        "gold": 100,
+        "xp": 40,
+        "firstClear": true,
+        "loot": []
+      },
+      "gold": 8020,
+      "channel": [
+        {
+          "id": 27,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 86,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 122,
+          "round": 3,
+          "type": "windup-release",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 5,
+        "arrow": 3
+      },
+      "reward": {
+        "cleared": 1,
+        "gold": 70,
+        "xp": 30,
+        "firstClear": false,
+        "loot": []
+      },
+      "gold": 8090,
+      "channel": [
+        {
+          "id": 48,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 78,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 124,
+          "round": 3,
+          "type": "windup-cancel",
+          "reason": "来源倒下"
+        }
+      ]
+    }
+  ],
+  "finalGold": 8090,
+  "next": 74,
+  "confirmation": [
+    {
+      "key": "confirmation-1-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 5,
+        "arrow": 3
+      },
+      "channel": [
+        {
+          "id": 43,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 71,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 111,
+          "round": 3,
+          "type": "windup-release",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "key": "confirmation-1-pressure",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 3
+      },
+      "channel": [
+        {
+          "id": 41,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 72,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 108,
+          "round": 3,
+          "type": "windup-release",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "key": "confirmation-2-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 3
+      },
+      "channel": [
+        {
+          "id": 37,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 68,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 123,
+          "round": 3,
+          "type": "windup-cancel",
+          "reason": "来源倒下"
+        }
+      ]
+    },
+    {
+      "key": "confirmation-2-pressure",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 4
+      },
+      "channel": [
+        {
+          "id": 35,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 79,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 108,
+          "round": 3,
+          "type": "windup-release",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "key": "confirmation-731-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 3
+      },
+      "channel": [
+        {
+          "id": 32,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 68,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 117,
+          "round": 3,
+          "type": "windup-cancel",
+          "reason": "来源倒下"
+        }
+      ]
+    },
+    {
+      "key": "confirmation-731-pressure",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 5,
+        "arrow": 3
+      },
+      "channel": [
+        {
+          "id": 30,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 70,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 110,
+          "round": 3,
+          "type": "windup-cancel",
+          "reason": "来源倒下"
+        }
+      ]
+    },
+    {
+      "key": "confirmation-732-default",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 4,
+        "arrow": 3
+      },
+      "channel": [
+        {
+          "id": 23,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 75,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 111,
+          "round": 3,
+          "type": "windup-release",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "key": "confirmation-732-pressure",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        3
+      ],
+      "supplies": {
+        "herb": 9,
+        "rune": 5,
+        "arrow": 3
+      },
+      "channel": [
+        {
+          "id": 21,
+          "round": 1,
+          "type": "windup-start",
+          "reason": null
+        },
+        {
+          "id": 63,
+          "round": 2,
+          "type": "windup-hold",
+          "reason": null
+        },
+        {
+          "id": 121,
+          "round": 3,
+          "type": "windup-cancel",
+          "reason": "来源倒下"
+        }
+      ]
+    }
+  ],
+  "limits": "Two predefined normal72/73 and8 zeroXP inputs; no tuning to hide failure. Several commands change jointly, same seed does not isolate causality or fix RNG allocation. Channel mechanics/numbers are project adaptation, not verified current Delta behavior."
+}

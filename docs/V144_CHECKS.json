@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "full": {
+    "tests": 1338,
+    "pass": 1338,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "file": "full-final-after-guard.tap"
+  },
+  "specialized": {
+    "tests": 15,
+    "pass": 15,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "file": "specialized-final3.tap"
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 162,
+    "checkedReferences": 180,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 620,
+    "python": 1,
+    "failures": []
+  },
+  "browser": {
+    "suites": 52,
+    "allFinalRuntime": true,
+    "unifiedPassed": true,
+    "directSuccessfulAttempt": 3,
+    "failedDirectAttemptsPreserved": [
+      1,
+      2
+    ],
+    "raw": "/tmp/wod-evidence/v144/acceptance",
+    "canonicalFullBackup": "/workspace/wod-evidence/v144/browser-final/channel-final-campaign.json",
+    "canonicalFourKeys": "/workspace/wod-evidence/v144/browser-final/channel-final-four-raw-keys.json",
+    "chromiumDesktopAnd390pxTouchEmulationOnly": true
+  },
+  "compatibility": "7 complete prior states/configs/reports byte exact, zero exclusions",
+  "guildBoundary": {
+    "passed": true,
+    "allGuildFieldsExactAfterOnlyExplicitNormalRewardsAndHistory": true,
+    "goldBefore": 7920,
+    "goldAfter": 8090,
+    "nextBefore": 72,
+    "nextAfter": 74,
+    "ordinaryGold": 170,
+    "ordinaryXP": 70,
+    "warehouseUnchanged": true,
+    "benchAWholeMemberUnchanged": true,
+    "identityRolesEquipmentTrainingItemsStoriesUnchanged": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "oldProofs": 24,
+    "newProof": "pressurevault/survive72",
+    "afterProofs": 25,
+    "sha256": "87210f3db07e8645df01d10f579e5db0e16b36fbb2502ca18d2408b0aa83a4e5"
+  },
+  "confirmation": {
+    "inputs": 8,
+    "fullReportsPreserved": true,
+    "allSixSurvive": true,
+    "defaultReleases": 2,
+    "pressureReleases": 2,
+    "seed2PressureStillReleases": true,
+    "noGlobalWinRateOrSingleCauseClaim": true
+  },
+  "maintenance": {
+    "filesRetired": 1997,
+    "logicalBytesRetired": 3281773898,
+    "tmpMeasuredBytesReleased": 3286044672,
+    "sixRetainedRefsUnchanged": true,
+    "recoveryChainUntouched": true
+  },
+  "failuresPreserved": {
+    "firstSpecialized": "invalid nonexistent heavy skill in Native test input; validation rejected; corrected actual pierce with shot fallback",
+    "secondSpecialized": "fixture party command was overwritten by genuine room config; corrected setup to change config, assertions kept",
+    "fullInitial": "5 exact route/goal total expectations still30/90; corrected to31/93, no loosened assertions",
+    "direct1": "duplicate release/cast proof blocks; runtime presentation fixed",
+    "direct2": "mobile selector also matched hidden departure card; scoped current intel, no force click",
+    "lateGuard": "live recall must not cancel source; death-reason guard and new regression, fresh1338 full run after fix"
+  },
+  "limits": [
+    "new encounter currently lenient, no strategic necessity proven",
+    "short-route reward efficiency not calibrated across long-term economy",
+    "no current Delta channel rule/numbers verified, explicit project adaptation",
+    "no permanent supplies, main merge, branch deletion, GC/prune or deployment"
+  ],
+  "finalPushAndRestore": "See external delivery manifest/push-verified/restore-check for exact committed SHA and verified remote state"
+}

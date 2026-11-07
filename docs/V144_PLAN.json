@@ -1,0 +1,90 @@
+{
+  "frozenBeforeImplementationAndResults": true,
+  "phase": "v144 paid channeled enemy attack",
+  "core": "one authored enemy commits one main action and pays actual existing skill fee; each further ordinary slot before startRound+2 is busy; first ordinary slot when ready releases existing wave with fresh current stats and legal targets, no second payment; source death or room end cancels without refund; no player channel editor or new skill",
+  "route": "pressurevault",
+  "room": {
+    "id": "pressure-vault",
+    "name": "01 · 调压潮炉",
+    "enemies": [
+      {
+        "id": "pv-g1",
+        "pos": "front",
+        "hp": 140,
+        "skill": "strike",
+        "level": 8
+      },
+      {
+        "id": "pv-g2",
+        "pos": "front",
+        "hp": 140,
+        "skill": "strike",
+        "level": 8
+      },
+      {
+        "id": "pv-c",
+        "pos": "rear",
+        "hp": 240,
+        "skills": {
+          "wave": 12,
+          "spark": 8
+        },
+        "windup": {
+          "skill": "wave",
+          "target": "center",
+          "rounds": 2
+        },
+        "main": "spark/front after single windup"
+      }
+    ]
+  },
+  "attrs": {
+    "str": 13,
+    "con": 13,
+    "int": 17,
+    "dex": 14,
+    "cha": 8,
+    "agi": 10,
+    "per": 12,
+    "wil": 15
+  },
+  "mp": 80,
+  "gear": "field",
+  "supplyBudget": 24,
+  "defaultSupplies": {
+    "herb": 10,
+    "rune": 8,
+    "arrow": 6
+  },
+  "reward": {
+    "bonus": 50,
+    "xp": 20,
+    "firstGold": 30,
+    "firstXp": 10,
+    "pool": []
+  },
+  "normalPlay": "existing v143 formal7920next72, ownE/beryl,b,c,d,e,f; 72existing defaults,73same assets explicit ranged/mental rear pressure and D wardcenter window3 only; no new training/purchases/recruit/role change; preserve outcomes and costs, no tune for victory",
+  "confirmation": "zeroXP founders seeds1,2,731,732 x default / rear-pressure (B heavy rear and E mindcall rear, D wardcenter round3 only), full configs+reports; not isolated causality",
+  "source": {
+    "url": "https://www.world-of-dungeons.de/ency/Fertigkeiten",
+    "supports": "historical official encyclopedia skill phases, costs, attack types and skill/property rolls",
+    "doesNotVerify": "current Delta numbers or cross-round paid channel behavior; all new authored mechanics and numbers are project adaptation"
+  },
+  "limits": [
+    "no permanent supply economy",
+    "no deployment/main merge until146–148",
+    "no branch/ref deletion GC prune",
+    "old full reports zero exclusions",
+    "fresh unique browser output per attempt"
+  ],
+  "cleanup": {
+    "duplicates": [
+      140,
+      141
+    ],
+    "files": 1997,
+    "bytesReleased": 3286044672,
+    "proof": "maintenance exact paths/size/SHA/ZIP CRC and successful sample restore"
+  },
+  "preResultFixtureCorrection": "Initial input used nonexistent heavy id; validation rejected before results. Actual existing heavy-arrow id is pierce, with existing shot rear fallback; intended ranged rear pressure unchanged."
+}
