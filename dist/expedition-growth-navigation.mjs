@@ -1,8 +1,8 @@
-import {ATTR} from './expedition-data.mjs';
+import {ATTR,HEROES,trainingOptions} from './expedition-data.mjs';
 import {experienceLedger} from './expedition-growth.mjs';
 import {experienceView} from './expedition-progression-view.mjs';
 const targets=Object.freeze({overview:'#growth-navigation',skills:'#growth-skills',attributes:'#growth-attributes',course:'.growth-card',plan:'.training-plan',experience:'#growth-experience'});
-const detailKeys=new Set(['experience','course-rules','attributes',...Object.keys(ATTR).map(k=>'attr:'+k)]);
+const detailKeys=new Set(['experience','course-rules','attributes',...Object.keys(ATTR).map(k=>'attr:'+k),...HEROES.flatMap(h=>Object.entries(trainingOptions(h.id)).filter(([,o])=>o.kind!=='attribute').map(([key])=>'use:'+key))]);
 export function growthNavigationView(){return '<nav id="growth-navigation" class="growth-navigation" aria-label="角色成长定位" tabindex="-1"><p>先选择队员，再定位要调整的内容。</p>'+[['skills','普通技能与防御'],['attributes','属性培养'],['plan','培养草案与试演'],['course','课程与进阶'],['experience','经验去向']].map(([key,label])=>`<button type="button" data-growth-jump="${key}">${label}</button>`).join('')+'</nav>';}
 export function growthExperienceView(member){const l=experienceLedger(member);return `<details id="growth-experience" class="growth-experience" data-growth-detail="experience"><summary>经验去向 · 可用 ${l.available} · 累计 ${l.earned}</summary>${experienceView(member)}</details>`;}
 export function captureGrowthDetails(root){const state=Object.create(null);for(const d of root.querySelectorAll('[data-growth-detail]'))if(detailKeys.has(d.dataset.growthDetail))state[d.dataset.growthDetail]=d.open===true;return state;}

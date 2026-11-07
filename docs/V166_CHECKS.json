@@ -1,0 +1,398 @@
+{
+  "passed": true,
+  "baselineCommit": "1d21111ed6f47b65eb08c6fd766680187c3d9b97",
+  "Node": {
+    "tests": 1662,
+    "pass": 1662,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 10,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "targeted18": {
+    "tests": 18,
+    "pass": 18,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "browser": {
+    "passed": true,
+    "scope": "23 affected complete suites plus166preview, not full current73",
+    "total": 23,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 73,
+    "versions": [
+      166,
+      165,
+      94,
+      95,
+      98,
+      99,
+      105,
+      118,
+      123,
+      125,
+      126,
+      127,
+      128,
+      129,
+      137,
+      139,
+      149,
+      152,
+      156,
+      161,
+      162,
+      163,
+      164
+    ],
+    "originalCheckpointAttempts": 24,
+    "allCPsDurableMainAsCompleted": true,
+    "previewOnSameFinalSource": true,
+    "new166Screens": [
+      "context-desktop-current.png",
+      "context-mobile-mindcall.png",
+      "context-mobile-healing.png"
+    ],
+    "v160ImportedNumericFieldsRegressionRetained": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 183,
+    "checkedReferences": 202,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 727,
+  "sourceInputs": 786,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-training-use.mjs",
+      "scripts/browser-v166.cjs",
+      "scripts/check-v166.mjs",
+      "scripts/fixtures/v166-preparation-state.json",
+      "scripts/training-context-cases.mjs",
+      "tests/training-use.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-growth-navigation.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 774
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 104,
+    "actualReports": 98,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through113AllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 12545,
+    "next": 116,
+    "ownHero": "e",
+    "ownXP": 5290,
+    "berylXP": 2175,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "ownControlTrainingAndExactRefundXP": 60,
+    "onlyExplicitConfigChange": "Prepend E mindcall/rear/repeat, retain shot fallback; all other assets and orders unchanged",
+    "normal": [
+      {
+        "id": 114,
+        "route": "courier",
+        "objective": "survive",
+        "won": true,
+        "alive": 6,
+        "ownHP": 94,
+        "rounds": [
+          4,
+          4,
+          8
+        ],
+        "supplies": {
+          "herb": 1,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        },
+        "mindcallCasts": 5
+      },
+      {
+        "id": 115,
+        "route": "courier",
+        "objective": "survive",
+        "won": true,
+        "alive": 5,
+        "ownHP": 95,
+        "rounds": [
+          4,
+          4,
+          9
+        ],
+        "supplies": {
+          "herb": 1,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        },
+        "mindcallCasts": 6
+      }
+    ],
+    "normal115BerylDownAndSurviveFailedRetained": true,
+    "normal114SixAliveAndSurviveMet": true,
+    "allOriginalBookProofsIncludingCourierSurvive39Retained": true,
+    "normalLoot": [
+      "postbell",
+      "postbell"
+    ],
+    "controlled114": {
+      "before": {
+        "won": false,
+        "alive": 0,
+        "ownHP": 0,
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "mindcallCasts": 0
+      },
+      "after": {
+        "won": true,
+        "alive": 6,
+        "ownHP": 94,
+        "supplies": {
+          "herb": 1,
+          "rune": 3,
+          "arrow": 2
+        },
+        "mindcallCasts": 5
+      }
+    },
+    "formal114ExactReadonlyAfter": true,
+    "sameConfigurationFor115ExceptForcedSeed": true,
+    "normal112and113FailureNotRetconned": true
+  },
+  "interface": {
+    "pureActualReadinessConfigNoSimulationOrAutoInstall": true,
+    "explicitImplicitCandidatesDefenseAndInactiveSeparated": true,
+    "readOnlyReviewAndExplicitOwnEditingVerified": true,
+    "historyNotRewrittenByNewTraining": true,
+    "settledAttemptWordNotFullClearCount": true
+  },
+  "recordedFailureInvestigation": {
+    "recordedFactors": [
+      {
+        "id": 112,
+        "ownFirstDeath": {
+          "eventId": 403,
+          "roomIndex": 1,
+          "round": 4,
+          "attacker": "csm",
+          "skill": "wave",
+          "hpBefore": 60,
+          "hpAfter": 0,
+          "damage": 62,
+          "actual": 60,
+          "resistance": -10,
+          "remainingMP": 37
+        },
+        "lastPriorCare": {
+          "eventId": 355,
+          "status": "healed",
+          "selected": "e",
+          "candidates": [
+            {
+              "id": "beryl",
+              "hp": 93,
+              "maxHp": 138,
+              "ratio": 0.6739130434782609
+            },
+            {
+              "id": "e",
+              "hp": 7,
+              "maxHp": 106,
+              "ratio": 0.0660377358490566
+            }
+          ],
+          "herb": 7
+        },
+        "finalRoomBerylMP": 2,
+        "firstHerbZeroEvent": 677,
+        "laterHerbBlockedCare": {
+          "eventId": 724,
+          "mp": 25,
+          "herb": 0,
+          "cost": {
+            "mp": 5,
+            "herb": 1
+          }
+        },
+        "partyHealerSupplies": {
+          "herb": 12,
+          "rune": 0,
+          "arrow": 0
+        },
+        "partyHealerCasts": {
+          "heal": 11,
+          "provisions": 1
+        },
+        "enemyFinalHeals": {
+          "count": 6,
+          "actual": 264
+        },
+        "mindcallCasts": 0
+      },
+      {
+        "id": 113,
+        "ownFirstDeath": {
+          "eventId": 360,
+          "roomIndex": 1,
+          "round": 3,
+          "attacker": "csm",
+          "skill": "wave",
+          "hpBefore": 72,
+          "hpAfter": 0,
+          "damage": 79,
+          "actual": 72,
+          "resistance": -10,
+          "remainingMP": 38
+        },
+        "lastPriorCare": {
+          "eventId": 318,
+          "status": "healed",
+          "selected": "beryl",
+          "candidates": [
+            {
+              "id": "beryl",
+              "hp": 72,
+              "maxHp": 134,
+              "ratio": 0.5373134328358209
+            },
+            {
+              "id": "e",
+              "hp": 72,
+              "maxHp": 106,
+              "ratio": 0.6792452830188679
+            }
+          ],
+          "herb": 9
+        },
+        "finalRoomBerylMP": 2,
+        "firstHerbZeroEvent": 712,
+        "laterHerbBlockedCare": {
+          "eventId": 773,
+          "mp": 26,
+          "herb": 0,
+          "cost": {
+            "mp": 5,
+            "herb": 1
+          }
+        },
+        "partyHealerSupplies": {
+          "herb": 12,
+          "rune": 0,
+          "arrow": 0
+        },
+        "partyHealerCasts": {
+          "heal": 11,
+          "provisions": 1
+        },
+        "enemyFinalHeals": {
+          "count": 10,
+          "actual": 440
+        },
+        "mindcallCasts": 0
+      }
+    ],
+    "controlled114": {
+      "before": {
+        "won": false,
+        "alive": 0,
+        "enemyRearCasterWaves": 3,
+        "enemyFinalHeals": 6,
+        "ownMindcallCasts": 0
+      },
+      "after": {
+        "won": true,
+        "alive": 6,
+        "enemyRearCasterWaves": 3,
+        "enemyFinalHeals": 3,
+        "ownMindcallCasts": 5
+      }
+    },
+    "method": "Read cast.detail.skill and entry.detail.healingDecision, supplies via existing personalReport actual-event ledger. Initial exploratory healing-check event and stats.f.supplies paths do not exist; corrected without changing any source report.",
+    "limits": "Recorded factors and one fixed-next-counter114 configuration contrast, not a single sufficient cause or universal build strength. Instruction changes also change RNG consumption; no retune/seed search.115sameplan still loses Beryl."
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v166/browser-final/context-final-campaign.json": "c11d86ad11e21d150132de129415a763f3cfcbe901045e65c01d2f123ee83777",
+    "/workspace/wod-evidence/v166/browser-final/context-final-four-raw-keys.json": "3566248ef76424407afbd233acce6c81e720bc118e305330e29c8aa0b28fc829"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Project-original interface design only; no new original-server numeric claim and no gameplay/economy retune.",
+    "Inventory is current departure configuration/candidates for base rooms, not future casts or a full inventory of every passive/entry-check channel.",
+    "112/113 show multiple recorded factors, not a single proven sufficient cause; initial exploratory schema paths corrected before conclusions.",
+    "114one-seed configuration contrast also changes RNG consumption;115sameplan still loses Beryl. No global strength or success claim.",
+    "Early new test incorrectly expected firstsurvive114; actual original39 retained and asserted, initial failing log kept.",
+    "23 affected completeGUI plus166preview; full current73 GUI reserved167–169, not executed this stage.",
+    "Permanent supply economy/fixed protagonist/multiplayer pending.",
+    "Desktop/390px Chromium touch emulation, not physical devices or other engines."
+  ],
+  "mainRemains164": "6b6734d9ffd190b0c69bafcda647b2c54d774b75",
+  "nextMainWindow": [
+    167,
+    169
+  ]
+}

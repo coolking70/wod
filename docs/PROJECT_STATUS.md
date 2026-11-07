@@ -1,14 +1,14 @@
-# 单人项目状态：v0.165
+# 单人项目状态：v0.166
 
-离线单人核心循环已经打通，当前优先完整流程试玩、平衡证据和界面收敛。v165处理实际成长页滚动与键盘焦点问题，不添加战斗机制或数值。
+核心单人循环已形成，当前优先实际试玩、失败后调整与界面收敛。v166补培养到实际指令的说明及只读定位，不新增机制或平衡数值。
 
 ## main与开发候选
 
-- [main](https://github.com/coolking70/wod/tree/main)：本轮起点及保持的已验证版本v164，6b6734d9ffd190b0c69bafcda647b2c54d774b75，已完成1644Node/全部71GUI与完整恢复门禁。
-- [feature/v165-growth-navigation](https://github.com/coolking70/wod/tree/feature/v165-growth-navigation)：v165候选；当前版本不表示已并入main。阶段推送与SHA以/workspace/wod-delivery/v0.165-growth-navigation/manifest.json为准。
-- v165检查见[V165_CHECKS](V165_CHECKS.json)和[实现](V165_GROWTH_NAVIGATION.md)；本轮22受影响完整GUI加预验收，完整当前72GUI门禁保留到167–169的功能节点。
+- [main](https://github.com/coolking70/wod/tree/main)：本轮保持v164/6b6734d9ffd190b0c69bafcda647b2c54d774b75，已过当时1644Node/全部71GUI及恢复门禁。
+- [feature/v166-training-context](https://github.com/coolking70/wod/tree/feature/v166-training-context)：v166候选，阶段推送/SHA以/workspace/wod-delivery/v0.166-training-context/manifest.json为准，不把此版本号当已入main。
+- [V166检查](V166_CHECKS.json)：23套受影响完整GUI加预验收，本轮不是全部73套；完整main门禁仍在167–169功能节点。
 
-v165正常112/113均在两房后全队倒下，领取既有部分40/20，终12275金币/next114。113固定同种子试演两方案均失败，不能把不同编号或一次训练当普遍强弱证据。旧109失败、原五收藏/三方案/A保持。
+112/113的失败调查分清早期E阵亡仍有法力、实际治疗选择、前排低蓝与末房缺草等记录，不作唯一败因结论。E诘心已有培养但未配普通；明确新增后排指令、保留射击后备后，114六人生还，115同配置仍倒贝芮尔。终档12545金币/next116，原courier全员首证39保持；没有借这几个样本改数值。完整过程与当前/历史边界见[V166](V166_TRAINING_CONTEXT.md)。
 
 ## 已形成的单人循环
 
