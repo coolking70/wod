@@ -1,0 +1,236 @@
+{
+  "passed": true,
+  "baselineCommit": "c6e22fa35244761d91cc5e52c254b8243e2beca9",
+  "Node": {
+    "tests": 1636,
+    "pass": 1636,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 18,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "targeted18": {
+    "tests": 18,
+    "pass": 18,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "browser": {
+    "passed": true,
+    "scope": "All20affected complete suites, not full current70",
+    "total": 20,
+    "fullCurrentSuites": false,
+    "versions": [
+      163,
+      94,
+      95,
+      98,
+      99,
+      105,
+      118,
+      123,
+      125,
+      126,
+      127,
+      128,
+      129,
+      137,
+      139,
+      149,
+      152,
+      156,
+      161,
+      162
+    ],
+    "originalCheckpointAttempts": 21,
+    "allCPsDurableMainAsCompleted": true,
+    "new163Screens": [
+      {
+        "file": "requirement-qualified-desktop.png",
+        "eventId": 3,
+        "permanentCha": 19,
+        "insightEquipmentRank": 1
+      },
+      {
+        "file": "requirement-history-after-refund-mobile.png",
+        "eventId": 3,
+        "permanentCha": 19,
+        "insightEquipmentRank": 1
+      },
+      {
+        "file": "requirement-restored-history-mobile.png",
+        "eventId": 3,
+        "permanentCha": 19,
+        "insightEquipmentRank": 1
+      }
+    ],
+    "v160ImportedNumericFieldsRegressionRetained": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 180,
+    "checkedReferences": 199,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 712,
+  "sourceInputs": 768,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-equipment-requirements.mjs",
+      "scripts/browser-v163.cjs",
+      "scripts/check-v163.mjs",
+      "scripts/equipment-requirement-cases.mjs",
+      "scripts/fixtures/v163-preparation-state.json",
+      "tests/equipment-requirements.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-attribute-training-view.mjs",
+      "dist/expedition-engine.mjs",
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-equipment.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-guild.mjs",
+      "dist/expedition-training-plan.mjs",
+      "dist/expedition-training.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs",
+      "tests/disease.test.mjs",
+      "tests/equipment-skill-ranks.test.mjs",
+      "tests/item-set-bonuses.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs"
+    ],
+    "oldExact": 745,
+    "distExact": 202
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 98,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through107AllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 11995,
+    "next": 110,
+    "ownHero": "e",
+    "ownXP": 5110,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "newOwnedGear": "cadencelute",
+    "retainedCurrentlyIneligibleOwnSetSlot": 3,
+    "onlyNewGoalProof": [
+      "inquest",
+      "clear",
+      108
+    ],
+    "normal": [
+      {
+        "id": 108,
+        "route": "inquest",
+        "objective": "clear",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 4,
+          "rune": 3,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 90,
+          "xp": 40,
+          "firstClear": false,
+          "loot": [
+            "calmribbon"
+          ]
+        }
+      },
+      {
+        "id": 109,
+        "route": "courier",
+        "objective": "survive",
+        "won": true,
+        "alive": 5,
+        "rounds": [
+          4,
+          5,
+          7
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 1
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      }
+    ],
+    "normal109SurviveFailed": true,
+    "normal109HerbExhausted": true,
+    "normalDuplicateLoot": [
+      "calmribbon",
+      "postbell"
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v163/browser-final/requirement-final-campaign.json": "659729c2874a73b7ae2ca6217ae241401c114f95ee5143c3ff5285b734ff1346",
+    "/workspace/wod-evidence/v163/browser-final/requirement-final-four-raw-keys.json": "4db4df779ed58ed9f80e5c7b2e3187e35655d8c88ae95d1d0006799b634a7ad5"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Official index supports equipment requirement concept only; exact current-server rules/numbers unverified, direct Equipment403 not retried.",
+    "All new equipment, permanent-only qualification thresholds and transaction choices are project-original.",
+    "Normal109Beryl down/herb0/survivefailed preserved; no success or balance guarantee from4fixed confirmations.",
+    "First fullNode5stale catalogue asserts and initialGUI163hidden-pane test navigation failure retained, corrected exact counts and visible navigation without weakening assertions.",
+    "Full current70GUI and main integration not run this minor stage; reserved164–166.",
+    "Permanent supply economy/fixed protagonist/multiplayer pending.",
+    "Desktop/390px Chromium touch emulation, not physical devices or other engines."
+  ],
+  "nextMainWindow": [
+    164,
+    166
+  ]
+}

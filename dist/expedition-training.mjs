@@ -1,3 +1,4 @@
+import{equipmentRequirementFailures}from'./expedition-equipment-requirements.mjs';
 import {PROGRESSION_RULES,experienceForTraining} from './expedition-progression-rules.mjs';
 import {HEROES,trainingOptions,MAX_TRAINING_RANK} from './expedition-data.mjs';
 import {growth,isAdvanced} from './expedition-growth.mjs';
@@ -14,5 +15,6 @@ export function trainingQuote(member,key,direction=1){
   if(member.xp<(rank+1)*TRAINING_XP_UNIT)reasons.push('该队员经验不足');
  }else if(rank<=0)reasons.push('该项目没有可退回的训练');
  else if(!Number.isSafeInteger(member.xp+rank*TRAINING_XP_UNIT))reasons.push('返还后经验超出安全范围');
+ if(direction===-1&&option&&next>=0)reasons.push(...equipmentRequirementFailures(member,member.gear,{...member.training,[key]:next}));
  return {key,name:option?.name||key,rank,nextRank:next,cost:direction===1?(rank+1)*TRAINING_XP_UNIT:0,refund:direction===-1?rank*TRAINING_XP_UNIT:0,invested:trainingInvestment({[key]:rank}),direction,allowed:reasons.length===0,reasons};
 }

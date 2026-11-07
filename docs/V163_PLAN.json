@@ -1,0 +1,34 @@
+{
+  "stage": 163,
+  "base": "c6e22fa35244761d91cc5e52c254b8243e2beca9",
+  "scope": "Attribute-gated new equipment with real permanent base+training qualification. Two original shop items only: cadencelute CHA19 with mindcall+2/insight+1, anchorblade CON18 with interpose+2/parry+1; same existing60gold store price, no new currency, classes, routes or supply economy. No restrictions on old gear. Gear/focus/buffs cannot meet this original permanent requirement.",
+  "transactions": "Reject unqualified equip/purchase, set-apply, departure, imported actual loadout, per-rank/full refund or atomic training draft before mutation. Keep unqualified saved sets as valid owned references, but disable apply until eligible. Quote and render reasons; never auto-unequip, delete items or change saved tactics/assets. Actual guild gear/training used for departure.",
+  "normal": [
+    {
+      "id": 108,
+      "route": "inquest",
+      "objective": "clear",
+      "before": "Train ownE CHA twice20+40XP, buy/equip cadencelute60gold, save firstfree ownE set. Use actual source, no other gifts or seed search."
+    },
+    {
+      "id": 109,
+      "route": "courier",
+      "objective": "survive",
+      "before": "Prove refund blocked while worn. Switch ownE back to original bridgehorn, refund exactly2CHA ranks40+20; saved newgear set remains but apply now blocked. Normal current assets, no alternate training or search."
+    }
+  ],
+  "confirmations": "Fixed731/732, on same real post-training guild, same inquest preparation with new cadencelute vs already-owned original bridgehorn only; all4reports retained, no success selection.",
+  "verification": "FullNode2workers, affected complete equipment/growth/browser163 flow and actual campaign restore,98old wholeJSON comparisons, syntax/runtime refs, both cold source chains plus smoke/allCLI. Phase branch push only; main161 until164–166 all-current browser/full integration gate.",
+  "evidence": "Indexed official Hero_-_Equipment and FAQ support item requirement concept only; direct official Equipment403, not retried. All attribute thresholds, exclusion of gear/focus/buffs, fixed item properties, refund gating and costs are project design. Retain all failures, six156snapshots74files, six old refs and source/evidence chains.",
+  "actualNativeObserved": {
+    "gold": 11995,
+    "next": 110,
+    "ownXP": 5110,
+    "normal108": "six alive4/5,arrow0",
+    "normal109": "Beryl down4/5/7,herb0,survivefailed",
+    "normalLoot": [
+      "calmribbon",
+      "postbell"
+    ]
+  }
+}

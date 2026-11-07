@@ -1,3 +1,5 @@
+> v0.163 培养与配装条件；当前接续见[云端交接](docs/HANDOFF_CLOUD_V163.md)，阶段推送与main状态以交付收据为准。
+
 > v0.162 闸桥专业通行，当前接续见[云端交接](docs/HANDOFF_CLOUD_V162.md)；main集成与阶段推送以交付收据为准。
 
 > v161完成坚守展示字段边界与完整单人里程碑验收；正常104/105至11590/next106，旧clear102/survive103保持，仅增reserve105。见[实现](docs/V161_HOLDOUT_MILESTONE.md)、[交接](docs/HANDOFF_CLOUD_V161.md)。完整门禁与main实际状态以交付收据为准；补给经济待决。
