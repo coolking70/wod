@@ -1,0 +1,339 @@
+{
+  "passed": true,
+  "baseline": "ec4d1d779f0a46cb4dfce2c0612833892670f559",
+  "tests": {
+    "full": {
+      "tests": 1311,
+      "pass": 1311,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-final.tap"
+    },
+    "newStage": {
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-final-escaping.tap"
+    },
+    "earlierCompleteBeforePresentationTests": {
+      "tests": 1309,
+      "pass": 1309,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    }
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 610,
+    "python": 1,
+    "failures": [],
+    "finalChangedFilesRecheckedAfterEscaping": [
+      "dist/expedition-interception-view.mjs",
+      "tests/guardian-reserve.test.mjs"
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 160,
+    "checkedReferences": 178,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browser": {
+    "passed": 50,
+    "failed": 0,
+    "checkpointAudit": {
+      "passed": true,
+      "suites": 50,
+      "files": 1050,
+      "images": 88,
+      "rawBytes": 1772210296,
+      "archiveBytes": 229669216,
+      "sourceFilesRemoved": false
+    },
+    "direct": {
+      "passed": true,
+      "steps": [
+        "1440px从真实v141终档四原始键恢复；60金一次招募、同职业阿瑟首选、试演四键不变、明确编入后六人及个人资产与API逐项一致；正常68全报告/待领/领取一致，援护成功与程序守卫只指向贝芮尔。",
+        "390px新上下文整档恢复7545；阿瑟候补可同职业换回，名册无横溢；正常69全报告/待领/领取逐项一致，保留贝芮尔0HP0MP倒下与援护失败，5人生还；旧47冻结全文导出、55失败重演不重发奖，两旧方案/A原文保持。",
+        "第三上下文四原始键逐字节恢复7680/next70，68全文重演不发奖；另在此验证上下文将阿瑟换回并切换为自己的英雄，身份未被锁定，未覆盖正式7680终档。"
+      ],
+      "errors": [],
+      "finalGold": 7680,
+      "next": 70
+    },
+    "unifiedNewStage": {
+      "passed": true,
+      "steps": [
+        "1440px从真实v141终档四原始键恢复；60金一次招募、同职业阿瑟首选、试演四键不变、明确编入后六人及个人资产与API逐项一致；正常68全报告/待领/领取一致，援护成功与程序守卫只指向贝芮尔。",
+        "390px新上下文整档恢复7545；阿瑟候补可同职业换回，名册无横溢；正常69全报告/待领/领取逐项一致，保留贝芮尔0HP0MP倒下与援护失败，5人生还；旧47冻结全文导出、55失败重演不重发奖，两旧方案/A原文保持。",
+        "第三上下文四原始键逐字节恢复7680/next70，68全文重演不发奖；另在此验证上下文将阿瑟换回并切换为自己的英雄，身份未被锁定，未覆盖正式7680终档。"
+      ],
+      "errors": [],
+      "finalGold": 7680,
+      "next": 70
+    }
+  },
+  "native": {
+    "startGold": 7485,
+    "recruitCost": 60,
+    "normal": [
+      {
+        "id": 68,
+        "route": "classic",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 15,
+          "rune": 10,
+          "arrow": 8
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 120,
+          "xp": 45,
+          "firstClear": true,
+          "loot": [
+            "reliquaryshield"
+          ]
+        },
+        "gold": 7545,
+        "intercepts": [
+          {
+            "id": 36,
+            "success": true
+          },
+          {
+            "id": 72,
+            "success": true
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "route": "courier",
+        "won": true,
+        "alive": 5,
+        "rounds": [
+          4,
+          4,
+          8
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        },
+        "gold": 7680,
+        "intercepts": [
+          {
+            "id": 261,
+            "success": false
+          },
+          {
+            "id": 314,
+            "success": false
+          },
+          {
+            "id": 398,
+            "success": true
+          }
+        ]
+      }
+    ],
+    "finalGold": 7680,
+    "next": 70,
+    "limits": "Two fixed normal settlements, including failures; not a win-rate or universal upgrade claim. Recruit costs gold, zero training/XP gifted; A retains assets on bench and earns no XP. No permanent supplies."
+  },
+  "preservation": {
+    "passed": true,
+    "allGuildFieldsExactAfterExplicitExpectedChanges": true,
+    "recruitCost": 60,
+    "normalGold": 255,
+    "normalXP": 100,
+    "benchAXPUnchanged": true,
+    "newReserveXP": 100,
+    "oldMembersExactIncludingSourceTacticsExceptFiveActiveXP": true,
+    "ownHero": "e",
+    "oldProofsRetained": true,
+    "newProof": "classic/survive68",
+    "failedSurvive69NotAwarded": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "firstFailure55Preserved": true,
+    "finalGold": 7680,
+    "next": 70,
+    "finalGuildSHA256": "615061898ade30cfa3a5bfe5d438bd5b5cec5ae86b4162fc2df60f5fb387ce91"
+  },
+  "zeroExcludedOldCompatibility": {
+    "passed": true,
+    "zeroFieldExclusions": true,
+    "rows": [
+      {
+        "key": "start",
+        "bytes": 1314572,
+        "sha256": "453feb591be3a13d007ab49ebae39ac42df6eb367bd003dd78e28ac0f0e65296"
+      },
+      {
+        "key": "source",
+        "bytes": 7767,
+        "sha256": "e8d47e93c6027274a1d2d3931e11e5c676098d754b4cae93e7a1f8558956d55b"
+      },
+      {
+        "key": "history55",
+        "bytes": 16292968,
+        "sha256": "9725dcf8e00be3c98e4a019723847c856ecadb2fa83cb7870a7384ac0191b1a0"
+      },
+      {
+        "key": "history65",
+        "bytes": 5741159,
+        "sha256": "9dc6ea7ab0dc42746df4f5db42671ac70154353032722161c4131ed58f388b0c"
+      },
+      {
+        "key": "default731",
+        "bytes": 6242461,
+        "sha256": "b502ae22b186a36f640bcf1a3c12de4266658c035902ebab2f6e1c7970b069a8"
+      },
+      {
+        "key": "normal66",
+        "bytes": 23861748,
+        "sha256": "61f602cb411ead22304d625a21f8e54f1917081cb401985d2f8377bedd53a06e"
+      },
+      {
+        "key": "normal67",
+        "bytes": 13633573,
+        "sha256": "288a71081308eef430218f478473f30cf37548cac7bcd21061e5edb04fe56f0d"
+      }
+    ]
+  },
+  "allFinalRuntimeScriptsTestsFilesExact": 642,
+  "lateEscapingAmendment": {
+    "reason": "Frozen report validator permits generic detail objects; escape every interpolated proof field, including recorded numeric fields, rather than trusting imported strings",
+    "completedUnifiedBeforeFix": [
+      76,
+      77,
+      95,
+      94,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      110,
+      109,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      120,
+      119,
+      121,
+      122
+    ],
+    "finalRelevantUI": "guardian125 and new142 remain scheduled after fix; ordinary native numeric HTML must be byte-equal before/after; final complete1311 and11specialized rerun",
+    "runtimeOnlyPresentation": true
+  },
+  "ordinaryNumericProjectionAfterEscaping": {
+    "passed": true,
+    "allRecordedOrdinaryProofHTMLExact": true,
+    "reports": 141,
+    "interceptionGroups": 223,
+    "changeOnlyEscapesImportedDetailStrings": true,
+    "limits": "Earlier unified suites listed in escaping-amendment ran before final escaping; recorded numeric HTML equivalence independently checked. Relevant guardian125/new142 and final full1311 execute final code."
+  },
+  "source": [
+    {
+      "url": "https://world-of-dungeons.de/ency/Kampfsystem_-_Abwehr_von_Angriffen",
+      "seen": "official search content 2026-11-07; crawled5.2years ago",
+      "supports": "parry depends on attributes, skill, gear and buffs; shield parry dex/str",
+      "limit": "not current Delta verification; recruitment/candidate/all new stats and interpose are project adaptation"
+    },
+    {
+      "url": "https://world-of-dungeons.de/ency/Eigenschaften",
+      "supports": "different attributes influence attack/defense/HP/MP",
+      "limit": "do not transplant historical HP/MP formula; existing project formula stays"
+    }
+  ],
+  "planAmendment": {
+    "after": "first/second browser integration failures",
+    "observation": "ordinary grouped cast primary panel omits interception child outcome except closed raw details; clicking child index absent in grouped journal",
+    "change": "add read-only grouped interception panel for each actual intercept, both success/failure, actual roll/threshold/target/paidMP only; diagnostics still one-event view",
+    "combatChange": false,
+    "rewardsOrNumbersChange": false,
+    "script": "test group start + actual child diagnostic index separately",
+    "preserve": "both logs/scripts/screenshots/raw failure keys retained"
+  },
+  "limits": [
+    "All new recruit parameters are project adaptations; only historical official public encyclopedia search content, no current-server claim",
+    "New beryl data needs v142 or newer catalogue; no backward-load compatibility claim",
+    "Six active slots and three optional reserves, no free XP/assets or ordinary-skill exclusivity",
+    "Actual69 won route with five survivors, zeroMP/HP guardian fallen; survive objective not rewarded",
+    "Five original frozen entries793208chars untouched; no new capture/cap expansion/deletion",
+    "Chromium viewport/touch emulation only, not physical device or other browsers",
+    "Permanent supply economy remains pending; no cross-process storage-lock claim"
+  ],
+  "initialFailuresPreserved": [
+    "specialized-initial.tap: parry defense key was wrongly passed into attack-skill mean in the test; corrected to exported defenseProfile; runtime unchanged",
+    "specialized-initial.tap: existing swap snapshots all six current tactics, not only A; assert exact source tactics for each while keeping full asset object equality and exact reward XP",
+    "browser-initial/: attempted a child interception event index in grouped journal; preserved log/script/screenshot/four keys",
+    "browser-second/: group starts with enemy cast so primary panel omitted child cover outcome; added actual read-only cover panel and separately test grouped and diagnostic views"
+  ],
+  "main": {
+    "unchanged": "f04c10b435694876aed9a8940fce80a9f21276e2",
+    "nextReviewWindow": [
+      143,
+      144,
+      145
+    ],
+    "noForcePush": true,
+    "deployed": false,
+    "gcPruneRun": false,
+    "sixOldRetainedRefsUnchanged": true
+  },
+  "disksAtGate": {
+    "/workspace": {
+      "total": 33770192896,
+      "used": 26144964608,
+      "free": 5890465792
+    },
+    "/tmp": {
+      "total": 9441329152,
+      "used": 8078069760,
+      "free": 1363259392
+    }
+  }
+}

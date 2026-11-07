@@ -1,6 +1,8 @@
 # 深潮远征 / wod
 
-当前开发版本：**v0.141「疾歌耗神」**，分支`feature/v141-mana-regeneration`。**v0.140已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`f04c10b435694876aed9a8940fce80a9f21276e2`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+当前开发版本：**v0.142「前线候补」**，分支`feature/v142-guardian-reserve`。**v0.140已安全快进并推送[main](https://github.com/coolking70/wod/tree/main)**，远端核验`f04c10b435694876aed9a8940fce80a9f21276e2`。用户已授权后续功能分支推送及周期评估main/分支清理；未部署。见[云端存储与Git约定](docs/CLOUD_STORAGE_AND_GIT_POLICY.md)。
+
+新增[前线候补与援护可读战报](docs/V142_GUARDIAN_RESERVE.md)：可选招募一位偏援护的守卫，挡架/输出取舍、个人资产和六人出战边界保持；完整施放也显示实际援护子事件。正常68六人/69五人，保留新守卫倒下，至7680/next70；旧报告零字段排除精确保持，见[V142验证](docs/V142_CHECKS.json)。
 
 新增[疾歌耗神与队伍法力分工](docs/V141_MANA_REGENERATION.md)：正负自然法力修正按实际受益者结算，一首自由吟游技能将行动收益与持续代价配对；0MP截断、到期和整组破印可追溯。正常66/67六人至7485/next68，保留药草耗尽及未生效损失，不当升级推荐。旧冻结字节保持，旧重演仅多一个技能目录项，见[V141验证](docs/V141_CHECKS.json)。
 

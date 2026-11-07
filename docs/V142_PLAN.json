@@ -1,0 +1,45 @@
+{
+  "phase": "v142 guardian reserve",
+  "frozenBeforeImplementation": true,
+  "candidate": {
+    "id": "beryl",
+    "name": "贝芮尔",
+    "classId": "guardian",
+    "attrs": {
+      "str": 10,
+      "con": 18,
+      "int": 5,
+      "dex": 9,
+      "cha": 6,
+      "agi": 6,
+      "per": 13,
+      "wil": 12
+    },
+    "cost": 60,
+    "completed": 3,
+    "trained": "interpose",
+    "prep": [
+      "interpose/rear/repeat",
+      "guard/self/repeat"
+    ]
+  },
+  "tradeoff": "same base attr sum79; con/per stronger interpose and HP, lower dex/str parry and strike; same natural initiative; free trained selection is not paid training nor immutable build",
+  "native": "v141 final7485 next68; recruit60 once; replace a, own e preserved; classic then courier actual68/69, use existing survive objective and shared per-run supplies; do not tune based on result; normal rewards only; bench A no XP",
+  "compatibility": "v141 existing report/config/state bytes fully exact with zero field exclusions; new candidate not auto-added, no new skills or schema; preserve frozen payloads",
+  "sources": [
+    {
+      "url": "https://world-of-dungeons.de/ency/Kampfsystem_-_Abwehr_von_Angriffen",
+      "seen": "official search content 2026-11-07; crawled5.2years ago",
+      "supports": "parry depends on attributes, skill, gear and buffs; shield parry dex/str",
+      "limit": "not current Delta verification; recruitment/candidate/all new stats and interpose are project adaptation"
+    },
+    {
+      "url": "https://world-of-dungeons.de/ency/Eigenschaften",
+      "supports": "different attributes influence attack/defense/HP/MP",
+      "limit": "do not transplant historical HP/MP formula; existing project formula stays"
+    }
+  ],
+  "main": "remain v140; next window143–145",
+  "recovery": "v140 complete +v141 incremental +v142 incremental; six old retained refs preserved",
+  "cleanup": "none planned; no gc/prune/deploy"
+}
