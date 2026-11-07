@@ -1,0 +1,37 @@
+{
+  "stage": "0.147",
+  "beforeImplementationAndNormalOutcomes": true,
+  "base": "4e928181abf5e151d54348e9068e7eb38727bf0c",
+  "scope": "originalR3 articulated bow ranger, existing actual events only; guardian unchanged",
+  "rules": [
+    "only ranger hero with actual bow",
+    "draw on recorded ranged attack cast, one release per same cast within grouped outcomes",
+    "ranged/magic-damage arrow still uses bow; do not invent arrow counts or hits",
+    "incoming miss/hit/zero actual/down keep actual targets and final HP snapshot",
+    "11 shared articulated parts including bow string and visible nocked arrow; one original vector model, no new remote assets",
+    "900ms divided by existing speeds; no new timers, completion callbacks, game time, state or battle changes",
+    "pause/change step/page/hidden/reduced-motion settle all figures; old guardian behavior exact"
+  ],
+  "normal": [
+    {
+      "id": 78,
+      "route": "courier",
+      "preparation": "existing guild projection via lootTransferPreparation using77source resetseed731, no paid edits"
+    },
+    {
+      "id": 79,
+      "route": "courier",
+      "preparation": "same projection; B free globalmain arcshot rear then shot rear; existing per-room overrides retained, no paid edits"
+    }
+  ],
+  "preserve": [
+    "actual failures, no-cast/no-ammo outcomes",
+    "all 33routes x2seeds731/732 full baseline reports",
+    "7full prior states/configs/reports zero exclusions",
+    "native78/79 complete pre-animation reports",
+    "whole guild boundary allowing only actual ordinary rewards/history/firstproof, five frozen793208 and3plans/A exact"
+  ],
+  "adaptation": "all art/joints/choreography original project presentation; no new original-WoD rule or current-server claim",
+  "pending": "permanent supply economy unchanged",
+  "push": "validated stage branch only, main remains146 until149–151 appropriate milestone"
+}

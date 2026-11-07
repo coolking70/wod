@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "baseline": "4e928181abf5e151d54348e9068e7eb38727bf0c",
+  "tests": {
+    "full": {
+      "tests": 1383,
+      "pass": 1383,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    },
+    "ranger": {
+      "tests": 16,
+      "pass": 16,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-initial.tap"
+    },
+    "evidenceTool": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "storage.tap"
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 165,
+    "checkedReferences": 184,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 636,
+    "python": 2,
+    "failures": []
+  },
+  "browser": {
+    "passed": true,
+    "suites": 55,
+    "allFinalRuntime": true,
+    "directSuccessfulAttempt": 2,
+    "failedAttempt1Preserved": true,
+    "firstFailure": "test assumed outgoing miss in formal78, actual78and79 have none; selected real miss from fixed existing courier731 outside normal rewards",
+    "canonicalCampaign": "/workspace/wod-evidence/v147/browser-final/ranger-final-campaign.json",
+    "canonicalFourKeys": "/workspace/wod-evidence/v147/browser-final/ranger-final-four-raw-keys.json",
+    "ChromiumDesktop390TouchEmulationOnly": true
+  },
+  "sourceFilesChecked": 675,
+  "compatibility": {
+    "passed": true,
+    "priorStatesConfigsReports": 7,
+    "nativeStatesConfigsReports": 5,
+    "all33RoutesTwoSeeds": 66,
+    "all78FullJSONByteExactZeroExclusions": true,
+    "onlyOldDistFilesChanged": [
+      "dist/expedition-ui.mjs",
+      "dist/index.html"
+    ],
+    "guardianModuleAndCSSExact": true
+  },
+  "guildBoundary": {
+    "passed": true,
+    "allGuildFieldsExactAfterOnlyExplicitOrdinaryRewardsAndHistory": true,
+    "goldBefore": 8570,
+    "goldAfter": 8840,
+    "nextBefore": 78,
+    "nextAfter": 80,
+    "ordinaryGold": 270,
+    "ordinaryXPPerActive": 110,
+    "onlyWarehouseChange": "postbell+2 from actual courier drops",
+    "identityRolesEquipmentTrainingStoriesUnchanged": true,
+    "benchAWholeMemberUnchanged": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "all27ExistingFirstProofsUnchanged": true,
+    "normal78GuardianDownAndSurviveFailed": true,
+    "normal79SixAliveHerbsArrowsEmpty": true,
+    "history": "79..60; full old58/59 retained API-final, no archive erased or capacity expansion",
+    "sha256": "1affa69760ff1818f1174e61195b054d426ae79163fdd607a9f909e641c67462"
+  },
+  "presentation": {
+    "elevenPartsOneOriginalModel": true,
+    "originalGuardianModuleAndCSSExact": true,
+    "allOldRulesAssetsRewardsAndConfigSchemasUnchanged": true,
+    "noInventedHitsOrArrowInventory": true,
+    "allSpeedsAndReducedMotionAndPauseSettle": true,
+    "all78PreImplementationFullJSONByteExact": true
+  },
+  "storage": {
+    "format": "wod-checkpoint-stage/version1",
+    "allOriginalCheckpointZIPBytesRetained": true,
+    "allOriginalRawMetadataIndexed": true,
+    "temporaryCPRetirementOnlyAfterFullRestore": true,
+    "v144VerifiedDuplicateRawRetiredFiles": 1135,
+    "v144MeasuredTmpBytesReleased": 1892409344,
+    "allOldUniqueEvidenceRefsAndRecoveryChainsPreserved": true
+  },
+  "sourceBoundary": "R3 from project DEVELOPMENT_PLAN; all art/joints/timing are project-original, no new WoD mechanic/numeric or current-server claim",
+  "limits": [
+    "permanent supply economy still pending",
+    "no new skills/routes/settings or battle/storage changes",
+    "normal78guardian down/79six alive and herbs0 retained, cannot attribute outcome to art or isolated arcshot choice",
+    "only guardian and bow ranger vector samples, not final all-class art/3D/skin/audio",
+    "all old58/59 full reports kept after original20history truncation",
+    "main remains146; next evaluation149–151, no deployment/force/GC/prune"
+  ],
+  "pushAndRecovery": "Exact final commit/remote/main/restore in external delivery receipts; no self-reference SHA guess"
+}
