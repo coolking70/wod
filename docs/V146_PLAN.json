@@ -1,0 +1,142 @@
+{
+  "frozenBeforeImplementationAndResults": true,
+  "phase": "v146 hostile focus mark and legal coordinated targeting",
+  "core": "enemy-only low power mental single attack marks a surviving victim on hit; one live marked victim per attacking side, current+next round, no refresh while any live mark active, existing cleanse removes, sourceKOdoesNotUndo; only original eligible single max1 attacks prefer marker inside their same legal position/role group; melee cannot bypass line, AoE/position attacks unchanged, no damage/accuracy bonus; actual chosen before interception distinct from actual hit",
+  "skill": {
+    "id": "focuscall",
+    "name": "猎令指认",
+    "kind": "attack",
+    "type": "mental",
+    "primary": "cha",
+    "secondary": "wil",
+    "power": 0.35,
+    "cost": 5,
+    "requiresGear": "lute",
+    "max": 1,
+    "mode": "single",
+    "focusMark": true
+  },
+  "route": "markedhunt",
+  "room1": {
+    "id": "hunt-gate",
+    "enemies": [
+      {
+        "id": "hg-g",
+        "pos": "front",
+        "hp": 150,
+        "skill": "strike",
+        "level": 8,
+        "gear": "field"
+      },
+      {
+        "id": "hg-a",
+        "pos": "left",
+        "hp": 120,
+        "skill": "shot",
+        "level": 8,
+        "target": "center",
+        "gear": "bow"
+      },
+      {
+        "id": "hg-c",
+        "pos": "rear",
+        "hp": 150,
+        "skills": {
+          "focuscall": 8,
+          "spark": 6
+        },
+        "target": "healer,then sparkcenter",
+        "gear": "lute"
+      }
+    ]
+  },
+  "room2": {
+    "id": "hunt-court",
+    "enemies": [
+      {
+        "id": "hc-g",
+        "pos": "front",
+        "hp": 180,
+        "skill": "strike",
+        "level": 9,
+        "gear": "field"
+      },
+      {
+        "id": "hc-a",
+        "pos": "left",
+        "hp": 120,
+        "skill": "shot",
+        "level": 9,
+        "target": "center",
+        "gear": "bow"
+      },
+      {
+        "id": "hc-b",
+        "pos": "right",
+        "hp": 120,
+        "skill": "shot",
+        "level": 9,
+        "target": "center",
+        "gear": "bow"
+      },
+      {
+        "id": "hc-c",
+        "pos": "rear",
+        "hp": 180,
+        "skills": {
+          "focuscall": 9,
+          "spark": 6,
+          "guard": 6
+        },
+        "prep": "guardself",
+        "target": "healer,then sparkcenter",
+        "gear": "lute"
+      }
+    ]
+  },
+  "baseAttrs": {
+    "str": 13,
+    "con": 13,
+    "int": 13,
+    "dex": 15,
+    "cha": 10,
+    "agi": 12,
+    "per": 14,
+    "wil": 14
+  },
+  "callerAttrsOverrides": {
+    "cha": 18,
+    "agi": 16
+  },
+  "enemyMP": 80,
+  "budget": 30,
+  "supplies": {
+    "herb": 12,
+    "rune": 10,
+    "arrow": 8
+  },
+  "reward": {
+    "bonus": 60,
+    "xp": 25,
+    "firstGold": 40,
+    "firstXp": 10,
+    "pool": []
+  },
+  "normal": "actual145final8330 next76;76route defaults,77guardianfreeinterposefocus/prepinterposecenter+guardself,Dcleansecenter+wardcenter,Bpiercerear+shotrear; no paidtraining/recruit/equipment/role edits; preserve real results; ownE CON remains",
+  "confirmation": "zeroXP founders1,2,731,732 x defaults/counter3hero commands (guardianfreeinterposefocus), full8configs/reports, no victory tuning; multiple changes not isolatedcause/sameperhitRNG",
+  "compatibility": "no new player skills/gear/settings; old full states/reports byteexact zeroexclusions when no marks; fivefrozen793208chars unchanged",
+  "research": [
+    {
+      "url": "https://www.world-of-dungeons.de/ency/Konfiguration_-_Allgemein",
+      "support": "historical indexed configuration mentions no legal target in position and exhausted item fallback; direct502 not retried"
+    },
+    {
+      "url": "https://world-of-dungeons.de/ency/Kampfsystem_-_Nahkampf",
+      "support": "historical indexed melee positions matter; direct502 not retried"
+    }
+  ],
+  "researchLimit": "focusmark/effects/costs/rooms are entirely project adaptation, no currentDelta/official mark rule claim",
+  "cleanup": "only142/143acceptance2135files SHA/CRC exact duplicates retired; fullarchives,private6refs,allrecoverychains and143otherrechecks retained; exactrestoretool+samples",
+  "milestone": "freshfull1353+new tests,54browser,wholeg asset boundaries/offline restore; stagebranchpush then freshmain fetch/ancestor/worktree/diff gates, safe FF main only ifallpass; oldrefs retained noGC/prune/deploy, complete146bundle aftermain",
+  "commandMode": "focuscall uses existing round mode to recheck from first row each turn; repeated spark fallback must not trap the cursor after a mark expires"
+}

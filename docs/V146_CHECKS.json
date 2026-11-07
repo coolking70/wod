@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "baseline": "cadb23b2e842b3326b7dc2db15be7a680610fc99",
+  "tests": {
+    "full": {
+      "tests": 1367,
+      "pass": 1367,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-final.tap"
+    },
+    "focus": {
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-initial.tap"
+    },
+    "storage": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "storage.tap"
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 164,
+    "checkedReferences": 182,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 631,
+    "python": 2,
+    "failures": [],
+    "allFinalSourceContents": true,
+    "finalCatalogueScriptRechecked": [
+      "scripts/browser-v115.cjs",
+      "scripts/browser-v136.cjs",
+      "scripts/browser-v94.cjs",
+      "scripts/browser-v117.cjs",
+      "scripts/browser-v122.cjs",
+      "scripts/browser-v113.cjs",
+      "scripts/browser-v120.cjs",
+      "scripts/browser-v126.cjs"
+    ]
+  },
+  "browser": {
+    "passed": true,
+    "suites": 54,
+    "originalUnified53Pass1Fail": true,
+    "failed94RecheckedInFreshDirectory": true,
+    "preservedCheckpoints": 55,
+    "allFinalRuntime": true,
+    "directSuccessfulAttempt": 2,
+    "failedFirstAttemptPreserved": true,
+    "firstFullPass": 1362,
+    "firstFullFail": 5,
+    "firstFullFailure": "exact catalogue total96 changed to99; corrected exact assertions and reran full before claim",
+    "firstFailure": "test class typo focus-mark-badge, corrected actual focus-mark-tag; no runtime change",
+    "canonicalCampaign": "/workspace/wod-evidence/v146/browser-final/focus-final-campaign.json",
+    "canonicalFourKeys": "/workspace/wod-evidence/v146/browser-final/focus-final-four-raw-keys.json",
+    "ChromiumDesktop390TouchOnly": true
+  },
+  "sourceFilesChecked": 668,
+  "compatibility": {
+    "passed": true,
+    "completePriorStatesConfigsReports": 7,
+    "byteExactZeroFieldExclusions": true
+  },
+  "guildBoundary": {
+    "passed": true,
+    "allGuildFieldsExactAfterOnlyExplicitNormalRewardsAndBoundedHistory": true,
+    "goldBefore": 8330,
+    "goldAfter": 8570,
+    "nextBefore": 76,
+    "nextAfter": 78,
+    "ordinaryGold": 240,
+    "ordinaryXP": 100,
+    "warehouseUnchanged": true,
+    "benchAWholeMemberUnchanged": true,
+    "identityRolesEquipmentTrainingItemsStoriesUnchanged": true,
+    "onlyFreePreparationChoiceChangesNotPaidGuildEdits": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "oldProofs": 26,
+    "newProof": "markedhunt/survive77",
+    "afterProofs": 27,
+    "history": "77..58, old57 naturally truncated, full old56/57 kept in api-final/focus-history56 and57, old73/75 also preserved",
+    "sha256": "b39f04530b6176023ce8b278cf1af05b5a4db6217fc19565876414ab6ce2cfe8"
+  },
+  "confirmation": {
+    "predefinedInputs": 8,
+    "allSixAlive": true,
+    "threeHeroCounterChangesJointly": true,
+    "noAttributionOrGlobalSuperiorityClaim": true,
+    "zeroAndLateMarksPreserved": true,
+    "native76FiveAliveNoSurviveProof": true,
+    "native77SixAliveNoMarkSurvive77": true
+  },
+  "storage": {
+    "format": "wod-checkpoint-stage/version1",
+    "originalCheckpointZIPBytesRetained": true,
+    "allSourceModesMtimeNsIndexed": true,
+    "temporaryCPRetirementOnlyAfterFullRestoreProof": true,
+    "uniqueOldEvidenceRecoveryChainsRefsPreserved": true
+  },
+  "research": {
+    "historicalPrimaryIndexedDirection": [
+      "legal target before fallback",
+      "melee position restrictions"
+    ],
+    "liveBodies": "502, not retried or bypassed",
+    "currentDeltaVerified": false,
+    "allFocusMechanicsAndCostsAreAdaptation": true
+  },
+  "limits": [
+    "permanent supply economy still pending",
+    "no player skills or settings added",
+    "native counter shows no actual marks; no invented cleanse/interception benefit",
+    "all old56/57 full reports preserved after normal history truncation",
+    "main integration outcome is external receipt; no force, GC/prune, branch deletion or deployment"
+  ],
+  "pushMainAndRecovery": "Exact commit/remote/main/restore in external delivery receipts, no self-SHA guess"
+}

@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR,SKILLS,DEFENSES} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ markedhunt:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},
  sporegrove:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},
  pressurevault:{bonus:50,xp:20,firstGold:30,firstXp:10,pool:[]},
  evacuation:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},

@@ -1,3 +1,5 @@
+> v146新增猎令哨庭与敌方合法单体集火：原阵位/资格、心理防御、净化和物理援护仍实际结算，无新玩家设置。正式76C倒下，77六人，8570/next78；仅77首次生还，零标记/晚标记反例保留。见[实现](docs/V146_COORDINATED_FOCUS.md)、[交接](docs/HANDOFF_CLOUD_V146.md)。本轮完整门禁后按授权评估main；实际状态看交付集成收据。补给经济待决。
+
 > 当前阶段v0.145：雾孢温径与疾病耐病，见[交接](docs/HANDOFF_CLOUD_V145.md)、[实现与原版证据边界](docs/V145_DISEASE_DEFENCE.md)、[单份证据包恢复](docs/V145_EVIDENCE_PACKAGING.md)。阶段分支推送/main状态以交付收据为准。
 
 > 当前云端阶段 v0.144：调压潮炉与蓄能时序，见[交接](docs/HANDOFF_CLOUD_V144.md)及[实现/实玩限制](docs/V144_CHANNELED_CASTING.md)。main里程碑仍为143，阶段分支推送结果看交付收据。
