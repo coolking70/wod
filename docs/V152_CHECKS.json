@@ -1,0 +1,647 @@
+{
+  "passed": true,
+  "baseline": "a483ddfa894359c571b356332e07f845cde65869",
+  "tests": {
+    "baselineFull": {
+      "tests": 1433,
+      "pass": 1433,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "baseline-full.tap"
+    },
+    "fullFinal": {
+      "tests": 1452,
+      "pass": 1452,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    },
+    "newMentalCasesInsideFull": 19,
+    "retentionPythonCasesInsideOneNodeEntry": 21,
+    "initialHarnessFailuresPreserved": [
+      "specialized-initial-failed.tap: exact old lock message corrected, added no-mutation assertion",
+      "browser152-first-failed-draft-rank.log and browser-first-attempt1: raw draft starts0 not actual paid1, loop to3 then same strict assertions"
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 169,
+    "checkedReferences": 188,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "old696InputsCompared": true,
+    "declaredChanged": [
+      {
+        "path": "dist/expedition-data.mjs",
+        "beforeSHA256": "fc3c0ca69dcaa79ea1d6d53da02ee47f947d9849c512fa84070a131c36e6bd66",
+        "afterSHA256": "b05169b27e0f1612835180a13df8ed8b1f2e3cc79b49465ebac675cef3038d51"
+      },
+      {
+        "path": "dist/expedition-engine.mjs",
+        "beforeSHA256": "683f9bcb417604eb76376c7a09da6f0b9f7b4a343b47635a1718c8a82c5d775b",
+        "afterSHA256": "54be7a465e55361f5cadf7d2031a6405e2e1aa09cd3fcea18733a7c95d34399a"
+      },
+      {
+        "path": "dist/expedition-guild-ui.mjs",
+        "beforeSHA256": "8de39916b490a2f3cf730b2bfb0f2ef54fcf8952e64a6661b14c87e1a277cef7",
+        "afterSHA256": "3bef365255c34cdacbaaac1fdd78ed77da076220692e1fdde76d099f1302184f"
+      },
+      {
+        "path": "dist/expedition-review.mjs",
+        "beforeSHA256": "24d3de58cee27f3b0a446b86160fa2cfc2c494300ba4b32bd129d74a34ad0b49",
+        "afterSHA256": "5d582a92ad1e470675b297aa28dbf0504b8759ed4b86acf2ee058772379c3c69"
+      },
+      {
+        "path": "dist/expedition-ui.mjs",
+        "beforeSHA256": "94436e9ca24758c2f60189ad08173c2b34dbdb249db97518271a88a2cb0e3b35",
+        "afterSHA256": "f861de56a95c9a15e151ba8eb40e980ee3434ec544ccbfdb41b24fb1e2b2d167"
+      },
+      {
+        "path": "dist/expedition.css",
+        "beforeSHA256": "e4d5066403190acf22e5445d6d4c49de782b754a6ce71a7805199e86c6bcab91",
+        "afterSHA256": "a3e4755545ec3493262a134c8c611a560f795c0a823565f0457909dc9c3fd524"
+      },
+      {
+        "path": "scripts/run-browser-acceptance.mjs",
+        "beforeSHA256": "1e773a07c9a4ef4f927ed162cfe3a798be00e828dd533a15c8650492dcfb2832",
+        "afterSHA256": "0fb5610954e4ac5c49d57a1728967af66e69e22f136d3e4131da2777db0ceede"
+      }
+    ],
+    "otherOld689InputsExact": true,
+    "otherOld195DistExact": true,
+    "noOldSkillCostsStatsEnemyTemplatesOrAssetsChanged": true
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 657,
+    "python": 4,
+    "failures": []
+  },
+  "sourceFilesChecked": 702,
+  "browser": {
+    "passed": true,
+    "existingSuites": 58,
+    "newSuite152": true,
+    "total": 59,
+    "noCoverageReduction": true,
+    "firstNewSuiteAlsoPassed": true,
+    "allFinalSource": true,
+    "ChromiumDesktop390TouchEmulationOnly": true,
+    "realTrainRefundDraftIsolationPerRoomPaymentHistorySavedPlanAndCampaignRestore": true,
+    "canonicalFourKeysExactFirstAndFinalAcceptance": true
+  },
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONByteExactZeroExclusions": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "oldBaselineDependency": {
+    "version": 149,
+    "archiveSHA256": "82419463c1437fce3af416ff7c83685f950e3f91e04f881cc195b00af0759835",
+    "originalFullBaselineReferencedWithoutDuplicateBytes": true
+  },
+  "nativeContinuation": {
+    "passed": true,
+    "formalSourceFrom1519310Next86": true,
+    "normal": [
+      {
+        "id": 86,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          5
+        ],
+        "supplies": {
+          "herb": 4,
+          "rune": 3,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 90,
+          "xp": 40,
+          "firstClear": false,
+          "loot": [
+            "calmribbon"
+          ]
+        },
+        "defenses": [
+          {
+            "eventId": 40,
+            "roomIndex": 0,
+            "round": 1,
+            "attackType": "mental",
+            "skill": "composure",
+            "mean": 97,
+            "roll": 90,
+            "cost": 2,
+            "level": 10,
+            "primary": "wil",
+            "primaryValue": 17,
+            "secondary": "cha",
+            "secondaryValue": 20,
+            "reason": null,
+            "independent": true
+          },
+          {
+            "eventId": 121,
+            "roomIndex": 0,
+            "round": 3,
+            "attackType": "mental",
+            "skill": "composure",
+            "mean": 97,
+            "roll": 88,
+            "cost": 2,
+            "level": 10,
+            "primary": "wil",
+            "primaryValue": 17,
+            "secondary": "cha",
+            "secondaryValue": 20,
+            "reason": null,
+            "independent": true
+          }
+        ]
+      },
+      {
+        "id": 87,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          5,
+          5
+        ],
+        "supplies": {
+          "herb": 4,
+          "rune": 3,
+          "arrow": 0
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 90,
+          "xp": 40,
+          "firstClear": false,
+          "loot": [
+            "calmribbon"
+          ]
+        },
+        "defenses": [
+          {
+            "eventId": 37,
+            "roomIndex": 0,
+            "round": 1,
+            "attackType": "mental",
+            "skill": "composure",
+            "mean": 97,
+            "roll": 117,
+            "cost": 2,
+            "level": 10,
+            "primary": "wil",
+            "primaryValue": 17,
+            "secondary": "cha",
+            "secondaryValue": 20,
+            "reason": null,
+            "independent": true
+          },
+          {
+            "eventId": 75,
+            "roomIndex": 0,
+            "round": 2,
+            "attackType": "melee",
+            "skill": "natural",
+            "mean": 49,
+            "roll": 45,
+            "cost": 0,
+            "level": 0,
+            "primary": "dex",
+            "primaryValue": 9,
+            "secondary": "agi",
+            "secondaryValue": 8,
+            "reason": null,
+            "independent": false
+          },
+          {
+            "eventId": 113,
+            "roomIndex": 0,
+            "round": 3,
+            "attackType": "melee",
+            "skill": "natural",
+            "mean": 49,
+            "roll": 46,
+            "cost": 0,
+            "level": 0,
+            "primary": "dex",
+            "primaryValue": 9,
+            "secondary": "agi",
+            "secondaryValue": 8,
+            "reason": null,
+            "independent": false
+          },
+          {
+            "eventId": 258,
+            "roomIndex": 1,
+            "round": 1,
+            "attackType": "mental",
+            "skill": "natural",
+            "mean": 89,
+            "roll": 69,
+            "cost": 0,
+            "level": 0,
+            "primary": "wil",
+            "primaryValue": 17,
+            "secondary": "int",
+            "secondaryValue": 32,
+            "reason": null,
+            "independent": true
+          },
+          {
+            "eventId": 298,
+            "roomIndex": 1,
+            "round": 2,
+            "attackType": "mental",
+            "skill": "natural",
+            "mean": 89,
+            "roll": 64,
+            "cost": 0,
+            "level": 0,
+            "primary": "wil",
+            "primaryValue": 17,
+            "secondary": "int",
+            "secondaryValue": 32,
+            "reason": null,
+            "independent": true
+          }
+        ]
+      }
+    ],
+    "canonicalFilesSHA256": {
+      "/workspace/wod-evidence/v152/browser-final/mentaldef-final-campaign.json": "d834df60382f6f6221941a250fb8dc6b7de48a512b4fec5f6e4d53764709b824",
+      "/workspace/wod-evidence/v152/browser-final/mentaldef-final-four-raw-keys.json": "6890285d9e12b318232823bf31488b0e383b423925c19f6094f9c115b7fecb71"
+    },
+    "canonicalFinalConfigExactAPI_final_source": true,
+    "draftTraining0AndActualPaidGuildRank1DeliberatelySeparate": true
+  },
+  "finiteExperiments": {
+    "initialSixDraftInputsRetained": true,
+    "initialIntendedActualAssetPlanNotMetByThoseSix": true,
+    "sixAdditionalActualInputsDeclaredBeforeExecution": true,
+    "actual": {
+      "passed": true,
+      "sourceExactFirstPendingActualConfig": true,
+      "sixPredeclaredActualInputs": true,
+      "originalSixDraftInputsRetainedSeparately": true,
+      "paidComposureRank": 1,
+      "rows": [
+        {
+          "seed": 731,
+          "choice": "composure",
+          "won": true,
+          "alive": 6,
+          "rounds": [
+            5,
+            4
+          ],
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          },
+          "mental": []
+        },
+        {
+          "seed": 731,
+          "choice": "resist",
+          "won": true,
+          "alive": 6,
+          "rounds": [
+            5,
+            4
+          ],
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          },
+          "mental": []
+        },
+        {
+          "seed": 731,
+          "choice": "natural",
+          "won": true,
+          "alive": 6,
+          "rounds": [
+            5,
+            4
+          ],
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          },
+          "mental": []
+        },
+        {
+          "seed": 732,
+          "choice": "composure",
+          "won": true,
+          "alive": 6,
+          "rounds": [
+            5,
+            5
+          ],
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 0
+          },
+          "mental": [
+            {
+              "eventId": 28,
+              "roomIndex": 0,
+              "round": 1,
+              "skill": "composure",
+              "mean": 97,
+              "roll": 114,
+              "level": 10,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "cha",
+              "secondaryValue": 20
+            },
+            {
+              "eventId": 71,
+              "roomIndex": 0,
+              "round": 2,
+              "skill": "composure",
+              "mean": 97,
+              "roll": 88,
+              "level": 10,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "cha",
+              "secondaryValue": 20
+            },
+            {
+              "eventId": 125,
+              "roomIndex": 0,
+              "round": 3,
+              "skill": "composure",
+              "mean": 97,
+              "roll": 82,
+              "level": 10,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "cha",
+              "secondaryValue": 20
+            },
+            {
+              "eventId": 300,
+              "roomIndex": 1,
+              "round": 2,
+              "skill": "composure",
+              "mean": 97,
+              "roll": 96,
+              "level": 10,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "cha",
+              "secondaryValue": 20
+            }
+          ]
+        },
+        {
+          "seed": 732,
+          "choice": "resist",
+          "won": true,
+          "alive": 6,
+          "rounds": [
+            5,
+            5
+          ],
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 0
+          },
+          "mental": [
+            {
+              "eventId": 28,
+              "roomIndex": 0,
+              "round": 1,
+              "skill": "resist",
+              "mean": 79,
+              "roll": 93,
+              "level": 6,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 10
+            },
+            {
+              "eventId": 71,
+              "roomIndex": 0,
+              "round": 2,
+              "skill": "resist",
+              "mean": 79,
+              "roll": 72,
+              "level": 6,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 10
+            },
+            {
+              "eventId": 125,
+              "roomIndex": 0,
+              "round": 3,
+              "skill": "resist",
+              "mean": 79,
+              "roll": 67,
+              "level": 6,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 10
+            },
+            {
+              "eventId": 300,
+              "roomIndex": 1,
+              "round": 2,
+              "skill": "resist",
+              "mean": 101,
+              "roll": 100,
+              "level": 6,
+              "cost": 2,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 32
+            }
+          ]
+        },
+        {
+          "seed": 732,
+          "choice": "natural",
+          "won": true,
+          "alive": 6,
+          "rounds": [
+            5,
+            5
+          ],
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 0
+          },
+          "mental": [
+            {
+              "eventId": 28,
+              "roomIndex": 0,
+              "round": 1,
+              "skill": "natural",
+              "mean": 67,
+              "roll": 79,
+              "level": 0,
+              "cost": 0,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 10
+            },
+            {
+              "eventId": 71,
+              "roomIndex": 0,
+              "round": 2,
+              "skill": "natural",
+              "mean": 67,
+              "roll": 61,
+              "level": 0,
+              "cost": 0,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 10
+            },
+            {
+              "eventId": 123,
+              "roomIndex": 0,
+              "round": 3,
+              "skill": "natural",
+              "mean": 67,
+              "roll": 68,
+              "level": 0,
+              "cost": 0,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 10
+            },
+            {
+              "eventId": 285,
+              "roomIndex": 1,
+              "round": 2,
+              "skill": "natural",
+              "mean": 89,
+              "roll": 111,
+              "level": 0,
+              "cost": 0,
+              "primary": "wil",
+              "primaryValue": 17,
+              "secondary": "int",
+              "secondaryValue": 32
+            }
+          ]
+        }
+      ]
+    },
+    "noGlobalWinRateOrUpgradeClaim": true
+  },
+  "reportArchiveRoundtrip": {
+    "passed": true,
+    "scope": "Fresh isolated in-memory copies without original archive entries solely to test new-report encoding/schema, not a capacity change or user incident. Canonical and source files unchanged.",
+    "rows": [
+      {
+        "id": 86,
+        "passed": true,
+        "sourcePath": "/workspace/wod-evidence/v152/browser-first-attempt1/mentaldef-desktop.json",
+        "sourceSHA256Unchanged": "06ab4c9a91e00360b26ded93da5cc379e1c6620ab3b120cf4d44cff583f4e1b6",
+        "originalReportCompactSHA256": "b3dbc1194bf6cc8542b2b2ad2dd5b71d9063ee705520a9c11eb9dbf25dc7eda0",
+        "allFieldsAndOrderExactAfterThaw": true,
+        "snapshotEncoding": "gzip-units-v1-base64",
+        "encodedChars": 47064,
+        "testCopyOnlyOriginalFiveRetained": true
+      },
+      {
+        "id": 87,
+        "passed": true,
+        "sourcePath": "/workspace/wod-evidence/v152/browser-first-attempt1/mentaldef-final.json",
+        "sourceSHA256Unchanged": "e0e64a800313499aee51299393dd43c0b7a8899591b00443223dc47fd057e5a6",
+        "originalReportCompactSHA256": "bdbfbdb85207840823a8f339805d56a5243789219617b3a19b2782ac57feddf7",
+        "allFieldsAndOrderExactAfterThaw": true,
+        "snapshotEncoding": "gzip-units-v1-base64",
+        "encodedChars": 45724,
+        "testCopyOnlyOriginalFiveRetained": true
+      }
+    ]
+  },
+  "nativeState": {
+    "gold": 9490,
+    "next": 88,
+    "ownHero": "e",
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "recruited": 7,
+    "catalogue": 9,
+    "frozenEntries": 5,
+    "encodedChars": 793208,
+    "plans": 3,
+    "composurePaidRank": 1,
+    "heroAvailableXP": 4045,
+    "canonicalNativeFourKeys": "/workspace/wod-evidence/v152/browser-final/mentaldef-final-four-raw-keys.json",
+    "canonicalNativeCampaign": "/workspace/wod-evidence/v152/browser-final/mentaldef-final-campaign.json"
+  },
+  "retention": {
+    "useVerified150FullMastersPhysicalProofThenRetireDuplicates": true,
+    "allOldPrimaryUniqueEvidenceSixRefsAndProtectedRecoveryChainsKept": true,
+    "recoveryChain": [
+      "149complete",
+      "150incremental",
+      "151incremental",
+      "152incremental"
+    ],
+    "finalRetirementAndMilestoneIndependentFullBundleStatusInChecksummedDeliveryReceipts": true
+  },
+  "mainIntegration": "152full milestone eligible after exact source, latest remote, all gates and cold source/evidence recovery. Actual result in external main-integration.json; not assumed here.",
+  "limits": [
+    "Only historical official2012 index direction, body403 no retry/bypass; not currentDelta verification",
+    "Name access formula base6 costs2MP20/40/60XP and existing natural formula are prototype adaptations",
+    "Normal86second room did not target E mentally; no claimed non-trigger contribution",
+    "Six initial draft experiments not actual guild assets; preserved and separate from added actual six",
+    "Different natural seeds and same-seed diverging random call paths do not establish global efficiency",
+    "Other browser engines and real devices not tested",
+    "Permanent supply economy pending; no force/GC/prune/deployment; old143export time/ID gap not claimed repaired"
+  ],
+  "pushRecoveryAndMainResults": "Exact commit/remote/main/recovery/retirement in checksummed external delivery receipts"
+}

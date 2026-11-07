@@ -8,6 +8,7 @@ import {validateManaFloor,manaFloorCheck} from './expedition-mana-floor.mjs';
 import {validateWardLinks,wardEffects,wardRecipients,WARD_RULE} from './expedition-linked-wards.mjs';
 import {coatingRecipient,activeCoating,coatedHit} from './expedition-weapon-coating.mjs';
 import {validateInitiative,validateEnemyInitiative,initiativeProfile} from './expedition-initiative.mjs';
+import {validateMentalDefense,independentMentalDefense} from './expedition-mental-defense.mjs';
 import {validateHealthPhases,nextHealthPhase,applyHealthPhase} from './expedition-health-phases.mjs';
 import {damageTypeOf,damageChannelTrace} from './expedition-damage-channel.mjs';
 import {manaDamageResult,manaSelection,MANA_DAMAGE_RULE} from './expedition-mana-damage.mjs';
@@ -60,8 +61,9 @@ function validatePlan(h,t){
  if(h.healing)validateGroupAid(h.healing,t);
  if(!h.healing||!['lowest','self_first'].includes(h.healing.priority??'lowest')||typeof h.healing.enabled!=='boolean'||![.5,.65,.8].includes(h.healing.threshold)||![...Object.keys(POS),'all','self'].includes(h.healing.target)||(h.healing.enabled&&!t.skills.includes('heal')))throw Error('治疗设置不合法');
  if(!h.itemPolicy||typeof h.itemPolicy.enabled!=='boolean'||![.3,.5,.7].includes(h.itemPolicy.threshold))throw Error('道具使用策略无效');
- if(!h.defenses||Object.keys(h.defenses).length!==3)throw Error('防御配置无效');
+ if(!h.defenses||Array.isArray(h.defenses)||['melee','ranged','magic'].some(k=>!Object.hasOwn(h.defenses,k))||Object.keys(h.defenses).some(k=>!['melee','ranged','magic','mental'].includes(k)))throw Error('防御配置无效');
  for(const type of Object.keys(DEFENSE_TYPES))if(!DEFENSES[h.defenses[type]]?.types.includes(type))throw Error('防御技能与攻击类型不匹配');
+ validateMentalDefense(h.defenses,DEFENSES);
 }
 export function validate(c){
  validateObjective(c);validateWithdrawal(c);
@@ -91,7 +93,7 @@ export function skillBreakdown(u,sid){const training=u.training?.['skill:'+sid]|
 export function mean(u,sid){const s=SKILLS[sid];return 2*current(u,s.primary)+current(u,s.secondary)+2*skillLevel(u,sid);}
 export function defenseProfile(u,type){
  if(type==='disease')return diseaseDefense(u,current,Boolean(equipmentTotals(u.gear).ranks));
- const requested=u.defenses?.[type==='mental'?'magic':type]||'natural',chosen=DEFENSES[requested];
+ const independent=type==='mental'&&independentMentalDefense(u),requested=u.defenses?.[type==='mental'&&!independent?'magic':type]||'natural',chosen=DEFENSES[requested];
  let reason=null;
  if(!chosen||!chosen.types.includes(type))reason='类型不匹配';
  else if(chosen.gear&&!gearSupports(u.gear,chosen.gear))reason='缺少盾牌（需携盾武器）';
@@ -100,7 +102,7 @@ export function defenseProfile(u,type){
  const [primary,secondary]=skill==='natural'?(type==='melee'?['dex','agi']:['magic','mental'].includes(type)?['wil','int']:['agi','per']):[d.primary,d.secondary];
  const training=skill==='natural'?0:u.training?.['defense:'+skill]||0,specialization=skill==='natural'?0:u.defenseFocus===skill?3:0,temporaryLevel=skill==='natural'?0:current(u,'defenseSkill'),equipment=skill==='natural'?0:equipmentRank(u.gear,'defense:'+skill),level=skill==='natural'?0:6+specialization+training+equipment+temporaryLevel;
  const base=2*current(u,primary)+current(u,secondary)+2*level;
- return {requested,skill,name:d.name,reason,level,training,specialization,...(equipmentTotals(u.gear).ranks?{equipment}:{}),temporaryLevel,cost:d.cost,primary,secondary,primaryValue:current(u,primary),secondaryValue:current(u,secondary),base,bonus:current(u,'defense'),mean:base+current(u,'defense')};
+ return {requested,skill,name:d.name,reason,level,training,specialization,...(equipmentTotals(u.gear).ranks?{equipment}:{}),temporaryLevel,cost:d.cost,primary,secondary,primaryValue:current(u,primary),secondaryValue:current(u,secondary),base,bonus:current(u,'defense'),mean:base+current(u,'defense'),...(independent?{mentalDefense:{selection:'independent',requested,name:chosen?.name||requested}}:{})};
 }
 export function chooseTargets(actor,units,s,target,rng=()=>0,command={}){
  if(s.kind==='transfer')return manaRecipients(actor,units,target).slice(0,1);
@@ -272,7 +274,7 @@ export function simulate(c,options={}){
      emit('mana-damage',u.name+' → '+t.name+'：'+grade+'，实际削减 '+hit.actual+' 法力（生命不变）',u.id,[t.id],{cast,skill:r.skill,attackType:s.type,...(damageChannelTrace(s)?{damageType:damageTypeOf(s),damageChannel:damageChannelTrace(s)}:{}),attackMean:m,attack,defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armor:0,resistance,...hit,hpBefore,hpAfter:t.hp,resource:'mp',formula:`floor(${rolled} × ${multiplier} × (1 − ${resistance}/100))，按防御支付后的剩余法力截断`,rule:MANA_DAMAGE_RULE,sources:effectTrace(u),targetSources:effectTrace(t)});continue;}
     const damageType=damageTypeOf(s),channel=damageChannelTrace(s);const base=current(u,s.primary)/2+current(u,s.secondary)/3+lv/2,rolled=grade==='闪避'?0:roll(base*s.power),armorBefore=current(t,'armor'),armorIgnored=damageType==='mental'?Math.max(0,armorBefore):Math.min(Math.max(0,armorBefore),s.ignoreArmor||0),armor=damageType==='mental'?0:armorBefore-armorIgnored,resistance=resistanceOf(t,damageType),mitigation=damageResult(rolled,multiplier,armor,resistance),primaryDamage=grade==='闪避'?0:mitigation.damage,coating=activeCoating(u,s),parts=coating?coatedHit({damageType,base,rolled,multiplier,armorBefore,armorIgnored,armor,resistance,...mitigation,damage:primaryDamage},coating,{multiplier,armorBefore,ignoreArmor:s.ignoreArmor||0,resistance:resistanceOf(t,'magic'),hp:t.hp}):null,damage=parts?parts.damage:primaryDamage,actual=parts?parts.actual:Math.min(t.hp,damage),beforeHp=t.hp;t.hp-=actual;
     if(stats[u.id]){stats[u.id].damage+=damage;stats[u.id].actual+=actual;stats[u.id].overkill+=damage-actual;if(s.disarm)stats[u.id].mechanismDamage=(stats[u.id].mechanismDamage||0)+actual;}
-    emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+(s.disarm?' 耐久拆解':' 伤害')+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,...(channel?{damageType,damageChannel:channel}:{}),...(s.disarm?{mechanismHit:true}:{}),...(interception?{interception}:{}),defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,...(s.type==='mental'&&!channel?{mentalRule:'心理攻击沿用法术栏防御；物理护甲不参与，只采用心理抗性。'}:{}),resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-primaryDamage,...(parts?{primaryDamage,damageParts:parts.damageParts}:{}),damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:parts?'各段 floor(max(0, 点数 × 同一命中倍率 − 该段护甲) × (1 − 该段抗性/100)) 之和；主段先按剩余生命截断':`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});const healthDamageEventId=sequence;
+    emit('attack',u.name+' → '+t.name+'：'+grade+(grade==='闪避'?'':'，'+damage+(s.disarm?' 耐久拆解':' 伤害')+(damage>actual?'（溢出 '+(damage-actual)+'）':'')),u.id,[t.id],{cast,skill:r.skill,attackMean:m,attack,attackType:s.type,...(channel?{damageType,damageChannel:channel}:{}),...(s.disarm?{mechanismHit:true}:{}),...(interception?{interception}:{}),defenseMean,defense,defenseProfile:profile,grade,skillLevel:lv,base,rolled,multiplier,armorBefore,armorIgnored,armor,...(s.type==='mental'&&!channel?{mentalRule:independentMentalDefense(t)?'心理攻击采用独立心理防御选择；物理护甲不参与，只采用心理抗性。':'心理攻击沿用法术栏防御；物理护甲不参与，只采用心理抗性。'}:{}),resistance,afterArmor:mitigation.afterArmor,unresisted:mitigation.unresisted,resistanceDelta:mitigation.unresisted-primaryDamage,...(parts?{primaryDamage,damageParts:parts.damageParts}:{}),damage,actual,overkill:damage-actual,hpBefore:beforeHp,hpAfter:t.hp,formula:parts?'各段 floor(max(0, 点数 × 同一命中倍率 − 该段护甲) × (1 − 该段抗性/100)) 之和；主段先按剩余生命截断':`floor(max(0, ${rolled} × ${multiplier} − ${armor}) × (1 − ${resistance}/100))`,sources:effectTrace(u),targetSources:effectTrace(t)});const healthDamageEventId=sequence;
     if(s.dispel){const removed=t.hp>0&&grade!=='闪避'?removableBuffs(t):[];if(removed.length){const attackEventId=events.at(-1).id;t.effects=t.effects.filter(e=>!removed.includes(e));emit('dispel',u.name+' 破除 '+t.name+' 的「'+removed[0].name+'」',u.id,[t.id],{cast,skill:r.skill,attackEventId,removed:removed.map(removedBuffRecord),rule:dispelRule(removed)});}else emit('dispel-skip',u.name+' 本次未破除增益',u.id,[t.id],{cast,skill:r.skill,attackEventId:events.at(-1).id,reason:t.hp<=0?'目标已倒下':grade==='闪避'?'本次法术被闪避':'没有可破除的技能增益',costAlreadyPaid:true,consumedAction:true});}
     if(t.hp===0){emit('down',t.name+(t.mechanism?' 已拆除。':' 倒下。'),u.id,[t.id],{cast,...(t.mechanism?{mechanism:true}:{} )});const downEventId=sequence;removeSummons(t.id,'主人倒下');if(t.mechanism)releaseWards(t,healthDamageEventId,downEventId);}
     else if(canApplyHealingBlock(s,grade,t)){

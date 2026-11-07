@@ -81,7 +81,7 @@ function format(key,value){
  if(['prep','main'].includes(key))return commandText(value);
  if(['prepOrder','roomOrder'].includes(key))return value.map(heroName).join(' → ');
  if(key==='automaticAction')return value?'开启':'关闭';
- if(key==='defenses')return Object.entries(DEFENSE_TYPES).map(([k,label])=>label+'：'+DEFENSES[value[k]].name).join('；');
+ if(key==='defenses')return Object.entries(DEFENSE_TYPES).map(([k,label])=>(k==='magic'&&Object.hasOwn(value,'mental')?'法术':label)+'：'+DEFENSES[value[k]].name).join('；')+(Object.hasOwn(value,'mental')?'；心理：'+DEFENSES[value.mental].name:'');
  if(key==='healing')return `${HEAL_PRIORITIES[value.priority||'lowest']} / ${value.enabled?'开启':'关闭'} / ${value.threshold*100}% / ${POS[value.target]||({all:'全队',self:'自身'}[value.target])}${groupAidLabel(value)}`;
  if(key==='itemPolicy')return `${value.enabled?'开启':'关闭'} / ${value.threshold*100}%`;
  const lookup={advancement:ADVANCEMENTS,pos:POS,gear:GEAR,trained:SKILLS,attribute:ATTR,defenseFocus:DEFENSES,item:ITEMS,expedition:EXPEDITIONS}[key];

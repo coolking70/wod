@@ -1,0 +1,56 @@
+{
+  "stage": "0.152",
+  "base": "a483ddfa894359c571b356332e07f845cde65869",
+  "scope": "Independent optional mental defence with ordinary train/refund, per-room planning, real payment and readable combat evidence",
+  "productValue": "Choose mental protection separately from spell protection and invest real earned XP; WIL/CHA option gives actual class-attribute tradeoff without locking ordinary skills or introducing late advancement",
+  "implementation": [
+    "Keep follow-spell as existing default; optional defenses.mental selects natural/resist/composure, absence means follow magic",
+    "New ordinary defence composure (定心自守):WIL2+CHA+skill2,2MP per incoming mental attack, base6 plus existing free-focus/training/equipment/temporary contributions. All numeric choices are project adaptation.",
+    "Existing natural defence formula unchanged; this is not complete original natural-parade or class-specific defence reproduction",
+    "Freely train/refund new defence at existing20/40/60XP ranks, independent from resist and other ordinary skills; no free rank grants",
+    "Whole per-room defence override, draft/guild/plan/diff/campaign preservation; explicit return to follow spell deletes optional key",
+    "Use attack type, not damage channel; insufficientMP falls back to existing natural defence, no action or additional RNG",
+    "Show actual selected/fallback skill, weights/rank sources/roll/payment in read-only report evidence",
+    "Complete normal86/87 continuation from native151; retain all outcomes including any non-trigger/failure, no reroll/enemy tuning",
+    "Full Node, all58previous browsers plus152,78old completeJSON zero exclusions if unchanged-default design holds, focused meaningful tests",
+    "152complete milestone main evaluation: fetch latest origin, full integration/source/evidence/data gates, no force/overwrite/deploy; only delete redundant branches after proving merged and recoverable without unique data"
+  ],
+  "reference": {
+    "date": "2026-11-07",
+    "url": "https://world-of-dungeons.de/ency/Kampfsystem_-_Abwehr_von_Angriffen",
+    "searchIndex": "Official historical2012-08-30 index lists social parades separate from magic and bard Narrenfreiheit withWIL/CHA",
+    "bodyAttempt": "403 Forbidden, no retry/bypass",
+    "boundary": "Historical indexed direction only, not currentDelta verification; name/access/formula/base rank/cost/natural fallback all project adaptation"
+  },
+  "pending": "permanent supply economy; no implementation",
+  "budget": {
+    "beforeMainFree": 3188916224,
+    "beforeTmpFree": 7465435136,
+    "previous58PeakPlusReserve": 2820929205
+  },
+  "recovery": "149complete+150incremental+151incremental prior chain protected,6retained refs preserved; current stage source/evidence recovery before integration and cleanup",
+  "controlledFiniteInputs": {
+    "declaredBeforeExecution": true,
+    "seeds": [
+      731,
+      732
+    ],
+    "choices": [
+      "composure",
+      "resist",
+      "natural"
+    ],
+    "sameActualTrainedAssetsAndCommands": true,
+    "sameFreeDefenseFocus": "composure",
+    "onlyIndependentMentalChoiceChanges": true,
+    "scope": "6 finite experimental inputs, not global win-rate or original rule calibration"
+  },
+  "executionClarification": {
+    "originalDeclaredSixActualAssetIntentNotMetInitially": true,
+    "initialSixDirectDraftInputsRetained": true,
+    "additionalSixActualGuildInputsDeclaredSeparatelyBeforeExecution": "/workspace/wod-evidence/v152/actual-experiments-plan.json",
+    "actualConfigVerifiedExactFirstPending": true,
+    "finalEvidence": "/workspace/wod-evidence/v152/actual-experiments/RESULT.json",
+    "originalEvidencePLANNotRewritten": true
+  }
+}
