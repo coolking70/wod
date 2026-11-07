@@ -1,3 +1,5 @@
+> v157新增原创蓄潮盾库与法力护盾，真实防御支付后消耗余蓝吸收直接伤害；原断流/潮蚀提供不同攻略代价。正常96/97六人生还至10780/next98；见[V157](V157_MANA_SHIELDS.md)。阶段分支验证后推送，main仍155、完整集成窗口158–160，补给经济待决。
+
 > v156探索入口与可持续留存完成度以[V156实现](V156_EXPLORATION_INDEX.md)、[检查](V156_CHECKS.json)、[交接](HANDOFF_CLOUD_V156.md)及外部收据为准。
 
 > v155归岸证词与完整集成门禁：见[V155实现](V155_HOMECOMING_TESTIMONY.md)、[检查](V155_CHECKS.json)、[交接](HANDOFF_CLOUD_V155.md)。main是否集成以外部收据为准；不部署，补给待决。

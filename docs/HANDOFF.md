@@ -1,3 +1,5 @@
+> v157新增原创蓄潮盾库与法力护盾，真实防御支付后消耗余蓝吸收直接伤害；原断流/潮蚀提供不同攻略代价。正常96/97六人生还至10780/next98；见[V157](V157_MANA_SHIELDS.md)。阶段分支验证后推送，main仍155、完整集成窗口158–160，补给经济待决。
+
 > 当前优先看[HANDOFF_CLOUD_V156](HANDOFF_CLOUD_V156.md)，规范10540/next96，feature/v156-exploration-index；main保持155，窗口158–160，补给待决。
 
 > 当前接续优先看[HANDOFF_CLOUD_V155](HANDOFF_CLOUD_V155.md)；feature/v155-homecoming-testimony，规范10170/next94，主线状态与门禁见交付收据。

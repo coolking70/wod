@@ -1,0 +1,21 @@
+{
+  "stage": 157,
+  "base": "eca1d8dc90fef922ede27f3d0f032e2836d0e4c0",
+  "scope": "Reusable authored enemy mana shield, deterministic direct-health absorption after actual paid defence and mitigation, with ordered coating segments and real HP/MP/statistics evidence. New two-room finite shield vault, no new player skills/gear/courses/settings. Existing drain and corrosion alternatives.",
+  "normal": [
+    {
+      "id": 96,
+      "route": "manashield",
+      "profile": "direct"
+    },
+    {
+      "id": 97,
+      "route": "manashield",
+      "profile": "drain"
+    }
+  ],
+  "source": "Pinned actual156fourkeys, natural96/97 IDs; exploratory731/732 simulate explicit actual-asset configs, never formal depart overriding the seed",
+  "testing": "Full1559Node2workers;11affected complete GUI94/95/127/135/149/151/153/154/155/156/157;13originalCPs including failed149/151and complete reruns; exact35route/105goal-count assertions, full current64GUI at158–160main milestone",
+  "storage": "152complete+153through157increments, backup149complete+150through157increments; focused CP immutable master+strictplan/prove/dryrun before duplicate retirement;156separate maintenance snapshots unchanged",
+  "pending": "Permanent supply economy and real-server numeric calibration still undecided; no deployment"
+}
