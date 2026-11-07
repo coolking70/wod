@@ -147,3 +147,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .focus-mark-tag{border:1px solid #e3ac72;color:#ffcb91}.focus-mark-proof,.focus-target-proof{border-left:2px solid #dca168;padding:12px;margin:12px 0}
 
 .automatic-action-settings{border:1px solid #42646a;padding:12px;margin:10px 0}.automatic-action-settings label{display:flex;gap:8px;align-items:flex-start}.automatic-action-settings p,.automatic-action-proof p{overflow-wrap:anywhere}.automatic-action-proof{border-left:2px solid #90beb2;padding:12px;margin:12px 0}
+
+.automatic-preparation{padding:12px;border:1px solid #38595b;margin:12px 0}.automatic-preparation details{margin:8px 0}.automatic-preparation table{width:100%;font-size:.88em}.automatic-preparation th,.automatic-preparation td{white-space:normal;overflow-wrap:anywhere}.automatic-mechanism-candidate{border-left:3px solid #71b5ac;padding-left:10px}

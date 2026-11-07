@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "baseline": "3998f08c2f7c1794c217a6fe2ee73d2e64d86e9d",
+  "tests": {
+    "full": {
+      "tests": 1417,
+      "pass": 1417,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "full-initial.tap"
+    },
+    "automaticPlanning": {
+      "tests": 12,
+      "pass": 12,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "specialized-second.tap"
+    },
+    "evidenceTool": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "file": "storage.tap"
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 167,
+    "checkedReferences": 186,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "onlyOldRuntimeChanged": [
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-mechanisms-view.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css"
+    ],
+    "added": [
+      "dist/expedition-automatic-planning.mjs"
+    ],
+    "allEngineRulesDataEnemiesGearRewardsAssetsAndStorageModulesByteExact": true,
+    "noBattleRuleOrPayloadChange": true
+  },
+  "syntax": {
+    "passed": true,
+    "javascript": 646,
+    "python": 2,
+    "failures": []
+  },
+  "browser": {
+    "passed": true,
+    "suites": 57,
+    "allFinalRuntime": true,
+    "directAttempt3Passed": true,
+    "directFailures1And2Preserved": true,
+    "failureCauses": [
+      "ambiguous hidden guild/current planning mechanism selector, scoped to #intel",
+      "test assumed volley required bow; original catalogue declares bow for pierce, now checks declared requirement without changing rules"
+    ],
+    "contexts": 3,
+    "canonicalCampaign": "/workspace/wod-evidence/v149/browser-final/preparation-final-campaign.json",
+    "canonicalFourKeys": "/workspace/wod-evidence/v149/browser-final/preparation-final-four-raw-keys.json",
+    "ChromiumDesktop390TouchEmulationOnly": true
+  },
+  "sourceFilesChecked": 687,
+  "compatibility": {
+    "passed": true,
+    "all78FullJSONByteExactZeroExclusions": true,
+    "totalVerifiedFullJSON": 78,
+    "all33DefaultOffMechanismHTMLByteExact": true
+  },
+  "guildBoundary": {
+    "passed": true,
+    "allGuildFieldsExactAfterOnly180OrdinaryGold80XP2ClearsAndHistory": true,
+    "goldBefore": 8930,
+    "goldAfter": 9110,
+    "nextBefore": 82,
+    "nextAfter": 84,
+    "identityRolesEquipmentTrainingStoriesWarehouseAndBenchUnchanged": true,
+    "all27ExistingFirstProofsUnchanged": true,
+    "frozenEntries": 5,
+    "frozenEncodedChars": 793208,
+    "normal82SixRealAutomaticDisarms18MP": true,
+    "normal83SevenExplicitDisarms21MPZeroAutomatic": true,
+    "nativeSeeds82And83NotSingleVariableAttribution": true,
+    "history": "83..64; complete old62/63 retained API-final; no archive capacity change or collection"
+  },
+  "initialNewTests": {
+    "passed": 11,
+    "failed": 1,
+    "cause": "wrong test skill ID double replaced with catalogue sweep; course/cost assertions preserved"
+  },
+  "feature": {
+    "readOnlyNoRNGNoBattleStorageConfigChange": true,
+    "perRoomResolvedCommands": true,
+    "usesKnownRanksActualStandardCostAndStaticGear": true,
+    "paidAndConfiguredSkillsExcluded": true,
+    "noPredictionOfFutureTargetsManaStockSurvivalOrSelectedSkill": true,
+    "conditionalWaitWarningNotForeverProhibition": true,
+    "guildUsesReadinessActualAssetsAndManagedRoles": true,
+    "defaultOffMechanismViewsByteExact": 33
+  },
+  "storage": {
+    "format": "wod-checkpoint-stage/version1",
+    "v146VerifiedTemporaryRawFilesRetired": 1229,
+    "v146MeasuredTmpReleased": 1980846080,
+    "remoteRebuildableOldCodePackagesRetired": 16,
+    "codeLogicalBytesRetired": 357168039,
+    "codeMainMeasuredReleased": 355786752,
+    "privateOrUnmatchedCodePackagesKept": true,
+    "latest146Complete147148IncrementalAndSixRefsPreserved": true,
+    "allOriginalCPZIPBytesRetainedAndPhysicalRestoreRequiredBeforeTemporaryRetirement": true
+  },
+  "limits": [
+    "permanent supplies pending",
+    "no new WoD mechanism or parameter; original policy research boundary remains148",
+    "normal82/83 native seeds differ, no efficiency attribution",
+    "83 explicit disarm is not automatic; existing actual archive capacity793208/800000 unchanged",
+    "other browser engines and real devices not tested",
+    "main integration only after final gate/latest remote/clean safe ancestry; actual outcome in external integration.json",
+    "no force/GC/prune/deployment"
+  ],
+  "pushMainAndRecovery": "Exact final SHA, remote, main and complete restore in external delivery receipts, no self-reference guess"
+}
