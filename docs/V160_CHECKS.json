@@ -1,0 +1,588 @@
+{
+  "passed": true,
+  "baselineCommit": "af4101373bbb722bbafb1b8925fd4c0973513a85",
+  "Node": {
+    "tests": 1602,
+    "pass": 1602,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "initialFullNode": {
+    "tests": 1602,
+    "pass": 1596,
+    "fail": 6,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 20,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "targeted113Final": {
+    "tests": 113,
+    "pass": 113,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "browser": {
+    "passed": true,
+    "scope": "25affected complete suites, not all67current suites",
+    "versions": [
+      94,
+      95,
+      99,
+      113,
+      115,
+      116,
+      117,
+      120,
+      122,
+      126,
+      136,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ],
+    "originalCheckpointAttempts": 31,
+    "retainedFailedCatalogueAttempts": 6,
+    "allCPsDurableMainAsCompleted": true,
+    "new160Screens": [
+      {
+        "file": "holdout-assault-desktop.png",
+        "eventId": 173,
+        "room": 0,
+        "remaining": [
+          {
+            "id": "hqa",
+            "name": "栈桥追弩手",
+            "hp": 66,
+            "mp": 70
+          }
+        ],
+        "target": 3,
+        "completed": 3
+      },
+      {
+        "file": "holdout-shelter-mobile.png",
+        "eventId": 141,
+        "room": 0,
+        "remaining": [
+          {
+            "id": "hqg",
+            "name": "系缆守军",
+            "hp": 180,
+            "mp": 67
+          },
+          {
+            "id": "hqa",
+            "name": "栈桥追弩手",
+            "hp": 140,
+            "mp": 70
+          },
+          {
+            "id": "hqd",
+            "name": "催潮鼓手",
+            "hp": 100,
+            "mp": 57
+          }
+        ],
+        "target": 3,
+        "completed": 3
+      },
+      {
+        "file": "holdout-restored-mobile.png",
+        "eventId": 141,
+        "room": 0,
+        "remaining": [
+          {
+            "id": "hqg",
+            "name": "系缆守军",
+            "hp": 180,
+            "mp": 67
+          },
+          {
+            "id": "hqa",
+            "name": "栈桥追弩手",
+            "hp": 140,
+            "mp": 70
+          },
+          {
+            "id": "hqd",
+            "name": "催潮鼓手",
+            "hp": 100,
+            "mp": 57
+          }
+        ],
+        "target": 3,
+        "completed": 3
+      }
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 177,
+    "checkedReferences": 196,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 697,
+  "sourceInputs": 750,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-holdout.mjs",
+      "scripts/browser-v160.cjs",
+      "scripts/check-v160.mjs",
+      "scripts/fixtures/v160-preparation-state.json",
+      "scripts/holdout-cases.mjs",
+      "tests/holdout.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-adventure.mjs",
+      "dist/expedition-book-view.mjs",
+      "dist/expedition-camp-cycle.mjs",
+      "dist/expedition-data.mjs",
+      "dist/expedition-engine.mjs",
+      "dist/expedition-goal-data.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-loot.mjs",
+      "dist/expedition-objective-review.mjs",
+      "dist/expedition-settlement.mjs",
+      "dist/expedition-stage.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/browser-v113.cjs",
+      "scripts/browser-v115.cjs",
+      "scripts/browser-v117.cjs",
+      "scripts/browser-v120.cjs",
+      "scripts/browser-v122.cjs",
+      "scripts/browser-v126.cjs",
+      "scripts/browser-v136.cjs",
+      "scripts/browser-v143.cjs",
+      "scripts/browser-v144.cjs",
+      "scripts/browser-v145.cjs",
+      "scripts/browser-v146.cjs",
+      "scripts/browser-v147.cjs",
+      "scripts/browser-v148.cjs",
+      "scripts/browser-v149.cjs",
+      "scripts/browser-v151.cjs",
+      "scripts/browser-v156.cjs",
+      "scripts/browser-v94.cjs",
+      "scripts/browser-v95.cjs",
+      "scripts/browser-v99.cjs",
+      "scripts/check-v156.mjs",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs",
+      "tests/exploration-index.test.mjs",
+      "tests/mana-timeline.test.mjs",
+      "tests/v113.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs",
+      "tests/v120.test.mjs",
+      "tests/v94.test.mjs",
+      "tests/v95.test.mjs",
+      "tests/v99.test.mjs"
+    ],
+    "oldExact": 699,
+    "distExact": 195
+  },
+  "compatibility": {
+    "freshOldFullJSON": 92,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through101AllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 11390,
+    "next": 104,
+    "ownHero": "e",
+    "ownXP": 4825,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "normal": [
+      {
+        "id": 102,
+        "mode": "assault",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 1
+        },
+        "hp": 598,
+        "healing": 0,
+        "actual": 844,
+        "rooms": [
+          {
+            "mode": "held",
+            "target": 3,
+            "completed": 3,
+            "remaining": [
+              {
+                "id": "hqa",
+                "name": "栈桥追弩手",
+                "hp": 66,
+                "mp": 70
+              }
+            ]
+          },
+          {
+            "mode": "cleared",
+            "target": 4,
+            "completed": 4,
+            "remaining": []
+          }
+        ],
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 55,
+          "firstClear": true,
+          "loot": []
+        }
+      },
+      {
+        "id": 103,
+        "mode": "shelter",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 7,
+          "arrow": 8
+        },
+        "hp": 613,
+        "healing": 51,
+        "actual": 0,
+        "rooms": [
+          {
+            "mode": "held",
+            "target": 3,
+            "completed": 3,
+            "remaining": [
+              {
+                "id": "hqg",
+                "name": "系缆守军",
+                "hp": 180,
+                "mp": 67
+              },
+              {
+                "id": "hqa",
+                "name": "栈桥追弩手",
+                "hp": 140,
+                "mp": 70
+              },
+              {
+                "id": "hqd",
+                "name": "催潮鼓手",
+                "hp": 100,
+                "mp": 57
+              }
+            ]
+          },
+          {
+            "mode": "held",
+            "target": 4,
+            "completed": 4,
+            "remaining": [
+              {
+                "id": "hcg",
+                "name": "引航道拦路卫",
+                "hp": 210,
+                "mp": 70
+              },
+              {
+                "id": "hcm",
+                "name": "回潮术士",
+                "hp": 150,
+                "mp": 69
+              },
+              {
+                "id": "hca",
+                "name": "离岸弩手",
+                "hp": 130,
+                "mp": 70
+              }
+            ]
+          }
+        ],
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "fourPredeclaredConfirmations": [
+      {
+        "seed": 731,
+        "mode": "assault",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 1,
+          "arrow": 2
+        },
+        "hp": 612,
+        "healing": 0,
+        "actual": 871,
+        "rooms": [
+          {
+            "mode": "held",
+            "target": 3,
+            "completed": 3,
+            "remaining": [
+              {
+                "id": "hqa",
+                "name": "栈桥追弩手",
+                "hp": 39,
+                "mp": 70
+              }
+            ]
+          },
+          {
+            "mode": "cleared",
+            "target": 4,
+            "completed": 4,
+            "remaining": []
+          }
+        ]
+      },
+      {
+        "seed": 731,
+        "mode": "shelter",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 7,
+          "arrow": 8
+        },
+        "hp": 579,
+        "healing": 0,
+        "actual": 0,
+        "rooms": [
+          {
+            "mode": "held",
+            "target": 3,
+            "completed": 3,
+            "remaining": [
+              {
+                "id": "hqg",
+                "name": "系缆守军",
+                "hp": 180,
+                "mp": 67
+              },
+              {
+                "id": "hqa",
+                "name": "栈桥追弩手",
+                "hp": 140,
+                "mp": 70
+              },
+              {
+                "id": "hqd",
+                "name": "催潮鼓手",
+                "hp": 100,
+                "mp": 57
+              }
+            ]
+          },
+          {
+            "mode": "held",
+            "target": 4,
+            "completed": 4,
+            "remaining": [
+              {
+                "id": "hcg",
+                "name": "引航道拦路卫",
+                "hp": 210,
+                "mp": 70
+              },
+              {
+                "id": "hcm",
+                "name": "回潮术士",
+                "hp": 150,
+                "mp": 69
+              },
+              {
+                "id": "hca",
+                "name": "离岸弩手",
+                "hp": 130,
+                "mp": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seed": 732,
+        "mode": "assault",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 2,
+          "arrow": 2
+        },
+        "hp": 619,
+        "healing": 0,
+        "actual": 910,
+        "rooms": [
+          {
+            "mode": "cleared",
+            "target": 3,
+            "completed": 3,
+            "remaining": []
+          },
+          {
+            "mode": "cleared",
+            "target": 4,
+            "completed": 3,
+            "remaining": []
+          }
+        ]
+      },
+      {
+        "seed": 732,
+        "mode": "shelter",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 9,
+          "rune": 7,
+          "arrow": 8
+        },
+        "hp": 635,
+        "healing": 110,
+        "actual": 0,
+        "rooms": [
+          {
+            "mode": "held",
+            "target": 3,
+            "completed": 3,
+            "remaining": [
+              {
+                "id": "hqg",
+                "name": "系缆守军",
+                "hp": 180,
+                "mp": 67
+              },
+              {
+                "id": "hqa",
+                "name": "栈桥追弩手",
+                "hp": 140,
+                "mp": 70
+              },
+              {
+                "id": "hqd",
+                "name": "催潮鼓手",
+                "hp": 100,
+                "mp": 57
+              }
+            ]
+          },
+          {
+            "mode": "held",
+            "target": 4,
+            "completed": 4,
+            "remaining": [
+              {
+                "id": "hcg",
+                "name": "引航道拦路卫",
+                "hp": 210,
+                "mp": 70
+              },
+              {
+                "id": "hcm",
+                "name": "回潮术士",
+                "hp": 150,
+                "mp": 69
+              },
+              {
+                "id": "hca",
+                "name": "离岸弩手",
+                "hp": 130,
+                "mp": 70
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v160/browser-final/holdout-final-campaign.json": "792ab83acb61723e8d552f84d2712171c60bf79a0349fabafd59c42e5387314b",
+    "/workspace/wod-evidence/v160/browser-final/holdout-final-four-raw-keys.json": "1604f470567744632cd2e03590f16f87871f91ccd8b78e9931b7383d4d35d130"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "No full67GUI run at this minor stage; next complete milestone161–163.",
+    "Initial complete Node had6stale global35/105expectations; updated to36/108, all old rewards/proof/asset assertions kept, all failed outputs preserved.",
+    "First fixture156 preparation failed stale count; completed previous fixtures reused and partial156 kept, only separate156 regenerated.",
+    "New whole-report freeze test initially passed snapshot to entry API; corrected caller in isolated empty collection copy, production five archives unchanged.",
+    "Knight and DungeonGuide direct official bodies403, no retry/bypass; holdout rules/content are project original, not current-server reproduction.",
+    "Supply economy pending."
+  ],
+  "nextMainWindow": [
+    161,
+    163
+  ]
+}

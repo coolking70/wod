@@ -2,10 +2,10 @@ import {HOSPICE_GOALS,contractResult} from './expedition-contract.mjs';
 // Read-only projections of recorded outcomes; no simulation or random draws.
 export const SUPPLY_NAMES={herb:'药草',rune:'符纸',arrow:'箭矢'};
 export {GOALS} from './expedition-goal-data.mjs';
-import {GOALS} from './expedition-goal-data.mjs';
+import {GOALS,goalsFor} from './expedition-goal-data.mjs';
 export function settlementGoals(report){
  const values={clear:report.won,survive:report.won&&report.party.filter(u=>u.hp>0).length===6,reserve:report.won&&report.supplies.rune>=2&&report.supplies.arrow>=2};
- const contract=contractResult(report);return [...GOALS.map(g=>({...g,done:Boolean(values[g.id])})),...(contract?HOSPICE_GOALS.map(g=>({...g,done:contract[g.id]})):[])];
+ const contract=contractResult(report);return [...goalsFor(report.config).map(g=>({...g,done:Boolean(values[g.id])})),...(contract?HOSPICE_GOALS.map(g=>({...g,done:contract[g.id]})):[])];
 }
 export function supplyLedger(report){
  const rows=Object.entries(SUPPLY_NAMES).map(([key,name])=>({key,name,start:report.config.supplies[key],gained:0,spent:0,end:report.config.supplies[key]}));
