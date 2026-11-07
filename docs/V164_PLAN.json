@@ -1,0 +1,37 @@
+{
+  "version": "0.164",
+  "branch": "feature/v164-expedition-closure",
+  "base": "1c0e9f1c87b4a1b819fe408a6351314647a5793f",
+  "mainBefore": "e14e06707a5a08807df9495bfb501a95f5844d83",
+  "scope": [
+    "Actual frozen-reader alive-versus-participation defect",
+    "Solo preparation, paid retraining, owned set, real check failure, holdout, claim, backup and readonly archives",
+    "Complete71GUI/fullNode same-tree integration gate"
+  ],
+  "normalRuns": [
+    {
+      "id": 110,
+      "route": "lockpass",
+      "approach": "disarm",
+      "objective": "reserve"
+    },
+    {
+      "id": 111,
+      "route": "holdout",
+      "approach": "shelter",
+      "objective": "survive"
+    }
+  ],
+  "neverSearchForSuccess": true,
+  "canonicalFiveArchivesAndPlansUnchanged": true,
+  "mainIntegrationWindow": [
+    164,
+    166
+  ],
+  "supplyEconomyPending": true,
+  "futurePriority": [
+    "Full-flow playtesting",
+    "Evidence-based balance",
+    "Interface convergence"
+  ]
+}

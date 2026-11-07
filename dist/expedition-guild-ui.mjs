@@ -1,3 +1,4 @@
+import{archiveParticipationSource}from'./expedition-archive-participation.mjs';
 import{equipmentRequirementFailures,equipmentRequirementsView}from'./expedition-equipment-requirements.mjs';
 import{passagePreparationView,passageEvidenceView,PASSAGE_CHOICES}from'./expedition-passage.mjs';
 import{holdoutPreparationView}from'./expedition-holdout.mjs';
@@ -171,6 +172,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  if(b.dataset.archiveUse){const expected=raw,expectedConfig=JSON.stringify(getConfig());if(localStorage.getItem(GUILD_KEY)!==expected||localStorage.getItem(configKey)!==expectedConfig)throw Error('另一页面已修改公会或准备配置，请重新载入后再载入战术');b.disabled=true;openArchivedReport(g,Number(b.dataset.archiveUse)).then(({report})=>{if(localStorage.getItem(GUILD_KEY)!==expected||localStorage.getItem(configKey)!==expectedConfig)throw Error('读取期间公会或准备配置已变化，请重新打开');loadConfig(structuredClone(report.config),undefined,false,{overview:true});inform('已载入收藏时的战术；当前本人、职责、实际装备和培养保留，正式出征请重新核对。');}).catch(error=>inform('无法载入收藏战术：'+error.message)).finally(()=>{b.disabled=false;});return;}
  if(b.dataset.archiveRename){const id=Number(b.dataset.archiveRename);save(renameArchive(g,id,root.querySelector('#archive-name-'+id).value));render();inform('收藏名称已保存，冻结快照保持。');return;}
  if(b.dataset.archiveRemove){const id=Number(b.dataset.archiveRemove);if(!confirm('移除此收藏？可先导出完整快照；公会资产、普通履历和攻略记录保留。'))return;save(removeArchive(g,id));if(archiveReader?.id===id)archiveReader=null;render();inform('已移除此收藏，其他公会内容保留。');return;}
+ if(b.dataset.archiveStatusSource!==undefined){const source=Number(b.dataset.archiveStatusSource);if(!archiveReader||!archiveParticipationSource(archiveReader.report,archiveReader.index,source))throw Error('退出依据不在当前快照的已记录来源内');stepArchive(source);return;}
  if(b.dataset.archiveStep){if(!archiveReader)throw Error('请先打开收藏');const last=archiveReader.report.events.length-1,step=b.dataset.archiveStep;stepArchive(step==='first'?0:step==='last'?last:step==='prev'?Math.max(0,archiveReader.index-1):Math.min(last,archiveReader.index+1));return;}
 
  if(b.dataset.sparringRun){if(sparringStorageStale())throw Error('另一页面已修改公会或准备配置，请重新载入页面后演武');sparringTrial=personalSparring(g,getConfig(),sparringRival);sparringIndex=0;inform('个人演武已结算，可回看实际事件；没有正式出征或收益，公会与准备页保留。');renderSparring();return;}

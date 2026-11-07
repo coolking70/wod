@@ -1,3 +1,5 @@
+> v0.164 完成单人完整流程验收，修复冻结战报中投降/绕过/坚守存活者的状态表达与已发生来源跳转。总览和main/开发区分见[项目状态](docs/PROJECT_STATUS.md)，接续见[云端交接](docs/HANDOFF_CLOUD_V164.md)。完整71GUI及main实际整合结果以检查与交付收据为准。
+
 > v0.163 培养与配装条件；当前接续见[云端交接](docs/HANDOFF_CLOUD_V163.md)，阶段推送与main状态以交付收据为准。
 
 > v0.162 闸桥专业通行，当前接续见[云端交接](docs/HANDOFF_CLOUD_V162.md)；main集成与阶段推送以交付收据为准。
