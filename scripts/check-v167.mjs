@@ -1,0 +1,16 @@
+import fs from 'node:fs';import {resolve} from 'node:path';import assert from 'node:assert/strict';import {isDeepStrictEqual} from 'node:util';
+import {soloFlowMilestone} from './solo-flow-milestone-cases.mjs';
+const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v167');fs.mkdirSync(out,{recursive:true});
+const save=(k,v)=>fs.writeFileSync(resolve(out,'milestone-'+k+'.json'),JSON.stringify(v,null,2)),x=soloFlowMilestone();
+for(const k of ['start','afterAssignment','desktop','beforeEnding','storyFinal','learned','sourceBeforeCourse','installed','ledger','contextBefore','contextAfter','late','lateSource','lateHistory115'])save(k,x[k]);
+for(const [i,r] of x.runs.entries())for(const k of ['preparation','pending','report','reward','claimed'])save((i+1)+'-'+k,r[k]);
+assert.deepEqual(x.runs.map(r=>r.pending.pending.id),[1,2,3,4]);assert.ok(x.runs.every(r=>r.report.won));
+assert.deepEqual(x.runs.map(r=>r.reward.gold),[40,120,280,285]);assert.deepEqual(x.runs.map(r=>r.reward.xp),[10,45,120,100]);
+assert.equal(x.desktop.members.find(m=>m.id==='a').xp,35);assert.equal(x.storyFinal.gold,765);assert.equal(x.storyFinal.next,5);
+assert.equal(x.learned.members.find(m=>m.id==='a').xp,215);assert.equal(x.ledger.earned,275);
+const expected=structuredClone(x.storyFinal),m=expected.members.find(m=>m.id==='a');m.xp-=40;m.unlocked.push('rallyguard');assert.ok(isDeepStrictEqual(x.learned,expected),'Learning changes only the exact course fee and unlocked list');
+assert.equal(x.contextBefore['skill:rallyguard'].status,'unlisted');assert.equal(x.contextAfter['skill:rallyguard'].status,'explicit');
+assert.equal(x.contextAfter['skill:rallyguard'].entries.length,4);
+assert.equal(x.late.gold,12545);assert.equal(x.late.next,116);assert.equal(x.late.reportArchives.length,5);assert.equal(x.late.pending,null);
+save('playcheck',{passed:true,profile:'Independent fresh QA profile, never replaces the actual late campaign',normal:x.runs.map(r=>({id:r.pending.pending.id,route:r.route,seed:r.report.config.seed,won:r.report.won,alive:r.report.party.filter(u=>u.hp>0).length,reward:r.reward})),freshFinal:{gold:765,next:5,ownXP:215,earned:275,parry:1,advanced:'rallyguard',learningAloneInstallsNothing:true,explicitInstallRooms:4},canonicalLate:{gold:12545,next:116,unchanged:true},limits:'One predeclared fresh four-departure route. Fixed a hero and light story input exercise existing behavior; no tuning, server-rule claim or permanent supplies.'});
+console.log(JSON.stringify({passed:true,reports:4,newcomerGold:765,newcomerXP:215,earned:275,lateGold:x.late.gold,lateNext:x.late.next}));

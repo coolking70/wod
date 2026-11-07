@@ -1,0 +1,322 @@
+{
+  "passed": true,
+  "baselineCommit": "dcf877cb98d45e987ac321e40d7fc238456c95da",
+  "Node": {
+    "tests": 1662,
+    "pass": 1662,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 0,
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "All74 current complete suites on frozen167 source",
+    "total": 74,
+    "fullCurrentSuites": true,
+    "fullRegistrySize": 74,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "originalCheckpointAttempts": 76,
+    "allCPsDurableMainAsCompleted": true,
+    "new167Screens": [
+      "milestone-desktop-growth.png",
+      "milestone-mobile-pending.png",
+      "milestone-mobile-learned-unlisted.png",
+      "milestone-mobile-installed-course.png"
+    ],
+    "v160ImportedNumericFieldsRegressionRetained": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 183,
+    "checkedReferences": 202,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 730,
+  "sourceInputs": 790,
+  "runtimeDelta": {
+    "new": [
+      "scripts/browser-v167.cjs",
+      "scripts/check-v167.mjs",
+      "scripts/fixtures/v167-preparation-state.json",
+      "scripts/solo-flow-milestone-cases.mjs"
+    ],
+    "changedOld": [
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 783
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 106,
+    "actualReports": 100,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through115AllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 12545,
+    "next": 116,
+    "ownHero": "e",
+    "ownXP": 5290,
+    "berylXP": 2175,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "wholeFourKeysExact166": true,
+    "noNewFormalOrRewardInLateCampaign": true,
+    "normal112and113And115FailureNotRetconned": true
+  },
+  "newcomerQA": {
+    "passed": true,
+    "profile": "Independent fresh QA profile, never replaces the actual late campaign",
+    "normal": [
+      {
+        "id": 1,
+        "route": "tutorial",
+        "seed": 1,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 1,
+          "gold": 40,
+          "xp": 10,
+          "firstClear": true,
+          "loot": []
+        }
+      },
+      {
+        "id": 2,
+        "route": "classic",
+        "seed": 2,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 3,
+          "gold": 120,
+          "xp": 45,
+          "firstClear": true,
+          "loot": [
+            "reliquaryshield"
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "route": "chapter",
+        "seed": 3,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 6,
+          "gold": 280,
+          "xp": 120,
+          "firstClear": true,
+          "loot": [
+            "bellfocus"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "route": "harbor",
+        "seed": 4,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 4,
+          "gold": 285,
+          "xp": 100,
+          "firstClear": true,
+          "loot": [
+            "beaconrod"
+          ],
+          "harbor": {
+            "charts": 2,
+            "gold": 40,
+            "earned": [
+              "home"
+            ]
+          }
+        }
+      }
+    ],
+    "freshFinal": {
+      "gold": 765,
+      "next": 5,
+      "ownXP": 215,
+      "earned": 275,
+      "parry": 1,
+      "advanced": "rallyguard",
+      "learningAloneInstallsNothing": true,
+      "explicitInstallRooms": 4
+    },
+    "canonicalLate": {
+      "gold": 12545,
+      "next": 116,
+      "unchanged": true
+    },
+    "limits": "One predeclared fresh four-departure route. Fixed a hero and light story input exercise existing behavior; no tuning, server-rule claim or permanent supplies."
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v167/browser-final/milestone-final-campaign.json": "187839ff12d8cc16299a72a5a3c758e7a43df7ad376b9a8f0c4d9b5b2a3511b2",
+    "/workspace/wod-evidence/v167/browser-final/milestone-final-four-raw-keys.json": "3566248ef76424407afbd233acce6c81e720bc118e305330e29c8aa0b28fc829"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "QA milestone only; all gameplay, course thresholds, costs, rewards and balance unchanged project adaptations, no new original-server numeric claim.",
+    "Fixed fresh A and light route inputs, one four-departure trajectory; no global balance or all-class success conclusion.",
+    "Actual late four-key campaign kept separate and unchanged; the new QA profile does not replace it.",
+    "Initial newCLI property typo and preview hidden duplicate selector corrected with all failure evidence retained, no product or old assertion change.",
+    "Chromium desktop/390px touch emulation, not physical devices or other engines.",
+    "Main integration conditional on fresh remote ancestor and same-tested-tree gates; actual outcome in separate delivery receipts.",
+    "Permanent supply economy/fixed protagonist/multiplayer pending."
+  ],
+  "mainBefore": "6b6734d9ffd190b0c69bafcda647b2c54d774b75",
+  "nextMainWindowAfterSuccessfulIntegration": [
+    170,
+    172
+  ],
+  "runtimeCacheMaintenance": {
+    "passed": true,
+    "retired": [
+      {
+        "root": "/tmp/wod-v151-baseline-runtime",
+        "sourceCommit": "77ffda1128d864bef7ee7c2e409a0d953b3eeb0e",
+        "files": 200,
+        "bytes": 41479150
+      },
+      {
+        "root": "/tmp/wod-v152-baseline-runtime",
+        "sourceCommit": "a483ddfa894359c571b356332e07f845cde65869",
+        "files": 201,
+        "bytes": 41483821
+      },
+      {
+        "root": "/tmp/wod-v153-baseline-runtime",
+        "sourceCommit": "35ef897387d7a8960e6db653aa840c1ab7347646",
+        "files": 202,
+        "bytes": 41488663
+      },
+      {
+        "root": "/tmp/wod-v154-baseline-runtime",
+        "sourceCommit": "6fa900291c0f2d2589098aa0329b1411b3e5039f",
+        "files": 203,
+        "bytes": 41495486
+      }
+    ],
+    "logicalBytes": 165947120,
+    "measuredTmpBytesReleased": 167542784,
+    "onlyFourExactCommittedRuntimeCopiesRemoved": true,
+    "uniqueEvidenceSourceOrSnapshotsRemoved": false,
+    "restoreTool": "/workspace/wod-evidence/v167/restore-runtime-cache.py",
+    "metadataPlan": "/workspace/wod-evidence/v167/runtime-cache-retirement-plan.json",
+    "allOriginalBytesPhysicallyRebuiltBeforeRemoval": true,
+    "noGCPruneOrRefChanges": true
+  }
+}

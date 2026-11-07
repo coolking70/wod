@@ -1,0 +1,32 @@
+{
+  "version": "0.167",
+  "base": "dcf877cb98d45e987ac321e40d7fc238456c95da",
+  "mainBefore": "6b6734d9ffd190b0c69bafcda647b2c54d774b75",
+  "scope": "Complete solo onboarding/growth/campaign recovery QA milestone; no new combat/economy/balance mechanism. Separate fresh four formal departures and actual166 late campaign.",
+  "freshNormal": [
+    {
+      "id": 1,
+      "route": "tutorial"
+    },
+    {
+      "id": 2,
+      "route": "classic"
+    },
+    {
+      "id": 3,
+      "route": "chapter"
+    },
+    {
+      "id": 4,
+      "route": "harbor"
+    }
+  ],
+  "predeclaredInputs": "OwnA; assign first existing reliquaryshield after2; parry1 for20XP; light existing story ending after4; learn rallyguard40XP then explicit install; no fifth departure, search or tuning.",
+  "lateCanonicalUnchanged": {
+    "gold": 12545,
+    "next": 116
+  },
+  "gates": "Full1662Node, all74currentGUI, all historical complete JSONs including166, syntax/frozen/source refs, campaign payload safety, both code recovery chains/158smoke, all original checkpoint and raw physical restore; fresh remote ancestry then safe normal main fast-forward only.",
+  "permanentSuppliesPending": true,
+  "noForceGCPruneDeploy": true
+}

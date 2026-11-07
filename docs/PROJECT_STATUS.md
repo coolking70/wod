@@ -1,14 +1,14 @@
-# 单人项目状态：v0.166
+# 单人项目状态：v0.167
 
-核心单人循环已形成，当前优先实际试玩、失败后调整与界面收敛。v166补培养到实际指令的说明及只读定位，不新增机制或平衡数值。
+核心单人循环已形成，当前优先完整试玩、失败后调整与界面收敛。v165压缩成长页并维持键盘定位，v166连接培养与实际指令、保存112/113失败调查，v167把零资产新档到课程安装及整档待领恢复作为完整集成节点。
 
-## main与开发候选
+## main与开发分支
 
-- [main](https://github.com/coolking70/wod/tree/main)：本轮保持v164/6b6734d9ffd190b0c69bafcda647b2c54d774b75，已过当时1644Node/全部71GUI及恢复门禁。
-- [feature/v166-training-context](https://github.com/coolking70/wod/tree/feature/v166-training-context)：v166候选，阶段推送/SHA以/workspace/wod-delivery/v0.166-training-context/manifest.json为准，不把此版本号当已入main。
-- [V166检查](V166_CHECKS.json)：23套受影响完整GUI加预验收，本轮不是全部73套；完整main门禁仍在167–169功能节点。
+- 开始本轮时main为v164/6b6734d9ffd190b0c69bafcda647b2c54d774b75；v167拟通过全部门禁后快进，实际是否完成以/workspace/wod-delivery/v0.167-solo-flow-milestone/main-integration.json为准，不把计划当成功。
+- [feature/v167-solo-flow-milestone](https://github.com/coolking70/wod/tree/feature/v167-solo-flow-milestone)：当前候选与确切提交见交付manifest；源码阶段分支与main远端分别核验。
+- [V167检查](V167_CHECKS.json)：全Node/全部74浏览器及双恢复门禁结果，保留原始预验收失败。没有为了里程碑新增机制或改平衡。
 
-112/113的失败调查分清早期E阵亡仍有法力、实际治疗选择、前排低蓝与末房缺草等记录，不作唯一败因结论。E诘心已有培养但未配普通；明确新增后排指令、保留射击后备后，114六人生还，115同配置仍倒贝芮尔。终档12545金币/next116，原courier全员首证39保持；没有借这几个样本改数值。完整过程与当前/历史边界见[V166](V166_TRAINING_CONTEXT.md)。
+实际长期档仍12545金币/next116/E5290XP、贝芮尔2175XP；原五收藏/三方案/A和全部任务/首证保持。新手QA是独立档，固定4次原有路线后765/next5/A215XP、累计275，不能替换长期基线。115仍记录贝芮尔倒下，112/113旧失败不回填改写；有限样本不作胜率结论。
 
 ## 已形成的单人循环
 
