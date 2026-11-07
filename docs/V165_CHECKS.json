@@ -1,0 +1,392 @@
+{
+  "passed": true,
+  "baselineCommit": "6b6734d9ffd190b0c69bafcda647b2c54d774b75",
+  "Node": {
+    "tests": 1652,
+    "pass": 1652,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 8,
+  "NodeWorkers": 2,
+  "postNodeHarnessOnlyChange": {
+    "passed": true,
+    "onlyPostNodeFreezeChange": [
+      "scripts/browser-v126.cjs"
+    ],
+    "change": "Insert one real growth-attributes navigation click, all original assertions byte-identical after removing that insertion",
+    "allDistTestsCaseModulesPythonAndNodeInputsByteExact": true,
+    "browser126NotReferencedByNodeTests": true,
+    "targetedBrowser126RetryRequired": true,
+    "finalNode": "1652pass/0fail/0skip/0cancel",
+    "scope": "Full Node exercised identical final production and unit/case code;126GUI harness navigation is independently rerun. No assertion weakened and no product change after Node began."
+  },
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "targeted24": {
+    "tests": 24,
+    "pass": 24,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "browser": {
+    "passed": true,
+    "scope": "22 affected complete suites plus165preview, not full current72",
+    "total": 22,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 72,
+    "versions": [
+      165,
+      94,
+      95,
+      98,
+      99,
+      105,
+      118,
+      123,
+      125,
+      126,
+      127,
+      128,
+      129,
+      137,
+      139,
+      149,
+      152,
+      156,
+      161,
+      162,
+      163,
+      164
+    ],
+    "originalCheckpointAttempts": 24,
+    "allCPsDurableMainAsCompleted": true,
+    "previewOnSameFinalSource": true,
+    "new165Screens": [
+      "growth-desktop-attribute.png",
+      "growth-mobile-default.png",
+      "growth-mobile-sources.png"
+    ],
+    "v160ImportedNumericFieldsRegressionRetained": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 182,
+    "checkedReferences": 201,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 722,
+  "sourceInputs": 780,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-growth-navigation.mjs",
+      "scripts/browser-v165.cjs",
+      "scripts/check-v165.mjs",
+      "scripts/fixtures/v165-preparation-state.json",
+      "scripts/growth-navigation-cases.mjs",
+      "tests/growth-navigation.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-attribute-training-view.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/browser-v125.cjs",
+      "scripts/browser-v126.cjs",
+      "scripts/browser-v163.cjs",
+      "scripts/browser-v164.cjs",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 764
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 102,
+    "actualReports": 96,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through111AllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 12275,
+    "next": 114,
+    "ownHero": "e",
+    "ownXP": 5180,
+    "berylXP": 2065,
+    "berylTraining": {
+      "defense:parry": 1
+    },
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "ownControlTrainingAndExactRefundXP": 60,
+    "berylNetTrainingInvestmentXP": 20,
+    "reallocationRefund": 20,
+    "reallocationCost": 20,
+    "newGoalProofs": [],
+    "normal": [
+      {
+        "id": 112,
+        "route": "courier",
+        "objective": "survive",
+        "won": false,
+        "alive": 0,
+        "beryl": 0,
+        "rounds": [
+          4,
+          5,
+          13
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      },
+      {
+        "id": 113,
+        "route": "courier",
+        "objective": "survive",
+        "won": false,
+        "alive": 0,
+        "beryl": 0,
+        "rounds": [
+          4,
+          5,
+          13
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 1
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "bothNormalFullPartyLossAndPartial40Gold20XPClaimsRetained": true,
+    "rehearsal113": {
+      "before": {
+        "won": false,
+        "cleared": 2,
+        "rooms": 3,
+        "rounds": 22,
+        "alive": 0,
+        "personal": {
+          "damage": 70,
+          "healing": 0,
+          "received": 406,
+          "taken": 544,
+          "casts": 20,
+          "castMana": 32,
+          "defenseMana": 19,
+          "failed": 0,
+          "items": 0,
+          "summonDamage": 0,
+          "buffApplications": 12,
+          "controlApplications": 0,
+          "weakeningApplications": 0,
+          "cleansedEffects": 0,
+          "healingBlocks": 0,
+          "passiveHealing": 0,
+          "passiveRecords": 0,
+          "passiveOverheal": 0,
+          "interceptAttempts": 3,
+          "interceptMana": 6,
+          "interceptions": 3,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "issues": [
+            {
+              "reason": "法力不足",
+              "skill": "interpose",
+              "count": 8,
+              "index": 374
+            },
+            {
+              "reason": "法力不足",
+              "skill": "guard",
+              "count": 7,
+              "index": 375
+            }
+          ]
+        },
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        }
+      },
+      "after": {
+        "won": false,
+        "cleared": 2,
+        "rooms": 3,
+        "rounds": 22,
+        "alive": 0,
+        "personal": {
+          "damage": 50,
+          "healing": 0,
+          "received": 521,
+          "taken": 655,
+          "casts": 21,
+          "castMana": 29,
+          "defenseMana": 21,
+          "failed": 0,
+          "items": 0,
+          "summonDamage": 0,
+          "buffApplications": 11,
+          "controlApplications": 0,
+          "weakeningApplications": 0,
+          "cleansedEffects": 0,
+          "healingBlocks": 0,
+          "passiveHealing": 0,
+          "passiveRecords": 0,
+          "passiveOverheal": 0,
+          "interceptAttempts": 4,
+          "interceptMana": 8,
+          "interceptions": 4,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "issues": [
+            {
+              "reason": "法力不足",
+              "skill": "interpose",
+              "count": 9,
+              "index": 378
+            },
+            {
+              "reason": "法力不足",
+              "skill": "guard",
+              "count": 9,
+              "index": 379
+            }
+          ]
+        },
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 1
+        }
+      }
+    },
+    "formal113ExactReadonlyAfter": true,
+    "normal109FailureNotRetconned": true
+  },
+  "interface": {
+    "sameFixtureAndSameProbeBeforeAfter": {
+      "passed": true,
+      "sameFixtureAndProbe": true,
+      "defaultAttributeDisclosureCollapsedAfter": true,
+      "rows": [
+        {
+          "width": 1440,
+          "member": "e",
+          "teamBefore": 3107,
+          "teamAfter": 2272,
+          "skillBefore": 2367,
+          "skillAfter": 1018,
+          "overflowAfter": false
+        },
+        {
+          "width": 1440,
+          "member": "beryl",
+          "teamBefore": 2380,
+          "teamAfter": 1543,
+          "skillBefore": 1991,
+          "skillAfter": 1018,
+          "overflowAfter": false
+        },
+        {
+          "width": 390,
+          "member": "e",
+          "teamBefore": 6998,
+          "teamAfter": 4770,
+          "skillBefore": 5302,
+          "skillAfter": 2370,
+          "overflowAfter": false
+        },
+        {
+          "width": 390,
+          "member": "beryl",
+          "teamBefore": 5133,
+          "teamAfter": 2927,
+          "skillBefore": 4275,
+          "skillAfter": 1933,
+          "overflowAfter": false
+        }
+      ]
+    },
+    "keyboardBaselineFocusLoss": {
+      "tag": "BODY",
+      "html": "<body data-preparation-state=\"saved\" data-view=\"guild\" class=\"active\">\n<header><a class=\"brand\" href=\"./\">✧ 深 潮 远 征 <sma"
+    },
+    "currentBrowserKeyboardFocusAndSafeRowFallbackVerified": true,
+    "unfoldedSourceAndActualPriceRefundGuardsKept": true,
+    "disclosuresCurrentPageOnlyNoCampaignSchema": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v165/browser-final/growth-final-campaign.json": "1d8aacdbaf82ada9b2f9602f6003057aa7b7ba03df4ddfca33e1204dff666e60",
+    "/workspace/wod-evidence/v165/browser-final/growth-final-four-raw-keys.json": "d72fc0c3b7121a50888b4c8ee84c1c3324dd678e0a72126a3b82ed009c69c74a"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Project-original interface/navigation design only; no new original-server rule/number claim.",
+    "Height comparison on same164fixture and two specific characters/viewports, with attributes initially closed after; not a user usability study.",
+    "112/113 use distinct forced seeds and both fail; only113rehearsal is a same-seed comparison of an allocation tradeoff, not isolated defense benefit or universal balance.",
+    "Initial narrow tests found aria-attribute adjacency and an incorrect new gearCHA0 assertion; original disabled assertion retained, actualgear3/total22 verified. Old126GUI needed one explicit attribute navigation click; original+2assertion and failedCP retained, only that suite rerun. All final production/Node inputs byteexact; see invariance record.",
+    "22 affected completeGUI plus165preview; full current72 GUI reserved167–169, not executed this stage.",
+    "Permanent supply economy/fixed protagonist/multiplayer pending.",
+    "Desktop/390px Chromium touch emulation, not physical devices or other engines."
+  ],
+  "mainRemains164": "6b6734d9ffd190b0c69bafcda647b2c54d774b75",
+  "nextMainWindow": [
+    167,
+    169
+  ]
+}

@@ -1,18 +1,14 @@
-# 单人项目状态：v0.164
+# 单人项目状态：v0.165
 
-当前源码覆盖v162专业通行、v163培养与配装条件，以及v164冻结战报状态/完整流程验收。离线单人核心循环已经打通，后续优先完整流程试玩、平衡证据和界面收敛，避免按版本号继续堆零散机制。
+离线单人核心循环已经打通，当前优先完整流程试玩、平衡证据和界面收敛。v165处理实际成长页滚动与键盘焦点问题，不添加战斗机制或数值。
 
-## Git状态与验收范围
+## main与开发候选
 
-| 位置 | 实际含义 |
-| --- | --- |
-| [开发分支 feature/v164-expedition-closure](https://github.com/coolking70/wod/tree/feature/v164-expedition-closure) | v164开发候选，不能凭版本号推断已进入main |
-| [main实时引用](https://github.com/coolking70/wod/tree/main) | 此版本位于main时，表示已通过本轮完整集成门禁；开发分支上的同一文档描述候选范围 |
-| 本轮main起点 | v161，e14e06707a5a08807df9495bfb501a95f5844d83 |
-| 本轮开发起点 | 已推送v163，1c0e9f1c87b4a1b819fe408a6351314647a5793f |
-| 集成目标 | 在164–166的完整节点，将162–164经验证的同一源码树安全整合；最终远端结果以Git引用和交付收据为准 |
+- [main](https://github.com/coolking70/wod/tree/main)：本轮起点及保持的已验证版本v164，6b6734d9ffd190b0c69bafcda647b2c54d774b75，已完成1644Node/全部71GUI与完整恢复门禁。
+- [feature/v165-growth-navigation](https://github.com/coolking70/wod/tree/feature/v165-growth-navigation)：v165候选；当前版本不表示已并入main。阶段推送与SHA以/workspace/wod-delivery/v0.165-growth-navigation/manifest.json为准。
+- v165检查见[V165_CHECKS](V165_CHECKS.json)和[实现](V165_GROWTH_NAVIGATION.md)；本轮22受影响完整GUI加预验收，完整当前72GUI门禁保留到167–169的功能节点。
 
-本轮完整Node、全部71套浏览器、数据与冷恢复门禁见[V164检查](V164_CHECKS.json)。阶段推送与main整合的实际结果单独记录在云端`/workspace/wod-delivery/v0.164-expedition-closure/manifest.json`和`main-integration.json`，不得把测试通过等同于推送或合并成功。当前部署范围保持原约定。
+v165正常112/113均在两房后全队倒下，领取既有部分40/20，终12275金币/next114。113固定同种子试演两方案均失败，不能把不同编号或一次训练当普遍强弱证据。旧109失败、原五收藏/三方案/A保持。
 
 ## 已形成的单人循环
 
