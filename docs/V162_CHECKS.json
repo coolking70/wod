@@ -1,0 +1,363 @@
+{
+  "passed": true,
+  "baselineCommit": "e14e06707a5a08807df9495bfb501a95f5844d83",
+  "Node": {
+    "tests": 1618,
+    "pass": 1618,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 12,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "targeted12": {
+    "tests": 12,
+    "pass": 12,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "browser": {
+    "passed": true,
+    "scope": "All30 affected complete suites; not full current69",
+    "total": 30,
+    "fullCurrentSuites": false,
+    "versions": [
+      94,
+      95,
+      98,
+      99,
+      113,
+      115,
+      117,
+      119,
+      120,
+      122,
+      123,
+      126,
+      136,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162
+    ],
+    "originalCheckpointAttempts": 31,
+    "allCPsDurableMainAsCompleted": true,
+    "new162Screens": [
+      {
+        "file": "passage-success-desktop.png",
+        "status": "success",
+        "eventId": 2,
+        "cost": 3,
+        "rounds": [
+          0,
+          3
+        ]
+      },
+      {
+        "file": "passage-failure-mobile.png",
+        "status": "failure",
+        "eventId": 2,
+        "cost": 3,
+        "rounds": [
+          2,
+          3
+        ]
+      },
+      {
+        "file": "passage-restored-mobile.png",
+        "status": "failure",
+        "eventId": 2,
+        "cost": 3,
+        "rounds": [
+          2,
+          3
+        ]
+      }
+    ],
+    "actualCampaignImportFrozenNumericBoundary": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 179,
+    "checkedReferences": 198,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 707,
+  "sourceInputs": 762,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-passage-data.mjs",
+      "dist/expedition-passage.mjs",
+      "scripts/browser-v162.cjs",
+      "scripts/check-v162.mjs",
+      "scripts/fixtures/v162-preparation-state.json",
+      "scripts/passage-cases.mjs",
+      "tests/passage.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-adventure.mjs",
+      "dist/expedition-camp-cycle.mjs",
+      "dist/expedition-data.mjs",
+      "dist/expedition-engine.mjs",
+      "dist/expedition-goal-data.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-highlights.mjs",
+      "dist/expedition-loot.mjs",
+      "dist/expedition-mana-timeline.mjs",
+      "dist/expedition-objective-review.mjs",
+      "dist/expedition-personal.mjs",
+      "dist/expedition-report-archive-view.mjs",
+      "dist/expedition-resource-ledger.mjs",
+      "dist/expedition-review.mjs",
+      "dist/expedition-stage.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/browser-v113.cjs",
+      "scripts/browser-v115.cjs",
+      "scripts/browser-v117.cjs",
+      "scripts/browser-v120.cjs",
+      "scripts/browser-v122.cjs",
+      "scripts/browser-v126.cjs",
+      "scripts/browser-v136.cjs",
+      "scripts/browser-v143.cjs",
+      "scripts/browser-v144.cjs",
+      "scripts/browser-v145.cjs",
+      "scripts/browser-v146.cjs",
+      "scripts/browser-v147.cjs",
+      "scripts/browser-v148.cjs",
+      "scripts/browser-v149.cjs",
+      "scripts/browser-v151.cjs",
+      "scripts/browser-v156.cjs",
+      "scripts/browser-v94.cjs",
+      "scripts/browser-v95.cjs",
+      "scripts/browser-v99.cjs",
+      "scripts/check-v156.mjs",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs",
+      "tests/exploration-index.test.mjs",
+      "tests/v113.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs",
+      "tests/v120.test.mjs",
+      "tests/v94.test.mjs",
+      "tests/v95.test.mjs",
+      "tests/v99.test.mjs"
+    ],
+    "oldExact": 708,
+    "distExact": 193
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 96,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through105AllFieldsExact": true,
+    "mechanismViews": 33,
+    "oldNavigationReportsAllHeroesExact": 90
+  },
+  "nativeState": {
+    "gold": 11830,
+    "next": 108,
+    "ownHero": "e",
+    "ownXP": 5015,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "normal": [
+      {
+        "id": 106,
+        "method": "disarm",
+        "objective": "clear",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          0,
+          3
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 6,
+          "arrow": 5
+        },
+        "passage": {
+          "approach": "disarm",
+          "status": "success",
+          "actor": "b",
+          "skill": "disarm",
+          "mean": 63,
+          "cost": 3,
+          "roll": 86,
+          "factors": [
+            0.7668790111783892,
+            0.9865995070431381
+          ],
+          "difficulty": 70,
+          "reason": "检定成功，通过检修通道",
+          "candidates": [
+            {
+              "id": "b",
+              "name": "莱恩",
+              "skill": "disarm",
+              "mean": 63,
+              "cost": 3,
+              "reason": null
+            }
+          ],
+          "rule": "战前选择；入场且尚未开始预备、回复或先攻时检查一次。专业拆闸用射手机巧拆解，强行开闸用守卫盾击；从实际存活、装备合格且付得起费用的同行者中取最高均值，同值按队伍顺序。支付既有技能法力，成功失败都不退；不消耗共享材料、不占战斗行动。实掷=floor(均值×(0.5+(两次独立随机数之和)/2))。成功绕过本房守军，保留原生命且不计击倒；失败或无合格者按原敌情战斗。直接战斗不检定、不收费。无额外奖励或经验，资源跨房继承。",
+          "consumedAction": false,
+          "mpBefore": 35,
+          "mpAfter": 32,
+          "levelSources": {
+            "base": 6,
+            "specialization": 0,
+            "training": 1,
+            "temporary": 0,
+            "total": 7
+          },
+          "sourceEventId": 2,
+          "avoided": [
+            {
+              "id": "lpg",
+              "name": "闸桥门卫",
+              "hp": 180,
+              "mp": 70
+            },
+            {
+              "id": "lpa",
+              "name": "检修道弩手",
+              "hp": 140,
+              "mp": 70
+            }
+          ]
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 55,
+          "firstClear": true,
+          "loot": []
+        }
+      },
+      {
+        "id": 107,
+        "method": "force",
+        "objective": "survive",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          3
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 3,
+          "arrow": 3
+        },
+        "passage": {
+          "approach": "force",
+          "status": "failure",
+          "actor": "beryl",
+          "skill": "shieldbash",
+          "mean": 53,
+          "cost": 3,
+          "roll": 34,
+          "factors": [
+            0.04656556760892272,
+            0.27146394620649517
+          ],
+          "difficulty": 70,
+          "reason": "检定失败，费用保留，按原敌情开战",
+          "candidates": [
+            {
+              "id": "beryl",
+              "name": "贝芮尔",
+              "skill": "shieldbash",
+              "mean": 53,
+              "cost": 3,
+              "reason": null
+            }
+          ],
+          "rule": "战前选择；入场且尚未开始预备、回复或先攻时检查一次。专业拆闸用射手机巧拆解，强行开闸用守卫盾击；从实际存活、装备合格且付得起费用的同行者中取最高均值，同值按队伍顺序。支付既有技能法力，成功失败都不退；不消耗共享材料、不占战斗行动。实掷=floor(均值×(0.5+(两次独立随机数之和)/2))。成功绕过本房守军，保留原生命且不计击倒；失败或无合格者按原敌情战斗。直接战斗不检定、不收费。无额外奖励或经验，资源跨房继承。",
+          "consumedAction": false,
+          "mpBefore": 42,
+          "mpAfter": 39,
+          "levelSources": {
+            "base": 6,
+            "specialization": 0,
+            "training": 0,
+            "temporary": 0,
+            "total": 6
+          },
+          "sourceEventId": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v162/browser-final/passage-final-campaign.json": "fc36077688dfb61045a55edaa4823a9ad855835eee63d92963449bcd18e087a7",
+    "/workspace/wod-evidence/v162/browser-final/passage-final-four-raw-keys.json": "45820e059c2f2425bbaf920ad08733f12323a69604e56b8648654942e91fe119"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "v160NumericHTMLIssue": {
+    "fixedSince": "v161 e14e06707a5a08807df9495bfb501a95f5844d83",
+    "previousScope": "4newNode,4detachedDOM; full1606Node/all68GUI",
+    "newScope": "Actual campaign import plus frozen103reader and export, isolated harmless numeric markup copy; zero markerDOM; canonicalfive untouched",
+    "noHistoricalImportExploitClaim": true
+  },
+  "limitations": [
+    "All passage mechanics project-original; current-server original numeric rules not verified.",
+    "Permanent supply economy and fixed protagonist choices pending.",
+    "Full69currentGUI and main integration not run this minor stage; reserved164–166.",
+    "Browser desktop/390px touch emulation, not physical devices or other engines."
+  ],
+  "nextMainWindow": [
+    164,
+    166
+  ]
+}

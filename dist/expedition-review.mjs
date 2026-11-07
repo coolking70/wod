@@ -1,3 +1,4 @@
+import{PASSAGE_CHOICES}from'./expedition-passage-data.mjs';
 import {manaFloorLabel} from './expedition-mana-floor.mjs';
 import {initiativeLabel} from './expedition-initiative.mjs';
 import {positionOnlyLabel} from './expedition-position-only.mjs';
@@ -77,6 +78,7 @@ function format(key,value){
  if(key==='harborReserve')return HARBOR_RESERVE[value];if(key==='harborDifficulty')return HARBOR_DIFFICULTY[value];if(key==='harborPass')return HARBOR_PASS[value];if(key==='harborTask')return HARBOR_TASK[value];
  if(key==='foundryApproach')return FOUNDRY_APPROACHES[value];
  if(key==='rescueApproach')return RESCUE_CHOICES[value].name;
+ if(key==='passageApproach')return PASSAGE_CHOICES[value??'fight']?.name||'未核实';
  if(key==='bellApproach')return BELL_CHOICES[value].name;
  if(['prep','main'].includes(key))return commandText(value);
  if(['prepOrder','roomOrder'].includes(key))return value.map(heroName).join(' → ');
@@ -99,6 +101,7 @@ export function configurationChanges(a,b){
  if(a.expedition==='courier'||b.expedition==='courier')compare('邮路第二场通路','courierPass',courierPass(a),courierPass(b));
  if(a.expedition==='foundry'||b.expedition==='foundry'){compare('铸库第二场通路','foundryApproach',foundryApproach(a),foundryApproach(b));compare('铸库通路出口','foundryFlow',a.foundryFlow,b.foundryFlow);}
  compare('回廊救援策略','rescueApproach',a.rescueApproach,b.rescueApproach);
+ compare('专业通行策略','passageApproach',a.passageApproach??'fight',b.passageApproach??'fight');
  compare('沉钟机关策略','bellApproach',a.bellApproach,b.bellApproach);
  compare('整队撤退计划','withdrawAt',a.withdrawAt,b.withdrawAt);
  if(a.objective||b.objective)compare('攻略目标','objective',a.objective,b.objective);

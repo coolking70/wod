@@ -1,6 +1,7 @@
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR,SKILLS,DEFENSES} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ lockpass:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},
  holdout:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},
  manashield:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},
  parleyquay:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},

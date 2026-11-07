@@ -1,0 +1,37 @@
+{
+  "stage": 162,
+  "scope": "Project-original two-room lockpass/闸桥通行: predeclared disarm, force or fight; first-room entry check uses actual ranger disarm or guardian shieldbash, actual existing mana cost and mean, difficulty70, isolated seeded two-roll draw. Failure pays once then original combat; success preserves untouched bypassed foes and completes first room with0combat rounds. Second room is ordinary combat. No new skills, gear or permanent economy.",
+  "normal": [
+    {
+      "id": 106,
+      "method": "disarm",
+      "objective": "clear"
+    },
+    {
+      "id": 107,
+      "method": "force",
+      "objective": "survive"
+    }
+  ],
+  "confirmations": {
+    "seeds": [
+      731,
+      732
+    ],
+    "methods": [
+      "fight",
+      "disarm",
+      "force"
+    ],
+    "noSeedSearch": true
+  },
+  "source": "Pinned161actual fourkeys,11590/next106,E4915XP,five frozen793208chars/three plans/A. Old main e14e067 stays until164–166.",
+  "important": "Split data module from runtime helpers to avoid data import cycles. Add explicit bypassed snapshot/UI status, distinguish0round access success from kills. Add MP ledger/timeline entry cost and route-specific objective wording. All new metadata views must validate/escape numbers and names.",
+  "regression": "Explicit v160 issue clarified: view helpers fixed161; current frozen reader separate, no import execution demonstrated. Add real campaign-import+frozen-reader regression on isolated empty-collection test copy with harmless numeric-field markup, verify literal escaped text/no marker elements/raw report export unchanged. Never modify normative real five archives.",
+  "validation": "Full Node, all affected complete GUI (catalogue counts now37/111), old94+2=96native fullJSON comparisons, syntax/static imports, cold primary/backup chains and allCLIoutputs. Push stage branch only. Preserve all failures, old156six snapshots74files, private6 and recovery chains; no GC/prune,force or deploy.",
+  "base": "e14e06707a5a08807df9495bfb501a95f5844d83",
+  "mainBefore": "e14e06707a5a08807df9495bfb501a95f5844d83",
+  "mainGate": "No main integration162; next complete milestone164–166 with all current69 GUI, latestremote, fullNode and data/recovery gates.",
+  "navigation": "Shared passage causes visible to all personal heroes and highlights; old90reports everyhero normal/highlight selection exact.",
+  "verification": "Final fullNode after correcting2stale catalogue counts and adding public-navigation12thcase; 30affected complete GUI, not all current69; all original failed test logs retained."
+}

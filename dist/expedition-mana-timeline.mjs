@@ -1,5 +1,5 @@
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const labels={cast:'施法支付',defend:'防御支付',intercept:'援护支付',initiative:'先攻支付',windup:'蓄能预付',shield:'护盾吸收支付',drain:'被削减法力',regen:'自然法力变化',transfer:'友方法力转入',item:'随身道具恢复',encounter:'机关检定损失',release:'蓄能释放 · 不重复支付',unknown:'快照变化 · 原因未核实'};
+const labels={passage:'进场专业检定支付',cast:'施法支付',defend:'防御支付',intercept:'援护支付',initiative:'先攻支付',windup:'蓄能预付',shield:'护盾吸收支付',drain:'被削减法力',regen:'自然法力变化',transfer:'友方法力转入',item:'随身道具恢复',encounter:'机关检定损失',release:'蓄能释放 · 不重复支付',unknown:'快照变化 · 原因未核实'};
 const finite=n=>Number.isFinite(n)&&n>=0;
 
 // Read recorded snapshots, never recompute combat or inspect events after the cursor.
@@ -8,6 +8,7 @@ function cause(e,id,before,after){
  const d=e.detail||{},own=e.actor===id,target=e.targets?.includes(id),delta=after-before;
  const pair=(a,b)=>finite(a)&&finite(b)&&a===before&&b===after;
  if(own&&pair(d.mpBefore,d.mpAfter)){
+  if(e.type==='passage-check'&&['success','failure'].includes(d.status)&&d.cost===-delta&&delta<=0)return 'passage';
   if(e.type==='cast'&&delta<=0)return d.channel&&delta===0?'release':'cast';
   if(['defend','intercept','initiative-check','windup-start'].includes(e.type)&&d.cost===-delta&&delta<=0)return {'defend':'defend','intercept':'intercept','initiative-check':'initiative','windup-start':'windup'}[e.type];
  }
