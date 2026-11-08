@@ -1,0 +1,16 @@
+{
+  "version": "0.182",
+  "source": "v158full+159..182increments OR v152full+153..182increments; retainprivate6",
+  "branch": "feature/v182-motion-evidence-milestone",
+  "base": "18ee8a00703d5b378feb844598f4e4fe4728a918",
+  "mainOnEntry": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "coldChecks": "allblobs/executablemodes/history/heads/private6,primary250Node20CLIJSONexact,binarypatchtree",
+  "evidence": "oneimmutablemaster/90originalCPZIPbytes/fullraw/evidence; twoindependentallfilephysical proofs,wholeCP+E,rawduplicate retirementwithmasterCPkept,wholeRAWproof,onlythenCPduplicate retirement",
+  "threeWholeRootsBeforeAnyRetirement": false,
+  "reserveBytesPerVolume": 1073741824,
+  "twoWorstRetestsBudgeted": true,
+  "newMaintenance": "/workspace/wod-maintenance/2026-11-08-native-reference-budget-v182",
+  "threeMastersPointersAndReal179RehearsalExtraPointerRequired": true,
+  "all181AndOlderDependenciesRequired": true,
+  "noForceGCpruneDeploy": true
+}

@@ -1,0 +1,2 @@
+import test from'node:test';import assert from'node:assert/strict';import{execFileSync}from'node:child_process';
+test('sequential evidence recovery:26 isolated coverage, independence, corruption, interruption, shared-file and bounded-space cases',()=>{const out=execFileSync('python3',['scripts/sequential-evidence-recovery-tests.py'],{encoding:'utf8',env:{...process.env,PYTHONDONTWRITEBYTECODE:'1'},stdio:['ignore','pipe','pipe'],maxBuffer:2e6});assert.equal(typeof out,'string');});

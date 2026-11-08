@@ -1,0 +1,16 @@
+{
+  "version": "0.182",
+  "baseline": "18ee8a00703d5b378feb844598f4e4fe4728a918",
+  "mainOnEntry": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "purpose": "Actual motion pose to exact source record and return; validate full GUI milestone with bounded independently verified physical evidence recovery",
+  "normalSeed": 133,
+  "noSupplyEconomyOrTuning": true,
+  "fullCurrentGUI": 89,
+  "Node": 1754,
+  "sourceInputs": 910,
+  "integrationWindow": [
+    182,
+    184
+  ],
+  "actualMainOutcome": "/workspace/wod-delivery/v0.182-motion-evidence-milestone/main-integration.json"
+}

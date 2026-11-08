@@ -1,3 +1,5 @@
+> v0.182完整节点：动作可打开真实原记录并返回原步骤/筛选/焦点；1754Node、89全套GUI通过。顺序物理恢复保持双独立全文件和三整根覆盖，保留失败重测空间。main进入时179，集成实际结果见交付manifest。见[说明](V182_MOTION_EVIDENCE_MILESTONE.md)、[交接](HANDOFF_CLOUD_V182.md)。
+
 > v0.181开发：放大查看当前吟游者动作，静态姿态包含真实记录/透明度，播放提示读取关节同一时钟；手机可看清且查看不写档。1747Node、8相关完整GUI；main179，182–184全门禁。见[说明](V181_BARD_STEP_INSPECTION.md)、[交接](HANDOFF_CLOUD_V181.md)。
 
 > v0.180开发：携琴吟游者按真实施放/心理攻击/受击倒下播放原创关节动作，新增版本固定SVG/八帧GIF对照页。1739Node、15相关完整GUI；main保持179，下一全门禁182–184。见[说明](V180_BARD_MOTION.md)、[交接](HANDOFF_CLOUD_V180.md)。
