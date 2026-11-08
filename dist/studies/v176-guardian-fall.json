@@ -1,0 +1,114 @@
+{
+  "reportId": 124,
+  "reportSHA256": "75bcf5f761c97af0479a94be0383bc8565e2bca23f388bd8675740cdcd91b1e7",
+  "hero": {
+    "id": "beryl",
+    "name": "贝芮尔",
+    "gear": {
+      "weapon": "guardblade",
+      "armor": "plate",
+      "accessory": "token"
+    }
+  },
+  "group": {
+    "start": 705,
+    "end": 708,
+    "roomIndex": 2
+  },
+  "plan": {
+    "id": "beryl",
+    "name": "贝芮尔",
+    "weapon": "sword",
+    "settled": "fallen",
+    "mode": "fallen",
+    "beats": [
+      {
+        "eventId": 707,
+        "pose": "brace",
+        "label": "挡架检定"
+      },
+      {
+        "eventId": 708,
+        "pose": "hit",
+        "label": "受击 −18"
+      },
+      {
+        "eventId": 709,
+        "pose": "fallen",
+        "label": "倒下"
+      }
+    ],
+    "sourceEvents": [
+      707,
+      708,
+      709
+    ],
+    "label": "挡架检定 → 受击 −18 → 倒下",
+    "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+  },
+  "sourceEvents": [
+    {
+      "id": 706,
+      "type": "cast",
+      "actor": "cfg",
+      "targets": [
+        "beryl"
+      ],
+      "text": "拦邮卫 使用「盾缘重击」",
+      "defenseSkill": "shieldbash"
+    },
+    {
+      "id": 707,
+      "type": "defend",
+      "actor": "beryl",
+      "targets": [
+        "cfg"
+      ],
+      "text": "贝芮尔 使用「盾牌格挡」应对近战",
+      "defenseSkill": "parry"
+    },
+    {
+      "id": 708,
+      "type": "attack",
+      "actor": "cfg",
+      "targets": [
+        "beryl"
+      ],
+      "text": "拦邮卫 → 贝芮尔：命中，25 伤害（溢出 7）",
+      "actual": 18,
+      "defenseSkill": "shieldbash"
+    },
+    {
+      "id": 709,
+      "type": "down",
+      "actor": "cfg",
+      "targets": [
+        "beryl"
+      ],
+      "text": "贝芮尔 倒下。"
+    }
+  ],
+  "gestureMs": 900,
+  "beats": [
+    {
+      "eventId": 707,
+      "pose": "brace",
+      "label": "挡架检定",
+      "gestureOffsetMs": 180
+    },
+    {
+      "eventId": 708,
+      "pose": "hit",
+      "label": "受击 −18",
+      "gestureOffsetMs": 360
+    },
+    {
+      "eventId": 709,
+      "pose": "fallen",
+      "label": "倒下",
+      "gestureOffsetMs": 540
+    }
+  ],
+  "provenance": "Actual124frozenhistory from175canonicalfourkeys; originalSVGmodel/poses, no combatnumber or generatedpaintingreplacement.",
+  "originalProductionMechanicsUnchanged": true
+}

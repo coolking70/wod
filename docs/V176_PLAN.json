@@ -1,0 +1,32 @@
+{
+  "version": "0.176",
+  "base": "51cebf274706dd053d7d567ae8a7e41be6064391",
+  "mainBaseline": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "scope": "Real staticfallenframingfix, native8framefallGIF/PNGstudy and fullintegrationmilestone",
+  "normalCounters": [
+    127
+  ],
+  "normalPlan": "Same175preparation, no training/item swap/tuning/seedsearch",
+  "fullCurrentGUI": 83,
+  "originalFullBatchPassed": 81,
+  "originalFullBatchFailed": [
+    142,
+    143
+  ],
+  "correctedCompleteRetests": [
+    142,
+    143
+  ],
+  "originalCheckpoints": 88,
+  "mainIntegrationWindow": [
+    176,
+    178
+  ],
+  "nextWindowAfterVerifiedMain": [
+    179,
+    181
+  ],
+  "permanentSupplyEconomyPending": true,
+  "newRecoveryDependency": "Entire176127acceptancemaintenance + original127master/supplement49PNG",
+  "noForceGCPruneDeploy": true
+}

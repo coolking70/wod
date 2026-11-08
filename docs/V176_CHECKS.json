@@ -1,0 +1,475 @@
+{
+  "passed": true,
+  "baselineCommit": "51cebf274706dd053d7d567ae8a7e41be6064391",
+  "mainBaseline": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "Node": {
+    "tests": 1690,
+    "pass": 1690,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 0,
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "All83current GUI covered: original81passed plus corrected142143 complete retests; production and Node-test source exact across batch, plus3previews; hiddenpane testerror, halfpixel screenshotprobe, two legacy globalSVGcount failures kept, diagnosed, finalcovered83passed",
+    "total": 83,
+    "fullCurrentSuites": true,
+    "fullRegistrySize": 83,
+    "originalFullBatchPassed": 81,
+    "originalFullBatchFailed": [
+      142,
+      143
+    ],
+    "correctedCompleteRetests": [
+      142,
+      143
+    ],
+    "allRuntimeAndNodeTestsExactAcrossFullAndRetest": true,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176
+    ],
+    "originalCheckpointAttempts": 88,
+    "allCPsDurableMainAsCompleted": true,
+    "new176Screens": [
+      "fall-desktop124-settled.png",
+      "fall-mobile390-settled.png",
+      "fall-mobile320-settled.png",
+      "fall-study-mobile.png"
+    ],
+    "v160NumericImportFreshFull162": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 187,
+    "checkedReferences": 207,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 770,
+  "sourceInputs": 861,
+  "runtimeDelta": {
+    "new": [
+      "dist/assets/studies/v176-guardian-fall-poster.png",
+      "dist/assets/studies/v176-guardian-fall-sheet.png",
+      "dist/assets/studies/v176-guardian-fall.gif",
+      "dist/studies/guardian-fall-v176.html",
+      "dist/studies/v176-guardian-fall.json",
+      "scripts/browser-v176.cjs",
+      "scripts/check-v176.mjs",
+      "scripts/encode-guardian-fall-v176.py",
+      "scripts/export-guardian-fall-v176.cjs",
+      "scripts/fixtures/v176-preparation-state.json",
+      "scripts/guardian-fall-cases.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-guardian-motion.mjs",
+      "dist/index.html",
+      "scripts/browser-v142.cjs",
+      "scripts/browser-v143.cjs",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 844
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 121,
+    "actualReports": 115,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through126And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13595,
+    "next": 128,
+    "ownHero": "e",
+    "ownXP": 5740,
+    "berylXP": 2625,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 127,
+        "route": "courier",
+        "seed": 127,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4,
+          9
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "oldBookProofsAndAllStoriesUnchanged": true,
+    "onlyNormalPostbellWarehouse22to23AndCourierClears23to24": true,
+    "normalLoot": [
+      "postbell"
+    ],
+    "survival731SeparateExperimentNoReward": true
+  },
+  "guardianArt": {
+    "fallenRootBefore": [
+      40,
+      -8,
+      -77
+    ],
+    "fallenRootAfter": [
+      44,
+      -55,
+      -77
+    ],
+    "fallenShadowCy100Ry3": true,
+    "otherPosesFigureBytesAndKeyframesAndRuleAndEventMappingExact": true,
+    "beforeRealStaticClips": {
+      "desktopBoardParts": 3,
+      "desktopDetailParts": 1,
+      "mobile390BoardParts": 3
+    },
+    "afterActualDesktop390320AllPartsAndShadowInsideAndAboveCaption": true,
+    "sourceDownGroup": [
+      707,
+      708,
+      709
+    ],
+    "GIFFrameSize": [
+      240,
+      264
+    ],
+    "sheetSize": [
+      960,
+      528
+    ],
+    "defaultPoster": "settledfallenlastframe",
+    "encoding": {
+      "passed": true,
+      "sourceReportId": 124,
+      "sourceReportSHA256": "75bcf5f761c97af0479a94be0383bc8565e2bca23f388bd8675740cdcd91b1e7",
+      "nativeModelSameWeaponSideAndStyles": true,
+      "eightDistinctFrames": true,
+      "durationMs": 900,
+      "files": [
+        {
+          "path": "dist/assets/studies/v176-guardian-fall.gif",
+          "bytes": 62928,
+          "sha256": "1a5e60a691ee21ed4727ad425f87ba1b931910f62c3ca416c68350b31cd72842"
+        },
+        {
+          "path": "dist/assets/studies/v176-guardian-fall-sheet.png",
+          "bytes": 190969,
+          "sha256": "e2dc5719ca2c3950757bda628926e730cc6027bcf9d1d3a56cff61bdad17e105"
+        },
+        {
+          "path": "dist/assets/studies/v176-guardian-fall-poster.png",
+          "bytes": 24502,
+          "sha256": "9400a503e5470018780421bc7de576de327ee50fd42624f06cd18b8cd1370e80"
+        }
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "alphaBBox": [
+            65,
+            52,
+            179,
+            218
+          ],
+          "durationMs": 80,
+          "RGBAFrameSHA256": "bde50371becb329828837cdf1805f3b531494ffc89bd19184a58255585cb8075"
+        },
+        {
+          "frame": 1,
+          "alphaBBox": [
+            71,
+            52,
+            179,
+            218
+          ],
+          "durationMs": 80,
+          "RGBAFrameSHA256": "1dbd7b5ed876877bb5c16c31f84951d072dfaf226ee2c1c5adce94165ad81835"
+        },
+        {
+          "frame": 2,
+          "alphaBBox": [
+            71,
+            52,
+            188,
+            218
+          ],
+          "durationMs": 80,
+          "RGBAFrameSHA256": "2b6ef7b619689a65b4726712cc493c72328067a7941937fe7a52a55310b9000e"
+        },
+        {
+          "frame": 3,
+          "alphaBBox": [
+            70,
+            54,
+            173,
+            219
+          ],
+          "durationMs": 80,
+          "RGBAFrameSHA256": "82f6b7b7f8df4f67c3c352cdcca18e13a53c260fc6d48a9a76c3f74268091193"
+        },
+        {
+          "frame": 4,
+          "alphaBBox": [
+            50,
+            59,
+            168,
+            221
+          ],
+          "durationMs": 80,
+          "RGBAFrameSHA256": "6f821bdb03f2f297b30515d7153c52f338e2e7234794014ca6b3f6c7e5ac25bf"
+        },
+        {
+          "frame": 5,
+          "alphaBBox": [
+            37,
+            58,
+            168,
+            210
+          ],
+          "durationMs": 80,
+          "RGBAFrameSHA256": "9299f051b7b831a4a19a84fedba526d8adfb4b5f07bb7b7c2c3c15110a750134"
+        },
+        {
+          "frame": 6,
+          "alphaBBox": [
+            23,
+            55,
+            185,
+            194
+          ],
+          "durationMs": 60,
+          "RGBAFrameSHA256": "c65a76bb0ac7f740387d0ce84241fe8ed1edda3de957f7f3cd24ea2ea774d3da"
+        },
+        {
+          "frame": 7,
+          "alphaBBox": [
+            31,
+            66,
+            202,
+            194
+          ],
+          "durationMs": 360,
+          "RGBAFrameSHA256": "b9f194d88b2fe6ce136a165ed86f61c01d4ac2a8edc0dc4885a316006b0417ab"
+        }
+      ],
+      "decoded": [
+        {
+          "frame": 0,
+          "durationMs": 80,
+          "RGBAFrameSHA256": "ade9f144353f89e7871df8ce74fcda8978f19083f89aa9ce0eb6f6085ecb8b73"
+        },
+        {
+          "frame": 1,
+          "durationMs": 80,
+          "RGBAFrameSHA256": "9f0ab1775ea1b9280c70dc8b02886fb71279687ef15f3319f2d99fbb2c75ed80"
+        },
+        {
+          "frame": 2,
+          "durationMs": 80,
+          "RGBAFrameSHA256": "d89cd7e41a4a6db25e2a0c79809f6c5a7515bae36a361cae5f6729c92bd8d9f2"
+        },
+        {
+          "frame": 3,
+          "durationMs": 80,
+          "RGBAFrameSHA256": "4a90584c25578e8cf7b16a05ad35447a4b86593c00eee907458703c935b0dfed"
+        },
+        {
+          "frame": 4,
+          "durationMs": 80,
+          "RGBAFrameSHA256": "4e72c51f7a4dc7191401497d4e03d4dea883a31d7692df5c157b3ff344c60c3c"
+        },
+        {
+          "frame": 5,
+          "durationMs": 80,
+          "RGBAFrameSHA256": "b8b09401c059271a0db267fe2361aa579c2a265dca9b57e9f03db6c140711dfe"
+        },
+        {
+          "frame": 6,
+          "durationMs": 60,
+          "RGBAFrameSHA256": "76148d5c17f0f0b15d95fa7db7884fb40765da6ddc4453f932fe6c8b776e19e6"
+        },
+        {
+          "frame": 7,
+          "durationMs": 360,
+          "RGBAFrameSHA256": "ff65df383bc670689acd1d05af18f8e718d63e9480e05e05e0788004ce94cb42"
+        }
+      ],
+      "limitations": [
+        "SVGframesrenderedandencodedlocally, not imagegen/directGIFgeneration.",
+        "8GIFsamples andbinaryalpha approximate thecontinuousvectorpreview; PNGsheet retainssemitransparentedges.",
+        "Actualblockcheck, HPdamage anddown fromone recordedgroup; defaultposter issettledfallen. GIFloop repeatsone study, not resurrection.",
+        "Previewexports only; actualreplay detailusesnativeSVG/staticposecontrols."
+      ]
+    },
+    "GIFNotNewImagegenOrExactSeeking": true,
+    "productionDoesNotRequestNewStudyImages": true,
+    "allExistingImageBytesUnchanged": true,
+    "firstTight180x198ExportAlphaBoundaryFailureKept": true,
+    "reducedPosterDecodedPixelsExactWith25point5PixelLayoutShiftDiagnosed": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v176/browser-final/fall-final-campaign.json": "53694f43410aa5869c3e34868391d5d9abb0a68bafb00456cc1c176cd277e2f7",
+    "/workspace/wod-evidence/v176/browser-final/fall-final-four-raw-keys.json": "8fdaf58eb6456ae64691f1beec1188fdf30bf68170a918fa8699875d29f39648"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "legacy143Root": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "new132Root": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "new132ChecksummedFiles": 14,
+    "new132SnapshotSHA256": "a6792d781955ac4ffe5ec8f7bb13b6a707d273454ae8f12524afe6e3bd4d620d",
+    "new132SnapshotBytes": 129703762,
+    "new132Current755Files59PNGAndNsFullRestoreBeforeRetirement": true,
+    "new173TempBudgetRoot": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "new173RequiresOriginal147148167MastersAndAllPlans": true,
+    "new175Root": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175",
+    "new175RequiresOriginal134MasterPlusOmitted26ScreensZIPAndPlans": true,
+    "new176Root": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176",
+    "new176ChecksummedFiles": 9,
+    "new176RequiresOriginal127MasterPlusOmitted49ScreensZIPAndPlans": true,
+    "retiredOnly557MasterBackedFiles883199198Bytes": true,
+    "all49OriginalScreensKeptInPlace": true,
+    "all228PreviouslyProtectedFilesExact": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Presentation-only guardian framing; no battle/economy/schema/servernumeric change.",
+    "Static/finalfallen framed in1440/390/320; no claim allinterpolatedposes/otherdevices/engines arephysicallyaccurate orfullyunoccluded.",
+    "GIFeightvectorrenders900ms with360msfallenhold, binaryalpha/palette approximate; loop is same past action, not resurrection or new battle.",
+    "First tightcanvas alphaedge failure retained; padded240x264 contains all8alphaBBoxes.",
+    "Reducedmotion changes textheight25.5px; exactdecodedposter pixels verified instead of brittle fractional viewport raster hash.",
+    "Native original model, no newimagegen; existing172painted/174nativeart andbackgrounds untouched.",
+    "80fixedcomparisonreports protected, no populationrate or isolatedgear/resistancecausal claim; canonicalplanunchanged.",
+    "Whole176maint+127master/supplement/49livePNGs newlyrequired; preserve175/134/173/147148167/156/132143/sourcechains/private6/experiments.",
+    "OldLibrary172upload remainsunconfirmed,no retry.",
+    "Permanent supplyeconomy pending."
+  ],
+  "nextMainWindow": [
+    176,
+    178
+  ],
+  "testOnlySelectorFix": {
+    "originalFullBatch": 83,
+    "originalPassed": 81,
+    "originalFailed": [
+      142,
+      143
+    ],
+    "fullSuiteRetestsPassed": [
+      142,
+      143
+    ],
+    "changedOnlyBrowserTest142143AndFocusedSupport": true,
+    "productionAndNodeTestSourceExactAcrossAllRuns": true
+  }
+}

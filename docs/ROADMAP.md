@@ -1,3 +1,5 @@
+> v0.176 完整节点：修复守卫倒下后的盾牌裁边/压字，三宽度验证；新增八帧原生倒下GIF与PNG表，不改战报与配装。1690Node/全83GUI，main实际结果见交付记录。见[说明](V176_GUARDIAN_FALLEN_FRAMING.md)、[交接](HANDOFF_CLOUD_V176.md)。
+
 > v0.175 受击与救护时序增加原攻击伤害拆解、静态SVG和键盘返回；保留第二房负法术抗性的实际伤害证据，不推断换装结果。安全回收约1.06GiB重复记录，26原截图保留。见[说明](V175_RECORDED_DAMAGE_REVIEW.md)、[交接](HANDOFF_CLOUD_V175.md)。main173，本轮22GUI，完整窗口176–178。
 
 > v0.174 原生守卫放大动作检查与24px邮铃SVG；保留实际挡架后受击、键盘焦点和减少动态。八帧原生GIF/PNG与绘制试作分开评估，121–124只读复盘不调数值。见[说明](V174_GUARDIAN_ART_DETAIL.md)、[交接](HANDOFF_CLOUD_V174.md)。main已核验173，本轮20GUI，完整窗口176–178。
