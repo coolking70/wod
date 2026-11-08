@@ -1,0 +1,629 @@
+{
+  "passed": true,
+  "baselineCommit": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "mainUnchanged": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "Node": {
+    "tests": 1739,
+    "pass": 1739,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 16,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "maintenanceSeparateSafetyTests": 18,
+  "browser": {
+    "passed": true,
+    "total": 15,
+    "versions": [
+      105,
+      107,
+      146,
+      147,
+      152,
+      164,
+      167,
+      171,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180
+    ],
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 87,
+    "originalCheckpointAttempts": 17,
+    "initialPreviewFailedOnReducedMotionEventWait": true,
+    "allOriginalFailuresKept": true,
+    "allCPsDurableMainAsCompleted": true,
+    "scope": "15 related complete GUI suites; not full87; milestone182..184 full gate.",
+    "new180Screens": [
+      "bard-desktop-support.png",
+      "bard-study-reduced.png",
+      "bard-mobile390-support.png",
+      "bard-mobile390-fallen130.png",
+      "bard-mobile320-support.png",
+      "bard-mobile320-fallen130.png"
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 191,
+    "checkedReferences": 213,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 791,
+  "sourceInputs": 894,
+  "runtimeDelta": {
+    "new": [
+      "dist/assets/studies/v180-bard-strum-poster.png",
+      "dist/assets/studies/v180-bard-strum-sheet.png",
+      "dist/assets/studies/v180-bard-strum.gif",
+      "dist/bard-motion.css",
+      "dist/expedition-bard-motion.mjs",
+      "dist/studies/bard-rig-v180.css",
+      "dist/studies/bard-strum-v180.html",
+      "dist/studies/bard-strum-v180.mjs",
+      "dist/studies/v180-bard-strum.json",
+      "scripts/bard-motion-cases.mjs",
+      "scripts/browser-v180.cjs",
+      "scripts/check-v180.mjs",
+      "scripts/fixtures/v180-preparation-state.json",
+      "tests/bard-motion.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ]
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 125,
+    "actualReports": 119,
+    "otherStateConfigObjects": 6,
+    "native158through179Rows": 37,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "mechanismViews": 33,
+    "sixReferenceReportsExtractedByteExactFromOriginal153154156Masters": true
+  },
+  "nativeState": {
+    "gold": 13945,
+    "next": 132,
+    "ownHero": "e",
+    "ownXP": 5890,
+    "berylXP": 2775,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 131,
+        "seed": 131,
+        "route": "courier",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4,
+          7
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      }
+    ],
+    "warehousePostbell24to25AndCourierClears25to26Only": true,
+    "noTrainingTuningOrSeedSearchOrNewGearAdoption": true,
+    "oldBookStoriesRolesGearUnchanged": true,
+    "historical130FailureAndIndependentBowCopyNotCanonical": true,
+    "survival731SeparateExperimentNoReward": true
+  },
+  "art": {
+    "nativeSVGAtActualBardInstrumentCategoryOnly": true,
+    "actualCadenceLuteRecognized": true,
+    "sourceFacts": {
+      "support": {
+        "id": 131,
+        "start": 2,
+        "events": [
+          3,
+          4
+        ],
+        "beats": [
+          {
+            "eventId": 3,
+            "pose": "prepare",
+            "label": "施放「灵感启蒙」"
+          },
+          {
+            "eventId": 4,
+            "pose": "strum",
+            "label": "已记录「灵感启蒙」组件"
+          }
+        ]
+      },
+      "mental": {
+        "id": 131,
+        "start": 57,
+        "events": [
+          58,
+          60
+        ],
+        "beats": [
+          {
+            "eventId": 58,
+            "pose": "prepare",
+            "label": "施放「诘心回声」"
+          },
+          {
+            "eventId": 60,
+            "pose": "accent",
+            "label": "实际心理攻击"
+          }
+        ]
+      },
+      "hit": {
+        "id": 130,
+        "start": 217,
+        "events": [
+          220
+        ],
+        "beats": [
+          {
+            "eventId": 220,
+            "pose": "hit",
+            "label": "受击 −57"
+          }
+        ]
+      },
+      "fall": {
+        "id": 130,
+        "start": 245,
+        "events": [
+          248,
+          249
+        ],
+        "beats": [
+          {
+            "eventId": 248,
+            "pose": "hit",
+            "label": "受击 −49"
+          },
+          {
+            "eventId": 249,
+            "pose": "fallen",
+            "label": "倒下"
+          }
+        ]
+      }
+    },
+    "singleCastSingleGestureNoInventedTargets": true,
+    "fourSpeedsOneClockThreeWidthsReducedAndStoppedStatic": true,
+    "fallenBodyAndLuteInsideFrameCaptionBelow": true,
+    "productionNoGIFOrPNGStudyFetches": true,
+    "independentFrozenStudyNoGameKeyWrites": true,
+    "eightDistinctDecodedGIFFramesAndFrozenStudyRGBAExact": true,
+    "nativeDurationMs": 900,
+    "GIFDurationMs": 1100,
+    "GIFBytes": 59664,
+    "PNGSheetBytes": 153318,
+    "posterBytes": 18746,
+    "GIFLosesPartialAlphaPNGPreservesRGBA": true,
+    "imagegenCalled": false,
+    "noClaimSVGOverallFasterOrFPSMeasured": true,
+    "oldAssetsModelsAndBackgroundsByteExact": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v180/browser-final/bard-final-campaign.json": "32802969055d8f71349a44b3e05a4235174341b2eb31e331e411e1cfae7deae0",
+    "/workspace/wod-evidence/v180/browser-final/bard-final-four-raw-keys.json": "f34d0d29a6f52236ce44bbc2da959b5cda3b4b1cfbbc823bc832b95a90a378e0"
+  },
+  "maintenanceDependencies": {
+    "v173EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "v173MetadataBackupAlsoInLatestMasterEvidenceRoot": "temp-budget-maintenance",
+    "v147v148v167OriginalMasterZIPs": [
+      {
+        "path": "/workspace/wod-delivery/v0.147-ranger-motion/wod-v147-verification.zip",
+        "bytes": 314120421,
+        "sha256": "e91e4401509a448edad47fb8f112d17ce390879ed7d1a58af8a7d76e740c4f6a"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.148-automatic-backup/wod-v148-verification.zip",
+        "bytes": 332880540,
+        "sha256": "1740b91e7e91f273f95b1a494dccd2786f06269e835db71a4d4818945f4d7676"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+        "bytes": 466709632,
+        "sha256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025"
+      }
+    ],
+    "v156EntireSixSnapshotAndManifestDirectory": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "v156All74ChecksummedFilesKept": true,
+    "v132EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "v143EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "allOtherExistingEvidenceAndCodeChainsKept": true,
+    "doNotDeleteOnCodePushAlone": true,
+    "oldTimestampIDByteGapsNotClaimedFixed": true,
+    "verifiedByPostMainIndependentAudit": true,
+    "v175Entire134PairsMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175",
+    "v175Original134MasterPlusOmittedScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.134-local-cross-page-drafts/wod-v134-verification.zip",
+        "bytes": 190935049,
+        "sha256": "84592bdd0bdca3531e94158421ce59c31ae532d375417134b46adc3e34374fc3"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175/omitted-original-screens.zip",
+        "bytes": 5178710,
+        "sha256": "f1a9d1da477c435dcc9791a97ecc79fc53252114ba3e0d79dbc6dd92c86b89dd"
+      }
+    ],
+    "v175Original26PNGPathsStillKept": [
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-mobile.png"
+    ],
+    "v17480FixedExperimentalReportsAndSeparateZIPKept": true,
+    "v176Entire127AcceptanceMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176",
+    "v176Original127MasterPlusOmitted49ScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.127-local-mana-pressure/wod-v127-verification.zip",
+        "bytes": 94995384,
+        "sha256": "5b24489efddce37a83a8992b8c081825ba279137755e69ca2070e11e8c700c57"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176/omitted-original-screens.zip",
+        "bytes": 5431965,
+        "sha256": "b06bb54d2c5985053d46174a6fc161329b65adda131f369f10139c26c1537737"
+      }
+    ],
+    "v176Original49PNGPathsStillKept": [
+      "/workspace/wod-evidence/v127/acceptance/browser-v101/v101-mobile-schedule-evidence.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v102/v102-mobile-count.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v103/v103-mobile-qualification.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-mobile-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-ready-story.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-mobile-letter-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-ready-letter.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-next-goal.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-pending-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v95/v95-mobile-book.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v96/v96-mobile-sets.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v97/v97-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v98/v98-mobile-backup.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v99/v99-mobile-clocktower.png"
+    ],
+    "v178EntireNativeCLIRetentionDirectory": "/workspace/wod-maintenance/2026-11-08-native-cli-retention-v178",
+    "v178MetadataCopyInLatestMaster": "space-maintenance",
+    "v178All18OriginalMasterZIPs": [
+      {
+        "path": "/workspace/wod-delivery/v0.153-nondamaging-control/wod-v153-verification.zip",
+        "sha256": "cba61401ed089479b6fce53699a6db14a7cfa7d725d83bfd83fd7d9da1796da8",
+        "bytes": 334876713
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.154-enemy-surrender/wod-v154-focused-verification.zip",
+        "sha256": "7e898898bbbda5e01e471a9e0d2e32bb2869590cfc0160e40fb211245603811d",
+        "bytes": 115672799
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.155-homecoming-testimony/wod-v155-verification.zip",
+        "sha256": "99a8ee353f79e91dd9be38455f8edd320962a2f870b0001fb92cc3a07ff81cf8",
+        "bytes": 367157190
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.156-exploration-index/wod-v156-focused-verification.zip",
+        "sha256": "47ae7a5a9e3ee4cc5bd600809b52455c5e2328130ad2c8a8ed12f1b4f8d208ca",
+        "bytes": 39133027
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.162-professional-passage/wod-v162-verification.zip",
+        "sha256": "b126f66ad0ef2b729ca23431b31e6ce2ecabdaa949ecef6ebe5c2890ddaea931",
+        "bytes": 205055600
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.163-equipment-requirements/wod-v163-verification.zip",
+        "sha256": "18468d8974221e934ba3c7d34c3ee01dbb2755eed5c90e2c99d0c7583842d3b9",
+        "bytes": 191166181
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.164-expedition-closure/wod-v164-verification.zip",
+        "sha256": "8f302a62dd8caf9b28dd7d547f5d3b08177f4db137cd8c9090d029241c5b6023",
+        "bytes": 434191624
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.165-growth-navigation/wod-v165-verification.zip",
+        "sha256": "b27a562c0d54e7c403bc6ef3d3d9739ba08de69246ee5091f65be5aa3db6fa19",
+        "bytes": 227796985
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+        "sha256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025",
+        "bytes": 466709632
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.169-preparation-recovery/wod-v169-verification.zip",
+        "sha256": "21a9b02da51a7019b37bcf9a05c419e13e32f408f634c24bd8fb03c76a26808a",
+        "bytes": 229413393
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.170-play-guide/wod-v170-verification.zip",
+        "sha256": "e0206feb852a75cc8610dce90f32b3fb8305e5fb72da158ae3dcf8f2a27dc0e3",
+        "bytes": 505477587
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.171-casualty-evidence/wod-v171-verification.zip",
+        "sha256": "ffd7a3416675f1f750f4e949fb6a47d58119b35a20ae53a496b4b1c48bc5ed3e",
+        "bytes": 128963480
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.172-care-focus-svg-study/wod-v172-verification.zip",
+        "sha256": "91c64a0f78c6c253c0ce66e2b49365a699bc08b6299c610ddb933e585444c1c6",
+        "bytes": 144305469
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.173-route-art-loading/wod-v173-verification.zip",
+        "sha256": "36a5fb46e66c7234076204dfe0222254862c2b4fb7420698c3821e9caf6b246a",
+        "bytes": 529837365
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.174-guardian-art-detail/wod-v174-verification.zip",
+        "sha256": "0e632e2400a4ec581794c9caa41fdaed537b85fa299b4afb562d83c58b46d757",
+        "bytes": 190520892
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.175-recorded-damage-review/wod-v175-verification.zip",
+        "sha256": "1564df2829d889c463730f48227189adae064dc4cb9b15d1f4d547f21c97eb74",
+        "bytes": 358948306
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.176-guardian-fallen-framing/wod-v176-verification.zip",
+        "sha256": "e2ce818e93cd12088325034dd111c3253f16d56ffae1abe4644301cca512915f",
+        "bytes": 588722981
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.177-guardian-motion-cues/wod-v177-verification.zip",
+        "sha256": "08f20ce41aa3aec81ec100ec332d039c3ec880c1e06aabfa160f5964226fc1fb",
+        "bytes": 91324989
+      }
+    ],
+    "v178All18AdjacentRetiredPointers": [
+      {
+        "path": "/workspace/wod-evidence/v153/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "2802455cb783e262b256357fd83f4cd27ffdc6c3451c0a96d1bc2cec40f945bc"
+      },
+      {
+        "path": "/workspace/wod-evidence/v154/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "aa2c9479fd6cb6e64d60e04137e996b08ec84ba64adb23e5ed23de90c51e0c78"
+      },
+      {
+        "path": "/workspace/wod-evidence/v155/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "8948494328cc943468f1f8c922833a3a1ed6bdb441a25716998d82e0ba2e0133"
+      },
+      {
+        "path": "/workspace/wod-evidence/v156/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "8215159809277380895955b66b5c01939233d2c941692b9c65b29d1709051bb6"
+      },
+      {
+        "path": "/workspace/wod-evidence/v162/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "1b13f05b1f45dbf54a7b0045553776cddc81b8fd3576597d4683c5af821134dd"
+      },
+      {
+        "path": "/workspace/wod-evidence/v163/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "d52c26158353d9b3533135ac084105618614d0068deb3f3f622bd7c79166f37e"
+      },
+      {
+        "path": "/workspace/wod-evidence/v164/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "17375cc5212699ebd6a5183d17dd063e72ca2c3f6f0c4405a47faf16a8ccae5a"
+      },
+      {
+        "path": "/workspace/wod-evidence/v165/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "325ce18fe95445b1151eaa49f24f8a855a199241584448a1ce67ecc1f55081e6"
+      },
+      {
+        "path": "/workspace/wod-evidence/v167/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "f93af29d9cbfa2f1fd3e05c215720fd53eec4c9839576f4c8b76698cfd8a9247"
+      },
+      {
+        "path": "/workspace/wod-evidence/v169/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "eefc1df22b565b252895477ce1bdd19e86c6f457705294485c536a63dd5d0fa9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v170/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "56dc5a7f8f712a68cc78759083ea25e6223f366e8a48c750c962ad131891547b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v171/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "9af61868b1ec2bfcd855a7203427f6ab5db653f7f7c86da066383ddee0dc8b16"
+      },
+      {
+        "path": "/workspace/wod-evidence/v172/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "ef699d3abb9aeda90bde28c76e0a5899fe1d5e1e353ee5f33d7a855af0b09a4f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v173/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "760b2c4a734fc371670e7f2249c8050f26d40a1c9908eeebc5a2e62e0d5252e2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v174/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "fab58f70c31aeba292bcfc7194f2bd147b8dcc0ecf73cebac3adf67f301e9163"
+      },
+      {
+        "path": "/workspace/wod-evidence/v175/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "2003a0b2daab06e151beefda37cefaa8e32546261cbeef3db38a45099c8c7467"
+      },
+      {
+        "path": "/workspace/wod-evidence/v176/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "0e1564a1ceee4be7fbcfa35f64893b067fb844d642772d3d0efb0589c35c3a10"
+      },
+      {
+        "path": "/workspace/wod-evidence/v177/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "e2cc2282df4c2a1491c6c4ed905cf8296a0df2947610ca92250d16a4a7b703af"
+      }
+    ],
+    "v178OldTimestampIDByteGapsNotClaimedFixed": true,
+    "v179EntireTempReferenceMaintenance": "/workspace/wod-maintenance/2026-11-08-v179-temp-reference-budget",
+    "v179MetadataAndSupplementCopyInLatestMaster": "space-maintenance",
+    "v179Original137Master": {
+      "path": "/workspace/wod-delivery/v0.137-local-personal-focus-travel/wod-v137-verification.zip",
+      "sha256": "535e3e09e0f3504ed7f98f1999bd6d34cdaa5404840d6aad603bd3f6e4d061e8"
+    },
+    "v179UniqueTwoOriginalCampaigns": [
+      {
+        "path": "/tmp/wod-maintenance/browser-v137/focus-campaign.json",
+        "sha256": "0a6e109bd3d40a6d21f483da30484458f732a7f8962cd0641c40a417623eceb5"
+      },
+      {
+        "path": "/tmp/wod-maintenance/browser-v137/focus-final-campaign.json",
+        "sha256": "0e21a2b9b94a15637da17c4434ae97e197c4192e71a2facec20592923660430b"
+      }
+    ],
+    "v179Source172CommitRebuildDependency": "5f7510a82ae44a8cb927eabebf58e55cac2e89ff"
+  },
+  "newMandatoryMaintenance": "/workspace/wod-maintenance/2026-11-08-native-final-budget-v180",
+  "new180TenMasterPaths": [
+    {
+      "path": "/workspace/wod-delivery/v0.162-professional-passage/wod-v162-verification.zip",
+      "sha256": "b126f66ad0ef2b729ca23431b31e6ce2ecabdaa949ecef6ebe5c2890ddaea931"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.163-equipment-requirements/wod-v163-verification.zip",
+      "sha256": "18468d8974221e934ba3c7d34c3ee01dbb2755eed5c90e2c99d0c7583842d3b9"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.164-expedition-closure/wod-v164-verification.zip",
+      "sha256": "8f302a62dd8caf9b28dd7d547f5d3b08177f4db137cd8c9090d029241c5b6023"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.165-growth-navigation/wod-v165-verification.zip",
+      "sha256": "b27a562c0d54e7c403bc6ef3d3d9739ba08de69246ee5091f65be5aa3db6fa19"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.166-training-context/wod-v166-verification.zip",
+      "sha256": "f605a81e69208baa4c21d2f34697dfecd177ec3bd5c11313d879d4396518c824"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+      "sha256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.168-retry-preparation/wod-v168-verification.zip",
+      "sha256": "43aa32cfef0ea5dd982dd45fa936027318220d65614411e21996e6bba25bfc32"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.169-preparation-recovery/wod-v169-verification.zip",
+      "sha256": "21a9b02da51a7019b37bcf9a05c419e13e32f408f634c24bd8fb03c76a26808a"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.170-play-guide/wod-v170-verification.zip",
+      "sha256": "e0206feb852a75cc8610dce90f32b3fb8305e5fb72da158ae3dcf8f2a27dc0e3"
+    },
+    {
+      "path": "/workspace/wod-delivery/v0.171-casualty-evidence/wod-v171-verification.zip",
+      "sha256": "ffd7a3416675f1f750f4e949fb6a47d58119b35a20ae53a496b4b1c48bc5ed3e"
+    }
+  ],
+  "v137MeansOneOriginalV137MasterNot137Files": {
+    "path": "/workspace/wod-delivery/v0.137-local-personal-focus-travel/wod-v137-verification.zip",
+    "sha256": "535e3e09e0f3504ed7f98f1999bd6d34cdaa5404840d6aad603bd3f6e4d061e8"
+  },
+  "all507BaselineAnd509ExpandedProtectedFilesExact": true,
+  "space": {
+    "rawBytes": 951272580,
+    "checkpointBytes": 133356634,
+    "mainMeasuredReleased": 609329152,
+    "freeBytes": {
+      "/workspace": 2325037056,
+      "/tmp": 8147763200
+    }
+  },
+  "limitations": [
+    "Only15relatedcompleteGUI on180; full87 planned182..184 withfreshspace/remote gate.",
+    "Normal1316alive andprior130allDown are not rate/causality estimates anddidnot trigger tuning.",
+    "Native900/GIF1100 approximate8pose preview; no directGIFgeneration tool used, PNGpartialalpha lostinGIF.",
+    "Entire180maintenance/additional/tenmasters/tenpointers plusall179andearlier deps mandatory.",
+    "Currentmetadata capture; oldtimestampIDgaps notfixed; quiescentnotcrossprocesslock.",
+    "Supplyeconomypending;172Libraryuploadunknown/no retry."
+  ],
+  "nextMainWindow": [
+    182,
+    184
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.180",
+  "source": "v158full+159..180increments OR v152full+153..180increments; keepprivate6",
+  "branch": "feature/v180-bard-motion",
+  "base": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "mainUnchanged": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "coldChecks": "alltrackedblobs/modes/history/heads/private6,primary235Node/20CLIJSON exact,binarypatch tree",
+  "evidence": "one master with17 originalcheckpointZIP bytes/fullraw/evidence; restore3roots physically before duplicate retirement",
+  "newMandatoryMaintenance": "/workspace/wod-maintenance/2026-11-08-native-final-budget-v180",
+  "keepTenOriginalMasterZIPsAndTenPointers": true,
+  "v137IsOneMaster": {
+    "path": "/workspace/wod-delivery/v0.137-local-personal-focus-travel/wod-v137-verification.zip",
+    "sha256": "535e3e09e0f3504ed7f98f1999bd6d34cdaa5404840d6aad603bd3f6e4d061e8"
+  },
+  "keepAllInheritedDeps": true,
+  "noForceGCpruneDeploy": true
+}
