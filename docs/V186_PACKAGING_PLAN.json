@@ -1,8 +1,8 @@
 {
   "version": "0.186",
   "planNotExecutionReceipt": true,
-  "source": "Smallincrement185to186+binarypatch; both completechains, allblobsmodeshistoryrefs/private6 exact; primary56Node/current4+prior30JSON",
-  "evidence": "Onefocusedmaster/all6originalCPZIPbytes inclfailedpreview/currentrequiredscreens; twoindependentallfilephysicalproofs+wholeCP/E, boundRAWduplicates retiredwithmasterallCPkept,thenwholeRAW+independentreadback,CPduplicateslast",
+  "source": "Initial186increment plus finalsmallfixincrement, bothcompletechains; primary56Node+34CLI JSON; binary patchc015tofinal",
+  "evidence": "Prior candidate6CP in immutable initialmaster/wholeinitialdelivery protected; currentfinal4CP stored in newfocusedmaster. Same sequential2independentallfilephysical+3wholeproof coverage.",
   "threeWholeRootsBeforeAnyDuplicateRetirement": false,
   "spaceBudget": {
     "scope": "Camp primary actions before hero-selection grid and all partner editors; direct read-only map route; exact own-hero keyboard focus. Preserve existing visible hero and companion controls to retain direct access and existing interaction contracts.",
@@ -38,8 +38,11 @@
     "newArt": "Small inline SVG action icons, existing portrait and native/GIF art unchanged. No combat event on camp page; no decorative generated battle animation."
   },
   "noOldDataCleanup": true,
-  "protectedOldFiles": 1138,
+  "protectedOldFiles": 1220,
   "newMandatoryDependency": "ENTIRE sequential-recovery directory andlateRAW/CPpointers, allrecursivelychecksummed",
   "evidenceGap": "Initial2currentphaseexplorationPNGsoverwritten,NOTbyte-recovered;newcontrolled185before/currentafter kept",
-  "actualReceipts": "Deliverymanifest/restore-check/evidence-restore-check/independent-audit; sourceplans do notprove execution"
+  "actualReceipts": "Deliverymanifest/restore-check/evidence-restore-check/independent-audit; sourceplans do notprove execution",
+  "finalRevision": true,
+  "initialCandidateEntireDelivery": "/workspace/wod-delivery/v0.186-camp-start",
+  "finalDelivery": "/workspace/wod-delivery/v0.186-camp-start-final"
 }

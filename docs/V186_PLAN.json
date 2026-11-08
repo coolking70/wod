@@ -27,5 +27,10 @@
   "nextMainWindow": [
     188,
     190
-  ]
+  ],
+  "finalRevision": true,
+  "finalFixBase": "c01537c1dd4e60fef154c85337985d1d9903dd07",
+  "finalFix": "Desktop sticky tabs require actualheight+14px margin; threewidth hit-test confirms focused heading unobscured.",
+  "formalFourRawStringsByteExactInitialCandidate": true,
+  "finalDelivery": "/workspace/wod-delivery/v0.186-camp-start-final"
 }

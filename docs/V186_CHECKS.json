@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "baselineCommit": "9962a0322e3e27be21f9f6ada7c3c4157512e980",
+  "baselineCommit": "c01537c1dd4e60fef154c85337985d1d9903dd07",
   "mainUnchanged": "9962a0322e3e27be21f9f6ada7c3c4157512e980",
   "Node": {
     "tests": 56,
@@ -24,9 +24,9 @@
     ],
     "fullCurrentSuites": false,
     "fullRegistrySize": 92,
-    "originalCheckpointAttempts": 6,
-    "allOriginalAttemptsPassed": false,
-    "failedOriginalAttempts": 1,
+    "originalCheckpointAttempts": 4,
+    "allOriginalAttemptsPassed": true,
+    "failedOriginalAttempts": 0,
     "scope": "186completecamp/navigation/keyboard/readonly/normal136claim;167wholefreshsolojourney;183scholarGIFSVG;184supplytrace. Notall92."
   },
   "runtime": {
@@ -42,22 +42,14 @@
   "sourceInputs": 938,
   "runtimeDelta": {
     "changedOld": [
-      "dist/expedition-command-view.mjs",
-      "dist/expedition.css",
       "dist/expedition-guild-ui.mjs",
-      "dist/index.html",
-      "scripts/run-browser-acceptance.mjs",
-      "scripts/run-browser-focused.mjs"
+      "scripts/browser-v186.cjs"
     ],
-    "new": [
-      "scripts/camp-start-cases.mjs",
-      "scripts/browser-v186.cjs",
-      "scripts/check-v186.mjs"
-    ]
+    "new": []
   },
   "canonicalFiles": {
-    "/workspace/wod-evidence/v186/browser-final/camp-final-campaign.json": "d96d4ab12bd53ec0ece1ba0e62540566281c41bfd887fbab065122d48de1e033",
-    "/workspace/wod-evidence/v186/browser-final/camp-final-four-raw-keys.json": "baeecdf3f4244b1c1382c2346b206c96b66a3cefceb36747b844cd2e483fc485"
+    "/workspace/wod-evidence/v186-focus-fix/browser-final/camp-final-campaign.json": "e26558c03ea35f3147ae691f407fd14e51b1e4a631700229a30142c73e87fbaa",
+    "/workspace/wod-evidence/v186-focus-fix/browser-final/camp-final-four-raw-keys.json": "baeecdf3f4244b1c1382c2346b206c96b66a3cefceb36747b844cd2e483fc485"
   },
   "nativeState": {
     "gold": 14335,
@@ -99,6 +91,7 @@
     "currentHeroActualXPGearAndExistingPortrait": true,
     "growthEquipmentReviewMapKeyboardAndZeroPersistentWrites": true,
     "freeHeroSwitchKeepsAssetsAndFocusesCurrentHeroHeading": true,
+    "focusedHeadingUnobscuredByStickyTabsAllThreeWidths": true,
     "tacticsRetainsExistingRosterProjectionWriteContract": true,
     "fourInlineSVGIconsNoNewImageAssetOrAnimation": true,
     "allOldGIFPNGModelsStudiesByteExact": true
@@ -109,7 +102,7 @@
     "full130HistoricalJSONRecheckNotClaimed": true
   },
   "newMandatoryMaintenance": null,
-  "all1138BaselineProtectedExact": true,
+  "all1220BaselineProtectedExact": true,
   "maintenanceDependencies": {
     "v173EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
     "v173MetadataBackupAlsoInLatestMasterEvidenceRoot": "temp-budget-maintenance",
@@ -1197,14 +1190,30 @@
       },
       "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
       "CPsRetiredOnlyAfterAllWholeRootProofs": true
+    },
+    "v186SequentialRecoveryLateWholeDirectory": "/workspace/wod-delivery/v0.186-camp-start/sequential-recovery",
+    "v186CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v186/ACCEPTANCE_RETIRED_230db3ac5ff8_c68e56ae.json",
+        "sha256": "dffe102b7e3706b869e0e7aa3d321b68c3cd43edf026345dcb1f65771af7af84",
+        "mode": 384,
+        "mtimeNs": 1794154535003010197
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v186/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "72b747fff04327e26ddf45afb2891c6035a4e037a0872bc0f14108a0d3a0655a"
+      },
+      "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
+      "CPsRetiredOnlyAfterAllWholeRootProofs": true
     }
   },
   "space": {
-    "rawBytes": 155594480,
-    "checkpointBytes": 23471188,
+    "rawBytes": 115390819,
+    "checkpointBytes": 17281657,
     "freeBytes": {
-      "/workspace": 3020632064,
-      "/tmp": 8898400256
+      "/workspace": 2974195712,
+      "/tmp": 8938631168
     },
     "noOldDataCleanupThisStage": true,
     "noRepeatedPriorMaintenancePayloadOrFullSourceBundle": true
@@ -1213,6 +1222,14 @@
     188,
     190
   ],
+  "sameFormalFourRawStringsAsInitial186Candidate": true,
+  "priorInitialCandidate": {
+    "commit": "c01537c1dd4e60fef154c85337985d1d9903dd07",
+    "master": "/workspace/wod-delivery/v0.186-camp-start/wod-v186-focused-verification.zip",
+    "originalCPs": 6,
+    "failedPreviewCPs": 1,
+    "desktopOcclusionProbe": "/workspace/wod-delivery/v0.186-camp-start/post-candidate-review/desktop-focus-occlusion-probe.json"
+  },
   "evidenceCorrections": {
     "currentPhaseTwoInitialExplorationPNGsOverwrittenNotByteRecovered": "EXPLORATION_CAPTURE_CORRECTION.json",
     "freshIndependent185ControlledBeforeAndCurrentAfter": "CONTROLLED_COMPARISON.json",
