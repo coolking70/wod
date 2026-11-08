@@ -1,0 +1,31 @@
+{
+  "version": "0.186",
+  "baseline": "9962a0322e3e27be21f9f6ada7c3c4157512e980",
+  "mainOnEntry": "0.185",
+  "branch": "feature/v186-camp-start",
+  "problem": "390px own actions below hero choices and fivepartnereditors",
+  "implementation": "Currenthero actualsummary+primaryactions first; readonly map focus and actualhero headingfocus; retain all oldvisiblecontrols;4inlineSVGicons",
+  "actualPassed": {
+    "relatedNode": 56,
+    "completeRelatedGUI": [
+      186,
+      167,
+      183,
+      184
+    ],
+    "JS": 819,
+    "Python": 10,
+    "modules": 195,
+    "references": 220,
+    "frozenInputs": 938
+  },
+  "fullNotRun": {
+    "Node": 1778,
+    "GUI": 92
+  },
+  "normal": "136allDown40gold20XP,14335next137",
+  "nextMainWindow": [
+    188,
+    190
+  ]
+}

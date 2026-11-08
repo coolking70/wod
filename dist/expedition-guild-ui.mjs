@@ -177,6 +177,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  panels();
  }
  root.onclick=e=>{const b=e.target.closest('button');if(!b)return;try{
+ if(b.dataset.campMap){view('adventure');const h=document.querySelector('#adventure h1');if(h){h.tabIndex=-1;h.focus({preventScroll:true});h.scrollIntoView({block:'start'});}return;}
  if(b.dataset.rewardDismiss){claimedReward=null;render();root.querySelector(`[data-guild-tab="${pane}"]`)?.focus();return;}
  if(b.dataset.rewardFind){const state=claimedRewardState(),id=b.dataset.rewardFind;if(!state||state.stale||!state.receipt.items.some(i=>i.id===id&&i.current>0))throw Error('收益回执已过期或仓库已无此物，请重新进入核对');pane='equipment';render();const card=[...root.querySelectorAll('[data-warehouse-gear]')].find(n=>n.dataset.warehouseGear===id),h=card?.querySelector('h3');if(!h)throw Error('当前库存卡片不可见，请重新核对');root.querySelectorAll('.reward-located').forEach(n=>n.classList.remove('reward-located'));card.classList.add('reward-located');h.tabIndex=-1;h.focus({preventScroll:true});card.scrollIntoView({block:'center'});return;}
  if(b.dataset.growthJump){jumpGrowth(root,b.dataset.growthJump);return;}
@@ -235,7 +236,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  else if(b.dataset.swap){const out=root.querySelector('#replace-'+b.dataset.swap).value;save(swapCompanion(g,getConfig(),out,b.dataset.swap));updateConfig(rosterConfig(g,getConfig()));previews={};replacementTrial=null;inform('出战伙伴已替换；原伙伴的装备、经验和战术仍保留。');render();return;}
  else if(b.dataset.applyCompanion){const id=b.dataset.applyCompanion;save(setCompanion(g,id,previews[id]));delete previews[id];inform('伙伴职责已应用；出征核对将使用此职责。');render();return;}
  else if(b.dataset.cancelCompanion){delete previews[b.dataset.cancelCompanion];render();return;}
- else if(b.dataset.ownHero){previews={};save(selectHero(g,b.dataset.ownHero));selected=b.dataset.ownHero;inform('已选择自己的英雄；伙伴职责可在下方设置。');render();return;}
+ else if(b.dataset.ownHero){previews={};save(selectHero(g,b.dataset.ownHero));selected=b.dataset.ownHero;inform('已选择自己的英雄；伙伴职责可在下方设置。');render();const heading=root.querySelector('#camp-hero-heading');heading?.focus({preventScroll:true});heading?.scrollIntoView({block:'start'});return;}
  else if(b.dataset.personal){selected=g.command.heroId;if(b.dataset.personal==='tactics'){updateConfig(rosterConfig(g,getConfig()));editHero(selected,'');return;}switchPanel(b.dataset.personal==='growth'?'team':'equipment');return;}
  else if(b.dataset.reuseOpen){reuseOpen=true;reuseSource='';reuseTarget='';reuseRooms=false;render();root.querySelector('.tactic-reuse')?.scrollIntoView({block:'start'});return;}
  else if(b.dataset.reuseClose){reuseOpen=false;lastReusePreview=null;render();return;}

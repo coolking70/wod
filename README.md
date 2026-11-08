@@ -1,3 +1,5 @@
+> v0.186营地主入口：当前英雄经验/实装与成长、装备、战术、出征核对前置，保留自由选英雄和全部伙伴编辑器；新增只读地图入口与四个内联SVG图标。56相关Node/4完整相关GUI通过，main185，完整窗口188–190。正常136全倒/部分40金20XP保留，终14335/next137。见[说明](docs/V186_CAMP_START.md)、[交接](docs/HANDOFF_CLOUD_V186.md)。
+
 > v0.185完整节点：整合学者真实动作、SVG/八帧GIF样片与共享补给前缀追溯；1778全Node、91全套GUI、130完整JSON/33默认关闭HTML通过。正式档保持14295/next136，无额外出征。main进入时182，集成实际SHA见交付manifest；下一完整窗口188–190。见[说明](docs/V185_SOLO_EXPERIENCE_MILESTONE.md)、[交接](docs/HANDOFF_CLOUD_V185.md)。
 
 > v0.184开发：点击当前材料，追溯截至当前步的共享余额与耗尽来源，再返回原游标/筛选/焦点；静态SVG图标和余额图。65相关Node/2相关完整GUI，main182，下一完整节点185–187。见[说明](docs/V184_SHARED_SUPPLY_TRACE.md)、[交接](docs/HANDOFF_CLOUD_V184.md)。
