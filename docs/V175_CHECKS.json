@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "baselineCommit": "fbc25b92cc047e26f3c434226aece234976e810f",
+  "mainBaseline": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "Node": {
+    "tests": 1690,
+    "pass": 1690,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 8,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "22finalguardGUI plus22preGuardGUI and2previews; firsthiddenboardtestfailure retained",
+    "total": 22,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 82,
+    "versions": [
+      175,
+      174,
+      173,
+      172,
+      171,
+      170,
+      169,
+      168,
+      167,
+      163,
+      162,
+      157,
+      151,
+      146,
+      136,
+      123,
+      126,
+      137,
+      107,
+      108,
+      94,
+      95
+    ],
+    "originalCheckpointAttempts": 46,
+    "allCPsDurableMainAsCompleted": true,
+    "new175Screens": [
+      "damage-desktop124-fatal.png",
+      "damage-pending126-final.png",
+      "damage-mobile124-fatal.png",
+      "damage-mobile126-history.png"
+    ],
+    "v160NumericImportFreshFull162": true,
+    "beforeWordingSweepInterruptedNotPassed": true,
+    "beforeMissGuard1689And22PassedNotFinal": true,
+    "allFinal22OnNewGuardSource": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 187,
+    "checkedReferences": 207,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 766,
+  "sourceInputs": 850,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-hit-review.mjs",
+      "scripts/browser-v175.cjs",
+      "scripts/check-v175.mjs",
+      "scripts/damage-review-cases.mjs",
+      "scripts/fixtures/v175-preparation-state.json",
+      "tests/hit-review.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 839
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 120,
+    "actualReports": 114,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through125And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13460,
+    "next": 127,
+    "ownHero": "e",
+    "ownXP": 5685,
+    "berylXP": 2570,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 126,
+        "route": "courier",
+        "seed": 126,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4,
+          9
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "oldBookProofsAndAllStoriesUnchanged": true,
+    "onlyNormalPostbellWarehouse21to22AndCourierClears22to23": true,
+    "normalLoot": [
+      "postbell"
+    ],
+    "survival731SeparateExperimentNoReward": true
+  },
+  "recordedHPReview": {
+    "prefixAndCurrentRoomOnly": true,
+    "raw124Event344": {
+      "unresisted": 68,
+      "resistance": -10,
+      "resistanceIncreaseDamage": 7,
+      "damage": 75,
+      "HPActual": 65,
+      "overkill": 10
+    },
+    "noGearBlameOrCounterfactualPrediction": true,
+    "dodgeCoatingShieldMechanismAndIncompleteFallbackToOriginal": true,
+    "numericHTMLAndImportedTextSafe": true,
+    "nativeStaticSVGNoImageRequestOrAnimation": true,
+    "sourceKeyboardLinkRestoresFocus": true,
+    "oldAllImageAssetsAnd174ArtUnchanged": true
+  },
+  "controlledComparison": {
+    "source": "/workspace/wod-experiments/courier-v174-2026-11-08/COMPARISON.json",
+    "whole80ReportsProtected": true,
+    "baseWins": 20,
+    "tokenWins": 29,
+    "lossToWin": 16,
+    "winToLoss": 7,
+    "notPopulationFailureRateOrIsolatedResistanceCause": true,
+    "canonicalPreparationUnchanged": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v175/browser-final/damage-final-campaign.json": "2df389ea69e6316807e8d2f577cdee11395122d92d287a6a0a43425bc50ea42b",
+    "/workspace/wod-evidence/v175/browser-final/damage-final-four-raw-keys.json": "6851901cd0ab25578b4720a51d82099c30a74d65ef68262d9545f4dc013f8a7f"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "legacy143Root": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "new132Root": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "new132ChecksummedFiles": 14,
+    "new132SnapshotSHA256": "a6792d781955ac4ffe5ec8f7bb13b6a707d273454ae8f12524afe6e3bd4d620d",
+    "new132SnapshotBytes": 129703762,
+    "new132Current755Files59PNGAndNsFullRestoreBeforeRetirement": true,
+    "new173TempBudgetRoot": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "new173RequiresOriginal147148167MastersAndAllPlans": true,
+    "new175Root": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175",
+    "new175ChecksummedFiles": 9,
+    "new175RequiresOriginal134MasterPlusOmitted26ScreensZIPAndPlans": true,
+    "retiredOnly476MasterBackedFiles1135762200Bytes": true,
+    "all26OriginalScreensKeptInPlace": true,
+    "all191PreviouslyProtectedFilesExact": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "No battle/economy/schema or original-server numerical change.",
+    "22affectedcompleteGUI, full82 next176–178.",
+    "Chromium desktop/390px emulation, not physical devices or other engines; forced-colors not separately emulated.",
+    "80fixedreports include5knownanchors; no population failure-rate inference, item swap affects resistance/wil/agi and RNG, not isolated cause.",
+    "Chart uses consistent plainHPattackfields only; coating/shield/mechanism or missing/inconsistentfields conservatively defer to original.",
+    "One recorded prefix hit, not later HP, whole-fight sum or replacement gear forecast.",
+    "Original174GIF and172paintedtrial unchanged, no newimagegen.",
+    "OriginalLibrary172 upload unconfirmed, no retry.",
+    "Whole175maintenance plus134master now required along with173/147/148/167/156/132/143/sourcechains; oldbytegapsnotfixed.",
+    "Permanent supplies pending."
+  ],
+  "nextMainWindow": [
+    176,
+    178
+  ]
+}

@@ -108,6 +108,7 @@ import {HOSPICE_GOALS,contractPlan,contractResult,contractFrame} from './expedit
 import {healingReason,HEAL_PRIORITIES} from './expedition-healing.mjs';
 import {trainingInvestment,TRAINING_XP_UNIT} from './expedition-training.mjs';
 import {careTimeline,enemyBadge,healingActivity,fallenPartyTarget} from './expedition-care.mjs';
+import{hitReview,hitReviewView}from'./expedition-hit-review.mjs';
 import {hospiceMoment} from './expedition-hospice.mjs';
 import {survivalConfig,hospiceConfig} from './expedition-data.mjs';
 import {LOADOUTS,POLICIES,reserveConfig} from './expedition-reserve.mjs';
@@ -494,9 +495,9 @@ $('#survival-outcome').onclick=e=>{const b=e.target.closest('[data-down-event]')
 
 function renderCare(){
  const timeline=careTimeline(report,selectedUnit,selectedGroup().events.at(-1).id);$('#care-panel').hidden=!timeline;if(!timeline)return;
- $('#care-timeline').innerHTML=`<h3>${esc(timeline.unit)} · 当前 HP ${timeline.hp}/${timeline.maxHp}</h3><p class="muted">只显示当前房间、截至当前回放快照的最近12条记录（已发生${timeline.total}条）。药师行动穿插其中；有决策记录的行动会列出当时阈值、范围和资源；未记录的行动不推测原因。点击记录可回到该行动。</p><div class="care-list">${timeline.rows.map(x=>`<button class="care-${x.kind}" data-care-event="${x.eventId}"><small>第${x.round}回合 · ${esc(x.phase)} · ${({damage:'受击与防御',heal:'生命恢复',down:'倒下',medic:'药师行动'})[x.kind]}</small><b>${esc(x.text)}</b><span>${esc(x.detail)}</span></button>${x.decision?healingMarkup(x.decision):''}`).join('')||'<p>此时尚无受击、恢复或药师行动记录。</p>'}</div><small>行动合并模式跳转到整次施放的最终快照；逐条诊断模式可查看单条记录。</small>`;
+ $('#care-timeline').innerHTML=`<h3>${esc(timeline.unit)} · 当前 HP ${timeline.hp}/${timeline.maxHp}</h3>${hitReviewView(hitReview(report,selectedUnit,timeline.eventId))}<p class="muted">只显示当前房间、截至当前回放快照的最近12条记录（已发生${timeline.total}条）。药师行动穿插其中；有决策记录的行动会列出当时阈值、范围和资源；未记录的行动不推测原因。点击记录可回到该行动。</p><div class="care-list">${timeline.rows.map(x=>`<button class="care-${x.kind}" data-care-event="${x.eventId}"><small>第${x.round}回合 · ${esc(x.phase)} · ${({damage:'受击与防御',heal:'生命恢复',down:'倒下',medic:'药师行动'})[x.kind]}</small><b>${esc(x.text)}</b><span>${esc(x.detail)}</span></button>${x.decision?healingMarkup(x.decision):''}`).join('')||'<p>此时尚无受击、恢复或药师行动记录。</p>'}</div><small>行动合并模式跳转到整次施放的最终快照；逐条诊断模式可查看单条记录。</small>`;
 }
-$('#care-timeline').onclick=e=>{const b=e.target.closest('[data-care-event]');if(!b)return;const eventId=Number(b.dataset.careEvent),at=report.events.findIndex(x=>x.id===eventId);if(at<0)return;stop();move(at);const panel=$('#care-panel');panel.open=true;const next=$('#care-timeline [data-care-event="'+eventId+'"]')||panel;if(next===panel)panel.tabIndex=-1;next.focus({preventScroll:true});next.scrollIntoView({block:'nearest'});};
+$('#care-timeline').onclick=e=>{const b=e.target.closest('[data-care-event],[data-hit-review-event]');if(!b)return;const attr=b.hasAttribute('data-hit-review-event')?'data-hit-review-event':'data-care-event',eventId=Number(b.getAttribute(attr)),at=report.events.findIndex(x=>x.id===eventId);if(at<0)return;stop();move(at);const panel=$('#care-panel');panel.open=true;const next=$('#care-timeline ['+attr+'="'+eventId+'"]')||panel;if(next===panel)panel.tabIndex=-1;next.focus({preventScroll:true});next.scrollIntoView({block:'nearest'});};
 
 function healingBlockMarkup(block){const origin=block?originMap.get(block.effectId):null,canTrace=origin&&origin.source===block.source&&origin.targets.includes(block.target)&&origin.index<index,roomId=canTrace?roomsFor(report.config)[report.events[origin.index].roomIndex]?.id:null,canEdit=roomId&&report.config.heroes.some(h=>h.id===block.source);return `<p class="healing-block-proof">禁疗仅限制本回合余下的自动草药救护；不会撤销已完成治疗，也不会阻止普通指令。${canTrace?`<button data-healing-origin="${origin.index}">查看禁疗命中来源 →</button>`:''}${canEdit?`<button data-healing-edit="${roomId}:${block.source}">调整本房截疗指令 →</button><small>改配用于准备页与A/B实验；公会仍按已应用伙伴职责执行，请核对实际指令。</small>`:''}</p>`;}
 function healingMarkup(d,actor){

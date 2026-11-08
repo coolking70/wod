@@ -1,0 +1,19 @@
+{
+  "version": "0.175",
+  "base": "fbc25b92cc047e26f3c434226aece234976e810f",
+  "mainBaseline": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "scope": "RecordedprefixHPattackbreakdownandstaticSVGactual/overflow; safefullpairduplicateretention",
+  "normalCounters": [
+    126
+  ],
+  "normalPlan": "Same174preparation, no training/item swap/tuning/seedsearch",
+  "affectedCompleteGUI": 22,
+  "fullCurrentGUI": 82,
+  "nextMainWindow": [
+    176,
+    178
+  ],
+  "supplyEconomyPending": true,
+  "newRecoveryDependency": "Entire2026-11-08-v134-pairs-retention-v175 + original134master; original26PNGs remain",
+  "noForceGCPruneDeploy": true
+}
