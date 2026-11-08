@@ -1,0 +1,8 @@
+import fs from 'node:fs';import {resolve} from 'node:path';import assert from 'node:assert/strict';import {isDeepStrictEqual} from 'node:util';
+import {casualtyLoop} from './casualty-evidence-cases.mjs';
+const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v171');fs.mkdirSync(out,{recursive:true});const save=(k,v)=>fs.writeFileSync(resolve(out,'casualty-'+k+'.json'),JSON.stringify(v,null,2)),x=casualtyLoop();
+for(const k of ['start','source','history120','loaded','desktop','final','finalSource','survivalSource','survival'])save(k,x[k]);for(const [i,r]of x.runs.entries())for(const k of ['preparation','pending','report','reward','claimed'])save((i+1)+'-'+k,r[k]);
+for(const k of ['command','lineup','reportArchives','returnQuest','postQuest','foundryStory','harborStory','clocktowerStory'])assert.ok(isDeepStrictEqual(x.start[k],x.final[k]),k+' retained');
+assert.deepEqual(x.runs.map(r=>r.pending.pending.id),[121,122]);assert.equal(x.start.gold,13030);
+const normal=x.runs.map(r=>({id:r.pending.pending.id,route:r.report.config.expedition,seed:r.report.config.seed,won:r.report.won,alive:r.report.party.filter(u=>u.hp>0).length,rounds:r.report.rooms.map(r=>r.rounds),supplies:r.report.supplies,reward:r.reward}));
+save('playcheck',{passed:true,normal,gold:x.final.gold,next:x.final.next,limits:'Same actual170plan, next121/122 predeclared without tuning or training. Historical120 falls open exact victim care context; survival731 is separate fixed experiment, not a normal departure or award. No battle changes.'});console.log(JSON.stringify({passed:true,normal,gold:x.final.gold,next:x.final.next}));

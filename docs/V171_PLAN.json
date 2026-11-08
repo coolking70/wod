@@ -1,0 +1,18 @@
+{
+  "version": "0.171",
+  "base": "3d39172fd957666ec19b21108678251b491a3e30",
+  "main": "3d39172fd957666ec19b21108678251b491a3e30",
+  "scope": "Both existing casualty shortcuts select actual fallen target, reveal evidence care, clear filters and focus exact recorded snapshot. No mechanics change.",
+  "before": "120e345link shows Beryl45HP in collapsedcare; survival731down271opens care while reviewworkspace keeps it hidden.",
+  "normalCounters": [
+    121,
+    122
+  ],
+  "normalPlan": "Same actual170courier/survive,no training/tuning/winningseed search; survival731separate no-reward experiment.",
+  "nextMainWindow": [
+    173,
+    175
+  ],
+  "suppliesPending": true,
+  "noForceGCPruneDeploy": true
+}

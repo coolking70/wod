@@ -43,3 +43,8 @@ export function enemyBadge(config,unit){
  if(types.length>1)return {kind:'mixed',label:'复合',symbol:'✧'};
  return ({melee:{kind:'melee',label:'近战',symbol:'盾'},ranged:{kind:'ranged',label:'远程',symbol:'弩'},magic:{kind:'magic',label:'法术',symbol:'咒'},mental:{kind:'magic',label:'心理',symbol:'心'},disease:{kind:'disease',label:'疾病',symbol:'孢'}})[types[0]]||{kind:'mixed',label:'敌方',symbol:'◇'};
 }
+// A down record's actor is the attacking source. Select only its fallen formal target.
+export function fallenPartyTarget(report,event){
+ if(event?.type!=='down')return null;
+ return event.targets.find(id=>report.config.heroes.some(h=>h.id===id)&&event.units.some(u=>u.id===id&&u.side==='party'&&!u.owner&&u.hp<=0))||null;
+}

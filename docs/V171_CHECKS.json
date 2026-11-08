@@ -1,0 +1,213 @@
+{
+  "passed": true,
+  "baselineCommit": "3d39172fd957666ec19b21108678251b491a3e30",
+  "Node": {
+    "tests": 1678,
+    "pass": 1678,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 5,
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "15affected completeGUI plus preview on frozen171source",
+    "total": 15,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 78,
+    "versions": [
+      171,
+      170,
+      169,
+      168,
+      167,
+      164,
+      143,
+      107,
+      108,
+      94,
+      95,
+      123,
+      126,
+      137,
+      151
+    ],
+    "originalCheckpointAttempts": 16,
+    "allCPsDurableMainAsCompleted": true,
+    "previewsNotUsedToReplaceFinalSuites": true,
+    "new171Screens": [
+      "casualty-desktop-target-care.png",
+      "casualty-mobile-keyboard-care.png",
+      "casualty-mobile-survival-care.png"
+    ],
+    "v160NumericRegressionPreservedFromFull170NotRerun171": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 185,
+    "checkedReferences": 204,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 746,
+  "sourceInputs": 810,
+  "runtimeDelta": {
+    "new": [
+      "scripts/browser-v171.cjs",
+      "scripts/casualty-evidence-cases.mjs",
+      "scripts/check-v171.mjs",
+      "scripts/fixtures/v171-preparation-state.json",
+      "tests/casualty-evidence.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-care.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 800
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 115,
+    "actualReports": 109,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through120And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13205,
+    "next": 123,
+    "ownHero": "e",
+    "ownXP": 5570,
+    "berylXP": 2455,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 121,
+        "route": "courier",
+        "seed": 121,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4,
+          7
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      },
+      {
+        "id": 122,
+        "route": "courier",
+        "seed": 122,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          4,
+          5,
+          13
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "originalBookProofsUnchanged": true,
+    "normalLoot": [
+      "postbell"
+    ],
+    "survival731SeparateExperimentNoReward": true
+  },
+  "casualtyNavigation": {
+    "before120WrongVictim": {
+      "link": "120/塞恩倒下/event345",
+      "expectedPatient": "塞恩",
+      "careVisible": true,
+      "careTitle": "贝芮尔 · 当前 HP 45/134",
+      "careOpen": false,
+      "detailTitle": "塞恩 倒下。",
+      "workspace": "evidence",
+      "rawFourKeysUnchanged": true,
+      "errors": [],
+      "issueConfirmed": true
+    },
+    "beforeSurvivalHiddenWorkspace": {
+      "expected": "伊芙",
+      "careTitle": "伊芙 · 当前 HP 0/98",
+      "workspace": "review",
+      "careOpen": true,
+      "careVisible": false,
+      "issueConfirmed": true
+    },
+    "selectDownTargetsNotAttackingActor": true,
+    "onlyFormalPartyMemberDeadInSelectedSnapshot": true,
+    "bothEntrypointsRevealEvidenceCareAndKeyboardFocus": true,
+    "clearFiltersAndDiagnosticExactEvent": true,
+    "noFutureCareRecordsOrPersistentWrites": true,
+    "allOtherObjectiveEventNavigationRetained": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v171/browser-final/casualty-final-campaign.json": "b300d3b5a3747809665a8964b7c244836de3cbb8f74a68f4d669f467276f2fed",
+    "/workspace/wod-evidence/v171/browser-final/casualty-final-four-raw-keys.json": "f39f0925bb6ad2e9c3f25e02b5b6f9a0251ff5f029429643c53b17d40a6b569e"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "legacy143Root": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "new132Root": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "new132ChecksummedFiles": 14,
+    "new132SnapshotSHA256": "a6792d781955ac4ffe5ec8f7bb13b6a707d273454ae8f12524afe6e3bd4d620d",
+    "new132SnapshotBytes": 129703762,
+    "new132Current755Files59PNGAndNsFullRestoreBeforeRetirement": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Navigation/care projection only; no battle/economy/schema or verified original-server numeric change.",
+    "Same plan121sixalive/122all-down not a balance improvement or population estimate.",
+    "Only15affected completeGUI; all78reserved173–175.",
+    "Old160numeric regression retained from full170, not reexecuted171.",
+    "Chromium desktop/390px emulation, not physical devices or other engines.",
+    "New132snapshot captures current evidence; does not reconstruct older missing timestamps/IDs/round ZIPs.",
+    "Care-row keyboard jump to250 still loses focus to BODY; separately observed with no data writes, deferred next stage.",
+    "Permanent supplies/fixed protagonist/multiplayer pending."
+  ],
+  "mainRemains170": "3d39172fd957666ec19b21108678251b491a3e30",
+  "nextMainWindow": [
+    173,
+    175
+  ]
+}

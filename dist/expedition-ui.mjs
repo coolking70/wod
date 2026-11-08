@@ -106,7 +106,7 @@ import {ROLE_TARGETS,targetOptions,roleHuntConfig} from './expedition-data.mjs';
 import {HOSPICE_GOALS,contractPlan,contractResult,contractFrame} from './expedition-contract.mjs';
 import {healingReason,HEAL_PRIORITIES} from './expedition-healing.mjs';
 import {trainingInvestment,TRAINING_XP_UNIT} from './expedition-training.mjs';
-import {careTimeline,enemyBadge,healingActivity} from './expedition-care.mjs';
+import {careTimeline,enemyBadge,healingActivity,fallenPartyTarget} from './expedition-care.mjs';
 import {hospiceMoment} from './expedition-hospice.mjs';
 import {survivalConfig,hospiceConfig} from './expedition-data.mjs';
 import {LOADOUTS,POLICIES,reserveConfig} from './expedition-reserve.mjs';
@@ -482,7 +482,12 @@ function renderSurvivalOutcome(){
  const downs=report.events.filter(e=>e.type==='down'&&HEROES.some(h=>e.targets.includes(h.id))),healing=healingActivity(report);
  $('#survival-outcome').innerHTML='<p class="eyebrow">守灯结算 / 完整结果</p><h2>'+ (report.won?(downs.length?'灯火守住了，但有人未能归队。':'灯火与六名队员，一同归来。'):'归途尚未走完。')+'</h2><p>药师实际治疗 '+healing.actual+' 生命 / 普通救护 '+healing.ordinaryActions+' 次行动 / 缓释 '+healing.passiveRecords+' 条目标恢复记录。以下倒下记录可回到当次受击；治疗总量不能单独证明方案更好。</p>'+downs.map(e=>`<button data-down-event="${e.id}">${esc(HEROES.find(h=>h.id===e.targets[0])?.name||e.text)} · ${e.roomIndex+1}房 / 第${e.round}回合倒下 →</button>`).join('')+'<p class="muted">先比较攻击覆盖、防御与救护时机。此处为完整结算，不随播放进度变化。</p>';
 }
-$('#survival-outcome').onclick=e=>{const b=e.target.closest('[data-down-event]');if(b){stop();const at=report.events.findIndex(x=>x.id===Number(b.dataset.downEvent));selectedUnit=report.events[at].targets[0];move(at);$('#care-panel').open=true;$('#care-panel').scrollIntoView({block:'start'});}};
+function openDownEvidence(at){
+ if(!Number.isInteger(at))return false;const target=fallenPartyTarget(report,report.events[at]);if(!target)return false;
+ stop();selectedUnit=target;$('#personal-playback').checked=false;$('#highlights-only').checked=false;$('#diagnostic').checked=true;replayWorkspace.open('evidence');renderJournal();move(at);
+ const panel=$('#care-panel');panel.open=true;panel.tabIndex=-1;panel.focus({preventScroll:true});panel.scrollIntoView({block:'start'});return true;
+}
+$('#survival-outcome').onclick=e=>{const b=e.target.closest('[data-down-event]');if(b)openDownEvidence(report.events.findIndex(x=>x.id===Number(b.dataset.downEvent)));};
 
 function renderCare(){
  const timeline=careTimeline(report,selectedUnit,selectedGroup().events.at(-1).id);$('#care-panel').hidden=!timeline;if(!timeline)return;
@@ -624,7 +629,7 @@ $('#greenhouse-brief').onclick=e=>{const b=e.target.closest('[data-greenhouse-pl
 
 function campMapView(){try{return campCycleView(campObjective(readCycleGuild(localStorage)));}catch{return '<section class="panel"><p>公会暂不可读，原存档未覆盖；请回营导出或恢复有效备份。</p><button data-cycle-action=hero>回营检查</button></section>';}}
 function refreshReportHandoff(){const box=$('#report-handoff');if(!box)return;box.hidden=!report;if(!report)return;try{const state=reportHandoff(readCycleGuild(localStorage),reportOrigin,report);box.dataset.status=state.status;box.innerHTML=reportHandoffView(state,objectiveResultView(report));archiveCapture?.render();}catch{archiveCapture?.hide();box.dataset.status='unavailable';box.innerHTML='<h2>公会暂不可读取</h2><p>原存档未覆盖，不能从这里领取；请回营检查或恢复备份。</p><button data-report-cycle=camp>回营检查</button>';}}
-$('#report-handoff').onclick=e=>{const proof=e.target.closest('[data-objective-event]');if(proof){stop();$('#personal-playback').checked=false;$('#highlights-only').checked=false;$('#diagnostic').checked=true;replayWorkspace.open('evidence');renderJournal();move(Number(proof.dataset.objectiveEvent));$('#detail').scrollIntoView({block:'start'});return;}if(e.target.closest('[data-objective-edit]')){try{replaceConfig(report.config);scope='';persist();planner();view('planning');setPrep('overview');tell('本次目标与方案已载入，可在方案管理撤销。对比方案A保持原值；需要替换A时，请在复盘中明确点击“将本战报配置设为A”。请按当前公会资产与伙伴职责核对，正式重试前先领取待结算远征。');}catch(error){tell('未能载入目标方案：'+error.message);}return;}const b=e.target.closest('[data-report-cycle]');if(!b)return;try{if(b.dataset.reportCycle==='claim')guildUI.settleReport(reportOrigin,report);else guildUI.cycle(b.dataset.reportCycle);}catch(error){tell(error.message);}refreshReportHandoff();};
+$('#report-handoff').onclick=e=>{const proof=e.target.closest('[data-objective-event]');if(proof){if(openDownEvidence(Number(proof.dataset.objectiveEvent)))return;stop();$('#personal-playback').checked=false;$('#highlights-only').checked=false;$('#diagnostic').checked=true;replayWorkspace.open('evidence');renderJournal();move(Number(proof.dataset.objectiveEvent));$('#detail').scrollIntoView({block:'start'});return;}if(e.target.closest('[data-objective-edit]')){try{replaceConfig(report.config);scope='';persist();planner();view('planning');setPrep('overview');tell('本次目标与方案已载入，可在方案管理撤销。对比方案A保持原值；需要替换A时，请在复盘中明确点击“将本战报配置设为A”。请按当前公会资产与伙伴职责核对，正式重试前先领取待结算远征。');}catch(error){tell('未能载入目标方案：'+error.message);}return;}const b=e.target.closest('[data-report-cycle]');if(!b)return;try{if(b.dataset.reportCycle==='claim')guildUI.settleReport(reportOrigin,report);else guildUI.cycle(b.dataset.reportCycle);}catch(error){tell(error.message);}refreshReportHandoff();};
 window.addEventListener('storage',e=>{if(document.body.dataset.view==='adventure'&&(!e.key||['abbey-guild-v6','abbey-plan-library-v1'].includes(e.key))){$('#adventure-camp-summary').innerHTML=campMapView();renderExplorationResults();}if(!e.key||e.key===storageKey)refreshPreparationStatus();if(!e.key||e.key==='abbey-guild-v6')refreshReportHandoff();});
 window.addEventListener('focus',()=>{refreshPreparationStatus();refreshReportHandoff();});
 
