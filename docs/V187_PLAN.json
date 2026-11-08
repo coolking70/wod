@@ -1,0 +1,60 @@
+{
+  "version": "0.187",
+  "selectedWork": "Actualfocus-equipped tidecaller native10jointSVG +real8frameGIF/frozenstudy; no extra replaytoolbar",
+  "baseline": "2ec3a1f2deb8fdec801f391d9d3cd2d9a9e41577",
+  "normal": {
+    "gold": 14470,
+    "next": 138,
+    "ownHero": "e",
+    "ownXP": 6115,
+    "berylXP": 3000,
+    "normal": {
+      "id": 137,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      }
+    },
+    "allCPlansARawStringsExact186": true,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "noTrainingTuningSeedSearchOrAutomaticGearAdoption": true,
+    "warehouseOnlyPostbellPlus1AndCourierClearPlus1": true
+  },
+  "NodeScope": [
+    "tests/tidecaller-motion.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/action-outcomes.test.mjs"
+  ],
+  "browserScope": [
+    187,
+    186,
+    183,
+    184
+  ],
+  "nextFullGate": [
+    188,
+    190
+  ],
+  "supplyPending": true
+}

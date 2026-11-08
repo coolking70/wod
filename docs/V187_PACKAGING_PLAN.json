@@ -1,0 +1,33 @@
+{
+  "scope": "Actualfocus-equipped tidecaller nativejointSVG onbattleboard +noninteractive settledinspector figure, actualnormal137wave multi-target/summon/recall/hit/evade/fallen;8realnativeframes GIF/PNGsheet +standalone frozenstudy. No extra replaytool or gameplaysettings.",
+  "NodeScope": [
+    "tests/tidecaller-motion.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/action-outcomes.test.mjs"
+  ],
+  "browserScope": [
+    187,
+    186,
+    183,
+    184
+  ],
+  "fullGate": [
+    188,
+    190
+  ],
+  "rawUpper": 450000000,
+  "CPUpper": 90000000,
+  "phaseEvidenceUpper": 50000000,
+  "masterUpper": 160000000,
+  "sourceSidecarsUpper": 6000000,
+  "reserveEach": 1073741824,
+  "freeBytes": {
+    "/workspace": 2945900544,
+    "/tmp": 9054220288
+  },
+  "protectedFiles": 1307,
+  "evidencePolicy": "Everycapture/art/preview/final attemptusesemptydistinctdirs; nooverwrite. Keep186twooriginalPNGbytegap explicit. Alloldassets/masters/maintenance/private6/sourcechains unchanged. Canonicalrawmustusev187 numericnamespace to retain guard.",
+  "permanentSupplyEconomyPending": true
+}
