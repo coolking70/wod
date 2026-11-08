@@ -7,7 +7,14 @@ export function primaryJourneyProgress(c){
 }
 export function focusJourneyHeading(root,book){
  if(!BOOKS.includes(book))return false;
- const h=root.querySelector(`[data-story-book="${book}"] > h2`);if(!h||h.closest('[hidden]'))return false;
+ const h=root.querySelector(`[data-story-book="${book}"] > h2`);if(!h||h.closest('[hidden]'))return false;h.dataset.journeyHeading=book;
+ return focusVisible(root,h);
+}
+function focusVisible(root,h){
  const tabs=root.querySelector('.guild-tabs'),view=root.ownerDocument.defaultView,sticky=tabs&&view.getComputedStyle(tabs).position==='sticky';
- h.tabIndex=-1;h.dataset.journeyHeading=book;h.style.scrollMarginTop=((sticky?tabs.getBoundingClientRect().height:0)+14)+'px';h.focus({preventScroll:true});h.scrollIntoView({block:'start',behavior:'auto'});return true;
+ h.tabIndex=-1;h.style.scrollMarginTop=((sticky?tabs.getBoundingClientRect().height:0)+14)+'px';h.focus({preventScroll:true});h.scrollIntoView({block:'start',behavior:'auto'});return true;
+}
+export function focusJourneyReceipt(root,book){
+ if(!BOOKS.includes(book))return false;
+ const h=root.querySelector(`[data-story-book="${book}"] [data-journey-receipt]`);if(!h||h.closest('[hidden]'))return false;return focusVisible(root,h);
 }

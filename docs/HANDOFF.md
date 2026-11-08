@@ -1,3 +1,5 @@
+> v0.193持久证据与旅程交付：三套旧完整验收ZIP经主盘差分持久化、独立冷恢复及三整根回读后安全退役，净减少约1.40GB载荷；原SHA与旧清单保留，按显式catalog恢复。五本旅程交付后聚焦真实回执，新增281字节原生SVG印记。71相关Node、6套完整相关GUI、80完整CLI通过，非1837/97全门禁。main仍191/09ed93af，194–196重新预算并跑完整门禁。见[说明](V193_DURABLE_EVIDENCE_AND_JOURNEY.md)、[交接](HANDOFF_CLOUD_V193.md)。
+
 > v0.192旅程接续：营地主目标显示真实3/3进度，从营地/地图和五本旅程进入时定位并聚焦标题；沿用青铜灯塔来信的原生SVG。66相关Node、6套完整相关GUI、84份完整CLI JSON通过。main仍为191/09ed93af；194–196重新预算并执行完整门禁。正式档四原串保持14895/next140，无新出征或代选结局。见[说明](V192_JOURNEY_FOLLOWTHROUGH.md)、[交接](HANDOFF_CLOUD_V192.md)。
 
 > v0.191单人旅程完整里程碑：整合药师真实SVG/GIF与已探索营地接续，1821完整Node、95完整GUI、130历史完整JSON/33机制HTML通过。正式档四串保持190的14895/next140，不多领一笔。容量布局已按25%增长+两次重测物理验证，全部历史依赖保持。main入场188，实际集成SHA见阶段交付manifest。见[说明](V191_SOLO_JOURNEY_MILESTONE.md)、[交接](HANDOFF_CLOUD_V191.md)。

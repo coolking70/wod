@@ -1,0 +1,14 @@
+{
+  "status": "Plan; executed result in stage manifest",
+  "source": "Extend both192chains, allGitblobs/history/refs/modes/fsck; primary71Node80staticCLI",
+  "evidence": "All7 originalCPs inclfailedpreview; independentphysicalproofs; inherited3retired originals protected through exact durablecatalog+base+wrappers+proofs; no old manifests rewritten",
+  "durableDirectory": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193",
+  "catalog": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v3.json",
+    "bytes": 3707,
+    "sha256": "c88dd1de1f896b9ccfe5171655d9346456a64eccaa0d1be3370299ff4413fb32"
+  },
+  "reserveEachVolumeBytes": 1073741824,
+  "main": "19109edunchanged;194196freshfullgate",
+  "supplyEconomyPending": true
+}

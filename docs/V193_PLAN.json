@@ -1,0 +1,34 @@
+{
+  "version": "0.193",
+  "scope": "Persistent original-byte evidence catalog with independent cold decoder and complete185/191/182proofs; five-story real delivery keyboard receipt and native seal SVG.",
+  "rawUpper": 350000000,
+  "CPUpper": 90000000,
+  "EVUpper": 50000000,
+  "masterUpper": 150000000,
+  "sourceSidecarsUpper": 10000000,
+  "reserveBytes": 1073741824,
+  "NodeScope": [
+    "tests/journey-receipt.test.mjs",
+    "tests/durable-evidence-store.test.mjs",
+    "tests/journey-followthrough.test.mjs",
+    "tests/byte-delta-evidence.test.mjs",
+    "tests/v76.test.mjs",
+    "tests/v106.test.mjs",
+    "tests/post-quest.test.mjs",
+    "tests/return-quest.test.mjs"
+  ],
+  "browserScope": [
+    193,
+    192,
+    106,
+    124,
+    155,
+    186
+  ],
+  "fullGate": [
+    194,
+    196
+  ],
+  "noNewFormal140OrEndingReward": true,
+  "permanentSupplyPending": true
+}

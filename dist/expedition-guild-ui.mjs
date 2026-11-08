@@ -1,4 +1,4 @@
-import {focusJourneyHeading} from './expedition-journey-followthrough.mjs';
+import {focusJourneyHeading,focusJourneyReceipt} from './expedition-journey-followthrough.mjs';
 import{claimedRewardReceipt,claimedRewardView}from'./expedition-claimed-reward.mjs';
 import{rehearseLootAssignment,lootRehearsalSignature}from'./expedition-loot-rehearsal.mjs';
 import{lootAssignmentRehearsalView}from'./expedition-loot-rehearsal-view.mjs';
@@ -220,14 +220,14 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  else if(b.hasAttribute('data-returnquest-start')){save(startReturnQuest(g));render();inform('已接取归岸证词；先让引航员活着抵岸，旧通关不回填。');return;}
  else if(b.dataset.returnquestPath){save(chooseReturnQuest(g,b.dataset.returnquestPath));render();inform('归岸通路已选；只在真实领取且满足本支条件后记录。');return;}
  else if(b.hasAttribute('data-returnquest-prepare')){if(localStorage.getItem(GUILD_KEY)!==raw||localStorage.getItem(configKey)!==JSON.stringify(getConfig()))throw Error('另一页面已修改公会或准备配置，请重新载入');const route=g.returnQuest?.selected;if(!route||g.pending)throw Error('先选择当前通路并领取待结算远征');const assigned=routeFocusPreparation(localStorage,route,getConfig(),g),c=assigned.config;c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('已准备归岸通路；保持当前实际资产与职责，完成条件后正常领取。'+routeFocusNotice(assigned));return;}
- else if(b.hasAttribute('data-returnquest-deliver')){save(deliverReturnQuest(g));render();inform('归岸证词已交付；40金币与本支已有遗物入仓，不加经验、不自动分配。');return;}
+ else if(b.hasAttribute('data-returnquest-deliver')){save(deliverReturnQuest(g));render();focusJourneyReceipt(root,'returnquest');inform('归岸证词已交付；40金币与本支已有遗物入仓，不加经验、不自动分配。');return;}
  else if(b.hasAttribute('data-postquest-start')){save(startPostQuest(g));render();inform('已接取归信航程，旧通关不回填；先选择第一段通路。');return;}
  else if(b.dataset.postquestPath){save(choosePostQuest(g,b.dataset.postquestPath));render();inform('本段通路已选择；准备与正式出征仍需按当前实际队伍核对。');return;}
  else if(b.hasAttribute('data-postquest-prepare')){if(localStorage.getItem(GUILD_KEY)!==raw||localStorage.getItem(configKey)!==JSON.stringify(getConfig()))throw Error('另一页面已修改公会或准备配置，请重新载入后准备任务');const route=g.postQuest?.selected;if(!route||g.pending)throw Error('先选择本段通路并领取当前远征结算');const assigned=routeFocusPreparation(localStorage,route,getConfig(),g),c=assigned.config;c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('已载入任务通路准备；路线绑定方案与当前资产/伙伴职责保持，正式通关领取后才取得路签。'+routeFocusNotice(assigned));return;}
- else if(b.dataset.postquestDeliver){save(deliverPostQuest(g,b.dataset.postquestDeliver));render();inform('归信交付已记录；40金币与所选遗物入仓，仍需手动分配。');return;}
- else if(b.dataset.clocktowerStoryEnd){save(claimClocktowerStory(g,b.dataset.clocktowerStoryEnd));inform('余响结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
- else if(b.dataset.harborStoryEnd){save(claimHarborStory(g,b.dataset.harborStoryEnd));inform('来信结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
- else if(b.dataset.foundryStoryEnd){const ending=b.dataset.foundryStoryEnd;save(claimFoundryStory(g,ending));inform('归航结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();return;}
+ else if(b.dataset.postquestDeliver){save(deliverPostQuest(g,b.dataset.postquestDeliver));render();focusJourneyReceipt(root,'postquest');inform('归信交付已记录；40金币与所选遗物入仓，仍需手动分配。');return;}
+ else if(b.dataset.clocktowerStoryEnd){save(claimClocktowerStory(g,b.dataset.clocktowerStoryEnd));inform('余响结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();focusJourneyReceipt(root,'clocktower');return;}
+ else if(b.dataset.harborStoryEnd){save(claimHarborStory(g,b.dataset.harborStoryEnd));inform('来信结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();focusJourneyReceipt(root,'harbor');return;}
+ else if(b.dataset.foundryStoryEnd){const ending=b.dataset.foundryStoryEnd;save(claimFoundryStory(g,ending));inform('归航结局已记录；40金币与指定装备已入公会仓库，可前往分配。');render();focusJourneyReceipt(root,'foundry');return;}
  else if(b.dataset.shoalsChart){const c=shoalsConfig('roles',Number(b.dataset.shoalsChart));c.seed=getConfig().seed;loadConfig(c);inform('已准备指定海图；成员资产与伙伴职责保留，通关领取后才记入勘探册。');return;}
  else if(b.dataset.journeyPrepare){const route=b.dataset.journeyPrepare;if(!['foundry','foundrywatch','chapter','harbor','courier'].includes(route))throw Error('旅程路线无效');const c=({foundry:foundryConfig,foundrywatch:watchConfig,courier:courierConfig,chapter:chapterConfig,harbor:harborConfig}[route])();c.seed=getConfig().seed;loadConfig(c);inform('旅程路线已准备；当前公会资产与已应用伙伴职责保留，完成后正常领取结算。');return;}
  else if(b.dataset.foundryPrepare){const c=foundryConfig();c.seed=getConfig().seed;loadConfig(c);inform('铸库已准备；委托在正常出征结算时核对，当前尚未支付或领取奖励。');return;}

@@ -187,3 +187,6 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 
 
 .camp-primary-journey{color:var(--gold);border-left:3px solid var(--gold);padding-left:12px;overflow-wrap:anywhere}[data-story-book]>h2{scroll-margin-top:14px;display:flex;gap:10px;align-items:center}[data-story-book]>h2::before{content:"";display:block;width:40px;height:40px;flex:0 0 40px;background:url("assets/journey-letter-v192.svg") center/contain no-repeat}[data-story-book]>h2:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+
+[data-journey-receipt]{scroll-margin-top:14px}[data-journey-receipt]:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+[data-journey-receipt]{display:flex;gap:9px;align-items:center}[data-journey-receipt]::before{content:"";display:block;width:28px;height:28px;flex:0 0 28px;background:url("assets/receipt-seal-v193.svg") center/contain no-repeat}

@@ -1,0 +1,521 @@
+{
+  "passed": true,
+  "version": "0.193",
+  "baselineCommit": "fd391f505a538b50a784e88235e0e1b6ccb24e75",
+  "mainUnchanged": "09ed93af202de828b3b74c4c68cfa8991ec769a5",
+  "Node": {
+    "tests": 71,
+    "pass": 71,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeEntries": 7,
+  "PythonStoreAndIndependentDecoderGuards": 20,
+  "fullNodeSuiteRun": false,
+  "fullNodeRegistryExpected": 1837,
+  "browser": {
+    "passed": true,
+    "total": 6,
+    "versions": [
+      193,
+      192,
+      106,
+      124,
+      155,
+      186
+    ],
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 97,
+    "originalCheckpointAttempts": 7,
+    "failedOriginalGUIAttempts": 1,
+    "all15ThreeWidthFiveBookRealCopyDeliveriesPassed": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 198,
+    "checkedReferences": 228,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "JS": 852,
+    "Python": 17,
+    "sourceInputs": 999
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "changedOld": [
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-journey-followthrough.mjs",
+      "dist/expedition-post-quest-view.mjs",
+      "dist/expedition-return-quest-view.mjs",
+      "dist/expedition-solo-story-view.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "new": [
+      "dist/assets/receipt-seal-v193.svg",
+      "scripts/browser-v193.cjs",
+      "scripts/byte-delta-independent.py",
+      "scripts/check-v193.mjs",
+      "scripts/durable-evidence-store-tests.py",
+      "scripts/durable-evidence-store.py",
+      "scripts/journey-receipt-cases.mjs",
+      "tests/durable-evidence-store.test.mjs",
+      "tests/journey-receipt.test.mjs"
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v193/browser-final/journey-final-four-raw-keys.json": "ae187ffc88590307f7294355097d9d48d6f2daf8487a744548ae295a69001379",
+    "/workspace/wod-evidence/v193/browser-final/journey-final-campaign.json": "1d51ddee632dce2b9f7a1f450159b554e8a69a38e3d367d4cb842156ceb78d6e"
+  },
+  "nativeState": {
+    "gold": 14895,
+    "next": 140,
+    "allFourBusinessStringsExact192": true,
+    "noFormal140DepartureOrEndingOrReward": true,
+    "fiveSeparateCopiedExistingStoryDeliveriesOnly": true
+  },
+  "art": {
+    "originalStaticReceiptSealSVGBytes": 281,
+    "allPreviousGIFPNGModelsUnchanged": true,
+    "noGeneralPerformanceOrNewAnimationClaim": true
+  },
+  "nativeStaticJSON": 80,
+  "prior79StaticJSONByteExactOriginal191And192Masters": true,
+  "all2192OriginalSHA256sVerified": true,
+  "threePhysicalOriginalZIPDuplicatesRetiredOnlyAfterDurableProof": [
+    "/workspace/wod-delivery/v0.191-solo-journey-milestone/wod-v191-focused-verification.zip",
+    "/workspace/wod-delivery/v0.185-solo-experience-milestone/wod-v185-verification.zip",
+    "/workspace/wod-delivery/v0.182-motion-evidence-milestone/wod-v182-verification.zip"
+  ],
+  "allOtherBaselineFilesPhysicallyPresentUnchanged": true,
+  "durableStorage": {
+    "passed": true,
+    "directory": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193",
+    "catalog": {
+      "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v3.json",
+      "bytes": 3707,
+      "sha256": "c88dd1de1f896b9ccfe5171655d9346456a64eccaa0d1be3370299ff4413fb32"
+    },
+    "threeExplicitRetiredOriginalPaths": [
+      "/workspace/wod-delivery/v0.191-solo-journey-milestone/wod-v191-focused-verification.zip",
+      "/workspace/wod-delivery/v0.185-solo-experience-milestone/wod-v185-verification.zip",
+      "/workspace/wod-delivery/v0.182-motion-evidence-milestone/wod-v182-verification.zip"
+    ],
+    "logicalOriginalSHA256s": [
+      {
+        "path": "/workspace/wod-delivery/v0.191-solo-journey-milestone/wod-v191-focused-verification.zip",
+        "bytes": 632732237,
+        "sha256": "2b31b491a35709130395e5b523978af696e69d31ab9af8027979f542acf9c7e2",
+        "mode": 384,
+        "mtimeNs": 1794171047482874817,
+        "device": 27,
+        "inode": 1078200
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.185-solo-experience-milestone/wod-v185-verification.zip",
+        "bytes": 594674075,
+        "sha256": "434143125d7dfbd111d9587b5a3a8c4ccca8458660bdbc2e16fb3a421969148c",
+        "mode": 384,
+        "mtimeNs": 1794151880326191832,
+        "device": 27,
+        "inode": 1075487
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.182-motion-evidence-milestone/wod-v182-verification.zip",
+        "bytes": 606161588,
+        "sha256": "5844b9e606adeaff71dd154e1ca2423bb5615543c23d77ff20476232c0f9fbdd",
+        "mode": 384,
+        "mtimeNs": 1794143203091168934,
+        "device": 27,
+        "inode": 1074446
+      }
+    ],
+    "durableWrappers": [
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/wrappers/v191-original-from-v188.delta.zip",
+        "bytes": 179679629,
+        "sha256": "257c5b07037d0e68a68ccb0c974ad8c1ef99aa129b43229f654244ec566db065",
+        "mode": 384,
+        "mtimeNs": 1794175851466913818,
+        "device": 27,
+        "inode": 1078623
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/wrappers/v185-original-from-v188.delta.zip",
+        "bytes": 126510845,
+        "sha256": "e34481538c21fc13d4618a7ad29063c3d3f85a6967a745dbcbe7b25fcb1b913a",
+        "mode": 384,
+        "mtimeNs": 1794176126175972029,
+        "device": 27,
+        "inode": 1078649
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/wrappers/v182-original-from-v188.delta.zip",
+        "bytes": 128712370,
+        "sha256": "6d5ae8d62abb5202e7977aadc08e826f941eb01d614e464b776572bfd6d4bcb9",
+        "mode": 384,
+        "mtimeNs": 1794176401679786070,
+        "device": 27,
+        "inode": 1078678
+      }
+    ],
+    "stableLiteralBase": {
+      "path": "/workspace/wod-delivery/v0.188-camp-motion-milestone/wod-v188-verification.zip",
+      "bytes": 602331774,
+      "sha256": "261c56f89d7f90aac50315514962843ade00e2b6a559287fea411d8fa7125c06",
+      "mode": 384,
+      "mtimeNs": 1794162219144440253,
+      "device": 27,
+      "inode": 1076842
+    },
+    "originalBytes": 1833567900,
+    "durableWrapperBytes": 434902844,
+    "grossPayloadBytesSaved": 1398665056,
+    "threeOldSnapshotsCheckpointCounts": [
+      95,
+      91,
+      90
+    ],
+    "independentColdAndAllInnerCRCAndThreeWholeRootsPassedForEach": true,
+    "postRetirementColdVerifyPassedForAllThree": true,
+    "allHistoricalManifestBytesAndOtherMaterialsKept": true,
+    "sameMainDiskNotOffHostBackup": true,
+    "originalV192TemporaryWrapperStillHeldButNotReliedOnForReplacement": true,
+    "mandatoryFiles": [
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v1.json",
+        "bytes": 1292,
+        "sha256": "61a7e92e047e5ed3cc3fdea8b1a9c41b24ade1001d0ec22fd1f209a686ae79fa"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v2.json",
+        "bytes": 2587,
+        "sha256": "2ecb35263f8a84cb259a48be6ba47a1bf9cb9f1ca477d7053359c7eb4a7b8c3d"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v3.json",
+        "bytes": 3707,
+        "sha256": "c88dd1de1f896b9ccfe5171655d9346456a64eccaa0d1be3370299ff4413fb32"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CURRENT.json",
+        "bytes": 334,
+        "sha256": "c02cb0e132407ccd06e0e83ec32e8c909ab74fcf4f98edae8f9562a211caeb42"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CURRENT.v1.json",
+        "bytes": 334,
+        "sha256": "7df9b68eefd74ff40b0c2a2b5768206beaa272c31d2f1366645874654c095833"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CURRENT.v2.json",
+        "bytes": 334,
+        "sha256": "8f1e2b49a02d5426409673ce2f358da1eac982a186f2459e27d8bbcbd1f86bba"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CURRENT.v3.json",
+        "bytes": 334,
+        "sha256": "c02cb0e132407ccd06e0e83ec32e8c909ab74fcf4f98edae8f9562a211caeb42"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/FILES_AT_V193.json",
+        "bytes": 13039,
+        "sha256": "2d7cf989c8312e3f7161ec3ed3795fb4a4c2754c25f6af8412f38b9321032aec"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/POST_RETIREMENT_v182_COLD_VERIFY.json",
+        "bytes": 548,
+        "sha256": "23bf85350182ba53c818da4459a86765e472f96268666f779a778f68642c4051"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/POST_RETIREMENT_v185_COLD_VERIFY.json",
+        "bytes": 548,
+        "sha256": "d032be55899b5b7426faf1d222f5c9f5f62df9fe8d0fe360d2d54f38b4c5f924"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/POST_RETIREMENT_v191_COLD_VERIFY.json",
+        "bytes": 553,
+        "sha256": "9fd8ba7c050b071be4f1f5ed8703c28cec88d35992f79741b8f9480a20a70299"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/RESTORE.md",
+        "bytes": 2288,
+        "sha256": "a4c543e3669b2c6dc067830d85a16e8eefe9b4976e3f5184e6e3f3aebcc045cb"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/RETIREMENT_v182_COMPLETED.json",
+        "bytes": 722,
+        "sha256": "aeca2c2365dda40c55120a01c731d6c41c28208c574e2ec033604503bad6639a"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/RETIREMENT_v182_PLANNED.json",
+        "bytes": 1948,
+        "sha256": "ed937010285418708cc4d6da02ad5928fa6bbadc16c62fb7aaef2f0415cc1444"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/RETIREMENT_v185_COMPLETED.json",
+        "bytes": 722,
+        "sha256": "748b50d2281533f768ead0fdb4116a9f05413af0ce6470b441fcbc8d2d24fa99"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/RETIREMENT_v185_PLANNED.json",
+        "bytes": 1858,
+        "sha256": "5e462d8246f630f1d3fc33304757490e9799ef8b8933a55c0a1866c146f0ce80"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/RETIREMENT_v191_COMPLETED.json",
+        "bytes": 727,
+        "sha256": "576476ba76a5ee166d1e543461c8d377081eef5bd187363b2afbfe992f438417"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/RETIREMENT_v191_PLANNED.json",
+        "bytes": 1771,
+        "sha256": "3f16ccf08a4a9bc12329a7bf1af0c2d7121b283dd1984b66fdd99b570ba8343f"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/SHA256SUMS.v193",
+        "bytes": 5558,
+        "sha256": "88f9fb3f3077673f6ab25cf0a8b3eef5e1a58ac520ec1745d64c59decdb29e18"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/TEMPORARY_WRAPPER_COPIES_RETIRED.json",
+        "bytes": 756,
+        "sha256": "3a2db8ea58c1475429976824220ced42b4e205f47eb2e2735fcefe6f37b6bd93"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/prepare-durable.py",
+        "bytes": 7627,
+        "sha256": "c01483f0df79c566f0c0fc690ac6938fded9a88e0b0cc85b32c3b94a2d9051d1"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/prepare-durable.py.before182",
+        "bytes": 7576,
+        "sha256": "4d5e567e28868eec86a286fb33ed6b6b11637068382608481ae29d3c8c4dc7b2"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/COLD_INDEPENDENT.json",
+        "bytes": 480,
+        "sha256": "ed52e747819c5a1e80549e92049793bd6ae0f7b2b5a9b5ed39705554024ead2a"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/COLD_PRIMARY.json",
+        "bytes": 514,
+        "sha256": "0225c1bb1c27888bdcb8dab810a1506e459365559ee80fd6a963543b2218b406"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/INPUTS.json",
+        "bytes": 1752,
+        "sha256": "de5cf6c4bc9102a33ac471e97ac1b6ca2aa70e0f3fab66902aa0cf6148ca9043"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/MASTER_VERIFY.json",
+        "bytes": 443,
+        "sha256": "602b5354df05c90314c691177a98664ae78ec6bdc2736d60edc50aed84df2845"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/PACK.json",
+        "bytes": 588,
+        "sha256": "54589d1237bcc1d30246789c4fe3821a4e23d3652d31dd8931df006c20a8257f"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/VERIFIED.json",
+        "bytes": 2437,
+        "sha256": "904bd0d21d5e79c66bfac52ea4dd6e77ae5b79ae72f342ab48dd78b0e7f2839b"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/WHOLE_CHECKPOINTS.json",
+        "bytes": 18635,
+        "sha256": "18ec0564d1d52372ffda2cda7afe934d77791a5f79a75439891eecd4fdefdab0"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/WHOLE_EVIDENCE.json",
+        "bytes": 91394,
+        "sha256": "a1733b3efc40445e117d1c5419bc1473731f61c5f52af9ccea6a5d7aaecd59e3"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/WHOLE_RAW.json",
+        "bytes": 588287,
+        "sha256": "1dc161c45272c7bbd21607051b23fc6094e677442472376ad9b4503b241a7cb3"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v182/space-and-progress.jsonl",
+        "bytes": 8792,
+        "sha256": "4137fc09c8c7c3f1e84fc9be9dec5243a5e5356e3dfcc5d0e444ffb9addc8453"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/COLD_INDEPENDENT.json",
+        "bytes": 480,
+        "sha256": "7744ff745661ce3f76d4891702be239e9691d273cf0aff1224528312673d1374"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/COLD_PRIMARY.json",
+        "bytes": 514,
+        "sha256": "6a3dbd29d9ce204406bb9a62e29c1e62e4e2d459565e3ae4209c50473265002a"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/INPUTS.json",
+        "bytes": 1752,
+        "sha256": "0da6fa4ece02e05e37d809e05e4531963653ee2847347572ebeac7edefd1502b"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/MASTER_VERIFY.json",
+        "bytes": 443,
+        "sha256": "52db4bce21cc8f615aa22b55f28f205da4d90a305e4829efeafbafad24d0d83a"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/PACK.json",
+        "bytes": 588,
+        "sha256": "6e09fa8811a51911d0b8d749b7b932c22216b0f9939530254fd0d23c89485abd"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/VERIFIED.json",
+        "bytes": 2436,
+        "sha256": "8d23e1c2e947cc298bfd97f919229f99fb522867467d397728ef247bd0fe7574"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/WHOLE_CHECKPOINTS.json",
+        "bytes": 18836,
+        "sha256": "3e105f8d732a303ac924b0f6d041ffd30cb03b2f99c88f84be6b80326681c357"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/WHOLE_EVIDENCE.json",
+        "bytes": 77984,
+        "sha256": "cd306ad9e43e381359173373c28749982fc08fc9c301dbd1e21ef09c07089a82"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/WHOLE_RAW.json",
+        "bytes": 587454,
+        "sha256": "3399abf0df10ef71e286b1d3f2aed2bd3db322b3f520a54c1958127087735cca"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v185/space-and-progress.jsonl",
+        "bytes": 8877,
+        "sha256": "a636cf6fa90c42714059757c1bde1472ef63040f8f389ce4512c196eee699185"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/COLD_INDEPENDENT.json",
+        "bytes": 480,
+        "sha256": "36d640d47a83dfd09ac8b34fcf1fee12219416ba64090061f793aa673f2795d7"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/COLD_PRIMARY.json",
+        "bytes": 514,
+        "sha256": "ba611f96646ced2505dae1f4cedab467afb6e63a2b2d2354d668ce616cc69c91"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/INPUTS.json",
+        "bytes": 1762,
+        "sha256": "c81a077d9dede5f8b86564f0082e004d03480e2e78e43bce74633722df614480"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/MASTER_VERIFY.json",
+        "bytes": 443,
+        "sha256": "8b11c62341efafb4470d98902467edcdfeb1f7e63f7a8427b601a6f27a1bfebd"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/VERIFIED.json",
+        "bytes": 2441,
+        "sha256": "aed53cf753547a34e93c752373b3d557dcc0b5ff77d114a9aa9c77738ad12cef"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/WHOLE_CHECKPOINTS.json",
+        "bytes": 19078,
+        "sha256": "33c1becddd75af5ffc2ca9014aa178b3fedea78b7df9f12655d1a7c0dd56bf26"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/WHOLE_EVIDENCE.json",
+        "bytes": 89067,
+        "sha256": "59ef36a39ed8c4aee9199c3ce2948a4fcd84d4bac973aca1350b19944d123515"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/WHOLE_RAW.json",
+        "bytes": 575141,
+        "sha256": "534fd489b37ec2c35412e07a7b4d793eea20ec315958e479fe60e9e3edd0ae93"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/proof-v191/space-and-progress.jsonl",
+        "bytes": 1151,
+        "sha256": "e1a00e65ed91911c0cd7a03c8ffd1d672395ed2565db698a63eba191d97de84c"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/retire-original.py",
+        "bytes": 5302,
+        "sha256": "4bf670530fffe0b085b8481a3250b7cc45562ab05a48597a86081effa130bfb5"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/retire-original.py.before182",
+        "bytes": 5287,
+        "sha256": "2ad4f953325bbc5183cac964ddc9d3ad686742a1d006607d6b704ae77a2052dd"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/tools/archive-stage-evidence.py",
+        "bytes": 9747,
+        "sha256": "435e6dbdc4d90d1655a9c61c6bdf7a8432642823fe2e386a663d9c1ebc5173ab"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/tools/byte-delta-evidence.py",
+        "bytes": 14552,
+        "sha256": "8178c3739fe091aa7e49ffea07bd153b0fba8ee5fc23caecccbe3e6ee367b8a5"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/tools/byte-delta-independent.py",
+        "bytes": 5649,
+        "sha256": "56910b84c73582b7eb1feefb0db673f1790ab74baaffd31a8a35f926d1e64eab"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/tools/durable-evidence-store.py",
+        "bytes": 5354,
+        "sha256": "cf58142e85ec30412bc6218dd48d6a7e9e4269e20658bd6beaa57919c5394bb2"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/wrappers/v182-original-from-v188.delta.zip",
+        "bytes": 128712370,
+        "sha256": "6d5ae8d62abb5202e7977aadc08e826f941eb01d614e464b776572bfd6d4bcb9"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/wrappers/v185-original-from-v188.delta.zip",
+        "bytes": 126510845,
+        "sha256": "e34481538c21fc13d4618a7ad29063c3d3f85a6967a745dbcbe7b25fcb1b913a"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/wrappers/v191-original-from-v188.delta.zip",
+        "bytes": 179679629,
+        "sha256": "257c5b07037d0e68a68ccb0c974ad8c1ef99aa129b43229f654244ec566db065"
+      }
+    ],
+    "freeBytes": {
+      "/workspace": 2765225984,
+      "/tmp": 8648945664
+    },
+    "noCurrentFull1837Node97GUIClaimed": true
+  },
+  "capacity": {
+    "freeBytes": {
+      "/workspace": 2762293248,
+      "/tmp": 8648945664
+    },
+    "rawBytes": 176843926,
+    "checkpointBytes": 37687057
+  },
+  "nextMainWindow": [
+    194,
+    196
+  ],
+  "limitations": [
+    "71relatedNode/6GUI,notfull1837/97or130historicalJSON;194196freshfullgateandbudget.",
+    "Threeoldphysicalmastersretired,exactouterZIPbytesrecoverablethroughpersistentcatalog/base188. Do not claimalloldpathsstillphysical.",
+    "Allthreepersistentwrappercold/independentdecoder/fullinnerCRC/threewholerootproofsandpostretirementcoldpassed. NotnewcurrentfullGUI.",
+    "Samecloudmaindiskisnotoffhostbackup. EntireH193catalog/wrappers/proofs/tools/receipts+literal188basearemustkeep.",
+    "InitialGUIpreviewstrictselectorfailurekept;finalrequiresbothintendedwarehousepanelsvisible.",
+    "186twooriginalearlyPNG+metricsgapand190firsttempfresh-timestampgapkept;oldtimestampIDgapsunfixed,noCrossProcessLock.",
+    "Supplypending;172Libraryunknown/no retry;noForceGCpruneDeploy."
+  ]
+}
