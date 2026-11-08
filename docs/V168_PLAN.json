@@ -1,0 +1,19 @@
+{
+  "version": "0.168",
+  "base": "4f213a4fd66810c828336184f93da8ef04567733",
+  "main": "4f213a4fd66810c828336184f93da8ef04567733",
+  "scope": "Report objective/actor-room load and undo preserve A; two explicit A save controls commit memory only after storage succeeds. Remove stale v141 saved-status release label.",
+  "issue": "Actual115 failed-goal retry silently replaced A; preparation undo restored C but left A changed. Proof recorded before source edits.",
+  "normalCounters": [
+    116,
+    117
+  ],
+  "normalPlan": "Same actual167courier/survive preparation, no tuning/training/equipment changes; record both results as generated.",
+  "regression": "Old107A-overwrite assertion intentionally becomes strict originalA preservation before/after undo; other assertions unchanged or added. Preserve originalscript and explain contract change, not weakening to pass.",
+  "fullMainWindow": [
+    170,
+    172
+  ],
+  "suppliesPending": true,
+  "noForceGCPruneDeploy": true
+}

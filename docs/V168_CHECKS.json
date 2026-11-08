@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "baselineCommit": "4f213a4fd66810c828336184f93da8ef04567733",
+  "Node": {
+    "tests": 1662,
+    "pass": 1662,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 0,
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "25 affected complete suites on frozen168source, plus2earlier previews",
+    "total": 25,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 75,
+    "versions": [
+      168,
+      107,
+      108,
+      94,
+      95,
+      98,
+      105,
+      123,
+      125,
+      126,
+      127,
+      128,
+      137,
+      139,
+      149,
+      151,
+      152,
+      156,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "originalCheckpointAttempts": 27,
+    "allCPsDurableMainAsCompleted": true,
+    "earlyExploratoryPreviews": 2,
+    "previewsNotClaimedCompleteFinalRevision": true,
+    "new168Screens": [
+      "retry-mobile-boundary.png",
+      "retry-mobile-explicit-a.png"
+    ],
+    "v160ImportedNumericFieldsRegressionRetained": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 183,
+    "checkedReferences": 202,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 733,
+  "sourceInputs": 794,
+  "runtimeDelta": {
+    "new": [
+      "scripts/browser-v168.cjs",
+      "scripts/check-v168.mjs",
+      "scripts/fixtures/v168-preparation-state.json",
+      "scripts/retry-preparation-cases.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-objective-review.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/browser-v107.cjs",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 784
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 110,
+    "actualReports": 104,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through115And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 12815,
+    "next": 118,
+    "ownHero": "e",
+    "ownXP": 5400,
+    "berylXP": 2285,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 116,
+        "route": "courier",
+        "seed": 116,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          4,
+          9
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      },
+      {
+        "id": 117,
+        "route": "courier",
+        "seed": 117,
+        "won": true,
+        "alive": 4,
+        "rounds": [
+          4,
+          5,
+          11
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 1
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      }
+    ],
+    "normal117BerylAndCDownRetained": true,
+    "originalBookProofsUnchanged": true,
+    "normalLoot": [
+      "postbell",
+      "postbell"
+    ],
+    "sameConfigurationFor117ExceptForcedSeed": true
+  },
+  "retryInterface": {
+    "beforeProof": {
+      "issueConfirmed": true,
+      "buttonLabel": "载入本次目标与方案供调整",
+      "originalASHA": "aef03a3b0405dec2a278fa8447d24e30cf0669915a1729af5178bf63bfdb9d4e",
+      "loadedASHA": "30aba88b007c875c4e715b1cf6829c9724a45b3da3b8ee08786bc47046e380cc",
+      "undoneASHA": "30aba88b007c875c4e715b1cf6829c9724a45b3da3b8ee08786bc47046e380cc",
+      "preparationUndoRestoresOriginal": true,
+      "AChangedWithoutLabelledRequest": true,
+      "AStillChangedAfterConfigUndo": true,
+      "guildAndPlansUnchanged": true,
+      "gold": 12545,
+      "next": 116,
+      "errors": []
+    },
+    "retryAndActorLoadAndUndoRetainExistingA": true,
+    "noAMeaningfullyStaysAbsentUntilExplicitSave": true,
+    "failedPreparationSaveRetainsRawAndExportableDraft": true,
+    "twoExplicitAButtonsCommitMemoryAfterStorageSuccess": true,
+    "pending116NeverReplacedOrClaimedBy115Load": true,
+    "original107ContractIntentionallyReplacedByStrictRawAPreservationOnly": true,
+    "original107OtherwiseByteExactTransformation": true,
+    "stale141StatusReleaseRemoved": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v168/browser-final/retry-final-campaign.json": "247d887dba219edf640531971d6a5d4dcff2b68bb172bd1378576a7a5058491b",
+    "/workspace/wod-evidence/v168/browser-final/retry-final-four-raw-keys.json": "402c523d9ec497d2d1457dad8a0bde3dc0b8fd41789ddecd811fec78f22a5d3f"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Project interface contract change only; no new original-server numeric claim or combat/payout/economy/schema change.",
+    "116/117sameplan different seeds retain6/4alive, not evidence UI A-preservation improves balance.",
+    "Only25affected completeGUI thisminor; all75currentGUI reserved170–172.",
+    "Early2previews include earlier revisions; final25run tests full final168case including manualSaveA failure, memory state and success.",
+    "Separate explicit-A and no-A fault profiles never replace canonical originalA/threeplans/fivearchives.",
+    "Chromium desktop/390px touch emulation, not physical devices or other engines.",
+    "Permanent supply economy/fixed protagonist/multiplayer pending."
+  ],
+  "mainRemains167": "4f213a4fd66810c828336184f93da8ef04567733",
+  "nextMainWindow": [
+    170,
+    172
+  ]
+}
