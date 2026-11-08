@@ -1,3 +1,5 @@
+> v0.172 修复救护行重绘后的连续键盘焦点，完成真实八姿态GIF及原生SVG/同图PNG受控试作；未替换生产美术，Library下载/保存受网络阻塞。见[说明](docs/V172_CARE_FOCUS_ART_STUDY.md)、[交接](docs/HANDOFF_CLOUD_V172.md)。main保持170，完整窗口173–175。
+
 > v0.171 修复倒下链接选错受害者及守灯隐藏救护面板；两入口打开原事件的真实受害者时间线，数据与战斗不改。见[说明](docs/V171_CASUALTY_EVIDENCE.md)、[交接](docs/HANDOFF_CLOUD_V171.md)。main已整合170，下一完整窗口173–175。
 
 > v0.170 更新过时规则弹窗为当前游玩指引，明确草稿/实装与失败证据边界；保留同种子受控与正式120全倒。见[说明](docs/V170_PLAY_GUIDE.md)、[交接](docs/HANDOFF_CLOUD_V170.md)。本节点完整门禁与main实际结果以交付记录为准。

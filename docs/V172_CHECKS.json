@@ -1,0 +1,703 @@
+{
+  "passed": true,
+  "baselineCommit": "cfa9b090e173294949b660a9cfdbd7fe041a9d98",
+  "Node": {
+    "tests": 1678,
+    "pass": 1678,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 0,
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "16affected completeGUI plus2previews on frozen172source",
+    "total": 16,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 79,
+    "versions": [
+      172,
+      171,
+      170,
+      169,
+      168,
+      167,
+      164,
+      143,
+      107,
+      108,
+      94,
+      95,
+      123,
+      126,
+      137,
+      151
+    ],
+    "originalCheckpointAttempts": 18,
+    "allCPsDurableMainAsCompleted": true,
+    "previewsNotUsedToReplaceFinalSuites": true,
+    "firstPreviewAsynchronousMediaWaitFailureRetained": true,
+    "new172Screens": [
+      "focus-desktop-continuous-keyboard.png",
+      "study-desktop.png",
+      "study-mobile-reduced.png"
+    ],
+    "v160NumericRegressionPreservedFromFull170NotRerun172": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 185,
+    "checkedReferences": 204,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 751,
+  "sourceInputs": 825,
+  "runtimeDelta": {
+    "new": [
+      "dist/assets/studies/v172-guardian-poster.png",
+      "dist/assets/studies/v172-guardian-sheet.png",
+      "dist/assets/studies/v172-guardian-trial.gif",
+      "dist/assets/studies/v172-postbell.png",
+      "dist/assets/studies/v172-postbell.svg",
+      "dist/assets/studies/v172-tidal-dock.png",
+      "dist/assets/studies/v172-tidal-dock.svg",
+      "dist/studies/art-study-v172.html",
+      "scripts/benchmark-art-v172.cjs",
+      "scripts/browser-v172.cjs",
+      "scripts/build-guardian-trial-v172.py",
+      "scripts/care-focus-cases.mjs",
+      "scripts/check-v172.mjs",
+      "scripts/fixtures/v172-preparation-state.json",
+      "scripts/prepare-art-v172.cjs"
+    ],
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 806
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 117,
+    "actualReports": 111,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through122And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13245,
+    "next": 124,
+    "ownHero": "e",
+    "ownXP": 5590,
+    "berylXP": 2475,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 123,
+        "route": "courier",
+        "seed": 123,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          4,
+          5,
+          12
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 1
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "originalBookProofsAndWarehouseClearsUnchanged": true,
+    "normalLoot": [],
+    "survival731SeparateExperimentNoReward": true
+  },
+  "careFocus": {
+    "before": {
+      "issueConfirmed": true,
+      "selectedEvent": "250",
+      "activeAfterKeyboardJump": {
+        "tag": "BODY",
+        "id": ""
+      },
+      "careOpen": true,
+      "careTitle": "塞恩 · 当前 HP 56/106",
+      "rawFourKeysUnchanged": true,
+      "scope": "Observed on baseline171source after clicking actual120fallenhero then a care row; diagnostic evidence for next coherent followup, not fixed in171."
+    },
+    "replacementRowFocusedAfterRerender": true,
+    "EnterSpaceRepeatedAndShiftTabDesktop390": true,
+    "onlySelectedSnapshotPrefixAndNoPersistentWrites": true
+  },
+  "artStudy": {
+    "isolatedPage": "dist/studies/art-study-v172.html",
+    "productionArtUnchanged": true,
+    "staticSamples": 80,
+    "pacingProbes": 8,
+    "staticSummary": [
+      {
+        "asset": "tidal-dock",
+        "format": "svg",
+        "width": 1280,
+        "height": 640,
+        "authoredBytes": 4062,
+        "servedBytes": 1849,
+        "sha256": "d557cf35e8bb54916f433ef46afc046109e1adeba21066e6493cee4476b0df80",
+        "sourceElements": 68,
+        "filters": 0,
+        "profiles": [
+          {
+            "profile": "desktop",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 4,
+                "minLoadAndDecodeMs": 3.7000000029802322,
+                "maxLoadAndDecodeMs": 4.5,
+                "medianDisplayMs": 29.900000005960464
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 0.09999999403953552,
+                "minLoadAndDecodeMs": 0.09999999403953552,
+                "maxLoadAndDecodeMs": 0.20000000298023224,
+                "medianDisplayMs": 30.5
+              }
+            ]
+          },
+          {
+            "profile": "mobile-emulated",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 109.79999999701977,
+                "minLoadAndDecodeMs": 101.90000000596046,
+                "maxLoadAndDecodeMs": 111.70000000298023,
+                "medianDisplayMs": 115.19999998807907
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 0.20000000298023224,
+                "minLoadAndDecodeMs": 0.10000000894069672,
+                "maxLoadAndDecodeMs": 0.5,
+                "medianDisplayMs": 30.900000005960464
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "asset": "tidal-dock",
+        "format": "png",
+        "width": 1280,
+        "height": 640,
+        "authoredBytes": 115207,
+        "servedBytes": 115207,
+        "sha256": "407de590a29132d5f9db932fd571b297813954be9826b011e29f2dbff883bc56",
+        "profiles": [
+          {
+            "profile": "desktop",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 7.0999999940395355,
+                "minLoadAndDecodeMs": 7,
+                "maxLoadAndDecodeMs": 8.900000005960464,
+                "medianDisplayMs": 30.700000002980232
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 0.4000000059604645,
+                "minLoadAndDecodeMs": 0.20000000298023224,
+                "maxLoadAndDecodeMs": 1.7000000029802322,
+                "medianDisplayMs": 30
+              }
+            ]
+          },
+          {
+            "profile": "mobile-emulated",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 858.3999999910593,
+                "minLoadAndDecodeMs": 852.6000000089407,
+                "maxLoadAndDecodeMs": 860.5999999940395,
+                "medianDisplayMs": 880.2000000029802
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 1.5,
+                "minLoadAndDecodeMs": 0.5999999940395355,
+                "maxLoadAndDecodeMs": 1.9000000059604645,
+                "medianDisplayMs": 30.69999998807907
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "asset": "postbell",
+        "format": "svg",
+        "width": 96,
+        "height": 96,
+        "authoredBytes": 1057,
+        "servedBytes": 565,
+        "sha256": "0d4fdabad3a671bd6b2ae023290359ca6aac04cb439be513b566a92978fb9231",
+        "sourceElements": 15,
+        "filters": 0,
+        "profiles": [
+          {
+            "profile": "desktop",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 2.7999999970197678,
+                "minLoadAndDecodeMs": 2.5,
+                "maxLoadAndDecodeMs": 4.200000002980232,
+                "medianDisplayMs": 31.700000002980232
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 0.09999999403953552,
+                "minLoadAndDecodeMs": 0.09999999403953552,
+                "maxLoadAndDecodeMs": 0.09999999403953552,
+                "medianDisplayMs": 31.799999997019768
+              }
+            ]
+          },
+          {
+            "profile": "mobile-emulated",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 91.6000000089407,
+                "minLoadAndDecodeMs": 91.09999999403954,
+                "maxLoadAndDecodeMs": 95.5,
+                "medianDisplayMs": 95.90000000596046
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 0.5,
+                "minLoadAndDecodeMs": 0,
+                "maxLoadAndDecodeMs": 1.2000000029802322,
+                "medianDisplayMs": 30.900000005960464
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "asset": "postbell",
+        "format": "png",
+        "width": 96,
+        "height": 96,
+        "authoredBytes": 5089,
+        "servedBytes": 5089,
+        "sha256": "34bdc5c24ddfef63c738449504029f2742ccc7a21c3e8b37cd728fb6caf31166",
+        "profiles": [
+          {
+            "profile": "desktop",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 2.699999988079071,
+                "minLoadAndDecodeMs": 2,
+                "maxLoadAndDecodeMs": 3.0999999940395355,
+                "medianDisplayMs": 31.5
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 0.30000001192092896,
+                "minLoadAndDecodeMs": 0.20000000298023224,
+                "maxLoadAndDecodeMs": 0.3999999910593033,
+                "medianDisplayMs": 31.799999997019768
+              }
+            ]
+          },
+          {
+            "profile": "mobile-emulated",
+            "cache": [
+              {
+                "cache": "cold",
+                "count": 5,
+                "medianLoadAndDecodeMs": 117.1000000089407,
+                "minLoadAndDecodeMs": 116.79999999701977,
+                "maxLoadAndDecodeMs": 121.1000000089407,
+                "medianDisplayMs": 130.6000000089407
+              },
+              {
+                "cache": "warm",
+                "count": 5,
+                "medianLoadAndDecodeMs": 0.7999999970197678,
+                "minLoadAndDecodeMs": 0.7999999970197678,
+                "maxLoadAndDecodeMs": 1.2000000029802322,
+                "medianDisplayMs": 31.100000008940697
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "timingIncludesFetchAndDecode": true,
+    "visual": [
+      {
+        "profile": "desktop",
+        "asset": "tidal-dock",
+        "meanAbsoluteChannelError": 0.05584320068359375,
+        "maxChannelError": 13,
+        "changedPixelsAbove8Ratio": 0.000128173828125,
+        "transparentPNGPixelRatio": 0
+      },
+      {
+        "profile": "desktop",
+        "asset": "postbell",
+        "meanAbsoluteChannelError": 0,
+        "maxChannelError": 0,
+        "changedPixelsAbove8Ratio": 0,
+        "transparentPNGPixelRatio": 0.6600477430555556
+      },
+      {
+        "profile": "mobile-emulated",
+        "asset": "tidal-dock",
+        "meanAbsoluteChannelError": 0.05584320068359375,
+        "maxChannelError": 13,
+        "changedPixelsAbove8Ratio": 0.000128173828125,
+        "transparentPNGPixelRatio": 0
+      },
+      {
+        "profile": "mobile-emulated",
+        "asset": "postbell",
+        "meanAbsoluteChannelError": 0,
+        "maxChannelError": 0,
+        "changedPixelsAbove8Ratio": 0,
+        "transparentPNGPixelRatio": 0.6600477430555556
+      }
+    ],
+    "motion": {
+      "passedEncoding": true,
+      "source": "/workspace/generated_images/exec-3c39e266-91cd-4147-9fdf-5e7511169f5b.png",
+      "sourceSHA256": "e1f64e6afee8cb58e6e587c13714681bdc90ebf76e010f4f311dc638ca51a832",
+      "sourceKind": "Eight distinct poses generated asonePNG thenalpha-repair imageedit; GIF encodedlocally, notnativeGIFgeneration and not a static repeated frame.",
+      "referencePackCouldNotBeMaterialized": true,
+      "sheet": {
+        "file": "dist/assets/studies/v172-guardian-sheet.png",
+        "bytes": 1969097,
+        "sha256": "e1f64e6afee8cb58e6e587c13714681bdc90ebf76e010f4f311dc638ca51a832",
+        "width": 1536,
+        "height": 1024,
+        "alphaRange": [
+          0,
+          254
+        ]
+      },
+      "gif": {
+        "file": "dist/assets/studies/v172-guardian-trial.gif",
+        "bytes": 378839,
+        "sha256": "f1e67870bafabae85857aab2f63c9522f1e8fcf0720d745124f7f56931be3ddf",
+        "frames": 8,
+        "width": 384,
+        "height": 512,
+        "totalDurationMs": 840,
+        "loop": 0,
+        "transparency": "Binary palette alpha; semitransparent PNG edges cannot be retained exactly",
+        "disposal": 2
+      },
+      "poster": {
+        "file": "dist/assets/studies/v172-guardian-poster.png",
+        "bytes": 231373,
+        "sha256": "69931883724114f8a36edbe4423e88b9a02881d5fd2f749dee25e98b8860dcc2"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 120,
+          "opaqueThreshold128BBox": [
+            52,
+            64,
+            324,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.41367418538104,
+          "rightShieldRegionTopEstimate": 201,
+          "RGBAFrameSHA256": "e9bc786c28c37e010ec2a705afffb3ea12dfeba48a5dace6cf98eb6764cf4f0f",
+          "transparentRatio": 0.6401214599609375
+        },
+        {
+          "frame": 1,
+          "durationMs": 90,
+          "opaqueThreshold128BBox": [
+            54,
+            64,
+            327,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.15570563249926,
+          "rightShieldRegionTopEstimate": 203,
+          "RGBAFrameSHA256": "47b7a87b907ec13ff20821e6baca59d3937693b849d94bdf6a43a88f9e0f9766",
+          "transparentRatio": 0.6470133463541666
+        },
+        {
+          "frame": 2,
+          "durationMs": 90,
+          "opaqueThreshold128BBox": [
+            60,
+            64,
+            328,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.4517589869821,
+          "rightShieldRegionTopEstimate": 185,
+          "RGBAFrameSHA256": "0db8a4fe234f44e89ec9840d3d569dd0c8340600cf5fd306f239e20709dc1484",
+          "transparentRatio": 0.6458384195963541
+        },
+        {
+          "frame": 3,
+          "durationMs": 90,
+          "opaqueThreshold128BBox": [
+            56,
+            64,
+            332,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.62493559487572,
+          "rightShieldRegionTopEstimate": 147,
+          "RGBAFrameSHA256": "071d271b482b95d8487e7211f8fa7ea4b36a47f16f8a2dbb4d0a2b47fdd649d0",
+          "transparentRatio": 0.63360595703125
+        },
+        {
+          "frame": 4,
+          "durationMs": 140,
+          "opaqueThreshold128BBox": [
+            51,
+            64,
+            332,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.82259745375023,
+          "rightShieldRegionTopEstimate": 138,
+          "RGBAFrameSHA256": "8f33a983d9f50a73f66d7ae38f5bb6f99deb68961ade47d935ec43b2a74c8214",
+          "transparentRatio": 0.6270751953125
+        },
+        {
+          "frame": 5,
+          "durationMs": 90,
+          "opaqueThreshold128BBox": [
+            52,
+            64,
+            335,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.70940695760038,
+          "rightShieldRegionTopEstimate": 145,
+          "RGBAFrameSHA256": "b592e66f73896166117740a5aca65e2b25619c7e37dd35e1ed9390e4b09e9a76",
+          "transparentRatio": 0.6294047037760416
+        },
+        {
+          "frame": 6,
+          "durationMs": 90,
+          "opaqueThreshold128BBox": [
+            60,
+            64,
+            335,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.74809009239294,
+          "rightShieldRegionTopEstimate": 176,
+          "RGBAFrameSHA256": "33f34d4274852cea8c4f5ba8bbd2ab954d25370d3c888337781e162f5998dcae",
+          "transparentRatio": 0.6397908528645834
+        },
+        {
+          "frame": 7,
+          "durationMs": 130,
+          "opaqueThreshold128BBox": [
+            53,
+            64,
+            326,
+            449
+          ],
+          "height": 385,
+          "footBottom": 449,
+          "footAlphaWeightedX": 202.9768553510931,
+          "rightShieldRegionTopEstimate": 199,
+          "RGBAFrameSHA256": "90b2684cb7b6a891d98475454900e4986e7ec13bcad0725147639909cd1a5e35",
+          "transparentRatio": 0.6420033772786459
+        }
+      ],
+      "decodedGIFFrames": [
+        {
+          "frame": 0,
+          "durationMs": 120,
+          "RGBAFrameSHA256": "380deaaa4555e745dc7c389ec0b47ee1aebbbdc9b66995cd3d9a0fa9893605eb"
+        },
+        {
+          "frame": 1,
+          "durationMs": 90,
+          "RGBAFrameSHA256": "84b884b9c326919400a5b1425f5172a6eb549171792a4ebc9ae8ef5e70536237"
+        },
+        {
+          "frame": 2,
+          "durationMs": 90,
+          "RGBAFrameSHA256": "cebd36a707ccaf99c19c45540777d13f4a9955ea64da78de33a0ff49c323e4dc"
+        },
+        {
+          "frame": 3,
+          "durationMs": 90,
+          "RGBAFrameSHA256": "ebbe01d48e8e21080774cb7e247008412ac19dbd18715d698036376073ba0daa"
+        },
+        {
+          "frame": 4,
+          "durationMs": 140,
+          "RGBAFrameSHA256": "67ff4ee0b94432cd10560dde9c4ddb33be374982ed54378859211b1c565f3e88"
+        },
+        {
+          "frame": 5,
+          "durationMs": 90,
+          "RGBAFrameSHA256": "538cd0835a62cfaec391fa13d656db6871566488df51d4a81db7e10c8e12c0c1"
+        },
+        {
+          "frame": 6,
+          "durationMs": 90,
+          "RGBAFrameSHA256": "a01de026b090f7f610a4b5fa1a013d39759bbd095dee7da867343dae62bc3242"
+        },
+        {
+          "frame": 7,
+          "durationMs": 130,
+          "RGBAFrameSHA256": "e66a03a50d6a3a05a116e2ff335351ef50200bd48793a9e4c7cca72e0f95b097"
+        }
+      ],
+      "quality": {
+        "footBottomSpanPixels": 0,
+        "footCenterSpanPixels": 0.8211497185938299,
+        "bodyHeightRelativeVariation": 0.0,
+        "predeclaredFootLimits": {
+          "vertical": 4,
+          "horizontal": 4,
+          "heightRelative": 0.05
+        },
+        "passesFootAndScaleLimits": true,
+        "shieldRaisesAcrossFrames": true,
+        "notProductionReady": true
+      },
+      "timingAndContact": "Shieldraising-only840ms loop; no projectile/target/contact/damage flash or claim of successful defense. Notwiredtoactualbattle timing. Nativepreviewpause usesposter, not preciseGIFframe seeking.",
+      "limitations": [
+        "Generatedcutout maximumalpha254 ratherthan255, inspect compositing; secondedit has realzeroalpha background.",
+        "BBox/footregion metrics are estimates, not rig-based ankle tracking.",
+        "No referencepack frame-by-frame/style comparison possible whiledownloadfailed.",
+        "Study-only, current productionSVG/eventmotion unchanged."
+      ]
+    },
+    "referencePack": {
+      "libraryFileId": "libfile_84cc35ed3db8819196a71825d59f3d90",
+      "fileName": "knight_actions_round2.zip",
+      "destination": "/workspace/wod-art-reference/v172/knight_actions_round2.zip",
+      "materializePreparationSucceeded": true,
+      "localDownloadSucceeded": false,
+      "error": "library file transfer failed: download failed",
+      "localTargetExists": false,
+      "originalLibraryFileNotModified": true,
+      "notClaimedPermissionDenial": true,
+      "noRetryOrBypassAttempted": true,
+      "actualFramesNotInspected": true
+    },
+    "LibrarySave": {
+      "operation": "Create four new Library art deliverables by required prepared-upload helper",
+      "files": [
+        "v172-guardian-trial.gif",
+        "v172-guardian-sheet.png",
+        "v172-tidal-dock.svg",
+        "v172-postbell.svg"
+      ],
+      "status": "failed without any confirmed created Library IDs",
+      "error": "library upload failed: hosted apps tools/list request failed: network",
+      "confirmedLibraryFileIds": [],
+      "startedHelperNotSwitchedToDirectWrites": true,
+      "noRetryAttempted": true,
+      "localFilesRetained": true,
+      "referenceOriginalNotModified": true
+    }
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v172/browser-final/focus-final-campaign.json": "efbb2117a972a90e0204df40cb9910fd27c26e46350d59d02264b46d864251d5",
+    "/workspace/wod-evidence/v172/browser-final/focus-final-four-raw-keys.json": "9210b3a8eda7f150ffa1aed9d72be7c1aae13fba74ed166b3106ed844a8ea244"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "legacy143Root": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "new132Root": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "new132ChecksummedFiles": 14,
+    "new132SnapshotSHA256": "a6792d781955ac4ffe5ec8f7bb13b6a707d273454ae8f12524afe6e3bd4d620d",
+    "new132SnapshotBytes": 129703762,
+    "new132Current755Files59PNGAndNsFullRestoreBeforeRetirement": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "No battle/economy/schema or verified original-server numeric change.",
+    "Normal123all-down retained, not balance improvement or population estimate.",
+    "Only16affected completeGUI; all79reserved173–175.",
+    "Old160numeric regression retained from full170, not reexecuted172.",
+    "Chromium desktop/390px emulation, not physical devices or other engines.",
+    "Generated distinctframes encodedlocally, not directGIFgeneration; binaryalpha and alpha254cutout limits.",
+    "Shieldraisingstudy not wired to actualcontact/damage/eventtiming; currentSVG unchanged.",
+    "SVGcandidate is simpler than currentCG; only samepictureSVGvsPNG timing comparable.",
+    "Staticimg transform probes are not gameFPS/peakmemory; five samples each and warmcache noise.",
+    "Library reference materialization faileddownload; new preparedsave networkfailed, no confirmedIDs.",
+    "Permanent supplies/fixed protagonist/multiplayer pending."
+  ],
+  "mainRemains170": "3d39172fd957666ec19b21108678251b491a3e30",
+  "nextMainWindow": [
+    173,
+    175
+  ]
+}
