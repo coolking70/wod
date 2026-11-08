@@ -1,0 +1,13 @@
+{
+  "version": "0.179",
+  "source": "v158full+159..179increments OR v152full+153..179increments; keepprivate6",
+  "branch": "feature/v179-loot-receipt-milestone",
+  "base": "c9675c300a6b77613db98d43908c9e87df847aac",
+  "coldChecks": "alltrackedblobs/modes/history/heads/private6,primary219Node/20CLIJSON exact,binarypatch tree",
+  "evidence": "one master with alloriginalcheckpointZIP bytes/fullraw/evidence; restore3roots physically before duplicate retirement",
+  "newMandatoryMaintenance": "/workspace/wod-maintenance/2026-11-08-v179-temp-reference-budget",
+  "keepOriginal137MasterAndUniqueTwoCampaignFilesAndSupplement": true,
+  "keepEntire178Maintenance18OriginalMasters18PointersAndAllInheritedDeps": true,
+  "mainIntegrationResult": "finaldeliverymanifest/main-integration.json only",
+  "noForceGCpruneDeploy": true
+}

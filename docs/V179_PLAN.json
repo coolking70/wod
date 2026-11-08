@@ -1,0 +1,12 @@
+{
+  "version": "0.179",
+  "baseline": "c9675c300a6b77613db98d43908c9e87df847aac",
+  "mainOnEntry": "9aedb3000c3d39c05c53d9fe87bc09292bf8e6ad",
+  "purpose": "Evidence-backed claimed-loot landing and explicit keyboard inventory navigation; fullsingleplayer milestone gate",
+  "nextCanonicalSeed": 130,
+  "historical129RegressionSeparate": true,
+  "noSupplyEconomyOrTuning": true,
+  "fullCurrentGUI": 86,
+  "sourceInputs": 880,
+  "mainIntegrationConditionalOnAllGatesAndFreshRemote": true
+}
