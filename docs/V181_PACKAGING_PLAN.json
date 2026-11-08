@@ -1,0 +1,13 @@
+{
+  "version": "0.181",
+  "source": "v158full+159..181increments OR v152full+153..181increments; keepprivate6",
+  "branch": "feature/v181-bard-step-inspection",
+  "base": "ba53f92bc6d497bc7c0cd3a9878f9b22ac104658",
+  "mainUnchanged": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "coldChecks": "alltrackedblobs/modes/history/heads/private6,primary243Node/20CLIJSON exact,binarypatch tree",
+  "evidence": "one master including9originalcheckpointZIPbytes/fullraw/evidence; physical3rootrestore beforeduplicate retirement",
+  "newMandatoryMaintenance": "/workspace/wod-maintenance/2026-11-08-native-final-budget-v181",
+  "sixOriginalMasterZIPsAndSixPointersRequired": true,
+  "all180179178AndOlderInheritedDepsRequired": true,
+  "noForceGCpruneDeploy": true
+}

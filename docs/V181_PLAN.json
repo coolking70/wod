@@ -1,0 +1,16 @@
+{
+  "version": "0.181",
+  "baseline": "ba53f92bc6d497bc7c0cd3a9878f9b22ac104658",
+  "mainUnchanged": "ed537e34f6dd19c63bbe7ac45dc0c4846fcf757a",
+  "purpose": "Enlarged current-step bard pose inspection and record cues from actual joint animation clock; mobile and read-only lifecycle",
+  "canonicalNextSeed": 132,
+  "noSupplyEconomyOrTuning": true,
+  "focusedCompleteGUI": 8,
+  "fullRegistrySize": 88,
+  "fullCurrentSuites": false,
+  "sourceInputs": 901,
+  "nextMainWindow": [
+    182,
+    184
+  ]
+}
