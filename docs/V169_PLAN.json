@@ -1,0 +1,18 @@
+{
+  "version": "0.169",
+  "base": "24b72a777976cb8b4317e68681ba97029b53e551",
+  "main": "4f213a4fd66810c828336184f93da8ef04567733",
+  "scope": "Independent C/A reads; never persist fallback over unreadable preparation; explicit original-text recovery and guarded unreadable A removal.",
+  "issue": "Isolated malformed optional A causes old coupled read to replace valid courier C with classic and startup persist it.",
+  "normalCounters": [
+    118,
+    119
+  ],
+  "normalPlan": "Keep actual168 courier/survive, record both fixed upcoming counters without tuning or training.",
+  "fullMainWindow": [
+    170,
+    172
+  ],
+  "suppliesPending": true,
+  "noForceGCPruneDeploy": true
+}

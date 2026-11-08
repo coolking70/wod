@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "baselineCommit": "24b72a777976cb8b4317e68681ba97029b53e551",
+  "Node": {
+    "tests": 1673,
+    "pass": 1673,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 11,
+  "targeted11": {
+    "tests": 11,
+    "pass": 11,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "26 affected complete suites on frozen169source plus preview",
+    "total": 26,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 76,
+    "versions": [
+      169,
+      168,
+      107,
+      108,
+      94,
+      95,
+      98,
+      105,
+      123,
+      125,
+      126,
+      127,
+      128,
+      137,
+      139,
+      149,
+      151,
+      152,
+      156,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "originalCheckpointAttempts": 27,
+    "allCPsDurableMainAsCompleted": true,
+    "previewsNotUsedToReplaceFinalSuites": true,
+    "new169Screens": [
+      "recovery-mobile-unreadable-a.png"
+    ],
+    "v160ImportedNumericFieldsRegressionRetained": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 184,
+    "checkedReferences": 203,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 738,
+  "sourceInputs": 800,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-stored-preparation.mjs",
+      "scripts/browser-v169.cjs",
+      "scripts/check-v169.mjs",
+      "scripts/fixtures/v169-preparation-state.json",
+      "scripts/preparation-recovery-cases.mjs",
+      "tests/stored-preparation.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 790
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 112,
+    "actualReports": 106,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through117And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 12990,
+    "next": 120,
+    "ownHero": "e",
+    "ownXP": 5475,
+    "berylXP": 2360,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 118,
+        "route": "courier",
+        "seed": 118,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          3,
+          4,
+          14
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      },
+      {
+        "id": 119,
+        "route": "courier",
+        "seed": 119,
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          4,
+          3,
+          9
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 3
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      }
+    ],
+    "normal118AllDownAndPartial40Gold20XPRetained": true,
+    "normal119SixAlive135Gold55XPRetained": true,
+    "originalBookProofsUnchanged": true,
+    "normalLoot": [
+      "postbell"
+    ],
+    "sameConfigurationFor119ExceptForcedSeed": true
+  },
+  "preparationRecovery": {
+    "beforeCoupledReadProof": {
+      "issueConfirmed": true,
+      "intentionallyCorruptedOnlyOptionalA": true,
+      "validPreparationRoute": "courier",
+      "pageExportRoute": "classic",
+      "currentPreparationRawStillOriginal": false,
+      "originalBadARawPreserved": true,
+      "guildAndPlansRawUnchanged": true,
+      "notice": "旧配置无法读取，已使用推荐配置。",
+      "saveState": "当前准备已保存在本机。",
+      "formalDisabled": false,
+      "errors": []
+    },
+    "independentReaderNeverWritesStoredRaw": true,
+    "malformedAParseOrShapeCannotReplaceValidPreparation": true,
+    "unreadablePreparationBootNeverSavesFallback": true,
+    "recoveryJSONPreservesRawUTF16IncludingUnpairedSurrogate": true,
+    "onlyExplicitCurrentUnreadableAClearAndValidARefusal": true,
+    "staleClearRefusesNewA": true,
+    "removeFailureAndReadFailurePreserveData": true,
+    "pending118ClaimUnaffectedByBadA": true,
+    "guardIsNotCrossProcessLock": true,
+    "cannotReconstructAlreadyOverwrittenOldPreparationWithoutBackup": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v169/browser-final/recovery-final-campaign.json": "09dccfe9986ccb291373f3a9a71bf84c3cbced23879bc21fd73cebf1169da9fa",
+    "/workspace/wod-evidence/v169/browser-final/recovery-final-four-raw-keys.json": "8fe5c12ae4928f013601c74847152a2474435ee63e35b2e2bfff59134d9769f4"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Independent preparation/A read and explicit recovery interface are project behavior, no new original-server numeric claim or combat/economy/schema change.",
+    "Malformed records are isolated constructed copies; no claim that a user actual file is damaged.",
+    "Cannot derive previously overwritten configuration without its backup. Recovery envelope is original text retention, not a directly importable configuration.",
+    "Snapshot guard before A removal is not a multiprocess lock or server transaction.",
+    "118all-down/119six-alive sameplan different seeds do not prove balance improvement from storage UI fix.",
+    "Only26affected completeGUI; full current76reserved170–172.",
+    "Initial new test helper syntax error corrected before final11/full run; original failed TAP retained.",
+    "Chromium desktop/390px touch emulation, not physical devices or other engines.",
+    "Permanent supplies/fixed protagonist/multiplayer pending."
+  ],
+  "mainRemains167": "4f213a4fd66810c828336184f93da8ef04567733",
+  "nextMainWindow": [
+    170,
+    172
+  ]
+}
