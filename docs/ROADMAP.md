@@ -1,3 +1,5 @@
+> v0.178：仓库遗物可先用下次出征种子比较分配前后完整战报，再明确分配；逐房显示实际备用通路。新增847字节面纱SVG；规范129原装备5人生还、终档13770/next130。1715Node与8相关GUI范围通过，全85留179–181；main176。见[说明](V178_LOOT_ASSIGNMENT_REHEARSAL.md)、[交接](HANDOFF_CLOUD_V178.md)。
+
 > v0.177：原生守卫动作标签/按钮/来源随同一动画时钟更新；模型和已有GIF保持，正常128全灭与部分收益保留。1697Node、8相关GUI通过，全84留到179–181；main176。见[说明](V177_GUARDIAN_MOTION_CUES.md)、[交接](HANDOFF_CLOUD_V177.md)。
 
 > v0.176 完整节点：修复守卫倒下后的盾牌裁边/压字，三宽度验证；新增八帧原生倒下GIF与PNG表，不改战报与配装。1690Node/全83GUI，main实际结果见交付记录。见[说明](V176_GUARDIAN_FALLEN_FRAMING.md)、[交接](HANDOFF_CLOUD_V176.md)。

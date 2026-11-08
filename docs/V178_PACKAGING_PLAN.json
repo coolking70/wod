@@ -1,0 +1,14 @@
+{
+  "version": "0.178",
+  "source": "v158full+159..178increments or v152full+153..178increments; keep private6",
+  "sourceBranch": "feature/v178-loot-assignment-rehearsal",
+  "previousCommit": "da2f31074b4317f658e4afb492ed186e0cbe62e0",
+  "coldChecks": "all tracked blobs/modes/history/heads/private6,211relatedNode,28newCLI JSON exact, binarypatch tree",
+  "evidence": "single master preserves11originalcheckpointZIP bytes including failure plus allraw/ev; physicalrestore three roots before duplicate retirement",
+  "sourceAndEvidenceDeliveryRoot": "/workspace/wod-delivery/v0.178-loot-assignment-rehearsal",
+  "newMandatoryMaintenance": "/workspace/wod-maintenance/2026-11-08-native-cli-retention-v178",
+  "keep18OriginalMasterZIPsAndPointers": true,
+  "keepAllPreviouslyDeclaredDependenciesAndUniqueEvidence": true,
+  "mainUnchangedUntil179181FullGate": true,
+  "noForceGCpruneDeploy": true
+}

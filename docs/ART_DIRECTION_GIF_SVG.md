@@ -1,3 +1,5 @@
+> v178：[滤露面纱SVG与配装试演](V178_LOOT_ASSIGNMENT_REHEARSAL.md)采用原生96px向量/24px装饰图标，847B，同图PNG6039B、受控RGBA相同。8本地样本不能推出总体性能；比原来无图增加请求。重盾试演按实际无佩剑原生角色，不冒用旧佩剑GIF；旧GIF/PNG/绘制背景保持，无新imagegen。
+
 > v177：[原生动作提示](V177_GUARDIAN_MOTION_CUES.md)随同一关节动画时钟显示已到达姿态/记录；模型与174/176GIF、PNG和元数据原样保留。GIF仍是八帧近似，未用独立计时器假冒精确同步，无新图像请求或imagegen。
 
 > v176：[倒下画框与八帧导出](V176_GUARDIAN_FALLEN_FRAMING.md)修正真实报告中盾牌裁边/文字遮挡，原生SVG同装备/同事件、240×264留边GIF/PNG默认倒下静帧，静态与结算后在三宽度通过。无新imagegen、无生产图片请求；其他姿态/原背景保持。

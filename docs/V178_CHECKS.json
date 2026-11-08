@@ -1,0 +1,324 @@
+{
+  "passed": true,
+  "baselineCommit": "da2f31074b4317f658e4afb492ed186e0cbe62e0",
+  "mainUnchanged": "9aedb3000c3d39c05c53d9fe87bc09292bf8e6ad",
+  "Node": {
+    "tests": 1715,
+    "pass": 1715,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 18,
+  "initial1714NodePassedBeforeActualRoomPresentationFix": true,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "separateNativeRetentionSafetyCases": 18,
+  "browser": {
+    "passed": true,
+    "total": 8,
+    "versions": [
+      98,
+      118,
+      128,
+      132,
+      136,
+      163,
+      174,
+      178
+    ],
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 85,
+    "scope": "Initial8full relatedGUI pass, after6newfeaturefiles fixed actualroomnames full178repeat,7unchangedpaths reused; not full85",
+    "originalCheckpointAttempts": 11,
+    "failedPreviewPreserved": true,
+    "allCPsDurableMainAsCompleted": true,
+    "new178Screens": [
+      "loot-desktop-allocation-comparison.png",
+      "loot-desktop-filterveil-card.png",
+      "loot-mobile-allocation-comparison.png",
+      "loot-mobile-filterveil-card.png"
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 189,
+    "checkedReferences": 210,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 780,
+  "sourceInputs": 874,
+  "runtimeDelta": {
+    "new": [
+      "dist/assets/items/filterveil.svg",
+      "dist/expedition-loot-rehearsal-view.mjs",
+      "dist/expedition-loot-rehearsal.mjs",
+      "scripts/browser-v178.cjs",
+      "scripts/check-v178.mjs",
+      "scripts/fixtures/v178-preparation-state.json",
+      "scripts/loot-rehearsal-cases.mjs",
+      "tests/loot-rehearsal.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 860
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 123,
+    "actualReports": 117,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native158through177Rows": 35,
+    "mechanismViews": 33,
+    "early153154156ComparedAgainstPhysicallyRestoredOriginalMasterBytes": true,
+    "initialMissingRetiredPathFailuresKept": true
+  },
+  "nativeState": {
+    "gold": 13770,
+    "next": 130,
+    "ownHero": "e",
+    "ownXP": 5815,
+    "berylXP": 2700,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 129,
+        "route": "courier",
+        "seed": 129,
+        "won": true,
+        "alive": 5,
+        "rounds": [
+          4,
+          4,
+          9
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 3,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 3,
+          "gold": 135,
+          "xp": 55,
+          "firstClear": false,
+          "loot": [
+            "postbell"
+          ]
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "oldBookStoriesRolesAndGearUnchanged": true,
+    "onlyOrdinaryRewardAddsOnePostbellAndOneCourierClear": true,
+    "survival731SeparateExperimentNoReward": true
+  },
+  "lootRehearsal": {
+    "sameNextSeed": 129,
+    "noAssignmentDepartureOrRewardOnPreviewOrJump": true,
+    "allFourKeysUntouchedDuringReadOnlyTrials": true,
+    "warehouseAndGearChangedOnlyExplicitlyInSeparateCopy": true,
+    "actualAssignedReportEqualsPreview": true,
+    "rawStaleAndCrossPageAndWriteFailureSafe": true,
+    "wholeReportsAndActualFallbackNamesPerColumn": true,
+    "singleSampleComparisonNotWinRateOrIsolatedCause": true,
+    "filterveilAlive": 6,
+    "heavyShieldAlive": 2,
+    "originalGearCanonicalAlive": 5,
+    "guardianHeavyShieldUsesActualNoSwordSVG": true
+  },
+  "SVG": {
+    "passed": true,
+    "sameSize": true,
+    "exactRGBA": true,
+    "maxChannelDifference": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sourceSVGBytes": 847,
+    "rasterPNGBytes": 6039,
+    "productionIcon96Intrinsic24CSS": true,
+    "limitations": [
+      "Raster PNG derives from the same original vector; this is not a replacement of richer old illustrations.",
+      "8local samples do not establish generally faster decoding, fullgame loading, FPS or mobilehardware performance.",
+      "Existing game had no filterveil image, so this adds847bytes of SVG content and request overhead."
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v178/browser-final/loot-final-campaign.json": "accb48e1e4f414cda44ea7d9e910571baa7539773d1ec4fe88888367225ac06e",
+    "/workspace/wod-evidence/v178/browser-final/loot-final-four-raw-keys.json": "46670d30c3d9bd66dcd2aa8db43ecca5d0f9a301dbdedad74c520a11f52380a0"
+  },
+  "maintenanceDependencies": {
+    "v173EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "v173MetadataBackupAlsoInLatestMasterEvidenceRoot": "temp-budget-maintenance",
+    "v147v148v167OriginalMasterZIPs": [
+      {
+        "path": "/workspace/wod-delivery/v0.147-ranger-motion/wod-v147-verification.zip",
+        "bytes": 314120421,
+        "sha256": "e91e4401509a448edad47fb8f112d17ce390879ed7d1a58af8a7d76e740c4f6a"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.148-automatic-backup/wod-v148-verification.zip",
+        "bytes": 332880540,
+        "sha256": "1740b91e7e91f273f95b1a494dccd2786f06269e835db71a4d4818945f4d7676"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+        "bytes": 466709632,
+        "sha256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025"
+      }
+    ],
+    "v156EntireSixSnapshotAndManifestDirectory": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "v156All74ChecksummedFilesKept": true,
+    "v132EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "v143EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "allOtherExistingEvidenceAndCodeChainsKept": true,
+    "doNotDeleteOnCodePushAlone": true,
+    "oldTimestampIDByteGapsNotClaimedFixed": true,
+    "verifiedByPostMainIndependentAudit": true,
+    "v175Entire134PairsMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175",
+    "v175Original134MasterPlusOmittedScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.134-local-cross-page-drafts/wod-v134-verification.zip",
+        "bytes": 190935049,
+        "sha256": "84592bdd0bdca3531e94158421ce59c31ae532d375417134b46adc3e34374fc3"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175/omitted-original-screens.zip",
+        "bytes": 5178710,
+        "sha256": "f1a9d1da477c435dcc9791a97ecc79fc53252114ba3e0d79dbc6dd92c86b89dd"
+      }
+    ],
+    "v175Original26PNGPathsStillKept": [
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-mobile.png"
+    ],
+    "v17480FixedExperimentalReportsAndSeparateZIPKept": true,
+    "v176Entire127AcceptanceMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176",
+    "v176Original127MasterPlusOmitted49ScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.127-local-mana-pressure/wod-v127-verification.zip",
+        "bytes": 94995384,
+        "sha256": "5b24489efddce37a83a8992b8c081825ba279137755e69ca2070e11e8c700c57"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176/omitted-original-screens.zip",
+        "bytes": 5431965,
+        "sha256": "b06bb54d2c5985053d46174a6fc161329b65adda131f369f10139c26c1537737"
+      }
+    ],
+    "v176Original49PNGPathsStillKept": [
+      "/workspace/wod-evidence/v127/acceptance/browser-v101/v101-mobile-schedule-evidence.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v102/v102-mobile-count.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v103/v103-mobile-qualification.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-mobile-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-ready-story.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-mobile-letter-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-ready-letter.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-next-goal.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-pending-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v95/v95-mobile-book.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v96/v96-mobile-sets.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v97/v97-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v98/v98-mobile-backup.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v99/v99-mobile-clocktower.png"
+    ]
+  },
+  "newMandatoryMaintenance": "/workspace/wod-maintenance/2026-11-08-native-cli-retention-v178",
+  "all354ProtectedFilesExact": true,
+  "space": {
+    "rawBytes": 727433806,
+    "checkpointBytes": 106709672,
+    "releasedBytesFrom377VerifiedDuplicates": 882163712,
+    "freeBytes": {
+      "/workspace": 2770837504,
+      "/tmp": 8287506432
+    }
+  },
+  "limitations": [
+    "8relatedGUI scope with complete178repeat after actualroomlabel fix; full85 not run, planned179181.",
+    "Preview is deterministic project design, not claimed originalWoD server feature or isolated causal/resistance estimate.",
+    "Existing129originalgear won with5alive, survive objective false; no autoequipment/tuning.",
+    "SVG847B vs samepicturePNG6039B exactRGBA96;8local samples cannot establish overallperformance or mobilehardware speed; adds request vs noicon.",
+    "All377nativefirst bytes restored from18originalmaster ZIPs; preserve whole178maintenance, master ZIPs and pointers. Not currentcode reproduction guarantee, notcrossprocesslock.",
+    "Keep prior maintenance/master ZIPs, six156snapshots, private6 and experimental80reports; oldtimestampIDgaps notfixed.",
+    "Old172Library upload unconfirmed,no retry; permanentSupply economy pending."
+  ],
+  "nextMainWindow": [
+    179,
+    181
+  ]
+}

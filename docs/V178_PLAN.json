@@ -1,0 +1,32 @@
+{
+  "version": "0.178",
+  "baseline": "da2f31074b4317f658e4afb492ed186e0cbe62e0",
+  "main": "9aedb3000c3d39c05c53d9fe87bc09292bf8e6ad",
+  "purpose": "Actual warehouse assignment alternatives, complete next-expedition reports, explicit allocation only; native filterveil icon",
+  "canonicalPredeclaredSeed": 129,
+  "candidatesDeclaredBeforeObservation": [
+    "e/filterveil",
+    "beryl/reliquaryshield"
+  ],
+  "noPermanentSupplyEconomy": true,
+  "fullIntegrationWindow": [
+    179,
+    181
+  ],
+  "sourceInputs": 874,
+  "GUI": [
+    98,
+    118,
+    128,
+    132,
+    136,
+    163,
+    174,
+    178
+  ],
+  "full85NotRun": true,
+  "correctedActualFallbackLabelsAfterInitialGates": true,
+  "masterUpperBudget": 180000000,
+  "rawUpperBudget": 1200000000,
+  "noNewFullSourceBundle": true
+}
