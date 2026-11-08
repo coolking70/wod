@@ -1,0 +1,241 @@
+{
+  "passed": true,
+  "baselineCommit": "71df098e446f554f38ee3ed804d402e6a3c40185",
+  "Node": {
+    "tests": 1673,
+    "pass": 1673,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 0,
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "All77 current complete suites on frozen170 source",
+    "total": 77,
+    "fullCurrentSuites": true,
+    "fullRegistrySize": 77,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170
+    ],
+    "originalCheckpointAttempts": 80,
+    "twoFailedPreviewsPreserved": true,
+    "allCPsDurableMainAsCompleted": true,
+    "previewsNotUsedToReplaceFinalSuites": true,
+    "new170Screens": [
+      "guide-mobile-expanded.png",
+      "guide-desktop-overview.png"
+    ],
+    "v160ImportedNumericFieldsRegressionRetained": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 185,
+    "checkedReferences": 204,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 742,
+  "sourceInputs": 805,
+  "runtimeDelta": {
+    "new": [
+      "dist/expedition-play-guide.mjs",
+      "scripts/browser-v170.cjs",
+      "scripts/check-v170.mjs",
+      "scripts/fixtures/v170-preparation-state.json",
+      "scripts/guide-journey-cases.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 796
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 114,
+    "actualReports": 108,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through119And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13030,
+    "next": 121,
+    "ownHero": "e",
+    "ownXP": 5495,
+    "berylXP": 2380,
+    "active": [
+      "beryl",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": {
+      "id": 120,
+      "seed": 120,
+      "won": false,
+      "alive": 0,
+      "rounds": [
+        4,
+        4,
+        7
+      ],
+      "supplies": {
+        "herb": 2,
+        "rune": 5,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 40,
+        "xp": 20,
+        "firstClear": false,
+        "loot": []
+      }
+    },
+    "normal120AllDownPartial40Gold20XP": true,
+    "originalBookProofsUnchanged": true,
+    "normalLoot": [],
+    "controlledHistorical118And119SameActual120ConfigAndFullReport": true
+  },
+  "guide": {
+    "old057HandlerRetained": true,
+    "dynamic37Routes9Heroes6ClassesAndCurrentGrowthCosts": true,
+    "readonlyNavigationToPreparationOfficialReviewCurrentReport": true,
+    "noReportDisabled": true,
+    "malformedStorageRecoveryAndHistoricalReportBoundariesExplained": true,
+    "prototypeVsUnverifiedOriginalServerNumbersExplicit": true,
+    "keyboardAndMobileOverflowVerified": true,
+    "fullRunnerValidatedOptionalAttemptSuffixRetainsAllOriginalAttempts": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v170/browser-final/guide-final-campaign.json": "b59e23db856a5b8de577e3572582e31bc98511f1e95b5cb8ac8946e8ae8cc3c2",
+    "/workspace/wod-evidence/v170/browser-final/guide-final-four-raw-keys.json": "081fb53e9e278ec171f7fa8fec15ef346b883f28fdafafd9bbcbd5d1a9b011b7"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "legacy143Root": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "legacy143FilesChecksummed": 7,
+    "legacy143OnlyVerifiedDuplicateTreeRetired": true,
+    "legacy143OriginalMasterSHA256": "7c6673f5dcc172fb6242f2870aea47edb9901d0f564566ec6a55d17110b831b9",
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "Project guide/read-only navigation, no combat/economy/schema or new original-server numeric claim.",
+    "Same plan historical118loss/119win and common120all-down show no plan improvement; not a population balance estimate.",
+    "Two preview selector failures retained and corrected without removing assertions.",
+    "Chromium desktop/390px touch emulation, not physical devices or other engines.",
+    "Independent C/A guards are not crossprocess locks. Previously overwritten C needs an actual backup.",
+    "Permanent supplies/fixed protagonist/multiplayer pending."
+  ],
+  "mainAtBaseline167": "4f213a4fd66810c828336184f93da8ef04567733",
+  "mainIntegrationWindow": [
+    170,
+    172
+  ],
+  "nextMainWindow": [
+    173,
+    175
+  ]
+}

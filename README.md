@@ -1,3 +1,5 @@
+> v0.170 更新过时规则弹窗为当前游玩指引，明确草稿/实装与失败证据边界；保留同种子受控与正式120全倒。见[说明](docs/V170_PLAY_GUIDE.md)、[交接](docs/HANDOFF_CLOUD_V170.md)。本节点完整门禁与main实际结果以交付记录为准。
+
 > v0.169 独立读取准备与A，坏A不再覆盖有效准备；提供明确原文留存与恢复，保留118全倒实玩失败。见[说明](docs/V169_PREPARATION_RECOVERY.md)、[交接](docs/HANDOFF_CLOUD_V169.md)。main167，下一完整门禁170–172。
 
 > v0.168 修复失败报告载入和逐房改配覆盖A的问题；载入/撤销保留A，明确保存失败正确报错。见[说明](docs/V168_RETRY_PREPARATION.md)、[交接](docs/HANDOFF_CLOUD_V168.md)。main已整合v167，下一完整门禁170–172。

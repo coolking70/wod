@@ -1,0 +1,21 @@
+{
+  "version": "0.170",
+  "base": "71df098e446f554f38ee3ed804d402e6a3c40185",
+  "mainAtStart": "4f213a4fd66810c828336184f93da8ef04567733",
+  "scope": "Replace outdated057rules modal with live-catalogue project guide and read-only navigation; controlled historical118/119common120 study; full integration milestone.",
+  "issue": "Rules modal still labels057, says onlyarchiveenemies nonzero resistance and explorationbranches unimplemented, contradicting current code.",
+  "normalCounters": [
+    120
+  ],
+  "normalPlan": "Actual169courier/survive unchanged, no tuning; paired historical118/119configs both use current guild and common120 before normal120.",
+  "mainWindow": [
+    170,
+    172
+  ],
+  "nextMainWindow": [
+    173,
+    175
+  ],
+  "suppliesPending": true,
+  "noForceGCPruneDeploy": true
+}
