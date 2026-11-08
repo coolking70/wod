@@ -1,0 +1,18 @@
+{
+  "version": "0.174",
+  "base": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "mainBaseline": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "scope": "Actualeventnativeguardianenlargedinspectionand24pxpostbellSVG; independentnativeGIFsheetandpainted172review; read-only121\u2013124forensics",
+  "normalCounters": [
+    125
+  ],
+  "normalPlan": "Same173courier/no training/tuning/seedsearch",
+  "affectedCompleteGUI": 20,
+  "fullCurrentGUI": 81,
+  "nextMainWindow": [
+    176,
+    178
+  ],
+  "permanentSupplyEconomyPending": true,
+  "noForceGCPruneDeploy": true
+}

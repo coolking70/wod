@@ -173,3 +173,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .growth-attributes{border:1px solid var(--line);padding:12px;margin:18px 0}.growth-attributes>summary{font-weight:700;cursor:pointer}.growth-attributes>.attribute-growth{margin-bottom:0}
 
 .training-use{font-size:.85rem;line-height:1.6;max-width:100%;overflow-wrap:anywhere}.training-use>summary{cursor:pointer;color:var(--muted)}.training-use[data-use-status=explicit]>summary,.training-use[data-use-status=selected]>summary{color:var(--gold)}.training-use ul{padding-left:1.2rem}.training-use-note{color:var(--muted);font-size:.9rem}.ready-hero:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
+.equipment-art{display:inline-block;width:24px;height:24px;vertical-align:middle;margin-right:6px;flex:none}

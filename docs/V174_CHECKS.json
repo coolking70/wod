@@ -1,0 +1,2723 @@
+{
+  "passed": true,
+  "baselineCommit": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "Node": {
+    "tests": 1682,
+    "pass": 1682,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 4,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "20 affected complete suites plus4previews; first importprobe and second actual replay-selector failure retained, fixed and finalpassed",
+    "total": 20,
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 81,
+    "versions": [
+      174,
+      173,
+      172,
+      171,
+      170,
+      169,
+      168,
+      167,
+      164,
+      163,
+      151,
+      147,
+      133,
+      123,
+      126,
+      137,
+      107,
+      108,
+      94,
+      95
+    ],
+    "originalCheckpointAttempts": 24,
+    "allCPsDurableMainAsCompleted": true,
+    "new174Screens": [
+      "art-desktop124-static-poses.png",
+      "art-desktop-postbell.png",
+      "art-pending125-static-poses.png",
+      "art-study-native-painted-comparison.png",
+      "art-mobile125-static-poses.png",
+      "art-mobile-postbell.png"
+    ],
+    "numericImportFull162NotReexecutedThisStage": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 186,
+    "checkedReferences": 206,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 761,
+  "sourceInputs": 844,
+  "runtimeDelta": {
+    "new": [
+      "dist/assets/items/postbell.svg",
+      "dist/assets/studies/v174-guardian-native-poster.png",
+      "dist/assets/studies/v174-guardian-native-sheet.png",
+      "dist/assets/studies/v174-guardian-native.gif",
+      "dist/expedition-guardian-detail.mjs",
+      "dist/studies/guardian-review-v174.html",
+      "dist/studies/v174-guardian-review.json",
+      "scripts/browser-v174.cjs",
+      "scripts/check-v174.mjs",
+      "scripts/encode-guardian-art-v174.py",
+      "scripts/export-guardian-art-v174.cjs",
+      "scripts/fixtures/v174-preparation-state.json",
+      "scripts/guardian-detail-cases.mjs",
+      "tests/guardian-detail.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/guardian-motion.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 823
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 119,
+    "actualReports": 113,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through124And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13325,
+    "next": 126,
+    "ownHero": "e",
+    "ownXP": 5630,
+    "berylXP": 2515,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 125,
+        "route": "courier",
+        "seed": 125,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          4,
+          4,
+          14
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "originalBookProofsAndWarehouseClearsUnchanged": true,
+    "normalLoot": [],
+    "survival731SeparateExperimentNoReward": true
+  },
+  "guardianArt": {
+    "nativeDetailFromActualGuardianEvents": true,
+    "staticPoseFocusAndSnapshotHPMPExact": true,
+    "replay900msAt1x225msAt4x": true,
+    "closeMainPlayStepSwitchAndReducedCancel": true,
+    "painted172WrongShieldSideMissingSwordCrestHitDownNotPromoted": true,
+    "original172AssetsAndAllOtherExistingImagesUnchanged": true,
+    "postbell24pxSVGBytes": 1057,
+    "exportEncoding": {
+      "passed": true,
+      "sourceReportId": 124,
+      "sourceReportSHA256": "75bcf5f761c97af0479a94be0383bc8565e2bca23f388bd8675740cdcd91b1e7",
+      "nativeModelSameWeaponSideAndStyles": true,
+      "eightDistinctFrames": true,
+      "durationMs": 900,
+      "files": [
+        {
+          "path": "dist/assets/studies/v174-guardian-native.gif",
+          "bytes": 63134,
+          "sha256": "b7e76f9be66f5f4fe0fb1766e34091829ae148fb682392d19f6885d946d09b45"
+        },
+        {
+          "path": "dist/assets/studies/v174-guardian-native-sheet.png",
+          "bytes": 181064,
+          "sha256": "02ac7d68c1dc346b5613969ec0eaa46007fcd201cdd7829918d603bf3d76ff4e"
+        },
+        {
+          "path": "dist/assets/studies/v174-guardian-native-poster.png",
+          "bytes": 21370,
+          "sha256": "377d044158c18f69067d13982a513113cd42ab351ee442e39fa26998658e8f78"
+        }
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "alphaBBox": [
+            35,
+            19,
+            149,
+            193
+          ],
+          "durationMs": 100,
+          "RGBAFrameSHA256": "426003e01ae90b6302a65b2e97fec5c21e3274244418a2e8eae4959fea0fcf7c"
+        },
+        {
+          "frame": 1,
+          "alphaBBox": [
+            41,
+            19,
+            149,
+            193
+          ],
+          "durationMs": 120,
+          "RGBAFrameSHA256": "36c9bb0a31ae538d778d4112318cf428723c617990f11baad3670ea190ab7d27"
+        },
+        {
+          "frame": 2,
+          "alphaBBox": [
+            41,
+            19,
+            159,
+            193
+          ],
+          "durationMs": 110,
+          "RGBAFrameSHA256": "bc0e64adc797cd00e053c2678bdc8c5a5b77af2a4110ee70ceca84d5b6543b09"
+        },
+        {
+          "frame": 3,
+          "alphaBBox": [
+            36,
+            22,
+            139,
+            193
+          ],
+          "durationMs": 120,
+          "RGBAFrameSHA256": "5b03b2c098eb9840d5d3ddbe7a0247efa959614862d27df173d92c667f5da44e"
+        },
+        {
+          "frame": 4,
+          "alphaBBox": [
+            9,
+            30,
+            139,
+            193
+          ],
+          "durationMs": 110,
+          "RGBAFrameSHA256": "60954ee56ff77a515b8bdd5aa4e2b9f9bf023f55e1dec757d6b45d45c38b3b2b"
+        },
+        {
+          "frame": 5,
+          "alphaBBox": [
+            15,
+            25,
+            139,
+            193
+          ],
+          "durationMs": 110,
+          "RGBAFrameSHA256": "06a2e56904d4d9e04930890903531f101e8c8c5b15d76f3ea9972a16ee15bc05"
+        },
+        {
+          "frame": 6,
+          "alphaBBox": [
+            21,
+            21,
+            139,
+            193
+          ],
+          "durationMs": 120,
+          "RGBAFrameSHA256": "392db2084597accd87038663f68b2d83d91d5ac762314d4a30246f9657f8160b"
+        },
+        {
+          "frame": 7,
+          "alphaBBox": [
+            29,
+            19,
+            142,
+            193
+          ],
+          "durationMs": 110,
+          "RGBAFrameSHA256": "1d37daae86a4e105395f8cbbef71d9f45a3a4475bcbd94a56ab2571b31b35dec"
+        }
+      ],
+      "decoded": [
+        {
+          "frame": 0,
+          "durationMs": 100,
+          "RGBAFrameSHA256": "f6e47970201a851bb3b28c948e204bf681af02480884b08c9ad375af3f1a99aa"
+        },
+        {
+          "frame": 1,
+          "durationMs": 120,
+          "RGBAFrameSHA256": "8005e9950e736d04d87c3525b1e9656f1c72222dcf0904e27ecb611617c9e856"
+        },
+        {
+          "frame": 2,
+          "durationMs": 110,
+          "RGBAFrameSHA256": "eff0c4bfa47c65a9e1b0c204a80f6408f61f9c73f6f46cfc8050f71cd0cccbf0"
+        },
+        {
+          "frame": 3,
+          "durationMs": 120,
+          "RGBAFrameSHA256": "d07125bd4784dfca7ab68ff01cd425c0055f27fc1189663b881dbf29f7d62f48"
+        },
+        {
+          "frame": 4,
+          "durationMs": 110,
+          "RGBAFrameSHA256": "766cdb8e11d5425a46719abe48d8a006b16a2abb6c29ccf4cf2357a27737f94a"
+        },
+        {
+          "frame": 5,
+          "durationMs": 110,
+          "RGBAFrameSHA256": "8663870f67b816abac5622eb7986d65b77bac00e044d634d1b51ab74b6cad3b3"
+        },
+        {
+          "frame": 6,
+          "durationMs": 120,
+          "RGBAFrameSHA256": "3ac0ea3a1c61184befa6e4a8f9f91ae4bc7593f5e4aa62d424e6ddc45c869669"
+        },
+        {
+          "frame": 7,
+          "durationMs": 110,
+          "RGBAFrameSHA256": "394e118bcb129b85328b3f646691902d8d47d83242550c89c62cdc6b8a86446f"
+        }
+      ],
+      "limitations": [
+        "SVGframesrenderedandencodedlocally, not imagegen/directGIFgeneration.",
+        "8GIFsamples andbinaryalpha approximate thecontinuousvectorpreview; PNGsheet retainssemitransparentedges.",
+        "Actualblockcheck followedbyactualhit, no immunityormissingblade inference.",
+        "Previewexports only; actualreplay detailusesnativeSVG/staticposecontrols."
+      ]
+    },
+    "styleReview": {
+      "passed": true,
+      "sourceWeapon": "guardblade",
+      "currentNativeShieldViewSide": "left",
+      "painted172TrialShieldViewSide": "right",
+      "paintedTrialMissingActualSwordAndHelmetTrim": true,
+      "paintedTrialNotReplacedIntoBattle": true,
+      "nativeExportsStyleBySameSVGModel": true,
+      "all8DecodedTransparencyMasksExact": true,
+      "visiblePaletteErrors": [
+        {
+          "frame": 0,
+          "visibleRGBMeanAbsoluteError": 1.6954696911444316,
+          "maxVisibleChannelError": 11
+        },
+        {
+          "frame": 1,
+          "visibleRGBMeanAbsoluteError": 1.6060374474589225,
+          "maxVisibleChannelError": 11
+        },
+        {
+          "frame": 2,
+          "visibleRGBMeanAbsoluteError": 1.518722130596787,
+          "maxVisibleChannelError": 10
+        },
+        {
+          "frame": 3,
+          "visibleRGBMeanAbsoluteError": 1.648535837735603,
+          "maxVisibleChannelError": 11
+        },
+        {
+          "frame": 4,
+          "visibleRGBMeanAbsoluteError": 1.6488128448329304,
+          "maxVisibleChannelError": 11
+        },
+        {
+          "frame": 5,
+          "visibleRGBMeanAbsoluteError": 1.663609430156329,
+          "maxVisibleChannelError": 11
+        },
+        {
+          "frame": 6,
+          "visibleRGBMeanAbsoluteError": 1.6645352166443979,
+          "maxVisibleChannelError": 11
+        },
+        {
+          "frame": 7,
+          "visibleRGBMeanAbsoluteError": 1.66721044045677,
+          "maxVisibleChannelError": 11
+        }
+      ],
+      "GIFBinaryAlphaAndSparseSamplesLimit": true,
+      "postbellSVGPromotionByteExact": true
+    },
+    "GIFNotNewImagegen": true,
+    "postbellAddsOneRequestNoClaimFasterThanNoIcon": true
+  },
+  "retainedCourierFourReportReadOnlyForensics": {
+    "passed": true,
+    "scope": "Read-only existing four normal reports; no rerolls, state writes, tuning or failure-rate estimate",
+    "preparationAllFieldsIdenticalExceptSeed": true,
+    "rows": [
+      {
+        "reportId": 121,
+        "source": "/workspace/wod-evidence/v171/browser-final/casualty-1-report.json",
+        "sha256": "89ae27ef69cd4305ebb8179346c64e964a3a58d504d528e979868693a72a52f9",
+        "route": null,
+        "configSHA256": "130c2d14a0addc3478f263438b380d35148d8e1ba7d76501f5cd112c35fa61fd",
+        "won": true,
+        "survivors": 6,
+        "roomSummaries": [
+          {
+            "name": "01 · 外港断桥",
+            "won": true,
+            "rounds": 3,
+            "survivors": 6,
+            "hp": 626,
+            "mp": 292,
+            "supplies": {
+              "herb": 10,
+              "rune": 8,
+              "arrow": 7
+            }
+          },
+          {
+            "name": "02 · 折帆分舱",
+            "won": true,
+            "rounds": 4,
+            "survivors": 6,
+            "hp": 554,
+            "mp": 202,
+            "supplies": {
+              "herb": 6,
+              "rune": 5,
+              "arrow": 3
+            }
+          },
+          {
+            "name": "03 · 封蜡回邮台",
+            "won": true,
+            "rounds": 7,
+            "survivors": 6,
+            "hp": 570,
+            "mp": 161,
+            "supplies": {
+              "herb": 0,
+              "rune": 3,
+              "arrow": 2
+            }
+          }
+        ],
+        "initialHerbs": 12,
+        "herbCasts": [
+          {
+            "id": 7,
+            "roomIndex": 0,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f"
+            ],
+            "text": "露弥 使用「远征药膳」",
+            "supplies": {
+              "herb": 11,
+              "rune": 9,
+              "arrow": 8
+            },
+            "herbsBefore": 12,
+            "spent": 1,
+            "skill": "provisions",
+            "mpBefore": 68,
+            "mpAfter": 65,
+            "selected": null
+          },
+          {
+            "id": 98,
+            "roomIndex": 0,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 10,
+              "rune": 8,
+              "arrow": 7
+            },
+            "herbsBefore": 11,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 67,
+            "mpAfter": 62,
+            "selected": "beryl"
+          },
+          {
+            "id": 212,
+            "roomIndex": 1,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 9,
+              "rune": 7,
+              "arrow": 6
+            },
+            "herbsBefore": 10,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 64,
+            "mpAfter": 59,
+            "selected": "beryl"
+          },
+          {
+            "id": 267,
+            "roomIndex": 1,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "e"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 8,
+              "rune": 6,
+              "arrow": 5
+            },
+            "herbsBefore": 9,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 60,
+            "mpAfter": 55,
+            "selected": "e"
+          },
+          {
+            "id": 310,
+            "roomIndex": 1,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 7,
+              "rune": 6,
+              "arrow": 4
+            },
+            "herbsBefore": 8,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 56,
+            "mpAfter": 51,
+            "selected": "beryl"
+          },
+          {
+            "id": 346,
+            "roomIndex": 1,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "e"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 6,
+              "rune": 5,
+              "arrow": 3
+            },
+            "herbsBefore": 7,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 52,
+            "mpAfter": 47,
+            "selected": "e"
+          },
+          {
+            "id": 412,
+            "roomIndex": 2,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 5,
+              "rune": 3,
+              "arrow": 2
+            },
+            "herbsBefore": 6,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 48,
+            "mpAfter": 43,
+            "selected": "beryl"
+          },
+          {
+            "id": 460,
+            "roomIndex": 2,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 4,
+              "rune": 3,
+              "arrow": 2
+            },
+            "herbsBefore": 5,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 44,
+            "mpAfter": 39,
+            "selected": "beryl"
+          },
+          {
+            "id": 522,
+            "roomIndex": 2,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 3,
+              "rune": 3,
+              "arrow": 2
+            },
+            "herbsBefore": 4,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 40,
+            "mpAfter": 35,
+            "selected": "beryl"
+          },
+          {
+            "id": 580,
+            "roomIndex": 2,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 2,
+              "rune": 3,
+              "arrow": 2
+            },
+            "herbsBefore": 3,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 36,
+            "mpAfter": 31,
+            "selected": "beryl"
+          },
+          {
+            "id": 626,
+            "roomIndex": 2,
+            "round": 5,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 1,
+              "rune": 3,
+              "arrow": 2
+            },
+            "herbsBefore": 2,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 32,
+            "mpAfter": 27,
+            "selected": "beryl"
+          },
+          {
+            "id": 657,
+            "roomIndex": 2,
+            "round": 6,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "d"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 0,
+              "rune": 3,
+              "arrow": 2
+            },
+            "herbsBefore": 1,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 28,
+            "mpAfter": 23,
+            "selected": "d"
+          }
+        ],
+        "herbsFirstZero": {
+          "id": 657,
+          "roomIndex": 2,
+          "round": 6,
+          "type": "cast",
+          "actor": "f",
+          "targets": [
+            "d"
+          ],
+          "text": "露弥 中断普通指令，使用「草药救护」",
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 2
+          }
+        },
+        "firstHealBlockedByHerbs": null,
+        "herbBlockedHealCount": 0,
+        "allPartyDowns": []
+      },
+      {
+        "reportId": 122,
+        "source": "/workspace/wod-evidence/v171/browser-final/casualty-2-report.json",
+        "sha256": "3f00bddeb09bb191bfe6958f852ec332d95b6e4811b1a6f8b9a3a76dd3466dbe",
+        "route": null,
+        "configSHA256": "4db35b595945ddbd7d177951acd9c522e5a470ac1657d2b5937604b03687659b",
+        "won": false,
+        "survivors": 0,
+        "roomSummaries": [
+          {
+            "name": "01 · 外港断桥",
+            "won": true,
+            "rounds": 4,
+            "survivors": 6,
+            "hp": 644,
+            "mp": 283,
+            "supplies": {
+              "herb": 9,
+              "rune": 8,
+              "arrow": 7
+            }
+          },
+          {
+            "name": "02 · 折帆分舱",
+            "won": true,
+            "rounds": 5,
+            "survivors": 5,
+            "hp": 496,
+            "mp": 199,
+            "supplies": {
+              "herb": 5,
+              "rune": 6,
+              "arrow": 3
+            }
+          },
+          {
+            "name": "03 · 封蜡回邮台",
+            "won": false,
+            "rounds": 13,
+            "survivors": 0,
+            "hp": 0,
+            "mp": 163,
+            "supplies": {
+              "herb": 0,
+              "rune": 4,
+              "arrow": 2
+            }
+          }
+        ],
+        "initialHerbs": 12,
+        "herbCasts": [
+          {
+            "id": 7,
+            "roomIndex": 0,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f"
+            ],
+            "text": "露弥 使用「远征药膳」",
+            "supplies": {
+              "herb": 11,
+              "rune": 9,
+              "arrow": 8
+            },
+            "herbsBefore": 12,
+            "spent": 1,
+            "skill": "provisions",
+            "mpBefore": 68,
+            "mpAfter": 65,
+            "selected": null
+          },
+          {
+            "id": 104,
+            "roomIndex": 0,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 10,
+              "rune": 8,
+              "arrow": 7
+            },
+            "herbsBefore": 11,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 67,
+            "mpAfter": 62,
+            "selected": "beryl"
+          },
+          {
+            "id": 164,
+            "roomIndex": 0,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 9,
+              "rune": 8,
+              "arrow": 7
+            },
+            "herbsBefore": 10,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 63,
+            "mpAfter": 58,
+            "selected": "beryl"
+          },
+          {
+            "id": 243,
+            "roomIndex": 1,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 8,
+              "rune": 6,
+              "arrow": 6
+            },
+            "herbsBefore": 9,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 60,
+            "mpAfter": 55,
+            "selected": "beryl"
+          },
+          {
+            "id": 286,
+            "roomIndex": 1,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "e"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 7,
+              "rune": 6,
+              "arrow": 5
+            },
+            "herbsBefore": 8,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 56,
+            "mpAfter": 51,
+            "selected": "e"
+          },
+          {
+            "id": 340,
+            "roomIndex": 1,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 6,
+              "rune": 6,
+              "arrow": 4
+            },
+            "herbsBefore": 7,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 52,
+            "mpAfter": 47,
+            "selected": "beryl"
+          },
+          {
+            "id": 376,
+            "roomIndex": 1,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 5,
+              "rune": 6,
+              "arrow": 4
+            },
+            "herbsBefore": 6,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 48,
+            "mpAfter": 43,
+            "selected": "beryl"
+          },
+          {
+            "id": 452,
+            "roomIndex": 2,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 4,
+              "rune": 4,
+              "arrow": 2
+            },
+            "herbsBefore": 5,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 45,
+            "mpAfter": 40,
+            "selected": "beryl"
+          },
+          {
+            "id": 496,
+            "roomIndex": 2,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 3,
+              "rune": 4,
+              "arrow": 2
+            },
+            "herbsBefore": 4,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 41,
+            "mpAfter": 36,
+            "selected": "beryl"
+          },
+          {
+            "id": 542,
+            "roomIndex": 2,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 2,
+              "rune": 4,
+              "arrow": 2
+            },
+            "herbsBefore": 3,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 37,
+            "mpAfter": 32,
+            "selected": "beryl"
+          },
+          {
+            "id": 587,
+            "roomIndex": 2,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 1,
+              "rune": 4,
+              "arrow": 2
+            },
+            "herbsBefore": 2,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 33,
+            "mpAfter": 28,
+            "selected": "beryl"
+          },
+          {
+            "id": 643,
+            "roomIndex": 2,
+            "round": 5,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 0,
+              "rune": 4,
+              "arrow": 2
+            },
+            "herbsBefore": 1,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 29,
+            "mpAfter": 24,
+            "selected": "beryl"
+          }
+        ],
+        "herbsFirstZero": {
+          "id": 643,
+          "roomIndex": 2,
+          "round": 5,
+          "type": "cast",
+          "actor": "f",
+          "targets": [
+            "beryl"
+          ],
+          "text": "露弥 中断普通指令，使用「草药救护」",
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        "firstHealBlockedByHerbs": {
+          "id": 694,
+          "roomIndex": 2,
+          "round": 6,
+          "type": "skip",
+          "actor": "f",
+          "targets": [],
+          "text": "露弥 跳过「草药救护」：耗材耗尽",
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 2
+          }
+        },
+        "herbBlockedHealCount": 3,
+        "allPartyDowns": [
+          {
+            "member": "e",
+            "down": {
+              "id": 339,
+              "roomIndex": 1,
+              "round": 3,
+              "type": "down",
+              "actor": "csm",
+              "targets": [
+                "e"
+              ],
+              "text": "塞恩 倒下。",
+              "supplies": {
+                "herb": 7,
+                "rune": 6,
+                "arrow": 4
+              }
+            },
+            "fatal": {
+              "id": 338,
+              "roomIndex": 1,
+              "round": 3,
+              "type": "attack",
+              "actor": "csm",
+              "targets": [
+                "e"
+              ],
+              "text": "潮墨术士 → 塞恩：致命，109 伤害（溢出 55）",
+              "supplies": {
+                "herb": 7,
+                "rune": 6,
+                "arrow": 4
+              }
+            },
+            "damage": {
+              "skill": "wave",
+              "attackType": "magic",
+              "grade": "致命",
+              "damage": 109,
+              "actual": 54,
+              "overkill": 55,
+              "hpBefore": 54,
+              "hpAfter": 0,
+              "resistance": -10,
+              "attack": 183,
+              "defense": 73
+            },
+            "unitMPAfter": 8,
+            "beforeHerbsEmpty": true
+          },
+          {
+            "member": "beryl",
+            "down": {
+              "id": 730,
+              "roomIndex": 2,
+              "round": 7,
+              "type": "down",
+              "actor": "cfb",
+              "targets": [
+                "beryl"
+              ],
+              "text": "贝芮尔 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "fatal": {
+              "id": 729,
+              "roomIndex": 2,
+              "round": 7,
+              "type": "attack",
+              "actor": "cfb",
+              "targets": [
+                "beryl"
+              ],
+              "text": "催帆鼓手 → 贝芮尔：致命，19 伤害（溢出 17）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "damage": {
+              "skill": "spark",
+              "attackType": "magic",
+              "grade": "致命",
+              "damage": 19,
+              "actual": 2,
+              "overkill": 17,
+              "hpBefore": 2,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 76,
+              "defense": 25
+            },
+            "unitMPAfter": 1,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "c",
+            "down": {
+              "id": 780,
+              "roomIndex": 2,
+              "round": 8,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "c"
+              ],
+              "text": "伊芙 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "fatal": {
+              "id": 779,
+              "roomIndex": 2,
+              "round": 8,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "c"
+              ],
+              "text": "拦邮卫 → 伊芙：重击，28 伤害（溢出 24）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "damage": {
+              "skill": "shieldbash",
+              "attackType": "melee",
+              "grade": "重击",
+              "damage": 28,
+              "actual": 4,
+              "overkill": 24,
+              "hpBefore": 4,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 71,
+              "defense": 33
+            },
+            "unitMPAfter": 51,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "f",
+            "down": {
+              "id": 830,
+              "roomIndex": 2,
+              "round": 9,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "f"
+              ],
+              "text": "露弥 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "fatal": {
+              "id": 829,
+              "roomIndex": 2,
+              "round": 9,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "f"
+              ],
+              "text": "拦邮卫 → 露弥：致命，39 伤害（溢出 15）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "damage": {
+              "skill": "strike",
+              "attackType": "melee",
+              "grade": "致命",
+              "damage": 39,
+              "actual": 24,
+              "overkill": 15,
+              "hpBefore": 24,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 59,
+              "defense": 23
+            },
+            "unitMPAfter": 22,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "d",
+            "down": {
+              "id": 900,
+              "roomIndex": 2,
+              "round": 11,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "d"
+              ],
+              "text": "维斯 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "fatal": {
+              "id": 899,
+              "roomIndex": 2,
+              "round": 11,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "d"
+              ],
+              "text": "拦邮卫 → 维斯：重击，20 伤害（溢出 11）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "damage": {
+              "skill": "strike",
+              "attackType": "melee",
+              "grade": "重击",
+              "damage": 20,
+              "actual": 9,
+              "overkill": 11,
+              "hpBefore": 9,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 36,
+              "defense": 16
+            },
+            "unitMPAfter": 52,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "b",
+            "down": {
+              "id": 955,
+              "roomIndex": 2,
+              "round": 13,
+              "type": "down",
+              "actor": "cfb",
+              "targets": [
+                "b"
+              ],
+              "text": "莱恩 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "fatal": {
+              "id": 954,
+              "roomIndex": 2,
+              "round": 13,
+              "type": "attack",
+              "actor": "cfb",
+              "targets": [
+                "b"
+              ],
+              "text": "催帆鼓手 → 莱恩：致命，19 伤害（溢出 9）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 2
+              }
+            },
+            "damage": {
+              "skill": "spark",
+              "attackType": "magic",
+              "grade": "致命",
+              "damage": 19,
+              "actual": 10,
+              "overkill": 9,
+              "hpBefore": 10,
+              "hpAfter": 0,
+              "resistance": -5,
+              "attack": 69,
+              "defense": 26
+            },
+            "unitMPAfter": 29,
+            "beforeHerbsEmpty": false
+          }
+        ]
+      },
+      {
+        "reportId": 123,
+        "source": "/workspace/wod-evidence/v172/browser-final/focus-1-report.json",
+        "sha256": "6842dd3e83e391ed058f39aecedf923d3f54398e5248b122010309d72fcfc615",
+        "route": null,
+        "configSHA256": "5d94e4b809246a37f88a93e1e58c5c3a9c3b0c8a593316bacdf45254f379b9d2",
+        "won": false,
+        "survivors": 0,
+        "roomSummaries": [
+          {
+            "name": "01 · 外港断桥",
+            "won": true,
+            "rounds": 4,
+            "survivors": 6,
+            "hp": 644,
+            "mp": 281,
+            "supplies": {
+              "herb": 9,
+              "rune": 8,
+              "arrow": 7
+            }
+          },
+          {
+            "name": "02 · 折帆分舱",
+            "won": true,
+            "rounds": 5,
+            "survivors": 5,
+            "hp": 459,
+            "mp": 203,
+            "supplies": {
+              "herb": 5,
+              "rune": 6,
+              "arrow": 2
+            }
+          },
+          {
+            "name": "03 · 封蜡回邮台",
+            "won": false,
+            "rounds": 12,
+            "survivors": 0,
+            "hp": 0,
+            "mp": 158,
+            "supplies": {
+              "herb": 0,
+              "rune": 4,
+              "arrow": 1
+            }
+          }
+        ],
+        "initialHerbs": 12,
+        "herbCasts": [
+          {
+            "id": 7,
+            "roomIndex": 0,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f"
+            ],
+            "text": "露弥 使用「远征药膳」",
+            "supplies": {
+              "herb": 11,
+              "rune": 9,
+              "arrow": 8
+            },
+            "herbsBefore": 12,
+            "spent": 1,
+            "skill": "provisions",
+            "mpBefore": 68,
+            "mpAfter": 65,
+            "selected": null
+          },
+          {
+            "id": 107,
+            "roomIndex": 0,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 10,
+              "rune": 8,
+              "arrow": 7
+            },
+            "herbsBefore": 11,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 67,
+            "mpAfter": 62,
+            "selected": "beryl"
+          },
+          {
+            "id": 173,
+            "roomIndex": 0,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 9,
+              "rune": 8,
+              "arrow": 7
+            },
+            "herbsBefore": 10,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 63,
+            "mpAfter": 58,
+            "selected": "beryl"
+          },
+          {
+            "id": 258,
+            "roomIndex": 1,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "e"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 8,
+              "rune": 6,
+              "arrow": 6
+            },
+            "herbsBefore": 9,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 60,
+            "mpAfter": 55,
+            "selected": "e"
+          },
+          {
+            "id": 311,
+            "roomIndex": 1,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 7,
+              "rune": 6,
+              "arrow": 5
+            },
+            "herbsBefore": 8,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 56,
+            "mpAfter": 51,
+            "selected": "beryl"
+          },
+          {
+            "id": 352,
+            "roomIndex": 1,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 6,
+              "rune": 6,
+              "arrow": 4
+            },
+            "herbsBefore": 7,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 52,
+            "mpAfter": 47,
+            "selected": "beryl"
+          },
+          {
+            "id": 390,
+            "roomIndex": 1,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "d"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 5,
+              "rune": 6,
+              "arrow": 3
+            },
+            "herbsBefore": 6,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 48,
+            "mpAfter": 43,
+            "selected": "d"
+          },
+          {
+            "id": 463,
+            "roomIndex": 2,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 4,
+              "rune": 5,
+              "arrow": 1
+            },
+            "herbsBefore": 5,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 45,
+            "mpAfter": 40,
+            "selected": "beryl"
+          },
+          {
+            "id": 519,
+            "roomIndex": 2,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 3,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 4,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 41,
+            "mpAfter": 36,
+            "selected": "beryl"
+          },
+          {
+            "id": 556,
+            "roomIndex": 2,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 2,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 3,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 37,
+            "mpAfter": 32,
+            "selected": "beryl"
+          },
+          {
+            "id": 612,
+            "roomIndex": 2,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 1,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 2,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 33,
+            "mpAfter": 28,
+            "selected": "beryl"
+          },
+          {
+            "id": 707,
+            "roomIndex": 2,
+            "round": 6,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "c"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 0,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 1,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 30,
+            "mpAfter": 25,
+            "selected": "c"
+          }
+        ],
+        "herbsFirstZero": {
+          "id": 707,
+          "roomIndex": 2,
+          "round": 6,
+          "type": "cast",
+          "actor": "f",
+          "targets": [
+            "c"
+          ],
+          "text": "露弥 中断普通指令，使用「草药救护」",
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        "firstHealBlockedByHerbs": {
+          "id": 746,
+          "roomIndex": 2,
+          "round": 7,
+          "type": "skip",
+          "actor": "f",
+          "targets": [],
+          "text": "露弥 跳过「草药救护」：耗材耗尽",
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        "herbBlockedHealCount": 2,
+        "allPartyDowns": [
+          {
+            "member": "e",
+            "down": {
+              "id": 307,
+              "roomIndex": 1,
+              "round": 2,
+              "type": "down",
+              "actor": "csm",
+              "targets": [
+                "e"
+              ],
+              "text": "塞恩 倒下。",
+              "supplies": {
+                "herb": 8,
+                "rune": 6,
+                "arrow": 5
+              }
+            },
+            "fatal": {
+              "id": 306,
+              "roomIndex": 1,
+              "round": 2,
+              "type": "attack",
+              "actor": "csm",
+              "targets": [
+                "e"
+              ],
+              "text": "潮墨术士 → 塞恩：重击，34 伤害（溢出 28）",
+              "supplies": {
+                "herb": 8,
+                "rune": 6,
+                "arrow": 5
+              }
+            },
+            "damage": {
+              "skill": "spark",
+              "attackType": "magic",
+              "grade": "重击",
+              "damage": 34,
+              "actual": 6,
+              "overkill": 28,
+              "hpBefore": 6,
+              "hpAfter": 0,
+              "resistance": -10,
+              "attack": 117,
+              "defense": 64
+            },
+            "unitMPAfter": 15,
+            "beforeHerbsEmpty": true
+          },
+          {
+            "member": "beryl",
+            "down": {
+              "id": 656,
+              "roomIndex": 2,
+              "round": 5,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "beryl"
+              ],
+              "text": "贝芮尔 倒下。",
+              "supplies": {
+                "herb": 1,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 655,
+              "roomIndex": 2,
+              "round": 5,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "beryl"
+              ],
+              "text": "拦邮卫 → 贝芮尔：致命，28 伤害（溢出 7）",
+              "supplies": {
+                "herb": 1,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "strike",
+              "attackType": "melee",
+              "grade": "致命",
+              "damage": 28,
+              "actual": 21,
+              "overkill": 7,
+              "hpBefore": 21,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 73,
+              "defense": 19
+            },
+            "unitMPAfter": 0,
+            "beforeHerbsEmpty": true
+          },
+          {
+            "member": "c",
+            "down": {
+              "id": 779,
+              "roomIndex": 2,
+              "round": 8,
+              "type": "down",
+              "actor": "cfw",
+              "targets": [
+                "c"
+              ],
+              "text": "伊芙 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 778,
+              "roomIndex": 2,
+              "round": 8,
+              "type": "attack",
+              "actor": "cfw",
+              "targets": [
+                "c"
+              ],
+              "text": "护邮印师 → 伊芙：重击，19 伤害（溢出 10）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "spark",
+              "attackType": "magic",
+              "grade": "重击",
+              "damage": 19,
+              "actual": 9,
+              "overkill": 10,
+              "hpBefore": 9,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 84,
+              "defense": 54
+            },
+            "unitMPAfter": 44,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "f",
+            "down": {
+              "id": 832,
+              "roomIndex": 2,
+              "round": 9,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "f"
+              ],
+              "text": "露弥 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 831,
+              "roomIndex": 2,
+              "round": 9,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "f"
+              ],
+              "text": "拦邮卫 → 露弥：致命，21 伤害（溢出 2）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "strike",
+              "attackType": "melee",
+              "grade": "致命",
+              "damage": 21,
+              "actual": 19,
+              "overkill": 2,
+              "hpBefore": 19,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 76,
+              "defense": 20
+            },
+            "unitMPAfter": 22,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "d",
+            "down": {
+              "id": 906,
+              "roomIndex": 2,
+              "round": 11,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "d"
+              ],
+              "text": "维斯 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 905,
+              "roomIndex": 2,
+              "round": 11,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "d"
+              ],
+              "text": "拦邮卫 → 维斯：致命，34 伤害（溢出 27）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "strike",
+              "attackType": "melee",
+              "grade": "致命",
+              "damage": 34,
+              "actual": 7,
+              "overkill": 27,
+              "hpBefore": 7,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 74,
+              "defense": 18
+            },
+            "unitMPAfter": 51,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "b",
+            "down": {
+              "id": 934,
+              "roomIndex": 2,
+              "round": 12,
+              "type": "down",
+              "actor": "cfw",
+              "targets": [
+                "b"
+              ],
+              "text": "莱恩 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 933,
+              "roomIndex": 2,
+              "round": 12,
+              "type": "attack",
+              "actor": "cfw",
+              "targets": [
+                "b"
+              ],
+              "text": "护邮印师 → 莱恩：致命，35 伤害（溢出 16）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "spark",
+              "attackType": "magic",
+              "grade": "致命",
+              "damage": 35,
+              "actual": 19,
+              "overkill": 16,
+              "hpBefore": 19,
+              "hpAfter": 0,
+              "resistance": -5,
+              "attack": 72,
+              "defense": 21
+            },
+            "unitMPAfter": 26,
+            "beforeHerbsEmpty": false
+          }
+        ]
+      },
+      {
+        "reportId": 124,
+        "source": "/workspace/wod-evidence/v173/browser-final/imagery-1-report.json",
+        "sha256": "75bcf5f761c97af0479a94be0383bc8565e2bca23f388bd8675740cdcd91b1e7",
+        "route": null,
+        "configSHA256": "1e41740e2f10f70fa3ff995f30b2fc5c6a3323d1064343effe9fb57b200759f0",
+        "won": false,
+        "survivors": 0,
+        "roomSummaries": [
+          {
+            "name": "01 · 外港断桥",
+            "won": true,
+            "rounds": 4,
+            "survivors": 6,
+            "hp": 644,
+            "mp": 284,
+            "supplies": {
+              "herb": 9,
+              "rune": 8,
+              "arrow": 7
+            }
+          },
+          {
+            "name": "02 · 折帆分舱",
+            "won": true,
+            "rounds": 5,
+            "survivors": 5,
+            "hp": 477,
+            "mp": 209,
+            "supplies": {
+              "herb": 5,
+              "rune": 6,
+              "arrow": 2
+            }
+          },
+          {
+            "name": "03 · 封蜡回邮台",
+            "won": false,
+            "rounds": 13,
+            "survivors": 0,
+            "hp": 0,
+            "mp": 195,
+            "supplies": {
+              "herb": 0,
+              "rune": 4,
+              "arrow": 1
+            }
+          }
+        ],
+        "initialHerbs": 12,
+        "herbCasts": [
+          {
+            "id": 7,
+            "roomIndex": 0,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f"
+            ],
+            "text": "露弥 使用「远征药膳」",
+            "supplies": {
+              "herb": 11,
+              "rune": 9,
+              "arrow": 8
+            },
+            "herbsBefore": 12,
+            "spent": 1,
+            "skill": "provisions",
+            "mpBefore": 68,
+            "mpAfter": 65,
+            "selected": null
+          },
+          {
+            "id": 61,
+            "roomIndex": 0,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 10,
+              "rune": 8,
+              "arrow": 7
+            },
+            "herbsBefore": 11,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 66,
+            "mpAfter": 61,
+            "selected": "beryl"
+          },
+          {
+            "id": 168,
+            "roomIndex": 0,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 9,
+              "rune": 8,
+              "arrow": 7
+            },
+            "herbsBefore": 10,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 63,
+            "mpAfter": 58,
+            "selected": "beryl"
+          },
+          {
+            "id": 240,
+            "roomIndex": 1,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 8,
+              "rune": 6,
+              "arrow": 6
+            },
+            "herbsBefore": 9,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 60,
+            "mpAfter": 55,
+            "selected": "beryl"
+          },
+          {
+            "id": 294,
+            "roomIndex": 1,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 7,
+              "rune": 6,
+              "arrow": 5
+            },
+            "herbsBefore": 8,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 56,
+            "mpAfter": 51,
+            "selected": "beryl"
+          },
+          {
+            "id": 340,
+            "roomIndex": 1,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "e"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 6,
+              "rune": 6,
+              "arrow": 4
+            },
+            "herbsBefore": 7,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 52,
+            "mpAfter": 47,
+            "selected": "e"
+          },
+          {
+            "id": 379,
+            "roomIndex": 1,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 5,
+              "rune": 6,
+              "arrow": 3
+            },
+            "herbsBefore": 6,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 48,
+            "mpAfter": 43,
+            "selected": "beryl"
+          },
+          {
+            "id": 459,
+            "roomIndex": 2,
+            "round": 1,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "d"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 4,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 5,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 45,
+            "mpAfter": 40,
+            "selected": "d"
+          },
+          {
+            "id": 509,
+            "roomIndex": 2,
+            "round": 2,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 3,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 4,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 41,
+            "mpAfter": 36,
+            "selected": "beryl"
+          },
+          {
+            "id": 552,
+            "roomIndex": 2,
+            "round": 3,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 2,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 3,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 37,
+            "mpAfter": 32,
+            "selected": "beryl"
+          },
+          {
+            "id": 611,
+            "roomIndex": 2,
+            "round": 4,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 1,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 2,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 33,
+            "mpAfter": 28,
+            "selected": "beryl"
+          },
+          {
+            "id": 650,
+            "roomIndex": 2,
+            "round": 5,
+            "type": "cast",
+            "actor": "f",
+            "targets": [
+              "beryl"
+            ],
+            "text": "露弥 中断普通指令，使用「草药救护」",
+            "supplies": {
+              "herb": 0,
+              "rune": 4,
+              "arrow": 1
+            },
+            "herbsBefore": 1,
+            "spent": 1,
+            "skill": "heal",
+            "mpBefore": 29,
+            "mpAfter": 24,
+            "selected": "beryl"
+          }
+        ],
+        "herbsFirstZero": {
+          "id": 650,
+          "roomIndex": 2,
+          "round": 5,
+          "type": "cast",
+          "actor": "f",
+          "targets": [
+            "beryl"
+          ],
+          "text": "露弥 中断普通指令，使用「草药救护」",
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        "firstHealBlockedByHerbs": {
+          "id": 699,
+          "roomIndex": 2,
+          "round": 6,
+          "type": "skip",
+          "actor": "f",
+          "targets": [],
+          "text": "露弥 跳过「草药救护」：耗材耗尽",
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        "herbBlockedHealCount": 3,
+        "allPartyDowns": [
+          {
+            "member": "e",
+            "down": {
+              "id": 345,
+              "roomIndex": 1,
+              "round": 3,
+              "type": "down",
+              "actor": "csm",
+              "targets": [
+                "e"
+              ],
+              "text": "塞恩 倒下。",
+              "supplies": {
+                "herb": 6,
+                "rune": 6,
+                "arrow": 4
+              }
+            },
+            "fatal": {
+              "id": 344,
+              "roomIndex": 1,
+              "round": 3,
+              "type": "attack",
+              "actor": "csm",
+              "targets": [
+                "e"
+              ],
+              "text": "潮墨术士 → 塞恩：重击，75 伤害（溢出 10）",
+              "supplies": {
+                "herb": 6,
+                "rune": 6,
+                "arrow": 4
+              }
+            },
+            "damage": {
+              "skill": "wave",
+              "attackType": "magic",
+              "grade": "重击",
+              "damage": 75,
+              "actual": 65,
+              "overkill": 10,
+              "hpBefore": 65,
+              "hpAfter": 0,
+              "resistance": -10,
+              "attack": 173,
+              "defense": 81
+            },
+            "unitMPAfter": 20,
+            "beforeHerbsEmpty": true
+          },
+          {
+            "member": "beryl",
+            "down": {
+              "id": 709,
+              "roomIndex": 2,
+              "round": 6,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "beryl"
+              ],
+              "text": "贝芮尔 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 708,
+              "roomIndex": 2,
+              "round": 6,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "beryl"
+              ],
+              "text": "拦邮卫 → 贝芮尔：命中，25 伤害（溢出 7）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "shieldbash",
+              "attackType": "melee",
+              "grade": "命中",
+              "damage": 25,
+              "actual": 18,
+              "overkill": 7,
+              "hpBefore": 18,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 41,
+              "defense": 38
+            },
+            "unitMPAfter": 0,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "c",
+            "down": {
+              "id": 783,
+              "roomIndex": 2,
+              "round": 8,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "c"
+              ],
+              "text": "伊芙 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 782,
+              "roomIndex": 2,
+              "round": 8,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "c"
+              ],
+              "text": "拦邮卫 → 伊芙：重击，32 伤害（溢出 27）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "shieldbash",
+              "attackType": "melee",
+              "grade": "重击",
+              "damage": 32,
+              "actual": 5,
+              "overkill": 27,
+              "hpBefore": 5,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 40,
+              "defense": 26
+            },
+            "unitMPAfter": 51,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "f",
+            "down": {
+              "id": 862,
+              "roomIndex": 2,
+              "round": 10,
+              "type": "down",
+              "actor": "cfb",
+              "targets": [
+                "f"
+              ],
+              "text": "露弥 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 861,
+              "roomIndex": 2,
+              "round": 10,
+              "type": "attack",
+              "actor": "cfb",
+              "targets": [
+                "f"
+              ],
+              "text": "催帆鼓手 → 露弥：命中，11 伤害（溢出 6）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "spark",
+              "attackType": "magic",
+              "grade": "命中",
+              "damage": 11,
+              "actual": 5,
+              "overkill": 6,
+              "hpBefore": 5,
+              "hpAfter": 0,
+              "resistance": -10,
+              "attack": 64,
+              "defense": 56
+            },
+            "unitMPAfter": 41,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "d",
+            "down": {
+              "id": 913,
+              "roomIndex": 2,
+              "round": 11,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "d"
+              ],
+              "text": "维斯 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 912,
+              "roomIndex": 2,
+              "round": 11,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "d"
+              ],
+              "text": "拦邮卫 → 维斯：致命，32 伤害（溢出 25）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "strike",
+              "attackType": "melee",
+              "grade": "致命",
+              "damage": 32,
+              "actual": 7,
+              "overkill": 25,
+              "hpBefore": 7,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 68,
+              "defense": 26
+            },
+            "unitMPAfter": 56,
+            "beforeHerbsEmpty": false
+          },
+          {
+            "member": "b",
+            "down": {
+              "id": 969,
+              "roomIndex": 2,
+              "round": 13,
+              "type": "down",
+              "actor": "cfg",
+              "targets": [
+                "b"
+              ],
+              "text": "莱恩 倒下。",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "fatal": {
+              "id": 968,
+              "roomIndex": 2,
+              "round": 13,
+              "type": "attack",
+              "actor": "cfg",
+              "targets": [
+                "b"
+              ],
+              "text": "拦邮卫 → 莱恩：命中，20 伤害（溢出 12）",
+              "supplies": {
+                "herb": 0,
+                "rune": 4,
+                "arrow": 1
+              }
+            },
+            "damage": {
+              "skill": "strike",
+              "attackType": "melee",
+              "grade": "命中",
+              "damage": 20,
+              "actual": 8,
+              "overkill": 12,
+              "hpBefore": 8,
+              "hpAfter": 0,
+              "resistance": 0,
+              "attack": 90,
+              "defense": 73
+            },
+            "unitMPAfter": 27,
+            "beforeHerbsEmpty": false
+          }
+        ]
+      }
+    ],
+    "interpretation": "First casualties may precede herb exhaustion. Record direct fatal attacks and resource-blocked rescue separately; causal counterfactual not proven.",
+    "nextExperiment": "After current art delivery, run a predeclared contiguous seed batch with this exact configuration, retaining every result, then compare one preparation factor at a time; no canonical rewards or numerical balance changes."
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v174/browser-final/art-final-campaign.json": "2944f709d2f37383f3c0e0a9a2ff3c51500cb2d276da1ed4fac9ce1487f2714c",
+    "/workspace/wod-evidence/v174/browser-final/art-final-four-raw-keys.json": "f9cc2a6692f8b82877123a7ba0cb7a2929fb0f6ef0c86bb3e1e4b47414e9e76d"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "legacy143Root": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "new132Root": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "new132ChecksummedFiles": 14,
+    "new132SnapshotSHA256": "a6792d781955ac4ffe5ec8f7bb13b6a707d273454ae8f12524afe6e3bd4d620d",
+    "new132SnapshotBytes": 129703762,
+    "new132Current755Files59PNGAndNsFullRestoreBeforeRetirement": true,
+    "new173TempBudgetRoot": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "new173ChecksummedFiles": 19,
+    "new173RequiresOriginal147148167MastersAndAllPlans": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "No battle/economy/schema or original-server numerical change.",
+    "Normal125all-down retained; prior121–124 only diagnosis, no failure-rate estimate or causal counterfactual.",
+    "Chromium desktop/390px emulation, not physical devices or other engines.",
+    "20affected complete GUI reexecuted; full81 next176–178 milestone.",
+    "SVGnative export sampled8poses, GIFbinaryalpha and palette approximate, no exact seeking or real battle milliseconds.",
+    "Originalmodel deliberately steps/recoils; feet are not stationary.",
+    "No new imagegen thisstage; painted172 separate pending correctgear/side/hit/down frames.",
+    "Decorativepostbell adds1KB request; not faster than noimage. Backgroundsunchanged.",
+    "Library172 batch outcome stillunconfirmed, no retry or newID.",
+    "Keep entire173maintenance and147/148/167masters plus156sixsnapshots and all recovery chains.",
+    "Permanent supplyeconomy pending."
+  ],
+  "mainBaseline": "5229e1214bf4261b2861e5f2252099c9c29ba628",
+  "nextMainWindow": [
+    176,
+    178
+  ]
+}

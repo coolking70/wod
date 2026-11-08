@@ -1,3 +1,5 @@
+> v0.174 原生守卫放大动作检查与24px邮铃SVG；保留实际挡架后受击、键盘焦点和减少动态。八帧原生GIF/PNG与绘制试作分开评估，121–124只读复盘不调数值。见[说明](docs/V174_GUARDIAN_ART_DETAIL.md)、[交接](docs/HANDOFF_CLOUD_V174.md)。main已核验173，本轮20GUI，完整窗口176–178。
+
 > v0.173 路线原图靠近视口再载入，保留全部画面与选路；初始图片请求约36.3MB降至9.1MB，六对原图截图精确相同。见[实现与测量](docs/V173_ROUTE_ART_LOADING.md)、[交接](docs/HANDOFF_CLOUD_V173.md)。全部80GUI完整节点，main实际结果以交付manifest为准。
 
 > v0.172 修复救护行重绘后的连续键盘焦点，完成真实八姿态GIF及原生SVG/同图PNG受控试作；未替换生产美术，Library下载/保存受网络阻塞。见[说明](docs/V172_CARE_FOCUS_ART_STUDY.md)、[交接](docs/HANDOFF_CLOUD_V172.md)。main保持170，完整窗口173–175。
