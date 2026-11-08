@@ -1,0 +1,51 @@
+{
+  "version": "0.185",
+  "planNotExecutionReceipt": true,
+  "source": "Small incremental bundle+binary patch after184; primary/backup complete source chains retained, all blobs/modes/history/refs/private6 cold verified.",
+  "evidence": "One immutable current master; all original CP ZIP bytes and actual failed attempts if any preserved. Never copy historical maintenance payload again.",
+  "spaceBudget": {
+    "passed": true,
+    "fullCurrentSuites": true,
+    "fullGUI": 91,
+    "expectedFullNode": 1778,
+    "noDummy185GUIAdded": true,
+    "baselineSuccessfulCPBytes": 590437937,
+    "baselineSuccessfulRawBytes": 4022928588,
+    "twoWorstRetestCPAllowance": 31543192,
+    "twoWorstRetestRawAllowance": 265573700,
+    "CPUpper": 636981129,
+    "rawUpper": 4313502288,
+    "phaseEvidenceUpper": 150000000,
+    "masterUpper": 806981129,
+    "masterBoundAssumesNoCompressionOfEvidence": true,
+    "sourceSidecarsUpper": 5000000,
+    "tmpColdSourceAllowance": 300000000,
+    "reserveEach": 1073741824,
+    "mainAdditionalRequiredNow": 2672704082,
+    "tmpSequentialRequiredBeforeAnyRawAllocated": 6324225241,
+    "oldTwoRawCopiesPlusReserve": 9700746400,
+    "freeBytes": {
+      "/workspace": 3692220416,
+      "/tmp": 9100283904
+    },
+    "margin": {
+      "main": 1019516334,
+      "tmp": 2776058663
+    },
+    "workflow": "Validated182sequentialtool: twoindependentall-filephysicalproofs,wholeCP/E,rawduplicate retirementwithmasterandallCPkept,wholeRAWproof,CPduplicateslast. Notthreewholerootsbeforeanyretirement.",
+    "allOldRecoveryDependenciesProtected": true
+  },
+  "proofOrder": [
+    "Two independently implemented all-file physical restore/readback proofs",
+    "Whole checkpoints and evidence with independent readback",
+    "Bound raw duplicate retirement while master and every original CP remain",
+    "Whole raw simultaneous physical restore with independent file/directory ns readback",
+    "Only then retire duplicate CP copies"
+  ],
+  "threeWholeRootsBeforeAnyRetirement": false,
+  "newRecoveryDependency": "ENTIRE delivery sequential-recovery directory and late RAW/CP pointers, recursively checksummed.",
+  "oldDataCleanup": false,
+  "protectedFiles": 1051,
+  "oldDependencies": "All inherited mandatoryRecoveryDependencies, H183/135originalPNGs/3originalmasters/supplement, v156six snapshots/manifest and all older maintenance/master/pointers/private6/source chains kept.",
+  "limitations": "Quiescent verification is not cross-process locking; old timestamp/ID gaps not repaired. Actual completed results in manifest/evidence-restore-check/independent-audit."
+}

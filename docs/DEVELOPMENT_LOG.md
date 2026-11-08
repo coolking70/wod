@@ -1,3 +1,5 @@
+> v0.185完整节点：整合学者真实动作、SVG/八帧GIF样片与共享补给前缀追溯；1778全Node、91全套GUI、130完整JSON/33默认关闭HTML通过。正式档保持14295/next136，无额外出征。main进入时182，集成实际SHA见交付manifest；下一完整窗口188–190。见[说明](V185_SOLO_EXPERIENCE_MILESTONE.md)、[交接](HANDOFF_CLOUD_V185.md)。
+
 > v0.184开发：点击当前材料，追溯截至当前步的共享余额与耗尽来源，再返回原游标/筛选/焦点；静态SVG图标和余额图。65相关Node/2相关完整GUI，main182，下一完整节点185–187。见[说明](V184_SHARED_SUPPLY_TRACE.md)、[交接](HANDOFF_CLOUD_V184.md)。
 
 > v0.183开发：学者十关节SVG、真实施放/闪避/待生效姿态与八帧GIF样片；88相关Node/2完整相关GUI通过，main182。回收约1.93GiB已归档重复缓存，135原截图保持，采用精简当期证据。见[说明](V183_SCHOLAR_RUNE_MOTION.md)、[交接](HANDOFF_CLOUD_V183.md)。
