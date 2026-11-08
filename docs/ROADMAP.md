@@ -1,3 +1,5 @@
+> v0.184开发：点击当前材料，追溯截至当前步的共享余额与耗尽来源，再返回原游标/筛选/焦点；静态SVG图标和余额图。65相关Node/2相关完整GUI，main182，下一完整节点185–187。见[说明](V184_SHARED_SUPPLY_TRACE.md)、[交接](HANDOFF_CLOUD_V184.md)。
+
 > v0.183开发：学者十关节SVG、真实施放/闪避/待生效姿态与八帧GIF样片；88相关Node/2完整相关GUI通过，main182。回收约1.93GiB已归档重复缓存，135原截图保持，采用精简当期证据。见[说明](V183_SCHOLAR_RUNE_MOTION.md)、[交接](HANDOFF_CLOUD_V183.md)。
 
 > v0.182完整节点：动作可打开真实原记录并返回原步骤/筛选/焦点；1754Node、89全套GUI通过。顺序物理恢复保持双独立全文件和三整根覆盖，保留失败重测空间。main进入时179，集成实际结果见交付manifest。见[说明](V182_MOTION_EVIDENCE_MILESTONE.md)、[交接](HANDOFF_CLOUD_V182.md)。

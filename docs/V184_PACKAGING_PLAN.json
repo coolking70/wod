@@ -1,0 +1,12 @@
+{
+  "version": "0.184",
+  "source": "v158full+159..184increments OR v152full+153..184increments; keepprivate6",
+  "branch": "feature/v184-shared-supply-trace",
+  "base": "191f8196e768025290c957fb44999ae7c1268522",
+  "mainUnchanged": "a3bc4c66a5b79103decbf30a0c606053c5757c54",
+  "coldChecks": "allblobs/modes/history/heads/private6,primary277Node,current5/prior1835/prior18220CLIexact,binarypatchtree",
+  "evidence": "onecurrentfocusedmaster/3originalCP/fullcurrentraw; physicalthreewhole roots/readback/currentrawdirectoryns beforeduplicate retirement",
+  "noNewMaintenanceOrRepeatedOldMaintenancePayload": true,
+  "all992ProtectedAndInheritedHardDependenciesRequired": true,
+  "noForceGCpruneDeploy": true
+}

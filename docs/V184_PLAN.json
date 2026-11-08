@@ -1,0 +1,16 @@
+{
+  "version": "0.184",
+  "baseline": "191f8196e768025290c957fb44999ae7c1268522",
+  "mainUnchanged": "a3bc4c66a5b79103decbf30a0c606053c5757c54",
+  "purpose": "Clickable currentsharedstock to prefix-only supplyflow/exactsource/return and nativeSVG icons/balance",
+  "relatedNode": 65,
+  "relatedCompleteGUI": 2,
+  "fullRegistry": 91,
+  "fullCurrentSuites": false,
+  "normalSeed": 135,
+  "nextMainWindow": [
+    185,
+    187
+  ],
+  "noEconomyOrCombatChanges": true
+}
