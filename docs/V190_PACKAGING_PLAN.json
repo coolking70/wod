@@ -1,0 +1,34 @@
+{
+  "version": "0.190",
+  "scope": "Fix returning adventurers being sent to optional introductory route after real claimed clears. Existing new-player sequence/retry/pending/task priorities kept. Single ordinary139 follows existing harbor guidance via routeFocusPreparation; no XP/gear tuning, no seedsearch. Small original coastal waypost SVG used by both camp/map shared view; existing GIFs unchanged.",
+  "baseline": "14c85c8ae6bf8b765c0cdd98a1b4f55f5b684c72",
+  "rawUpper": 450000000,
+  "CPUpper": 90000000,
+  "EVUpper": 50000000,
+  "masterUpper": 160000000,
+  "sourceSidecarsUpper": 6000000,
+  "reserveBytes": 1073741824,
+  "NodeScope": [
+    "tests/returning-camp.test.mjs",
+    "tests/v94.test.mjs",
+    "tests/v108.test.mjs",
+    "tests/post-quest.test.mjs",
+    "tests/return-quest.test.mjs"
+  ],
+  "browserScope": [
+    190,
+    94,
+    108,
+    186
+  ],
+  "fullGate": [
+    191,
+    193
+  ],
+  "normalPredeclared": {
+    "id": 139,
+    "route": "harbor",
+    "choice": "Existing recommended story, existing route preparation, all actual assets preserved; no training/equipment changes."
+  },
+  "supplyEconomyPending": true
+}
