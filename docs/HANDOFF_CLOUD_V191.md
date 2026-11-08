@@ -4,7 +4,7 @@
 
 正式档/workspace/wod-evidence/v191/browser-final/returning-final-four-raw-keys.json与returning-final-campaign.json，14895金币/next140/E6260/贝芮尔3145，四业务串等于190。139港口已领取、六人生还/符纸0/灯塔短杖仓库1未分配、灯塔来信3/3可选结局而未交付。没有新增140出征、培养/换装/伙伴职责/首证/故事或收藏变动，五收藏793208字，A与三方案保持。样本不是平衡结论。
 
-1821完整Node、95套完整GUI、130历史完整JSON/33默认关闭HTML、981冻结输入、841JS12Python197模块225引用通过；当前5+旧44完整CLI绑定原master。主链计划362相关Node49CLI与双链1764文件153正式提交/全部本地头和六旧引用/执行模式/fsck的实际收据见restore-check，不预先声称未执行结果。191生产相对190只有版本标记，整合189药师和190接续，不加假191GUI或细碎机制。
+1821完整Node、95套完整GUI、130历史完整JSON/33默认关闭HTML、981冻结输入、841JS12Python197模块225引用通过；当前5+旧44完整CLI绑定原master。主链计划366相关Node49CLI与双链1764文件154正式提交/全部本地头和六旧引用/执行模式/fsck的实际收据见restore-check，不预先声称未执行结果。191生产相对190只有版本标记，整合189药师和190接续，不加假191GUI或细碎机制。
 
 先完成容量验证：25%整体增长+两次最重套件失败重测，实际峰值非稀疏预留保持每盘1GiB。原始CP在/tmp/wod-checkpoints/v191而非主盘，保留至主盘master校验和全部物理恢复完成。证据根/workspace/wod-evidence/v191，原始/tmp/wod-evidence/v191/acceptance。新容量实验/tmp/wod-evidence/v1910、/tmp/wod-checkpoints/v1910、/tmp/wod-capacity-evidence-v1910表示存储命名空间，不是产品版本或新验收；整个E191/capacity及CAPACITY_DEPENDENCIES列出的原始晚指针/元数据必须保留，且含于当期master。
 

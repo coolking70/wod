@@ -42,7 +42,7 @@
       "tests/post-quest.test.mjs",
       "tests/return-quest.test.mjs"
     ],
-    "expectedTests": 362,
+    "expectedTests": 366,
     "fullLiveNodeExpected": 1821
   },
   "capacity": {
