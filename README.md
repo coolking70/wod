@@ -1,3 +1,5 @@
+> v0.188完整整合节点：营地主入口/键盘定位与潮术师真实SVG/八帧GIF共同通过1792项完整Node、全部93套GUI、130份历史完整JSON/33机制HTML和数据安全核验。正式档保持14470/next138，无额外出征；main进入时185，安全集成实际SHA见交付manifest。见[说明](docs/V188_CAMP_MOTION_MILESTONE.md)、[交接](docs/HANDOFF_CLOUD_V188.md)。
+
 > v0.187：携法器潮术师十关节SVG接入真实施放、多目标结算、召唤/召回和受击倒下，标签读取同一动画时钟；提供独立八帧GIF/透明PNG表。63相关Node、187/186/183/184四套相关完整GUI通过，main185，完整窗口188–190。正常137五人生还、贝芮尔倒下/草药0，终14470/next138；136失败保留。见[实现](docs/V187_TIDECALLER_MOTION.md)、[交接](docs/HANDOFF_CLOUD_V187.md)。
 
 > v0.186收尾修复：桌面切换英雄后的标题按吸顶标签实际高度留白，三宽度命中检查确认未遮挡。最终源码重新通过56相关Node/4完整GUI；初版c01537c与全部原尝试另保留，最终交付目录为v0.186-camp-start-final。14335/next137四串与初版完全相同，main185，完整窗口188–190。见[说明](docs/V186_CAMP_START.md)、[交接](docs/HANDOFF_CLOUD_V186.md)。

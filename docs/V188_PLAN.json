@@ -1,0 +1,52 @@
+{
+  "version": "0.188",
+  "scope": "Integrate186campfocus and187tidecallernativeSVG/GIF into fullsingleplayer milestone; onlyversionbadgefrom187, no extra canonicalbattle or dummyGUI",
+  "baseline": "75156e890f0c4da45a8566074728e67b55b215d5",
+  "fullNode": 1792,
+  "fullGUI": 93,
+  "historicalJSON": 130,
+  "defaultOffHTML": 33,
+  "nativeState": {
+    "gold": 14470,
+    "next": 138,
+    "ownHero": "e",
+    "ownXP": 6115,
+    "berylXP": 3000,
+    "normal": {
+      "id": 137,
+      "won": true,
+      "alive": 5,
+      "rounds": [
+        4,
+        4,
+        9
+      ],
+      "supplies": {
+        "herb": 0,
+        "rune": 3,
+        "arrow": 2
+      },
+      "reward": {
+        "cleared": 3,
+        "gold": 135,
+        "xp": 55,
+        "firstClear": false,
+        "loot": [
+          "postbell"
+        ]
+      }
+    },
+    "allFourRawStringsByteExact187": true,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "rolesGearBookStoriesWarehouseClearsUnchanged187": true,
+    "noExtraNormalBattleOrTrainingTuningSeedSearchAutomaticGearAdoption": true
+  },
+  "safeMainIntegrationRequired": true,
+  "nextFullGateAfterSuccess": [
+    191,
+    193
+  ],
+  "supplyPending": true
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "fullCurrentSuites": true,
+  "fullGUI": 93,
+  "expectedFullNode": 1792,
+  "noDummy188GUIAdded": true,
+  "basis": "Full18591originalCP plus final186/187originalCP; all93registeredcases.",
+  "baselineSuccessfulCPBytes": 598452421,
+  "baselineSuccessfulRawBytes": 4064729024,
+  "twoWorstRetestCPAllowance": 31620580,
+  "twoWorstRetestRawAllowance": 265573700,
+  "CPUpper": 645073001,
+  "rawUpper": 4360302724,
+  "phaseEvidenceUpper": 150000000,
+  "masterUpper": 815073001,
+  "masterBoundAssumesNoCompressionOfEvidence": true,
+  "sourceSidecarsUpper": 6000000,
+  "tmpColdSourceAllowance": 300000000,
+  "reserveEach": 1073741824,
+  "mainAdditionalRequiredNow": 2689887826,
+  "tmpSequentialRequiredBeforeAnyRawAllocated": 6379117549,
+  "freeBytes": {
+    "/workspace": 2874941440,
+    "/tmp": 9054216192
+  },
+  "margin": {
+    "main": 185053614,
+    "tmp": 2675098643
+  },
+  "workflow": "Unchangedvalidatedsequentialtool: twoindependentallfilephysicalproofs,wholeCP/E,RAWduplicate retirementwithmasterandalloriginalCPkept,wholeRAWproof/independentreadback,CPduplicateslast. Notthreewholerootsbeforeanyretirement.",
+  "allOldRecoveryDependenciesProtected": true,
+  "v186Original2PNGLossNotRestored": true
+}
