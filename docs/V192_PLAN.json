@@ -1,0 +1,36 @@
+{
+  "version": "0.192",
+  "scope": "Actual3of3journey followthrough: destination keyboard/scroll focus across5books/camp/map; truthful active progress; original staticSVG. Developer byte-delta evidence tool with16faultguards +all95existing191checkpoint/fulloriginal-master/two-cold/three-whole-root proof. No current191master replacement/deletion.",
+  "rawUpper": 450000000,
+  "CPUpper": 90000000,
+  "EVUpper": 50000000,
+  "masterUpper": 160000000,
+  "sourceSidecarsUpper": 10000000,
+  "reserveBytes": 1073741824,
+  "NodeScope": [
+    "tests/journey-followthrough.test.mjs",
+    "tests/byte-delta-evidence.test.mjs",
+    "tests/v94.test.mjs",
+    "tests/v108.test.mjs",
+    "tests/post-quest.test.mjs",
+    "tests/return-quest.test.mjs"
+  ],
+  "browserScope": [
+    192,
+    190,
+    108,
+    124,
+    155,
+    186
+  ],
+  "fullGate": [
+    194,
+    196
+  ],
+  "canonicalGold": 14895,
+  "canonicalNext": 140,
+  "noNewNormal140OrReward": true,
+  "allHistoricalDependenciesKept": true,
+  "deltaTrialWrapperKeptOnTMP": true,
+  "permanentSupplyPending": true
+}

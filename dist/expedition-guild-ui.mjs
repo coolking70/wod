@@ -1,3 +1,4 @@
+import {focusJourneyHeading} from './expedition-journey-followthrough.mjs';
 import{claimedRewardReceipt,claimedRewardView}from'./expedition-claimed-reward.mjs';
 import{rehearseLootAssignment,lootRehearsalSignature}from'./expedition-loot-rehearsal.mjs';
 import{lootAssignmentRehearsalView}from'./expedition-loot-rehearsal-view.mjs';
@@ -215,7 +216,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  if(b.dataset.goalLoad){const [route,goal]=b.dataset.goalLoad.split(':');loadConfig(structuredClone(bookProof(g,route,goal).config));inform('首次方案已载入供调整；当前资产、队伍、本人及已应用职责保留。');return;}
 
  if(b.dataset.cycleAction){cycle(b.dataset.cycleAction,b.dataset.cycleValue||'');return;}
- else if(b.dataset.journeyBook){if(!Object.hasOwn(journeyNames,b.dataset.journeyBook))throw Error('旅程无效');journeyBook=b.dataset.journeyBook;render();return;}
+ else if(b.dataset.journeyBook){if(!Object.hasOwn(journeyNames,b.dataset.journeyBook))throw Error('旅程无效');journeyBook=b.dataset.journeyBook;render();focusJourneyHeading(root,journeyBook);return;}
  else if(b.hasAttribute('data-returnquest-start')){save(startReturnQuest(g));render();inform('已接取归岸证词；先让引航员活着抵岸，旧通关不回填。');return;}
  else if(b.dataset.returnquestPath){save(chooseReturnQuest(g,b.dataset.returnquestPath));render();inform('归岸通路已选；只在真实领取且满足本支条件后记录。');return;}
  else if(b.hasAttribute('data-returnquest-prepare')){if(localStorage.getItem(GUILD_KEY)!==raw||localStorage.getItem(configKey)!==JSON.stringify(getConfig()))throw Error('另一页面已修改公会或准备配置，请重新载入');const route=g.returnQuest?.selected;if(!route||g.pending)throw Error('先选择当前通路并领取待结算远征');const assigned=routeFocusPreparation(localStorage,route,getConfig(),g),c=assigned.config;c.seed=getConfig().seed;loadConfig(c,undefined,false,{overview:true});inform('已准备归岸通路；保持当前实际资产与职责，完成条件后正常领取。'+routeFocusNotice(assigned));return;}
@@ -282,7 +283,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  async function saveReportArchive(report,origin,title){read();if(!g)throw Error('公会暂不可用');const expected=raw,next=await collectReport(g,origin,report,title);raw=commitArchiveChange(localStorage,GUILD_KEY,expected,next);g=next;render();return next;}
  function showArchiveReader(){pane='history';render();root.querySelector('#report-archive-reader')?.scrollIntoView({block:'start'});}
  function stepArchive(index){if(!archiveReader||!Number.isInteger(index)||index<0||index>=archiveReader.report.events.length)throw Error('收藏回放位置无效');archiveReader.index=index;showArchiveReader();root.querySelector('#archive-timeline')?.focus();}
- function open(next='hero',book){lootReturnPreview=null;if(Object.hasOwn(journeyNames,book))journeyBook=book;pane=typeof next==='string'?next:'hero';read();render();view('guild');window.scrollTo({top:0});}
+ function open(next='hero',book){lootReturnPreview=null;if(Object.hasOwn(journeyNames,book))journeyBook=book;pane=typeof next==='string'?next:'hero';read();render();view('guild');if(pane!=='journey'||!focusJourneyHeading(root,journeyBook))window.scrollTo({top:0});}
  document.querySelector('header [data-view="guild"]').onclick=open;
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
  function cycle(action,value=''){read();if(!g)throw Error('公会暂不可用，请先检查或恢复备份');

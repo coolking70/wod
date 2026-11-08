@@ -1,0 +1,2 @@
+import{returningCampLoop}from'./returning-camp-cases.mjs';import{campObjective}from'../dist/expedition-camp-cycle.mjs';import{primaryJourneyProgress}from'../dist/expedition-journey-followthrough.mjs';
+export function journeyFollowthrough(){const x=returningCampLoop(),keys={...x.keys,'abbey-expedition-v40':JSON.stringify(x.source),'abbey-guild-v6':JSON.stringify(x.final)},camp=campObjective(x.final);return{keys,start:x.final,source:x.source,camp,primary:primaryJourneyProgress(camp)};}

@@ -1,3 +1,5 @@
+> v0.192旅程接续：营地主目标显示真实3/3进度，从营地/地图和五本旅程进入时定位并聚焦标题；沿用青铜灯塔来信的原生SVG。66相关Node、6套完整相关GUI、84份完整CLI JSON通过。main仍为191/09ed93af；194–196重新预算并执行完整门禁。正式档四原串保持14895/next140，无新出征或代选结局。见[说明](V192_JOURNEY_FOLLOWTHROUGH.md)、[交接](HANDOFF_CLOUD_V192.md)。
+
 > v0.189药师救护表现：十关节SVG补齐六职业战场，直接治疗、缓释与缺药普通行动分别可见，叶纹在真实救护结算节拍才出现；新增共源八帧GIF/PNG表。88相关Node、189/143/172/187四套相关GUI通过，main188、完整窗口191–193。正常138护送六人与NPC生还，终14570/next139。见[实现](V189_HERBALIST_CARE_MOTION.md)、[交接](HANDOFF_CLOUD_V189.md)。
 
 > v0.188完整整合节点：营地主入口/键盘定位与潮术师真实SVG/八帧GIF共同通过1792项完整Node、全部93套GUI、130份历史完整JSON/33机制HTML和数据安全核验。正式档保持14470/next138，无额外出征；main进入时185，安全集成实际SHA见交付manifest。见[说明](V188_CAMP_MOTION_MILESTONE.md)、[交接](HANDOFF_CLOUD_V188.md)。

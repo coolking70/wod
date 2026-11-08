@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "version": "0.192",
+  "baselineCommit": "09ed93af202de828b3b74c4c68cfa8991ec769a5",
+  "mainUnchanged": "09ed93af202de828b3b74c4c68cfa8991ec769a5",
+  "Node": {
+    "tests": 66,
+    "pass": 66,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeEntries": 9,
+  "pythonDeltaFaultGuards": 16,
+  "fullNodeSuiteRun": false,
+  "fullNodeRegistryExpected": 1830,
+  "browser": {
+    "passed": true,
+    "total": 6,
+    "versions": [
+      192,
+      190,
+      108,
+      124,
+      155,
+      186
+    ],
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 96,
+    "originalCheckpointAttempts": 7,
+    "failedOriginalGUIAttempts": 0,
+    "final192HasNoTestScrollAssistance": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 198,
+    "checkedReferences": 227,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "JS": 847,
+    "Python": 14,
+    "sourceInputs": 990
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "changedOld": [
+      "dist/expedition-camp-cycle-view.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "new": [
+      "dist/assets/journey-letter-v192.svg",
+      "dist/expedition-journey-followthrough.mjs",
+      "scripts/browser-v192.cjs",
+      "scripts/byte-delta-evidence-tests.py",
+      "scripts/byte-delta-evidence.py",
+      "scripts/check-v192.mjs",
+      "scripts/journey-followthrough-cases.mjs",
+      "tests/byte-delta-evidence.test.mjs",
+      "tests/journey-followthrough.test.mjs"
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v192/browser-final/journey-final-four-raw-keys.json": "ae187ffc88590307f7294355097d9d48d6f2daf8487a744548ae295a69001379",
+    "/workspace/wod-evidence/v192/browser-final/journey-final-campaign.json": "73dc383dfd305b8ccbc554d45e2bd02c2df7c77e8d45c5221bbd8725975029ca"
+  },
+  "nativeState": {
+    "gold": 14895,
+    "next": 140,
+    "allFourBusinessStringsExact191": true,
+    "noNew140DepartureOrEndingOrReward": true,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208
+  },
+  "art": {
+    "originalStaticJourneySVGBytes": 426,
+    "allPriorGIFPNGsAndModelsUnchanged": true,
+    "notAnimationAndNoGeneralPerformanceClaim": true
+  },
+  "nativeStaticJSON": 84,
+  "prior81StaticJSONExactOriginal191Master": true,
+  "protectedFilesExact": 2047,
+  "deltaFull95Existing191Trial": {
+    "passed": true,
+    "format": "Original outer ZIP byte-exact delta wrapper",
+    "wrapper": {
+      "passed": true,
+      "wrapper": "/tmp/wod-delta-full-v192/v191-original-master-from-v188.delta.zip",
+      "bytes": 179679629,
+      "sha256": "257c5b07037d0e68a68ccb0c974ad8c1ef99aa129b43229f654244ec566db065",
+      "originalMasterBytes": 632732237,
+      "originalMasterSHA256": "2b31b491a35709130395e5b523978af696e69d31ab9af8027979f542acf9c7e2",
+      "baseMasterSHA256": "261c56f89d7f90aac50315514962843ade00e2b6a559287fea411d8fa7125c06",
+      "checkpointCount": 95,
+      "counts": {
+        "delta": 85,
+        "copy": 0,
+        "literalCheckpoint": 10
+      },
+      "sourceFilesRemoved": false,
+      "originalOuterZIPBytesPreservedByRecipe": true
+    },
+    "sourceInputs": {
+      "/workspace/wod-delivery/v0.191-solo-journey-milestone/wod-v191-focused-verification.zip": {
+        "sha256": "2b31b491a35709130395e5b523978af696e69d31ab9af8027979f542acf9c7e2",
+        "mode": 384,
+        "mtimeNs": 1794171047482874817,
+        "bytes": 632732237
+      },
+      "/workspace/wod-delivery/v0.188-camp-motion-milestone/wod-v188-verification.zip": {
+        "sha256": "261c56f89d7f90aac50315514962843ade00e2b6a559287fea411d8fa7125c06",
+        "mode": 384,
+        "mtimeNs": 1794162219144440253,
+        "bytes": 602331774
+      }
+    },
+    "coldWholeOriginalZIPRestores": 2,
+    "coldDecoderOriginal191ReadBlockedBothTimes": true,
+    "decoderReadsOnlyBase188AndWrapperAndOwnScratch": true,
+    "old191MainMasterNotRemoved": true,
+    "all95OriginalCPsAndHeadersAndNonCPEntriesPreservedExactly": true,
+    "originalFullMasterSHA256": "2b31b491a35709130395e5b523978af696e69d31ab9af8027979f542acf9c7e2",
+    "threeWholeRootsRestoredAndReadBackSequentially": [
+      {
+        "root": "raw",
+        "files": 2540,
+        "bytes": 4090712921,
+        "passed": true
+      },
+      {
+        "root": "checkpoints",
+        "files": 95,
+        "bytes": 605476590,
+        "passed": true
+      },
+      {
+        "root": "evidence",
+        "files": 419,
+        "bytes": 40676008,
+        "passed": true
+      }
+    ],
+    "allOriginalFileModesAndMtimeNsPreserved": true,
+    "newDirectoryTimestampsNotClaimedIndexed": true,
+    "onlyNewVerifiedDerivedDuplicateRestoresRemoved": true,
+    "allOldSourcesHeldUnchanged": true,
+    "wrapperRemainingOnTemporaryDisk": "/tmp/wod-delta-full-v192/v191-original-master-from-v188.delta.zip",
+    "samples": 487,
+    "minFreeBytes": {
+      "/workspace": 1441452032,
+      "/tmp": 4134690816
+    },
+    "notYetAdoptedForNewStageRetention": true,
+    "currentTrialIsExisting191SnapshotNotFresh192GameplayAcceptance": true
+  },
+  "capacity": {
+    "freeBytes": {
+      "/workspace": 1435623424,
+      "/tmp": 8475029504
+    },
+    "rawBytes": 353050119,
+    "checkpointBytes": 35049549
+  },
+  "nextMainWindow": [
+    194,
+    196
+  ],
+  "limitations": [
+    "66relatedNode/6GUI,notfull1830/96;194196fullgateandfreshbudgetrequired.",
+    "95CPdelta proof uses old191snapshot,notfresh192fullGUI. Original191/188mastersandnew179679629Btmpwrapperallkept;notadoptedreplacement.",
+    "Bytecodecguardnotcrossprocesslock;nondeterministicfresh108exportseparatelyvalidated.",
+    "Previewtestscrollandprelaunch124registrationfailurekept;final6noassistanttestscroll.",
+    "No140departureorstoryendingclaim.NoGIFnew192,SVGoriginalprojectartnotoriginalWoDrule.",
+    "186twoearlyPNGandmetricsoriginalbyteslostnotrestored,latercontrolledcapturesnotoriginal;oldtimestampIDgapsunfixed.",
+    "Supplypending;172Libraryunknown/no retry;noForceGCpruneDeploy."
+  ]
+}

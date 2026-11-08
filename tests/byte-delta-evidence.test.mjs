@@ -1,0 +1,2 @@
+import test from'node:test';import assert from'node:assert/strict';import{spawnSync}from'node:child_process';
+test('original master byte-delta recovery and sixteen corruption/durability guards',()=>{const p=spawnSync('python3',['scripts/byte-delta-evidence-tests.py'],{encoding:'utf8',maxBuffer:2e6});assert.equal(p.status,0,p.stdout+p.stderr);assert.match(p.stderr,/Ran 16 tests/);assert.match(p.stderr,/\nOK\n/);});
