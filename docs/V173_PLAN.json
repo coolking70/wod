@@ -1,0 +1,22 @@
+{
+  "version": "0.173",
+  "base": "5f7510a82ae44a8cb927eabebf58e55cac2e89ff",
+  "mainBaseline": "3d39172fd957666ec19b21108678251b491a3e30",
+  "scope": "OriginalroutePNGondemandwithin600px, staleobserver/fallbackandall37originalvisual/interactionproof.",
+  "normalCounters": [
+    124
+  ],
+  "normalPlan": "Same actual172courier/survive,no training/tuning/seedsearch",
+  "fullMilestoneBrowserSuites": 80,
+  "mainIntegrationWindow": [
+    173,
+    175
+  ],
+  "nextWindowAfterVerifiedIntegration": [
+    176,
+    178
+  ],
+  "newExternalRecoveryDependency": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget plusoriginal147/148/167masters",
+  "supplyEconomyPending": true,
+  "noForceGCPruneDeploy": true
+}

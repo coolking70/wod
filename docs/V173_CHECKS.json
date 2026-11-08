@@ -1,0 +1,394 @@
+{
+  "passed": true,
+  "baselineCommit": "5f7510a82ae44a8cb927eabebf58e55cac2e89ff",
+  "Node": {
+    "tests": 1678,
+    "pass": 1678,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 0,
+  "newEndToEndBrowserCase": 1,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "scope": "All80currentcompleteGUI plus2previews on frozen173source",
+    "total": 80,
+    "fullCurrentSuites": true,
+    "fullRegistrySize": 80,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173
+    ],
+    "originalCheckpointAttempts": 82,
+    "allCPsDurableMainAsCompleted": true,
+    "previewsNotUsedToReplaceFinalSuites": true,
+    "firstPreviewResetSelectorFailureRetained": true,
+    "new173Screens": [
+      "imagery-desktop-filtered-courier.png",
+      "imagery-mobile-filtered-courier.png"
+    ],
+    "v160NumericImportRegressionFreshFull162": {
+      "passed": true,
+      "scope": "Actual campaign import and frozen103 reader on isolated copy with a freshly collected single valid source, only nested metadata numeric fields replaced by harmless markup. Main five archives and assets never altered. Literal escaped JSON, zero marker DOM nodes, export unchanged. No historical exploit or script execution claim.",
+      "vectors": {
+        "roomPlan": 2,
+        "progress": 7
+      },
+      "originalFiveChars": 793208
+    }
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 185,
+    "checkedReferences": 204,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 755,
+  "sourceInputs": 830,
+  "runtimeDelta": {
+    "new": [
+      "scripts/benchmark-route-art-v173.cjs",
+      "scripts/browser-v173.cjs",
+      "scripts/check-v173.mjs",
+      "scripts/fixtures/v173-preparation-state.json",
+      "scripts/route-art-cases.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 820
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 118,
+    "actualReports": 112,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native88through123And167NewcomerFourAllFieldsExact": true,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13285,
+    "next": 125,
+    "ownHero": "e",
+    "ownXP": 5610,
+    "berylXP": 2495,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 124,
+        "route": "courier",
+        "seed": 124,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          4,
+          5,
+          13
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 1
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "originalBookProofsAndWarehouseClearsUnchanged": true,
+    "normalLoot": [],
+    "survival731SeparateExperimentNoReward": true
+  },
+  "routeArt": {
+    "prefetchPixels": 600,
+    "productionPNGBytesUnchanged": true,
+    "all37RoutesSameOriginalArt": true,
+    "staleObserversAndUnavailableFallbacksVerified": true,
+    "keyboardRouteChoiceUndoAndFourKeysExact": true,
+    "benchmarkSummary": [
+      {
+        "profile": "desktop",
+        "variant": "before",
+        "cache": "cold",
+        "count": 3,
+        "PNGRequests": [
+          12,
+          12,
+          12
+        ],
+        "encodedPNGBytes": [
+          36287229,
+          36287229,
+          36287229
+        ],
+        "medianNetworkSettledMs": 1182,
+        "medianRouteInteractiveMs": 584
+      },
+      {
+        "profile": "desktop",
+        "variant": "before",
+        "cache": "cache-enabled-repeat",
+        "count": 1,
+        "PNGRequests": [
+          13
+        ],
+        "encodedPNGBytes": [
+          39297262
+        ],
+        "medianNetworkSettledMs": 886,
+        "medianRouteInteractiveMs": 201
+      },
+      {
+        "profile": "desktop",
+        "variant": "after",
+        "cache": "cold",
+        "count": 3,
+        "PNGRequests": [
+          3,
+          3,
+          3
+        ],
+        "encodedPNGBytes": [
+          9103358,
+          9103358,
+          9103358
+        ],
+        "medianNetworkSettledMs": 838,
+        "medianRouteInteractiveMs": 332
+      },
+      {
+        "profile": "desktop",
+        "variant": "after",
+        "cache": "cache-enabled-repeat",
+        "count": 1,
+        "PNGRequests": [
+          4
+        ],
+        "encodedPNGBytes": [
+          12113391
+        ],
+        "medianNetworkSettledMs": 753,
+        "medianRouteInteractiveMs": 227
+      },
+      {
+        "profile": "mobile-emulated",
+        "variant": "before",
+        "cache": "cold",
+        "count": 3,
+        "PNGRequests": [
+          12,
+          12,
+          12
+        ],
+        "encodedPNGBytes": [
+          36287229,
+          36287229,
+          36287229
+        ],
+        "medianNetworkSettledMs": 104024,
+        "medianRouteInteractiveMs": 5234
+      },
+      {
+        "profile": "mobile-emulated",
+        "variant": "before",
+        "cache": "cache-enabled-repeat",
+        "count": 1,
+        "PNGRequests": [
+          13
+        ],
+        "encodedPNGBytes": [
+          39297262
+        ],
+        "medianNetworkSettledMs": 1531,
+        "medianRouteInteractiveMs": 1044
+      },
+      {
+        "profile": "mobile-emulated",
+        "variant": "after",
+        "cache": "cold",
+        "count": 3,
+        "PNGRequests": [
+          3,
+          3,
+          3
+        ],
+        "encodedPNGBytes": [
+          9103358,
+          9103358,
+          9103358
+        ],
+        "medianNetworkSettledMs": 31519,
+        "medianRouteInteractiveMs": 5125
+      },
+      {
+        "profile": "mobile-emulated",
+        "variant": "after",
+        "cache": "cache-enabled-repeat",
+        "count": 1,
+        "PNGRequests": [
+          3
+        ],
+        "encodedPNGBytes": [
+          9103358
+        ],
+        "medianNetworkSettledMs": 1341,
+        "medianRouteInteractiveMs": 840
+      }
+    ],
+    "allSixPairedCardScreensPixelExact": true,
+    "original172ArtStudyUnchanged": true,
+    "LibraryUploadReview": {
+      "requestedNames": [
+        "v172-guardian-trial.gif",
+        "v172-guardian-sheet.png",
+        "v172-tidal-dock.svg",
+        "v172-postbell.svg"
+      ],
+      "helperStderrPath": "/workspace/wod-evidence/v172/library-art-upload-error.log",
+      "helperStdoutPath": "/workspace/wod-evidence/v172/library-art-upload-result.json",
+      "stderr": "library upload failed: hosted apps tools/list request failed: network",
+      "stdoutBytes": 0,
+      "stage": "Tools/list error suggests discovery before preparation, but no explicitprepare/finalize phase receipt available",
+      "uploadSessionReturned": false,
+      "confirmedLibraryIds": [],
+      "knownNoPrepareOrFinalizeProven": false,
+      "conditionalRetryNotExecuted": true,
+      "reason": "Parent permits one retry onlyiforiginalreceipt confirms no prepare/finalize. Existingemptyreceipt cannot establish that precondition.",
+      "originalLibraryUnmodifiedByAnyNewActions": true
+    }
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v173/browser-final/imagery-final-campaign.json": "28bc8ec16dfe58f1a9ad3e01cbf7a6bb6c3e3a50e02acf9420a179dbbe085f53",
+    "/workspace/wod-evidence/v173/browser-final/imagery-final-four-raw-keys.json": "facc77e2dc0c47488a0563996840df52a0b0c5f298af5f83479fac6d6b1dafdd"
+  },
+  "maintenanceDependencies": {
+    "root": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "all74ChecksumsAndSixSnapshotsExact": true,
+    "outside156Master": true,
+    "legacy143Root": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "new132Root": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "new132ChecksummedFiles": 14,
+    "new132SnapshotSHA256": "a6792d781955ac4ffe5ec8f7bb13b6a707d273454ae8f12524afe6e3bd4d620d",
+    "new132SnapshotBytes": 129703762,
+    "new132Current755Files59PNGAndNsFullRestoreBeforeRetirement": true,
+    "new173TempBudgetRoot": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "new173ChecksummedFiles": 19,
+    "new173WholeRestoreBefore751075080DuplicateRetirement": true,
+    "new173RequiresOriginal147148167MastersAndAllPlans": true,
+    "oldByteGapsNotClaimedRepaired": true
+  },
+  "limitations": [
+    "No battle/economy/schema or verified original-server numeric change.",
+    "Normal124all-down retained, not balance improvement or population estimate.",
+    "Chromium desktop/390px emulation, not physical devices or other engines.",
+    "Three coldcache andone cache-enabledrepeat percondition; do not assume repeatcachehit.",
+    "Networksettled is onlycurrentlyrequestedresources, not completeallartloading, firstpaint, gameFPS or peakmemory.",
+    "Slowlinkfirstscroll canwaitfororiginal3MBart; text/buttons remainusable. Pixelcomparisons afterdecode.",
+    "Original172GIF/SVG keptindependent; no contact/eventtiming/styleintegrationclaim.",
+    "Libraryfourfileupload remainsunconfirmed; no phase/sessionreceipt, conditionalretry not executed.",
+    "Newtemporaryretention metadata requires147/148/167originalmasters; oldbytegapsnotrepaired.",
+    "Permanent supplies/fixed protagonist/multiplayer pending."
+  ],
+  "mainBaseline170": "3d39172fd957666ec19b21108678251b491a3e30",
+  "nextMainWindow": [
+    173,
+    175
+  ]
+}

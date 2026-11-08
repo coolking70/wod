@@ -1,3 +1,5 @@
+> v0.173 路线原图靠近视口再载入，保留全部画面与选路；初始图片请求约36.3MB降至9.1MB，六对原图截图精确相同。见[实现与测量](V173_ROUTE_ART_LOADING.md)、[交接](HANDOFF_CLOUD_V173.md)。全部80GUI完整节点，main实际结果以交付manifest为准。
+
 > v0.172 修复救护行重绘后的连续键盘焦点，完成真实八姿态GIF及原生SVG/同图PNG受控试作；未替换生产美术，Library下载/保存受网络阻塞。见[说明](V172_CARE_FOCUS_ART_STUDY.md)、[交接](HANDOFF_CLOUD_V172.md)。main保持170，完整窗口173–175。
 
 > v0.171 修复倒下链接选错受害者及守灯隐藏救护面板；两入口打开原事件的真实受害者时间线，数据与战斗不改。见[说明](V171_CASUALTY_EVIDENCE.md)、[交接](HANDOFF_CLOUD_V171.md)。main已整合170，下一完整窗口173–175。
