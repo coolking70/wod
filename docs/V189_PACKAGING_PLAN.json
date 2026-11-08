@@ -1,0 +1,50 @@
+{
+  "scope": "Complete remainingherbalistclass native10jointSVG/true8frameGIF+frozenstudy, actualdirectaid vs passive/zero/missingaid, no extra replaytoolbar; actualnormal138viaexistingevacuationroute fromunchanged187/188assets, no training/tuning/seedsearch.",
+  "declaredNormal": {
+    "id": 138,
+    "route": "evacuation",
+    "sourceChange": "Only expedition from courier to evacuation; all hero/gear/roles/skills/thresholds retained. Existing route, not new content."
+  },
+  "declaredArtSource": {
+    "normalReportId": 137,
+    "cast": 161,
+    "heal": 162,
+    "actual": 29,
+    "overheal": 24,
+    "from": "Prioractual137 original report, not138result"
+  },
+  "NodeScope": [
+    "tests/herbalist-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/v53.test.mjs",
+    "tests/v112.test.mjs",
+    "tests/escort.test.mjs"
+  ],
+  "browserScope": [
+    189,
+    143,
+    172,
+    187
+  ],
+  "fullGate": [
+    191,
+    193
+  ],
+  "rawUpper": 450000000,
+  "CPUpper": 90000000,
+  "phaseEvidenceUpper": 50000000,
+  "masterUpper": 160000000,
+  "sourceSidecarsUpper": 6000000,
+  "reserveEach": 1073741824,
+  "freeBytes": {
+    "/workspace": 2239627264,
+    "/tmp": 9054212096
+  },
+  "protectedFiles": 1536,
+  "evidencePolicy": "Everycapture/art/attempt newemptydir/refuseexistingresults; distinctcoldchainlogs; preserve186original2PNGloss explicit andallolddeps.",
+  "permanentSupplyEconomyPending": true,
+  "newNodeCases": 17,
+  "expectedFullNode": 1809,
+  "expectedFullGUI": 94
+}

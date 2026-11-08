@@ -1,0 +1,79 @@
+{
+  "version": "0.189",
+  "scope": "Remainingherbalistclass nativeSVG/directaid/passive/noaid/Orin,sharedclockandresult-gatedglow;true8frameGIF;ordinary138existingevacuation routeonly",
+  "baseline": "1ce9c5a5793a8cce37e7753818dafad275285fea",
+  "NodeScope": [
+    "tests/herbalist-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/v53.test.mjs",
+    "tests/v112.test.mjs",
+    "tests/escort.test.mjs"
+  ],
+  "browserScope": [
+    189,
+    143,
+    172,
+    187
+  ],
+  "nativeState": {
+    "gold": 14570,
+    "next": 139,
+    "ownHero": "e",
+    "ownXP": 6160,
+    "berylXP": 3045,
+    "normal": {
+      "id": 138,
+      "route": "evacuation",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 6,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 100,
+        "xp": 45,
+        "firstClear": false,
+        "loot": []
+      },
+      "escort": [
+        {
+          "id": "escort:neris",
+          "name": "负伤引航员奈芮",
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "rule": "护送对象不是第七名队员：不出手、不掷先攻、不获经验或装备。后排生命跨房继承，可按原有范围获得治疗、增益和援护；上限与同技能互斥照旧，全体最多6人的技能可能不覆盖第七位护送对象。倒下后不能复活，本次远征在当前完整施放结算后止步；只领取已完成房间的普通奖励。新一次护送重新开始，不写入永久伤势或补给。这是本项目改编机制。"
+        },
+        {
+          "id": "escort:neris",
+          "name": "负伤引航员奈芮",
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "rule": "护送对象不是第七名队员：不出手、不掷先攻、不获经验或装备。后排生命跨房继承，可按原有范围获得治疗、增益和援护；上限与同技能互斥照旧，全体最多6人的技能可能不覆盖第七位护送对象。倒下后不能复活，本次远征在当前完整施放结算后止步；只领取已完成房间的普通奖励。新一次护送重新开始，不写入永久伤势或补给。这是本项目改编机制。"
+        }
+      ]
+    },
+    "AAnd3PlansRawStringsExact188": true,
+    "onlyPreparationRouteChangedToEvacuation": true,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "allRolesGearTrainingBookStoriesWarehouseUnchanged": true,
+    "evacuationClearsOnlyPlus1": true,
+    "noTrainingTuningSeedSearchOrAutomaticGearAdoption": true
+  },
+  "nextFullGate": [
+    191,
+    193
+  ],
+  "supplyPending": true
+}

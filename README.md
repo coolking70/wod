@@ -1,3 +1,5 @@
+> v0.189药师救护表现：十关节SVG补齐六职业战场，直接治疗、缓释与缺药普通行动分别可见，叶纹在真实救护结算节拍才出现；新增共源八帧GIF/PNG表。88相关Node、189/143/172/187四套相关GUI通过，main188、完整窗口191–193。正常138护送六人与NPC生还，终14570/next139。见[实现](docs/V189_HERBALIST_CARE_MOTION.md)、[交接](docs/HANDOFF_CLOUD_V189.md)。
+
 > v0.188完整整合节点：营地主入口/键盘定位与潮术师真实SVG/八帧GIF共同通过1792项完整Node、全部93套GUI、130份历史完整JSON/33机制HTML和数据安全核验。正式档保持14470/next138，无额外出征；main进入时185，安全集成实际SHA见交付manifest。见[说明](docs/V188_CAMP_MOTION_MILESTONE.md)、[交接](docs/HANDOFF_CLOUD_V188.md)。
 
 > v0.187：携法器潮术师十关节SVG接入真实施放、多目标结算、召唤/召回和受击倒下，标签读取同一动画时钟；提供独立八帧GIF/透明PNG表。63相关Node、187/186/183/184四套相关完整GUI通过，main185，完整窗口188–190。正常137五人生还、贝芮尔倒下/草药0，终14470/next138；136失败保留。见[实现](docs/V187_TIDECALLER_MOTION.md)、[交接](docs/HANDOFF_CLOUD_V187.md)。

@@ -1,0 +1,1344 @@
+{
+  "passed": true,
+  "baselineCommit": "1ce9c5a5793a8cce37e7753818dafad275285fea",
+  "mainUnchanged": "1ce9c5a5793a8cce37e7753818dafad275285fea",
+  "Node": {
+    "tests": 88,
+    "pass": 88,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeEntries": 17,
+  "fullNodeSuiteRun": false,
+  "fullNodeRegistrySizeExpected": 1809,
+  "browser": {
+    "passed": true,
+    "total": 4,
+    "versions": [
+      143,
+      172,
+      187,
+      189
+    ],
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 94,
+    "originalCheckpointAttempts": 5,
+    "failedOriginalAttempts": 0
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 197,
+    "checkedReferences": 224,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 837,
+  "pythonSyntaxFiles": 12,
+  "sourceInputs": 976,
+  "runtimeDelta": {
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "new": [
+      "dist/assets/studies/v189-herbalist-aid-poster.png",
+      "dist/assets/studies/v189-herbalist-aid-sheet.png",
+      "dist/assets/studies/v189-herbalist-aid-static.png",
+      "dist/assets/studies/v189-herbalist-aid.gif",
+      "dist/assets/studies/v189-herbalist-aid.svg",
+      "dist/expedition-herbalist-motion.mjs",
+      "dist/herbalist-motion.css",
+      "dist/studies/herbalist-aid-v189.html",
+      "dist/studies/herbalist-aid-v189.mjs",
+      "dist/studies/herbalist-rig-v189.css",
+      "dist/studies/herbalist-rig-v189.mjs",
+      "dist/studies/v189-herbalist-aid.json",
+      "scripts/browser-v189.cjs",
+      "scripts/build-herbalist-study-v189.mjs",
+      "scripts/check-v189.mjs",
+      "scripts/encode-herbalist-art-v189.py",
+      "scripts/export-herbalist-art-v189.cjs",
+      "scripts/herbalist-motion-cases.mjs",
+      "tests/herbalist-motion.test.mjs"
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v189/browser-final/herbalist-final-four-raw-keys.json": "801d2545e64f27c6515dd00ac255ea03200c883d0a242a44d9ee64a37c755354",
+    "/workspace/wod-evidence/v189/browser-final/herbalist-final-campaign.json": "cc094f20d422fb7af6ea5d8c9572187c021ba019642315d927c72dc8f57dae87"
+  },
+  "nativeState": {
+    "gold": 14570,
+    "next": 139,
+    "ownHero": "e",
+    "ownXP": 6160,
+    "berylXP": 3045,
+    "normal": {
+      "id": 138,
+      "route": "evacuation",
+      "won": true,
+      "alive": 6,
+      "rounds": [
+        2,
+        4
+      ],
+      "supplies": {
+        "herb": 8,
+        "rune": 6,
+        "arrow": 6
+      },
+      "reward": {
+        "cleared": 2,
+        "gold": 100,
+        "xp": 45,
+        "firstClear": false,
+        "loot": []
+      },
+      "escort": [
+        {
+          "id": "escort:neris",
+          "name": "负伤引航员奈芮",
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "rule": "护送对象不是第七名队员：不出手、不掷先攻、不获经验或装备。后排生命跨房继承，可按原有范围获得治疗、增益和援护；上限与同技能互斥照旧，全体最多6人的技能可能不覆盖第七位护送对象。倒下后不能复活，本次远征在当前完整施放结算后止步；只领取已完成房间的普通奖励。新一次护送重新开始，不写入永久伤势或补给。这是本项目改编机制。"
+        },
+        {
+          "id": "escort:neris",
+          "name": "负伤引航员奈芮",
+          "hp": 90,
+          "maxHp": 90,
+          "alive": true,
+          "rule": "护送对象不是第七名队员：不出手、不掷先攻、不获经验或装备。后排生命跨房继承，可按原有范围获得治疗、增益和援护；上限与同技能互斥照旧，全体最多6人的技能可能不覆盖第七位护送对象。倒下后不能复活，本次远征在当前完整施放结算后止步；只领取已完成房间的普通奖励。新一次护送重新开始，不写入永久伤势或补给。这是本项目改编机制。"
+        }
+      ]
+    },
+    "AAnd3PlansRawStringsExact188": true,
+    "onlyPreparationRouteChangedToEvacuation": true,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "allRolesGearTrainingBookStoriesWarehouseUnchanged": true,
+    "evacuationClearsOnlyPlus1": true,
+    "noTrainingTuningSeedSearchOrAutomaticGearAdoption": true
+  },
+  "art": {
+    "tenNativeJoints": true,
+    "sixPartyClassesNowNativeSVG": true,
+    "sharedActualAnimationClock": true,
+    "balmOnlyVisibleAtActualDirectHealBeat": true,
+    "actual137DirectAid": [
+      161,
+      162
+    ],
+    "actual137NoAid": [
+      802,
+      804
+    ],
+    "GIF8UniqueFrames900ms": true,
+    "independentFrozen8StrictRawRGBAExact": true,
+    "actual137SourceBoundOriginal187Master": true,
+    "nativeGeneratedLocallyNotImagegen": true,
+    "oldGIFPNGModelsStudiesByteExact": true,
+    "localFormatComparisonNotWeakNetworkOrDeviceFPSProof": true,
+    "settledInspectorDefaultClosed": true,
+    "OrinOwnIdentityPassiveNotNewCast": true
+  },
+  "compatibility": {
+    "current5And45PriorCLIJSONByteExact": true,
+    "45PriorBoundOriginal188Master": true,
+    "battleDataEngineGuildUnchanged": true,
+    "full130HistoricalJSONRecheckNotClaimed": true
+  },
+  "all1536BaselineProtectedExact": true,
+  "maintenanceDependencies": {
+    "v173EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "v173MetadataBackupAlsoInLatestMasterEvidenceRoot": "temp-budget-maintenance",
+    "v147v148v167OriginalMasterZIPs": [
+      {
+        "path": "/workspace/wod-delivery/v0.147-ranger-motion/wod-v147-verification.zip",
+        "bytes": 314120421,
+        "sha256": "e91e4401509a448edad47fb8f112d17ce390879ed7d1a58af8a7d76e740c4f6a"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.148-automatic-backup/wod-v148-verification.zip",
+        "bytes": 332880540,
+        "sha256": "1740b91e7e91f273f95b1a494dccd2786f06269e835db71a4d4818945f4d7676"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+        "bytes": 466709632,
+        "sha256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025"
+      }
+    ],
+    "v156EntireSixSnapshotAndManifestDirectory": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "v156All74ChecksummedFilesKept": true,
+    "v132EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "v143EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "allOtherExistingEvidenceAndCodeChainsKept": true,
+    "doNotDeleteOnCodePushAlone": true,
+    "oldTimestampIDByteGapsNotClaimedFixed": true,
+    "verifiedByPostMainIndependentAudit": true,
+    "v175Entire134PairsMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175",
+    "v175Original134MasterPlusOmittedScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.134-local-cross-page-drafts/wod-v134-verification.zip",
+        "bytes": 190935049,
+        "sha256": "84592bdd0bdca3531e94158421ce59c31ae532d375417134b46adc3e34374fc3"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175/omitted-original-screens.zip",
+        "bytes": 5178710,
+        "sha256": "f1a9d1da477c435dcc9791a97ecc79fc53252114ba3e0d79dbc6dd92c86b89dd"
+      }
+    ],
+    "v175Original26PNGPathsStillKept": [
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-mobile.png"
+    ],
+    "v17480FixedExperimentalReportsAndSeparateZIPKept": true,
+    "v176Entire127AcceptanceMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176",
+    "v176Original127MasterPlusOmitted49ScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.127-local-mana-pressure/wod-v127-verification.zip",
+        "bytes": 94995384,
+        "sha256": "5b24489efddce37a83a8992b8c081825ba279137755e69ca2070e11e8c700c57"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176/omitted-original-screens.zip",
+        "bytes": 5431965,
+        "sha256": "b06bb54d2c5985053d46174a6fc161329b65adda131f369f10139c26c1537737"
+      }
+    ],
+    "v176Original49PNGPathsStillKept": [
+      "/workspace/wod-evidence/v127/acceptance/browser-v101/v101-mobile-schedule-evidence.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v102/v102-mobile-count.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v103/v103-mobile-qualification.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-mobile-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-ready-story.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-mobile-letter-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-ready-letter.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-next-goal.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-pending-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v95/v95-mobile-book.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v96/v96-mobile-sets.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v97/v97-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v98/v98-mobile-backup.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v99/v99-mobile-clocktower.png"
+    ],
+    "v178EntireNativeCLIRetentionDirectory": "/workspace/wod-maintenance/2026-11-08-native-cli-retention-v178",
+    "v178MetadataCopyInLatestMaster": "space-maintenance",
+    "v178All18OriginalMasterZIPs": [
+      {
+        "path": "/workspace/wod-delivery/v0.153-nondamaging-control/wod-v153-verification.zip",
+        "sha256": "cba61401ed089479b6fce53699a6db14a7cfa7d725d83bfd83fd7d9da1796da8",
+        "bytes": 334876713
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.154-enemy-surrender/wod-v154-focused-verification.zip",
+        "sha256": "7e898898bbbda5e01e471a9e0d2e32bb2869590cfc0160e40fb211245603811d",
+        "bytes": 115672799
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.155-homecoming-testimony/wod-v155-verification.zip",
+        "sha256": "99a8ee353f79e91dd9be38455f8edd320962a2f870b0001fb92cc3a07ff81cf8",
+        "bytes": 367157190
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.156-exploration-index/wod-v156-focused-verification.zip",
+        "sha256": "47ae7a5a9e3ee4cc5bd600809b52455c5e2328130ad2c8a8ed12f1b4f8d208ca",
+        "bytes": 39133027
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.162-professional-passage/wod-v162-verification.zip",
+        "sha256": "b126f66ad0ef2b729ca23431b31e6ce2ecabdaa949ecef6ebe5c2890ddaea931",
+        "bytes": 205055600
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.163-equipment-requirements/wod-v163-verification.zip",
+        "sha256": "18468d8974221e934ba3c7d34c3ee01dbb2755eed5c90e2c99d0c7583842d3b9",
+        "bytes": 191166181
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.164-expedition-closure/wod-v164-verification.zip",
+        "sha256": "8f302a62dd8caf9b28dd7d547f5d3b08177f4db137cd8c9090d029241c5b6023",
+        "bytes": 434191624
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.165-growth-navigation/wod-v165-verification.zip",
+        "sha256": "b27a562c0d54e7c403bc6ef3d3d9739ba08de69246ee5091f65be5aa3db6fa19",
+        "bytes": 227796985
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+        "sha256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025",
+        "bytes": 466709632
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.169-preparation-recovery/wod-v169-verification.zip",
+        "sha256": "21a9b02da51a7019b37bcf9a05c419e13e32f408f634c24bd8fb03c76a26808a",
+        "bytes": 229413393
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.170-play-guide/wod-v170-verification.zip",
+        "sha256": "e0206feb852a75cc8610dce90f32b3fb8305e5fb72da158ae3dcf8f2a27dc0e3",
+        "bytes": 505477587
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.171-casualty-evidence/wod-v171-verification.zip",
+        "sha256": "ffd7a3416675f1f750f4e949fb6a47d58119b35a20ae53a496b4b1c48bc5ed3e",
+        "bytes": 128963480
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.172-care-focus-svg-study/wod-v172-verification.zip",
+        "sha256": "91c64a0f78c6c253c0ce66e2b49365a699bc08b6299c610ddb933e585444c1c6",
+        "bytes": 144305469
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.173-route-art-loading/wod-v173-verification.zip",
+        "sha256": "36a5fb46e66c7234076204dfe0222254862c2b4fb7420698c3821e9caf6b246a",
+        "bytes": 529837365
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.174-guardian-art-detail/wod-v174-verification.zip",
+        "sha256": "0e632e2400a4ec581794c9caa41fdaed537b85fa299b4afb562d83c58b46d757",
+        "bytes": 190520892
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.175-recorded-damage-review/wod-v175-verification.zip",
+        "sha256": "1564df2829d889c463730f48227189adae064dc4cb9b15d1f4d547f21c97eb74",
+        "bytes": 358948306
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.176-guardian-fallen-framing/wod-v176-verification.zip",
+        "sha256": "e2ce818e93cd12088325034dd111c3253f16d56ffae1abe4644301cca512915f",
+        "bytes": 588722981
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.177-guardian-motion-cues/wod-v177-verification.zip",
+        "sha256": "08f20ce41aa3aec81ec100ec332d039c3ec880c1e06aabfa160f5964226fc1fb",
+        "bytes": 91324989
+      }
+    ],
+    "v178All18AdjacentRetiredPointers": [
+      {
+        "path": "/workspace/wod-evidence/v153/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "2802455cb783e262b256357fd83f4cd27ffdc6c3451c0a96d1bc2cec40f945bc"
+      },
+      {
+        "path": "/workspace/wod-evidence/v154/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "aa2c9479fd6cb6e64d60e04137e996b08ec84ba64adb23e5ed23de90c51e0c78"
+      },
+      {
+        "path": "/workspace/wod-evidence/v155/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "8948494328cc943468f1f8c922833a3a1ed6bdb441a25716998d82e0ba2e0133"
+      },
+      {
+        "path": "/workspace/wod-evidence/v156/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "8215159809277380895955b66b5c01939233d2c941692b9c65b29d1709051bb6"
+      },
+      {
+        "path": "/workspace/wod-evidence/v162/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "1b13f05b1f45dbf54a7b0045553776cddc81b8fd3576597d4683c5af821134dd"
+      },
+      {
+        "path": "/workspace/wod-evidence/v163/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "d52c26158353d9b3533135ac084105618614d0068deb3f3f622bd7c79166f37e"
+      },
+      {
+        "path": "/workspace/wod-evidence/v164/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "17375cc5212699ebd6a5183d17dd063e72ca2c3f6f0c4405a47faf16a8ccae5a"
+      },
+      {
+        "path": "/workspace/wod-evidence/v165/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "325ce18fe95445b1151eaa49f24f8a855a199241584448a1ce67ecc1f55081e6"
+      },
+      {
+        "path": "/workspace/wod-evidence/v167/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "f93af29d9cbfa2f1fd3e05c215720fd53eec4c9839576f4c8b76698cfd8a9247"
+      },
+      {
+        "path": "/workspace/wod-evidence/v169/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "eefc1df22b565b252895477ce1bdd19e86c6f457705294485c536a63dd5d0fa9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v170/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "56dc5a7f8f712a68cc78759083ea25e6223f366e8a48c750c962ad131891547b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v171/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "9af61868b1ec2bfcd855a7203427f6ab5db653f7f7c86da066383ddee0dc8b16"
+      },
+      {
+        "path": "/workspace/wod-evidence/v172/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "ef699d3abb9aeda90bde28c76e0a5899fe1d5e1e353ee5f33d7a855af0b09a4f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v173/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "760b2c4a734fc371670e7f2249c8050f26d40a1c9908eeebc5a2e62e0d5252e2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v174/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "fab58f70c31aeba292bcfc7194f2bd147b8dcc0ecf73cebac3adf67f301e9163"
+      },
+      {
+        "path": "/workspace/wod-evidence/v175/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "2003a0b2daab06e151beefda37cefaa8e32546261cbeef3db38a45099c8c7467"
+      },
+      {
+        "path": "/workspace/wod-evidence/v176/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "0e1564a1ceee4be7fbcfa35f64893b067fb844d642772d3d0efb0589c35c3a10"
+      },
+      {
+        "path": "/workspace/wod-evidence/v177/packaging-native-first-retired-f8df0ef0494a.json",
+        "sha256": "e2cc2282df4c2a1491c6c4ed905cf8296a0df2947610ca92250d16a4a7b703af"
+      }
+    ],
+    "v178OldTimestampIDByteGapsNotClaimedFixed": true,
+    "v179EntireTempReferenceMaintenance": "/workspace/wod-maintenance/2026-11-08-v179-temp-reference-budget",
+    "v179MetadataAndSupplementCopyInLatestMaster": "space-maintenance",
+    "v179Original137Master": {
+      "path": "/workspace/wod-delivery/v0.137-local-personal-focus-travel/wod-v137-verification.zip",
+      "sha256": "535e3e09e0f3504ed7f98f1999bd6d34cdaa5404840d6aad603bd3f6e4d061e8"
+    },
+    "v179UniqueTwoOriginalCampaigns": [
+      {
+        "path": "/tmp/wod-maintenance/browser-v137/focus-campaign.json",
+        "sha256": "0a6e109bd3d40a6d21f483da30484458f732a7f8962cd0641c40a417623eceb5"
+      },
+      {
+        "path": "/tmp/wod-maintenance/browser-v137/focus-final-campaign.json",
+        "sha256": "0e21a2b9b94a15637da17c4434ae97e197c4192e71a2facec20592923660430b"
+      }
+    ],
+    "v179Source172CommitRebuildDependency": "5f7510a82ae44a8cb927eabebf58e55cac2e89ff",
+    "v180EntireNativeFinalMaintenance": "/workspace/wod-maintenance/2026-11-08-native-final-budget-v180",
+    "v180MetadataAlsoInLatestMaster": "space-maintenance",
+    "v180TenOriginalMastersAndPointers": [
+      {
+        "root": "/workspace/wod-evidence/v162/native-final",
+        "master": "/workspace/wod-delivery/v0.162-professional-passage/wod-v162-verification.zip",
+        "masterSHA256": "b126f66ad0ef2b729ca23431b31e6ce2ecabdaa949ecef6ebe5c2890ddaea931",
+        "pointer": "/workspace/wod-evidence/v162/packaging-native-final-retired-8c66b6de99f2.json",
+        "pointerSHA256": "5832520d4d3efa73215bb66b7743f800e953747b8dd91f14b5829f0dfa4b2c0a"
+      },
+      {
+        "root": "/workspace/wod-evidence/v163/native-final",
+        "master": "/workspace/wod-delivery/v0.163-equipment-requirements/wod-v163-verification.zip",
+        "masterSHA256": "18468d8974221e934ba3c7d34c3ee01dbb2755eed5c90e2c99d0c7583842d3b9",
+        "pointer": "/workspace/wod-evidence/v163/packaging-native-final-retired-8c66b6de99f2.json",
+        "pointerSHA256": "5c2cbec29e1f86e1f95b50721385a12470a16b920bb038b47a4a506bc5aea6e0"
+      },
+      {
+        "root": "/workspace/wod-evidence/v164/native-final",
+        "master": "/workspace/wod-delivery/v0.164-expedition-closure/wod-v164-verification.zip",
+        "masterSHA256": "8f302a62dd8caf9b28dd7d547f5d3b08177f4db137cd8c9090d029241c5b6023",
+        "pointer": "/workspace/wod-evidence/v164/packaging-native-final-retired-8c66b6de99f2.json",
+        "pointerSHA256": "ce9b3b88477e1acc561f7396f25984a26a11ef0230f97b38ec6bf1be276cfa87"
+      },
+      {
+        "root": "/workspace/wod-evidence/v165/native-final",
+        "master": "/workspace/wod-delivery/v0.165-growth-navigation/wod-v165-verification.zip",
+        "masterSHA256": "b27a562c0d54e7c403bc6ef3d3d9739ba08de69246ee5091f65be5aa3db6fa19",
+        "pointer": "/workspace/wod-evidence/v165/packaging-native-final-retired-8c66b6de99f2.json",
+        "pointerSHA256": "ce216457dd8be8c038d80e15ca004adde138a60b3d9e52fae33749a9d18bf202"
+      },
+      {
+        "root": "/workspace/wod-evidence/v166/native-final",
+        "master": "/workspace/wod-delivery/v0.166-training-context/wod-v166-verification.zip",
+        "masterSHA256": "f605a81e69208baa4c21d2f34697dfecd177ec3bd5c11313d879d4396518c824",
+        "pointer": "/workspace/wod-evidence/v166/packaging-native-final-retired-8c66b6de99f2.json",
+        "pointerSHA256": "e6bd377b6d4ad3da25947d9d1be44ad6da9fc52978859146c17cf12f1ebe53de"
+      },
+      {
+        "root": "/workspace/wod-evidence/v167/native-final",
+        "master": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+        "masterSHA256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025",
+        "pointer": "/workspace/wod-evidence/v167/packaging-native-final-retired-9e7e53dc29e1.json",
+        "pointerSHA256": "79230b3725062cc5e6c0c7f169ab9e60b01f84ed4d3b8cfd1feabe33f5d7e495"
+      },
+      {
+        "root": "/workspace/wod-evidence/v168/native-final",
+        "master": "/workspace/wod-delivery/v0.168-retry-preparation/wod-v168-verification.zip",
+        "masterSHA256": "43aa32cfef0ea5dd982dd45fa936027318220d65614411e21996e6bba25bfc32",
+        "pointer": "/workspace/wod-evidence/v168/packaging-native-final-retired-9e7e53dc29e1.json",
+        "pointerSHA256": "f5393c226ce83d951aab4c68f907980e85c248d6df898e0a1b37bb887150ed83"
+      },
+      {
+        "root": "/workspace/wod-evidence/v169/native-final",
+        "master": "/workspace/wod-delivery/v0.169-preparation-recovery/wod-v169-verification.zip",
+        "masterSHA256": "21a9b02da51a7019b37bcf9a05c419e13e32f408f634c24bd8fb03c76a26808a",
+        "pointer": "/workspace/wod-evidence/v169/packaging-native-final-retired-9e7e53dc29e1.json",
+        "pointerSHA256": "45b5e4fbdfe17b3e91fd66ca87e16cd65834b8b281b85167dc781f76d69004f9"
+      },
+      {
+        "root": "/workspace/wod-evidence/v170/native-final",
+        "master": "/workspace/wod-delivery/v0.170-play-guide/wod-v170-verification.zip",
+        "masterSHA256": "e0206feb852a75cc8610dce90f32b3fb8305e5fb72da158ae3dcf8f2a27dc0e3",
+        "pointer": "/workspace/wod-evidence/v170/packaging-native-final-retired-9e7e53dc29e1.json",
+        "pointerSHA256": "37c58e771fa432163fbab78a6ff7572540ac8ba3bd242f8c9ad04769fbf2ffa9"
+      },
+      {
+        "root": "/workspace/wod-evidence/v171/native-final",
+        "master": "/workspace/wod-delivery/v0.171-casualty-evidence/wod-v171-verification.zip",
+        "masterSHA256": "ffd7a3416675f1f750f4e949fb6a47d58119b35a20ae53a496b4b1c48bc5ed3e",
+        "pointer": "/workspace/wod-evidence/v171/packaging-native-final-retired-9e7e53dc29e1.json",
+        "pointerSHA256": "03a676db145a09554ced287b35ccec154ffcaee2bef20c610b06be27228a3a55"
+      }
+    ],
+    "v137Clarification": "ONE original v137 master ZIP, NOT137files; exact path/SHA in v179Original137Master and V180 handoff",
+    "v181EntireNativeFinalMaintenance": "/workspace/wod-maintenance/2026-11-08-native-final-budget-v181",
+    "v181MetadataAlsoInLatestMaster": "space-maintenance",
+    "v181SixOriginalMastersAndPointers": [
+      {
+        "root": "/workspace/wod-evidence/v172/native-final",
+        "master": "/workspace/wod-delivery/v0.172-care-focus-svg-study/wod-v172-verification.zip",
+        "masterSHA256": "91c64a0f78c6c253c0ce66e2b49365a699bc08b6299c610ddb933e585444c1c6",
+        "pointer": "/workspace/wod-evidence/v172/packaging-native-final-retired-0888f2140c29.json",
+        "pointerSHA256": "18cf6b1713ade79d29b66a35a502062aea2448754b7a58290b9c77a0867b4b67"
+      },
+      {
+        "root": "/workspace/wod-evidence/v173/native-final",
+        "master": "/workspace/wod-delivery/v0.173-route-art-loading/wod-v173-verification.zip",
+        "masterSHA256": "36a5fb46e66c7234076204dfe0222254862c2b4fb7420698c3821e9caf6b246a",
+        "pointer": "/workspace/wod-evidence/v173/packaging-native-final-retired-0888f2140c29.json",
+        "pointerSHA256": "e63da98e5415f9a121af9c57b347d4734fe55fe9bef3a23c787d466b0936ac98"
+      },
+      {
+        "root": "/workspace/wod-evidence/v174/native-final",
+        "master": "/workspace/wod-delivery/v0.174-guardian-art-detail/wod-v174-verification.zip",
+        "masterSHA256": "0e632e2400a4ec581794c9caa41fdaed537b85fa299b4afb562d83c58b46d757",
+        "pointer": "/workspace/wod-evidence/v174/packaging-native-final-retired-0888f2140c29.json",
+        "pointerSHA256": "fb88db1b94ea63142f35cca2cc6dfe79ece7f7c97791eeb231b0b90afb75172e"
+      },
+      {
+        "root": "/workspace/wod-evidence/v175/native-final",
+        "master": "/workspace/wod-delivery/v0.175-recorded-damage-review/wod-v175-verification.zip",
+        "masterSHA256": "1564df2829d889c463730f48227189adae064dc4cb9b15d1f4d547f21c97eb74",
+        "pointer": "/workspace/wod-evidence/v175/packaging-native-final-retired-0888f2140c29.json",
+        "pointerSHA256": "72046d18d4d61bbaee240b02a779c7209a706665f61f17ab8f1bd9f283b8a8a5"
+      },
+      {
+        "root": "/workspace/wod-evidence/v176/native-final",
+        "master": "/workspace/wod-delivery/v0.176-guardian-fallen-framing/wod-v176-verification.zip",
+        "masterSHA256": "e2ce818e93cd12088325034dd111c3253f16d56ffae1abe4644301cca512915f",
+        "pointer": "/workspace/wod-evidence/v176/packaging-native-final-retired-0888f2140c29.json",
+        "pointerSHA256": "408714fd84ec4c1087fd372a61ac570be24358f6a04ff2ac9932ebe9b536bd23"
+      },
+      {
+        "root": "/workspace/wod-evidence/v177/native-final",
+        "master": "/workspace/wod-delivery/v0.177-guardian-motion-cues/wod-v177-verification.zip",
+        "masterSHA256": "08f20ce41aa3aec81ec100ec332d039c3ec880c1e06aabfa160f5964226fc1fb",
+        "pointer": "/workspace/wod-evidence/v177/packaging-native-final-retired-0888f2140c29.json",
+        "pointerSHA256": "22378df4c3247b232b0ca64378ef2d8aa10d1631fde047e7754e91af8927dd07"
+      }
+    ],
+    "v182EntireNativeReferenceMaintenance": "/workspace/wod-maintenance/2026-11-08-native-reference-budget-v182",
+    "v182MetadataAlsoInLatestMaster": "space-maintenance",
+    "v182ThreeOriginalMastersAndPointers": [
+      {
+        "root": "/workspace/wod-evidence/v178/native-reference",
+        "master": "/workspace/wod-delivery/v0.178-loot-assignment-rehearsal/wod-v178-verification.zip",
+        "masterSHA256": "1d8e24235110962f18fd093307633cd9ee0f0ee6bb11c9c6f7f0e2e91c49a958",
+        "pointer": "/workspace/wod-evidence/v178/packaging-native-reference-retired-f1034de4d796.json",
+        "pointerSHA256": "3cc2de99483d5f8c1d97b68c12c01b641c3582453ffd0a2ab53cdaabc4de5e6c"
+      },
+      {
+        "root": "/workspace/wod-evidence/v179/native-reference",
+        "master": "/workspace/wod-delivery/v0.179-loot-receipt-milestone/wod-v179-verification.zip",
+        "masterSHA256": "d5d16f6186ace314aca59fda2d065b13d20de2b635b26bc293e20da77fc616fa",
+        "pointer": "/workspace/wod-evidence/v179/packaging-native-reference-retired-f1034de4d796.json",
+        "pointerSHA256": "1a302383a73639b8bec98aa043ef0a45674a6810bc94fa145793fb0a71f147fa"
+      },
+      {
+        "root": "/workspace/wod-evidence/v180/native-reference",
+        "master": "/workspace/wod-delivery/v0.180-bard-motion/wod-v180-verification.zip",
+        "masterSHA256": "f37c232b4a157f7b9e84d717ca1055bd38066355e966e1f1ad25de9483b6315f",
+        "pointer": "/workspace/wod-evidence/v180/packaging-native-reference-retired-f1034de4d796.json",
+        "pointerSHA256": "ed308dfc58e966c5b4f0c5abb3458ed01a1aa4eb39a4083c8590f06677cf6241"
+      }
+    ],
+    "v182Real179RehearsalProofDirectory": "/workspace/wod-evidence/v182/sequential-real-v179",
+    "v182Real179RehearsalExtraPointer": {
+      "path": "/tmp/wod-evidence/v179/ACCEPTANCE_RETIRED_9682fbd0ebb4_28f9f199.json",
+      "sha256": "623948a9773870e3959920124b2d407b6577b75f0c30a4aa140c719c87b6a0ba",
+      "copy": "/workspace/wod-evidence/v182/rehearsal179-extra-retired-pointer.json"
+    },
+    "v182SequentialRecoveryLateWholeDirectory": "/workspace/wod-delivery/v0.182-motion-evidence-milestone/sequential-recovery",
+    "v182CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v182/ACCEPTANCE_RETIRED_08db6600f074_cde1d223.json",
+        "sha256": "0a27162c6b644d157ab01b2d6857e0ca3ca411d89cf4d97a0e543058a4d3db24",
+        "mode": 384,
+        "mtimeNs": 1794143401700599899
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v182/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "bd5eb294f63bb5689480a48a0c9c6206b7188b9f44d9bfd81b957b75cf6f1590"
+      },
+      "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
+      "CPsRetiredOnlyAfterAllWholeRootProofs": true
+    },
+    "v183EntireLegacyCacheMaintenance": "/workspace/wod-maintenance/2026-11-08-legacy-cache-retention-v183",
+    "v183MetadataAlsoInLatestMaster": "space-maintenance",
+    "v183ThreeOriginal124125126MasterZIPs": {
+      "/workspace/wod-delivery/v0.124-local-branching-quest/wod-v124-verification.zip": "7916654df8154b52bfa0be81d401b65689647e46bae483869a171732f1931b1f",
+      "/workspace/wod-delivery/v0.125-local-attribute-training/wod-v125-verification.zip": "3eac5fed99a465e2c8b6f9a38875c7ae1da3f2923aea6f6bca6240e49214b58c",
+      "/workspace/wod-delivery/v0.126-local-item-set-bonuses/wod-v126-verification.zip": "182bb161b1b3bc7c0de1df1671dcd4fba3e62b9e10fb4bd30c2fa8ac70447baa"
+    },
+    "v183OmittedOriginal135PNGsStillLive": [
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v101/v101-mobile-schedule-evidence.png",
+        "sha256": "871cad22ad908b55a70afeb11d0c28efe828ff99eaec5a2769875194c6efdbb9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v102/v102-mobile-count.png",
+        "sha256": "e9c1627a0faae2902b52a4cd50b9d251f08f82861cfe5a47b5321efa0f310c7c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v103/v103-mobile-qualification.png",
+        "sha256": "96e53eb464bceab94eb6cea8a4eb5fcfab127b8b71b64143d9a4daeb0f4ebebc"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v111/threat-desktop.png",
+        "sha256": "a7f64d1bbc987a3c5c64d1d13109cea536e622aed5196aa72b2cd2065a7e625b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v111/threat-mobile.png",
+        "sha256": "c423cb977f0599ca589015a0e363731b16019d96a28b5ff18b9f9757728c951c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v112/group-aid-desktop.png",
+        "sha256": "696d11b7f59fe6990cf1bdbdd2761606a694d8ba992e7d260895d0e8a7186a66"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v112/group-aid-mobile.png",
+        "sha256": "0fc22c426295916626562a6f085f4baf98165202a23c86eeceeab8dd78eb30ab"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v113/confluence-desktop.png",
+        "sha256": "51c1dd9aae3e146fcc298b9dc37b1ce64989b11a53670ca6544405975c760e3f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v113/confluence-mobile.png",
+        "sha256": "b3eab6020e5c76652623d6e485534e7afe4164de78fd6310d7c129fb6afbb847"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v114/offbeat-desktop.png",
+        "sha256": "c7334bfc32173111317064135151a29c7683d5f82941c5e1bc43aeb8980014ec"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v114/offbeat-mobile.png",
+        "sha256": "20f31751961bcedd32170f5b35bb3d5a8948e1ce2daa0970aa3ba23feccf58da"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v115/counterpoint-desktop.png",
+        "sha256": "3c2c57f88708eefe62b7c8aca888b85c59239afed8f427b4840bc2ddb54fc565"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v115/counterpoint-mobile.png",
+        "sha256": "5a2d764f256dca66fdba16ddebb8d277717eec970e2c9dc11c9e39d451eb28d4"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v116/withdrawal-desktop.png",
+        "sha256": "bcace0efa14bf1591eda0bea3b7e9efeb5cc48d09b059dc8d7eee6f753b6713f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v116/withdrawal-mobile.png",
+        "sha256": "b2c4fc03bc27b37f561d29f78a06642a741507798ef89af6fa944944e7ebc7d9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v117/breakwater-desktop.png",
+        "sha256": "03dbdf97cd995ed8629511858bf23f250bbbe042b8096736660f70a354d464b8"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v117/breakwater-mobile.png",
+        "sha256": "06d62a49c4df2338ebd129ccf2e5399a135a649395f49a1210df1f1ea56b0191"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v118/pursuit-desktop.png",
+        "sha256": "8f83bcf1aa615af01a5c87c49c7a2c20ee90c2b767fa86319f3909e8a371dd2b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v118/pursuit-mobile.png",
+        "sha256": "add36bdbf94de8c080e29c71a673621593664eb5c3608fcef6c3a9e5f1291458"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v119/position-desktop.png",
+        "sha256": "6126395198653fcbf1eb36c653f881071cdb6b03f6bb78594a1b20fea0ed0aca"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v119/position-mobile.png",
+        "sha256": "f4987358aff67b1439828d0d0d452b65974af334478705783ed3e53fb3250f72"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v120/ossuary-desktop.png",
+        "sha256": "6414ede35a9faef44444c7e3557d9cec35994ee4666b7dfc24a0e2506e89efa2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v120/ossuary-mobile.png",
+        "sha256": "dc5782fd696651ef82e0b91301bae743fbe39dcaeb3db3f213e17b01e9230aab"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v121/sparring-desktop.png",
+        "sha256": "9f3fb009c7e660fbcbcaa659efb7bcb59481c313e157e9c352f47615558ebd53"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v121/sparring-mobile.png",
+        "sha256": "959b103c4e6c0b7855458ca25d787abc2c61dad0d40abb017bff3027032e4ac4"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v122/mechanism-desktop.png",
+        "sha256": "a2ff1bc1af796fcc214aaba2f74dd5f5aa7602e46f5991551f2fd603a0eb6ec9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v122/mechanism-mobile.png",
+        "sha256": "0f893d374f9d0c685ab64c3f52fbb9b526a131b3347543af5bc17cd777723735"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v123/archive-desktop.png",
+        "sha256": "beea7d0092109b47c26d52d214c699eda47e603ca08568265346b7648eb67502"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v123/archive-mobile.png",
+        "sha256": "77cec70f7c6dfad823f01943e923fa0427fa6cb9476a78b36b4076c21fe89352"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v124/quest-desktop.png",
+        "sha256": "b42be32e44926c7ac3ea2d649ff0e9b68159c22325854f41b878738f37f0c864"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v124/quest-mobile.png",
+        "sha256": "088003230268f745e219376691e53ebd819dabe49168361be6736e042b318ea9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v76/v76-mobile-ending.png",
+        "sha256": "3e41f7d2035109590941869fdd0361de6cdfb4df0cce79c1f5f0789dd459653b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v76/v76-ready-story.png",
+        "sha256": "9efc8836b056d1fbdcbb41a2a8c432b166a972f94a72b858dc46168ba8fc1e8a"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v77/v77-mobile-letter-ending.png",
+        "sha256": "8f8b7cb540ad3e2df7a828ac663a764a44fca99714bcdd71c4da52fddd44c8ba"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v77/v77-ready-letter.png",
+        "sha256": "b318bb8fdc721e2b401db681741e68afe522b6cc659b68b50632ac5349cfc6f3"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v94/v94-mobile-handoff.png",
+        "sha256": "69efb6f6fe8cc3cbc28b4e0341292fedad165e7e6b8059a100c50ee19783afb2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v94/v94-mobile-next-goal.png",
+        "sha256": "12c1ac41854b313e48c798f83a4088f36fd7b389c35eef7328ee06652d36d9a8"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v94/v94-pending-handoff.png",
+        "sha256": "9f9a711143f579b1aa1009c6509ac5598b3fe1454d34e1ffc090c3e7e379c271"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v95/v95-mobile-book.png",
+        "sha256": "57183d9de3340fa795cefac430707ebf82fd7ef098b19123949e65000a574593"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v96/v96-mobile-sets.png",
+        "sha256": "5e1d27099c589fa5c83d6a6da26677376d7e66bc29a502dc726a1bd038fbe435"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v97/v97-mobile-handoff.png",
+        "sha256": "6093754111d1fd285abf185e9dba657b2ebc1c894cf96066fdd867546d6ed6ea"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v98/v98-mobile-backup.png",
+        "sha256": "9399b2ee8fe993626907a1fa24343e64e506661a029c5a277d37300e5e4d2fb9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v124/acceptance/browser-v99/v99-mobile-clocktower.png",
+        "sha256": "12b373321cab17e182ae74c1162af6bafc31d14ff3e4faab2d562f2c82119fee"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v101/v101-mobile-schedule-evidence.png",
+        "sha256": "871cad22ad908b55a70afeb11d0c28efe828ff99eaec5a2769875194c6efdbb9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v102/v102-mobile-count.png",
+        "sha256": "e9c1627a0faae2902b52a4cd50b9d251f08f82861cfe5a47b5321efa0f310c7c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v103/v103-mobile-qualification.png",
+        "sha256": "96e53eb464bceab94eb6cea8a4eb5fcfab127b8b71b64143d9a4daeb0f4ebebc"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v111/threat-desktop.png",
+        "sha256": "a7f64d1bbc987a3c5c64d1d13109cea536e622aed5196aa72b2cd2065a7e625b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v111/threat-mobile.png",
+        "sha256": "c423cb977f0599ca589015a0e363731b16019d96a28b5ff18b9f9757728c951c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v112/group-aid-desktop.png",
+        "sha256": "696d11b7f59fe6990cf1bdbdd2761606a694d8ba992e7d260895d0e8a7186a66"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v112/group-aid-mobile.png",
+        "sha256": "0fc22c426295916626562a6f085f4baf98165202a23c86eeceeab8dd78eb30ab"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v113/confluence-desktop.png",
+        "sha256": "51c1dd9aae3e146fcc298b9dc37b1ce64989b11a53670ca6544405975c760e3f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v113/confluence-mobile.png",
+        "sha256": "b3eab6020e5c76652623d6e485534e7afe4164de78fd6310d7c129fb6afbb847"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v114/offbeat-desktop.png",
+        "sha256": "c7334bfc32173111317064135151a29c7683d5f82941c5e1bc43aeb8980014ec"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v114/offbeat-mobile.png",
+        "sha256": "20f31751961bcedd32170f5b35bb3d5a8948e1ce2daa0970aa3ba23feccf58da"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v115/counterpoint-desktop.png",
+        "sha256": "3c2c57f88708eefe62b7c8aca888b85c59239afed8f427b4840bc2ddb54fc565"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v115/counterpoint-mobile.png",
+        "sha256": "5a2d764f256dca66fdba16ddebb8d277717eec970e2c9dc11c9e39d451eb28d4"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v116/withdrawal-desktop.png",
+        "sha256": "bcace0efa14bf1591eda0bea3b7e9efeb5cc48d09b059dc8d7eee6f753b6713f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v116/withdrawal-mobile.png",
+        "sha256": "b2c4fc03bc27b37f561d29f78a06642a741507798ef89af6fa944944e7ebc7d9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v117/breakwater-desktop.png",
+        "sha256": "03dbdf97cd995ed8629511858bf23f250bbbe042b8096736660f70a354d464b8"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v117/breakwater-mobile.png",
+        "sha256": "06d62a49c4df2338ebd129ccf2e5399a135a649395f49a1210df1f1ea56b0191"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v118/pursuit-desktop.png",
+        "sha256": "8f83bcf1aa615af01a5c87c49c7a2c20ee90c2b767fa86319f3909e8a371dd2b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v118/pursuit-mobile.png",
+        "sha256": "add36bdbf94de8c080e29c71a673621593664eb5c3608fcef6c3a9e5f1291458"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v119/position-desktop.png",
+        "sha256": "ede91066a7724498f28a5e992af03ba41390562957f596d4e63f635cd317cb6c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v119/position-mobile.png",
+        "sha256": "f4987358aff67b1439828d0d0d452b65974af334478705783ed3e53fb3250f72"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v120/ossuary-desktop.png",
+        "sha256": "6414ede35a9faef44444c7e3557d9cec35994ee4666b7dfc24a0e2506e89efa2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v120/ossuary-mobile.png",
+        "sha256": "dc5782fd696651ef82e0b91301bae743fbe39dcaeb3db3f213e17b01e9230aab"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v121/sparring-desktop.png",
+        "sha256": "9f3fb009c7e660fbcbcaa659efb7bcb59481c313e157e9c352f47615558ebd53"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v121/sparring-mobile.png",
+        "sha256": "959b103c4e6c0b7855458ca25d787abc2c61dad0d40abb017bff3027032e4ac4"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v122/mechanism-desktop.png",
+        "sha256": "a2ff1bc1af796fcc214aaba2f74dd5f5aa7602e46f5991551f2fd603a0eb6ec9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v122/mechanism-mobile.png",
+        "sha256": "0f893d374f9d0c685ab64c3f52fbb9b526a131b3347543af5bc17cd777723735"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v123/archive-desktop.png",
+        "sha256": "beea7d0092109b47c26d52d214c699eda47e603ca08568265346b7648eb67502"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v123/archive-mobile.png",
+        "sha256": "77cec70f7c6dfad823f01943e923fa0427fa6cb9476a78b36b4076c21fe89352"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v124/quest-desktop.png",
+        "sha256": "b42be32e44926c7ac3ea2d649ff0e9b68159c22325854f41b878738f37f0c864"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v124/quest-mobile.png",
+        "sha256": "088003230268f745e219376691e53ebd819dabe49168361be6736e042b318ea9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v125/attribute-desktop.png",
+        "sha256": "e2b4cab94f7ec719fa6f878bad67be4a83587a2ad12442fa4abf637f59072c5e"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v125/attribute-mobile.png",
+        "sha256": "b834b332502a35fa293f0a5c289ff744d42370f1ee0e3480f44e0e8dd3d5a2e6"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v76/v76-mobile-ending.png",
+        "sha256": "3e41f7d2035109590941869fdd0361de6cdfb4df0cce79c1f5f0789dd459653b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v76/v76-ready-story.png",
+        "sha256": "9efc8836b056d1fbdcbb41a2a8c432b166a972f94a72b858dc46168ba8fc1e8a"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v77/v77-mobile-letter-ending.png",
+        "sha256": "8f8b7cb540ad3e2df7a828ac663a764a44fca99714bcdd71c4da52fddd44c8ba"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v77/v77-ready-letter.png",
+        "sha256": "b318bb8fdc721e2b401db681741e68afe522b6cc659b68b50632ac5349cfc6f3"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v94/v94-mobile-handoff.png",
+        "sha256": "69efb6f6fe8cc3cbc28b4e0341292fedad165e7e6b8059a100c50ee19783afb2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v94/v94-mobile-next-goal.png",
+        "sha256": "12c1ac41854b313e48c798f83a4088f36fd7b389c35eef7328ee06652d36d9a8"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v94/v94-pending-handoff.png",
+        "sha256": "9f9a711143f579b1aa1009c6509ac5598b3fe1454d34e1ffc090c3e7e379c271"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v95/v95-mobile-book.png",
+        "sha256": "57183d9de3340fa795cefac430707ebf82fd7ef098b19123949e65000a574593"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v96/v96-mobile-sets.png",
+        "sha256": "5e1d27099c589fa5c83d6a6da26677376d7e66bc29a502dc726a1bd038fbe435"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v97/v97-mobile-handoff.png",
+        "sha256": "6093754111d1fd285abf185e9dba657b2ebc1c894cf96066fdd867546d6ed6ea"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v98/v98-mobile-backup.png",
+        "sha256": "9399b2ee8fe993626907a1fa24343e64e506661a029c5a277d37300e5e4d2fb9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v125/acceptance/browser-v99/v99-mobile-clocktower.png",
+        "sha256": "12b373321cab17e182ae74c1162af6bafc31d14ff3e4faab2d562f2c82119fee"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v101/v101-mobile-schedule-evidence.png",
+        "sha256": "871cad22ad908b55a70afeb11d0c28efe828ff99eaec5a2769875194c6efdbb9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v102/v102-mobile-count.png",
+        "sha256": "e9c1627a0faae2902b52a4cd50b9d251f08f82861cfe5a47b5321efa0f310c7c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v103/v103-mobile-qualification.png",
+        "sha256": "96e53eb464bceab94eb6cea8a4eb5fcfab127b8b71b64143d9a4daeb0f4ebebc"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v111/threat-desktop.png",
+        "sha256": "a7f64d1bbc987a3c5c64d1d13109cea536e622aed5196aa72b2cd2065a7e625b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v111/threat-mobile.png",
+        "sha256": "c423cb977f0599ca589015a0e363731b16019d96a28b5ff18b9f9757728c951c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v112/group-aid-desktop.png",
+        "sha256": "696d11b7f59fe6990cf1bdbdd2761606a694d8ba992e7d260895d0e8a7186a66"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v112/group-aid-mobile.png",
+        "sha256": "0fc22c426295916626562a6f085f4baf98165202a23c86eeceeab8dd78eb30ab"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v113/confluence-desktop.png",
+        "sha256": "51c1dd9aae3e146fcc298b9dc37b1ce64989b11a53670ca6544405975c760e3f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v113/confluence-mobile.png",
+        "sha256": "b3eab6020e5c76652623d6e485534e7afe4164de78fd6310d7c129fb6afbb847"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v114/offbeat-desktop.png",
+        "sha256": "c7334bfc32173111317064135151a29c7683d5f82941c5e1bc43aeb8980014ec"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v114/offbeat-mobile.png",
+        "sha256": "20f31751961bcedd32170f5b35bb3d5a8948e1ce2daa0970aa3ba23feccf58da"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v115/counterpoint-desktop.png",
+        "sha256": "3c2c57f88708eefe62b7c8aca888b85c59239afed8f427b4840bc2ddb54fc565"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v115/counterpoint-mobile.png",
+        "sha256": "5a2d764f256dca66fdba16ddebb8d277717eec970e2c9dc11c9e39d451eb28d4"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v116/withdrawal-desktop.png",
+        "sha256": "bcace0efa14bf1591eda0bea3b7e9efeb5cc48d09b059dc8d7eee6f753b6713f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v116/withdrawal-mobile.png",
+        "sha256": "b2c4fc03bc27b37f561d29f78a06642a741507798ef89af6fa944944e7ebc7d9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v117/breakwater-desktop.png",
+        "sha256": "03dbdf97cd995ed8629511858bf23f250bbbe042b8096736660f70a354d464b8"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v117/breakwater-mobile.png",
+        "sha256": "06d62a49c4df2338ebd129ccf2e5399a135a649395f49a1210df1f1ea56b0191"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v118/pursuit-desktop.png",
+        "sha256": "8f83bcf1aa615af01a5c87c49c7a2c20ee90c2b767fa86319f3909e8a371dd2b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v118/pursuit-mobile.png",
+        "sha256": "add36bdbf94de8c080e29c71a673621593664eb5c3608fcef6c3a9e5f1291458"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v119/position-desktop.png",
+        "sha256": "ede91066a7724498f28a5e992af03ba41390562957f596d4e63f635cd317cb6c"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v119/position-mobile.png",
+        "sha256": "f4987358aff67b1439828d0d0d452b65974af334478705783ed3e53fb3250f72"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v120/ossuary-desktop.png",
+        "sha256": "6414ede35a9faef44444c7e3557d9cec35994ee4666b7dfc24a0e2506e89efa2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v120/ossuary-mobile.png",
+        "sha256": "dc5782fd696651ef82e0b91301bae743fbe39dcaeb3db3f213e17b01e9230aab"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v121/sparring-desktop.png",
+        "sha256": "9f3fb009c7e660fbcbcaa659efb7bcb59481c313e157e9c352f47615558ebd53"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v121/sparring-mobile.png",
+        "sha256": "959b103c4e6c0b7855458ca25d787abc2c61dad0d40abb017bff3027032e4ac4"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v122/mechanism-desktop.png",
+        "sha256": "a2ff1bc1af796fcc214aaba2f74dd5f5aa7602e46f5991551f2fd603a0eb6ec9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v122/mechanism-mobile.png",
+        "sha256": "0f893d374f9d0c685ab64c3f52fbb9b526a131b3347543af5bc17cd777723735"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v123/archive-desktop.png",
+        "sha256": "beea7d0092109b47c26d52d214c699eda47e603ca08568265346b7648eb67502"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v123/archive-mobile.png",
+        "sha256": "77cec70f7c6dfad823f01943e923fa0427fa6cb9476a78b36b4076c21fe89352"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v124/quest-desktop.png",
+        "sha256": "b42be32e44926c7ac3ea2d649ff0e9b68159c22325854f41b878738f37f0c864"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v124/quest-mobile.png",
+        "sha256": "088003230268f745e219376691e53ebd819dabe49168361be6736e042b318ea9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v125/attribute-desktop.png",
+        "sha256": "e2b4cab94f7ec719fa6f878bad67be4a83587a2ad12442fa4abf637f59072c5e"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v125/attribute-mobile.png",
+        "sha256": "d02b9cbfc1261689db63d9b26db1d6220c4dec39aaf0eba470b0e648b942f045"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v126/set-desktop.png",
+        "sha256": "a9b59d2cfdec1445358f41dfbb773f9e392b5045990e1c0676d8fcbc4961a01f"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v126/set-mobile.png",
+        "sha256": "03e94f15646e0a7c7f1e240501b229e085ce3bc1428571c6306b7dea16128669"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v76/v76-mobile-ending.png",
+        "sha256": "3e41f7d2035109590941869fdd0361de6cdfb4df0cce79c1f5f0789dd459653b"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v76/v76-ready-story.png",
+        "sha256": "9efc8836b056d1fbdcbb41a2a8c432b166a972f94a72b858dc46168ba8fc1e8a"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v77/v77-mobile-letter-ending.png",
+        "sha256": "8f8b7cb540ad3e2df7a828ac663a764a44fca99714bcdd71c4da52fddd44c8ba"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v77/v77-ready-letter.png",
+        "sha256": "b318bb8fdc721e2b401db681741e68afe522b6cc659b68b50632ac5349cfc6f3"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v94/v94-mobile-handoff.png",
+        "sha256": "69efb6f6fe8cc3cbc28b4e0341292fedad165e7e6b8059a100c50ee19783afb2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v94/v94-mobile-next-goal.png",
+        "sha256": "dba11710ed383c9ec3f270373ef027077cb385659f7d62477dc394176fddab67"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v94/v94-pending-handoff.png",
+        "sha256": "9f9a711143f579b1aa1009c6509ac5598b3fe1454d34e1ffc090c3e7e379c271"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v95/v95-mobile-book.png",
+        "sha256": "b1b29f59654e2517c6e83cd71e46bcdf8f07acf14a9921933e79fc12d5411de2"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v96/v96-mobile-sets.png",
+        "sha256": "f59f9abed9ed1a45db94cfd48946c754fdae4449e7bb9fbf9289a95a024da00e"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v97/v97-mobile-handoff.png",
+        "sha256": "6093754111d1fd285abf185e9dba657b2ebc1c894cf96066fdd867546d6ed6ea"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v98/v98-mobile-backup.png",
+        "sha256": "9399b2ee8fe993626907a1fa24343e64e506661a029c5a277d37300e5e4d2fb9"
+      },
+      {
+        "path": "/workspace/wod-evidence/v126/acceptance/browser-v99/v99-mobile-clocktower.png",
+        "sha256": "12b373321cab17e182ae74c1162af6bafc31d14ff3e4faab2d562f2c82119fee"
+      }
+    ],
+    "v183SupplementZIP": {
+      "path": "/workspace/wod-maintenance/2026-11-08-legacy-cache-retention-v183/omitted-original-screens.zip",
+      "sha256": "ad29afc3b793332f23b2953b229ff5083be954ce4a739e7abe60314d2a46a87d"
+    },
+    "v183ThreeAdjacentPointers": [
+      "/workspace/wod-evidence/v124/acceptance-master-duplicates-retired-3b3bb7cbbefc.json",
+      "/workspace/wod-evidence/v125/acceptance-master-duplicates-retired-3b3bb7cbbefc.json",
+      "/workspace/wod-evidence/v126/acceptance-master-duplicates-retired-3b3bb7cbbefc.json"
+    ],
+    "v183CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v183/ACCEPTANCE_RETIRED_0dc1c346f466.json",
+        "sha256": "105ff0cafe9aecfa60e58dbf4b1e862dcc31c184e700323f1087abf112228d3f",
+        "mode": 384,
+        "mtimeNs": 1794146247863548826
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v183/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "80b2315090762ca5afe02d9f9449ad7aa97c9df86de224bf4522a3aa3a0c89da"
+      }
+    },
+    "v184CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v184/ACCEPTANCE_RETIRED_3479549eb9d7.json",
+        "sha256": "9a752287cda357f2aa9f68c8531dab9e75f0349220c6e987a508ff62b57fc4f1",
+        "mode": 384,
+        "mtimeNs": 1794149028951877910
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v184/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "515507b0614676f1f8c539c097a604bc5f491678c46eea13899d8ef84d873c09"
+      }
+    },
+    "v185SequentialRecoveryLateWholeDirectory": "/workspace/wod-delivery/v0.185-solo-experience-milestone/sequential-recovery",
+    "v185CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v185/ACCEPTANCE_RETIRED_96ab5d8b6069_dae5b07d.json",
+        "sha256": "30b1461ac513e1baaae7f59f5b2649d1184eee54d05a5346246f4bead49aec13",
+        "mode": 384,
+        "mtimeNs": 1794152076069766005
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v185/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "c0e6661f09628db8f2ad8adb933add3b44bf3862431cbf7677817a84f4b24114"
+      },
+      "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
+      "CPsRetiredOnlyAfterAllWholeRootProofs": true
+    },
+    "v186SequentialRecoveryLateWholeDirectory": "/workspace/wod-delivery/v0.186-camp-start/sequential-recovery",
+    "v186CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v186/ACCEPTANCE_RETIRED_230db3ac5ff8_c68e56ae.json",
+        "sha256": "dffe102b7e3706b869e0e7aa3d321b68c3cd43edf026345dcb1f65771af7af84",
+        "mode": 384,
+        "mtimeNs": 1794154535003010197
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v186/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "72b747fff04327e26ddf45afb2891c6035a4e037a0872bc0f14108a0d3a0655a"
+      },
+      "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
+      "CPsRetiredOnlyAfterAllWholeRootProofs": true
+    },
+    "v186InitialCandidateEntireDelivery": "/workspace/wod-delivery/v0.186-camp-start",
+    "v186FinalCacheNamespaceRelocation": "/workspace/wod-delivery/v0.186-camp-start-final/cache-namespace-relocation.json",
+    "v186FinalRejectedPrecanonicalArchiveDirectory": "/workspace/wod-delivery/v0.186-camp-start-final/precanonical-packaging",
+    "v186FinalSequentialRecoveryLateWholeDirectory": "/workspace/wod-delivery/v0.186-camp-start-final/sequential-recovery",
+    "v186FinalRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v1861/ACCEPTANCE_RETIRED_f6ee9b1b223a_084a9828.json",
+        "sha256": "f10a099b944120e83ad4adbf3d60ca8fcffa2d40ee7517cb88d9474c2f448e50",
+        "mode": 384,
+        "mtimeNs": 1794156200472228898
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v186-focus-fix/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "9aa311fe862831bbff52ec3e2853f0ff0e1bcf7954dda9da3da091a641bad77a"
+      },
+      "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
+      "CPsRetiredOnlyAfterAllWholeRootProofs": true
+    },
+    "v187EntireSequentialRecoveryLateDirectory": "/workspace/wod-delivery/v0.187-tidecaller-motion/sequential-recovery",
+    "v187CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v187/ACCEPTANCE_RETIRED_c7126b9ff85f_2b6bd789.json",
+        "sha256": "1160c5d862aaa4927cda8b8fa24e42c7a8ed88b862b7c83b067158382c00a2c1",
+        "mode": 384,
+        "mtimeNs": 1794159598487869166
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v187/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "3ea7165109e34562790d08ad3cd674c4378af840a2fa473f7b6a55057f218458"
+      },
+      "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
+      "CPsRetiredOnlyAfterAllWholeRootProofs": true
+    },
+    "v188EntireSequentialRecoveryLateDirectory": "/workspace/wod-delivery/v0.188-camp-motion-milestone/sequential-recovery",
+    "v188CurrentRetiredPointers": {
+      "passed": true,
+      "rawPointer": {
+        "path": "/tmp/wod-evidence/v188/ACCEPTANCE_RETIRED_a33b24292449_8fbb5fd6.json",
+        "sha256": "2ce5d03c7430e7ff647cb6d57282ae936ca6c739157246935bcc000931ea267f",
+        "mode": 384,
+        "mtimeNs": 1794162425972467410
+      },
+      "checkpointPointer": {
+        "path": "/workspace/wod-checkpoints/v188/CHECKPOINT_COPIES_RETIRED.json",
+        "sha256": "57a604cf227d44bcfcddad9f3f8a2afa515d589b9dd5af5db1c866f5203d857e"
+      },
+      "rawRetiredAfterTwoIndependentAllFilePhysicalProofsThenWholeRawProved": true,
+      "CPsRetiredOnlyAfterAllWholeRootProofs": true
+    }
+  },
+  "space": {
+    "rawBytes": 146110816,
+    "checkpointBytes": 29963847,
+    "freeBytes": {
+      "/workspace": 2188505088,
+      "/tmp": 8897036288
+    },
+    "noOldDataCleanupThisStage": true,
+    "phaseEvidenceBytesAfterDuplicateReferenceRemoval": 20721553
+  },
+  "integrationWindow": [
+    191,
+    193
+  ],
+  "limitations": [
+    "88relatedNode/4completeGUI,notfull1809/94;191193freshfullgatebeforemain.",
+    "Normal138evacuation6alive/NPC90 and137Beryldown/herb0 plus136allDown are observations,notbalancecausality/rate.",
+    "Existing1000HPslowcarecontrolfixtures andsynthetic2targetprojection aresemanticchecks,notnormalplay.",
+    "Firstapp/artistattemptESMexportbindingbugfixedandcontractasserted; initialassets/logs/source retained. Pre-healglowtimingrefined witholdfullassets/frozenstudykept.",
+    "GIF nativevector8discreteframes/256colorbinaryalpha;PNGfullRGBA. Noimagegen/directGIFgeneration/weaknetwork/realdeviceFPSorwholeappspeedclaim.",
+    "186twooriginalearlyPNGbytesandmetricsJSONlostnotrestored;latercontrolledcomparisonisnewcapture,notoriginal. OldtimestampIDgapsnotfixed;noprocesslock.",
+    "SupplyPending,noForceGCpruneDeploy,172Libraryunknown/no retry."
+  ],
+  "temporaryReferenceDuplicateCleanup": {
+    "passed": true,
+    "onlyNew45Duplicates": true,
+    "logicalBytes": 110034286,
+    "receipt": "compat-reference-retired.json",
+    "allOldOriginalMastersAndCurrentOriginalCPsKept": true
+  }
+}
