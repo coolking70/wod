@@ -1,0 +1,13 @@
+{
+  "version": "0.194",
+  "scope": "Integrate192journeyand193receipt/durabletools;full1837Node97GUI130JSON33HTML125CLI;source/cold/evidence/durable/remotebeforemain",
+  "mainIntegrationWindow": [
+    194,
+    196
+  ],
+  "nextAfterSuccess": [
+    197,
+    199
+  ],
+  "permanentSupplyPending": true
+}

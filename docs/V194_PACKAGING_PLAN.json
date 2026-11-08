@@ -1,0 +1,89 @@
+{
+  "status": "Plan; executed evidence in delivery",
+  "fullBudget": {
+    "passed": true,
+    "currentCompleteSuites": 97,
+    "prior19195Raw": 4090712921,
+    "prior19195CP": 605476590,
+    "new192193": [
+      {
+        "version": 192,
+        "rawBytes": 4700397,
+        "CPBytes": 2230261,
+        "originalCP_SHA256": "ff9e4e269a2283ce98a9d5f8600620eb4cdc32fde0ddf0f7704ac13e26047282"
+      },
+      {
+        "version": 193,
+        "rawBytes": 11383744,
+        "CPBytes": 4612806,
+        "originalCP_SHA256": "402dcd11860b6738bed3c105260683b3acbfc5045128df7c79b934dcb57db975"
+      }
+    ],
+    "growthFactor": 1.25,
+    "worstCaseFailureReruns": 2,
+    "maxRawCase": 132786850,
+    "maxCPCase": 15994691,
+    "rawUpper": 5399070028,
+    "CPUpper": 797388954,
+    "masterUpper": 847388954,
+    "durableWrapperUpper": 350000000,
+    "evidenceUpper": 100000000,
+    "sourceSidecarsUpper": 15000000,
+    "reserveEachVolume": 1073741824,
+    "mainRequiredIncludingOriginalAndWrapperCoexistenceAndReserve": 2386130778,
+    "tmpRequiredWithAllFileWholeCPAndReserve": 8367589760,
+    "tmpRequiredAfterRawCPRetirementForSequentialColdAndWholeRoot": 7588636262,
+    "tmpRequiredIncludingReserve": 8367589760,
+    "fullColdCopiesWillBeVerifiedAndRetiredOneAtATimeWhileOriginalMasterAndDurableWrapperKept": true,
+    "priorTmpCheckpointLayoutFullPhysicalProofBound": {
+      "path": "/workspace/wod-delivery/v0.193-durable-evidence-and-journey/evidence-restore-check.json",
+      "sha256": "4255b3000ddc190eb443e415dd2a6568f65fe0ae31dea4c7f828150ae169f30f",
+      "notRerunOrClaimedFreshThisCapacityCheck": true
+    },
+    "sameUnmodifiedCoreRecoveryToolSHA256": "79a79474b73b0ab749b068760d1c86b1cd93677cd2bcf3c2f09640593bbd5aca",
+    "nonSparsePhysicalReservations": [
+      {
+        "path": "/workspace/wod-evidence/v194/capacity-main-reservation.bin",
+        "bytes": 1312388954,
+        "physicalBytes": 1312395264
+      },
+      {
+        "path": "/tmp/wod-capacity-v194-reservation.bin",
+        "bytes": 7293847936,
+        "physicalBytes": 7293849600
+      }
+    ],
+    "samples": [
+      {
+        "phase": "physically-reserved-/workspace/wod-evidence/v194",
+        "freeBytes": {
+          "/workspace": 1405652992,
+          "/tmp": 8863793152
+        }
+      },
+      {
+        "phase": "physically-reserved-/tmp",
+        "freeBytes": {
+          "/workspace": 1405652992,
+          "/tmp": 1569943552
+        }
+      },
+      {
+        "phase": "only-owned-reservations-released",
+        "freeBytes": {
+          "/workspace": 2718048256,
+          "/tmp": 8863793152
+        }
+      }
+    ],
+    "noOldDataRemoved": true,
+    "freeBytes": {
+      "/workspace": 2718048256,
+      "/tmp": 8863793152
+    }
+  },
+  "source": "extendboth193chains, derive1797blobs157formal, primary71Node125CLI;allrefs/modes/fsck",
+  "evidence": "all97CP/tmp then mainmaster and2independentallfile+3wholeproofs",
+  "durable": "onlyafterallproofs, persistmainwrapper+independentcold/fullinnerCRC/3whole/cat4;retireexactcurrent194physicalZIP;oldH193filesunchanged",
+  "main": "freshremoteancestor/fullgates/isolation/normalFFpush;noDeployForceGCprune"
+}
