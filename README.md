@@ -1,3 +1,5 @@
+> v0.177：原生守卫动作标签/按钮/来源随同一动画时钟更新；模型和已有GIF保持，正常128全灭与部分收益保留。1697Node、8相关GUI通过，全84留到179–181；main176。见[说明](docs/V177_GUARDIAN_MOTION_CUES.md)、[交接](docs/HANDOFF_CLOUD_V177.md)。
+
 > v0.176 完整节点：修复守卫倒下后的盾牌裁边/压字，三宽度验证；新增八帧原生倒下GIF与PNG表，不改战报与配装。1690Node/全83GUI，main实际结果见交付记录。见[说明](docs/V176_GUARDIAN_FALLEN_FRAMING.md)、[交接](docs/HANDOFF_CLOUD_V176.md)。
 
 > v0.175 受击与救护时序增加原攻击伤害拆解、静态SVG和键盘返回；保留第二房负法术抗性的实际伤害证据，不推断换装结果。安全回收约1.06GiB重复记录，26原截图保留。见[说明](docs/V175_RECORDED_DAMAGE_REVIEW.md)、[交接](docs/HANDOFF_CLOUD_V175.md)。main173，本轮22GUI，完整窗口176–178。

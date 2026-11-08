@@ -1,0 +1,28 @@
+{
+  "version": "0.177",
+  "base": "9aedb3000c3d39c05c53d9fe87bc09292bf8e6ad",
+  "mainRemains": "9aedb3000c3d39c05c53d9fe87bc09292bf8e6ad",
+  "scope": "Existing guardian native animation clock controls reached-pose label/highlight/source; no model/GIF/combat change",
+  "normalCounters": [
+    128
+  ],
+  "noSeedSearchTrainingOrGearSwap": true,
+  "newMeaningfulNodeCases": 7,
+  "focusedCompleteGUI": [
+    142,
+    143,
+    146,
+    171,
+    174,
+    175,
+    176,
+    177
+  ],
+  "full84NotRun": true,
+  "nextMainWindow": [
+    179,
+    181
+  ],
+  "permanentSupplyEconomyPending": true,
+  "protectedFiles": 336
+}

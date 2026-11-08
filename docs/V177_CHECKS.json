@@ -1,0 +1,298 @@
+{
+  "passed": true,
+  "baselineCommit": "9aedb3000c3d39c05c53d9fe87bc09292bf8e6ad",
+  "mainUnchanged": "9aedb3000c3d39c05c53d9fe87bc09292bf8e6ad",
+  "Node": {
+    "tests": 1697,
+    "pass": 1697,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newMeaningfulNodeCases": 7,
+  "NodeWorkers": 2,
+  "PythonSafetyCasesInsideOneNodeEntry": 21,
+  "browser": {
+    "passed": true,
+    "total": 8,
+    "versions": [
+      142,
+      143,
+      146,
+      171,
+      174,
+      175,
+      176,
+      177
+    ],
+    "fullCurrentSuites": false,
+    "fullRegistrySize": 84,
+    "scope": "8 affected completeGUI, not full84;1passednewpreview",
+    "originalCheckpointAttempts": 9,
+    "allCPsDurableMainAsCompleted": true,
+    "new177Screens": [
+      "cue-desktop124-actual708.png",
+      "cue-normal128-failure.png",
+      "cue-mobile390-actual708.png",
+      "cue-mobile320-actual708.png",
+      "cue-existing-fall-study-mobile.png"
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 187,
+    "checkedReferences": 207,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntaxFiles": 774,
+  "sourceInputs": 866,
+  "runtimeDelta": {
+    "new": [
+      "scripts/browser-v177.cjs",
+      "scripts/check-v177.mjs",
+      "scripts/fixtures/v177-preparation-state.json",
+      "scripts/guardian-cue-cases.mjs",
+      "tests/guardian-cues.test.mjs"
+    ],
+    "changedOld": [
+      "dist/expedition-guardian-detail.mjs",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "oldExact": 857
+  },
+  "compatibility": {
+    "passed": true,
+    "freshOldFullJSON": 122,
+    "actualReports": 116,
+    "otherStateConfigObjects": 6,
+    "old78OnlyPreviouslyAllowedBardSkill6": true,
+    "native158through176Rows": 34,
+    "mechanismViews": 33
+  },
+  "nativeState": {
+    "gold": 13635,
+    "next": 129,
+    "ownHero": "e",
+    "ownXP": 5760,
+    "berylXP": 2645,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "plans": 3,
+    "CPlansAndAOriginalRawStringsExact": true,
+    "normal": [
+      {
+        "id": 128,
+        "route": "courier",
+        "seed": 128,
+        "won": false,
+        "alive": 0,
+        "rounds": [
+          3,
+          5,
+          13
+        ],
+        "supplies": {
+          "herb": 0,
+          "rune": 4,
+          "arrow": 2
+        },
+        "reward": {
+          "cleared": 2,
+          "gold": 40,
+          "xp": 20,
+          "firstClear": false,
+          "loot": []
+        }
+      }
+    ],
+    "noTrainingTuningOrSeedSearch": true,
+    "oldBookStoriesWarehouseClearsAndRolesUnchanged": true,
+    "survival731SeparateExperimentNoReward": true
+  },
+  "guardianCues": {
+    "actual124Group": [
+      707,
+      708,
+      709
+    ],
+    "sameNativeAnimationClockNoIndependentWallClock": true,
+    "allFourSpeedsAndNoEarlyArrival": true,
+    "onlyReachedCueHighlightedAndStatusUpdatesAtBoundaries": true,
+    "stoppedReducedClosedDetachedAndStaleControllersSafe": true,
+    "threeWidths": [
+      1440,
+      390,
+      320
+    ],
+    "pausedWAAPIClockDoesNotAdvanceOnWallTime": true,
+    "allModelChoreographyAndImagesAndStudyMetadataBytesUnchanged": true,
+    "noNewImagegenOrGIFAssetsOrProductionImageRequest": true,
+    "existingGIFApproximateSamplesNotClaimedExactlySeekable": true
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v177/browser-final/cue-final-campaign.json": "d29f0cd5df5571b62f95203915c82af43d0133fc2c94f3386c6728f9c2a46bc9",
+    "/workspace/wod-evidence/v177/browser-final/cue-final-four-raw-keys.json": "d88243b6014d1d17fb48662b3273432aaff349e3e69a34cd04950f4e51af2cab"
+  },
+  "maintenanceDependencies": {
+    "v173EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v173-temp-budget",
+    "v173MetadataBackupAlsoInLatestMasterEvidenceRoot": "temp-budget-maintenance",
+    "v147v148v167OriginalMasterZIPs": [
+      {
+        "path": "/workspace/wod-delivery/v0.147-ranger-motion/wod-v147-verification.zip",
+        "bytes": 314120421,
+        "sha256": "e91e4401509a448edad47fb8f112d17ce390879ed7d1a58af8a7d76e740c4f6a"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.148-automatic-backup/wod-v148-verification.zip",
+        "bytes": 332880540,
+        "sha256": "1740b91e7e91f273f95b1a494dccd2786f06269e835db71a4d4818945f4d7676"
+      },
+      {
+        "path": "/workspace/wod-delivery/v0.167-solo-flow-milestone/wod-v167-verification.zip",
+        "bytes": 466709632,
+        "sha256": "a7ad869c91b73e1a80a541075db0ae2ecd674487c4a51c600a5a1c3f5e13a025"
+      }
+    ],
+    "v156EntireSixSnapshotAndManifestDirectory": "/workspace/wod-maintenance/2026-11-07-sustainable-evidence-v156",
+    "v156All74ChecksummedFilesKept": true,
+    "v132EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v132-retention-v171",
+    "v143EntireMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v143-recheck-retention-v170",
+    "allOtherExistingEvidenceAndCodeChainsKept": true,
+    "doNotDeleteOnCodePushAlone": true,
+    "oldTimestampIDByteGapsNotClaimedFixed": true,
+    "verifiedByPostMainIndependentAudit": true,
+    "v175Entire134PairsMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175",
+    "v175Original134MasterPlusOmittedScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.134-local-cross-page-drafts/wod-v134-verification.zip",
+        "bytes": 190935049,
+        "sha256": "84592bdd0bdca3531e94158421ce59c31ae532d375417134b46adc3e34374fc3"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v134-pairs-retention-v175/omitted-original-screens.zip",
+        "bytes": 5178710,
+        "sha256": "f1a9d1da477c435dcc9791a97ecc79fc53252114ba3e0d79dbc6dd92c86b89dd"
+      }
+    ],
+    "v175Original26PNGPathsStillKept": [
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v123/failure.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-3-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-1-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-2-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v134/full-pair-fixed-3-v124/quest-mobile.png"
+    ],
+    "v17480FixedExperimentalReportsAndSeparateZIPKept": true,
+    "v176Entire127AcceptanceMaintenanceDirectory": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176",
+    "v176Original127MasterPlusOmitted49ScreensZIP": [
+      {
+        "path": "/workspace/wod-delivery/v0.127-local-mana-pressure/wod-v127-verification.zip",
+        "bytes": 94995384,
+        "sha256": "5b24489efddce37a83a8992b8c081825ba279137755e69ca2070e11e8c700c57"
+      },
+      {
+        "path": "/workspace/wod-maintenance/2026-11-08-v127-acceptance-retention-v176/omitted-original-screens.zip",
+        "bytes": 5431965,
+        "sha256": "b06bb54d2c5985053d46174a6fc161329b65adda131f369f10139c26c1537737"
+      }
+    ],
+    "v176Original49PNGPathsStillKept": [
+      "/workspace/wod-evidence/v127/acceptance/browser-v101/v101-mobile-schedule-evidence.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v102/v102-mobile-count.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v103/v103-mobile-qualification.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v111/threat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v112/group-aid-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v113/confluence-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v114/offbeat-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v115/counterpoint-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v116/withdrawal-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v117/breakwater-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v118/pursuit-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v119/position-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v120/ossuary-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v121/sparring-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v122/mechanism-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v123/archive-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v124/quest-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v125/attribute-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v126/set-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-desktop.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v127/mana-mobile.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-mobile-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v76/v76-ready-story.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-mobile-letter-ending.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v77/v77-ready-letter.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-mobile-next-goal.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v94/v94-pending-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v95/v95-mobile-book.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v96/v96-mobile-sets.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v97/v97-mobile-handoff.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v98/v98-mobile-backup.png",
+      "/workspace/wod-evidence/v127/acceptance/browser-v99/v99-mobile-clocktower.png"
+    ]
+  },
+  "all336ProtectedFilesExact": true,
+  "space": {
+    "rawBytes": 470190066,
+    "checkpointBytes": 77881583,
+    "freeBytes": {
+      "/workspace": 2170806272,
+      "/tmp": 8544858112
+    }
+  },
+  "limitations": [
+    "8relatedGUI complete, not full84; fullgate planned179181.",
+    "Native gesture clock and pose labels describe recorded demonstration, not realcombatseconds; HPMPposition fixed.",
+    "Existing174176GIF/sourceposes/assets remainexact; no newimagegen or independentGIFtiming overlay.",
+    "Normal128allDown preserved, matches predeclared174base128 whole report; no cause/rate or tuning claim.",
+    "Preliminary128analysis included enemy payments; final partyIDs separate12party12enemy, draft kept.",
+    "Preserve all176127/175134/173147148167/156six/132143/private6/sourcechains/experiments; old timestampIDgaps notfixed.",
+    "Old172Library upload unconfirmed,no retry; permanentSupply economy pending."
+  ],
+  "nextMainWindow": [
+    179,
+    181
+  ]
+}
