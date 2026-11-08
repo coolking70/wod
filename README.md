@@ -1,3 +1,5 @@
+> v0.183开发：学者十关节SVG、真实施放/闪避/待生效姿态与八帧GIF样片；88相关Node/2完整相关GUI通过，main182。回收约1.93GiB已归档重复缓存，135原截图保持，采用精简当期证据。见[说明](docs/V183_SCHOLAR_RUNE_MOTION.md)、[交接](docs/HANDOFF_CLOUD_V183.md)。
+
 > v0.182完整节点：动作可打开真实原记录并返回原步骤/筛选/焦点；1754Node、89全套GUI通过。顺序物理恢复保持双独立全文件和三整根覆盖，保留失败重测空间。main进入时179，集成实际结果见交付manifest。见[说明](docs/V182_MOTION_EVIDENCE_MILESTONE.md)、[交接](docs/HANDOFF_CLOUD_V182.md)。
 
 > v0.181开发：放大查看当前吟游者动作，静态姿态包含真实记录/透明度，播放提示读取关节同一时钟；手机可看清且查看不写档。1747Node、8相关完整GUI；main179，182–184全门禁。见[说明](docs/V181_BARD_STEP_INSPECTION.md)、[交接](docs/HANDOFF_CLOUD_V181.md)。

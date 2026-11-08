@@ -1,0 +1,13 @@
+{
+  "version": "0.183",
+  "source": "v158full+159..183increments OR v152full+153..183increments; keepprivate6",
+  "branch": "feature/v183-scholar-rune-motion",
+  "base": "a3bc4c66a5b79103decbf30a0c606053c5757c54",
+  "mainUnchanged": "a3bc4c66a5b79103decbf30a0c606053c5757c54",
+  "coldChecks": "allblobs/modes/history/heads/private6,primary261Node,current5andprior18220CLIJSONexact,binarypatchtree",
+  "evidence": "onefocusedcurrentmaster/all4originalCPs includingfailedpreview; physical3roots+independentreadback+rawfiledirectoryns beforeduplicate retirement",
+  "newEntireMaintenance": "/workspace/wod-maintenance/2026-11-08-legacy-cache-retention-v183",
+  "threeOriginalMastersSupplement135OriginalPNGPathsAndPointersRequired": true,
+  "all182181AndOlderDependenciesRequired": true,
+  "noForceGCpruneDeploy": true
+}
