@@ -1,4 +1,10 @@
-# 单人项目状态：开发v0.190，main v0.188
+# 单人项目状态：v0.191完整里程碑（main集成结果见交付）
+
+v0.191单人旅程完整里程碑：整合药师真实SVG/GIF与已探索营地接续，1821完整Node、95完整GUI、130历史完整JSON/33机制HTML通过。正式档四串保持190的14895/next140，不多领一笔。容量布局已按25%增长+两次重测物理验证，全部历史依赖保持。main入场188，实际集成SHA见阶段交付manifest。见[说明](V191_SOLO_JOURNEY_MILESTONE.md)、[交接](HANDOFF_CLOUD_V191.md)。
+
+当前完整门禁完成后按用户授权尝试安全快进main；不将计划冒充合并成功，准确结果见/workspace/wod-delivery/v0.191-solo-journey-milestone/manifest.json。永久补给经济仍待决定，历史字节缺口保持记录。
+
+# v0.190历史阶段
 
 v0.190修复已探索玩家仍被要求首次侧廊的营地接续；地图/营地共用判断，新手起步与所有自由路线保持。普通139从既有入口准备盐风港，六人生还但符纸0，终14895/next140，灯塔来信3/3待明确交付。69相关Node、190/94/108/186四套完整相关GUI通过，main188，191–193全门禁。见[说明](V190_RETURNING_ADVENTURER_GUIDANCE.md)、[交接](HANDOFF_CLOUD_V190.md)。
 

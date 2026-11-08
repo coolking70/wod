@@ -1,0 +1,693 @@
+{
+  "prior93RawBytes": 4064809225,
+  "prior93CPBytes": 598477670,
+  "new189And190RawBytes": 25482719,
+  "new189And190CPBytes": 6612632,
+  "currentCompleteSuiteCount": 95,
+  "growthFactor": 1.25,
+  "failureRerunsReserved": 2,
+  "maxPriorSingleSuiteRawBytes": 132786850,
+  "maxPriorSingleCPBytes": 15827216,
+  "rawUpper": 5378438630,
+  "CPUpper": 788017310,
+  "masterUpper": 838017310,
+  "evidenceUpper": 100000000,
+  "sourceSidecarsUpper": 15000000,
+  "reserveBytesEachDisk": 1073741824,
+  "tmpWholeCheckpointRestoreUpper": 788017310,
+  "tmpSingleFilePlusEvidenceRestoreUpper": 300000000,
+  "historicalMastersUnchanged": [
+    {
+      "version": 188,
+      "master": "/workspace/wod-delivery/v0.188-camp-motion-milestone/wod-v188-verification.zip",
+      "sha256": "261c56f89d7f90aac50315514962843ade00e2b6a559287fea411d8fa7125c06"
+    },
+    {
+      "version": 189,
+      "master": "/workspace/wod-delivery/v0.189-herbalist-care-motion/wod-v189-focused-verification.zip",
+      "sha256": "4bdab31de3c4ac52fc334a5c200fbc30493f901addd63bbc2e9615815c337109"
+    },
+    {
+      "version": 190,
+      "master": "/workspace/wod-delivery/v0.190-returning-adventurer-guidance/wod-v190-focused-verification.zip",
+      "sha256": "57696ee21b38223680b5f3b8a4af6a78ceb589621a1b529d6f8cdaa24fcb58a8"
+    }
+  ],
+  "newCheckpointRoot": "/tmp/wod-checkpoints/v191",
+  "checkpointInitialMainVolumeDurabilityClaimed": false,
+  "noCoverageReductionOrOldDataCleanup": true,
+  "passed": true,
+  "physicalTmpCheckpointLayoutRoundTrip": {
+    "archive": "/workspace/wod-evidence/v191/capacity/capacity-master-v1910.zip",
+    "archiveSHA256": "108af4665feec5cb8bed1c5d6993ca1377050d0a6e624d54726c9f1db2265787",
+    "originalCPCount": 3,
+    "proof": "/workspace/wod-evidence/v191/capacity/sequential-recovery/RESULT.json",
+    "allThreeWholeRootsPassed": true,
+    "twoIndependentAllFilePhysicalProofsPassed": true,
+    "oldCasesNotClaimedAsFreshGUIAcceptance": true
+  },
+  "peakReservation": {
+    "passed": true,
+    "allocations": [
+      {
+        "path": "/workspace/wod-evidence/v191/capacity-main-reservation.bin",
+        "bytes": 929564560,
+        "physicallyAllocatedBytes": 929570816
+      },
+      {
+        "path": "/tmp/wod-capacity-v191-reservation.bin",
+        "bytes": 7254473250,
+        "physicallyAllocatedBytes": 7254474752
+      }
+    ],
+    "notSparse": true,
+    "growthAndTwoWorstFailureRerunsIncluded": true
+  },
+  "observedSamples": [
+    {
+      "phase": "initial",
+      "freeBytes": {
+        "/workspace": 2128617472,
+        "/tmp": 9043382272
+      }
+    },
+    {
+      "phase": "real-three-cases-master-with-tmp-checkpoints",
+      "freeBytes": {
+        "/workspace": 2106167296,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "bound",
+      "freeBytes": {
+        "/workspace": 2105753600,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "first-all-file-physical-proof",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916336640
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8910909440
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916324352
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8905211904
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916332544
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8884641792
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916688896
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916332544
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916344832
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916688896
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916631552
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916328448
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916344832
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916934656
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916332544
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916287488
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916951040
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917696512
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916344832
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916697088
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916344832
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916344832
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916332544
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917708800
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917708800
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917708800
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917708800
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917712896
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917708800
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916119552
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916606976
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916275200
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917704704
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917708800
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917704704
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916262912
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8913420288
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917454848
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917573632
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917716992
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917721088
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917721088
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916123648
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916606976
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916275200
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8916267008
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917749760
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8909676544
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917770240
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "independent-file-physically-restored",
+      "freeBytes": {
+        "/workspace": 2105745408,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "second-independent-all-file-physical-proof",
+      "freeBytes": {
+        "/workspace": 2105737216,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "checkpoints-whole-root-restored",
+      "freeBytes": {
+        "/workspace": 2105733120,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "evidence-whole-root-restored",
+      "freeBytes": {
+        "/workspace": 2105729024,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "before-raw-duplicate-retirement",
+      "freeBytes": {
+        "/workspace": 2105724928,
+        "/tmp": 8917778432
+      }
+    },
+    {
+      "phase": "raw-duplicates-retired-with-master-and-original-CP-kept",
+      "freeBytes": {
+        "/workspace": 2105716736,
+        "/tmp": 9020928000
+      }
+    },
+    {
+      "phase": "whole-raw-simultaneously-present",
+      "freeBytes": {
+        "/workspace": 2105716736,
+        "/tmp": 8917774336
+      }
+    },
+    {
+      "phase": "whole-raw-restored-and-independently-verified",
+      "freeBytes": {
+        "/workspace": 2105712640,
+        "/tmp": 9020928000
+      }
+    },
+    {
+      "phase": "capacity-copies-retired-after-physical-proofs",
+      "freeBytes": {
+        "/workspace": 2105708544,
+        "/tmp": 9043369984
+      }
+    },
+    {
+      "phase": "physically-reserved-/workspace/wod-evidence/v191",
+      "freeBytes": {
+        "/workspace": 1176137728,
+        "/tmp": 9043369984
+      }
+    },
+    {
+      "phase": "physically-reserved-/tmp",
+      "freeBytes": {
+        "/workspace": 1176137728,
+        "/tmp": 1788895232
+      }
+    },
+    {
+      "phase": "reservations-released",
+      "freeBytes": {
+        "/workspace": 2105708544,
+        "/tmp": 9043369984
+      }
+    }
+  ],
+  "observedMinFreeBytes": {
+    "/workspace": 1176137728,
+    "/tmp": 1788895232
+  },
+  "allOldMastersUnchanged": true,
+  "noUniqueEvidenceRemoved": true,
+  "onlyOwnedReservationFilesAndVerifiedFreshDuplicateCheckpointsRetired": true,
+  "mainRequiredIncludingReserve": 2026759134,
+  "tmpRequiredIncludingReserve": 8328215074
+}
