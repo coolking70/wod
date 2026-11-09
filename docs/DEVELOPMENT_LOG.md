@@ -1,3 +1,5 @@
+> v0.197 整合装备工作台与六职业动作，修复证据页返回战场时的飘字生命周期和角色法力明细展开状态。完整1855项Node、99套浏览器、130份历史JSON/33份HTML及204份CLI原字节验证通过。正式档保持15060金币/next141；永久补给经济待定。详见[版本说明](V197_SINGLEPLAYER_MOTION_MILESTONE.md)和[云端交接](HANDOFF_CLOUD_V197.md)。
+
 > v0.194旅程与恢复完整整合节点：旅程主进度、营地/地图/五书定位、交付回执焦点与原生SVG共同通过1837项完整Node、97套完整GUI、130份历史JSON/33份HTML和125份CLI字节核对。正式档四串保持14895/next140。主分支仅在最新远端祖先与源码/证据冷恢复通过后安全快进，准确执行结果见交付manifest。见[说明](V194_JOURNEY_RECOVERY_MILESTONE.md)、[交接](HANDOFF_CLOUD_V194.md)。
 
 > v0.193持久证据与旅程交付：三套旧完整验收ZIP经主盘差分持久化、独立冷恢复及三整根回读后安全退役，净减少约1.40GB载荷；原SHA与旧清单保留，按显式catalog恢复。五本旅程交付后聚焦真实回执，新增281字节原生SVG印记。71相关Node、6套完整相关GUI、80完整CLI通过，非1837/97全门禁。main仍191/09ed93af，194–196重新预算并跑完整门禁。见[说明](V193_DURABLE_EVIDENCE_AND_JOURNEY.md)、[交接](HANDOFF_CLOUD_V193.md)。

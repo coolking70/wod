@@ -1,3 +1,11 @@
+# 单人项目状态：v0.197 装备与动作完整里程碑
+
+v0.197 整合装备工作台与六职业动作，修复证据页返回战场时的飘字生命周期和角色法力明细展开状态。完整1855项Node、99套浏览器、130份历史JSON/33份HTML及204份CLI原字节验证通过。正式档保持15060金币/next141；永久补给经济待定。详见[版本说明](V197_SINGLEPLAYER_MOTION_MILESTONE.md)和[云端交接](HANDOFF_CLOUD_V197.md)。
+
+开发分支 feature/v197-singleplayer-motion-milestone；入场main为v194。main集成和GitHub Pages公开发布必须以远端提交、部署状态与公开URL验收结果为准；本地测试或分支推送不能冒充发布。用户已授权本里程碑通过完整门禁后发布GitHub Pages试玩。下一完整集成窗口v0.200–v0.202，重新预算后执行。
+
+## 历史状态
+
 # 单人项目状态：v0.196演出生命周期；main为v0.194
 
 > v0.196回放演出：修复4倍速特效跨步和切速/暂停遗漏，统一六职业与原生SVG/CSS生命周期；实际八帧GIF/PNG对照按需载入。119相关Node/10完整相关GUI/114静态CLI通过，非全1855/99。正式四串仍15060/next141，main194；197–199全门禁后评估main。见[说明](V196_REPLAY_MOTION_LIFECYCLE.md)、[交接](HANDOFF_CLOUD_V196.md)。

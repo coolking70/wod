@@ -1,0 +1,13 @@
+{
+  "version": "0.197",
+  "scope": "equipment and six-role motion integration; motion-only DOM-safe reentry",
+  "fullNode": 1855,
+  "fullGUI": 99,
+  "extraProbes": 3,
+  "nextMainWindow": [
+    200,
+    202
+  ],
+  "supplyPending": true,
+  "githubPagesAuthorizedAfterMain": true
+}
