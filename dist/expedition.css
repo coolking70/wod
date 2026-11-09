@@ -208,3 +208,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 
 /* A readable recovery route, including narrow screens and long import errors. */
 .guild-recovery{display:flex;align-items:flex-start;gap:16px}.guild-recovery>img{flex:none}.guild-recovery>div{min-width:0;flex:1}.guild-recovery h1{font-size:24px;letter-spacing:1px}.recovery-reason{overflow-wrap:anywhere}.recovery-actions{display:grid;justify-items:start;gap:14px;margin:18px 0}.recovery-actions label{display:grid;gap:6px;max-width:100%;min-width:0}.recovery-actions input{max-width:100%;min-width:0;width:100%}.guild-recovery details{margin-bottom:16px}@media(max-width:480px){.guild-recovery{gap:10px;padding:16px}.guild-recovery>img{width:36px;height:36px}.guild-recovery h1{font-size:21px}}
+
+#unit-inspector-heading{display:inline;font-size:14px;margin:0;color:var(--gold)}#unit-inspector-heading:focus-visible{outline:2px solid var(--gold);outline-offset:4px}[data-inspector-return]{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;justify-self:start}[data-inspector-return] img{flex:0 0 22px}
