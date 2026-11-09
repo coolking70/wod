@@ -1,7 +1,7 @@
 {
-  "version": "0.197",
-  "sourceCommit": "9dfac2b4f439bbd6589016365e044171a347a340",
-  "sourceTree": "c0872a1884607fcd1943f18dd43e3f4c51c8ff78",
+  "version": "0.200",
+  "sourceCommit": "e17f29abb9fc2e6ee56c9128691f6f296df96534",
+  "sourceTree": "04d1f847e8c290c0ae9f9fd5280c00fac754b92a",
   "files": [
     {
       "path": "assets/abbey.png",
@@ -9,9 +9,19 @@
       "sha256": "41663fecc1223ab1413399d719006487f455c692da84060c2194e3a7b10ecca1"
     },
     {
+      "path": "assets/camp-companions-v198.svg",
+      "bytes": 349,
+      "sha256": "c5ede2fdb658a305b90be04a749dd61158e7ab0191f79aad50f4721d3a8fc308"
+    },
+    {
       "path": "assets/camp-waypost-v190.svg",
       "bytes": 336,
       "sha256": "26486bb2c55c31d82a1bc44a09a0da99cbcca1d021342428ea9dbc6f8c2b0b3d"
+    },
+    {
+      "path": "assets/departure-review-v199.svg",
+      "bytes": 307,
+      "sha256": "598bf390cf928afe70899e6665a4beb7c6f1c88ac7ed1a6040c9b4c5a9eec25d"
     },
     {
       "path": "assets/drowned-infirmary-v21.png",
@@ -445,13 +455,18 @@
     },
     {
       "path": "expedition-command-view.mjs",
-      "bytes": 6325,
-      "sha256": "7ca2fada89eb3e3708813a0ae3a01912206df6fcdf414dac36780f4b411d1f3f"
+      "bytes": 6610,
+      "sha256": "d1e0466681a2bff46a7057dd264ff94c21600899fa8dba15bccc007713fed8af"
     },
     {
       "path": "expedition-command.mjs",
       "bytes": 1844,
       "sha256": "8e3d6431da473e4067126d2ea802a025671ff758c700302b427b5b0083154628"
+    },
+    {
+      "path": "expedition-companion-workbench.mjs",
+      "bytes": 1501,
+      "sha256": "797da73a3cb80a465ed8283e72930807487c5edae96987899d366b430028d730"
     },
     {
       "path": "expedition-config-undo.mjs",
@@ -507,6 +522,11 @@
       "path": "expedition-data.mjs",
       "bytes": 71871,
       "sha256": "76ad476b73feed70cec5ebf3625d3867bb4be4778446bcca4431f948f05927d1"
+    },
+    {
+      "path": "expedition-departure-review.mjs",
+      "bytes": 2235,
+      "sha256": "8b3ab4fe30a37bc8ad852b917cce589f1a9ebe3bc2e0a15557d8f31b7d34cbe6"
     },
     {
       "path": "expedition-deployment.mjs",
@@ -665,8 +685,8 @@
     },
     {
       "path": "expedition-guild-ui.mjs",
-      "bytes": 76551,
-      "sha256": "769de547031bf6953fa69be97257d9c8d0e2a532c0fbdeebf1b6d571d3dcd8b8"
+      "bytes": 76713,
+      "sha256": "a3689d65ffd6dace060fdf72efd04e7c8e00635d88d4fe57e69e5e26cbc634bd"
     },
     {
       "path": "expedition-guild.mjs",
@@ -1310,8 +1330,8 @@
     },
     {
       "path": "expedition.css",
-      "bytes": 69975,
-      "sha256": "2bd6ffb132f94760c142cc4a4c3f13eddcdf7bceb84dababa11934f25ddfca32"
+      "bytes": 72619,
+      "sha256": "0a4ac5269283eb22757dfb2ef50c087bfb2923141690a0a5cce0ae500ac6d410"
     },
     {
       "path": "guardian-motion.css",
@@ -1326,7 +1346,7 @@
     {
       "path": "index.html",
       "bytes": 26765,
-      "sha256": "7f9a0ca40b0971b9e004f3b63179a57fb387136901139610ae596e7f1816a6e4"
+      "sha256": "3fbebb519ab8ab9c4a46b5eeaca8042a4ffe85c3ec88405cfc60896d8f95d79d"
     },
     {
       "path": "legacy.html",
