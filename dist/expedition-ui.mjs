@@ -104,6 +104,7 @@ import {personalSteps} from './expedition-personal.mjs';
 import {mountPersonalReport} from './expedition-personal-view.mjs';
 import {highlightedSteps} from './expedition-highlights.mjs';
 import {mountReplayLayout} from './expedition-replay-layout.mjs';
+import {mountReplayTransport} from './expedition-replay-transport.mjs';
 import {effectOrigins,sourceTrace} from './expedition-source-trace.mjs';
 import {supportFrame,supportMoments} from './expedition-support.mjs';
 import {trialConfig} from './expedition-data.mjs';
@@ -143,6 +144,7 @@ let archiveCapture=null;let replayMotionEpoch=0;
 let config=defaults(),selected='a',report=null,index=0,room=0,timer=null,savedA=null,pair=null,pairOrigins=[],scope='',groups=[],selectedUnit=null,originMap=new Map(),traceReturn=null,scheduleReturn=null,positionReturn=null,immunityReturn=null,waveReturn=null,mechanismReturn=null,manaRegenReturn=null,manaTimelineReturn=null;
 const holdoutHUD=document.createElement('div');holdoutHUD.id='holdout-hud';holdoutHUD.hidden=true;$('#escort-hud').before(holdoutHUD);
 const replayWorkspace=mountReplayLayout({onChange:({from,to})=>{stop();const selectedReport=report,epoch=replayMotionEpoch;if(selectedReport)requestAnimationFrame(()=>{if(epoch!==replayMotionEpoch||report!==selectedReport||document.body.dataset.view!=='replay'||$('#report').dataset.workspace!==to)return;if(to==='battle'&&from!=='battle')restartSelectedStageMotion(selectedGroup());else drawFx(stageFrame(selectedGroup()));});}});
+mountReplayTransport({root:$('#replay'),controls:$('.replay-controls'),transport:$('.replay-control-transport')});
 const personalUI=mountPersonalReport({onHeroChange:id=>{observedHero=id;syncPersonalReplay();},onEvidence:i=>{replayWorkspace.open('evidence');if(report.events[i].type==='skip'){$('#highlights-only').checked=false;$('#diagnostic').checked=true;renderJournal();}move(i);$('#detail').scrollIntoView({block:'start'});},onCamp:()=>guildUI.open()});
 const storageKey=PREPARATION_KEY;let preparationExpected=null;const preparationStatus=document.createElement('section');preparationStatus.id='preparation-status';preparationStatus.className='panel preparation-status';preparationStatus.hidden=true;preparationStatus.setAttribute('aria-live','polite');$('main').prepend(preparationStatus);
 let preparationStorage;try{preparationStorage=localStorage;}catch(error){preparationStorage={getItem(){throw error;},removeItem(){throw error;}};}

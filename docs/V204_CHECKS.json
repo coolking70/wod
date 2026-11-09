@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "sourceInputs": 1048,
+  "syntax": {
+    "JS": 884,
+    "Python": 17
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 205,
+    "checkedReferences": 243,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "Node": {
+    "tests": 125,
+    "pass": 125,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/replay-transport.test.mjs",
+    "tests/replay-motion.test.mjs",
+    "tests/guardian-motion.test.mjs",
+    "tests/ranger-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/herbalist-motion.test.mjs",
+    "tests/motion-record.test.mjs",
+    "tests/evidence-output.test.mjs",
+    "tests/stage-evidence.test.mjs"
+  ],
+  "completeAffectedGUIVersions": [
+    138,
+    173,
+    186,
+    187,
+    189,
+    196,
+    199,
+    201,
+    202,
+    203
+  ],
+  "newBrowserContexts": 6,
+  "beforeMobileScrollDelta": {
+    "1440": 0,
+    "390": -2051,
+    "320": -2122
+  },
+  "afterScrollDeltaAllZero": true,
+  "businessFourStringsAndCompleteSimulationReportsExact": true,
+  "oldAffectedBrowserAssertionsUnchanged": true,
+  "protectedInheritedFiles": 8075,
+  "logicalInheritedFiles": [
+    "/workspace/wod-delivery/v0.164-expedition-closure/wod-v164-verification.zip",
+    "/workspace/wod-delivery/v0.170-play-guide/wod-v170-verification.zip",
+    "/workspace/wod-delivery/v0.173-route-art-loading/wod-v173-verification.zip",
+    "/workspace/wod-delivery/v0.175-recorded-damage-review/wod-v175-verification.zip",
+    "/workspace/wod-delivery/v0.176-guardian-fallen-framing/wod-v176-verification.zip",
+    "/workspace/wod-delivery/v0.179-loot-receipt-milestone/wod-v179-verification.zip",
+    "/workspace/wod-delivery/v0.182-motion-evidence-milestone/wod-v182-verification.zip",
+    "/workspace/wod-delivery/v0.185-solo-experience-milestone/wod-v185-verification.zip",
+    "/workspace/wod-delivery/v0.191-solo-journey-milestone/wod-v191-focused-verification.zip",
+    "/workspace/wod-delivery/v0.194-journey-recovery-milestone/wod-v194-verification.zip",
+    "/workspace/wod-delivery/v0.195-equipment-workbench/wod-v195-focused-verification.zip",
+    "/workspace/wod-delivery/v0.196-replay-motion-lifecycle/wod-v196-focused-verification.zip",
+    "/workspace/wod-delivery/v0.197-singleplayer-motion-milestone/wod-v197-initial-full-gui-failure-corrected.zip",
+    "/workspace/wod-delivery/v0.197-singleplayer-motion-milestone/wod-v197-second-full-gui-failure.zip",
+    "/workspace/wod-delivery/v0.197-singleplayer-motion-milestone/wod-v197-verification.zip",
+    "/workspace/wod-delivery/v0.200-singleplayer-readiness-milestone/wod-v200-verification.zip"
+  ],
+  "currentCatalogue": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v17.json",
+    "bytes": 19588,
+    "sha256": "05f5c470e7b391ea5d2b21e37f3db361992d3d50fb797a076784e15d789a0db6"
+  },
+  "threeNewColdExactStorageRetirements": true,
+  "storageFreeGainBeforeNewWork": 994295808,
+  "fullNodeAndFull105GUINotRun": true,
+  "fullHistoricalCompatibilityAndAllNativeCLINotRerun": true,
+  "lastCompleteGates203": {
+    "Node": 1890,
+    "GUI": 104,
+    "CLI": 204,
+    "historyJSON": 130,
+    "historyHTML": 33
+  },
+  "canonicalOriginal200Next142Gold15225Unchanged": true,
+  "mainAndPagesUnchangedAt203": true,
+  "knownInitialInvalidGeometryUnitFailurePreserved": true,
+  "freeBytes": {
+    "/workspace": 2800816128,
+    "/tmp": 8687083520
+  }
+}

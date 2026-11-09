@@ -15,6 +15,8 @@ export function mountReplayLayout({onChange}){
  controls.insertAdjacentHTML('beforeend','<small id="replay-key-hint" class="muted replay-key-hint">用Tab或点击空白处聚焦控制栏：← / → 前后一步，空格播放 / 暂停，Home / End 到当前筛选的首末记录。各输入控件保留原按键。</small>');
  const brief=document.createElement('p');brief.id='playback-brief';brief.className='muted';q('#timeline').after(brief);
  controls.insertAdjacentHTML('beforeend','<div class="playback-options"><label><input id="theatre-mode" type="checkbox">专注战场</label><label><input id="highlights-only" type="checkbox">关键行动播放</label><label><input id="focus-action" type="checkbox" checked>突出当前行动</label><label><input id="personal-playback" type="checkbox">只看观察角色相关行动</label><small>精选保留完整行动，省略部分普通攻击与状态；完整战报仍可查看。</small></div>');
+ // Keep the original controls and handlers; the last row remains visible on narrow screens.
+ controls.append(q('.replay-control-transport'));
  const next=q('#next-actions');brief.after(next);
  q('.battle-grid').remove();
  function open(key,scroll=false){if(!panes[key])return;if(key!=='battle'){document.body.classList.remove('replay-focus');q('#theatre-mode').checked=false;}onChange({from:root.dataset.workspace||null,to:key});for(const [id,el] of Object.entries(panes))el.hidden=id!==key;root.dataset.workspace=key;for(const b of nav.querySelectorAll('button')){b.classList.toggle('active',b.dataset.replayPane===key);b.setAttribute('aria-pressed',String(b.dataset.replayPane===key));}if(scroll)nav.scrollIntoView({block:'start'});}

@@ -1,3 +1,5 @@
+> v0.204手机战场播放：在敌军处点击播放，390/320px回滚-2051/-2122px降为0；原播放/前后步保留在战场上方，所有设置仍可滚动访问。125相关Node、10套完整旧GUI、6个新浏览器上下文通过；main与Pages保持v0.203。三旧验收包精确字节持久差分+双解码器冷恢复后退役，CAT17及字面188基包必须保留。 见[阶段说明](docs/V204_MOBILE_PLAYBACK.md)、[云交接](docs/HANDOFF_CLOUD_V204.md)。
+
 > v0.203完整节点：肖像表无损WebP与PNG回退，首屏肖像编码量6093325→4212208字节，少1881117字节；三宽度浏览器RGBA和整屏PNG精确一致。整合地图目标与损坏公会恢复，1890Node、104套GUI、204份CLI原字节、130历史JSON/33HTML通过。显式顶层采集元数据恢复保持旧26场景并增加6场景。main/Pages实际集成与部署SHA以云交付及release.json为准；补给经济待定。 见[节点说明](docs/V203_PORTRAIT_DELIVERY_MILESTONE.md)、[云交接](docs/HANDOFF_CLOUD_V203.md)。
 
 > v0.202：单次采集目录、排他写入和原子检查点发布，覆盖322个入口；修复损坏公会档从地图无法回营检查，增加原生SVG恢复指引。1890项Node全过，8套相关完整GUI全过；未跑全103套与完整历史兼容门禁。main和Pages仍v0.200，永久补给待决定。 见[说明](docs/V202_SAFE_CAPTURE_RECOVERY.md)、[云交接](docs/HANDOFF_CLOUD_V202.md)。
