@@ -1,0 +1,280 @@
+{
+  "passed": true,
+  "version": "0.201",
+  "baselineCommit": "e17f29abb9fc2e6ee56c9128691f6f296df96534",
+  "mainUnchanged": "e17f29abb9fc2e6ee56c9128691f6f296df96534",
+  "PagesUnchanged": "deb6dde00cbfcc2fc47d5c2405da344aa9ca8f35",
+  "Node": {
+    "tests": 74,
+    "pass": 74,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/adventure-entry.test.mjs",
+    "tests/v108.test.mjs",
+    "tests/exploration-index.test.mjs",
+    "tests/route-focus.test.mjs",
+    "tests/returning-camp.test.mjs",
+    "tests/journey-followthrough.test.mjs",
+    "tests/departure-review.test.mjs",
+    "tests/companion-workbench.test.mjs"
+  ],
+  "newNodeTests": 8,
+  "fullNode1875NotRun": true,
+  "browser": {
+    "passed": true,
+    "total": 7,
+    "full102NotRun": true,
+    "versions": [
+      137,
+      156,
+      173,
+      186,
+      190,
+      193,
+      201
+    ],
+    "originalCheckpointAttempts": 9,
+    "newHarnessFailuresPreserved": 2,
+    "older6GUIAssertionsUnmodified": true,
+    "originalFreshNullGuildAndSessionOnlyUIStateCorrectionsDocumented": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 203,
+    "checkedReferences": 237,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "JS": 874,
+    "Python": 17,
+    "sourceInputs": 1033
+  },
+  "runtimeDelta": {
+    "passed": true,
+    "changedOld": [
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/run-browser-acceptance.mjs"
+    ],
+    "new": [
+      "dist/assets/map-chart-v201.svg",
+      "dist/expedition-adventure-entry.mjs",
+      "scripts/browser-v201.cjs",
+      "tests/adventure-entry.test.mjs"
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v201/browser-final/departure-final-four-raw-keys.json": "3ddc699a4b3b430302e24e160cf2b6bed71ea7febcb099f662f1f408e69a8824",
+    "/workspace/wod-evidence/v201/browser-final/departure-final-campaign.json": "369da12bdf2313cae99672eb1199a59b3d5d5acd95cb943667c3d931b28aec81"
+  },
+  "longTermCanonicalFourStringsAndOriginalCampaignExact200Next142": true,
+  "separateFreshCampaignActualTwoWinsSixAliveNoBalanceClaim": {
+    "independentFreshCampaignOnly": true,
+    "runs": [
+      {
+        "id": 1,
+        "route": "tutorial",
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 1,
+          "gold": 40,
+          "xp": 10,
+          "firstClear": true,
+          "loot": []
+        },
+        "next": 2,
+        "actualNextStep": "classic",
+        "wholeReportAndOneClaimExact": true
+      },
+      {
+        "id": 2,
+        "route": "classic",
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 3,
+          "gold": 120,
+          "xp": 45,
+          "firstClear": true,
+          "loot": [
+            "reliquaryshield"
+          ]
+        },
+        "next": 3,
+        "actualNextStep": "growth",
+        "wholeReportAndOneClaimExact": true
+      }
+    ],
+    "normalIds1And2Only": true,
+    "exportChecksumAndReloadExact": true,
+    "longTermCanonicalRemains141ClaimedNext142": true
+  },
+  "SVG": {
+    "passed": true,
+    "productionSVGBytes": 1740,
+    "dimensionNormalizedSVGControlBytes": 1766,
+    "png1000ControlBytes": 172291,
+    "productionSVGUnchangedSHA256": "38ef8b5c2c9a9654a4d03b9cdea2b32a276bd95c22cc9ea533cdd6b2b339b4e9",
+    "PNGControlSHA256": "71edf2a5a59fb780be1045bd835e3ca9c2d42f0d47e6f0ab76aeb2441bc8799e",
+    "naturalDimensionsBoth1000x420": true,
+    "firstComparisonHadDefaultSVGNatural300x126AndCannotSupportSpeedComparison": true,
+    "initialDiagnosticRetained": "/workspace/wod-evidence/v201/svg-comparison.json",
+    "SVGControlOnlyAddsExplicitWidthHeightToSameViewBoxArtwork": true,
+    "memoryBlobDecodeOnlyNotNetworkOrMobileBenchmark": [
+      {
+        "kind": "svg",
+        "trial": 0,
+        "decodeMs": 11.399999976158142,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "png",
+        "trial": 0,
+        "decodeMs": 5.5999999940395355,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "png",
+        "trial": 1,
+        "decodeMs": 3.9000000059604645,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "svg",
+        "trial": 1,
+        "decodeMs": 1.699999988079071,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "svg",
+        "trial": 2,
+        "decodeMs": 1.5999999940395355,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "png",
+        "trial": 2,
+        "decodeMs": 4.100000023841858,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "png",
+        "trial": 3,
+        "decodeMs": 4,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "svg",
+        "trial": 3,
+        "decodeMs": 1.399999976158142,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "svg",
+        "trial": 4,
+        "decodeMs": 1.2000000178813934,
+        "width": 1000,
+        "height": 420
+      },
+      {
+        "kind": "png",
+        "trial": 4,
+        "decodeMs": 3.9000000059604645,
+        "width": 1000,
+        "height": 420
+      }
+    ],
+    "noUniversalOrPhotorealisticEquivalenceClaim": true
+  },
+  "network": [
+    {
+      "width": 1440,
+      "beforeMapTotalAssetTransfer": 9106069,
+      "afterMapTotalAssetTransfer": 9108109,
+      "differenceBytes": 2040,
+      "includesUnchangedBootPortraits": true
+    },
+    {
+      "width": 390,
+      "beforeMapTotalAssetTransfer": 9106069,
+      "afterMapTotalAssetTransfer": 6097776,
+      "differenceBytes": -3008293,
+      "includesUnchangedBootPortraits": true
+    },
+    {
+      "width": 320,
+      "beforeMapTotalAssetTransfer": 9106069,
+      "afterMapTotalAssetTransfer": 6097776,
+      "differenceBytes": -3008293,
+      "includesUnchangedBootPortraits": true
+    }
+  ],
+  "inheritedProtection": {
+    "totalRows": 5805,
+    "physicalSHA256ModeNsVerified": 5793,
+    "logicalMasters": 12,
+    "full200ColdProofReusedOnlyAfterAllInputsUnchanged": true
+  },
+  "currentSixExploratoryPNGOriginalBytesOverwritten": {
+    "actual": true,
+    "affectedDirectory": "/workspace/wod-evidence/v201/before-map-visible",
+    "files": [
+      "map-fresh-1440.png",
+      "map-fresh-390.png",
+      "map-fresh-320.png",
+      "map-returning-1440.png",
+      "map-returning-390.png",
+      "map-returning-320.png",
+      "metrics.json"
+    ],
+    "originalSixPNGBytesNoLongerAvailableInFilesystem": true,
+    "originalNumericRowsPreservedInOriginalStdout": {
+      "path": "/workspace/wod-work/v201/before-map-visible.log",
+      "sha256": "84bdf2c96a6bf147ee1be7e1f9de4596b4b23da6a9c00cc900f027af980a33ab"
+    },
+    "overwritingRerunCurrentPrototypeRetained": {
+      "log": "/workspace/wod-work/v201/after-exploration-attempt.log",
+      "directory": "/workspace/wod-evidence/v201/before-map-visible"
+    },
+    "earlierHiddenMapProbeDirectoryUntouched": "/workspace/wod-evidence/v201/before",
+    "v200SourceMainPagesAndAllEarlierSealedEvidenceUnaffected": true,
+    "rebaselineWillUseImmutableV200CommitNewDirectoryAndPort": true,
+    "noClaimOfByteGapRepair": true
+  },
+  "cold200RebaselineRepeatsAll6OriginalNumericRowsButNotOriginalImages": true,
+  "overwriteGuardsExpectedRefusalsPassed": true,
+  "nextMainWindow": [
+    203,
+    205
+  ],
+  "permanentSupplyPending": true,
+  "publicHTTPProxy403RestrictionNotRetried": true,
+  "oldSiteActualExportMigrationUnverified": true,
+  "artNoNewGIFGeneratedOptionalExistingStudyUnchanged": true,
+  "capacity": {
+    "rawBytes": 175206044,
+    "checkpointBytes": 37460072,
+    "freeBytes": {
+      "/workspace": 2122874880,
+      "/tmp": 8703348736
+    }
+  },
+  "currentEvidenceSameCloudMainNotOffHostBackup": true
+}
