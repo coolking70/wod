@@ -1,0 +1,4368 @@
+{
+  "contentVersion": "0.17.0",
+  "ruleset": "original-wod-inspired-0.40.0",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "rows": [
+    {
+      "profile": "baseline",
+      "summary": {
+        "wins": 16,
+        "full": 0,
+        "meanHealing": 441
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 4,
+          "hp": 360,
+          "mp": 175,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 573,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 464
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 496
+            }
+          ]
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 3,
+          "hp": 308,
+          "mp": 175,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 651,
+          "healActions": 10,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 228
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 5,
+              "eventId": 483
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 6,
+              "eventId": 514
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 201,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 231,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 263
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 266
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 4,
+              "eventId": 336
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 1,
+              "eventId": 396
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 3,
+              "eventId": 437
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 3,
+              "eventId": 441
+            }
+          ]
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 188,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 772,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 209
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 3,
+              "eventId": 488
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 7,
+              "eventId": 627
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 8,
+              "eventId": 650
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 8,
+              "eventId": 654
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 10,
+              "eventId": 684
+            }
+          ]
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 4,
+          "hp": 277,
+          "mp": 208,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 647,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 314
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 7,
+              "eventId": 604
+            }
+          ]
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 148,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 448,
+          "healActions": 7,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 319
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 1,
+              "eventId": 399
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 2,
+              "eventId": 427
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 5,
+              "eventId": 513
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 6,
+              "eventId": 535
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 7,
+              "eventId": 559
+            }
+          ]
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 4,
+          "hp": 345,
+          "mp": 159,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 657,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 224
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 6,
+              "eventId": 546
+            }
+          ]
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 191,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 116,
+          "healActions": 2,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 220
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 256
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 3,
+              "eventId": 384
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 5,
+              "eventId": 432
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 7,
+              "eventId": 471
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 8,
+              "eventId": 490
+            }
+          ]
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 2,
+          "hp": 129,
+          "mp": 163,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 695,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 1,
+              "eventId": 351
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 1,
+              "eventId": 366
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 3,
+              "eventId": 429
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 13,
+              "eventId": 679
+            }
+          ]
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 185,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 194,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 305
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 313
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 1,
+              "eventId": 380
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 3,
+              "eventId": 431
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 479
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 5,
+              "eventId": 486
+            }
+          ]
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 174,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 124,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 225
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 4,
+              "eventId": 292
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 445
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 472
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 9,
+              "eventId": 564
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 11,
+              "eventId": 589
+            }
+          ]
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 5,
+          "hp": 255,
+          "mp": 181,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 475,
+          "healActions": 8,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 5,
+              "eventId": 533
+            }
+          ]
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 230,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 112,
+          "healActions": 2,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 0,
+              "round": 2,
+              "eventId": 86
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 207
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 212
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 248
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 4,
+              "eventId": 277
+            },
+            {
+              "hero": "b",
+              "room": 1,
+              "round": 5,
+              "eventId": 290
+            }
+          ]
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 244,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 151,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "b",
+              "room": 0,
+              "round": 3,
+              "eventId": 116
+            },
+            {
+              "hero": "e",
+              "room": 0,
+              "round": 4,
+              "eventId": 154
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 1,
+              "eventId": 199
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 231
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 261
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 6,
+              "eventId": 312
+            }
+          ]
+        },
+        {
+          "seed": 15,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 202,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 656,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "b",
+              "room": 0,
+              "round": 3,
+              "eventId": 115
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 1,
+              "eventId": 204
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 5,
+              "eventId": 347
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 3,
+              "eventId": 607
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 5,
+              "eventId": 659
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 6,
+              "eventId": 675
+            }
+          ]
+        },
+        {
+          "seed": 16,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 205,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 11
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 363,
+          "healActions": 6,
+          "downs": [
+            {
+              "hero": "b",
+              "room": 0,
+              "round": 3,
+              "eventId": 111
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 245
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 6,
+              "eventId": 377
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 7,
+              "eventId": 406
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 3,
+              "eventId": 476
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 4,
+              "eventId": 495
+            }
+          ]
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 3,
+          "hp": 179,
+          "mp": 174,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 723,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 272
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 277
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 8,
+              "eventId": 591
+            }
+          ]
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 3,
+          "hp": 97,
+          "mp": 202,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 211,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 236
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 267
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 4,
+              "eventId": 422
+            }
+          ]
+        },
+        {
+          "seed": 19,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 196,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 235,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 255
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 289
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 1,
+              "eventId": 329
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 433
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 5,
+              "eventId": 443
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 6,
+              "eventId": 460
+            }
+          ]
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 5,
+          "hp": 298,
+          "mp": 185,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 725,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 259
+            }
+          ]
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 2,
+          "hp": 128,
+          "mp": 190,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 535,
+          "healActions": 8,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 294
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 5,
+              "eventId": 527
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 6,
+              "eventId": 555
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 9,
+              "eventId": 626
+            }
+          ]
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 4,
+          "hp": 276,
+          "mp": 177,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 240,
+          "healActions": 5,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 320
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 4,
+              "eventId": 499
+            }
+          ]
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 4,
+          "hp": 168,
+          "mp": 166,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 371,
+          "healActions": 7,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 3,
+              "eventId": 446
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 503
+            }
+          ]
+        },
+        {
+          "seed": 24,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 240,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 117,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 0,
+              "round": 2,
+              "eventId": 72
+            },
+            {
+              "hero": "b",
+              "room": 0,
+              "round": 3,
+              "eventId": 114
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 190
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 228
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 4,
+              "eventId": 249
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 6,
+              "eventId": 287
+            }
+          ]
+        },
+        {
+          "seed": 25,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 170,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 299,
+          "healActions": 5,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 306
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 1,
+              "eventId": 353
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 2,
+              "eventId": 387
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 462
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 6,
+              "eventId": 494
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 7,
+              "eventId": 506
+            }
+          ]
+        },
+        {
+          "seed": 26,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 177,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 249,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 1,
+              "eventId": 348
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 468
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 4,
+              "eventId": 471
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 4,
+              "eventId": 475
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 495
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 7,
+              "eventId": 524
+            }
+          ]
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 5,
+          "hp": 420,
+          "mp": 149,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 597,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 2,
+              "eventId": 405
+            }
+          ]
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 4,
+          "hp": 305,
+          "mp": 192,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 687,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 3,
+              "eventId": 455
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 4,
+              "eventId": 494
+            }
+          ]
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 5,
+          "hp": 374,
+          "mp": 181,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 636,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 240
+            }
+          ]
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 3,
+          "hp": 179,
+          "mp": 165,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 532,
+          "healActions": 8,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 287
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 3,
+              "eventId": 434
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 6,
+              "eventId": 524
+            }
+          ]
+        },
+        {
+          "seed": 31,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 173,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 720,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 229
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 2,
+              "eventId": 373
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 5,
+              "eventId": 480
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 9,
+              "eventId": 576
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 12,
+              "eventId": 635
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 13,
+              "eventId": 647
+            }
+          ]
+        },
+        {
+          "seed": 32,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 172,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 379,
+          "healActions": 6,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 3,
+              "eventId": 444
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 3,
+              "eventId": 449
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 4,
+              "eventId": 484
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 7,
+              "eventId": 553
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 8,
+              "eventId": 572
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 9,
+              "eventId": 589
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "formation",
+      "summary": {
+        "wins": 31,
+        "full": 20,
+        "meanHealing": 350
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 417,
+          "mp": 167,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 335,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 507,
+          "mp": 180,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 237,
+          "healActions": 6,
+          "downs": []
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 144,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 473,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 5,
+          "hp": 473,
+          "mp": 164,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 365,
+          "healActions": 8,
+          "downs": [
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 7,
+              "eventId": 620
+            }
+          ]
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 480,
+          "mp": 153,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 404,
+          "healActions": 10,
+          "downs": []
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 480,
+          "mp": 154,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 395,
+          "healActions": 10,
+          "downs": []
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 164,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 325,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 173,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 316,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 5,
+          "hp": 423,
+          "mp": 156,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 435,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 6,
+              "eventId": 543
+            }
+          ]
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 180,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 329,
+          "healActions": 8,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 283
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 1,
+              "eventId": 396
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 3,
+              "eventId": 460
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 5,
+              "eventId": 519
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 6,
+              "eventId": 543
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 7,
+              "eventId": 555
+            }
+          ]
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 465,
+          "mp": 169,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 337,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 512,
+          "mp": 171,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 272,
+          "healActions": 7,
+          "downs": []
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 5,
+          "hp": 399,
+          "mp": 165,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 371,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 6,
+              "eventId": 584
+            }
+          ]
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 5,
+          "hp": 436,
+          "mp": 161,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 422,
+          "healActions": 10,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 6,
+              "eventId": 591
+            }
+          ]
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 512,
+          "mp": 171,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 335,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 5,
+          "hp": 382,
+          "mp": 155,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 380,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 3,
+              "eventId": 463
+            }
+          ]
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 427,
+          "mp": 166,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 319,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 483,
+          "mp": 189,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 136,
+          "healActions": 3,
+          "downs": []
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 5,
+          "hp": 406,
+          "mp": 155,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 390,
+          "healActions": 10,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 5,
+              "eventId": 544
+            }
+          ]
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 4,
+          "hp": 269,
+          "mp": 168,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 445,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 4,
+              "eventId": 301
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 9,
+              "eventId": 622
+            }
+          ]
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 424,
+          "mp": 177,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 286,
+          "healActions": 7,
+          "downs": []
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 5,
+          "hp": 395,
+          "mp": 149,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 497,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 6,
+              "eventId": 579
+            }
+          ]
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 166,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 350,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 442,
+          "mp": 173,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 284,
+          "healActions": 7,
+          "downs": []
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 5,
+          "hp": 491,
+          "mp": 156,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 400,
+          "healActions": 10,
+          "downs": [
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 7,
+              "eventId": 573
+            }
+          ]
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 516,
+          "mp": 178,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 307,
+          "healActions": 7,
+          "downs": []
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 3,
+          "hp": 248,
+          "mp": 160,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 424,
+          "healActions": 10,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 466
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 9,
+              "eventId": 630
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 9,
+              "eventId": 634
+            }
+          ]
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 533,
+          "mp": 166,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 311,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 473,
+          "mp": 153,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 404,
+          "healActions": 10,
+          "downs": []
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 417,
+          "mp": 176,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 273,
+          "healActions": 7,
+          "downs": []
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 4,
+          "hp": 361,
+          "mp": 163,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 356,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 542
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 5,
+              "eventId": 552
+            }
+          ]
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 464,
+          "mp": 182,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 277,
+          "healActions": 7,
+          "downs": []
+        }
+      ]
+    },
+    {
+      "profile": "medic",
+      "summary": {
+        "wins": 10,
+        "full": 0,
+        "meanHealing": 426
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 4,
+          "hp": 368,
+          "mp": 175,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 589,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 464
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 496
+            }
+          ]
+        },
+        {
+          "seed": 2,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 209,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 148,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 206
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 209
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 265
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 5,
+              "eventId": 310
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 2,
+              "eventId": 356
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 2,
+              "eventId": 367
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 3,
+          "hp": 149,
+          "mp": 194,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 797,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 297
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 6,
+              "eventId": 569
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 9,
+              "eventId": 668
+            }
+          ]
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 188,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 810,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 209
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 3,
+              "eventId": 488
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 7,
+              "eventId": 627
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 8,
+              "eventId": 650
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 8,
+              "eventId": 654
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 10,
+              "eventId": 684
+            }
+          ]
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 190,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 374,
+          "healActions": 7,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 314
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 1,
+              "eventId": 392
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 3,
+              "eventId": 460
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 4,
+              "eventId": 476
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 6,
+              "eventId": 523
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 7,
+              "eventId": 541
+            }
+          ]
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 164,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 782,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 319
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 518
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 7,
+              "eventId": 605
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 9,
+              "eventId": 663
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 10,
+              "eventId": 681
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 11,
+              "eventId": 701
+            }
+          ]
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 2,
+          "hp": 108,
+          "mp": 196,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 601,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 220
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 259
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 2,
+              "eventId": 433
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 12,
+              "eventId": 687
+            }
+          ]
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 191,
+          "supplies": {
+            "herb": 9,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 116,
+          "healActions": 2,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 220
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 256
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 3,
+              "eventId": 384
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 5,
+              "eventId": 432
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 7,
+              "eventId": 471
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 8,
+              "eventId": 490
+            }
+          ]
+        },
+        {
+          "seed": 9,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 230,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 159,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 0,
+              "round": 2,
+              "eventId": 71
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 217
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 225
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 228
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 4,
+              "eventId": 281
+            },
+            {
+              "hero": "b",
+              "room": 1,
+              "round": 6,
+              "eventId": 310
+            }
+          ]
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 161,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 221,
+          "healActions": 5,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 297
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 308
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 4,
+              "eventId": 497
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 501
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 8,
+              "eventId": 589
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 9,
+              "eventId": 598
+            }
+          ]
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 174,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 124,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 225
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 4,
+              "eventId": 292
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 445
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 472
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 9,
+              "eventId": 564
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 11,
+              "eventId": 589
+            }
+          ]
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 5,
+          "hp": 370,
+          "mp": 160,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 721,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 4,
+              "eventId": 543
+            }
+          ]
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 230,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 124,
+          "healActions": 2,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 0,
+              "round": 2,
+              "eventId": 86
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 207
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 212
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 248
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 4,
+              "eventId": 277
+            },
+            {
+              "hero": "b",
+              "room": 1,
+              "round": 5,
+              "eventId": 290
+            }
+          ]
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 187,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 227,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 220
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 2,
+              "eventId": 379
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 5,
+              "eventId": 478
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 485
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 10,
+              "eventId": 570
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 11,
+              "eventId": 583
+            }
+          ]
+        },
+        {
+          "seed": 15,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 205,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 674,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "b",
+              "room": 0,
+              "round": 3,
+              "eventId": 115
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 1,
+              "eventId": 204
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 5,
+              "eventId": 347
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 2,
+              "eventId": 590
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 3,
+              "eventId": 619
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 5,
+              "eventId": 652
+            }
+          ]
+        },
+        {
+          "seed": 16,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 191,
+          "supplies": {
+            "herb": 4,
+            "rune": 5,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 450,
+          "healActions": 7,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 218
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 5,
+              "eventId": 339
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 2,
+              "eventId": 425
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 2,
+              "eventId": 436
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 4,
+              "eventId": 471
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 6,
+              "eventId": 507
+            }
+          ]
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 4,
+          "hp": 269,
+          "mp": 190,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 721,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 263
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 4,
+              "eventId": 471
+            }
+          ]
+        },
+        {
+          "seed": 18,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 204,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 233,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 234
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 237
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 2,
+              "eventId": 367
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 3,
+              "eventId": 385
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 5,
+              "eventId": 434
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 6,
+              "eventId": 449
+            }
+          ]
+        },
+        {
+          "seed": 19,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 173,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 572,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 1,
+              "eventId": 390
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 4,
+              "eventId": 518
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 540
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 6,
+              "eventId": 571
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 8,
+              "eventId": 610
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 9,
+              "eventId": 627
+            }
+          ]
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 4,
+          "hp": 301,
+          "mp": 186,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 564,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 258
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 2,
+              "eventId": 460
+            }
+          ]
+        },
+        {
+          "seed": 21,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 210,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 202,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "b",
+              "room": 0,
+              "round": 3,
+              "eventId": 115
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 283
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 286
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 4,
+              "eventId": 311
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 7,
+              "eventId": 384
+            },
+            {
+              "hero": "e",
+              "room": 1,
+              "round": 9,
+              "eventId": 412
+            }
+          ]
+        },
+        {
+          "seed": 22,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 159,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 321,
+          "healActions": 6,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 323
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 4,
+              "eventId": 347
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 2,
+              "eventId": 417
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 4,
+              "eventId": 463
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 7,
+              "eventId": 531
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 8,
+              "eventId": 554
+            }
+          ]
+        },
+        {
+          "seed": 23,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 185,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 151,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 259
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 297
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 4,
+              "eventId": 334
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 1,
+              "eventId": 401
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 2,
+              "eventId": 424
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 2,
+              "eventId": 427
+            }
+          ]
+        },
+        {
+          "seed": 24,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 180,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 267,
+          "healActions": 4,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 257
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 3,
+              "eventId": 384
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 3,
+              "eventId": 390
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 4,
+              "eventId": 416
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 6,
+              "eventId": 450
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 7,
+              "eventId": 462
+            }
+          ]
+        },
+        {
+          "seed": 25,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 180,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 488,
+          "healActions": 8,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 251
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 3,
+              "eventId": 448
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 6,
+              "eventId": 545
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 7,
+              "eventId": 575
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 7,
+              "eventId": 579
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 8,
+              "eventId": 594
+            }
+          ]
+        },
+        {
+          "seed": 26,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 163,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 346,
+          "healActions": 6,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 3,
+              "eventId": 309
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 2,
+              "eventId": 404
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 2,
+              "eventId": 414
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 6,
+              "eventId": 515
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 7,
+              "eventId": 540
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 9,
+              "eventId": 567
+            }
+          ]
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 5,
+          "hp": 446,
+          "mp": 153,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 610,
+          "healActions": 9,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 3,
+              "eventId": 454
+            }
+          ]
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 5,
+          "hp": 486,
+          "mp": 164,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 694,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 5,
+              "eventId": 540
+            }
+          ]
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 5,
+          "hp": 329,
+          "mp": 166,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 609,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 276
+            }
+          ]
+        },
+        {
+          "seed": 30,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 186,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 269,
+          "healActions": 5,
+          "downs": [
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 234
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 3,
+              "eventId": 280
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 4,
+              "eventId": 307
+            },
+            {
+              "hero": "a",
+              "room": 2,
+              "round": 3,
+              "eventId": 392
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 4,
+              "eventId": 416
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 4,
+              "eventId": 422
+            }
+          ]
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 3,
+          "hp": 199,
+          "mp": 147,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 550,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 3,
+              "eventId": 306
+            },
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 4,
+              "eventId": 502
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 7,
+              "eventId": 598
+            }
+          ]
+        },
+        {
+          "seed": 32,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 230,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 105,
+          "healActions": 3,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 0,
+              "round": 3,
+              "eventId": 120
+            },
+            {
+              "hero": "c",
+              "room": 1,
+              "round": 2,
+              "eventId": 240
+            },
+            {
+              "hero": "f",
+              "room": 1,
+              "round": 2,
+              "eventId": 243
+            },
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 246
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 4,
+              "eventId": 296
+            },
+            {
+              "hero": "b",
+              "room": 1,
+              "round": 5,
+              "eventId": 309
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "combined",
+      "summary": {
+        "wins": 31,
+        "full": 26,
+        "meanHealing": 410
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 160,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 387,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 148,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 440,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 470,
+          "mp": 164,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 365,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 461,
+          "mp": 153,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 443,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 144,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 450,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 548,
+          "mp": 163,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 363,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 530,
+          "mp": 151,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 426,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 173,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 361,
+          "healActions": 8,
+          "downs": []
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 487,
+          "mp": 153,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 497,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 4,
+          "hp": 317,
+          "mp": 165,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 492,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 3,
+              "eventId": 470
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 6,
+              "eventId": 571
+            }
+          ]
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 462,
+          "mp": 159,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 370,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 543,
+          "mp": 161,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 375,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 533,
+          "mp": 168,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 393,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 531,
+          "mp": 159,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 393,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 5,
+          "hp": 480,
+          "mp": 157,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 378,
+          "healActions": 10,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 6,
+              "eventId": 542
+            }
+          ]
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 417,
+          "mp": 147,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 382,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 5,
+          "hp": 443,
+          "mp": 148,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 433,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 2,
+              "eventId": 413
+            }
+          ]
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 538,
+          "mp": 148,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 407,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 454,
+          "mp": 156,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 392,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 532,
+          "mp": 153,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 467,
+          "healActions": 10,
+          "downs": []
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 5,
+          "hp": 443,
+          "mp": 167,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 308,
+          "healActions": 8,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 5,
+              "eventId": 542
+            }
+          ]
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 472,
+          "mp": 175,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 476,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 485,
+          "mp": 152,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 363,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 555,
+          "mp": 160,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 363,
+          "healActions": 9,
+          "downs": []
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 164,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 366,
+          "healActions": 10,
+          "downs": []
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 510,
+          "mp": 150,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 446,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 473,
+          "mp": 154,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 425,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 508,
+          "mp": 152,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 453,
+          "healActions": 11,
+          "downs": []
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 155,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 419,
+          "healActions": 10,
+          "downs": []
+        },
+        {
+          "seed": 30,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 168,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 469,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 1,
+              "round": 2,
+              "eventId": 214
+            },
+            {
+              "hero": "a",
+              "room": 1,
+              "round": 4,
+              "eventId": 292
+            },
+            {
+              "hero": "c",
+              "room": 2,
+              "round": 3,
+              "eventId": 440
+            },
+            {
+              "hero": "b",
+              "room": 2,
+              "round": 6,
+              "eventId": 508
+            },
+            {
+              "hero": "f",
+              "room": 2,
+              "round": 7,
+              "eventId": 540
+            },
+            {
+              "hero": "e",
+              "room": 2,
+              "round": 8,
+              "eventId": 553
+            }
+          ]
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 5,
+          "hp": 469,
+          "mp": 153,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 439,
+          "healActions": 11,
+          "downs": [
+            {
+              "hero": "d",
+              "room": 2,
+              "round": 6,
+              "eventId": 584
+            }
+          ]
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 514,
+          "mp": 163,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "healing": 368,
+          "healActions": 9,
+          "downs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "version": 180,
+  "sourceReportId": 131,
+  "sourceReportSHA256": "891f7d5b989bb4db7cb6df0d98ffb8ab7459a720c8cb848348b18517b05ed80c",
+  "sourceEvents": [
+    3,
+    4
+  ],
+  "skill": "灵感启蒙",
+  "plan": {
+    "id": "e",
+    "name": "塞恩",
+    "settled": "idle",
+    "mode": "strum",
+    "beats": [
+      {
+        "eventId": 3,
+        "pose": "prepare",
+        "label": "施放「灵感启蒙」"
+      },
+      {
+        "eventId": 4,
+        "pose": "strum",
+        "label": "已记录「灵感启蒙」组件"
+      }
+    ],
+    "sourceEvents": [
+      3,
+      4
+    ],
+    "label": "施放「灵感启蒙」 → 已记录「灵感启蒙」组件",
+    "rule": "携乐器吟游者用同一原创关节模型表现已记录的施放、效果组件、心理攻击、受击和倒下。同组一次施放的多位目标或多个组件只演一次拨弦，逐条诊断仅示意当前记录，不代表额外行动或额外支援；待生效组件不画已生效的余音。图形留在本人卡片内，不新增弹道、命中或移动。数值与目标仍显示原步快照，900毫秒是演出节奏而非战斗时间；暂停及减少动态收束到本步存活或倒下姿态。"
+  },
+  "keyframes": {
+    "duration": 900,
+    "animated": true,
+    "parts": {
+      "root": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "torso": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-4deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "head": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-5deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(2deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "luteArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(-3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "luteHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(1deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "strumArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-18deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(8deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "strumHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-10deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(9deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legL": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legR": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "resonance": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 0,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0.75
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          }
+        ]
+      }
+    }
+  },
+  "nativeDurationMs": 900,
+  "GIFDurationMs": 1100,
+  "sourceModuleSHA256": "b7814344aa8e0c2f26e4bf592dd001986f5f35e502d55c3c97512e85bdb231c5",
+  "frozenStyleSHA256": "539dd298295b1b42c2a01dd79c816cffbb1ef432f8edfb11e488090b648565af",
+  "frames": [
+    {
+      "frame": 0,
+      "alphaBBox": [
+        77,
+        48,
+        190,
+        223
+      ],
+      "RGBAFrameSHA256": "50b6f8413272a33316098f5f6eb566aff2f80b09918835a1168eb35effc4643c",
+      "durationMs": 120,
+      "nativeSampleMs": 0
+    },
+    {
+      "frame": 1,
+      "alphaBBox": [
+        77,
+        48,
+        188,
+        223
+      ],
+      "RGBAFrameSHA256": "21f702644f68aa203dedbbd366cedf165642af2d7f9103a4025ec2e2e84a002f",
+      "durationMs": 100,
+      "nativeSampleMs": 120
+    },
+    {
+      "frame": 2,
+      "alphaBBox": [
+        77,
+        48,
+        186,
+        223
+      ],
+      "RGBAFrameSHA256": "967dc980df6e53132d99d059116a0f80635ca20ca69bf34a715c9e541c5d8fb8",
+      "durationMs": 110,
+      "nativeSampleMs": 225
+    },
+    {
+      "frame": 3,
+      "alphaBBox": [
+        77,
+        48,
+        200,
+        223
+      ],
+      "RGBAFrameSHA256": "25c3c7b24fc937437b629f2710e1e9d9e11ddedc8d519c0b53c4900d65b794e5",
+      "durationMs": 120,
+      "nativeSampleMs": 330
+    },
+    {
+      "frame": 4,
+      "alphaBBox": [
+        77,
+        47,
+        199,
+        223
+      ],
+      "RGBAFrameSHA256": "2345437e26bd75f212548966893efb294ddc6df0cf85389edc79ff332588b2b7",
+      "durationMs": 150,
+      "nativeSampleMs": 450
+    },
+    {
+      "frame": 5,
+      "alphaBBox": [
+        77,
+        48,
+        198,
+        223
+      ],
+      "RGBAFrameSHA256": "e46a2a77cda24aa148637a3290244b40559d4da5981f17682d30d903dfbaed84",
+      "durationMs": 150,
+      "nativeSampleMs": 600
+    },
+    {
+      "frame": 6,
+      "alphaBBox": [
+        77,
+        48,
+        197,
+        223
+      ],
+      "RGBAFrameSHA256": "7921f80d83e6aaa53ccd85f752f76f7e02ef3e5034eb4966721ab1cd8c1e296e",
+      "durationMs": 130,
+      "nativeSampleMs": 750
+    },
+    {
+      "frame": 7,
+      "alphaBBox": [
+        77,
+        48,
+        194,
+        223
+      ],
+      "RGBAFrameSHA256": "58a59f71f77944d6ebc6e812ab0be9bb91f4b1757a2e9253571400ed26849d62",
+      "durationMs": 220,
+      "nativeSampleMs": 880
+    }
+  ],
+  "files": [
+    {
+      "url": "../assets/studies/v180-bard-strum.gif",
+      "bytes": 59664,
+      "sha256": "d9612894478757a6b255c3c7cfaf5f29d7110909bcfdc8b3fbca6da7a18a28cd"
+    },
+    {
+      "url": "../assets/studies/v180-bard-strum-sheet.png",
+      "bytes": 153318,
+      "sha256": "97d600bf7629a67de1b64b5c53377bb49ae68d35fbb1c4834c283e97021f5786"
+    },
+    {
+      "url": "../assets/studies/v180-bard-strum-poster.png",
+      "bytes": 18746,
+      "sha256": "f16c6a8b417fd53af81aadb78e3a9005525b03219d462a476e731770c784fc18"
+    }
+  ],
+  "limits": [
+    "NativeSVG rendered andencoded locally, no newimagegen.",
+    "GIF1100ms includes220ms lastsamplehold andcentisecondrounding; eightframes approximate native900ms action, not exactseekable playback.",
+    "Shared256color palette andbinaryalpha losepartialtransparency; PNGsheet preservesfullRGBA.",
+    "Onlypredeclared firstsupport131record3/4; productioncurrentstep usesnativeSVG ratherthanthisindependentGIF."
+  ]
+}

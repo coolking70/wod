@@ -1,13 +1,23 @@
 {
-  "version": "0.206",
-  "sourceCommit": "a854ce432e807320a833f1f82ac1d07fe04cb95f",
-  "sourceTree": "ff368c77e062eef8f81be360541279b0a0a4c8f0",
-  "siteRuntimePrefix": "releases/v0.206/",
+  "version": "0.209",
+  "sourceCommit": "ce1b75d0243d8bd8846d0495f04ffc35e8e687d2",
+  "sourceTree": "d89e2a667fb2d351380a66df9aa27068cc76eb2d",
+  "siteRuntimePrefix": "releases/v0.209/",
   "files": [
+    {
+      "path": "action-focus.css",
+      "bytes": 2316,
+      "sha256": "e95b90e6216f17eb55c2566f1b8a71dc9fe92182039e07b6a8fcc7793c23cca3"
+    },
     {
       "path": "assets/abbey.png",
       "bytes": 3010033,
       "sha256": "41663fecc1223ab1413399d719006487f455c692da84060c2194e3a7b10ecca1"
+    },
+    {
+      "path": "assets/action-frame-v208.svg",
+      "bytes": 317,
+      "sha256": "1a6099933870cb3d5380bb2b623b4fff91cbfd2421c9faa5333b9e9b173ee1e6"
     },
     {
       "path": "assets/archive-lantern-v202.svg",
@@ -310,6 +320,21 @@
       "sha256": "99c17fe72386e13d1de443732875ddec5fa0c1d3df8e3e3424417c450c547f44"
     },
     {
+      "path": "assets/studies/v208/metadata.json",
+      "bytes": 1958,
+      "sha256": "e0a7ed19251c70602935c8cb82b7dcd9a42a482f3fddd9e00158b771529907fa"
+    },
+    {
+      "path": "assets/studies/v208/mobile-action-actual731.gif",
+      "bytes": 103803,
+      "sha256": "fbfdd26cf45995abad5b105b7015083cc1c15e1543f620c9f26832a95809e08b"
+    },
+    {
+      "path": "assets/studies/v208/mobile-action-actual731.png",
+      "bytes": 104998,
+      "sha256": "e22bc3cb6b97002854eba05c8448facb2e1679af5f9c370ea1512524c1b878fa"
+    },
+    {
       "path": "assets/sunken-bell-v10.png",
       "bytes": 2746932,
       "sha256": "bd0de96a77ed02ab8efcd131ecf06e690e084b9762f9dd12e2243ce311f5c86e"
@@ -325,6 +350,11 @@
       "sha256": "ecb7f11d669575c098f541d155a20ac44c47f3adc85578bef36d8fe52c2e9ec7"
     },
     {
+      "path": "assets/tactics-compass-v207.svg",
+      "bytes": 275,
+      "sha256": "a1f212e387643cb4971e060a4ec8a8ddb3c0ed5c7f7945b701519fff6dcf37f5"
+    },
+    {
       "path": "bard-detail.css",
       "bytes": 1671,
       "sha256": "e3748dbb8dc823f4184a4fc0372c7393b5dd0b2ee571d6ae27eb47a2535af19f"
@@ -338,6 +368,16 @@
       "path": "content.mjs",
       "bytes": 9316,
       "sha256": "ee90161df2edb611ea1a955a7e09583809c4d5d1a3667e125f6812c995df4d40"
+    },
+    {
+      "path": "editor-navigation.css",
+      "bytes": 1070,
+      "sha256": "1560f56d414429c0d714e6207ae6c1bc6971268619c3444440f2881d96b02783"
+    },
+    {
+      "path": "expedition-action-focus.mjs",
+      "bytes": 5999,
+      "sha256": "21642c07fa36857b9a718f4c90ea87c9248329cfa7deceefd4a2ee7045445f12"
     },
     {
       "path": "expedition-action-outcomes.mjs",
@@ -583,6 +623,11 @@
       "path": "expedition-draft-storage.mjs",
       "bytes": 847,
       "sha256": "1dbe3f1a3e99d33e03ec883d739be2534b37771adebb41b95bac7f0e9d603b4b"
+    },
+    {
+      "path": "expedition-editor-navigation.mjs",
+      "bytes": 2725,
+      "sha256": "146c71af6a65617e64a574685cc7efc90abaa35078f7de74e578cbdb6b71e1bb"
     },
     {
       "path": "expedition-engine.mjs",
@@ -1341,8 +1386,8 @@
     },
     {
       "path": "expedition-ui.mjs",
-      "bytes": 211270,
-      "sha256": "5cd9a8878927dd86ab2405d21acd4e7700f1f8933c4f5c65c28ce7419d3efa17"
+      "bytes": 212638,
+      "sha256": "8eed6787f485467ef0d1b0ab9cded698185437ed770ae31e624a82c1e42ea25f"
     },
     {
       "path": "expedition-unravel.mjs",
@@ -1386,8 +1431,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 27093,
-      "sha256": "6a28a11b1818a91b82983abf470e9a671a8d78607cf4192d1a254f73b29d9d8c"
+      "bytes": 27192,
+      "sha256": "cd71bba980d9480012f66bb37aba6db53bd423b9996e9f0031c290acb8519ec5"
     },
     {
       "path": "legacy.html",
@@ -1513,6 +1558,11 @@
       "path": "studies/herbalist-rig-v189.mjs",
       "bytes": 8291,
       "sha256": "22c62ef4813a2bc53da47097595838ef4d930dda5edf7c32dea6d0cabf4f0869"
+    },
+    {
+      "path": "studies/mobile-action-v208.html",
+      "bytes": 2467,
+      "sha256": "8461702cf519deced500d08ccf18e41c51368253e9e3cff625ae3d8883a8c75c"
     },
     {
       "path": "studies/replay-motion-v196.html",

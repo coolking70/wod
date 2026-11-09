@@ -1,0 +1,6 @@
+.editor-navigation{display:block;margin:10px 0 20px;padding:14px;border:1px solid #3f5961;border-radius:4px;background:#10272e}
+.editor-navigation p:first-child{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:0;color:var(--gold)}
+.editor-navigation img{flex:none}.editor-navigation>div{display:flex;flex-wrap:wrap;gap:8px}.editor-navigation button{font-size:12px;text-align:left}.editor-navigation>div button{background:#1b303a;border:1px solid #3a535c}.editor-navigation>button{color:var(--gold)}
+#editor .editor-back{display:block;width:max-content;max-width:100%;padding:4px 0;margin:4px 0 12px;border:0;background:none;color:var(--cyan);font-size:12px;font-weight:400}
+#editor-navigation:focus-visible,#editor [id^="editor-"]:focus-visible,#editor .training-panel:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+@media(max-width:600px){.editor-navigation>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.editor-navigation>div button{min-width:0;padding:8px;min-height:44px}.editor-navigation>button{min-height:44px}}
