@@ -1,0 +1,11 @@
+{
+  "version": "0.199",
+  "focus": "actual departure review and fixed ordinary141",
+  "fullNode1867NotRun": true,
+  "fullGUI101NotRun": true,
+  "nextMainWindow": [
+    200,
+    202
+  ],
+  "supplyPending": true
+}
