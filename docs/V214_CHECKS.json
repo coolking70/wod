@@ -1,0 +1,215 @@
+{
+  "passed": true,
+  "Node": {
+    "tests": 248,
+    "pass": 248,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/action-focus.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/replay-transport.test.mjs",
+    "tests/replay-motion.test.mjs",
+    "tests/guardian-motion.test.mjs",
+    "tests/guardian-detail.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/ranger-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/bard-detail.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/herbalist-motion.test.mjs",
+    "tests/motion-record.test.mjs",
+    "tests/evidence-output.test.mjs",
+    "tests/stage-evidence.test.mjs",
+    "tests/action-interception.test.mjs",
+    "tests/editor-navigation.test.mjs",
+    "tests/stored-preparation.test.mjs",
+    "tests/departure-review.test.mjs",
+    "tests/hit-review.test.mjs",
+    "tests/growth-navigation.test.mjs",
+    "tests/equipment-workbench.test.mjs",
+    "tests/returning-camp.test.mjs",
+    "tests/inkcaster-motion.test.mjs"
+  ],
+  "completeAffectedGUI": 21,
+  "completeGUIVersions": [
+    94,
+    98,
+    174,
+    175,
+    176,
+    177,
+    180,
+    183,
+    186,
+    187,
+    189,
+    195,
+    196,
+    203,
+    204,
+    205,
+    208,
+    210,
+    211,
+    213,
+    214
+  ],
+  "newGUIContexts": 6,
+  "newNativeCases": 72,
+  "newMobileSourceClockCases": 48,
+  "oldSixRoleSpeedCases": 96,
+  "newFirstBrowserAllPassed": true,
+  "initialStudyPNGSheetThenRGBAIdenticalPosterOptimized": true,
+  "normal128FailedAndClaimedOnceOnlyInIsolatedCopy": true,
+  "sourceInputs": 1092,
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 208,
+    "checkedReferences": 255,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "sourceInputs": 1092,
+    "JS": 902,
+    "Python": 20
+  },
+  "newNativeRuntimeBytes": {
+    "expedition-inkcaster-motion.mjs": 7311,
+    "inkcaster-motion.css": 2155
+  },
+  "artFiles": [
+    {
+      "file": "inkcaster-cast128-poster.png",
+      "bytes": 23413,
+      "sha256": "4863166655beb09eb2fcfd7a6b127500ea007dec2f662acc4ca35d26b8424d42"
+    },
+    {
+      "file": "inkcaster-cast128-static.png",
+      "bytes": 38530,
+      "sha256": "4754d57a226969b8a758bf4737098450714800a991df634b3c4cc9faf4f9bb00"
+    },
+    {
+      "file": "inkcaster-cast128.gif",
+      "bytes": 82291,
+      "sha256": "8537d67a8c61cf2a9b3ba5bb2958d36b3c2a7ecee220d8152646955dd18c63fc"
+    },
+    {
+      "file": "inkcaster-cast128.png",
+      "bytes": 232397,
+      "sha256": "5cee8b1f09a40e6d39c4fbf0c7a022c2a0af11689332b6a0973b2d1d013a198a"
+    },
+    {
+      "file": "inkcaster-cast128.svg",
+      "bytes": 5114,
+      "sha256": "7ec957ab843519fa570c40263bcd7098e00f1461351b1060964409b8bd4f2dd6"
+    }
+  ],
+  "nativeSVGStaticPNGAllRGBAExact": true,
+  "newGIFActuallyEightFrames900ms": true,
+  "imagegenCalled": false,
+  "animationSourceSeed128AndEvents253255": true,
+  "beforeAfterPortraits": [
+    {
+      "width": 1440,
+      "before": {
+        "x": 1258.15625,
+        "y": 356.46875,
+        "width": 40,
+        "height": 40,
+        "top": 356.46875,
+        "right": 1298.15625,
+        "bottom": 396.46875,
+        "left": 1258.15625
+      },
+      "after": {
+        "x": 1246.15625,
+        "y": 345.46875,
+        "width": 64,
+        "height": 62.515625,
+        "top": 345.46875,
+        "right": 1310.15625,
+        "bottom": 407.984375,
+        "left": 1246.15625
+      }
+    },
+    {
+      "width": 390,
+      "before": {
+        "x": 287.328125,
+        "y": 350.515625,
+        "width": 40,
+        "height": 40,
+        "top": 350.515625,
+        "right": 327.328125,
+        "bottom": 390.515625,
+        "left": 287.328125
+      },
+      "after": {
+        "x": 275.328125,
+        "y": 339.515625,
+        "width": 64,
+        "height": 62.515625,
+        "top": 339.515625,
+        "right": 339.328125,
+        "bottom": 402.03125,
+        "left": 275.328125
+      }
+    },
+    {
+      "width": 320,
+      "before": {
+        "x": 229,
+        "y": 350.25,
+        "width": 40,
+        "height": 40,
+        "top": 350.25,
+        "right": 269,
+        "bottom": 390.25,
+        "left": 229
+      },
+      "after": {
+        "x": 220,
+        "y": 342.25,
+        "width": 58,
+        "height": 56.65625,
+        "top": 342.25,
+        "right": 278,
+        "bottom": 398.90625,
+        "left": 220
+      }
+    }
+  ],
+  "reducedPreviewBytesSaved": 208984,
+  "currentCatalogue": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v41.json",
+    "bytes": 46643,
+    "sha256": "b7e0da3fd4d7c9f0f169bb1dc7172c89f0fb9cbe3620973113b74e0ab838dc35"
+  },
+  "protectedFileBindings": "/workspace/wod-evidence/v214/PROTECTED_BEFORE_STORAGE.json",
+  "canonicalNext142Gold15225FiveReportsUnchanged": true,
+  "sourceMainAndPagesStill212": true,
+  "lastComplete212": {
+    "Node": 1914,
+    "GUI": 110,
+    "CLI": 204,
+    "JSON": 130,
+    "HTML": 33
+  },
+  "full1925Node112GUIHistoricalNativeNotRunThisStage": true,
+  "nextCompleteWindow": "215–217",
+  "publicInteractionAndActualOldSiteMigrationUnverified": true,
+  "permanentSupplyEconomyPending": true,
+  "allHistoricalOriginalGapsRemainExplicit": true,
+  "freeBytes": {
+    "/workspace": 3280224256,
+    "/tmp": 8066252800
+  }
+}

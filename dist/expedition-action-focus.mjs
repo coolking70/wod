@@ -1,7 +1,7 @@
 import {stageFrame} from './expedition-stage.mjs';
 import {unitActionOutcomes} from './expedition-action-outcomes.mjs';
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const roles=['guardian','ranger','bard','scholar','tidecaller','herbalist'];
+const roles=['guardian','ranger','bard','scholar','tidecaller','herbalist','inkcaster'];
 export function actionInterceptionRecord(report,group,eventId,source=group){
  if(!Array.isArray(report?.events)||!group?.events?.length||!source?.events?.length||!Number.isSafeInteger(eventId))return null;
  if(!Number.isSafeInteger(group.start)||!Number.isSafeInteger(group.end)||group.start<0||group.end<group.start||group.end>=report.events.length)return null;
