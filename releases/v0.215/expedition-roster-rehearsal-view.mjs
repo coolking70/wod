@@ -1,0 +1,8 @@
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const supplies=s=>`${s.herb} / ${s.rune} / ${s.arrow}`;
+export function rosterRehearsalView(trial){
+ if(!trial)return '';const r=trial.value;
+ if(trial.stale)return `<section class="roster-rehearsal"><h3>${esc(r.outgoingName)} → ${esc(r.incomingName)} · 上次试演已过期</h3><p>队伍、资产、职责、替换选择或准备配置已变化。请重新试演；旧结果不会用于正式换人。</p></section>`;
+ const cell=r=>r?`${r.won?'通过':esc(r.stopReason)} · ${r.rounds}${r.roundLimit?'/'+r.roundLimit:''}回合 · ${r.survivors}人生还<br>出房生命${r.hp} / 法力${r.mp}<br>余量 ${supplies(r.supplies)}`:'未抵达';
+ return `<section class="roster-rehearsal"><h3>换人试演 · ${esc(r.outgoingName)} → ${esc(r.incomingName)}</h3><p>共同使用下次公会出征种子${r.seed}，采用双方当前实际装备、培养、进阶与已应用职责。没有出征、换人、支付或发奖；正式换人仍需点击名册中的“编入”。</p><p>离队者职责：${esc(r.outgoingRole)}；候补职责：${esc(r.incomingRole)}。</p><p>同一配置的单次结果，相同种子下换队也可能改变投点序列；不能当作胜率、因果证明或通用升级。候补不会继承离队者资产。</p><div class="roster-rehearsal-summary">${['before','after'].map(key=>{const s=r.summary[key];return `<article><h4>${key==='before'?'当前队伍':'换人后队伍'}</h4><p>${s.won?'通关':esc(s.stopReason)} · ${s.cleared}/${s.planned}房通过 · ${s.alive}人生还<br>已遭遇总${s.rounds}回合<br>剩余药草 / 符纸 / 箭矢：${supplies(s.supplies)}</p><button data-roster-report="${key}">查看${key==='before'?'当前':'换人后'}完整试演战报</button></article>`;}).join('')}</div><div class="table-scroll"><table><thead><tr><th>房间</th><th>当前队伍</th><th>换人后队伍</th></tr></thead><tbody>${r.rooms.map(room=>`<tr><th>${esc(room.name)}</th><td>${cell(room.before)}</td><td>${cell(room.after)}</td></tr>`).join('')}</tbody></table></div><small>余量顺序为药草 / 符纸 / 箭矢。未抵达不是0回合或0消耗；总回合只累计已发生的房间；止步更早而总回合更少，不表示效率更高。</small></section>`;
+}
