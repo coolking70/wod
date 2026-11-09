@@ -1,0 +1,1800 @@
+{
+  "ruleset": "original-wod-inspired-0.21.0",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "rows": [
+    {
+      "profile": "front",
+      "summary": {
+        "wins": 32,
+        "full": 32,
+        "meanRounds": 18.90625,
+        "meanSummons": 10.21875
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 619,
+          "mp": 215,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 19,
+          "enemySummons": 11,
+          "enemyHeals": 9
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 204,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 10,
+          "enemyHeals": 14
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 212,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 18,
+          "enemySummons": 9,
+          "enemyHeals": 12
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 209,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 21,
+          "enemySummons": 13,
+          "enemyHeals": 13
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 200,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 12,
+          "enemyHeals": 13
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 209,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 12,
+          "enemyHeals": 14
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 216,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "enemySummons": 8,
+          "enemyHeals": 9
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 208,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 11,
+          "enemyHeals": 11
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 211,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "enemySummons": 6,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 214,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 12,
+          "enemyHeals": 8
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 206,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 18,
+          "enemySummons": 11,
+          "enemyHeals": 10
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 211,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 23,
+          "enemySummons": 13,
+          "enemyHeals": 15
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 622,
+          "mp": 210,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 9,
+          "enemyHeals": 13
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 211,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 13,
+          "enemyHeals": 11
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 208,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 18,
+          "enemySummons": 10,
+          "enemyHeals": 8
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 207,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 19,
+          "enemySummons": 10,
+          "enemyHeals": 12
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 214,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 19,
+          "enemySummons": 10,
+          "enemyHeals": 12
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 206,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "enemySummons": 7,
+          "enemyHeals": 10
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 212,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "enemySummons": 7,
+          "enemyHeals": 9
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 207,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 10,
+          "enemyHeals": 11
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 210,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 12,
+          "enemyHeals": 12
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 210,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 11,
+          "enemyHeals": 11
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 210,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 19,
+          "enemySummons": 9,
+          "enemyHeals": 14
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 216,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 21,
+          "enemySummons": 12,
+          "enemyHeals": 12
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 216,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 17,
+          "enemySummons": 8,
+          "enemyHeals": 10
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 206,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "enemySummons": 7,
+          "enemyHeals": 8
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 206,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 21,
+          "enemySummons": 13,
+          "enemyHeals": 10
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 213,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 19,
+          "enemySummons": 10,
+          "enemyHeals": 13
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 216,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 18,
+          "enemySummons": 11,
+          "enemyHeals": 9
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 207,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 18,
+          "enemySummons": 10,
+          "enemyHeals": 10
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 210,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 20,
+          "enemySummons": 10,
+          "enemyHeals": 11
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 209,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 18,
+          "enemySummons": 10,
+          "enemyHeals": 13
+        }
+      ]
+    },
+    {
+      "profile": "source",
+      "summary": {
+        "wins": 32,
+        "full": 32,
+        "meanRounds": 13.0625,
+        "meanSummons": 2.59375
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "enemySummons": 3,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 205,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 3,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 202,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 636,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 3,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 11,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 3
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 626,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 4,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 633,
+          "mp": 204,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 196,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 639,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 196,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 3,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 200,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 4,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 204,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 203,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "enemySummons": 3,
+          "enemyHeals": 9
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 198,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 4,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 8
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 628,
+          "mp": 202,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 4,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 200,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 202,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 204,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 3,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 205,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 3,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 3,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 203,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 3,
+          "enemyHeals": 3
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 199,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 4,
+          "enemyHeals": 7
+        }
+      ]
+    },
+    {
+      "profile": "sustain",
+      "summary": {
+        "wins": 32,
+        "full": 32,
+        "meanRounds": 13.03125,
+        "meanSummons": 2.5
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 207,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 193,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 631,
+          "mp": 200,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 3,
+          "enemyHeals": 8
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 201,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 627,
+          "mp": 198,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 201,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 3
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 196,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 5,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 192,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 3,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 617,
+          "mp": 199,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 623,
+          "mp": 201,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 3
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 202,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 3,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 196,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 2,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 198,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 3,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 204,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 618,
+          "mp": 200,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 196,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 196,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 15,
+          "enemySummons": 4,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 202,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 8
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 194,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 4,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 203,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 7
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 200,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 638,
+          "mp": 198,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 2,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 199,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 13,
+          "enemySummons": 3,
+          "enemyHeals": 6
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 3,
+          "enemyHeals": 4
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 199,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 3,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 620,
+          "mp": 203,
+          "supplies": {
+            "herb": 11,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 3,
+          "enemyHeals": 3
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 197,
+          "supplies": {
+            "herb": 10,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 12,
+          "enemySummons": 2,
+          "enemyHeals": 5
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 200,
+          "supplies": {
+            "herb": 9,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "rounds": 14,
+          "enemySummons": 3,
+          "enemyHeals": 6
+        }
+      ]
+    }
+  ]
+}

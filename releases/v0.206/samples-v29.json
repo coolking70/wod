@@ -1,0 +1,1893 @@
+{
+  "seeds": 16,
+  "rows": [
+    {
+      "route": "seasoned",
+      "plan": "front",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "meanRounds": 21.4375,
+        "meanHp": 596
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "hp": 571,
+          "mp": 213,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "hp": 632,
+          "mp": 207,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "hp": 640,
+          "mp": 200,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "hp": 574,
+          "mp": 204,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "hp": 598,
+          "mp": 206,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "hp": 601,
+          "mp": 212,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 591,
+          "mp": 207,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "hp": 610,
+          "mp": 209,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "hp": 550,
+          "mp": 204,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 596,
+          "mp": 212,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 24,
+          "hp": 582,
+          "mp": 206,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 618,
+          "mp": 202,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "hp": 599,
+          "mp": 200,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "hp": 619,
+          "mp": 209,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 23,
+          "hp": 582,
+          "mp": 210,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "hp": 573,
+          "mp": 203,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "route": "seasoned",
+      "plan": "roles",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "meanRounds": 19.6875,
+        "meanHp": 610.9375
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "hp": 618,
+          "mp": 197,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 589,
+          "mp": 198,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 616,
+          "mp": 168,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 617,
+          "mp": 193,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "hp": 615,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 580,
+          "mp": 197,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 640,
+          "mp": 168,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "hp": 640,
+          "mp": 202,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "hp": 599,
+          "mp": 202,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "hp": 610,
+          "mp": 168,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "hp": 586,
+          "mp": 198,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 22,
+          "hp": 604,
+          "mp": 202,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 586,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "hp": 621,
+          "mp": 200,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 624,
+          "mp": 177,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 21,
+          "hp": 630,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ]
+    },
+    {
+      "route": "seasoned",
+      "plan": "adapted",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "meanRounds": 16.8125,
+        "meanHp": 614.75
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 607,
+          "mp": 191,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "hp": 624,
+          "mp": 186,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 603,
+          "mp": 174,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "hp": 640,
+          "mp": 205,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "hp": 631,
+          "mp": 181,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "hp": 600,
+          "mp": 175,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 617,
+          "mp": 181,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 622,
+          "mp": 190,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 640,
+          "mp": 172,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 15,
+          "hp": 622,
+          "mp": 197,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 602,
+          "mp": 179,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 600,
+          "mp": 185,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 640,
+          "mp": 184,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 640,
+          "mp": 198,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "hp": 572,
+          "mp": 184,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 576,
+          "mp": 194,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 1
+          }
+        }
+      ]
+    },
+    {
+      "route": "seasoned",
+      "plan": "runeSaver",
+      "summary": {
+        "wins": 16,
+        "full": 16,
+        "meanRounds": 18.0625,
+        "meanHp": 621
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 579,
+          "mp": 179,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 20,
+          "hp": 610,
+          "mp": 187,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 631,
+          "mp": 165,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 602,
+          "mp": 210,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 640,
+          "mp": 175,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 624,
+          "mp": 174,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 624,
+          "mp": 186,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 640,
+          "mp": 188,
+          "supplies": {
+            "herb": 6,
+            "rune": 5,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 621,
+          "mp": 178,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 19,
+          "hp": 621,
+          "mp": 181,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 17,
+          "hp": 623,
+          "mp": 199,
+          "supplies": {
+            "herb": 8,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 617,
+          "mp": 171,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 624,
+          "mp": 202,
+          "supplies": {
+            "herb": 7,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 16,
+          "hp": 619,
+          "mp": 180,
+          "supplies": {
+            "herb": 4,
+            "rune": 6,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 621,
+          "mp": 175,
+          "supplies": {
+            "herb": 1,
+            "rune": 5,
+            "arrow": 1
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 18,
+          "hp": 640,
+          "mp": 170,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 1
+          }
+        }
+      ]
+    },
+    {
+      "route": "veteran",
+      "plan": "front",
+      "summary": {
+        "wins": 14,
+        "full": 14,
+        "meanRounds": 31.0625,
+        "meanHp": 506.1875
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 28,
+          "hp": 599,
+          "mp": 223,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 581,
+          "mp": 216,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 572,
+          "mp": 214,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "hp": 589,
+          "mp": 216,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "survivors": 0,
+          "rooms": 3,
+          "rounds": 43,
+          "hp": 0,
+          "mp": 190,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "hp": 561,
+          "mp": 222,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 28,
+          "hp": 611,
+          "mp": 214,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 551,
+          "mp": 230,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 591,
+          "mp": 223,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 602,
+          "mp": 224,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 27,
+          "hp": 598,
+          "mp": 216,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 505,
+          "mp": 214,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 28,
+          "hp": 618,
+          "mp": 222,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 0,
+          "rooms": 3,
+          "rounds": 46,
+          "hp": 0,
+          "mp": 192,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 589,
+          "mp": 219,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 28,
+          "hp": 532,
+          "mp": 219,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "route": "veteran",
+      "plan": "roles",
+      "summary": {
+        "wins": 14,
+        "full": 14,
+        "meanRounds": 31.125,
+        "meanHp": 498.5
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 32,
+          "hp": 532,
+          "mp": 192,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "hp": 552,
+          "mp": 188,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 623,
+          "mp": 196,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 578,
+          "mp": 191,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "survivors": 0,
+          "rooms": 3,
+          "rounds": 41,
+          "hp": 0,
+          "mp": 183,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 596,
+          "mp": 198,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 563,
+          "mp": 192,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 584,
+          "mp": 195,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 28,
+          "hp": 577,
+          "mp": 178,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 562,
+          "mp": 211,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "hp": 570,
+          "mp": 188,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "hp": 576,
+          "mp": 202,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "hp": 515,
+          "mp": 205,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 0,
+          "rooms": 3,
+          "rounds": 42,
+          "hp": 0,
+          "mp": 204,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 30,
+          "hp": 586,
+          "mp": 179,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 562,
+          "mp": 199,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "route": "veteran",
+      "plan": "adapted",
+      "summary": {
+        "wins": 16,
+        "full": 10,
+        "meanRounds": 32.1875,
+        "meanHp": 518.875
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 32,
+          "hp": 580,
+          "mp": 213,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 5,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 458,
+          "mp": 197,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 4,
+          "rooms": 3,
+          "rounds": 36,
+          "hp": 337,
+          "mp": 178,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 521,
+          "mp": 192,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 33,
+          "hp": 576,
+          "mp": 220,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 5,
+          "rooms": 3,
+          "rounds": 35,
+          "hp": 417,
+          "mp": 203,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 597,
+          "mp": 194,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 602,
+          "mp": 219,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 33,
+          "hp": 508,
+          "mp": 219,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 593,
+          "mp": 188,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 27,
+          "hp": 533,
+          "mp": 206,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 34,
+          "hp": 606,
+          "mp": 215,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 5,
+          "rooms": 3,
+          "rounds": 33,
+          "hp": 500,
+          "mp": 205,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 5,
+          "rooms": 3,
+          "rounds": 32,
+          "hp": 509,
+          "mp": 204,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 31,
+          "hp": 543,
+          "mp": 191,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 5,
+          "rooms": 3,
+          "rounds": 34,
+          "hp": 422,
+          "mp": 204,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        }
+      ]
+    },
+    {
+      "route": "veteran",
+      "plan": "runeSaver",
+      "summary": {
+        "wins": 16,
+        "full": 15,
+        "meanRounds": 26.1875,
+        "meanHp": 580.375
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 27,
+          "hp": 517,
+          "mp": 184,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 5,
+          "rooms": 3,
+          "rounds": 27,
+          "hp": 465,
+          "mp": 197,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 25,
+          "hp": 620,
+          "mp": 166,
+          "supplies": {
+            "herb": 1,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 27,
+          "hp": 593,
+          "mp": 189,
+          "supplies": {
+            "herb": 1,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 25,
+          "hp": 588,
+          "mp": 183,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 26,
+          "hp": 560,
+          "mp": 163,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 26,
+          "hp": 574,
+          "mp": 186,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 24,
+          "hp": 632,
+          "mp": 162,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 26,
+          "hp": 595,
+          "mp": 178,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 25,
+          "hp": 611,
+          "mp": 176,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 29,
+          "hp": 526,
+          "mp": 205,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 28,
+          "hp": 572,
+          "mp": 201,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 24,
+          "hp": 614,
+          "mp": 156,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 28,
+          "hp": 582,
+          "mp": 207,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 25,
+          "hp": 629,
+          "mp": 177,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          }
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "rooms": 3,
+          "rounds": 27,
+          "hp": 608,
+          "mp": 187,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 0
+          }
+        }
+      ]
+    }
+  ]
+}

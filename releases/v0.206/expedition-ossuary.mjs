@@ -1,0 +1,8 @@
+// Original finite solo content. Innate attack types are public, fixed, and not loot.
+const row=(skill,target='front',mode='repeat')=>({skill,target,mode});
+const attrs={str:12,con:13,int:13,dex:14,cha:11,agi:11,per:13,wil:12};
+const unit=(id,name,pos,skill,hp,immuneTo,level=7)=>({id,name,pos,side:'enemy',role:'潮影墓廊',mark:'影',gear:'field',attrs:{...attrs},skills:{[skill]:level},hp,maxHp:hp,mp:90,maxMp:90,immuneTo,prep:[],main:[row(skill)],defenses:{melee:'natural',ranged:'natural',magic:'natural'},healing:{enabled:false}});
+export const OSSUARY_ROOMS=[
+ {id:'ossuary_veil',name:'01 · 雾影门厅',note:'前排两名雾壳守卫免疫近战/远程，后排刻纹哨弩免疫法术/心理。法术或心理负责雾壳，物理负责刻纹；免疫先排除再沿现有合法候选阵位路线找目标，不提供新掩护或阻挡。射手的后排指定与学者的前排法术可以分工；全物理无法清场。免疫不是高抗性，破甲不会绕过。',enemies:[...['ov1','ov2'].map(id=>({...unit(id,'雾壳守卫','front','strike',125,['melee','ranged']),attrs:{...attrs,armor:2}})),{...unit('ovb','刻纹哨弩','rear','shot',115,['magic','mental']),gear:'bow',main:[row('shot','rear')]}]},
+ {id:'ossuary_seal',name:'02 · 无识灯庭',note:'前排缄默骨卫免疫心理并援护左翼；左翼回铃侍药免疫远程，只救前排。后排残灯影免疫近战/远程，右翼镜砂弩卫免疫法术。物理攻右翼/前排、法术拆后排/药师、吟游者心理拆左翼各有取舍。职责追击也排除免疫目标；法术/心理不触发物理援护。治疗与正面辅助不被类型免疫阻止，固有免疫不能驱散。',enemies:[{...unit('osg','缄默骨卫','front','strike',190,['mental'],8),gear:'guardblade',attrs:{...attrs,armor:5},skills:{strike:8,interpose:8},prep:[row('interpose','left')]},{...unit('osm','回铃侍药','left','spark',140,['ranged']),gear:'focus',skills:{spark:7,heal:8},healing:{enabled:true,threshold:.8,target:'front',priority:'lowest'}},{...unit('oss','残灯影','rear','spark',150,['melee','ranged']),gear:'focus',main:[row('spark','rear')]},{...unit('osa','镜砂弩卫','right','volley',130,['magic']),gear:'bow',skills:{volley:7,shot:7},main:[row('volley','rear','once'),row('shot','rear')]}]}
+];

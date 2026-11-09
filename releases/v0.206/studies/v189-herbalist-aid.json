@@ -1,0 +1,511 @@
+{
+  "version": 189,
+  "sourceReportId": 137,
+  "sourceReportSHA256": "de318bd6d1bce3ec2ca8774f3b1cd36138a8176f5139f0663e4343578210bb23",
+  "sourceEvents": [
+    161,
+    162
+  ],
+  "plan": {
+    "id": "f",
+    "name": "露弥",
+    "settledLabel": "救护结算 · 实回29",
+    "settled": "idle",
+    "mode": "aid",
+    "beats": [
+      {
+        "eventId": 161,
+        "eventIds": [
+          161
+        ],
+        "pose": "prepare",
+        "label": "施放「草药救护」"
+      },
+      {
+        "eventId": 162,
+        "eventIds": [
+          162
+        ],
+        "pose": "aid",
+        "label": "救护结算 · 1名对象，实回29 / 未生效24"
+      }
+    ],
+    "sourceEvents": [
+      161,
+      162
+    ],
+    "passiveEvents": [],
+    "skippedEvents": [],
+    "label": "施放「草药救护」 → 救护结算 · 1名对象，实回29 / 未生效24",
+    "rule": "药师以同一原生SVG表现本步已发生的救护、施药、普通行动、受击和倒下。手边叶纹只在直接救护有实际恢复时出现，不代表额外治疗或目标当前生命；实回与未生效分列。缓释恢复不重演一次施法，材料不足/禁疗/阈值未达不画救护成功；一次合剂多名对象只演一次结算。布包和敷布是职业造型，不增加装备、药草、支付或退款。900毫秒仅为演出节奏；暂停/减少动态使用结算姿态，HP/MP仍为当前快照。"
+  },
+  "keyframes": {
+    "duration": 900,
+    "animated": true,
+    "parts": {
+      "root": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "torso": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-6deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(6deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "head": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-5deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(-2deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "bagArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-18deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(-6deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "bagHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-13deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(6deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "careArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-24deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(18deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "careHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-13deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(17deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legL": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legR": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "balm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 0,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0,
+            "easing": "steps(1, end)"
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(1px, -1px) rotate(30deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          }
+        ]
+      }
+    }
+  },
+  "nativeDurationMs": 900,
+  "GIFDurationMs": 900,
+  "modelSHA256": "22c62ef4813a2bc53da47097595838ef4d930dda5edf7c32dea6d0cabf4f0869",
+  "frozenStyleSHA256": "ef3d49df80fb02f57fab2052a225b36777bef004339882f7602e24c28cfcb540",
+  "frames": [
+    {
+      "frame": 0,
+      "alphaBBox": [
+        77,
+        44,
+        190,
+        223
+      ],
+      "RGBAFrameSHA256": "601c809979b67bf640cd6a57e7bb3937038311d08331761471ab772d18b1a11b",
+      "durationMs": 100,
+      "nativeSampleMs": 0
+    },
+    {
+      "frame": 1,
+      "alphaBBox": [
+        77,
+        44,
+        199,
+        223
+      ],
+      "RGBAFrameSHA256": "984252261e0c1a4057a92904c3a5e876994210e9ce33c3bb6553f16fb19425e3",
+      "durationMs": 120,
+      "nativeSampleMs": 100
+    },
+    {
+      "frame": 2,
+      "alphaBBox": [
+        77,
+        44,
+        205,
+        223
+      ],
+      "RGBAFrameSHA256": "6393470ab1df0670517900fe546d068d16b8c5def80192efedc6425f291595fb",
+      "durationMs": 110,
+      "nativeSampleMs": 220
+    },
+    {
+      "frame": 3,
+      "alphaBBox": [
+        77,
+        44,
+        193,
+        223
+      ],
+      "RGBAFrameSHA256": "8117b7cf1e0e47cb9ebf762cfb932ec26c2d346ff11d8353fa2a86aa78272077",
+      "durationMs": 120,
+      "nativeSampleMs": 330
+    },
+    {
+      "frame": 4,
+      "alphaBBox": [
+        77,
+        44,
+        193,
+        223
+      ],
+      "RGBAFrameSHA256": "c9d74403ac0ea6db0c9cc106167ade5e61cbaf7869e8d68094fd32f882a0a210",
+      "durationMs": 110,
+      "nativeSampleMs": 450
+    },
+    {
+      "frame": 5,
+      "alphaBBox": [
+        77,
+        44,
+        198,
+        223
+      ],
+      "RGBAFrameSHA256": "73ec7ac498958839127691ac49fb7b33c76cdc5691133233f3b070748812661c",
+      "durationMs": 110,
+      "nativeSampleMs": 560
+    },
+    {
+      "frame": 6,
+      "alphaBBox": [
+        77,
+        44,
+        200,
+        223
+      ],
+      "RGBAFrameSHA256": "13aee516df8c8a479af055a883506ccb3b4f2f9d246eb43dcf3cbec22c0ce01f",
+      "durationMs": 120,
+      "nativeSampleMs": 670
+    },
+    {
+      "frame": 7,
+      "alphaBBox": [
+        77,
+        44,
+        204,
+        223
+      ],
+      "RGBAFrameSHA256": "1af33cce30f7c2986ff3545982e315cfe394bd9a2fe1d1a6eb21d85751d92918",
+      "durationMs": 110,
+      "nativeSampleMs": 790
+    }
+  ],
+  "files": [
+    {
+      "url": "../assets/studies/v189-herbalist-aid.gif",
+      "bytes": 68784,
+      "sha256": "0adfa9020e16048b93b5f950e11e3c0d785128716278280ae29afd5addd66416"
+    },
+    {
+      "url": "../assets/studies/v189-herbalist-aid-sheet.png",
+      "bytes": 173988,
+      "sha256": "323648b0b698fc36928a5de844ceb30f89efdf49e170e48a4142f839fefbe662"
+    },
+    {
+      "url": "../assets/studies/v189-herbalist-aid-poster.png",
+      "bytes": 20725,
+      "sha256": "8a7aea3be67a736780e1ed2039e68f63b65f7b4c77d75d155425601701bc1f4b"
+    },
+    {
+      "url": "../assets/studies/v189-herbalist-aid.svg",
+      "bytes": 6574,
+      "sha256": "4870ac17ba8bebb4b1b268fb41b8d4f92256c3330016ccc3a317818bf18ec7a8"
+    },
+    {
+      "url": "../assets/studies/v189-herbalist-aid-static.png",
+      "bytes": 27263,
+      "sha256": "109f98b7158f676d131f81c2586b7edc28200ea805b2191cb05d9bce8212c42d"
+    }
+  ],
+  "controlledSameImageRGBAExact": true,
+  "localFormatSamples": [
+    {
+      "name": "v189-herbalist-aid.svg",
+      "i": 0,
+      "loadAndDecodeMs": 5.199999988079071
+    },
+    {
+      "name": "v189-herbalist-aid.svg",
+      "i": 1,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v189-herbalist-aid.svg",
+      "i": 2,
+      "loadAndDecodeMs": 0
+    },
+    {
+      "name": "v189-herbalist-aid.svg",
+      "i": 3,
+      "loadAndDecodeMs": 0
+    },
+    {
+      "name": "v189-herbalist-aid.svg",
+      "i": 4,
+      "loadAndDecodeMs": 0
+    },
+    {
+      "name": "v189-herbalist-aid.svg",
+      "i": 5,
+      "loadAndDecodeMs": 0
+    },
+    {
+      "name": "v189-herbalist-aid-static.png",
+      "i": 0,
+      "loadAndDecodeMs": 3.2000000178813934
+    },
+    {
+      "name": "v189-herbalist-aid-static.png",
+      "i": 1,
+      "loadAndDecodeMs": 2.199999988079071
+    },
+    {
+      "name": "v189-herbalist-aid-static.png",
+      "i": 2,
+      "loadAndDecodeMs": 0.800000011920929
+    },
+    {
+      "name": "v189-herbalist-aid-static.png",
+      "i": 3,
+      "loadAndDecodeMs": 1.300000011920929
+    },
+    {
+      "name": "v189-herbalist-aid-static.png",
+      "i": 4,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v189-herbalist-aid-static.png",
+      "i": 5,
+      "loadAndDecodeMs": 0.19999998807907104
+    }
+  ],
+  "limits": [
+    "NativeSVG rendered andencoded locally, no newimagegen.",
+    "GIF900ms follows the exported centisecond intervals; eightframes approximate continuousSVG, not exactseekable playback.",
+    "Shared256color palette andbinaryalpha losepartialtransparency; PNGsheet preservesfullRGBA.",
+    "Onlypredeclared actualnormal137directaid records161/162, actual29/unreceived24; productioncurrentstep usesnativeSVG ratherthanthisindependentGIF.",
+    "Eight local nativeSVG samples, no newimagegen or directGIFgeneration.",
+    "GIFcentisecondtimes fit900ms but8frames approximate continuousnativeposes; cannot exactseek GIF.",
+    "Local12load/decode samples are not throttlednetwork/mobilehardware/FPS or wholeapp performance evidence.",
+    "StandaloneSVG and browser-rasterized sameimagePNG have exact RGBA; this does not compare against the older painted portraits."
+  ]
+}
