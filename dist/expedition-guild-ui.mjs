@@ -83,6 +83,7 @@ import {equipmentName,SLOTS} from './expedition-equipment.mjs';
 import {rosterConfig,recruit,swapCompanion,replacementChoices} from './expedition-roster.mjs';
 import {rosterHome} from './expedition-roster-view.mjs';
 import {commandHome} from './expedition-command-view.mjs';
+import {captureCompanionWorkbench,restoreCompanionWorkbench} from './expedition-companion-workbench.mjs';
 import {selectHero,setCompanion,commandLabel} from './expedition-command.mjs';
 import {historyComparison} from './expedition-history-diff.mjs';
 import{surrenderPreparationView}from'./expedition-surrender.mjs';
@@ -157,7 +158,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  function replacementTrialState(){if(!replacementTrial)return null;const r=replacementTrial,choice=replacementSelections[r.incoming]||replacementChoices(g,r.incoming)[0]?.id;return {value:r,stale:choice!==r.outgoing||r.signature!==replacementSignature(g,getConfig(),r.outgoing,r.incoming)};}
  const rehearsalSignature=plan=>JSON.stringify([raw,getConfig(),plan.expected,plan.target]);
  function render(){
- const growthDetails=captureGrowthDetails(root);
+ const growthDetails=captureGrowthDetails(root),companionDetails=captureCompanionWorkbench(root);
  if(!g){root.innerHTML=`<h1>公会存档暂不可用</h1><p>${esc(failure)}。原存档未覆盖。</p><button data-guild="backup">导出原始存档</button><label>恢复有效备份 <input type="file" id="guild-import" accept="application/json,.json"></label>`;return;}
  if(!g.members.some(m=>m.id===selected))selected=g.lineup[0];
  if(!(g.warehouse[warehouseItem]>0))warehouseItem='all';
@@ -178,6 +179,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  ${archiveLibraryView(g,archiveReader,localStorage.getItem(GUILD_KEY)!==raw)}<section class="guild-panel campaign-backup" data-guild-pane="history"><h2>整档携带</h2><p>一起保存公会、待领取远征、关键战报收藏、攻略/配装册、准备草稿、12格方案册与对照A。不会保存正在播放的位置或临时撤销。文件校验用于发现损坏，不是服务端认证。</p><button data-campaign-export=true>导出整档备份</button><label>预览整档恢复 <input id=campaign-import type=file accept=".json,application/json"></label>${campaignPreview?`<section class=campaign-preview><h3>待恢复预览 · 尚未写入</h3><p>${esc(campaignPreview.payload.createdAt)} · ${campaignPreview.payload.guild.gold}金币 · ${campaignPreview.payload.guild.members.length}名队员 · ${campaignPreview.payload.plans.length}个方案 / ${Object.keys(campaignPreview.payload.planBindings||{}).length}项路线绑定 · ${campaignPreview.payload.guild.pending?'第'+campaignPreview.payload.guild.pending.id+'次待领取':'无待领取远征'}</p><p>准备：${esc(EXPEDITIONS[campaignPreview.payload.preparation.expedition].name)}；恢复会替换本机以上四类内容。可先导出当前整档。预览后如有改动，会拒绝覆盖，需重新预览。</p><button data-campaign-restore=true>确认恢复以上整档</button><button data-campaign-cancel=true>取消预览</button></section>`:''}</section><section class="guild-panel" data-guild-pane="history"><h2>远征履历</h2><p>保留最近20次结算与出征方案，关键记录可在战报页主动冻结收藏。按当前规则重演，不发放奖励；规则更新后重演结果可能与历史结算不同。</p>${g.history.length?g.history.map(r=>`<p>第${r.id}次 · ${esc(EXPEDITIONS[r.route]?.name||r.route)} · ${r.won?'通关':'止步'} · ${r.cleared}场 · ${r.gold}金币 / 每位出战者${r.xp}经验 ${r.firstClear?'· 首通':''} ${(r.loot||[]).map(k=>esc(GEAR[k]?.name||k)).join('、')}</p>${r.config?`<div class="bar"><button data-history-compare="${r.id}">对比当前方案</button><button data-history-report="${r.id}">重演第${r.id}次远征</button><button data-history-load="${r.id}">载入第${r.id}次方案</button><small>种子 ${r.config.seed} · 当时装备与训练快照</small></div>`:'<small>此记录没有保存出征方案</small>'}`).join(''):'<p>还没有已结算远征。建议从回声侧廊或基础修道院开始。</p>'}<h3>本机存档</h3><p>公会保存在当前浏览器，暂不跨设备同步。导入备份会替换当前公会；实验战斗不发奖励。</p><button data-guild="backup">导出公会备份</button><label class="guild-import">恢复备份 <input type="file" id="guild-import" accept="application/json,.json"></label></section>${comparisonHTML()}`;
  restoreGrowthDetails(root,growthDetails);
  panels();
+ restoreCompanionWorkbench(root,companionDetails);
  }
  root.onclick=e=>{const b=e.target.closest('button');if(!b)return;try{
  if(b.dataset.equipmentJump){focusEquipmentTarget(root,b.dataset.equipmentJump);return;}

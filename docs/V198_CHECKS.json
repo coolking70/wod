@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "version": "0.198",
+  "NodeRelated": 52,
+  "NodeFullNotRun": true,
+  "inheritedFull197Node1855NotClaimedCurrent": true,
+  "browserRelatedTotal": 6,
+  "browserVersions": [
+    111,
+    108,
+    122,
+    186,
+    195,
+    198
+  ],
+  "browserFull100NotRun": true,
+  "oldAssertionsUnchanged": true,
+  "all294SealedPriorDeliveryHashesExact": true,
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 201,
+    "checkedReferences": 233,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "canonicalFourBusinessStringsExact197NoNewDeparture": true,
+  "baselineMetrics": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "metrics": {
+          "height": 1694.90625,
+          "companions": 712.15625,
+          "overflow": false
+        },
+        "focusedAfterPreview": "<body data-preparation-state=\"saved\" data-view=\"guild\" class=\"active\">\n<header><a class=\"brand\" href=\"./\">✧ 深 潮 远 征 <sma",
+        "detailsStillOpen": false,
+        "hero": "b"
+      },
+      {
+        "width": 390,
+        "metrics": {
+          "height": 3300.921875,
+          "companions": 1801.390625,
+          "overflow": false
+        },
+        "focusedAfterPreview": "<body data-preparation-state=\"saved\" data-view=\"guild\" class=\"active\">\n<header><a class=\"brand\" href=\"./\">✧ 深 潮 远 征 <sma",
+        "detailsStillOpen": false,
+        "hero": "b"
+      },
+      {
+        "width": 320,
+        "metrics": {
+          "height": 3560.4375,
+          "companions": 1920.375,
+          "overflow": false
+        },
+        "focusedAfterPreview": "<body data-preparation-state=\"saved\" data-view=\"guild\" class=\"active\">\n<header><a class=\"brand\" href=\"./\">✧ 深 潮 远 征 <sma",
+        "detailsStillOpen": false,
+        "hero": "b"
+      }
+    ],
+    "isolatedCanonicalCopies": true,
+    "formalKeysUntouched": true
+  },
+  "currentMetrics": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "metrics": {
+          "height": 1645.8125,
+          "companions": 663.96875,
+          "overflow": false
+        },
+        "previewRoomCancelAndApplyKeepDetailsAndKeyboardFocus": true,
+        "previewAndCancelFourRawKeysExact": true,
+        "previewRoomCancelStrictStorageWriteGuardPassed": true,
+        "explicitApplyMatchesPureAPIAndRestoredToOriginal": true,
+        "svgLoaded": true
+      },
+      {
+        "width": 390,
+        "metrics": {
+          "height": 2488.265625,
+          "companions": 1037.234375,
+          "overflow": false
+        },
+        "previewRoomCancelAndApplyKeepDetailsAndKeyboardFocus": true,
+        "previewAndCancelFourRawKeysExact": true,
+        "previewRoomCancelStrictStorageWriteGuardPassed": true,
+        "explicitApplyMatchesPureAPIAndRestoredToOriginal": true,
+        "svgLoaded": true
+      },
+      {
+        "width": 320,
+        "metrics": {
+          "height": 2780.125,
+          "companions": 1212.359375,
+          "overflow": false
+        },
+        "previewRoomCancelAndApplyKeepDetailsAndKeyboardFocus": true,
+        "previewAndCancelFourRawKeysExact": true,
+        "previewRoomCancelStrictStorageWriteGuardPassed": true,
+        "explicitApplyMatchesPureAPIAndRestoredToOriginal": true,
+        "svgLoaded": true
+      }
+    ],
+    "errors": [],
+    "formalCanonicalNotOverwritten": true,
+    "noDepartureOrRewards": true
+  },
+  "SVG": {
+    "passed": true,
+    "sourceSVGBytes": 349,
+    "sameImagePNG2x80Bytes": 4301,
+    "sourceViewBox": [
+      40,
+      40
+    ],
+    "productionDisplayPixels": [
+      28,
+      28
+    ],
+    "measuredSVGDecodeMs": 3.699999988079071,
+    "singleLocalDecodeNotGeneralPerformanceClaim": true,
+    "pngComparisonOnlyNotProductionAsset": true,
+    "hasCSSSupported": true
+  },
+  "nextMainWindow": [
+    200,
+    202
+  ],
+  "PagesStill197PublicVerificationProxy403NoRetry": true,
+  "permanentSupplyPending": true,
+  "failedHarnessLogsPreserved": [
+    "camp-before.log",
+    "camp-before-fixed.log",
+    "baseline-server.log",
+    "node-related.log"
+  ],
+  "newSourceFiles": [
+    "dist/assets/camp-companions-v198.svg",
+    "dist/expedition-companion-workbench.mjs",
+    "scripts/browser-v198.cjs",
+    "scripts/check-v198.mjs",
+    "tests/companion-workbench.test.mjs"
+  ],
+  "changedSourceFiles": [
+    "dist/expedition-command-view.mjs",
+    "dist/expedition-guild-ui.mjs",
+    "dist/expedition.css",
+    "dist/index.html",
+    "scripts/run-browser-acceptance.mjs"
+  ],
+  "originalCheckpointAttempts": 7,
+  "NodeScope": [
+    "tests/companion-workbench.test.mjs",
+    "tests/v40.test.mjs",
+    "tests/returning-camp.test.mjs",
+    "tests/equipment-workbench.test.mjs",
+    "tests/growth-navigation.test.mjs",
+    "tests/replay-motion.test.mjs"
+  ],
+  "fullRegistryExpected": 100,
+  "newNodeTests": 4,
+  "prospectiveFullNode1859NotExecuted": true,
+  "previewRoomCancelStrictStorageWriteGuardPassed": true
+}

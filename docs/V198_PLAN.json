@@ -1,0 +1,11 @@
+{
+  "version": "0.198",
+  "scope": "mobile companion workbench and DOM continuity",
+  "mainWindow": [
+    200,
+    202
+  ],
+  "fullNodeNotRun": true,
+  "full100GUINotRun": true,
+  "supplyPending": true
+}

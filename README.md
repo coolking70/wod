@@ -1,3 +1,5 @@
+> v0.198 收敛营地伙伴职责：手机双列卡片保留全部原操作，390px伙伴区缩短42.4%、320px缩短36.9%；预览/换房/取消/应用保留焦点和指令展开状态，严格预览零写入。349字节原生SVG标记，52相关Node与6套完整相关GUI通过，7份原CP保留；非全1859/100。main和Pages仍为v197，公开验收403及旧站迁移未验证保持。 见[说明](docs/V198_COMPANION_CAMP_WORKBENCH.md)、[交接](docs/HANDOFF_CLOUD_V198.md)。
+
 > v0.197 整合装备工作台与六职业动作，修复证据页返回战场时的飘字生命周期和角色法力明细展开状态。完整1855项Node、99套浏览器、130份历史JSON/33份HTML及204份CLI原字节验证通过。正式档保持15060金币/next141；永久补给经济待定。详见[版本说明](docs/V197_SINGLEPLAYER_MOTION_MILESTONE.md)和[云端交接](docs/HANDOFF_CLOUD_V197.md)。
 
 > v0.196回放演出：修复4倍速特效跨步和切速/暂停遗漏，统一六职业与原生SVG/CSS生命周期；实际八帧GIF/PNG对照按需载入。119相关Node/10完整相关GUI/114静态CLI通过，非全1855/99。正式四串仍15060/next141，main194；197–199全门禁后评估main。见[说明](docs/V196_REPLAY_MOTION_LIFECYCLE.md)、[交接](docs/HANDOFF_CLOUD_V196.md)。

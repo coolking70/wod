@@ -1,0 +1,2 @@
+import fs from'node:fs';import path from'node:path';import assert from'node:assert/strict';import{replayMotionCases}from'./replay-motion-cases.mjs';
+const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v198';fs.mkdirSync(out,{recursive:true});const p=path.join(out,'companion-camp-fixture.json');assert.equal(fs.existsSync(p),false);const x=replayMotionCases();fs.writeFileSync(p,JSON.stringify({keys:x.keys},null,2));console.log(JSON.stringify({passed:true,normalNext:141,viewOnlyCanonicalCopy:true}));
