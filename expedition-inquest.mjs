@@ -1,0 +1,8 @@
+// Original finite encounters for a fourth damage channel; no hidden room damage.
+const row=(skill,target='front',mode='repeat')=>({skill,target,mode});
+const attrs={str:14,con:12,int:14,dex:14,cha:17,agi:12,per:13,wil:13};
+const enemy=(id,name,pos,skill,hp,level=8)=>({id,name,pos,role:'镜心问堂',mark:'镜',side:'enemy',defenseFocus:'resist',defenses:{melee:'natural',ranged:'natural',magic:'natural'},gear:'field',attrs:{...attrs},skills:{[skill]:level},hp,maxHp:hp,mp:80,maxMp:80,prep:[],main:[row(skill)],healing:{enabled:false}});
+export const INQUEST_ROOMS=[
+ {id:'inquest_gate',name:'01 · 叩心门廊',note:'前排铸面近卫有18物理护甲、抗近战/远程15%、抗法40%，但心理弱点10%；后排问询者抗心理65%、弱法15%，以诘心回声压前排。左翼抄卫用箭压后排。吟游者可对重甲使用心理攻击，射手或法师拆问询者；也可保留原输出，以心智抵抗、定心吟或屏障承担压力。物理护甲不减心理伤害，法术抗性也不减心理伤害。',enemies:[{...enemy('igv','铸面近卫','front','strike',220,8),attrs:{...attrs,armor:18,wil:8},resistances:{melee:15,ranged:15,magic:40,mental:-10}},{...enemy('igq','门廊问询者','rear','mindcall',145,8),gear:'lute',resistances:{mental:65,magic:-15}},{...enemy('iga','提灯抄卫','left','shot',110,7),main:[row('shot','rear')]}]},
+ {id:'inquest_seat',name:'02 · 镜心审席',note:'前排闭目审守有14物理护甲、心理抗性50%、法术弱点20%，不能把首场心理集火直接照搬；后排追问者以心理攻击压中央，心理抗性为0。左翼定心书记先为后排施放定心吟、之后屏障护前；击倒来源不撤销已生效支援。法师可对弱法前排、吟游者可转后排，射手决定先拆追问还是留意支援。定心吟与主动心智抵抗都会改变防御，但有预备行动或个人法力代价。',enemies:[{...enemy('isv','闭目审守','front','strike',250,9),attrs:{...attrs,armor:14},resistances:{mental:50,magic:-20}},{...enemy('isq','追问者','rear','mindcall',160,9),gear:'lute',attrs:{...attrs,cha:19},main:[row('mindcall','center')],resistances:{mental:0,magic:20}},{...enemy('iss','定心书记','left','spark',125,7),gear:'focus',skills:{spark:7,resolvechant:8,ward:7},prep:[row('resolvechant','rear','once'),row('ward','front')],main:[row('spark','front')],resistances:{mental:25,ranged:-10}}]}
+];

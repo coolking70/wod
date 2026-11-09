@@ -1,0 +1,2 @@
+import {foundryStoryProgress,FOUNDRY_STORY_ENDINGS,FOUNDRY_STORY_GOLD} from './expedition-foundry-story.mjs';import {soloStoryView} from './expedition-solo-story-view.mjs';
+export function foundryStoryView(g){return soloStoryView({id:'foundry',progress:foundryStoryProgress(g),endings:FOUNDRY_STORY_ENDINGS,gold:FOUNDRY_STORY_GOLD,label:'铸库归航',title:'替最后一班，写下归航的名字。',intro:'从炉门到外港，把探索、带回的回答与最后一班守望串成一段旅程。三段条件计入已领取的正常远征结果，已完成的条件直接保留；路线仍可自由选择。',claimAttribute:'data-foundry-story-end'});}

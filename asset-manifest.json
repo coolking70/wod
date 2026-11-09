@@ -1,0 +1,1547 @@
+{
+  "version": "0.197",
+  "sourceCommit": "9dfac2b4f439bbd6589016365e044171a347a340",
+  "sourceTree": "c0872a1884607fcd1943f18dd43e3f4c51c8ff78",
+  "files": [
+    {
+      "path": "assets/abbey.png",
+      "bytes": 3010033,
+      "sha256": "41663fecc1223ab1413399d719006487f455c692da84060c2194e3a7b10ecca1"
+    },
+    {
+      "path": "assets/camp-waypost-v190.svg",
+      "bytes": 336,
+      "sha256": "26486bb2c55c31d82a1bc44a09a0da99cbcca1d021342428ea9dbc6f8c2b0b3d"
+    },
+    {
+      "path": "assets/drowned-infirmary-v21.png",
+      "bytes": 3118916,
+      "sha256": "471d58357bb6c7e9e839df0dcbfcb713578f9a22335a20360f9dd1dd7573f1ad"
+    },
+    {
+      "path": "assets/enemy-supports-v25.png",
+      "bytes": 2719350,
+      "sha256": "bfebf04062e549b50055140cade628d5954611c07aabf5f6b055788be4a78650"
+    },
+    {
+      "path": "assets/flood-gate-v15.png",
+      "bytes": 3092203,
+      "sha256": "918e3d023feafe1856eecf909ed111cc884009b2ebde8c3391223fca98c8c157"
+    },
+    {
+      "path": "assets/foundry-v71.png",
+      "bytes": 3027795,
+      "sha256": "ff1a7896c292c98a8609cc61b730a0768af0ed3cdceb77d7176c70420dbdbde3"
+    },
+    {
+      "path": "assets/harbor-seal-v41.png",
+      "bytes": 2957066,
+      "sha256": "851caea183c565f3066b572dd4b4b1c55df769deb6731b08a9849c930e1fd481"
+    },
+    {
+      "path": "assets/items/filterveil.svg",
+      "bytes": 847,
+      "sha256": "894c7ed69e4191dd82e736b6112f08f1011166aec74ca8de2d1b4468cf393f5e"
+    },
+    {
+      "path": "assets/items/postbell.svg",
+      "bytes": 1057,
+      "sha256": "0d4fdabad3a671bd6b2ae023290359ca6aac04cb439be513b566a92978fb9231"
+    },
+    {
+      "path": "assets/items/warehouse-v195.svg",
+      "bytes": 268,
+      "sha256": "cba31b3d71239cc7dc25627930aa35d25d1b93ecc2a20a5d4cf1356f10fff9cd"
+    },
+    {
+      "path": "assets/journey-letter-v192.svg",
+      "bytes": 426,
+      "sha256": "bb646bd22ee745fbe5692392cf4e234cb838e970effcb1e81a98127fb40402f1"
+    },
+    {
+      "path": "assets/last-lantern-v17.png",
+      "bytes": 3179959,
+      "sha256": "e8c7925897f7af34acf5cce4c0d551ad52ae7c73373c2db70d32907bd8f53ae0"
+    },
+    {
+      "path": "assets/mirror-gallery-v9.png",
+      "bytes": 3325623,
+      "sha256": "9c465a1c3352c6b93714a3313cdfab18fd13565d5f403095163c8933d07dd9ad"
+    },
+    {
+      "path": "assets/oathbreaker-v5.png",
+      "bytes": 2946721,
+      "sha256": "2f273f80cd5ad8b1c0c896d4ae68b73c77c33ae4c0dfd7cd9ea3a4701bfd54ef"
+    },
+    {
+      "path": "assets/portraits-v4.png",
+      "bytes": 3340468,
+      "sha256": "ff4e82b712b082626dd40f8bf49958b268be3b929a276d928d1d49b3d69ebd3c"
+    },
+    {
+      "path": "assets/receipt-seal-v193.svg",
+      "bytes": 281,
+      "sha256": "d6a46f49d2bac3e98fb7a7b071eba8df08be95911aa5ba9a6b061a28be62709b"
+    },
+    {
+      "path": "assets/saltwind-harbor-v41.png",
+      "bytes": 3026372,
+      "sha256": "d33b130d59c2400928516693180ec240429cb17e2694c287d20dbfee26d2a02b"
+    },
+    {
+      "path": "assets/studies/v172-guardian-poster.png",
+      "bytes": 231373,
+      "sha256": "69931883724114f8a36edbe4423e88b9a02881d5fd2f749dee25e98b8860dcc2"
+    },
+    {
+      "path": "assets/studies/v172-guardian-sheet.png",
+      "bytes": 1969097,
+      "sha256": "e1f64e6afee8cb58e6e587c13714681bdc90ebf76e010f4f311dc638ca51a832"
+    },
+    {
+      "path": "assets/studies/v172-guardian-trial.gif",
+      "bytes": 378839,
+      "sha256": "f1e67870bafabae85857aab2f63c9522f1e8fcf0720d745124f7f56931be3ddf"
+    },
+    {
+      "path": "assets/studies/v172-postbell.png",
+      "bytes": 5089,
+      "sha256": "34bdc5c24ddfef63c738449504029f2742ccc7a21c3e8b37cd728fb6caf31166"
+    },
+    {
+      "path": "assets/studies/v172-postbell.svg",
+      "bytes": 1057,
+      "sha256": "0d4fdabad3a671bd6b2ae023290359ca6aac04cb439be513b566a92978fb9231"
+    },
+    {
+      "path": "assets/studies/v172-tidal-dock.png",
+      "bytes": 115207,
+      "sha256": "407de590a29132d5f9db932fd571b297813954be9826b011e29f2dbff883bc56"
+    },
+    {
+      "path": "assets/studies/v172-tidal-dock.svg",
+      "bytes": 4062,
+      "sha256": "d557cf35e8bb54916f433ef46afc046109e1adeba21066e6493cee4476b0df80"
+    },
+    {
+      "path": "assets/studies/v174-guardian-native-poster.png",
+      "bytes": 21370,
+      "sha256": "377d044158c18f69067d13982a513113cd42ab351ee442e39fa26998658e8f78"
+    },
+    {
+      "path": "assets/studies/v174-guardian-native-sheet.png",
+      "bytes": 181064,
+      "sha256": "02ac7d68c1dc346b5613969ec0eaa46007fcd201cdd7829918d603bf3d76ff4e"
+    },
+    {
+      "path": "assets/studies/v174-guardian-native.gif",
+      "bytes": 63134,
+      "sha256": "b7e76f9be66f5f4fe0fb1766e34091829ae148fb682392d19f6885d946d09b45"
+    },
+    {
+      "path": "assets/studies/v176-guardian-fall-poster.png",
+      "bytes": 24502,
+      "sha256": "9400a503e5470018780421bc7de576de327ee50fd42624f06cd18b8cd1370e80"
+    },
+    {
+      "path": "assets/studies/v176-guardian-fall-sheet.png",
+      "bytes": 190969,
+      "sha256": "e2dc5719ca2c3950757bda628926e730cc6027bcf9d1d3a56cff61bdad17e105"
+    },
+    {
+      "path": "assets/studies/v176-guardian-fall.gif",
+      "bytes": 62928,
+      "sha256": "1a5e60a691ee21ed4727ad425f87ba1b931910f62c3ca416c68350b31cd72842"
+    },
+    {
+      "path": "assets/studies/v180-bard-strum-poster.png",
+      "bytes": 18746,
+      "sha256": "f16c6a8b417fd53af81aadb78e3a9005525b03219d462a476e731770c784fc18"
+    },
+    {
+      "path": "assets/studies/v180-bard-strum-sheet.png",
+      "bytes": 153318,
+      "sha256": "97d600bf7629a67de1b64b5c53377bb49ae68d35fbb1c4834c283e97021f5786"
+    },
+    {
+      "path": "assets/studies/v180-bard-strum.gif",
+      "bytes": 59664,
+      "sha256": "d9612894478757a6b255c3c7cfaf5f29d7110909bcfdc8b3fbca6da7a18a28cd"
+    },
+    {
+      "path": "assets/studies/v183-scholar-ward-poster.png",
+      "bytes": 17983,
+      "sha256": "644f6cf24173cdab2260e4a73389a1968e7ff898e0123604d6e115e1e8f199a8"
+    },
+    {
+      "path": "assets/studies/v183-scholar-ward-sheet.png",
+      "bytes": 150205,
+      "sha256": "d23ed82c435095a8ec50531b5e7e641b24d23371c8cd712b746487c4f7c7d7bf"
+    },
+    {
+      "path": "assets/studies/v183-scholar-ward-static.png",
+      "bytes": 25281,
+      "sha256": "78a816aeb58725ef531dd097829b90089f6750b4e50f971954769bce252bac2c"
+    },
+    {
+      "path": "assets/studies/v183-scholar-ward.gif",
+      "bytes": 58849,
+      "sha256": "86f4ce80dfe59647ead1492942ae3654d244500f032e8f23869dbdf470cbe28c"
+    },
+    {
+      "path": "assets/studies/v183-scholar-ward.svg",
+      "bytes": 5794,
+      "sha256": "968cc3f972b2db1b747fc3dce638bf11b30e6815728c787aab707ec67c563e1f"
+    },
+    {
+      "path": "assets/studies/v187-tidecaller-wave-poster.png",
+      "bytes": 19550,
+      "sha256": "826ae6445954d81336855465f45d7aef2f0a33d75a130734238301b7207e984e"
+    },
+    {
+      "path": "assets/studies/v187-tidecaller-wave-sheet.png",
+      "bytes": 180272,
+      "sha256": "7f87e856b0dc804941ae8a4b48b7865c8cfc8e27353d8f09178bb1d755df8dd8"
+    },
+    {
+      "path": "assets/studies/v187-tidecaller-wave-static.png",
+      "bytes": 26829,
+      "sha256": "6489bc31b65d3c2e8677a81661be18f837606068fe1fc763116cce307182d9e4"
+    },
+    {
+      "path": "assets/studies/v187-tidecaller-wave.gif",
+      "bytes": 65314,
+      "sha256": "7c3f9d8663c0f603faab6d26dfbfc5dc2fcb3eebdc9c3dc4656bc6c2348f926b"
+    },
+    {
+      "path": "assets/studies/v187-tidecaller-wave.svg",
+      "bytes": 6281,
+      "sha256": "be9e7d24559cd41fd06414fed9b1b2af6b8c641e9e2dd3fb35d13771538f8c50"
+    },
+    {
+      "path": "assets/studies/v189-herbalist-aid-poster.png",
+      "bytes": 20725,
+      "sha256": "8a7aea3be67a736780e1ed2039e68f63b65f7b4c77d75d155425601701bc1f4b"
+    },
+    {
+      "path": "assets/studies/v189-herbalist-aid-sheet.png",
+      "bytes": 173988,
+      "sha256": "323648b0b698fc36928a5de844ceb30f89efdf49e170e48a4142f839fefbe662"
+    },
+    {
+      "path": "assets/studies/v189-herbalist-aid-static.png",
+      "bytes": 27263,
+      "sha256": "109f98b7158f676d131f81c2586b7edc28200ea805b2191cb05d9bce8212c42d"
+    },
+    {
+      "path": "assets/studies/v189-herbalist-aid.gif",
+      "bytes": 68784,
+      "sha256": "0adfa9020e16048b93b5f950e11e3c0d785128716278280ae29afd5addd66416"
+    },
+    {
+      "path": "assets/studies/v189-herbalist-aid.svg",
+      "bytes": 6574,
+      "sha256": "4870ac17ba8bebb4b1b268fb41b8d4f92256c3330016ccc3a317818bf18ec7a8"
+    },
+    {
+      "path": "assets/studies/v196/after-motion.gif",
+      "bytes": 479637,
+      "sha256": "9e0574d5c598fc0c2608246bcaa6f83ecb2e49d2e18c429a9026b6ffb731739b"
+    },
+    {
+      "path": "assets/studies/v196/after-poster.png",
+      "bytes": 850988,
+      "sha256": "cc9e44b636dfdd72c440fdf25797e69f2c22fdce72509a57da858e5a92e4067d"
+    },
+    {
+      "path": "assets/studies/v196/after-strip.png",
+      "bytes": 1216351,
+      "sha256": "0c9a90272a92747621df7fb8c6a0c16f5607a4c9c37736a6ec7355b88bda3993"
+    },
+    {
+      "path": "assets/studies/v196/before-motion.gif",
+      "bytes": 487122,
+      "sha256": "46f22f50d318a6208912b762dbf53feb58b874bd0f747e2f88eeb1978a90e496"
+    },
+    {
+      "path": "assets/studies/v196/before-poster.png",
+      "bytes": 850988,
+      "sha256": "cc9e44b636dfdd72c440fdf25797e69f2c22fdce72509a57da858e5a92e4067d"
+    },
+    {
+      "path": "assets/studies/v196/before-strip.png",
+      "bytes": 1265180,
+      "sha256": "1d9bb7055753082274c4a2741c11485b484bb1b6899330433900c19700354cb1"
+    },
+    {
+      "path": "assets/studies/v196/metadata.json",
+      "bytes": 2969,
+      "sha256": "99c17fe72386e13d1de443732875ddec5fa0c1d3df8e3e3424417c450c547f44"
+    },
+    {
+      "path": "assets/sunken-bell-v10.png",
+      "bytes": 2746932,
+      "sha256": "bd0de96a77ed02ab8efcd131ecf06e690e084b9762f9dd12e2243ce311f5c86e"
+    },
+    {
+      "path": "assets/support-portraits-v10.png",
+      "bytes": 2752857,
+      "sha256": "ecb7f11d669575c098f541d155a20ac44c47f3adc85578bef36d8fe52c2e9ec7"
+    },
+    {
+      "path": "bard-detail.css",
+      "bytes": 1671,
+      "sha256": "e3748dbb8dc823f4184a4fc0372c7393b5dd0b2ee571d6ae27eb47a2535af19f"
+    },
+    {
+      "path": "bard-motion.css",
+      "bytes": 2176,
+      "sha256": "539dd298295b1b42c2a01dd79c816cffbb1ef432f8edfb11e488090b648565af"
+    },
+    {
+      "path": "content.mjs",
+      "bytes": 9316,
+      "sha256": "ee90161df2edb611ea1a955a7e09583809c4d5d1a3667e125f6812c995df4d40"
+    },
+    {
+      "path": "expedition-action-outcomes.mjs",
+      "bytes": 3886,
+      "sha256": "0a0c50f002fa63a1efa9dd3a9f621df4a0709dd1080af8aaa1acbf934a2a48fd"
+    },
+    {
+      "path": "expedition-advancement-data.mjs",
+      "bytes": 3341,
+      "sha256": "d1e00da749a4c1727c422f26c3f720b2f056cff0f0883cf74a833521d2e8328b"
+    },
+    {
+      "path": "expedition-advancement.mjs",
+      "bytes": 1560,
+      "sha256": "a8d6341ab74cd08d0b4200c510594d1123a1570e2deef6ad7c5b67a8f4b8b4bd"
+    },
+    {
+      "path": "expedition-adventure.mjs",
+      "bytes": 24634,
+      "sha256": "f564fe109ca5dcbc5c13b37517d7a8b9448f5f21fbca6596db7b26364d24ef76"
+    },
+    {
+      "path": "expedition-afflictions.mjs",
+      "bytes": 1656,
+      "sha256": "dace6ec9e78aec3747cb581e66fb209eb2a1d2df55e5c338d4b006daa0116f7c"
+    },
+    {
+      "path": "expedition-archive-participation.mjs",
+      "bytes": 2868,
+      "sha256": "dd5c126d891d18fcff25e3b091a9e03812d4f36986564223c5504b027cc87fee"
+    },
+    {
+      "path": "expedition-attribute-training-view.mjs",
+      "bytes": 3080,
+      "sha256": "c4bfa53e50e8d7ec5c795f9585ce92dd31be0c9ee2f32b8556a038251ae84f22"
+    },
+    {
+      "path": "expedition-attribute-training.mjs",
+      "bytes": 1835,
+      "sha256": "d185356a16aa145db7ecfd39f3e96f440407178cf5448a021d7e739bf8b31938"
+    },
+    {
+      "path": "expedition-automatic-action.mjs",
+      "bytes": 6017,
+      "sha256": "5edb8d173b27e2b72c4a51916dfa6a4b290468c2bcb83b44ee9409caa8397e6e"
+    },
+    {
+      "path": "expedition-automatic-planning.mjs",
+      "bytes": 3674,
+      "sha256": "4efa51cfbf44f9bde201926e65fcb554b70cf3a33b34688fc402d86c957e2473"
+    },
+    {
+      "path": "expedition-bard-detail.mjs",
+      "bytes": 6554,
+      "sha256": "549492e31d90d117012b8b08f59693981ba8d1782924dd0717658aaba0a6274c"
+    },
+    {
+      "path": "expedition-bard-motion.mjs",
+      "bytes": 7470,
+      "sha256": "b7814344aa8e0c2f26e4bf592dd001986f5f35e502d55c3c97512e85bdb231c5"
+    },
+    {
+      "path": "expedition-beaconbridge.mjs",
+      "bytes": 2777,
+      "sha256": "aa9e813de8b5d37fe22b27c40349c5281775919d73ff51c07639c3f9c11f8f4c"
+    },
+    {
+      "path": "expedition-book-view.mjs",
+      "bytes": 3271,
+      "sha256": "c646ba51ae5537224ecb5c7077a10d5c5cc0e03cb3e794d2404be6e6cbb14bb2"
+    },
+    {
+      "path": "expedition-book.mjs",
+      "bytes": 4576,
+      "sha256": "44a44ce72f66fdd47dff5842d5b400b66b6928eb213b972d14330a1cd83b3b21"
+    },
+    {
+      "path": "expedition-breakwater.mjs",
+      "bytes": 2973,
+      "sha256": "c8b03281facbea7f39063074547bad640b4d1774a6c0be6a3c20cba8ada69981"
+    },
+    {
+      "path": "expedition-builds.mjs",
+      "bytes": 10387,
+      "sha256": "2c5af5792a4fad9b884c1ef43282946a9a6f3a0a5998a323447bfb4f89cc59d1"
+    },
+    {
+      "path": "expedition-camp-cycle-view.mjs",
+      "bytes": 3790,
+      "sha256": "6d14e85b67754d0b9e8e003eabe9ee7c400404bc146aa81d586f22860b006a95"
+    },
+    {
+      "path": "expedition-camp-cycle.mjs",
+      "bytes": 8784,
+      "sha256": "17c11acff72559e703716624a7e232f1eccb43b80f73e68d5334ab7504847ad1"
+    },
+    {
+      "path": "expedition-camp-journeys.mjs",
+      "bytes": 1018,
+      "sha256": "0651fc64197c72a9e590827a45f633902b2039e549de8cfb4ba9d19cb052af3e"
+    },
+    {
+      "path": "expedition-campaign-backup.mjs",
+      "bytes": 3983,
+      "sha256": "ae3db062797afbe1a8baa5770757e998cb2ce9461d2cf21989cb94e871a20cbd"
+    },
+    {
+      "path": "expedition-care.mjs",
+      "bytes": 4859,
+      "sha256": "cc6c08c4ef93bc698a7395caa1ed423064c41fb1962e9e148e8872824afac986"
+    },
+    {
+      "path": "expedition-channel.mjs",
+      "bytes": 3991,
+      "sha256": "4321fa64e08a1e68d40fb529d1bb67bdd56b20c243d0bfe23c532fa4bef8c9ee"
+    },
+    {
+      "path": "expedition-claimed-reward.mjs",
+      "bytes": 2240,
+      "sha256": "f2683cbf386617b1ef5c9ca99af7b41908fb8fbdf3a5e256fa254d22d924e93f"
+    },
+    {
+      "path": "expedition-clocktower-story-view.mjs",
+      "bytes": 859,
+      "sha256": "5e32c0bee4ef7f6315c5d19c46c533f3c92cb1d222718ef2b8867a2d42db10ee"
+    },
+    {
+      "path": "expedition-clocktower-story.mjs",
+      "bytes": 4432,
+      "sha256": "c431c48394ec109ab3e5b1ad52bf58e7b864c09c56538108c5d4130aec1877c8"
+    },
+    {
+      "path": "expedition-clocktower.mjs",
+      "bytes": 2935,
+      "sha256": "50636f5c58d44066af586a2c6c7f09a1f729491ebc2c952144fb365289f7ed02"
+    },
+    {
+      "path": "expedition-command-preview.mjs",
+      "bytes": 5433,
+      "sha256": "9d3144667be7bffa07084b25f0651f96cf734af5b74e85a6ad89ccf45a217510"
+    },
+    {
+      "path": "expedition-command-view.mjs",
+      "bytes": 6325,
+      "sha256": "7ca2fada89eb3e3708813a0ae3a01912206df6fcdf414dac36780f4b411d1f3f"
+    },
+    {
+      "path": "expedition-command.mjs",
+      "bytes": 1844,
+      "sha256": "8e3d6431da473e4067126d2ea802a025671ff758c700302b427b5b0083154628"
+    },
+    {
+      "path": "expedition-config-undo.mjs",
+      "bytes": 3575,
+      "sha256": "b49dcae66eef4a188b1347acef647ae97a086f6677c0117cb6a40f06e4d0acc9"
+    },
+    {
+      "path": "expedition-confluence.mjs",
+      "bytes": 3271,
+      "sha256": "604959e6aa40bdc2fc02f0caca4c313e785b4fbeb0a4339d117ffc83605b5c81"
+    },
+    {
+      "path": "expedition-contract.mjs",
+      "bytes": 1981,
+      "sha256": "25594fdf93efbde9cea152875dc75038aab353f20cb4cfffb1ae8f1fd9fd176d"
+    },
+    {
+      "path": "expedition-control.mjs",
+      "bytes": 2294,
+      "sha256": "fd066991c77bb7e44cef354810b9a3ae35cfd9ff3b385acab8c6e0e6668d29d9"
+    },
+    {
+      "path": "expedition-cooperation.mjs",
+      "bytes": 8233,
+      "sha256": "5c996819983370dc3050925952f732831950d3a7116dcfe3c1d117a2906c5d53"
+    },
+    {
+      "path": "expedition-corrosion.mjs",
+      "bytes": 549,
+      "sha256": "a4283218e4ff75318dd57a42f1ef625911776e1c6f7fd2479e20999ce747a0e2"
+    },
+    {
+      "path": "expedition-counterpoint.mjs",
+      "bytes": 2534,
+      "sha256": "3cb2e52bd614d9827566e4674b41b46bdb77dee456141dc77dc31120ad23ce29"
+    },
+    {
+      "path": "expedition-courier-view.mjs",
+      "bytes": 3623,
+      "sha256": "3578992066366369fe5b97a046cb7e11ac0decba3187f9503fde691448875a97"
+    },
+    {
+      "path": "expedition-courier.mjs",
+      "bytes": 6453,
+      "sha256": "4b050c9466312e42e9135d59457f0decb1507f0a1ed63649c67730be1a8686ba"
+    },
+    {
+      "path": "expedition-damage-channel.mjs",
+      "bytes": 1584,
+      "sha256": "53d79f5122e8000796f19786e862567c8b8eb37c87865318c2770dc3557955fe"
+    },
+    {
+      "path": "expedition-data.mjs",
+      "bytes": 71871,
+      "sha256": "76ad476b73feed70cec5ebf3625d3867bb4be4778446bcca4431f948f05927d1"
+    },
+    {
+      "path": "expedition-deployment.mjs",
+      "bytes": 1461,
+      "sha256": "155b2b30cf36b057a36b51669bbcc620a8e4a0f0526108d15dc6f79c56bd4d21"
+    },
+    {
+      "path": "expedition-disease.mjs",
+      "bytes": 4172,
+      "sha256": "ccfb428b437eb3ef1a5d6df7357a8a8891aaf1071bd06b8c2ae57b9df3f5d706"
+    },
+    {
+      "path": "expedition-disruption.mjs",
+      "bytes": 616,
+      "sha256": "fa61bbf1b2c35f593f90fb4c06a3c8b28d056fba6e770f1cbb84558273b2ef36"
+    },
+    {
+      "path": "expedition-draft-commands.mjs",
+      "bytes": 3167,
+      "sha256": "62073c7f4d9986c9bdfd3458e0b96fb6fc26d1c1c8fc341073a5c3ca84f99588"
+    },
+    {
+      "path": "expedition-draft-storage.mjs",
+      "bytes": 847,
+      "sha256": "1dbe3f1a3e99d33e03ec883d739be2534b37771adebb41b95bac7f0e9d603b4b"
+    },
+    {
+      "path": "expedition-engine.mjs",
+      "bytes": 80854,
+      "sha256": "58bfe1cb07a11daeb0966d3d3b35890c7d8542c51179dcf9244c63a42a28a91a"
+    },
+    {
+      "path": "expedition-equipment-goal-view.mjs",
+      "bytes": 4084,
+      "sha256": "3867de9d03d007b0d67f943e52ebee003baca8ed43653f3aeda932cce0e2f9e8"
+    },
+    {
+      "path": "expedition-equipment-goal.mjs",
+      "bytes": 4643,
+      "sha256": "6b25c0a4e1b67319d00c85964c521d01174d8a60cae981fdd9dc242554291f9c"
+    },
+    {
+      "path": "expedition-equipment-ranks-view.mjs",
+      "bytes": 1575,
+      "sha256": "1c6d91b14042e45b1e0b00b4f1c2d1ebffc89436c0bad7f4eb6b9b5d125e0e47"
+    },
+    {
+      "path": "expedition-equipment-requirements.mjs",
+      "bytes": 3272,
+      "sha256": "1b8fae430dfc45d54f240528317cdb133ea72348525abf52a4df8fc7312ebd7f"
+    },
+    {
+      "path": "expedition-equipment-sets.mjs",
+      "bytes": 997,
+      "sha256": "dc7f259782e213043186af93e77471beb210c91e196df23bf43784a80eff9596"
+    },
+    {
+      "path": "expedition-equipment-view.mjs",
+      "bytes": 11109,
+      "sha256": "d6254cc4f8c4ad20e2f97a2d4ee816c5a1d19efaa9d448b3dba1f76038473c39"
+    },
+    {
+      "path": "expedition-equipment-workbench.mjs",
+      "bytes": 1387,
+      "sha256": "7b0114c2532c3b7780437500bee539dbfc418e940e52dc5d8c20ac243d60d380"
+    },
+    {
+      "path": "expedition-equipment.mjs",
+      "bytes": 7788,
+      "sha256": "798823bede54b126fee4059337ba7707b681f7dda32f51cd113aa501d3c784a9"
+    },
+    {
+      "path": "expedition-escort.mjs",
+      "bytes": 3237,
+      "sha256": "5034e1f79c1bbecba08b6252ae59d98ecd3f99a3a602ccb84499fa3c05578d56"
+    },
+    {
+      "path": "expedition-events.mjs",
+      "bytes": 5022,
+      "sha256": "550c7d3bd43c0c58cfb7ddf1762afdd4407e674c532e12b0cb58c49777a2b838"
+    },
+    {
+      "path": "expedition-exploration-index.mjs",
+      "bytes": 4171,
+      "sha256": "fd49015f49a54f1a74447e5dbbc5555606e3d614fb195806666cd6f43cc05121"
+    },
+    {
+      "path": "expedition-focus-mark.mjs",
+      "bytes": 6354,
+      "sha256": "8494b8a8691cde19088ccb0d562806a522280e82bc468a500b07cc255e45aa4c"
+    },
+    {
+      "path": "expedition-foundry-contract-view.mjs",
+      "bytes": 5052,
+      "sha256": "ad806e1831171d9583eda8f8a452f071d98cdf2204cb542259aece028621f46a"
+    },
+    {
+      "path": "expedition-foundry-contract.mjs",
+      "bytes": 1951,
+      "sha256": "4f100bb9c3c7a60a719ba862db75093bac5465d7656f077fad821fcda68cda25"
+    },
+    {
+      "path": "expedition-foundry-story-view.mjs",
+      "bytes": 657,
+      "sha256": "ac2dc820115bf77df81e9b3a33451c6df17412dbf549e32f025078ac1c3d0230"
+    },
+    {
+      "path": "expedition-foundry-story.mjs",
+      "bytes": 3591,
+      "sha256": "6b1df77a931fb644062181a6a6cbbf09500aef9c3737d692469932c31fc8c6b6"
+    },
+    {
+      "path": "expedition-foundry-view.mjs",
+      "bytes": 4805,
+      "sha256": "a407d74fd3584c68b747e1c0db478df8ccb386d465350284b2f7824216ce4955"
+    },
+    {
+      "path": "expedition-foundry.mjs",
+      "bytes": 6724,
+      "sha256": "4e0bf5c2c6250feb1ce11868d126122fa8944ad6e0a9586a181472a852056890"
+    },
+    {
+      "path": "expedition-goal-data.mjs",
+      "bytes": 1054,
+      "sha256": "2dd256e1dfb16be9cd8b75276a04e44dd3efdb490f5cb90cbb1eec3b5e92d97f"
+    },
+    {
+      "path": "expedition-greenhouse.mjs",
+      "bytes": 3162,
+      "sha256": "2ef5466f807294d3d4567112da5c99a49399ba16d4bd670130161cdfd47807a2"
+    },
+    {
+      "path": "expedition-group-aid.mjs",
+      "bytes": 3021,
+      "sha256": "205d304fc088668d801e9030b994eea8329c39f4b72eb6548d4976fe0ef2ec42"
+    },
+    {
+      "path": "expedition-growth-navigation.mjs",
+      "bytes": 2975,
+      "sha256": "3744a14d424be18378b891ad6dc6b9995004dad6461f20f934dea51e98fbbe6f"
+    },
+    {
+      "path": "expedition-growth.mjs",
+      "bytes": 2716,
+      "sha256": "70bc6dd59c2b8d65289c54103209ca99f7b012dabf6eb90bd0b486c8799c01af"
+    },
+    {
+      "path": "expedition-guardian-detail.mjs",
+      "bytes": 6040,
+      "sha256": "85f3e82317cfe4fc85aa905d730d6ea9d4d8fe9e921fcfabbd751e1959b54af5"
+    },
+    {
+      "path": "expedition-guardian-motion.mjs",
+      "bytes": 7883,
+      "sha256": "dc41c113ec0ba151845de016e86606126331208e1a90b9a7368b742b8c683b17"
+    },
+    {
+      "path": "expedition-guild-ui.mjs",
+      "bytes": 76551,
+      "sha256": "769de547031bf6953fa69be97257d9c8d0e2a532c0fbdeebf1b6d571d3dcd8b8"
+    },
+    {
+      "path": "expedition-guild.mjs",
+      "bytes": 19297,
+      "sha256": "2e8597e75649c4ff160bad1c08ed64e34d1745d4d82cf08648187c1b1d2aa59b"
+    },
+    {
+      "path": "expedition-harbor-assessment.mjs",
+      "bytes": 3222,
+      "sha256": "c659a2c93dfc3816afdaff1ad23fbe561837036c3363500de08ccfd784834df1"
+    },
+    {
+      "path": "expedition-harbor-contract-view.mjs",
+      "bytes": 1544,
+      "sha256": "9e6840fd9e280112073e8e8ffcfe0b0a0ab7e68c489fb2165f169400ccbdf580"
+    },
+    {
+      "path": "expedition-harbor-contract.mjs",
+      "bytes": 1309,
+      "sha256": "0f624800240386ac6f2562ebc6eea6e08bd5ff3b7cff23116cc7eec9cf9a3c78"
+    },
+    {
+      "path": "expedition-harbor-reserve.mjs",
+      "bytes": 2637,
+      "sha256": "cc5227c77b4a9e76de7834228864547f042ff3dec8321ca3ca68982ce36daa70"
+    },
+    {
+      "path": "expedition-harbor-story-view.mjs",
+      "bytes": 844,
+      "sha256": "8fc8ee33bf16958dd3d971b97a8a0b612213fb3d668e56d40d202a0480f11846"
+    },
+    {
+      "path": "expedition-harbor-story.mjs",
+      "bytes": 3545,
+      "sha256": "835dd0e3a7473804d4cbd4b826194ba3bf4f1e8305efbddfa8e55e132c771da2"
+    },
+    {
+      "path": "expedition-harbor-tactics.mjs",
+      "bytes": 1317,
+      "sha256": "f489c8e31d3f25092b6731df6bbf9d09450a865da3a15dac7c8c4f466c991f8c"
+    },
+    {
+      "path": "expedition-harbor-view.mjs",
+      "bytes": 6751,
+      "sha256": "3e7b0776eeb5f17c0665cf006daec4e682a8e0a616ace1d3b782f363f3bf45d5"
+    },
+    {
+      "path": "expedition-harbor.mjs",
+      "bytes": 10001,
+      "sha256": "0d7370d1ce02fafe732200ab7ce1ef5cd727c8d59fe37bab09569f92b4e378f3"
+    },
+    {
+      "path": "expedition-healing.mjs",
+      "bytes": 3526,
+      "sha256": "f7c325a0bb43d6e94be0610425f72c547e3ea44fae8ab83b82e4391da4993c33"
+    },
+    {
+      "path": "expedition-health-phases.mjs",
+      "bytes": 4354,
+      "sha256": "c2f3197228a0ddcc06f5082149c13ed3ee2ba589c1570753972cc4f61566fe7f"
+    },
+    {
+      "path": "expedition-herbalist-motion.mjs",
+      "bytes": 13179,
+      "sha256": "599a458775176adcadea5570b0ee8cd7f6ab9052b2f1d407742460f2578f576f"
+    },
+    {
+      "path": "expedition-highlights.mjs",
+      "bytes": 1426,
+      "sha256": "21d247f6cf515c7276c37408e73df7ad614422d0896dea3d0c5643df58f86fd6"
+    },
+    {
+      "path": "expedition-history-diff.mjs",
+      "bytes": 1230,
+      "sha256": "01a795c4dfc2fe4243f86d5fd4765eeb453e1e3e6312654b574bbe24dc11539a"
+    },
+    {
+      "path": "expedition-hit-review.mjs",
+      "bytes": 3585,
+      "sha256": "d6b8c530c4d81734a22eab2b8d6c44ca42bd57f2a849a20bb24c943948d6afd3"
+    },
+    {
+      "path": "expedition-holdout.mjs",
+      "bytes": 6642,
+      "sha256": "4a1b69cfeb545d8a27cc41e1d3614b7cf5512a007b4a96069bd1dcc8bf1c533d"
+    },
+    {
+      "path": "expedition-hospice.mjs",
+      "bytes": 1434,
+      "sha256": "b38a1bfd2d42bc2db80c20883823982f521aac1e6006c34035b437f3c575c4a8"
+    },
+    {
+      "path": "expedition-immunity.mjs",
+      "bytes": 4086,
+      "sha256": "ac271df7ea6a6080f17777ba2e6e35ee6ff24025777a723ba2883e15cbc7ea3a"
+    },
+    {
+      "path": "expedition-initiative.mjs",
+      "bytes": 3471,
+      "sha256": "7450d7e349cf0115f76cbed7d2c165ef7004a5dd6fb8c788d940713a13c25f12"
+    },
+    {
+      "path": "expedition-inquest.mjs",
+      "bytes": 2412,
+      "sha256": "1d32b595a03e8b4457259e0122c93e08d039b1580b8217ff0118f29bd19339d9"
+    },
+    {
+      "path": "expedition-interception-view.mjs",
+      "bytes": 941,
+      "sha256": "1db7acf5076448e2c83d6103a9f4b3f5f9924105e1bf4a00890567bc330638b3"
+    },
+    {
+      "path": "expedition-interception.mjs",
+      "bytes": 943,
+      "sha256": "228824a85028bb1c20e4e047e5b86f566aca39dc59e5c386569bb5ebfc8bad08"
+    },
+    {
+      "path": "expedition-item-sets-view.mjs",
+      "bytes": 2604,
+      "sha256": "ec92b7c26bbcaa923a865d3cc564207f8b2b2da8d4b523edc671fb215cb76935"
+    },
+    {
+      "path": "expedition-item-sets.mjs",
+      "bytes": 1223,
+      "sha256": "fee3b6b8f76cd29486d955aed5cfc60826504da313007d60839a4d7270b07618"
+    },
+    {
+      "path": "expedition-journey-followthrough.mjs",
+      "bytes": 1488,
+      "sha256": "404e78d22a4b87b3630c9deb282752235384811bdd244670cf6fa278de469ab9"
+    },
+    {
+      "path": "expedition-lineup-diff.mjs",
+      "bytes": 3859,
+      "sha256": "a1cd7dc86fe052dd9e0c1dfa4fc2771f082fac2967d7289638b7a557744f9fdd"
+    },
+    {
+      "path": "expedition-linked-wards.mjs",
+      "bytes": 3653,
+      "sha256": "41a98d46577b8d7167e2aa6eaa77a410d2f8311f7cb22ef737cb80048a6527f0"
+    },
+    {
+      "path": "expedition-lockworks.mjs",
+      "bytes": 2134,
+      "sha256": "7f24627ffc6d2080c5d0f18a13f0990bbd899873f2e110125a0e97029dc40908"
+    },
+    {
+      "path": "expedition-loot-rehearsal-view.mjs",
+      "bytes": 3012,
+      "sha256": "f6fd6014564e47405f164a29cc7ab3c67ac4a4d008b1f97e900a1a766c9e9b78"
+    },
+    {
+      "path": "expedition-loot-rehearsal.mjs",
+      "bytes": 2168,
+      "sha256": "dbc542946bab8e50449656e57318a5bd0866f7e1de509e1bffda34cee9af2d54"
+    },
+    {
+      "path": "expedition-loot-transfer.mjs",
+      "bytes": 2004,
+      "sha256": "7d9c5b7f324d9c41d445444ed00aa31ea308ecbea09509a44e333ff2023add79"
+    },
+    {
+      "path": "expedition-loot.mjs",
+      "bytes": 6103,
+      "sha256": "0d96525fe4d1e29f013066b6855925b705a75db3372bc6e62806707324d0f07c"
+    },
+    {
+      "path": "expedition-mana-damage.mjs",
+      "bytes": 2362,
+      "sha256": "894e5b68d5787edc60ba6f6e598bfc93fa61a0192096893a8dff9e8ea4dc91f2"
+    },
+    {
+      "path": "expedition-mana-floor.mjs",
+      "bytes": 2353,
+      "sha256": "24efcc493aac6509daf6d7b391bc6a6dca4ec5790c1fc81bc066654682afc459"
+    },
+    {
+      "path": "expedition-mana-regeneration.mjs",
+      "bytes": 2100,
+      "sha256": "05e25b9a39a26d994f27ab7133a4867dfef49fd5d8a5807619acde85b2b00117"
+    },
+    {
+      "path": "expedition-mana-shield.mjs",
+      "bytes": 4580,
+      "sha256": "2261d180c992073e8018e9a284fae13491ae2d0d66295dfb0041df929f48d44d"
+    },
+    {
+      "path": "expedition-mana-timeline.mjs",
+      "bytes": 4755,
+      "sha256": "4093d3b086c35c608964d379345d9adcf908f4c8508fdde52372ad2e7eabf4d7"
+    },
+    {
+      "path": "expedition-mana-transfer.mjs",
+      "bytes": 932,
+      "sha256": "780b4d8e18f9ea673c44762fa9e71d34d00dee84ebef315db0d259211130c38f"
+    },
+    {
+      "path": "expedition-mechanisms-view.mjs",
+      "bytes": 2020,
+      "sha256": "85030b2d7d6204848f86b4c07baf2715fb6f4159f52fddd2a057b4b02e4b51b7"
+    },
+    {
+      "path": "expedition-mechanisms.mjs",
+      "bytes": 3394,
+      "sha256": "1c8aca840eebd17a441ca65aba060ced137520ad876008cf5ba87bc3f11d34c0"
+    },
+    {
+      "path": "expedition-media-data.mjs",
+      "bytes": 754,
+      "sha256": "4d9014b4ceceaf6c1ca2cc6f6afde3d63b45885e158568337fbf4e1583489300"
+    },
+    {
+      "path": "expedition-media.mjs",
+      "bytes": 892,
+      "sha256": "2a96ec286b4e75c6ccd40b952d73f68374f62eb1b35262ac7c1059ba31b97555"
+    },
+    {
+      "path": "expedition-mental-defense.mjs",
+      "bytes": 3023,
+      "sha256": "39fdf6c4e364dfff9b0952091889d2e8936740bc4c0a6cbb06b0b27e7244e927"
+    },
+    {
+      "path": "expedition-motion-record.mjs",
+      "bytes": 887,
+      "sha256": "3c7a8b38ef3dfbdd8d817eefafc696800c67ebc809c4546e6a7cf766d065f356"
+    },
+    {
+      "path": "expedition-objective-review.mjs",
+      "bytes": 3519,
+      "sha256": "52b50467f879820bc6c4d41531d9ea8577d4af1b1cc3bdabbf39883440dde31c"
+    },
+    {
+      "path": "expedition-offbeat.mjs",
+      "bytes": 3131,
+      "sha256": "e87c13e8b892b8b2a8d522d189c7d67a9d2142f7f81d3736e4dcce459e817606"
+    },
+    {
+      "path": "expedition-ossuary.mjs",
+      "bytes": 2291,
+      "sha256": "241646ec8b6ea10f76017462c76afcd9606f458ecc84e0c9ec7f4207637ddc30"
+    },
+    {
+      "path": "expedition-palisade.mjs",
+      "bytes": 3433,
+      "sha256": "87642178a2bc9d5fb6c6b095b55e5311708eca78ee8fc124da4aa3ec796ef67c"
+    },
+    {
+      "path": "expedition-passage-data.mjs",
+      "bytes": 2163,
+      "sha256": "86edee11095f70cc6a8c024f07d76cfa2ed8667e66174aa21b1909e37816c35f"
+    },
+    {
+      "path": "expedition-passage.mjs",
+      "bytes": 4509,
+      "sha256": "107aa3760d31e48c6a3b6f765acde6ca2987d549c474976ceaf5979d3d3fe815"
+    },
+    {
+      "path": "expedition-personal-view.mjs",
+      "bytes": 9804,
+      "sha256": "8ee753862b7ebdbb9fade6f8de0a5574e00a2f563c0adb5b7871f890f3f2a70f"
+    },
+    {
+      "path": "expedition-personal.mjs",
+      "bytes": 8686,
+      "sha256": "b75eac3e13192365b94799d77dd2045da84d7aa781aad16a30e6317092751d29"
+    },
+    {
+      "path": "expedition-plan-book.mjs",
+      "bytes": 3077,
+      "sha256": "eca4d0f27c8fa78550e4f87da6c29a974a94ca18b6850e12dd482e4cb5cdb174"
+    },
+    {
+      "path": "expedition-plan-comparison.mjs",
+      "bytes": 3498,
+      "sha256": "d9ccf16598f2f616043785724a2126efdfbeb7f69500d1ea779970f9ef7a99da"
+    },
+    {
+      "path": "expedition-plan-transfer-view.mjs",
+      "bytes": 5651,
+      "sha256": "42c3f979ffbc028393c7465b3f323ee06ad9971b848dc7a56b62e2540477e7a4"
+    },
+    {
+      "path": "expedition-plan-transfer.mjs",
+      "bytes": 4472,
+      "sha256": "c8122b4b8854b32f1f9fa65e0a82544787943d9c97edbc6dfbd8515b0a8e4587"
+    },
+    {
+      "path": "expedition-play-guide.mjs",
+      "bytes": 5053,
+      "sha256": "d02647d9ce9b5cffceca3cab8d4c8b99ef4aeba3e8b7da0666db3d8950f5b881"
+    },
+    {
+      "path": "expedition-position-only.mjs",
+      "bytes": 3214,
+      "sha256": "df67f6ce1d7b264572cd9f4871b30bff22ef3247b77e7d285916870298cb4753"
+    },
+    {
+      "path": "expedition-position-priority.mjs",
+      "bytes": 3689,
+      "sha256": "7ba8c4e72fb124bd3fc94dc0a49aa8fff3dffce39b9ead5dad03ada83c311009"
+    },
+    {
+      "path": "expedition-post-quest-view.mjs",
+      "bytes": 3834,
+      "sha256": "47020e584f11acacf20004818e09f4ce23a682c9038e77954b80c27ea876c52e"
+    },
+    {
+      "path": "expedition-post-quest.mjs",
+      "bytes": 6430,
+      "sha256": "8449cae9a734c44b96a5d9818c1eecba97c93cd62c200ffd0ae9b8ffc83ba72a"
+    },
+    {
+      "path": "expedition-progression-rules.mjs",
+      "bytes": 1331,
+      "sha256": "081d341a293163ffcdf093efc420bbacdbf971074a5f854f5389d3888d0cb55b"
+    },
+    {
+      "path": "expedition-progression-view.mjs",
+      "bytes": 848,
+      "sha256": "9d630d0c9dd1efb4bba187bf90972da0b4d0a75edad2bcc272d63aa95a7dae11"
+    },
+    {
+      "path": "expedition-ranger-motion.mjs",
+      "bytes": 7148,
+      "sha256": "4813c5c5bd463cc2a3c0b3a16d4bf6b464820bb060d143ba212baf7349e5c6b4"
+    },
+    {
+      "path": "expedition-readiness.mjs",
+      "bytes": 4290,
+      "sha256": "2aa22719460352fe7432e6eb35a8e218ad7c6ba8e2d5b840f283c3f7f5384d40"
+    },
+    {
+      "path": "expedition-regeneration.mjs",
+      "bytes": 211,
+      "sha256": "e6e43bf4fe5a992343e292a93f20027d92bce920205ad77758711166bfe3320c"
+    },
+    {
+      "path": "expedition-replay-layout.mjs",
+      "bytes": 3930,
+      "sha256": "6815d53fe572efb19e5a3d55fdf6674efc0ff21627db883335006c00545fa5b7"
+    },
+    {
+      "path": "expedition-replay-motion.mjs",
+      "bytes": 789,
+      "sha256": "2e87c75379bf098ae1502dceb1f67411a0363b9ad36e6af3171445bb32001957"
+    },
+    {
+      "path": "expedition-report-archive-guild.mjs",
+      "bytes": 3067,
+      "sha256": "3219e2d346eba739e72679cd9093d736cfcadf6c636adda42a2397047da976e2"
+    },
+    {
+      "path": "expedition-report-archive-view.mjs",
+      "bytes": 7819,
+      "sha256": "e93d47909c4cc57ff447ae99c154f767e76b5c84fbbe0ede47f2bf0a4ff4c106"
+    },
+    {
+      "path": "expedition-report-archive.mjs",
+      "bytes": 10793,
+      "sha256": "756cd662ede81de194abb35ccd24625fa3384710b325e11741a6383a3e1bba2c"
+    },
+    {
+      "path": "expedition-report-pool.mjs",
+      "bytes": 3013,
+      "sha256": "f2c25f1f89837e1095f95f4a6190a2075c27ce0f990ed3ad4f2ffbe28b18d8aa"
+    },
+    {
+      "path": "expedition-report.mjs",
+      "bytes": 2161,
+      "sha256": "b6c3c2b136a78cf7e8aa734eb678a63ee91f2411c65f9fa08cec4786c2e5c318"
+    },
+    {
+      "path": "expedition-reserve.mjs",
+      "bytes": 1489,
+      "sha256": "f577a098c4c4d5ac8d76f65221a33cfb61d19122002a968cd6eed644a97d692e"
+    },
+    {
+      "path": "expedition-resource-check.mjs",
+      "bytes": 4827,
+      "sha256": "88ee1457e92ebf27db49d5681b2e511031a6ded881fdb04a671358e4ba3edf99"
+    },
+    {
+      "path": "expedition-resource-ledger.mjs",
+      "bytes": 6953,
+      "sha256": "5df30f8668d33cd50a6a1c3aa5ebe8c6a37aec1600f0097ae6ae384b20ebfd87"
+    },
+    {
+      "path": "expedition-return-quest-view.mjs",
+      "bytes": 3952,
+      "sha256": "9c3a861b9201962d2669ad4858433d4eca2cad9e96268493315f770a096997b6"
+    },
+    {
+      "path": "expedition-return-quest.mjs",
+      "bytes": 5861,
+      "sha256": "67b3fd90684ad6b9cb9947d25442f99f3c861baf2ffdd88aaa03a6ad53da6eba"
+    },
+    {
+      "path": "expedition-review.mjs",
+      "bytes": 17643,
+      "sha256": "c63edd4e798eea22834164772e1534009b0c9e49f6230b8c6f0d1625a4ed3432"
+    },
+    {
+      "path": "expedition-roster-rehearsal-view.mjs",
+      "bytes": 2334,
+      "sha256": "d36225bf5f45dfad510601ce6acf1d8d7c9cc3967f68e4aad64d3431a113d90c"
+    },
+    {
+      "path": "expedition-roster-rehearsal.mjs",
+      "bytes": 2039,
+      "sha256": "5eeb7beaebb6d7941a39b80558ddf1c4c8e90a4836f369d3fbaeec34a75fb554"
+    },
+    {
+      "path": "expedition-roster-view.mjs",
+      "bytes": 4250,
+      "sha256": "8ebbf10ffdc2bf5ef162cbadf2b268008d84dae20a6f0f3600d16bb77696a86e"
+    },
+    {
+      "path": "expedition-roster.mjs",
+      "bytes": 2989,
+      "sha256": "0a7cc9e87d402f6317eb1737a965d37b48f976f57a65f280d2003bfc335b84ea"
+    },
+    {
+      "path": "expedition-route-focus.mjs",
+      "bytes": 1812,
+      "sha256": "3dc0682d874884f2048f7c187bcb9e9d11bed6e42a5bcbacdf2baf1e852be65d"
+    },
+    {
+      "path": "expedition-sampling.mjs",
+      "bytes": 1633,
+      "sha256": "2a068464b8c2dae6ffd5a5dac83178ee3bdd2d57d6e0b554d34dc011f31fc162"
+    },
+    {
+      "path": "expedition-schedule-view.mjs",
+      "bytes": 1205,
+      "sha256": "fb2baff7338f7551bfa624777c15b10e69339966dc183f9ca58a662d49e01185"
+    },
+    {
+      "path": "expedition-schedule.mjs",
+      "bytes": 1124,
+      "sha256": "19f17d140ffff9545e27a56db90b206aa40571beeff25feb6bb88eca3c8be0e1"
+    },
+    {
+      "path": "expedition-scholar-motion.mjs",
+      "bytes": 10651,
+      "sha256": "57f4e1a87564e6ed9883d40d95708395372369085d8a24e9d787856d27c3f31f"
+    },
+    {
+      "path": "expedition-scriptorium.mjs",
+      "bytes": 3355,
+      "sha256": "f1890b8bae515869c5859a95546b8551c75b220d7af7c4776aaec1e690f3f960"
+    },
+    {
+      "path": "expedition-settlement.mjs",
+      "bytes": 2059,
+      "sha256": "2c56b64e2f19e0768ba8f70df182a36b41296e8fb3b9eae15a0d4169e85f6238"
+    },
+    {
+      "path": "expedition-shoals-view.mjs",
+      "bytes": 3288,
+      "sha256": "19a13661efe6130e7e3e442c6a3351f6dbb2c2ba3da0f85ac6a530821dd656ad"
+    },
+    {
+      "path": "expedition-shoals.mjs",
+      "bytes": 8200,
+      "sha256": "54fe4b4217058d6fb1ca3a8f485fca3b8f5a204e2e9a9523ff450ba93b9be0bb"
+    },
+    {
+      "path": "expedition-solo-story-view.mjs",
+      "bytes": 2776,
+      "sha256": "ab3fb622b9114365680cbc8404da89bb9956c88a81aab9b1cd082ae51b8f4b19"
+    },
+    {
+      "path": "expedition-source-trace.mjs",
+      "bytes": 6347,
+      "sha256": "f413abc87767402df96c5684963f6624ad9b58a525ab6727c0d1a9e86321245b"
+    },
+    {
+      "path": "expedition-sparring-view.mjs",
+      "bytes": 8439,
+      "sha256": "05c96ea487c39a608f14b06f55d1a9a1e70b84326fd443b1b6021881ad04a027"
+    },
+    {
+      "path": "expedition-sparring.mjs",
+      "bytes": 5595,
+      "sha256": "355e67e6510b4fcaaa787dab16ac7a0a4d3faf0620c106165339dc8d6604c2c0"
+    },
+    {
+      "path": "expedition-stage.mjs",
+      "bytes": 10584,
+      "sha256": "62ed8db8f12d0e49ac952f3f1fa0221b116156d3d724e35e3bb7cc5d06e6bd60"
+    },
+    {
+      "path": "expedition-stock-floor.mjs",
+      "bytes": 2771,
+      "sha256": "d368349c3ac96f96be288a29b0412bbbfee407df33c91fb99b264a05e9a7e00c"
+    },
+    {
+      "path": "expedition-stored-preparation.mjs",
+      "bytes": 2157,
+      "sha256": "3b33d1041c3130f53c7d0c25220050446c57ff777d21351c478443f473d9e489"
+    },
+    {
+      "path": "expedition-summon-orders.mjs",
+      "bytes": 1157,
+      "sha256": "804edc40dcb50514726f9f8c02994cb7e3405f8248a5af0e9aae6b526046690d"
+    },
+    {
+      "path": "expedition-summons.mjs",
+      "bytes": 723,
+      "sha256": "5512f55e74ee9f5836b0b18a5a499ca4a5bd524f3f9ec0ce7778ed4788fe8b24"
+    },
+    {
+      "path": "expedition-supply-timeline.mjs",
+      "bytes": 5834,
+      "sha256": "cfd45a002a57804b8047455b23756174b59e8a43f15e648d18cf1557c4c7fdd6"
+    },
+    {
+      "path": "expedition-support-evidence.mjs",
+      "bytes": 10044,
+      "sha256": "b2ad8362b76a0e10b3fbcc7e1b30b5f437572cbc7b3cc26ad30bf657785e1a18"
+    },
+    {
+      "path": "expedition-support-priority.mjs",
+      "bytes": 4417,
+      "sha256": "d57c8ae4c50d64622efb2c796d173de7fffc9f5d9d6d5778b1376e52a42abfeb"
+    },
+    {
+      "path": "expedition-support.mjs",
+      "bytes": 2916,
+      "sha256": "005a343973f29b7040472acd4b16c6837281a7a869d6aa298e89a6dbaae79465"
+    },
+    {
+      "path": "expedition-surrender.mjs",
+      "bytes": 6017,
+      "sha256": "a41495f3d3005e985f44fec67eae29b77fbfe330375271e22509833637c2176e"
+    },
+    {
+      "path": "expedition-tactic-reuse-view.mjs",
+      "bytes": 2421,
+      "sha256": "268f98242b27cc6081eab278d744d8ac09d64aee325930d236ea4bbf5db56f88"
+    },
+    {
+      "path": "expedition-tactic-reuse.mjs",
+      "bytes": 3743,
+      "sha256": "05532208615a8710f1281eeee50cc82bbab89a50e082eb09c018666ac120557c"
+    },
+    {
+      "path": "expedition-target-check.mjs",
+      "bytes": 3561,
+      "sha256": "3fd11118ae5cbded67ad572b238611467dd7d384b714b719bcabfd442e669ba1"
+    },
+    {
+      "path": "expedition-target-count.mjs",
+      "bytes": 2287,
+      "sha256": "d1de1f5827bd52cfdb059ee9fcdcabb362f2e2d79758a992e643294ca2a91c76"
+    },
+    {
+      "path": "expedition-theater.mjs",
+      "bytes": 2617,
+      "sha256": "0e9145b288ce853f5cbc82931c993d83d4167d991def97e2789b26e50bb85101"
+    },
+    {
+      "path": "expedition-threat-map.mjs",
+      "bytes": 8674,
+      "sha256": "bbc88809718ae76f640bcd46f1e2de926031f957341f75a49cbad04336aa52d5"
+    },
+    {
+      "path": "expedition-tidecaller-motion.mjs",
+      "bytes": 10690,
+      "sha256": "f7d1d601537477210b6dd7f6d456b118f23921ed7efa187181678898d2087aee"
+    },
+    {
+      "path": "expedition-training-plan-view.mjs",
+      "bytes": 2088,
+      "sha256": "0fa9fb500bf9b021810f13f3b42c5822030f0900d12c9fc4481270ba2ff56844"
+    },
+    {
+      "path": "expedition-training-plan.mjs",
+      "bytes": 2802,
+      "sha256": "1b4444cd953d1d7a2d612b9cc519dba1a8d748b896a8fada348082fb5f8f0367"
+    },
+    {
+      "path": "expedition-training-rehearsal-view.mjs",
+      "bytes": 2452,
+      "sha256": "be4666eca018cd15afadcb42a110d2b1f791a4fd5af4abe6867e033e5df0bd85"
+    },
+    {
+      "path": "expedition-training-rehearsal.mjs",
+      "bytes": 2321,
+      "sha256": "b5bde34438073ad5b84e4718344c34550a6ca02cc3989f96451ad5064fe6b193"
+    },
+    {
+      "path": "expedition-training-use.mjs",
+      "bytes": 3563,
+      "sha256": "02a1fdd9c4180b4af99e781585a988d385c8091c43daa6aeca486b4a54581f21"
+    },
+    {
+      "path": "expedition-training.mjs",
+      "bytes": 2020,
+      "sha256": "58b7b5b0fb55bd61780746dc92d0c280010ce55181e6ba91041b80edf4a6d0a9"
+    },
+    {
+      "path": "expedition-trapworks.mjs",
+      "bytes": 2127,
+      "sha256": "65d5baaed3916b19c76be30792e42ce1eb2d54fd638f8c4a7312b75f60dac0fe"
+    },
+    {
+      "path": "expedition-turncourt.mjs",
+      "bytes": 2421,
+      "sha256": "45c569795b9538bbe30b2bba47b4a86f96c03d2a573397534280f2253bd3885d"
+    },
+    {
+      "path": "expedition-ui.mjs",
+      "bytes": 210596,
+      "sha256": "940b22d25e85ebcf489374ba61c6791db17c9cc6b72322082afc74001e0a68a3"
+    },
+    {
+      "path": "expedition-unravel.mjs",
+      "bytes": 1033,
+      "sha256": "0d90a60a8d3ea80a9770b2754c885db35c0f3e64f90fb903fe63c325d8e1f8b2"
+    },
+    {
+      "path": "expedition-watch.mjs",
+      "bytes": 3257,
+      "sha256": "d88d9d54aa0b8450dfa64ac20fded3ce339d9d268a010b64c379d12b79784ad7"
+    },
+    {
+      "path": "expedition-waves.mjs",
+      "bytes": 2413,
+      "sha256": "c4d53a2b6e4b9dc8c5c8492f63b54afee94f1b10c07cd1e143a6bfeef0cd8f45"
+    },
+    {
+      "path": "expedition-weapon-coating.mjs",
+      "bytes": 3575,
+      "sha256": "c8823bbf21c94f7b47f2a35a43f88fd12cdaf7ce3794a5ed675778396abb256f"
+    },
+    {
+      "path": "expedition-withdrawal.mjs",
+      "bytes": 3188,
+      "sha256": "3957c331c89fd0be030be8717a165857d2409566602d94879a3b45aaa153810b"
+    },
+    {
+      "path": "expedition.css",
+      "bytes": 69975,
+      "sha256": "2bd6ffb132f94760c142cc4a4c3f13eddcdf7bceb84dababa11934f25ddfca32"
+    },
+    {
+      "path": "guardian-motion.css",
+      "bytes": 3007,
+      "sha256": "8332fdfe60b852a583675228fe876765617f1a5d6c7bae3272f43c08295f2a90"
+    },
+    {
+      "path": "herbalist-motion.css",
+      "bytes": 3045,
+      "sha256": "ef3d49df80fb02f57fab2052a225b36777bef004339882f7602e24c28cfcb540"
+    },
+    {
+      "path": "index.html",
+      "bytes": 26765,
+      "sha256": "7f9a0ca40b0971b9e004f3b63179a57fb387136901139610ae596e7f1816a6e4"
+    },
+    {
+      "path": "legacy.html",
+      "bytes": 6182,
+      "sha256": "772db7ee3b6d484130bed93c6dba5d439586076ba4f85eec1db2aa78cb23d1cd"
+    },
+    {
+      "path": "ranger-motion.css",
+      "bytes": 2357,
+      "sha256": "acb67659accdc00ccf3908358fe8062feba99f091f4701b103a631a40446966d"
+    },
+    {
+      "path": "samples-v13.json",
+      "bytes": 199343,
+      "sha256": "78a299dabb4e6f2dcde4bf9619b3209353afff0f7c4246509eb94b1b8ec1c239"
+    },
+    {
+      "path": "samples-v14.json",
+      "bytes": 391975,
+      "sha256": "c6cd976eb10ce066bc804db1003fc38e25b40d745b8dba5d564aa8014e2057f0"
+    },
+    {
+      "path": "samples-v16.json",
+      "bytes": 131410,
+      "sha256": "fcbd0ec7110ba9b9cc6293c2051a3ebcbad88083d1626dff3fa2763c9e27fd1f"
+    },
+    {
+      "path": "samples-v17.json",
+      "bytes": 97663,
+      "sha256": "294f057059b391e206e5f3a9031ce1b99219e05b77f888ad3f3754f1b740fe6d"
+    },
+    {
+      "path": "samples-v20.json",
+      "bytes": 51125,
+      "sha256": "965d5de6c15990a1e14a9a3679dc5b4c196f77f64806a6151826f6ef6db10d58"
+    },
+    {
+      "path": "samples-v21.json",
+      "bytes": 40844,
+      "sha256": "9cd0c47f39d79ed4287ad9dccc9afe22fd03e2b4787f9f7e51843a3d99394294"
+    },
+    {
+      "path": "samples-v22.json",
+      "bytes": 42659,
+      "sha256": "b30c8fd8a5e76241397d602a9aaeef059f277c7e189586558671360bbec2bcfa"
+    },
+    {
+      "path": "samples-v23.json",
+      "bytes": 27357,
+      "sha256": "8a7b9effc3b0a35c7440f5bcb201dbe00008df929a1d00f46d082e62ca85648b"
+    },
+    {
+      "path": "samples-v25.json",
+      "bytes": 37168,
+      "sha256": "edbf69b05a4d88027e6d0f0c0f76d0ac53d2b9ea0373fa6a4f2b84b1f7e796d8"
+    },
+    {
+      "path": "samples-v29.json",
+      "bytes": 38147,
+      "sha256": "a3db3446e63de406970173e1bc86d495b7a38f447d89fcbf46ba0a5f75f3d5c4"
+    },
+    {
+      "path": "scholar-motion.css",
+      "bytes": 2930,
+      "sha256": "62134c712e17b5821ef3b958ed177235b45368955e09d9eba2c1be6c13f57b44"
+    },
+    {
+      "path": "sim.mjs",
+      "bytes": 13091,
+      "sha256": "0ac426082d6307fde807cc771d9f2a47a20e7bc3d6f1e507a5952686dcdff2a0"
+    },
+    {
+      "path": "studies/art-study-v172.html",
+      "bytes": 6009,
+      "sha256": "81a7bc28a668c82a8685077004c17634971448b263728cf3bea47f8bd1f9137f"
+    },
+    {
+      "path": "studies/bard-rig-v180.css",
+      "bytes": 2176,
+      "sha256": "539dd298295b1b42c2a01dd79c816cffbb1ef432f8edfb11e488090b648565af"
+    },
+    {
+      "path": "studies/bard-strum-v180.html",
+      "bytes": 5769,
+      "sha256": "e6af2a6474c2402ee7afba8cf33b7b0aa544445ead654fdbad185e3aa7d3052e"
+    },
+    {
+      "path": "studies/bard-strum-v180.mjs",
+      "bytes": 2496,
+      "sha256": "d49e7d89423c16580cd6124e043bee377fae76a3926aac204f74979edad2aac7"
+    },
+    {
+      "path": "studies/guardian-fall-v176.html",
+      "bytes": 5142,
+      "sha256": "d8052fbae2d210bc9a23d1da4edd836ff72388867acf56de1d935669e20a608e"
+    },
+    {
+      "path": "studies/guardian-review-v174.html",
+      "bytes": 5432,
+      "sha256": "27557e32a911ff866ce31e53bc4d8df770ffcae232a454ad7ccf84bd9e333a14"
+    },
+    {
+      "path": "studies/herbalist-aid-v189.html",
+      "bytes": 6772,
+      "sha256": "0c605742ae5d2c36cc190513d5bd3ba530aedf869b8231cf581d4bc0c3fc6f0d"
+    },
+    {
+      "path": "studies/herbalist-aid-v189.mjs",
+      "bytes": 2363,
+      "sha256": "20de9a16e0497140d5e3a7b0fb2763aed5797b566ea9f61b335d9b45fb97447a"
+    },
+    {
+      "path": "studies/herbalist-rig-v189.css",
+      "bytes": 3045,
+      "sha256": "ef3d49df80fb02f57fab2052a225b36777bef004339882f7602e24c28cfcb540"
+    },
+    {
+      "path": "studies/herbalist-rig-v189.mjs",
+      "bytes": 8291,
+      "sha256": "22c62ef4813a2bc53da47097595838ef4d930dda5edf7c32dea6d0cabf4f0869"
+    },
+    {
+      "path": "studies/replay-motion-v196.html",
+      "bytes": 4563,
+      "sha256": "d34f57739f7a0dc40e76fd7eebfd3a130a80524d44713a87d85ffd94832ea095"
+    },
+    {
+      "path": "studies/scholar-rig-v183.css",
+      "bytes": 2930,
+      "sha256": "62134c712e17b5821ef3b958ed177235b45368955e09d9eba2c1be6c13f57b44"
+    },
+    {
+      "path": "studies/scholar-rig-v183.mjs",
+      "bytes": 7827,
+      "sha256": "cc53778f7ed41b4a7772117f787740dbce7187dc4e3024e09dc7780ec01cc5c4"
+    },
+    {
+      "path": "studies/scholar-ward-v183.html",
+      "bytes": 6096,
+      "sha256": "3006bbd139a891dfdaa6623722fb61dfa1b52594733ba65d490a8ea9e08f0d05"
+    },
+    {
+      "path": "studies/scholar-ward-v183.mjs",
+      "bytes": 2321,
+      "sha256": "0008355ab4b2ebb4b49a8c678c7e90fb5b4535799dc9d2d1b2e8b291a0882c63"
+    },
+    {
+      "path": "studies/tidecaller-rig-v187.css",
+      "bytes": 3069,
+      "sha256": "4bcb134d4822709bc1f6b42bd054b75ec1e5d610f1e38948f2d29524f7b3a544"
+    },
+    {
+      "path": "studies/tidecaller-rig-v187.mjs",
+      "bytes": 7967,
+      "sha256": "d30a1e36acfb2cdca6034f07996ff2db282307abd9565a3625f2ed2d63dbc6d3"
+    },
+    {
+      "path": "studies/tidecaller-wave-v187.html",
+      "bytes": 6600,
+      "sha256": "530444a122fa2043aa2ddd080db16d1ada2d13d266787397574e6f500d696f47"
+    },
+    {
+      "path": "studies/tidecaller-wave-v187.mjs",
+      "bytes": 2361,
+      "sha256": "7a4c6eb77c0e071cb204f93ffed4a24dc9e1646867874231f5bd8d06524f050c"
+    },
+    {
+      "path": "studies/v174-guardian-review.json",
+      "bytes": 2603,
+      "sha256": "4d61346a447638fac4596c414b9e93f56b221b27a1bc3db9a885efe1934990b3"
+    },
+    {
+      "path": "studies/v176-guardian-fall.json",
+      "bytes": 2750,
+      "sha256": "f4c504f7c996693484b17d8457989939c2a1b4cdebef8114934178b91d6a8640"
+    },
+    {
+      "path": "studies/v180-bard-strum.json",
+      "bytes": 11405,
+      "sha256": "e892a3725424bea6d12eada849610730e9e447dbdc109ec4006ad3c3a1e6db49"
+    },
+    {
+      "path": "studies/v183-scholar-ward.json",
+      "bytes": 13455,
+      "sha256": "0b935d7f503da9b8974517868f11c89915b04f24688858e31e25637173d67797"
+    },
+    {
+      "path": "studies/v187-tidecaller-wave.json",
+      "bytes": 13635,
+      "sha256": "bf45d01c90cd033b0dd23436cb2830d5bdcc49e4936d4834671881465817ad65"
+    },
+    {
+      "path": "studies/v189-herbalist-aid.json",
+      "bytes": 13849,
+      "sha256": "2c82c6d69125a82a7234896b341231d9bff87a9e919de163ae7fadb84431550c"
+    },
+    {
+      "path": "supply-timeline.css",
+      "bytes": 1905,
+      "sha256": "4a1b97b1e7ce1bad573e68fb2b065d086c27efecb6c034538baa2a71522cf49b"
+    },
+    {
+      "path": "tidecaller-motion.css",
+      "bytes": 3069,
+      "sha256": "4bcb134d4822709bc1f6b42bd054b75ec1e5d610f1e38948f2d29524f7b3a544"
+    },
+    {
+      "path": "workroom.css",
+      "bytes": 14331,
+      "sha256": "2c9143c87370bb2b9f46567354cebfa789e8cc9a45739307cb298023da66ea74"
+    },
+    {
+      "path": "workroom.mjs",
+      "bytes": 25933,
+      "sha256": "cfb57631f2c8155632a5f54eb1b3119da3e2d5f4f4dbb122f89789d0f465dcd3"
+    }
+  ]
+}

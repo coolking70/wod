@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title id="title">潮港石桥 · 原生矢量场景试作</title><desc id="desc">暗蓝夜海、废墟、暖灯和青色潮光。用于格式对照，未替换正式场景。</desc>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#152735"/><stop offset="1" stop-color="#45606a"/></linearGradient><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#244a57"/><stop offset="1" stop-color="#0a222c"/></linearGradient><linearGradient id="stone" x2="0.8" y2="1"><stop stop-color="#31444b"/><stop offset="1" stop-color="#152a32"/></linearGradient><linearGradient id="light" x2="0" y2="1"><stop stop-color="#dfb66b"/><stop offset="1" stop-color="#86603c"/></linearGradient></defs>
+<path fill="url(#sky)" d="M0 0h1280v640H0z"/><circle cx="1048" cy="112" r="47" fill="#93adaf" opacity=".3"/>
+<g fill="#b4c9c9" opacity=".32"><circle cx="132" cy="69" r="2"/><circle cx="469" cy="42" r="1.5"/><circle cx="716" cy="86" r="2"/><circle cx="916" cy="45" r="1.5"/><circle cx="1156" cy="65" r="1.5"/></g>
+<path fill="#253e4b" d="M0 274 110 140 165 213 267 115 342 247 420 187 494 267 563 215 671 296 756 243 830 288 928 210 988 294 1125 217 1211 267 1280 242v210H0z"/>
+<path fill="#1a303b" d="m0 307 104-67 57 48 92-55 81 78 150-45 128 70 130-61 91 47 70-48 113 63 90-61 123 41 51-23v164H0z"/>
+<path fill="url(#sea)" d="M0 336h1280v304H0z"/>
+<g fill="none" stroke="#579b9f" opacity=".45" stroke-linecap="round"><path d="M12 380h170m51 20h94m670-14h167m-975 46h124m580-12h179M86 475h107m625-3h268M413 533h128m502-23h176M17 580h180m588 16h242"/><path stroke="#74c4bd" d="m742 440 98-7m-73 23 128-7m-102 25h175m-35 22 97-6m-30 31 126-7"/></g>
+<g fill="#1c3039" stroke="#3d535a" stroke-width="3"><path d="M242 330V190h34v-40h23v40h34v142h-25v-78q-27-43-40 0v76zm99 0V145l29-53 29 53v188h-21V204l-15-24-15 24v126zm68 0V191h27v-39h23v39h28v144h-20v-74q-16-35-37 0v69z"/><path d="M243 223h91m7-50h58m10 51h77"/></g>
+<g fill="#20353e" stroke="#52646a" stroke-width="3"><path d="m857 333 6-140 58-5 7 146z"/><path d="m852 196 4-26 70-3 7 27z"/><path d="m861 168 7-28h50l8 27z"/><path d="m871 140 5-26h35l6 26z"/><path d="m872 114 20-22 21 22z"/><path fill="#e6ba6e" d="M879 120h26v19h-26z"/><path d="M891 119v21m-28 97 62-3m-65 55 67-4"/><path fill="#132b35" d="M879 333v-49q16-17 30 0v49z"/></g>
+<path fill="#0e232d" d="m988 392 174-8-23 37-121-4z"/><path fill="#233e49" stroke="#6c7774" stroke-width="2" d="m1082 235-44 129 44-8zm10 9v112l55 9z"/><path stroke="#142831" stroke-width="5" d="M1087 218v172"/>
+<path fill="#132a32" d="M0 465 552 368 944 339l-10 25-359 48L92 640H0z"/>
+<path fill="url(#stone)" stroke="#58706f" stroke-width="3" d="m0 450 548-98 396-27-2 25-379 48L130 640H0z"/>
+<g fill="none" stroke="#738482" stroke-width="2" opacity=".45"><path d="m106 434 25 38m91-58 18 31m106-51 20 27m90-47 10 25m89-45 6 32m104-39 3 23m101-30 2 19m94-25v17"/><path d="m0 489 213-51 340-67 294-28M28 553l251-75 287-86m-386 56 43 58m115-87 37 47m96-72 20 38"/></g>
+<g fill="#1b3038" stroke="#536a6d" stroke-width="2"><path d="M188 440v-62h22v59zm160-31v-56h20v52zm154-32v-45h19v42zm132-23v-42h18v39zm115-15v-40h17v38zm108-8v-39h17v38z"/><path d="m188 389 670-88v8l-670 90z"/></g>
+<g fill="#192d34" stroke="#68736d" stroke-width="3"><path d="m51 447 7-230h42l17 218z"/><path d="M42 225v-23h198v25z"/><path d="M226 227h10v72h-10z"/><path fill="url(#light)" d="M219 294h25v41h-25z"/><path d="m216 293 16-11 16 11m-17 0v42"/></g>
+<g fill="url(#light)" stroke="#2b3738" stroke-width="3"><path d="m347 353 2-17 19-2 3 16z"/><path d="m636 311 2-16 17-1 2 15z"/><path d="m858 290 2-15h17l2 14z"/></g>
+<g stroke="#84c8bb" opacity=".32"><path d="m222 342 34 16m92-2 22 11m262-48 24 6m220-27 19 5"/></g>
+<path fill="#081b24" d="m0 595 145-34 70 31 120-16 84 64H0zm1038-31 94-23 148 55v44h-242z"/>
+<g fill="none" stroke="#84908b" stroke-width="3" opacity=".45"><path d="m13 609 81-20 35 12m-76 23 112-11m909-38 57-14 53 20m-91 27 92-6"/></g>
+</svg>

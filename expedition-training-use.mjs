@@ -1,0 +1,18 @@
+import {HEROES,TYPES,trainingOptions,roomsFor,resolveHeroPlan} from './expedition-data.mjs';
+import {validate} from './expedition-engine.mjs';
+import {automaticPreparationRows} from './expedition-automatic-planning.mjs';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Structural inventory of the already-resolved departure configuration, never a simulation.
+export function trainingUseInventory(config,id){
+ validate(config);if(!HEROES.some(h=>h.id===id))throw Error('未知培养队员');
+ const actor=config.heroes.find(h=>h.id===id),rows=Object.fromEntries(Object.entries(trainingOptions(id)).filter(([,o])=>o.kind!=='attribute').map(([key,o])=>[key,{key,name:o.name,kind:o.kind,active:Boolean(actor),entries:[]} ]));
+ if(actor){const automatic=new Map(automaticPreparationRows(config,{heroId:id}).map(r=>[r.roomId,r]));for(const room of roomsFor(config)){const p=resolveHeroPlan(actor,room.id),add=(key,channel,place)=>{if(rows[key])rows[key].entries.push({roomId:room.id,roomName:room.name,channel,place});};
+  for(const phase of['prep','main'])for(const [i,r]of p[phase].entries())add('skill:'+r.skill,'explicit',(phase==='prep'?'预备':'普通')+'第'+(i+1)+'条');
+  if(p.healing.enabled){add('skill:heal','auxiliary','独立救护候选');if(p.healing.groupAid)add('skill:groupheal','auxiliary','同位合剂候选');}
+  for(const c of automatic.get(room.id)?.possible||[])add('skill:'+c.skill,'auxiliary','自动应急候选');
+  for(const type of['melee','ranged','magic','mental']){const choice=p.defenses[type==='mental'&&!Object.hasOwn(p.defenses,'mental')?'magic':type];if(choice&&choice!=='natural')add('defense:'+choice,'defense',TYPES[type]+'防御选择'+(type==='mental'&&!Object.hasOwn(p.defenses,'mental')?'（跟随法术）':''));}
+ }}
+ for(const r of Object.values(rows)){const explicit=new Set(r.entries.filter(e=>e.channel==='explicit').map(e=>e.roomId)),aux=new Set(r.entries.filter(e=>e.channel==='auxiliary'&&!explicit.has(e.roomId)).map(e=>e.roomId)),defense=new Set(r.entries.filter(e=>e.channel==='defense').map(e=>e.roomId));r.status=!r.active?'inactive':r.kind==='defense'?(defense.size?'selected':'unselected'):explicit.size?'explicit':aux.size?'candidate':'unlisted';r.summary=!r.active?'当前未出战':r.kind==='defense'?(defense.size?'防御选择：'+defense.size+'房':'当前未选此防御'):explicit.size?'普通/预备：'+explicit.size+'房'+(aux.size?' · 其他候选'+aux.size+'房':''):aux.size?'救护/应急候选：'+aux.size+'房':'未列普通/预备';}
+ return rows;
+}
+export function trainingUseView(row){if(!row)return'';return `<details class="training-use" data-growth-detail="use:${esc(row.key)}" data-training-use="${esc(row.key)}" data-use-status="${esc(row.status)}"><summary>${esc(row.summary)}</summary>${!row.active?'<p>当前未出战，不把候补保存的战术当成本次出征。</p>':`<ul>${row.entries.map(e=>`<li>${esc(e.roomName)} · ${esc(e.place)}</li>`).join('')||`<li>${row.kind==='defense'?'当前基础房间没有选择此防御；防御专修不等于已选择。':'当前基础房间未显式列入预备/普通指令，也未列入此处已核对的救护/应急候选。'}</li>`}</ul><p>${row.kind==='defense'?'这里只核对防御选择；装备或当时法力不满足会回退，实际检定见战报。':'培养不会自动添加指令。窗口、对象、支付与后备见出征核对；候选不保证出手，进场检定、被动/反应等另按对应规则核对。'}</p>`}</details>`;}
