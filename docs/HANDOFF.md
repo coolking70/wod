@@ -1,4 +1,4 @@
-> v0.209完整单人可理解性节点：整合战术编辑导航与键盘连续性、手机当前行动同屏、原生SVG效果同步；1907 Node、108完整GUI、204原CLI、130历史JSON/33默认关闭HTML通过。发布前继续双链源码/native及完整证据恢复门禁，最新main/Pages提交与built结果以云交付及release.json为准；永久补给仍待决定。 见[完整节点](V209_MOBILE_CLARITY_MILESTONE.md)、[云交接](HANDOFF_CLOUD_V209.md)。
+> v0.210援护因果闭环：手机当前行动说明伙伴替谁接招／未及援护及原记录费用，可直达该条原证据并返回同一步、筛选、焦点和影院模式；SVG盾形入口与实际援护八帧GIF／原色PNG样片。175相关Node、21套完整相关GUI通过，main/Pages仍209。12旧包原字节持久差分与完整冷恢复后净减载约1.58GB，CAT38与旧CAT26、稳定基包和全部源码/Pages链均保留。永久补给待决定。 见[阶段说明](V210_INTERCEPTION_CAUSALITY.md)、[云交接](HANDOFF_CLOUD_V210.md)。\n\n> v0.209完整单人可理解性节点：整合战术编辑导航与键盘连续性、手机当前行动同屏、原生SVG效果同步；1907 Node、108完整GUI、204原CLI、130历史JSON/33默认关闭HTML通过。发布前继续双链源码/native及完整证据恢复门禁，最新main/Pages提交与built结果以云交付及release.json为准；永久补给仍待决定。 见[完整节点](V209_MOBILE_CLARITY_MILESTONE.md)、[云交接](HANDOFF_CLOUD_V209.md)。
 
 > v0.208手机当前行动：同屏呈现原出手者、实际对象与结算结果，沿原图形效果和同一DocumentTimeline同步；原阵型及角色往返保留。168相关Node、20套完整相关GUI通过，六职业四速96组手机检查；新增317B原生SVG与实际采样八帧GIF/原色PNG。main/Pages仍v206，永久补给待决。 见[阶段说明](V208_MOBILE_CURRENT_ACTION.md)、[云交接](HANDOFF_CLOUD_V208.md)。
 

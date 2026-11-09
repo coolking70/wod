@@ -7,3 +7,6 @@
 @media(min-width:701px){.action-focus{display:none}}
 
 .action-focus-dead .action-focus-art{opacity:.45;filter:grayscale(1)}
+.action-interceptions{display:grid;gap:4px;max-height:96px;overflow:auto;overscroll-behavior:contain;margin-bottom:7px;scrollbar-gutter:stable}
+.action-interceptions button{display:flex;align-items:center;gap:5px;min-height:44px;text-align:left;font-size:11px;line-height:1.35;padding:5px;background:#16343b;border-color:#72938a;color:#e0d5b2;overflow-wrap:anywhere}
+.action-interceptions img{flex:none}.action-interceptions span{min-width:0}.action-interceptions small{display:block;font-size:10px;color:#bed4d0}

@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "sourceInputs": 1075,
+  "syntax": {
+    "passed": true,
+    "sourceInputs": 1075,
+    "JS": 895,
+    "Python": 19
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 207,
+    "checkedReferences": 251,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "Node": {
+    "tests": 175,
+    "pass": 175,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/action-focus.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/replay-transport.test.mjs",
+    "tests/replay-motion.test.mjs",
+    "tests/guardian-motion.test.mjs",
+    "tests/guardian-detail.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/ranger-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/bard-detail.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/herbalist-motion.test.mjs",
+    "tests/motion-record.test.mjs",
+    "tests/evidence-output.test.mjs",
+    "tests/stage-evidence.test.mjs",
+    "tests/action-interception.test.mjs"
+  ],
+  "completeAffectedGUI": 21,
+  "completeGUIVersions": [
+    133,
+    147,
+    151,
+    172,
+    174,
+    175,
+    176,
+    177,
+    180,
+    181,
+    182,
+    183,
+    184,
+    187,
+    189,
+    196,
+    204,
+    205,
+    207,
+    208,
+    210
+  ],
+  "newGUIContexts": 6,
+  "actualInterceptionRecordRoundTrips": 14,
+  "relatedOriginalSixRoleFourSpeedCases": 96,
+  "actualOrdinary84ReportAndPendingAndFourStringsExact": true,
+  "protectedNPC": "escort:neris",
+  "actualGuardian": "beryl",
+  "actualSourceInterceptionEvent": 51,
+  "beforeAfterPositions": [
+    {
+      "width": 390,
+      "oldExistingSourceButtonTop": 2696.3125,
+      "newSourceButton": {
+        "top": 346.03125,
+        "bottom": 390.03125,
+        "height": 44
+      }
+    },
+    {
+      "width": 320,
+      "oldExistingSourceButtonTop": 2866,
+      "newSourceButton": {
+        "top": 325.109375,
+        "bottom": 369.109375,
+        "height": 44
+      }
+    }
+  ],
+  "newSVGBytes": 267,
+  "vectorResources": [
+    [
+      {
+        "url": "http://127.0.0.1:8002/assets/interception-link-v210.svg",
+        "encoded": 267,
+        "transfer": 567
+      }
+    ],
+    [
+      {
+        "url": "http://127.0.0.1:8002/assets/interception-link-v210.svg",
+        "encoded": 267,
+        "transfer": 567
+      }
+    ],
+    [
+      {
+        "url": "http://127.0.0.1:8002/assets/interception-link-v210.svg",
+        "encoded": 267,
+        "transfer": 567
+      }
+    ],
+    [
+      {
+        "url": "http://127.0.0.1:8002/assets/interception-link-v210.svg",
+        "encoded": 267,
+        "transfer": 567
+      }
+    ]
+  ],
+  "realArt8Frames900ms": {
+    "passed": true,
+    "frames": 8,
+    "width": 358,
+    "height": 273,
+    "durationMs": 900,
+    "frameDurations": [
+      110,
+      110,
+      120,
+      110,
+      110,
+      110,
+      120,
+      110
+    ],
+    "opaqueGIF": true,
+    "sharedPalette256": true,
+    "RGBAAllEightSpriteCellsExact": true,
+    "GIFRGBMeanAbsoluteErrorByFrame": [
+      1.9695909304847852,
+      1.9683733398817198,
+      1.9693317235216679,
+      1.9707368981112,
+      1.9707846467623005,
+      1.968809898977497,
+      1.9685882088116724,
+      1.969171424478687
+    ],
+    "framesActuallyDistinct": true,
+    "noNewIndependentMotionOrImagegenClaim": true,
+    "files": [
+      {
+        "path": "/workspace/wod-evidence/v210/interception-art-first/capture/interception-actual84.gif",
+        "bytes": 175897,
+        "sha256": "8d025d2184a392540717df20828e47cbdca5d9e8f5f9bff2ef4c0e745edc4cdd"
+      },
+      {
+        "path": "/workspace/wod-evidence/v210/interception-art-first/capture/interception-actual84.png",
+        "bytes": 86859,
+        "sha256": "9b8865417104381af24509a01e01e5c2fb13327a2654ed2bc7229f73ba739bc9"
+      }
+    ]
+  },
+  "artNativeSVGSamplingNotImagegen": true,
+  "noMainGameNewGIFPNGRequest": true,
+  "studySixContextsPassed": true,
+  "currentCatalogue": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v38.json",
+    "bytes": 43231,
+    "sha256": "8cc0d0bceb0ca3cc83b2281ee3f21127a0d0bfd5972ff83c6ecaa203c6dd8717"
+  },
+  "protectedRows": 15569,
+  "logicalProtectedRows": 38,
+  "protectedFileBindings": "/workspace/wod-evidence/v210/PROTECTED_BEFORE_STORAGE.json",
+  "twelveOldOriginalArchivesExactlyRecoverable": true,
+  "originalCheckpointsInRetiredArchives": 377,
+  "netStorageBytesFreed": 1582460928,
+  "allOldManifestChecksumsAndCAT26AndStableBasesAndPagesChainPreserved": true,
+  "early208Original12484822ArchiveHeld": true,
+  "oldUnindexedDirectoryIDTimeAndPNGByteGapsNotRepaired": true,
+  "initialStorageMetadataPrecheckStopsPreservedNoDataChanged": true,
+  "allProductBehaviorTestsPassed": true,
+  "noOldBehavioralAssertionsChanged": true,
+  "noBalanceSkillSupplyPersistenceRuleChanges": true,
+  "canonicalNext142Gold15225Unchanged": true,
+  "mainAndPagesStill209": true,
+  "full1914Node109GUIHistoryNativeNotRun": true,
+  "lastFull209": {
+    "Node": 1907,
+    "GUI": 108,
+    "CLI": 204,
+    "JSON": 130,
+    "HTML": 33
+  },
+  "nextCompleteWindow": "212–214",
+  "noPublicHTTPOrActualOldSiteMigrationVerification": true,
+  "permanentSupplyEconomyPending": true,
+  "freeBytes": {
+    "/workspace": 3566522368,
+    "/tmp": 8105660416
+  }
+}\n
