@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from'node:assert/strict';import{mkdirSync,writeFileSync}from'node:fs';import{resolve}from'node:path';import{pathToFileURL}from'node:url';import{execFileSync}from'node:child_process';
 import{officialLoop}from'./official-loop-cases.mjs';import{simulate}from'../dist/expedition-engine.mjs';import{reportHandoff,campObjective,claimReport}from'../dist/expedition-camp-cycle.mjs';import{validateGuild,historyReport}from'../dist/expedition-guild.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v94');mkdirSync(out,{recursive:true});const x=officialLoop();

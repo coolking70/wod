@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import {mkdirSync,writeFileSync} from 'node:fs';import {resolve} from 'node:path';
 import {counterpointConfig} from '../dist/expedition-data.mjs';import {simulate} from '../dist/expedition-engine.mjs';import {counterpointLoop} from './counterpoint-cases.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v115');mkdirSync(out,{recursive:true});const x=counterpointLoop();

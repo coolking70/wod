@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from'node:fs';import{resolve}from'node:path';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{lootRehearsalLoop}from'./loot-rehearsal-cases.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v178');fs.mkdirSync(out,{recursive:true});const save=(k,v)=>fs.writeFileSync(resolve(out,'loot-'+k+'.json'),JSON.stringify(v,null,2)),x=lootRehearsalLoop();
 for(const k of['start','source','history124','loaded','desktop','final','finalSource','survivalSource','survival','assigned','assignedPending','assignedReport','assignedReward','assignedFinal','fallbackSource'])save(k,x[k]);for(const[i,r]of x.runs.entries())for(const k of['preparation','pending','report','reward','claimed'])save((i+1)+'-'+k,r[k]);

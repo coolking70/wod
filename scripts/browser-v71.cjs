@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v71',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8000',backup=process.env.WOD_FOUNDRY_GUILD||'/tmp/wod-v71-foundry-guild.json';fs.mkdirSync(out,{recursive:true});
 (async()=>{

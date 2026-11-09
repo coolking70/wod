@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from'node:fs';import path from'node:path';import assert from'node:assert/strict';import{rangerMotionLoop,rangerFacts}from'./ranger-motion-cases.mjs';import{adventureConfig}from'../dist/expedition-adventure.mjs';import{simulate}from'../dist/expedition-engine.mjs';
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v147';fs.mkdirSync(out,{recursive:true});const x=rangerMotionLoop(),save=(k,v)=>fs.writeFileSync(path.join(out,'ranger-'+k+'.json'),JSON.stringify(v)+'\n');for(const k of['start','source','desktop','final','history58','history59','history77'])save(k,x[k]);for(const[i,r]of x.runs.entries())for(const k of['preparation','config','pending','report','reward'])save((i+1)+'-'+k,r[k]);assert.deepEqual(x.start.reportArchives,x.final.reportArchives);assert.deepEqual(x.start.command,x.final.command);
 // Fixed existing courier731 is one of the predefined66 inputs, both courier samples fail naturally.

@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v51',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8000';fs.mkdirSync(out,{recursive:true});
 (async()=>{const browser=await chromium.launch({executablePath:process.env.WOD_CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']}),context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage(),errors=[],steps=[];page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push('HTTP '+r.status());});

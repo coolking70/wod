@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright');
 const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');
 const evidence=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v46';fs.mkdirSync(evidence,{recursive:true});

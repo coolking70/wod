@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const{watchStorage}=require('./browser-storage-sync.cjs');
 const{decodeArchive}=require('./archive-wire.cjs');
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),{gunzipSync}=require('node:zlib'),{createHash}=require('node:crypto');

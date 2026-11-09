@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
 import {adventureConfig,ADVENTURES} from '../dist/expedition-adventure.mjs';import {simulate} from '../dist/expedition-engine.mjs';import {HEROES,clone} from '../dist/expedition-data.mjs';
 const ref=resolve(process.argv[2]),oldData=await import(pathToFileURL(resolve(ref,'dist/expedition-adventure.mjs')).href),old=await import(pathToFileURL(resolve(ref,'dist/expedition-engine.mjs')).href),rows=[];

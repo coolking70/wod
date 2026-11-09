@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';import {resolve} from 'node:path';
 import {equipmentPursuitLoop} from './equipment-pursuit-cases.mjs';import {equipmentGoalStatus} from '../dist/expedition-equipment-goal.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v118');mkdirSync(out,{recursive:true});const save=(name,value)=>writeFileSync(resolve(out,'pursuit-'+name+'.json'),JSON.stringify(value,null,2)+'\n'),x=equipmentPursuitLoop();

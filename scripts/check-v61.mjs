@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync,mkdirSync} from 'node:fs';import {resolve,dirname} from 'node:path';
 import {trainedReserveGuild,RESERVE_CASES,reserveCase,reserveRoute} from './trained-reserve-cases.mjs';import {guildConfig} from '../dist/expedition-guild.mjs';import {simulate,RULESET} from '../dist/expedition-engine.mjs';import {personalReport} from '../dist/expedition-personal.mjs';import {careerXp} from '../dist/expedition-growth.mjs';import {clone} from '../dist/expedition-data.mjs';
 const {guild,trainingRuns}=trainedReserveGuild(),original=clone(guild),rows=[];
@@ -11,5 +12,5 @@ for(const group of ['discovery','confirmation'])for(const route of ['hospice','s
  console.log(group,route,key,JSON.stringify(rows.at(-1).summary));
 }
 assert.deepEqual(guild,original);
-const earnedPath=resolve(process.env.WOD_EARNED_GUILD||'/tmp/wod-v61-trained-roster.json');mkdirSync(dirname(earnedPath),{recursive:true});writeFileSync(earnedPath,JSON.stringify(guild,null,2));
+const earnedPath=resolve(process.env.WOD_EARNED_GUILD||(process.env.WOD_EVIDENCE_DIR+'/wod-v61-trained-roster.json'));mkdirSync(dirname(earnedPath),{recursive:true});writeFileSync(earnedPath,JSON.stringify(guild,null,2));
 writeFileSync('docs/V61_RESERVE_CHECKS.json',JSON.stringify({ruleset:RULESET,note:'Every XP, course, training rank and advancement comes from normal guild transactions. No balance values changed. All six cases fixed before discovery and all carried to confirmation, including failures. Roster comparisons also change roles and damage distribution; equal seeds do not guarantee identical random streams. Not a profession ranking or universal recommendation.',prerequisites:{completed:guild.next-1,trainingRuns,members:guild.members.map(m=>({id:m.id,earned:careerXp(m),available:m.xp,training:m.training,unlocked:m.unlocked,advancement:m.advancement}))},rows},null,2)+'\n');

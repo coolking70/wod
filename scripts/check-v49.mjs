@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';
 import {writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';

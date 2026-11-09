@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v81',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8000',backup=process.env.WOD_SHOALS_GUILD||'/tmp/wod-v81/shoals-start.json',album=process.env.WOD_SHOALS_ALBUM||'/tmp/wod-v81/shoals-complete-atlas.json';fs.mkdirSync(out,{recursive:true});
 (async()=>{const browser=await chromium.launch({executablePath:process.env.WOD_CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']}),steps=[],errors=[],runs=[];let active;

@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const{chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v192',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8002';fs.mkdirSync(out,{recursive:true});
 (async()=>{const{journeyFollowthrough}=await import('./journey-followthrough-cases.mjs'),{CAMPAIGN_KEYS,validateCampaignBackup}=await import('../dist/expedition-campaign-backup.mjs'),x=journeyFollowthrough(),b=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']}),proof=[],screens=[],errors=[];let active;
 const raw=p=>p.evaluate(keys=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(k)])),CAMPAIGN_KEYS),key=async n=>{await n.focus();await n.press('Enter');},raf=p=>p.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));

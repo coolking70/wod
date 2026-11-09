@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import {mkdirSync,writeFileSync} from 'node:fs';import {resolve} from 'node:path';
 import {threatMapLoop} from './threat-map-cases.mjs';
 import {enemyThreatMap} from '../dist/expedition-threat-map.mjs';

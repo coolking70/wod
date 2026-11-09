@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from'node:fs';import path from'node:path';import assert from'node:assert/strict';import{guardianReserveLoop}from'./guardian-reserve-cases.mjs';
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v142';fs.mkdirSync(out,{recursive:true});const x=guardianReserveLoop(),save=(k,v)=>fs.writeFileSync(path.join(out,'reserve-'+k+'.json'),JSON.stringify(v,null,2)+'\n');
 for(const k of['start','source','recruited','swapped','swappedConfig','desktop','final','history55','history67'])save(k,x[k]);x.runs.forEach((r,i)=>{for(const[k,v]of Object.entries(r))save((i+1)+'-'+k,v);});assert.deepEqual(x.final.reportArchives,x.start.reportArchives);assert.equal(x.recruited.gold,x.start.gold-60);assert.equal(x.final.members.find(m=>m.id==='a').xp,x.start.members.find(m=>m.id==='a').xp);

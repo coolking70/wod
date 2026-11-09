@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import {mkdirSync,writeFileSync} from 'node:fs';import {resolve} from 'node:path';
 import {sparringLoop} from './sparring-cases.mjs';import {SPARRING_RIVALS,personalSparring,exportSparring} from '../dist/expedition-sparring.mjs';
 import {defaults,HEROES} from '../dist/expedition-data.mjs';import {selectHero} from '../dist/expedition-command.mjs';import {newGuild,historyReport} from '../dist/expedition-guild.mjs';import {objectiveAssessment} from '../dist/expedition-book.mjs';

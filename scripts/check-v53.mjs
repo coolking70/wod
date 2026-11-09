@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';
 import {simulate,RULESET} from '../dist/expedition-engine.mjs';import {defaults,hospiceConfig,harborConfig,trialConfig,row} from '../dist/expedition-data.mjs';import {newGuild,depart,claim,guildConfig} from '../dist/expedition-guild.mjs';import {selectHero,setCompanion} from '../dist/expedition-command.mjs';import {recruit,swapCompanion} from '../dist/expedition-roster.mjs';import {slowcareFixture} from './slowcare-cases.mjs';
 const f=slowcareFixture(),boundary=simulate(f.config,f.options);assert.deepEqual(simulate(f.config,f.options),boundary);

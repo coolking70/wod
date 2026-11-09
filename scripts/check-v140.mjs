@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
 import {manaFloorLoop} from './mana-floor-cases.mjs';
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v140';fs.mkdirSync(out,{recursive:true});const x=manaFloorLoop(),save=(k,v)=>fs.writeFileSync(path.join(out,'mana-floor-'+k+'.json'),JSON.stringify(v,null,2)+'\n');

@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+import fs from'node:fs';import path from'node:path';import{spawn}from'node:child_process';import{fileURLToPath}from'node:url';import capture from'./evidence-output.cjs';
+const args=process.argv.slice(2),options={label:'capture'},separator=args.indexOf('--');if(separator<0)throw Error('Usage: node scripts/run-evidence.mjs [--label name] [--parent path | --root fresh-path] [--output name] -- command args');
+for(let i=0;i<separator;i+=2){const k=args[i],v=args[i+1];if(!v||!['--label','--parent','--root','--output'].includes(k))throw Error('Unknown capture option: '+k);options[k.slice(2)]=v;}
+const command=args.slice(separator+1);if(!command.length)throw Error('Missing capture command');if(options.output&&!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,39}$/.test(options.output))throw Error('Output must be one simple directory name');
+const run=capture.createRun(options),out=path.join(run.root,options.output||'capture');fs.mkdirSync(out);const env={...process.env,...run.env,WOD_EVIDENCE_DIR:out};
+const node=/^(node|nodejs)(\.exe)?$/.test(path.basename(command[0])),unitTest=node&&command.slice(1).includes('--test');
+if(unitTest){for(const k of Object.keys(env))if(k.startsWith('WOD_'))delete env[k];}
+else if(node)env.NODE_OPTIONS=[process.env.NODE_OPTIONS||'','--require',JSON.stringify(fileURLToPath(new URL('./capture-bootstrap.cjs',import.meta.url)))].filter(Boolean).join(' ');
+const save=(name,value)=>fs.writeFileSync(path.join(run.root,name),JSON.stringify(value,null,2)+'\n',{flag:'wx'});save('command.json',{format:'wod-capture-command',version:1,id:run.id,root:run.root,output:out,command,startedAt:new Date().toISOString(),nodeCaptureGuard:node&&!unitTest,unitTestUsesPrivateFixturesAndCleanWODEnvironment:unitTest,noClaimOfNativeProcessFilesystemSandbox:!node});
+const stdout=fs.openSync(path.join(run.root,'stdout.log'),'wx'),stderr=fs.openSync(path.join(run.root,'stderr.log'),'wx');console.log(JSON.stringify({captureRun:run.root,output:out,id:run.id}));let child;
+try{child=spawn(command[0],command.slice(1),{env,stdio:['ignore',stdout,stderr]});}finally{fs.closeSync(stdout);fs.closeSync(stderr);}
+let completed=false;const finish=(code,signal,error)=>{if(completed)return;completed=true;save('command-result.json',{exitCode:code,signal,error:error?.message||null,finishedAt:new Date().toISOString(),partialOutputsPreserved:true,rerunRequiresFreshRun:true});console.log(JSON.stringify({captureRun:run.root,exitCode:code,signal}));process.exitCode=code??1;};child.once('error',e=>finish(null,null,e));child.once('exit',(code,signal)=>finish(code,signal));for(const signal of['SIGTERM','SIGINT'])process.once(signal,()=>{if(!completed)child.kill(signal);});

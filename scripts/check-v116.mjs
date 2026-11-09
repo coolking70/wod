@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import {mkdirSync,writeFileSync} from 'node:fs';import {resolve} from 'node:path';
 import {withdrawalLoop} from './withdrawal-cases.mjs';import {courierConfig,clocktowerConfig,counterpointConfig} from '../dist/expedition-data.mjs';import {simulate} from '../dist/expedition-engine.mjs';import {withWithdrawal} from '../dist/expedition-withdrawal.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v116');mkdirSync(out,{recursive:true});const x=withdrawalLoop();for(const key of ['start','desktop','final'])writeFileSync(resolve(out,'withdrawal-'+key+'.json'),JSON.stringify(x[key],null,2));for(const [i,run] of x.runs.entries())for(const key of ['config','report','reward','claimed'])writeFileSync(resolve(out,`withdrawal-${i+1}-${key}.json`),JSON.stringify(run[key],null,2));

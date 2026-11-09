@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),{isDeepStrictEqual}=require('node:util'),fs=require('node:fs'),path=require('node:path');
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v168',apiRoot=process.env.WOD_API_DIR||out,url=process.env.WOD_BASE_URL||'http://127.0.0.1:8002';fs.mkdirSync(out,{recursive:true});const api=k=>JSON.parse(fs.readFileSync(path.join(apiRoot,'retry-'+k+'.json'),'utf8'));let mismatch=0;
 function equal(a,b,label){if(!isDeepStrictEqual(a,b)){mismatch++;for(const [side,v]of [['actual',a],['expected',b]])fs.writeFileSync(path.join(out,'mismatch-'+mismatch+'-'+side+'.json'),JSON.stringify(v,null,2));assert.fail((label||'Full comparison')+' differs; mismatch-'+mismatch+' retained');}}

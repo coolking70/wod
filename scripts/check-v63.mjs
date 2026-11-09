@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import {crossRouteProfiles,EARLY_ROUTES} from './cross-route-cases.mjs';
 import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
 import {guildConfig} from '../dist/expedition-guild.mjs';import {swapCompanion} from '../dist/expedition-roster.mjs';import {setCompanion} from '../dist/expedition-command.mjs';

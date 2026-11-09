@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync,mkdirSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';
 import {theaterConfig,clone} from '../dist/expedition-data.mjs';import {simulate} from '../dist/expedition-engine.mjs';import {ADVENTURES,adventureConfig} from '../dist/expedition-adventure.mjs';import {newGuild,guildConfig,depart,pendingReport,pendingReward,claim,assignLoot,historyReport,train} from '../dist/expedition-guild.mjs';import {selectHero} from '../dist/expedition-command.mjs';import {courierProfiles} from './courier-cases.mjs';import {resourceLedger} from '../dist/expedition-resource-ledger.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v80');mkdirSync(out,{recursive:true});const start=selectHero(newGuild(),'e'),profiles={fresh:start,grown:selectHero(courierProfiles().grown,'e')},cases=[];

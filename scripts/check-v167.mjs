@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from 'node:fs';import {resolve} from 'node:path';import assert from 'node:assert/strict';import {isDeepStrictEqual} from 'node:util';
 import {soloFlowMilestone} from './solo-flow-milestone-cases.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v167');fs.mkdirSync(out,{recursive:true});

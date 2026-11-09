@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {lootTransferLoop,ownedCopies}from'./loot-transfer-cases.mjs';
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v139';fs.mkdirSync(out,{recursive:true});const x=lootTransferLoop(),save=(key,value)=>fs.writeFileSync(path.join(out,'transfer-'+key+'.json'),JSON.stringify(value,null,2)+'\n');
 for(const key of ['start','source','returned','assigned','desktop','final','history61','history55'])save(key,x[key]);x.runs.forEach((r,i)=>{for(const[k,v]of Object.entries(r))save((i+1)+'-'+k,v);});for(const[k,v]of Object.entries(x.comparison))save('comparison-'+k,v);

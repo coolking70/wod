@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';
 import {writeFileSync} from 'node:fs';
 import {defaults,row,SKILLS} from '../dist/expedition-data.mjs';

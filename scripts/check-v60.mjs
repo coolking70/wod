@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';
 import {advancementReadyGuild} from './advancement-cases.mjs';import {rehearseTrainingPlan} from '../dist/expedition-training-rehearsal.mjs';import {quoteTrainingPlan} from '../dist/expedition-training-plan.mjs';import {applyTrainingPlan,depart,pendingReport} from '../dist/expedition-guild.mjs';import {defaults,harborConfig,trialConfig,trainingOptions,clone} from '../dist/expedition-data.mjs';import {isAdvanced} from '../dist/expedition-growth.mjs';import {simulate,RULESET} from '../dist/expedition-engine.mjs';
 if(!process.argv[2])throw Error('Pass a v0.59 reference worktree.');const old=await import(pathToFileURL(resolve(process.argv[2],'dist/expedition-engine.mjs')).href);let unchanged=0;

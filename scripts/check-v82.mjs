@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync,mkdirSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';
 import {mediaTheater,MEDIA_CASES} from './casting-media-cases.mjs';import {courierProfiles} from './courier-cases.mjs';import {newGuild,guildConfig,depart,pendingReport,pendingReward,claim,historyReport} from '../dist/expedition-guild.mjs';import {selectHero} from '../dist/expedition-command.mjs';import {simulate} from '../dist/expedition-engine.mjs';import {resourceLedger} from '../dist/expedition-resource-ledger.mjs';import {ADVENTURES,adventureConfig} from '../dist/expedition-adventure.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v82');mkdirSync(out,{recursive:true});const profiles={fresh:selectHero(newGuild(),'c'),grown:courierProfiles().grown},cases=[];

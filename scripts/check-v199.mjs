@@ -1,2 +1,3 @@
+import './capture-bootstrap.cjs';
 import fs from'node:fs';import path from'node:path';import assert from'node:assert/strict';import{departureReviewCases}from'./departure-review-cases.mjs';
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v199';fs.mkdirSync(out,{recursive:true});const p=path.join(out,'departure-review-fixture.json');assert.equal(fs.existsSync(p),false);const x=departureReviewCases();assert.equal(x.start.next,141);fs.writeFileSync(p,JSON.stringify(x,null,2));console.log(JSON.stringify({passed:true,ordinaryId:141,route:x.report.config.expedition,won:x.report.won,reward:x.reward,next:x.final.next,seedNotSearched:true}));

@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';
 import {defaults,harborConfig,trialConfig} from '../dist/expedition-data.mjs';import {simulate,RULESET} from '../dist/expedition-engine.mjs';
 import {advancementReadyGuild} from './advancement-cases.mjs';import {chooseAdvancement,guildConfig} from '../dist/expedition-guild.mjs';import {advancementOptions} from '../dist/expedition-advancement-data.mjs';import {experienceLedger} from '../dist/expedition-growth.mjs';import {PROGRESSION_RULES} from '../dist/expedition-progression-rules.mjs';

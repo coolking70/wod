@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const{chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v195',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8002';
 (async()=>{const x=JSON.parse(fs.readFileSync(path.join(out,'equipment-workbench-fixture.json'))),{CAMPAIGN_KEYS,validateCampaignBackup}=await import('../dist/expedition-campaign-backup.mjs'),{sellLoot}=await import('../dist/expedition-guild.mjs'),b=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']}),proof=[],screens=[],errors=[];let active;

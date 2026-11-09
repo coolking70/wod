@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from 'node:fs';import {resolve} from 'node:path';import assert from 'node:assert/strict';import {isDeepStrictEqual} from 'node:util';
 import {guardianFallLoop} from './guardian-fall-cases.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v176');fs.mkdirSync(out,{recursive:true});const save=(k,v)=>fs.writeFileSync(resolve(out,'fall-'+k+'.json'),JSON.stringify(v,null,2)),x=guardianFallLoop();

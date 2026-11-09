@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {manaRegenerationLoop} from './mana-regeneration-cases.mjs';
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v141';fs.mkdirSync(out,{recursive:true});const x=manaRegenerationLoop(),save=(k,v)=>fs.writeFileSync(path.join(out,'regeneration-'+k+'.json'),JSON.stringify(v,null,2)+'\n');
 for(const k of ['start','source','desktop','final','history55','history65'])save(k,x[k]);x.runs.forEach((r,i)=>{for(const[k,v]of Object.entries(r))save((i+1)+'-'+k,v);});for(const[k,v]of Object.entries(x.comparison))save('comparison-'+k,v);assert.deepEqual(x.start.reportArchives,x.final.reportArchives);assert.deepEqual(x.start.command,x.final.command);

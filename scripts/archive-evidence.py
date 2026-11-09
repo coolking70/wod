@@ -30,7 +30,10 @@ def archive(root,target):
     if hashlib.sha256(z.read(root.name+'/'+row['path'])).hexdigest()!=row['sha256']:raise ValueError('Evidence archive content mismatch: '+row['path'])
     st=(root/row['path']).stat()
     if st.st_size!=row['bytes'] or st.st_mtime_ns!=row['mtimeNs'] or sha(root/row['path'])!=row['sha256']:raise ValueError('Evidence changed while archiving: '+row['path'])
-  os.replace(temp,target)
+  # Atomic no-replace publication: a concurrent publisher cannot overwrite a winner.
+  with temp.open('rb') as stream:os.fsync(stream.fileno())
+  os.link(temp,target)
+  temp.unlink()
  except BaseException:
   if temp.exists():temp.unlink()
   raise

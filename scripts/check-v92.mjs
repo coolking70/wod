@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import{mkdirSync,writeFileSync}from'node:fs';import{resolve}from'node:path';import{pathToFileURL}from'node:url';import{createHash}from'node:crypto';import{execFileSync}from'node:child_process';
 import{stockFloorConfig}from'./stock-floor-cases.mjs';import{simulate}from'../dist/expedition-engine.mjs';import{newGuild,depart,pendingReport,pendingReward,claim,train,historyReport,validateGuild}from'../dist/expedition-guild.mjs';import{selectHero}from'../dist/expedition-command.mjs';import{resourceLedger}from'../dist/expedition-resource-ledger.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v92');mkdirSync(out,{recursive:true});const cases=[];

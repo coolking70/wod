@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync,mkdirSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';
 import {courierProfiles} from './courier-cases.mjs';import {shoalsConfig} from '../dist/expedition-data.mjs';import {SHOALS_CHARTS} from '../dist/expedition-shoals.mjs';import {simulate} from '../dist/expedition-engine.mjs';import {ADVENTURES,adventureConfig} from '../dist/expedition-adventure.mjs';import {guildConfig,depart,pendingReport,pendingReward,claim,assignLoot,historyReport,validateGuild} from '../dist/expedition-guild.mjs';import {resourceLedger} from '../dist/expedition-resource-ledger.mjs';import {ROUTE_REWARDS,expeditionReward} from '../dist/expedition-loot.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v81');mkdirSync(out,{recursive:true});const profiles=courierProfiles(),cases=[];

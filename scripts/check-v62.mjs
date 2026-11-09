@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync,mkdirSync} from 'node:fs';import {resolve,dirname} from 'node:path';
 import {reserveTrainingPath,earlyReserveTrainingGuild} from './reserve-training-paths.mjs';import {trainedReserveGuild,RESERVE_CASES,reserveCase,reserveRoute} from './trained-reserve-cases.mjs';
 import {guildConfig} from '../dist/expedition-guild.mjs';import {careerXp} from '../dist/expedition-growth.mjs';

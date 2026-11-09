@@ -1,3 +1,4 @@
+import './capture-bootstrap.cjs';
 import assert from 'node:assert/strict';import {writeFileSync,mkdirSync} from 'node:fs';import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';
 import {courierProfiles} from './courier-cases.mjs';import {courierConfig} from '../dist/expedition-data.mjs';import {keelTactics} from '../dist/expedition-courier-view.mjs';import {ADVENTURES,adventureConfig} from '../dist/expedition-adventure.mjs';import {simulate} from '../dist/expedition-engine.mjs';import {guildConfig,depart,pendingReport,pendingReward,claim,assignLoot,historyReport} from '../dist/expedition-guild.mjs';import {resourceLedger} from '../dist/expedition-resource-ledger.mjs';
 const out=resolve(process.env.WOD_EVIDENCE_DIR||'/tmp/wod-v79');mkdirSync(out,{recursive:true});

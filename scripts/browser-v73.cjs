@@ -1,3 +1,4 @@
+require('./capture-bootstrap.cjs');
 const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const out=process.env.WOD_EVIDENCE_DIR||'/tmp/wod-browser-v73',url=process.env.WOD_BASE_URL||'http://127.0.0.1:8000',base=process.env.WOD_FOUNDRY_GUILD||'/tmp/wod-v71-foundry-guild.json',seals=process.env.WOD_FOUNDRY_SEALS_GUILD||'/tmp/wod-v73-three-seals-guild.json';fs.mkdirSync(out,{recursive:true});
 (async()=>{

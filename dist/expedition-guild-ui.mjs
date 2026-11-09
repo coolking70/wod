@@ -1,3 +1,4 @@
+import {guildUnavailableView} from './expedition-recovery-view.mjs';
 import{focusEquipmentNode,focusEquipmentTarget}from'./expedition-equipment-workbench.mjs';
 import {focusJourneyHeading,focusJourneyReceipt} from './expedition-journey-followthrough.mjs';
 import{claimedRewardReceipt,claimedRewardView}from'./expedition-claimed-reward.mjs';
@@ -160,7 +161,7 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  const rehearsalSignature=plan=>JSON.stringify([raw,getConfig(),plan.expected,plan.target]);
  function render(){
  const growthDetails=captureGrowthDetails(root),companionDetails=captureCompanionWorkbench(root);
- if(!g){root.innerHTML=`<h1>公会存档暂不可用</h1><p>${esc(failure)}。原存档未覆盖。</p><button data-guild="backup">导出原始存档</button><label>恢复有效备份 <input type="file" id="guild-import" accept="application/json,.json"></label>`;return;}
+ if(!g){root.innerHTML=guildUnavailableView(failure);return;}
  if(!g.members.some(m=>m.id===selected))selected=g.lineup[0];
  if(!(g.warehouse[warehouseItem]>0))warehouseItem='all';
  if(checkScope&&!roomsFor(getConfig()).some(r=>r.id===checkScope))checkScope='';
@@ -294,13 +295,13 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  function open(next='hero',book){lootReturnPreview=null;if(Object.hasOwn(journeyNames,book))journeyBook=book;pane=typeof next==='string'?next:'hero';read();render();view('guild');if(pane!=='journey'||!focusJourneyHeading(root,journeyBook))window.scrollTo({top:0});}
  document.querySelector('header [data-view="guild"]').onclick=open;
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
- function cycle(action,value=''){read();if(!g)throw Error('公会暂不可用，请先检查或恢复备份');
+ function cycle(action,value=''){if(action==='hero'||action==='camp'){open('hero');root.querySelector('#guild-recovery-title')?.focus();return;}read();if(!g)throw Error('公会暂不可用，请先检查或恢复备份');
   if(action==='prepare'){const assigned=routeFocusPreparation(localStorage,value,getConfig(),g,{seed:getConfig().seed}),c=assigned.config;loadConfig(c,undefined,false,{overview:true});inform((assigned.plan?'已准备本路线分配的「'+assigned.plan.name+'」；请核对实际公会资产与伙伴职责。':'已准备现有路线；请核对实际公会队伍后正式出征，实验不发成长奖励。')+routeFocusNotice(assigned));}
   else if(action==='retry'){const c=historyConfig(g,Number(value));loadConfig(c,undefined,false,{overview:true});inform('已载入第'+value+'次的'+(c.objective?'目标与':'')+'出发方案；当前资产与伙伴职责保留，再次正式出征分配新种子。');}
   else if(action==='pending'){if(!g.pending){open('departure');return;}showReport(pendingReport(g),pendingOrigin(g));}
   else if(action==='training'||action==='equipment'){selected=g.command?.heroId||selected;open(action==='training'?'team':'equipment');}
-  else if(action==='goals'){bookRoute=getConfig().expedition;open('goals');}else if(action==='hero')open('hero');else if(action==='official')open('departure');else if(action==='journey'){if(!Object.hasOwn(journeyNames,value))throw Error('旅程无效');open('journey',value);}
-  else if(action==='map')view('adventure');else if(action==='camp')open('hero');else throw Error('营地操作无效');
+  else if(action==='goals'){bookRoute=getConfig().expedition;open('goals');}else if(action==='official')open('departure');else if(action==='journey'){if(!Object.hasOwn(journeyNames,value))throw Error('旅程无效');open('journey',value);}
+  else if(action==='map')view('adventure');else throw Error('营地操作无效');
  }
  function settleReport(origin,report){read();if(!g)throw Error('公会暂不可用，原存档未覆盖');const next=claimReport(g,origin,report),loot=next.history[0].loot||[];save(next);rememberClaimedReward();selected=g.command?.heroId||selected;pane=loot.length?'equipment':'team';inform('本次收益已正式到账。现在可分配装备、培养自己的英雄，或继续营地目标。');render();view('guild');focusClaimedReward();}
  read();render();return {open,cycle,settleReport,saveReportArchive,currentSnapshot:()=>readCycleGuild(localStorage),undoConfiguration,renderDraftBridge,snapshot:()=>g?structuredClone(g):null,heroId:()=>g?.command?.heroId||null};
