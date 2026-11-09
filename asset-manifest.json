@@ -1,12 +1,17 @@
 {
-  "version": "0.200",
-  "sourceCommit": "e17f29abb9fc2e6ee56c9128691f6f296df96534",
-  "sourceTree": "04d1f847e8c290c0ae9f9fd5280c00fac754b92a",
+  "version": "0.203",
+  "sourceCommit": "26914900264f37f0f2b68c4b325f78fb5e9df74d",
+  "sourceTree": "e66fd723d24ab1fbc50cf570780cfb67f4fd4868",
   "files": [
     {
       "path": "assets/abbey.png",
       "bytes": 3010033,
       "sha256": "41663fecc1223ab1413399d719006487f455c692da84060c2194e3a7b10ecca1"
+    },
+    {
+      "path": "assets/archive-lantern-v202.svg",
+      "bytes": 624,
+      "sha256": "ea2ae8981d94c6e3022d6f0e0c8ce1373c656eea50acd20f2d274666b9fdf497"
     },
     {
       "path": "assets/camp-companions-v198.svg",
@@ -74,6 +79,11 @@
       "sha256": "e8c7925897f7af34acf5cce4c0d551ad52ae7c73373c2db70d32907bd8f53ae0"
     },
     {
+      "path": "assets/map-chart-v201.svg",
+      "bytes": 1740,
+      "sha256": "38ef8b5c2c9a9654a4d03b9cdea2b32a276bd95c22cc9ea533cdd6b2b339b4e9"
+    },
+    {
       "path": "assets/mirror-gallery-v9.png",
       "bytes": 3325623,
       "sha256": "9c465a1c3352c6b93714a3313cdfab18fd13565d5f403095163c8933d07dd9ad"
@@ -82,6 +92,11 @@
       "path": "assets/oathbreaker-v5.png",
       "bytes": 2946721,
       "sha256": "2f273f80cd5ad8b1c0c896d4ae68b73c77c33ae4c0dfd7cd9ea3a4701bfd54ef"
+    },
+    {
+      "path": "assets/portraits-v4-lossless-v203.webp",
+      "bytes": 2323256,
+      "sha256": "ca732db7cb10aa918c9d356ad42b42446c611662d8e776f67f5a4fd564705c26"
     },
     {
       "path": "assets/portraits-v4.png",
@@ -294,6 +309,11 @@
       "sha256": "bd0de96a77ed02ab8efcd131ecf06e690e084b9762f9dd12e2243ce311f5c86e"
     },
     {
+      "path": "assets/support-portraits-v10-lossless-v203.webp",
+      "bytes": 1888952,
+      "sha256": "d6c7150f5175ba9e306ca7aee3b32e943082b48a6a1e43c741cbccfca26c83e0"
+    },
+    {
       "path": "assets/support-portraits-v10.png",
       "bytes": 2752857,
       "sha256": "ecb7f11d669575c098f541d155a20ac44c47f3adc85578bef36d8fe52c2e9ec7"
@@ -327,6 +347,11 @@
       "path": "expedition-advancement.mjs",
       "bytes": 1560,
       "sha256": "a8d6341ab74cd08d0b4200c510594d1123a1570e2deef6ad7c5b67a8f4b8b4bd"
+    },
+    {
+      "path": "expedition-adventure-entry.mjs",
+      "bytes": 1348,
+      "sha256": "4df26a845b3c4c3685a7e21b697cb262199ede88bc4b7e9e229ebffd3192ff39"
     },
     {
       "path": "expedition-adventure.mjs",
@@ -685,8 +710,8 @@
     },
     {
       "path": "expedition-guild-ui.mjs",
-      "bytes": 76713,
-      "sha256": "a3689d65ffd6dace060fdf72efd04e7c8e00635d88d4fe57e69e5e26cbc634bd"
+      "bytes": 76609,
+      "sha256": "1df5e9b6a0fa75087cfa0ee232c8f3841317678db5498a8a0f955bda187be017"
     },
     {
       "path": "expedition-guild.mjs",
@@ -1019,6 +1044,11 @@
       "sha256": "2aa22719460352fe7432e6eb35a8e218ad7c6ba8e2d5b840f283c3f7f5384d40"
     },
     {
+      "path": "expedition-recovery-view.mjs",
+      "bytes": 1431,
+      "sha256": "6efa07e71bfd43f27d27016fb1c456b572d57e5e30a7902122967cb56bd917c4"
+    },
+    {
       "path": "expedition-regeneration.mjs",
       "bytes": 211,
       "sha256": "e6e43bf4fe5a992343e292a93f20027d92bce920205ad77758711166bfe3320c"
@@ -1300,8 +1330,8 @@
     },
     {
       "path": "expedition-ui.mjs",
-      "bytes": 210596,
-      "sha256": "940b22d25e85ebcf489374ba61c6791db17c9cc6b72322082afc74001e0a68a3"
+      "bytes": 210015,
+      "sha256": "87a8dc53f70abee3e2f70957c8dfd4158d74035daac0137d33139329e707f904"
     },
     {
       "path": "expedition-unravel.mjs",
@@ -1330,8 +1360,8 @@
     },
     {
       "path": "expedition.css",
-      "bytes": 72619,
-      "sha256": "0a4ac5269283eb22757dfb2ef50c087bfb2923141690a0a5cce0ae500ac6d410"
+      "bytes": 74833,
+      "sha256": "8f5ff37cb4ba4cbec47da9b92ebc1736ad2d9fe3fcb032ab061543b85697ff18"
     },
     {
       "path": "guardian-motion.css",
@@ -1346,7 +1376,7 @@
     {
       "path": "index.html",
       "bytes": 26765,
-      "sha256": "3fbebb519ab8ab9c4a46b5eeaca8042a4ffe85c3ec88405cfc60896d8f95d79d"
+      "sha256": "6651c119bb4b0f38375db4f87731a3d4c06e29a6437d08ed455f76badc73cfac"
     },
     {
       "path": "legacy.html",
