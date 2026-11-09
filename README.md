@@ -1,3 +1,5 @@
+> v0.207战术编辑闭环：六职业按用途定位现有指令、防御、道具与草稿培养，修改字段后保留键盘焦点，原入口核对实际队伍但不自动出征。149相关Node、18套完整相关GUI通过；主盘净减载约1.19GB，107套容量已物理预留验证，但不是全量门禁。main/Pages仍v0.206，永久补给待决。 见[阶段说明](docs/V207_TACTICS_EDITING_WORKFLOW.md)、[云交接](docs/HANDOFF_CLOUD_V207.md)。
+
 > v0.206完整单人交互节点：整合手机播放按钮留在战场与角色状态查看/返回原阵位；全1894Node、106GUI、204原CLI、130完整历史JSON/33默认关闭HTML通过。完整源码和证据恢复门禁后再安全集成main与更新Pages，准确部署提交以release.json和云交付为准。永久补给待定。 见[完整节点](docs/V206_MOBILE_BATTLE_MILESTONE.md)、[云交接](docs/HANDOFF_CLOUD_V206.md)。
 
 > v0.205角色状态往返：点击查看状态后直接定位并聚焦该角色的真实快照，可返回同一步的原阵位；桌面/390/320px、正常与减少动态共42次查看往返通过。125相关Node及11套完整旧GUI通过。106套下一完整门禁改用主盘检查点的容量方案已物理预留验证；main/Pages仍v0.203，永久补给待定。 见[阶段说明](docs/V205_UNIT_INSPECTION.md)、[云交接](docs/HANDOFF_CLOUD_V205.md)。
