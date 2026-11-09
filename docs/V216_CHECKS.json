@@ -1,0 +1,352 @@
+{
+  "passed": true,
+  "version": "0.216",
+  "Node": {
+    "tests": 299,
+    "pass": 299,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/action-focus.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/replay-transport.test.mjs",
+    "tests/replay-motion.test.mjs",
+    "tests/guardian-motion.test.mjs",
+    "tests/guardian-detail.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/ranger-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/bard-detail.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/herbalist-motion.test.mjs",
+    "tests/motion-record.test.mjs",
+    "tests/evidence-output.test.mjs",
+    "tests/stage-evidence.test.mjs",
+    "tests/action-interception.test.mjs",
+    "tests/editor-navigation.test.mjs",
+    "tests/stored-preparation.test.mjs",
+    "tests/departure-review.test.mjs",
+    "tests/hit-review.test.mjs",
+    "tests/growth-navigation.test.mjs",
+    "tests/equipment-workbench.test.mjs",
+    "tests/returning-camp.test.mjs",
+    "tests/inkcaster-motion.test.mjs",
+    "tests/v96.test.mjs",
+    "tests/v98.test.mjs",
+    "tests/v118.test.mjs",
+    "tests/loot-transfer.test.mjs",
+    "tests/equipment-goal-transfer.test.mjs"
+  ],
+  "completeAffectedGUI": 16,
+  "completeGUIVersions": [
+    94,
+    95,
+    98,
+    118,
+    139,
+    195,
+    196,
+    198,
+    199,
+    201,
+    203,
+    205,
+    211,
+    213,
+    214,
+    216
+  ],
+  "newGUIContexts": 6,
+  "transferBlockers": 5,
+  "normal62WholeReportAndPendingSingleClaimExact": true,
+  "newOwnerNavigationAndPreviewCancelFourStringsExact": true,
+  "actualOneCopyConserved": true,
+  "currentCanonical142Unchanged": true,
+  "sourceInputs": 1096,
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 209,
+    "checkedReferences": 257,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "sourceInputs": 1096,
+    "JS": 905,
+    "Python": 20
+  },
+  "svgBytes": 282,
+  "svgSHA256": "ffcf22bfa45eb3a5a876a36440135f3889921c80782fad8dbd0da2d14628dd66",
+  "newGIFGenerated": false,
+  "existingV214EightFrameArtFilesUnchanged": [
+    {
+      "file": "inkcaster-cast128-poster.png",
+      "bytes": 23413,
+      "sha256": "4863166655beb09eb2fcfd7a6b127500ea007dec2f662acc4ca35d26b8424d42"
+    },
+    {
+      "file": "inkcaster-cast128-static.png",
+      "bytes": 38530,
+      "sha256": "4754d57a226969b8a758bf4737098450714800a991df634b3c4cc9faf4f9bb00"
+    },
+    {
+      "file": "inkcaster-cast128.gif",
+      "bytes": 82291,
+      "sha256": "8537d67a8c61cf2a9b3ba5bb2958d36b3c2a7ecee220d8152646955dd18c63fc"
+    },
+    {
+      "file": "inkcaster-cast128.png",
+      "bytes": 232397,
+      "sha256": "5cee8b1f09a40e6d39c4fbf0c7a022c2a0af11689332b6a0973b2d1d013a198a"
+    },
+    {
+      "file": "inkcaster-cast128.svg",
+      "bytes": 5114,
+      "sha256": "7ec957ab843519fa570c40263bcd7098e00f1461351b1060964409b8bd4f2dd6"
+    }
+  ],
+  "old214NativeCases72MobileClocks48Passed": true,
+  "currentCatalogue": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v53.json",
+    "bytes": 60337,
+    "sha256": "8d18cd3740dc4b4ba23d3f6f99f9ce665c9a4963e7ffff3ffc9807bf6332caa4"
+  },
+  "protectedFileBindings": "/workspace/wod-evidence/v216/PROTECTED_BEFORE_STORAGE_REMAINDER.json",
+  "storage": [
+    {
+      "passed": true,
+      "currentCatalogue": {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v47.json",
+        "bytes": 53458,
+        "sha256": "9f83c47cb65cfe4844ff8e987be89ba1a9b4e096d0334261157cbcdf97c736ad"
+      },
+      "completed": [
+        {
+          "label": "212-space216",
+          "catalogue": 42,
+          "CP": 110,
+          "archive": "/workspace/wod-delivery/v0.212-solo-review-milestone/wod-v212-verification.zip",
+          "bytes": 660093679,
+          "sha256": "93f0c56376f70f152cd39d7c6c51ace4a9a60cadd9941cb3d6017e1372b54e47",
+          "manifest": "/workspace/wod-delivery/v0.212-solo-review-milestone/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 4289308441,
+            "evidence": 87434072,
+            "checkpoints": 646755054
+          }
+        },
+        {
+          "label": "215-space216",
+          "catalogue": 43,
+          "CP": 112,
+          "archive": "/workspace/wod-delivery/v0.215-solo-motion-milestone/wod-v215-verification.zip",
+          "bytes": 667109618,
+          "sha256": "3b426ee61d02f295927130339fae6c8d880aa37930792cc6b827bcd43da62ae0",
+          "manifest": "/workspace/wod-delivery/v0.215-solo-motion-milestone/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 4298336465,
+            "evidence": 124844838,
+            "checkpoints": 651292545
+          }
+        },
+        {
+          "label": "210-space216",
+          "catalogue": 44,
+          "CP": 21,
+          "archive": "/workspace/wod-delivery/v0.210-interception-causality/wod-v210-focused-verification.zip",
+          "bytes": 135580360,
+          "sha256": "ab1afba93ebd5c6ecae11a744f70ecc0af9b6e6722f3ff339f99290f86829ef7",
+          "manifest": "/workspace/wod-delivery/v0.210-interception-causality/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 781830487,
+            "evidence": 53154847,
+            "checkpoints": 123310492
+          }
+        },
+        {
+          "label": "211-space216",
+          "catalogue": 45,
+          "CP": 14,
+          "archive": "/workspace/wod-delivery/v0.211-review-to-tactics/wod-v211-focused-verification.zip",
+          "bytes": 71914091,
+          "sha256": "4488dbbf64797e69a5e2f5ce54ac91d0da4ac75981259e1101e492bedb6534fe",
+          "manifest": "/workspace/wod-delivery/v0.211-review-to-tactics/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 350237440,
+            "evidence": 40391782,
+            "checkpoints": 61314381
+          }
+        },
+        {
+          "label": "213-space216",
+          "catalogue": 46,
+          "CP": 19,
+          "archive": "/workspace/wod-delivery/v0.213-camp-destinations/wod-v213-focused-verification.zip",
+          "bytes": 78716122,
+          "sha256": "5aef3e15840e81ff71b1ba0a3f98234917811d6c0dc86012f647306a3fc64d2a",
+          "manifest": "/workspace/wod-delivery/v0.213-camp-destinations/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 451288359,
+            "evidence": 26332173,
+            "checkpoints": 70777053
+          }
+        },
+        {
+          "label": "214-space216",
+          "catalogue": 47,
+          "CP": 21,
+          "archive": "/workspace/wod-delivery/v0.214-ink-caster-motion/wod-v214-focused-verification.zip",
+          "bytes": 97519537,
+          "sha256": "02c7d2f050e3544ed1416d5e3f2f014bed671fa0197928b9d008ea4e9ec80d1c",
+          "manifest": "/workspace/wod-delivery/v0.214-ink-caster-motion/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 481340057,
+            "evidence": 66114207,
+            "checkpoints": 84635237
+          }
+        }
+      ],
+      "logicalOriginals": 47,
+      "originalBytesRetired": 1710933407,
+      "netMainFreeIncrease": 1035120640,
+      "freeAfter": {
+        "/workspace": 2930409472,
+        "/tmp": 8539615232
+      },
+      "allOriginalMasterBytesFileModesNsCPsAndWholeRootsPassed": true,
+      "allHistoricalGapsAndLateSupplementsRemainProtected": true,
+      "literalStableBasesOriginalRecentMastersAndSourcePagesChainsUnchanged": true
+    },
+    {
+      "passed": true,
+      "currentCatalogue": {
+        "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v53.json",
+        "bytes": 60337,
+        "sha256": "8d18cd3740dc4b4ba23d3f6f99f9ce665c9a4963e7ffff3ffc9807bf6332caa4"
+      },
+      "completed": [
+        {
+          "label": "208-extra216",
+          "catalogue": 48,
+          "CP": 20,
+          "archive": "/workspace/wod-delivery/v0.208-mobile-current-action/wod-v208-focused-verification.zip",
+          "bytes": 137732835,
+          "sha256": "3ad56defa32544f5fea65ae61e3dc09bf5ad06363eb449a4a52ac14d91e042a5",
+          "manifest": "/workspace/wod-delivery/v0.208-mobile-current-action/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 772229554,
+            "evidence": 41211770,
+            "checkpoints": 118945720
+          }
+        },
+        {
+          "label": "207-extra216",
+          "catalogue": 49,
+          "CP": 18,
+          "archive": "/workspace/wod-delivery/v0.207-tactics-editing-workflow/wod-v207-focused-verification.zip",
+          "bytes": 108493073,
+          "sha256": "7c5da892d8a7adfb07bb7174213a60988c7ab44eca5373e499290966e93b0bf0",
+          "manifest": "/workspace/wod-delivery/v0.207-tactics-editing-workflow/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 666592263,
+            "evidence": 13471694,
+            "checkpoints": 104802293
+          }
+        },
+        {
+          "label": "205-extra216",
+          "catalogue": 50,
+          "CP": 11,
+          "archive": "/workspace/wod-delivery/v0.205-unit-inspection-flow/wod-v205-focused-verification.zip",
+          "bytes": 72792142,
+          "sha256": "aa8e7e69ec5a74fe0c9278d20d1953392ba599d0fcbdecedf44ee6cc37b487d9",
+          "manifest": "/workspace/wod-delivery/v0.205-unit-inspection-flow/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 413828887,
+            "evidence": 12592748,
+            "checkpoints": 62469008
+          }
+        },
+        {
+          "label": "204-resume216",
+          "catalogue": 51,
+          "CP": 10,
+          "archive": "/workspace/wod-delivery/v0.204-mobile-playback-comfort/wod-v204-focused-verification.zip",
+          "bytes": 49155937,
+          "sha256": "eb917ca7c601146cdf281138c6349d0317493481082d4975309f86de6f0c25fd",
+          "manifest": "/workspace/wod-delivery/v0.204-mobile-playback-comfort/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 220082412,
+            "evidence": 85369747,
+            "checkpoints": 37410850
+          }
+        },
+        {
+          "label": "202-resume216",
+          "catalogue": 52,
+          "CP": 8,
+          "archive": "/workspace/wod-delivery/v0.202-safe-capture-and-recovery/wod-v202-focused-verification.zip",
+          "bytes": 37070915,
+          "sha256": "5187ad944a1ecb9a491e5c84297c1d64ae7e5700556289391e9eaf5d43fa0e3d",
+          "manifest": "/workspace/wod-delivery/v0.202-safe-capture-and-recovery/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 163519805,
+            "evidence": 22212088,
+            "checkpoints": 32226157
+          }
+        },
+        {
+          "label": "201-resume216",
+          "catalogue": 53,
+          "CP": 9,
+          "archive": "/workspace/wod-delivery/v0.201-map-journey-entry/wod-v201-focused-verification.zip",
+          "bytes": 43586377,
+          "sha256": "deeb7978a628160b5fa958e19e633efa1bd069edc3c14480d8eb044d2acae4e7",
+          "manifest": "/workspace/wod-delivery/v0.201-map-journey-entry/manifest.json",
+          "wholeRootsBytes": {
+            "raw": 175206044,
+            "evidence": 9832091,
+            "checkpoints": 37460072
+          }
+        }
+      ],
+      "logicalOriginals": 53,
+      "originalBytesRetired": 448831279,
+      "netMainFreeIncrease": 188350464,
+      "freeAfter": {
+        "/workspace": 3062415360,
+        "/tmp": 8034197504
+      },
+      "allOriginalMasterBytesFileModesNsCPsAndWholeRootsPassed": true,
+      "optional198GainGuardKeptOriginal": true,
+      "old139To142FormatRejectedBeforeAnyMutation": true,
+      "failed204Namespace": "/tmp/wod-durable-204-extra216-fez15gt2",
+      "fullNextGateStillRequiresFreshCapacityForecast": true
+    }
+  ],
+  "relatedOnlyNotFull1932Node113GUI": true,
+  "lastComplete215": {
+    "Node": 1925,
+    "GUI": 112,
+    "CLI": 204,
+    "JSON": 130,
+    "HTML": 33
+  },
+  "fullNativeHistoricalCompatibilityNotRerun": true,
+  "nextCompleteWindow": "218–220",
+  "publicInteractionAndActualOldSiteMigrationUnverified": true,
+  "permanentSupplyEconomyPending": true,
+  "allHistoricalGapsRemainExplicit": true,
+  "actualRawBytes": 192284714,
+  "actualCPBytes": 48810580,
+  "freeBytes": {
+    "/workspace": 3062345728,
+    "/tmp": 8034197504
+  }
+}
