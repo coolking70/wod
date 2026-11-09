@@ -1,3 +1,5 @@
+> v0.209完整单人可理解性节点：整合战术编辑导航与键盘连续性、手机当前行动同屏、原生SVG效果同步；1907 Node、108完整GUI、204原CLI、130历史JSON/33默认关闭HTML通过。发布前继续双链源码/native及完整证据恢复门禁，最新main/Pages提交与built结果以云交付及release.json为准；永久补给仍待决定。 见[完整节点](docs/V209_MOBILE_CLARITY_MILESTONE.md)、[云交接](docs/HANDOFF_CLOUD_V209.md)。
+
 > v0.208手机当前行动：同屏呈现原出手者、实际对象与结算结果，沿原图形效果和同一DocumentTimeline同步；原阵型及角色往返保留。168相关Node、20套完整相关GUI通过，六职业四速96组手机检查；新增317B原生SVG与实际采样八帧GIF/原色PNG。main/Pages仍v206，永久补给待决。 见[阶段说明](docs/V208_MOBILE_CURRENT_ACTION.md)、[云交接](docs/HANDOFF_CLOUD_V208.md)。
 
 > v0.207战术编辑闭环：六职业按用途定位现有指令、防御、道具与草稿培养，修改字段后保留键盘焦点，原入口核对实际队伍但不自动出征。149相关Node、18套完整相关GUI通过；主盘净减载约1.19GB，107套容量已物理预留验证，但不是全量门禁。main/Pages仍v0.206，永久补给待决。 见[阶段说明](docs/V207_TACTICS_EDITING_WORKFLOW.md)、[云交接](docs/HANDOFF_CLOUD_V207.md)。
