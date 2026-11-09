@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "version": "0.195",
+  "Node": {
+    "tests": 114,
+    "pass": 114,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/equipment-workbench.test.mjs",
+    "tests/loot-transfer.test.mjs",
+    "tests/loot-rehearsal.test.mjs",
+    "tests/equipment-requirements.test.mjs",
+    "tests/equipment-skill-ranks.test.mjs",
+    "tests/claimed-reward.test.mjs",
+    "tests/journey-followthrough.test.mjs",
+    "tests/journey-receipt.test.mjs",
+    "tests/returning-camp.test.mjs"
+  ],
+  "fullNodeSuiteRun": false,
+  "browser": {
+    "passed": true,
+    "total": 8,
+    "versions": [
+      195,
+      179,
+      178,
+      139,
+      96,
+      163,
+      186,
+      187
+    ],
+    "fullCurrentSuites": false,
+    "registeredFullSuites": 98,
+    "originalCheckpointAttempts": 17,
+    "retainedFailedFirstCandidate178": true,
+    "allFinalEightSuitesPassed": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 199,
+    "checkedReferences": 230,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "JS": 857,
+    "Python": 17,
+    "sourceInputs": 1005
+  },
+  "sourceFreeze": 1005,
+  "nativeStaticJSONCount": 112,
+  "prior194StaticJSONExact": 111,
+  "normal": {
+    "id": 140,
+    "won": true,
+    "alive": 6,
+    "rounds": [
+      3,
+      4,
+      3,
+      5
+    ],
+    "supplies": {
+      "herb": 10,
+      "rune": 0,
+      "arrow": 7
+    },
+    "reward": {
+      "gold": 165,
+      "xp": 70,
+      "loot": [
+        "quaycoat"
+      ]
+    },
+    "finalGold": 15060,
+    "next": 141,
+    "heroXP": 6330,
+    "berylXP": 3215,
+    "explicitAssignment": {
+      "from": "139genuineWarehouse",
+      "receiver": "c",
+      "gear": "beaconrod",
+      "stockBefore": 1,
+      "stockAfter": 0
+    },
+    "limits": "One fixed ordinary140after explicit assignment of genuinely earned139beaconrod; three browser widths are independent copies, not three formal departures. No training, role, tactic, story ending, supply economy or balance adjustment."
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v195/browser-final/equipment-final-four-raw-keys.json": "d9c2bdaa94596bfd92e5223a2a7dc8fbc28596f0ed1a592b8f65c3183ee3f7a2",
+    "/workspace/wod-evidence/v195/browser-final/equipment-final-campaign.json": "94d00e0aeb1b7d3b132a9a3d4dea1ac4956245f3ca0ea4b946f0745a858da2f7"
+  },
+  "notRun": [
+    "full1848Node",
+    "full98GUI",
+    "full130HistoricalJSON33HTML"
+  ],
+  "noMainIntegrationThisStage": true,
+  "nextMainWindow": [
+    197,
+    199
+  ],
+  "supplyEconomyPending": true
+}

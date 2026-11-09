@@ -1,3 +1,5 @@
+> v0.195装备整备：真实仓库查找、原地收件人/实际配装比较与分配后焦点贯通正常140；114相关Node/8套完整相关GUI通过，非全1848/98。正式15060/next141，main仍194/5a38fd9。197–199完整门禁后评估main，见[说明](V195_EQUIPMENT_WORKBENCH.md)与[交接](HANDOFF_CLOUD_V195.md)。
+
 > v0.194旅程与恢复完整整合节点：旅程主进度、营地/地图/五书定位、交付回执焦点与原生SVG共同通过1837项完整Node、97套完整GUI、130份历史JSON/33份HTML和125份CLI字节核对。正式档四串保持14895/next140。主分支仅在最新远端祖先与源码/证据冷恢复通过后安全快进，准确执行结果见交付manifest。见[说明](V194_JOURNEY_RECOVERY_MILESTONE.md)、[交接](HANDOFF_CLOUD_V194.md)。
 
 > v0.193持久证据与旅程交付：三套旧完整验收ZIP经主盘差分持久化、独立冷恢复及三整根回读后安全退役，净减少约1.40GB载荷；原SHA与旧清单保留，按显式catalog恢复。五本旅程交付后聚焦真实回执，新增281字节原生SVG印记。71相关Node、6套完整相关GUI、80完整CLI通过，非1837/97全门禁。main仍191/09ed93af，194–196重新预算并跑完整门禁。见[说明](V193_DURABLE_EVIDENCE_AND_JOURNEY.md)、[交接](HANDOFF_CLOUD_V193.md)。

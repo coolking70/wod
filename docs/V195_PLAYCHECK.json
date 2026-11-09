@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "normal": {
+    "id": 140,
+    "won": true,
+    "alive": 6,
+    "rounds": [
+      3,
+      4,
+      3,
+      5
+    ],
+    "supplies": {
+      "herb": 10,
+      "rune": 0,
+      "arrow": 7
+    },
+    "reward": {
+      "gold": 165,
+      "xp": 70,
+      "loot": [
+        "quaycoat"
+      ]
+    },
+    "finalGold": 15060,
+    "next": 141,
+    "heroXP": 6330,
+    "berylXP": 3215,
+    "explicitAssignment": {
+      "from": "139genuineWarehouse",
+      "receiver": "c",
+      "gear": "beaconrod",
+      "stockBefore": 1,
+      "stockAfter": 0
+    },
+    "limits": "One fixed ordinary140after explicit assignment of genuinely earned139beaconrod; three browser widths are independent copies, not three formal departures. No training, role, tactic, story ending, supply economy or balance adjustment."
+  }
+}

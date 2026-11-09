@@ -1,0 +1,30 @@
+{
+  "version": "0.195",
+  "baseline": "5a38fd9ba04efb3be1ab328bc3fb21f4b0a02969",
+  "problem": "Long-term390px equipment panel19573px: warehouse recipient chooser is far above the stock; changing it redraws page and drops focus to BODY. Need coherent distribution-to-actual-party workflow.",
+  "scope": [
+    "Four task landmarks within existing equipment page; no hidden legacy controls or new storage/schema.",
+    "On-site warehouse recipient picker; redraw preserves keyboard context, compares same actual chosen member.",
+    "After explicit assignment/sale focus live stock/result; current worn/catalog/loadout navigation and return.",
+    "Original small nativeSVG warehouse icon; existing six roleGIFs/models unchanged."
+  ],
+  "rules": "All inventory/price/assignment/requirements/pending/stale writes use existing APIs. No supply economy or auto equipment.",
+  "verification": [
+    "Targeted Node plus GUI195/179/178/139/96/163/186 with full old assertions; no claim of all97+1/fullNode.",
+    "Canonical140 normal departure only if deliberately executed in browser and exact wholeAPI evidence; optional independent-copy tests do not change formal four keys.",
+    "Small incremental source dual cold chains and physical evidence restore; protected2568baseline includes4logical originals; exact catalog4/H193/base188held."
+  ],
+  "fullMainWindow": [
+    197,
+    199
+  ],
+  "space": {
+    "mainEntry": 2547179520,
+    "tmpEntry": 8863784960,
+    "perDiskReserve": 1073741824,
+    "targetedRawUpper": 1500000000,
+    "targetedCPUpper": 250000000,
+    "evidenceUpper": 50000000,
+    "noNewFullSourceBundle": true
+  }
+}
