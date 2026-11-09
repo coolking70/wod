@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "observed": {
+    "observedIssue": true,
+    "normal140ExistingClaimedReportOnly": true,
+    "results": [
+      {
+        "speed": 4,
+        "nextStepAt": 325,
+        "timings": [
+          {
+            "kind": "CSSAnimation",
+            "name": "impact",
+            "duration": 650,
+            "delay": 120,
+            "target": "SPAN",
+            "part": null
+          },
+          {
+            "kind": "CSSAnimation",
+            "name": "float",
+            "duration": 1000,
+            "delay": 0,
+            "target": "SPAN",
+            "part": null
+          },
+          {
+            "kind": "CSSAnimation",
+            "name": "projectile",
+            "duration": 850,
+            "delay": 0,
+            "target": "path",
+            "part": null
+          },
+          {
+            "kind": "CSSAnimation",
+            "name": "ring",
+            "duration": 900,
+            "delay": 0,
+            "target": "circle",
+            "part": null
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "root"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "torso"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "head"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "bowArm"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "bowHand"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "drawArm"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "drawHand"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "legL"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "legR"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "bowString"
+          },
+          {
+            "kind": "Animation",
+            "name": "",
+            "duration": 225,
+            "delay": 0,
+            "target": "g",
+            "part": "nockedArrow"
+          }
+        ],
+        "cssEffectsOutlastNextStep": true
+      },
+      {
+        "unassistedSpeedChange": "ranger",
+        "oldDurationStillRunning": [
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          }
+        ]
+      },
+      {
+        "unassistedSpeedChange": "guardian",
+        "oldDurationStillRunning": [
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          },
+          {
+            "state": "running",
+            "duration": 1800
+          }
+        ]
+      },
+      {
+        "pauseLeavesCSSEffectsRunning": [
+          {
+            "name": "impact",
+            "duration": 650
+          },
+          {
+            "name": "float",
+            "duration": 1000
+          },
+          {
+            "name": "projectile",
+            "duration": 850
+          },
+          {
+            "name": "ring",
+            "duration": 900
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "formalFourKeysUnchanged": true
+  },
+  "viewOnlyFormal": {
+    "gold": 15060,
+    "next": 141,
+    "heroXP": 6330,
+    "berylXP": 3215,
+    "allFourRawStringsExact195": true,
+    "canonicalCampaignExact195": true
+  },
+  "allFourStringsExact195": true,
+  "noNewDepartureOrReward": true
+}

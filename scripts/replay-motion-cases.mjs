@@ -1,0 +1,8 @@
+import{equipmentWorkbenchCases}from'./equipment-workbench-cases.mjs';import{historyReport}from'../dist/expedition-guild.mjs';import{replaySteps}from'../dist/expedition-stage.mjs';
+import{guardianMotion}from'../dist/expedition-guardian-motion.mjs';import{rangerMotion}from'../dist/expedition-ranger-motion.mjs';import{bardMotion}from'../dist/expedition-bard-motion.mjs';import{scholarMotion}from'../dist/expedition-scholar-motion.mjs';import{tidecallerMotion}from'../dist/expedition-tidecaller-motion.mjs';import{herbalistMotion}from'../dist/expedition-herbalist-motion.mjs';
+let cached;export function replayMotionCases(){
+ if(cached)return structuredClone(cached);const x=equipmentWorkbenchCases(),keys={...x.keys,'abbey-guild-v6':JSON.stringify(x.final)},report=historyReport(x.final,140),steps=replaySteps(report.events),samples={};
+ for(const[role,id,motion]of[['guardian','beryl',guardianMotion],['ranger','b',rangerMotion],['bard','e',bardMotion],['scholar','d',scholarMotion],['tidecaller','c',tidecallerMotion],['herbalist','f',herbalistMotion]]){const hero=report.config.heroes.find(h=>h.id===id),g=steps.find(g=>motion(g,hero)?.beats.length);if(!g)throw Error('Actual140 has no '+role+'motion');samples[role]={id,start:g.start,roomIndex:g.roomIndex,eventIds:motion(g,hero).sourceEvents};}
+ const g=steps.find(g=>rangerMotion(g,report.config.heroes.find(h=>h.id==='b'))?.beats.some(b=>b.pose==='release'));samples.projectile={start:g.start,roomIndex:g.roomIndex};
+ return structuredClone(cached={keys,report,samples,limits:'Reads already claimed140with actual195assets; no new141departure, reward, training, tactics or supply economy. Motion timing and decorativeFX never change recordedHP/MP, costs, event order or source IDs.'});
+}

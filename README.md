@@ -1,3 +1,5 @@
+> v0.196回放演出：修复4倍速特效跨步和切速/暂停遗漏，统一六职业与原生SVG/CSS生命周期；实际八帧GIF/PNG对照按需载入。119相关Node/10完整相关GUI/114静态CLI通过，非全1855/99。正式四串仍15060/next141，main194；197–199全门禁后评估main。见[说明](docs/V196_REPLAY_MOTION_LIFECYCLE.md)、[交接](docs/HANDOFF_CLOUD_V196.md)。
+
 > v0.195装备整备：真实仓库查找、原地收件人/实际配装比较与分配后焦点贯通正常140；114相关Node/8套完整相关GUI通过，非全1848/98。正式15060/next141，main仍194/5a38fd9。197–199完整门禁后评估main，见[说明](docs/V195_EQUIPMENT_WORKBENCH.md)与[交接](docs/HANDOFF_CLOUD_V195.md)。
 
 > v0.194旅程与恢复完整整合节点：旅程主进度、营地/地图/五书定位、交付回执焦点与原生SVG共同通过1837项完整Node、97套完整GUI、130份历史JSON/33份HTML和125份CLI字节核对。正式档四串保持14895/next140。主分支仅在最新远端祖先与源码/证据冷恢复通过后安全快进，准确执行结果见交付manifest。见[说明](docs/V194_JOURNEY_RECOVERY_MILESTONE.md)、[交接](docs/HANDOFF_CLOUD_V194.md)。
