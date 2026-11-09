@@ -1,0 +1,6027 @@
+{
+  "ruleset": "original-wod-inspired-0.57.0",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "rows": [
+    {
+      "loadout": "balanced",
+      "policy": "sustain",
+      "rescue": "pass",
+      "summary": {
+        "count": 32,
+        "wins": 32,
+        "survive": 32,
+        "reserve": 0,
+        "all": 0,
+        "winSupplies": {
+          "herb": 6.7,
+          "rune": 0,
+          "arrow": 0
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 220,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 218,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 216,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 220,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 563,
+          "mp": 220,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 221,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 214,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 217,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 539,
+          "mp": 212,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 209,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 218,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 220,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 550,
+          "mp": 224,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 223,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 536,
+          "mp": 221,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 219,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 219,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 546,
+          "mp": 219,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 220,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 227,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 221,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 219,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 224,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 221,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 228,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 221,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 229,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 223,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 213,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 221,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 223,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 223,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "loadout": "balanced",
+      "policy": "sustain",
+      "rescue": "aid",
+      "summary": {
+        "count": 32,
+        "wins": 32,
+        "survive": 32,
+        "reserve": 1,
+        "all": 1,
+        "winSupplies": {
+          "herb": 3.7,
+          "rune": 0.2,
+          "arrow": 0.4
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 195,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 3
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 218,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 216,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 220,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 563,
+          "mp": 220,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 221,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 214,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 217,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 539,
+          "mp": 212,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 209,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 218,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 220,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 550,
+          "mp": 224,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 195,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 3
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 536,
+          "mp": 221,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 219,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 211,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 3
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 546,
+          "mp": 219,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 220,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 227,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 221,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 219,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 224,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 221,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 228,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 221,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 229,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 223,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 192,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 3
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 221,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 223,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 223,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "loadout": "balanced",
+      "policy": "opening",
+      "rescue": "pass",
+      "summary": {
+        "count": 32,
+        "wins": 26,
+        "survive": 26,
+        "reserve": 0,
+        "all": 0,
+        "winSupplies": {
+          "herb": 6.4,
+          "rune": 0.6,
+          "arrow": 5
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 251,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 248,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 249,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 248,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 249,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 245,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 250,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 297,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 6
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 239,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 247,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 239,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 294,
+          "supplies": {
+            "herb": 6,
+            "rune": 3,
+            "arrow": 6
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 249,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 245,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 249,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 243,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 254,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 253,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 249,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 297,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 6
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 244,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 248,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 251,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 250,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 245,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 243,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 302,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 29,
+          "won": false,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 295,
+          "supplies": {
+            "herb": 7,
+            "rune": 3,
+            "arrow": 6
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 250,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 247,
+          "supplies": {
+            "herb": 7,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 297,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        }
+      ]
+    },
+    {
+      "loadout": "balanced",
+      "policy": "opening",
+      "rescue": "aid",
+      "summary": {
+        "count": 32,
+        "wins": 26,
+        "survive": 26,
+        "reserve": 3,
+        "all": 3,
+        "winSupplies": {
+          "herb": 3.4,
+          "rune": 1,
+          "arrow": 5.5
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 251,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 9
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 248,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 249,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 248,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 249,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 245,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 250,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 297,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 6
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 239,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 247,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 239,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 294,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 6
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 249,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 245,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 9
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 249,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 243,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 254,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 9
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 253,
+          "supplies": {
+            "herb": 2,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 249,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 297,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 6
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 244,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 248,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 251,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 250,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 243,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 245,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 243,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 302,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 29,
+          "won": false,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 295,
+          "supplies": {
+            "herb": 4,
+            "rune": 7,
+            "arrow": 10
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 250,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 247,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 5
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 297,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        }
+      ]
+    },
+    {
+      "loadout": "balanced",
+      "policy": "frugal",
+      "rescue": "pass",
+      "summary": {
+        "count": 32,
+        "wins": 19,
+        "survive": 19,
+        "reserve": 19,
+        "all": 19,
+        "winSupplies": {
+          "herb": 6.4,
+          "rune": 2,
+          "arrow": 8
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 298,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 255,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 566,
+          "mp": 250,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 261,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 250,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 300,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 261,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 249,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 252,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 260,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 302,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 299,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 302,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 302,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 247,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 260,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": false,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 302,
+          "supplies": {
+            "herb": 5,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 255,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 530,
+          "mp": 258,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 303,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 263,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 257,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": false,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 304,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 256,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 542,
+          "mp": 259,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": false,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 299,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 27,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 303,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 243,
+          "supplies": {
+            "herb": 5,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 258,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": false,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 304,
+          "supplies": {
+            "herb": 6,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 259,
+          "supplies": {
+            "herb": 6,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 250,
+          "supplies": {
+            "herb": 7,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "loadout": "balanced",
+      "policy": "frugal",
+      "rescue": "aid",
+      "summary": {
+        "count": 32,
+        "wins": 19,
+        "survive": 19,
+        "reserve": 19,
+        "all": 19,
+        "winSupplies": {
+          "herb": 3.4,
+          "rune": 2.2,
+          "arrow": 8.2
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 298,
+          "supplies": {
+            "herb": 3,
+            "rune": 8,
+            "arrow": 12
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 255,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 566,
+          "mp": 250,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 261,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 250,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 300,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 261,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 249,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 252,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 260,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 302,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 299,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 302,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 302,
+          "supplies": {
+            "herb": 4,
+            "rune": 8,
+            "arrow": 12
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 247,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 260,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": false,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 302,
+          "supplies": {
+            "herb": 2,
+            "rune": 8,
+            "arrow": 12
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 255,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 530,
+          "mp": 258,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 303,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 263,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 257,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": false,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 304,
+          "supplies": {
+            "herb": 4,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 256,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 542,
+          "mp": 259,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": false,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 299,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 27,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 303,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 243,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 258,
+          "supplies": {
+            "herb": 4,
+            "rune": 6,
+            "arrow": 12
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": false,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 304,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 259,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 250,
+          "supplies": {
+            "herb": 4,
+            "rune": 2,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "loadout": "stock",
+      "policy": "sustain",
+      "rescue": "pass",
+      "summary": {
+        "count": 32,
+        "wins": 32,
+        "survive": 32,
+        "reserve": 0,
+        "all": 0,
+        "winSupplies": {
+          "herb": 2.7,
+          "rune": 0,
+          "arrow": 0.6
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 203,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 201,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 196,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 206,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 563,
+          "mp": 203,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 204,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 201,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 207,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 198,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 630,
+          "mp": 198,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 201,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 205,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 209,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 206,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 536,
+          "mp": 204,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 613,
+          "mp": 196,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 211,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 546,
+          "mp": 199,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 615,
+          "mp": 196,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 208,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 550,
+          "mp": 199,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 199,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 208,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 2
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 205,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 205,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 198,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 213,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 199,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 197,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 200,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 199,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 199,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "loadout": "stock",
+      "policy": "sustain",
+      "rescue": "aid",
+      "summary": {
+        "count": 32,
+        "wins": 32,
+        "survive": 32,
+        "reserve": 3,
+        "all": 3,
+        "winSupplies": {
+          "herb": 0.2,
+          "rune": 0.3,
+          "arrow": 1
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 561,
+          "mp": 195,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 5
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 201,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 196,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 589,
+          "mp": 206,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 563,
+          "mp": 203,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 204,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 201,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 640,
+          "mp": 207,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 198,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 581,
+          "mp": 196,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 579,
+          "mp": 201,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 205,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 209,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 195,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 5
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 536,
+          "mp": 204,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 568,
+          "mp": 207,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 211,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 546,
+          "mp": 199,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 207,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 208,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 550,
+          "mp": 199,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 199,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 202,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 2
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 205,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 605,
+          "mp": 205,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 567,
+          "mp": 198,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 213,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 199,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 192,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 5
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 205,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 199,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 1
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 556,
+          "mp": 199,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 0
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "loadout": "stock",
+      "policy": "opening",
+      "rescue": "pass",
+      "summary": {
+        "count": 32,
+        "wins": 26,
+        "survive": 26,
+        "reserve": 26,
+        "all": 26,
+        "winSupplies": {
+          "herb": 2.4,
+          "rune": 2.6,
+          "arrow": 7
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 251,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 248,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 249,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 248,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 249,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 245,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 250,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 297,
+          "supplies": {
+            "herb": 2,
+            "rune": 5,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 239,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 247,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 239,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 294,
+          "supplies": {
+            "herb": 2,
+            "rune": 5,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 249,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 245,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 249,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 243,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 254,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 253,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 249,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 297,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 244,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 248,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 625,
+          "mp": 251,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 250,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 243,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 245,
+          "supplies": {
+            "herb": 3,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 243,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 302,
+          "supplies": {
+            "herb": 3,
+            "rune": 6,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 29,
+          "won": false,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 295,
+          "supplies": {
+            "herb": 3,
+            "rune": 5,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 250,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 247,
+          "supplies": {
+            "herb": 3,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 297,
+          "supplies": {
+            "herb": 3,
+            "rune": 6,
+            "arrow": 8
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        }
+      ]
+    },
+    {
+      "loadout": "stock",
+      "policy": "opening",
+      "rescue": "aid",
+      "summary": {
+        "count": 32,
+        "wins": 25,
+        "survive": 25,
+        "reserve": 25,
+        "all": 25,
+        "winSupplies": {
+          "herb": 0.6,
+          "rune": 2.9,
+          "arrow": 7.3
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 549,
+          "mp": 249,
+          "supplies": {
+            "herb": 0,
+            "rune": 7,
+            "arrow": 11
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 248,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 632,
+          "mp": 249,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 248,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 562,
+          "mp": 249,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 551,
+          "mp": 245,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 609,
+          "mp": 250,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 298,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 533,
+          "mp": 243,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 607,
+          "mp": 247,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 298,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 247,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 249,
+          "supplies": {
+            "herb": 2,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 6,
+          "hp": 586,
+          "mp": 245,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 11
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 585,
+          "mp": 249,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 601,
+          "mp": 243,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 614,
+          "mp": 254,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 253,
+          "supplies": {
+            "herb": 1,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 249,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 297,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 546,
+          "mp": 248,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 611,
+          "mp": 248,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": false,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 297,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 590,
+          "mp": 250,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 616,
+          "mp": 243,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 245,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 6,
+          "hp": 553,
+          "mp": 243,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 7
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 28,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 302,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 29,
+          "won": false,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 295,
+          "supplies": {
+            "herb": 0,
+            "rune": 9,
+            "arrow": 12
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 588,
+          "mp": 250,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 247,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 7
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 297,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 8
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        }
+      ]
+    },
+    {
+      "loadout": "stock",
+      "policy": "frugal",
+      "rescue": "pass",
+      "summary": {
+        "count": 32,
+        "wins": 19,
+        "survive": 19,
+        "reserve": 19,
+        "all": 19,
+        "winSupplies": {
+          "herb": 2.4,
+          "rune": 4,
+          "arrow": 10
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "survivors": 6,
+          "hp": 602,
+          "mp": 298,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 560,
+          "mp": 255,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 566,
+          "mp": 250,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 261,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 250,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 300,
+          "supplies": {
+            "herb": 1,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 261,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 600,
+          "mp": 249,
+          "supplies": {
+            "herb": 1,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 252,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 260,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 302,
+          "supplies": {
+            "herb": 3,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "survivors": 6,
+          "hp": 595,
+          "mp": 299,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 302,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 302,
+          "supplies": {
+            "herb": 3,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 247,
+          "supplies": {
+            "herb": 1,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 260,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": false,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 302,
+          "supplies": {
+            "herb": 1,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 603,
+          "mp": 255,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 530,
+          "mp": 258,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 303,
+          "supplies": {
+            "herb": 3,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 263,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 257,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": false,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 304,
+          "supplies": {
+            "herb": 3,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 256,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 542,
+          "mp": 259,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": false,
+          "survivors": 6,
+          "hp": 582,
+          "mp": 299,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 27,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 303,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 583,
+          "mp": 243,
+          "supplies": {
+            "herb": 1,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 258,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": false,
+          "survivors": 6,
+          "hp": 612,
+          "mp": 304,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 259,
+          "supplies": {
+            "herb": 2,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 250,
+          "supplies": {
+            "herb": 3,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "bypassed",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    },
+    {
+      "loadout": "stock",
+      "policy": "frugal",
+      "rescue": "aid",
+      "summary": {
+        "count": 32,
+        "wins": 18,
+        "survive": 18,
+        "reserve": 18,
+        "all": 18,
+        "winSupplies": {
+          "herb": 0.1,
+          "rune": 4.2,
+          "arrow": 10.2
+        }
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": false,
+          "survivors": 6,
+          "hp": 566,
+          "mp": 302,
+          "supplies": {
+            "herb": 0,
+            "rune": 10,
+            "arrow": 14
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 518,
+          "mp": 255,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 509,
+          "mp": 256,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 6,
+          "hp": 596,
+          "mp": 261,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 5,
+          "won": false,
+          "survivors": 6,
+          "hp": 557,
+          "mp": 250,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 6,
+          "hp": 597,
+          "mp": 300,
+          "supplies": {
+            "herb": 1,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 578,
+          "mp": 261,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 254,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 6,
+          "hp": 621,
+          "mp": 252,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 10,
+          "won": true,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 260,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 6,
+          "hp": 598,
+          "mp": 302,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 12,
+          "won": false,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 302,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 6,
+          "hp": 591,
+          "mp": 302,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 6,
+          "hp": 610,
+          "mp": 302,
+          "supplies": {
+            "herb": 0,
+            "rune": 10,
+            "arrow": 14
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 606,
+          "mp": 247,
+          "supplies": {
+            "herb": 1,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 6,
+          "hp": 587,
+          "mp": 260,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 17,
+          "won": false,
+          "survivors": 6,
+          "hp": 608,
+          "mp": 302,
+          "supplies": {
+            "herb": 1,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 18,
+          "won": false,
+          "survivors": 6,
+          "hp": 552,
+          "mp": 301,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 6,
+          "hp": 572,
+          "mp": 253,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 20,
+          "won": false,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 303,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 573,
+          "mp": 263,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 6,
+          "hp": 594,
+          "mp": 257,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 23,
+          "won": false,
+          "survivors": 6,
+          "hp": 570,
+          "mp": 304,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 527,
+          "mp": 250,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 6,
+          "hp": 542,
+          "mp": 259,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 26,
+          "won": false,
+          "survivors": 6,
+          "hp": 547,
+          "mp": 302,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 27,
+          "won": false,
+          "survivors": 6,
+          "hp": 604,
+          "mp": 303,
+          "supplies": {
+            "herb": 2,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "unavailable",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 511,
+          "mp": 259,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 576,
+          "mp": 258,
+          "supplies": {
+            "herb": 0,
+            "rune": 8,
+            "arrow": 14
+          },
+          "rescue": "success",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 30,
+          "won": false,
+          "survivors": 6,
+          "hp": 575,
+          "mp": 305,
+          "supplies": {
+            "herb": 0,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "unreached"
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 6,
+          "hp": 558,
+          "mp": 257,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 569,
+          "mp": 250,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "failure",
+          "bell": "bypassed",
+          "route": "direct"
+        }
+      ]
+    }
+  ]
+}
