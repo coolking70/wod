@@ -1,0 +1,288 @@
+{
+  "passed": true,
+  "sourceInputs": 1066,
+  "syntax": {
+    "JS": 892,
+    "Python": 18
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 207,
+    "checkedReferences": 250,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "Node": {
+    "tests": 168,
+    "pass": 168,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/action-focus.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/replay-transport.test.mjs",
+    "tests/replay-motion.test.mjs",
+    "tests/guardian-motion.test.mjs",
+    "tests/guardian-detail.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/ranger-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/bard-detail.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/herbalist-motion.test.mjs",
+    "tests/motion-record.test.mjs",
+    "tests/evidence-output.test.mjs",
+    "tests/stage-evidence.test.mjs"
+  ],
+  "completeAffectedGUIVersions": [
+    133,
+    147,
+    151,
+    172,
+    174,
+    175,
+    176,
+    177,
+    180,
+    181,
+    182,
+    183,
+    184,
+    187,
+    189,
+    196,
+    204,
+    205,
+    207,
+    208
+  ],
+  "completeOldGUI": 19,
+  "newCurrentGUIContexts": 6,
+  "mobileSixRoleFourSpeedCases": 96,
+  "exactOriginalDocumentTimelineStartTimeEffectsAndPoseAssertions": true,
+  "originalActorRecipientBefore": {
+    "1440": 174.28125,
+    "390": 967.859375,
+    "320": 920.984375
+  },
+  "currentActorRecipientAfter": [
+    {
+      "width": 390,
+      "motion": "no-preference",
+      "span": 126.34375,
+      "panelHeight": 197.53125
+    },
+    {
+      "width": 390,
+      "motion": "reduce",
+      "span": 126.34375,
+      "panelHeight": 197.53125
+    },
+    {
+      "width": 320,
+      "motion": "no-preference",
+      "span": 139.84375,
+      "panelHeight": 211.03125
+    },
+    {
+      "width": 320,
+      "motion": "reduce",
+      "span": 139.84375,
+      "panelHeight": 211.03125
+    }
+  ],
+  "ordinaryFreshCampaign": {
+    "freshIsolatedCampaign": true,
+    "id": 1,
+    "next": 2,
+    "won": true,
+    "alive": 6,
+    "reward": {
+      "cleared": 3,
+      "gold": 120,
+      "xp": 45,
+      "firstClear": true,
+      "loot": [
+        "reliquaryshield"
+      ]
+    },
+    "wholeReportPendingClaimExportAndReloadExact": true,
+    "canonicalLongTermNext142Untouched": true
+  },
+  "realInterceptionAndRepeatedRecipients": {
+    "controlledOrdinary84Fixture": true,
+    "wholeNativeReportAndPendingExact": true,
+    "actualInterceptionAndRepeatedRecipientCardsExact": true,
+    "eventIds": [
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "recipients": [
+      {
+        "id": "beryl",
+        "text": "−18 HP · 1次闪避",
+        "attackRecords": 2
+      },
+      {
+        "id": "e",
+        "text": "闪避",
+        "attackRecords": 1
+      }
+    ],
+    "viewingDidNotClaimOrRewriteFourStrings": true,
+    "canonicalLongTermNext142Untouched": true
+  },
+  "desktopOriginalFormationAndAllExistingToggleBehaviorsPreserved": true,
+  "noMainGameGIFPNGAssetRequest": true,
+  "newNativeSVGBytes": 317,
+  "realEightFrameGIFBytes": 103803,
+  "exactEightCellPNGSpritesheetBytes": 104998,
+  "GIFSharedPaletteMeanAbsoluteRGBError": [
+    1.8602837277635853,
+    1.8375256169113723,
+    1.8345825964084856,
+    1.8413342316798145,
+    1.8553147487905075,
+    1.855403647661024,
+    1.861275652003032,
+    1.8584308881465053
+  ],
+  "artSamplingSourceRecords": [
+    49,
+    50,
+    51
+  ],
+  "artIsNativeOriginalSVGBrowserSamplingNotImagegen": true,
+  "studySixContextsAndReducedMotionPNGPassed": true,
+  "localPerformanceRows": [
+    {
+      "motion": "no-preference",
+      "summary": {
+        "true": {
+          "samples": 12,
+          "medianMs": 26.099999994039536,
+          "p95Ms": 58.5,
+          "maxMs": 58.5
+        },
+        "false": {
+          "samples": 12,
+          "medianMs": 23.30000001192093,
+          "p95Ms": 30.5,
+          "maxMs": 30.5
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:8002/assets/action-frame-v208.svg",
+          "encodedBodySize": 317,
+          "transferSize": 617
+        }
+      ],
+      "longTasks": []
+    },
+    {
+      "motion": "reduce",
+      "summary": {
+        "true": {
+          "samples": 12,
+          "medianMs": 25.700000017881393,
+          "p95Ms": 34.5,
+          "maxMs": 34.5
+        },
+        "false": {
+          "samples": 12,
+          "medianMs": 25.599999994039536,
+          "p95Ms": 26.700000017881393,
+          "maxMs": 26.700000017881393
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:8002/assets/action-frame-v208.svg",
+          "encodedBodySize": 317,
+          "transferSize": 617
+        }
+      ],
+      "longTasks": []
+    }
+  ],
+  "performanceNotIsolatedHardwareMobileFPSOrInternetClaim": true,
+  "rejectedSVGUsePrototypePreserved": true,
+  "earlyBrowserOriginalTwoCPsAndAllMetadataIndependentlyColdRestored": true,
+  "earlyOriginalsArchive": {
+    "path": "/workspace/wod-evidence/v208/early-browser-originals.zip",
+    "bytes": 12484822,
+    "sha256": "4de6b7e500be044b7cccab86442fdf4ca9556a7c066f9c243d61bc8cba054a5e"
+  },
+  "allInitialScriptAndFixtureFailuresPreserved": [
+    "action-before",
+    "svg-use-probe",
+    "action-node-first",
+    "browser-first",
+    "browser-second"
+  ],
+  "allFinalCurrentTestsPass": true,
+  "oldAffectedBrowserAssertionsUnchanged": true,
+  "protectedInheritedFiles": 11900,
+  "logicalInheritedFiles": [
+    "/workspace/wod-delivery/v0.153-nondamaging-control/wod-v153-verification.zip",
+    "/workspace/wod-delivery/v0.154-enemy-surrender/wod-v154-focused-verification.zip",
+    "/workspace/wod-delivery/v0.155-homecoming-testimony/wod-v155-verification.zip",
+    "/workspace/wod-delivery/v0.164-expedition-closure/wod-v164-verification.zip",
+    "/workspace/wod-delivery/v0.165-growth-navigation/wod-v165-verification.zip",
+    "/workspace/wod-delivery/v0.166-training-context/wod-v166-verification.zip",
+    "/workspace/wod-delivery/v0.170-play-guide/wod-v170-verification.zip",
+    "/workspace/wod-delivery/v0.173-route-art-loading/wod-v173-verification.zip",
+    "/workspace/wod-delivery/v0.175-recorded-damage-review/wod-v175-verification.zip",
+    "/workspace/wod-delivery/v0.176-guardian-fallen-framing/wod-v176-verification.zip",
+    "/workspace/wod-delivery/v0.179-loot-receipt-milestone/wod-v179-verification.zip",
+    "/workspace/wod-delivery/v0.182-motion-evidence-milestone/wod-v182-verification.zip",
+    "/workspace/wod-delivery/v0.185-solo-experience-milestone/wod-v185-verification.zip",
+    "/workspace/wod-delivery/v0.191-solo-journey-milestone/wod-v191-focused-verification.zip",
+    "/workspace/wod-delivery/v0.194-journey-recovery-milestone/wod-v194-verification.zip",
+    "/workspace/wod-delivery/v0.195-equipment-workbench/wod-v195-focused-verification.zip",
+    "/workspace/wod-delivery/v0.196-replay-motion-lifecycle/wod-v196-focused-verification.zip",
+    "/workspace/wod-delivery/v0.197-singleplayer-motion-milestone/wod-v197-initial-full-gui-failure-corrected.zip",
+    "/workspace/wod-delivery/v0.197-singleplayer-motion-milestone/wod-v197-second-full-gui-failure.zip",
+    "/workspace/wod-delivery/v0.197-singleplayer-motion-milestone/wod-v197-verification.zip",
+    "/workspace/wod-delivery/v0.200-singleplayer-readiness-milestone/wod-v200-verification.zip",
+    "/workspace/wod-delivery/v0.158-expedition-milestone/wod-v158-verification.zip",
+    "/workspace/wod-delivery/v0.161-holdout-milestone/wod-v161-verification.zip",
+    "/workspace/wod-delivery/v0.150-verified-retention/wod-v150-verification.zip",
+    "/workspace/wod-delivery/v0.151-complete-action-outcomes/wod-v151-verification.zip",
+    "/workspace/wod-delivery/v0.152-independent-mental-defense/wod-v152-verification.zip"
+  ],
+  "currentCatalogue": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v26.json",
+    "bytes": 29734,
+    "sha256": "6a995f07e6b5ba644b92a00a648917313e7164a02a5dc8cdbd74a1a48bbdb898"
+  },
+  "noNewHistoricalDataOrUniqueEvidenceRetirement": true,
+  "mainAndPagesUnchangedAt206": true,
+  "noBalanceSkillSupplyOrPersistenceRuleChanges": true,
+  "fullNodeFull108GUIAndFullHistoryNativeNotRun": true,
+  "lastCompleteGates206": {
+    "Node": 1894,
+    "GUI": 106,
+    "CLI": 204,
+    "historyJSON": 130,
+    "historyHTML": 33
+  },
+  "canonicalOriginal200Next142Gold15225Unchanged": true,
+  "freeBytes": {
+    "/workspace": 3216596992,
+    "/tmp": 8123707392
+  }
+}
