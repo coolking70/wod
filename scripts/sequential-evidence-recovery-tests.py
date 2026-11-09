@@ -128,4 +128,37 @@ class Sequence(unittest.TestCase):
    return shutil._ntuple_diskusage(200*1024**2,200*1024**2-free,free)
   with patch.object(M.shutil,'disk_usage',side_effect=volume):r=self.run_flow(_hook=hook)
   self.assertTrue(r['passed']);self.assertTrue(peak);self.assertLess(max(peak),2*raw_bytes);self.assertEqual(r['independentWholeRawReadback']['files'],4);self.intact(False)
+ def with_metadata(self):
+  d=self.raw/'.wod-capture/sources';d.mkdir(parents=True);(self.raw/'.wod-capture/empty-directory').mkdir();self.extra=[d/'actual-source.cjs',self.raw/'stdout.log']
+  for i,p in enumerate(self.extra):p.write_bytes(b'original capture metadata '+bytes([i]));p.chmod(0o640);os.utime(p,ns=(1700000000100000000+i,1700000000100000000+i))
+  self.build();return{str(p):(M.sha(p),M.metadata(p))for p in self.extra}
+ def test_opted_in_metadata_has_two_full_file_proofs_and_three_complete_roots_without_removing_metadata(self):
+  before=self.with_metadata();r=self.run_flow(include_raw_metadata=True);self.assertTrue(r['passed']);self.assertEqual(r['extraRawPhysicalProof']['files'],2);self.assertEqual(r['independentWholeRawReadback']['files'],6);self.assertTrue(r['independentWholeRawReadback']['allRootMetadataFilesIncluded']);self.assertEqual(r['independentWholeRawReadback']['independentFullIndexedReadback']['files'],6)
+  for p,(h,m)in before.items():self.assertEqual(M.sha(p),h);self.assertEqual(M.metadata(p),m)
+  self.intact(False)
+ def test_metadata_independent_proof_cannot_call_primary_extract_prove_or_extra_proof(self):
+  self.with_metadata();p=M.retention.audit(self.archive,self.cache,self.sha)
+  with patch.object(M.retention,'extract',side_effect=RuntimeError('primary prohibited')),patch.object(M.retention,'prove',side_effect=RuntimeError('primary prohibited')),patch.object(M,'prove_extra_raw',side_effect=RuntimeError('primary prohibited')):r=M.independent_physical_proof(self.archive,p,self.scratch,include_raw_metadata=True)
+  self.assertTrue(r['passed']);self.assertEqual(r['files'],6);self.intact()
+ def test_opted_in_unindexed_top_level_file_refuses_without_deleting_originals(self):
+  self.with_metadata();p=self.raw/'new-unique.json';p.write_bytes(b'not in sealed archive');self.assert_refused(lambda:self.run_flow(include_raw_metadata=True));self.assertEqual(p.read_bytes(),b'not in sealed archive');self.intact()
+ def test_changed_top_level_metadata_during_proofs_refuses_before_retirement(self):
+  self.with_metadata();p=self.extra[0]
+  def hook(phase):
+   if phase=='second-independent-all-file-physical-proof':p.write_bytes(b'new unique source edit')
+  self.assert_refused(lambda:self.run_flow(include_raw_metadata=True,_hook=hook));self.assertEqual(p.read_bytes(),b'new unique source edit');self.intact()
+ def test_changed_top_level_directory_ns_refuses_before_retirement(self):
+  self.with_metadata();p=self.raw/'.wod-capture'
+  def hook(phase):
+   if phase=='second-independent-all-file-physical-proof':s=p.stat();os.utime(p,ns=(s.st_mtime_ns+1,s.st_mtime_ns+1))
+  self.assert_refused(lambda:self.run_flow(include_raw_metadata=True,_hook=hook));self.intact()
+ def test_metadata_crash_after_retirement_preserves_original_metadata_cp_and_master_for_full_restore(self):
+  before=self.with_metadata()
+  def hook(phase):
+   if phase=='raw-duplicates-retired-with-master-and-original-CP-kept':raise RuntimeError('interrupted after verified retirement')
+  with self.assertRaises(RuntimeError):self.run_flow(include_raw_metadata=True,_hook=hook)
+  self.assertFalse(self.cache.exists());self.intact(False);target=self.t/'cold-recovered-raw';M.stage.restore(self.archive,'raw',target)
+  with zipfile.ZipFile(self.archive)as z:index=M.stage.read_index(z)
+  self.assertEqual(M.verify_indexed_root(target,'raw',index)['files'],6)
+  for p,(h,m)in before.items():self.assertEqual(M.sha(p),h);self.assertEqual(M.metadata(p),m)
 if __name__=='__main__':unittest.main(verbosity=2)

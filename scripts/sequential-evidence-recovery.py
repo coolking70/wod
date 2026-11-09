@@ -53,9 +53,9 @@ def verify_indexed_root(target,label,index):
  for rel,r in expected.items():assert metadata(actual[rel])=={k:r[k]for k in ['bytes','mode','mtimeNs']}and sha(actual[rel])==r['sha256']
  return {'passed':True,'files':len(actual),'allContentModesAndFileNsIndependentlyReadBack':True,'directoryNsNotIndexedForThisRoot':True}
 
-def independent_catalogue(archive,plan):
+def independent_catalogue(archive,plan,include_raw_metadata=False):
  """Separate index/ZIP traversal; no retention catalogue/extract/prove calls."""
- cache=Path(plan['root']);rows={};containers={}
+ cache=Path(plan['root']);rows={};extra={};containers={}
  with zipfile.ZipFile(archive)as z:
   names=z.namelist();assert len(names)==len(set(names))and z.testzip()is None;ix=[n for n in names if n.endswith('/.stage-evidence-index.json')];assert len(ix)==1;x=json.loads(z.read(ix[0]));assert x['format']=='wod-checkpoint-stage'and x['version']==1 and x['prefix']==cache.parent.name and Path(x['roots']['raw'])==cache.parent
   for c in x['containers']:
@@ -64,16 +64,18 @@ def independent_catalogue(archive,plan):
   for o in x['objects']:
    for s in o['sources']:
     if s['root']!='raw':continue
-    p=Path(s['path']);assert p==p.resolve()and p.is_relative_to(cache),'Raw evidence outside acceptance; sequential workflow cannot claim full raw coverage';rel=safe(p.relative_to(cache).as_posix());assert rel not in rows
-    rows[rel]={'relative':rel,'container':o['container'],'entry':safe(o['entry']),'bytes':o['bytes'],'sha256':o['sha256'],'mode':s['mode'],'mtimeNs':s['mtimeNs']}
+    p=Path(s['path']);assert p==p.resolve()and p.is_relative_to(cache.parent),'Raw evidence outside indexed root'
+    if not p.is_relative_to(cache):
+     assert include_raw_metadata,'Raw evidence outside acceptance; sequential workflow cannot claim full raw coverage';rel=safe(p.relative_to(cache.parent).as_posix());assert rel not in extra;extra[rel]={'relative':rel,'container':o['container'],'entry':safe(o['entry']),'bytes':o['bytes'],'sha256':o['sha256'],'mode':s['mode'],'mtimeNs':s['mtimeNs']};continue
+    rel=safe(p.relative_to(cache).as_posix());assert rel not in rows;rows[rel]={'relative':rel,'container':o['container'],'entry':safe(o['entry']),'bytes':o['bytes'],'sha256':o['sha256'],'mode':s['mode'],'mtimeNs':s['mtimeNs']}
  assert set(rows)=={r['relative']for r in plan['files']}
  for r in plan['files']:assert all(r[k]==v for k,v in rows[r['relative']].items()),'Plan/index omission or metadata mismatch'
- return rows
+ return {**{('acceptance/'+k):{**r,'relative':'acceptance/'+k}for k,r in rows.items()},**extra}if include_raw_metadata else rows
 
-def independent_physical_proof(archive,plan,scratch,hook=lambda phase:None):
- assert sha(archive)==plan['archiveSHA256'];rows=independent_catalogue(archive,plan);done=[]
+def independent_physical_proof(archive,plan,scratch,hook=lambda phase:None,include_raw_metadata=False):
+ assert sha(archive)==plan['archiveSHA256'];rows=independent_catalogue(archive,plan,include_raw_metadata);done=[]
  with tempfile.TemporaryDirectory(prefix='wod-independent-physical-',dir=scratch)as tmp,zipfile.ZipFile(archive)as outer:
-  root=Path(tmp)/'acceptance';root.mkdir();inner=None;active=None
+  root=Path(tmp)/('raw'if include_raw_metadata else'acceptance');root.mkdir();inner=None;active=None
   try:
    for r in sorted(rows.values(),key=lambda r:(r['container']or'',r['relative'])):
     if r['container']!=active:
@@ -83,7 +85,7 @@ def independent_physical_proof(archive,plan,scratch,hook=lambda phase:None):
     with(inner or outer).open(r['entry'])as src,p.open('xb')as dest:shutil.copyfileobj(src,dest,1048576);dest.flush();os.fsync(dest.fileno())
     p.chmod(r['mode']);os.utime(p,ns=(r['mtimeNs'],r['mtimeNs']));assert metadata(p)=={k:r[k]for k in ['bytes','mode','mtimeNs']}and sha(p)==r['sha256'];hook('independent-file-physically-restored');done.append(r['relative']);p.unlink()
    for d in sorted(plan['directories'],key=lambda d:len(Path(d['relative']).parts),reverse=True):
-    p=root/d['relative'];p.mkdir(parents=True,exist_ok=True);p.chmod(d['mode']);os.utime(p,ns=(d['mtimeNs'],d['mtimeNs']));s=p.stat();assert stat.S_IMODE(s.st_mode)==d['mode']and s.st_mtime_ns==d['mtimeNs']
+    p=(root/'acceptance'if include_raw_metadata else root)/d['relative'];p.mkdir(parents=True,exist_ok=True);p.chmod(d['mode']);os.utime(p,ns=(d['mtimeNs'],d['mtimeNs']));s=p.stat();assert stat.S_IMODE(s.st_mode)==d['mode']and s.st_mtime_ns==d['mtimeNs']
   finally:
    if inner:inner.close()
  assert set(done)==set(rows)and sha(archive)==plan['archiveSHA256'];return {'passed':True,'independentImplementation':True,'files':len(done),'bytes':sum(r['bytes']for r in rows.values()),'directories':len(plan['directories']),'planSHA256':retention.signature(plan),'archiveSHA256':plan['archiveSHA256'],'allFilesPhysicallyRestoredIndividually':True,'allContentModesMtimeNsExact':True,'simultaneousFullDirectoryClaimed':False,'originalCacheReadForData':False}
@@ -99,6 +101,41 @@ def verify_whole_raw(target,plan,raw_metadata):
  for r in plan['files']:assert metadata(actual[r['relative']])=={k:r[k]for k in ['bytes','mode','mtimeNs']}and sha(actual[r['relative']])==r['sha256']
  assert dirs=={d['relative']:{k:d[k]for k in ['mode','mtimeNs']}for d in plan['directories']};s=Path(target).stat();assert stat.S_IMODE(s.st_mode)==raw_metadata['mode']and s.st_mtime_ns==raw_metadata['mtimeNs'];return {'passed':True,'files':len(actual),'directories':len(dirs),'wholeRootSimultaneouslyPresentAndIndependentlyReadBack':True,'allContentModesAndFileDirectoryNsExact':True}
 
+def raw_directories(root):
+ rows=[]
+ for p in [Path(root),*sorted(Path(root).rglob('*'))]:
+  assert not p.is_symlink(),'Symlink in raw evidence'
+  if p.is_dir():s=p.stat();rows.append({'relative':p.relative_to(root).as_posix(),'mode':stat.S_IMODE(s.st_mode),'mtimeNs':s.st_mtime_ns})
+ return rows
+
+def extra_raw_rows(index,cache):
+ return {k:r for k,r in indexed_rows(index,'raw').items()if not(Path(index['roots']['raw'])/k).is_relative_to(cache)}
+
+def verify_extra_sources(index,cache,rows):
+ root=Path(index['roots']['raw']);actual={}
+ for p in root.rglob('*'):
+  assert not p.is_symlink(),'Symlink in raw evidence'
+  if p.is_file()and not p.is_relative_to(cache):actual[p.relative_to(root).as_posix()]=p
+ assert set(actual)==set(rows),'Unindexed or missing raw metadata; originals retained'
+ for rel,r in rows.items():assert metadata(actual[rel])=={k:r[k]for k in ['bytes','mode','mtimeNs']}and sha(actual[rel])==r['sha256'],'Raw metadata changed'
+
+def prove_extra_raw(archive,index,cache,scratch):
+ # Primary proof complements retention.prove, which intentionally covers acceptance only.
+ rows=extra_raw_rows(index,cache);done=[]
+ with tempfile.TemporaryDirectory(prefix='wod-primary-extra-raw-',dir=scratch)as tmp,zipfile.ZipFile(archive)as outer:
+  for rel,r in rows.items():
+   source=next(o for o in index['objects']if any(s['root']=='raw'and Path(s['path'])==cache.parent/rel for s in o['sources']));assert source['container']is None,'Extra raw container requires explicit supported extraction';p=Path(tmp)/rel;p.parent.mkdir(parents=True,exist_ok=True)
+   with outer.open(source['entry'])as a,p.open('xb')as b:shutil.copyfileobj(a,b);b.flush();os.fsync(b.fileno())
+   p.chmod(r['mode']);os.utime(p,ns=(r['mtimeNs'],r['mtimeNs']));assert metadata(p)=={k:r[k]for k in ['bytes','mode','mtimeNs']}and sha(p)==r['sha256'];done.append(rel);p.unlink()
+ return {'passed':True,'files':len(done),'bytes':sum(r['bytes']for r in rows.values()),'allExtraRawFilesPhysicallyRestoredIndividually':True,'originalSourceNotReadForDecode':True,'rows':rows}
+
+def verify_whole_raw_with_metadata(target,plan,raw_meta,index,directories):
+ for d in sorted(directories,key=lambda d:len(Path(d['relative']).parts),reverse=True):
+  p=Path(target)/d['relative'];p.mkdir(parents=True,exist_ok=True);p.chmod(d['mode']);os.utime(p,ns=(d['mtimeNs'],d['mtimeNs']))
+ full=verify_indexed_root(target,'raw',index);assert raw_directories(target)==directories
+ acceptance=verify_whole_raw(target,plan,raw_meta)
+ return {**acceptance,'files':full['files'],'directories':len(directories),'allRootMetadataFilesIncluded':True,'independentFullIndexedReadback':full}
+
 def capacity(raw_bytes,checkpoint_bytes,evidence_bytes,largest_file,reserve=1024**3):
  assert reserve>=MIN_RESERVE and all(isinstance(n,int)and n>=0 for n in [raw_bytes,checkpoint_bytes,evidence_bytes,largest_file]);return {'tmpRequired':raw_bytes+max(checkpoint_bytes,evidence_bytes,largest_file)+reserve,'oldTwoRawCopiesRequired':2*raw_bytes+reserve,'reserve':reserve,'allOriginalCPAndMasterRemainUntilWholeRootProof':True}
 
@@ -110,25 +147,32 @@ def remaining_capacity(cache,scratch,plan,budget):
 
 def pointer_path(cache,plan,output):return Path(cache).parent/('ACCEPTANCE_RETIRED_'+retention.signature(plan)[:12]+'_'+hashlib.sha256(str(Path(output).absolute()).encode()).hexdigest()[:8]+'.json')
 
-def run(archive,expected_sha,cache,output,protected=(),scratch='/tmp',reserve=1024**3,_hook=lambda phase:None):
+def run(archive,expected_sha,cache,output,protected=(),scratch='/tmp',reserve=1024**3,_hook=lambda phase:None,include_raw_metadata=False):
  archive=Path(archive).absolute();cache=retention.guard(cache);output=Path(output).absolute();scratch=Path(scratch).absolute();assert archive==archive.resolve()and output==output.resolve()and scratch==scratch.resolve()and not output.exists()and not output.is_relative_to(cache)and not archive.is_relative_to(cache)and not scratch.is_relative_to(cache);assert sha(archive)==expected_sha
  protect(protected,cache);stage.verify(archive,True)
  with zipfile.ZipFile(archive)as z:index=stage.read_index(z)
- checkpoints=checkpoint_sources(index);assert set(Path(index['roots']['checkpoints']).glob('*.zip'))=={Path(r['path'])for r in checkpoints};indexed_rows(index,'evidence');indexed_rows(index,'checkpoints');plan=retention.audit(archive,cache,expected_sha);independent_catalogue(archive,plan);evidence_bytes=sum(o['bytes']for o in index['objects']for s in o['sources']if s['root']=='evidence');raw_bytes=sum(r['bytes']for r in plan['files']);cp_bytes=sum(c['bytes']for c in checkpoints);largest=max(r['bytes']for r in plan['files']);budget=remaining_capacity(cache,scratch,plan,capacity(raw_bytes,cp_bytes,evidence_bytes,largest,reserve));assert shutil.disk_usage(scratch).free>budget['additionalRequiredNow'],'Insufficient sequential recovery capacity including reserve';raw_stat=cache.parent.stat();raw_meta={'mode':stat.S_IMODE(raw_stat.st_mode),'mtimeNs':raw_stat.st_mtime_ns};pointer=pointer_path(cache,plan,output);assert not pointer.exists(),'Retirement pointer already exists; refuse before mutation';output.mkdir();write(output/'PLAN.json',plan);write(output/'BINDING.json',{'archive':str(archive),'archiveSHA256':expected_sha,'cache':str(cache),'retirementPointer':str(pointer),'rawRootMetadata':raw_meta,'originalCheckpoints':checkpoints,'protectedFiles':list(protected),'capacity':budget,'quiescentNotCrossProcessLock':True});events=[]
+ checkpoints=checkpoint_sources(index);assert set(Path(index['roots']['checkpoints']).glob('*.zip'))=={Path(r['path'])for r in checkpoints};indexed_rows(index,'evidence');indexed_rows(index,'checkpoints');plan=retention.audit(archive,cache,expected_sha);independent_catalogue(archive,plan,include_raw_metadata);extras=extra_raw_rows(index,cache)if include_raw_metadata else{};directory_rows=raw_directories(cache.parent)if include_raw_metadata else None;verify_extra_sources(index,cache,extras)if include_raw_metadata else None;evidence_bytes=sum(o['bytes']for o in index['objects']for s in o['sources']if s['root']=='evidence');raw_bytes=sum(r['bytes']for r in indexed_rows(index,'raw').values())if include_raw_metadata else sum(r['bytes']for r in plan['files']);cp_bytes=sum(c['bytes']for c in checkpoints);largest=max(r['bytes']for r in indexed_rows(index,'raw').values())if include_raw_metadata else max(r['bytes']for r in plan['files']);budget=remaining_capacity(cache,scratch,plan,capacity(raw_bytes,cp_bytes,evidence_bytes,largest,reserve));assert shutil.disk_usage(scratch).free>budget['additionalRequiredNow'],'Insufficient sequential recovery capacity including reserve';raw_stat=cache.parent.stat();raw_meta={'mode':stat.S_IMODE(raw_stat.st_mode),'mtimeNs':raw_stat.st_mtime_ns};pointer=pointer_path(cache,plan,output);assert not pointer.exists(),'Retirement pointer already exists; refuse before mutation';output.mkdir();write(output/'PLAN.json',plan);write(output/'BINDING.json',{'archive':str(archive),'archiveSHA256':expected_sha,'cache':str(cache),'retirementPointer':str(pointer),'rawRootMetadata':raw_meta,'originalCheckpoints':checkpoints,'protectedFiles':list(protected),'capacity':budget,'quiescentNotCrossProcessLock':True,'includeRawMetadata':include_raw_metadata,'allRawDirectoryMetadata':directory_rows,'extraRawRows':extras});events=[]
  def event(name):events.append(name);write(output/(str(len(events)).zfill(2)+'-'+name+'.json'),{'event':name,'archiveSHA256':expected_sha,'planSHA256':retention.signature(plan)});_hook(name)
  event('bound')
- first=retention.prove(plan);write(output/'STREAM_PROOF.json',first);event('first-all-file-physical-proof')
- second=independent_physical_proof(archive,plan,scratch,_hook);write(output/'INDEPENDENT_PROOF.json',second);assert first['passed']and second['passed']and second['independentImplementation']and first['allFilesPhysicallyRestoredIndividually']and second['allFilesPhysicallyRestoredIndividually'];assert first['files']==second['files']==len(plan['files'])and first['planSHA256']==second['planSHA256']==retention.signature(plan);event('second-independent-all-file-physical-proof')
+ first=retention.prove(plan);extra_proof=prove_extra_raw(archive,index,cache,scratch)if include_raw_metadata else{'passed':True,'files':0};write(output/'EXTRA_RAW_PROOF.json',extra_proof);write(output/'STREAM_PROOF.json',first);event('first-all-file-physical-proof')
+ second=independent_physical_proof(archive,plan,scratch,_hook,include_raw_metadata=include_raw_metadata);write(output/'INDEPENDENT_PROOF.json',second);assert first['passed']and second['passed']and second['independentImplementation']and first['allFilesPhysicallyRestoredIndividually']and second['allFilesPhysicallyRestoredIndividually'];assert first['files']+extra_proof['files']==second['files']==len(plan['files'])+len(extras)and first['planSHA256']==second['planSHA256']==retention.signature(plan);event('second-independent-all-file-physical-proof')
  restores={}
  for root in ['checkpoints','evidence']:
   with tempfile.TemporaryDirectory(prefix='wod-sequential-'+root+'-',dir=scratch)as t:restores[root]=stage.restore(archive,root,t);assert restores[root]['passed'];restores[root]['independentReadback']=verify_indexed_root(t,root,index)
   event(root+'-whole-root-restored')
  protect(protected,cache);assert sha(archive)==expected_sha;assert checkpoint_sources(index)==checkpoints;assert retention.retire(plan,first,False)['dryRun'];event('before-raw-duplicate-retirement');protect(protected,cache);assert sha(archive)==expected_sha;assert checkpoint_sources(index)==checkpoints
+ if include_raw_metadata:
+  verify_extra_sources(index,cache,extras);assert raw_directories(cache.parent)==directory_rows,'Raw directory metadata changed before retirement'
  retired=retention.retire(plan,first,True);write(output/'RAW_RETIREMENT.json',retired);write(pointer,{'passed':True,'archive':str(archive),'archiveSHA256':expected_sha,'plan':str(output/'PLAN.json'),'planSHA256':retention.signature(plan),'twoIndependentAllFilePhysicalProofsBeforeRetirement':True,'allOriginalCheckpointsKept':True,'restoreCommand':['python3',str(HERE/'retire-archived-evidence.py'),'restore',str(output/'PLAN.json'),'--target',str(cache)]});event('raw-duplicates-retired-with-master-and-original-CP-kept')
  assert shutil.disk_usage(scratch).free>raw_bytes+reserve,'Space changed after duplicate retirement; original master and every checkpoint remain; recover using PLAN when capacity is available'
  with tempfile.TemporaryDirectory(prefix='wod-sequential-whole-raw-',dir=scratch)as tmp:
-  target=Path(tmp)/'raw';target.mkdir();restores['raw']=retention.extract(plan,target/'acceptance');target.chmod(raw_meta['mode']);os.utime(target,ns=(raw_meta['mtimeNs'],raw_meta['mtimeNs']));whole=verify_whole_raw(target,plan,raw_meta);_hook('whole-raw-simultaneously-present')
- event('whole-raw-restored-and-independently-verified');protect(protected,cache);assert sha(archive)==expected_sha and checkpoint_sources(index)==checkpoints;assert not cache.exists();result={'passed':True,'archive':str(archive),'archiveSHA256':expected_sha,'plan':str(output/'PLAN.json'),'planSHA256':retention.signature(plan),'proofOrder':events,'planFileSHA256':sha(output/'PLAN.json'),'proofImplementations':{'first':{'source':str(HERE/'retire-archived-evidence.py'),'sha256':sha(HERE/'retire-archived-evidence.py')},'independent':{'source':str(Path(__file__).resolve()),'sha256':sha(__file__),'separateCatalogueExtractionAndPhysicalReadback':True}},'twoIndependentAllFilePhysicalProofsBeforeRawRetirement':True,'allThreeRootsPhysicallyRestored':True,'wholeRawRestoredAfterRawDuplicateRetirement':True,'rawCoverageScope':'All original master-indexed raw bytes and acceptance directory metadata; late retirement pointers are preserved separately.','threeWholeRootsBeforeAnyDuplicateRetirement':False,'originalMasterAndEveryCheckpointStillExactAndRetained':True,'restores':restores,'independentWholeRawReadback':whole,'allOriginalFileBytesModesNsAndRawDirectoryMetadataVerified':True,'rawPointer':str(pointer),'rawRetirement':retired,'protectedFiles':len(protected),'capacity':budget,'quiescentNotCrossProcessLock':True};write(output/'RESULT.json',result);return result
+  target=Path(tmp)/'raw';target.mkdir()
+  if include_raw_metadata:
+   restores['raw']=stage.restore(archive,'raw',target);whole=verify_whole_raw_with_metadata(target,plan,raw_meta,index,directory_rows)
+  else:
+   restores['raw']=retention.extract(plan,target/'acceptance');target.chmod(raw_meta['mode']);os.utime(target,ns=(raw_meta['mtimeNs'],raw_meta['mtimeNs']));whole=verify_whole_raw(target,plan,raw_meta)
+  _hook('whole-raw-simultaneously-present')
+ event('whole-raw-restored-and-independently-verified');protect(protected,cache);assert sha(archive)==expected_sha and checkpoint_sources(index)==checkpoints;assert not cache.exists();result={'passed':True,'archive':str(archive),'archiveSHA256':expected_sha,'plan':str(output/'PLAN.json'),'planSHA256':retention.signature(plan),'proofOrder':events,'planFileSHA256':sha(output/'PLAN.json'),'proofImplementations':{'first':{'source':str(HERE/'retire-archived-evidence.py'),'sha256':sha(HERE/'retire-archived-evidence.py')},'independent':{'source':str(Path(__file__).resolve()),'sha256':sha(__file__),'separateCatalogueExtractionAndPhysicalReadback':True}},'twoIndependentAllFilePhysicalProofsBeforeRawRetirement':True,'allThreeRootsPhysicallyRestored':True,'wholeRawRestoredAfterRawDuplicateRetirement':True,'rawCoverageScope':'All original master-indexed raw bytes including opted-in top-level metadata, all indexed file modes/ns and recorded raw directories; late retirement pointers are preserved separately.','includeRawMetadata':include_raw_metadata,'extraRawPhysicalProof':extra_proof,'threeWholeRootsBeforeAnyDuplicateRetirement':False,'originalMasterAndEveryCheckpointStillExactAndRetained':True,'restores':restores,'independentWholeRawReadback':whole,'allOriginalFileBytesModesNsAndRawDirectoryMetadataVerified':True,'rawPointer':str(pointer),'rawRetirement':retired,'protectedFiles':len(protected),'capacity':budget,'quiescentNotCrossProcessLock':True};write(output/'RESULT.json',result);return result
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('archive');p.add_argument('cache');p.add_argument('output');p.add_argument('--expected-sha',required=True);p.add_argument('--protected-manifest',required=True);p.add_argument('--scratch',default='/tmp');a=p.parse_args();protected=json.loads(Path(a.protected_manifest).read_text())['protectedFiles'];print(json.dumps(run(a.archive,a.expected_sha,a.cache,a.output,protected,a.scratch),ensure_ascii=False))
+ p=argparse.ArgumentParser();p.add_argument('archive');p.add_argument('cache');p.add_argument('output');p.add_argument('--expected-sha',required=True);p.add_argument('--protected-manifest',required=True);p.add_argument('--scratch',default='/tmp');p.add_argument('--include-raw-metadata',action='store_true');a=p.parse_args();protected=json.loads(Path(a.protected_manifest).read_text())['protectedFiles'];print(json.dumps(run(a.archive,a.expected_sha,a.cache,a.output,protected,a.scratch,include_raw_metadata=a.include_raw_metadata),ensure_ascii=False))
