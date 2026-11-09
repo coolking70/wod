@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "Node": {
+    "tests": 237,
+    "pass": 237,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "warmNodeParts": [
+    {
+      "tests": 206,
+      "pass": 206,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "tests": 31,
+      "pass": 31,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  ],
+  "NodeScope": [
+    "tests/action-focus.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/replay-transport.test.mjs",
+    "tests/replay-motion.test.mjs",
+    "tests/guardian-motion.test.mjs",
+    "tests/guardian-detail.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/ranger-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/bard-detail.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/herbalist-motion.test.mjs",
+    "tests/motion-record.test.mjs",
+    "tests/evidence-output.test.mjs",
+    "tests/stage-evidence.test.mjs",
+    "tests/action-interception.test.mjs",
+    "tests/editor-navigation.test.mjs",
+    "tests/stored-preparation.test.mjs",
+    "tests/departure-review.test.mjs",
+    "tests/hit-review.test.mjs",
+    "tests/growth-navigation.test.mjs",
+    "tests/equipment-workbench.test.mjs",
+    "tests/returning-camp.test.mjs"
+  ],
+  "completeAffectedGUI": 19,
+  "completeGUIVersions": [
+    94,
+    98,
+    165,
+    166,
+    170,
+    183,
+    190,
+    195,
+    198,
+    199,
+    202,
+    203,
+    204,
+    205,
+    207,
+    208,
+    210,
+    211,
+    213
+  ],
+  "newGUIContexts": 6,
+  "actualReadOnlyEntryPaths": 36,
+  "actualOwnHeroDestinationAndFollowingTab": true,
+  "actualTrainingPaymentRefundAndSingleOrdinaryClaim": true,
+  "beforeAfter": [
+    {
+      "width": 1440,
+      "action": "training",
+      "beforeFocus": "BODY",
+      "afterFocus": "growth-member-heading",
+      "growthNavigationBefore": 1496.734375,
+      "growthNavigationAfter": 151.140625
+    },
+    {
+      "width": 1440,
+      "action": "equipment",
+      "beforeFocus": "BODY",
+      "afterFocus": "equipment-overview",
+      "growthNavigationBefore": 0,
+      "growthNavigationAfter": 0
+    },
+    {
+      "width": 390,
+      "action": "training",
+      "beforeFocus": "BODY",
+      "afterFocus": "growth-member-heading",
+      "growthNavigationBefore": 2202.53125,
+      "growthNavigationAfter": 111.9375
+    },
+    {
+      "width": 390,
+      "action": "equipment",
+      "beforeFocus": "BODY",
+      "afterFocus": "equipment-overview",
+      "growthNavigationBefore": 0,
+      "growthNavigationAfter": 0
+    },
+    {
+      "width": 320,
+      "action": "training",
+      "beforeFocus": "BODY",
+      "afterFocus": "growth-member-heading",
+      "growthNavigationBefore": 2469.09375,
+      "growthNavigationAfter": 138.5
+    },
+    {
+      "width": 320,
+      "action": "equipment",
+      "beforeFocus": "BODY",
+      "afterFocus": "equipment-overview",
+      "growthNavigationBefore": 0,
+      "growthNavigationAfter": 0
+    }
+  ],
+  "sourceInputs": 1079,
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 207,
+    "checkedReferences": 253,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "sourceInputs": 1079,
+    "JS": 897,
+    "Python": 19
+  },
+  "newNativeSVGBytes": 327,
+  "noNewGIFGenerated": true,
+  "allOldGIFPNGSVGBytesUnchanged": true,
+  "currentCatalogue": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v41.json",
+    "bytes": 46643,
+    "sha256": "b7e0da3fd4d7c9f0f169bb1dc7172c89f0fb9cbe3620973113b74e0ab838dc35"
+  },
+  "logicalProtectedRows": 41,
+  "protectedFileBindings": "/workspace/wod-evidence/v213/PROTECTED_BEFORE_STORAGE_SELECTED.json",
+  "allOriginalMasterColdByteModeNsAndWholeRootProofsPassed": true,
+  "retiredOriginalMasters203206209OnlyThroughNewCAT41": true,
+  "sourceMainAndPagesStill212": true,
+  "lastFull212": {
+    "Node": 1914,
+    "GUI": 110,
+    "CLI": 204,
+    "JSON": 130,
+    "HTML": 33
+  },
+  "full1914Node111GUIHistoricalNativeNotRunThisStage": true,
+  "nextCompleteWindow": "215–217",
+  "canonicalNext142Gold15225Unchanged": true,
+  "publicInteractionAndActualOldSiteMigrationUnverified": true,
+  "permanentSupplyEconomyPending": true,
+  "freeBytes": {
+    "/workspace": 3445493760,
+    "/tmp": 8097214464
+  }
+}
