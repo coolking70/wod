@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "sourceInputs": 1077,
+  "syntax": {
+    "passed": true,
+    "sourceInputs": 1077,
+    "JS": 896,
+    "Python": 19
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 207,
+    "checkedReferences": 252,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "Node": {
+    "tests": 206,
+    "pass": 206,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "NodeScope": [
+    "tests/action-focus.test.mjs",
+    "tests/action-outcomes.test.mjs",
+    "tests/replay-transport.test.mjs",
+    "tests/replay-motion.test.mjs",
+    "tests/guardian-motion.test.mjs",
+    "tests/guardian-detail.test.mjs",
+    "tests/guardian-cues.test.mjs",
+    "tests/ranger-motion.test.mjs",
+    "tests/bard-motion.test.mjs",
+    "tests/bard-detail.test.mjs",
+    "tests/scholar-motion.test.mjs",
+    "tests/tidecaller-motion.test.mjs",
+    "tests/herbalist-motion.test.mjs",
+    "tests/motion-record.test.mjs",
+    "tests/evidence-output.test.mjs",
+    "tests/stage-evidence.test.mjs",
+    "tests/action-interception.test.mjs",
+    "tests/editor-navigation.test.mjs",
+    "tests/stored-preparation.test.mjs",
+    "tests/departure-review.test.mjs",
+    "tests/hit-review.test.mjs"
+  ],
+  "completeAffectedGUI": 14,
+  "completeGUIVersions": [
+    108,
+    168,
+    174,
+    175,
+    184,
+    195,
+    196,
+    199,
+    204,
+    205,
+    207,
+    208,
+    210,
+    211
+  ],
+  "newGUIContexts": 6,
+  "actualProofNavigations": 18,
+  "exactHeroRoomEditAndAllFourStringUndo": true,
+  "relatedOriginalSixRoleFourSpeedCases": 96,
+  "oldInterceptionRoundTrips": 14,
+  "beforeAfterPositions": [
+    {
+      "width": 1440,
+      "before": {
+        "workspace": "evidence",
+        "detailTop": 139.59375,
+        "detailBottom": 551.0625,
+        "detailText": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 10\n\n展开来源与逐条计算记录（2 条）",
+        "focused": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "查看关键行动"
+        },
+        "scrollY": 1757,
+        "viewport": 844,
+        "headerBottom": -1672.703125,
+        "transportBottom": 179.984375
+      },
+      "after": {
+        "workspace": "evidence",
+        "detailTop": 202.59375,
+        "detailBottom": 614.0625,
+        "detailText": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 10\n\n展开来源与逐条计算记录（2 条）",
+        "focused": {
+          "tag": "SECTION",
+          "id": "detail",
+          "text": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 1"
+        },
+        "scrollY": 1697,
+        "viewport": 844,
+        "headerBottom": -1612.703125,
+        "transportBottom": 179.984375
+      }
+    },
+    {
+      "width": 390,
+      "before": {
+        "workspace": "evidence",
+        "detailTop": 76.078125,
+        "detailBottom": 555.96875,
+        "detailText": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 10\n\n展开来源与逐条计算记录（2 条）",
+        "focused": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "查看关键行动"
+        },
+        "scrollY": 2275,
+        "viewport": 844,
+        "headerBottom": -2095.921875,
+        "transportBottom": 54.84375
+      },
+      "after": {
+        "workspace": "evidence",
+        "detailTop": 78.078125,
+        "detailBottom": 557.96875,
+        "detailText": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 10\n\n展开来源与逐条计算记录（2 条）",
+        "focused": {
+          "tag": "SECTION",
+          "id": "detail",
+          "text": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 1"
+        },
+        "scrollY": 2276,
+        "viewport": 844,
+        "headerBottom": -2096.921875,
+        "transportBottom": 54.84375
+      }
+    },
+    {
+      "width": 320,
+      "before": {
+        "workspace": "evidence",
+        "detailTop": 76.203125,
+        "detailBottom": 600.28125,
+        "detailText": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 10\n\n展开来源与逐条计算记录（2 条）",
+        "focused": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "查看关键行动"
+        },
+        "scrollY": 2660,
+        "viewport": 844,
+        "headerBottom": -2480.921875,
+        "transportBottom": 54.328125
+      },
+      "after": {
+        "workspace": "evidence",
+        "detailTop": 78.203125,
+        "detailBottom": 602.28125,
+        "detailText": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 10\n\n展开来源与逐条计算记录（2 条）",
+        "focused": {
+          "tag": "SECTION",
+          "id": "detail",
+          "text": "维斯 使用「潮纹屏障」\n实时技能等级\n9\n主 / 副属性\n43 / 14\n法力消耗\n5\n\n主属性 ×2 + 副属性 + 实时技能等级 ×2\n\n技能等级来源：基础 6 + 专修 3 + 训练 0 + 临时 0 = 9\n\n贝芮尔 获得「潮纹屏障」：全防御检定 +24\n\n立即生效 · 第 3 回合末结束\n\n本方共享补给剩余：药草 12 / 符纸 13 / 箭矢 1"
+        },
+        "scrollY": 2661,
+        "viewport": 844,
+        "headerBottom": -2481.921875,
+        "transportBottom": 54.328125
+      }
+    }
+  ],
+  "newSVGBytes": 195,
+  "oldActualEightFrameGIFPNGKept": true,
+  "noNewGIFOrImagegenClaim": true,
+  "currentCatalogue": {
+    "path": "/workspace/wod-maintenance/2026-11-08-durable-byte-delta-v193/CATALOG.v38.json",
+    "bytes": 43231,
+    "sha256": "8cc0d0bceb0ca3cc83b2281ee3f21127a0d0bfd5972ff83c6ecaa203c6dd8717"
+  },
+  "protectedRows": 16524,
+  "logicalProtectedRows": 38,
+  "protectedFileBindings": "/workspace/wod-evidence/v211/PROTECTED_BEFORE_STORAGE.json",
+  "inheritedAll210OriginalAndAdjacentFileBindings": true,
+  "early208Original12484822ArchiveHeld": true,
+  "oldOriginalByteGapsNotRepaired": true,
+  "allFinalBehavioralTestsPassed": true,
+  "initialNewFixtureFailuresPreserved": true,
+  "noOldBehavioralAssertionsChanged": true,
+  "noBalanceSkillSupplyPersistenceRuleChanges": true,
+  "canonicalNext142Gold15225Unchanged": true,
+  "isolated142SixAliveHarborFourRoomsRune0OnlyCanonicalNeverDeparted": true,
+  "mainAndPagesStill209": true,
+  "full1914Node110GUIHistoryNativeNotRun": true,
+  "lastFull209": {
+    "Node": 1907,
+    "GUI": 108,
+    "CLI": 204,
+    "JSON": 130,
+    "HTML": 33
+  },
+  "nextCompleteWindow": "212–214",
+  "noPublicHTTPOrActualOldSiteMigrationVerification": true,
+  "permanentSupplyEconomyPending": true,
+  "freeBytes": {
+    "/workspace": 3436933120,
+    "/tmp": 8537063424
+  }
+}
