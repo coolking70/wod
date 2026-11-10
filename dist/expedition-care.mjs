@@ -40,7 +40,7 @@ export function enemyBadge(config,unit){
  const template=(config.expedition==='courier'?[...COURIER_ROOMS,COURIER_KEEL]:config.expedition==='harbor'?Object.values(harborNodes(config)):roomsFor(config)).flatMap(encounterEnemies).find(u=>u.id===unit.id);
  if(template?.skills.mireflask!==undefined)return {kind:'magic',label:'蚀潮施法',symbol:'蚀'};
  if(template?.skills.unravel!==undefined)return {kind:'magic',label:'破印者',symbol:'解'};
- if(['breakwater','palisade','harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&template?.skills.heal!==undefined)return {kind:'magic',label:'治疗支援',symbol:'药'};
+ if(['courier','breakwater','palisade','harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&template?.skills.heal!==undefined)return {kind:'magic',label:'治疗支援',symbol:'药'};
  if(['harbor','hospice','chapter','seasoned','veteran'].includes(config.expedition)&&hasSummoningSkill(template))return {kind:'magic',label:'召唤支援',symbol:'潮'};
  if(template?.skills.interpose!==undefined)return {kind:'mixed',label:'援护支援',symbol:'盾'};
  const types=[...new Set(Object.keys(template?.skills||{}).map(k=>SKILLS[k]?.type).filter(Boolean))];

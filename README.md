@@ -1,3 +1,7 @@
+试玩入口：[GitHub Pages](https://coolking70.github.io/wod/)。版本以站点release.json与部署记录为准；旧站与此地址的浏览器存档独立。
+
+> v0.218单人调配与救护完整节点：整合遗物持有人/明确调配、同阵营救护、敌方独立库存和医师SVG/真实GIF；1956完整Node、114完整GUI、204原CLI、130历史JSON/33HTML通过。三次新手出征实际培养闭环、受控渲染与网络检查完成；main/Pages精确集成与built结果见云交付。CAT53、两个v217目录及全部历史恢复依赖保护，永久补给待决定。 见[节点](docs/V218_FIELD_CARE_MILESTONE.md)。
+
 > v0.217开发：同阵营救护与敌方库存归属修复，收信医师原生SVG/真实8帧GIF；324相关Node和16完整相关GUI通过。失败204与两份冻结树已主盘自包含、双完整冷恢复；CAT53及新树catalog互补，保护全部历史链；main/Pages仍v215，218–220重算完整门禁，永久补给待决定。 见[说明](docs/V217_FIELD_CARE.md)。
 
 > v0.216开发：寻物直接查看实际队友遗物与回仓限制，明确回仓/分配及键盘连续性贯通；299相关Node、16完整相关GUI通过，282B原生SVG；main/Pages仍v215。最新CATALOG.v53.json保留原字节恢复与既有依赖，218–220重算完整门禁，永久补给待决定。 见[说明](docs/V216_EQUIPMENT_REUSE.md)。
