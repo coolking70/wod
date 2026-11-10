@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">归潮黎明</title><desc id="desc">海底钟座和旧拱门之间升起第一束天光，归航船在浮桥尽头等待。</desc>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#132d42"/><stop offset=".6" stop-color="#517c86"/><stop offset="1" stop-color="#d6c591"/></linearGradient><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#326678"/><stop offset="1" stop-color="#102b40"/></linearGradient><linearGradient id="stone" x2="1" y2="1"><stop stop-color="#4c6570"/><stop offset="1" stop-color="#243d4c"/></linearGradient></defs>
+<path fill="url(#sky)" d="M0 0h1200v720H0z"/><circle fill="#eee1af" cx="762" cy="298" r="82"/><path fill="#c8cfb0" opacity=".23" d="m710 251-271 469h312l66-441z"/>
+<path fill="#284b5d" d="m0 320 128-67 100 53 103-83 106 100 141-38 79 45 114-25 148 29 143-90 138 78v98H0z"/>
+<path fill="url(#sea)" d="M0 355q190-21 360 1t360 0 480 0v364H0z"/>
+<g fill="none" stroke="#98b6ad" stroke-width="3" opacity=".4"><path d="M540 383h340m-284 23h354M730 435h220M404 463h340m-59 35h243M94 531h321m452 15h245M240 593h302m161 44h337"/></g>
+<path fill="#192f3f" d="m0 646 350-68 300 142H0zm1200-82-191-48-179 204h370z"/>
+<g fill="url(#stone)" stroke="#172f3e" stroke-width="5"><path d="M106 720V267Q106 79 300 79t194 188v453H386V281q0-89-86-89t-86 89v439z"/><path d="M177 144h246v37H177zM106 285h108v39H106zm280 0h108v39H386zM108 431h107v42H108zm278 0h108v42H386zM82 647h159v73H82zm278 0h159v73H360z"/></g>
+<g fill="#243d4b" stroke="#142c3c" stroke-width="4"><path d="M890 720V452q0-116 107-116t107 116v268h-65V457q0-48-42-48t-42 48v263z"/><path d="M873 681h100v39H873zm147 0h101v39h-101z"/></g>
+<path fill="#203849" stroke="#577d82" stroke-width="4" d="M480 720 691 425h45L650 720z"/><g stroke="#9ba98d" stroke-width="3"><path d="m677 446 53 1m-71 27 64 2m-87 34 77 3m-102 39 92 5m-121 46 108 8m-142 55 126 10"/></g>
+<path fill="#163448" stroke="#8b9e93" stroke-width="3" d="M698 427h148l-31 23h-91z"/><path stroke="#324e58" stroke-width="6" d="M768 425v-91"/><path fill="#acb9a4" d="m773 341 49 66h-49z"/>
+<g stroke="#bdaa73" stroke-width="3" fill="#e9d197"><path d="M576 566h19v29h-19zM649 470h12v20h-12z"/></g>
+<g fill="none" stroke="#709594" opacity=".6"><path d="M250 258q30-23 53 0m405-80q18-16 35 0m68-16q20-16 40 0"/><path d="m160 526 14-15m-20 82 23-16m243-45 17-23M938 596l-13-22"/></g>
+</svg>

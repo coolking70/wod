@@ -6,7 +6,7 @@ import {ADVENTURES} from './expedition-adventure.mjs';
 import {newGuild,migrateGuild,validateGuild,pendingReward,claim,GUILD_KEY} from './expedition-guild.mjs';
 import {trainingInvestment} from './expedition-training.mjs';
 export const ADVENTURE_GROUPS=[
- {id:'story',title:'起步与故事',text:'从一场正式出征开始，再走向沉钟、灯塔与铸库。',routes:['tutorial','classic','chapter','harbor','foundry','foundrywatch','courier']},
+ {id:'story',title:'起步与故事',text:'从一场正式出征开始，再走向沉钟、灯塔与铸库。',routes:['tutorial','classic','chapter','harbor','returningtide','foundry','foundrywatch','courier']},
  {id:'roles',title:'职责与协作',text:'按具体敌情练习拆援、净化、不同攻击类型与队伍分工。',routes:['lockpass','holdout','manashield','parleyquay','markedhunt','sporegrove','pressurevault','evacuation','lockworks','trapworks','ossuary','turncourt','breakwater','counterpoint','confluence','clocktower','hospice','theater','inquest','palisade','scriptorium','greenhouse']},
  {id:'challenge',title:'成长与挑战',text:'阶段试炼、分支和资源压力；先核对当前实际队伍。',routes:['seasoned','veteran','archive','survival','vigil','scarcity']},
  {id:'explore',title:'自由勘探',text:'按公开海图勘探，或寻找套装部件，实际分配与穿戴再形成自己的组合。',routes:['shoals','beaconbridge']}

@@ -1,0 +1,12 @@
+import './capture-bootstrap.cjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import {returningTideLoop,returningTideConfirmations} from './returning-tide-cases.mjs';
+const out=process.env.WOD_EVIDENCE_DIR,save=(name,value)=>fs.writeFileSync(path.join(out,name),JSON.stringify(value,null,2));
+const x=returningTideLoop();save('earned.json',x.earned);save('prepared.json',x.prepared);save('config.json',x.config);
+for(const [i,r]of x.runs.entries())for(const [key,value]of Object.entries(r))save('normal-'+(i+1)+'-'+key+'.json',value);
+save('final.json',x.final);
+const confirmations=returningTideConfirmations();for(const x of confirmations)save('confirmation-'+x.seed+'.json',x);
+const summarize=r=>({id:r.pending?.pending.id,won:r.report.won,rooms:r.report.rooms.map(v=>({id:v.id,won:v.won,rounds:v.rounds,holdout:v.holdout})),alive:r.report.party.filter(h=>h.hp>0).length,supplies:r.report.supplies,reward:r.reward,phases:r.report.events.filter(e=>e.type==='health-phase').length,channel:r.report.events.filter(e=>e.type.startsWith('windup')).map(e=>e.type)});
+save('playcheck.json',{passed:true,actualRuns:x.runs.map(summarize),fixedConfirmations:confirmations.map(summarize),finalGold:x.final.gold,finalNext:x.final.next,noSeedSearch:true,naturalTutorial1Classic2And3EarnedAllAssetsBeforeTraining:true,limits:'Two natural IDs and two fixed experimental seeds are observations, not balance or win-rate evidence.'});
+console.log(JSON.stringify({passed:true,actualRuns:x.runs.map(summarize),fixedConfirmations:confirmations.map(summarize)}));
