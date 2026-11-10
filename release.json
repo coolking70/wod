@@ -1,9 +1,9 @@
 {
-  "version": "0.215",
-  "siteRuntimePrefix": "releases/v0.215/",
-  "sourceCommit": "5ba2e3fc441944273babdbc0914d50a19c6eeec3",
-  "sourceTree": "1805c7e060452400febbcdd1dff388b2d9a278a9",
-  "assetManifestSHA256": "d0fc883b2cd565bc008c1cb0cdc1b25450a33412a18ca9769be0c9cfc415b6d2",
+  "version": "0.218",
+  "siteRuntimePrefix": "releases/v0.218/",
+  "sourceCommit": "77ec15e3249a646eac86b29037d80e384744179e",
+  "sourceTree": "6619b1733a4cbcff7e85d94cfeec3cb3370750dd",
+  "assetManifestSHA256": "1db9daccd8c3e1e2ee10b049288b451fe1ce3d1fd6c932c9a348272734e5688d",
   "singleplayerBrowserLocalStorage": true,
   "permanentSupplyEconomyPending": true
 }

@@ -1,8 +1,8 @@
 {
-  "version": "0.215",
-  "sourceCommit": "5ba2e3fc441944273babdbc0914d50a19c6eeec3",
-  "sourceTree": "1805c7e060452400febbcdd1dff388b2d9a278a9",
-  "siteRuntimePrefix": "releases/v0.215/",
+  "version": "0.218",
+  "sourceCommit": "77ec15e3249a646eac86b29037d80e384744179e",
+  "sourceTree": "6619b1733a4cbcff7e85d94cfeec3cb3370750dd",
+  "siteRuntimePrefix": "releases/v0.218/",
   "files": [
     {
       "path": "action-focus.css",
@@ -88,6 +88,11 @@
       "path": "assets/items/postbell.svg",
       "bytes": 1057,
       "sha256": "0d4fdabad3a671bd6b2ae023290359ca6aac04cb439be513b566a92978fb9231"
+    },
+    {
+      "path": "assets/items/relic-relay-v216.svg",
+      "bytes": 282,
+      "sha256": "ffcf22bfa45eb3a5a876a36440135f3889921c80782fad8dbd0da2d14628dd66"
     },
     {
       "path": "assets/items/warehouse-v195.svg",
@@ -390,6 +395,31 @@
       "sha256": "7ec957ab843519fa570c40263bcd7098e00f1461351b1060964409b8bd4f2dd6"
     },
     {
+      "path": "assets/studies/v217/fieldmedic-cast23-poster.png",
+      "bytes": 21960,
+      "sha256": "4b21ea2133fadb559f1ab40e894caf14909de44e4df2b644d02f40aafe717110"
+    },
+    {
+      "path": "assets/studies/v217/fieldmedic-cast23-static.png",
+      "bytes": 35606,
+      "sha256": "55510c965f98706b422846ac46500f5a73e896038ea3bf3a93167030a0d09b47"
+    },
+    {
+      "path": "assets/studies/v217/fieldmedic-cast23.gif",
+      "bytes": 81506,
+      "sha256": "9a339d7d36b3d0da68ecf9a62153d3bf97d749314b2e710078439790c0b62e1e"
+    },
+    {
+      "path": "assets/studies/v217/fieldmedic-cast23.png",
+      "bytes": 211724,
+      "sha256": "3554b7c7567d93267578340ea2aa9ffa42e2fcb1295601f6e97021db51677984"
+    },
+    {
+      "path": "assets/studies/v217/fieldmedic-cast23.svg",
+      "bytes": 5353,
+      "sha256": "6489a714db1d10277d6be3c93ae24a934e7fd4a3beb40ed788742892afb4d462"
+    },
+    {
       "path": "assets/sunken-bell-v10.png",
       "bytes": 2746932,
       "sha256": "bd0de96a77ed02ab8efcd131ecf06e690e084b9762f9dd12e2243ce311f5c86e"
@@ -431,8 +461,8 @@
     },
     {
       "path": "expedition-action-focus.mjs",
-      "bytes": 8304,
-      "sha256": "49d242dd746d7df56288dc2cc7fe92854270efbb3d00837f5f94aa3c0d73a42a"
+      "bytes": 8317,
+      "sha256": "e1d0f6836e11ac55d49608de6e2d50f3f100775225c203093cf363b7394a6f61"
     },
     {
       "path": "expedition-action-outcomes.mjs",
@@ -546,8 +576,8 @@
     },
     {
       "path": "expedition-care.mjs",
-      "bytes": 4859,
-      "sha256": "cc6c08c4ef93bc698a7395caa1ed423064c41fb1962e9e148e8872824afac986"
+      "bytes": 5641,
+      "sha256": "392d21b976dbeb577f176a650829361c78caa1dc560db44f6ac8d16e3907d4f4"
     },
     {
       "path": "expedition-channel.mjs",
@@ -690,9 +720,14 @@
       "sha256": "58bfe1cb07a11daeb0966d3d3b35890c7d8542c51179dcf9244c63a42a28a91a"
     },
     {
+      "path": "expedition-equipment-goal-transfer.mjs",
+      "bytes": 690,
+      "sha256": "c2f8c2399930db8b03310f6c2aaf81e9e6303805aef69320aff0552c100f85d9"
+    },
+    {
       "path": "expedition-equipment-goal-view.mjs",
-      "bytes": 4084,
-      "sha256": "3867de9d03d007b0d67f943e52ebee003baca8ed43653f3aeda932cce0e2f9e8"
+      "bytes": 5069,
+      "sha256": "fa93f5b5c80d3dc22c086ba55a0561aa4d05fae0ef960fd5e981b7ea6ffaac34"
     },
     {
       "path": "expedition-equipment-goal.mjs",
@@ -716,8 +751,8 @@
     },
     {
       "path": "expedition-equipment-view.mjs",
-      "bytes": 11109,
-      "sha256": "d6254cc4f8c4ad20e2f97a2d4ee816c5a1d19efaa9d448b3dba1f76038473c39"
+      "bytes": 11135,
+      "sha256": "c1b499bbea0e68395f3ba9ebe6d629f959654258dceaafafb67e3353d46b9f0e"
     },
     {
       "path": "expedition-equipment-workbench.mjs",
@@ -743,6 +778,11 @@
       "path": "expedition-exploration-index.mjs",
       "bytes": 4171,
       "sha256": "fd49015f49a54f1a74447e5dbbc5555606e3d614fb195806666cd6f43cc05121"
+    },
+    {
+      "path": "expedition-fieldmedic-motion.mjs",
+      "bytes": 7346,
+      "sha256": "34c7a27d2bd09f186b3971032844a4ff6938ae58e1df95d9230f9210c81f9901"
     },
     {
       "path": "expedition-focus-mark.mjs",
@@ -816,8 +856,8 @@
     },
     {
       "path": "expedition-guild-ui.mjs",
-      "bytes": 76923,
-      "sha256": "ad996f4594074b9ef9a1b9a155d46dca739c24440da98845671d54943c3f5c0f"
+      "bytes": 78481,
+      "sha256": "50dfdaa1d3073f5aaa141e3e4db6d6cc9f78983eb78371a492ff66eb7786065a"
     },
     {
       "path": "expedition-guild.mjs",
@@ -1446,8 +1486,8 @@
     },
     {
       "path": "expedition-ui.mjs",
-      "bytes": 215818,
-      "sha256": "82a086ba3e626567af50d5f08121b92445668c08973ae097250e364edfba03b6"
+      "bytes": 217693,
+      "sha256": "dda73e448295df937f50fe799ea1d13ea32452431a1714218cca188b2b78ab1f"
     },
     {
       "path": "expedition-unravel.mjs",
@@ -1476,8 +1516,13 @@
     },
     {
       "path": "expedition.css",
-      "bytes": 75184,
-      "sha256": "144c6134cd369f6c9713e3199d45276a32bcf9a653822c99190a56aa0a828b45"
+      "bytes": 75409,
+      "sha256": "cc2e8fc2087f2724a6b411b118b95aa2d03fe31f604618c24c6b8c7c30f44233"
+    },
+    {
+      "path": "fieldmedic-motion.css",
+      "bytes": 2405,
+      "sha256": "23bd58d9ecbbe2b790046221daa4b16db1b488363e8cd479c48c6bca174ba65f"
     },
     {
       "path": "guardian-motion.css",
@@ -1491,8 +1536,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 27244,
-      "sha256": "86a1561c150e5c5cc4c730a113f9f9088f50afb04273641eedab1f66d49f691d"
+      "bytes": 27296,
+      "sha256": "1186426527d6490cbacc89eb63d3fed50730c7c8636926e9010f11f25090ad4d"
     },
     {
       "path": "inkcaster-motion.css",
@@ -1593,6 +1638,11 @@
       "path": "studies/bard-strum-v180.mjs",
       "bytes": 2496,
       "sha256": "d49e7d89423c16580cd6124e043bee377fae76a3926aac204f74979edad2aac7"
+    },
+    {
+      "path": "studies/field-care-v217.html",
+      "bytes": 2911,
+      "sha256": "a0062943628ac47c986a7fc997bba128964d64dd8a0861c06475d729145a2d22"
     },
     {
       "path": "studies/guardian-fall-v176.html",

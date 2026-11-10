@@ -1,0 +1,77 @@
+{
+  "kind": "native-svg-actual-interception-browser-sampling",
+  "ordinaryTestRun": 84,
+  "sourceEvent": 51,
+  "eventIds": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "sampledTimeMs": [
+    0,
+    110,
+    220,
+    340,
+    450,
+    560,
+    670,
+    790
+  ],
+  "durationMs": 900,
+  "delaysMs": [
+    110,
+    110,
+    120,
+    110,
+    110,
+    110,
+    120,
+    110
+  ],
+  "width": 358,
+  "height": 273,
+  "frames": 8,
+  "RGBAAllEightSpriteCellsExact": true,
+  "GIFSharedPalette256": true,
+  "GIFOpaque": true,
+  "GIFRGBMeanAbsoluteErrorByFrame": [
+    1.9695909304847852,
+    1.9683733398817198,
+    1.9693317235216679,
+    1.9707368981112,
+    1.9707846467623005,
+    1.968809898977497,
+    1.9685882088116724,
+    1.969171424478687
+  ],
+  "reportSHA256": "03ec134c1e9976cb670eef9f6a26f7664d101c73e110ea0e6dda2d75c4f2fa49",
+  "groupSHA256": "d35544a8e9e26d83b61a208ca7899f7f714930cf2b3d9f1451cfff215365d198",
+  "notImagegenOrNewCharacterFrameGeneration": true,
+  "recordedHPMPAndResultsNotInterpolated": true,
+  "originalNPC": "escort:neris",
+  "actualGuardian": "beryl",
+  "originalSourceInterceptionCost": 2,
+  "noAvoidedDamageOrExtraRewardClaim": true,
+  "files": [
+    {
+      "name": "interception-actual84.gif",
+      "bytes": 175897,
+      "sha256": "8d025d2184a392540717df20828e47cbdca5d9e8f5f9bff2ef4c0e745edc4cdd"
+    },
+    {
+      "name": "interception-actual84.png",
+      "bytes": 86859,
+      "sha256": "9b8865417104381af24509a01e01e5c2fb13327a2654ed2bc7229f73ba739bc9"
+    }
+  ],
+  "generator": [
+    "scripts/export-interception-v210.cjs",
+    "scripts/encode-interception-v210.py"
+  ]
+}

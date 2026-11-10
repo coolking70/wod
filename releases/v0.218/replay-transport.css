@@ -1,0 +1,10 @@
+.replay-control-options,.replay-control-transport{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.replay-control-options{flex:1 1 100%}.replay-control-options label{display:flex;align-items:center;gap:6px}.replay-room svg{fill:none;stroke:var(--gold);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:0 0 18px}.replay-control-transport{flex:1 1 100%}.replay-control-transport button{min-height:44px}.replay-control-transport #play{color:var(--gold);border-color:var(--gold)}
+@media(max-width:700px){
+ /* Let secondary controls scroll away; only the final transport row stays above the battle. */
+ .replay-controls{position:sticky;top:calc(var(--replay-transport-height,60px) - var(--replay-toolbar-height,360px));display:flex;gap:8px;padding:8px}
+ .replay-controls>.replay-control-options{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);width:100%;gap:6px;align-items:center}
+ .replay-control-options label{min-width:0;font-size:12px;flex-wrap:wrap}.replay-control-options select{min-width:0;max-width:100%;flex:1}.replay-control-options button{font-size:12px;padding:7px}
+ .replay-controls>.replay-control-transport{display:grid;grid-template-columns:1.25fr 1fr 1fr;width:100%;gap:6px;flex:1 1 100%}
+ .replay-control-transport button{min-width:0;padding:8px 4px;font-size:13px}
+ #replay .stage,#replay #unit-inspector,#replay .army,#replay .event-scene,#replay #detail,#replay #support-focus{scroll-margin-top:calc(var(--replay-transport-height,60px) + 12px)}
+}
