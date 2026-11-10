@@ -1,0 +1,2259 @@
+{
+  "ruleset": "original-wod-inspired-0.20.0",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "rows": [
+    {
+      "profile": "baseline",
+      "priority": "lowest",
+      "summary": {
+        "wins": 17,
+        "full": 0,
+        "medicAlive": 5
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 5,
+          "hp": 213,
+          "mp": 149,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 393
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 4,
+          "hp": 378,
+          "mp": 207,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 671
+        },
+        {
+          "seed": 3,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 189,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 231
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 176,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 772
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 3,
+          "hp": 156,
+          "mp": 162,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 589
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 136,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 448
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 5,
+          "hp": 356,
+          "mp": 163,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 673
+        },
+        {
+          "seed": 8,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 206,
+          "supplies": {
+            "herb": 9,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 116
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 2,
+          "hp": 129,
+          "mp": 151,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 695
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 173,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 194
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 162,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 124
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 5,
+          "hp": 255,
+          "mp": 169,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 475
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 218,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 112
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 232,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 151
+        },
+        {
+          "seed": 15,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 190,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 656
+        },
+        {
+          "seed": 16,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 193,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 11
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 363
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 3,
+          "hp": 179,
+          "mp": 162,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 723
+        },
+        {
+          "seed": 18,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 186,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 211
+        },
+        {
+          "seed": 19,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 184,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 235
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 3,
+          "hp": 230,
+          "mp": 167,
+          "supplies": {
+            "herb": 3,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 506
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 2,
+          "hp": 69,
+          "mp": 182,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 518
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 2,
+          "hp": 92,
+          "mp": 157,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 240
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 4,
+          "hp": 168,
+          "mp": 154,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 371
+        },
+        {
+          "seed": 24,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 228,
+          "supplies": {
+            "herb": 8,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 117
+        },
+        {
+          "seed": 25,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 158,
+          "supplies": {
+            "herb": 6,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 299
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 3,
+          "hp": 142,
+          "mp": 165,
+          "supplies": {
+            "herb": 7,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 249
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 5,
+          "hp": 449,
+          "mp": 155,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 666
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 4,
+          "hp": 247,
+          "mp": 169,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 433
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 4,
+          "hp": 360,
+          "mp": 187,
+          "supplies": {
+            "herb": 2,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 607
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 3,
+          "hp": 250,
+          "mp": 181,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 693
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 3,
+          "hp": 245,
+          "mp": 194,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 526
+        },
+        {
+          "seed": 32,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 154,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 306
+        }
+      ]
+    },
+    {
+      "profile": "baseline",
+      "priority": "self_first",
+      "summary": {
+        "wins": 19,
+        "full": 1,
+        "medicAlive": 13
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 5,
+          "hp": 447,
+          "mp": 146,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 620
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 4,
+          "hp": 378,
+          "mp": 207,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 671
+        },
+        {
+          "seed": 3,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 181,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 679
+        },
+        {
+          "seed": 4,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 177,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 751
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 3,
+          "hp": 156,
+          "mp": 162,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 589
+        },
+        {
+          "seed": 6,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 136,
+          "supplies": {
+            "herb": 4,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 448
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 5,
+          "hp": 324,
+          "mp": 163,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 641
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 2,
+          "hp": 116,
+          "mp": 175,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 441
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 2,
+          "hp": 129,
+          "mp": 151,
+          "supplies": {
+            "herb": 0,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 695
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 173,
+          "supplies": {
+            "herb": 8,
+            "rune": 2,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 194
+        },
+        {
+          "seed": 11,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 162,
+          "supplies": {
+            "herb": 8,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 124
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 5,
+          "hp": 255,
+          "mp": 169,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 475
+        },
+        {
+          "seed": 13,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 218,
+          "supplies": {
+            "herb": 9,
+            "rune": 4,
+            "arrow": 6
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 112
+        },
+        {
+          "seed": 14,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 232,
+          "supplies": {
+            "herb": 8,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 151
+        },
+        {
+          "seed": 15,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 190,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 656
+        },
+        {
+          "seed": 16,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 193,
+          "supplies": {
+            "herb": 5,
+            "rune": 1,
+            "arrow": 11
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 363
+        },
+        {
+          "seed": 17,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 185,
+          "supplies": {
+            "herb": 1,
+            "rune": 5,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 622
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 4,
+          "hp": 213,
+          "mp": 188,
+          "supplies": {
+            "herb": 0,
+            "rune": 5,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 596
+        },
+        {
+          "seed": 19,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 184,
+          "supplies": {
+            "herb": 7,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 206
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 4,
+          "hp": 311,
+          "mp": 169,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 686
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 3,
+          "hp": 272,
+          "mp": 187,
+          "supplies": {
+            "herb": 0,
+            "rune": 1,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 632
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 2,
+          "hp": 92,
+          "mp": 157,
+          "supplies": {
+            "herb": 6,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 240
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 385,
+          "mp": 174,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 487
+        },
+        {
+          "seed": 24,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 236,
+          "supplies": {
+            "herb": 9,
+            "rune": 6,
+            "arrow": 10
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 78
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 4,
+          "hp": 409,
+          "mp": 191,
+          "supplies": {
+            "herb": 0,
+            "rune": 4,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 631
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 4,
+          "hp": 250,
+          "mp": 178,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 610
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 5,
+          "hp": 449,
+          "mp": 155,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 666
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 4,
+          "hp": 247,
+          "mp": 169,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 433
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 3,
+          "hp": 288,
+          "mp": 169,
+          "supplies": {
+            "herb": 1,
+            "rune": 2,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 668
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 4,
+          "hp": 242,
+          "mp": 198,
+          "supplies": {
+            "herb": 0,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 694
+        },
+        {
+          "seed": 31,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 162,
+          "supplies": {
+            "herb": 4,
+            "rune": 3,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 419
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 3,
+          "hp": 338,
+          "mp": 146,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 724
+        }
+      ]
+    },
+    {
+      "profile": "formation",
+      "priority": "lowest",
+      "summary": {
+        "wins": 31,
+        "full": 20,
+        "medicAlive": 31
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 417,
+          "mp": 155,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 335
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 507,
+          "mp": 168,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 237
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 132,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 473
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 5,
+          "hp": 473,
+          "mp": 152,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 365
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 480,
+          "mp": 169,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 404
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 480,
+          "mp": 142,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 395
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 545,
+          "mp": 174,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 325
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 161,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 316
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 5,
+          "hp": 423,
+          "mp": 144,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 435
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 195,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 329
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 462,
+          "mp": 181,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 337
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 512,
+          "mp": 187,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 272
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 5,
+          "hp": 399,
+          "mp": 153,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 371
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 5,
+          "hp": 471,
+          "mp": 177,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 422
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 475,
+          "mp": 179,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 374
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 5,
+          "hp": 382,
+          "mp": 143,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 380
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 427,
+          "mp": 154,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 319
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 483,
+          "mp": 177,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 136
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 5,
+          "hp": 406,
+          "mp": 143,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 390
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 4,
+          "hp": 269,
+          "mp": 156,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 445
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 424,
+          "mp": 165,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 286
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 5,
+          "hp": 395,
+          "mp": 137,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 497
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 154,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 350
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 442,
+          "mp": 161,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 284
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 5,
+          "hp": 491,
+          "mp": 144,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 400
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 516,
+          "mp": 166,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 307
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 3,
+          "hp": 248,
+          "mp": 148,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 424
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 533,
+          "mp": 154,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 311
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 473,
+          "mp": 141,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 404
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 458,
+          "mp": 187,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 312
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 4,
+          "hp": 361,
+          "mp": 151,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 356
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 464,
+          "mp": 170,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 277
+        }
+      ]
+    },
+    {
+      "profile": "formation",
+      "priority": "self_first",
+      "summary": {
+        "wins": 31,
+        "full": 20,
+        "medicAlive": 31
+      },
+      "samples": [
+        {
+          "seed": 1,
+          "won": true,
+          "survivors": 6,
+          "hp": 417,
+          "mp": 155,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 335
+        },
+        {
+          "seed": 2,
+          "won": true,
+          "survivors": 6,
+          "hp": 507,
+          "mp": 168,
+          "supplies": {
+            "herb": 5,
+            "rune": 0,
+            "arrow": 5
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 237
+        },
+        {
+          "seed": 3,
+          "won": true,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 132,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 473
+        },
+        {
+          "seed": 4,
+          "won": true,
+          "survivors": 5,
+          "hp": 473,
+          "mp": 152,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 365
+        },
+        {
+          "seed": 5,
+          "won": true,
+          "survivors": 6,
+          "hp": 480,
+          "mp": 169,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 404
+        },
+        {
+          "seed": 6,
+          "won": true,
+          "survivors": 6,
+          "hp": 480,
+          "mp": 142,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 395
+        },
+        {
+          "seed": 7,
+          "won": true,
+          "survivors": 6,
+          "hp": 545,
+          "mp": 174,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 325
+        },
+        {
+          "seed": 8,
+          "won": true,
+          "survivors": 6,
+          "hp": 544,
+          "mp": 161,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 316
+        },
+        {
+          "seed": 9,
+          "won": true,
+          "survivors": 5,
+          "hp": 423,
+          "mp": 144,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 435
+        },
+        {
+          "seed": 10,
+          "won": false,
+          "survivors": 0,
+          "hp": 0,
+          "mp": 203,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": false,
+          "healing": 446
+        },
+        {
+          "seed": 11,
+          "won": true,
+          "survivors": 6,
+          "hp": 462,
+          "mp": 181,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 337
+        },
+        {
+          "seed": 12,
+          "won": true,
+          "survivors": 6,
+          "hp": 512,
+          "mp": 187,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 272
+        },
+        {
+          "seed": 13,
+          "won": true,
+          "survivors": 5,
+          "hp": 399,
+          "mp": 153,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 371
+        },
+        {
+          "seed": 14,
+          "won": true,
+          "survivors": 5,
+          "hp": 471,
+          "mp": 177,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 422
+        },
+        {
+          "seed": 15,
+          "won": true,
+          "survivors": 6,
+          "hp": 475,
+          "mp": 179,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 374
+        },
+        {
+          "seed": 16,
+          "won": true,
+          "survivors": 5,
+          "hp": 382,
+          "mp": 143,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 380
+        },
+        {
+          "seed": 17,
+          "won": true,
+          "survivors": 6,
+          "hp": 427,
+          "mp": 154,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 319
+        },
+        {
+          "seed": 18,
+          "won": true,
+          "survivors": 6,
+          "hp": 483,
+          "mp": 177,
+          "supplies": {
+            "herb": 8,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 136
+        },
+        {
+          "seed": 19,
+          "won": true,
+          "survivors": 5,
+          "hp": 406,
+          "mp": 143,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 390
+        },
+        {
+          "seed": 20,
+          "won": true,
+          "survivors": 4,
+          "hp": 269,
+          "mp": 156,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 445
+        },
+        {
+          "seed": 21,
+          "won": true,
+          "survivors": 6,
+          "hp": 424,
+          "mp": 165,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 286
+        },
+        {
+          "seed": 22,
+          "won": true,
+          "survivors": 5,
+          "hp": 395,
+          "mp": 137,
+          "supplies": {
+            "herb": 0,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 497
+        },
+        {
+          "seed": 23,
+          "won": true,
+          "survivors": 6,
+          "hp": 529,
+          "mp": 154,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 350
+        },
+        {
+          "seed": 24,
+          "won": true,
+          "survivors": 6,
+          "hp": 442,
+          "mp": 161,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 284
+        },
+        {
+          "seed": 25,
+          "won": true,
+          "survivors": 5,
+          "hp": 491,
+          "mp": 144,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 400
+        },
+        {
+          "seed": 26,
+          "won": true,
+          "survivors": 6,
+          "hp": 516,
+          "mp": 166,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 307
+        },
+        {
+          "seed": 27,
+          "won": true,
+          "survivors": 3,
+          "hp": 248,
+          "mp": 148,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 3
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 424
+        },
+        {
+          "seed": 28,
+          "won": true,
+          "survivors": 6,
+          "hp": 533,
+          "mp": 154,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 311
+        },
+        {
+          "seed": 29,
+          "won": true,
+          "survivors": 6,
+          "hp": 473,
+          "mp": 141,
+          "supplies": {
+            "herb": 1,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 404
+        },
+        {
+          "seed": 30,
+          "won": true,
+          "survivors": 6,
+          "hp": 458,
+          "mp": 187,
+          "supplies": {
+            "herb": 3,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 312
+        },
+        {
+          "seed": 31,
+          "won": true,
+          "survivors": 4,
+          "hp": 361,
+          "mp": 151,
+          "supplies": {
+            "herb": 2,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 356
+        },
+        {
+          "seed": 32,
+          "won": true,
+          "survivors": 6,
+          "hp": 464,
+          "mp": 170,
+          "supplies": {
+            "herb": 4,
+            "rune": 0,
+            "arrow": 4
+          },
+          "rescue": "unreached",
+          "bell": "unreached",
+          "route": "unreached",
+          "medicAlive": true,
+          "healing": 277
+        }
+      ]
+    }
+  ]
+}

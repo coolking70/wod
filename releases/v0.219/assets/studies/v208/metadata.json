@@ -1,0 +1,73 @@
+{
+  "kind": "native-svg-current-action-browser-sampling",
+  "seed": 731,
+  "actualRecordIds": [
+    49,
+    50,
+    51
+  ],
+  "sampledTimeMs": [
+    0,
+    110,
+    220,
+    340,
+    450,
+    560,
+    670,
+    790
+  ],
+  "durationMs": 900,
+  "delaysMs": [
+    110,
+    110,
+    120,
+    110,
+    110,
+    110,
+    120,
+    110
+  ],
+  "width": 358,
+  "height": 199,
+  "frames": 8,
+  "RGBAAllEightSpriteCellsExact": true,
+  "GIFSharedPalette256": true,
+  "GIFOpaque": true,
+  "GIFRGBMeanAbsoluteErrorByFrame": [
+    1.8602837277635853,
+    1.8375256169113723,
+    1.8345825964084856,
+    1.8413342316798145,
+    1.8553147487905075,
+    1.855403647661024,
+    1.861275652003032,
+    1.8584308881465053
+  ],
+  "reportSHA256": "dd57d0de01a2f47632dc505adc7153b38de401b3e392aca59fc9ecb82c3f8474",
+  "groupSHA256": "69b3916b3e16de9d5be54b3dd860e44caaa6a6f87349702a8f608e96de95b501",
+  "notImagegenOrNewCharacterFrameGeneration": true,
+  "geometryAndEffectsFromSameOriginalBoardAndDocumentTimeline": true,
+  "recordedHPMPAndResultsNotInterpolated": true,
+  "generator": [
+    "scripts/export-mobile-action-v208.cjs",
+    "scripts/encode-mobile-action-v208.py"
+  ],
+  "runtimeReviewedAfterSampling": {
+    "dist/expedition-action-focus.mjs": "21642c07fa36857b9a718f4c90ea87c9248329cfa7deceefd4a2ee7045445f12",
+    "dist/action-focus.css": "e95b90e6216f17eb55c2566f1b8a71dc9fe92182039e07b6a8fcc7793c23cca3",
+    "dist/expedition-guardian-motion.mjs": "dc41c113ec0ba151845de016e86606126331208e1a90b9a7368b742b8c683b17",
+    "dist/guardian-motion.css": "8332fdfe60b852a583675228fe876765617f1a5d6c7bae3272f43c08295f2a90"
+  },
+  "files": [
+    {
+      "name": "mobile-action-actual731.gif",
+      "bytes": 103803,
+      "sha256": "fbfdd26cf45995abad5b105b7015083cc1c15e1543f620c9f26832a95809e08b"
+    },
+    {
+      "name": "mobile-action-actual731.png",
+      "bytes": 104998,
+      "sha256": "e22bc3cb6b97002854eba05c8448facb2e1679af5f9c370ea1512524c1b878fa"
+    }
+  ]
+}

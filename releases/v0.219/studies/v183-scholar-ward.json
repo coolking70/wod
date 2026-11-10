@@ -1,0 +1,501 @@
+{
+  "version": 183,
+  "sourceReportId": 134,
+  "sourceReportSHA256": "54c2c05bd0a044322af54ddb70987323e794fd2271e900a15994b0667a6a1758",
+  "sourceEvents": [
+    5,
+    6
+  ],
+  "plan": {
+    "id": "d",
+    "name": "维斯",
+    "settled": "idle",
+    "mode": "ward",
+    "beats": [
+      {
+        "eventId": 5,
+        "pose": "prepare",
+        "label": "施放「潮纹屏障」"
+      },
+      {
+        "eventId": 6,
+        "pose": "ward",
+        "label": "已记录「潮纹屏障」组件"
+      }
+    ],
+    "sourceEvents": [
+      5,
+      6
+    ],
+    "label": "施放「潮纹屏障」 → 已记录「潮纹屏障」组件",
+    "rule": "携法器学者用同一原生SVG表现本步已发生的施放、结算、受击和倒下。手边符光不是目标身上的屏障或命中特效；闪避、实扣0及待生效组件分别标明，不表示额外施放、免伤、破印或扣费。一次施放的多个目标/组件只画一次结算。900毫秒仅是演出节奏；暂停和减少动态使用结算姿态，静态姿态不改变当前HP/MP。"
+  },
+  "keyframes": {
+    "duration": 900,
+    "animated": true,
+    "parts": {
+      "root": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "torso": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-5deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "head": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-4deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "focusArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-6deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(-4deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "focusHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-8deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "runeArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-22deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(10deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "runeHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-12deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(12deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legL": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legR": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "glyph": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 0,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(20deg)",
+            "opacity": 0.85
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          }
+        ]
+      }
+    }
+  },
+  "nativeDurationMs": 900,
+  "GIFDurationMs": 900,
+  "modelSHA256": "cc53778f7ed41b4a7772117f787740dbce7187dc4e3024e09dc7780ec01cc5c4",
+  "frozenStyleSHA256": "62134c712e17b5821ef3b958ed177235b45368955e09d9eba2c1be6c13f57b44",
+  "frames": [
+    {
+      "frame": 0,
+      "alphaBBox": [
+        77,
+        44,
+        187,
+        223
+      ],
+      "RGBAFrameSHA256": "daef7f884ab94511fcc7af3c8efaa54cf6771ec28de996e2b1868e2324b0ee79",
+      "durationMs": 100,
+      "nativeSampleMs": 0
+    },
+    {
+      "frame": 1,
+      "alphaBBox": [
+        77,
+        44,
+        196,
+        223
+      ],
+      "RGBAFrameSHA256": "286043a9b7521b3a0540394d4331b27be92cb458b3b8e5a2d691c7f15b1e0e29",
+      "durationMs": 120,
+      "nativeSampleMs": 100
+    },
+    {
+      "frame": 2,
+      "alphaBBox": [
+        77,
+        44,
+        203,
+        223
+      ],
+      "RGBAFrameSHA256": "ae34d72ff66eb4f9652b1dc3e9531270cdc445a33a7e463b7ca51ad8ed944df8",
+      "durationMs": 110,
+      "nativeSampleMs": 220
+    },
+    {
+      "frame": 3,
+      "alphaBBox": [
+        77,
+        44,
+        210,
+        223
+      ],
+      "RGBAFrameSHA256": "a0eaf530de14b3441f6d65609bcef33d25dc2ba4a25a115cea284cca9421df4d",
+      "durationMs": 120,
+      "nativeSampleMs": 330
+    },
+    {
+      "frame": 4,
+      "alphaBBox": [
+        77,
+        44,
+        195,
+        223
+      ],
+      "RGBAFrameSHA256": "9e4748dd816314e5cd22a0d6d1ab08548257b48de59fd19678af7058870a6de4",
+      "durationMs": 110,
+      "nativeSampleMs": 450
+    },
+    {
+      "frame": 5,
+      "alphaBBox": [
+        77,
+        44,
+        198,
+        223
+      ],
+      "RGBAFrameSHA256": "87429ab26a76cf4eab903ad81552f0f795e60107d481c9656bc3f742f9c38699",
+      "durationMs": 110,
+      "nativeSampleMs": 560
+    },
+    {
+      "frame": 6,
+      "alphaBBox": [
+        77,
+        44,
+        201,
+        223
+      ],
+      "RGBAFrameSHA256": "1dc8b4be4d2ebdbc6f982aed94e2c3683b1d158a3e7f90d09c7e64c8f32104cc",
+      "durationMs": 120,
+      "nativeSampleMs": 670
+    },
+    {
+      "frame": 7,
+      "alphaBBox": [
+        77,
+        44,
+        204,
+        223
+      ],
+      "RGBAFrameSHA256": "4b11599ebc5674c69c1435042f477708df3d6dbdc99bf4695cb63e1629f4d07f",
+      "durationMs": 110,
+      "nativeSampleMs": 790
+    }
+  ],
+  "files": [
+    {
+      "url": "../assets/studies/v183-scholar-ward.gif",
+      "bytes": 58849,
+      "sha256": "86f4ce80dfe59647ead1492942ae3654d244500f032e8f23869dbdf470cbe28c"
+    },
+    {
+      "url": "../assets/studies/v183-scholar-ward-sheet.png",
+      "bytes": 150205,
+      "sha256": "d23ed82c435095a8ec50531b5e7e641b24d23371c8cd712b746487c4f7c7d7bf"
+    },
+    {
+      "url": "../assets/studies/v183-scholar-ward-poster.png",
+      "bytes": 17983,
+      "sha256": "644f6cf24173cdab2260e4a73389a1968e7ff898e0123604d6e115e1e8f199a8"
+    },
+    {
+      "url": "../assets/studies/v183-scholar-ward.svg",
+      "bytes": 5794,
+      "sha256": "968cc3f972b2db1b747fc3dce638bf11b30e6815728c787aab707ec67c563e1f"
+    },
+    {
+      "url": "../assets/studies/v183-scholar-ward-static.png",
+      "bytes": 25281,
+      "sha256": "78a816aeb58725ef531dd097829b90089f6750b4e50f971954769bce252bac2c"
+    }
+  ],
+  "controlledSameImageRGBAExact": true,
+  "localFormatSamples": [
+    {
+      "name": "v183-scholar-ward.svg",
+      "i": 0,
+      "loadAndDecodeMs": 3.2000000178813934
+    },
+    {
+      "name": "v183-scholar-ward.svg",
+      "i": 1,
+      "loadAndDecodeMs": 0.10000002384185791
+    },
+    {
+      "name": "v183-scholar-ward.svg",
+      "i": 2,
+      "loadAndDecodeMs": 0.19999998807907104
+    },
+    {
+      "name": "v183-scholar-ward.svg",
+      "i": 3,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v183-scholar-ward.svg",
+      "i": 4,
+      "loadAndDecodeMs": 0.10000002384185791
+    },
+    {
+      "name": "v183-scholar-ward.svg",
+      "i": 5,
+      "loadAndDecodeMs": 0
+    },
+    {
+      "name": "v183-scholar-ward-static.png",
+      "i": 0,
+      "loadAndDecodeMs": 3.199999988079071
+    },
+    {
+      "name": "v183-scholar-ward-static.png",
+      "i": 1,
+      "loadAndDecodeMs": 2.300000011920929
+    },
+    {
+      "name": "v183-scholar-ward-static.png",
+      "i": 2,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v183-scholar-ward-static.png",
+      "i": 3,
+      "loadAndDecodeMs": 0.30000001192092896
+    },
+    {
+      "name": "v183-scholar-ward-static.png",
+      "i": 4,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v183-scholar-ward-static.png",
+      "i": 5,
+      "loadAndDecodeMs": 0.19999998807907104
+    }
+  ],
+  "limits": [
+    "NativeSVG rendered andencoded locally, no newimagegen.",
+    "GIF900ms follows the exported centisecond intervals; eightframes approximate continuousSVG, not exactseekable playback.",
+    "Shared256color palette andbinaryalpha losepartialtransparency; PNGsheet preservesfullRGBA.",
+    "Onlypredeclared firstsupport134record5/6; productioncurrentstep usesnativeSVG ratherthanthisindependentGIF.",
+    "Eight local nativeSVG samples, no newimagegen or directGIFgeneration.",
+    "GIFcentisecondtimes fit900ms but8frames approximate continuousnativeposes; cannot exactseek GIF.",
+    "Local12load/decode samples are not throttlednetwork/mobilehardware/FPS or wholeapp performance evidence.",
+    "StandaloneSVG and browser-rasterized sameimagePNG have exact RGBA; this does not compare against the older painted portraits."
+  ]
+}

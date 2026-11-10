@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "kind": "before",
+      "frames": 8,
+      "dimensions": [
+        928,
+        803
+      ],
+      "durationMs": 330,
+      "sourceClocksMs": [
+        0,
+        40,
+        80,
+        120,
+        160,
+        200,
+        240,
+        280
+      ],
+      "originalSourceSnapshotNoRetouchOrResizing": true,
+      "PNGSheetPixelsExact": true,
+      "GIFPaletteQuantization": true,
+      "files": [
+        {
+          "file": "assets/studies/v196/before-strip.png",
+          "bytes": 1265180,
+          "sha256": "1d9bb7055753082274c4a2741c11485b484bb1b6899330433900c19700354cb1"
+        },
+        {
+          "file": "assets/studies/v196/before-poster.png",
+          "bytes": 850988,
+          "sha256": "cc9e44b636dfdd72c440fdf25797e69f2c22fdce72509a57da858e5a92e4067d"
+        },
+        {
+          "file": "assets/studies/v196/before-motion.gif",
+          "bytes": 487122,
+          "sha256": "46f22f50d318a6208912b762dbf53feb58b874bd0f747e2f88eeb1978a90e496"
+        }
+      ]
+    },
+    {
+      "kind": "after",
+      "frames": 8,
+      "dimensions": [
+        928,
+        803
+      ],
+      "durationMs": 330,
+      "sourceClocksMs": [
+        0,
+        40,
+        80,
+        120,
+        160,
+        200,
+        240,
+        280
+      ],
+      "originalSourceSnapshotNoRetouchOrResizing": true,
+      "PNGSheetPixelsExact": true,
+      "GIFPaletteQuantization": true,
+      "files": [
+        {
+          "file": "assets/studies/v196/after-strip.png",
+          "bytes": 1216351,
+          "sha256": "0c9a90272a92747621df7fb8c6a0c16f5607a4c9c37736a6ec7355b88bda3993"
+        },
+        {
+          "file": "assets/studies/v196/after-poster.png",
+          "bytes": 850988,
+          "sha256": "cc9e44b636dfdd72c440fdf25797e69f2c22fdce72509a57da858e5a92e4067d"
+        },
+        {
+          "file": "assets/studies/v196/after-motion.gif",
+          "bytes": 479637,
+          "sha256": "9e0574d5c598fc0c2608246bcaa6f83ecb2e49d2e18c429a9026b6ffb731739b"
+        }
+      ]
+    }
+  ],
+  "source": "Exact140recorded ranger attack from195assets;before exact195Git3fileoverlay,after196renderer. NativeSVGsixroles and existing raster scene unchanged.",
+  "actualPlaybackStepMs": 325,
+  "GIFPreviewMs": 330,
+  "GIFCentisecondQuantizationDifferenceMs": 5,
+  "optionalPreviewNotProductionFetch": true,
+  "sharedPaletteAndDisposal1Validated": [
+    {
+      "kind": "before",
+      "originalGIFBytes": 3771042,
+      "optimizedGIFBytes": 487122,
+      "eightFramesAndDecodedPixelsExactGlobalPalette": true,
+      "originalFirstEncodingKept": "/tmp/wod-evidence/v196/acceptance/art-motion-preview/before-first-encoding.gif"
+    },
+    {
+      "kind": "after",
+      "originalGIFBytes": 3785780,
+      "optimizedGIFBytes": 479637,
+      "eightFramesAndDecodedPixelsExactGlobalPalette": true,
+      "originalFirstEncodingKept": "/tmp/wod-evidence/v196/acceptance/art-motion-preview/after-first-encoding.gif"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+// All passage mechanics, content and tuning are project-original.
+export const PASSAGE_RULE='战前选择；入场且尚未开始预备、回复或先攻时检查一次。专业拆闸用射手机巧拆解，强行开闸用守卫盾击；从实际存活、装备合格且付得起费用的同行者中取最高均值，同值按队伍顺序。支付既有技能法力，成功失败都不退；不消耗共享材料、不占战斗行动。实掷=floor(均值×(0.5+(两次独立随机数之和)/2))。成功绕过本房守军，保留原生命且不计击倒；失败或无合格者按原敌情战斗。直接战斗不检定、不收费。无额外奖励或经验，资源跨房继承。';
+export const PASSAGE_CHOICES={fight:{name:'直接战斗',desc:'不检定，不付入场费用；按原敌情开战。'},disarm:{name:'专业拆闸',skill:'disarm',desc:'射手机巧拆解；按实际培养与装备检定，沿用技能法力费用，无共享材料。'},force:{name:'强行开闸',skill:'shieldbash',desc:'守卫盾击；按实际培养与装备检定，沿用技能法力费用，无共享材料。'}};
+const row=(skill,target='front')=>({skill,target,mode:'repeat'});
+const foe=(id,name,pos,hp,skill,level=7)=>({id,name,pos,gear:'field',mark:'闸',attrs:{str:14,con:13,int:15,dex:14,cha:10,agi:12,per:12,wil:13},hp,maxHp:hp,mp:70,maxMp:70,skills:{[skill]:level},prep:[],main:[row(skill,skill==='shot'?'rear':'front')],healing:{enabled:false},defenses:{melee:'natural',ranged:'natural',magic:'natural'}});
+export const PASSAGE_ROOMS=[{id:'lockpass-gate',name:'01 · 锈闸检修道',passage:{difficulty:70},note:'难度70，可用专业拆闸或强行开闸通过；失败按原守军开战。检定先于本房任何回复与辅助。直接战斗仍可正常通过。',enemies:[foe('lpg','闸桥门卫','front',180,'strike'),foe('lpa','检修道弩手','rear',140,'shot')]},{id:'lockpass-bridge',name:'02 · 桥心交接台',note:'这里必须正常战斗；生命、法力与物资继承首房真实余量，无额外补给或回满。',enemies:[foe('lpbg','交接台守卫','front',210,'strike',8),foe('lpbm','桥心术士','center',150,'spark',8)]}];

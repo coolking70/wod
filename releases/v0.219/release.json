@@ -1,0 +1,9 @@
+{
+  "version": "0.219",
+  "siteRuntimePrefix": "releases/v0.219/",
+  "sourceCommit": "258f3ef58ebcfd3a3301ec72b3f93e98d42d4774",
+  "sourceTree": "3239dc134c738683e959cce8e09aa42a299a70a5",
+  "assetManifestSHA256": "8ea82a06be32c7556d70837cff69110a5d5fa9d327e3252bb14ef3a229946589",
+  "singleplayerBrowserLocalStorage": true,
+  "permanentSupplyEconomyPending": true
+}

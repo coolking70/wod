@@ -1,8 +1,8 @@
 {
-  "version": "0.218",
-  "sourceCommit": "77ec15e3249a646eac86b29037d80e384744179e",
-  "sourceTree": "6619b1733a4cbcff7e85d94cfeec3cb3370750dd",
-  "siteRuntimePrefix": "releases/v0.218/",
+  "version": "0.219",
+  "sourceCommit": "258f3ef58ebcfd3a3301ec72b3f93e98d42d4774",
+  "sourceTree": "3239dc134c738683e959cce8e09aa42a299a70a5",
+  "siteRuntimePrefix": "releases/v0.219/",
   "files": [
     {
       "path": "action-focus.css",
@@ -606,8 +606,8 @@
     },
     {
       "path": "expedition-command-preview.mjs",
-      "bytes": 5433,
-      "sha256": "9d3144667be7bffa07084b25f0651f96cf734af5b74e85a6ad89ccf45a217510"
+      "bytes": 5609,
+      "sha256": "189c294c9fe0b8b75ce0964d0d5548455284cd88744a7c2c9a5aa7abcc6b1f8f"
     },
     {
       "path": "expedition-command-view.mjs",
@@ -716,8 +716,8 @@
     },
     {
       "path": "expedition-engine.mjs",
-      "bytes": 80854,
-      "sha256": "58bfe1cb07a11daeb0966d3d3b35890c7d8542c51179dcf9244c63a42a28a91a"
+      "bytes": 81185,
+      "sha256": "a3b67eb5b4e4b18c1fb24884514ee37780976273b9537910a2a9a70577e8f7c7"
     },
     {
       "path": "expedition-equipment-goal-transfer.mjs",
@@ -856,8 +856,8 @@
     },
     {
       "path": "expedition-guild-ui.mjs",
-      "bytes": 78481,
-      "sha256": "50dfdaa1d3073f5aaa141e3e4db6d6cc9f78983eb78371a492ff66eb7786065a"
+      "bytes": 78585,
+      "sha256": "e90a4c2a5abd22aa3431062c9f377c0ba9cfc5d86fe54fddc92fd56e91f82c02"
     },
     {
       "path": "expedition-guild.mjs",
@@ -1271,8 +1271,8 @@
     },
     {
       "path": "expedition-review.mjs",
-      "bytes": 17643,
-      "sha256": "c63edd4e798eea22834164772e1534009b0c9e49f6230b8c6f0d1625a4ed3432"
+      "bytes": 17726,
+      "sha256": "a33e2c969914bc5c77b61474ce322ecbb593b459623e33f86cfc66188b387cf6"
     },
     {
       "path": "expedition-roster-rehearsal-view.mjs",
@@ -1430,6 +1430,11 @@
       "sha256": "d1de1f5827bd52cfdb059ee9fcdcabb362f2e2d79758a992e643294ca2a91c76"
     },
     {
+      "path": "expedition-target-pick.mjs",
+      "bytes": 4007,
+      "sha256": "93c72f92c59cd793d9e17f25e2ee26d191e0ef1d72b4e423bf3a22e1279d40a9"
+    },
+    {
       "path": "expedition-theater.mjs",
       "bytes": 2617,
       "sha256": "0e9145b288ce853f5cbc82931c993d83d4167d991def97e2789b26e50bb85101"
@@ -1486,8 +1491,8 @@
     },
     {
       "path": "expedition-ui.mjs",
-      "bytes": 217693,
-      "sha256": "dda73e448295df937f50fe799ea1d13ea32452431a1714218cca188b2b78ab1f"
+      "bytes": 218058,
+      "sha256": "f2ac45f82293e3b17e73c99222c5610b2f6b3b19e22822ce3e9ce353db662e9b"
     },
     {
       "path": "expedition-unravel.mjs",
@@ -1516,8 +1521,8 @@
     },
     {
       "path": "expedition.css",
-      "bytes": 75409,
-      "sha256": "cc2e8fc2087f2724a6b411b118b95aa2d03fe31f604618c24c6b8c7c30f44233"
+      "bytes": 75725,
+      "sha256": "336543051b58b783e4b12ead6658eb7f3b6bb58530ecfc274605c6ee801f454e"
     },
     {
       "path": "fieldmedic-motion.css",
@@ -1537,7 +1542,7 @@
     {
       "path": "index.html",
       "bytes": 27296,
-      "sha256": "1186426527d6490cbacc89eb63d3fed50730c7c8636926e9010f11f25090ad4d"
+      "sha256": "6167f82e65b3e29a01bddc6cf2c1dc9d0b9e43ce654d5938e518996c44b47049"
     },
     {
       "path": "inkcaster-motion.css",
