@@ -1,0 +1,2 @@
+import {harborStoryProgress,HARBOR_STORY_ENDINGS,HARBOR_STORY_GOLD} from './expedition-harbor-story.mjs';import {soloStoryView} from './expedition-solo-story-view.mjs';
+export function harborStoryView(g){return soloStoryView({id:'harbor',progress:harborStoryProgress(g),endings:HARBOR_STORY_ENDINGS,gold:HARBOR_STORY_GOLD,label:'灯塔来信',title:'给看不见归航的港口，一封回信。',intro:'从沉钟下的第一章走向盐风港，把章节、灯塔与带回岸上的回答串成主线。三段都来自已领取的正常远征，普通难度即可，已有成果直接计入。',claimAttribute:'data-harbor-story-end',followup:{route:'courier',label:'沿沉船邮路送出回信',text:'回信已经写好，下一趟邮船却停在旧栈桥外。沉船邮路是一条独立的三场远征，也可从地图自由进入。'}});}

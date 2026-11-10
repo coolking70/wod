@@ -1,0 +1,68 @@
+// Recorded facts only. Do not infer prevented damage or attribute allies' damage to buffs.
+import {HEROES} from './expedition-data.mjs';
+export function personalReport(report,heroId){
+ if(!HEROES.some(h=>h.id===heroId))throw Error('未知观察角色');
+ const blank=()=>({damage:0,healing:0,received:0,taken:0,casts:0,castMana:0,defenseMana:0,failed:0,items:0,summonDamage:0,buffApplications:0,controlApplications:0,weakeningApplications:0,cleansedEffects:0,healingBlocks:0,passiveHealing:0,passiveRecords:0,passiveOverheal:0});
+ const total=blank(),rooms=report.rooms.map((r,i)=>({index:i,name:r.name,...blank()})),given=new Map(),received=new Map(),issues=new Map(),evidence=[],supplies={herb:0,rune:0,arrow:0};
+ let stock={...report.config.supplies};const buffKeys=new Set(),inKeys=new Set(),controlKeys=new Set(),proofKeys=new Set();
+ const add=(room,key,n=1)=>{total[key]=(total[key]||0)+n;if(rooms[room])rooms[room][key]=(rooms[room][key]||0)+n;};
+ const proof=(e,index,kind)=>{if(!proofKeys.has(kind)){proofKeys.add(kind);evidence.push({index,kind,text:e.text,roomIndex:e.roomIndex});}};
+ const link=(map,id,key,amount,index)=>{if(!map.has(id))map.set(id,{id,healing:0,buffs:0,index});map.get(id)[key]=(map.get(id)[key]||0)+amount;if(!Object.hasOwn(map.get(id),key+'Index'))map.get(id)[key+'Index']=index;};
+ report.events.forEach((e,index)=>{
+  const own=e.actor===heroId,target=e.targets.includes(heroId),d=e.detail||{};
+  for(const key of Object.keys(stock)){if(own&&e.supplies)supplies[key]+=Math.max(0,stock[key]-e.supplies[key]);if(e.supplies)stock[key]=e.supplies[key];}
+  if(own&&d.manaRegeneration){add(e.roomIndex,'manaRegenerationRecords');add(e.roomIndex,'manaRegenerationGain',Math.max(0,d.manaRegeneration.actual));add(e.roomIndex,'manaRegenerationLoss',Math.max(0,-d.manaRegeneration.actual));proof(e,index,'本人自然法力回复修正');}
+  if(own&&e.type==='initiative-check'){add(e.roomIndex,'initiativeChecks');add(e.roomIndex,'initiativeMana',d.cost);if(d.initiative.chosen==='natural')add(e.roomIndex,'initiativeFallbacks');proof(e,index,'本人先攻选择');}
+  if(own&&e.type==='cast'){add(e.roomIndex,'casts');add(e.roomIndex,'castMana',Math.max(0,d.mpBefore-d.mpAfter));}
+  if(own&&e.type==='intercept'){add(e.roomIndex,'interceptAttempts');add(e.roomIndex,'interceptMana',d.cost);if(d.success)add(e.roomIndex,'interceptions');proof(e,index,'本人援护尝试');}
+  if(own&&e.type==='defend')add(e.roomIndex,'defenseMana',Math.max(0,d.mpBefore-d.mpAfter));
+  if(e.type==='attack'||e.type==='harm'){
+   if(own){if(d.damageChannel){add(e.roomIndex,'channelDamage',d.actual);add(e.roomIndex,'channelHits');proof(e,index,'本人攻击方式与伤害通道');}add(e.roomIndex,'damage',d.actual);if(e.type==='harm'){add(e.roomIndex,'periodDamage',d.actual);add(e.roomIndex,'periodRecords');}proof(e,index,e.type==='harm'?'本人持续伤害':'本人攻击');}
+   if(d.damageParts){if(own){add(e.roomIndex,'coatedDamage',d.damageParts.filter(p=>p.kind==='coating').reduce((n,p)=>n+p.actual,0));add(e.roomIndex,'coatedHits');proof(e,index,'本人一次攻防分段伤害');}for(const p of d.damageParts.filter(p=>p.kind==='coating'&&p.source===heroId)){add(e.roomIndex,'coatingGivenDamage',p.actual);add(e.roomIndex,'coatingGivenRecords');proof(e,index,'药剂来源的实际附加段');}}
+   if(target){add(e.roomIndex,'taken',d.actual);proof(e,index,'受到攻击');}
+   if(e.units.find(u=>u.id===e.actor)?.owner===heroId){add(e.roomIndex,'summonDamage',d.actual);proof(e,index,'召唤物攻击');}
+  }
+  if(own&&e.type==='attack'&&d.mechanismHit){add(e.roomIndex,'mechanismDamage',d.actual);proof(e,index,'本人实际拆解');}
+  if(own&&e.type==='skip'&&d.mechanismSelection)proof(e,index,'本人的机关类别与后备');
+  if(e.type==='immune'){if(own){add(e.roomIndex,'immuneRecords');proof(e,index,'实际受击者免疫');}if(target){add(e.roomIndex,'immuneReceipts');proof(e,index,'本人固有免疫');}}
+  if(own&&e.type==='skip'&&d.attackImmunity)proof(e,index,'本人的类型排除与后备');
+  if(['passage-check','passage-pass'].includes(e.type))proof(e,index,'进场专业通行');
+  if(e.type==='surrender')proof(e,index,'头领投降');
+  if(own&&e.type==='control'){add(e.roomIndex,'nonDamageAttempts');if(d.applied)add(e.roomIndex,'nonDamageApplied');proof(e,index,'本人无伤削弱攻防');}
+  if(e.type==='mana-damage'){if(own){add(e.roomIndex,'manaDamage',d.actual);proof(e,index,'本人实际削减法力');}if(target){add(e.roomIndex,'manaLost',d.actual);proof(e,index,'本人受到法力削减');}}
+  if(own&&e.type==='skip'&&d.manaFloor?.blocked)proof(e,index,'本人的法力留存与后备');
+  if(own&&e.type==='skip'&&d.manaSelection)proof(e,index,'本人的断流候选与后备');
+  if(e.type==='mana-transfer'){if(own){add(e.roomIndex,'manaGiven',d.actual);add(e.roomIndex,'manaTransfers');proof(e,index,'本人法力援助');link(given,e.targets[0],'mana',d.actual,index);}if(target){add(e.roomIndex,'manaReceived',d.actual);link(received,e.actor,'mana',d.actual,index);proof(e,index,'得到法力援助');}}
+  if(e.type==='heal'){
+   if(own&&d.passive){add(e.roomIndex,'passiveRecords');add(e.roomIndex,'passiveHealing',d.actual);add(e.roomIndex,'passiveOverheal',d.overheal);}
+   if(own){add(e.roomIndex,'healing',d.actual);proof(e,index,'本人治疗');if(e.targets[0]!==heroId)link(given,e.targets[0],'healing',d.actual,index);}
+   if(target){add(e.roomIndex,'received',d.actual);if(!own)link(received,e.actor,'healing',d.actual,index);proof(e,index,'得到治疗');}
+  }
+  if(e.type==='reinforcement')proof(e,index,'同房增援抵达');
+  if(e.type==='withdraw')proof(e,index,'队伍按计划撤退');
+  if(e.type==='initiative'&&d.actionLimits)for(const l of d.actionLimits){if(l.source===heroId){add(e.roomIndex,'extraActionsLimited',l.removed);proof(e,index,'迟拍实际队列');}if(l.target===heroId){add(e.roomIndex,'ownExtraActionsLimited',l.removed);proof(e,index,'本人迟拍队列');}}
+  if(e.type==='skip'&&d.healingBlock){if(d.healingBlock.source===heroId){add(e.roomIndex,'healingBlocks');proof(e,index,'救护受阻');}if(own)proof(e,index,'本人救护受阻');}
+  if(e.type==='effect')for(const id of e.targets){
+   // A multi-component buff on one recipient is one application, not several contributions.
+   const key=[e.roomIndex,e.actionId||d.cast||e.id,e.actor,id,d.skill].join(':');
+   if(d.harmful){if(own&&!controlKeys.has(key)){controlKeys.add(key);add(e.roomIndex,'controlApplications');if(d.skill==='dissonance')add(e.roomIndex,'weakeningApplications');proof(e,index,'施加'+(d.component||'负面'));}continue;}
+   if(own&&!buffKeys.has(key)){buffKeys.add(key);add(e.roomIndex,'buffApplications');if(id!==heroId)link(given,id,'buffs',1,index);proof(e,index,'施加增益');}
+   if(id===heroId&&!own&&!inKeys.has(key)){inKeys.add(key);link(received,e.actor,'buffs',1,index);proof(e,index,'得到增益');}
+  }
+  if(e.type==='dispel'){if(own){add(e.roomIndex,'dispelledGroups');add(e.roomIndex,'dispelledEffects',d.removed.length);proof(e,index,'本人破印');}if(target&&!own)proof(e,index,'本人增益被破除');}
+  if(e.type==='cleanse'){if(own){add(e.roomIndex,'cleansedEffects',d.removed.length);proof(e,index,'本人净化');}if(target&&!own)proof(e,index,'得到净化');}
+  if(own&&e.type==='item'){add(e.roomIndex,'items');proof(e,index,'使用道具');}
+  if(own&&e.type==='failed'){add(e.roomIndex,'failed');proof(e,index,'行动空过');}
+  if(own&&e.type==='skip'&&['法力不足','耗材耗尽','装备条件不满足'].includes(d.reason)){
+   const key=d.reason+':'+d.skill;if(!issues.has(key))issues.set(key,{reason:d.reason,skill:d.skill,count:0,index});issues.get(key).count++;proof(e,index,d.reason);
+  }
+  if(target&&e.type==='down')proof(e,index,'角色倒下');
+ });
+ const name=id=>HEROES.find(h=>h.id===id)?.name||report.events.flatMap(e=>e.units).find(u=>u.id===id)?.name||id;
+ return {heroId,name:name(heroId),total,rooms,supplies,given:[...given.values()].map(x=>({...x,name:name(x.id)})),received:[...received.values()].map(x=>({...x,name:name(x.id)})),issues:[...issues.values()],evidence};
+}
+
+// Keep complete action groups, plus room/story boundaries, for a personal replay.
+export function personalSteps(steps,heroId){
+ return steps.filter(g=>g.events.some(e=>['passage-check','passage-pass','surrender','wave-clear','reinforcement','withdraw','room','victory','defeat','scene','encounter','route','rescue','branch','deadline'].includes(e.type)||e.detail?.actionLimits?.some(l=>l.source===heroId||l.target===heroId)||e.actor===heroId||e.targets.includes(heroId)||e.units.some(u=>u.owner===heroId&&(u.id===e.actor||e.targets.includes(u.id)))));
+}

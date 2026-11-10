@@ -1,0 +1,98 @@
+{
+  "reportId": 124,
+  "reportSHA256": "75bcf5f761c97af0479a94be0383bc8565e2bca23f388bd8675740cdcd91b1e7",
+  "hero": {
+    "id": "beryl",
+    "name": "贝芮尔",
+    "gear": {
+      "weapon": "guardblade",
+      "armor": "plate",
+      "accessory": "token"
+    }
+  },
+  "group": {
+    "start": 48,
+    "end": 50,
+    "roomIndex": 0
+  },
+  "plan": {
+    "id": "beryl",
+    "name": "贝芮尔",
+    "weapon": "sword",
+    "settled": "idle",
+    "mode": "hit",
+    "beats": [
+      {
+        "eventId": 50,
+        "pose": "brace",
+        "label": "挡架检定"
+      },
+      {
+        "eventId": 51,
+        "pose": "hit",
+        "label": "受击 −19"
+      }
+    ],
+    "sourceEvents": [
+      50,
+      51
+    ],
+    "label": "挡架检定 → 受击 −19",
+    "rule": "守卫关节动作只演示当前已结算战报的出手、援护尝试、挡架检定、受击与倒下；挡架姿态不代表成功免伤。动作顺序沿原事件，时长为本项目演出节奏，不是战斗时间；生命、法力和阵位始终显示该步原快照。仅携盾守卫使用此原创程序图形，其他装备保留原头像。减少动态效果或暂停时直接显示本步结算姿态。"
+  },
+  "sourceEvents": [
+    {
+      "id": 49,
+      "type": "cast",
+      "actor": "cp2",
+      "targets": [
+        "beryl"
+      ],
+      "text": "断桥守卫 使用「剑术」",
+      "defenseSkill": "strike"
+    },
+    {
+      "id": 50,
+      "type": "defend",
+      "actor": "beryl",
+      "targets": [
+        "cp2"
+      ],
+      "text": "贝芮尔 使用「盾牌格挡」应对近战",
+      "defenseSkill": "parry"
+    },
+    {
+      "id": 51,
+      "type": "attack",
+      "actor": "cp2",
+      "targets": [
+        "beryl"
+      ],
+      "text": "断桥守卫 → 贝芮尔：重击，19 伤害",
+      "actual": 19,
+      "defenseSkill": "strike"
+    }
+  ],
+  "gestureMs": 900,
+  "beats": [
+    {
+      "eventId": 50,
+      "pose": "brace",
+      "label": "挡架检定",
+      "gestureOffsetMs": 225
+    },
+    {
+      "eventId": 51,
+      "pose": "hit",
+      "label": "受击 −19",
+      "gestureOffsetMs": 450
+    }
+  ],
+  "provenance": "Actual124frozenhistory from173canonicalfourkeys; originalSVGmodel/poses, no combatnumber or generatedpaintingreplacement.",
+  "paintedTrialFindings": [
+    "Trialshield is onopposite viewside fromcurrentSVG.",
+    "Trialhas no ownedguardblade sword ormatchinghelmetcrest.",
+    "Trialonlyraises shield, cannot depict actualhit/fallen;840ms nativeGIFloop cannot follow sourcebeat inspection."
+  ],
+  "originalProductionMechanicsUnchanged": true
+}

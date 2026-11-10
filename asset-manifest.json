@@ -1,8 +1,8 @@
 {
-  "version": "0.219",
-  "sourceCommit": "258f3ef58ebcfd3a3301ec72b3f93e98d42d4774",
-  "sourceTree": "3239dc134c738683e959cce8e09aa42a299a70a5",
-  "siteRuntimePrefix": "releases/v0.219/",
+  "version": "0.220",
+  "sourceCommit": "aa0fcd37675aca0a73dea150600a88d66a391528",
+  "sourceTree": "0d179b66e9b6d0926c6628cf776c620385a987b8",
+  "siteRuntimePrefix": "releases/v0.220/",
   "files": [
     {
       "path": "action-focus.css",
@@ -138,6 +138,11 @@
       "path": "assets/receipt-seal-v193.svg",
       "bytes": 281,
       "sha256": "d6a46f49d2bac3e98fb7a7b071eba8df08be95911aa5ba9a6b061a28be62709b"
+    },
+    {
+      "path": "assets/returning-tide-v220.svg",
+      "bytes": 2467,
+      "sha256": "05977956fc87f2a740d85c549810c9c090150cd575a15b1baaca0a19def8e0ed"
     },
     {
       "path": "assets/review-compass-v211.svg",
@@ -486,8 +491,8 @@
     },
     {
       "path": "expedition-adventure.mjs",
-      "bytes": 24634,
-      "sha256": "f564fe109ca5dcbc5c13b37517d7a8b9448f5f21fbca6596db7b26364d24ef76"
+      "bytes": 25400,
+      "sha256": "8b372797badef0c22a85fc8d26fc65c362ab18eea282fb42125c4c8918af9628"
     },
     {
       "path": "expedition-afflictions.mjs",
@@ -561,8 +566,8 @@
     },
     {
       "path": "expedition-camp-cycle.mjs",
-      "bytes": 8784,
-      "sha256": "17c11acff72559e703716624a7e232f1eccb43b80f73e68d5334ab7504847ad1"
+      "bytes": 8800,
+      "sha256": "dfdc8a995f11f1af45baff9b7feb8fc4cfc23a003914ca0b3359f303ce70d724"
     },
     {
       "path": "expedition-camp-journeys.mjs",
@@ -676,8 +681,8 @@
     },
     {
       "path": "expedition-data.mjs",
-      "bytes": 71871,
-      "sha256": "76ad476b73feed70cec5ebf3625d3867bb4be4778446bcca4431f948f05927d1"
+      "bytes": 72371,
+      "sha256": "35df544a527d9f2af2d35f30292d275e4d7abfe2682cd990fa1247edadddee52"
     },
     {
       "path": "expedition-departure-review.mjs",
@@ -821,8 +826,8 @@
     },
     {
       "path": "expedition-goal-data.mjs",
-      "bytes": 1054,
-      "sha256": "2dd256e1dfb16be9cd8b75276a04e44dd3efdb490f5cb90cbb1eec3b5e92d97f"
+      "bytes": 1263,
+      "sha256": "e826ba628621a1df24bfcbd53a517be1676932d1daae240d2ed00804469b5b7d"
     },
     {
       "path": "expedition-greenhouse.mjs",
@@ -1026,8 +1031,8 @@
     },
     {
       "path": "expedition-loot.mjs",
-      "bytes": 6103,
-      "sha256": "0d96525fe4d1e29f013066b6855925b705a75db3372bc6e62806707324d0f07c"
+      "bytes": 6204,
+      "sha256": "f140f13bae6b94bd7232f0433c71d6445f74de989b7e25dc5d1cccf1916e3316"
     },
     {
       "path": "expedition-mana-damage.mjs",
@@ -1270,6 +1275,11 @@
       "sha256": "67b3fd90684ad6b9cb9947d25442f99f3c861baf2ffdd88aaa03a6ad53da6eba"
     },
     {
+      "path": "expedition-returning-tide.mjs",
+      "bytes": 4084,
+      "sha256": "28a6482dafcb36bc54d0ed20d4232ac987c800deb4548dbf227d81464ac37b19"
+    },
+    {
       "path": "expedition-review.mjs",
       "bytes": 17726,
       "sha256": "a33e2c969914bc5c77b61474ce322ecbb593b459623e33f86cfc66188b387cf6"
@@ -1491,8 +1501,8 @@
     },
     {
       "path": "expedition-ui.mjs",
-      "bytes": 218058,
-      "sha256": "f2ac45f82293e3b17e73c99222c5610b2f6b3b19e22822ce3e9ce353db662e9b"
+      "bytes": 218113,
+      "sha256": "5cf44b98b8579694ab8857f0926ff6f3e3e7298784cf89ff0123619fab060f17"
     },
     {
       "path": "expedition-unravel.mjs",
@@ -1542,7 +1552,7 @@
     {
       "path": "index.html",
       "bytes": 27296,
-      "sha256": "6167f82e65b3e29a01bddc6cf2c1dc9d0b9e43ce654d5938e518996c44b47049"
+      "sha256": "80ae2e6b6064cf53a874a79509435204ea761c478e907170e729e5e9f7bbcf65"
     },
     {
       "path": "inkcaster-motion.css",

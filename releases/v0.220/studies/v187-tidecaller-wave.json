@@ -1,0 +1,510 @@
+{
+  "version": 187,
+  "sourceReportId": 137,
+  "sourceReportSHA256": "de318bd6d1bce3ec2ca8774f3b1cd36138a8176f5139f0663e4343578210bb23",
+  "sourceEvents": [
+    50,
+    52,
+    54
+  ],
+  "plan": {
+    "id": "c",
+    "name": "伊芙",
+    "settled": "idle",
+    "mode": "release",
+    "beats": [
+      {
+        "eventId": 50,
+        "eventIds": [
+          50
+        ],
+        "pose": "prepare",
+        "label": "施放「潮汐冲击」"
+      },
+      {
+        "eventId": 52,
+        "eventIds": [
+          52,
+          54
+        ],
+        "pose": "release",
+        "label": "法术结算 · 2条记录，0次闪避"
+      }
+    ],
+    "sourceEvents": [
+      50,
+      52,
+      54
+    ],
+    "label": "施放「潮汐冲击」 → 法术结算 · 2条记录，0次闪避",
+    "rule": "携法器潮术师以同一原生SVG表现本步已发生的施放、法术结算、召唤/召回、受击和倒下。手侧潮纹不是目标命中或召唤物，不增加施放、伤害、扣费或资源返还。一次施放的多个目标只画一次结算；动作时钟读取同一组关节动画，HP/MP仍为当前回放快照。900毫秒是演出节奏，暂停和减少动态使用结算姿态。"
+  },
+  "keyframes": {
+    "duration": 900,
+    "animated": true,
+    "parts": {
+      "root": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "torso": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-6deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(7deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "head": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-4deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(-3deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "focusArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-10deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(-5deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "focusHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-8deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "castArm": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-24deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(19deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "castHand": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(-13deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(17deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legL": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "legR": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 1,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 1
+          }
+        ]
+      },
+      "tide": {
+        "settled": "translate(0px, 0px) rotate(0deg)",
+        "opacity": 0,
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          },
+          {
+            "offset": 0.25,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate(2px, -1px) rotate(35deg)",
+            "opacity": 1
+          },
+          {
+            "offset": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)",
+            "opacity": 0
+          }
+        ]
+      }
+    }
+  },
+  "nativeDurationMs": 900,
+  "GIFDurationMs": 900,
+  "modelSHA256": "d30a1e36acfb2cdca6034f07996ff2db282307abd9565a3625f2ed2d63dbc6d3",
+  "frozenStyleSHA256": "4bcb134d4822709bc1f6b42bd054b75ec1e5d610f1e38948f2d29524f7b3a544",
+  "frames": [
+    {
+      "frame": 0,
+      "alphaBBox": [
+        77,
+        44,
+        187,
+        223
+      ],
+      "RGBAFrameSHA256": "1735c869f0e0dc229edf2b854eba548630081a877e0ccadc27ac2c12d5470cc1",
+      "durationMs": 100,
+      "nativeSampleMs": 0
+    },
+    {
+      "frame": 1,
+      "alphaBBox": [
+        77,
+        44,
+        197,
+        223
+      ],
+      "RGBAFrameSHA256": "5aa4281aba42deb9a306ccf583349698056e83e3bebd81b1ccf958c7430599f7",
+      "durationMs": 120,
+      "nativeSampleMs": 100
+    },
+    {
+      "frame": 2,
+      "alphaBBox": [
+        77,
+        44,
+        203,
+        223
+      ],
+      "RGBAFrameSHA256": "b4f5b14fe90f409b85a3980832071bd9518ceecd420128fbdb8848446c185bdd",
+      "durationMs": 110,
+      "nativeSampleMs": 220
+    },
+    {
+      "frame": 3,
+      "alphaBBox": [
+        77,
+        44,
+        212,
+        223
+      ],
+      "RGBAFrameSHA256": "72483a51f8f7cde3d225399b554f395c526377a2dd170dbde25171ef8a95354c",
+      "durationMs": 120,
+      "nativeSampleMs": 330
+    },
+    {
+      "frame": 4,
+      "alphaBBox": [
+        77,
+        44,
+        196,
+        223
+      ],
+      "RGBAFrameSHA256": "28ff92a131f1a401563664ec4110cfa622031184b91f81873c4f3e73c2262714",
+      "durationMs": 110,
+      "nativeSampleMs": 450
+    },
+    {
+      "frame": 5,
+      "alphaBBox": [
+        77,
+        44,
+        203,
+        223
+      ],
+      "RGBAFrameSHA256": "b994b12032f6453b2bb6756bfaf4e3bd13d9e9a3dcdeceaff5ad9efae3d91c98",
+      "durationMs": 110,
+      "nativeSampleMs": 560
+    },
+    {
+      "frame": 6,
+      "alphaBBox": [
+        77,
+        44,
+        207,
+        223
+      ],
+      "RGBAFrameSHA256": "3909ee9031d3518f0a5723d028860c87bb8b6f5d324bcd21267dde34503ad7e1",
+      "durationMs": 120,
+      "nativeSampleMs": 670
+    },
+    {
+      "frame": 7,
+      "alphaBBox": [
+        77,
+        44,
+        207,
+        223
+      ],
+      "RGBAFrameSHA256": "84b18a7dcb279cb23e82faf980c5fc45af165a16399b4cda3e0bd373a1d05552",
+      "durationMs": 110,
+      "nativeSampleMs": 790
+    }
+  ],
+  "files": [
+    {
+      "url": "../assets/studies/v187-tidecaller-wave.gif",
+      "bytes": 65314,
+      "sha256": "7c3f9d8663c0f603faab6d26dfbfc5dc2fcb3eebdc9c3dc4656bc6c2348f926b"
+    },
+    {
+      "url": "../assets/studies/v187-tidecaller-wave-sheet.png",
+      "bytes": 180272,
+      "sha256": "7f87e856b0dc804941ae8a4b48b7865c8cfc8e27353d8f09178bb1d755df8dd8"
+    },
+    {
+      "url": "../assets/studies/v187-tidecaller-wave-poster.png",
+      "bytes": 19550,
+      "sha256": "826ae6445954d81336855465f45d7aef2f0a33d75a130734238301b7207e984e"
+    },
+    {
+      "url": "../assets/studies/v187-tidecaller-wave.svg",
+      "bytes": 6281,
+      "sha256": "be9e7d24559cd41fd06414fed9b1b2af6b8c641e9e2dd3fb35d13771538f8c50"
+    },
+    {
+      "url": "../assets/studies/v187-tidecaller-wave-static.png",
+      "bytes": 26829,
+      "sha256": "6489bc31b65d3c2e8677a81661be18f837606068fe1fc763116cce307182d9e4"
+    }
+  ],
+  "controlledSameImageRGBAExact": true,
+  "localFormatSamples": [
+    {
+      "name": "v187-tidecaller-wave.svg",
+      "i": 0,
+      "loadAndDecodeMs": 3.5999999940395355
+    },
+    {
+      "name": "v187-tidecaller-wave.svg",
+      "i": 1,
+      "loadAndDecodeMs": 0.10000002384185791
+    },
+    {
+      "name": "v187-tidecaller-wave.svg",
+      "i": 2,
+      "loadAndDecodeMs": 0
+    },
+    {
+      "name": "v187-tidecaller-wave.svg",
+      "i": 3,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v187-tidecaller-wave.svg",
+      "i": 4,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v187-tidecaller-wave.svg",
+      "i": 5,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v187-tidecaller-wave-static.png",
+      "i": 0,
+      "loadAndDecodeMs": 3.300000011920929
+    },
+    {
+      "name": "v187-tidecaller-wave-static.png",
+      "i": 1,
+      "loadAndDecodeMs": 3
+    },
+    {
+      "name": "v187-tidecaller-wave-static.png",
+      "i": 2,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v187-tidecaller-wave-static.png",
+      "i": 3,
+      "loadAndDecodeMs": 0.09999999403953552
+    },
+    {
+      "name": "v187-tidecaller-wave-static.png",
+      "i": 4,
+      "loadAndDecodeMs": 0.20000001788139343
+    },
+    {
+      "name": "v187-tidecaller-wave-static.png",
+      "i": 5,
+      "loadAndDecodeMs": 0.10000002384185791
+    }
+  ],
+  "limits": [
+    "NativeSVG rendered andencoded locally, no newimagegen.",
+    "GIF900ms follows the exported centisecond intervals; eightframes approximate continuousSVG, not exactseekable playback.",
+    "Shared256color palette andbinaryalpha losepartialtransparency; PNGsheet preservesfullRGBA.",
+    "Onlypredeclared normal137wave records50/52/54; productioncurrentstep usesnativeSVG ratherthanthisindependentGIF.",
+    "Eight local nativeSVG samples, no newimagegen or directGIFgeneration.",
+    "GIFcentisecondtimes fit900ms but8frames approximate continuousnativeposes; cannot exactseek GIF.",
+    "Local12load/decode samples are not throttlednetwork/mobilehardware/FPS or wholeapp performance evidence.",
+    "StandaloneSVG and browser-rasterized sameimagePNG have exact RGBA; this does not compare against the older painted portraits."
+  ]
+}
