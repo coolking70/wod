@@ -254,8 +254,13 @@
         "rawRelative": "browser-v190-final/returning-playcheck.json"
       }
     ],
-    "all130HistoricalReportJSONStillByteExact": true,
-    "noJSONNormalizationOrFieldExclusionApplied": true
+    "noJSONNormalizationOrFieldExclusionApplied": true,
+    "historicalJSON": 130,
+    "actualReports": 124,
+    "otherStateObjects": 6,
+    "historicalCompatibilityPassedAtUnchangedOriginalBoundary": true,
+    "existingLegacy78BardTaunt6ExceptionRetained": true,
+    "noNewHistoricalException": true
   },
   "feature": {
     "authoredChapterNotVerifiedOriginalWoD": true,
@@ -275,11 +280,12 @@
       75
     ],
     "noNewSkillGearOrPermanentSupplyEconomy": true,
-    "old203CLIAndAll130ReportJSONRemainByteExact": true,
     "oneSummaryOnlyTwoCatalogueCounts37to38": true,
     "allSixViewportMotionChapterFlowsPassed": true,
     "additionalNatural6HeldWithThreeLivingEnemies": true,
-    "onlyCatalogueCountsChangedInNineOldNodeAndTwentyThreeOldBrowserTestsAndOneOldCLI": true
+    "onlyCatalogueCountsChangedInNineOldNodeAndTwentyThreeOldBrowserTestsAndOneOldCLI": true,
+    "old203CLIWholeBytesExact": true,
+    "historicalJSON130AtUnchangedOriginalBoundaryPassed": true
   },
   "art": {
     "noNewImagegenOrGIFGenerated": true,
@@ -345,7 +351,11 @@
   },
   "historicalCompatibility": {
     "JSON": 130,
-    "HTML": 33
+    "HTML": 33,
+    "actualReports": 124,
+    "otherStateObjects": 6,
+    "existingLegacy78BardTaunt6ExceptionRetained": true,
+    "noNewException": true
   },
   "recoveryBeforeGates": {
     "logicalZIPs": 53,
@@ -393,5 +403,6 @@
     "CLI": [
       "check-v156.mjs"
     ]
-  }
+  },
+  "verificationMaintenance": "Cached304 is recorded without body; all first200 and original behavior assertions retained; no game runtime changes."
 }
