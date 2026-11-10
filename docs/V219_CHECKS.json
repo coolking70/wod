@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "version": "0.219",
+  "baselineCommit": "77ec15e3249a646eac86b29037d80e384744179e",
+  "Node": {
+    "tests": 1974,
+    "pass": 1974,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "fullNodeSuiteRun": true,
+  "browser": {
+    "passed": true,
+    "total": 115,
+    "fullCurrentSuites": true,
+    "fullRegistrySize": 115,
+    "originalCheckpointAttempts": 115,
+    "versions": [
+      76,
+      77,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      186,
+      187,
+      189,
+      190,
+      192,
+      193,
+      195,
+      196,
+      198,
+      199,
+      201,
+      202,
+      203,
+      204,
+      205,
+      207,
+      208,
+      210,
+      211,
+      213,
+      214,
+      216,
+      217,
+      219
+    ]
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 211,
+    "checkedReferences": 260,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "syntax": {
+    "passed": true,
+    "sourceInputs": 1118,
+    "JS": 917,
+    "Python": 23
+  },
+  "runtimeDelta": {
+    "changedOld": [
+      "dist/expedition-command-preview.mjs",
+      "dist/expedition-engine.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-review.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs"
+    ],
+    "new": [
+      "dist/expedition-target-pick.mjs",
+      "scripts/browser-v219.cjs",
+      "scripts/check-v219.mjs",
+      "scripts/target-pick-cases.mjs",
+      "tests/target-pick.test.mjs"
+    ]
+  },
+  "canonicalFiles": {
+    "/workspace/wod-evidence/v219/browser-final/departure-final-four-raw-keys.json": "3ddc699a4b3b430302e24e160cf2b6bed71ea7febcb099f662f1f408e69a8824",
+    "/workspace/wod-evidence/v219/browser-final/departure-final-campaign.json": "369da12bdf2313cae99672eb1199a59b3d5d5acd95cb943667c3d931b28aec81"
+  },
+  "nativeState": {
+    "gold": 15225,
+    "next": 142,
+    "frozenReports": 5,
+    "frozenEncodedCharacters": 793208,
+    "noAdditional142Departure": true
+  },
+  "nativeStaticJSON": 204,
+  "all204ByteExactBoundToOriginalMasters": true,
+  "feature": {
+    "authoredOptInNotVerifiedOriginalWoD": true,
+    "unchangedDefault204ByteExact": true,
+    "unchangedRangesCostsAndInterception": true,
+    "fixedNaturalTutorial1Classic2And3OnlyNotBalanceEstimate": true,
+    "sourceTraceBeforeInterceptionAndCurrentHPVisible": true,
+    "inlineSVGExtraRequests": 0,
+    "newModuleNetwork": [
+      [
+        {
+          "url": "http://127.0.0.1:8002/expedition-target-pick.mjs",
+          "encoded": 4007,
+          "transfer": 4307,
+          "duration": 83.5
+        }
+      ],
+      [
+        {
+          "url": "http://127.0.0.1:8002/expedition-target-pick.mjs",
+          "encoded": 4007,
+          "transfer": 4307,
+          "duration": 104.70000004768372
+        }
+      ],
+      [
+        {
+          "url": "http://127.0.0.1:8002/expedition-target-pick.mjs",
+          "encoded": 4007,
+          "transfer": 4307,
+          "duration": 81.10000002384186
+        }
+      ],
+      [
+        {
+          "url": "http://127.0.0.1:8002/expedition-target-pick.mjs",
+          "encoded": 4007,
+          "transfer": 4307,
+          "duration": 73.09999996423721
+        }
+      ],
+      [
+        {
+          "url": "http://127.0.0.1:8002/expedition-target-pick.mjs",
+          "encoded": 4007,
+          "transfer": 4307,
+          "duration": 86.19999998807907
+        }
+      ],
+      [
+        {
+          "url": "http://127.0.0.1:8002/expedition-target-pick.mjs",
+          "encoded": 4007,
+          "transfer": 4307,
+          "duration": 45.89999997615814
+        }
+      ]
+    ]
+  },
+  "art": {
+    "noNewImagegenOrGIFGenerated": true,
+    "allExistingAssetsByteExactTo218": true,
+    "allExistingGUIAnimationAndSVGRegressionsIncluded": true,
+    "unsupportedPreferredTypeFallbackPNGOnly": true
+  },
+  "limitations": [
+    "Historical v186 two PNG/v201 six PNG and older ID/timestamp/source reconstruction gaps remain",
+    "Permanent shared supplies pending",
+    "Same cloud persistent evidence not offhost backup",
+    "Public Pages CONNECT403 not retried; actual old-site export migration unverified",
+    "Fixed natural2/3 and viewport repeats are not win rate, optimal strategy or real mobile performance"
+  ],
+  "cloudValidation": {
+    "path": "/workspace/wod-evidence/v219/VALIDATION.json",
+    "sha256": "b501d1b5cda1d968e7efc54dc75190e6f5b1fe7c9db2a9a2d9eea41cc2fb003a"
+  },
+  "historicalCompatibility": {
+    "JSON": 130,
+    "HTML": 33
+  },
+  "recoveryBeforeGates": {
+    "logicalZIPs": 53,
+    "treeFiles": 7054,
+    "wholeRoots": 20,
+    "independentDecoders": 2
+  }
+}

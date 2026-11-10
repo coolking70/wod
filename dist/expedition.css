@@ -116,6 +116,7 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .command .casting-media{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%;padding-left:23px;color:var(--gold)}.command .casting-media select{flex:0 1 auto;max-width:100%}.casting-media span{color:var(--muted);font-size:12px}@media(max-width:600px){.command .casting-media{padding-left:0}.command .casting-media span{width:100%}}
 .projectile.mental{stroke:#dfacff;stroke-width:5;stroke-dasharray:2 9;filter:drop-shadow(0 0 7px #b785e6)}.impact-ring.mental{stroke:#dfacff;stroke-dasharray:4 7}
 .command .casting-media input{width:84px;max-width:100%;min-width:0}
+.command .target-pick-control input[type=checkbox]{width:18px;height:18px;flex:0 0 18px}.command .target-pick-control svg{width:20px;height:18px;flex:0 0 20px;fill:none;stroke:currentColor;stroke-width:1.5}.target-pick-control b{font-size:12px}.target-pick-proof{border-left:2px solid var(--gold);padding-left:12px}
 
 .adventure-group{grid-column:1/-1;min-width:0}.adventure-group-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.camp-cycle .bar{flex-wrap:wrap}.cycle-receipt,.handoff-reward{padding:12px;background:#10212a;border-left:3px solid var(--gold)}@media(max-width:700px){.adventure-group-cards{grid-template-columns:1fr}.camp-cycle .bar button{max-width:100%}}
 

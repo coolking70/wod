@@ -1,3 +1,5 @@
+> v0.219同范围协同择敌：显式单体低当前生命选项、合法候选和择敌时HP证据，保留范围/集火/援护/费用及旧默认字节；1974完整Node、115完整GUI、204原CLI、130历史JSON/33HTML通过。项目改编，非已核实WoD规则。完整恢复后按授权安全集成main/Pages，准确SHA及built状态见云交付；永久共享补给待决定。 见[节点](docs/V219_COORDINATED_TARGETS.md)。
+
 试玩入口：[GitHub Pages](https://coolking70.github.io/wod/)。版本以站点release.json与部署记录为准；旧站与此地址的浏览器存档独立。
 
 > v0.218单人调配与救护完整节点：整合遗物持有人/明确调配、同阵营救护、敌方独立库存和医师SVG/真实GIF；1956完整Node、114完整GUI、204原CLI、130历史JSON/33HTML通过。三次新手出征实际培养闭环、受控渲染与网络检查完成；main/Pages精确集成与built结果见云交付。CAT53、两个v217目录及全部历史恢复依赖保护，永久补给待决定。 见[节点](docs/V218_FIELD_CARE_MILESTONE.md)。
