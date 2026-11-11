@@ -5,9 +5,9 @@ export const COATING_RULE='项目暂定：淬潮药4法力/1共享药草，占�
 export function acceptsCoating(s){return s?.kind==='attack'&&['melee','ranged'].includes(s.type)&&damageTypeOf(s)===s.type&&!s.manaDamage&&!s.disarm;}
 export function coatingRecipient(u){return !u.summoned&&!u.owner&&!u.mechanism&&Object.keys(u.skills||{}).some(k=>acceptsCoating(SKILLS[k]));}
 export function activeCoating(u,s){return acceptsCoating(s)?(u.effects||[]).find(e=>e.stat==='weaponDamage'&&e.active!==false&&e.value>0):undefined;}
-export function coatedHit(primary,effect,{multiplier,armorBefore,ignoreArmor=0,resistance,hp}){
+export function coatedHit(primary,effect,{multiplier,armorBefore,ignoreArmor=0,resistance,hp,hitArmor}){
  const armorIgnored=Math.min(Math.max(0,armorBefore),ignoreArmor),armor=armorBefore-armorIgnored,rolled=multiplier===0?0:effect.value,afterArmor=Math.max(0,rolled*multiplier-armor),damage=multiplier===0?0:Math.floor(afterArmor*(1-resistance/100));
- const parts=[{...primary,kind:'primary'}, {kind:'coating',damageType:'magic',base:effect.value,rolled,multiplier,armorBefore,armorIgnored,armor,resistance,afterArmor,unresisted:Math.floor(afterArmor),damage,effectId:effect.id,source:effect.source,skill:effect.skill}];
+ const parts=[{...primary,kind:'primary'}, {kind:'coating',...(hitArmor?{hitArmor}:{}),damageType:'magic',base:effect.value,rolled,multiplier,armorBefore,armorIgnored,armor,resistance,afterArmor,unresisted:Math.floor(afterArmor),damage,effectId:effect.id,source:effect.source,skill:effect.skill}];
  let remaining=hp;for(const p of parts){p.actual=Math.min(remaining,p.damage);p.overkill=p.damage-p.actual;remaining-=p.actual;}
  return {damageParts:parts,damage:parts.reduce((n,p)=>n+p.damage,0),actual:hp-remaining,hpAfter:remaining};
 }

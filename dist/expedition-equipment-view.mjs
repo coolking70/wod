@@ -1,3 +1,4 @@
+import {gradeArmorSummary} from './expedition-grade-armor.mjs';
 import{equipmentWorkbenchView}from'./expedition-equipment-workbench.mjs';
 import{lootAssignmentRehearsalView}from'./expedition-loot-rehearsal-view.mjs';
 import{equipmentRequirementFailures,equipmentRequirementsView}from'./expedition-equipment-requirements.mjs';
@@ -9,13 +10,13 @@ import {EQUIPMENT_SET_SLOTS} from './expedition-equipment-sets.mjs';
 import {GEAR,SLOTS,equipmentName,equipmentTotals,gearSupports,gearRequirementName,replaceEquipment} from './expedition-equipment.mjs';
 import {HEROES,ATTR,TYPES,SKILLS,DEFENSES,EXPEDITIONS} from './expedition-data.mjs';
 import {gearDifference,isRelic} from './expedition-loot.mjs';
-const itemImages={postbell:'assets/items/postbell.svg',filterveil:'assets/items/filterveil.svg'};
+const itemImages={lamellarcoat:'assets/items/lamellarcoat-v227.svg',deepweave:'assets/items/deepweave-v227.svg',postbell:'assets/items/postbell.svg',filterveil:'assets/items/filterveil.svg'};
 const itemArt=id=>Object.hasOwn(itemImages,id)?`<img class=equipment-art src="${itemImages[id]}" width="24" height="24" loading="lazy" decoding="async" alt="" aria-hidden="true">`:'';
 export function equipmentImpact(plan,current,next){
  return equipmentSetImpact(plan,current,replaceEquipment(current,next));
 }
 export function equipmentSource(id){return equipmentSources(id).map(s=>s.label).join('；');}
-export function equipmentStats(gear){const v=equipmentTotals(gear);return [`护甲 ${v.armor}`,...Object.entries(v.bonus).map(([k,n])=>`${ATTR[k]} ${n>=0?'+':''}${n}`),...Object.entries(v.resistances).map(([k,n])=>`${TYPES[k]}抗性 ${n>=0?'+':''}${n}%`),...Object.entries(v.ranks||{}).map(([k,n])=>`${(k.startsWith('skill:')?SKILLS[k.slice(6)]:DEFENSES[k.slice(8)]).name}等级 ${n>=0?'+':''}${n}`)].join(' · ');}
+export function equipmentStats(gear){const v=equipmentTotals(gear),grade=gradeArmorSummary(gear);return [`${grade?"基础护甲":"护甲"} ${v.armor}`,...Object.entries(v.bonus).map(([k,n])=>`${ATTR[k]} ${n>=0?'+':''}${n}`),...Object.entries(v.resistances).map(([k,n])=>`${TYPES[k]}抗性 ${n>=0?'+':''}${n}%`),...Object.entries(v.ranks||{}).map(([k,n])=>`${(k.startsWith('skill:')?SKILLS[k.slice(6)]:DEFENSES[k.slice(8)]).name}等级 ${n>=0?'+':''}${n}`),...(grade?[grade]:[])].join(' · ');}
 export function equipmentPanel(g,selected,filter,slot,plan,returnPreview=null,lootTrial=null,feedback='',warehouseItem='all'){
  const m=g.members.find(m=>m.id===selected),hero=HEROES.find(h=>h.id===selected);
  const stock=Object.entries(g.warehouse).filter(([,n])=>n>0),stockFilter=stock.some(([id])=>id===warehouseItem)?warehouseItem:'all';

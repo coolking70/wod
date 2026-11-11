@@ -1,0 +1,218 @@
+{
+  "version": "0.227",
+  "base": "e4ba18104943e629507f605b13a48101d700d084",
+  "main": "0cdd686e31eeff092184a97c449155918c59d037",
+  "fullNode": {
+    "tests": 2058,
+    "pass": 2058,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "relatedCompleteBrowserSuites": [
+    135,
+    163,
+    192,
+    195,
+    227
+  ],
+  "newSuiteRerunAfterNullSourceGuard": true,
+  "newGUIContexts": 6,
+  "freshCampaignRestore": true,
+  "all76OldWholeReportsExact": true,
+  "oldReportRoutes": 38,
+  "oldReportSeeds": [
+    1,
+    731
+  ],
+  "oldReportFieldExclusions": [],
+  "newArchiveRoundtrip": {
+    "passed": true,
+    "originalClaimedGuildBytesUnchanged": true,
+    "frozenCompleteReportExactAfterCurrentOwnerReequips": true,
+    "wholeOriginalReportSHA256": "f4da3a1720da21954c99a674c9a8caca698d9e7493ca6b56e904ae0368891a5d",
+    "bothRecordedGearSourcesPreserved": true,
+    "archiveCharacters": 55264,
+    "archiveEncoding": "gzip-units-v1-base64",
+    "previous226RejectsNewGearIDs": true,
+    "previous226Error": "队员配置无效",
+    "noDowngradeAssetRemovalOrUserSaveOverwrite": true
+  },
+  "pairedObservation": {
+    "passed": true,
+    "control": {
+      "seed": 7,
+      "won": true,
+      "cleared": 4,
+      "alive": 6,
+      "hp": [
+        {
+          "id": "a",
+          "hp": 102,
+          "maxHp": 126
+        },
+        {
+          "id": "b",
+          "hp": 86,
+          "maxHp": 102
+        },
+        {
+          "id": "c",
+          "hp": 98,
+          "maxHp": 98
+        },
+        {
+          "id": "d",
+          "hp": 76,
+          "maxHp": 102
+        },
+        {
+          "id": "e",
+          "hp": 93,
+          "maxHp": 102
+        },
+        {
+          "id": "f",
+          "hp": 96,
+          "maxHp": 110
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 7
+      },
+      "rounds": [
+        3,
+        3,
+        3,
+        6
+      ]
+    },
+    "actual7": {
+      "seed": 7,
+      "won": true,
+      "cleared": 4,
+      "alive": 6,
+      "hp": [
+        {
+          "id": "a",
+          "hp": 104,
+          "maxHp": 122
+        },
+        {
+          "id": "b",
+          "hp": 86,
+          "maxHp": 102
+        },
+        {
+          "id": "c",
+          "hp": 98,
+          "maxHp": 98
+        },
+        {
+          "id": "d",
+          "hp": 78,
+          "maxHp": 98
+        },
+        {
+          "id": "e",
+          "hp": 93,
+          "maxHp": 102
+        },
+        {
+          "id": "f",
+          "hp": 96,
+          "maxHp": 110
+        }
+      ],
+      "supplies": {
+        "herb": 11,
+        "rune": 0,
+        "arrow": 7
+      },
+      "rounds": [
+        3,
+        3,
+        3,
+        6
+      ]
+    },
+    "actual8": {
+      "seed": 8,
+      "won": true,
+      "cleared": 4,
+      "alive": 6,
+      "hp": [
+        {
+          "id": "a",
+          "hp": 126,
+          "maxHp": 126
+        },
+        {
+          "id": "b",
+          "hp": 102,
+          "maxHp": 102
+        },
+        {
+          "id": "c",
+          "hp": 68,
+          "maxHp": 98
+        },
+        {
+          "id": "d",
+          "hp": 98,
+          "maxHp": 98
+        },
+        {
+          "id": "e",
+          "hp": 102,
+          "maxHp": 102
+        },
+        {
+          "id": "f",
+          "hp": 110,
+          "maxHp": 110
+        }
+      ],
+      "supplies": {
+        "herb": 10,
+        "rune": 0,
+        "arrow": 6
+      },
+      "rounds": [
+        3,
+        3,
+        3,
+        6
+      ]
+    },
+    "sameAlreadyPurchasedAssetsXPTrainingIdentityAndSeed": true,
+    "controlWasNeverClaimed": true,
+    "noEnemyOrSeedSearch": true,
+    "notIsolatedArmorCausalityBecauseGearAlsoChangesAttributesAndResistances": true,
+    "notAWinRateEstimateOrUpgradeRecommendation": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 217,
+    "checkedReferences": 268,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "newNativeSVGBytes": {
+    "lamellarcoat-v227.svg": 283,
+    "deepweave-v227.svg": 331
+  },
+  "originalOldMediaSHA256Unchanged": true,
+  "full123BrowserAndHistorical130JSON33HTML204CLINotRerun": true,
+  "mainNotMerged": true,
+  "originalEvidence": "Public official item body confirms distinct normal/good/critical armor fields; use-count investigation confirms an already implemented structure.",
+  "adaptation": "Two fixed60gold shop armors, project damage-channel mapping, grade thresholds, bonuses, HP/MP/resistance tradeoffs and story are prototype design; only new item definitions enable the optional profile.",
+  "existingFlatArmorAndRNGPreservedForAllLegacy76Reports": true,
+  "permanentSupplyAndCustomHeroPending": true,
+  "pagesChanged": false,
+  "publicInteractionAndOldSiteMigrationUnverified": true
+}
