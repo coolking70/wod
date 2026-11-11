@@ -1,0 +1,51 @@
+{
+  "version": "0.223",
+  "kind": "complete-integration-candidate",
+  "runtimeCodeCommit": "a07cfe6f40443d1258a6e4edf533dafaf05d8982",
+  "acceptanceCommitDocumentationOnly": true,
+  "allNode": 2025,
+  "fullBrowserSuites": 119,
+  "successfulFullRegistryInvocations": 1,
+  "all204CLIByteExactToSealedV220": true,
+  "historicalJSON": 130,
+  "defaultOffHTML": 33,
+  "historySuccessfulScopes": [
+    82,
+    48
+  ],
+  "allSevenAuditInvocationSucceeded": false,
+  "allCurrentCompleteScopesPassed": true,
+  "newHistoryComparisonExceptions": false,
+  "oldOriginalZIPsFreshDualCold": 53,
+  "oldWholeTreesFreshDualCold": 61,
+  "oldWholeTreeFiles": 29622,
+  "fileBindingsFreshDualCold": 6426,
+  "currentFullMaster": {
+    "passed": true,
+    "archive": "/workspace/wod-delivery/v0.223-main-integration/wod-v223-integration-canonical.zip",
+    "archiveBytes": 677756885,
+    "archiveSHA256": "fea1269b688e84a3ae1ea0067ad6cf94dabc7add3b6e88e40ad51b930ff28033",
+    "files": 3996,
+    "images": 484,
+    "checkpoints": 119,
+    "logicalBytes": 4487782145,
+    "allOriginalZIPBytesSHAAndCRCVerified": true,
+    "allInnerRawFilesSHAAndCRCVerified": true,
+    "sourceFilesRechecked": true,
+    "sourceFilesRemoved": false
+  },
+  "currentThreeWholeRootColdRecoveryPassed": true,
+  "knownProtectedLegacyRowsPassed": 49000,
+  "strictFull49001LegacyPassed": false,
+  "unverifiedIndex": {
+    "path": "/tmp/wod-v212-pages-update-lhoiaum0/site/.git/index",
+    "bytes": 141165,
+    "sha256": "43df921c968a4450213f6414b20b447e963183f6c538f42585bfe0904ed762ac",
+    "mode": 384,
+    "mtimeNs": 1794255922847640839
+  },
+  "pagesChanged": false,
+  "publicInteractionVerified": false,
+  "oldSiteMigrationVerified": false,
+  "mainIntegrationIsSeparateTransaction": true
+}
