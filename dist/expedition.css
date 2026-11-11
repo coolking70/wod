@@ -218,3 +218,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 
 .attribute-projection{font-size:.85rem;max-width:25rem;overflow-wrap:anywhere;margin:.5rem 0}.attribute-projection>summary{cursor:pointer;color:var(--cyan)}.attribute-projection p{margin:.65em 0}.attribute-projection strong{color:var(--gold)}
 .course-default-install{margin:.8rem 0}.course-default-install button{max-width:100%;white-space:normal;text-align:left}.course-default-install p,.course-default-install li,.course-uniform-install p{overflow-wrap:anywhere}.course-default-install ul{padding-left:1.3rem}.course-uniform-install{margin-top:.8rem}
+
+.camp-secondary-retry{margin:14px 0;padding:12px 0 0;border-top:1px solid #34515a}.camp-secondary-retry p{margin:0 0 8px}.camp-secondary-retry small{display:block;margin-top:8px}.camp-secondary-retry button{max-width:100%;white-space:normal;overflow-wrap:anywhere}.adventure-heading .camp-cycle>.camp-secondary-retry{order:3}
