@@ -1,0 +1,523 @@
+{
+  "version": "0.229",
+  "base": "f2dab3c579ab1d767d39d5b1794492db74d51d96",
+  "targetedStagePassed": true,
+  "fullMilestonePassed": false,
+  "fullNodeNotRun": true,
+  "full125GUINotRun": true,
+  "originalV195NotRerunOrModifiedAndUnresolved": true,
+  "mainNotMerged": true,
+  "pagesNotTriggered": true,
+  "NodeRelated": {
+    "tests": 55,
+    "pass": 55,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "captureGuards": {
+    "tests": 15,
+    "pass": 15,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "uniqueRelatedNodeTotal": 70,
+  "newBrowser": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "entries": [
+          {
+            "entry": "restore",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "objective",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "next",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "member",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          }
+        ],
+        "repeatedFailedUndoRetainsRecordAndPersistedStrings": true,
+        "undoTargetExportExact": true,
+        "visibleFailedUndo": {
+          "focused": true,
+          "top": 131.296875,
+          "bottom": 160.1875,
+          "unobscured": true,
+          "overflow": false
+        },
+        "storageRecoveryThenExplicitRetryFourOriginalStringsExact": true,
+        "recordConsumedOnlyAfterSuccessfulPersistence": true,
+        "normal": null
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "entries": [
+          {
+            "entry": "restore",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "objective",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "next",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "member",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 131.296875,
+              "bottom": 160.1875,
+              "unobscured": true,
+              "overflow": false
+            }
+          }
+        ],
+        "repeatedFailedUndoRetainsRecordAndPersistedStrings": true,
+        "undoTargetExportExact": true,
+        "visibleFailedUndo": {
+          "focused": true,
+          "top": 131.296875,
+          "bottom": 160.1875,
+          "unobscured": true,
+          "overflow": false
+        },
+        "storageRecoveryThenExplicitRetryFourOriginalStringsExact": true,
+        "recordConsumedOnlyAfterSuccessfulPersistence": true,
+        "normal": null
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "entries": [
+          {
+            "entry": "restore",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "objective",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "next",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "member",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          }
+        ],
+        "repeatedFailedUndoRetainsRecordAndPersistedStrings": true,
+        "undoTargetExportExact": true,
+        "visibleFailedUndo": {
+          "focused": true,
+          "top": 212.078125,
+          "bottom": 240.96875,
+          "unobscured": true,
+          "overflow": false
+        },
+        "storageRecoveryThenExplicitRetryFourOriginalStringsExact": true,
+        "recordConsumedOnlyAfterSuccessfulPersistence": true,
+        "normal": {
+          "id": 116,
+          "won": true,
+          "alive": 6,
+          "fullReportPendingReloadUniqueClaimAndBackupExact": true
+        }
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "entries": [
+          {
+            "entry": "restore",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "objective",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "next",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "member",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          }
+        ],
+        "repeatedFailedUndoRetainsRecordAndPersistedStrings": true,
+        "undoTargetExportExact": true,
+        "visibleFailedUndo": {
+          "focused": true,
+          "top": 212.078125,
+          "bottom": 240.96875,
+          "unobscured": true,
+          "overflow": false
+        },
+        "storageRecoveryThenExplicitRetryFourOriginalStringsExact": true,
+        "recordConsumedOnlyAfterSuccessfulPersistence": true,
+        "normal": null
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "entries": [
+          {
+            "entry": "restore",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "objective",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "next",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "member",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          }
+        ],
+        "repeatedFailedUndoRetainsRecordAndPersistedStrings": true,
+        "undoTargetExportExact": true,
+        "visibleFailedUndo": {
+          "focused": true,
+          "top": 212.078125,
+          "bottom": 240.96875,
+          "unobscured": true,
+          "overflow": false
+        },
+        "storageRecoveryThenExplicitRetryFourOriginalStringsExact": true,
+        "recordConsumedOnlyAfterSuccessfulPersistence": true,
+        "normal": null
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "entries": [
+          {
+            "entry": "restore",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "objective",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "next",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          },
+          {
+            "entry": "member",
+            "normalLoadUndoFourStringsExact": true,
+            "failedLoadFourStringsUnchanged": true,
+            "failedDraftExportExact": true,
+            "visibleProblem": {
+              "focused": true,
+              "top": 212.078125,
+              "bottom": 240.96875,
+              "unobscured": true,
+              "overflow": false
+            }
+          }
+        ],
+        "repeatedFailedUndoRetainsRecordAndPersistedStrings": true,
+        "undoTargetExportExact": true,
+        "visibleFailedUndo": {
+          "focused": true,
+          "top": 212.078125,
+          "bottom": 240.96875,
+          "unobscured": true,
+          "overflow": false
+        },
+        "storageRecoveryThenExplicitRetryFourOriginalStringsExact": true,
+        "recordConsumedOnlyAfterSuccessfulPersistence": true,
+        "normal": null
+      },
+      {
+        "case": "edited-draft-after-failed-undo",
+        "differentSuccessfulDraftSaveClearsPendingStatusButPreservesOriginalUndoTarget": true,
+        "explicitUndoRestoresOriginalSourceExactly": true
+      },
+      {
+        "case": "pending116-old115-draft",
+        "differentPending116UnchangedThroughOldReportLoadFailedUndoRetry": true,
+        "actualPending116ReportAndUniqueClaimExact": true
+      }
+    ],
+    "errors": [],
+    "limits": "Six width/motion copies reuse the same legitimately earned historical115 fixture: won with5alive, survive goal unmet. Normal116 is continued in one390px profile; pending116 is a separate boundary copy, not independent balance data. All quota failures are local isolated simulations, no multi-page policy or race fix. Undo record remains session memory; export before closing an unsaved page. Full125-suite milestone not run."
+  },
+  "completeOriginalGUIs": [
+    168,
+    223
+  ],
+  "allOriginalGUIsPassed": true,
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 218,
+    "checkedReferences": 269,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "newFiles": [
+      "scripts/browser-v230.cjs"
+    ],
+    "allOtherOriginalDistScriptsTestsAndAssetsExact": true,
+    "originalV195AssertionUnchanged": true,
+    "existingSaveFunctionByteExact": true,
+    "existingPersistFunctionByteExact": true,
+    "noWriteModelChoiceImplemented": true,
+    "oldFull123GUIKnownFailureStillV195": true,
+    "currentRegistrySize": 125,
+    "completeGateNotRun": true
+  },
+  "allHistoricalDualColdNotRerun": true,
+  "strict49001Passed": false,
+  "oldV212DerivedIndexUnverified": true,
+  "sourceAndCurrentEvidenceColdSeparateCloudTransactions": true,
+  "firstNewGUIFailure": {
+    "completedContexts": 6,
+    "failedSeventh": "edited-draft-after-failed-undo",
+    "eighthNotExecuted": true,
+    "exitCode": 1,
+    "exactBehavioralAssertionsUnchanged": true,
+    "allSourceFailureImagesAndStringsRetained": true
+  },
+  "observationScope": {
+    "history115Won": true,
+    "alive": 5,
+    "goal": "survive",
+    "goalMet": false,
+    "sourceAndReportDifferOnlyBySeed": true,
+    "noCanonicalPlayerSaveTouched": true
+  }
+}
