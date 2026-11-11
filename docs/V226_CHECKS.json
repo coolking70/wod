@@ -1,0 +1,49 @@
+{
+  "version": "0.226",
+  "base": "0cdd686e31eeff092184a97c449155918c59d037",
+  "main": "0cdd686e31eeff092184a97c449155918c59d037",
+  "targetedNode": {
+    "tests": 60,
+    "pass": 60,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "relatedCompleteBrowserSuites": [
+    94,
+    190,
+    220,
+    225
+  ],
+  "newBrowserSuite": 226,
+  "newGUIContexts": 6,
+  "crossPagePendingGuard": {
+    "passed": true,
+    "oldPagePendingGuardPreventsPreparationOverwrite": true,
+    "fourStorageKeysByteExact": true,
+    "thirdChapterStillNotCredited": true,
+    "refreshShowsThreeDisabledActions": true,
+    "errors": []
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 216,
+    "checkedReferences": 265,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "allFiveRelatedSuitesPassed": true,
+  "full122BrowserAndFullNodeNotRun": true,
+  "fullHistorical130JSON33HTML204CLINotRerun": true,
+  "priorCompleteMain225ScopeRemainsDistinct": true,
+  "claimedChapterProgressOnly": true,
+  "formalFifthReportAndPendingClaimByteExact": true,
+  "sixthEarnedTrainingAndClaimAPITestOnly": true,
+  "noBattleRewardCostSaveSchemaOrMediaAssetChange": true,
+  "designBasis": "Project-authored chapter progression and navigation grounded in an earned four-expedition observation, not a WoD unlock rule or live-server number claim",
+  "pagesChanged": false,
+  "publicInteractionAndOldOriginMigrationUnverified": true,
+  "permanentSupplyAndCustomHeroPending": true
+}

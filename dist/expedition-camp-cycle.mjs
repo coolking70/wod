@@ -1,3 +1,4 @@
+import {chapterJourney} from './expedition-chapter-journey.mjs';
 import {postQuestProgress} from './expedition-post-quest.mjs';
 import {campJourneyProgress} from './expedition-camp-journeys.mjs';
 import {bookProof} from './expedition-book.mjs';
@@ -14,7 +15,7 @@ export const ADVENTURE_GROUPS=[
 export function readCycleGuild(storage){const raw=storage.getItem(GUILD_KEY);return raw?migrateGuild(JSON.parse(raw)):newGuild();}
 export function campObjective(g){
  validateGuild(g);const own=g.members.find(m=>m.id===g.command?.heroId),last=g.history[0]||null,cleared=ADVENTURES.filter(a=>g.clears[a.id]>0).length;
- const make=(stage,title,text,action,value,label)=>({stage,title,text,primary:{action,value,label},last,cleared,total:ADVENTURES.length,journeys:campJourneyProgress(g),heroId:own?.id||null,introSkipped:cleared>0&&!g.clears.tutorial});
+ const make=(stage,title,text,action,value,label)=>({stage,title,text,primary:{action,value,label},last,cleared,total:ADVENTURES.length,journeys:campJourneyProgress(g),heroId:own?.id||null,chapters:chapterJourney(g),introSkipped:cleared>0&&!g.clears.tutorial});
  if(g.pending)return make('pending','先接回这次远征','第'+g.pending.id+'次远征已记录，奖励仍待领取；领取前不会再次出征或改变永久资产。','pending','','查看待领取战报');
  if(!own)return make('hero','选择你在队伍中的英雄','先确定自己的英雄，再以公会实际装备和训练正式出发；伙伴仍可托管。','hero','','选择我的英雄');
  if(g.postQuest&&!g.postQuest.ending){const p=postQuestProgress(g);return make(p.ready?'postquest-delivery':'postquest',p.ready?'把三段路签交给等信的人':'继续归信航程',p.reason,'journey','postquest',p.ready?'选择归信交付':'查看当前任务与通路');}
@@ -29,6 +30,7 @@ export function campObjective(g){
  if(!g.harborStory?.ending)return make('letter','把实际归航写成回信','灯塔来信复用已领取的章节、港口和委托成果，完成后再亲自选择结局；不会自动代领。','journey','harbor','继续灯塔来信');
  if(!g.foundryStory?.ending)return make('foundry','给最后一班守望交接','铸库归航串联现有地城、目标与守望。查看尚缺的一段，选择自己的归航结局。','journey','foundry','继续铸库归航');
  if(!g.clocktowerStory?.ending)return make('clocktower-story','给错过的钟声一个去处','潮刻余响连接钟楼留存与书库、温室或哨垒的全员攻略；任选一处带回自己的回答，不额外消耗永久材料。','journey','clocktower','继续潮刻余响');
+ if(!g.clears.returningtide)return make('thirdchapter','让归航抵达黎明','第三章有四场连续远征，串联援护、蓄能、坚守与生命阶段；先核对当前队伍，也可继续自由探索。','prepare','returningtide','准备第三章归潮黎明');
  return make('explore','选择下一项探索目标','三段故事已完成。按主题浏览未通关路线、职责挑战或有限海图；没有新门槛或额外奖励。','map','','浏览全部探索');
 }
 export function pendingOrigin(g){validateGuild(g);if(!g.pending)throw Error('没有待结算远征');return {source:'pending',id:g.pending.id,signature:JSON.stringify(g.pending)};}

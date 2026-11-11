@@ -307,7 +307,9 @@ export function mountGuild({assertPreparation=()=>{},getConfig,loadConfig,showRe
  document.querySelector('header [data-view="guild"]').onclick=open;
  document.querySelector('#guild-run').onclick=()=>{open('departure');root.querySelector('.guild-tabs')?.scrollIntoView({block:'start'});};
  function cycle(action,value=''){if(action==='hero'||action==='camp'){open('hero');root.querySelector('#guild-recovery-title')?.focus();return;}read();if(!g)throw Error('公会暂不可用，请先检查或恢复备份');
-  if(action==='prepare'){const assigned=routeFocusPreparation(localStorage,value,getConfig(),g,{seed:getConfig().seed}),c=assigned.config;loadConfig(c,undefined,false,{overview:true});inform((assigned.plan?'已准备本路线分配的「'+assigned.plan.name+'」；请核对实际公会资产与伙伴职责。':'已准备现有路线；请核对实际公会队伍后正式出征，实验不发成长奖励。')+routeFocusNotice(assigned));}
+  if(action==='chapter'&&!['chapter','harbor','returningtide'].includes(value))throw Error('章节不存在，准备未改变');
+  if(action==='chapter'&&g.pending)throw Error('请先领取当前远征，再选择章节准备');
+  if(action==='prepare'||action==='chapter'){const assigned=routeFocusPreparation(localStorage,value,getConfig(),g,{seed:getConfig().seed}),c=assigned.config;loadConfig(c,undefined,false,{overview:true});inform((assigned.plan?'已准备本路线分配的「'+assigned.plan.name+'」；请核对实际公会资产与伙伴职责。':'已准备现有路线；请核对实际公会队伍后正式出征，实验不发成长奖励。')+routeFocusNotice(assigned));}
   else if(action==='retry'){const c=historyConfig(g,Number(value));loadConfig(c,undefined,false,{overview:true});inform('已载入第'+value+'次的'+(c.objective?'目标与':'')+'出发方案；当前资产与伙伴职责保留，再次正式出征分配新种子。');}
   else if(action==='pending'){if(!g.pending){open('departure');return;}showReport(pendingReport(g),pendingOrigin(g));}
   else if(action==='training-draft'){if(!g.members.some(m=>m.id===value))throw Error('该试演队员已不在公会，请重新选择');selected=value;open('team');if(!focusTrainingRehearsal(root))jumpGrowth(root,'plan');}
