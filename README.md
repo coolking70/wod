@@ -1,3 +1,5 @@
+> v0.225完整验收候选：2036完整Node、一次121套完整GUI、204CLI原字节、130历史JSON/33HTML与声明范围恢复门禁通过；旧派生Git索引一项原字节仍未核实。main精确事务见云交付，Pages只读未发布。见[完整说明](docs/V225_FULL_ACCEPTANCE.md)。
+
 > v0.225开发：培养草案键盘连续、带来源/费用的试演与报告返回，跨页变化明确标过期；92相关Node和v165/v224/v225三套完整相关GUI通过。未跑新全121套门禁，main仍完整验收v223，Pages未更新。见[说明](docs/V225_TRAINING_DECISION_FLOW.md)。
 
 > v0.224开发：活动委托中可载入已领取的止步方案，保留任务主入口及四键撤销。80相关Node、v94/v124/v224三套相关GUI通过；未做新全120套门禁。main为完整验收v223（ba52b5b），Pages未更新。见[说明](docs/V224_CAMP_QUEST_RETRY.md)。
