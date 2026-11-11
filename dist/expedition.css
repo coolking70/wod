@@ -220,3 +220,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .course-default-install{margin:.8rem 0}.course-default-install button{max-width:100%;white-space:normal;text-align:left}.course-default-install p,.course-default-install li,.course-uniform-install p{overflow-wrap:anywhere}.course-default-install ul{padding-left:1.3rem}.course-uniform-install{margin-top:.8rem}
 
 .camp-secondary-retry{margin:14px 0;padding:12px 0 0;border-top:1px solid #34515a}.camp-secondary-retry p{margin:0 0 8px}.camp-secondary-retry small{display:block;margin-top:8px}.camp-secondary-retry button{max-width:100%;white-space:normal;overflow-wrap:anywhere}.adventure-heading .camp-cycle>.camp-secondary-retry{order:3}
+
+#training-rehearsal-heading:focus-visible{outline:2px solid var(--gold);outline-offset:5px}.training-rehearsal>button{max-width:100%;white-space:normal}.training-rehearsal[data-training-stale="true"]{border-left:3px solid var(--gold);padding-left:12px}

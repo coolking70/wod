@@ -1,0 +1,140 @@
+{
+  "version": "0.225",
+  "baseDevelopment": "9b57192b9387395e2b206632ddcfdf841fb9ae4f",
+  "main": "ba52b5b1b1e834707db71f4c75d54f7fb36e947c",
+  "targetedNode": {
+    "tests": 92,
+    "pass": 92,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "relatedCompleteBrowserSuites": [
+    165,
+    224,
+    225
+  ],
+  "newGUIContexts": 6,
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "motionModes": [
+    "no-preference",
+    "reduce"
+  ],
+  "rows": [
+    {
+      "width": 1440,
+      "motion": "no-preference",
+      "earnedXP": 55,
+      "threeDraftChangesRetainExactSelectFocus": true,
+      "rehearsalFocusAndTwoReportReturnTrips": true,
+      "fourKeysUnchangedBeforeExplicitPayment": true,
+      "paidXP": 20,
+      "memberXPAfterPayment": 35,
+      "formal3WholeReportMatchesRehearsal": true,
+      "formalWon": true,
+      "formalAlive": 6,
+      "claimAndBackupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1440,
+      "motion": "reduce",
+      "earnedXP": 55,
+      "threeDraftChangesRetainExactSelectFocus": true,
+      "rehearsalFocusAndTwoReportReturnTrips": true,
+      "fourKeysUnchangedBeforeExplicitPayment": true,
+      "paidXP": 20,
+      "memberXPAfterPayment": 35,
+      "formal3WholeReportMatchesRehearsal": true,
+      "formalWon": true,
+      "formalAlive": 6,
+      "claimAndBackupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "motion": "no-preference",
+      "earnedXP": 55,
+      "threeDraftChangesRetainExactSelectFocus": true,
+      "rehearsalFocusAndTwoReportReturnTrips": true,
+      "fourKeysUnchangedBeforeExplicitPayment": true,
+      "paidXP": 20,
+      "memberXPAfterPayment": 35,
+      "formal3WholeReportMatchesRehearsal": true,
+      "formalWon": true,
+      "formalAlive": 6,
+      "claimAndBackupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "motion": "reduce",
+      "earnedXP": 55,
+      "threeDraftChangesRetainExactSelectFocus": true,
+      "rehearsalFocusAndTwoReportReturnTrips": true,
+      "fourKeysUnchangedBeforeExplicitPayment": true,
+      "paidXP": 20,
+      "memberXPAfterPayment": 35,
+      "formal3WholeReportMatchesRehearsal": true,
+      "formalWon": true,
+      "formalAlive": 6,
+      "claimAndBackupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 320,
+      "motion": "no-preference",
+      "earnedXP": 55,
+      "threeDraftChangesRetainExactSelectFocus": true,
+      "rehearsalFocusAndTwoReportReturnTrips": true,
+      "fourKeysUnchangedBeforeExplicitPayment": true,
+      "paidXP": 20,
+      "memberXPAfterPayment": 35,
+      "formal3WholeReportMatchesRehearsal": true,
+      "formalWon": true,
+      "formalAlive": 6,
+      "claimAndBackupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 320,
+      "motion": "reduce",
+      "earnedXP": 55,
+      "threeDraftChangesRetainExactSelectFocus": true,
+      "rehearsalFocusAndTwoReportReturnTrips": true,
+      "fourKeysUnchangedBeforeExplicitPayment": true,
+      "paidXP": 20,
+      "memberXPAfterPayment": 35,
+      "formal3WholeReportMatchesRehearsal": true,
+      "formalWon": true,
+      "formalAlive": 6,
+      "claimAndBackupReloadExact": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "crossPage": true,
+  "actualInitialEarningsXP": 55,
+  "explicitTrainingCostXP": 20,
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 215,
+    "checkedReferences": 264,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "full121GUIAndFullNodeNotRun": true,
+  "fullHistorical130JSON33HTML204CLINotRerun": true,
+  "baseV223CompleteGatesRemainDistinct": true,
+  "noCombatCostRewardOrSaveSchemaChange": true,
+  "designBasis": "Project interface repair observed with actual earned empty-profile progression; no new live-server rule claims",
+  "noMediaAssetChange": true,
+  "pagesChanged": false,
+  "publicInteractionAndOldOriginMigrationUnverified": true,
+  "permanentSupplyAndCustomHeroPending": true
+}

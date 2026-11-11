@@ -3,6 +3,10 @@ import {guildConfig,applyTrainingPlan} from './expedition-guild.mjs';
 import {quoteTrainingPlan} from './expedition-training-plan.mjs';
 import {simulate,buildParty,defenseProfile,current,skillLevel} from './expedition-engine.mjs';
 import {personalReport} from './expedition-personal.mjs';
+export function trainingRehearsalState(trial,current){
+ if(!trial)return null;
+ return {value:trial.value,stale:trial.signature!==current.signature||current.guildRaw!==current.storedGuildRaw||trial.preparationRaw!==current.preparationRaw};
+}
 // Two independent simulations of actual assets; neither run is a guild departure.
 export function rehearseTrainingPlan(g,tactics,id,plan){
  if(!g.lineup.includes(id))throw Error('该队员当前未出战，请先安排出战再试演培养草案');
