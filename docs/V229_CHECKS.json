@@ -1,0 +1,525 @@
+{
+  "version": "0.229",
+  "base": "2cf7b6b83d5d87d604f1baea826678c4d3729ba6",
+  "targetedStagePassed": true,
+  "fullMilestonePassed": false,
+  "fullNodeNotRun": true,
+  "full124GUINotRun": true,
+  "originalV195NotRerunOrModifiedAndUnresolved": true,
+  "mainNotMerged": true,
+  "pagesNotTriggered": true,
+  "NodeRelated": {
+    "tests": 74,
+    "pass": 74,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "captureGuards": {
+    "tests": 15,
+    "pass": 15,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "uniqueRelatedNodeTotal": 89,
+  "newBrowser": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "metrics": [
+          {
+            "action": "slot-shortcut",
+            "focused": true,
+            "top": 77.609375,
+            "bottom": 106.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "accessories",
+            "focused": true,
+            "top": 77.5,
+            "bottom": 112.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "armor",
+            "focused": true,
+            "top": 77.5,
+            "bottom": 112.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "shop",
+            "focused": true,
+            "top": 77.5,
+            "bottom": 112.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "paid-coat",
+            "focused": true,
+            "top": 77.296875,
+            "bottom": 102.796875,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "actual-worn",
+            "focused": true,
+            "top": 77.6875,
+            "bottom": 106.578125,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          }
+        ],
+        "readOnlyNavigationZeroBusinessWrites": true,
+        "twoReal60GoldPurchasesAndTwoFreeReequipsExact": true,
+        "removedShopCardLeavesVisibleFocusedPaidReceipt": true,
+        "otherThreeStringsUnchangedUntilExplicitPrepare": true,
+        "heroIdentityUnchanged": true,
+        "normal7": null
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "metrics": [
+          {
+            "action": "slot-shortcut",
+            "focused": true,
+            "top": 77.609375,
+            "bottom": 106.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "accessories",
+            "focused": true,
+            "top": 77.5,
+            "bottom": 112.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "armor",
+            "focused": true,
+            "top": 77.5,
+            "bottom": 112.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "shop",
+            "focused": true,
+            "top": 77.5,
+            "bottom": 112.5,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "paid-coat",
+            "focused": true,
+            "top": 77.296875,
+            "bottom": 102.796875,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          },
+          {
+            "action": "actual-worn",
+            "focused": true,
+            "top": 77.6875,
+            "bottom": 106.578125,
+            "unobscured": true,
+            "sticky": true,
+            "tabsBottom": 63.796875,
+            "overflow": false
+          }
+        ],
+        "readOnlyNavigationZeroBusinessWrites": true,
+        "twoReal60GoldPurchasesAndTwoFreeReequipsExact": true,
+        "removedShopCardLeavesVisibleFocusedPaidReceipt": true,
+        "otherThreeStringsUnchangedUntilExplicitPrepare": true,
+        "heroIdentityUnchanged": true,
+        "normal7": null
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "metrics": [
+          {
+            "action": "slot-shortcut",
+            "focused": true,
+            "top": 14.390625,
+            "bottom": 43.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1712.5625,
+            "overflow": false
+          },
+          {
+            "action": "accessories",
+            "focused": true,
+            "top": 14.28125,
+            "bottom": 49.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1761.5625,
+            "overflow": false
+          },
+          {
+            "action": "armor",
+            "focused": true,
+            "top": 14.28125,
+            "bottom": 49.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1761.5625,
+            "overflow": false
+          },
+          {
+            "action": "shop",
+            "focused": true,
+            "top": 14.28125,
+            "bottom": 49.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1761.5625,
+            "overflow": false
+          },
+          {
+            "action": "paid-coat",
+            "focused": true,
+            "top": 14.265625,
+            "bottom": 39.765625,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1893.96875,
+            "overflow": false
+          },
+          {
+            "action": "actual-worn",
+            "focused": true,
+            "top": 13.515625,
+            "bottom": 42.40625,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -189.96875,
+            "overflow": false
+          }
+        ],
+        "readOnlyNavigationZeroBusinessWrites": true,
+        "twoReal60GoldPurchasesAndTwoFreeReequipsExact": true,
+        "removedShopCardLeavesVisibleFocusedPaidReceipt": true,
+        "otherThreeStringsUnchangedUntilExplicitPrepare": true,
+        "heroIdentityUnchanged": true,
+        "normal7": {
+          "fullReportPendingReloadUniqueClaimAndBackupExact": true,
+          "seed": 7,
+          "won": true,
+          "alive": 6,
+          "samePreparedAssetsAndFullReportAsV227": true
+        }
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "metrics": [
+          {
+            "action": "slot-shortcut",
+            "focused": true,
+            "top": 14.390625,
+            "bottom": 43.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1712.5625,
+            "overflow": false
+          },
+          {
+            "action": "accessories",
+            "focused": true,
+            "top": 14.28125,
+            "bottom": 49.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1761.5625,
+            "overflow": false
+          },
+          {
+            "action": "armor",
+            "focused": true,
+            "top": 14.28125,
+            "bottom": 49.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1761.5625,
+            "overflow": false
+          },
+          {
+            "action": "shop",
+            "focused": true,
+            "top": 14.28125,
+            "bottom": 49.28125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1761.5625,
+            "overflow": false
+          },
+          {
+            "action": "paid-coat",
+            "focused": true,
+            "top": 14.265625,
+            "bottom": 39.765625,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1893.96875,
+            "overflow": false
+          },
+          {
+            "action": "actual-worn",
+            "focused": true,
+            "top": 13.515625,
+            "bottom": 42.40625,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -189.96875,
+            "overflow": false
+          }
+        ],
+        "readOnlyNavigationZeroBusinessWrites": true,
+        "twoReal60GoldPurchasesAndTwoFreeReequipsExact": true,
+        "removedShopCardLeavesVisibleFocusedPaidReceipt": true,
+        "otherThreeStringsUnchangedUntilExplicitPrepare": true,
+        "heroIdentityUnchanged": true,
+        "normal7": null
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "metrics": [
+          {
+            "action": "slot-shortcut",
+            "focused": true,
+            "top": 13.5625,
+            "bottom": 42.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1884.375,
+            "overflow": false
+          },
+          {
+            "action": "accessories",
+            "focused": true,
+            "top": 14.453125,
+            "bottom": 49.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1932.375,
+            "overflow": false
+          },
+          {
+            "action": "armor",
+            "focused": true,
+            "top": 14.453125,
+            "bottom": 49.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1932.375,
+            "overflow": false
+          },
+          {
+            "action": "shop",
+            "focused": true,
+            "top": 14.453125,
+            "bottom": 49.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1979.375,
+            "overflow": false
+          },
+          {
+            "action": "paid-coat",
+            "focused": true,
+            "top": 14.4375,
+            "bottom": 39.9375,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -2112.375,
+            "overflow": false
+          },
+          {
+            "action": "actual-worn",
+            "focused": true,
+            "top": 14.109375,
+            "bottom": 43,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -189.375,
+            "overflow": false
+          }
+        ],
+        "readOnlyNavigationZeroBusinessWrites": true,
+        "twoReal60GoldPurchasesAndTwoFreeReequipsExact": true,
+        "removedShopCardLeavesVisibleFocusedPaidReceipt": true,
+        "otherThreeStringsUnchangedUntilExplicitPrepare": true,
+        "heroIdentityUnchanged": true,
+        "normal7": null
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "metrics": [
+          {
+            "action": "slot-shortcut",
+            "focused": true,
+            "top": 13.5625,
+            "bottom": 42.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1884.375,
+            "overflow": false
+          },
+          {
+            "action": "accessories",
+            "focused": true,
+            "top": 14.453125,
+            "bottom": 49.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1932.375,
+            "overflow": false
+          },
+          {
+            "action": "armor",
+            "focused": true,
+            "top": 14.453125,
+            "bottom": 49.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1932.375,
+            "overflow": false
+          },
+          {
+            "action": "shop",
+            "focused": true,
+            "top": 14.453125,
+            "bottom": 49.453125,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -1979.375,
+            "overflow": false
+          },
+          {
+            "action": "paid-coat",
+            "focused": true,
+            "top": 14.4375,
+            "bottom": 39.9375,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -2112.375,
+            "overflow": false
+          },
+          {
+            "action": "actual-worn",
+            "focused": true,
+            "top": 14.109375,
+            "bottom": 43,
+            "unobscured": true,
+            "sticky": false,
+            "tabsBottom": -189.375,
+            "overflow": false
+          }
+        ],
+        "readOnlyNavigationZeroBusinessWrites": true,
+        "twoReal60GoldPurchasesAndTwoFreeReequipsExact": true,
+        "removedShopCardLeavesVisibleFocusedPaidReceipt": true,
+        "otherThreeStringsUnchangedUntilExplicitPrepare": true,
+        "heroIdentityUnchanged": true,
+        "normal7": null
+      },
+      {
+        "case": "quota-after-valid-purchase",
+        "failedSavePreservesAllExactStrings": true,
+        "previousSuccessReceiptRemovedAndNoNewFalseSuccess": true
+      },
+      {
+        "case": "pending-view-only",
+        "filtersRemainKeyboardReachable": true,
+        "allEquipActionsDisabled": true,
+        "fourKeysZeroWrites": true
+      }
+    ],
+    "errors": [],
+    "limits": "Six viewport/motion copies reuse the same earned-six fixture; one390px context continues normal7. No physical-device measurement, balance estimate or concurrency fix. Original v195 assertion and known failure retained; full124-suite gate not run."
+  },
+  "completeOriginalGUIs": [
+    163,
+    216,
+    227
+  ],
+  "allOriginalGUIsPassed": true,
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 218,
+    "checkedReferences": 269,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs"
+    ],
+    "newFiles": [
+      "dist/expedition-equipment-change.mjs",
+      "scripts/browser-v229.cjs",
+      "tests/equipment-change.test.mjs"
+    ],
+    "allOtherOriginalDistScriptsTestsAndAssetsExact": true,
+    "originalV195AssertionUnchanged": true,
+    "existingSaveFunctionByteExact": true,
+    "noWriteModelChoiceImplemented": true,
+    "oldFull123GUIKnownFailureStillV195": true,
+    "currentRegistrySize": 124,
+    "completeGateNotRun": true
+  },
+  "allHistoricalDualColdNotRerun": true,
+  "strict49001Passed": false,
+  "oldV212DerivedIndexUnverified": true,
+  "sourceAndCurrentEvidenceColdSeparateCloudTransactions": true
+}

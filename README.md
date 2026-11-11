@@ -1,3 +1,5 @@
+> v0.229装备购买连续操作定向通过：89相关Node、8新GUI场景及完整原GUI v163/v216/v227；付款就地回执、免费换回与筛选焦点已核对。未跑全124GUI；v195跨页覆盖仍未解决，main保持v0.225，写入模型待用户选择。见[说明](docs/V229_EQUIPMENT_DECISION_FLOW.md)。
+
 > v0.228整合门禁：2058完整Node、130历史JSON/33HTML通过；123全GUI为122通过/1失败（v195跨页覆盖），main保持完整验收v0.225。204CLI为203原字节＋1新增章节字段完整核对，单页同一收益轨迹1–8均六人生还。写入模型待决，Pages只读。见[记录](docs/V228_FULL_ACCEPTANCE.md)及[写入模型](docs/DECISION_MULTITAB_WRITES.md)。
 
 > v0.227开发：新增两件固定商店防具的命中品质护甲，配装/战报明确三档取舍；2058完整Node、5套相关GUI与76旧完整报告原字节验证通过。未运行123全GUI或合并main，Pages未更新。见[说明](docs/V227_GRADE_ARMOR.md)。
