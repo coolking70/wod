@@ -1,0 +1,464 @@
+{
+  "version": "0.228",
+  "runtimeSource": "d47293179cc5993e455222f0fc4673bb1363e874",
+  "completeMilestonePassed": false,
+  "mainMergeAttempted": false,
+  "main": "0cdd686e31eeff092184a97c449155918c59d037",
+  "functional": {
+    "source": "d47293179cc5993e455222f0fc4673bb1363e874",
+    "fullNode": {
+      "tests": 2058,
+      "pass": 2058,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "fullGUI": {
+      "executed": 123,
+      "passed": 122,
+      "failed": [
+        195
+      ],
+      "gatePassed": false
+    },
+    "checkpointDataIntegrityPassed": true,
+    "CLI": {
+      "compared": 204,
+      "byteExact": 203,
+      "newChapterFieldsFullyChecked": 2,
+      "allCompatibilityChecksPassed": true
+    },
+    "allFrozenDistScriptsTestsUnchanged": true,
+    "spaceReserve1GiBHeld": true,
+    "completeMilestonePassed": false,
+    "mainAndPagesNotChanged": true,
+    "sourceOfActualDataSafetyBlock": "v195 external write visibility window reproduced in isolated probe195-v2; not repaired"
+  },
+  "historicalJSON": 130,
+  "defaultOffHTML": 33,
+  "historyPassed": true,
+  "controlledConcurrencyResearch": {
+    "checkedAtUTC": "2026-11-11T19:38:56.187168+00:00",
+    "observedProbe": "/workspace/wod-evidence/v228-full/runs/probe195-v2/capture/PROBE195.json",
+    "observedProbeSHA256": "4ea5ff4746037d82aaaa5566c91eebe517e5c89347dc4ebaa7fb19e7f7f3ddae",
+    "immediateExamples": 5,
+    "immediateOverwrites": 3,
+    "visiblePreconditionExamples": 5,
+    "visiblePreconditionRejections": 5,
+    "notAnIncidenceEstimate": true,
+    "renderProcessIDsNotRecorded": true,
+    "example": {
+      "expectedForeign": {
+        "gold": 14915,
+        "postbell": 27,
+        "beaconrod": 1,
+        "cWeapon": "focus"
+      },
+      "atClick": {
+        "gold": 14895,
+        "postbell": 28,
+        "beaconrod": 1,
+        "cWeapon": "focus"
+      },
+      "afterClick": {
+        "gold": 14895,
+        "postbell": 28,
+        "beaconrod": 0,
+        "cWeapon": "beaconrod"
+      },
+      "clickAt": 2908.2999999970198,
+      "storageEvents": [
+        {
+          "at": 3137.1999999955297,
+          "value": {
+            "gold": 14915,
+            "postbell": 27,
+            "beaconrod": 1,
+            "cWeapon": "focus"
+          }
+        }
+      ],
+      "originalFixtureOnly": true
+    },
+    "originalFirstFullFailureHasNoStorageSnapshot": true,
+    "originalFirstFailureStorageStateNotReconstructed": true,
+    "registered195AssertionUnchanged": true,
+    "registered195SourceSHA256": "5c73c51e77162d5a8f8c0cf7c032cf39e4913a456a62061eb2627b4c5072ef6f",
+    "standards": [
+      {
+        "url": "https://html.spec.whatwg.org/multipage/webstorage.html#introduction-15",
+        "bodyOpened": true,
+        "scope": "Local storage cross-agent-cluster locking is not defined; storage events are queued tasks. This supports the concurrency limitation, not a claim that a browser violated the specification."
+      },
+      {
+        "url": "https://www.w3.org/TR/web-locks/",
+        "bodyOpened": true,
+        "status": "W3C Working Draft 2026-11-09",
+        "scope": "Cooperative exclusive locks coordinate contexts sharing the storage bucket; nonparticipating older writers are not automatically covered."
+      }
+    ],
+    "currentCloudCapabilities": {
+      "path": "/workspace/wod-evidence/v228-stage/runs/storage-capabilities/capture/CAPABILITIES.json",
+      "sha256": "693264f06ff328339697cfebcc23bb42de16a9cbdaecde404366a4cd75e56bb5",
+      "value": {
+        "origin": "http://127.0.0.1:8002",
+        "secureContext": true,
+        "webLocks": true,
+        "indexedDB": true,
+        "browser": "154.0.8037.57",
+        "onlyCurrentCloudChromiumMeasured": true,
+        "noLockingPolicyImplemented": true
+      }
+    },
+    "noStoragePolicyImplemented": true,
+    "noOriginalTestAssertionRelaxed": true
+  },
+  "continuousEarnedJourney": {
+    "passed": true,
+    "originalDesktopRows": [
+      {
+        "id": 1,
+        "route": "tutorial",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2
+        ],
+        "supplies": {
+          "herb": 15,
+          "rune": 19,
+          "arrow": 14
+        },
+        "normalSeed": 1,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": []
+      },
+      {
+        "id": 2,
+        "route": "classic",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          4
+        ],
+        "supplies": {
+          "herb": 15,
+          "rune": 10,
+          "arrow": 8
+        },
+        "normalSeed": 2,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": []
+      },
+      {
+        "id": 3,
+        "route": "chapter",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          4,
+          4,
+          4,
+          6,
+          10
+        ],
+        "supplies": {
+          "herb": 8,
+          "rune": 0,
+          "arrow": 7
+        },
+        "normalSeed": 3,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": []
+      },
+      {
+        "id": 4,
+        "route": "harbor",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          2,
+          3,
+          2,
+          5
+        ],
+        "supplies": {
+          "herb": 11,
+          "rune": 0,
+          "arrow": 6
+        },
+        "normalSeed": 4,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": []
+      }
+    ],
+    "priorRun": "/workspace/wod-evidence/v228-stage/runs/playthrough/capture",
+    "priorReports": [
+      {
+        "id": 1,
+        "path": "/workspace/wod-evidence/v228-stage/runs/playthrough/capture/normal-1-original-report.json",
+        "bytes": 1530225,
+        "sha256": "93955cc3825906f56c3d72785a976cc5007f5120f2d73527ad16bd179b9eed5e"
+      },
+      {
+        "id": 2,
+        "path": "/workspace/wod-evidence/v228-stage/runs/playthrough/capture/normal-2-original-report.json",
+        "bytes": 6151179,
+        "sha256": "c03c2e6b66bd63d045c2e66f89be95d418acf24e7061bf19122a2a15edc6f0ed"
+      },
+      {
+        "id": 3,
+        "path": "/workspace/wod-evidence/v228-stage/runs/playthrough/capture/normal-3-original-report.json",
+        "bytes": 22843908,
+        "sha256": "d2daf396612062fa7b39ac9e22df424b2eff35fefaa8b0cf10eeb09fa73d9ee1"
+      },
+      {
+        "id": 4,
+        "path": "/workspace/wod-evidence/v228-stage/runs/playthrough/capture/normal-4-original-report.json",
+        "bytes": 7322226,
+        "sha256": "59e141b329b1b29f5dc16967ea3caf0ea376c82a60e03ede8e8e17173b9a0e3e"
+      }
+    ],
+    "newMobileRows": [
+      {
+        "id": 5,
+        "route": "returningtide",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4,
+          5
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 1
+        },
+        "normalSeed": 5,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": []
+      },
+      {
+        "id": 6,
+        "route": "returningtide",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4,
+          7
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 1
+        },
+        "normalSeed": 6,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": []
+      },
+      {
+        "id": 7,
+        "route": "returningtide",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          4,
+          6
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 1
+        },
+        "normalSeed": 7,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": [
+          {
+            "id": 39,
+            "targets": [
+              "a"
+            ],
+            "proof": {
+              "grade": "命中",
+              "damageType": "melee",
+              "index": 0,
+              "flat": 5,
+              "bonus": 8,
+              "total": 13,
+              "sources": [
+                {
+                  "gearId": "lamellarcoat",
+                  "gearName": "层潮叠甲",
+                  "damageType": "melee",
+                  "values": [
+                    8,
+                    4,
+                    0
+                  ],
+                  "selected": 8
+                }
+              ],
+              "rule": "分档护甲只来自实际装备：先按本次命中/重击/致命选取对应伤害通道的额外护甲，加到当时基础护甲与技能护甲，再按原穿甲、抗性和护盾结算。不同伤害段分别选通道，同一次攻防不重掷。闪避不结算，心理伤害绕护甲，削减法力和持续伤害保持原规则。三档结构参考公开WoD物品；装备、通道映射、数值与命中阈值为本项目设计。"
+            }
+          },
+          {
+            "id": 98,
+            "targets": [
+              "d"
+            ],
+            "proof": {
+              "grade": "重击",
+              "damageType": "magic",
+              "index": 1,
+              "flat": 2,
+              "bonus": 3,
+              "total": 5,
+              "sources": [
+                {
+                  "gearId": "deepweave",
+                  "gearName": "深潮织袍",
+                  "damageType": "magic",
+                  "values": [
+                    6,
+                    3,
+                    0
+                  ],
+                  "selected": 3
+                }
+              ],
+              "rule": "分档护甲只来自实际装备：先按本次命中/重击/致命选取对应伤害通道的额外护甲，加到当时基础护甲与技能护甲，再按原穿甲、抗性和护盾结算。不同伤害段分别选通道，同一次攻防不重掷。闪避不结算，心理伤害绕护甲，削减法力和持续伤害保持原规则。三档结构参考公开WoD物品；装备、通道映射、数值与命中阈值为本项目设计。"
+            }
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "route": "returningtide",
+        "won": true,
+        "alive": 6,
+        "rounds": [
+          3,
+          3,
+          3,
+          5
+        ],
+        "supplies": {
+          "herb": 10,
+          "rune": 0,
+          "arrow": 2
+        },
+        "normalSeed": 8,
+        "pendingReloadWholeReportAndUniqueClaimExact": true,
+        "gradeArmorEvents": [
+          {
+            "id": 249,
+            "targets": [
+              "d"
+            ],
+            "proof": {
+              "grade": "命中",
+              "damageType": "magic",
+              "index": 0,
+              "flat": 2,
+              "bonus": 6,
+              "total": 8,
+              "sources": [
+                {
+                  "gearId": "deepweave",
+                  "gearName": "深潮织袍",
+                  "damageType": "magic",
+                  "values": [
+                    6,
+                    3,
+                    0
+                  ],
+                  "selected": 6
+                }
+              ],
+              "rule": "分档护甲只来自实际装备：先按本次命中/重击/致命选取对应伤害通道的额外护甲，加到当时基础护甲与技能护甲，再按原穿甲、抗性和护盾结算。不同伤害段分别选通道，同一次攻防不重掷。闪避不结算，心理伤害绕护甲，削减法力和持续伤害保持原规则。三档结构参考公开WoD物品；装备、通道映射、数值与命中阈值为本项目设计。"
+            }
+          }
+        ]
+      }
+    ],
+    "normalIDs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exactSourceBackupSHA256": "91d4a5f905e29a07ddd9db1e999cd060ae77deddb879694e9d65d05a598009ec",
+    "previewZeroWrites": true,
+    "restoreAllFourEncodedPayloadStringsExact": true,
+    "missingEmptyPlanLibraryCanonicalizedExplicitly": true,
+    "otherPayloadsAndAssetsExact": true,
+    "allEightReportsPendingReloadAndUniqueClaimsChecked": true,
+    "threeExplicit20XPCultivationsAndTwo60GoldPurchases": true,
+    "freeReequipPreservesOwnership": true,
+    "errors": [],
+    "limits": "One earned trajectory across original desktop1–4 and fresh-mobile continuation5–8; original failed overly strict raw-null assertion preserved. No balance frequency, public site migration or cross-process lock claim."
+  },
+  "failedFullArchiveRecovery": {
+    "dataRecoveryPassed": true,
+    "functionalAcceptancePassed": false,
+    "fullGUIExecuted": 123,
+    "fullGUIPassed": 122,
+    "fullGUIFailed": [
+      195
+    ],
+    "canonicalLogicalMaster": {
+      "path": "/workspace/wod-delivery/v0.228-failure-canonical-recovery/wod-v228-failure-canonical.zip",
+      "bytes": 732050101,
+      "sha256": "13618f0eab8225e3c03ac40b454e5e4f6aa2c0e2260f1be1f57538019f113110",
+      "mode": 384,
+      "mtimeNs": 1794425858283613792
+    },
+    "catalog": {
+      "path": "/workspace/wod-maintenance/CATALOG.v55-v228-canonical.json",
+      "bytes": 63727,
+      "sha256": "4db9e07493b54511eef8209f7fa98ba26e55d25c7c114acd133236ebf179b899",
+      "mode": 384,
+      "mtimeNs": 1794426453053636819
+    },
+    "wholeMaintenanceDirectoryRequired": "/workspace/wod-maintenance/v228-first-failure-canonical",
+    "firstOriginalArchive": {
+      "path": "/workspace/wod-delivery/v0.228-initial-full-gui-failure/wod-v228-initial-full-failure.zip",
+      "bytes": 732088468,
+      "sha256": "cdd71fbe4343b61e19ad42ccfcc3c29a6ec37ae2f9cbb2872740216608b8630c",
+      "mode": 384,
+      "mtimeNs": 1794425362636025148
+    },
+    "oldRawNamespace": "/tmp/wod-evidence/v228-full",
+    "canonicalRawNamespace": "/tmp/wod-evidence/v228",
+    "rawNowControlsOnly": true,
+    "allOriginalCommandBodiesAndPathStringsPreserved": true,
+    "allOriginalModesNsAndDirectoriesProven": true,
+    "sourceRecoveryProof": "/workspace/wod-delivery/v0.228-failure-canonical-recovery/EVIDENCE_RECOVERY_COMPLETE.json",
+    "notOffHostBackup": true,
+    "freeBytes": {
+      "/workspace": 2736971776,
+      "/tmp": 9416687616
+    }
+  },
+  "sourceColdAndBranchPushSeparateCloudTransactions": true,
+  "allRegisteredAppAndTestFilesUnchangedFromFrozenRun": true,
+  "pagesChanged": false,
+  "publicInteractionAndActualOldOriginMigrationUnverified": true,
+  "strictFull49001LegacyPassed": false,
+  "oldV212DerivedIndexStillUnverified": true,
+  "permanentSuppliesAndCustomHeroesPending": true
+}
