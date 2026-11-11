@@ -213,3 +213,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 #unit-inspector-heading{display:inline;font-size:14px;margin:0;color:var(--gold)}#unit-inspector-heading:focus-visible{outline:2px solid var(--gold);outline-offset:4px}[data-inspector-return]{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;justify-self:start}[data-inspector-return] img{flex:0 0 22px}
 
 .equipment-goal-transfers{border-left:2px solid #d5bd80;padding-left:.75rem;margin:1rem 0}.equipment-goal-transfers ul{padding-left:1.25rem}.equipment-goal-transfers button{max-width:100%;white-space:normal;text-align:left}
+
+.training-impact{font-size:.85rem;line-height:1.6;max-width:100%;overflow-wrap:anywhere;margin-top:8px}.training-impact>summary{cursor:pointer;color:var(--cyan)}.training-impact p{margin:.65em 0}.training-impact strong{color:var(--gold)}

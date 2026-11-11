@@ -1,0 +1,289 @@
+{
+  "version": "0.221",
+  "kind": "development-stage",
+  "allNode": {
+    "tests": 2005,
+    "pass": 2005,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newNodeTests": 13,
+  "relatedNode": {
+    "tests": 47,
+    "pass_": 47
+  },
+  "newBrowserContexts": [
+    {
+      "width": 1440,
+      "motion": "no-preference",
+      "initialRuns": [
+        {
+          "id": 1,
+          "route": "tutorial",
+          "rewardGold": 40,
+          "gold": 40,
+          "won": true
+        },
+        {
+          "id": 2,
+          "route": "classic",
+          "rewardGold": 120,
+          "gold": 160,
+          "won": true
+        }
+      ],
+      "earnedAvailableXP": 55,
+      "cost": 20,
+      "staticLevelBefore": 6,
+      "staticLevelAfter": 7,
+      "meanBefore": 65,
+      "meanAfter": 67,
+      "quoteAndDetailsZeroBusinessWrites": true,
+      "keyboardPaidAndRefundedExactly": true,
+      "focusAndDetailStatePreserved": true,
+      "normal3WholeReportAndUniqueClaimExact": true,
+      "actualCastTraining": 1,
+      "reportSHA256": "fa6487600d1fc82769ef30dbb635bdb29fa8604026aa63a37ef77523c07341b9",
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "backupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1440,
+      "motion": "reduce",
+      "initialRuns": [
+        {
+          "id": 1,
+          "route": "tutorial",
+          "rewardGold": 40,
+          "gold": 40,
+          "won": true
+        },
+        {
+          "id": 2,
+          "route": "classic",
+          "rewardGold": 120,
+          "gold": 160,
+          "won": true
+        }
+      ],
+      "earnedAvailableXP": 55,
+      "cost": 20,
+      "staticLevelBefore": 6,
+      "staticLevelAfter": 7,
+      "meanBefore": 65,
+      "meanAfter": 67,
+      "quoteAndDetailsZeroBusinessWrites": true,
+      "keyboardPaidAndRefundedExactly": true,
+      "focusAndDetailStatePreserved": true,
+      "normal3WholeReportAndUniqueClaimExact": true,
+      "actualCastTraining": 1,
+      "reportSHA256": "fa6487600d1fc82769ef30dbb635bdb29fa8604026aa63a37ef77523c07341b9",
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "backupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "motion": "no-preference",
+      "initialRuns": [
+        {
+          "id": 1,
+          "route": "tutorial",
+          "rewardGold": 40,
+          "gold": 40,
+          "won": true
+        },
+        {
+          "id": 2,
+          "route": "classic",
+          "rewardGold": 120,
+          "gold": 160,
+          "won": true
+        }
+      ],
+      "earnedAvailableXP": 55,
+      "cost": 20,
+      "staticLevelBefore": 6,
+      "staticLevelAfter": 7,
+      "meanBefore": 65,
+      "meanAfter": 67,
+      "quoteAndDetailsZeroBusinessWrites": true,
+      "keyboardPaidAndRefundedExactly": true,
+      "focusAndDetailStatePreserved": true,
+      "normal3WholeReportAndUniqueClaimExact": true,
+      "actualCastTraining": 1,
+      "reportSHA256": "fa6487600d1fc82769ef30dbb635bdb29fa8604026aa63a37ef77523c07341b9",
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "backupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "motion": "reduce",
+      "initialRuns": [
+        {
+          "id": 1,
+          "route": "tutorial",
+          "rewardGold": 40,
+          "gold": 40,
+          "won": true
+        },
+        {
+          "id": 2,
+          "route": "classic",
+          "rewardGold": 120,
+          "gold": 160,
+          "won": true
+        }
+      ],
+      "earnedAvailableXP": 55,
+      "cost": 20,
+      "staticLevelBefore": 6,
+      "staticLevelAfter": 7,
+      "meanBefore": 65,
+      "meanAfter": 67,
+      "quoteAndDetailsZeroBusinessWrites": true,
+      "keyboardPaidAndRefundedExactly": true,
+      "focusAndDetailStatePreserved": true,
+      "normal3WholeReportAndUniqueClaimExact": true,
+      "actualCastTraining": 1,
+      "reportSHA256": "fa6487600d1fc82769ef30dbb635bdb29fa8604026aa63a37ef77523c07341b9",
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "backupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 320,
+      "motion": "no-preference",
+      "initialRuns": [
+        {
+          "id": 1,
+          "route": "tutorial",
+          "rewardGold": 40,
+          "gold": 40,
+          "won": true
+        },
+        {
+          "id": 2,
+          "route": "classic",
+          "rewardGold": 120,
+          "gold": 160,
+          "won": true
+        }
+      ],
+      "earnedAvailableXP": 55,
+      "cost": 20,
+      "staticLevelBefore": 6,
+      "staticLevelAfter": 7,
+      "meanBefore": 65,
+      "meanAfter": 67,
+      "quoteAndDetailsZeroBusinessWrites": true,
+      "keyboardPaidAndRefundedExactly": true,
+      "focusAndDetailStatePreserved": true,
+      "normal3WholeReportAndUniqueClaimExact": true,
+      "actualCastTraining": 1,
+      "reportSHA256": "fa6487600d1fc82769ef30dbb635bdb29fa8604026aa63a37ef77523c07341b9",
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "backupReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 320,
+      "motion": "reduce",
+      "initialRuns": [
+        {
+          "id": 1,
+          "route": "tutorial",
+          "rewardGold": 40,
+          "gold": 40,
+          "won": true
+        },
+        {
+          "id": 2,
+          "route": "classic",
+          "rewardGold": 120,
+          "gold": 160,
+          "won": true
+        }
+      ],
+      "earnedAvailableXP": 55,
+      "cost": 20,
+      "staticLevelBefore": 6,
+      "staticLevelAfter": 7,
+      "meanBefore": 65,
+      "meanAfter": 67,
+      "quoteAndDetailsZeroBusinessWrites": true,
+      "keyboardPaidAndRefundedExactly": true,
+      "focusAndDetailStatePreserved": true,
+      "normal3WholeReportAndUniqueClaimExact": true,
+      "actualCastTraining": 1,
+      "reportSHA256": "fa6487600d1fc82769ef30dbb635bdb29fa8604026aa63a37ef77523c07341b9",
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "backupReloadExact": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "completeRelatedBrowserSuites": [
+    {
+      "version": 125,
+      "exitCode": 0,
+      "fullOriginalSuite": true
+    },
+    {
+      "version": 165,
+      "exitCode": 0,
+      "fullOriginalSuite": true
+    },
+    {
+      "version": 166,
+      "exitCode": 0,
+      "fullOriginalSuite": true
+    },
+    {
+      "version": 220,
+      "exitCode": 0,
+      "fullOriginalSuite": true
+    }
+  ],
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 213,
+    "checkedReferences": 262,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "fullBrowserRegistryCount": 117,
+  "fullBrowserRegistryRun": false,
+  "fullHistoricalJSONHTMLAndCLICollectionRun": false,
+  "main": "9bb3f561837a53445ebde726bacca175f209177b",
+  "sourceRuntimeBase": "aa0fcd37675aca0a73dea150600a88d66a391528",
+  "pages": "45458ee96ad0090b1589629f7a2ea37e1214efd3",
+  "pagesDeploymentConfirmed": false,
+  "oldTemporaryBindingsUnavailable": 6427,
+  "mandatoryPersistentAndCatalogBindingsPassed": true,
+  "fullLegacyVerificationPassed": false,
+  "noOldEvidenceRetired": true,
+  "permanentSupplyEconomyImplemented": false
+}
