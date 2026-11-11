@@ -1,0 +1,200 @@
+{
+  "version": "0.223",
+  "kind": "development-stage",
+  "allNode": {
+    "tests": 2025,
+    "pass": 2025,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "relatedNode": 48,
+  "pythonFileBindings": 13,
+  "newBrowserContexts": [
+    {
+      "width": 1440,
+      "motion": "no-preference",
+      "realUIClaimsBeforeLearning": 3,
+      "ownCoursePaid40XP": true,
+      "twoControlledRoomOverridesPreservedIncludingEmpty": true,
+      "previewZeroWrites": true,
+      "ownInstallationAndFourRawKeyUndoExact": true,
+      "normal4WholeReportAndUniqueClaimExact": true,
+      "normal4Won": true,
+      "normal4Alive": 6,
+      "normal4Rooms": 3,
+      "managedCompanionActualCommandsAndRoleUndoExact": true,
+      "exportValidateReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1440,
+      "motion": "reduce",
+      "realUIClaimsBeforeLearning": 3,
+      "ownCoursePaid40XP": true,
+      "twoControlledRoomOverridesPreservedIncludingEmpty": true,
+      "previewZeroWrites": true,
+      "ownInstallationAndFourRawKeyUndoExact": true,
+      "normal4WholeReportAndUniqueClaimExact": true,
+      "normal4Won": true,
+      "normal4Alive": 6,
+      "normal4Rooms": 3,
+      "managedCompanionActualCommandsAndRoleUndoExact": true,
+      "exportValidateReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "motion": "no-preference",
+      "realUIClaimsBeforeLearning": 3,
+      "ownCoursePaid40XP": true,
+      "twoControlledRoomOverridesPreservedIncludingEmpty": true,
+      "previewZeroWrites": true,
+      "ownInstallationAndFourRawKeyUndoExact": true,
+      "normal4WholeReportAndUniqueClaimExact": true,
+      "normal4Won": true,
+      "normal4Alive": 6,
+      "normal4Rooms": 3,
+      "managedCompanionActualCommandsAndRoleUndoExact": true,
+      "exportValidateReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "motion": "reduce",
+      "realUIClaimsBeforeLearning": 3,
+      "ownCoursePaid40XP": true,
+      "twoControlledRoomOverridesPreservedIncludingEmpty": true,
+      "previewZeroWrites": true,
+      "ownInstallationAndFourRawKeyUndoExact": true,
+      "normal4WholeReportAndUniqueClaimExact": true,
+      "normal4Won": true,
+      "normal4Alive": 6,
+      "normal4Rooms": 3,
+      "managedCompanionActualCommandsAndRoleUndoExact": true,
+      "exportValidateReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 320,
+      "motion": "no-preference",
+      "realUIClaimsBeforeLearning": 3,
+      "ownCoursePaid40XP": true,
+      "twoControlledRoomOverridesPreservedIncludingEmpty": true,
+      "previewZeroWrites": true,
+      "ownInstallationAndFourRawKeyUndoExact": true,
+      "normal4WholeReportAndUniqueClaimExact": true,
+      "normal4Won": true,
+      "normal4Alive": 6,
+      "normal4Rooms": 3,
+      "managedCompanionActualCommandsAndRoleUndoExact": true,
+      "exportValidateReloadExact": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 320,
+      "motion": "reduce",
+      "realUIClaimsBeforeLearning": 3,
+      "ownCoursePaid40XP": true,
+      "twoControlledRoomOverridesPreservedIncludingEmpty": true,
+      "previewZeroWrites": true,
+      "ownInstallationAndFourRawKeyUndoExact": true,
+      "normal4WholeReportAndUniqueClaimExact": true,
+      "normal4Won": true,
+      "normal4Alive": 6,
+      "normal4Rooms": 3,
+      "managedCompanionActualCommandsAndRoleUndoExact": true,
+      "exportValidateReloadExact": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "completeRelatedGUI": [
+    {
+      "version": 68,
+      "exitCode": 0,
+      "fullOriginalBehavioralAssertions": true,
+      "uniformCourseDisclosureNavigationAdded": true
+    },
+    {
+      "version": 167,
+      "exitCode": 0,
+      "fullOriginalBehavioralAssertions": true,
+      "uniformCourseDisclosureNavigationAdded": true
+    },
+    {
+      "version": 222,
+      "exitCode": 0,
+      "fullOriginalBehavioralAssertions": true,
+      "uniformCourseDisclosureNavigationAdded": false
+    }
+  ],
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 215,
+    "checkedReferences": 264,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browserRegistryCount": 119,
+  "full119RegistryExecuted": false,
+  "fullHistoricalIntegrationExecuted": false,
+  "recovery": {
+    "originalLegacyRows": 49001,
+    "verifiedLegacyRows": 49000,
+    "oldTemporaryBindings": 6427,
+    "recovered": 6426,
+    "unverifiedIndex": {
+      "path": "/tmp/wod-v212-pages-update-lhoiaum0/site/.git/index",
+      "bytes": 141165,
+      "sha256": "43df921c968a4450213f6414b20b447e963183f6c538f42585bfe0904ed762ac",
+      "mode": 384,
+      "mtimeNs": 1794255922847640839
+    },
+    "newWholeTrees": 28,
+    "newWholeFiles": 11502,
+    "newTreeCatalogues": 4,
+    "treeCatalogues": 13,
+    "fileCatalogues": 2,
+    "allNewWholeTreesColdDecoders": 2,
+    "duplicatePayloadFilesRetired": 6563,
+    "duplicateLogicalBytesRetired": 5695653113,
+    "archiveBytes": 1862763469,
+    "fullLegacyVerificationPassed": false
+  },
+  "nextFullForecast": {
+    "forecastOnlyNotPhysicalReservation": true,
+    "priorVersion": 220,
+    "priorFullGUI": 116,
+    "nextRegistry": 119,
+    "newMeasuredCaseRawBytes": {
+      "221": 39442854,
+      "222": 38364346,
+      "223": 34603982
+    },
+    "growthPercent": 25,
+    "newCheckpointAndMasterUpperAssumeNoCompression": true,
+    "additionalTwoLargestNewFailureCases": true,
+    "priorFailureAndPerDiskReserveNotReduced": true,
+    "extraRawWithGrowth": 140513978,
+    "extraRerunRawWithGrowth": 97259000,
+    "newControlAllowanceMain": 67108864,
+    "newControlAllowanceTmp": 134217728,
+    "mainNeed": 4709106168,
+    "tmpNeed": 8515184448,
+    "freeAtReview": {
+      "/workspace": 5045325824,
+      "/tmp": 9441255424
+    },
+    "mainShortfall": 0,
+    "tmpShortfall": 0,
+    "complete119AndNewLogicalRecoveryNeedsFreshPhysicalReservation": true,
+    "new18TreeRestoresMustBeScheduledSeparatelyFromFullGUI": true,
+    "noCompleteGateOrMainMergeAuthorizedByThisForecast": true,
+    "onlyTargetedCurrentStagePlusFullNodeRun": true
+  },
+  "main": "9bb3f561837a53445ebde726bacca175f209177b",
+  "pages": "45458ee96ad0090b1589629f7a2ea37e1214efd3",
+  "newPagesTrigger": false
+}

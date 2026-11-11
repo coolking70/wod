@@ -217,3 +217,4 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .training-impact{font-size:.85rem;line-height:1.6;max-width:100%;overflow-wrap:anywhere;margin-top:8px}.training-impact>summary{cursor:pointer;color:var(--cyan)}.training-impact p{margin:.65em 0}.training-impact strong{color:var(--gold)}
 
 .attribute-projection{font-size:.85rem;max-width:25rem;overflow-wrap:anywhere;margin:.5rem 0}.attribute-projection>summary{cursor:pointer;color:var(--cyan)}.attribute-projection p{margin:.65em 0}.attribute-projection strong{color:var(--gold)}
+.course-default-install{margin:.8rem 0}.course-default-install button{max-width:100%;white-space:normal;text-align:left}.course-default-install p,.course-default-install li,.course-uniform-install p{overflow-wrap:anywhere}.course-default-install ul{padding-left:1.3rem}.course-uniform-install{margin-top:.8rem}
