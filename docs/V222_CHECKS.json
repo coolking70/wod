@@ -1,0 +1,234 @@
+{
+  "version": "0.222",
+  "kind": "development-stage",
+  "allNode": {
+    "tests": 2017,
+    "pass": 2017,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "relatedNode": 49,
+  "pythonFileRecoveryTests": 13,
+  "oldRetentionNode": 14,
+  "newBrowserContexts": [
+    {
+      "width": 1440,
+      "motion": "no-preference",
+      "actualEarnedXP": 55,
+      "paidConstitution20ThenIntelligence20RefundedConstitution20": true,
+      "chosenPermanentTraining": {
+        "attr:int": 1
+      },
+      "remainingBeforeThird": 35,
+      "constitutionHP": [
+        102,
+        106
+      ],
+      "intelligenceMP": [
+        38,
+        40
+      ],
+      "quoteZeroBusinessWrites": true,
+      "keyboardFocusAndDisclosureStatePreserved": true,
+      "noHorizontalOverflow": true,
+      "normal3WholeReportPendingAndUniqueClaimExact": true,
+      "departureHp": 102,
+      "departureMp": 40,
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "exportValidateReloadOriginalFourStringsExact": true
+    },
+    {
+      "width": 1440,
+      "motion": "reduce",
+      "actualEarnedXP": 55,
+      "paidConstitution20ThenIntelligence20RefundedConstitution20": true,
+      "chosenPermanentTraining": {
+        "attr:int": 1
+      },
+      "remainingBeforeThird": 35,
+      "constitutionHP": [
+        102,
+        106
+      ],
+      "intelligenceMP": [
+        38,
+        40
+      ],
+      "quoteZeroBusinessWrites": true,
+      "keyboardFocusAndDisclosureStatePreserved": true,
+      "noHorizontalOverflow": true,
+      "normal3WholeReportPendingAndUniqueClaimExact": true,
+      "departureHp": 102,
+      "departureMp": 40,
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "exportValidateReloadOriginalFourStringsExact": true
+    },
+    {
+      "width": 390,
+      "motion": "no-preference",
+      "actualEarnedXP": 55,
+      "paidConstitution20ThenIntelligence20RefundedConstitution20": true,
+      "chosenPermanentTraining": {
+        "attr:int": 1
+      },
+      "remainingBeforeThird": 35,
+      "constitutionHP": [
+        102,
+        106
+      ],
+      "intelligenceMP": [
+        38,
+        40
+      ],
+      "quoteZeroBusinessWrites": true,
+      "keyboardFocusAndDisclosureStatePreserved": true,
+      "noHorizontalOverflow": true,
+      "normal3WholeReportPendingAndUniqueClaimExact": true,
+      "departureHp": 102,
+      "departureMp": 40,
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "exportValidateReloadOriginalFourStringsExact": true
+    },
+    {
+      "width": 390,
+      "motion": "reduce",
+      "actualEarnedXP": 55,
+      "paidConstitution20ThenIntelligence20RefundedConstitution20": true,
+      "chosenPermanentTraining": {
+        "attr:int": 1
+      },
+      "remainingBeforeThird": 35,
+      "constitutionHP": [
+        102,
+        106
+      ],
+      "intelligenceMP": [
+        38,
+        40
+      ],
+      "quoteZeroBusinessWrites": true,
+      "keyboardFocusAndDisclosureStatePreserved": true,
+      "noHorizontalOverflow": true,
+      "normal3WholeReportPendingAndUniqueClaimExact": true,
+      "departureHp": 102,
+      "departureMp": 40,
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "exportValidateReloadOriginalFourStringsExact": true
+    },
+    {
+      "width": 320,
+      "motion": "no-preference",
+      "actualEarnedXP": 55,
+      "paidConstitution20ThenIntelligence20RefundedConstitution20": true,
+      "chosenPermanentTraining": {
+        "attr:int": 1
+      },
+      "remainingBeforeThird": 35,
+      "constitutionHP": [
+        102,
+        106
+      ],
+      "intelligenceMP": [
+        38,
+        40
+      ],
+      "quoteZeroBusinessWrites": true,
+      "keyboardFocusAndDisclosureStatePreserved": true,
+      "noHorizontalOverflow": true,
+      "normal3WholeReportPendingAndUniqueClaimExact": true,
+      "departureHp": 102,
+      "departureMp": 40,
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "exportValidateReloadOriginalFourStringsExact": true
+    },
+    {
+      "width": 320,
+      "motion": "reduce",
+      "actualEarnedXP": 55,
+      "paidConstitution20ThenIntelligence20RefundedConstitution20": true,
+      "chosenPermanentTraining": {
+        "attr:int": 1
+      },
+      "remainingBeforeThird": 35,
+      "constitutionHP": [
+        102,
+        106
+      ],
+      "intelligenceMP": [
+        38,
+        40
+      ],
+      "quoteZeroBusinessWrites": true,
+      "keyboardFocusAndDisclosureStatePreserved": true,
+      "noHorizontalOverflow": true,
+      "normal3WholeReportPendingAndUniqueClaimExact": true,
+      "departureHp": 102,
+      "departureMp": 40,
+      "won": true,
+      "alive": 6,
+      "finalGold": 250,
+      "next": 4,
+      "exportValidateReloadOriginalFourStringsExact": true
+    }
+  ],
+  "completeRelatedGUI": [
+    {
+      "version": 125,
+      "exitCode": 0,
+      "fullOriginalSuite": true
+    },
+    {
+      "version": 165,
+      "exitCode": 0,
+      "fullOriginalSuite": true
+    },
+    {
+      "version": 221,
+      "exitCode": 0,
+      "fullOriginalSuite": true
+    }
+  ],
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 214,
+    "checkedReferences": 263,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "browserRegistryCount": 118,
+  "fullBrowserRegistryExecuted": false,
+  "fullHistoricalIntegrationExecuted": false,
+  "recovery": {
+    "originalTemporaryRecords": 6427,
+    "mapped": 6426,
+    "unresolved": 1,
+    "knownMetadataExact": 6399,
+    "originalMetadataUnknown": 27,
+    "allOriginalRecordsKept": true,
+    "fullLegacyVerificationPassed": false,
+    "v221WholeTreeFiles": 970,
+    "v221WholeColdDecoders": 2,
+    "v221DuplicatePayloadsRetired": 200
+  },
+  "main": "9bb3f561837a53445ebde726bacca175f209177b",
+  "pages": "45458ee96ad0090b1589629f7a2ea37e1214efd3",
+  "pagesNewDeploymentTriggered": false
+}

@@ -215,3 +215,5 @@ body.replay-focus header,body.replay-focus footer,body.replay-focus #notice,body
 .equipment-goal-transfers{border-left:2px solid #d5bd80;padding-left:.75rem;margin:1rem 0}.equipment-goal-transfers ul{padding-left:1.25rem}.equipment-goal-transfers button{max-width:100%;white-space:normal;text-align:left}
 
 .training-impact{font-size:.85rem;line-height:1.6;max-width:100%;overflow-wrap:anywhere;margin-top:8px}.training-impact>summary{cursor:pointer;color:var(--cyan)}.training-impact p{margin:.65em 0}.training-impact strong{color:var(--gold)}
+
+.attribute-projection{font-size:.85rem;max-width:25rem;overflow-wrap:anywhere;margin:.5rem 0}.attribute-projection>summary{cursor:pointer;color:var(--cyan)}.attribute-projection p{margin:.65em 0}.attribute-projection strong{color:var(--gold)}
