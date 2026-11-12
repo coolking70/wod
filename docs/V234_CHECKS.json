@@ -1,0 +1,193 @@
+{
+  "version": "0.234",
+  "productCandidateCommit": "5097bd55bb4f0a5cc36b7d25f30ae6e61d2148ec",
+  "frozenInputSHA256": "692aa2859aabc143f7d6b84ad186e33921892c6f3a47bcf3dd2da7eb7f11953f",
+  "allNode": 2138,
+  "nodeFailures": 0,
+  "nodeSkipped": 0,
+  "fullBrowserSuites": 129,
+  "successfulFullRegistryInvocations": 1,
+  "firstFullGUI": {
+    "passed": 119,
+    "total": 129,
+    "allFailuresAndOriginalAssertionsPreserved": true
+  },
+  "newSingleWriterScenes": 11,
+  "all204CLI": 204,
+  "strictRawCLIBytes": 203,
+  "oneFullyCheckedInheritedChapterAndCatalogueCLI": {
+    "passed": true,
+    "verification": {
+      "passed": true,
+      "kind": "unchanged-strict-v228-chapter-insertions-plus-two-explicit-route-totals",
+      "sealedBaselineSHA256": "bad7ccf07cad070210b2589c4c655aa86c5198e0412edd35bfa0f3b849b3e285",
+      "currentSHA256": "61df6a985874c5a66f90b9c495252075d9405bf40722af5629baf49de178740a",
+      "oldBytes": 25316,
+      "currentBytes": 27543,
+      "strictV228ChapterBoundary": {
+        "passed": true,
+        "kind": "two-fully-validated-new-chapter-progress-properties",
+        "paths": [
+          "/normal/beforeHint/chapters",
+          "/normal/afterHint/chapters"
+        ],
+        "beforeSHA256": "bad7ccf07cad070210b2589c4c655aa86c5198e0412edd35bfa0f3b849b3e285",
+        "currentSHA256": "6c2b6748a12f6d03abd9525e5152ab45f0e22f4944ebc1f3ddb3739f39feb470",
+        "oldBytes": 25316,
+        "currentBytes": 27543,
+        "all25316SealedBaselineBytesExactOutsideTwoCheckedInsertions": true,
+        "noFieldIgnoredOrJSONNormalized": true,
+        "expectedAddedValues": [
+          {
+            "chapters": [
+              {
+                "id": "chapter",
+                "label": "第一章 · 沉钟之下",
+                "text": "连续六场，先检查跨房生命、法力与物资。",
+                "clears": 1,
+                "done": true,
+                "pending": false,
+                "last": null
+              },
+              {
+                "id": "harbor",
+                "label": "第二章 · 盐风港的无光灯塔",
+                "text": "四场与公开通路，战前选择和抵达状态决定实际路线。",
+                "clears": 0,
+                "done": false,
+                "pending": false,
+                "last": null
+              },
+              {
+                "id": "returningtide",
+                "label": "第三章 · 归潮黎明",
+                "text": "四场归航终章，串联援护、蓄能、坚守和生命阶段。",
+                "clears": 0,
+                "done": false,
+                "pending": false,
+                "last": null
+              }
+            ],
+            "completed": 1,
+            "total": 3,
+            "blockedByPending": false,
+            "visible": true
+          },
+          {
+            "chapters": [
+              {
+                "id": "chapter",
+                "label": "第一章 · 沉钟之下",
+                "text": "连续六场，先检查跨房生命、法力与物资。",
+                "clears": 1,
+                "done": true,
+                "pending": false,
+                "last": null
+              },
+              {
+                "id": "harbor",
+                "label": "第二章 · 盐风港的无光灯塔",
+                "text": "四场与公开通路，战前选择和抵达状态决定实际路线。",
+                "clears": 1,
+                "done": true,
+                "pending": false,
+                "last": {
+                  "id": 139,
+                  "won": true
+                }
+              },
+              {
+                "id": "returningtide",
+                "label": "第三章 · 归潮黎明",
+                "text": "四场归航终章，串联援护、蓄能、坚守和生命阶段。",
+                "clears": 0,
+                "done": false,
+                "pending": false,
+                "last": null
+              }
+            ],
+            "completed": 2,
+            "total": 3,
+            "blockedByPending": false,
+            "visible": true
+          }
+        ],
+        "rawInsertions": [
+          {
+            "startByte": 14154,
+            "endByte": 15237,
+            "bytes": 1083,
+            "sha256": "c8a434d4ff4c3b09c105920442441c4b121f66afbbd672dfb70755bb37b6c420"
+          },
+          {
+            "startByte": 25948,
+            "endByte": 27092,
+            "bytes": 1144,
+            "sha256": "5cb5231331c0b94959c164f0d8160f2f393dc80e7315b7e516cdabb172b51514"
+          }
+        ],
+        "sourceMechanism": "v226 chapterJourney in campObjective; existing chapter-journey and journey-followthrough regression assertions"
+      },
+      "chapterBoundarySourceSHA256": "7847ea36be0e85a4cdf52cb47b8b347c4588975c957b504f6cbd0853eecf86dc",
+      "catalogueOnlyDelta": {
+        "paths": [
+          "/normal/beforeHint/total",
+          "/normal/afterHint/total"
+        ],
+        "before": 38,
+        "after": 39,
+        "rawLocations": [
+          {
+            "startByte": 13722,
+            "before": "38",
+            "after": "39"
+          },
+          {
+            "startByte": 25518,
+            "before": "38",
+            "after": "39"
+          }
+        ],
+        "afterReversingOnlyTwoTotalsExactV228CurrentSHA256": "6c2b6748a12f6d03abd9525e5152ab45f0e22f4944ebc1f3ddb3739f39feb470"
+      },
+      "noJSONNormalizationOrUncheckedFieldExclusion": true
+    },
+    "negativeProbes": {
+      "passed": true,
+      "unexpectedLegacyByteRejected": true,
+      "wrongRouteTotalRejected": true,
+      "wrongInheritedChapterCountRejected": true,
+      "inheritedOriginalBoundaryProbes": {
+        "passed": true,
+        "unexpectedLegacyByteRejected": true,
+        "wrongAddedChapterCountRejected": true,
+        "allInputsPreserved": true
+      },
+      "allOriginalInputsUnchanged": true
+    },
+    "originalFailedSummaryPreserved": "/workspace/wod-evidence/v234/runs/validate-final-functional"
+  },
+  "historyJSON": 130,
+  "defaultOffHTML": 33,
+  "wholePairedCurrentRoots": 260,
+  "oldOriginalZIPsFreshDualCold": 56,
+  "oldWholeTreeRootsFreshDualCold": 99,
+  "oldWholeTreeFilesFreshDualCold": 43115,
+  "oldTreeCatalogues": 30,
+  "all6426RecordedTemporaryBindingsDualCold": true,
+  "compound197ForcedLogicalBoth": true,
+  "knownLegacyRows": 49000,
+  "strictFull49001LegacyPassed": false,
+  "unverifiedLegacyIndex": {
+    "path": "/tmp/wod-v212-pages-update-lhoiaum0/site/.git/index",
+    "bytes": 141165,
+    "sha256": "43df921c968a4450213f6414b20b447e963183f6c538f42585bfe0904ed762ac",
+    "mode": 384,
+    "mtimeNs": 1794255922847640839
+  },
+  "allRuntimeAndHarnessFilesFrozenThroughSuccessfulFullInvocation": true,
+  "currentSourceAndCurrentControlEvidenceColdSeparate": true,
+  "mainIntegrationAndRemotePushSeparate": true,
+  "pagesReadonlyNoNewDeploy": true,
+  "publicInteractionAndActualOldOriginMigrationUnverified": true
+}

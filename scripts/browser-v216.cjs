@@ -1,4 +1,5 @@
 require('./capture-bootstrap.cjs');
+const{releaseWriter234,assertWriter234,attemptReadonly234,waitSharedSave234,resumeWriter234}=require('./save-owner-test-helpers.cjs');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE||'playwright');
 const out=process.env.WOD_EVIDENCE_DIR,url=process.env.WOD_BASE_URL||'http://127.0.0.1:8002';
 (async()=>{
@@ -47,7 +48,7 @@ const out=process.env.WOD_EVIDENCE_DIR,url=process.env.WOD_BASE_URL||'http://127
   }
   for(const preview of[false,true]){
    const c=await context(390,'reduce'),p=await open(c);if(preview){await p.locator('[data-equipment-goal-owner=e]').click();await p.locator('[data-loot-return=clockpin]').click();}
-   const other=await open(c);await other.locator('[data-equipment-goal-owner=e]').click();await other.locator('[data-equip=clockpin]').click();const changed=await raw(other);assert.deepEqual(changed,expectedKeys(worn));await p.waitForFunction(value=>localStorage.getItem('abbey-guild-v6')===value,changed[CAMPAIGN_KEYS[3]]);await p.locator(preview?'[data-loot-return-confirm]':'[data-equipment-goal-owner=e]').click();assert.match(await p.locator('#guild-feedback').innerText(),/另一页面|公会资料已变化/);assert.deepEqual(await raw(p),changed);blockers.push({kind:preview?'stale-confirm':'stale-owner',oldActionRejected:true,allOtherPageStringsExact:true});await c.close();
+   await releaseWriter234(p);const other=await open(c);await assertWriter234(other);await other.locator('[data-equipment-goal-owner=e]').click();await other.locator('[data-equip=clockpin]').click();const changed=await raw(other);assert.deepEqual(changed,expectedKeys(worn));await p.waitForFunction(value=>localStorage.getItem('abbey-guild-v6')===value,changed[CAMPAIGN_KEYS[3]]);if(preview)await attemptReadonly234(p,'[data-loot-return-confirm]');else await p.locator('[data-equipment-goal-owner=e]').click();await waitSharedSave234(p,other);assert.match(await p.locator('#guild-feedback').innerText(),/另一页面|公会资料已变化/);assert.deepEqual(await raw(p),changed);blockers.push({kind:preview?'stale-confirm':'stale-owner',oldActionRejected:true,allOtherPageStringsExact:true});await c.close();
   }
   assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'browser-v216.json'),JSON.stringify({passed:true,rows,blockers,errors,sourceFixture:'existing natural loot-transfer loop, goal added by API',canonical142NeverLoaded:true,limits:'Snapshot comparisons preserve current cross-page guard; no cross-process transaction claim.'},null,2));
  }catch(e){fs.writeFileSync(path.join(out,'browser-v216.json'),JSON.stringify({passed:false,error:e.stack,rows,blockers,errors},null,2));if(active&&!active.isClosed())await active.screenshot({path:path.join(out,'failure.png')}).catch(()=>{});throw e;}finally{await b.close();}
