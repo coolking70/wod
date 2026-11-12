@@ -3,6 +3,7 @@ import {gradeArmorDifference,gradeArmorSummary} from './expedition-grade-armor.m
 import {equipmentTotals,replaceEquipment} from './expedition-equipment.mjs';
 import {GEAR,ATTR,SKILLS,DEFENSES} from './expedition-data.mjs';
 export const ROUTE_REWARDS={
+ dullcourt:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},
  returningtide:{bonus:90,xp:35,firstGold:70,firstXp:25,pool:['anchorseal','bellfocus','saltcloak']},
  lockpass:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},
  holdout:{bonus:60,xp:25,firstGold:40,firstXp:10,pool:[]},

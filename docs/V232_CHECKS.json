@@ -1,0 +1,646 @@
+{
+  "targetedStagePassed": true,
+  "completeMilestonePassed": false,
+  "fullNode": {
+    "tests": 2100,
+    "pass": 2100,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "firstFullNode": {
+    "tests": 2100,
+    "pass": 2096,
+    "fail": 4,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "firstRelatedNode": {
+    "tests": 54,
+    "pass": 44,
+    "fail": 10,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "secondRelatedNode": {
+    "tests": 75,
+    "pass": 68,
+    "fail": 7,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "finalRelatedNode": {
+    "tests": 75,
+    "pass": 75,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newGUIViewportMotionCopies": 6,
+  "newFreshCampaignRestoreCases": 1,
+  "newGUI": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "sourceEarnedNext": 11,
+        "freeOrdinaryPreparationOnly": true,
+        "allNormal11ActualResistancesKept": true,
+        "normal12ActualPowerAndTwoCleansesKept": true,
+        "firstProof": {
+          "eventId": 28,
+          "round": 1,
+          "kind": "control",
+          "grade": "闪避",
+          "actualDamage": null
+        },
+        "actualControl": {
+          "eventId": 35,
+          "round": 1,
+          "kind": "control",
+          "grade": "命中",
+          "actualDamage": null
+        },
+        "actualPower": {
+          "eventId": 53,
+          "round": 1,
+          "kind": "attack",
+          "grade": "命中",
+          "actualDamage": 14
+        },
+        "actualCleanse": {
+          "eventId": 60,
+          "round": 2,
+          "kind": "cleanse",
+          "grade": null,
+          "actualDamage": null
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 1915,
+        "normal11Alive": 6,
+        "normal12Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 1219,
+        "SVGMIMEAndSHAExact": true,
+        "report11SHA256": "9e50dc0cfe7c901443f52d38e4a301912eb568f87818adfa9c93393ca12e36d3",
+        "report12SHA256": "6719ac61f43bf5b6158dd9b6e96ab21897971e44ebb9c51f38df2b4198029778"
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "sourceEarnedNext": 11,
+        "freeOrdinaryPreparationOnly": true,
+        "allNormal11ActualResistancesKept": true,
+        "normal12ActualPowerAndTwoCleansesKept": true,
+        "firstProof": {
+          "eventId": 28,
+          "round": 1,
+          "kind": "control",
+          "grade": "闪避",
+          "actualDamage": null
+        },
+        "actualControl": {
+          "eventId": 35,
+          "round": 1,
+          "kind": "control",
+          "grade": "命中",
+          "actualDamage": null
+        },
+        "actualPower": {
+          "eventId": 53,
+          "round": 1,
+          "kind": "attack",
+          "grade": "命中",
+          "actualDamage": 14
+        },
+        "actualCleanse": {
+          "eventId": 60,
+          "round": 2,
+          "kind": "cleanse",
+          "grade": null,
+          "actualDamage": null
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 1915,
+        "normal11Alive": 6,
+        "normal12Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 1219,
+        "SVGMIMEAndSHAExact": true,
+        "report11SHA256": "9e50dc0cfe7c901443f52d38e4a301912eb568f87818adfa9c93393ca12e36d3",
+        "report12SHA256": "6719ac61f43bf5b6158dd9b6e96ab21897971e44ebb9c51f38df2b4198029778"
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "sourceEarnedNext": 11,
+        "freeOrdinaryPreparationOnly": true,
+        "allNormal11ActualResistancesKept": true,
+        "normal12ActualPowerAndTwoCleansesKept": true,
+        "firstProof": {
+          "eventId": 28,
+          "round": 1,
+          "kind": "control",
+          "grade": "闪避",
+          "actualDamage": null
+        },
+        "actualControl": {
+          "eventId": 35,
+          "round": 1,
+          "kind": "control",
+          "grade": "命中",
+          "actualDamage": null
+        },
+        "actualPower": {
+          "eventId": 53,
+          "round": 1,
+          "kind": "attack",
+          "grade": "命中",
+          "actualDamage": 14
+        },
+        "actualCleanse": {
+          "eventId": 60,
+          "round": 2,
+          "kind": "cleanse",
+          "grade": null,
+          "actualDamage": null
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 1915,
+        "normal11Alive": 6,
+        "normal12Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 1219,
+        "SVGMIMEAndSHAExact": true,
+        "report11SHA256": "9e50dc0cfe7c901443f52d38e4a301912eb568f87818adfa9c93393ca12e36d3",
+        "report12SHA256": "6719ac61f43bf5b6158dd9b6e96ab21897971e44ebb9c51f38df2b4198029778"
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "sourceEarnedNext": 11,
+        "freeOrdinaryPreparationOnly": true,
+        "allNormal11ActualResistancesKept": true,
+        "normal12ActualPowerAndTwoCleansesKept": true,
+        "firstProof": {
+          "eventId": 28,
+          "round": 1,
+          "kind": "control",
+          "grade": "闪避",
+          "actualDamage": null
+        },
+        "actualControl": {
+          "eventId": 35,
+          "round": 1,
+          "kind": "control",
+          "grade": "命中",
+          "actualDamage": null
+        },
+        "actualPower": {
+          "eventId": 53,
+          "round": 1,
+          "kind": "attack",
+          "grade": "命中",
+          "actualDamage": 14
+        },
+        "actualCleanse": {
+          "eventId": 60,
+          "round": 2,
+          "kind": "cleanse",
+          "grade": null,
+          "actualDamage": null
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 1915,
+        "normal11Alive": 6,
+        "normal12Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 1219,
+        "SVGMIMEAndSHAExact": true,
+        "report11SHA256": "9e50dc0cfe7c901443f52d38e4a301912eb568f87818adfa9c93393ca12e36d3",
+        "report12SHA256": "6719ac61f43bf5b6158dd9b6e96ab21897971e44ebb9c51f38df2b4198029778"
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "sourceEarnedNext": 11,
+        "freeOrdinaryPreparationOnly": true,
+        "allNormal11ActualResistancesKept": true,
+        "normal12ActualPowerAndTwoCleansesKept": true,
+        "firstProof": {
+          "eventId": 28,
+          "round": 1,
+          "kind": "control",
+          "grade": "闪避",
+          "actualDamage": null
+        },
+        "actualControl": {
+          "eventId": 35,
+          "round": 1,
+          "kind": "control",
+          "grade": "命中",
+          "actualDamage": null
+        },
+        "actualPower": {
+          "eventId": 53,
+          "round": 1,
+          "kind": "attack",
+          "grade": "命中",
+          "actualDamage": 14
+        },
+        "actualCleanse": {
+          "eventId": 60,
+          "round": 2,
+          "kind": "cleanse",
+          "grade": null,
+          "actualDamage": null
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 1915,
+        "normal11Alive": 6,
+        "normal12Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 1219,
+        "SVGMIMEAndSHAExact": true,
+        "report11SHA256": "9e50dc0cfe7c901443f52d38e4a301912eb568f87818adfa9c93393ca12e36d3",
+        "report12SHA256": "6719ac61f43bf5b6158dd9b6e96ab21897971e44ebb9c51f38df2b4198029778"
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "sourceEarnedNext": 11,
+        "freeOrdinaryPreparationOnly": true,
+        "allNormal11ActualResistancesKept": true,
+        "normal12ActualPowerAndTwoCleansesKept": true,
+        "firstProof": {
+          "eventId": 28,
+          "round": 1,
+          "kind": "control",
+          "grade": "闪避",
+          "actualDamage": null
+        },
+        "actualControl": {
+          "eventId": 35,
+          "round": 1,
+          "kind": "control",
+          "grade": "命中",
+          "actualDamage": null
+        },
+        "actualPower": {
+          "eventId": 53,
+          "round": 1,
+          "kind": "attack",
+          "grade": "命中",
+          "actualDamage": 14
+        },
+        "actualCleanse": {
+          "eventId": 60,
+          "round": 2,
+          "kind": "cleanse",
+          "grade": null,
+          "actualDamage": null
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 1915,
+        "normal11Alive": 6,
+        "normal12Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 1219,
+        "SVGMIMEAndSHAExact": true,
+        "report11SHA256": "9e50dc0cfe7c901443f52d38e4a301912eb568f87818adfa9c93393ca12e36d3",
+        "report12SHA256": "6719ac61f43bf5b6158dd9b6e96ab21897971e44ebb9c51f38df2b4198029778"
+      }
+    ],
+    "freshCampaignRestoreAndReopened12ReportExact": true,
+    "errors": [],
+    "limits": "Exact earned normal10 continues predeclared11/12. No new training, equipment or synthetic assets. Normal11 uses default guarded preparation; normal12 changes only D default prep to ordinary cleanse/front then ward fallback. Unclaimed seed11 cleanse comparison reuses identical assets. Different action/RNG flows preclude isolated avoided-damage claims. Fixed two-run results and viewport copies are not balance or win-rate estimates. New skill, route and damage-modifier ordering are authored adaptations; only structural rank/effect distinction has indexed official-page support. Browser profiles are emulation, not phone performance. Native SVG HTTP bytes verified; no raster speed comparison or new GIF generation claimed. Full127GUI not executed."
+  },
+  "completeOldGUIs": [
+    115,
+    153
+  ],
+  "old153PassedFirst": true,
+  "old115PassedCompleteFreshRerun": true,
+  "old115FirstFailure": "Map card count39vs38; original receipt and checkpoint retained",
+  "legacyExactReports": 76,
+  "priorNormal9And10AndEarnedGuild10Exact": true,
+  "normal": {
+    "passed": true,
+    "startNext": 11,
+    "startGold": 1675,
+    "startBXP": 710,
+    "rows": [
+      {
+        "id": 11,
+        "seed": 11,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 55,
+          "firstClear": true,
+          "loot": []
+        },
+        "goldBefore": 1675,
+        "goldAfter": 1815,
+        "XPB": 765,
+        "controls": [
+          {
+            "eventId": 28,
+            "room": 0,
+            "round": 1,
+            "attack": 74,
+            "defense": 115,
+            "grade": "闪避",
+            "applied": false,
+            "blockedReason": "近战防御抵抗"
+          },
+          {
+            "eventId": 160,
+            "room": 1,
+            "round": 1,
+            "attack": 96,
+            "defense": 107,
+            "grade": "闪避",
+            "applied": false,
+            "blockedReason": "近战防御抵抗"
+          },
+          {
+            "eventId": 204,
+            "room": 1,
+            "round": 2,
+            "attack": 77,
+            "defense": 96,
+            "grade": "闪避",
+            "applied": false,
+            "blockedReason": "近战防御抵抗"
+          }
+        ],
+        "powerUses": [],
+        "cleanses": [],
+        "originalReportPath": "/workspace/wod-evidence/v232/runs/diagnose-first/capture/normal11-first-original-report.json",
+        "wholeReportSHA256": "d56713d0a8cbf89e5d254cb070e6a979bd8f2e5231a7a790d27524f517879773",
+        "exactOriginalBeforeFixtureCorrections": true
+      },
+      {
+        "id": 12,
+        "seed": 12,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "goldBefore": 1815,
+        "goldAfter": 1915,
+        "XPB": 810,
+        "controls": [
+          {
+            "eventId": 35,
+            "room": 0,
+            "round": 1,
+            "attack": 71,
+            "defense": 53,
+            "grade": "命中",
+            "applied": true,
+            "blockedReason": ""
+          },
+          {
+            "eventId": 73,
+            "room": 0,
+            "round": 2,
+            "attack": 69,
+            "defense": 63,
+            "grade": "命中",
+            "applied": true,
+            "blockedReason": ""
+          },
+          {
+            "eventId": 169,
+            "room": 1,
+            "round": 1,
+            "attack": 83,
+            "defense": 87,
+            "grade": "闪避",
+            "applied": false,
+            "blockedReason": "近战防御抵抗"
+          },
+          {
+            "eventId": 220,
+            "room": 1,
+            "round": 2,
+            "attack": 41,
+            "defense": 63,
+            "grade": "闪避",
+            "applied": false,
+            "blockedReason": "近战防御抵抗"
+          }
+        ],
+        "powerUses": [
+          {
+            "eventId": 53,
+            "room": 0,
+            "round": 1,
+            "skillLevel": 9,
+            "attackMean": 52,
+            "before": 18,
+            "modifier": -4,
+            "after": 14,
+            "actualHPDamage": 14,
+            "sources": [
+              {
+                "effectId": "0:8:a:power-damp",
+                "skill": "bluntgrip",
+                "source": "dg-c",
+                "sourceName": "钝锋擒制手",
+                "component": "削势",
+                "value": -4,
+                "controlEventId": 35
+              }
+            ]
+          },
+          {
+            "eventId": 99,
+            "room": 0,
+            "round": 2,
+            "skillLevel": 9,
+            "attackMean": 52,
+            "before": 15,
+            "modifier": -4,
+            "after": 11,
+            "actualHPDamage": 9,
+            "sources": [
+              {
+                "effectId": "0:16:a:power-damp",
+                "skill": "bluntgrip",
+                "source": "dg-c",
+                "sourceName": "钝锋擒制手",
+                "component": "削势",
+                "value": -4,
+                "controlEventId": 73
+              }
+            ]
+          }
+        ],
+        "cleanses": [
+          {
+            "eventId": 60,
+            "room": 0,
+            "round": 2,
+            "removed": [
+              {
+                "effectId": "0:8:a:power-damp",
+                "stat": "physicalPower",
+                "value": -4
+              }
+            ]
+          },
+          {
+            "eventId": 105,
+            "room": 0,
+            "round": 3,
+            "removed": [
+              {
+                "effectId": "0:16:a:power-damp",
+                "stat": "physicalPower",
+                "value": -4
+              }
+            ]
+          }
+        ],
+        "originalReportPath": "/workspace/wod-evidence/v232/runs/diagnose-first/capture/normal12-first-original-report.json",
+        "wholeReportSHA256": "5b3330b353457bcb563d818ffedfa57e347b3ede2b6eee97bc2c937739abb91c",
+        "exactOriginalBeforeFixtureCorrections": true
+      }
+    ],
+    "finalGold": 1915,
+    "finalNext": 13,
+    "control11": {
+      "won": true,
+      "alive": 6,
+      "powerUses": 0,
+      "cleanseCasts": 0,
+      "notClaimed": true
+    },
+    "noParameterOrSeedChangesAfterDesignLock": true,
+    "cleanseDoesNotConferImmunityAndNormal12ReapplicationRetained": true,
+    "limits": "Exact earned normal10 continues predeclared11/12. No new training, equipment or synthetic assets. Normal11 uses default guarded preparation; normal12 changes only D default prep to ordinary cleanse/front then ward fallback. Unclaimed seed11 cleanse comparison reuses identical assets. Different action/RNG flows preclude isolated avoided-damage claims. Fixed two-run results and viewport copies are not balance or win-rate estimates. New skill, route and damage-modifier ordering are authored adaptations; only structural rank/effect distinction has indexed official-page support."
+  },
+  "compatibility": {
+    "oldVersion": "0.231",
+    "oldSource": "350fa8af47f6f52a2e0e2e8e711854006d8d9054",
+    "newHistoryHasDullcourt": true,
+    "oldParserAccepted": false,
+    "oldParserError": "远征路线无效",
+    "inputUnchanged": true,
+    "enemySkillNotAvailableAsPaidOrFreeClassTraining": true,
+    "noRealPublicOldOriginMigrationAttempted": true,
+    "backupBeforeUpgradeAndNoDowngradeGuarantee": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 221,
+    "checkedReferences": 274,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-adventure.mjs",
+      "dist/expedition-afflictions.mjs",
+      "dist/expedition-camp-cycle.mjs",
+      "dist/expedition-control.mjs",
+      "dist/expedition-data.mjs",
+      "dist/expedition-engine.mjs",
+      "dist/expedition-loot.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/browser-v113.cjs",
+      "scripts/browser-v115.cjs",
+      "scripts/browser-v95.cjs",
+      "scripts/browser-v99.cjs",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs",
+      "tests/exploration-index.test.mjs",
+      "tests/passage.test.mjs",
+      "tests/returning-tide.test.mjs",
+      "tests/v113.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs",
+      "tests/v120.test.mjs",
+      "tests/v94.test.mjs",
+      "tests/v95.test.mjs",
+      "tests/v99.test.mjs"
+    ],
+    "newFiles": [
+      "dist/assets/dullcourt-v232.svg",
+      "dist/expedition-dullcourt.mjs",
+      "dist/expedition-effect-power.mjs",
+      "scripts/browser-v232.cjs",
+      "scripts/effect-power-cases.mjs",
+      "tests/effect-power.test.mjs"
+    ],
+    "allOtherOriginalSourceExact": true,
+    "oldV195AndGuildAndSavePersistenceExact": true,
+    "newRoutes": 39,
+    "newGoalSlots": 117,
+    "currentFullGUIRegistrySize": 127,
+    "allNewProducersRegisteredBeforeFullNode": true,
+    "baselineSource": "350fa8af47f6f52a2e0e2e8e711854006d8d9054",
+    "inheritedStorageDescriptor": "/workspace/wod-maintenance/v232-routine-evidence-retention/DURABLE_STORAGE_COMPLETE.json",
+    "onlyRouteGoalAndUnvisitedCardinalitiesChangedInOldTests": true,
+    "firstFullNode": {
+      "tests": 2100,
+      "passed": 2096,
+      "failed": 4,
+      "scope": "Only unupdated39route/117goal/19unvisited cardinalities"
+    },
+    "firstOld115StoppedAtOutdated38MapCount": true,
+    "productCodeAndNewGUISourceUnchangedAfterFirstFreeze": true,
+    "sourceFrozeAfterCardinalityCorrectionAndBeforeFullNodeFinalCompletes": true
+  },
+  "storage": {
+    "passed": true,
+    "descriptor": {
+      "path": "/workspace/wod-maintenance/v232-routine-evidence-retention/DURABLE_STORAGE_COMPLETE.json",
+      "bytes": 19571429,
+      "sha256": "5b3b946616a905ac3ff3b98ee7a13c8816713e43aedba615cb609ce3a212031a",
+      "mode": 384,
+      "mtimeNs": 1794444465079847535
+    },
+    "retiredRoutinePhysicalCopies": 84,
+    "logicalOriginalBytesPreserved": 340533803,
+    "freeAfterFinalProof": {
+      "/workspace": 2177327104,
+      "/tmp": 9151541248
+    },
+    "allOriginalFailuresPreserved": true,
+    "strict49001": false
+  },
+  "allRealEncounterParametersSeedsAndOutcomesUnchangedAfterLock": true,
+  "full127GUINotRun": true,
+  "originalV195UnchangedNotRerunAndUnresolved": true,
+  "allHistoricalImportCLIAndAllOldDualColdNotRerun": true,
+  "strict49001LegacyPassed": false,
+  "mainNotMerged": true,
+  "writeModelUnchosenAndUnimplemented": true,
+  "sourceAndCurrentEvidenceColdPendingSeparateTransactions": true,
+  "version": "0.232",
+  "base": "350fa8af47f6f52a2e0e2e8e711854006d8d9054",
+  "branch": "feature/v232-effect-power-and-dullcourt",
+  "pagesNotTriggered": true,
+  "sourceReference": "Official indexed skill text supports effect-height modifiers separate from ranks; concrete rules and encounter authored"
+}
