@@ -46,3 +46,8 @@ v109据此选择方向并明确做项目改编：保留现有五阵位，只有�
 ## 2026-11-11 v0.228整合对照
 
 见[V228原版对照表](V228_FULL_ACCEPTANCE.md)。新增五个官方百科入口直接正文403/502，搜索摘要只作线索，没有新增可标定的现服数值证据；未重试原已拒绝的FAQ。三档护甲仍以v227已核阅的公开装备正文为结构依据，价格、通道、阈值和成长数值为项目改编。参考服务器未选定，永久补给和自建角色保持待决/暂缓。
+
+
+## 2026-11-12 v0.238 技能类别装备
+
+直接核阅[官方公开道具正文](https://world-of-dungeons.net/item/holy%20penguin%20leather%20cap%20of%20nimbleness&id=9806493&hp=28&anw=-1)列出的整类技能等级加值，以及[官方公开技能正文](https://world-of-dungeons.net/wod/spiel/hero/skill.php?IS_POPUP=1&is_popup=1&name=Disarming+Strike)分列的攻击类型/技能类别。只采用类别加值结构；项目近战技艺成员、数值与价格并非原版复刻或已选现服规则。德文两百科直接正文403，未重试/绕过，不据摘要调整法力费用。完整边界见[V238](V238_SKILL_CLASS_EQUIPMENT.md)。

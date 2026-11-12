@@ -1,0 +1,892 @@
+{
+  "version": "0.238",
+  "base": "d18d8dbbe4cb0cf2661af081ebc9a39a6f6c9459",
+  "branch": "feature/v238-skill-class-equipment",
+  "fullNode": {
+    "passed": true,
+    "counts": {
+      "tests": 2176,
+      "pass": 2176,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "sourceExact": true,
+    "exitCode": 0,
+    "stoppedForSpace": false,
+    "full133GUINotRun": true
+  },
+  "relatedNode": 67,
+  "newGUI": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "purchase60Once": true,
+        "freeOldAccessoryReturn": true,
+        "actualAttackAndParrySources": true,
+        "wholeReportsPendingReloadUniqueClaimHistoryExact": true,
+        "nativeSVGHTTPBytesExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "purchase60Once": true,
+        "freeOldAccessoryReturn": true,
+        "actualAttackAndParrySources": true,
+        "wholeReportsPendingReloadUniqueClaimHistoryExact": true,
+        "nativeSVGHTTPBytesExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "purchase60Once": true,
+        "freeOldAccessoryReturn": true,
+        "actualAttackAndParrySources": true,
+        "wholeReportsPendingReloadUniqueClaimHistoryExact": true,
+        "nativeSVGHTTPBytesExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "purchase60Once": true,
+        "freeOldAccessoryReturn": true,
+        "actualAttackAndParrySources": true,
+        "wholeReportsPendingReloadUniqueClaimHistoryExact": true,
+        "nativeSVGHTTPBytesExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "purchase60Once": true,
+        "freeOldAccessoryReturn": true,
+        "actualAttackAndParrySources": true,
+        "wholeReportsPendingReloadUniqueClaimHistoryExact": true,
+        "nativeSVGHTTPBytesExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "purchase60Once": true,
+        "freeOldAccessoryReturn": true,
+        "actualAttackAndParrySources": true,
+        "wholeReportsPendingReloadUniqueClaimHistoryExact": true,
+        "nativeSVGHTTPBytesExact": true,
+        "noHorizontalOverflow": true
+      }
+    ],
+    "freshFinal22ColdImportAndOldBookReport": true,
+    "errors": [],
+    "limits": "Cloud Chromium simulated widths, not real devices. One deterministic earned21/22 loop repeated across widths; not independent balance samples. Class members, +1 and -2AGI/-1CON authored; no changed costs, supplies or save ownership."
+  },
+  "oldRelatedGUI": {
+    "passed": true,
+    "results": [
+      {
+        "version": 128,
+        "root": "/tmp/wod238-related-v128",
+        "exitCode": 0,
+        "stdout": "{\"captureRun\":\"/tmp/wod238-related-v128\",\"output\":\"/tmp/wod238-related-v128/capture\",\"id\":\"656401f3-1124-49ad-b391-9bbd580e8244\"}\n{\"captureRun\":\"/tmp/wod238-related-v128\",\"exitCode\":0,\"signal\":null}\n",
+        "stderr": ""
+      },
+      {
+        "version": 237,
+        "root": "/tmp/wod238-related-v237",
+        "exitCode": 0,
+        "stdout": "{\"captureRun\":\"/tmp/wod238-related-v237\",\"output\":\"/tmp/wod238-related-v237/capture\",\"id\":\"70c0012e-bd77-40fe-904a-177eef23b20d\"}\n{\"captureRun\":\"/tmp/wod238-related-v237\",\"exitCode\":0,\"signal\":null}\n",
+        "stderr": ""
+      }
+    ],
+    "full133NotRun": true
+  },
+  "old78AndControl21": {
+    "passed": true,
+    "all78WholeOriginalBytesExact": true,
+    "rows": [
+      {
+        "id": "dullcourt",
+        "seed": 731,
+        "bytes": 3811541,
+        "sha256": "d66d269f472995bb5e2f85f06d0a6df3d3d0f856ff13ee97f5ad086431a07a0b"
+      },
+      {
+        "id": "dullcourt",
+        "seed": 1741,
+        "bytes": 4531219,
+        "sha256": "e40c0fbff47fc1c0b35340a64e6b1e3a463796adcc53bec3c405298286800271"
+      },
+      {
+        "id": "returningtide",
+        "seed": 731,
+        "bytes": 10138882,
+        "sha256": "fde13cf33cff33afece30921897a9e10dde45a8f258ee563a79de9d1aaa792a2"
+      },
+      {
+        "id": "returningtide",
+        "seed": 1741,
+        "bytes": 8039204,
+        "sha256": "329458ce6aef1143853dd6f7501c9d3d5c3b85e349fa24e9d1ea2e1eadd5463f"
+      },
+      {
+        "id": "lockpass",
+        "seed": 731,
+        "bytes": 3135637,
+        "sha256": "71520ef82f67eb8c67d30da222b61d11eda3f3a2d96ea28974db1a25b96ed46e"
+      },
+      {
+        "id": "lockpass",
+        "seed": 1741,
+        "bytes": 3076744,
+        "sha256": "38f18715598db7323f97ba5b37c1f3ff5f38daa1982b51f59836cc68e2d302e3"
+      },
+      {
+        "id": "holdout",
+        "seed": 731,
+        "bytes": 4658595,
+        "sha256": "7e8ed5fb449f5ce5df35b48925d55582b0e1040121ad8930180c2525561a6659"
+      },
+      {
+        "id": "holdout",
+        "seed": 1741,
+        "bytes": 4171997,
+        "sha256": "4184db28e1af4914373d86c454f6f449205f872136579b477bd3f0768d47598a"
+      },
+      {
+        "id": "manashield",
+        "seed": 731,
+        "bytes": 3048485,
+        "sha256": "9b91ed4bb319186ff74db5fe24332f1f9d4cc7887db1fd0e8a9ca5583696a05b"
+      },
+      {
+        "id": "manashield",
+        "seed": 1741,
+        "bytes": 2865443,
+        "sha256": "46a4f97e59e0a9d847e2775b4df0148cc57389e8bf135d86118d97b13452f036"
+      },
+      {
+        "id": "parleyquay",
+        "seed": 731,
+        "bytes": 4213465,
+        "sha256": "c6755f334d9690103ca5e7668dc1e48b107927437ff7cfbf7187c3f7b0aa5b09"
+      },
+      {
+        "id": "parleyquay",
+        "seed": 1741,
+        "bytes": 3655110,
+        "sha256": "0336c2f449aa6e18d2135c0e935b01b4f9efda18adde46f5ac2b33af8a3fd3bb"
+      },
+      {
+        "id": "markedhunt",
+        "seed": 731,
+        "bytes": 6364723,
+        "sha256": "65aba5cdfd1df762d77ca11ed53c0bff69be70d4a1c24aadd160c15f86eda0bd"
+      },
+      {
+        "id": "markedhunt",
+        "seed": 1741,
+        "bytes": 5939991,
+        "sha256": "8a90fc55b6f047d745e3a7f93d9964cfb8531b7451fe54be188fa9e0e044f1bc"
+      },
+      {
+        "id": "sporegrove",
+        "seed": 731,
+        "bytes": 3846275,
+        "sha256": "11aafe71c8117db544494cba4d43e5742940a1c44e344db60994f4ffb3e0236a"
+      },
+      {
+        "id": "sporegrove",
+        "seed": 1741,
+        "bytes": 4301284,
+        "sha256": "1b8fc094efa98f3b7755d37d75fcdae4daefa1d2dc2eed8c4c17e5d72cea8a4a"
+      },
+      {
+        "id": "pressurevault",
+        "seed": 731,
+        "bytes": 1878357,
+        "sha256": "1da42581542fed1e0505cdc30608d1a26a2a061858052a77223e252d1226d8ae"
+      },
+      {
+        "id": "pressurevault",
+        "seed": 1741,
+        "bytes": 2085955,
+        "sha256": "4f568d66c7b30093c326aacb3a7e2dfbb5c28854b0415b60c95811894b259867"
+      },
+      {
+        "id": "evacuation",
+        "seed": 731,
+        "bytes": 3479492,
+        "sha256": "8560a8fbb42e774578b917dce4d3e9d1390cd26c1894bb2bef3e8d49be2c2045"
+      },
+      {
+        "id": "evacuation",
+        "seed": 1741,
+        "bytes": 3879219,
+        "sha256": "7e1f1ba39149bd4631d235c69e6efb5896022772f1b84b80d5aef9b279ad13c4"
+      },
+      {
+        "id": "lockworks",
+        "seed": 731,
+        "bytes": 6496926,
+        "sha256": "439ed60e1bb0aecc19508ebd38f9d263a988b85b98ee642d341e3dd368678866"
+      },
+      {
+        "id": "lockworks",
+        "seed": 1741,
+        "bytes": 7727958,
+        "sha256": "32d229956aecbdd0c16c0080982a2d0d23c09428610e37ad1f839a6bd42f3a38"
+      },
+      {
+        "id": "turncourt",
+        "seed": 731,
+        "bytes": 8217728,
+        "sha256": "433f4ce1d569c3cba3beb722d9e4ba955a78c7d144a3a8b2c48eced5b91c0504"
+      },
+      {
+        "id": "turncourt",
+        "seed": 1741,
+        "bytes": 8156488,
+        "sha256": "2df276b306c78f89afbc45f683c6677649917ed02b14a27ab6601b9bf70ae94b"
+      },
+      {
+        "id": "beaconbridge",
+        "seed": 731,
+        "bytes": 11122085,
+        "sha256": "6b9d59384c5dfc32849deb90eec9b3f3e0a3a6be8fd674dcde6e24760a1d9f15"
+      },
+      {
+        "id": "beaconbridge",
+        "seed": 1741,
+        "bytes": 13036375,
+        "sha256": "c1afb5b6f09041905381b51cb1cbca6dce10324502c3ebe978e82709e2dd472d"
+      },
+      {
+        "id": "trapworks",
+        "seed": 731,
+        "bytes": 5433226,
+        "sha256": "ff0d9aacd7935b68846aade6f111212005c017ecb0d6cdd9b0002f9314733c0a"
+      },
+      {
+        "id": "trapworks",
+        "seed": 1741,
+        "bytes": 6002478,
+        "sha256": "cb2f3cf9a565f7f5350c61c73a25e5da50246ea51de3a66558447bc824f5877f"
+      },
+      {
+        "id": "ossuary",
+        "seed": 731,
+        "bytes": 6050419,
+        "sha256": "7728acf4a5010caac8343c65852ce75ea1cb5beca563d6a377178843d2d50e05"
+      },
+      {
+        "id": "ossuary",
+        "seed": 1741,
+        "bytes": 6904358,
+        "sha256": "0651236766b1328c5ba9ecebd5824487dada9e00663eeceb73490f14810147ec"
+      },
+      {
+        "id": "breakwater",
+        "seed": 731,
+        "bytes": 10458402,
+        "sha256": "96384c800b4624701b230a1b271d1f68d5e5c7059c3c1dc62fb1e0e2430d08f4"
+      },
+      {
+        "id": "breakwater",
+        "seed": 1741,
+        "bytes": 10025880,
+        "sha256": "d1b563bb9d1d24db86d820b6e1af101fbcabbf08c6ba7a901badf0db830e5682"
+      },
+      {
+        "id": "counterpoint",
+        "seed": 731,
+        "bytes": 5934128,
+        "sha256": "afa04390a792796d174f1b89df03df7ff9cd8f62ae74df5c6b2e864275b9e15a"
+      },
+      {
+        "id": "counterpoint",
+        "seed": 1741,
+        "bytes": 4781520,
+        "sha256": "c5f08dc9fa111ba509b17e8f08197f128f926d798bf7f4fe62957538e311e130"
+      },
+      {
+        "id": "confluence",
+        "seed": 731,
+        "bytes": 11288385,
+        "sha256": "f8fe25bda009414faf32671180282633c41df83d6a7f837316fd310781654a51"
+      },
+      {
+        "id": "confluence",
+        "seed": 1741,
+        "bytes": 10316971,
+        "sha256": "1a72af2dc705d41a4bf002041a441b7308221d46f106d5c10b444847b4437265"
+      },
+      {
+        "id": "clocktower",
+        "seed": 731,
+        "bytes": 10956777,
+        "sha256": "3d3aaf62a104822e3bd129fe061835af83703878b7498ff3ed0a55e491f2c719"
+      },
+      {
+        "id": "clocktower",
+        "seed": 1741,
+        "bytes": 12205276,
+        "sha256": "c4ed6a3f85963c6bf4e9a86b7fe72f12cd41ea07f1503a993f46686fa35ac59f"
+      },
+      {
+        "id": "greenhouse",
+        "seed": 731,
+        "bytes": 7106777,
+        "sha256": "91ffbb4e3c012954a4fa9179917d3c1f9dea20b3b8beae37718ef42e6e61207e"
+      },
+      {
+        "id": "greenhouse",
+        "seed": 1741,
+        "bytes": 7366924,
+        "sha256": "fa982a04d2d212ede4e5c82fbb6e9899136b440535c4badaf07dce5c3e8ef658"
+      },
+      {
+        "id": "scriptorium",
+        "seed": 731,
+        "bytes": 8414896,
+        "sha256": "faea3123946c3c8012ddef12f66a5f63befe77b7aaf6955c4183cd9f794873ed"
+      },
+      {
+        "id": "scriptorium",
+        "seed": 1741,
+        "bytes": 9990972,
+        "sha256": "6524451ecc164c9e108b471447d9eaa48baf08c7d6a7794aaedf5bb23c8cd494"
+      },
+      {
+        "id": "palisade",
+        "seed": 731,
+        "bytes": 11168298,
+        "sha256": "3fc10ca715ed89e73969c3c34d5434db20f1b1e13dd5b8cfb70d6d2af866a3b9"
+      },
+      {
+        "id": "palisade",
+        "seed": 1741,
+        "bytes": 10279070,
+        "sha256": "d47b11bf32230c8ba7b4d777288109b4321869a94e6c7d93fff2cdcf65569f5e"
+      },
+      {
+        "id": "inquest",
+        "seed": 731,
+        "bytes": 5996354,
+        "sha256": "675422d7ddf4b31725a2921007b2288cd360861e1202ce705a40a1ba20f1f7db"
+      },
+      {
+        "id": "inquest",
+        "seed": 1741,
+        "bytes": 6510689,
+        "sha256": "9a8adae91fa895d98044121c8d5598980bdf427c5f5e35706c531bc8825f40ce"
+      },
+      {
+        "id": "shoals",
+        "seed": 731,
+        "bytes": 8392660,
+        "sha256": "21e3434c2a362bfea1fe8e68ce9c4f25229b834de5ae58cd04447886115411a2"
+      },
+      {
+        "id": "shoals",
+        "seed": 1741,
+        "bytes": 7414202,
+        "sha256": "acf864b9c205f0782b80daa0a7e1a260c41a57068d091c93d856bd2f8f954afc"
+      },
+      {
+        "id": "theater",
+        "seed": 731,
+        "bytes": 5754913,
+        "sha256": "5b453bc514c87fa01bcbc84850f450e05b038272beb956a6b331d48e53c7cc30"
+      },
+      {
+        "id": "theater",
+        "seed": 1741,
+        "bytes": 6050930,
+        "sha256": "903f3d003eefd965684d8476352801756508ea881f86b20456a4a763fdd23c6c"
+      },
+      {
+        "id": "courier",
+        "seed": 731,
+        "bytes": 14000715,
+        "sha256": "2d90d32bb087310af54fd87d7fcdf17471c7abd4388a31f36b5a11c3a81b0a96"
+      },
+      {
+        "id": "courier",
+        "seed": 1741,
+        "bytes": 14385826,
+        "sha256": "fa90fbb693b97d2024f64a76fa71891f0a8e86ac6f7acd5653e6903dcdd1685f"
+      },
+      {
+        "id": "foundrywatch",
+        "seed": 731,
+        "bytes": 14890436,
+        "sha256": "a6c7f5831914cb93d6d481ebd1547056b50c94aa3ca91125e5979276f5099e45"
+      },
+      {
+        "id": "foundrywatch",
+        "seed": 1741,
+        "bytes": 15900661,
+        "sha256": "3e09311cb32ccdc3e80b4f05acba6809da75415cbc336a73e2267da02ca181ca"
+      },
+      {
+        "id": "foundry",
+        "seed": 731,
+        "bytes": 10924420,
+        "sha256": "c26022e85c72b1fbacafe7e2ce7adbafad4545ff053f05ec3ff0c013bd509b86"
+      },
+      {
+        "id": "foundry",
+        "seed": 1741,
+        "bytes": 11630471,
+        "sha256": "fb1589cd9a607188c3e44f3a2b7622f6357ec7d660f41ba21879959238007ab8"
+      },
+      {
+        "id": "harbor",
+        "seed": 731,
+        "bytes": 6757077,
+        "sha256": "81e6ef4fbec27a77ad8cf13fdb1e11116c8864918d6ac2b2616d76aef97bbc52"
+      },
+      {
+        "id": "harbor",
+        "seed": 1741,
+        "bytes": 7050194,
+        "sha256": "71e7c8f716e824a73f811e858f9c199c0441339b2a3c83b885b0f2cda692f30f"
+      },
+      {
+        "id": "seasoned",
+        "seed": 731,
+        "bytes": 15148687,
+        "sha256": "f48b80963296f6da62c63f96cd0899b9643d975253a53d2890d833a0ee46db6d"
+      },
+      {
+        "id": "seasoned",
+        "seed": 1741,
+        "bytes": 13579395,
+        "sha256": "1b3f34eb60a47a0e514dcffda4e042741c75d2ddd41114f0449472707edc9ef2"
+      },
+      {
+        "id": "veteran",
+        "seed": 731,
+        "bytes": 24537971,
+        "sha256": "3b6081a4a55a456ff98125800bae65aacf97c9403e47fddf9512e85f5ffb7295"
+      },
+      {
+        "id": "veteran",
+        "seed": 1741,
+        "bytes": 24976732,
+        "sha256": "425d825a01eedb2bcb9ccea5da67423b2b7216be8d2c36dc093665c8e9622307"
+      },
+      {
+        "id": "tutorial",
+        "seed": 731,
+        "bytes": 1755443,
+        "sha256": "53ef57b9f8241b2b3bc62f4a237cf6582c325581663fc9c3b32766957ec947d4"
+      },
+      {
+        "id": "tutorial",
+        "seed": 1741,
+        "bytes": 1997776,
+        "sha256": "014390b210240830048d96ab4eaf786158d514957a6052689b421e43f627deef"
+      },
+      {
+        "id": "chapter",
+        "seed": 731,
+        "bytes": 24050189,
+        "sha256": "08b00ad3d560e320a4d914e1c4e4feff7d67c8b297558986e03812b07da72492"
+      },
+      {
+        "id": "chapter",
+        "seed": 1741,
+        "bytes": 22568946,
+        "sha256": "4356685a93464932f3de7ff2d18a8dabc5f3b3e5f4f924584f5b9759e9a0e864"
+      },
+      {
+        "id": "classic",
+        "seed": 731,
+        "bytes": 6242480,
+        "sha256": "dd57d0de01a2f47632dc505adc7153b38de401b3e392aca59fc9ecb82c3f8474"
+      },
+      {
+        "id": "classic",
+        "seed": 1741,
+        "bytes": 7050053,
+        "sha256": "800f20db6963f7a108bbde714256971d01df91d51e34d7efc9370fdd58b47b69"
+      },
+      {
+        "id": "vigil",
+        "seed": 731,
+        "bytes": 10658862,
+        "sha256": "4188834ef4013f447f89f13832c14854378f7dbf7b885f6e2792093699980e59"
+      },
+      {
+        "id": "vigil",
+        "seed": 1741,
+        "bytes": 10014105,
+        "sha256": "f269cfffa639add6d9e8f213f6364b2094482f60b8722a68f54eb20b6cc8cf08"
+      },
+      {
+        "id": "archive",
+        "seed": 731,
+        "bytes": 8631980,
+        "sha256": "4d916bc4a7c19c879f0f8c9d37f34963f3e464cf4db0625a784a74c209b9044b"
+      },
+      {
+        "id": "archive",
+        "seed": 1741,
+        "bytes": 8568201,
+        "sha256": "87872bb52a938f8db20455b0972ae5fe1b8aa0ce9333ec942ee9ccd8984a31bc"
+      },
+      {
+        "id": "scarcity",
+        "seed": 731,
+        "bytes": 8679508,
+        "sha256": "85b062e539d4f79dcbcafae8147f8fb899bb6ce1bd9bde9aa47fa51893f13d2e"
+      },
+      {
+        "id": "scarcity",
+        "seed": 1741,
+        "bytes": 8669755,
+        "sha256": "4d13e2df8fe6030d6bf7b9072a5bc48ca9134dce4f887066f700d5b1d9221e82"
+      },
+      {
+        "id": "survival",
+        "seed": 731,
+        "bytes": 8870238,
+        "sha256": "b8a9b2f12832026cdc8cc47494688ca98bc0b7320a8a5e9b0acb629c4b8d6168"
+      },
+      {
+        "id": "survival",
+        "seed": 1741,
+        "bytes": 8229302,
+        "sha256": "cfa85580a7baa139fc8261672ffa451cf196f88daf414aae3828e6d9fb689f73"
+      },
+      {
+        "id": "hospice",
+        "seed": 731,
+        "bytes": 8139244,
+        "sha256": "64e4925b2e16035f3625aee189ba49c37441ac53244eae43dda3395ddf65ebba"
+      },
+      {
+        "id": "hospice",
+        "seed": 1741,
+        "bytes": 9546544,
+        "sha256": "f97de64d91d4f9f0c35fee92dd5e505c6519dd51a20c520dbbfb09a668f18eb2"
+      }
+    ],
+    "earned20Exact": true,
+    "samePaidAssetsControl21ExactToOriginalOldGear": true,
+    "normal": [
+      {
+        "id": 21,
+        "won": true,
+        "gold": 2855,
+        "next": 22,
+        "reward": {
+          "cleared": 3,
+          "gold": 90,
+          "xp": 35,
+          "firstClear": false,
+          "loot": [
+            "reliquaryshield"
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "won": true,
+        "gold": 2945,
+        "next": 23,
+        "reward": {
+          "cleared": 3,
+          "gold": 90,
+          "xp": 35,
+          "firstClear": false,
+          "loot": [
+            "reliquaryshield"
+          ]
+        }
+      }
+    ],
+    "classCastEvents": [
+      {
+        "id": 49,
+        "skill": "strike",
+        "level": 10,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 93,
+        "skill": "strike",
+        "level": 10,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 175,
+        "skill": "strike",
+        "level": 10,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 228,
+        "skill": "strike",
+        "level": 10,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 326,
+        "skill": "strike",
+        "level": 10,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 371,
+        "skill": "strike",
+        "level": 10,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 420,
+        "skill": "strike",
+        "level": 10,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      }
+    ],
+    "classDefenseEvents": [
+      {
+        "id": 33,
+        "level": 11,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 73,
+        "level": 11,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 145,
+        "level": 11,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 318,
+        "level": 11,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 362,
+        "level": 11,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": 398,
+        "level": 11,
+        "source": {
+          "amount": 1,
+          "sources": [
+            {
+              "id": "closecombat",
+              "name": "近战技艺",
+              "item": "近战研习札",
+              "amount": 1
+            }
+          ]
+        }
+      }
+    ],
+    "notAWinRateOrAvoidedDamageAttribution": true
+  },
+  "actual22WholeOriginalExact": {
+    "passed": true,
+    "actual22AfterFreeReturnWholeBytesExactToPreImplementationOld22": true,
+    "bytes": 6178731,
+    "sha256": "341d3ed68a1093c634d904306f54833a566d21582101a6e8b07f6fb432bbb901"
+  },
+  "sourceImpact": {
+    "changedOriginalFiles": [
+      "dist/expedition-engine.mjs",
+      "dist/expedition-equipment-ranks-view.mjs",
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-equipment.mjs",
+      "dist/expedition-loot.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs",
+      "tests/damage-attributes.test.mjs",
+      "tests/disease.test.mjs",
+      "tests/equipment-skill-ranks.test.mjs",
+      "tests/grade-armor.test.mjs",
+      "tests/healing-effect.test.mjs",
+      "tests/item-set-bonuses.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs"
+    ],
+    "newFiles": [
+      "dist/assets/items/meleeprimer-v238.svg",
+      "dist/expedition-skill-classes.mjs",
+      "scripts/browser-v238.cjs",
+      "scripts/skill-class-cases.mjs",
+      "tests/skill-classes.test.mjs"
+    ],
+    "allOtherOriginalSourceBytesExact": true,
+    "old78WholeReportsExact": true,
+    "guildTrainingCostsAndSingleWriterSourceUnchanged": true
+  },
+  "reference": {
+    "date": "2026-11-12",
+    "readableOfficialBodies": [
+      {
+        "url": "https://world-of-dungeons.net/item/holy%20penguin%20leather%20cap%20of%20nimbleness&id=9806493&hp=28&anw=-1",
+        "scope": "Official public item body explicitly lists a skill-level bonus applying to every Leadership-class skill. Structure only; not adopting its values or eligibility."
+      },
+      {
+        "url": "https://world-of-dungeons.net/wod/spiel/hero/skill.php?IS_POPUP=1&is_popup=1&name=Disarming+Strike",
+        "scope": "Official public skill body distinguishes attack type melee from skill class Close Combat. Neither original skill nor formulas transplanted."
+      }
+    ],
+    "bodyReadMechanism": "web tool open; factual paraphrase retained here, not a saved raw HTTP-body claim",
+    "deniedAndNotRetried": [
+      {
+        "url": "https://world-of-dungeons.de/ency/Fertigkeiten",
+        "status": 403
+      },
+      {
+        "url": "https://world-of-dungeons.de/ency/Manakosten",
+        "status": 403
+      }
+    ],
+    "projectAdaptation": "Optional fixed60gold accessory, closecombat membership strike/shieldbash/parry, +1 class rank and -2AGI/-1CON are authored. Existing cost, ordinary skill availability, old equipment, supply economy and save ownership unchanged. Class bonuses do not grant skills or count toward XP refunds.",
+    "notVerifiedCurrentSelectedServerRules": true
+  },
+  "mainUnchanged": "96a8163c95d90e91a5ec3ad34c8677889596ba5b",
+  "full133NotRun": true,
+  "fullHistoricalAndAllOldFreshColdNotRerun": true,
+  "sourceAndCurrentEvidenceColdPending": true,
+  "strict49001False": true
+}

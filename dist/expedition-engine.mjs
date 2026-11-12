@@ -53,7 +53,7 @@ import {regenerationTicks} from './expedition-regeneration.mjs';
 import {HEALING_BLOCK_REASON,HEALING_BLOCK_STAT,healingBlockTrace,canApplyHealingBlock} from './expedition-disruption.mjs';
 import {validHarborPlan,resolveHarborStep} from './expedition-harbor.mjs';
 import {foundryApproach,resolveFoundryPass,validFoundryFlow,FOUNDRY_COOLED_VAULT,FOUNDRY_ROOMS} from './expedition-foundry.mjs';
-import {validEquipment,equipmentTotals,equipmentRank} from './expedition-equipment.mjs';
+import {validEquipment,equipmentTotals,equipmentRank,equipmentClassRank,equipmentClassSources} from './expedition-equipment.mjs';
 import {healingDecision,selectHealingTarget} from './expedition-healing.mjs';
 import {RESCUE_CHOICES,resolveRescue,BELL_CHOICES,bellCandidates,resolveBell,BELL_ROUTES,bellRoute,applyBellRoute} from './expedition-events.mjs';
 import {ROOM_IDS,gearSupports,ROLE_TARGETS,roleTargetAllowed,positionOrderAllowed,supportPriorityAllowed,supplyBudget,hasArchiveEvents,roomTimeBudget,VERSION,clone,POS,GEAR,SKILLS,HEROES,ROOMS,DEFENSES,TYPES,DEFENSE_TYPES,PLAN_FIELDS,resolveHeroPlan,ITEMS,EXPEDITIONS,roomsFor,naturalDefenses,row,trainingOptions,MAX_TRAINING_RANK} from './expedition-data.mjs';
@@ -105,8 +105,8 @@ export function buildParty(c){return c.heroes.map(h=>{const t=HEROES.find(t=>t.i
 export function current(u,key){const gear=equipmentTotals(u.gear);return (u.attrs[key]??(key==='armor'?gear.armor:0))+(gear.bonus[key]||0)+(u.effects||[]).reduce((n,e)=>n+(e.active!==false&&e.stat===key?e.value:0),0);}
 export function resistanceOf(u,type){return Math.max(-50,Math.min(75,(u.resistances?.[type]||0)+(equipmentTotals(u.gear).resistances[type]||0)));}
 export function damageResult(rolled,multiplier,armor,resistance=0){const afterArmor=Math.max(0,rolled*multiplier-armor),damage=Math.floor(afterArmor*(1-resistance/100));return {afterArmor,unresisted:Math.floor(afterArmor),damage};}
-export function skillLevel(u,sid){return (u.skills[sid]||0)+(u.skills[sid]!==undefined?equipmentRank(u.gear,'skill:'+sid):0)+(SKILLS[sid]?.kind==='attack'?current(u,'skill'):0);}
-export function skillBreakdown(u,sid){const training=u.training?.['skill:'+sid]||0,specialization=u.trained===sid?3:0,temporary=SKILLS[sid]?.kind==='attack'?current(u,'skill'):0;return {base:(u.skills[sid]||0)-training-specialization,specialization,training,...(equipmentTotals(u.gear).ranks?{equipment:u.skills[sid]!==undefined?equipmentRank(u.gear,'skill:'+sid):0}:{}),temporary,total:skillLevel(u,sid)};}
+export function skillLevel(u,sid){return (u.skills[sid]||0)+(u.skills[sid]!==undefined?equipmentRank(u.gear,'skill:'+sid)+equipmentClassRank(u.gear,'skill:'+sid):0)+(SKILLS[sid]?.kind==='attack'?current(u,'skill'):0);}
+export function skillBreakdown(u,sid){const training=u.training?.['skill:'+sid]||0,specialization=u.trained===sid?3:0,temporary=SKILLS[sid]?.kind==='attack'?current(u,'skill'):0,classes=u.skills[sid]!==undefined?equipmentClassRank(u.gear,'skill:'+sid):0,gear=equipmentTotals(u.gear);return {base:(u.skills[sid]||0)-training-specialization,specialization,training,...(gear.ranks||gear.classRanks?{equipment:u.skills[sid]!==undefined?equipmentRank(u.gear,'skill:'+sid)+classes:0}:{}),...(classes?{classEquipment:{amount:classes,sources:equipmentClassSources(u.gear,'skill:'+sid)}}:{}),temporary,total:skillLevel(u,sid)};}
 export function damageBasis(u,sid){return damageBaseFor(u,SKILLS[sid],skillLevel(u,sid),current);}
 export function mean(u,sid){const s=SKILLS[sid];return 2*current(u,s.primary)+current(u,s.secondary)+2*skillLevel(u,sid)+(s.kind==='attack'?current(u,TAUNT.stat):0);}
 export function defenseProfile(u,type){
@@ -118,9 +118,9 @@ export function defenseProfile(u,type){
  else if(u.mp<chosen.cost)reason='法力不足';
  const skill=reason?'natural':requested,d=DEFENSES[skill];
  const [primary,secondary]=skill==='natural'?(type==='melee'?['dex','agi']:['magic','mental'].includes(type)?['wil','int']:['agi','per']):[d.primary,d.secondary];
- const training=skill==='natural'?0:u.training?.['defense:'+skill]||0,specialization=skill==='natural'?0:u.defenseFocus===skill?3:0,temporaryLevel=skill==='natural'?0:current(u,'defenseSkill'),equipment=skill==='natural'?0:equipmentRank(u.gear,'defense:'+skill),level=skill==='natural'?0:6+specialization+training+equipment+temporaryLevel;
+ const training=skill==='natural'?0:u.training?.['defense:'+skill]||0,specialization=skill==='natural'?0:u.defenseFocus===skill?3:0,temporaryLevel=skill==='natural'?0:current(u,'defenseSkill'),classes=skill==='natural'?0:equipmentClassRank(u.gear,'defense:'+skill),equipment=skill==='natural'?0:equipmentRank(u.gear,'defense:'+skill)+classes,level=skill==='natural'?0:6+specialization+training+equipment+temporaryLevel;
  const base=2*current(u,primary)+current(u,secondary)+2*level;
- return {requested,skill,name:d.name,reason,level,training,specialization,...(equipmentTotals(u.gear).ranks?{equipment}:{}),temporaryLevel,cost:d.cost,primary,secondary,primaryValue:current(u,primary),secondaryValue:current(u,secondary),base,bonus:current(u,'defense'),mean:base+current(u,'defense'),...(independent?{mentalDefense:{selection:'independent',requested,name:chosen?.name||requested}}:{})};
+ return {requested,skill,name:d.name,reason,level,training,specialization,...((equipmentTotals(u.gear).ranks||equipmentTotals(u.gear).classRanks)?{equipment}:{}),...(classes?{classEquipment:{amount:classes,sources:equipmentClassSources(u.gear,'defense:'+skill)}}:{}),temporaryLevel,cost:d.cost,primary,secondary,primaryValue:current(u,primary),secondaryValue:current(u,secondary),base,bonus:current(u,'defense'),mean:base+current(u,'defense'),...(independent?{mentalDefense:{selection:'independent',requested,name:chosen?.name||requested}}:{})};
 }
 export function chooseTargets(actor,units,s,target,rng=()=>0,command={},recordSelection){
  if(s.kind==='transfer')return manaRecipients(actor,units,target).slice(0,1);

@@ -1,4 +1,5 @@
 import {itemSetTotals} from './expedition-item-sets.mjs';
+import {skillClassRank,skillClassSources} from './expedition-skill-classes.mjs';
 export const GEAR={field:{name:'行军装',armor:2,bonus:{}},plate:{name:'铁壁重甲',armor:6,bonus:{agi:-4}},focus:{name:'仪式法器',armor:0,bonus:{int:3}},bow:{name:'校准弓具',armor:0,bonus:{dex:3}},lute:{name:'共鸣琴',armor:1,bonus:{cha:3}}};
 Object.assign(GEAR,{
  reliquaryshield:{name:"圣匣重盾",armor:2,bonus:{agi:-2,wil:2},countsAs:"plate",dungeonOnly:true},
@@ -24,6 +25,7 @@ Object.assign(GEAR,{lamellarcoat:{name:'层潮叠甲',slot:'armor',armor:1,bonus
 // Optional authored weapon profile: separate hit/damage investment, no legacy rewrite.
 Object.assign(GEAR,{drawbow:{name:'测潮重弓',slot:'weapon',armor:0,bonus:{per:2,str:1,agi:-2},countsAs:'bow',damageAttributes:{primary:'per',secondary:'str',bonus:4}}});
 // Optional support effect height; item and all values are authored prototype rules.
+Object.assign(GEAR,{meleeprimer:{name:'近战研习札',slot:'accessory',armor:0,bonus:{agi:-2,con:-1},classRanks:{closecombat:1}}});
 Object.assign(GEAR,{carecase:{name:'调护药匣',slot:'accessory',armor:0,bonus:{con:-2,agi:-2},directHealingPower:5}});
 export const SLOTS={weapon:'武器',armor:'防具',accessory:'饰品'};
 Object.assign(GEAR,{
@@ -64,7 +66,7 @@ export function equipmentKit(id){
 }
 export const validEquipment=gear=>!!gear&&typeof gear==='object'&&!Array.isArray(gear)&&Object.keys(gear).length===3&&Object.keys(SLOTS).every(slot=>Object.hasOwn(GEAR,gear[slot])&&GEAR[gear[slot]].slot===slot);
 export function equipmentItems(gear){return typeof gear==='string'?[GEAR[gear]]:Object.keys(SLOTS).map(slot=>GEAR[gear?.[slot]]);}
-export function equipmentTotals(gear){const total={armor:0,bonus:{},resistances:{}};for(const item of equipmentItems(gear)){if(!item)continue;if(item.ranks){total.ranks??={};for(const[k,n]of Object.entries(item.ranks))total.ranks[k]=(total.ranks[k]||0)+n;}total.armor+=item.armor;for(const field of ['bonus','resistances'])for(const [k,v] of Object.entries(item[field]||{}))total[field][k]=(total[field][k]||0)+v;}const sets=itemSetTotals(gear);total.armor+=sets.armor;for(const field of ['bonus','resistances'])for(const[k,n]of Object.entries(sets[field]))total[field][k]=(total[field][k]||0)+n;return total;}
+export function equipmentTotals(gear){const total={armor:0,bonus:{},resistances:{}};for(const item of equipmentItems(gear)){if(!item)continue;if(item.classRanks){total.classRanks??={};for(const[k,n]of Object.entries(item.classRanks))total.classRanks[k]=(total.classRanks[k]||0)+n;}if(item.ranks){total.ranks??={};for(const[k,n]of Object.entries(item.ranks))total.ranks[k]=(total.ranks[k]||0)+n;}total.armor+=item.armor;for(const field of ['bonus','resistances'])for(const [k,v] of Object.entries(item[field]||{}))total[field][k]=(total[field][k]||0)+v;}const sets=itemSetTotals(gear);total.armor+=sets.armor;for(const field of ['bonus','resistances'])for(const[k,n]of Object.entries(sets[field]))total[field][k]=(total[field][k]||0)+n;return total;}
 export const equipmentName=gear=>equipmentItems(gear).map(i=>i?.name||'未知装备').join(' / ');
 export const sameEquipment=(a,b)=>Object.keys(SLOTS).every(slot=>a?.[slot]===b?.[slot]);
 export const gearRequirementName=required=>({plate:'携盾武器',bow:'弓具类武器',focus:'法器类武器'}[required]||GEAR[required]?.name||required);
@@ -73,3 +75,6 @@ export function replaceEquipment(gear,id){if(!validEquipment(gear)||!Object.hasO
 
 // Static equipment ranks are separate from permanent training and temporary effects.
 export const equipmentRank=(gear,key)=>equipmentTotals(gear).ranks?.[key]||0;
+
+export const equipmentClassRank=(gear,key)=>skillClassRank(equipmentItems(gear),key);
+export const equipmentClassSources=(gear,key)=>skillClassSources(equipmentItems(gear),key);
