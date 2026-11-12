@@ -1,0 +1,167 @@
+{
+  "version": "0.236",
+  "base": "3d7e1b6f2f4b6036e1a7ea9cd13c1f3f44254423",
+  "branch": "feature/v236-passive-planning-milestone",
+  "functional": {
+    "passed": true,
+    "fullNode": 2157,
+    "oneFullGUIInvocation": 131,
+    "CLI": 204,
+    "strictCLIBytes": 203,
+    "priorChapterAndCatalogueDeltaFullyChecked": 1,
+    "historyJSON": 130,
+    "defaultOffHTML": 33,
+    "allSourceFrozenExact": true,
+    "allSamplesKeep1GiBPlus128MiB": true,
+    "oldRecoveryCurrentEvidenceSourceAndMainPending": true,
+    "strict49001False": true
+  },
+  "oldRecovery": {
+    "passedInDeclaredScope": true,
+    "all56OriginalZIPsFreshDualCold": true,
+    "canonicalCatalogues": 34,
+    "separateWholeCatalogues": 2,
+    "all36TreeCataloguesFreshDualCold": true,
+    "wholeTreeRoots": 399,
+    "wholeTreeFiles": 56616,
+    "fileCatalogues": 3,
+    "allRecordedFileBindings": 6569,
+    "allOriginal6426TemporaryBindingsAnd143RetiredCopiesDualCold": true,
+    "originallyUnknownMetadataNotFilledOrInvented": true,
+    "compound197BothForcedLogicalBaseDecoders": true,
+    "knownLegacyRows": 49000,
+    "strictFull49001LegacyVerificationPassed": false,
+    "unverifiedOriginalDerivedIndex": {
+      "path": "/tmp/wod-v212-pages-update-lhoiaum0/site/.git/index",
+      "bytes": 141165,
+      "sha256": "43df921c968a4450213f6414b20b447e963183f6c538f42585bfe0904ed762ac",
+      "mode": 384,
+      "mtimeNs": 1794255922847640839
+    },
+    "noOriginalNamespaceWritten": true,
+    "noOriginalBytesLostOrUnknownIndexRecoveryClaim": true
+  },
+  "currentCaseRecovery": {
+    "passed": true,
+    "wholeRoots": 262,
+    "firstRoots": 131,
+    "finalRoots": 131,
+    "dualWholeRestores": 524,
+    "firstFailuresPreserved": [
+      178
+    ],
+    "finalAll131Passed": true,
+    "rawParentControlMetadataExact": true,
+    "catalogues": [
+      {
+        "path": "/workspace/wod-maintenance/v236-full-browser-originals/CATALOG.group1.json",
+        "bytes": 1223,
+        "sha256": "1d0baf65e682bc731cd0b816a3b5902db93bcefe5b1c65668382e2332824c3e0",
+        "mode": 384,
+        "mtimeNs": 1794483663416368877
+      },
+      {
+        "path": "/workspace/wod-maintenance/v236-full-browser-originals/CATALOG.group2.json",
+        "bytes": 1223,
+        "sha256": "a101102e1d5b8871e0ae2984039a3fc7f71d1860236ef38f335703bf15835326",
+        "mode": 384,
+        "mtimeNs": 1794483970255730090
+      },
+      {
+        "path": "/workspace/wod-maintenance/v236-full-browser-originals/CATALOG.group3.json",
+        "bytes": 1223,
+        "sha256": "6a81e5ad08b4b9b694d58e0d3a8b9e2cf7a957d119a2041f7b93504365f946c6",
+        "mode": 384,
+        "mtimeNs": 1794484186706670383
+      }
+    ],
+    "requiredWholeDirectory": "/workspace/wod-maintenance/v236-full-browser-originals",
+    "archiveBytes": 484039339,
+    "retiredCopies": 2516,
+    "logicalBytesPreserved": 9481847792,
+    "physicalFreeBefore": {
+      "/workspace": 1584361472,
+      "/tmp": 2494652416
+    },
+    "physicalFreeAfter": {
+      "/workspace": 1582727168,
+      "/tmp": 8124133376
+    },
+    "sharedInputHardlinksCountedAsPhysicalOnce": true,
+    "noUniqueOriginalEvidenceDeleted": true,
+    "sameDiskNotOffHostBackup": true,
+    "existingTreeFormatMixedNativeBZIP2AndDeflate": true
+  },
+  "normal": {
+    "passed": true,
+    "rows": [
+      {
+        "id": 17,
+        "route": "classic",
+        "won": true,
+        "alive": 6,
+        "publicDiseaseRooms": 0,
+        "passiveRank": 0,
+        "actualXPSpent": 0,
+        "actualDiseaseRecords": 0,
+        "passiveRecords": 0,
+        "reward": {
+          "cleared": 3,
+          "gold": 90,
+          "xp": 35,
+          "firstClear": false,
+          "loot": [
+            "reliquaryshield"
+          ]
+        },
+        "gold": 2525,
+        "sha256": "c0ba8a3dc90c231d9785b5b2ebbd865d41b6d132f3d3b25f11fa148eadbac38d"
+      },
+      {
+        "id": 18,
+        "route": "sporegrove",
+        "won": true,
+        "alive": 6,
+        "publicDiseaseRooms": 2,
+        "passiveRank": 1,
+        "actualXPSpent": 20,
+        "actualDiseaseRecords": 84,
+        "passiveRecords": 7,
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 2625,
+        "sha256": "e06833940443e9e6809209fe527e936b9362d10420ddce575e21443c9d462746"
+      }
+    ],
+    "finalGold": 2625,
+    "finalNext": 19,
+    "limits": "Earned16 continues predetermined normal17classic without buying the disease passive and18sporegrove with20XP passive1. Public enemy skill opportunities are authored presentation of existing data, not enemy-action predictions or guaranteed benefit. No seed search, numerical tuning, new skill/economy, or extra claims. Both first outcomes are retained."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-training-use.mjs",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/browser-v178.cjs"
+    ],
+    "newFiles": [
+      "dist/expedition-passive-opportunity.mjs",
+      "scripts/browser-v236.cjs",
+      "scripts/passive-opportunity-cases.mjs",
+      "tests/passive-opportunity.test.mjs"
+    ],
+    "allOtherOriginalSourceExact": true,
+    "engineDataGuildSaveProtectionDiseaseAndPassiveNumericsExact": true,
+    "measurementOnlyFixAfterFirstFull": "ResourceTiming capture pre-navigation capacity and zero-overflow plus actual SVG HTTP status/MIME/bytes/SHA; all original assertions retained",
+    "productGeneratorsAndAllNodeSourcesUnchangedBetweenFullRuns": true
+  },
+  "currentSourceAndFinalControlColdPendingAtThisCommit": true,
+  "noPagesDeployment": true,
+  "closeOldPagesAndBackupBeforeUpgrade": true
+}
