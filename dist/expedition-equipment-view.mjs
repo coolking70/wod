@@ -1,3 +1,4 @@
+import {directHealingSummary,directHealingPower} from './expedition-healing-effect.mjs';
 import {damageAttributeSummary} from './expedition-damage-attributes.mjs';
 import {equipmentChangeView} from './expedition-equipment-change.mjs';
 import {gradeArmorSummary} from './expedition-grade-armor.mjs';
@@ -12,13 +13,13 @@ import {EQUIPMENT_SET_SLOTS} from './expedition-equipment-sets.mjs';
 import {GEAR,SLOTS,equipmentName,equipmentTotals,gearSupports,gearRequirementName,replaceEquipment} from './expedition-equipment.mjs';
 import {HEROES,ATTR,TYPES,SKILLS,DEFENSES,EXPEDITIONS} from './expedition-data.mjs';
 import {gearDifference,isRelic} from './expedition-loot.mjs';
-const itemImages={drawbow:'assets/items/drawbow-v231.svg',lamellarcoat:'assets/items/lamellarcoat-v227.svg',deepweave:'assets/items/deepweave-v227.svg',postbell:'assets/items/postbell.svg',filterveil:'assets/items/filterveil.svg'};
+const itemImages={carecase:'assets/items/carecase-v233.svg',drawbow:'assets/items/drawbow-v231.svg',lamellarcoat:'assets/items/lamellarcoat-v227.svg',deepweave:'assets/items/deepweave-v227.svg',postbell:'assets/items/postbell.svg',filterveil:'assets/items/filterveil.svg'};
 const itemArt=id=>Object.hasOwn(itemImages,id)?`<img class=equipment-art src="${itemImages[id]}" width="24" height="24" loading="lazy" decoding="async" alt="" aria-hidden="true">`:'';
 export function equipmentImpact(plan,current,next){
  return equipmentSetImpact(plan,current,replaceEquipment(current,next));
 }
 export function equipmentSource(id){return equipmentSources(id).map(s=>s.label).join('；');}
-export function equipmentStats(gear){const v=equipmentTotals(gear),grade=gradeArmorSummary(gear);return [`${grade?"基础护甲":"护甲"} ${v.armor}`,...Object.entries(v.bonus).map(([k,n])=>`${ATTR[k]} ${n>=0?'+':''}${n}`),...Object.entries(v.resistances).map(([k,n])=>`${TYPES[k]}抗性 ${n>=0?'+':''}${n}%`),...Object.entries(v.ranks||{}).map(([k,n])=>`${(k.startsWith('skill:')?SKILLS[k.slice(6)]:DEFENSES[k.slice(8)]).name}等级 ${n>=0?'+':''}${n}`),...(grade?[grade]:[]),...(damageAttributeSummary(gear)?[damageAttributeSummary(gear)]:[])].join(' · ');}
+export function equipmentStats(gear){const v=equipmentTotals(gear),grade=gradeArmorSummary(gear);return [`${grade?"基础护甲":"护甲"} ${v.armor}`,...Object.entries(v.bonus).map(([k,n])=>`${ATTR[k]} ${n>=0?'+':''}${n}`),...Object.entries(v.resistances).map(([k,n])=>`${TYPES[k]}抗性 ${n>=0?'+':''}${n}%`),...Object.entries(v.ranks||{}).map(([k,n])=>`${(k.startsWith('skill:')?SKILLS[k.slice(6)]:DEFENSES[k.slice(8)]).name}等级 ${n>=0?'+':''}${n}`),...(grade?[grade]:[]),...(damageAttributeSummary(gear)?[damageAttributeSummary(gear)]:[]),...(directHealingSummary(gear)?[directHealingSummary(gear)]:[])].join(' · ');}
 export function equipmentPanel(g,selected,filter,slot,plan,returnPreview=null,lootTrial=null,feedback='',warehouseItem='all',changeReceipt=null){
  const m=g.members.find(m=>m.id===selected),hero=HEROES.find(h=>h.id===selected);
  const stock=Object.entries(g.warehouse).filter(([,n])=>n>0),stockFilter=stock.some(([id])=>id===warehouseItem)?warehouseItem:'all';

@@ -1,0 +1,393 @@
+{
+  "targetedStagePassed": true,
+  "completeMilestonePassed": false,
+  "fullNode": {
+    "tests": 2116,
+    "pass": 2116,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "firstRelatedNode": {
+    "tests": 47,
+    "pass": 46,
+    "fail": 1,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "finalRelatedNode": {
+    "tests": 47,
+    "pass": 47,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newGUIViewportMotionCopies": 6,
+  "newFreshCampaignRestoreCases": 1,
+  "newGUI": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "sourceEarnedNext": 13,
+        "paidGold": 60,
+        "freeReturnOfOwnedAccessory": true,
+        "actual": {
+          "eventId": 167,
+          "round": 1,
+          "base": 73,
+          "bonus": 5,
+          "total": 78,
+          "actual": 42,
+          "overheal": 36
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 2195,
+        "normal13Alive": 6,
+        "normal14Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 373,
+        "SVGMIMEAndSHAExact": true,
+        "report13SHA256": "812db1d974c8b2584a26a82e3c62b1eb6747782224143f544620aab27812427d",
+        "report14SHA256": "a72f7855c87fe3c7d5d0a3237f38855d60652d2bced81f05d5fa71218d9aa65c"
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "sourceEarnedNext": 13,
+        "paidGold": 60,
+        "freeReturnOfOwnedAccessory": true,
+        "actual": {
+          "eventId": 167,
+          "round": 1,
+          "base": 73,
+          "bonus": 5,
+          "total": 78,
+          "actual": 42,
+          "overheal": 36
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 2195,
+        "normal13Alive": 6,
+        "normal14Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 373,
+        "SVGMIMEAndSHAExact": true,
+        "report13SHA256": "812db1d974c8b2584a26a82e3c62b1eb6747782224143f544620aab27812427d",
+        "report14SHA256": "a72f7855c87fe3c7d5d0a3237f38855d60652d2bced81f05d5fa71218d9aa65c"
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "sourceEarnedNext": 13,
+        "paidGold": 60,
+        "freeReturnOfOwnedAccessory": true,
+        "actual": {
+          "eventId": 167,
+          "round": 1,
+          "base": 73,
+          "bonus": 5,
+          "total": 78,
+          "actual": 42,
+          "overheal": 36
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 2195,
+        "normal13Alive": 6,
+        "normal14Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 373,
+        "SVGMIMEAndSHAExact": true,
+        "report13SHA256": "812db1d974c8b2584a26a82e3c62b1eb6747782224143f544620aab27812427d",
+        "report14SHA256": "a72f7855c87fe3c7d5d0a3237f38855d60652d2bced81f05d5fa71218d9aa65c"
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "sourceEarnedNext": 13,
+        "paidGold": 60,
+        "freeReturnOfOwnedAccessory": true,
+        "actual": {
+          "eventId": 167,
+          "round": 1,
+          "base": 73,
+          "bonus": 5,
+          "total": 78,
+          "actual": 42,
+          "overheal": 36
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 2195,
+        "normal13Alive": 6,
+        "normal14Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 373,
+        "SVGMIMEAndSHAExact": true,
+        "report13SHA256": "812db1d974c8b2584a26a82e3c62b1eb6747782224143f544620aab27812427d",
+        "report14SHA256": "a72f7855c87fe3c7d5d0a3237f38855d60652d2bced81f05d5fa71218d9aa65c"
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "sourceEarnedNext": 13,
+        "paidGold": 60,
+        "freeReturnOfOwnedAccessory": true,
+        "actual": {
+          "eventId": 167,
+          "round": 1,
+          "base": 73,
+          "bonus": 5,
+          "total": 78,
+          "actual": 42,
+          "overheal": 36
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 2195,
+        "normal13Alive": 6,
+        "normal14Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 373,
+        "SVGMIMEAndSHAExact": true,
+        "report13SHA256": "812db1d974c8b2584a26a82e3c62b1eb6747782224143f544620aab27812427d",
+        "report14SHA256": "a72f7855c87fe3c7d5d0a3237f38855d60652d2bced81f05d5fa71218d9aa65c"
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "sourceEarnedNext": 13,
+        "paidGold": 60,
+        "freeReturnOfOwnedAccessory": true,
+        "actual": {
+          "eventId": 167,
+          "round": 1,
+          "base": 73,
+          "bonus": 5,
+          "total": 78,
+          "actual": 42,
+          "overheal": 36
+        },
+        "wholeReportsPendingReloadUniqueClaimAndCampaignExact": true,
+        "finalGold": 2195,
+        "normal13Alive": 6,
+        "normal14Alive": 6,
+        "noHorizontalOverflow": true,
+        "SVGBytes": 373,
+        "SVGMIMEAndSHAExact": true,
+        "report13SHA256": "812db1d974c8b2584a26a82e3c62b1eb6747782224143f544620aab27812427d",
+        "report14SHA256": "a72f7855c87fe3c7d5d0a3237f38855d60652d2bced81f05d5fa71218d9aa65c"
+      }
+    ],
+    "freshCampaignRestoreAndReopened13ReportExact": true,
+    "errors": [],
+    "limits": "Exact earned normal12 continues predetermined13/14 on existing returningtide. F pays60gold once for optional carecase;14 free returns old owned accessory. No training, extra rewards, roles or route changes. Same-paid seed13 old-accessory comparison unclaimed; changed actions/RNG/HP/initiative prevent isolated causal or balance claims. Viewports repeat the same two deterministic reports, not independent combat samples. Only structural rank/effect separation has official indexed evidence; all concrete gear values/order authored. Browser profiles are emulation, not phone benchmarks. Native SVG HTTP bytes verified; no raster speed comparison or new GIF generation claimed. Full128GUI not executed."
+  },
+  "completeOldGUIs": [
+    112,
+    229
+  ],
+  "legacyExactReports": 78,
+  "priorNormal11And12AndEarnedGuild12Exact": true,
+  "normal": {
+    "passed": true,
+    "startNext": 13,
+    "startGold": 1915,
+    "rows": [
+      {
+        "id": 13,
+        "seed": 13,
+        "won": true,
+        "alive": 6,
+        "goldBefore": 1855,
+        "goldAfter": 2025,
+        "reward": {
+          "cleared": 4,
+          "gold": 170,
+          "xp": 75,
+          "firstClear": false,
+          "loot": [
+            "anchorseal"
+          ]
+        },
+        "XPB": 885,
+        "herbsLeft": 9,
+        "heals": [
+          {
+            "eventId": 167,
+            "skill": "heal",
+            "room": 1,
+            "round": 1,
+            "targets": [
+              "e"
+            ],
+            "amount": 78,
+            "actual": 42,
+            "overheal": 36,
+            "healingEffect": {
+              "base": 73,
+              "bonus": 5,
+              "total": 78,
+              "skillLevel": 7,
+              "mean": 105,
+              "sources": [
+                {
+                  "gearId": "carecase",
+                  "gearName": "调护药匣",
+                  "slot": "accessory",
+                  "value": 5
+                }
+              ]
+            }
+          },
+          {
+            "eventId": 333,
+            "skill": "heal",
+            "room": 2,
+            "round": 2,
+            "targets": [
+              "e"
+            ],
+            "amount": 78,
+            "actual": 39,
+            "overheal": 39,
+            "healingEffect": {
+              "base": 73,
+              "bonus": 5,
+              "total": 78,
+              "skillLevel": 7,
+              "mean": 105,
+              "sources": [
+                {
+                  "gearId": "carecase",
+                  "gearName": "调护药匣",
+                  "slot": "accessory",
+                  "value": 5
+                }
+              ]
+            }
+          }
+        ],
+        "effectCount": 2,
+        "wholeReportSHA256": "69dc602ff0ddf5f54b2794a6aac8f6fb4a769270b43ed4eb0f493e1f9c04ae65"
+      },
+      {
+        "id": 14,
+        "seed": 14,
+        "won": true,
+        "alive": 6,
+        "goldBefore": 2025,
+        "goldAfter": 2195,
+        "reward": {
+          "cleared": 4,
+          "gold": 170,
+          "xp": 75,
+          "firstClear": false,
+          "loot": [
+            "anchorseal"
+          ]
+        },
+        "XPB": 960,
+        "herbsLeft": 10,
+        "heals": [
+          {
+            "eventId": 402,
+            "skill": "heal",
+            "room": 2,
+            "round": 3,
+            "targets": [
+              "e"
+            ],
+            "amount": 73,
+            "actual": 39,
+            "overheal": 34,
+            "healingEffect": null
+          }
+        ],
+        "effectCount": 0,
+        "wholeReportSHA256": "af4feeae4464b567f2efdab020db05ea3ebcbf03254e2d7f03fb1a88ec87b3a2"
+      }
+    ],
+    "finalGold": 2195,
+    "finalNext": 15,
+    "control13": {
+      "won": true,
+      "alive": 6,
+      "healing": 0,
+      "herbsLeft": 11,
+      "notClaimed": true
+    },
+    "noParameterOrSeedChangeAfterDesignLock": true,
+    "limits": "Exact earned normal12 continues predetermined13/14 on existing returningtide. F pays60gold once for optional carecase;14 free returns old owned accessory. No training, extra rewards, roles or route changes. Same-paid seed13 old-accessory comparison unclaimed; changed actions/RNG/HP/initiative prevent isolated causal or balance claims. Viewports repeat the same two deterministic reports, not independent combat samples. Only structural rank/effect separation has official indexed evidence; all concrete gear values/order authored."
+  },
+  "compatibility": {
+    "oldVersion": "0.232",
+    "oldSource": "644dc21cf43c909b7fc9c39f0db406bca6fcf09f",
+    "oldParserAcceptsEarnedStart12": true,
+    "newOwnedCarecasePreventsOldParserDowngrade": true,
+    "oldParserAcceptedFinal": false,
+    "oldParserError": "公会队员数据无效",
+    "inputUnchanged": true,
+    "noRealPublicOldOriginMigrationAttempted": true,
+    "backupBeforeUpgradeAndNoDowngradeGuarantee": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 222,
+    "checkedReferences": 276,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-engine.mjs",
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-equipment.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-loot.mjs",
+      "dist/expedition-ui.mjs",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs",
+      "tests/damage-attributes.test.mjs",
+      "tests/disease.test.mjs",
+      "tests/equipment-skill-ranks.test.mjs",
+      "tests/grade-armor.test.mjs",
+      "tests/item-set-bonuses.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs"
+    ],
+    "newFiles": [
+      "dist/assets/items/carecase-v233.svg",
+      "dist/expedition-healing-effect.mjs",
+      "scripts/browser-v233.cjs",
+      "scripts/healing-effect-cases.mjs",
+      "tests/healing-effect.test.mjs"
+    ],
+    "allOtherOriginalSourceExact": true,
+    "oldV195AndGuildAndSavePersistenceExact": true,
+    "newRoutes": 39,
+    "newGoalSlots": 117,
+    "currentFullGUIRegistrySize": 128,
+    "allNewProducersRegisteredBeforeFullNode": true,
+    "onlyGearCatalogueCardinalityChangedInOldTests": true,
+    "baselineSource": "644dc21cf43c909b7fc9c39f0db406bca6fcf09f",
+    "inheritedStorageDescriptor": "/workspace/wod-delivery/v0.232-effect-power-and-dullcourt/DURABLE_STORAGE_COMPLETE.json"
+  },
+  "allRealEncounterParametersSeedsAndOutcomesUnchangedAfterLock": true,
+  "allObservedBonusInOverhealNotClaimedAsEffectiveBenefit": true,
+  "full128GUINotRun": true,
+  "originalV195UnchangedNotRerunAndUnresolved": true,
+  "allHistoricalImportCLIAndAllOldDualColdNotRerun": true,
+  "strict49001LegacyPassed": false,
+  "mainNotMerged": true,
+  "writeModelChosen": "A by user, pending separate implementation after this stage",
+  "sourceAndCurrentEvidenceColdPendingSeparateTransactions": true,
+  "version": "0.233",
+  "base": "644dc21cf43c909b7fc9c39f0db406bca6fcf09f",
+  "branch": "feature/v233-direct-healing-effect",
+  "pagesNotTriggered": true
+}
