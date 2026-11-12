@@ -1,0 +1,7 @@
+import {clone} from '../dist/expedition-data.mjs';
+import {adventureConfig} from '../dist/expedition-adventure.mjs';
+import {train,guildConfig,depart,pendingReport,pendingReward,claim} from '../dist/expedition-guild.mjs';
+import {passiveTrainingLoop,passiveInitialKeys} from './passive-training-cases.mjs';
+export const passiveOpportunityInitialKeys=()=>{const keys=passiveInitialKeys();keys['abbey-guild-v6']=JSON.stringify(passiveTrainingLoop().final);return keys;};
+let cache;
+export function passiveOpportunityLoop(){if(cache)return clone(cache);const start=passiveTrainingLoop().final,runs=[];let g=clone(start);for(const route of ['classic','sporegrove']){const source=adventureConfig(route),unpaid=clone(g);if(route==='sporegrove')g=train(g,'a','passive:health');const before=clone(g),preparation=guildConfig(g,source),pending=depart(g,source),report=pendingReport(pending),reward=pendingReward(pending);g=claim(pending);runs.push({unpaid,before,source,preparation,pending,report,reward,claimed:clone(g)});}return clone(cache={start,runs,final:g,limits:'Earned16 continues predetermined normal17classic without buying the disease passive and18sporegrove with20XP passive1. Public enemy skill opportunities are authored presentation of existing data, not enemy-action predictions or guaranteed benefit. No seed search, numerical tuning, new skill/economy, or extra claims. Both first outcomes are retained.'});}
