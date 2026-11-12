@@ -1,0 +1,161 @@
+{
+  "version": "0.237",
+  "base": "96a8163c95d90e91a5ec3ad34c8677889596ba5b",
+  "branch": "feature/v237-training-rehearsal-checks",
+  "fullNode": {
+    "passed": true,
+    "counts": {
+      "tests": 2166,
+      "pass": 2166,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "sourceExact": true,
+    "exitCode": 0,
+    "stoppedForSpace": false,
+    "full132GUINotRun": true
+  },
+  "relatedGUI": {
+    "passed": true,
+    "results": [
+      {
+        "version": 125,
+        "root": "/tmp/wod237-related-v125",
+        "exitCode": 0,
+        "stdout": "{\"captureRun\":\"/tmp/wod237-related-v125\",\"output\":\"/tmp/wod237-related-v125/capture\",\"id\":\"fbae5816-73b3-44a5-9b8d-56be6ae613db\"}\n{\"captureRun\":\"/tmp/wod237-related-v125\",\"exitCode\":0,\"signal\":null}\n",
+        "stderr": ""
+      },
+      {
+        "version": 165,
+        "root": "/tmp/wod237-related-v165",
+        "exitCode": 0,
+        "stdout": "{\"captureRun\":\"/tmp/wod237-related-v165\",\"output\":\"/tmp/wod237-related-v165/capture\",\"id\":\"0342ebb4-7685-4d35-90f9-afdcd9bd25a6\"}\n{\"captureRun\":\"/tmp/wod237-related-v165\",\"exitCode\":0,\"signal\":null}\n",
+        "stderr": ""
+      }
+    ],
+    "full132NotRun": true
+  },
+  "newGUI": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "passiveMean48to44": true,
+        "constitutionMean44to46": true,
+        "readonlyTrialsFourKeysAndZeroWrites": true,
+        "wholeBeforeAfterAndNormalReportsExact": true,
+        "pendingReloadUniqueClaimsAndHistoryExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "passiveMean48to44": true,
+        "constitutionMean44to46": true,
+        "readonlyTrialsFourKeysAndZeroWrites": true,
+        "wholeBeforeAfterAndNormalReportsExact": true,
+        "pendingReloadUniqueClaimsAndHistoryExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "passiveMean48to44": true,
+        "constitutionMean44to46": true,
+        "readonlyTrialsFourKeysAndZeroWrites": true,
+        "wholeBeforeAfterAndNormalReportsExact": true,
+        "pendingReloadUniqueClaimsAndHistoryExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "passiveMean48to44": true,
+        "constitutionMean44to46": true,
+        "readonlyTrialsFourKeysAndZeroWrites": true,
+        "wholeBeforeAfterAndNormalReportsExact": true,
+        "pendingReloadUniqueClaimsAndHistoryExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "passiveMean48to44": true,
+        "constitutionMean44to46": true,
+        "readonlyTrialsFourKeysAndZeroWrites": true,
+        "wholeBeforeAfterAndNormalReportsExact": true,
+        "pendingReloadUniqueClaimsAndHistoryExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "passiveMean48to44": true,
+        "constitutionMean44to46": true,
+        "readonlyTrialsFourKeysAndZeroWrites": true,
+        "wholeBeforeAfterAndNormalReportsExact": true,
+        "pendingReloadUniqueClaimsAndHistoryExact": true,
+        "noHorizontalOverflow": true
+      }
+    ],
+    "freshFinal20ColdImport": true,
+    "failedApplyRetainsOriginalDraftAndTrial": true,
+    "errors": [],
+    "limits": "Cloud Chromium simulated widths. First19refund20XP/20constitution20XP both6alive are not a winrate or causal comparison. No engine, reward, schema or single-writer rule changes."
+  },
+  "originalSequence": {
+    "passed": true,
+    "allPreImplementation19And20ConfigsTrialsQuotesReportsPendingRewardsClaimsAndFinalGuildExact": true,
+    "coreSourceBytesUnchanged": [
+      "expedition-engine.mjs",
+      "expedition-data.mjs",
+      "expedition-guild.mjs",
+      "expedition-training-rehearsal.mjs",
+      "expedition-training-plan.mjs",
+      "expedition-save-ownership.mjs",
+      "expedition-passive-training.mjs",
+      "expedition-campaign-backup.mjs"
+    ],
+    "normal": [
+      {
+        "id": 19,
+        "won": true,
+        "alive": 6,
+        "gold": 2725,
+        "next": 20
+      },
+      {
+        "id": 20,
+        "won": true,
+        "alive": 6,
+        "gold": 2825,
+        "next": 21
+      }
+    ],
+    "limits": "Presentation only; no rewritten original reports, ignored fields, new rewards or numerical retuning."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-training-rehearsal-view.mjs",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs"
+    ],
+    "newFiles": [
+      "dist/expedition-training-rehearsal-checks.mjs",
+      "scripts/browser-v237.cjs",
+      "scripts/training-rehearsal-check-cases.mjs",
+      "tests/training-rehearsal-checks.test.mjs"
+    ],
+    "allOtherOriginalSourceBytesExact": true,
+    "engineDataGuildTrainingRehearsalResultsAndSingleWriterUnchanged": true
+  },
+  "full132GUINotRun": true,
+  "fullHistoricalAndAllOldColdNotRerun": true,
+  "mainUnchanged": "96a8163c95d90e91a5ec3ad34c8677889596ba5b",
+  "sourceAndCurrentEvidenceColdPending": true,
+  "oldIndexNotRestored": true
+}
