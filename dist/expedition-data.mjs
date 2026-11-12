@@ -1,3 +1,4 @@
+import {passiveOptions} from './expedition-passive-training.mjs';
 import{RETURNING_TIDE_ROOMS}from'./expedition-returning-tide.mjs';
 import{PASSAGE_ROOMS}from'./expedition-passage-data.mjs';
 import{HOLDOUT_ROOMS}from'./expedition-holdout.mjs';
@@ -143,7 +144,7 @@ export function challengeConfig(){const c=defaults();c.expedition='vigil';for(co
 export {rankCost} from './expedition-progression-rules.mjs';
 export const MAX_TRAINING_RANK=PROGRESSION_RULES.training.maxRank;
 export const trainingCost=training=>Object.values(training).reduce((n,v)=>n+rankCost(v),0);
-export function trainingOptions(heroId){const h=HEROES.find(h=>h.id===heroId);return Object.fromEntries([...h.skills.map(id=>['skill:'+id,{name:SKILLS[id].name,kind:'skill',id}]),...Object.keys(DEFENSES).filter(id=>id!=='natural').map(id=>['defense:'+id,{name:DEFENSES[id].name,kind:'defense',id}]),...Object.entries(ATTR).map(([id,name])=>['attr:'+id,{name:name+'属性',kind:'attribute',id}])]);}
+export function trainingOptions(heroId){const h=HEROES.find(h=>h.id===heroId);return Object.fromEntries([...h.skills.map(id=>['skill:'+id,{name:SKILLS[id].name,kind:'skill',id}]),...passiveOptions(),...Object.keys(DEFENSES).filter(id=>id!=='natural').map(id=>['defense:'+id,{name:DEFENSES[id].name,kind:'defense',id}]),...Object.entries(ATTR).map(([id,name])=>['attr:'+id,{name:name+'属性',kind:'attribute',id}])]);}
 export function trainingBuild(kind='balanced'){const c=challengeConfig();for(const h of c.heroes){if(kind==='defense')h.training={['defense:'+h.defenseFocus]:3};else if(kind==='support')h.training={['skill:'+({a:'guard',b:'volley',c:'sentinel',d:'ward',e:'insight',f:'heal'}[h.id])]:3};else h.training={['skill:'+h.trained]:2,['defense:'+h.defenseFocus]:2};}return c;}
 
 // Three fixed encounters, using the same stage IDs for shared room-plan slots.

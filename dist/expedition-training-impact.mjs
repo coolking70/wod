@@ -1,3 +1,4 @@
+import {passiveHealth,PASSIVE_HEALTH} from './expedition-passive-training.mjs';
 import {clone,trainingOptions,roomsFor,resolveHeroPlan,TYPES,MAX_TRAINING_RANK} from './expedition-data.mjs';
 import {buildParty,skillBreakdown,mean,defenseProfile,damageBasis} from './expedition-engine.mjs';
 import {trainingQuote} from './expedition-training.mjs';
@@ -11,7 +12,7 @@ export function trainingImpactInventory(member,actualConfig){
  if(actor&&Object.keys({...member.training,...actor.training}).some(k=>(member.training[k]||0)!==(actor.training[k]||0)))throw Error('培养预览需要实际已应用的永久训练');
  const beforeUnit=actor?unitFor(actor):null;
  for(const [key,o]of Object.entries(options).filter(([,o])=>o.kind!=='attribute')){
-  const up=trainingQuote(member,key),down=trainingQuote(member,key,-1),state=h=>{const u=h===actor?beforeUnit:unitFor(h);return o.kind==='skill'?skillState(u,o.id):defenseStates(h,u,o.id,actualConfig);};
+  const up=trainingQuote(member,key),down=trainingQuote(member,key,-1),state=h=>{const u=h===actor?beforeUnit:unitFor(h);return o.kind==='passive'?{rank:passiveHealth(u)?.rank||0,amount:passiveHealth(u)?.amount||0,mean:defenseProfile(u,'disease').mean}:o.kind==='skill'?skillState(u,o.id):defenseStates(h,u,o.id,actualConfig);};
   const project=quote=>{if(!actor||quote.nextRank<0||quote.nextRank>MAX_TRAINING_RANK)return null;const h=clone(actor);if(quote.nextRank)h.training[key]=quote.nextRank;else delete h.training[key];return state(h);};
   rows[key]={key,name:o.name,kind:o.kind,active:Boolean(actor),up,down,before:actor?state(actor):null,after:project(up),refunded:project(down)};
  }
@@ -23,6 +24,7 @@ export function trainingImpactView(r,pending=false){
  const value=(a,b,label)=>`<p data-impact-direction="${label}">${label==='up'?'训练一级':'退回一级'}：等级 <strong>${a.level} → ${b.level}</strong> · 检定基值 <strong>${a.mean} → ${b.mean}</strong>${a.damageBase!==undefined?` · 伤害投点前基值 <strong>${Number(a.damageBase.toFixed(3))} → ${Number(b.damageBase.toFixed(3))}</strong>（非固定实伤）`:''}</p>`;
  let content='';
  if(!r.active)content='<p>当前未出战，不把候补保存的战术当作本次实际效果。安排出战后再核对；仍可按实际费用培养。</p>';
+ else if(r.kind==='passive'){const value=(b,label)=>b?`<p data-impact-direction="${label}">${label==='up'?'培养一级':'退回一级'}：永久被动 ${r.before.rank} → ${b.rank}级 · 耐病均值 <strong>${r.before.mean} → ${b.mean}</strong> · 被动加值 ${r.before.amount} → ${b.amount}</p>`:'';content=`<p data-impact-sources>${PASSIVE_HEALTH.name}只按已经投入的永久等级生效，不需要预备/普通指令，不消耗行动、法力或材料；不受主动专修、装备技能等级、战技传授或临时效果加成。不增加生命、抗性或免疫。每级+4为项目改编。</p>`+value(r.after,'up')+value(r.refunded,'down');}
  else if(r.kind==='skill'){
   const a=r.before;content=`<p data-impact-sources>当前出发等级 ${a.level} = 基础 ${a.base} + 专修 ${a.specialization} + 永久培养 ${a.training} + 装备技能 ${a.equipment}${a.other?' + 其他静态修正 '+a.other:''}。</p>`+(r.after?value(a,r.after,'up'):'<p>已达本项训练上限，没有下一级预览。</p>')+(r.refunded?value(a,r.refunded,'down'):'');
  }else{

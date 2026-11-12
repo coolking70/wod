@@ -1,0 +1,377 @@
+{
+  "version": "0.235",
+  "targetedStagePassed": true,
+  "completeMilestonePassed": false,
+  "fullNode": {
+    "tests": 2149,
+    "pass": 2149,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "relatedNode": 68,
+  "postHarnessContract": {
+    "tests": 19,
+    "pass": 19,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newGUI": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "actualPaidXP": 20,
+        "exactRefund": 20,
+        "readonlyWriteDenied": true,
+        "whole15And16ReportsAndPendingReloadUniqueClaimsExact": true,
+        "historyConfigReplay15StillRecordsPassiveAfterRefund": true,
+        "actualPassiveRecords": 6,
+        "SVGBytes": 276,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "actualPaidXP": 20,
+        "exactRefund": 20,
+        "readonlyWriteDenied": true,
+        "whole15And16ReportsAndPendingReloadUniqueClaimsExact": true,
+        "historyConfigReplay15StillRecordsPassiveAfterRefund": true,
+        "actualPassiveRecords": 6,
+        "SVGBytes": 276,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "actualPaidXP": 20,
+        "exactRefund": 20,
+        "readonlyWriteDenied": true,
+        "whole15And16ReportsAndPendingReloadUniqueClaimsExact": true,
+        "historyConfigReplay15StillRecordsPassiveAfterRefund": true,
+        "actualPassiveRecords": 6,
+        "SVGBytes": 276,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "actualPaidXP": 20,
+        "exactRefund": 20,
+        "readonlyWriteDenied": true,
+        "whole15And16ReportsAndPendingReloadUniqueClaimsExact": true,
+        "historyConfigReplay15StillRecordsPassiveAfterRefund": true,
+        "actualPassiveRecords": 6,
+        "SVGBytes": 276,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "actualPaidXP": 20,
+        "exactRefund": 20,
+        "readonlyWriteDenied": true,
+        "whole15And16ReportsAndPendingReloadUniqueClaimsExact": true,
+        "historyConfigReplay15StillRecordsPassiveAfterRefund": true,
+        "actualPassiveRecords": 6,
+        "SVGBytes": 276,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "actualPaidXP": 20,
+        "exactRefund": 20,
+        "readonlyWriteDenied": true,
+        "whole15And16ReportsAndPendingReloadUniqueClaimsExact": true,
+        "historyConfigReplay15StillRecordsPassiveAfterRefund": true,
+        "actualPassiveRecords": 6,
+        "SVGBytes": 276,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true
+      }
+    ],
+    "freshWholeCampaignRestoreAndHistoricalConfigReplay15Exact": true,
+    "errors": [],
+    "limits": "Actual14 continues normal15/16 on existing sporegrove. A pays20XP for permanent passive1;16 refunds exact20XP, other training/gear/tactics preserved. Same-earned15 refunded-passive comparison unclaimed; one sequence is not a win-rate or isolated RNG causal estimate. No new route/gear/currency or tuning after first run. Passive health structure has indexed historical official support only; name/all-hero access/+4/20-40-60 are project rules. Close old version pages before loading new campaign. Cloud Chromium emulation, not real phone/public Pages validation. No all130GUI gate or new GIF generation claimed."
+  },
+  "completeOldGUIs": [
+    121,
+    225,
+    234
+  ],
+  "legacyExactReports": 78,
+  "normal": {
+    "passed": true,
+    "rows": [
+      {
+        "id": 15,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 2,
+          "gold": 140,
+          "xp": 55,
+          "firstClear": true,
+          "loot": []
+        },
+        "gold": 2335,
+        "availableXP": 960,
+        "training": {
+          "defense:parry": 1,
+          "passive:health": 1
+        },
+        "diseaseRecords": 36,
+        "personalRecords": 6,
+        "passiveRecords": 6,
+        "actualDiseaseDamage": 6,
+        "allPersonalProofs": [
+          {
+            "id": 37,
+            "room": 0,
+            "round": 1,
+            "mean": 84,
+            "roll": 95,
+            "actual": 0,
+            "passive": {
+              "key": "passive:health",
+              "rank": 1,
+              "amount": 4,
+              "generalDefenseBonus": 36
+            }
+          },
+          {
+            "id": 80,
+            "room": 0,
+            "round": 2,
+            "mean": 84,
+            "roll": 115,
+            "actual": 0,
+            "passive": {
+              "key": "passive:health",
+              "rank": 1,
+              "amount": 4,
+              "generalDefenseBonus": 36
+            }
+          },
+          {
+            "id": 125,
+            "room": 0,
+            "round": 3,
+            "mean": 84,
+            "roll": 100,
+            "actual": 0,
+            "passive": {
+              "key": "passive:health",
+              "rank": 1,
+              "amount": 4,
+              "generalDefenseBonus": 36
+            }
+          },
+          {
+            "id": 179,
+            "room": 1,
+            "round": 1,
+            "mean": 84,
+            "roll": 87,
+            "actual": 0,
+            "passive": {
+              "key": "passive:health",
+              "rank": 1,
+              "amount": 4,
+              "generalDefenseBonus": 36
+            }
+          },
+          {
+            "id": 239,
+            "room": 1,
+            "round": 2,
+            "mean": 84,
+            "roll": 87,
+            "actual": 0,
+            "passive": {
+              "key": "passive:health",
+              "rank": 1,
+              "amount": 4,
+              "generalDefenseBonus": 36
+            }
+          },
+          {
+            "id": 286,
+            "room": 1,
+            "round": 3,
+            "mean": 84,
+            "roll": 66,
+            "actual": 6,
+            "passive": {
+              "key": "passive:health",
+              "rank": 1,
+              "amount": 4,
+              "generalDefenseBonus": 36
+            }
+          }
+        ],
+        "wholeReportSHA256": "05bfdc1e61b0d180ce01778af6c79c08349bfd5e5da1b5b8feece155ad282e3a"
+      },
+      {
+        "id": 16,
+        "won": true,
+        "alive": 6,
+        "reward": {
+          "cleared": 2,
+          "gold": 100,
+          "xp": 45,
+          "firstClear": false,
+          "loot": []
+        },
+        "gold": 2435,
+        "availableXP": 1035,
+        "training": {
+          "defense:parry": 1
+        },
+        "diseaseRecords": 30,
+        "personalRecords": 5,
+        "passiveRecords": 0,
+        "actualDiseaseDamage": 13,
+        "allPersonalProofs": [
+          {
+            "id": 28,
+            "room": 0,
+            "round": 1,
+            "mean": 80,
+            "roll": 79,
+            "actual": 9,
+            "passive": null
+          },
+          {
+            "id": 77,
+            "room": 0,
+            "round": 2,
+            "mean": 80,
+            "roll": 61,
+            "actual": 0,
+            "passive": null
+          },
+          {
+            "id": 168,
+            "room": 1,
+            "round": 1,
+            "mean": 80,
+            "roll": 64,
+            "actual": 4,
+            "passive": null
+          },
+          {
+            "id": 220,
+            "room": 1,
+            "round": 2,
+            "mean": 80,
+            "roll": 98,
+            "actual": 0,
+            "passive": null
+          },
+          {
+            "id": 264,
+            "room": 1,
+            "round": 3,
+            "mean": 80,
+            "roll": 103,
+            "actual": 0,
+            "passive": null
+          }
+        ],
+        "wholeReportSHA256": "ba8c6b19805b49d4ef0c1b19f099ee477f908c92cdc83f29e2564e6bc5b6ba0d"
+      }
+    ],
+    "finalGold": 2435,
+    "finalNext": 17,
+    "control15": {
+      "won": true,
+      "alive": 6,
+      "unclaimed": true
+    },
+    "limits": "Actual14 continues normal15/16 on existing sporegrove. A pays20XP for permanent passive1;16 refunds exact20XP, other training/gear/tactics preserved. Same-earned15 refunded-passive comparison unclaimed; one sequence is not a win-rate or isolated RNG causal estimate. No new route/gear/currency or tuning after first run. Passive health structure has indexed historical official support only; name/all-hero access/+4/20-40-60 are project rules. Close old version pages before loading new campaign."
+  },
+  "compatibility": {
+    "passed": true,
+    "base": "0126ea42fbc751356dfcbc90cc2697b508e6a48b",
+    "rows": [
+      {
+        "name": "purchased",
+        "newParserAccepts": true,
+        "oldParserRefusesUnknownPassiveWithoutModifyingInput": true
+      },
+      {
+        "name": "pending15",
+        "newParserAccepts": true,
+        "oldParserRefusesUnknownPassiveWithoutModifyingInput": true
+      },
+      {
+        "name": "final16",
+        "newParserAccepts": true,
+        "oldParserRefusesUnknownPassiveWithoutModifyingInput": true
+      }
+    ],
+    "oldStart14Exact": true,
+    "backupBeforeUpgrade": true,
+    "closeOldPages": true,
+    "actualOldOriginMigrationNotAttempted": true
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 225,
+    "checkedReferences": 280,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-data.mjs",
+      "dist/expedition-disease.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-training-impact.mjs",
+      "dist/expedition-training-use.mjs",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs"
+    ],
+    "newFiles": [
+      "dist/assets/passive-health-v235.svg",
+      "dist/expedition-passive-training.mjs",
+      "scripts/browser-v235.cjs",
+      "scripts/passive-training-cases.mjs",
+      "tests/passive-training.test.mjs"
+    ],
+    "allOtherOriginalSourceExact": true,
+    "oldV195OwnershipGuildBackupAndSavePersistenceExact": true,
+    "oldActiveSkillsAndHeroesAndGearExactFromLegacyProbe": true,
+    "currentFullGUIRegistrySize": 130,
+    "noProductChangeAfterStartingFullNode": true,
+    "onlyBrowserNavigationAndDetailsHarnessCorrectedDuringNode": true,
+    "finalEvidenceAndRegistryContractRerun": true
+  },
+  "noProductChangeAfterFullNodeStart": true,
+  "oldSingleWriterProtectionUnchanged": true,
+  "firstNodeImportAndTwoBrowserHarnessFailuresPreserved": true,
+  "firstOwnershipMissingLegacyEnvironmentFailurePreserved": true,
+  "full130GUINotRun": true,
+  "allHistoricalImportCLIAndAllOldDualColdNotRerun": true,
+  "strict49001LegacyPassed": false,
+  "mainNotMerged": true,
+  "pagesNotDeployed": true,
+  "sourceAndCurrentEvidenceColdPendingSeparateTransactions": true,
+  "base": "0126ea42fbc751356dfcbc90cc2697b508e6a48b",
+  "branch": "feature/v235-passive-training",
+  "pagesNotTriggered": true
+}
