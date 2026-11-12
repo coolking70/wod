@@ -1,0 +1,361 @@
+{
+  "targetedStagePassed": true,
+  "completeMilestonePassed": false,
+  "fullNode": {
+    "tests": 2080,
+    "pass": 2080,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "firstFullNode": {
+    "tests": 2080,
+    "pass": 2079,
+    "fail": 1,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "firstTargetedNode": {
+    "tests": 71,
+    "pass": 70,
+    "fail": 1,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "newGUIViewportMotionCopies": 6,
+  "newFreshCampaignRestoreCases": 1,
+  "newGUI": {
+    "passed": true,
+    "rows": [
+      {
+        "width": 1440,
+        "motion": "no-preference",
+        "paid60GoldAnd20EarnedXPExact": true,
+        "readOnlyThreeAttributeProjections": true,
+        "actualReadyAndReportValuesVisible": true,
+        "normal9FullReportPendingReloadAndUniqueClaimExact": true,
+        "actual": {
+          "eventId": 30,
+          "actualGrade": "致命",
+          "actualDamage": 19,
+          "base": 19.333333333333336,
+          "rangerMotionUsesActualEvent": true
+        },
+        "normal9Won": true,
+        "normal9Alive": 6,
+        "SVGBytes": 307,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true,
+        "backupAndReloadFourStringsExact": true,
+        "second": null
+      },
+      {
+        "width": 1440,
+        "motion": "reduce",
+        "paid60GoldAnd20EarnedXPExact": true,
+        "readOnlyThreeAttributeProjections": true,
+        "actualReadyAndReportValuesVisible": true,
+        "normal9FullReportPendingReloadAndUniqueClaimExact": true,
+        "actual": {
+          "eventId": 30,
+          "actualGrade": "致命",
+          "actualDamage": 19,
+          "base": 19.333333333333336,
+          "rangerMotionUsesActualEvent": true
+        },
+        "normal9Won": true,
+        "normal9Alive": 6,
+        "SVGBytes": 307,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true,
+        "backupAndReloadFourStringsExact": true,
+        "second": null
+      },
+      {
+        "width": 390,
+        "motion": "no-preference",
+        "paid60GoldAnd20EarnedXPExact": true,
+        "readOnlyThreeAttributeProjections": true,
+        "actualReadyAndReportValuesVisible": true,
+        "normal9FullReportPendingReloadAndUniqueClaimExact": true,
+        "actual": {
+          "eventId": 30,
+          "actualGrade": "致命",
+          "actualDamage": 19,
+          "base": 19.333333333333336,
+          "rangerMotionUsesActualEvent": true
+        },
+        "normal9Won": true,
+        "normal9Alive": 6,
+        "SVGBytes": 307,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true,
+        "backupAndReloadFourStringsExact": true,
+        "second": {
+          "id": 10,
+          "fullReportAndClaimExact": true,
+          "noIndependentDamageTraceOnOriginalBow": true,
+          "ownedBowReequippedFree": true,
+          "old9ReportAndSourceStillExact": true
+        }
+      },
+      {
+        "width": 390,
+        "motion": "reduce",
+        "paid60GoldAnd20EarnedXPExact": true,
+        "readOnlyThreeAttributeProjections": true,
+        "actualReadyAndReportValuesVisible": true,
+        "normal9FullReportPendingReloadAndUniqueClaimExact": true,
+        "actual": {
+          "eventId": 30,
+          "actualGrade": "致命",
+          "actualDamage": 19,
+          "base": 19.333333333333336,
+          "rangerMotionUsesActualEvent": true
+        },
+        "normal9Won": true,
+        "normal9Alive": 6,
+        "SVGBytes": 307,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true,
+        "backupAndReloadFourStringsExact": true,
+        "second": null
+      },
+      {
+        "width": 320,
+        "motion": "no-preference",
+        "paid60GoldAnd20EarnedXPExact": true,
+        "readOnlyThreeAttributeProjections": true,
+        "actualReadyAndReportValuesVisible": true,
+        "normal9FullReportPendingReloadAndUniqueClaimExact": true,
+        "actual": {
+          "eventId": 30,
+          "actualGrade": "致命",
+          "actualDamage": 19,
+          "base": 19.333333333333336,
+          "rangerMotionUsesActualEvent": true
+        },
+        "normal9Won": true,
+        "normal9Alive": 6,
+        "SVGBytes": 307,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true,
+        "backupAndReloadFourStringsExact": true,
+        "second": null
+      },
+      {
+        "width": 320,
+        "motion": "reduce",
+        "paid60GoldAnd20EarnedXPExact": true,
+        "readOnlyThreeAttributeProjections": true,
+        "actualReadyAndReportValuesVisible": true,
+        "normal9FullReportPendingReloadAndUniqueClaimExact": true,
+        "actual": {
+          "eventId": 30,
+          "actualGrade": "致命",
+          "actualDamage": 19,
+          "base": 19.333333333333336,
+          "rangerMotionUsesActualEvent": true
+        },
+        "normal9Won": true,
+        "normal9Alive": 6,
+        "SVGBytes": 307,
+        "SVGMIMEAndSHAExact": true,
+        "noHorizontalOverflow": true,
+        "backupAndReloadFourStringsExact": true,
+        "second": null
+      }
+    ],
+    "freshCampaignImportFourKeysExact": true,
+    "errors": [],
+    "limits": "Earned eight-run fixture continues normal9/10. Bow costs60gold and PER rank20earnedXP; normal10 freely reequips owned original bow. Unclaimed seed9 control has identical paid ownership and training. Different initiative and RNG consumption prevent assigning outcome changes to damage alone. Six viewport repeats reuse the same input, not six balance samples. Optional bow and all numerical formulas are project adaptations; original-page indexing only supports separate hit/damage attributes. HTTP asset bytes and desktop emulation do not establish phone speed or a faster SVG/raster comparison. Existing real-event ranger SVG motion reused; no new GIF claimed."
+  },
+  "completeOldGUIs": [
+    129,
+    135,
+    222,
+    227
+  ],
+  "allCompleteOldGUIsPassed": true,
+  "legacyExactReports": 76,
+  "legacyExactNoFieldExclusions": true,
+  "normal": {
+    "passed": true,
+    "sourceFixtureBytes": 45575,
+    "sourceFixtureSHA256": "a0c7c113703502524c67596618540555247b513d1f57ff802f22ab4a8d42047f",
+    "startNext": 9,
+    "startGold": 1395,
+    "startBXP": 580,
+    "normal": [
+      {
+        "id": 9,
+        "seed": 9,
+        "won": true,
+        "alive": 6,
+        "goldBefore": 1335,
+        "goldAfter": 1505,
+        "reward": {
+          "cleared": 4,
+          "gold": 170,
+          "xp": 75,
+          "firstClear": false,
+          "loot": [
+            "anchorseal"
+          ]
+        },
+        "guildNext": 10,
+        "independentDamageEvents": 16,
+        "traceFirst": {
+          "eventId": 30,
+          "grade": "致命",
+          "actual": 19,
+          "trace": {
+            "gearId": "drawbow",
+            "gearName": "测潮重弓",
+            "attack": {
+              "primary": "dex",
+              "secondary": "per",
+              "primaryValue": 16,
+              "secondaryValue": 18
+            },
+            "primary": "per",
+            "secondary": "str",
+            "primaryValue": 18,
+            "secondaryValue": 10,
+            "bonus": 4,
+            "level": 6,
+            "base": 19.333333333333336,
+            "power": 1.1,
+            "rule": "命中仍按技能原属性检定；此武器仅将普通物理弓击的伤害投点前基值改为感知/2＋力量/3＋实际技能等级/2＋4。技能威力、随机投点、命中品质、穿甲、抗性、援护和费用沿原流程。潮印箭、机关拆解、削蓝、无伤技能和淬药附加段不采用该武器伤害公式。武器、属性搭配和数值均为项目改编，不是原版现服数表。"
+          }
+        },
+        "traceCounts": {
+          "致命": 9,
+          "重击": 5,
+          "命中": 2
+        }
+      },
+      {
+        "id": 10,
+        "seed": 10,
+        "won": true,
+        "alive": 6,
+        "goldBefore": 1505,
+        "goldAfter": 1675,
+        "reward": {
+          "cleared": 4,
+          "gold": 170,
+          "xp": 75,
+          "firstClear": false,
+          "loot": [
+            "anchorseal"
+          ]
+        },
+        "guildNext": 11,
+        "independentDamageEvents": 0,
+        "traceFirst": null,
+        "traceCounts": {}
+      }
+    ],
+    "control": {
+      "seed": 9,
+      "won": true,
+      "alive": 6,
+      "unclaimed": true
+    },
+    "old230RejectsUnknownItemRatherThanSilentlyDroppingProfile": true,
+    "oldProfileNotModified": true,
+    "allOriginalParametersPredeclared": true,
+    "limits": "Earned eight-run fixture continues normal9/10. Bow costs60gold and PER rank20earnedXP; normal10 freely reequips owned original bow. Unclaimed seed9 control has identical paid ownership and training. Different initiative and RNG consumption prevent assigning outcome changes to damage alone. Six viewport repeats reuse the same input, not six balance samples. Optional bow and all numerical formulas are project adaptations; original-page indexing only supports separate hit/damage attributes."
+  },
+  "runtime": {
+    "passed": true,
+    "entry": "dist/index.html",
+    "modules": 219,
+    "checkedReferences": 271,
+    "missing": [],
+    "note": "Source is shipped directly in dist; no bundler/package installation required. Static import/HTML/CSS references and referenced local assets verified; actual behavior requires browser acceptance."
+  },
+  "impact": {
+    "changedOriginalFiles": [
+      "dist/expedition-attribute-projection.mjs",
+      "dist/expedition-engine.mjs",
+      "dist/expedition-equipment-view.mjs",
+      "dist/expedition-equipment.mjs",
+      "dist/expedition-guild-ui.mjs",
+      "dist/expedition-loot.mjs",
+      "dist/expedition-training-impact.mjs",
+      "dist/expedition-ui.mjs",
+      "dist/expedition.css",
+      "dist/index.html",
+      "scripts/capture-entrypoints.json",
+      "scripts/run-browser-acceptance.mjs",
+      "scripts/run-browser-focused.mjs",
+      "tests/disease.test.mjs",
+      "tests/equipment-skill-ranks.test.mjs",
+      "tests/grade-armor.test.mjs",
+      "tests/item-set-bonuses.test.mjs",
+      "tests/v115.test.mjs",
+      "tests/v117.test.mjs"
+    ],
+    "newFiles": [
+      "dist/assets/items/drawbow-v231.svg",
+      "dist/expedition-damage-attributes.mjs",
+      "scripts/browser-v231.cjs",
+      "scripts/damage-attribute-cases.mjs",
+      "scripts/fixtures/v231-earned-eight.json",
+      "tests/damage-attributes.test.mjs"
+    ],
+    "allOtherOriginalFilesExact": true,
+    "originalV195Unchanged": true,
+    "guildBusinessAndCampaignBackupUnchanged": true,
+    "existingPersistAndSaveFunctionsExact": true,
+    "newCaptureRegistrySize": 126,
+    "fullBrowserMilestoneNotRun": true,
+    "noMultiTabPolicyChosen": true,
+    "firstImpactRunFailedBeforeFreezeDueOnlyToRegistrationStringPattern": true,
+    "allRuntimeChangesAfterFirstImpactOnlyNewBrowserHelper": true,
+    "newBrowserFinalRun": "browser-new-v4",
+    "firstThreeHelperFailuresPreserved": true
+  },
+  "firstThreeNewBrowserFailures": [
+    {
+      "run": "browser-new",
+      "label": "1440-no-preference",
+      "error": "locator.click: Error: strict mode violation: locator('[data-guild-tab=team]') resolved to 2 elements:\n    1) <button aria-pressed=\"false\" data-guild-tab=\"team\">角色成长</button> aka getByRole('button', { name: '角色成长', exact: true })\n    2) <button aria-pressed=\"false\" data-guild-tab=\"team\">角色成长 →</button> aka getByRole('button', { name: '角色成长 →' })\n\nCall log:\n\u001b[2m  - waiting for locator('[data-guild-tab=team]')\u001b[22m\n\n    at /workspace/wod/scripts/browser-v231.cjs:11:45",
+      "completedContexts": 0,
+      "originalImagesAndFourKeysPreserved": true
+    },
+    {
+      "run": "browser-new-v2",
+      "label": "1440-no-preference",
+      "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#roster [data-hero=b]')\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"\" data-hero=\"b\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /workspace/wod/scripts/browser-v231.cjs:13:408",
+      "completedContexts": 0,
+      "originalImagesAndFourKeysPreserved": true
+    },
+    {
+      "run": "browser-new-v3",
+      "label": "1440-no-preference",
+      "error": "locator.innerText: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#editor .damage-attributes-preparation')\u001b[22m\n\n    at /workspace/wod/scripts/browser-v231.cjs:13:486",
+      "completedContexts": 0,
+      "originalImagesAndFourKeysPreserved": true
+    }
+  ],
+  "noProductCodeChangedForTheseHelperCorrections": true,
+  "full126GUINotRun": true,
+  "originalV195UnchangedNotRerunAndUnresolved": true,
+  "allHistoricalImportCLIAndOldDualColdNotRerun": true,
+  "strict49001LegacyPassed": false,
+  "mainNotMerged": true,
+  "writeModelUnchosenAndUnimplemented": true,
+  "sourceAndCurrentEvidenceColdSeparateTransactions": true,
+  "version": "0.231",
+  "base": "a691c592da884a81bcddcb05e87d523c50212cc6",
+  "branch": "feature/v231-independent-damage-attributes",
+  "allSourceAndEvidenceColdPendingSeparateTransactions": true,
+  "pagesNotTriggered": true,
+  "sourceReference": "official skill indexed body only; direct read unavailable; numerical formula and weapon original adaptation"
+}

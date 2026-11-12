@@ -21,6 +21,8 @@ Object.assign(GEAR,{wardfolio:{name:'守潮札册',slot:'weapon',armor:0,bonus:{
 Object.assign(GEAR,{cadencelute:{name:'定拍长琴',slot:'weapon',armor:0,bonus:{cha:3,wil:1,agi:-3},countsAs:'lute',ranks:{'skill:mindcall':2,'skill:insight':1},requirements:{cha:19}},anchorblade:{name:'压潮塔盾',slot:'weapon',armor:1,bonus:{wil:1,agi:-3},countsAs:'plate',ranks:{'skill:interpose':2,'defense:parry':1},requirements:{con:18}}});
 // Optional grade armor; both fixed shop items and all numbers are project design.
 Object.assign(GEAR,{lamellarcoat:{name:'层潮叠甲',slot:'armor',armor:1,bonus:{agi:-2,con:-1},resistances:{magic:-10},hitArmor:{melee:[8,4,0],ranged:[6,3,0]}},deepweave:{name:'深潮织袍',slot:'armor',armor:0,bonus:{int:-1,wil:1,con:-1},resistances:{ranged:-10},hitArmor:{magic:[6,3,0]}}});
+// Optional authored weapon profile: separate hit/damage investment, no legacy rewrite.
+Object.assign(GEAR,{drawbow:{name:'测潮重弓',slot:'weapon',armor:0,bonus:{per:2,str:1,agi:-2},countsAs:'bow',damageAttributes:{primary:'per',secondary:'str',bonus:4}}});
 export const SLOTS={weapon:'武器',armor:'防具',accessory:'饰品'};
 Object.assign(GEAR,{
  triagepin:{name:'分诊铜签',slot:'accessory',armor:0,bonus:{int:2,per:2,con:-2,wil:-1},resistances:{ranged:10,magic:-10},dungeonOnly:true},

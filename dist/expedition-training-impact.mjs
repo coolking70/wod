@@ -1,9 +1,9 @@
 import {clone,trainingOptions,roomsFor,resolveHeroPlan,TYPES,MAX_TRAINING_RANK} from './expedition-data.mjs';
-import {buildParty,skillBreakdown,mean,defenseProfile} from './expedition-engine.mjs';
+import {buildParty,skillBreakdown,mean,defenseProfile,damageBasis} from './expedition-engine.mjs';
 import {trainingQuote} from './expedition-training.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unitFor=h=>buildParty({heroes:[h]})[0];
-function skillState(u,id){const b=skillBreakdown(u,id);return {level:b.total,mean:mean(u,id),base:b.base,specialization:b.specialization,training:b.training,equipment:b.equipment||0,other:b.total-b.base-b.specialization-b.training-(b.equipment||0)};}
+function skillState(u,id){const b=skillBreakdown(u,id),damage=damageBasis(u,id);return {level:b.total,mean:mean(u,id),base:b.base,specialization:b.specialization,training:b.training,equipment:b.equipment||0,other:b.total-b.base-b.specialization-b.training-(b.equipment||0),...(damage.trace?{damageBase:damage.base}:{})};}
 function defenseStates(h,u,id,config){const rows=[];for(const room of roomsFor(config)){const plan=resolveHeroPlan(h,room.id),current={...u,...plan,effects:[]};for(const type of Object.keys(TYPES)){const d=defenseProfile(current,type);if(d.requested===id)rows.push({roomId:room.id,roomName:room.name,type,requested:d.requested,skill:d.skill,reason:d.reason||null,level:d.level,mean:d.mean});}}return rows;}
 // Static projections only. No simulation, guild transaction, RNG, payment or command installation.
 export function trainingImpactInventory(member,actualConfig){
@@ -20,7 +20,7 @@ export function trainingImpactInventory(member,actualConfig){
 export function trainingImpactView(r,pending=false){
  if(!r)return '';const preview=r.kind==='skill'&&r.before&&r.after?` · 等级 ${r.before.level} → ${r.after.level}`:'';
  const cost=q=>q.direction===1?`花费 ${q.cost} 经验`:`返还 ${q.refund} 经验`;
- const value=(a,b,label)=>`<p data-impact-direction="${label}">${label==='up'?'训练一级':'退回一级'}：等级 <strong>${a.level} → ${b.level}</strong> · 检定基值 <strong>${a.mean} → ${b.mean}</strong></p>`;
+ const value=(a,b,label)=>`<p data-impact-direction="${label}">${label==='up'?'训练一级':'退回一级'}：等级 <strong>${a.level} → ${b.level}</strong> · 检定基值 <strong>${a.mean} → ${b.mean}</strong>${a.damageBase!==undefined?` · 伤害投点前基值 <strong>${Number(a.damageBase.toFixed(3))} → ${Number(b.damageBase.toFixed(3))}</strong>（非固定实伤）`:''}</p>`;
  let content='';
  if(!r.active)content='<p>当前未出战，不把候补保存的战术当作本次实际效果。安排出战后再核对；仍可按实际费用培养。</p>';
  else if(r.kind==='skill'){
