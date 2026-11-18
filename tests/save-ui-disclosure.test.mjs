@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{readFileSync}from'node:fs';
+const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+test('save disclosure auto-opens for non-writer and error states',()=>{const s=read('dist/expedition-save-ownership-view.mjs');assert.ok(s.includes("s.status!=='writer'||toolsOpen||problem"));assert.ok(s.includes("box.dataset.saveOwnership===s.status"));assert.ok(s.includes('<summary>存档与备份</summary>'));assert.ok(s.includes('</small></details>'));});
+test('save recovery labels and handlers remain explicit',()=>{const s=read('dist/expedition-save-ownership-view.mjs');for(const x of ['data-save-release','data-save-reload','data-save-raw','data-save-last','role=alert','pageshow','pagehide','e.persisted'])assert.ok(s.includes(x));assert.ok(s.includes("box.querySelector('strong')?.focus"));});
+test('player version label has no development marker',()=>{const s=read('dist/index.html');assert.ok(s.includes('0.241 · 海岸远征'));assert.ok(!s.includes('界面开发'));});
