@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {navIcon,campArt} from '../dist/camp-visual.mjs';
+const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+test('all navigation icons are decorative and have paths',()=>{for(const k of ['guild','adventure','planning','replay','compare','goals','journey','roster','hero','departure','team','equipment','contracts','history']){assert.match(navIcon(k),/aria-hidden="true"/);assert.match(navIcon(k),/focusable="false"/);assert.match(navIcon(k),/<path d="[^"]+"/);}assert.doesNotMatch(navIcon('<img>'),/<img>/);});
+test('camp artwork is local decorative self-contained vector',()=>{assert.match(campArt,/alt=""/);const svg=read('dist/assets/camp-harbor-rebuild.svg');assert.ok(Buffer.byteLength(svg)<6000);assert.doesNotMatch(svg,/<script|<image|href=/);});
+test('visual layer cannot access saves or mutate gameplay',()=>{const s=read('dist/camp-visual.mjs');assert.doesNotMatch(s,/localStorage|sessionStorage|fetch\(|Math.random|Date.now/);});
+test('existing camp counts, status, navigation and prepare controls retained',()=>{const s=read('dist/expedition-guild-ui.mjs');assert.match(s,/已结算 \$\{g.next-1-\(g.pending\?1:0\)\} 次远征/);assert.match(s,/id="guild-feedback" role="status"/);assert.match(s,/data-guild="prepare"/);assert.match(s,/data-guild-tab="\$\{key\}"/);});
+test('small viewports and reduced motion have explicit styles',()=>{const s=read('dist/camp-visual.css');assert.match(s,/prefers-reduced-motion:reduce/);assert.match(s,/minmax\(min\(100%,280px\),1fr\)/);assert.match(s,/repeat\(5,minmax\(0,1fr\)\)/);});
