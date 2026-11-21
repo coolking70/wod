@@ -16,3 +16,12 @@ button{transition:background .15s,border-color .15s}button:focus-visible,a:focus
 /* Keep healthy save status quiet; errors and read-only recovery remain visible. */
 .save-ownership{padding:8px 3vw;border-bottom-color:#345058}.save-ownership[data-save-ownership="writer"]{display:flex;align-items:flex-start;justify-content:space-between;gap:8px 24px;flex-wrap:wrap}.save-ownership>div:first-child{padding-top:4px}.save-tools{max-width:100%;min-width:0}.save-tools summary{cursor:pointer;min-height:36px;padding:4px 8px;color:var(--gold);border-radius:4px}.save-tools[open]{flex-basis:100%}.save-tools .bar{justify-content:flex-start}.save-tools button{min-height:44px}.save-ownership:not([data-save-ownership="writer"]){border-left:3px solid #e3c58b;background:#283333}.save-ownership [role=alert]{flex-basis:100%}
 @media(max-width:640px){.save-ownership{padding:8px 14px}.save-ownership[data-save-ownership="writer"]>div:first-child span{display:block}.save-tools summary{padding-left:0}.save-tools .bar{display:flex;flex-wrap:wrap}.save-tools button{flex:1 1 140px}}
+
+#phase-replay[hidden]{display:none}
+#phase-replay{margin:8px 0;padding:10px 12px;border-left:3px solid var(--gold);border-radius:4px;background:#142b34f5;overflow-wrap:anywhere}
+#phase-replay h3,#phase-replay p{margin:0 0 6px}
+#phase-replay h3{color:var(--gold);font-size:16px}
+.phase-replay-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:7px 0}
+.phase-replay-compare>div{min-width:0;padding:6px 8px;background:#091d25;border-radius:4px}
+.phase-replay-compare span,.phase-replay-compare b{display:block;font-size:12px}
+#phase-replay button,.phase-source-record button{min-height:44px}
