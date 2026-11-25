@@ -1,33 +1,34 @@
-name: WoD v94 browser smoke
+name: WoD v237 and v238 browser qualification
 on:
   push:
     branches: [qa/wod-v94-chromium-20261125]
 permissions:
   contents: read
 jobs:
-  v94:
+  browser:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        version: [237, 238]
     steps:
-      - name: Run original v94 with the approved test helper
+      - name: Run original browser suite on the pinned public game revision
         shell: bash
         env:
           WOD_REVISION: b89b99553751ee4b764f1d8a191082b5ad77a50c
           WOD_BASE_URL: http://127.0.0.1:18794
+          WOD_CASE: ${{ matrix.version }}
         run: |
           set -euo pipefail
-          root="$(mktemp -d "$RUNNER_TEMP/wod-v94.XXXXXX")"
+          case "$WOD_CASE" in 237|238) ;; *) exit 2;; esac
+          root="$(mktemp -d "$RUNNER_TEMP/wod-v$WOD_CASE.XXXXXX")"
           git init -q "$root/source"
           cd "$root/source"
           git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$WOD_REVISION"
           git checkout -q --detach FETCH_HEAD
           test "$(git rev-parse HEAD)" = "$WOD_REVISION"
-          git rev-parse HEAD 'HEAD^{tree}'
-          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$GITHUB_SHA"
-          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
-          git show "${GITHUB_SHA}:scripts/save-owner-test-helpers.cjs" >scripts/save-owner-test-helpers.cjs
-          printf '%s  %s\n' 96ac5dffbc180c5253fe35cb9989b537113ef13724c94484f87baaeaff08f5b4 scripts/save-owner-test-helpers.cjs | sha256sum --check -
-          test "$(git diff --name-only)" = scripts/save-owner-test-helpers.cjs
+          test "$(git rev-parse 'HEAD^{tree}')" = c047b3f59bc3ae94933721461062c98cac9e1463
           for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
             if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
           done
@@ -35,26 +36,25 @@ jobs:
           node -e "if (Number(process.versions.node.split('.')[0]) < 22) process.exit(1)"
           npm install --prefix "$root/qa" --no-audit --no-fund --ignore-scripts playwright@1.62.1
           export WOD_PLAYWRIGHT_MODULE="$root/qa/node_modules/playwright"
-          export WOD_CHROMIUM_PATH="$(command -v google-chrome || command -v chromium)"
-          "$WOD_CHROMIUM_PATH" --version
+          test -x /usr/bin/chromium
+          /usr/bin/chromium --version
+          df -h "$root"
           python3 -m http.server 18794 --bind 127.0.0.1 --directory dist >"$root/http.log" 2>&1 &
           server=$!
           trap 'kill "$server" 2>/dev/null || true' EXIT
           curl -fsS --retry 15 --retry-connrefused --retry-delay 1 "$WOD_BASE_URL/" >/dev/null
           set +e
-          DEBUG=pw:api node scripts/run-evidence.mjs --label v94 --parent "$root" -- node scripts/browser-v94.cjs
+          node scripts/run-evidence.mjs --label "browser-v$WOD_CASE" --parent "$root" -- node "scripts/browser-v$WOD_CASE.cjs"
           rc=$?
           set -e
-          for log in "$root"/v94-*/stderr.log; do
-            if [[ -f "$log" ]]; then
-              grep -m 4 -E 'data-own-hero|AssertionError|browserType.launch' "$log" || true
-              if ((rc != 0)); then tail -n 26 "$log"; fi
+          shopt -s nullglob
+          for capture in "$root"/browser-v*/capture; do
+            if [[ -f "$capture/browser-v$WOD_CASE.json" ]]; then
+              node -e 'const o=require(process.argv[1]); console.log(JSON.stringify(o)); if (o.passed !== true) process.exitCode=1' "$capture/browser-v$WOD_CASE.json"
+            elif [[ -f "$capture/failure.json" ]]; then
+              node -e 'const {label,step,error}=require(process.argv[1]); console.log(JSON.stringify({label,step,error}))' "$capture/failure.json"
             fi
+            if ((rc != 0)); then tail -n 26 "$capture/../stderr.log"; fi
           done
-          for receipt in "$root"/v94-*/capture/browser-v94.json; do
-            if [[ -f "$receipt" ]]; then
-              node -e 'const r=require(process.argv[1]); console.log(JSON.stringify({passed:r.passed,completedSteps:r.steps?.length,browser:r.browser,crossTab:r.crossTab},null,2))' "$receipt"
-            fi
-          done
-          if ((rc == 0)); then echo 'Original v94 passed: hero selection and subsequent assertions.'; fi
+          du -sh "$root" "$root"/browser-v*
           exit "$rc"
