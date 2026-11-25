@@ -1,0 +1,102 @@
+name: WoD synthetic whole-tree recovery
+on:
+  push:
+    branches: [qa/wod-tree-recovery-20261125]
+permissions:
+  contents: read
+jobs:
+  producer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      artifact-id: ${{ steps.publish.outputs.artifact-id }}
+      zip-sha: ${{ steps.package.outputs.zip_sha }}
+    steps:
+      - name: Pack only a known synthetic directory tree
+        id: package
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="$RUNNER_TEMP/wod-tree-canary"
+          mkdir -p "$root/source"
+          git init -q "$root/source"
+          rev=b89b99553751ee4b764f1d8a191082b5ad77a50c
+          git -C "$root/source" fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$rev"
+          test "$(git -C "$root/source" rev-parse FETCH_HEAD)" = "$rev"
+          git -C "$root/source" show "$rev:scripts/durable-tree-evidence.py" >"$root/codec.py"
+          mkdir -p "$root/publish"
+          export ROOT="$root"
+          roots="$(python3 - <<'PY'
+          import json,os,pathlib
+          p=pathlib.Path(os.environ['ROOT'])/'fixture'
+          (p/'cases/empty').mkdir(parents=True)
+          (p/'control').mkdir()
+          (p/'cases/result.txt').write_bytes(b'Synthetic WoD tree evidence\n')
+          (p/'control/receipt.json').write_bytes(b'{"synthetic":true}\n')
+          rows=[('cases/result.txt',0o640,4),('control/receipt.json',0o600,5),('cases/empty',0o750,3),('cases',0o755,2),('control',0o710,6),('.',0o700,1)]
+          for name,mode,i in rows:
+              t=1730000000123456780+i
+              (p/name).chmod(mode)
+              os.utime(p/name,ns=(t,t))
+          print(json.dumps({'fixture':str(p)}))
+          PY
+          )"
+          zip="$root/publish/wod-tree-canary.zip"
+          python3 "$root/codec.py" pack "$roots" "$zip"
+          printf 'zip_sha=%s\n' "$(sha256sum "$zip" | cut -d ' ' -f 1)" >>"$GITHUB_OUTPUT"
+      - name: Transfer the original tree checkpoint
+        id: publish
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+        with:
+          path: ${{ runner.temp }}/wod-tree-canary/publish/wod-tree-canary.zip
+          archive: false
+          retention-days: 1
+          if-no-files-found: error
+  verifier:
+    needs: producer
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Fetch the exact archive on a clean runner
+        uses: actions/download-artifact@70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3
+        with:
+          artifact-ids: ${{ needs.producer.outputs.artifact-id }}
+          path: ${{ runner.temp }}/received-wod-tree
+          skip-decompress: true
+          digest-mismatch: error
+      - name: Restore and independently check file and directory metadata
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ needs.producer.outputs.zip-sha }}
+          ARTIFACT_ID: ${{ needs.producer.outputs.artifact-id }}
+        run: |
+          set -euo pipefail
+          root="$RUNNER_TEMP/wod-tree-canary"
+          mkdir -p "$root/source"
+          git init -q "$root/source"
+          rev=b89b99553751ee4b764f1d8a191082b5ad77a50c
+          git -C "$root/source" fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$rev"
+          test "$(git -C "$root/source" rev-parse FETCH_HEAD)" = "$rev"
+          git -C "$root/source" show "$rev:scripts/durable-tree-evidence.py" >"$root/codec.py"
+          test ! -e "$root/fixture"
+          archive="$RUNNER_TEMP/received-wod-tree/wod-tree-canary.zip"
+          printf '%s  %s\n' "$EXPECTED_SHA" "$archive" | sha256sum --check -
+          python3 "$root/codec.py" restore "$archive" fixture "$root/restored" "$EXPECTED_SHA"
+          export RESTORED="$root/restored"
+          python3 - <<'PY'
+          import json,os,pathlib,stat
+          p=pathlib.Path(os.environ['RESTORED'])
+          rows=[('.',0o700,1,None),('cases',0o755,2,None),('cases/empty',0o750,3,None),
+                ('cases/result.txt',0o640,4,b'Synthetic WoD tree evidence\n'),
+                ('control/receipt.json',0o600,5,b'{"synthetic":true}\n'),('control',0o710,6,None)]
+          assert {str(q.relative_to(p)) for q in p.rglob('*')}=={v[0] for v in rows if v[0]!='.'}
+          for name,mode,i,data in rows:
+              q=p/name
+              assert stat.S_IMODE(q.stat().st_mode)==mode and q.stat().st_mtime_ns==1730000000123456780+i
+              if data is None: assert q.is_dir()
+              else: assert q.read_bytes()==data
+          assert not any((p/'cases/empty').iterdir())
+          print(json.dumps({'passed':True,'synthetic':True,'files':2,'directories':4,
+              'emptyDirectoryRestored':True,'allModesAndNsExact':True,'freshRunnerReadback':True,
+              'artifactId':os.environ['ARTIFACT_ID'],'sha256':os.environ['EXPECTED_SHA']}))
+          PY
