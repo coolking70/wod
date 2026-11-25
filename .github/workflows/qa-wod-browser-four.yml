@@ -1,0 +1,91 @@
+name: WoD focused browser diagnostics
+on:
+  push:
+    branches: [qa/wod-browser-four-20261125]
+    paths: [.github/workflows/qa-wod-browser-four.yml]
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 16
+    env:
+      WOD_REVISION: b89b99553751ee4b764f1d8a191082b5ad77a50c
+      WOD_BASE_URL: http://127.0.0.1:18794
+    steps:
+      - shell: bash
+        run: |
+          set -euo pipefail
+          root="$(mktemp -d "$RUNNER_TEMP/wod-focused.XXXXXX")"
+          git init -q "$root/source"
+          cd "$root/source"
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$WOD_REVISION"
+          git checkout -q --detach "$WOD_REVISION"
+          test "$(git rev-parse HEAD)" = "$WOD_REVISION"
+          test "$(git rev-parse 'HEAD^{tree}')" = c047b3f59bc3ae94933721461062c98cac9e1463
+          for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
+            if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
+          done
+          node --version
+          node -e "if (Number(process.versions.node.split('.')[0]) < 22) process.exit(1)"
+          npm install --prefix "$root/qa" --no-audit --no-fund --ignore-scripts playwright@1.62.1
+          export WOD_PLAYWRIGHT_MODULE="$root/qa/node_modules/playwright"
+          test -x /usr/bin/chromium
+          /usr/bin/chromium --version
+          df -h "$root"
+          python3 -m http.server 18794 --bind 127.0.0.1 --directory dist >"$root/http.log" 2>&1 &
+          server=$!
+          trap 'kill "$server" 2>/dev/null || true' EXIT
+          curl -fsS --retry 15 --retry-connrefused --retry-delay 1 "$WOD_BASE_URL/" >/dev/null
+          control="$root/control"
+          export WOD_RECEIPT_DIR="$root/receipts"
+          export WOD_CHECKPOINT_DIR="$root/checkpoint-zips"
+          python3 - <<'PY'
+          import pathlib
+          probes={"187":["p.on('pageerror',e=>errors.push(e.stack))","p.on('pageerror',e=>{const q=new URL(p.url()||'about:blank',url);console.log('WOD_DIAG '+JSON.stringify({version:187,kind:e.name,page:q.origin===new URL(url).origin?q.pathname:'other'}));errors.push(e.stack);})",2],"189":["p.on('pageerror',e=>errors.push(e.stack||e.message))","p.on('pageerror',e=>{const q=new URL(p.url()||'about:blank',url);console.log('WOD_DIAG '+JSON.stringify({version:189,kind:e.name,page:q.origin===new URL(url).origin?q.pathname:'other'}));errors.push(e.stack||e.message);})",2],"203":["assert.equal(boot.length,2);","console.log('WOD_DIAG '+JSON.stringify({version:203,width,count:boot.length,paths:boot.slice(0,12).map(r=>r.path)}));assert.equal(boot.length,2);",1]}
+          for ver,(needle,replacement,count) in probes.items():
+              path=pathlib.Path(f'scripts/browser-v{ver}.cjs')
+              source=path.read_text()
+              assert source.count(needle)==count,ver
+              path.write_text(source.replace(needle,replacement))
+          PY
+          test "$(git diff --name-only)" = "$(printf '%s\n' scripts/browser-v187.cjs scripts/browser-v189.cjs scripts/browser-v203.cjs)"
+          for v in 187 189 203 204; do node --check "scripts/browser-v$v.cjs"; done
+          export WOD_FOCUSED_VERSIONS=187,189,203,204
+          set +e
+          timeout --signal=TERM --kill-after=15s 12m node scripts/run-evidence.mjs --label browser-focused --root "$control" -- node scripts/run-browser-focused.mjs
+          rc=$?
+          set -e
+          COORDINATOR_EXIT="$rc" python3 - "$control" "$WOD_RECEIPT_DIR" <<'PY'
+          import json,os,pathlib,re,sys
+          cap=pathlib.Path(sys.argv[1])/'capture'
+          receipt=pathlib.Path(sys.argv[2])/'browser-acceptance.json'
+          result=json.loads(receipt.read_text()) if receipt.is_file() else {}
+          rows={r['version']:r for r in result.get('results',[])}
+          def details(stack):
+              lines=stack.splitlines()
+              return {'summary': (lines or [''])[0][:320],
+                      'frames': re.findall(r'/((?:scripts|dist)/[A-Za-z0-9/._-]+:\d+:\d+)',stack)[:8],
+                      'locator': next((l.strip()[:220] for l in lines if l.strip().startswith("waiting for locator(")),None)}
+          def read(p):
+              return json.loads(p.read_text()) if p.is_file() else {}
+          passed=[]
+          for v in (187,189,203,204):
+              root=cap/f'browser-v{v}'
+              row=rows.get(v,{})
+              native=read(root/f'browser-v{v}.json')
+              failure=native if native.get('passed') is False else read(root/'failure.json')
+              status=(row.get('exit')==0 and native.get('passed') is True
+                      and (row.get('checkpoint') or {}).get('allFileHashesAndCRCVerified') is True)
+              passed.append(status)
+              print(json.dumps({'version':v,'exit':row.get('exit'),'nativePassed':native.get('passed'),
+                                'verified':status,'initialFailure':details(failure['error']) if failure.get('error') else None,
+                                'pageErrors':[details(e or '') for e in native.get('errors',[])][:10],
+                                'completedContexts':len(failure.get('rows',[]))},ensure_ascii=False))
+              std=root/'stdout.log'
+              if std.is_file():
+                  for entry in [l for l in std.read_text(errors='replace').splitlines() if l.startswith('WOD_DIAG ')][:20]:
+                      print(entry[:550])
+          print(json.dumps({'diagnostic':True,'recorded':len(rows),'verified':sum(passed),'coordinatorExit':int(os.environ['COORDINATOR_EXIT'])}))
+          sys.exit(0 if len(rows)==4 and all(passed) and os.environ['COORDINATOR_EXIT']=='0' else 1)
+          PY
