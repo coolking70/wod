@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - name: Run original v94 against the pinned public revision
+      - name: Run original v94 with the approved test helper
         shell: bash
         env:
           WOD_REVISION: b89b99553751ee4b764f1d8a191082b5ad77a50c
@@ -23,6 +23,11 @@ jobs:
           git checkout -q --detach FETCH_HEAD
           test "$(git rev-parse HEAD)" = "$WOD_REVISION"
           git rev-parse HEAD 'HEAD^{tree}'
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$GITHUB_SHA"
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git show "${GITHUB_SHA}:scripts/save-owner-test-helpers.cjs" >scripts/save-owner-test-helpers.cjs
+          printf '%s  %s\n' 96ac5dffbc180c5253fe35cb9989b537113ef13724c94484f87baaeaff08f5b4 scripts/save-owner-test-helpers.cjs | sha256sum --check -
+          test "$(git diff --name-only)" = scripts/save-owner-test-helpers.cjs
           for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
             if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
           done
@@ -44,6 +49,11 @@ jobs:
             if [[ -f "$log" ]]; then
               grep -m 4 -E 'data-own-hero|AssertionError|browserType.launch' "$log" || true
               if ((rc != 0)); then tail -n 26 "$log"; fi
+            fi
+          done
+          for receipt in "$root"/v94-*/capture/browser-v94.json; do
+            if [[ -f "$receipt" ]]; then
+              node -e 'const r=require(process.argv[1]); console.log(JSON.stringify({passed:r.passed,completedSteps:r.steps?.length,browser:r.browser,crossTab:r.crossTab},null,2))' "$receipt"
             fi
           done
           if ((rc == 0)); then echo 'Original v94 passed: hero selection and subsequent assertions.'; fi
