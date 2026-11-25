@@ -1,0 +1,50 @@
+name: WoD v94 browser smoke
+on:
+  push:
+    branches: [qa/wod-v94-chromium-20261125]
+permissions:
+  contents: read
+jobs:
+  v94:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Run original v94 against the pinned public revision
+        shell: bash
+        env:
+          WOD_REVISION: b89b99553751ee4b764f1d8a191082b5ad77a50c
+          WOD_BASE_URL: http://127.0.0.1:18794
+        run: |
+          set -euo pipefail
+          root="$(mktemp -d "$RUNNER_TEMP/wod-v94.XXXXXX")"
+          git init -q "$root/source"
+          cd "$root/source"
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$WOD_REVISION"
+          git checkout -q --detach FETCH_HEAD
+          test "$(git rev-parse HEAD)" = "$WOD_REVISION"
+          git rev-parse HEAD 'HEAD^{tree}'
+          for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
+            if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
+          done
+          node --version
+          node -e "if (Number(process.versions.node.split('.')[0]) < 22) process.exit(1)"
+          npm install --prefix "$root/qa" --no-audit --no-fund --ignore-scripts playwright@1.62.1
+          export WOD_PLAYWRIGHT_MODULE="$root/qa/node_modules/playwright"
+          export WOD_CHROMIUM_PATH="$(command -v google-chrome || command -v chromium)"
+          "$WOD_CHROMIUM_PATH" --version
+          python3 -m http.server 18794 --bind 127.0.0.1 --directory dist >"$root/http.log" 2>&1 &
+          server=$!
+          trap 'kill "$server" 2>/dev/null || true' EXIT
+          curl -fsS --retry 15 --retry-connrefused --retry-delay 1 "$WOD_BASE_URL/" >/dev/null
+          set +e
+          DEBUG=pw:api node scripts/run-evidence.mjs --label v94 --parent "$root" -- node scripts/browser-v94.cjs
+          rc=$?
+          set -e
+          for log in "$root"/v94-*/stderr.log; do
+            if [[ -f "$log" ]]; then
+              grep -m 4 -E 'data-own-hero|AssertionError|browserType.launch' "$log" || true
+              if ((rc != 0)); then tail -n 26 "$log"; fi
+            fi
+          done
+          if ((rc == 0)); then echo 'Original v94 passed: hero selection and subsequent assertions.'; fi
+          exit "$rc"
