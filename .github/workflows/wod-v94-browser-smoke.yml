@@ -1,4 +1,4 @@
-name: WoD v237 and v238 browser qualification
+name: WoD v234 frozen compatibility qualification
 on:
   push:
     branches: [qa/wod-v94-chromium-20261125]
@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [237, 238]
+        version: [234]
     steps:
       - name: Run original browser suite on the pinned public game revision
         shell: bash
@@ -21,7 +21,7 @@ jobs:
           WOD_CASE: ${{ matrix.version }}
         run: |
           set -euo pipefail
-          case "$WOD_CASE" in 237|238) ;; *) exit 2;; esac
+          case "$WOD_CASE" in 234) ;; *) exit 2;; esac
           root="$(mktemp -d "$RUNNER_TEMP/wod-v$WOD_CASE.XXXXXX")"
           git init -q "$root/source"
           cd "$root/source"
@@ -29,6 +29,29 @@ jobs:
           git checkout -q --detach FETCH_HEAD
           test "$(git rev-parse HEAD)" = "$WOD_REVISION"
           test "$(git rev-parse 'HEAD^{tree}')" = c047b3f59bc3ae94933721461062c98cac9e1463
+          legacy="$root/frozen-v232"
+          mkdir -p "$legacy"
+          rev=644dc21cf43c909b7fc9c39f0db406bca6fcf09f
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$rev"
+          test "$(git rev-parse FETCH_HEAD)" = "$rev"
+          git archive "$rev" dist | tar -x -C "$legacy"
+          python3 - "$legacy" "$rev" <<'PY'
+          import hashlib,json,pathlib,subprocess,sys
+          root=pathlib.Path(sys.argv[1]); rev=sys.argv[2]; out=[]
+          for entry in subprocess.check_output(['git','ls-tree','-rz',rev,'--','dist/']).split(b'\0'):
+              if not entry: continue
+              info,n=entry.split(b'\t',1); mode,kind,oid=info.split()
+              assert kind==b'blob' and mode in {b'100644',b'100755'}
+              name=n.decode(); b=(root/name).read_bytes()
+              assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==oid.decode(),name
+              out.append(dict(path=name,bytes=len(b),sha256=hashlib.sha256(b).hexdigest()))
+          assert len(out)==372 and sum(r['bytes'] for r in out)==56924183
+          p=root/'LEGACY_SOURCE.json'
+          p.write_text(json.dumps({'commit':rev,'files':out},indent=2)+'\n')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='1d8b3b78a9319d996c76f2798c83abba4dd8010c610369c25f5b7186fa497c7b'
+          print('Frozen v232 input verified:', len(out), 'files')
+          PY
+          export WOD_LEGACY_SOURCE_DIR="$legacy/dist"
           for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
             if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
           done
