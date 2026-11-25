@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {returningTideLoop} from '../scripts/returning-tide-cases.mjs';
+import {highlightedSteps} from '../dist/expedition-highlights.mjs';
 import {groupActions} from '../dist/expedition-report.mjs';
 import {phaseReplay,phaseReplayView,phaseSourceView} from '../dist/expedition-phase-replay.mjs';
 
@@ -38,4 +39,17 @@ test('missing legacy phase details are ignored and untrusted text is escaped',()
  const model=phaseReplay(events,phaseGroup),source={...model.source,text:'<img src=x onerror=1>'};
  assert.doesNotMatch(phaseReplayView({...model,event:{...model.event,text:'<svg>'},source}),/<(?:svg|img)/);
  assert.match(phaseSourceView(source),/&lt;img/);
+});
+
+test('the fixed phase is first-class in highlights without pulling in its ordinary hit',()=>{
+ const steps=highlightedSteps(events),phase=phaseGroup.events[0];
+ assert.equal(phase.id,503);
+ assert.equal(phase.actionId,null);
+ const match=steps.filter(step=>step.events.includes(phase));
+ assert.equal(match.length,1);
+ assert.deepEqual(match[0],phaseGroup);
+ const model=phaseReplay(events,match[0]);
+ assert.equal(model.source.id,502);
+ assert.ok(!steps.some(step=>step.events.includes(model.source)));
+ assert.equal(digest(),'762d2bb354c90c08f0b6504a408383dcd417c0f7f521da84259b0528344d8112');
 });
