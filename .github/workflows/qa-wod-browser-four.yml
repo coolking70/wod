@@ -42,15 +42,16 @@ jobs:
           export WOD_CHECKPOINT_DIR="$root/checkpoint-zips"
           python3 - <<'PY'
           import pathlib
-          probes={"187":["p.on('pageerror',e=>errors.push(e.stack))","p.on('pageerror',e=>{const q=new URL(p.url()||'about:blank',url);console.log('WOD_DIAG '+JSON.stringify({version:187,kind:e.name,page:q.origin===new URL(url).origin?q.pathname:'other'}));errors.push(e.stack);})",2],"189":["p.on('pageerror',e=>errors.push(e.stack||e.message))","p.on('pageerror',e=>{const q=new URL(p.url()||'about:blank',url);console.log('WOD_DIAG '+JSON.stringify({version:189,kind:e.name,page:q.origin===new URL(url).origin?q.pathname:'other'}));errors.push(e.stack||e.message);})",2],"203":["assert.equal(boot.length,2);","console.log('WOD_DIAG '+JSON.stringify({version:203,width,count:boot.length,paths:boot.slice(0,12).map(r=>r.path)}));assert.equal(boot.length,2);",1]}
-          for ver,(needle,replacement,count) in probes.items():
-              path=pathlib.Path(f'scripts/browser-v{ver}.cjs')
+          probes={"187":["p.on('pageerror',e=>errors.push(e.stack))","p.on('pageerror',e=>{const q=new URL(p.url()||'about:blank',url);console.log('WOD_DIAG '+JSON.stringify({version:187,kind:e.name,page:q.origin===new URL(url).origin?q.pathname:'other'}));errors.push(e.stack);});p.on('console',m=>{const t=m.text();if(t.startsWith('WOD_CLOCK '))console.log('WOD_DIAG '+JSON.stringify({version:187,clock:JSON.parse(t.slice(10))}));})",2],"189":["p.on('pageerror',e=>errors.push(e.stack||e.message))","p.on('pageerror',e=>{const q=new URL(p.url()||'about:blank',url);console.log('WOD_DIAG '+JSON.stringify({version:189,kind:e.name,page:q.origin===new URL(url).origin?q.pathname:'other'}));errors.push(e.stack||e.message);});p.on('console',m=>{const t=m.text();if(t.startsWith('WOD_CLOCK '))console.log('WOD_DIAG '+JSON.stringify({version:189,clock:JSON.parse(t.slice(10))}));})",2],"203":["assert.equal(boot.length,2);","const portraits=await p.evaluate(()=>[...new Set([...document.querySelectorAll('#guild .portrait')].map(n=>{const s=getComputedStyle(n);return JSON.stringify({group:n.matches('.scholar,.bard,.herbalist')?'support':'base',rendered:n.getClientRects().length>0,sprite:s.backgroundImage.includes('support-portraits-v10')?'support':s.backgroundImage.includes('portraits-v4')?'base':'other'});} ))].map(JSON.parse));console.log('WOD_DIAG '+JSON.stringify({version:203,width,count:boot.length,paths:boot.slice(0,12).map(r=>r.path),portraits}));assert.equal(boot.length,2);",1]}
+          motion={"dist/expedition-tidecaller-motion.mjs":["cue(Number(clock.currentTime)||0);raf=requestAnimationFrame(tick);","{const raw=clock.currentTime, elapsed=Number(raw)||0;if(!Number.isFinite(elapsed)||elapsed<0)console.info('WOD_CLOCK '+JSON.stringify({owner:'tidecaller',elapsed:String(elapsed),duration:k.duration,state:clock.playState,pending:clock.pending}));cue(elapsed);}raf=requestAnimationFrame(tick);",1],"dist/expedition-herbalist-motion.mjs":["cue(Number(clock.currentTime)||0);raf=requestAnimationFrame(tick);","{const raw=clock.currentTime, elapsed=Number(raw)||0;if(!Number.isFinite(elapsed)||elapsed<0)console.info('WOD_CLOCK '+JSON.stringify({owner:'herbalist',elapsed:String(elapsed),duration:k.duration,state:clock.playState,pending:clock.pending}));cue(elapsed);}raf=requestAnimationFrame(tick);",1]}
+          for filename,(needle,replacement,count) in {**{f'scripts/browser-v{v}.cjs':p for v,p in probes.items()},**motion}.items():
+              path=pathlib.Path(filename)
               source=path.read_text()
-              assert source.count(needle)==count,ver
+              assert source.count(needle)==count,filename
               path.write_text(source.replace(needle,replacement))
           PY
-          test "$(git diff --name-only)" = "$(printf '%s\n' scripts/browser-v187.cjs scripts/browser-v189.cjs scripts/browser-v203.cjs)"
-          for v in 187 189 203 204; do node --check "scripts/browser-v$v.cjs"; done
+          test "$(git diff --name-only)" = "$(printf '%s\n' dist/expedition-herbalist-motion.mjs dist/expedition-tidecaller-motion.mjs scripts/browser-v187.cjs scripts/browser-v189.cjs scripts/browser-v203.cjs)"
+          for f in dist/expedition-herbalist-motion.mjs dist/expedition-tidecaller-motion.mjs scripts/browser-v187.cjs scripts/browser-v189.cjs scripts/browser-v203.cjs scripts/browser-v204.cjs; do node --check "$f"; done
           export WOD_FOCUSED_VERSIONS=187,189,203,204
           set +e
           timeout --signal=TERM --kill-after=15s 12m node scripts/run-evidence.mjs --label browser-focused --root "$control" -- node scripts/run-browser-focused.mjs
@@ -65,7 +66,7 @@ jobs:
           def details(stack):
               lines=stack.splitlines()
               return {'summary': (lines or [''])[0][:320],
-                      'frames': re.findall(r'/((?:scripts|dist)/[A-Za-z0-9/._-]+:\d+:\d+)',stack)[:8],
+                      'frames': re.findall(r'/((?:(?:scripts|dist|studies)/)?[A-Za-z0-9/._-]+\.(?:cjs|mjs|js):\d+:\d+)',stack)[:8],
                       'locator': next((l.strip()[:220] for l in lines if l.strip().startswith("waiting for locator(")),None)}
           def read(p):
               return json.loads(p.read_text()) if p.is_file() else {}
