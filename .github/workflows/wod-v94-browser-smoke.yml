@@ -67,7 +67,7 @@ jobs:
           trap 'kill "$server" 2>/dev/null || true' EXIT
           curl -fsS --retry 15 --retry-connrefused --retry-delay 1 "$WOD_BASE_URL/" >/dev/null
           control="$root/control"
-          export WOD_RECEIPT_DIR="$control/capture"
+          export WOD_RECEIPT_DIR="$root/receipts"
           export WOD_CHECKPOINT_DIR="$root/checkpoint-zips"
           set +e
           timeout --signal=TERM --kill-after=20s 104m node scripts/run-evidence.mjs --label browser-full --root "$control" -- node scripts/run-browser-acceptance.mjs
@@ -77,12 +77,13 @@ jobs:
           du -sh "$root" "$root"/checkpoint-zips 2>/dev/null || true
           COORDINATOR_EXIT="$passed" python3 - "$control" "$root" <<'PY'
           import json,os,pathlib,re,sys,time
-          control=pathlib.Path(sys.argv[1]); root=pathlib.Path(sys.argv[2]); cap=control/'capture'
+          control=pathlib.Path(sys.argv[1]); root=pathlib.Path(sys.argv[2]); cap=control/'capture'; receipts=root/'receipts'
+          assert len({cap.resolve(), receipts.resolve(), (root/'checkpoint-zips').resolve()})==3
           text=pathlib.Path('scripts/run-browser-acceptance.mjs').read_text()
           versions=json.loads(re.search(r'\bversions=(\[[\d,]+\]),results=\[\]',text).group(1))
           assert len(versions)==len(set(versions))==133
-          final=cap/'browser-acceptance.json'
-          progress=cap/'browser-progress.json'
+          final=receipts/'browser-acceptance.json'
+          progress=receipts/'browser-progress.json'
           o=json.loads((final if final.exists() else progress).read_text()) if final.exists() or progress.exists() else {}
           seen={r['version']:r for r in o.get('results',[])}
           rows=[]; total_bytes=0; zip_count=0
@@ -96,15 +97,17 @@ jobs:
                       state='passed' if native.get('passed') is True else ('failed' if native.get('passed') is False else 'no-pass-field')
                   except (ValueError,AttributeError):
                       state='invalid'
+              copied=receipts/f'browser-v{v}'/f'browser-v{v}.json'
+              receipt_match=path.is_file() and copied.is_file() and path.read_bytes()==copied.read_bytes()
               checkpoint=r.get('checkpoint') or {}
               if checkpoint.get('allFileHashesAndCRCVerified') is True:
                   zip_count+=1
                   total_bytes+=checkpoint['rawBytes']
-              rows.append({'version':v,'exit':r.get('exit'),'native':state,'checkpoint':bool(checkpoint.get('allFileHashesAndCRCVerified'))})
-          bad=[r for r in rows if r['exit']!=0 or r['native']!='passed' or not r['checkpoint']]
+              rows.append({'version':v,'exit':r.get('exit'),'native':state,'receiptMatchesNative':receipt_match,'checkpoint':bool(checkpoint.get('allFileHashesAndCRCVerified'))})
+          bad=[r for r in rows if r['exit']!=0 or r['native']!='passed' or not r['receiptMatchesNative'] or not r['checkpoint']]
           print(json.dumps({'expected':133,'recorded':len(seen),'coordinatorExit':int(os.environ['COORDINATOR_EXIT']),'coordinatorFinal':final.exists(),'coordinatorPassed':o.get('passed') is True,'rawLogicalBytesInVerifiedCheckpoints':total_bytes,'verifiedCheckpointCount':zip_count,'notVerified':bad}))
           for r in bad:
-              logs=[cap/f"browser-v{r['version']}"/'stderr.log']
+              logs=[receipts/f"browser-v{r['version']}"/'stderr.log',cap/f"browser-v{r['version']}"/'stderr.log']
               if r['version'] in seen and seen[r['version']].get('dir'): logs.append(pathlib.Path(seen[r['version']]['dir'])/'stderr.log')
               for log in logs:
                   if log.exists():
