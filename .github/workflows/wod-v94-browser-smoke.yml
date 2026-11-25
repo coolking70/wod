@@ -19,21 +19,18 @@ jobs:
           root="$(mktemp -d "$RUNNER_TEMP/wod-full.XXXXXX")"
           git init -q "$root/source"
           cd "$root/source"
-          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$WOD_REVISION"
-          git checkout -q --detach FETCH_HEAD
           qa=ee4c6725e1476ffb5919b8f31ba6c0e9f863d6e7
-          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$qa"
-          test "$(git rev-parse FETCH_HEAD)" = "$qa"
+          rev=644dc21cf43c909b7fc9c39f0db406bca6fcf09f
+          git fetch --no-tags https://github.com/coolking70/wod.git "$WOD_REVISION" "$qa" "$rev"
+          for pin in "$WOD_REVISION" "$qa" "$rev"; do test "$(git cat-file -t "$pin")" = commit; done
+          git checkout -q --detach "$WOD_REVISION"
+          test "$(git rev-parse HEAD)" = "$WOD_REVISION"
+          test "$(git rev-parse 'HEAD^{tree}')" = c047b3f59bc3ae94933721461062c98cac9e1463
           git show "$qa:scripts/save-owner-test-helpers.cjs" >scripts/save-owner-test-helpers.cjs
           printf '%s  %s\n' 96ac5dffbc180c5253fe35cb9989b537113ef13724c94484f87baaeaff08f5b4 scripts/save-owner-test-helpers.cjs | sha256sum --check -
           test "$(git diff --name-only)" = scripts/save-owner-test-helpers.cjs
-          test "$(git rev-parse HEAD)" = "$WOD_REVISION"
-          test "$(git rev-parse 'HEAD^{tree}')" = c047b3f59bc3ae94933721461062c98cac9e1463
           legacy="$root/frozen-v232"
           mkdir -p "$legacy"
-          rev=644dc21cf43c909b7fc9c39f0db406bca6fcf09f
-          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$rev"
-          test "$(git rev-parse FETCH_HEAD)" = "$rev"
           git archive "$rev" dist | tar -x -C "$legacy"
           python3 - "$legacy" "$rev" <<'PY'
           import hashlib,json,pathlib,subprocess,sys
