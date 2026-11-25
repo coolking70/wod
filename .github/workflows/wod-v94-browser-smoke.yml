@@ -1,85 +1,118 @@
-name: WoD synthetic evidence transport
+name: WoD full browser regression diagnostics
 on:
   push:
     branches: [qa/wod-v94-chromium-20261125]
 permissions:
   contents: read
 jobs:
-  producer:
+  browser:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
-    outputs:
-      artifact-id: ${{ steps.publish.outputs.artifact-id }}
-      zip-sha: ${{ steps.package.outputs.zip_sha }}
+    timeout-minutes: 115
     steps:
-      - name: Seal only the synthetic two-file fixture
-        id: package
+      - name: Run the original 133-case coordinator on the public release candidate
+        env:
+          WOD_REVISION: b89b99553751ee4b764f1d8a191082b5ad77a50c
+          WOD_BASE_URL: http://127.0.0.1:18794
         shell: bash
         run: |
           set -euo pipefail
-          root="$RUNNER_TEMP/wod-evidence-canary"
-          mkdir -p "$root"/{fixture/cases,fixture/control,publish}
+          root="$(mktemp -d "$RUNNER_TEMP/wod-full.XXXXXX")"
           git init -q "$root/source"
-          rev=b89b99553751ee4b764f1d8a191082b5ad77a50c
-          git -C "$root/source" fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$rev"
-          test "$(git -C "$root/source" rev-parse FETCH_HEAD)" = "$rev"
-          git -C "$root/source" show "$rev:scripts/archive-evidence.py" >"$root/archive-evidence.py"
-          printf '%s\n' '{"passed":true,"synthetic":true}' >"$root/fixture/control/receipt.json"
-          printf '%s\n' 'Synthetic WoD evidence only' >"$root/fixture/cases/result.txt"
-          zip="$root/publish/wod-synthetic-canary.zip"
-          python3 "$root/archive-evidence.py" "$root/fixture" "$zip"
-          sha="$(sha256sum "$zip" | cut -d ' ' -f 1)"
-          printf 'zip_sha=%s\n' "$sha" >>"$GITHUB_OUTPUT"
-      - name: Transfer the original ZIP as one opaque file
-        id: publish
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
-        with:
-          path: ${{ runner.temp }}/wod-evidence-canary/publish/wod-synthetic-canary.zip
-          archive: false
-          retention-days: 1
-          if-no-files-found: error
-  verifier:
-    needs: producer
-    runs-on: ubuntu-24.04
-    timeout-minutes: 5
-    steps:
-      - name: Download that single artifact on a fresh runner
-        uses: actions/download-artifact@70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3
-        with:
-          artifact-ids: ${{ needs.producer.outputs.artifact-id }}
-          path: ${{ runner.temp }}/received-wod-canary
-          skip-decompress: true
-          digest-mismatch: error
-      - name: Verify exact ZIP bytes, CRC, membership and extracted bytes
-        shell: bash
-        env:
-          PRODUCER_SHA: ${{ needs.producer.outputs.zip-sha }}
-          ARTIFACT_ID: ${{ needs.producer.outputs.artifact-id }}
-        run: |
-          python3 - <<'PY'
-          import hashlib,json,os,pathlib,zipfile
-          sha=lambda b: hashlib.sha256(b).hexdigest()
-          root=pathlib.Path(os.environ['RUNNER_TEMP'])
-          received=root/'received-wod-canary'
-          p=received/'wod-synthetic-canary.zip'
-          assert list(received.iterdir())==[p]
-          assert sha(p.read_bytes())==os.environ['PRODUCER_SHA']
-          expected={'cases/result.txt':b'Synthetic WoD evidence only\n',
-                    'control/receipt.json':b'{"passed":true,"synthetic":true}\n'}
-          prefix='fixture/'
-          manifest=prefix+'.wod-evidence-manifest.json'
-          with zipfile.ZipFile(p) as z:
-              assert z.testzip() is None
-              assert sorted(z.namelist())==sorted([manifest]+[prefix+n for n in expected])
-              m=json.loads(z.read(manifest))
-              assert m['format']=='wod-complete-evidence' and m['version']==1
-              assert len(m['files'])==2 and {r['path'] for r in m['files']}==set(expected)
-              for r in m['files']:
-                  n=r['path']; b=z.read(prefix+n)
-                  assert b==expected[n] and len(b)==r['bytes'] and sha(b)==r['sha256']
-                  restored=root/'wod-canary-restored'/n
-                  restored.parent.mkdir(parents=True,exist_ok=True)
-                  restored.write_bytes(b)
-                  assert restored.read_bytes()==b
-          print(json.dumps({'passed':True,'synthetic':True,'artifactId':os.environ['ARTIFACT_ID'],'zipSha256':sha(p.read_bytes()),'manifestMembers':2,'freshRunnerReadback':True}))
+          cd "$root/source"
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$WOD_REVISION"
+          git checkout -q --detach FETCH_HEAD
+          qa=ee4c6725e1476ffb5919b8f31ba6c0e9f863d6e7
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$qa"
+          test "$(git rev-parse FETCH_HEAD)" = "$qa"
+          git show "$qa:scripts/save-owner-test-helpers.cjs" >scripts/save-owner-test-helpers.cjs
+          printf '%s  %s\n' 96ac5dffbc180c5253fe35cb9989b537113ef13724c94484f87baaeaff08f5b4 scripts/save-owner-test-helpers.cjs | sha256sum --check -
+          test "$(git diff --name-only)" = scripts/save-owner-test-helpers.cjs
+          test "$(git rev-parse HEAD)" = "$WOD_REVISION"
+          test "$(git rev-parse 'HEAD^{tree}')" = c047b3f59bc3ae94933721461062c98cac9e1463
+          legacy="$root/frozen-v232"
+          mkdir -p "$legacy"
+          rev=644dc21cf43c909b7fc9c39f0db406bca6fcf09f
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$rev"
+          test "$(git rev-parse FETCH_HEAD)" = "$rev"
+          git archive "$rev" dist | tar -x -C "$legacy"
+          python3 - "$legacy" "$rev" <<'PY'
+          import hashlib,json,pathlib,subprocess,sys
+          root=pathlib.Path(sys.argv[1]); rev=sys.argv[2]; out=[]
+          for entry in subprocess.check_output(['git','ls-tree','-rz',rev,'--','dist/']).split(b'\0'):
+              if not entry: continue
+              info,n=entry.split(b'\t',1); mode,kind,oid=info.split()
+              assert kind==b'blob' and mode in {b'100644',b'100755'}
+              name=n.decode(); b=(root/name).read_bytes()
+              assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==oid.decode(),name
+              out.append(dict(path=name,bytes=len(b),sha256=hashlib.sha256(b).hexdigest()))
+          assert len(out)==372 and sum(r['bytes'] for r in out)==56924183
+          p=root/'LEGACY_SOURCE.json'
+          p.write_text(json.dumps({'commit':rev,'files':out},indent=2)+'\n')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='1d8b3b78a9319d996c76f2798c83abba4dd8010c610369c25f5b7186fa497c7b'
+          print('Frozen v232 input verified:', len(out), 'files')
+          PY
+          export WOD_LEGACY_SOURCE_DIR="$legacy/dist"
+          for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
+            if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
+          done
+          node --version
+          node -e "if (Number(process.versions.node.split('.')[0]) < 22) process.exit(1)"
+          npm install --prefix "$root/qa" --no-audit --no-fund --ignore-scripts playwright@1.62.1
+          export WOD_PLAYWRIGHT_MODULE="$root/qa/node_modules/playwright"
+          test -x /usr/bin/chromium
+          /usr/bin/chromium --version
+          df -h "$root"
+          python3 -m http.server 18794 --bind 127.0.0.1 --directory dist >"$root/http.log" 2>&1 &
+          server=$!
+          trap 'kill "$server" 2>/dev/null || true' EXIT
+          curl -fsS --retry 15 --retry-connrefused --retry-delay 1 "$WOD_BASE_URL/" >/dev/null
+          control="$root/control"
+          export WOD_RECEIPT_DIR="$control/capture"
+          export WOD_CHECKPOINT_DIR="$root/checkpoint-zips"
+          set +e
+          timeout --signal=TERM --kill-after=20s 104m node scripts/run-evidence.mjs --label browser-full --root "$control" -- node scripts/run-browser-acceptance.mjs
+          passed=$?
+          set -e
+          df -h "$root"
+          du -sh "$root" "$root"/checkpoint-zips 2>/dev/null || true
+          COORDINATOR_EXIT="$passed" python3 - "$control" "$root" <<'PY'
+          import json,os,pathlib,re,sys,time
+          control=pathlib.Path(sys.argv[1]); root=pathlib.Path(sys.argv[2]); cap=control/'capture'
+          text=pathlib.Path('scripts/run-browser-acceptance.mjs').read_text()
+          versions=json.loads(re.search(r'\bversions=(\[[\d,]+\]),results=\[\]',text).group(1))
+          assert len(versions)==len(set(versions))==133
+          final=cap/'browser-acceptance.json'
+          progress=cap/'browser-progress.json'
+          o=json.loads((final if final.exists() else progress).read_text()) if final.exists() or progress.exists() else {}
+          seen={r['version']:r for r in o.get('results',[])}
+          rows=[]; total_bytes=0; zip_count=0
+          for v in versions:
+              r=seen.get(v,{})
+              path=cap/f'browser-v{v}'/f'browser-v{v}.json'
+              state='missing'
+              if path.is_file():
+                  try:
+                      native=json.loads(path.read_text())
+                      state='passed' if native.get('passed') is True else ('failed' if native.get('passed') is False else 'no-pass-field')
+                  except (ValueError,AttributeError):
+                      state='invalid'
+              checkpoint=r.get('checkpoint') or {}
+              if checkpoint.get('allFileHashesAndCRCVerified') is True:
+                  zip_count+=1
+                  total_bytes+=checkpoint['rawBytes']
+              rows.append({'version':v,'exit':r.get('exit'),'native':state,'checkpoint':bool(checkpoint.get('allFileHashesAndCRCVerified'))})
+          bad=[r for r in rows if r['exit']!=0 or r['native']!='passed' or not r['checkpoint']]
+          print(json.dumps({'expected':133,'recorded':len(seen),'coordinatorExit':int(os.environ['COORDINATOR_EXIT']),'coordinatorFinal':final.exists(),'coordinatorPassed':o.get('passed') is True,'rawLogicalBytesInVerifiedCheckpoints':total_bytes,'verifiedCheckpointCount':zip_count,'notVerified':bad}))
+          for r in bad:
+              logs=[cap/f"browser-v{r['version']}"/'stderr.log']
+              if r['version'] in seen and seen[r['version']].get('dir'): logs.append(pathlib.Path(seen[r['version']]['dir'])/'stderr.log')
+              for log in logs:
+                  if log.exists():
+                      # Summarize failure types and source frames only, not report bodies or fixtures.
+                      lines=[l.strip()[:300] for l in log.read_text(errors='replace').splitlines() if re.search(r'^(?:\s*at .*scripts/browser-v.*|\s*(?:TimeoutError|AssertionError|Error|TypeError|ReferenceError|SyntaxError)(?:\s|:|\[))',l)]
+                      if lines: print(json.dumps({'version':r['version'],'diagnostics':lines[:5]})); break
+          if not final.exists():
+              for line in (control/'stderr.log').read_text(errors='replace').splitlines()[-12:]:
+                  print(line[:320])
+          sys.exit(1 if bad or set(seen)!=set(versions) or int(os.environ['COORDINATOR_EXIT'])!=0 or o.get('passed') is not True else 0)
           PY
