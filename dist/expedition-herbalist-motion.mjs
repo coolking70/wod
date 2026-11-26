@@ -46,7 +46,8 @@ export function animateHerbalistFigures(root,plans,{speed=1,reduced=false}={}){
   const cue=time=>{const c=herbalistCueAt(plan,time,k.duration);svg.dataset.herbalistFrame=c.frame;svg.dataset.herbalistEvents=c.eventIds.join(',');if(label)label.textContent=c.label;};
   for(const[key,p]of Object.entries(k.parts)){const n=svg.querySelector('[data-herbalist-part="'+key+'"]');n.style.transform=p.settled;n.style.opacity=p.opacity;if(k.animated&&typeof n.animate==='function'){const a=n.animate(p.frames,{duration:k.duration,easing:'linear',fill:'none'});animations.push(a);running.push(a);}}
   let raf=null,ended=false;const cancel=()=>{ended=true;if(raf!==null)cancelAnimationFrame(raf);for(const a of animations)a.cancel();cue(k.duration);};
-  if(animations.length){cue(0);const tick=()=>{if(ended)return;if(!svg.isConnected){cancel();return;}const clock=animations[0];if(clock.playState==='idle'||clock.playState==='finished'){cue(k.duration);return;}cue(Number(clock.currentTime)||0);raf=requestAnimationFrame(tick);};raf=requestAnimationFrame(tick);}else cue(k.duration);jobs.push(cancel);
+  // The browser may briefly report a negative time while synchronizing a new animation.
+  if(animations.length){cue(0);const tick=()=>{if(ended)return;if(!svg.isConnected){cancel();return;}const clock=animations[0];if(clock.playState==='idle'||clock.playState==='finished'){cue(k.duration);return;}const elapsed=Number(clock.currentTime);cue(Number.isFinite(elapsed)?Math.max(0,elapsed):0);raf=requestAnimationFrame(tick);};raf=requestAnimationFrame(tick);}else cue(k.duration);jobs.push(cancel);
  }
  return{cancel(){for(const cancel of jobs)cancel();},count:running.length};
 }
