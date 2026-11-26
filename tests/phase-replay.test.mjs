@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {returningTideLoop} from '../scripts/returning-tide-cases.mjs';
 import {highlightedSteps} from '../dist/expedition-highlights.mjs';
+import {shouldPauseReplayStep} from '../dist/expedition-replay-motion.mjs';
 import {groupActions} from '../dist/expedition-report.mjs';
 import {phaseReplay,phaseReplayView,phaseSourceView} from '../dist/expedition-phase-replay.mjs';
 
@@ -51,5 +52,26 @@ test('the fixed phase is first-class in highlights without pulling in its ordina
  const model=phaseReplay(events,match[0]);
  assert.equal(model.source.id,502);
  assert.ok(!steps.some(step=>step.events.includes(model.source)));
+ assert.equal(digest(),'762d2bb354c90c08f0b6504a408383dcd417c0f7f521da84259b0528344d8112');
+});
+
+
+test('the real phase stops autoplay only with key-event pause on, never adds a manual stop',()=>{
+ const phaseSteps=highlightedSteps(events),at=phaseSteps.findIndex(step=>step.events.includes(phaseGroup.events[0]));
+ assert.ok(at>0&&at<phaseSteps.length-1);
+ const phase=phaseSteps[at];
+ assert.equal(phase.events[0].id,503);
+ for(const [autoplay,pauseOnKeyEvents,expected] of [[true,true,true],[true,false,false],[false,true,false],[false,false,false]]){
+  assert.equal(shouldPauseReplayStep(report,phase,{autoplay,pauseOnKeyEvents}),expected);
+ }
+ const legacy={...phase.events[0],detail:{}};
+ assert.equal(shouldPauseReplayStep({...report,events:[legacy]},{events:[legacy]},{autoplay:true,pauseOnKeyEvents:true}),false);
+ const source=phaseReplay(events,phase).source;
+ assert.equal(shouldPauseReplayStep(report,{events:[source]},{autoplay:true,pauseOnKeyEvents:true}),false);
+ for(const type of ['scene','encounter','route','rescue','branch','defeat']){
+  for(const autoplay of [true,false])for(const pauseOnKeyEvents of [true,false]){
+   assert.equal(shouldPauseReplayStep(report,{events:[{type}]},{autoplay,pauseOnKeyEvents}),type==='defeat'||pauseOnKeyEvents);
+  }
+ }
  assert.equal(digest(),'762d2bb354c90c08f0b6504a408383dcd417c0f7f521da84259b0528344d8112');
 });

@@ -9,7 +9,7 @@ import{mountActionFocus,actionInterceptionRecord}from'./expedition-action-focus.
 import{editorNavigationView,editorBackView,jumpEditor,captureEditorField,restoreEditorField}from'./expedition-editor-navigation.mjs';
 import {guildUnavailableView} from './expedition-recovery-view.mjs';
 import{adventureEntryView,focusExplorationIndex}from'./expedition-adventure-entry.mjs';
-import{beginReplayMotion,settleReplayMotion,replayMotionTiming}from'./expedition-replay-motion.mjs';
+import{beginReplayMotion,settleReplayMotion,replayMotionTiming,shouldPauseReplayStep}from'./expedition-replay-motion.mjs';
 import{herbalistMotion,herbalistFigure,animateHerbalistFigures,herbalistInspectorView}from'./expedition-herbalist-motion.mjs';
 import{supplyTimeline,supplyTimelineView,supplySummaryView}from'./expedition-supply-timeline.mjs';
 import{scholarMotion,scholarFigure,animateScholarFigures,scholarDetailView,mountScholarDetail}from'./expedition-scholar-motion.mjs';
@@ -195,7 +195,11 @@ function opts(obj,value){return Object.entries(obj).map(([k,v])=>`<option value=
 function select(field,obj,value,extra=''){return `<select data-field="${field}" ${extra}>${opts(obj,value)}</select>`;}
 function stopStageMotion(){actionFocus?.cancel();replayMotionEpoch++;settleReplayMotion($('.stage'),[guardianPlayback,rangerPlayback,bardPlayback,scholarPlayback,tidecallerPlayback,herbalistPlayback,inkcasterPlayback,fieldmedicPlayback]);}
 function stop(){stopStageMotion();bardDetailPlayback?.cancel();guardianDetailPlayback?.cancel();clearInterval(timer);timer=null;$('#play').textContent='▶ 播放';}
-function view(v){stop();if(v==='adventure')renderAdventure();if(v==='replay')refreshReportHandoff();if(v!=='replay'){document.body.classList.remove('replay-focus');$('#theatre-mode').checked=false;}document.body.dataset.view=v;document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!==v);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));}
+function view(v){stop();if(v==='adventure')renderAdventure();if(v==='replay')refreshReportHandoff();if(v!=='replay'){document.body.classList.remove('replay-focus');$('#theatre-mode').checked=false;}document.body.dataset.view=v;document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!==v);document.querySelectorAll('[data-view]').forEach(b=>{
+ const current=b.dataset.view===v;
+ b.classList.toggle('active',current);
+ if(current)b.setAttribute('aria-current','true');else b.removeAttribute('aria-current');
+});}
 function selectedBase(){return config.heroes.find(h=>h.id===selected);}
 function setPlan(key,value){const base=selectedBase();if(scope){base.overrides[scope]??={};base.overrides[scope][key]=clone(value);}else base[key]=clone(value);}
 function inheritance(key){if(!scope)return '<small class="scope-label">默认设置</small>';const own=Object.hasOwn(selectedBase().overrides[scope]||{},key);return `<small class="scope-label ${own?'overridden':''}">${own?'本房间覆盖':'继承默认'}</small>${own?` <button class="link" data-inherit="${key}">恢复继承</button>`:''}`;}
@@ -341,7 +345,7 @@ function frame(){
 
 }
 function move(i){const e=report.events[i];if(!e)return;if($('#personal-playback').checked&&!allSteps().some(g=>i>=g.start&&i<=g.end)){$('#personal-playback').checked=false;renderJournal();}if($('#highlights-only').checked&&!allSteps().some(g=>i>=g.start&&i<=g.end)){$('#highlights-only').checked=false;renderJournal();}index=i;if(room!==e.roomIndex){room=e.roomIndex;$('#room').value=room;renderJournal();}frame();}
-function stepBy(delta){const next=adjacentStep(allSteps(),index,delta);if(next){move(next.start);if(next.events.some(e=>e.type==='defeat')||($('#pause-scenes').checked&&(next.events.some(e=>['scene','encounter','route','rescue','branch'].includes(e.type))||hospiceMoment(report,next.events))))stop();}return Boolean(next);}
+function stepBy(delta,{autoplay=false}={}){const next=adjacentStep(allSteps(),index,delta);if(next){move(next.start);if(shouldPauseReplayStep(report,next,{autoplay,pauseOnKeyEvents:$('#pause-scenes').checked}))stop();}return Boolean(next);}
 $('#planning').addEventListener('click',ev=>{
  const b=ev.target.closest('button');if(!b)return;const base=selectedBase(),h=resolveHeroPlan(base,scope),t=HEROES.find(h=>h.id===selected);
  if(b.dataset.editorJump){jumpEditor($('#editor'),b.dataset.editorJump);return;}
@@ -394,7 +398,7 @@ $('#export').onclick=()=>download('abbey-v40-config.json',config);$('#import').o
 $('#download').onclick=()=>download('abbey-v14-report.json',report);
 $('#room').onchange=()=>{stop();room=Number($('#room').value);index=roomEvents()[0].i;renderJournal();frame();};$('#timeline').oninput=()=>{stop();move(visibleSteps()[Number($('#timeline').value)].start);};$('#prev').onclick=()=>{stop();stepBy(-1);};$('#next').onclick=()=>{stop();stepBy(1);};$('#diagnostic').onchange=()=>{stop();const steps=visibleSteps(),aligned=steps.find(s=>s.end>=index)||steps.at(-1);if(aligned)index=aligned.start;renderJournal();frame();};
 $('#journal').onclick=e=>{const b=e.target.closest('[data-event]');if(b){stop();move(Number(b.dataset.event));}};
-function startPlayback(){if(!report)return;guardianDetailPlayback?.cancel();bardDetailPlayback?.cancel();if($('#report').dataset.workspace==='review')replayWorkspace.open('battle');if(!adjacentStep(allSteps(),index,1))move(allSteps()[0].start);$('#play').textContent='Ⅱ 暂停';timer=setInterval(()=>{if(!stepBy(1))stop();},replayMotionTiming(Number($('#play-speed').value)).step);}
+function startPlayback(){if(!report)return;guardianDetailPlayback?.cancel();bardDetailPlayback?.cancel();if($('#report').dataset.workspace==='review')replayWorkspace.open('battle');if(!adjacentStep(allSteps(),index,1))move(allSteps()[0].start);$('#play').textContent='Ⅱ 暂停';timer=setInterval(()=>{if(!stepBy(1,{autoplay:true}))stop();},replayMotionTiming(Number($('#play-speed').value)).step);}
 $('#play').onclick=()=>{if(timer)stop();else startPlayback();};
 $('.replay-controls').addEventListener('keydown',e=>{
  if(e.target!==e.currentTarget||e.defaultPrevented||e.isComposing||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||document.body.dataset.view!=='replay'||!report||$('#report').hidden)return;

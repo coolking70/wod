@@ -1,3 +1,6 @@
+import {hospiceMoment} from './expedition-hospice.mjs';
+import {phaseReplay} from './expedition-phase-replay.mjs';
+
 // Presentation timing only; recorded HP/MP, outcomes and event order never change.
 export function replayMotionTiming(speed=1){
  if(![.5,1,2,4].includes(speed))throw Error('回放速度无效');
@@ -11,4 +14,13 @@ export function beginReplayMotion(stage,{speed=1,reduced=false}={}){
 export function settleReplayMotion(stage,players=[]){
  for(const player of players)player?.cancel();
  if(stage)stage.dataset.motionState='settled';
+}
+
+// Preserve legacy stop points; phase playback pauses only when there is a comparison to read.
+export function shouldPauseReplayStep(report,step,{pauseOnKeyEvents,autoplay=false}){
+ const {events}=step;
+ return events.some(e=>e.type==='defeat')||Boolean(pauseOnKeyEvents&&(
+  events.some(e=>['scene','encounter','route','rescue','branch'].includes(e.type))||
+  hospiceMoment(report,events)||(autoplay&&phaseReplay(report.events,step))
+ ));
 }
