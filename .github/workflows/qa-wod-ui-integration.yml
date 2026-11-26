@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Verify candidate and run two Chromium contexts
         env:
+          CANDIDATE: f74ccaa59177a104ecfab1aa4fc36eedf1b0a0e4
           QA_HEAD: ${{ github.sha }}
         run: |
           set -euo pipefail
@@ -20,11 +21,10 @@ jobs:
           test "$GITHUB_REPOSITORY" = coolking70/wod
           [[ "$QA_HEAD" =~ ^[0-9a-f]{40}$ ]]
           git init --quiet qa
-          git -C qa fetch --quiet --depth=2 "https://github.com/$GITHUB_REPOSITORY.git" "$QA_HEAD"
+          git -C qa fetch --quiet --depth=1 "https://github.com/$GITHUB_REPOSITORY.git" "$QA_HEAD" "$CANDIDATE"
           git -C qa show "$QA_HEAD:scripts/qa-ui-integration.mjs" > qa-ui-integration.mjs
-          candidate=$(git -C qa rev-parse "$QA_HEAD^")
-          test "$(git -C qa rev-parse "$candidate^{tree}")" = 5f69fabcaabf6c89e2bbebb0e4d2fca819712f0f
-          git -C qa worktree add --quiet --detach "$root/repo" "$candidate"
+          test "$(git -C qa rev-parse "$CANDIDATE^{tree}")" = 5f69fabcaabf6c89e2bbebb0e4d2fca819712f0f
+          git -C qa worktree add --quiet --detach "$root/repo" "$CANDIDATE"
           node --check qa-ui-integration.mjs
           node qa-ui-integration.mjs --fixture-only
           npm install --prefix "$root/pw" --no-save --no-audit --no-fund --ignore-scripts playwright@1.62.1

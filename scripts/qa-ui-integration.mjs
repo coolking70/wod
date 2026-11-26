@@ -69,12 +69,14 @@ try {
     await first.locator('body[data-save-ownership=writer]').waitFor({state:'attached'});
     await first.locator('#save-ownership summary').click();
     await first.locator('[data-save-release]').click();
-    await first.locator('body[data-save-ownership=readonly]').waitFor({state:'attached'});
+    await first.locator('body[data-save-ownership=released]').waitFor({state:'attached'});
 
     const writer = await c.newPage();
     writer.on('pageerror', error => errors.push(error.stack));
     await writer.goto(url);
     await writer.locator('body[data-save-ownership=writer]').waitFor({state:'attached'});
+    await first.reload();
+    await first.locator('body[data-save-ownership=readonly]').waitFor({state:'attached'});
     await assertView(first,'planning');
     await assertNoOverflow(first);
     for (const target of ['adventure','compare','guild']) {
