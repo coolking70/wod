@@ -2,7 +2,7 @@ name: WoD focused UI integration QA
 on:
   push:
     branches: ['qa/wod-ui-integration-20261126']
-    paths: ['.github/workflows/qa-wod-ui-integration.yml']
+    paths: ['.github/workflows/qa-wod-ui-integration.yml','scripts/qa-ui-integration.mjs']
 permissions:
   contents: read
 jobs:

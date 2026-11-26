@@ -32,6 +32,7 @@ const {chromium} = require(process.env.WOD_PLAYWRIGHT_MODULE || 'playwright');
 const url = process.env.WOD_BASE_URL || 'http://127.0.0.1:8002';
 const browser = await chromium.launch({executablePath: process.env.WOD_CHROMIUM || '/usr/bin/chromium'});
 const results = [], errors = [];
+let stage='initial';
 const selector = view => `header nav[aria-label="主导航"] [data-view="${view}"]`;
 async function assertView(p, view) {
   await p.waitForFunction(v => document.body.dataset.view === v, view);
@@ -55,6 +56,7 @@ const settings = p => p.evaluate(() => Object.fromEntries(
 
 try {
   for (const [width, reducedMotion] of [[320,'reduce'],[390,'no-preference']]) {
+    stage=width+':load';
     const c = await browser.newContext({viewport:{width,height:844},isMobile:true,hasTouch:true,reducedMotion});
     c.setDefaultTimeout(12000);
     await c.addInitScript(keys => {
@@ -77,9 +79,10 @@ try {
     await writer.locator('body[data-save-ownership=writer]').waitFor({state:'attached'});
     await first.reload();
     await first.locator('body[data-save-ownership=readonly]').waitFor({state:'attached'});
-    await assertView(first,'planning');
+    stage=width+':navigation';
+    await assertView(first,'adventure');
     await assertNoOverflow(first);
-    for (const target of ['adventure','compare','guild']) {
+    for (const target of ['planning','compare','guild']) {
       // Test the actual keyboard path, not synthetic DOM activation.
       const control = first.locator(selector(target));
       await control.focus();
@@ -88,6 +91,7 @@ try {
       assert.equal(await control.evaluate(n => n === document.activeElement), true);
       await assertNoOverflow(first);
     }
+    stage=width+':report';
     await first.locator('[data-guild-tab=history]').first().click();
     await first.locator('[data-guild=report]').click();
     await first.locator('#report').waitFor();
@@ -101,6 +105,7 @@ try {
     assert.equal(await first.locator('#save-ownership strong').evaluate(n => n === document.activeElement),true);
     assert.deepEqual(await raw(writer),storage);
 
+    stage=width+':phase-shortcut';
     await first.locator(pane('review')).click();
     const phaseShortcut = first.locator(`#key-events [data-key-event="${phaseIndex}"]`);
     await phaseShortcut.waitFor();
@@ -111,6 +116,7 @@ try {
     assert.match(await first.locator('#phase-replay').innerText(),/转变前[\s\S]*转变后/);
     await assertNoOverflow(first);
 
+    stage=width+':phase-source-and-return';
     await first.locator('#highlights-only').check();
     await first.locator('#personal-playback').check();
     // If the filters hide the exact record, use the unfiltered route, then check
@@ -142,6 +148,7 @@ try {
     await first.locator('#personal-playback').uncheck();
     await first.locator('#play-speed').selectOption('1');
     for (const pause of [true,false]) {
+      stage=width+':autoplay:'+pause;
       await first.locator(pane('evidence')).click();
       await first.locator('#diagnostic').check();
       await first.locator('#room').selectOption(String(phase.event.roomIndex));
@@ -164,4 +171,7 @@ try {
   }
   assert.deepEqual(errors,[]);
   console.log(JSON.stringify({passed:true,cases:results}));
+} catch (error) {
+  console.error(JSON.stringify({stage, results, errors}));
+  throw error;
 } finally { await browser.close(); }
