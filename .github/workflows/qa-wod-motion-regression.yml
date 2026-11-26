@@ -1,0 +1,243 @@
+name: WoD motion regression
+on:
+  push:
+    branches: [qa/wod-motion-regression-20261126]
+    paths: [.github/workflows/qa-wod-motion-regression.yml]
+permissions:
+  contents: read
+env:
+  WOD_REVISION: 4df6d2f457cb496de341dde462e9c7d9669ebca3
+  WOD_BASE_URL: http://127.0.0.1:18794
+jobs:
+  focused:
+    name: Four affected suites and controlled animation samples
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - shell: bash
+        run: |
+          set -euo pipefail
+          root="$(mktemp -d "$RUNNER_TEMP/wod-full.XXXXXX")"
+          git init -q "$root/source"
+          cd "$root/source"
+          git fetch --no-tags --depth=1 https://github.com/coolking70/wod.git "$WOD_REVISION"
+          git checkout -q --detach "$WOD_REVISION"
+          test "$(git rev-parse HEAD)" = "$WOD_REVISION"
+          test "$(git rev-parse 'HEAD^{tree}')" = b244eaf1313b5ff7e9d8c78621e6950cd692219c
+          for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
+            if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
+          done
+          node --version
+          node -e "if (Number(process.versions.node.split('.')[0]) < 22) process.exit(1)"
+          npm install --prefix "$root/qa" --no-audit --no-fund --ignore-scripts playwright@1.62.1
+          export WOD_PLAYWRIGHT_MODULE="$root/qa/node_modules/playwright"
+          test -x /usr/bin/chromium
+          /usr/bin/chromium --version
+          df -h "$root"
+          python3 -m http.server 18794 --bind 127.0.0.1 --directory dist >"$root/http.log" 2>&1 &
+          server=$!
+          trap 'kill "$server" 2>/dev/null || true' EXIT
+          curl -fsS --retry 15 --retry-connrefused --retry-delay 1 "$WOD_BASE_URL/" >/dev/null
+          control="$root/control"
+          export WOD_RECEIPT_DIR="$root/receipts"
+          export WOD_CHECKPOINT_DIR="$root/checkpoint-zips"
+          export WOD_FOCUSED_VERSIONS=187,189,203,204
+          set +e
+          timeout --signal=TERM --kill-after=15s 10m node scripts/run-evidence.mjs --label browser-focused --root "$control" -- node scripts/run-browser-focused.mjs
+          rc=$?
+          set -e
+          COORDINATOR_EXIT="$rc" python3 - "$control" "$WOD_RECEIPT_DIR" <<'PY'
+          import json,os,pathlib,re,sys
+          cap=pathlib.Path(sys.argv[1])/'capture'
+          root=pathlib.Path(sys.argv[2])
+          receipt=root/'browser-acceptance.json'
+          result=json.loads(receipt.read_text()) if receipt.is_file() else {}
+          rows={r['version']:r for r in result.get('results',[])}
+          def read(p): return json.loads(p.read_text()) if p.is_file() else {}
+          ok=[]
+          for v in (187,189,203,204):
+              case=cap/f'browser-v{v}'
+              name=f'browser-v{v}.json'
+              native=read(case/name)
+              copy=root/f'browser-v{v}'/name
+              row=rows.get(v,{})
+              matches=(case/name).is_file() and copy.is_file() and copy.read_bytes()==(case/name).read_bytes()
+              archive=(row.get('checkpoint') or {}).get('allFileHashesAndCRCVerified') is True
+              passed=row.get('exit')==0 and native.get('passed') is True and matches and archive
+              ok.append(passed)
+              failure=native if native.get('passed') is False else read(case/'failure.json')
+              trace=(failure.get('error') or '').splitlines()
+              print(json.dumps({'version':v,'exit':row.get('exit'),'nativePassed':native.get('passed'),
+                                'matched':matches,'checkedZip':archive,'verified':passed,
+                                'initialFailure':trace[0][:240] if trace else None}))
+          print(json.dumps({'expected':4,'recorded':len(rows),'verified':sum(ok),'coordinatorExit':int(os.environ['COORDINATOR_EXIT'])}))
+          assert len(rows)==4 and all(ok) and result.get('passed') is True and os.environ['COORDINATOR_EXIT']=='0'
+          PY
+          cat >"$root/study-probe.cjs" <<'WOD_PROBE'
+          const {chromium}=require(process.env.WOD_PLAYWRIGHT_MODULE);
+          const assert=require('node:assert/strict');
+          (async()=>{
+            const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+            const cases=[
+              {path:'/studies/tidecaller-wave-v187.html',hero:'tidecaller',cast:'50',result:'52,54'},
+              {path:'/studies/herbalist-aid-v189.html',hero:'herbalist',cast:'161',result:'162'},
+            ];
+            let failed=0;
+            try {
+              for(const c of cases) for(const negative of [false,true]) {
+                const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'no-preference'});
+                const errors=[];
+                page.on('pageerror',e=>errors.push({name:e.name,message:e.message,source:(e.stack||'').match(/studies\/[a-zA-Z0-9_.-]+:\d+:\d+/)?.[0]||null}));
+                try {
+                  await page.goto(process.env.WOD_BASE_URL+c.path);
+                  await page.waitForFunction(()=>document.querySelector('#native-art svg')?.dataset.motionDuration==='900');
+                  const proof=await page.evaluate(async ({hero,negative})=>{
+                    const svg=document.querySelector('#native-art svg');
+                    document.querySelector('#native-play').click();
+                    const animations=svg.getAnimations({subtree:true});
+                    const first=animations.find(a=>a.effect?.target?.getAttribute('data-'+hero+'-part')==='root');
+                    if(!first||animations.length!==10) throw Error('Wrong probe target or count: '+animations.length);
+                    animations.forEach(a=>{a.pause();a.currentTime=0;});
+                    const descriptor=Object.getOwnPropertyDescriptor(Animation.prototype,'currentTime');
+                    let reads=0, injections=0;
+                    Object.defineProperty(first,'currentTime',{configurable:true,get(){
+                      reads++;
+                      if(negative&&injections===0){injections++;return -0.042;}
+                      return descriptor.get.call(this);
+                    },set(v){descriptor.set.call(this,v);}});
+                    const rows=[];
+                    for(const t of [0,225,449.9,450]){
+                      animations.forEach(a=>{a.currentTime=t;});
+                      await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+                      rows.push({t,ids:svg.dataset[hero+'Events'],frame:svg.dataset[hero+'Frame']});
+                    }
+                    document.querySelector('#native-stop').click();
+                    return {reads,injections,rows,stopped:svg.getAnimations({subtree:true}).length===0};
+                  },{hero:c.hero,negative});
+                  console.log(JSON.stringify({path:c.path,negative,proof,errors}));
+                  assert.equal(proof.injections,negative?1:0);
+                  assert.ok(proof.reads>0);
+                  assert.deepEqual(errors,[]);
+                  assert.deepEqual(proof.rows.map(r=>[r.ids,r.frame]),[['','0'],[c.cast,'1'],[c.cast,'1'],[c.result,'2']]);
+                  assert.equal(proof.stopped,true);
+                }catch(e){
+                  failed++;
+                  console.log(JSON.stringify({path:c.path,negative,failed:true,reason:e.message.slice(0,400)}));
+                } finally {await page.close();}
+              }
+            }finally{await browser.close();}
+            console.log(JSON.stringify({checks:4,failed,scope:'controlled study-page probe, not natural failures or candidate acceptance'}));
+            process.exitCode=failed?1:0;
+          })().catch(e=>{console.error(e);process.exitCode=1;});
+          WOD_PROBE
+          node --check "$root/study-probe.cjs"
+          timeout 2m node "$root/study-probe.cjs"
+  full:
+    name: Full 133 browser cases
+    needs: focused
+    runs-on: ubuntu-24.04
+    timeout-minutes: 115
+    steps:
+      - shell: bash
+        run: |
+          set -euo pipefail
+          root="$(mktemp -d "$RUNNER_TEMP/wod-full.XXXXXX")"
+          git init -q "$root/source"
+          cd "$root/source"
+          qa=ee4c6725e1476ffb5919b8f31ba6c0e9f863d6e7
+          rev=644dc21cf43c909b7fc9c39f0db406bca6fcf09f
+          git fetch --no-tags https://github.com/coolking70/wod.git "$WOD_REVISION" "$qa" "$rev"
+          for pin in "$WOD_REVISION" "$qa" "$rev"; do test "$(git cat-file -t "$pin")" = commit; done
+          git checkout -q --detach "$WOD_REVISION"
+          test "$(git rev-parse HEAD)" = "$WOD_REVISION"
+          test "$(git rev-parse 'HEAD^{tree}')" = b244eaf1313b5ff7e9d8c78621e6950cd692219c
+          git show "$qa:scripts/save-owner-test-helpers.cjs" >scripts/save-owner-test-helpers.cjs
+          printf '%s  %s\n' 96ac5dffbc180c5253fe35cb9989b537113ef13724c94484f87baaeaff08f5b4 scripts/save-owner-test-helpers.cjs | sha256sum --check -
+          test "$(git diff --name-only)" = scripts/save-owner-test-helpers.cjs
+          legacy="$root/frozen-v232"
+          mkdir -p "$legacy"
+          git archive "$rev" dist | tar -x -C "$legacy"
+          python3 - "$legacy" "$rev" <<'PY'
+          import hashlib,json,pathlib,subprocess,sys
+          root=pathlib.Path(sys.argv[1]); rev=sys.argv[2]; out=[]
+          for entry in subprocess.check_output(['git','ls-tree','-rz',rev,'--','dist/']).split(b'\0'):
+              if not entry: continue
+              info,n=entry.split(b'\t',1); mode,kind,oid=info.split()
+              assert kind==b'blob' and mode in {b'100644',b'100755'}
+              name=n.decode(); b=(root/name).read_bytes()
+              assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==oid.decode(),name
+              out.append(dict(path=name,bytes=len(b),sha256=hashlib.sha256(b).hexdigest()))
+          assert len(out)==372 and sum(r['bytes'] for r in out)==56924183
+          p=root/'LEGACY_SOURCE.json'
+          p.write_text(json.dumps({'commit':rev,'files':out},indent=2)+'\n')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='1d8b3b78a9319d996c76f2798c83abba4dd8010c610369c25f5b7186fa497c7b'
+          print('Frozen v232 input verified:', len(out), 'files')
+          PY
+          export WOD_LEGACY_SOURCE_DIR="$legacy/dist"
+          for bin in "$RUNNER_TOOL_CACHE"/node/24.*/x64/bin; do
+            if [[ -x "$bin/node" ]]; then export PATH="$bin:$PATH"; break; fi
+          done
+          node --version
+          node -e "if (Number(process.versions.node.split('.')[0]) < 22) process.exit(1)"
+          npm install --prefix "$root/qa" --no-audit --no-fund --ignore-scripts playwright@1.62.1
+          export WOD_PLAYWRIGHT_MODULE="$root/qa/node_modules/playwright"
+          test -x /usr/bin/chromium
+          /usr/bin/chromium --version
+          df -h "$root"
+          python3 -m http.server 18794 --bind 127.0.0.1 --directory dist >"$root/http.log" 2>&1 &
+          server=$!
+          trap 'kill "$server" 2>/dev/null || true' EXIT
+          curl -fsS --retry 15 --retry-connrefused --retry-delay 1 "$WOD_BASE_URL/" >/dev/null
+          control="$root/control"
+          export WOD_RECEIPT_DIR="$root/receipts"
+          export WOD_CHECKPOINT_DIR="$root/checkpoint-zips"
+          set +e
+          timeout --signal=TERM --kill-after=20s 104m node scripts/run-evidence.mjs --label browser-full --root "$control" -- node scripts/run-browser-acceptance.mjs
+          passed=$?
+          set -e
+          df -h "$root"
+          du -sh "$root" "$root"/checkpoint-zips 2>/dev/null || true
+          COORDINATOR_EXIT="$passed" python3 - "$control" "$root" <<'PY'
+          import json,os,pathlib,re,sys,time
+          control=pathlib.Path(sys.argv[1]); root=pathlib.Path(sys.argv[2]); cap=control/'capture'; receipts=root/'receipts'
+          assert len({cap.resolve(), receipts.resolve(), (root/'checkpoint-zips').resolve()})==3
+          text=pathlib.Path('scripts/run-browser-acceptance.mjs').read_text()
+          versions=json.loads(re.search(r'\bversions=(\[[\d,]+\]),results=\[\]',text).group(1))
+          assert len(versions)==len(set(versions))==133
+          final=receipts/'browser-acceptance.json'
+          progress=receipts/'browser-progress.json'
+          o=json.loads((final if final.exists() else progress).read_text()) if final.exists() or progress.exists() else {}
+          seen={r['version']:r for r in o.get('results',[])}
+          rows=[]; total_bytes=0; zip_count=0
+          for v in versions:
+              r=seen.get(v,{})
+              path=cap/f'browser-v{v}'/f'browser-v{v}.json'
+              state='missing'
+              if path.is_file():
+                  try:
+                      native=json.loads(path.read_text())
+                      state='passed' if native.get('passed') is True else ('failed' if native.get('passed') is False else 'no-pass-field')
+                  except (ValueError,AttributeError):
+                      state='invalid'
+              copied=receipts/f'browser-v{v}'/f'browser-v{v}.json'
+              receipt_match=path.is_file() and copied.is_file() and path.read_bytes()==copied.read_bytes()
+              checkpoint=r.get('checkpoint') or {}
+              if checkpoint.get('allFileHashesAndCRCVerified') is True:
+                  zip_count+=1
+                  total_bytes+=checkpoint['rawBytes']
+              rows.append({'version':v,'exit':r.get('exit'),'native':state,'receiptMatchesNative':receipt_match,'checkpoint':bool(checkpoint.get('allFileHashesAndCRCVerified'))})
+          bad=[r for r in rows if r['exit']!=0 or r['native']!='passed' or not r['receiptMatchesNative'] or not r['checkpoint']]
+          print(json.dumps({'expected':133,'recorded':len(seen),'coordinatorExit':int(os.environ['COORDINATOR_EXIT']),'coordinatorFinal':final.exists(),'coordinatorPassed':o.get('passed') is True,'rawLogicalBytesInVerifiedCheckpoints':total_bytes,'verifiedCheckpointCount':zip_count,'notVerified':bad}))
+          for r in bad:
+              logs=[receipts/f"browser-v{r['version']}"/'stderr.log',cap/f"browser-v{r['version']}"/'stderr.log']
+              if r['version'] in seen and seen[r['version']].get('dir'): logs.append(pathlib.Path(seen[r['version']]['dir'])/'stderr.log')
+              for log in logs:
+                  if log.exists():
+                      # Summarize failure types and source frames only, not report bodies or fixtures.
+                      lines=[l.strip()[:300] for l in log.read_text(errors='replace').splitlines() if re.search(r'^(?:\s*at .*scripts/browser-v.*|\s*(?:TimeoutError|AssertionError|Error|TypeError|ReferenceError|SyntaxError)(?:\s|:|\[))',l)]
+                      if lines: print(json.dumps({'version':r['version'],'diagnostics':lines[:5]})); break
+          if not final.exists():
+              for line in (control/'stderr.log').read_text(errors='replace').splitlines()[-12:]:
+                  print(line[:320])
+          sys.exit(1 if bad or set(seen)!=set(versions) or int(os.environ['COORDINATOR_EXIT'])!=0 or o.get('passed') is not True else 0)
+          PY
