@@ -1,0 +1,41 @@
+name: WoD focused UI integration QA
+on:
+  push:
+    branches: ['qa/wod-ui-integration-20261126']
+    paths: ['.github/workflows/qa-wod-ui-integration.yml']
+permissions:
+  contents: read
+jobs:
+  narrow-ui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Verify candidate and run two Chromium contexts
+        env:
+          QA_HEAD: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          cd "$(mktemp -d "$RUNNER_TEMP/wod-ui.XXXXXX")"
+          root="$PWD"
+          test "$GITHUB_REPOSITORY" = coolking70/wod
+          [[ "$QA_HEAD" =~ ^[0-9a-f]{40}$ ]]
+          git init --quiet qa
+          git -C qa fetch --quiet --depth=2 "https://github.com/$GITHUB_REPOSITORY.git" "$QA_HEAD"
+          git -C qa show "$QA_HEAD:scripts/qa-ui-integration.mjs" > qa-ui-integration.mjs
+          candidate=$(git -C qa rev-parse "$QA_HEAD^")
+          test "$(git -C qa rev-parse "$candidate^{tree}")" = 5f69fabcaabf6c89e2bbebb0e4d2fca819712f0f
+          git -C qa worktree add --quiet --detach "$root/repo" "$candidate"
+          node --check qa-ui-integration.mjs
+          node qa-ui-integration.mjs --fixture-only
+          npm install --prefix "$root/pw" --no-save --no-audit --no-fund --ignore-scripts playwright@1.62.1
+          "$root/pw/node_modules/.bin/playwright" install chromium
+          export WOD_PLAYWRIGHT_MODULE="$root/pw/node_modules/playwright/index.js"
+          export WOD_CHROMIUM
+          WOD_CHROMIUM=$(node -p "require(process.env.WOD_PLAYWRIGHT_MODULE).chromium.executablePath()")
+          "$WOD_CHROMIUM" --version
+          export WOD_BASE_URL=http://127.0.0.1:8002
+          python3 -m http.server 8002 --bind 127.0.0.1 --directory "$root/repo/dist" > "$root/server.log" 2>&1 &
+          trap 'kill "$!" 2>/dev/null || true' EXIT
+          for attempt in {1..25}; do curl -fsS "$WOD_BASE_URL" >/dev/null 2>&1 && break; sleep 1; done
+          curl -fsS "$WOD_BASE_URL" >/dev/null
+          node qa-ui-integration.mjs
