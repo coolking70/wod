@@ -31,7 +31,7 @@ const require = createRequire(import.meta.url);
 const {chromium} = require(process.env.WOD_PLAYWRIGHT_MODULE || 'playwright');
 const url = process.env.WOD_BASE_URL || 'http://127.0.0.1:8002';
 const browser = await chromium.launch({executablePath: process.env.WOD_CHROMIUM || '/usr/bin/chromium'});
-const results = [], errors = [];
+const results = [], errors = [], failures = [];
 let stage='initial';
 const selector = view => `header nav[aria-label="主导航"] [data-view="${view}"]`;
 async function assertView(p, view) {
@@ -58,6 +58,8 @@ try {
   for (const [width, reducedMotion] of [[320,'reduce'],[390,'no-preference']]) {
     stage=width+':load';
     const c = await browser.newContext({viewport:{width,height:844},isMobile:true,hasTouch:true,reducedMotion});
+    let first;
+    try {
     c.setDefaultTimeout(12000);
     await c.addInitScript(keys => {
       if (!localStorage.getItem('wod-ui-integration-seeded')) {
@@ -65,7 +67,7 @@ try {
         localStorage.setItem('wod-ui-integration-seeded','1');
       }
     }, storage);
-    const first = await c.newPage();
+    first = await c.newPage();
     first.on('pageerror', error => errors.push(error.stack));
     await first.goto(url);
     await first.locator('body[data-save-ownership=writer]').waitFor({state:'attached'});
@@ -80,9 +82,10 @@ try {
     await first.reload();
     await first.locator('body[data-save-ownership=readonly]').waitFor({state:'attached'});
     stage=width+':navigation';
-    await assertView(first,'adventure');
+    // Boot first selects adventure, then guildUI.open() activates the guild.
+    await assertView(first,'guild');
     await assertNoOverflow(first);
-    for (const target of ['planning','compare','guild']) {
+    for (const target of ['adventure','planning','compare','guild']) {
       // Test the actual keyboard path, not synthetic DOM activation.
       const control = first.locator(selector(target));
       await control.focus();
@@ -167,8 +170,19 @@ try {
     assert.deepEqual(await raw(writer),storage);
     results.push({width,reducedMotion,phase:503,cause:502,mainNavigation:true,phaseReturn:true,
       optionalAutoPause:true,readOnlyStorageExact:true,noHorizontalOverflow:true});
-    await c.close();
+    } catch (error) {
+      const dom = await first?.evaluate(() => ({view:document.body.dataset.view,
+        save:document.body.dataset.saveOwnership,
+        main:[...document.querySelectorAll('header nav [aria-current]')].map(el=>el.dataset.view),
+        panes:[...document.querySelectorAll('.view:not([hidden])')].map(el=>el.id),
+        active:document.activeElement?.outerHTML.slice(0,260),
+        widths:[innerWidth,document.documentElement.scrollWidth]})).catch(()=>null);
+      const failure={stage,error:error.stack,dom};
+      console.error(JSON.stringify(failure));
+      failures.push(stage);
+    } finally { await c.close(); }
   }
+  assert.deepEqual(failures,[]);
   assert.deepEqual(errors,[]);
   console.log(JSON.stringify({passed:true,cases:results}));
 } catch (error) {
